@@ -1,5 +1,94 @@
 site_name: pretix Documentation
-
+repo_url: https://github.com/pretix/pretix-docs
+site_author: pretix
+copyright: 2023 rami.io GmbH
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo-light-angled-icon.svg
+  features:
+    - navigation.tabs
+    - navigation.prune
+    - navigation.path
+    - toc.follow
+    - search.highlight
+    - navigation.footer
+  font:
+    text: Open Sans
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 markdown_extensions:
-- toc:
-    permalink: "#"
+  - toc:
+      permalink: "#"
+  - sane_lists
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - search
+  - privacy
+  - social:
+      cards_layout_options:
+        background_color: "#3B1C4A"
+        font_family: "Titillium Web"
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: "pretix Dokumentation"
+  - git-revision-date-localized
+  - awesome-pages
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://pretix.social/@pretix
+    - icon: fontawesome/brands/github
+      link: https://github.com/pretix
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/pretix/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCG1Og1YUpgIJD4geAZLAp5g
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/pretix.eu/

@@ -1,0 +1,5 @@
+*.swp
+*~
+site/
+.idea/
+.cache/
