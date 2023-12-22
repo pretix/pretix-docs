@@ -8,6 +8,9 @@
     --md-accent-fg-color--light: #6ddf8e;
     --md-accent-fg-color--dark: #3b774c;
 }
+[data-md-color-scheme="default"] {
+    --md-typeset-a-color: #7F4A91;
+}
 
 /* Typo */
 h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summary {
