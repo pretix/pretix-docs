@@ -1,0 +1,5 @@
+site_name: pretix Documentation
+
+markdown_extensions:
+- toc:
+    permalink: "#"
