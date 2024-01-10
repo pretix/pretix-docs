@@ -2,7 +2,7 @@
 
 Um Zahlungen per Banküberweisung zu akzeptieren, müssen Sie nur ein wichtiges Feld in den Einstellungen von pretix ausfüllen: Unter "Bank
 Kontodaten" sollten Sie alles angeben, was man wissen muss, um Ihnen Geld zu überweisen, z.B. Ihre IBAN und BIC,
-den Namen Ihrer Bank und bei Auslandsüberweisungen möglichst auch Ihre Adresse und die Adresse der Bank.
+den Namen Ihrer Bank. Wenn Sie Auslandsüberweisungen erwarten, geben möglichst auch Ihre Adresse und die Adresse der Bank an.
 
 pretix teilt dem Nutzer automatisch mit, dass er den Auftragscode in die Zahlungsreferenz aufnehmen soll, damit eingehende Überweisungen
 automatisch den Zahlungen zugeordnet werden können.
