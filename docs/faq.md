@@ -9,7 +9,7 @@ still count toward your quotas and are included in your reports.
 
 ## How do I delete an event?
 
-You can find the event deletion button at the bottom of the event settings page. Note however, that it is not possible
+You can find the event deletion button at the bottom of the event settings page. Note, however, that it is not possible
 to delete an event once any order or invoice has been created, as those likely contain information on financial
 transactions which legally may not be tampered with and needs to be kept on record for multiple years in most
 countries. In this case, you can just disable the shop by clicking the first square on your event
