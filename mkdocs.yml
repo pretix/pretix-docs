@@ -63,6 +63,8 @@ plugins:
   - search
   - privacy
   - glightbox
+  - macros:
+      include_dir: include
   - social:
       cards_layout_options:
         background_color: "#3B1C4A"
