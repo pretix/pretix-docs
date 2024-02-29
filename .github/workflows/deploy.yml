@@ -1,0 +1,26 @@
+name: Deployment
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+    - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh-host: arthur.rami.io
+    - name: Write version file
+      run: git describe --always > version.txt
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Build docs
+      run: mkdocs build
+    - name: Deployment
+      run: rsync --delete site pretixdocs@arthur.rami.io:/var/www/pretixdocs2
