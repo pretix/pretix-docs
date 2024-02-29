@@ -2,6 +2,8 @@
 
 ## How can I test my shop before taking it live?
 
+<!-- md:version 2024.1 -->
+
 On your event dashboard, click on the first tile that shows your shop status. On the lower part of this page, you can
 place your event into "test mode". In "test mode", everything behaves the same, but orders created during test mode can
 later be fully deleted. Be sure to actually delete them when or after you turn off test mode, since test mode orders
@@ -10,6 +12,9 @@ still count toward your quotas and are included in your reports.
 {% include "snippet1.md" %}
 
 ## Why doesn't my product show up in the ticket shop?
+
+<!-- md:plugin External Tracking -->
+<!-- md:enterprise -->
 
 If you created a product and it doesn't show up, please follow the following steps to find out why:
 
@@ -29,6 +34,9 @@ If you created a product and it doesn't show up, please follow the following ste
 
 ## Can I have different payment deadlines for different payment methods?
 
+<!-- md:experimental -->
+<!-- md:hosted -->
+
 No. We do not think it makes a lot of sense, for a number of reasons. First of all we believe it is not very
 customer-friendly. You might for example want to configure a 1-day deadline for credit card payments and 2 weeks for
 bank transfers. However, think for example of a customer who wants to pay by card and then the payment fails because
@@ -45,6 +53,8 @@ forth could either allow someone to extend their deadline forever, or render som
 back in the past.
 
 ## Why does pretix not support any 1D (linear) bar codes?
+
+<!-- md:community -->
 
 We often get asked, why pretix depends on QR codes instead of more traditional 1D bar codes. More often than not, people
 tend to already own linear (laser) bar code scanners.
