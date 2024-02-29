@@ -23,4 +23,4 @@ jobs:
     - name: Build docs
       run: mkdocs build
     - name: Deployment
-      run: rsync --delete site pretixdocs@arthur.rami.io:/var/pretixdocs2/www
+      run: rsync -r --delete site pretixdocs@arthur.rami.io:/var/pretixdocs2/www
