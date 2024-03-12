@@ -105,3 +105,4 @@ extra:
       link: https://www.instagram.com/pretix.eu/
 hooks:
 - overrides/hooks/shortcodes.py
+- overrides/hooks/custommarkup.py

@@ -175,3 +175,13 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
   color: var(--md-default-fg-color--light);
 }
 
+
+/* Custom markup */
+.md-typeset .typo-btn {
+	display: inline-block;
+  	border: 1px solid var(--md-accent-fg-color--transparent);
+  	background: var(--md-accent-fg-color--transparent);
+	padding: 1px 4px;
+	border-radius: 4px;
+}
+
