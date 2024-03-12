@@ -15,7 +15,16 @@
 /* Typo */
 h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summary {
     font-family: "Titillium Web", "Open Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-
+}
+.md-typeset h1 {
+	color: var(--md-typeset-color);
+}
+.md-typeset h2 {
+	color: var(--md-typeset-color);
+	font-weight: normal;
+}
+.md-typeset h3 {
+	color: var(--md-typeset-color);
 }
 
 /* Admonitions */
