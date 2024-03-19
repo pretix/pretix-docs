@@ -30,13 +30,13 @@ pretix offers more than three dozen payment providers. Each one of them is handl
 
 ![Plugins List](../../assets/screens/payment-providers/plugins-list.png)
 
-Choose the payment providers that you want to use from the top recommendations and the list and click the "Enable" button next to them. You can tell that a plugin is enabled by the green "✓ Active" tag. You can disable the default plugins that you don't want to use. 
+Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. You can tell that a plugin is enabled by the green "✓ Active" tag. You can disable the default plugins that you don't want to use. 
 
 ### Settings for Payment Providers 
 
 ![Payment Settings](../../assets/screens/payment-providers/payment-settings.png)
 
-Browse to [Your Event] → "Settings" → "Payment". The "Payment providers" tab displays the list of active payment providers. Every payment provider that you have enabled the plugin for on the "Plugins" page appears in this list. By default, this list includes Bank transfer, Gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. You can edit and enable the payment providers by clicking the "⚙ Settings" button next to them. 
+Browse to [Your Event] → "Settings" → "Payment". The "Payment providers" tab on this page displays the list of active payment providers. Every payment provider that you have enabled the plugin for on the "Plugins" page appears in this list. By default, this list includes Bank transfer, Gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. You can edit and enable the payment providers by clicking the :btn:⚙ Settings: button next to them. 
 
 Each payment method requires some mandatory information and settings before you can enable it. For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the special conditions that apply to this payment method. 
 
@@ -44,7 +44,7 @@ You can also apply a wide range of optional settings to each payment provider. F
 
 ![Payment External](../../assets/screens/payment-providers/payment-external.png)
 
-If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. For example, the settings page for Stripe contains a "Connect with Stripe" button. Clicking this button redirects you to stripe.com and opens a dialog for authorizing the connection between your Stripe and pretix accounts. Once the connection has been confirmed, the settings page for the payment provider contains the usual mandatory and optional settings. 
+If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. For example, the settings page for Stripe contains a :btn:Connect with Stripe: button. Clicking this button redirects you to stripe.com and opens a dialog for authorizing the connection between your Stripe and pretix accounts. Once the connection has been confirmed, the settings page for the payment provider contains the usual mandatory and optional settings. 
 
 ### Deadlines
 
@@ -58,7 +58,12 @@ Browse to [Your Event] → "Settings" → "Payment". The "Deadlines" tab lets yo
 
 ## Troubleshooting 
 
-What are common problems that could be encountered here? How do you solve them? 
+__A payment provider does not show up in [Your Event] → "Settings" → "Payment"__
+Browse to [Your Event] → "Settings" → "Plugins" and open the "Payment providers" tab. Enable the corresponding plugin. Make sure it has the green "✓ Active" tag next to it. 
+
+__A payment provider does not show up in your test shop/Customers cannot select a payment method during their purchase__ 
+Browse to [Your Event] → "Settings" → "Payment" and open the "Payment" tab. Click the :btn:⚙ Settings: button next to the payment provider that isn't showing up in the shop. Check the "☑ Enable payment method" box. Then scroll to the bottom of the page and click :btn:Save:. If any mandatory information hasn't been filled out yet, the webpage will notify you. Fill out all the mandatory information and click :btn:Save: again. The corresponding payment method should now show up in your online shop. 
+
 
 ## Further Information
 
