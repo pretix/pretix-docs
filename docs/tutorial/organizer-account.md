@@ -1,5 +1,18 @@
 # Organizer account
 
+An organizer account represents an entity that is running events, for example a company, an institution. or you yourself. You have already created an organizer account when you created your personal account - or, if you were invited to pretix by a co-organizer, then accepting that invitation has already given you (partial) access to an organizer account. 
+
+
+![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../../assets/screens/account/dashboard.png)
+
+After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), you are greeted by the dashboard. Click the :btn:Organizers: button in the sidebar to get to the Organizers page. 
+
+![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Awesome Event Corporation'. There is a filter function for the list of organizers and a button labeled 'Create a new organizer'](../../assets/screens/organizer/organizers.png) 
+
+Clicking your organizer account in the list takes you to a page displaying all events associated with that organizer. 
+
+![pretix.eu organizers page, showing the list of all events associated with 'Awesome Event Corporation'. There is a filter function for the list of events and a button labeled 'Create a new event'](../../assets/screens/organizer/event-list.png) 
+
 The basis of all your operations within pretix is your organizer account. It represents an entity that is running
 events, for example a company, yourself or any other institution.
 Every event belongs to one organizer account and events within the same organizer account are assumed to belong together
