@@ -2,7 +2,6 @@
 
 An organizer account represents an entity that is running events, for example a company, an institution. or you yourself. You have already created an organizer account when you created your personal account - or, if you were invited to pretix by a member of your team, then accepting that invitation has already given you (partial) access to an organizer account. 
 
-
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), you are greeted by the dashboard. Click the :btn:Organizers: button in the sidebar to get to the Organizers page. 
@@ -13,32 +12,15 @@ Clicking your organizer account in the list takes you to a page displaying all e
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Awesome Event Corporation'. There is a filter function for the list of events and a button labeled 'Create a new event'](../../assets/screens/organizer/event-list.png) 
 
- - explain how to invite people 
+Click :btn:Settings: in the sidebar to set up your organizer account. This lands you on the general settings page for the organizer account. The fields for Name and Short form are already filled out. The short form cannot be changed because it is the organizer's unique identifier. If you are in Germany, it is recommended that you enter the URL to your website's imprint in the Imprint URL field. You don't have to touch the other options on this page right now. 
+
+![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../../assets/screens/organizer/general-settings.png) 
+
+Switching to the 'Organizer page' tab at the top lets you set a Header image, Homepage text, Default overview style for events, and Footer links for your organizer page. 
+
+On the Localization tab, you can choose which languages to make the shop available in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English will be used as the fallback langauge for missing translations. Please choose a country or region from  the drop-down Region menu. We will use this to determine default date, time, address and phone number formatting. Please also choose a Default timezone from the drop-down menu with that title. 
 
 
-
-The basis of all your operations within pretix is your organizer account. It represents an entity that is running
-events, for example a company, yourself or any other institution.
-Every event belongs to one organizer account and events within the same organizer account are assumed to belong together
-in some sense, whereas events in different organizer accounts are completely isolated.
-
-If you want to use the hosted pretix service, you can create an organizer account on our [Get started](https://pretix.eu/about/en/setup) page. Otherwise,
-ask your pretix administrator for access to an organizer account.
-
-You can find out all organizer accounts you have access to by going to your global dashboard (click on the pretix logo
-in the top-left corner) and then select "Organizers" from the navigation bar on the left side. Then, choose one of the
-organizer accounts presented, if there are multiple of them:
-
-![Organizer list](../../assets/screens/organizer/list.png)
-
-This overview shows you all event that belong to the organizer and you have access to:
-
-![Event list](../../assets/screens/organizer/event_list.png)
-
-With the "Edit" button at the top, next to the organizer account name, you can modify properties of the organizer
-account such as its name and display settings for the public profile page of the organizer account:
-
-![Edit organizer](../../assets/screens/organizer/edit.png)
 
 !!! tip
 

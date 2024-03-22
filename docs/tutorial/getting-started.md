@@ -2,7 +2,7 @@
 
 Welcome to the pretix tutorial. This is your step-by-step guide to hosting your very first event with pretix.
 
-First things first: Before you can do anything with pretix, you have to create an account. Don't worry: creating an account is completely free of charge and puts you under no obligation to ever pay us any money. You are free to play around with our software to your heart's content before you decide whether pretix is the right choice for you. 
+Before you can do anything with pretix, you have to create an account. Don't worry: creating an account is __completely free__ of charge and puts you under no obligation to give us any money. You are free to play around with our software to your heart's content before you decide whether pretix is the right choice for you. 
 
 !!! Note
 
