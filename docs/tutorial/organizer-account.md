@@ -26,15 +26,22 @@ The fields for "Name" and "Short form" are already filled out. The short form ca
 
 If you are operating from Germany, it is recommended that you enter the URL to your website's imprint in the "Imprint URL" field. 
 
-Your input into the Contact address field will be displayed publicly to allow your customers to contact you. 
+Your input into the "Contact address" field will be displayed publicly to allow your customers to contact you. 
 
 You can add an info text to your organizer account. The info text is not displayed anywhere by default, but you can use this in ticket templates if you want to.
 
 ## Organizer page 
 
+Switching to the "Organizer page" tab at the top allows you to set customizations for your organizer page. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn👁 Public profile: button in the bar at the top. 
 
+![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../../assets/screens/organizer/organizer-page-public-profile.png) 
 
-Switching to the 'Organizer page' tab at the top lets you set a Header image, Homepage text, Default overview style for events, and Footer links for your organizer page. 
+By default, the organizer name will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image. The image should include your logo. It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. If you want to use a larger header image on your public profile, you should check the "Use header image in its full size" box. This option works best with images of 1170 or more pixels in width. In any case, we recommend not using an image with small details, since it will be resized for smaller screens. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. You are also given the option to use this header image on pages for events that do not have their own individually uploaded logo. 
+
+In the "Homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the next segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
+
+You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
+
 
 ## Localization
 
