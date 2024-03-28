@@ -30,6 +30,26 @@ Your input into the "Contact address" field will be displayed publicly to allow 
 
 You can add an info text to your organizer account. The info text is not displayed anywhere by default, but you can use this in ticket templates if you want to.
 
+Confirm your changes on the "General" tab by clicking the :btn:Save: button on the bottom of the page. 
+
+## Localization
+
+After saving the general settings, switch to the "Localization" tab. We recommend changing localization settings __before__ customizing the organizer page because the localization settings determine which customizations are possible on the organizer page. 
+
+Under "Available languages", you can choose which languages your ticket shop will be made available in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English is used as the fallback langauge for missing translations. 
+
+This setting also determines the default languages when creating new events, though languages can be activated or deactivated for each event individually.
+
+!!! Note 
+
+    pretix offers many settings and customizations where you input your own text, for example, the description on the organizer page, the name of your events, and so on. You will need to provide a translation in every language you choose here for each individual item. This can amount to a lot of work. We recommend not using more than two or three languages at a time unless you are working with a dedicated translators. 
+
+
+Choose a country or region from  the drop-down "Region" menu. The selection will be used to determine default date, time, address and phone number formatting. The language chosen above will take a higher priority than the region. 
+
+Also choose a "Default timezone" from the drop-down menu with that title. 
+
+
 ## Organizer page 
 
 Switching to the "Organizer page" tab at the top allows you to set customizations for your organizer page. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn👁 Public profile: button in the bar at the top. 
@@ -41,20 +61,3 @@ By default, the organizer name will be displayed in the page header of your publ
 In the "Homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the next segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
-
-
-## Localization
-
-On the Localization tab, you can choose which languages to make the shop available in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English will be used as the fallback langauge for missing translations. Please choose a country or region from  the drop-down Region menu. We will use this to determine default date, time, address and phone number formatting. Please also choose a Default timezone from the drop-down menu with that title. 
-
-
-
-!!! tip
-
-    The profile page will be shown as ``https://pretix.eu/slug/`` where ``slug`` is to be replaced by the short form of
-    the organizer name that you entered during account creation and ``pretix.eu`` is to be replaced by your
-    installation's domain name if you are not using our hosted service.
-
-    Instead, you can also use a custom domain for the profile page and your events, for example
-    ``https://tickets.example.com/`` if ``example.com`` is a domain that you own.  Head to :ref:`custom_domain` to learn
-    more.

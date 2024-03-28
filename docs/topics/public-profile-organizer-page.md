@@ -1,13 +1,14 @@
 # Public profile/Organizer page
 
-This article introduces you to the public profile of your organizer in pretix and shows you how to customize it via the "Organizer page" tab in the organizer settings. Possible customizations include a header image, website text, the default overview style for upcoming events, and links for the page footer. 
+This article introduces you to the public profile of your organizer in pretix and shows you how to customize it via the "Organizer page" and the "Shop design" tabs in the organizer settings. Possible customizations include a header image, website text, the default overview style for upcoming events, and links in the page footer. 
 
 ## Prerequisits
 
-This article assumes that you access to an organizer account, either because you created it yourself when you signed up on pretix.eu, or because you were invited to become part of a pretix team by a co-organizer. 
+This article assumes that you have access to an organizer account, either because you created it yourself when you signed up on pretix.eu, or because you were invited and granted access by a co-organizer. 
 
 If you want to use a header image on your public profile, please prepare an image that meets the following criteria: 
- - shows your company name/logo 
+
+ - contains your logo 
  - .png or .jpg format 
  - resolution of 1140 × 120 pixels or smaller 
  - (alternatively: an image with a width of 1170 pixels or more)
@@ -16,6 +17,10 @@ If you want to use a header image on your public profile, please prepare an imag
 We recommend that you make a final choice as to which languages the public profile will be made available in. Go to the "Localization" tab and choose your languages from the list before adding text or links on the "Organizer page" tab. 
 
 ## How To
+
+In broad terms, the "Organizer page" tab lets you define the contents of your public profile and the "Shop design" tab lets you customize your color and font preferences. It does not matter which tab you visit first. 
+
+### Organizer page
 
 Browse to "Organizers"→[Your Organizer]→"Settings" and click on the "Organizer page" tab. This page allows you to set customizations for your organizer page. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn👁 Public profile: button in the bar at the top. 
 
@@ -26,6 +31,29 @@ By default, the organizer name will be displayed in the page header of your publ
 In the "Homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the next segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
+
+### Shop design 
+
+Browse to "Organizers"→[Your Organizer]→"Settings" and click on the "Shop design" tab. All the settings on this page are purely optional as the default design is already perfectly serviceable and in line with the overall design of the pretix website. However, this page offers you the possibility to bring your pretix-powered online shop more in line with your own website's design. 
+
+You can freely choose four different colors for your shop design. The notification underneath the input field display one of three possible messages, depending on the contrast of the color you chose compared to the white page background: 
+
+ - Your color has great contrast and is very easy to read!
+ - Your color has decent contrast and is probably good-enough to read!
+ - Your color has bad contrast for text on white background, please choose a darker shade.
+
+Please heed these hints when choosing the design colors for your shop. 
+
+!!! Note 
+    High contrast is an important factor in your customers' ability to access your shop. They may be viewing your shop on a small device, a subpar screen, in high ambient light, or with visual impairment. Even a design that looks good to you in the public profile preview may not have high enough contrast for those cases. 
+
+The primary color is used for headlines, links, and focus design elements. The default setting is a light purple which has fairly high contrast on white backgrounds and fits into the overall pretix color scheme. 
+
+You can customize the accent colors for success and for errors. We strongly suggest using a shades of green and red here. 
+
+The page background color refers to the background and __not__ the main body of the page. All text and elements will be displayed on the off-white main body, so you are free to choose a dark background along with dark primary and accent colors without sacrificing readability. 
+
+
 
 ## Troubleshooting 
 
