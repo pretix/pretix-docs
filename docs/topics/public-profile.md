@@ -1,6 +1,6 @@
 # Public profile/Organizer page
 
-This article introduces you to the public profile of your organizer in pretix and shows you how to customize it via the "Organizer page" and the "Shop design" tabs in the organizer settings. Possible customizations include a header image, website text, the default overview style for upcoming events, and links in the page footer. 
+This article introduces you to the public profile of your organizer in pretix and shows you how to customize it via the "Organizer page" and the "Shop design" tabs in the organizer settings. Possible customizations include a header image, website text, the default overview style for upcoming events, and links in the page footer. The public profile is available at https://pretix.eu/awesome-corp/ where "awesome-corp" is replaced with your organizer short form. 
 
 ## Prerequisits
 
@@ -22,7 +22,7 @@ In broad terms, the "Organizer page" tab lets you define the contents of your pu
 
 ### Organizer page
 
-Browse to "Organizers"→[Your Organizer]→"Settings" and click on the "Organizer page" tab. This page allows you to set customizations for your organizer page. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn👁 Public profile: button in the bar at the top. 
+Browse to "Organizers"→[Your Organizer]→"Settings" and click on the "Organizer page" tab. This page lets you define the contents of your public profile. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn👁 Public profile: button in the bar at the top. 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../../assets/screens/organizer/organizer-page-public-profile.png) 
 
@@ -32,11 +32,11 @@ In the "Homepage text" fields, you can provide text to be displayed on your publ
 
 You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
 
-### Shop design 
+### Shop design
 
 Browse to "Organizers"→[Your Organizer]→"Settings" and click on the "Shop design" tab. All the settings on this page are purely optional as the default design is already perfectly serviceable and in line with the overall design of the pretix website. However, this page offers you the possibility to bring your pretix-powered online shop more in line with your own website's design. 
 
-You can freely choose four different colors for your shop design. The notification underneath the input field display one of three possible messages, depending on the contrast of the color you chose compared to the white page background: 
+You can freely choose four different colors for your shop design. The notification underneath the input field display one of three possible messages, depending on the contrast of the color you choose compared to the white page background: 
 
  - Your color has great contrast and is very easy to read!
  - Your color has decent contrast and is probably good-enough to read!
