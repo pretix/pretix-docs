@@ -38,6 +38,8 @@ Confirm your changes on the "General" tab by clicking the :btn:Save: button on t
 
 ## Localization 
 
+![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../../assets/screens/organizer/localization.png) 
+
 After saving the general settings, switch to the "Localization" tab. We recommend changing localization settings __before__ changing any settings on the "Organizer page" tab because the localization settings determine which customizations are available there. 
 
 Under "Available languages", you can choose which languages your ticket shop will be published in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English is used as the fallback langauge for missing translations. 
@@ -54,6 +56,8 @@ Also choose a "Default timezone" from the drop-down menu with that title.
 
 ## Organizer page 
 
+![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../../assets/screens/organizer/organizer-page.png) 
+
 Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn👁 Public profile: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/, where "awesome-corp" is replaced with your organizer short form. 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../../assets/screens/organizer/organizer-page-public-profile.png) 
@@ -66,11 +70,15 @@ You can choose the "Default overview style" for events on your public profile fr
 
 ## Shop design 
 
+![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../../assets/screens/organizer/shop-design.png) 
+
 Switch to the "Shop design" tab. Here, you can customize the colors and font used for your public profile and the ticket shops you're going to create. You can change the colors so that they're in line with the palette you use for your other media. Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
 
 You can also choose your preferred font from the list. If you're creating a ticket shop in a language that doesn't use the Latin alphabet, you should choose a font that supports the writing system you need. All available fonts support the Latin alphabet. The preview should give you an idea which writing systems each font supports. So for example, if you're creating a ticket shop in a language that uses the Cyrillic alphabet, you should pick a font such as DejaVu Sans or Noto Sans. 
 
 ## Customer accounts 
+
+![Organizer settings page, on the customer accounts tab, showing options for whether or not to allow customers to create accounts, whether or not to match orders based on mail addresses, as well as options for name formatting and allowed titles](../../assets/screens/organizer/customer-accounts.png) 
 
 Switch to the "Customer accounts" tab. By default, all boxes on this page should be unchecked. If you don't plan for your customers to create accounts, you can leave them unchecked and you don't have to take any action on this tab. 
 
@@ -80,9 +88,13 @@ Checking that box makes another box appear that is checked by default: "Allow cu
 
 ## Gift cards 
 
+![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../../assets/screens/organizer/gift-cards.png) 
+
 The gift cards tab lets you make organizer-level settings for gift cards. You can choose how many years gift cards are valid for. This field is empty by default, meaning gift cards will be valid in your shop indefinitely. You can also choose how long the gift card codes are. The default is 12 digits and you can leave this as it is unless you have a specific reason. 
 
 ## Privacy 
+
+![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../../assets/screens/organizer/privacy.png) 
 
 On the "Privacy" tab, please provide an URL pointing to your privacy policy for each language you activated. The default dialog text and button labels for the cookie consent banner should already be filled out. Feel free to edit or replace these as you see fit. 
 
@@ -92,8 +104,12 @@ Ultimately, it is your responsibility to make sure you comply with all relevant 
 
 ## Reusable media 
 
+![Organizer settings page, on the reusable media tab, showing a checkbox for enabling reusable media and a warning saying that this feature is experimental](../../assets/screens/organizer/reusable-media.png) 
+
 Reusable media are currently an experimental feature. We recommend that you do not enable reusable media unless you have a specific use case in mind. Please contact us if you intend to use reusable media for your event. 
 
 ## Invoices 
+
+![Organizer settings page, on the reusable media tab, showing a checkbox for allowing updating existing invoices and a note recommending to keep this turned off for most jurisdications](../../assets/screens/organizer/invoices.png) 
 
 On the "Invoices" tab, you can choose whether you want to "Allow to update existing invoices". By default, invoices are immutable once they have been issued. For most jurisdictions, we recommend leaving this option turned off and always issuing a new invoice if a change needs to be made. Please seek legal advice regarding this issue before you check the "Allow to update existing invoices" box. 
