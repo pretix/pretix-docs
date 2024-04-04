@@ -2,7 +2,7 @@
 
 What does this article tell you? What does it not tell you? For example, in the article on gift cards, quickly explain the difference between gift cards and vouchers and link to the article on vouchers. 
 
-## Prerequisits
+## Prerequisites
 
 What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
 
