@@ -1,4 +1,4 @@
-# Public profile/Organizer page
+# Public profile
 
 This article introduces you to the public profile of your organizer in pretix and shows you how to customize it via the "Organizer page" and the "Shop design" tabs in the organizer settings. Possible customizations include a header image, website text, the default overview style for upcoming events, and links in the page footer. The public profile is available at https://pretix.eu/awesome-corp/ where "awesome-corp" is replaced with your organizer short form. 
 
