@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to the pretix tutorial. This is your step-by-step guide to hosting your very first event with pretix.
+Welcome to the pretix tutorial. This is your step-by-step guide to hosting your very first event using pretix.
 
 Before you can do anything with pretix, you have to create an account. Don't worry: creating an account is __completely free__ of charge and puts you under no obligation to give us any money. You are free to play around with our software to your heart's content before you decide whether pretix is the right choice for you. 
 
@@ -29,6 +29,6 @@ The name of the company, association or institution that you want to organize ev
     The short form may only contain letters, numbers, dots and dashes. __It may not contain spaces.__ It may not contain special characters. Spaces and special characters would render the URL invalid. 
 
 
-Once you have filled out this form, please also read our privacy policy and our terms of service. They are linked on this page. Once you have read them both carefully, check the boxes to confirm. 
+Once you have filled out the form, please also read our privacy policy and our terms of service. They are both linked on this page. Once you have read them both carefully, check the boxes to confirm. 
 
-Click the :btn:Continue: and your journey to hosting your first event with pretix can finally begin! 
+Click the :btn:Continue: button and your journey to hosting your first event using pretix can finally begin! 

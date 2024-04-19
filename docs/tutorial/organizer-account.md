@@ -26,7 +26,7 @@ Click :btn:Settings: in the sidebar to set up your organizer account. This lands
 
 ![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../../assets/screens/organizer/general-settings.png) 
 
-The fields for "Name" and "Short form" are already filled out. The short form cannot be changed because it is the organizer's unique identifier. 
+The fields for "Name" and "Short form" are already filled out. It is not possible to change the short form since it is the organizer's unique identifier. 
 
 If you are operating from Germany, it is recommended that you enter the URL to your website's imprint in the "Imprint URL" field. 
 
@@ -42,7 +42,7 @@ Confirm your changes on the "General" tab by clicking the :btn:Save: button on t
 
 After saving the general settings, switch to the "Localization" tab. We recommend changing localization settings __before__ changing any settings on the "Organizer page" tab because the localization settings determine which customizations are available there. 
 
-Under "Available languages", you can choose which languages your ticket shop will be published in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English is used as the fallback langauge for missing translations. 
+Under "Available languages", you can choose which languages your ticket shop will be published in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English is used as the fallback language for missing translations. 
 
 This setting also determines the default languages when creating new events, though languages can be activated or deactivated for each event individually.
 
@@ -64,7 +64,7 @@ Switching to the "Organizer page" tab at the top allows you to add content to th
 
 By default, the name of the organizer  will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image, that is, your logo. It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
 
-In the "Homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the next segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
+In the "Homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the "Localization" segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
 
