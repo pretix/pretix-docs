@@ -13,3 +13,5 @@ After creating an organizer account, the next step is creating an event. One eve
 
 Conferences, workshops, trade fairs, one-off concerts, sale of digital content, multi-day events with combination tickets. 
 
+? the difference between the person who placed the order and the person who the ticket is for (name on the invoice vs. name on the ticket) 
+
