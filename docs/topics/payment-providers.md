@@ -6,7 +6,7 @@ Payment providers are the means by which your customers can pay for their purcha
 
 Setting up payment providers is handled on the event level, so you need to create an event first. 
 
-Please make sure you have an active account with each payment provider you intend to use with pretix. For example, if you want to receive payments via PayPal, you have to have a PayPal business account. 
+Please make sure you have an active account with each payment provider you intend to use with pretix. For example, if you want to receive payments via PayPal, you need to have a PayPal business account. 
 
 ## How To 
 
