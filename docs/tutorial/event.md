@@ -4,7 +4,7 @@ After setting up your organizer account, the next step is creating an event. In 
 
 ![Screenshot of page titled "Create new Event–Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
-In the first step of event creation, you choose the organizer account that is hosting this event–most likely the one you just set up in the previous step of this tutorial. This selection cannot be changed after the event has been created, so make sure that you pick the right organizer account here. 
+Choose the organizer account that is hosting this event–most likely the one you just set up in the previous step of this tutorial. This selection cannot be changed after the event has been created, so make sure that you pick the right organizer account here. 
 
 Next, choose the event type. You have two options: "Singular event or non-event shop" and "Event series or time slot booking". Creating an event series only makes sense if you're planning on hosting the same conference several times or if you're planning for your customers to participate in a series of conferences that they buy tickets for in a single purchase. Creating a singular event is the appropriate choice for most use cases, so we recommend you choose that option. 
 
@@ -18,7 +18,7 @@ Once you are happy with your choices, click :btn:Continue: at the bottom right o
 
 ![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
-In the second step of event creation, you are asked to provide a name and a short form for the event. Let's say you're organizing a conference on xylology in the year 2027. In that case, your "event name" could be "International Xylology Conference 2027" and your short form could be "ixc27". The short form will be appended to your organizer's URL, resulting in an URL such as [https://pretix.eu/isx/ixc27], where "isx" is the name of your organizer account you chose during account creation and ixc27 is the name of the event you're choosing right now. 
+You are now asked to provide a name and a short form for the event. Our example is a conference on xylology in the year 2027. We therefore choose "International Xylology Conference 2027" for the "event name" field, and "ixc27" for the "short form" field. The short form will be appended to your organizer's URL, resulting in an URL such as [https://pretix.eu/isx/ixc27], where "isx" is the name of your organizer account you chose during account creation and ixc27 is the name of the event you're choosing right now. 
 
 !!! Note
 
@@ -26,12 +26,11 @@ In the second step of event creation, you are asked to provide a name and a shor
 
 You also have to pick a start time and a currency for your event. All other fields on this page are optional and can be filled out later. 
 
-
 ![Screenshot of page titled "Create new Event–Step 3", showing an infobox saying 'Please make sure to review all settings extensively. You will probably still need to change some settings manually, e.g. date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
-In the third step of event creation, you are asked if you want to copy information from a previously created event. This step can save you a lot of work from your second event onwards. But since this is the first event you're organizing using pretix, simply leave the default (_"Do not copy"_) and click :btn:Continue: 
+You are then asked if you want to copy information from a previously created event. This step can save you a lot of work from your second event onwards. But since this is the first event you're organizing using pretix, simply leave the default (_"Do not copy"_) and click :btn:Continue: 
 
-![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event.Not pictured: setting up payment options and providing contact information.](../../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
+![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
 
-The next page congratulates you on creating your first event using pretix and gives you a quick overview for products and basic settings for the event. We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
+The next page congratulates you on creating your event. It also gives you a quick overview for products and basic settings for the event. We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 
