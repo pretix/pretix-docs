@@ -1,10 +1,10 @@
 # Payment Providers
 
-Payment providers are the means by which your customers can pay for their purchases in your ticket shop. They include payment methods that are handled within pretix, such as bank transfers and gift cards, and integrations with external services such as Stripe and PayPal. 
+Payment providers are the means by which your customers can pay for their purchases in your ticket shop. They include payment methods that are handled within pretix, such as bank transfers and gift cards, and integrations of external services such as Stripe and PayPal. 
 
 ## Prerequisites
 
-Payment providers are handled on the event level, so you must create an event before you can set up payment providers. 
+Setting up payment providers is handled on the event level, so you need to create an event first. 
 
 Please make sure you have an active account with each payment provider you intend to use with pretix. For example, if you want to receive payments via PayPal, you have to have a PayPal business account. 
 
@@ -17,7 +17,7 @@ Setting up payment providers in pretix involves the following steps:
  3. Enter mandatory info on the settings page for the payment provider
  4. Make optional adjustments
  5. Enable the payment provider
- 6. Repeat steps 1. through 5. for every payment provider you want to use
+ 6. Repeat steps 1 through 5 for each payment provider you want to use
  7. Set deadlines and advanced settings
 
 The following sections will guide you through those steps in detail. 
@@ -26,7 +26,7 @@ The following sections will guide you through those steps in detail.
 
 ![Plugins Top Recommendations](../../assets/screens/payment-providers/plugins-top.png)
 
-pretix offers more than three dozen payment providers. Each one of them is handled by a plugin. To enable plugins for payment providers, browse to [Your Event] → "Settings" → "Plugins". The "Payment providers" tab displays our top recommendations for payment provider plugins: Bank transfer, PayPal and Stripe, and below that, the list of plugins for all other payment providers available in pretix. By default, the plugins for Bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
+pretix allows handling payment via more than three dozen payment providers. Each one of them is handled by a plugin. To enable plugins for payment providers, browse to [Your Event] → "Settings" → "Plugins". The "payment providers" tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe, and below that, the list of plugins for all other payment providers available in pretix. By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
 
 ![Plugins List](../../assets/screens/payment-providers/plugins-list.png)
 
@@ -36,9 +36,9 @@ Choose the payment providers that you want to use from the top recommendations a
 
 ![Payment Settings](../../assets/screens/payment-providers/payment-settings.png)
 
-Browse to [Your Event] → "Settings" → "Payment". The "Payment providers" tab displays the list of active payment providers. Every payment provider that you have enabled the plugin for on the "Plugins" page appears in this list. By default, this list includes Bank transfer, Gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. You can edit and enable the payment providers by clicking the "⚙ Settings" button next to them. 
+Browse to [Your Event] → "Settings" → "Payment". The "payment providers" tab displays the list of active payment providers. Every payment provider that you have enabled the plugin for on the "plugins" page appears in this list. By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe with gift card enabled and all other entries disabled. You can edit and enable the payment providers by clicking the "⚙ Settings" button next to them. 
 
-Each payment method requires some mandatory information and settings before you can enable it. For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the special conditions that apply to this payment method. 
+Each payment method requires some mandatory information and settings before you can enable it. For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the specific conditions that apply to this payment method. 
 
 You can also apply a wide range of optional settings to each payment provider. For example, you can restrict availability of the payment method by date, country and sales channel. 
 
