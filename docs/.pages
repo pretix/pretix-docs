@@ -1,4 +1,6 @@
 nav:
  - ... | index*.md
+ - tutorial
+ - topics
  - user-guide
  - faq.md
