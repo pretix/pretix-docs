@@ -4,6 +4,8 @@
 
 <!-- md:version 2024.1 -->
 
+Clicking the :btn:Connect with Stripe: button redirects you to stripe.com and opens a dialog for authorizing the connection between your Stripe and pretix accounts
+
 On your event dashboard, click on the first tile that shows your shop status. On the lower part of this page, you can
 place your event into "test mode". In "test mode", everything behaves the same, but orders created during test mode can
 later be fully deleted. Be sure to actually delete them when or after you turn off test mode, since test mode orders
