@@ -1,10 +1,10 @@
 # Event 
-
-After setting up your organizer account, the next step is creating an event. In order to create an event, you must be logged in to your [https://pretix.eu/control/](pretix.eu) account. Click the :btn:pretix.eu: button in the top left corner of the website. This takes you to the dashboard, which includes an overview of your upcoming events. Click the :btn:⊕ Create a new event: button. 
+un
+After setting up your organizer accot, the next step is creating an event. In order to create an event, you must be logged in to your [pretix.eu](https://pretix.eu/control/) account. Click the :btn:pretix.eu: button in the top left corner of the website. This takes you to the dashboard, which includes an overview of your upcoming events. Click the :btn:⊕ Create a new event: button. 
 
 ![Screenshot of page titled "Create new Event–Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
-Choose the organizer account that is hosting this event–most likely the one you just set up in the previous step of this tutorial. This selection cannot be changed after the event has been created, so make sure that you pick the right organizer account here. 
+Choose the organizer account that is hosting this event—most likely the one you just set up in the previous step of this tutorial. This selection cannot be changed after the event has been created, so make sure that you pick the right organizer account here. 
 
 Next, choose the event type. You have two options: "Singular event or non-event shop" and "Event series or time slot booking". Creating an event series only makes sense if you're planning on hosting the same conference several times or if you're planning for your customers to participate in a series of conferences that they buy tickets for in a single purchase. Creating a singular event is the appropriate choice for most use cases, so we recommend you choose that option. 
 
@@ -24,7 +24,17 @@ You are now asked to provide a name and a short form for the event. Our example 
 
     The short form may only contain letters, numbers, dots and dashes. __It may not contain spaces.__ It may not contain special characters. Spaces and special characters would render the URL invalid. 
 
-You also have to pick a start time and a currency for your event. All other fields on this page are optional and can be filled out later. 
+You also have to pick a start time and a currency for your event. 
+
+An optional step on this page is choosing a location for your event. Your input into the "location" field will be used to search OpenStreetMap for that location. If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. If no results can be found for your input, you can manually drag the marker on the map to your event location. This will automatically update the "geo coordinates" fields. Alternatively, you can go to  [OpenStreetMap.org](https://www.openstreetmap.org), use the more advanced search function there to find your location, and then copy the address over to the "location" field. 
+
+This page also allows you to set a sales tax rate for your event. If the taxation laws that apply to your event can be covered by a single percentage rule, you can enter that percentage here. If your tax situation is more complicated, you can set specific rules __after__ event creation is finished by navigating to [Your Event] → "Settings" → "Tax rules". 
+
+
+
+{% include "warning-tax.md" %}
+
+
 
 ![Screenshot of page titled "Create new Event–Step 3", showing an infobox saying 'Please make sure to review all settings extensively. You will probably still need to change some settings manually, e.g. date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
