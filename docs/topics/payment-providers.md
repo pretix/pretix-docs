@@ -72,3 +72,5 @@ What other media do we have on the topic? Youtube videos, PDF handouts, vendor d
 ## See Also 
 
 Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
+
+#Payment Providers 
