@@ -36,3 +36,6 @@ You are then asked if you want to copy information from a previously created eve
 
 The next page congratulates you on creating your event. It also gives you a quick overview for products and basic settings for the event. We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 
+Once you click :btn:Save: at the bottom of the page, you will be taken to an overview of the event, which gives you its name, the timeline of tickets sales and presale, the status of your ticket shop (most likely in test mode by this point). 
+
+If the overview warns you that your organizer account is not yet active, please click the link and fill out the necessary information in the form. Activating an account is a manual process and may take some time depending on the availability of our team. 
