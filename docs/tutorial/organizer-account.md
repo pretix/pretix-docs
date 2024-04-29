@@ -62,9 +62,9 @@ Switching to the "Organizer page" tab at the top allows you to add content to th
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../../assets/screens/organizer/organizer-page-public-profile.png) 
 
-By default, the name of the organizer  will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image, that is, your logo. It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
+By default, the name of the organizer  will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image that tells your customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
 
-In the "Homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the "Localization" segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
+In the "homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the "Localization" segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
 
@@ -72,9 +72,11 @@ You can choose the "Default overview style" for events on your public profile fr
 
 ![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../../assets/screens/organizer/shop-design.png) 
 
-Switch to the "Shop design" tab. Here, you can customize the colors and font used for your public profile and the ticket shops you're going to create. You can change the colors so that they're in line with the palette you use for your other media. Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
+Switch to the "Shop design" tab. Here, you can customize the colors and font used for your public profile and the ticket shops you are going to create. You can change the colors so that they're in line with the palette you use for your other media. Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
 
 You can also choose your preferred font from the list. If you're creating a ticket shop in a language that doesn't use the Latin alphabet, you should choose a font that supports the writing system you need. All available fonts support the Latin alphabet. The preview should give you an idea which writing systems each font supports. So for example, if you're creating a ticket shop in a language that uses the Cyrillic alphabet, you should pick a font such as DejaVu Sans or Noto Sans. 
+
+The shop design you set here will be the default for all shops you create for your events in the future. You can make individual adjustments to the event shops. 
 
 ## Customer accounts 
 
@@ -86,12 +88,6 @@ pretix offers some features that only work with customer accounts. If you want t
 
 Checking that box makes another box appear that is checked by default: "Allow customers to log in with email address and password". Keep this box checked if you want customers to log in to your pretix ticket shop directly. Uncheck it if you want them to log in via an external sign-on service. You'll have to enable the corresponding plugin on the event level. 
 
-## Gift cards 
-
-![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../../assets/screens/organizer/gift-cards.png) 
-
-The gift cards tab lets you make organizer-level settings for gift cards. You can choose how many years gift cards are valid for. This field is empty by default, meaning gift cards will be valid in your shop indefinitely. You can also choose how long the gift card codes are. The default is 12 digits and you can leave this as it is unless you have a specific reason. 
-
 ## Privacy 
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../../assets/screens/organizer/privacy.png) 
@@ -102,14 +98,4 @@ pretix itself only ever sets cookies that are required to provide the service re
 
 Ultimately, it is your responsibility to make sure you comply with all relevant laws. We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
-## Reusable media 
 
-![Organizer settings page, on the reusable media tab, showing a checkbox for enabling reusable media and a warning saying that this feature is experimental](../../assets/screens/organizer/reusable-media.png) 
-
-Reusable media are currently an experimental feature. We recommend that you do not enable reusable media unless you have a specific use case in mind. Please contact us if you intend to use reusable media for your event. 
-
-## Invoices 
-
-![Organizer settings page, on the reusable media tab, showing a checkbox for allowing updating existing invoices and a note recommending to keep this turned off for most jurisdications](../../assets/screens/organizer/invoices.png) 
-
-On the "Invoices" tab, you can choose whether you want to "Allow to update existing invoices". By default, invoices are immutable once they have been issued. For most jurisdictions, we recommend leaving this option turned off and always issuing a new invoice if a change needs to be made. Please seek legal advice regarding this issue before you check the "Allow to update existing invoices" box. 
