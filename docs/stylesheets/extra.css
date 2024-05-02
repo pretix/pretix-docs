@@ -15,7 +15,16 @@
 /* Typo */
 h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summary {
     font-family: "Titillium Web", "Open Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-
+}
+.md-typeset h1 {
+	color: var(--md-typeset-color);
+}
+.md-typeset h2 {
+	color: var(--md-typeset-color);
+	font-weight: normal;
+}
+.md-typeset h3 {
+	color: var(--md-typeset-color);
 }
 
 /* Admonitions */
@@ -173,5 +182,15 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
   box-shadow:0 0 0 1px inset var(--md-accent-fg-color--transparent);
   padding:.2rem .3rem;
   color: var(--md-default-fg-color--light);
+}
+
+
+/* Custom markup */
+.md-typeset .typo-btn {
+	display: inline-block;
+  	border: 1px solid var(--md-accent-fg-color--transparent);
+  	background: var(--md-accent-fg-color--transparent);
+	padding: 1px 4px;
+	border-radius: 4px;
 }
 
