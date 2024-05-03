@@ -12,8 +12,6 @@ automatisch den Zahlungen zugeordnet werden können.
 Der einfachste Weg, Zahlungsdaten zu importieren, ist der Download einer CSV-Datei aus Ihrem Online-Banking. Die meisten Banken bieten einen CSV
 Export in irgendeiner Form an. Sie können in pretix unter "Bankdaten importieren" eine neue Datei hochladen:
 
-![Bankdaten hochladen](img/bank1.png)
-
 Wenn Sie eine Datei zum ersten Mal hochladen, weiß pretix nicht, welche Informationen in welcher Spalte enthalten sind, da jede
 Bank völlig unterschiedliche CSV-Dateien erstellt. Daher wird pretix Sie nach diesen Informationen fragen. Es zeigt Ihnen die
 Daten der von Ihnen importierten Datei und fordert Sie auf, die Bedeutung der Spalten zu definieren. Sie können eine Spalte auswählen, die das

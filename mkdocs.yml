@@ -1,5 +1,6 @@
 site_name: pretix Documentation
 repo_url: https://github.com/pretix/pretix-docs
+site_url: https://docs.pretix.eu
 site_author: pretix
 copyright: 2023 rami.io GmbH
 validation:
