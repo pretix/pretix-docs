@@ -40,7 +40,7 @@ Accept late payments
 
 Tax rule for payment fees
   If you pass on the payment method fees to your customers, you will most likely also need to pay sales tax on those
-  fees. Here, you can configure the tax rate. Read [Taxes](../taxes) for more information.
+  fees. Here, you can configure the tax rate. Read Taxes for more information.
 
 Below, you can configure the details of the various payment methods. You can find information on their different settings
 on the next pages of this documentation, but there are a few things most of them have in common:
@@ -49,7 +49,7 @@ Enable payment method
   Check this box to allow customers to use this method. At least one method needs to be active to process non-free orders.
 
 Additional fee (absolute and percentage), Calculate the fee from the total value including the fee
-  These fields allow you to pass fees on to your customers instead of paying them yourselves. Read [payment fees](fees.md)
+  These fields allow you to pass fees on to your customers instead of paying them yourselves. Read payment fees
   for documentation on how this behaves.
 
 Available until

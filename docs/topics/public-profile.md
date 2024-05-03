@@ -23,7 +23,7 @@ This section tells you how to define the contents of your public profile via the
 
 Browse to "Organizers"→[Your Organizer]→"Settings" and click on the "Organizer page" tab. This page lets you define the contents of your public profile. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn👁 Public profile: button in the bar at the top. 
 
-![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../../assets/screens/organizer/organizer-page-public-profile.png) 
+![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
 By default, the organizer name will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image. The image should be a .png or .jpg file with a resolution of 1140 × 120 pixels or slightly smaller. It should tell your customers who is organizing the event (i.e., it should contain your company name, logo, or recognizable design). 
 

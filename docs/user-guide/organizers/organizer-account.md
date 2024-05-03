@@ -16,7 +16,7 @@ organizer accounts presented, if there are multiple of them:
 
 This overview shows you all event that belong to the organizer and you have access to:
 
-![Event list](../../assets/screens/organizer/event_list.png)
+![Event list](../../assets/screens/organizer/event-list.png)
 
 With the "Edit" button at the top, next to the organizer account name, you can modify properties of the organizer
 account such as its name and display settings for the public profile page of the organizer account:
