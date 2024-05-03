@@ -44,9 +44,9 @@ Once you click :btn:Save: at the bottom of the page, you will be taken to an ove
 
 ## Event setup 
 
-Now that you have created your event, you have access to all possible options for the event. You can visit the dashboard for your event by clicking the :btn:pretix.eu: button in the top left and then clicking the event you just created in the list titled "your upcoming events". The dashboard for your event gives you an overview 
+Now that you have created your event, you have access to all possible options for the event. You can visit the dashboard for your event by clicking the :btn:pretix.eu: button in the top left and then clicking the event you just created in the list titled "your upcoming events". The dashboard for your event gives you an overview of the event's basic information and status. It allows you to leave an internal comment for you and your team and it logs recent changes. 
 
-![Screenshot of dashboard for a demo event titled International Xylology Conference 2027, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot" ) 
+![Screenshot of dashboard for a demo event titled International Xylology Conference 2027, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
 ## Account activation 
 
