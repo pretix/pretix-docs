@@ -1,18 +1,17 @@
-name: Deployment
+name: Validate
 
 on:
   pull_request:
     branches: [ "main" ]
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v5
       with:
         python-version: 3.11
-    - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
     - name: Write version file
       run: git describe --always > version.txt
     - name: Install dependencies
