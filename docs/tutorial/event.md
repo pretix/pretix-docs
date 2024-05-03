@@ -42,11 +42,17 @@ Fill out the contact address and imprint URL in the "getting in touch with you" 
 
 Once you click :btn:Save: at the bottom of the page, you will be taken to an overview of the event, which gives you its name, the timeline of tickets sales and presale, the status of your ticket shop (most likely in test mode by this point). 
 
-## Event setup 
+## Dashboard
 
 Now that you have created your event, you have access to all possible options for the event. You can visit the dashboard for your event by clicking the :btn:pretix.eu: button in the top left and then clicking the event you just created in the list titled "your upcoming events". The dashboard for your event gives you an overview of the event's basic information and status. It allows you to leave an internal comment for you and your team and it logs recent changes. 
 
 ![Screenshot of dashboard for a demo event titled International Xylology Conference 2027, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
+
+## Customer and attendee data 
+
+Your attendees probably want some sort of certificate of participation. That means you need to record their name and affiliation during the purchase. Navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. Under the "attendee data (once per personalized ticket)" subheading, set "ask for attendee names", "ask for email addresses per ticket" and "ask for company per ticket" to "ask, but do not require input". Do this for all three questions. You can also make input mandatory, ask for postal addresses per ticket, and add custom fields if necessary. In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. An explanation such as "this information is necessary for issuing each participant a certificate of participation" should suffice. 
+
+Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. We recommend that you finalize your choice here before taking your ticket shop live because changing this after already having received orders can lead to unexpected behavior when sorting or changing names. 
 
 ## Account activation 
 
