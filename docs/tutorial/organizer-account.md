@@ -10,21 +10,21 @@ We still recommend reading this article and going through the organizer account 
 
 ## Navigating to the organizer account settings 
 
-![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../../assets/screens/account/dashboard.png)
+![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), you are greeted by the dashboard. Click the :btn:Organizers: button in the sidebar to get to the Organizers page. 
 
-![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Awesome Event Corporation'. There is a filter function for the list of organizers and a button labeled 'Create a new organizer'](../../assets/screens/organizer/organizers.png) 
+![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Awesome Event Corporation'. There is a filter function for the list of organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
 Clicking your organizer account in the list takes you to a page displaying all events associated with that organizer. 
 
-![pretix.eu organizers page, showing the list of all events associated with 'Awesome Event Corporation'. There is a filter function for the list of events and a button labeled 'Create a new event'](../../assets/screens/organizer/event-list.png) 
+![pretix.eu organizers page, showing the list of all events associated with 'Awesome Event Corporation'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
 Click :btn:Settings: in the sidebar to set up your organizer account. This lands you on the general settings page for the organizer account. 
 
 ## General 
 
-![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../../assets/screens/organizer/general-settings.png) 
+![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
 The fields for "Name" and "Short form" are already filled out. It is not possible to change the short form since it is the organizer's unique identifier. 
 
@@ -38,7 +38,7 @@ Confirm your changes on the "General" tab by clicking the :btn:Save: button on t
 
 ## Localization 
 
-![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../../assets/screens/organizer/localization.png) 
+![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
 After saving the general settings, switch to the "Localization" tab. We recommend changing localization settings __before__ changing any settings on the "Organizer page" tab because the localization settings determine which customizations are available there. 
 
@@ -54,11 +54,11 @@ Also choose a "Default timezone" from the drop-down menu with that title.
 
 ## Organizer page 
 
-![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../../assets/screens/organizer/organizer-page.png) 
+![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
 Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn👁 Public profile: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/, where "awesome-corp" is replaced with your organizer short form. 
 
-![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../../assets/screens/organizer/organizer-page-public-profile.png) 
+![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
 By default, the name of the organizer  will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image that tells your customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
 
@@ -68,7 +68,7 @@ You can choose the "Default overview style" for events on your public profile fr
 
 ## Shop design 
 
-![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../../assets/screens/organizer/shop-design.png) 
+![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../assets/screens/organizer/shop-design.png) 
 
 Switch to the "Shop design" tab. Here, you can customize the colors and font used for your public profile and the ticket shops you are going to create. You can change the colors so that they're in line with the palette you use for your other media. Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
 
@@ -78,7 +78,7 @@ The shop design you set here will be the default for all shops you create for yo
 
 ## Customer accounts 
 
-![Organizer settings page, on the customer accounts tab, showing options for whether or not to allow customers to create accounts, whether or not to match orders based on mail addresses, as well as options for name formatting and allowed titles](../../assets/screens/organizer/customer-accounts.png) 
+![Organizer settings page, on the customer accounts tab, showing options for whether or not to allow customers to create accounts, whether or not to match orders based on mail addresses, as well as options for name formatting and allowed titles](../assets/screens/organizer/customer-accounts.png) 
 
 Switch to the "Customer accounts" tab. By default, all boxes on this page should be unchecked. If you don't plan for your customers to create accounts, you can leave them unchecked and you don't have to take any action on this tab. 
 
@@ -88,7 +88,7 @@ Checking that box makes another box appear that is checked by default: "Allow cu
 
 ## Privacy 
 
-![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../../assets/screens/organizer/privacy.png) 
+![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
 On the "Privacy" tab, please provide an URL pointing to your privacy policy for each language you activated. The default dialog text and button labels for the cookie consent banner should already be filled out. Feel free to edit or replace these as you see fit. 
 
