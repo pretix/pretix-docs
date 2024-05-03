@@ -1,5 +1,7 @@
 # Event 
 
+## Event creation 
+
 After setting up your organizer account, the next step is creating an event. In order to create an event, you must be logged in to your [pretix](https://pretix.eu/control/) account. Click the :btn:pretix.eu: button in the top left corner of the website. This takes you to the dashboard, which includes an overview of your upcoming events. Click the :btn:⊕ Create a new event: button. 
 
 ![Screenshot of page titled "Create new Event–Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
@@ -39,5 +41,11 @@ The next page congratulates you on creating your event. It also gives you a quic
 Fill out the contact address and imprint URL in the "getting in touch with you" section near the bottom of the page. Provide a general email address where your customers can contact you in the "contact address" field. Provide a URL pointing to legal imprint information for your organization in the "imprint URL" field. These two pieces of information are mandatory for your ticket shop to go live. 
 
 Once you click :btn:Save: at the bottom of the page, you will be taken to an overview of the event, which gives you its name, the timeline of tickets sales and presale, the status of your ticket shop (most likely in test mode by this point). 
+
+## Event setup 
+
+Now that you have created your event, you have access to all possible options for the event. 
+
+## Account activation 
 
 If the overview warns you that your organizer account is not yet active, please click the link and fill out the necessary information in the form. Activating an account is a manual process and may take some time depending on the availability of our team. 
