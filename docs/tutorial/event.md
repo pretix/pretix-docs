@@ -57,3 +57,10 @@ Under "other settings", you can choose the format in which pretix will ask atten
 ## Account activation 
 
 If the overview warns you that your organizer account is not yet active, please click the link and fill out the necessary information in the form. Activating an account is a manual process and may take some time depending on the availability of our team. 
+
+## Texts 
+
+Open the "texts" tab. Here, you can define texts for the store page for welcoming your customers and guiding them through the process of purchasing a ticket. All of the texts are optional. They support simple and human-readable formatting via Markdown. Provide a translation for each language you chose in the localization tab. 
+
+## Shop design 
+
