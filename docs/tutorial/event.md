@@ -74,7 +74,7 @@ The "social media image" option lets you upload a .png  or .jpg file that will b
 
 !!! Warning
 
-    Unlocking the color and font settings is not reversible. Only click the :btn:🔓 Unlock: button if you are absolutely positive that you want to make changes specifically to shop design of the event. 
+    Unlocking the color and font settings is not reversible. Only click the :btn:🔓 Unlock: button if you are absolutely positive that your event shop should have different color and font settings than your organizer's public profile. Once the settings have been unlocked, they have to be adjusted independently for this event. 
 
 By default, the section below is locked. These settings are currently set on organizer level. This way, you can easily change them for all of your events at the same time. You can either go to the organizer settings to change them for all your events or you can unlock them to change them for this event individually. If you wish to make individual adjustments to the shop design of the event, click the :btn:🔓 Unlock: button. This will allow you to adjust colors and fonts for the event shop independently of any settings you choose for the public profile on the organizer level. 
 
