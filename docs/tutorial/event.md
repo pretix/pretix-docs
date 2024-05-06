@@ -64,3 +64,9 @@ Open the "texts" tab. Here, you can define texts for the store page for welcomin
 
 ## Shop design 
 
+Switching to the "shop design" tab at the top allows you to add content to your event shop. You can take a look at the shop by clicking the :btn👁 Go to shop: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/ixc27/, where "awesome-corp" is replaced with the short form of your organizer and "ixc27" is replaced with the short form of your event. 
+
+By default, the name of the event  will be displayed in the page header of your shop. The shop design settings allow you to replace the name with an image that tells your customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or slightly smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. The header image will replace the name of the event at the top of the page unless you check the box next to "show event title even if a header image is present". 
+
+The "social media image" option lets you upload a .png  or .jpg file that will be used as a preview if you post links to your ticket shop on social media. If you do not upload a file here, the header image will be used for previews instead. 
+
