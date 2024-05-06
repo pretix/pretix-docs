@@ -64,9 +64,18 @@ Open the "texts" tab. Here, you can define texts for the store page for welcomin
 
 ## Shop design 
 
+![Screenshot of "shop design" tab, showing options for the header image and social media image, as well as a locked section at the bottom.](../assets/screens/event/shop-design.png "Event shop design tab screenshot") 
+
 Switching to the "shop design" tab at the top allows you to add content to your event shop. You can take a look at the shop by clicking the :btn👁 Go to shop: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/ixc27/, where "awesome-corp" is replaced with the short form of your organizer and "ixc27" is replaced with the short form of your event. 
 
 By default, the name of the event will be displayed in the page header of your shop. The shop design settings allow you to replace the name with a header image that tells your customers about the event (e.g., by means of the event name, logo, or recognizable design). It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or slightly smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. The header image will replace the name of the event at the top of the page unless you check the box next to "show event title even if a header image is present". You have the option to use the image in its full size, in which case it should be at least 1170 pixels in width. 
 
 The "social media image" option lets you upload a .png  or .jpg file that will be used as a preview if you post links to your ticket shop on social media. If you do not upload a file here, the header image will be used for previews instead. 
 
+!!! Warning
+
+    Unlocking the color and font settings is not reversible. Only click the :btn:🔓 Unlock: button if you are absolutely positive that you want to make changes specifically to shop design of the event. 
+
+By default, the section below is locked. These settings are currently set on organizer level. This way, you can easily change them for all of your events at the same time. You can either go to the organizer settings to change them for all your events or you can unlock them to change them for this event individually. If you wish to make individual adjustments to the shop design of the event, click the :btn:🔓 Unlock: button. This will allow you to adjust colors and fonts for the event shop independently of any settings you choose for the public profile on the organizer level. 
+
+We recommend that you leave the settings here locked since that makes it easier to keep the shop designs consistent. If you want to change the design globally, click the :btn:Go to organizer settings: button and make your adjustments there. 
