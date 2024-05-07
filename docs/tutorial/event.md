@@ -79,3 +79,9 @@ The "social media image" option lets you upload a .png  or .jpg file that will b
 By default, the section below is locked and the color and font settings are set on organizer level. This way, you can easily change them for all of your events at the same time. You can either go to the organizer settings to change them for all your events or you can unlock them to change them for this event individually. If you wish to make individual adjustments to the shop design of the event, click the :btn:🔓 Unlock: button. This will allow you to adjust colors and fonts for the event shop independently of any settings you choose for the public profile on the organizer level. 
 
 We recommend that you leave the settings here locked since that makes it easier to keep the shop designs consistent. If you want to change the design globally, click the :btn:Go to organizer settings: button and make your adjustments there. 
+
+## Timeline 
+
+The "timeline" tab allows you to set a start and end date and time for the sale of tickets and other products in your shop. If you set a start of presale, no products will be able to be sold before that date and time. If you send an end of presale, no products will be able to be sold before that date and time. If you have enabled box office sales (pretixPOS) during event creation or on the "basics" tab of the general settings, you will still be able to sell products via pretixPOS outside the presale period. 
+
+This page also lets you set restrictions on when and how your customers can make modifications to the details of their orders. 
