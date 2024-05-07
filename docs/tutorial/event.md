@@ -85,3 +85,7 @@ We recommend that you leave the settings here locked since that makes it easier 
 The "timeline" tab allows you to set a start and end date and time for the sale of tickets and other products in your shop. If you set a start of presale, no products will be able to be sold before that date and time. If you send an end of presale, no products will be able to be sold before that date and time. If you have enabled box office sales (pretixPOS) during event creation or on the "basics" tab of the general settings, you will still be able to sell products via pretixPOS outside the presale period. 
 
 This page also lets you set restrictions on when and how your customers can make modifications to the details of their orders. 
+
+## Tax rules 
+
+Navigate to [Your event] → "Settings" → "Tax rules". Click the :btn:+ Create a new tax rule: button. The "official name" fields are already filled out with "VAT" (English), "MwSt." (German) and, if  available, the appropriate translations in any languages you have selected. Choose an internal name if needed. This will only be used for the backend and helps you distinguish tax rules if you use more than one. Set the tax rate to the appropriate level, e.g. 19% for Germany and click the :btn:Save: button. 
