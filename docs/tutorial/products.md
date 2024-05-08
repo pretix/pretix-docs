@@ -12,13 +12,13 @@ Next, we will create a product that can be bundled with the basic ticket. Naviga
 
 ## Editing products
 
-We will edit the "regular ticket" so that we can base all other tickets on this one. Navigate to [Your event] → "Products" → "Products" and click the "regular ticket". This takes you to the "modify product" dialog. Change the English item name to "Standard Ticket" and to an appropriate translation in any other languages you have activated. The English description we use in the demo shop is the following: 
+We will edit the "regular ticket" so that we can base all other tickets on this one. Navigate to [Your event] → "Products" → "Products" and click the "regular ticket". This takes you to the "modify product" dialog. Change the English item name to "Standard Ticket" and add an appropriate translation for any other languages you have activated. The English description we use in the demo shop is the following: 
 
     "This is a simple ticket where workshops can be booked as additional products. Additional products can be set up so that they can also be rebooked later. It also includes the medium care package as a bundle." 
 
-Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it  in the "description" field. Add an appropriate translation if applicable. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the final shop. 
+Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the shop. 
 
-Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. 
+Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. Then switch to the "bundled products" tab. Click the :btn:+ Add a new bundled product" button. Select the previously created "care box - medium" at a quantity of 1 and a designated price part of 30.00 €. Click :btn:Save:. The medium care box is now included in the standard ticket by default and will be displayed to the customer as making up 30.00 € out of the total price of 250.00 € during purchase. 
 
 
  
