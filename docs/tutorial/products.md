@@ -4,11 +4,11 @@ A product is anything that you sell via pretix. A ticket is a product. A gift ca
 
 ## Editing products 
 
-Navigate to [Your event] → "Products" → "Products". Two products have already been created automatically during event creation. The website should show you two tickets: "regular ticket" and "reduced ticket". We will first edit the "regular ticket" so that we can base all other tickets on this one. Click the "regular ticket". This takes you to the "modify product" dialog. Change the English item name to "Standard Ticket" and to an appropriate translation in any other languages you have activated. The English description we use in the demo shop is the following: 
+Navigate to [Your event] → "Products" → "Products". The website should show you two tickets that have already been created along with the event: "regular ticket" and "reduced ticket". We will first edit the "regular ticket" so that we can base all other tickets on this one. Click the "regular ticket". This takes you to the "modify product" dialog. Change the English item name to "Standard Ticket" and to an appropriate translation in any other languages you have activated. The English description we use in the demo shop is the following: 
 
 "This is a simple ticket where workshops can be booked as additional products. Additional products can be set up so that they can also be rebooked later. It also includes the medium care package as a bundle." 
 
-Feel free to copy the text into the English "description" field and add an appropriate translation if applicable. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the final shop. 
+Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it  in the "description" field.  Add an appropriate translation if applicable. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the final shop. 
 
 Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. 
 
