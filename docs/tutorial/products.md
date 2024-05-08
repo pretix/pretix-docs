@@ -2,6 +2,10 @@
 
 A product is anything that you sell via pretix. A ticket is a product. A gift card is a product. A meal pass is a product. A conference t-shirt is a product. You will be selling a variety of products in your shop. Some of those products will be admission tickets. Some of them will be additional products. This article will guide you through the process of creating products and making them available in your shop. The result will look similar to the [pretix demo conference](https://pretix.eu/demoshops/democon/). 
 
+## Creating quotas 
+
+A quota determines how man instances of your product can be sold. Every product has to be part of at least one quota before it becomes available in the shop. Thus, before creating the products you intend to sell, it makes sense to first create the quotas that these products will go on.  Navigate to [Your event] → "Products" → "Quotas". This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, containing the reduced ticket as a product. The list also displays the total capacity and how many items are left for each quota. 
+
 ## Creating categories
 
 We are going to sell additional products, i.e. products that can be purchased as add-ons to admission tickets in our shop. That means our first step is creating a category for additional products. Navigate to [Your event] → "Products" → "Categories". This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". Click the :btn:+ Create a new category: button. Give the category a name such as "add-ons" and check the box next to "products in this category are add-on products". Click the :btn:Save: button at the bottom of the page. This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for add-ons. 
