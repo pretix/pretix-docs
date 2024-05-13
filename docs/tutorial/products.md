@@ -16,7 +16,9 @@ Next, we are going to create a quota for an additional product: our medium care 
 
 ## Creating categories
 
-We are going to sell additional products, i.e. products that can be purchased as add-ons to admission tickets in our shop. That means our first step is creating a category for additional products. Navigate to [Your event] → "Products" → "Categories". This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". Click the :btn:+ Create a new category: button. Give the category a name such as "add-ons" and check the box next to "products in this category are add-on products". Click the :btn:Save: button at the bottom of the page. This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for add-ons. 
+We are going to sell additional products, i.e. products that can be purchased as add-ons to admission tickets in our shop. That means our next step is creating a category for additional products. Navigate to [Your event] → "Products" → "Categories". This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". Click the :btn:+ Create a new category: button. Give the category a name such as "add-ons" and check the box next to "products in this category are add-on products". Click the :btn:Save: button at the bottom of the page. This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for add-ons. 
+
+We are also going to create a category for extras such as a t-shirt and a book package. We will name it "Extras" and we will __not__ check the box next to "products in this category are add-on products". That means that people will still be able to buy products in this category even if they don't buy an admission ticket. 
 
 ## Creating products 
 
@@ -32,12 +34,6 @@ Add a description that tells your customers what services are included in the ti
 
 Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. Then switch to the "bundled products" tab. Click the :btn:+ Add a new bundled product: button. Select the previously created "care box - medium" at a quantity of 1 and a designated price part of 30.00 €. Click :btn:Save:. The medium care box is now included in the standard ticket by default and will be displayed to the customer as making up 30.00 € out of the total price of 250.00 € during purchase. 
 
-
- 
-
- - what is a quota
- - what is a category 
- - what is a ticket 
  - when to create a product with/without variants 
  - explain how to create some sensible default tickets for the given use case, for example hosting a conference
  - explain variants, additional products, bundles etc. before creating products 
