@@ -22,7 +22,7 @@ We will edit the "regular ticket" so that we can base all other tickets on this 
 
 Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the shop. 
 
-Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. Then switch to the "bundled products" tab. Click the :btn:+ Add a new bundled product" button. Select the previously created "care box - medium" at a quantity of 1 and a designated price part of 30.00 €. Click :btn:Save:. The medium care box is now included in the standard ticket by default and will be displayed to the customer as making up 30.00 € out of the total price of 250.00 € during purchase. 
+Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. Then switch to the "bundled products" tab. Click the :btn:+ Add a new bundled product: button. Select the previously created "care box - medium" at a quantity of 1 and a designated price part of 30.00 €. Click :btn:Save:. The medium care box is now included in the standard ticket by default and will be displayed to the customer as making up 30.00 € out of the total price of 250.00 € during purchase. 
 
 
  
