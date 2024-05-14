@@ -1,8 +1,6 @@
 # Products
 
-A product is anything that you sell via pretix: tickets, gift cards, meal passes, conference t-shirts and so on. You will be selling a variety of products in your shop. This article will guide you through the process of creating products and making them available in your shop using examples from the [pretix demo conference](https://pretix.eu/demoshops/democon/). Feel free to follow the methods described here while adapting the types of products, their names and prices to your event's specific needs. 
-
-We are going to start by creating quotas for all of our products, then we will move on to additional products that can be added to the purchase of a conference ticket, and then finally we edit the basic ticket. This workflow can seem a little counterintuitive. But it represents the shortest possible route to a functional ticket shop by making sure that for every step of the process, the requirements have already been met. 
+A product is anything that you sell via pretix: tickets, gift cards, meal passes, conference t-shirts and so on. You will be selling a variety of products in your shop. This article guides you through the process of creating products and making them available in your shop using examples from the [pretix demo conference](https://pretix.eu/demoshops/democon/). We are going to start by creating categories to sort our products into. We will then create a variety of products such as a basic tickets, a discounted ticket, a VIP ticket, care boxes, and t-shirts in different sizes. Finally, we are going to create quotas and add our products to them. Feel free to follow the methods described here while adapting the types of products, their names and prices to your event's specific needs. 
 
 ## Creating and editing categories
 
