@@ -110,4 +110,4 @@ Choose your preferred method of payment. You may pay by SEPA direct debit, by in
 
 Once you are happy with your choices, click the :btn:Save: button. The page will notify you if any required information is still missing. If you have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." This means that your organizer account has been submitted to our team for review and will be activated shortly.
 
-The "billing contact" and "privacy contact" tabs allow you to provide different contacts within your organization for billing and privacy. This is completely optional. You only need to fill out the information on the "general" tab of the billing settings to get your account approved. 
+The "billing contact" and "privacy contact" tabs allow you to provide different contacts within your organization for billing and privacy matters. This is completely optional. You only need to fill out the information on the "general" tab of the billing settings to get your account approved. 
