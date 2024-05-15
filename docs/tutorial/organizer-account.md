@@ -106,7 +106,7 @@ Enter the full contact details of your company further down on the page. If your
 
 You can choose a preferred language of correspondence. We are currently offering service in English and German.
 
-Choose your preferred method of payment. You may pay by SEPA direct debit, by invoice, or by credit card. If you want to pay by SEPA direct debit, fill out your bank details in the form below and grant the mandate. If you want to pay by credit card, fill out your credit card information and authorize credit card payments to rami.io GmbH. If you are planning on only offering free tickets, you don't have to provide any further information here.
+Choose your preferred method of payment. You may pay by SEPA direct debit, by invoice, or by credit card. If you want to pay by SEPA direct debit, fill out your bank details in the form below and approve the mandate. If you want to pay by credit card, fill out your credit card information and authorize credit card payments to rami.io GmbH. If you are planning on only offering free tickets, you don't have to provide any further information here.
 
 Once you are happy with your choices, click the :btn:Save: button. The page will notify you if any required information is still missing. If you have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." This means that your organizer account has been submitted to our team for review and will be activated shortly.
 
