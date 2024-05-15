@@ -104,7 +104,7 @@ Navigate to [Your Organizer]→"Settings"→"Billing settings". The topmost fiel
 
 Enter the full contact details of your company further down on the page. If your company is located in the EU but outside of Germany, we require a VAT ID.
 
-You can choose a preferred language of correspondence. We are currently offering service in English and German.
+You can choose a preferred language of correspondence. We offer service in English and German.
 
 Choose your preferred method of payment. You may pay by SEPA direct debit, by invoice, or by credit card. If you want to pay by SEPA direct debit, fill out your bank details in the form below and approve the mandate. If you want to pay by credit card, fill out your credit card information and authorize credit card payments to rami.io GmbH. If you are planning on only offering free tickets, you don't have to provide any further information here.
 
