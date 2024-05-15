@@ -50,13 +50,13 @@ Now that you have created your event, you have access to all possible options fo
 
 ## Customer and attendee data 
 
-Your attendees probably want some sort of certificate of participation. That means you need to record their name and affiliation during the purchase. Navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. Under the "attendee data (once per personalized ticket)" subheading, set "ask for attendee names", "ask for email addresses per ticket" and "ask for company per ticket" to "ask, but do not require input". Do this for all three questions. You can also make input mandatory, ask for postal addresses per ticket, and add custom fields if necessary. In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. An explanation such as "this information is necessary for issuing each attendee a certificate of participation" should suffice. 
+Your attendees may want some sort of certificate of participation. That means you need to record their name and affiliation during the purchase. Navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. Here, under the "attendee data (once per personalized ticket)" subheading, you have options for asking for attendee names, addresses per ticket, and company per ticket. We will set those three questions to "ask, but do not require input". By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation.  In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. An explanation such as "this information is necessary for issuing each attendee a certificate of participation" should suffice. 
 
-Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. We recommend that you finalize your choice here before taking your ticket shop live because changing this after already having received orders can lead to unexpected behavior when sorting or changing names. 
+Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. We recommend that you finalize your choice here before taking your ticket shop live because changing this after already having received orders can lead to issues when sorting or changing names. 
 
 ## Account activation 
 
-If the overview warns you that your organizer account is not yet active, please click the link and fill out the necessary information in the form. Activating an account is a manual process and may take some time depending on the availability of our team. 
+The overview will probably display a warning that your organizer account is not yet active. If you see that warning, please click the link and fill out the necessary information in the form. Activating an account is a manual process and may take some time depending on the availability of our team. 
 
 ## Texts 
 
