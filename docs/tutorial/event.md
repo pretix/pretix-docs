@@ -38,7 +38,7 @@ You are then asked if you want to copy information from a previously created eve
 
 The next page congratulates you on creating your event. It also gives you a quick overview for products and basic settings for the event. We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 
-Fill out the contact address and imprint URL in the "getting in touch with you" section near the bottom of the page. Provide a general email address where your customers can contact you in the "contact address" field. Provide a URL pointing to legal imprint information for your organization in the "imprint URL" field. These two pieces of information are mandatory for your ticket shop to go live. 
+Fill out the contact address and imprint URL in the "getting in touch with you" section near the bottom of the page. Provide a general email address at which your customers can contact you in the "contact address" field. Provide a URL pointing to legal imprint information for your organization in the "imprint URL" field. These two pieces of information are mandatory for your ticket shop to go live. 
 
 Once you click :btn:Save: at the bottom of the page, you will be taken to an overview of the event, which gives you its name, the timeline of tickets sales and presale, the status of your ticket shop (most likely in test mode by this point). 
 
