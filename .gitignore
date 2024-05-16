@@ -4,4 +4,4 @@ site/
 .idea/
 .cache/
 *.pyc
-
+.vscode/**/*
