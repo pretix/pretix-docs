@@ -102,7 +102,7 @@ Before any of your ticket shops can go live, your organizer account has to be ac
 
 Navigate to [Your Organizer]→"Settings"→"Billing settings". The topmost field on the "general" tab is labeled "primary contact person". Enter the name of a real person (e.g. you or a coworker) we can contact if there is an issue with your account. Enter their email address and phone number in the fields below.
 
-Enter the full contact details of your company further down on the page. If your company is located in the EU but outside of Germany, we recommend entering a VAT ID. If you do not provide your VAT ID here, we will need to charge you VAT on our services and we will not be able to issue reverse charge invoices. 
+Enter the full contact details of your company further down on the page. If your company is located in the EU but outside of Germany, we recommend entering a VAT ID. If you do not provide your VAT ID here, we will need to charge you VAT on our services and we will not be able to issue reverse charge invoices. Again, this only applies if your company is located in the EU but outside of Germany. 
 
 You can choose a preferred language of correspondence. We offer service in English and German.
 
