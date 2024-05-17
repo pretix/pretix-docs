@@ -1,11 +1,13 @@
 # Products
 
 A product is anything that you sell via pretix: tickets, gift cards, meal passes, conference t-shirts and so on. You will be selling a variety of products in your shop. This article guides you through the process of creating products and making them available in your shop. We are going to start by creating categories to sort our products into. We will then create the following products: 
+
  - a basic admission ticket 
  - a discount ticket for students and members
  - a free speaker ticket that is only available with a voucher code 
  - a voucher for sending out invitation codes to your speakers 
  - stickers that come in three variants with different prices 
+
 Finally, we are going to create quotas to determine and keep track of availability numbers for each product. Feel free to follow the methods described here while adapting the types of products, their names and prices to your event's specific needs. 
 
 ## How to create and edit categories
@@ -19,6 +21,10 @@ We are not only going to sell admission tickets in our shop, but also extras suc
 Now that we have prepared all necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
 We will edit the "regular ticket" so that we can base all other tickets on this one. Navigate to [Your event] → "Products" → "Products". The website should show you two tickets that have already been created along with the event: "regular ticket" and "reduced ticket". Click the "regular ticket". This takes you to the "modify product" dialog. Change the English item name to "Standard Ticket" and add an appropriate translation for any other languages you have activated. Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the shop. Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. 
+
+We will now create a discount ticket. We are going to base it on the "standard ticket" we just edited so that we don't have to repeat all the same steps. That means that the "reduced ticket" is not needed anymore. Navigate to [Your event] → "Products" → "Products". Click the red :btn:🗑: next to the reduced ticket and confirm that you want to delete it. This takes you back to the product overview. Click the :btn:Clone: button next to the standard ticket in order to clone it. Name the new ticket "discount ticket", provide a translation, and change the "default price" to a lower value such as 120 euros. Leave the other options on this page unchanged and click the :btn:Save: button. 
+
+On the next page, adapt the "description" field so that it tells your customers what criteria they have to fulfill to get access to the discounted ticket. For example, tell them the ticket is only available if they provide a valid student ID or member ID. You may upload a different product picture on this site to better distinguish the discount ticket from the standard one. Switch to the "price" tab and change the original price to the price of the standard ticket, in our case 250 euros. Switch to the "check-in and validity" tab and check the box next to "requires special attention". In the "check-in text" field, provide instructions for the person operating the check-in at your event. For example, tell them to only admit the attendee to the event if they can provide a valid student ID or member ID during check-in. Click the :btn:Save: button. 
 
 We will now create a sticker product with multiple variations to reflect different colors: purple, black, and glitter. Navigate to [Your event] → "Products" → "Products". Click the :btn:+ Create a new product: button. Name it "Sticker", put it in the "Extras" category and set it to "non-admission product". Under "product variations", select "product with multiple variations". Select the default price, in our case, 5 euros. Then click :btn:Save and continue with more settings:. 
 
