@@ -1,3 +1,9 @@
+## How to create and edit categories
+
+Categories serve three purposes: They help you keep track of all your different products in the backend; they let you group the tickets into sensible categories in your shop; and they separate standalone products from additional products. 
+
+We are going to sell additional products, i.e. products that can be purchased as add-ons to admission tickets in our shop. That means our next step is creating a category for additional products. Navigate to [Your event] → "Products" → "Categories". This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". Click the :btn:+ Create a new category: button. Give the category a name such as "add-ons" and check the box next to "products in this category are add-on products". Click the :btn:Save: button at the bottom of the page. This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for add-ons. 
+
 ## How to create and edit products
 
 Now that we have prepared all necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
