@@ -50,7 +50,7 @@ Now that you have created your event, you have access to all possible options fo
 
 ## Customer and attendee data 
 
-Your attendees may want some sort of certificate of participation. That means you need to record their name and affiliation during the purchase. Navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. Here, under the "attendee data (once per personalized ticket)" subheading, you have options for asking for attendee names, addresses per ticket, and company per ticket. We will set those three questions to "ask, but do not require input". By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation.  In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. An explanation such as "this information is necessary for issuing each attendee a certificate of participation" should suffice. 
+If you need to issue certificates of participation to your attendees, then you have to record their name and affiliation during purchase. This section tells you how to do that. Navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. Here, under the "attendee data (once per personalized ticket)" subheading, you have options for asking for attendee names, addresses per ticket, and company per ticket. We will set those three questions to "ask, but do not require input". By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation.  In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. An explanation such as "this information is necessary for issuing each attendee a certificate of participation" should suffice. 
 
 Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. We recommend that you finalize your choice here before taking your ticket shop live because changing this after already having received orders can lead to issues when sorting or changing names. 
 
@@ -60,7 +60,9 @@ The overview will probably display a warning that your organizer account is not 
 
 ## Texts 
 
-Open the "texts" tab. Here, you can define texts for the store page for welcoming your customers and guiding them through the process of purchasing a ticket. All of the texts are optional. They support simple and human-readable formatting via Markdown. Provide a translation for each language you chose in the localization tab. 
+Open the "texts" tab. Type a text for welcoming your customers to your store page and guiding them through the process of purchasing a ticket into the "frontpage text" field. If you have set time constraints for the presale, then you should add an "end of presale text". This text will be displayed at the top of your ticket shop when the presale time has run out. If you are making use of vouchers, e.g. inviting speakers to your event by sending them voucher codes, then you should add a "voucher explanation" telling them how to obtain a voucher code. This text will be displayed next to the input field for a voucher code. 
+
+The "texts" tab lets you define a lot of text messages for other purposes. Every field comes with an explanation as to where the text will be used. All fields support simple and human-readable formatting via Markdown. Whenever you define a text, make sure you also provide a translation for each language you selected in the localization tab. 
 
 ## Shop design 
 
