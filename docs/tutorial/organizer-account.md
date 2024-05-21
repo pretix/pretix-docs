@@ -46,9 +46,7 @@ Under "Available languages", you can choose which languages your ticket shop wil
 
 This setting also determines the default languages when creating new events, though languages can be activated or deactivated for each event individually.
 
-!!! Note 
-
-    pretix offers many settings and customizations where you input your own text, for example, the description on the organizer page, the name of your events, and so on. You will need to provide a translation in every language you choose here for each individual item. This can amount to a lot of work. We recommend using no more than two or three languages at a time unless you are working with dedicated translators. 
+{% include "note-translations.md" %}
 
 Choose a country or region from  the drop-down "Region" menu. The selection will be used to determine default date, time, address and phone number formatting. The language chosen above will take a higher priority than the region. 
 
@@ -58,7 +56,7 @@ Also choose a "Default timezone" from the drop-down menu with that title.
 
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
-Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn👁 Public profile: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/, where "awesome-corp" is replaced with your organizer short form. 
+Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn:👁 Public profile: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/, where "awesome-corp" is replaced with your organizer short form. 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
@@ -98,4 +96,18 @@ pretix itself only ever sets cookies that are required to provide the service re
 
 Ultimately, it is your responsibility to make sure you comply with all relevant laws. We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
+## Activation
 
+Before any of your ticket shops can go live, your organizer account has to be activated. Your account is reviewed manually by our team as soon as you have provided all necessary information for correspondence and billing.
+
+Navigate to [Your Organizer]→"Settings"→"Billing settings". The topmost field on the "general" tab is labeled "primary contact person". Enter the name of a real person (e.g. you or a coworker) we can contact if there is an issue with your account. Enter their email address and phone number in the fields below.
+
+Enter the full contact details of your company further down on the page. If your company is located in the EU but outside of Germany, we recommend entering a VAT ID. If you do not provide your VAT ID here, we will need to charge you VAT on our services and we will not be able to issue reverse charge invoices. Again, this only applies if your company is located in the EU but outside of Germany. 
+
+You can choose a preferred language of correspondence. We offer service in English and German.
+
+Choose your preferred method of payment. You may pay by SEPA direct debit, by invoice, or by credit card. If you want to pay by SEPA direct debit, fill out your bank details in the form below and approve the mandate. If you want to pay by credit card, fill out your credit card information and authorize credit card payments to rami.io GmbH. If you are planning on only offering free tickets, you don't have to provide any further information here.
+
+Once you are happy with your choices, click the :btn:Save: button. The page will notify you if any required information is still missing. If you have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." This means that your organizer account has been submitted to our team for review and will be activated shortly.
+
+The "billing contact" and "privacy contact" tabs allow you to provide different contacts within your organization for billing and privacy matters. This is completely optional. You only need to fill out the information on the "general" tab of the billing settings to get your account approved. 
