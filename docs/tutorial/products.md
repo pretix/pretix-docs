@@ -32,7 +32,7 @@ Next, click on the "Variations" tab. There should be one variant called "Standar
 
 ## Creating and editing quotas 
 
-A quota determines how many instances of your product can be sold. Every product has to be part of at least one quota before it becomes available in the shop. A product can be part of more than one quota. In that case, it will only remain available as long as neither quota is sold out. In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. For most use cases, it is enough to add every product to one quota only. This section will tell you how.  
+A quota determines how many instances of your product can be sold. Every product has to be part of at least one quota before it becomes available in the shop. A product can be part of more than one quota. In that case, it will only remain available as long as neither quota is sold out. In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. For most use cases, it is enough to add every product to one quota only. This section will tell you how. 
 
 Navigate to [Your event] → "Products" → "Quotas". This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, containing the reduced ticket as a product. The list also displays the total capacity and how many items are left for each quota. 
 
