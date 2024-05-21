@@ -1,10 +1,43 @@
 # Products
 
- - what is a product
- - what is a quota
- - what is a category 
- - what is a ticket 
- - when to create a product with/without variants 
- - explain how to create some sensible default tickets for the given use case, for example hosting a conference
- - explain variants, additional products, bundles etc. before creating products 
- - ticket design and format (paper ticket, online only...) (maybe move this to a standalone article)
+A product is anything that you sell via pretix: tickets, gift cards, meal passes, conference t-shirts and so on. You will be selling a variety of products in your shop. This article guides you through the process of creating products and making them available in your shop. We are going to start by creating categories to sort our products into. We will then create the following products: 
+
+ - a basic admission ticket 
+ - a discount ticket for students and members
+ - a free speaker ticket that is only available with a voucher code 
+ - a voucher for sending out invitation codes to your speakers 
+ - stickers that come in three variants with different prices 
+
+Finally, we are going to create quotas to determine and keep track of availability numbers for each product. Feel free to follow the methods described here while adapting the types of products, their names and prices to your event's specific needs. 
+
+## How to create and edit categories
+
+Categories serve three purposes: They help you keep track of all your different products in the backend; they let you group the tickets into sensible categories in your shop; and they separate standalone products from additional products. 
+
+We are not only going to sell admission tickets in our shop, but also extras such as stickers. That means our next step is creating a category for those extras. Navigate to [Your event] → "Products" → "Categories". This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". Click the :btn:+ Create a new category: button. Give the category a name such as "Extras". Do __not__ check the box next to "products in this category are add-on products". Leaving that box unchecked means that people will still be able to purchase products in this category even if they don't buy an admission ticket.  Click the :btn:Save: button at the bottom of the page. This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for extras. 
+
+## How to create and edit products
+
+Now that we have prepared all necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
+
+We will edit the "regular ticket" so that we can base all other tickets on this one. Navigate to [Your event] → "Products" → "Products". The website should show you two tickets that have already been created along with the event: "regular ticket" and "reduced ticket". Click the "regular ticket". This takes you to the "modify product" dialog. Change the English item name to "Standard Ticket" and add an appropriate translation for any other languages you have activated. Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it. You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the shop. Next, click on the "price" tab. Change the "default price" field to your desired value. In our demo shop, that price is 250.00 €. Select the appropriate tax rate from the "sales tax" dropdown. 
+
+We will now create a discount ticket. We are going to base it on the "standard ticket" we just edited so that we don't have to repeat all the same steps. That means that the "reduced ticket" is not needed anymore. Navigate to [Your event] → "Products" → "Products". Click the red :btn:🗑: next to the reduced ticket and confirm that you want to delete it. This takes you back to the product overview. Click the :btn:Clone: button next to the standard ticket in order to clone it. Name the new ticket "discount ticket", provide a translation, and change the "default price" to a lower value such as 120 euros. Leave the other options on this page unchanged and click the :btn:Save: button. 
+
+On the next page, adapt the "description" field so that it tells your customers what criteria they have to fulfill to get access to the discounted ticket. For example, tell them the ticket is only available if they provide a valid student ID or member ID. You may upload a different product picture on this site to better distinguish the discount ticket from the standard one. Switch to the "price" tab and change the original price to the price of the standard ticket, in our case 250 euros. Switch to the "check-in and validity" tab and check the box next to "requires special attention". In the "check-in text" field, provide instructions for the person operating the check-in at your event. For example, tell them to only admit the attendee to the event if they can provide a valid student ID or member ID during check-in. Click the :btn:Save: button. 
+
+We will now create a sticker product with multiple variations to reflect different colors: purple, black, and glitter. Navigate to [Your event] → "Products" → "Products". Click the :btn:+ Create a new product: button. Name it "Sticker", put it in the "Extras" category and set it to "non-admission product". Under "product variations", select "product with multiple variations". Select the default price, in our case, 5 euros. Then click :btn:Save and continue with more settings:. 
+
+Next, click on the "Variations" tab. There should be one variant called "Standard" here. Click on the name to expand the settings for that variant. Change the name to "Purple". You do not need to change any other settings here. Then scroll down and click the :btn:+ Add a new variation: button. Name it "Black" and keep the other settings the way they are. Repeat the same process for the "Glitter" color variation and set the "default price" option for that variant to 7.50 euros. Then click :btn:Save:. 
+
+## Creating and editing quotas 
+
+A quota determines how many instances of your product can be sold. Every product has to be part of at least one quota before it becomes available in the shop. It is possible to add a product to more than one quota. In that case, it will only remain available as long as neither quota is sold out. In other words, if a product is part of several quotas, as soon as one quota is empty, the product will not be available anymore. Thus, we still have to create quotas and add our tickets to them. 
+
+Navigate to [Your event] → "Products" → "Quotas". This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, containing the reduced ticket as a product. The list also displays the total capacity and how many items are left for each quota. 
+
+Click the :btn:change: button next to the "regular ticket" quota in the list. It has a pictogram of a pencil writing into a box on it. We renamed our "regular ticket" to "standard ticket", so we are also going to rename this quota to avoid confusion. Enter "Standard ticket" or your preferred name into the name field. Change the capacity to the maximum amount of tickets of this type that you want to sell, for example 1000. Leave the rest of the settings unchanged and click the :btn:Save: button. This takes you to a detailed overview of the status of the "standard ticket" quota. 
+
+Our sticker product needs three different quotas: one for each product variant, i.e. one for each color. Navigate back to "Quotas" and click the :btn:+ Create a new quota: button. Call the new quota "Sticker purple" and set the total capacity to the number of stickers in that color that you're going to sell, for example, 100. Select "Sticker - Purple" in the list of products. The purple sticker is not an admission ticket but extra product that can be purchased in the same shop. We do not want this quota to add to the total number of tickets available for the event. Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
+
+Navigate back to "Quotas". Click the "clone" button next to the quota you just created. Name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker- Black" instead. Adjust the total capacity if necessary. Click :btn:Save: and repeat the same process for the glitter color, again, adjusting the total capacity as needed. Our glitter sticker is more expensive to make, so we're also going to change the "default price" option to 7 euros. If you now navigate back to [Your event] → "Products" → "Products" → "Sticker" and click on the "Variations" tab, there should be no more yellow boxes warning you that you need to add the product and variations to a quota before they can be sold. 
