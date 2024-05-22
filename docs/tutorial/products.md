@@ -130,9 +130,9 @@ We do not want this quota to add to the total number of tickets available for th
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
 Navigate back to "Quotas". 
-Click the "clone" button next to the quota you just created. 
+Click the "clone" button next to the sticker quota you just created. 
 Name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead. 
 Adjust the total capacity if necessary. 
 Click :btn:Save: and repeat the same process for the glitter color, again, adjusting the total capacity as needed. 
-Our glitter sticker is more expensive to make, so we're also going to change the "default price" option to 7 euros. 
+
 If you now navigate back to [Your event] → "Products" → "Products" → "Sticker" and click on the "Variations" tab, there should be no more yellow boxes warning you that you need to add the product and variations to a quota before they can be sold. 
