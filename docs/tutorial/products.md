@@ -53,16 +53,27 @@ Navigate to [Your event] → "Products" → "Products".
 Click the red :btn:🗑: next to the reduced ticket and confirm that you want to delete it. 
 This takes you back to the product overview. 
 Click the :btn:Clone: button next to the standard ticket in order to clone it. 
-Name the new ticket "discount ticket", provide a translation, and change the "default price" to a lower value such as 120 euros. 
+Name the new ticket "Discount ticket", provide a translation, and change the "default price" to a lower value such as 120 euros. 
 Leave the other options on this page unchanged and click the :btn:Save: button. 
 
 On the next page, adapt the "description" field so that it tells your customers what criteria they have to fulfill to get access to the discounted ticket. 
 For example, tell them the ticket is only available if they provide a valid student ID or member ID. 
-You may upload a different product picture on this site to better distinguish the discount ticket from the standard one. Switch to the "price" tab and change the original price to the price of the standard ticket, in our case 250 euros. 
+You may upload a different product picture on this site to better distinguish the discount ticket from the standard one. 
+Switch to the "price" tab and change the original price to the price of the standard ticket, in our case 250 euros. 
 Switch to the "check-in and validity" tab and check the box next to "requires special attention". 
 In the "check-in text" field, provide instructions for the person operating the check-in at your event. 
 For example, tell them to only admit the attendee to the event if they can provide a valid student ID or member ID during check-in. 
 Click the :btn:Save: button. 
+
+We will now create a speaker ticket that can only be bought with a voucher. 
+Navigate to [Your event] → "Products" → "Products". 
+Click the :btn:Clone: button next to the standard ticket in order to clone it. 
+Name the new ticket "Speaker ticket", provide a translation, and change the "default price" to 0 euros. 
+Leave the other options on this page unchanged and click the :btn:Save: button. 
+Switch to the "availability" tab and check the box next to "This product can only be bought using a voucher". 
+Click the :btn:Save: button and return to [Your event] → "Products" → "Products". 
+In the product overview, a tag symbol will appear next to the speaker ticket. 
+If you hover your mouse over it, it says "Can only be bought using a voucher". 
 
 We will now create a sticker product with multiple variations to reflect different colors: purple, black, and glitter. 
 Navigate to [Your event] → "Products" → "Products". 
