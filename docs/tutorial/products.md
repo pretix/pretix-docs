@@ -78,7 +78,7 @@ If you hover your mouse over it, it says "Can only be bought using a voucher".
 We will now create a sticker product with multiple variations to reflect different colors: purple, black, and glitter. 
 Navigate to [Your event] → "Products" → "Products". 
 Click the :btn:+ Create a new product: button. 
-Name it "Sticker", put it in the "Extras" category and set it to "non-admission product". 
+Name it "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
 Under "product variations", select "product with multiple variations". 
 Select the default price, in our case, 5 euros. 
 Then click :btn:Save and continue with more settings:. 
