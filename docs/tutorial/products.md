@@ -97,7 +97,8 @@ Then click :btn:Save:.
 
 A quota determines how many instances of your product can be sold. 
 Every product has to be part of at least one quota before it becomes available in the shop. 
-A product can be part of more than one quota. In that case, it will only remain available as long as neither quota is sold out. 
+A product can be part of more than one quota. 
+In that case, it will only remain available as long as neither quota is sold out. 
 In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. 
 For most use cases, it is enough to add every product to one quota only. 
 This section will tell you how. 
@@ -113,6 +114,12 @@ Enter "Standard ticket" or your preferred name into the name field.
 Change the capacity to the maximum amount of tickets of this type that you want to sell, for example 1000. 
 Leave the rest of the settings unchanged and click the :btn:Save: button. 
 This takes you to a detailed overview of the status of the "Standard ticket" quota. 
+
+Repeat the same process for the discount ticket and speaker ticket. 
+Name the quota for the discount ticket "Discount ticket" and set its number to the maximum number of discount tickets you want to sell. 
+In our case, that number is 900. 
+Name the quota for the speaker ticket "Speaker ticket" and set its number to the number of speakers at your event. 
+In our case, that number is 100. 
 
 Our sticker product needs three different quotas: one for each product variant, i.e. one for each color. 
 Navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 
