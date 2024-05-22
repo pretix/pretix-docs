@@ -9,7 +9,6 @@ We will then create the following products:
  - a basic admission ticket 
  - a discount ticket for students and members
  - a free speaker ticket that is only available with a voucher code 
- - a voucher for sending out invitation codes to your speakers 
  - stickers that come in three variants with different prices 
 
 Finally, we are going to create quotas to determine and keep track of availability numbers for each product. 
