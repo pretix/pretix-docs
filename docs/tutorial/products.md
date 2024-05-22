@@ -55,6 +55,13 @@ Click the :btn:Clone: button next to the standard ticket in order to clone it.
 Name the new ticket "Discount ticket", provide a translation, and change the "default price" to a lower value such as 120 euros. 
 Leave the other options on this page unchanged and click the :btn:Save: button. 
 
+A warning will now be displayed in a yellow box at the top of the page, saying: 
+"Please note that your product will not be available for sale until you have added your item to an existing or newly created quota." 
+This warning will also be displayed during the creation of subsequent products. 
+You can ignore safely ignore it for now. 
+We will tell you how to add your products to a quota in the next section of this tutorial. 
+That will take care of the problem and make the warning go away. 
+
 On the next page, adapt the "description" field so that it tells your customers what criteria they have to fulfill to get access to the discounted ticket. 
 For example, tell them the ticket is only available if they provide a valid student ID or member ID. 
 You may upload a different product picture on this site to better distinguish the discount ticket from the standard one. 
