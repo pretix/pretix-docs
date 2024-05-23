@@ -8,7 +8,7 @@ We will then create the following products:
 
  - a basic admission ticket 
  - a discount ticket for students and members
- - a free speaker ticket that is only available with a voucher code 
+ - a free speaker ticket that requires manual approval before purchase 
  - stickers that come in three variants with different prices 
 
 Finally, we are going to create quotas to determine and keep track of availability numbers for each product. 
@@ -71,15 +71,15 @@ In the "check-in text" field, provide instructions for the person operating the 
 For example, tell them to only admit the attendee to the event if they can provide a valid student ID or member ID during check-in. 
 Click the :btn:Save: button. 
 
-We will now create a speaker ticket that can only be bought with a voucher. 
+We will now create a speaker ticket that is free, but requires manual approval before purchase. 
 Navigate to [Your event] → "Products" → "Products". 
 Click the :btn:Clone: button next to the standard ticket in order to clone it. 
 Name the new ticket "Speaker ticket", provide a translation, and change the "default price" to 0 euros. 
-Leave the other options on this page unchanged and click the :btn:Save: button. 
-Switch to the "availability" tab and check the box next to "This product can only be bought using a voucher". 
-Click the :btn:Save: button and return to [Your event] → "Products" → "Products". 
-In the product overview, a tag symbol will appear next to the speaker ticket. 
-If you hover your mouse over it, it says "Can only be bought using a voucher". 
+Leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
+Check the box next to "Buying this product requires approval". 
+This means that every order that arrives in your shop and includes this ticket will first enter an "approval" state. 
+You will have to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of your invited speakers. 
+Click the :btn:Save: button. 
 
 We will now create a sticker product with multiple variations to reflect different colors: purple, black, and glitter. 
 Navigate to [Your event] → "Products" → "Products". 
