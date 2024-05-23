@@ -154,12 +154,16 @@ If you want to change the design globally, click the :btn:Go to organizer settin
 
 ## Timeline 
 
-The "timeline" tab allows you to set a start and end date and time for the sale of tickets and other products in your shop. 
+By default, tickets will be available for purchase from the moment your ticket shop goes live until the end of your event. 
+If you want to restrict availability of your tickets to a certain time period, you can do that by switching to the "timeline" tab. 
+With the options available here, you can set a start and end date and time for the sale of tickets and other products in your shop. 
 If you set a start of presale, no products will be able to be sold before that date and time. 
 If you send an end of presale, no products will be able to be sold before that date and time. 
-If you have enabled box office sales (pretixPOS) during event creation or on the "basics" tab of the general settings, you will still be able to sell products via pretixPOS outside the presale period. 
+If you have enabled box office sales (pretixPOS) during event creation or on the "basics" tab of the general settings, you will still be able to sell products via pretixPOS outside the presale period you set here. 
 
 This page also lets you set restrictions on when and how your customers can make modifications to the details of their orders. 
+The restrictions you set up on the "timeline" tab apply to all products in your shop. 
+You can also restrict availability for individual products by navigating to [Your event] → "Products" → "Products", clicking the product in question, and switching to the "availability" tab. 
 
 
 ## Tax rules 
