@@ -56,7 +56,7 @@ Also choose a "Default timezone" from the drop-down menu with that title.
 
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
-Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn:👁 Public profile: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/, where "awesome-corp" is replaced with your organizer short form. 
+Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn:👁 Public profile: button in the bar at the top. Our public profile is located at https://pretix.eu/ex-org/. You can find yours by replacing "ex-org" with your organizer short form in that URL. 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
