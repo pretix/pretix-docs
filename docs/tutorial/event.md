@@ -34,7 +34,7 @@ You are now asked to provide a name and a short form for the event.
 For this tutorial, we are going to set up an example conference in 2027. 
 We therefore choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
 The short form is appended to the organizer's URL. 
-In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf]. 
+In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
 Your event's URL is going to look the same, except the name of your organizer account you chose during account creation is going to take the place of "ex-org" and the name of the event you're choosing right now is going to replace "ex-conf". 
 
 {% include "note-short-form.md" %}
@@ -125,8 +125,8 @@ Whenever you define a text, make sure you also provide a translation for each la
 
 Switching to the "shop design" tab at the top allows you to add content to your event shop. 
 You can see what the shop looks like from the customer's perspective if you click the :btn:👁 Go to shop: button in the bar at the top. 
-The demo we are creating for this tutorial is located at https://pretix.eu/awesome-corp/ixc27/. 
-Replacing "awesome-corp" with the short form of your organizer and "ixc27" with the short form of your event in that URL will take you to your shop. 
+The demo we are creating for this tutorial is located at https://pretix.eu/ex-org/ex-conf/. 
+Replacing "ex-org" with the short form of your organizer and "ex-conf" with the short form of your event in that URL will take you to your shop. 
 
 By default, the name of the event will be displayed in the page header of your shop. 
 The shop design settings allow you to replace the name with a header image that tells your customers about the event (e.g., by means of the event name, logo, or recognizable design). 
