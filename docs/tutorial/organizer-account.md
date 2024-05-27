@@ -22,7 +22,7 @@ But that's not a problem at all.
 You can always go back to these settings and change them later. 
 
 We still recommend reading this article and going through the organizer account settings before doing anything else because it will save you some work in the long run. 
-For example, organizer-level language and design settings will be used as the default for any events you create in the future. 
+For instance, organizer-level language and design settings will be used as the default for any events you create in the future. 
 
 ## Navigating to the organizer account settings 
 
@@ -166,8 +166,7 @@ Your account is reviewed manually by our team as soon as you have provided all n
 
 Navigate to [Your Organizer]→"Settings"→"Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
-Enter the name of a real person (e.g. 
-you or a coworker) we can contact if there is an issue with your account. 
+Enter the name of a real person (e.g. you or a coworker) we can contact if there is an issue with your account. 
 Enter their email address and phone number in the fields below.
 
 Enter the full contact details of your company further down on the page. 
