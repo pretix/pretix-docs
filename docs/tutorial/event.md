@@ -31,9 +31,11 @@ Once you are happy with your choices, click :btn:Continue: at the bottom right o
 Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
 You are now asked to provide a name and a short form for the event. 
-Our example is a conference on xylology in the year 2027. 
-We therefore choose "International Xylology Conference 2027" for the "event name" field, and "ixc27" for the "short form" field. 
-The short form will be appended to your organizer's URL, resulting in an URL such as [https://pretix.eu/isx/ixc27], where "isx" is the name of your organizer account you chose during account creation and ixc27 is the name of the event you're choosing right now. 
+For this tutorial, we are going to set up an example conference in 2027. 
+We therefore choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
+The short form is appended to the organizer's URL. 
+In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf]. 
+Your event's URL is going to look the same, except the name of your organizer account you chose during account creation is going to take the place of "ex-org" and the name of the event you're choosing right now is going to replace "ex-conf". 
 
 {% include "note-short-form.md" %}
 
