@@ -124,24 +124,6 @@ So for example, if you're creating a ticket shop in a language that uses the Cyr
 The shop design you set here will be the default for all shops you create for your events in the future. 
 You can make individual adjustments to the event shops. 
 
-## Customer accounts 
-
-![Organizer settings page, on the customer accounts tab, showing options for whether or not to allow customers to create accounts, whether or not to match orders based on mail addresses, as well as options for name formatting and allowed titles](../assets/screens/organizer/customer-accounts.png) 
-
-Switch to the "Customer accounts" tab. 
-By default, all boxes on this page should be unchecked. 
-If you don't plan for your customers to create accounts, you can leave them unchecked and you don't have to take any action on this tab. 
-
-pretix offers some features that only work with customer accounts. 
-If you want to offer your customers memberships that give them access to reduced price offers or members-only products, then you have to enable customer accounts. 
-If you expect your customers to repeatedly log in to your shop and make purchases through the same account, then you have to enable customer accounts. 
-You can enable customer accounts by checking the "Allow customers to create accounts" box at the top of the page. 
-
-Checking that box makes another box appear that is checked by default: "Allow customers to log in with email address and password". 
-Keep this box checked if you want customers to log in to your pretix ticket shop directly. 
-Uncheck it if you want them to log in via an external sign-on service. 
-You'll have to enable the corresponding plugin on the event level. 
-
 ## Privacy 
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
