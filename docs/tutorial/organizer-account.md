@@ -52,9 +52,10 @@ It is not possible to change the short form since it is the organizer's unique i
 
 If you are operating from Germany, it is recommended that you enter the URL to your website's imprint in the "Imprint URL" field. 
 
-Your input into the "Contact address" field will be displayed publicly to allow your customers to contact you. 
+Enter a valid email address into the "contact address" field. 
+This email address will be displayed publicly to allow your customers to contact you. 
 
-Confirm your changes on the "General" tab by clicking the :btn:Save: button on the bottom of the page. 
+Confirm your changes by clicking the :btn:Save: button on the bottom of the page. 
 
 ## Localization 
 
