@@ -4,6 +4,17 @@ An organizer account represents an entity that is running events, for example a 
 You have already created an organizer account when you created your personal account—or, if you were invited to pretix by a member of your team, then accepting that invitation has already given you (partial) access to an organizer account. 
 
 This section of the tutorial tells you how to customize your organizer account and add necessary information to it. 
+It will tell you how to: 
+
+ - navigate to the organizer account settings 
+ - add contact information on the "general" tab
+ - choose language and localization options on the "localization" tab 
+ - customize your organizer page on the "organizer page" and "shop design" tabs
+ - enable customer accounts for certain features on the "customer accounts" tab
+ - set up cookie/privacy information on the "privacy" tab 
+ - get your pretix account activated by providing necessary information in the "Billing settings"
+
+These are the necessary steps for getting your organizer account up and running so that you can use it to host events using pretix. 
 
 You may not yet be able to make a final decision for every single question that comes up in this section of the tutorial. 
 Some of the questions will only become relevant once you have created your first event with pretix. 
