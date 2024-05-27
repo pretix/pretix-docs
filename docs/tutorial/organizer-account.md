@@ -14,15 +14,10 @@ It will tell you how to:
  - set up cookie/privacy information on the "privacy" tab 
  - get your pretix account activated by providing necessary information in the "Billing settings"
 
-These are the necessary steps for getting your organizer account up and running so that you can use it to host events using pretix. 
-
-You may not yet be able to make a final decision for every single question that comes up in this section of the tutorial. 
-Some of the questions will only become relevant once you have created your first event with pretix. 
-But that's not a problem at all. 
-You can always go back to these settings and change them later. 
-
-We still recommend reading this article and going through the organizer account settings before doing anything else because it will save you some work in the long run. 
+This includes all the necessary steps for getting your organizer account up and running so that you can use it to host events using pretix. 
+It also includes a few optional steps that will save you some work in the long run. 
 For instance, organizer-level language and design settings will be used as the default for any events you create in the future. 
+You can always come back to the organizer account settings later and adapt them, should your needs change. 
 
 ## Navigating to the organizer account settings 
 
