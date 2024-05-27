@@ -55,8 +55,7 @@ If your tax situation is more complicated, you can set specific rules __after__ 
 {% include "warning-tax.md" %}
 
 ![Screenshot of page titled "Create new Event–Step 3", showing an infobox saying 'Please make sure to review all settings extensively. 
-You will probably still need to change some settings manually, e.g. 
-date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
+You will probably still need to change some settings manually, e.g. date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
 You are then asked if you want to copy information from a previously created event. 
 This step can save you a lot of work from your second event onwards. 
@@ -112,8 +111,7 @@ Open the "texts" tab.
 Type a text for welcoming your customers to your store page and guiding them through the process of purchasing a ticket into the "front page text" field. 
 If you have set time constraints for the presale, then you should add an "end of presale text". 
 This text will be displayed at the top of your ticket shop when the presale time has run out. 
-If you are making use of vouchers, e.g. 
-inviting speakers to your event by sending them voucher codes, then you should add a "voucher explanation" telling them how to obtain a voucher code. 
+If you are making use of vouchers, e.g. inviting speakers to your event by sending them voucher codes, then you should add a "voucher explanation" telling them how to obtain a voucher code. 
 This text will be displayed next to the input field for a voucher code. 
 
 The "texts" tab lets you define a lot of text messages for other purposes. 
@@ -162,5 +160,4 @@ Click the :btn:+ Create a new tax rule: button.
 The "official name" fields are already filled out with "VAT" (English), "MwSt." (German) and, if  available, the appropriate translations in any languages you have selected. 
 Choose an internal name if needed. 
 This will only be used for the backend and helps you distinguish tax rules if you use more than one. 
-Set the tax rate to the appropriate level, e.g. 
-19% for Germany and click the :btn:Save: button. 
+Set the tax rate to the appropriate level, e.g. 19% for Germany and click the :btn:Save: button. 
