@@ -26,10 +26,10 @@ Keep this box checked if you want customers to log in to your pretix ticket shop
 Uncheck it if you want them to log in via an external sign-on service. 
 You'll have to enable the corresponding plugin on the event level. 
 
-
 ## Troubleshooting 
 
-What are common problems that could be encountered here? How do you solve them? 
+What are common problems that could be encountered here? 
+How do you solve them? 
 
 ## Further Information
 
