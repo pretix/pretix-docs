@@ -54,9 +54,6 @@ If you are operating from Germany, it is recommended that you enter the URL to y
 
 Your input into the "Contact address" field will be displayed publicly to allow your customers to contact you. 
 
-You can add an info text to your organizer account. 
-The info text is not displayed anywhere by default, but you can use this in ticket templates if you want to.
-
 Confirm your changes on the "General" tab by clicking the :btn:Save: button on the bottom of the page. 
 
 ## Localization 
