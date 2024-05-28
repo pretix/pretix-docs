@@ -1,8 +1,22 @@
 # Event 
 
+After setting up your organizer account, the next step is creating an event. 
+This article will guide you through the creation and basic setup of your event. 
+It will tell you how to: 
+
+ - create an event 
+ - follow the guided four-step event creation procedure
+ - get an overview of your event's status on the dashboard
+ - enable the collection of customer and attendee data 
+ - activate your account 
+ - add texts to your ticket shop 
+ - customize the design of your ticket shop 
+ - set up tax rules 
+
+This includes all the necessary steps for creating your event and setting up your ticket shop so that we can add products to it in the next article of this tutorial. 
+
 ## Event creation 
 
-After setting up your organizer account, the next step is creating an event. 
 In order to create an event, you must be logged in to your [pretix](https://pretix.eu/control/) account. 
 Click the :btn:pretix.eu: button in the top left corner of the website. 
 This takes you to the dashboard, which includes an overview of your upcoming events. 
