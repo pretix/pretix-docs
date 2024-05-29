@@ -22,8 +22,8 @@ Click the :btn:⊕ Create a new event: button.
 
 ![Screenshot of page titled "Create new Event–Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
-Choose the organizer account that is hosting this event—most likely the one you just set up in the previous step of this tutorial. 
-This selection cannot be changed after the event has been created, so make sure that you pick the right organizer account here. 
+We will choose the organizer that is hosting this event—that is, the one we just set up in the previous step of this tutorial. 
+This selection cannot be changed after the event has been created, so it is important to pick the right organizer account here. 
 
 Next, choose the event type. 
 You have two options: "Singular event or non-event shop" and "Event series or time slot booking". 
