@@ -5,11 +5,10 @@ This article will guide you through the creation and basic setup of an event.
 It will tell you how to: 
 
  - create an event in four steps 
- - get an overview of your event's status on the dashboard
+ - get an overview of the event's status on the dashboard
  - enable the collection of customer and attendee data 
- - activate your account 
- - add texts to your ticket shop 
- - customize the design of your ticket shop 
+ - add texts to the ticket shop 
+ - customize the design of the ticket shop 
  - set up tax rules 
 
 This includes all the necessary steps for creating an event and setting up the ticket shop so that we can add products to it in the next article of this tutorial. 
