@@ -99,6 +99,10 @@ It allows you to leave an internal comment for yourself and your team and it log
 ![Screenshot of dashboard for a demo event titled International Xylology Conference 2027, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
 Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
+This overview will probably display a warning that your organizer account is not yet active. 
+If you see that warning, please click the link and fill out the necessary information in the form. 
+Activating an account is a manual process and may take some time depending on the availability of our team. 
+
 ## Customer and attendee data 
 
 If you need to issue certificates of participation to your attendees, then you have to record their name and affiliation during purchase. 
@@ -112,12 +116,6 @@ An explanation such as "this information is necessary for issuing each attendee 
 
 Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. 
 We recommend that you finalize your choice here before taking your ticket shop live because changing this after already having received orders can lead to issues when sorting or changing names. 
-
-## Account activation 
-
-The overview will probably display a warning that your organizer account is not yet active. 
-If you see that warning, please click the link and fill out the necessary information in the form. 
-Activating an account is a manual process and may take some time depending on the availability of our team. 
 
 ## Texts 
 
