@@ -96,7 +96,7 @@ You can visit the dashboard for your event by clicking the :btn:pretix.eu: butto
 The dashboard for your event gives you an overview of the event's basic information and status. 
 It allows you to leave an internal comment for yourself and your team and it logs recent changes. 
 
-![Screenshot of dashboard for a demo event titled International Xylology Conference 2027, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
+![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
 Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
 This overview will probably display a warning that your organizer account is not yet active. 
