@@ -107,7 +107,7 @@ Navigate to [Your Event] → "Settings" → "General" and open the "customer and
 Here, under the "attendee data (once per personalized ticket)" subheading, you have options for asking for attendee names, addresses per ticket, and company per ticket. 
 We will set those three questions to "ask, but do not require input". 
 By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation. 
- In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. 
+In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. 
 An explanation such as "this information is necessary for issuing each attendee a certificate of participation" should suffice. 
 
 Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. 
