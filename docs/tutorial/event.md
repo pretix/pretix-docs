@@ -101,22 +101,28 @@ It allows us to leave an internal comment for ourselves and our team and it logs
 Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
 This overview will probably display a warning that your organizer account is not yet active. 
-If you see that warning, please click the link and fill out the necessary information in the form. 
+If you see that warning, click the link and fill out the necessary information in the form. 
 Activating an account is a manual process and may take some time depending on the availability of our team. 
 
 ## Customer and attendee data 
 
-If you need to issue certificates of participation to your attendees, then you have to record their name and affiliation during purchase. 
-This section tells you how to do that. 
-Navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
-Here, under the "attendee data (once per personalized ticket)" subheading, you have options for asking for attendee names, addresses per ticket, and company per ticket. 
+We need to issue certificates of participation to our attendees. 
+That means we have to record their name and affiliation during purchase. 
+This section describes how to do that. 
+We are going to navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
+Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for attendee names, addresses per ticket, and company per ticket. 
 We will set those three questions to "ask, but do not require input". 
 By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation. 
-In the text fields labeled "attendee data explanation", add an explanation as to why you're collecting the data in question. 
-An explanation such as "this information is necessary for issuing each attendee a certificate of participation" should suffice. 
+In the text fields labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
+Our explanation reads as follows: 
+"We are asking you to submit the name, email address and company for every attendee that you're buying a ticket for. This data is necessary for issuing certificates of participation."
 
-Under "other settings", you can choose the format in which pretix will ask attendees for names and titles. 
-We recommend that you finalize your choice here before taking your ticket shop live because changing this after already having received orders can lead to issues when sorting or changing names. 
+Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
+The default option for names is "ask for given name, + family name, display like John Doe". 
+The default option for titles is "free text input". 
+We are happy with those two options, so we are not going to make any changes here. 
+It is recommended to finalize the choice here before taking the ticket shop live. 
+Changing this after already having received orders can lead to issues when sorting or changing names. 
 
 ## Texts 
 
