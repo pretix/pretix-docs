@@ -1,8 +1,8 @@
 # Event 
 
 After setting up an organizer account, the next step is creating an event. 
-This article will guide you through the creation and basic setup of an event. 
-It will tell you how to: 
+This article describes the creation and basic setup of an event. 
+In this article, we will: 
 
  - create an event in four steps 
  - get an overview of the event's status on the dashboard
@@ -15,52 +15,56 @@ This includes all the necessary steps for creating an event and setting up the t
 
 ## Event creation 
 
-In order to create an event, you must be logged in to your [pretix](https://pretix.eu/control/) account. 
-Click the :btn:pretix.eu: button in the top left corner of the website. 
-This takes you to the dashboard, which includes an overview of your upcoming events. 
-Click the :btn:⊕ Create a new event: button. 
+In order to create an event, we must be logged in to our [pretix](https://pretix.eu/control/) account. 
+We will click the :btn:pretix.eu: button in the top left corner of the website. 
+This takes us to the dashboard, which includes an overview of our upcoming events. 
+We will now click the :btn:⊕ Create a new event: button. 
 
 ![Screenshot of page titled "Create new Event–Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
 We will choose the organizer that is hosting this event—that is, the one we just set up in the previous step of this tutorial. 
 This selection cannot be changed after the event has been created, so it is important to pick the correct organizer account here. 
 
-Next, choose the event type. 
-You have two options: "Singular event or non-event shop" and "Event series or time slot booking". 
-Creating an event series only makes sense if you're planning on hosting the same conference several times or if you're planning for your customers to participate in a series of conferences that they buy tickets for in a single purchase. 
+Next, we will choose the event type. 
+There are two options: "Singular event or non-event shop" and "Event series or time slot booking". 
+Creating an event series only makes sense if we're planning on hosting the same conference several times or if we're planning for our customers to participate in a series of conferences that they buy tickets for in a single purchase. 
 The use case presented in this tutorial is a simple conference that takes place on a single weekend, so we are going to choose the option "Singular event or non-event shop". 
 
-After that, choose which languages to use for the event. 
-By default, the languages you chose while setting up the organizer account should already be checked here. 
-Simply activate and deactivate the languages as needed.
+After that, we are going to choose which languages to use for the event. 
+By default, the languages we chose while setting up the organizer account should already be checked here. 
+We will simply activate and deactivate the languages as needed.
 
 {% include "note-translations.md" %}
 
-Once you are happy with your choices, click :btn:Continue: at the bottom right of the page. 
+Once we are happy with our choices, we will click :btn:Continue: at the bottom right of the page. 
 
 ![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. 
 Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
-You are now asked to provide a name and a short form for the event. 
+We are now asked to provide a name and a short form for the event. 
 For this tutorial, we are going to set up an example conference in 2027. 
 We therefore choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
 The short form is appended to the organizer's URL. 
 In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
-Your event's URL is going to look the same, except the name of your organizer account you chose during account creation is going to take the place of "ex-org" and the name of the event you're choosing right now is going to replace "ex-conf". 
+Your event's URL is going to look the same, except the name of the organizer account you chose during account creation is going to take the place of "ex-org" and the name of the event you're choosing right now is going to replace "ex-conf". 
 
 {% include "note-short-form.md" %}
 
-You also have to pick a start time and a currency for your event. 
+We also have to pick a start time and a currency for your event. 
+Our start time is the fourth of June, 2027. 
+Our event's currency is the Euro. 
 
-An optional step on this page is choosing a location for your event. 
-Your input into the "location" field will be used to search OpenStreetMap for that location. 
+An optional step on this page is choosing a location for our event. 
+Our input into the "location" field will be used to search OpenStreetMap for that location. 
 If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
-If no results can be found for your input, you can manually drag the marker on the map to your event location. 
+If no results can be found for our input, we can manually drag the marker on the map to our event location. 
 This will automatically update the "geo coordinates" fields. 
-Alternatively, you can go to  [OpenStreetMap.org](https://www.openstreetmap.org), use the more advanced search function there to find your location, and then copy the address over to the "location" field. 
+Alternatively, we can go to  [OpenStreetMap.org](https://www.openstreetmap.org), use the more advanced search function there to find our location, and then copy the address over to the "location" field. 
 
-This page also allows you to set a sales tax rate for your event. 
-If the taxation laws that apply to your event can be covered by a single percentage rule, you can enter that percentage here. 
+This page also allows us to set a sales tax rate for your event. 
+We are holding the event in Germany. 
+A value-added tax of 19% applies to all of our products. 
+The taxation laws that apply to our event can be covered by a single percentage rule, so we are going to enter that percentage here. 
 If your tax situation is more complicated, you can set specific rules __after__ event creation is finished by navigating to [Your Event] → "Settings" → "Tax rules". 
 
 {% include "warning-tax.md" %}
@@ -68,30 +72,30 @@ If your tax situation is more complicated, you can set specific rules __after__ 
 ![Screenshot of page titled "Create new Event–Step 3", showing an infobox saying 'Please make sure to review all settings extensively. 
 You will probably still need to change some settings manually, e.g. date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
-You are then asked if you want to copy information from a previously created event. 
-This step can save you a lot of work from your second event onwards. 
-But since this is the first event you're organizing using pretix, simply leave the default (_"Do not copy"_) and click :btn:Continue: 
+We are then asked if we want to copy information from a previously created event. 
+This step can save us a lot of work from our second event onwards. 
+But since this is the first event we're organizing using pretix, we will simply leave the default (_"Do not copy"_) and click :btn:Continue: 
 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. 
 Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
 
-The next page congratulates you on creating your event. 
-It also gives you a quick overview for products and basic settings for the event. 
+The next page congratulates us on creating our event. 
+It also gives us a quick overview for products and basic settings for the event. 
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 
-Fill out the contact address and imprint URL in the "getting in touch with you" section near the bottom of the page. 
-Provide a general email address at which your customers can contact you in the "contact address" field. 
-Provide a URL to legal imprint information for your organization in the "imprint URL" field. 
-These two pieces of information are mandatory for your ticket shop to go live. 
+We will fill out the contact address and imprint URL in the "getting in touch with you" section near the bottom of the page. 
+We will provide a general email address at which our customers can contact us in the "contact address" field. 
+We will provide a URL to legal imprint information for our organization in the "imprint URL" field. 
+These two pieces of information are mandatory for our ticket shop to go live. 
 
-Once you click :btn:Save: at the bottom of the page, you will be taken to an overview of the event, which gives you its name, the timeline of tickets sales and presale, the status of your ticket shop (most likely in test mode by this point). 
+Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop (most likely in test mode by this point). 
 
 ## Dashboard
 
-Now that you have created your event, you have access to all possible options for the event. 
-You can visit the dashboard for your event by clicking the :btn:pretix.eu: button in the top left and then selecting the event you just created in the list titled "your upcoming events". 
-The dashboard for your event gives you an overview of the event's basic information and status. 
-It allows you to leave an internal comment for yourself and your team and it logs recent changes. 
+Now that we have created our event, we have access to all possible options for the event. 
+We can visit the dashboard for our event by clicking the :btn:pretix.eu: button in the top left and then selecting the event we just created in the list titled "your upcoming events". 
+The dashboard for our event gives us an overview of the event's basic information and status. 
+It allows us to leave an internal comment for ourselves and our team and it logs recent changes. 
 
 ![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
 Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
