@@ -28,8 +28,7 @@ This selection cannot be changed after the event has been created, so it is impo
 Next, choose the event type. 
 You have two options: "Singular event or non-event shop" and "Event series or time slot booking". 
 Creating an event series only makes sense if you're planning on hosting the same conference several times or if you're planning for your customers to participate in a series of conferences that they buy tickets for in a single purchase. 
-We are going to create a simple conference that takes place on a single weekend for this tutorial. 
-This is the appropriate choice for most use cases. 
+The use case presented in this tutorial is a simple conference that takes place on a single weekend, so we are going to choose the option "Singular event or non-event shop". 
 
 After that, choose which languages to use for the event. 
 By default, the languages you chose while setting up the organizer account should already be checked here. 
