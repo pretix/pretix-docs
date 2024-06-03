@@ -128,13 +128,13 @@ Changing this after already having received orders can lead to issues when sorti
 
 ![Screenshot of "shop design" tab, showing options for the header image and social media image, as well as a locked section at the bottom.](../assets/screens/event/shop-design.png "Event shop design tab screenshot") 
 
-Switching to the "shop design" tab at the top allows you to add content to your event shop. 
+Switching to the "shop design" tab at the top allows us to add content to our event shop. 
 You can see what the shop looks like from the customer's perspective if you click the :btn:👁 Go to shop: button in the bar at the top. 
 The demo we are creating for this tutorial is located at https://pretix.eu/ex-org/ex-conf/. 
 Replacing "ex-org" with the short form of your organizer and "ex-conf" with the short form of your event in that URL will take you to your shop. 
 
-By default, the name of the event will be displayed in the page header of your shop. 
-The shop design settings allow you to replace the name with a header image that tells your customers about the event (e.g., by means of the event name, logo, or recognizable design). 
+By default, the name of the event will be displayed in the page header of our shop. 
+The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design). 
 It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or slightly smaller. 
 You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
 The header image will replace the name of the event at the top of the page unless you check the box next to "show event title even if a header image is present". 
