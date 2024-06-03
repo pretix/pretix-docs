@@ -124,20 +124,6 @@ We are happy with those two options, so we are not going to make any changes her
 It is recommended to finalize the choice here before taking the ticket shop live. 
 Changing this after already having received orders can lead to issues when sorting or changing names. 
 
-## Texts 
-
-Open the "texts" tab. 
-Type a text for welcoming your customers to your store page and guiding them through the process of purchasing a ticket into the "front page text" field. 
-If you have set time constraints for the presale, then you should add an "end of presale text". 
-This text will be displayed at the top of your ticket shop when the presale time has run out. 
-If you are making use of vouchers, e.g. inviting speakers to your event by sending them voucher codes, then you should add a "voucher explanation" telling them how to obtain a voucher code. 
-This text will be displayed next to the input field for a voucher code. 
-
-The "texts" tab lets you define a lot of text messages for other purposes. 
-Every field comes with an explanation as to where the text will be used. 
-All fields support simple and human-readable formatting via Markdown. 
-Whenever you define a text, make sure you also provide a translation for each language you selected in the localization tab. 
-
 ## Shop design 
 
 ![Screenshot of "shop design" tab, showing options for the header image and social media image, as well as a locked section at the bottom.](../assets/screens/event/shop-design.png "Event shop design tab screenshot") 
