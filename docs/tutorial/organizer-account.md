@@ -12,7 +12,7 @@ It will tell you how to:
  - customize your organizer page on the "organizer page" and "shop design" tabs
  - enable customer accounts for certain features on the "customer accounts" tab
  - set up cookie/privacy information on the "privacy" tab 
- - get your pretix account activated by providing necessary information in the "Billing settings"
+ - get your pretix account activated by providing necessary information in the "billing settings"
 
 This includes all the necessary steps for getting your organizer account up and running so that you can use it to host events using pretix. 
 It also includes a few optional steps that will save you some work in the long run. 
@@ -42,7 +42,7 @@ This lands you on the general settings page for the organizer account.
 ![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. 
 Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
-The fields for "Name" and "Short form" are already filled out. 
+The fields for "name" and "short form" are already filled out. 
 It is not possible to change the short form since it is the organizer's unique identifier. 
 
 If you are operating from Germany, it is recommended that you enter the URL to your website's imprint in the "Imprint URL" field. 
@@ -56,12 +56,12 @@ Confirm your changes by clicking the :btn:Save: button on the bottom of the page
 
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
-After saving the general settings, switch to the "Localization" tab. 
-We recommend changing localization settings __before__ changing any settings on the "Organizer page" tab because the localization settings determine which customizations are available there. 
+After saving the general settings, switch to the "localization" tab. 
+We recommend changing localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
 
-Under "Available languages", you can choose which languages your ticket shop will be published in. 
+Under "available languages", you can choose which languages your ticket shop will be published in. 
 The options officially maintained by the pretix team are English, German, and German (informal). 
-German uses "Sie" to address the user whereas German (informal) uses "Du". 
+German uses "Sie" to address the user whereas German (informal) uses "du". 
 You can also choose one of the community translations for your organizer page. 
 They are displayed in the list below along with a percentage of how much of the software is translated. 
 English is used as the fallback language for missing translations. 
@@ -70,34 +70,34 @@ This setting also determines the default languages when creating new events, tho
 
 {% include "note-translations.md" %}
 
-Choose a country or region from  the drop-down "Region" menu. 
+Choose a country or region from  the drop-down "region" menu. 
 The selection will be used to determine default date, time, address and phone number formatting. 
 The language chosen above will take a higher priority than the region. 
 
-Also choose a "Default timezone" from the drop-down menu with that title. 
+Also choose a "default timezone" from the drop-down menu with that title. 
 
 ## Organizer page 
 
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
-Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. 
+Switching to the "organizer page" tab at the top allows you to add content to the public profile of your organizer. 
 You can take a look at the public profile by clicking the :btn:👁 Public profile: button in the bar at the top. 
 Our public profile is located at https://pretix.eu/ex-org/. 
 You can find yours by replacing "ex-org" with your organizer short form in that URL. 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). 
-The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
+The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
 By default, the name of the organizer  will be displayed in the page header of your public profile. 
 The organizer page settings allow you to replace the name with an image that tells your customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). 
 It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. 
-You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
+You can add the header image by clicking the :btn:Browse...: button next to the "header image" option and choosing the image file to upload from your computer. 
 
 In the "homepage text" fields, you can provide text to be displayed on your public profile. 
-You will have one field for each language you activate in the "Localization" tab (see the "Localization" segment of this article). 
+You will have one field for each language you activate in the "localization" tab (see the "localization" segment of this article). 
 If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
-You can choose the "Default overview style" for events on your public profile from the drop-down menu. 
+You can choose the "default overview style" for events on your public profile from the drop-down menu. 
 Events will either be displayed in a list, a weekly overview, or a monthly overview. 
 The list overview style is only available if your event series has 50 or less dates in the future. 
 
@@ -105,7 +105,7 @@ The list overview style is only available if your event series has 50 or less da
 
 ![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../assets/screens/organizer/shop-design.png) 
 
-Switch to the "Shop design" tab. 
+Switch to the "shop design" tab. 
 Here, you can customize the colors and font used for your public profile and the ticket shops you are going to create. 
 You can change the colors so that they're in line with the palette you use for your other media. 
 Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
@@ -123,13 +123,13 @@ You can make individual adjustments to the event shops.
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
-On the "Privacy" tab, please provide an URL pointing to your privacy policy for each language you activated. 
+On the "privacy" tab, please provide an URL pointing to your privacy policy for each language you activated. 
 The default dialog text and button labels for the cookie consent banner should already be filled out. 
 Feel free to edit or replace these as you see fit. 
 
 pretix itself only ever sets cookies that are required to provide the service requested by the user or to maintain an appropriate level of security. 
 Therefore, cookies set by pretix itself do not require consent in all jurisdictions that we are aware of. 
-The settings on the "Privacy" tab will only have an effect if you use plugins that require additional cookies and participate in our cookie consent mechanism.
+The settings on the "privacy" tab will only have an effect if you use plugins that require additional cookies and participate in our cookie consent mechanism.
 
 Ultimately, it is your responsibility to make sure you comply with all relevant laws. 
 We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
