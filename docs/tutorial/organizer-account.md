@@ -26,12 +26,12 @@ You can always come back to the organizer account settings later and adapt them,
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), you are greeted by the dashboard. 
 Click the :btn:Organizers: button in the sidebar to get to the Organizers page. 
 
-![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Awesome Event Corporation'. 
+![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
 There is a filter function for the list of organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
 Clicking your organizer account in the list takes you to a page displaying all events associated with that organizer. 
 
-![pretix.eu organizers page, showing the list of all events associated with 'Awesome Event Corporation'. 
+![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. 
 There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
 Click :btn:Settings: in the sidebar to set up your organizer account. 
