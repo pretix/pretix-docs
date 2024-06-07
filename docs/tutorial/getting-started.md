@@ -36,17 +36,14 @@ Your first name and last name should work perfectly fine.
 The name of the company, association or institution that you want to organize events for goes in the field on the top right. 
 Below that, please enter a short form of the organization's name. 
 This short form will be used for the URL where your events can be found. 
-Let's say, for example, that you're working for a cooperative named Awesome Event Corporation. 
-In this case, you will enter "Awesome Event Corporation" into the company name field, and "awesome-corp" into the short form field. 
-This means that all the events you create will be found at [https://pretix.eu/awesome-corp/](https://pretix.eu/awesome-corp/ "https://pretix.eu/awesome-corp/") in the future. 
-You can also use a custom domain. 
-Simply proceed with signup now and contact us afterwards. 
+For this tutorial, we are going to create an account for our Example Organization. 
+So we will enter "Example Organization" into the company name field, and "ex-org" into the short form field. 
+This means that all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
 
-!!! Note
+It is also possible to use a custom domain. 
+If you want to use a custom domain with pretix, simply proceed with signup now and contact us afterwards. 
 
-    The short form may only contain letters, numbers, dots and dashes. 
-    __It may not contain spaces.__ It may not contain special characters. 
-    Spaces and special characters would render the URL invalid. 
+{% include "note-short-form.md" %}
 
 Once you have filled out the form, please also read our privacy policy and our terms of service. 
 They are both linked on this page. 
