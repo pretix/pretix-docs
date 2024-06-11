@@ -31,8 +31,11 @@ The following sections will guide you through those steps in detail.
 ![Plugins Top Recommendations](../assets/screens/payment-providers/plugins-top.png)
 
 pretix allows handling payment via more than three dozen payment providers. 
-Each one of them is handled by a plugin. 
-To enable plugins for payment providers, navigate to [Your Event] → "Settings" → "Plugins". 
+There is a plugin for each one of them. 
+You have to enable the plugins for every payment provider that you want to use for your event. 
+This section is going to tell you how to do that. 
+
+Navigate to [Your Event] → "Settings" → "Plugins". 
 The "payment providers" tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe at the top of the page. 
 Below that, you can find the list of plugins for all other payment providers available in pretix. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
@@ -40,8 +43,8 @@ By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit 
 ![Plugins List](../assets/screens/payment-providers/plugins-list.png)
 
 Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
-You can tell that a plugin is enabled by the green "✓ Active" tag. 
-You can disable the default plugins that you don't want to use. 
+You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btnEnable: button being replaced by a white :btn:Disable: button. 
+Disable any active plugins that you do not want to use for your event. 
 
 ### Settings for Payment Providers 
 
