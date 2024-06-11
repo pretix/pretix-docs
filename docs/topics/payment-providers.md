@@ -2,12 +2,14 @@
 
 Payment providers are the means by which your customers can pay for their purchases in your ticket shop. 
 They include payment methods that are handled within pretix, such as bank transfers and gift cards, and integrations of external services such as Stripe and PayPal. 
+You have to enable and set up at least one payment provider if you want to receive payments from your customers via pretix. 
+This article will show you how to do that. 
 
 ## Prerequisites
 
 Setting up payment providers is handled on the event level, so you need to create an event first. 
 
-Please make sure you have an active account with each payment provider you intend to use with pretix. 
+Make sure you have an active account with each payment provider you intend to use with pretix. 
 For example, if you want to receive payments via PayPal, you need to have a PayPal business account. 
 
 ## How To 
