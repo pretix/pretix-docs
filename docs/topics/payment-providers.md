@@ -28,12 +28,12 @@ The following sections will guide you through those steps in detail.
 
 ### Plugins for Payment Providers 
 
-![Plugins Top Recommendations](../assets/screens/payment-providers/plugins-top.png)
-
 pretix allows handling payment via more than three dozen payment providers. 
 There is a plugin for each one of them. 
 You have to enable the plugins for every payment provider that you want to use for your event. 
 This section is going to tell you how to do that. 
+
+![Plugins Top Recommendations](../assets/screens/payment-providers/plugins-top.png)
 
 Navigate to [Your Event] → "Settings" → "Plugins". 
 The "payment providers" tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe at the top of the page. 
@@ -52,10 +52,13 @@ Disable any active plugins that you do not want to use for your event.
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
+By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. 
+If you have enabled or disabled any of the default plugins for payment providers, your list will look different. 
 Every payment provider that you have enabled the plugin for on the "plugins" page appears in this list. 
-By default, this list includes Bank transfer, Gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. 
-You can edit and enable the payment providers by clicking the :btn:⚙ Settings: button next to them. 
+The list will also always contain the entry for gift cards. 
+Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of the pretix software. 
 
+You can edit and enable the payment providers by clicking the :btn:⚙ Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
 For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the specific conditions that apply to this payment method. 
 
