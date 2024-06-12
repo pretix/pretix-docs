@@ -51,8 +51,8 @@ Disable any active plugins that you do not want to use for your event.
 ![Payment Settings](../assets/screens/payment-providers/payment-settings.png)
 
 Navigate to [Your Event] → "Settings" → "Payment". 
-The "Payment providers" tab on this page displays the list of active payment providers. 
-Every payment provider that you have enabled the plugin for on the "Plugins" page appears in this list. 
+The "payment providers" tab on this page displays the list of active payment providers. 
+Every payment provider that you have enabled the plugin for on the "plugins" page appears in this list. 
 By default, this list includes Bank transfer, Gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. 
 You can edit and enable the payment providers by clicking the :btn:⚙ Settings: button next to them. 
 
@@ -74,7 +74,7 @@ Once the connection has been confirmed, the settings page for the payment provid
 ![Payment Deadlines](../assets/screens/payment-providers/payment-deadlines.png)
 
 Navigate to [Your Event] → "Settings" → "Payment". 
-The "Deadlines" tab lets you set payment terms measured in either days or minutes. 
+The "deadlines" tab lets you set payment terms measured in either days or minutes. 
 By default, the payment term for your customers is set to 14 days. 
 This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
 
@@ -85,12 +85,12 @@ This page also lets you make optional adjustments such as a last day of payment,
 ## Troubleshooting 
 
 __A payment provider does not show up in [Your Event] → "Settings" → "Payment"__
-Navigate to [Your Event] → "Settings" → "Plugins" and open the "Payment providers" tab. 
+Navigate to [Your Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
 Enable the corresponding plugin. 
 Make sure it has the green "✓ Active" tag next to it. 
 
 __A payment provider does not show up in your test shop/Customers cannot select a payment method during their purchase__ 
-Navigate to [Your Event] → "Settings" → "Payment" and open the "Payment" tab. 
+Navigate to [Your Event] → "Settings" → "Payment" and open the "payment" tab. 
 Click the :btn:⚙ Settings: button next to the payment provider that isn't showing up in the shop. 
 Check the "☑ Enable payment method" box. 
 Then scroll to the bottom of the page and click :btn:Save:. 
