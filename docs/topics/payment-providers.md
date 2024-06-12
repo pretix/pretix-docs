@@ -62,16 +62,31 @@ Gift cards are the only payment method that is not handled by a plugin since gif
 
 ![Payment Settings](../assets/screens/payment-providers/payment-settings.png)
 
-You can edit and enable the payment providers by clicking the :btn:⚙ Settings: button next to them. 
+You can edit and enable payment providers by clicking the :btn:⚙ Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
 For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the specific conditions that apply to this payment method. 
-
 You can also apply a wide range of optional settings to each payment provider. 
 For example, you can restrict availability of the payment method by date, country and sales channel. 
 
 ![Payment External](../assets/screens/payment-providers/payment-external.png)
 
 If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. 
+Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
+For detailed information on how to set up and enable specific payment providers, refer to the next three sections. 
+
+
+### Bank transfer 
+
+This section is going to tell you how to set up bank transfers as a method for receiving payments via pretix. 
+
+### PayPal
+
+This section is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
+
+### Stripe
+
+This section is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
+
 For example, the settings page for Stripe contains a :btn:Connect with Stripe: button. 
 Clicking this button redirects you to stripe.com and opens a dialog for authorizing the connection between your Stripe and pretix accounts. 
 Once the connection has been confirmed, the settings page for the payment provider contains the usual mandatory and optional settings. 
