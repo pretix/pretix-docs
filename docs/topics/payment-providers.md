@@ -33,14 +33,14 @@ There is a plugin for each one of them.
 You have to enable the plugins for every payment provider that you want to use for your event. 
 This section is going to tell you how to do that. 
 
-![Plugins Top Recommendations](../assets/screens/payment-providers/plugins-top.png)
+![Top recommendations for available payment provider plugins. The Top recommendations are bank transfer, PayPal and Stripe. All of them have a green 'active' tag and a 'disable' button next to them.](../assets/screens/payment-providers/plugins-top.png "Plugins Payment providers top recommendations")
 
 Navigate to [Your Event] → "Settings" → "Plugins". 
 The "payment providers" tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe at the top of the page. 
 Below that, you can find the list of plugins for all other payment providers available in pretix. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
 
-![Plugins List](../assets/screens/payment-providers/plugins-list.png)
+![Part of the list of available payment provider plugins. Entries for Saferpay, secuconnect, SEPA direct debit, SOFORT and Stadtguthaben are visible. The SEPA option is active. The other entries have a purple 'enable' button next to them.](../assets/screens/payment-providers/plugins-list.png "Plugins Payment providers list")
 
 Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
 You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btnEnable: button being replaced by a white :btn:Disable: button. 
@@ -60,7 +60,7 @@ Every payment provider that you have enabled the plugin for on the "plugins" pag
 The list will also always contain the entry for gift cards. 
 Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of the pretix software. 
 
-![Payment Settings](../assets/screens/payment-providers/payment-settings.png)
+![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. ](../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 You can edit and enable payment providers by clicking the :btn:⚙ Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
@@ -68,7 +68,7 @@ For example, the settings page for bank transfer requires you to enter your bank
 You can also apply a wide range of optional settings to each payment provider. 
 For example, you can restrict availability of the payment method by date, country and sales channel. 
 
-![Payment External](../assets/screens/payment-providers/payment-external.png)
+![Settings page for stripe, showing a large purple button labeled 'Connect with Stripe'](../assets/screens/payment-providers/payment-external.png "Stripe settings")
 
 If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. 
 Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
@@ -82,7 +82,7 @@ Navigate to [Your Event] → "Settings" → "Payment".
 On the "payment providers" tab, click on the :btn:Settings: button next to the entry for "bank transfer" in the list. 
 This takes you to the settings page for bank transfers. 
 
-![Payment External](../assets/screens/payment-providers/bank-transfer-settings1.png)
+![Settings page for bank transfer, including fields for entering the account data and boxes that need to be checked in order to enable the payment method.](../assets/screens/payment-providers/bank-transfer-settings1.png "Bank transfer settings")
 
 ### PayPal
 
@@ -98,7 +98,7 @@ Once the connection has been confirmed, the settings page for the payment provid
 
 ### Deadlines
 
-![Payment Deadlines](../assets/screens/payment-providers/payment-deadlines.png)
+![Payment settings page. The "deadlines" tab is open, showing various options for settings deadlines.](../assets/screens/payment-providers/payment-deadlines.png "Payment deadlines settings")
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "deadlines" tab lets you set payment terms measured in either days or minutes. 
