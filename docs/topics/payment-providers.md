@@ -48,7 +48,9 @@ Disable any active plugins that you do not want to use for your event.
 
 ### Settings for Payment Providers 
 
-![Payment Settings](../assets/screens/payment-providers/payment-settings.png)
+Enabling a plugin does not yet make the payment method available in your shop. 
+You also need to provide some data for each payment provider you want to use on the settings page. 
+This section is going to tell you how to do that. 
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
@@ -57,6 +59,8 @@ If you have enabled or disabled any of the default plugins for payment providers
 Every payment provider that you have enabled the plugin for on the "plugins" page appears in this list. 
 The list will also always contain the entry for gift cards. 
 Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of the pretix software. 
+
+![Payment Settings](../assets/screens/payment-providers/payment-settings.png)
 
 You can edit and enable the payment providers by clicking the :btn:⚙ Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
