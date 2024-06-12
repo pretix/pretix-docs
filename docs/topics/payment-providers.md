@@ -78,6 +78,9 @@ For detailed information on how to set up and enable specific payment providers,
 ### Bank transfer 
 
 This section is going to tell you how to set up bank transfers as a method for receiving payments via pretix. 
+Navigate to [Your Event] → "Settings" → "Payment". 
+On the "payment providers" tab, click on the :btn:Settings: button next to the entry for "bank transfer" in the list. 
+
 
 ### PayPal
 
