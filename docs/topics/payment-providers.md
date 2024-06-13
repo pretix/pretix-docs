@@ -127,9 +127,11 @@ The corresponding payment method should now show up in your online shop.
 
 ## Further Information
 
-What other media do we have on the topic? 
-Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? 
-Link it here and explain what it does
+Here is the full list of articles on setting up and using specific payment providers: 
+
+ -  [Bank transfer](payment/bank-transfer.md) 
+ -  [Stripe](payment/stripe.md) 
+ -  [PayPal](payment/paypal.md) 
 
 ## See Also 
 
