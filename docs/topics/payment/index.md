@@ -130,9 +130,9 @@ The corresponding payment method should now show up in your online shop.
 
 Here is the full list of articles on setting up and using specific payment providers: 
 
- -  [Bank transfer](payment/bank-transfer.md) 
- -  [Stripe](payment/stripe.md) 
- -  [PayPal](payment/paypal.md) 
+ -  [Bank transfer](bank-transfer.md) 
+ -  [Stripe](stripe.md) 
+ -  [PayPal](paypal.md) 
 
 ## See Also 
 
