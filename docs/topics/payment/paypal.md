@@ -31,6 +31,8 @@ If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
+
+
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
 The list should now include an entry for PayPal with a red "❌ Disabled" tag. 
@@ -39,6 +41,7 @@ Click on the :btn:⚙ Settings: button next to PayPal.
 This takes you to the settings page for PayPal, which currently only includes the :btn:Connect with PayPal: button. 
 Click the button and complete the the login and authorization process with PayPal. 
 
+![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
 
 
 ## Troubleshooting 
