@@ -75,7 +75,6 @@ If the payment provider is an external service, the settings page only contains 
 Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
 For detailed information on how to set up and enable specific payment providers, refer to the next three sections. 
 
-
 ### Bank transfer 
 
 This section is going to tell you how to set up bank transfers as a method for receiving payments via pretix. 

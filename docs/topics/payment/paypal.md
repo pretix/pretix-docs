@@ -1,14 +1,45 @@
 # PayPal
 
-What does this article tell you? What does it not tell you? For example, in the article on gift cards, quickly explain the difference between gift cards and vouchers and link to the article on vouchers. 
+PayPal is one of the many options for handling payments within pretix. 
+This article is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
 
 ## Prerequisites
 
-What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
+Setting up payment providers is handled on the event level, so you need to create an event first. 
+Make sure you have an active PayPal business account. 
+A regular PayPal account is not enough for integration with pretix. 
+You can find [instructions on how to sign up for a PayPal business account](https://www.paypal.com/c2/webapps/mpp/how-to-guides/sign-up-business-account) on the PayPal website. 
 
 ## How To (?)
 
-What does the feature do? How do you use it? How do you apply it to your individual use case? This is the main body of the article. 
+Setting up PayPal as a payment provider in pretix involves the following steps: 
+
+ 1. Enable the PayPal plugin. 
+ 2. Connect to your PayPal business account 
+ 3. Enter mandatory info on the settings page for PayPal
+ 4. Make optional adjustments
+ 5. Enable payment via PayPal
+ 6. Test it 
+
+This section will guide you through those steps in detail. 
+
+Navigate to [Your Event] → "Settings" → "Plugins". 
+Switch to the "payment providers" tab. 
+The PayPal plugin is displayed at the top of the page. 
+It should be enabled by default. 
+If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable: button. 
+If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
+Make sure that the plugin is enabled. 
+
+Navigate to [Your Event] → "Settings" → "Payment". 
+The "payment providers" tab on this page displays the list of active payment providers. 
+The list should now include an entry for PayPal with a red "❌ Disabled" tag. 
+The plugin is enabled, but PayPal has not been set up and enabled as a payment provider for the event yet. 
+Click on the :btn:⚙ Settings: button next to PayPal. 
+This takes you to the settings page for PayPal, which currently only includes the :btn:Connect with PayPal: button. 
+Click the button and complete the the login and authorization process with PayPal. 
+
+
 
 ## Troubleshooting 
 
