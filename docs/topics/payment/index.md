@@ -112,12 +112,12 @@ This page also lets you make optional adjustments such as a last day of payment,
 
 ## Troubleshooting 
 
-__A payment provider does not show up in [Your Event] → "Settings" → "Payment"__
+__A payment provider does not show up in [Your Event] → "Settings" → "Payment":__
 Navigate to [Your Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
 Enable the corresponding plugin. 
 Make sure it has the green "✓ Active" tag next to it. 
 
-__A payment provider does not show up in your test shop/Customers cannot select a payment method during their purchase__ 
+__A payment provider does not show up in your test shop/Customers cannot select a payment method during their purchase:__ 
 Navigate to [Your Event] → "Settings" → "Payment" and open the "payment" tab. 
 Click the :btn:⚙ Settings: button next to the payment provider that isn't showing up in the shop. 
 Check the "☑ Enable payment method" box. 
