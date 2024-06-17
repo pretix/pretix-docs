@@ -43,6 +43,14 @@ Click the button and complete the the login and authorization process with PayPa
 
 ![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
 
+After you have completed the authorization process with PayPal, the PayPal settings page in the pretix backend will look different. 
+Instead of the single button, it will now offer a multitude of settings. 
+Your PayPal merchant ID will be displayed at the top of the page. 
+All settings here are optional. 
+Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
+Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
+PayPal will now appear as a payment option for customers in your shop. 
+
 ## Troubleshooting 
 
 What are common problems that could be encountered here? How do you solve them? 
