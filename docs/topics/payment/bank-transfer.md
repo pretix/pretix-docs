@@ -1,23 +1,48 @@
-# Bank transfer
+# PayPal
 
-What does this article tell you? What does it not tell you? For example, in the article on gift cards, quickly explain the difference between gift cards and vouchers and link to the article on vouchers. 
+Bank transfers are one of the many options for handling payments within pretix. 
+This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
 
 ## Prerequisites
 
-What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
+Setting up payment providers is handled on the event level, so you need to create an event first. 
+Make sure you have access to the appropriate bank account. 
 
-## How To (?)
+## How To 
 
-What does the feature do? How do you use it? How do you apply it to your individual use case? This is the main body of the article. 
+Setting up bank transfer as a payment provider in pretix involves the following steps: 
 
-## Troubleshooting 
+ 1. Enable the bank transfer plugin. 
+ 2. Choose the type of bank account (SEPA or other)
+ 3. Enter mandatory info on the bank trasnfer settings page 
+ 4. Make optional adjustments
+ 5. Enable payment via bank transfer
+ 6. Monitor incoming payments and mark them as complete manually **or** regularly import a digital bank statement
 
-What are common problems that could be encountered here? How do you solve them? 
+This section will guide you through those steps in detail. 
 
-## Further Information
+Navigate to [Your Event] → "Settings" → "Plugins". 
+Switch to the "payment providers" tab. 
+The bank transfer plugin is displayed at the top of the page. 
+It should be enabled by default. 
+If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable: button. 
+If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
+Make sure that the plugin is enabled. 
 
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
+![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-## See Also 
+Navigate to [Your Event] → "Settings" → "Payment". 
+The "payment providers" tab on this page displays the list of active payment providers. 
+The list should now include an entry for bank transfer with a red "❌ Disabled" tag. 
+The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
+Click on the :btn:⚙ Settings: button next to bank transfer.  
+This takes you to the settings page for bank transfer.  
 
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
+
+After you have completed the authorization process with PayPal, the PayPal settings page in the pretix backend will look different. 
+Instead of the single button, it will now offer a multitude of settings. 
+Your PayPal merchant ID will be displayed at the top of the page. 
+All settings further down on the page are optional. 
+Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
+Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "enable payment method". 
+Bank transfers will now appear as a payment option for customers in your shop. 
