@@ -1,7 +1,11 @@
 # PayPal
 
 Bank transfers are one of the many options for handling payments within pretix. 
+Payments made via bank transfer go directly to your bank account. 
+There is no way for the pretix software to monitor payments arriving at your bank account. 
+Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
+It is also going to tell you how to notify the pretix software of incoming payments. 
 
 ## Prerequisites
 
@@ -20,6 +24,8 @@ Setting up bank transfer as a payment provider in pretix involves the following 
  6. Monitor incoming payments and mark them as complete manually **or** regularly import a digital bank statement
 
 This section will guide you through those steps in detail. 
+
+### Setting up bank transfers
 
 Navigate to [Your Event] → "Settings" → "Plugins". 
 Switch to the "payment providers" tab. 
@@ -46,3 +52,17 @@ All settings further down on the page are optional.
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "enable payment method". 
 Bank transfers will now appear as a payment option for customers in your shop. 
+
+### Monitoring incoming payments 
+
+There is no way for the pretix software to monitor payments arriving at your bank account. 
+Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+This section is going to guide you through both options. 
+
+**Option A: importing bank data** 
+Acquire an export of your bank account's transaction data. 
+The export has to be a file in the CSV or MT940 file format. 
+In the pretix backend, click on "bank transfer" in the sidebar menu. 
+This will take you to a page titled "import bank data". 
+Click on the :btn:Browse...: button and select the export file for upload. 
+Click the :btn:Start upload: button. 
