@@ -10,7 +10,7 @@ Make sure you have an active PayPal business account.
 A regular PayPal account is not enough for integration with pretix. 
 You can find [instructions on how to sign up for a PayPal business account](https://www.paypal.com/c2/webapps/mpp/how-to-guides/sign-up-business-account) on the PayPal website. 
 
-## How To (?)
+## How To 
 
 Setting up PayPal as a payment provider in pretix involves the following steps: 
 
@@ -31,7 +31,7 @@ If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
-
+![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
@@ -41,8 +41,7 @@ Click on the :btn:⚙ Settings: button next to PayPal.
 This takes you to the settings page for PayPal, which currently only includes the :btn:Connect with PayPal: button. 
 Click the button and complete the the login and authorization process with PayPal. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
-
+![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
 
 ## Troubleshooting 
 
