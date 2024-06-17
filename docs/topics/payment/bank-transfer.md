@@ -38,7 +38,9 @@ The plugin is enabled, but bank transfers have not been set up and enabled as a 
 Click on the :btn:⚙ Settings: button next to bank transfer.  
 This takes you to the settings page for bank transfer.  
 
-
+The first thing you do on this page is choose the "bank account type". 
+If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC and the name of the bank. 
+If you choose "other bank account", you have to provide the full details of the bank connection in the "bank account details" fields. 
 
 All settings further down on the page are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
