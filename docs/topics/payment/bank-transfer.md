@@ -39,9 +39,7 @@ Click on the :btn:⚙ Settings: button next to bank transfer.
 This takes you to the settings page for bank transfer.  
 
 
-After you have completed the authorization process with PayPal, the PayPal settings page in the pretix backend will look different. 
-Instead of the single button, it will now offer a multitude of settings. 
-Your PayPal merchant ID will be displayed at the top of the page. 
+
 All settings further down on the page are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "enable payment method". 
