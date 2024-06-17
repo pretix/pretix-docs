@@ -50,15 +50,3 @@ All settings here are optional.
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
 PayPal will now appear as a payment option for customers in your shop. 
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
-## Further Information
-
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
