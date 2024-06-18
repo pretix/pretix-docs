@@ -96,10 +96,18 @@ This page displays a list of all orders that have been placed in your shop.
 If orders have been placed and paid via bank transfer, they will be displayed here with the status yellow "💵 Pending" status tag. 
 Click on the order code of one of those orders. 
 This takes you to a page giving you detailed information on the order. 
+
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn:✓ Mark as paid: button at the top of the page. 
+
+!!! Warning 
+
+    Before confirming the order as paid, make absolutely sure that you have the correct order, the correct price, and the correct date. 
+    An order that has been marked as paid once cannot be marked as not paid/pending. 
+
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
-You can stop this from happening by unchecking the box. 
+You can stop this from happening by unchecking the box next to "notify customer by email". 
 Confirm by clicking the :btn:Create payment" button. 
+This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully." and a green tag in the top right saying "✓ Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
