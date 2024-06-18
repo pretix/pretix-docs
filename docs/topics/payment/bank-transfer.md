@@ -18,7 +18,7 @@ Setting up bank transfer as a payment provider in pretix involves the following 
 
  1. Enable the bank transfer plugin. 
  2. Choose the type of bank account (SEPA or other)
- 3. Enter mandatory info on the bank trasnfer settings page 
+ 3. Enter mandatory info on the bank transfer settings page 
  4. Make optional adjustments
  5. Enable payment via bank transfer
  6. Monitor incoming payments and mark them as complete manually **or** regularly import a digital bank statement
@@ -72,7 +72,7 @@ It has to contain the following data:
  - IBAN 	
  - BIC 
 
-IBAN and BIC can be ommitted for non-SEPA transactions. 
+IBAN and BIC can be omitted for non-SEPA transactions. 
 
 In the pretix backend, click on "bank transfer" in the sidebar menu. 
 This will take you to a page titled "import bank data". 
