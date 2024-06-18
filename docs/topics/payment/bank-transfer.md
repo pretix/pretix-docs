@@ -1,4 +1,4 @@
-# PayPal
+# Bank transfer
 
 Bank transfers are one of the many options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
