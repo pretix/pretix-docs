@@ -90,3 +90,12 @@ Orders will be ignored if the pretix software cannot make a connection between t
 You can intervene and make manual corrections here on this screen or by navigating to [Your Event] → "Orders". 
 
 **Option B: approving payments manually** 
+
+Navigate to [Your Event] → "Orders". 
+This page displays a list of all orders that have been placed in your shop. 
+If orders have been placed and paid via bank transfer, they will be displayed here with the status yellow "💵 Pending" status tag. 
+Click on the order code of one of those orders. 
+This takes you to a page giving you detailed information on the order. 
+Check the transaction data of your bank account. 
+If your bank account's transaction data has a record that matches the order in question, click the :btn:✓ Mark as paid: button at the top of the page. 
+Repeat this process for every order that shows up in the list on the "orders" page. 
