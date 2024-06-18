@@ -80,5 +80,13 @@ Click on the :btn:Browse...: button and select the export file for upload.
 Click the :btn:Start upload: button. 
 The pretix software will now attempt to parse your uploaded file automatically. 
 If this does not work, you will be asked to specify which column in your file contains which data. 
+The screenshot illustrates what such an assignment could look like with a small example CSV file. 
 
 ![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
+
+Click :btn:Continue:. 
+You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
+Orders will be ignored if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
+You can intervene and make manual corrections here on this screen or by navigating to [Your Event] → "Orders". 
+
+**Option B: approving payments manually** 
