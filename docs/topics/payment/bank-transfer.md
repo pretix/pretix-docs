@@ -81,3 +81,4 @@ Click the :btn:Start upload: button.
 The pretix software will now attempt to parse your uploaded file automatically. 
 If this does not work, you will be asked to specify which column in your file contains which data. 
 
+![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
