@@ -98,4 +98,8 @@ Click on the order code of one of those orders.
 This takes you to a page giving you detailed information on the order. 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn:✓ Mark as paid: button at the top of the page. 
+Adjust the payment amount and date if necessary. 
+By default, the customer will be notified about the order being marked as paid via email. 
+You can stop this from happening by unchecking the box. 
+Confirm by clicking the :btn:Create payment" button. 
 Repeat this process for every order that shows up in the list on the "orders" page. 
