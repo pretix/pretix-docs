@@ -60,9 +60,24 @@ Thus, you have to notify the pretix software of incoming payments—either by ma
 This section is going to guide you through both options. 
 
 **Option A: importing bank data** 
+
 Acquire an export of your bank account's transaction data. 
 The export has to be a file in the CSV or MT940 file format. 
+It has to contain the following data: 
+
+ - date 
+ - amount 
+ - reference 
+ - payer 
+ - IBAN 	
+ - BIC 
+
+IBAN and BIC can be ommitted for non-SEPA transactions. 
+
 In the pretix backend, click on "bank transfer" in the sidebar menu. 
 This will take you to a page titled "import bank data". 
 Click on the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
+The pretix software will now attempt to parse your uploaded file automatically. 
+If this does not work, you will be asked to specify which column in your file contains which data. 
+
