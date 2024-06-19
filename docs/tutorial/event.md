@@ -57,12 +57,11 @@ If no results can be found for the input, the marker on the map can be dragged t
 This will automatically update the "geo coordinates" fields. 
 Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the address over to the "location" field. 
 
-This page also allows us to set a sales tax rate for your event. 
+This page also allows us to set a sales tax rate for our event. 
 This is an optional step. 
 Taxation rules can also be changed after event creation is finished. 
 We are holding the event in Germany. 
-A value-added tax of 19% applies to all of our products. 
-The taxation laws that apply to our event can be covered by a single percentage rule, so we are going to enter that percentage here. 
+A single-percentage rule  of 19% value-added tax applies to all of our products, so we are going to enter that percentage here. 
 
 {% include "warning-tax.md" %}
 
