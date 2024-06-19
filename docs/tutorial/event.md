@@ -21,7 +21,7 @@ We will now click the :btn:⊕ Create a new event: button.
 
 ![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
-An event in pretix is always associated with an organizer account, so we have to choose one for this event. 
+An event in pretix is always associated with an organizer account, so we have to choose one here. 
 We will choose the organizer that is hosting this event—that is, the one we just set up in the previous step of this tutorial. 
 This selection cannot be changed after the event has been created, so it is important to pick the correct organizer account here. 
 
