@@ -45,9 +45,8 @@ This results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pr
 
 {% include "note-short-form.md" %}
 
-We also have to pick a start time and a currency for your event. 
-Our start time is the fourth of June, 2027. 
-Our event's currency is the Euro. 
+The start time and the currency for our event are mandatory information. 
+We're going to put the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
 
 Since we already know the location for our event, we're going to put that location into pretix now. 
 This is an optional step. 
