@@ -49,18 +49,21 @@ We also have to pick a start time and a currency for your event.
 Our start time is the fourth of June, 2027. 
 Our event's currency is the Euro. 
 
-An optional step on this page is choosing a location for our event. 
+Since we already know the location for our event, we're going to put that location into pretix now. 
+This is an optional step. 
+The location can still be changed later. 
 Our input into the "location" field will be used to search OpenStreetMap for that location. 
 If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
-If no results can be found for our input, we can manually drag the marker on the map to our event location. 
+If no results can be found for the input, the marker on the map can be dragged to the event location manually. 
 This will automatically update the "geo coordinates" fields. 
-Alternatively, we can go to  [OpenStreetMap.org](https://www.openstreetmap.org), use the more advanced search function there to find our location, and then copy the address over to the "location" field. 
+Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) to find our location, and then copy the address over to the "location" field. 
 
 This page also allows us to set a sales tax rate for your event. 
+This is an optional step. 
+Taxation rules can also be changed after event creation is finished. 
 We are holding the event in Germany. 
 A value-added tax of 19% applies to all of our products. 
 The taxation laws that apply to our event can be covered by a single percentage rule, so we are going to enter that percentage here. 
-If your tax situation is more complicated, you can set specific rules __after__ event creation is finished by navigating to [Your Event] → "Settings" → "Tax rules". 
 
 {% include "warning-tax.md" %}
 
