@@ -22,6 +22,7 @@ Setting up Stripe as a payment provider in pretix involves the following steps:
  4. Make optional adjustments
  5. Enable payment via Stripe
  6. Test it 
+ 7. Switch the Stripe endpoint to "live" 
 
 This section will guide you through those steps in detail. 
 
@@ -57,3 +58,6 @@ All further settings on this page are optional.
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
 The payment methods you enabled on this page and in your Stripe account settings will now appear as options for customers in your shop during payment. 
+
+Once you take your ticket shop live, you also have to switch the "endpoint" option on this page from "testing" to "live". 
+While your event is in test mode, the pretix software will always use Stripe's testing endpoint regardless of the setting here. 
