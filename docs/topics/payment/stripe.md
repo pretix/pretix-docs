@@ -8,7 +8,7 @@ This article is going to tell you how to connect to your Stripe account and use 
 Setting up payment providers is handled on the event level, so you need to create an event first. 
 Make sure you have an active Stripe merchant account. 
 A regular Stripe account is not enough for integration with pretix. 
-You can find [instructions on how to sign up for a Stripe merchant account](https://stripe.com/en-de/resources/more/how-to-get-a-merchant-account) on the Stripe website. 
+You can find [instructions on how to sign up for a Stripe merchant account](https://stripe.com/resources/more/how-to-get-a-merchant-account on the Stripe website. 
 
 ## How To 
 
@@ -41,7 +41,7 @@ Click on the :btn:⚙ Settings: button next to Stripe.
 This takes you to the settings page for Stripe, which currently only includes the :btn:Connect with Stripe: button. 
 Click the button and complete the the login and authorization process with Stripe. 
 
-![Stripe website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a Stripe account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to Stripe" )
+![Stripe website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a Stripe account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/stripe-connect-account.png "Connecting to Stripe" )
 
 After you have completed the authorization process with Stripe, the Stripe settings page in the pretix backend will look different. 
 Instead of the single button, it will now offer a multitude of settings. 
