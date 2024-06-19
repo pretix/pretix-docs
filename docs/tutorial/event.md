@@ -35,17 +35,13 @@ We will simply activate and deactivate the languages as needed.
 
 {% include "note-translations.md" %}
 
-Once we are happy with our choices, we will click :btn:Continue: at the bottom right of the page. 
-
 ![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. 
 Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
-We are now asked to provide a name and a short form for the event. 
-For this tutorial, we are going to set up an example conference in 2027. 
-We therefore choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
+After clicking :btn:Continue:, we are now asked to provide a name and a short form for the event. 
+Our example conference is going to take place in 2027, therefore we choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
 The short form is appended to the organizer's URL. 
-In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
-Your event's URL is going to look the same, except the name of the organizer account you chose during account creation is going to take the place of "ex-org" and the name of the event you're choosing right now is going to replace "ex-conf". 
+This results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
 
 {% include "note-short-form.md" %}
 
