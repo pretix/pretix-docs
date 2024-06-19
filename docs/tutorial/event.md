@@ -19,12 +19,13 @@ In order to create an event, we must be logged in to our [pretix](https://pretix
 Clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events. 
 We will now click the :btn:⊕ Create a new event: button. 
 
-![Screenshot of page titled "Create new Event–Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
+![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
+An event in pretix is always associated with an organizer account, so we have to choose one for this event. 
 We will choose the organizer that is hosting this event—that is, the one we just set up in the previous step of this tutorial. 
 This selection cannot be changed after the event has been created, so it is important to pick the correct organizer account here. 
 
-Next, we will choose the event type. 
+Next, we have to choose the event type. 
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking". 
 Creating an event series only makes sense if we're planning on hosting the same conference several times or if we're planning for our customers to participate in a series of conferences that they buy tickets for in a single purchase. 
 The use case presented in this tutorial is a simple conference that takes place on a single weekend, so we are going to choose the option "Singular event or non-event shop". 
