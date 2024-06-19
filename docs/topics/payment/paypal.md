@@ -1,6 +1,8 @@
 # PayPal
 
 PayPal is one of the many options for handling payments within pretix. 
+Stripe allows handling payments via the following methods: 
+real-time payment via PayPal account, "Buy Now Pay Later" via PayPal account, SEPA direct debit, and alternative payment methods such as SOFORT, giropay, iDEAL and others. 
 This article is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
 
 ## Prerequisites
@@ -49,4 +51,4 @@ Your PayPal merchant ID will be displayed at the top of the page.
 All settings here are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
-PayPal will now appear as a payment option for customers in your shop. 
+PayPal and the other payment methods you enabled on this site will now appear as a payment option for customers in your shop. 
