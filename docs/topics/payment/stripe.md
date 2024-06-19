@@ -1,6 +1,8 @@
 # Stripe
 
 Stripe is one of the many options for handling payments within pretix. 
+Stripe allows handling payments via the following methods: 
+Credit card, giropay, iDEAL, Alipay, Bancontact, SEPA Direct debit, SOFORT, EPS, Multibanco, Przelewy24, WeChat Pay, Swish, Affirm, Klarna, Apple Pay and Google Pay. 
 This article is going to tell you how to connect to your Stripe account and use it to receive payments via pretix. 
 
 ## Prerequisites
@@ -45,8 +47,13 @@ Click the button and complete the the login and authorization process with Strip
 
 After you have completed the authorization process with Stripe, the Stripe settings page in the pretix backend will look different. 
 Instead of the single button, it will now offer a multitude of settings. 
-Your Stripe merchant ID will be displayed at the top of the page. 
-All settings here are optional. 
+Your Stripe account will be displayed near the top of the page. 
+There are several checkboxes for activating payment methods such as credit cards, Alipay or KLARNA for handling via Stripe. 
+Check the box for each payment method you want to enable. 
+Some of the payment methods offered here need to be enabled in your Stripe account settings. 
+Check your account settings on the Stripe website or app for settings related to the payment methods you want to use and enable them. 
+
+All further settings on this page are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
-Stripe will now appear as a payment option for customers in your shop. 
+The payment methods you enabled on this page and in your Stripe account settings will now appear as options for customers in your shop during payment. 
