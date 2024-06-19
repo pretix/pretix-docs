@@ -14,7 +14,7 @@ You can find [instructions on how to sign up for a Stripe merchant account](http
 
 Setting up Stripe as a payment provider in pretix involves the following steps: 
 
- 1. Enable the Stripe plugin. 
+ 1. Enable the Stripe plugin 
  2. Connect to your Stripe merchant account 
  3. Enter mandatory info on the settings page for Stripe
  4. Make optional adjustments
@@ -31,7 +31,7 @@ If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, Stripe, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for Stripe is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings Stripe" )
+![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
