@@ -93,11 +93,11 @@ You can intervene and make manual corrections here on this screen or by navigati
 
 Navigate to [Your Event] → "Orders". 
 This page displays a list of all orders that have been placed in your shop. 
-If orders have been placed and paid via bank transfer, they will be displayed here with the status yellow "💵 Pending" status tag. 
+If orders have been placed and paid via bank transfer, they will be displayed here with the yellow "💵 Pending" status tag. 
 Click on the order code of one of the pending orders. 
-This takes you to a page giving you detailed information on the order. 
+This takes you to the "order details" page for that order. 
 Check the transaction data of your bank account. 
-If your bank account's transaction data has a record that matches the order in question, click the :btn:✓ Mark as paid: button at the top of the page. 
+If your bank account's transaction data has a record that matches the order in question, click the :btn:✓ Mark as paid: button at the top of the order details page. 
 
 !!! Warning 
 
