@@ -81,7 +81,7 @@ We will provide a general email address at which our customers can contact us in
 This email address will be displayed in the page footer of our shop with the label "contact event organizer". 
 We will provide a URL to legal imprint information for our organization's online presence in the "imprint URL" field. 
 
-Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop (most likely in test mode by this point). 
+Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop, which should be in test mode by this point. 
 
 ## Dashboard
 
@@ -93,9 +93,10 @@ It allows us to leave an internal comment for ourselves and our team and it logs
 ![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
 Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
-This overview will probably display a warning that your organizer account is not yet active. 
-If you see that warning, click the link and fill out the necessary information in the form. 
-Activating an account is a manual process and may take some time depending on the availability of our team. 
+This overview will probably display a warning that our organizer account is not yet active. 
+The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
+Activating an account is a manual process and may take some time depending on the availability of the pretix team. 
+So, this warning may persist for a while even if all necessary information as already been provided. 
 
 ## Customer and attendee data 
 
@@ -114,7 +115,7 @@ Under "form settings", we can choose the format in which pretix will ask attende
 The default option for names is "ask for given name, + family name, display like John Doe". 
 The default option for titles is "free text input". 
 We are happy with those two options, so we are not going to make any changes here. 
-It is recommended to finalize the choice here before taking the ticket shop live. 
+We are going to finalize our choice here before taking the ticket shop live. 
 Changing this after already having received orders can lead to issues when sorting or changing names. 
 
 ## Shop design 
