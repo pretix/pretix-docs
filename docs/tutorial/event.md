@@ -7,9 +7,7 @@ In this article, we will:
  - create an event in four steps 
  - get an overview of the event's status on the dashboard
  - enable the collection of customer and attendee data 
- - add texts to the ticket shop 
- - customize the design of the ticket shop 
- - set up tax rules 
+ - add images to the ticket shop 
 
 This includes all the necessary steps for creating an event and setting up the ticket shop so that we can add products to it in the next article of this tutorial. 
 
@@ -148,3 +146,5 @@ We are going to leave the settings here locked since that makes it easier to kee
 
 ## Conclusion 
 
+We have gone through the four-step event creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop. 
+We can now move on to creating products to be sold in our shop. 
