@@ -35,7 +35,7 @@ We will simply activate and deactivate the languages as needed.
 
 {% include "note-translations.md" %}
 
-![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. 
+![Screenshot of page titled "Create new Event—Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. 
 Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
 After clicking :btn:Continue:, we are now asked to provide a name and a short form for the event. 
@@ -61,11 +61,11 @@ This page also allows us to set a sales tax rate for our event.
 This is an optional step. 
 Taxation rules can also be changed after event creation is finished. 
 We are holding the event in Germany. 
-A single-percentage rule  of 19% value-added tax applies to all of our products, so we are going to enter that percentage here. 
+A single-percentage rule of 19% value-added tax applies to all of our products, so we are going to enter that percentage here. 
 
 {% include "warning-tax.md" %}
 
-![Screenshot of page titled "Create new Event–Step 3", showing an infobox saying 'Please make sure to review all settings extensively. 
+![Screenshot of page titled "Create new Event—Step 3", showing an infobox saying 'Please make sure to review all settings extensively. 
 You will probably still need to change some settings manually, e.g. date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
 We are then asked if we want to copy information from a previously created event. 
