@@ -129,13 +129,13 @@ The shop we are creating for this tutorial is located at [https://pretix.eu/ex-o
 
 By default, the name of the event will be displayed in the page header of our shop. 
 The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design). 
-It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or slightly smaller. 
-We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from our computer. 
-The header image will replace the name of the event at the top of the page unless we check the box next to "show event title even if a header image is present". 
-We also have the option to use the image in its full size, in which case it should be at least 1170 pixels in width. 
+We are going to add a header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels to upload from our computer. 
+By default, the  header image will replace the name of the event at the top of the page. 
+We still want to include the name of the event though, so we are going to check the box next to "show event title even if a header image is present". 
 
-The "social media image" option lets us upload a .png  or .jpg file that will be used as a preview if we post links to our ticket shop on social media. 
-If we do not upload a file here, the header image will be used for previews instead. 
+We are also going to upload a .png file for the "social media image" option. 
+This will be used as a preview for any links to our ticket shop we post on social media. 
+Not uploading a file here would mean that the header image will be used for previews instead. 
 
 !!! Warning
 
@@ -144,10 +144,7 @@ If we do not upload a file here, the header image will be used for previews inst
     Once the settings have been unlocked, they have to be adjusted independently for this event. 
 
 By default, the section with color and font settings is locked and we can only change them on the on organizer level. 
-This way, we can easily change them for all of our events at the same time. 
-We can either go to the organizer settings to change them for all our events or we can unlock them to change them for this event individually. 
-If we wish to make individual adjustments to the shop design of the event, click the :btn:🔓 Unlock: button. 
-This will allow us to adjust colors and fonts for the event shop independently of any settings we choose for the public profile on the organizer level. 
-
 We are going to leave the settings here locked since that makes it easier to keep the shop designs consistent. 
-We can still change the designs globally by clicking the :btn:Go to organizer settings: button and making our adjustments there. 
+
+## Conclusion 
+
