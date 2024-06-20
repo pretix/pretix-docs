@@ -65,8 +65,7 @@ Thus, we are going to add a 19% tax rule here.
 
 {% include "warning-tax.md" %}
 
-![Screenshot of page titled "Create new Event—Step 3", showing an infobox saying 'Please make sure to review all settings extensively. 
-You will probably still need to change some settings manually, e.g. date and time settings and texts that contain the event name' and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
+![Screenshot of page titled "Create new Event—Step 3", showing an infobox asking the user to review all settings extensively and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
 We are then asked if we want to copy information from a previously created event. 
 This step can save us a lot of work from our second event onwards. 
