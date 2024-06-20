@@ -74,14 +74,12 @@ But since this is the first event we're organizing using pretix, we will simply 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. 
 Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
 
-The next page congratulates us on creating our event. 
-It also gives us a quick overview for products and basic settings for the event. 
+The next page congratulates us on creating our event and gives us a quick overview of products and basic settings for the event. 
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
-
-We will fill out the contact address and imprint URL in the "getting in touch with you" section near the bottom of the page. 
+All we are going to do on this page is adding two more pieces of information that are mandatory for our ticket shop to go live. 
 We will provide a general email address at which our customers can contact us in the "contact address" field. 
-We will provide a URL to legal imprint information for our organization in the "imprint URL" field. 
-These two pieces of information are mandatory for our ticket shop to go live. 
+This email address will be displayed in the page footer of our shop with the label "contact event organizer". 
+We will provide a URL to legal imprint information for our organization's online presence in the "imprint URL" field. 
 
 Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop (most likely in test mode by this point). 
 
