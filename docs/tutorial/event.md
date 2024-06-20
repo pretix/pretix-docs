@@ -103,7 +103,7 @@ So, this warning may persist for a while even if all necessary information as al
 We want to to issue certificates of participation to the people who attend our conference. 
 That means we have to record their name and affiliation during purchase. 
 This section describes how to do that. 
-We are going to navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
+We are going to navigate to [Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
 Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for attendee names, addresses per ticket, and company per ticket. 
 We will set those three questions to "ask, but do not require input". 
 By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation. 
@@ -154,7 +154,7 @@ If you want to change the design globally, click the :btn:Go to organizer settin
 
 ## Tax rules 
 
-Navigate to [Your event] → "Settings" → "Tax rules". 
+Navigate to [Event] → "Settings" → "Tax rules". 
 Click the :btn:+ Create a new tax rule: button. 
 The "official name" fields are already filled out with "VAT" (English), "MwSt." (German) and, if  available, the appropriate translations in any languages you have selected. 
 Choose an internal name if needed. 
