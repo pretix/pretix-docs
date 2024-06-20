@@ -80,26 +80,23 @@ We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu
 
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
-Switching to the "organizer page" tab at the top allows you to add content to the public profile of your organizer. 
-You can take a look at the public profile by clicking the :btn:👁 Public profile: button in the bar at the top. 
-Our public profile is located at https://pretix.eu/ex-org/. 
-You can find yours by replacing "ex-org" with your organizer short form in that URL. 
+Switching to the "organizer page" tab at the top allows us to add images to our event shop and customize its colors.
+Clicking the :btn:👁 Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
+An organizer page created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/.
+The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
+
+By default, the name of the organizer will be displayed in the page header of our page.
+The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). 
+We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels from our computer. 
+The header image will replace the name of the event at the top of the page.
+We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). 
 The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
-By default, the name of the organizer  will be displayed in the page header of your public profile. 
-The organizer page settings allow you to replace the name with an image that tells your customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). 
-It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. 
-You can add the header image by clicking the :btn:Browse...: button next to the "header image" option and choosing the image file to upload from your computer. 
-
-In the "homepage text" fields, you can provide text to be displayed on your public profile. 
-You will have one field for each language you activate in the "localization" tab (see the "localization" segment of this article). 
-If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
-
-You can choose the "default overview style" for events on your public profile from the drop-down menu. 
-Events will either be displayed in a list, a weekly overview, or a monthly overview. 
-The list overview style is only available if your event series has 50 or less dates in the future. 
+In the "homepage text" fields, we can provide text to be displayed on our public profile. 
+There is one field for each language we activated in the "localization" tab (see the "localization" segment of this article)—English and German (informal). 
+Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 ## Shop design 
 
