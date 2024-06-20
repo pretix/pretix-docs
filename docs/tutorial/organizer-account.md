@@ -46,12 +46,12 @@ Not pictured: 'Allow creating a new team during event creation' option, 'Save' b
 The fields for "name" and "short form" are already filled out. 
 It is not possible to change the short form since it is the organizer's unique identifier. 
 
-If you are operating from Germany, it is recommended that you enter the URL to your website's imprint in the "Imprint URL" field. 
+Since we are operating from Germany, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
 
-Enter a valid email address into the "contact address" field. 
+We will enter a valid email address into the "contact address" field. 
 This email address will be displayed publicly to allow your customers to contact you. 
 
-Confirm your changes by clicking the :btn:Save: button on the bottom of the page. 
+We will then confirm our changes by clicking the :btn:Save: button on the bottom of the page. 
 
 ## Localization 
 
