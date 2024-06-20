@@ -100,7 +100,7 @@ So, this warning may persist for a while even if all necessary information as al
 
 ## Customer and attendee data 
 
-We need to issue certificates of participation to our attendees. 
+We want to to issue certificates of participation to the people who attend our conference. 
 That means we have to record their name and affiliation during purchase. 
 This section describes how to do that. 
 We are going to navigate to [Your Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
