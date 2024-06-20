@@ -1,11 +1,11 @@
 # Getting Started
 
 Welcome to the pretix tutorial. 
-This is your step-by-step guide to hosting your very first event using pretix.
+Come join us on our journey to hosting our very first event using pretix.
 
-Before you can do anything with pretix, you have to create an account. 
-Don't worry: creating an account is __completely free__ of charge and puts you under no obligation to give us any money. 
-You are free to play around with our software to your heart's content before you decide whether pretix is the right choice for you. 
+Before we can do anything with pretix, we have to create an account. 
+The good news is: creating an account is __completely free__ of charge and puts us under no obligation to pay rami.io GmbH, the company behind pretix, any money. 
+We are free to play around with the pretix software to our heart's content before deciding whether pretix is the right choice for us. 
 
 !!! Note
 
@@ -15,16 +15,15 @@ You are free to play around with our software to your heart's content before you
 ![pretix.eu, a website introducing pretix and its main features. 
 There is a green button labeled 'Create your first ticket shop' on the right.](../assets/screens/account/pretix-eu.png "pretix.eu screenshot" ) 
 
-To create an account, open the website [pretix.eu](https://pretix.eu/about/en/ "https://pretix.eu/about/en/"). 
-Click the green :btn:Create your first ticket shop: button. 
-This takes you to a new website which asks you to enter the info for your pretix account in the left column, and the name and short form for your organization in the right column. 
+To create an account, we are going to open the website [pretix.eu](https://pretix.eu/about/en/ "https://pretix.eu/about/en/") and click the green :btn:Create your first ticket shop: button. 
+This takes us to a new website on which we will enter the info for our pretix account in the left column, and the name and short form for our organization in the right column. 
 
 ![a website with input fields for account information as well as the name and short form of the organizer](../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup screenshot" ) 
 
-For your personal account, provide your name, email address, and a secure password. 
-Enter __your own__ name into the field on the top left. 
-Ideally, choose a name by which your co-organizers will recognize you and which our support team can use to address you. 
-Your first name and last name should work perfectly fine. 
+For our personal account, we are going to provide our name, email address, and a secure password. 
+The field on the top left is meant for a **personal name**, not a company name
+We are going to choose a name by which our co-organizers will recognize us and which our support team can use to address us. 
+For this tutorial, our name is going to be John Doe. 
 
 !!! Warning
 
@@ -33,20 +32,19 @@ Your first name and last name should work perfectly fine.
 
     The short form cannot be changed without you contacting customer support and our team putting a significant amount of work into it. 
 
-The name of the company, association or institution that you want to organize events for goes in the field on the top right. 
-Below that, please enter a short form of the organization's name. 
-This short form will be used for the URL where your events can be found. 
+The name of the company, association or institution that we want to organize events for goes in the field on the top right. 
+Below that, we are going to enter a short form of the organization's name. 
+This short form will be used for the URL where our events can be found. 
 For this tutorial, we are going to create an account for our Example Organization. 
 So we will enter "Example Organization" into the company name field, and "ex-org" into the short form field. 
-This means that all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
+This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
 
 It is also possible to use a custom domain. 
-If you want to use a custom domain with pretix, simply proceed with signup now and contact us afterwards. 
+Using a custom domain with pretix would mean simply proceed with signup now and contact the team afterwards via email (support@pretix.eu) or phone (+49 6221 32177-50) 
 
 {% include "note-short-form.md" %}
 
-Once you have filled out the form, please also read our privacy policy and our terms of service. 
-They are both linked on this page. 
-Once you have read them both carefully, check the boxes to confirm. 
+Once we have filled out the form, we are also going to read the privacy policy and terms of service which are both linked on this page. 
+Once we have read them both carefully, we are going to check the boxes to confirm. 
 
-Click the :btn:Continue: button and your journey to hosting your first event using pretix can finally begin! 
+We will now click the :btn:Continue: button and our journey to hosting our first event using pretix can finally begin! 
