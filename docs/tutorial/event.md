@@ -151,12 +151,3 @@ This will allow us to adjust colors and fonts for the event shop independently o
 
 We are going to leave the settings here locked since that makes it easier to keep the shop designs consistent. 
 We can still change the designs globally by clicking the :btn:Go to organizer settings: button and making our adjustments there. 
-
-## Tax rules 
-
-Navigate to [Event] → "Settings" → "Tax rules". 
-Click the :btn:+ Create a new tax rule: button. 
-The "official name" fields are already filled out with "VAT" (English), "MwSt." (German) and, if  available, the appropriate translations in any languages you have selected. 
-Choose an internal name if needed. 
-This will only be used for the backend and helps you distinguish tax rules if you use more than one. 
-Set the tax rate to the appropriate level, e.g. 19% for Germany and click the :btn:Save: button. 
