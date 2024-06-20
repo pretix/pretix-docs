@@ -81,11 +81,11 @@ We will provide a URL to legal imprint information for our organization's online
 
 Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop, which should be in test mode by this point. 
 
-## Dashboard
+## Event-level Dashboard
 
 Now that we have created our event, we have access to all possible options for the event. 
-We can visit the dashboard for our event by clicking the :btn:pretix.eu: button in the top left and then selecting the event we just created in the list titled "your upcoming events". 
-The dashboard for our event gives us an overview of the event's basic information and status. 
+We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in the top left and then selecting the event we just created in the list titled "your upcoming events". 
+The event-level dashboard gives us an overview of the event's basic information and status. 
 It allows us to leave an internal comment for ourselves and our team and it logs recent changes. 
 
 ![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
