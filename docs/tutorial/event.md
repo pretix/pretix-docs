@@ -109,7 +109,7 @@ We will set those three questions to "ask, but do not require input".
 By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation. 
 In the text fields labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
-"We are asking you to submit the name, email address and company for every attendee that you're buying a ticket for. This data is necessary for issuing certificates of participation."
+"We require the name, email address and company for every attendee that you're buying a ticket for so that we can issue them certificates of participation."
 
 Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
 The default option for names is "ask for given name, + family name, display like John Doe". 
