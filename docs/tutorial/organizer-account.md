@@ -57,25 +57,24 @@ We will then confirm our changes by clicking the :btn:Save: button on the bottom
 
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
-After saving the general settings, switch to the "localization" tab. 
-We recommend changing localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
+After saving the general settings, we are going to switch to the "localization" tab. 
+We are going to finalize our localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
 
-Under "available languages", you can choose which languages your ticket shop will be published in. 
+Under "available languages", we can choose which languages your ticket shop will be published in. 
 The options officially maintained by the pretix team are English, German, and German (informal). 
 German uses "Sie" to address the user whereas German (informal) uses "du". 
-You can also choose one of the community translations for your organizer page. 
+We can also choose one of the community translations for our organizer page. 
 They are displayed in the list below along with a percentage of how much of the software is translated. 
 English is used as the fallback language for missing translations. 
-
-This setting also determines the default languages when creating new events, though languages can be activated or deactivated for each event individually.
+These settings also determine the default languages when creating new events, though languages can be activated or deactivated for each event individually.
+We are going to activate English and German (informal) for our example conference. 
 
 {% include "note-translations.md" %}
 
-Choose a country or region from  the drop-down "region" menu. 
+We are going to choose Germany from the drop-down "region" menu. 
 The selection will be used to determine default date, time, address and phone number formatting. 
 The language chosen above will take a higher priority than the region. 
-
-Also choose a "default timezone" from the drop-down menu with that title. 
+We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu with that title. 
 
 ## Organizer page 
 
