@@ -60,8 +60,8 @@ Alternatively, we can use the more advanced search function on [OpenStreetMap.or
 This page also allows us to set a sales tax rate for our event. 
 This is an optional step. 
 Taxation rules can also be changed after event creation is finished. 
-We are holding the event in Germany. 
-A single-percentage rule of 19% value-added tax applies to all of our products, so we are going to enter that percentage here. 
+We are holding our event in Germany and a single-percentage rule applies to all of our products. 
+Thus, we are going to add a 19% tax rule here. 
 
 {% include "warning-tax.md" %}
 
