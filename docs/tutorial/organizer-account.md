@@ -1,23 +1,24 @@
 # Organizer account
 
-An organizer account represents an entity that is running events, for example a company, an institution, or yourself. 
-You have already created an organizer account when you created your personal account—or, if you were invited to pretix by a member of your team, then accepting that invitation has already given you (partial) access to an organizer account. 
+An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
+We just created an organizer account when we created your personal account. 
+It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
-This section of the tutorial tells you how to customize your organizer account and add necessary information to it. 
-It will tell you how to: 
+In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
+This entails: 
 
- - navigate to the organizer account settings 
- - add contact information on the "general" tab
- - choose language and localization options on the "localization" tab 
- - customize your organizer page on the "organizer page" and "shop design" tabs
- - enable customer accounts for certain features on the "customer accounts" tab
- - set up cookie/privacy information on the "privacy" tab 
- - get your pretix account activated by providing necessary information in the "billing settings"
+ - navigating to the organizer account settings 
+ - adding contact information on the "general" tab
+ - choosing language and localization options on the "localization" tab 
+ - customizing your organizer page on the "organizer page" and "shop design" tabs
+ - enabling customer accounts for certain features on the "customer accounts" tab
+ - setting up cookie/privacy information on the "privacy" tab 
+ - getting our pretix account activated by providing necessary information in the "billing settings"
 
-This includes all the necessary steps for getting your organizer account up and running so that you can use it to host events using pretix. 
-It also includes a few optional steps that will save you some work in the long run. 
-For instance, organizer-level language and design settings will be used as the default for any events you create in the future. 
-You can always come back to the organizer account settings later and adapt them, should your needs change. 
+Those are the necessary steps for getting our organizer account up and running so that we can use it to host events using pretix. 
+It also includes a few optional steps that will save us some work in the long run. 
+For instance, organizer-level language and design settings will be used as the default for any events we are going to create in the future. 
+We can always come back to the organizer account settings later and adapt them, should our needs change. 
 
 ## Navigating to the organizer account settings 
 
