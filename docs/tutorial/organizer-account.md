@@ -139,3 +139,6 @@ The page will notify us if any required information is still missing.
 If we have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." 
 This means that our organizer account has been submitted to the pretix team for review and will be activated shortly.
 
+## Conclusion
+
+Now that our account's basic setup is complete and it is awaiting activation, we can move on to creating our first event. 
