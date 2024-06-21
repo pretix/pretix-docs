@@ -98,44 +98,40 @@ Then, we will click :btn:Save:.
 
 ## Creating and editing quotas 
 
-A quota determines how many instances of your product can be sold. 
+A quota determines how many instances of our product can be sold. 
 Every product has to be part of at least one quota before it becomes available in the shop. 
 A product can be part of more than one quota. 
 In that case, it will only remain available as long as neither quota is sold out. 
 In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. 
 For most use cases, it is enough to add every product to one quota only. 
-This section will tell you how. 
+That's what we're going to do in this section. 
 
-Navigate to [Your event] → "Products" → "Quotas". 
+We will navigate to [Event] → "Products" → "Quotas". 
 This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, containing the reduced ticket as a product. 
 The list also displays the total capacity and how many items are left for each quota. 
 
-Click the :btn:change: button next to the "regular ticket" quota in the list. 
+We will click the :btn:change: button next to the "regular ticket" quota in the list. 
 It has a pictogram of a pencil writing into a box on it. 
-We renamed our "regular ticket" to "Standard ticket", so we are also going to rename this quota to avoid confusion. 
-Enter "Standard ticket" or your preferred name into the name field. 
-Change the capacity to the maximum amount of tickets of this type that you want to sell, for example 1000. 
-Leave the rest of the settings unchanged and click the :btn:Save: button. 
-This takes you to a detailed overview of the status of the "Standard ticket" quota. 
+We have renamed our "regular ticket" to "Standard ticket", so we are also going to rename this quota to avoid confusion. 
+We will enter "Standard ticket" into the name field. 
+We will change the capacity to 1000 because that is the maximum amount of tickets of this type that we want to sell. 
+We will leave the rest of the settings unchanged and click the :btn:Save: button. 
+This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
-Repeat the same process for the discount ticket and speaker ticket. 
-Name the quota for the discount ticket "Discount ticket" and set its number to the maximum number of discount tickets you want to sell. 
-In our case, that number is 900. 
-Name the quota for the speaker ticket "Speaker ticket" and set its number to the number of speakers at your event. 
-In our case, that number is 100. 
+We will repeat the same process for the discount ticket and speaker ticket. 
+We will name the quota for the discount ticket "Discount ticket" and set its number to 900 because that is the maximum number of discount tickets we want to sell. 
+We will name the quota for the speaker ticket "Speaker ticket" and set its number to 100 because that is the number of speakers at our event. 
 
 Our sticker product needs three different quotas: one for each product variant, i.e. one for each color. 
-Navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 
-Call the new quota "Sticker purple" and set the total capacity to the number of stickers in that color that you're going to sell, for example, 100. 
-Select "Sticker - Purple" in the list of products. 
+We will navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 
+We will call the new quota "Sticker purple" and set the total capacity to 100 because that is the number of stickers in that color that we're going to sell. 
+Then, we will select "Sticker - Purple" in the list of products. 
 The purple sticker is not an admission ticket but extra product that can be purchased in the same shop. 
 We do not want this quota to add to the total number of tickets available for the event. 
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
-Navigate back to "Quotas". 
-Click the "clone" button next to the sticker quota you just created. 
-Name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead. 
-Adjust the total capacity if necessary. 
-Click :btn:Save: and repeat the same process for the glitter color, again, adjusting the total capacity as needed. 
+We will navigate back to "Quotas" and click the "clone" button next to the sticker quota we just created. 
+We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead.  
+We will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 
-If you now navigate back to [Your event] → "Products" → "Products" → "Sticker" and click on the "Variations" tab, there should be no more yellow boxes warning you that you need to add the product and variations to a quota before they can be sold. 
+If we now navigate back to [Event] → "Products" → "Products" → "Sticker" and click on the "Variations" tab, there should be no more yellow boxes warning us that we need to add the product and variations to a quota before they can be sold. 
