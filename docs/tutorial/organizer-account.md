@@ -98,56 +98,39 @@ In the "homepage text" fields, we can provide text to be displayed on our public
 There is one field for each language we activated in the "localization" tab (see the "localization" segment of this article)—English and German (informal). 
 Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
-## Shop design 
-
-![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../assets/screens/organizer/shop-design.png) 
-
-Switch to the "shop design" tab. 
-Here, you can customize the colors and font used for your public profile and the ticket shops you are going to create. 
-You can change the colors so that they're in line with the palette you use for your other media. 
-Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
-
-You can also choose your preferred font from the list. 
-If you're creating a ticket shop in a language that doesn't use the Latin alphabet, you should choose a font that supports the writing system you need. 
-All available fonts support the Latin alphabet. 
-The preview should give you an idea which writing systems each font supports. 
-So for example, if you're creating a ticket shop in a language that uses the Cyrillic alphabet, you should pick a font such as DejaVu Sans or Noto Sans. 
-
-The shop design you set here will be the default for all shops you create for your events in the future. 
-You can make individual adjustments to the event shops. 
-
 ## Privacy 
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
-On the "privacy" tab, please provide an URL pointing to your privacy policy for each language you activated. 
-The default dialog text and button labels for the cookie consent banner should already be filled out. 
-Feel free to edit or replace these as you see fit. 
+On the "privacy" tab, we have to provide an URL pointing to our privacy policy for each language we activated. 
+The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adapted if necessary. 
 
 pretix itself only ever sets cookies that are required to provide the service requested by the user or to maintain an appropriate level of security. 
 Therefore, cookies set by pretix itself do not require consent in all jurisdictions that we are aware of. 
-The settings on the "privacy" tab will only have an effect if you use plugins that require additional cookies and participate in our cookie consent mechanism.
+The settings on the "privacy" tab will only have an effect if we use plugins that require additional cookies and participate in our cookie consent mechanism.
 
-Ultimately, it is your responsibility to make sure you comply with all relevant laws. 
-We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
+!!! Warning 
+    Ultimately, it is your responsibility to make sure you comply with all relevant laws. 
+    We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
 ## Activation
 
-Before any of your ticket shops can go live, your organizer account has to be activated. 
-Your account is reviewed manually by our team as soon as you have provided all necessary information for correspondence and billing.
+Our organizer account has to be activated before any of our ticket shops can go live. 
+Our accounts is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-Navigate to [Your Organizer]→"Settings"→"Billing settings". 
+In order to do that, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
-Enter the name of a real person (e.g. you or a coworker) we can contact if there is an issue with your account. 
-Enter their email address and phone number in the fields below.
+We are going to enter the name of a real person whom the pretix team can contact if there is an issue with our account. 
+We will enter their email address and phone number in the fields below.
+This is mandatory information. 
+Merely providing a company name is not enough to get our account activated. 
 
-Enter the full contact details of your company further down on the page. 
-If your company is located in the EU but outside of Germany, we recommend entering a VAT ID. 
-If you do not provide your VAT ID here, we will need to charge you VAT on our services and we will not be able to issue reverse charge invoices. 
-Again, this only applies if your company is located in the EU but outside of Germany. 
+We are going to enter the full contact details of our company further down on the page. 
+We do not provide a VAT ID here since our company is located in Germany. 
 
-You can choose a preferred language of correspondence. 
-We offer service in English and German.
+The pretix team offers service in English and German. 
+We are going to choose English as our preferred language of correspondence. 
+
 
 Choose your preferred method of payment. 
 You may pay by SEPA direct debit, by invoice, or by credit card. 
