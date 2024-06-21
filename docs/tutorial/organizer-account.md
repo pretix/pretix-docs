@@ -116,13 +116,13 @@ The settings on the "privacy" tab will only have an effect if we use plugins tha
 ## Activation
 
 Our organizer account has to be activated before any of our ticket shops can go live. 
-Our accounts is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
+Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
 In order to do that, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
 We are going to enter the name of a real person whom the pretix team can contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
-This is mandatory information. 
+This information is mandatory. 
 Merely providing a company name is not enough to get our account activated. 
 
 We are going to enter the full contact details of our company further down on the page. 
@@ -131,17 +131,11 @@ We do not provide a VAT ID here since our company is located in Germany.
 The pretix team offers service in English and German. 
 We are going to choose English as our preferred language of correspondence. 
 
+We are going to choose our preferred method of payment. 
+The options are SEPA direct debit, invoice, and credit card. 
+We want to pay by SEPA direct debit, so we are going to fill out the IBAN, BIC, account owner, and bank name of our account, check the box to grant the mandate, and hit the :btn:Save: button. 
 
-Choose your preferred method of payment. 
-You may pay by SEPA direct debit, by invoice, or by credit card. 
-If you want to pay by SEPA direct debit, fill out your bank details in the form below and approve the mandate. 
-If you want to pay by credit card, fill out your credit card information and authorize credit card payments to rami.io GmbH. 
-If you are planning on only offering free tickets, you don't have to provide any further information here.
+The page will notify us if any required information is still missing. 
+If we have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." 
+This means that our organizer account has been submitted to the pretix team for review and will be activated shortly.
 
-Once you are happy with your choices, click the :btn:Save: button. 
-The page will notify you if any required information is still missing. 
-If you have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." This means that your organizer account has been submitted to our team for review and will be activated shortly.
-
-The "billing contact" and "privacy contact" tabs allow you to provide different contacts within your organization for billing and privacy matters. 
-This is completely optional. 
-You only need to fill out the information on the "general" tab of the billing settings to get your account approved. 
