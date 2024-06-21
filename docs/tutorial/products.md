@@ -24,8 +24,7 @@ This page shows the list of all product categories, which at the moment should o
 We will click the :btn:+ Create a new category: button and give the category a name such as "Extras". 
 We will __not__ check the box next to "products in this category are add-on products". 
 Leaving that box unchecked means that people will still be able to purchase products in this category even if they don't buy an admission ticket. 
-Click the :btn:Save: button at the bottom of the page. 
-This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for extras. 
+Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category for extras. 
 
 ## Creating and editing products
 
@@ -46,28 +45,29 @@ We will also select the appropriate tax rate of 19% from the "sales tax" dropdow
 We will now create a discount ticket. 
 We are going to base it on the "standard ticket" we just edited so that we don't have to repeat all the same steps. 
 That means that the "reduced ticket" is not needed anymore. 
-Navigate to [Your event] → "Products" → "Products". 
-Click the red :btn:🗑: next to the reduced ticket and confirm that you want to delete it. 
-This takes you back to the product overview. 
-Click the :btn:Clone: button next to the standard ticket in order to clone it. 
-Name the new ticket "Discount ticket", provide a translation, and change the "default price" to a lower value such as 120 euros. 
-Leave the other options on this page unchanged and click the :btn:Save: button. 
+We will navigate to [Your event] → "Products" → "Products", click the red :btn:🗑: next to the reduced ticket, and confirm that we want to delete it. 
+This takes us back to the product overview. 
+We will click the :btn:Clone: button next to the standard ticket in order to clone it. 
+We will name the new ticket "Discount ticket", provide a translation, and change the "default price" to 120.00 €. 
+We will leave the other options on this page unchanged and click the :btn:Save: button. 
 
 A warning will now be displayed in a yellow box at the top of the page, saying: 
 "Please note that your product will not be available for sale until you have added your item to an existing or newly created quota." 
 This warning will also be displayed during the creation of subsequent products. 
-You can ignore safely ignore it for now. 
-We will tell you how to add your products to a quota in the next section of this tutorial. 
+We are going to ignore it for now. 
+We will tackle adding products to quotas in the next section. 
 That will take care of the problem and make the warning go away. 
 
-On the next page, adapt the "description" field so that it tells your customers what criteria they have to fulfill to get access to the discounted ticket. 
-For example, tell them the ticket is only available if they provide a valid student ID or member ID. 
-You may upload a different product picture on this site to better distinguish the discount ticket from the standard one. 
-Switch to the "price" tab and change the original price to the price of the standard ticket, in our case 250 euros. 
-Switch to the "check-in and validity" tab and check the box next to "requires special attention". 
-In the "check-in text" field, provide instructions for the person operating the check-in at your event. 
-For example, tell them to only admit the attendee to the event if they can provide a valid student ID or member ID during check-in. 
-Click the :btn:Save: button. 
+On the next page, we have to adapt the "description" field so that it tells our customers what criteria they have to fulfill to get access to the discounted ticket. 
+Our description says the following: 
+"This ticket is only valid if you provide a valid student ID or member ID during check-in."
+We will upload a different product picture on this site to better distinguish the discount ticket from the standard one. 
+We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. 250.00 €. 
+Then, we will to the "check-in and validity" tab and check the box next to "requires special attention". 
+We have to provide instructions for the person operating the check-in at your event in the "check-in text" field. 
+Our instruction will say the following: 
+"Only admit the attendee to the event if they can provide a valid student ID or member ID during check-in." 
+We will then click the :btn:Save: button. 
 
 We will now create a speaker ticket that is free, but requires manual approval before purchase. 
 Navigate to [Your event] → "Products" → "Products". 
