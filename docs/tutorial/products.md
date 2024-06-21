@@ -1,8 +1,8 @@
 # Products
 
-A product is anything that you sell via pretix: tickets, gift cards, meal passes, conference t-shirts and so on. 
-You will be selling a variety of products in your shop. 
-This article guides you through the process of creating products and making them available in your shop. 
+A product is anything that is sold via pretix: tickets, gift cards, meal passes, conference t-shirts and so on. 
+We will be selling a variety of products in our shop. 
+In this article, we will go through the process of creating products and making them available in our shop. 
 We are going to start by creating categories to sort our products into. 
 We will then create the following products: 
 
@@ -12,38 +12,36 @@ We will then create the following products:
  - stickers that come in three variants with different prices 
 
 Finally, we are going to create quotas to determine and keep track of availability numbers for each product. 
-Feel free to follow the methods described here while adapting the types of products, their names and prices to your event's specific needs. 
 
-## How to create and edit categories
+## Creating and editing categories
 
-Categories serve three purposes: They help you keep track of all your different products in the backend; they let you group the tickets into sensible categories in your shop; and they separate standalone products from additional products. 
+Categories serve three purposes: They help keep track of all the different products in the backend; they let us group the tickets into sensible categories in our shop; and they separate standalone products from additional products. 
 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
 That means our next step is creating a category for those extras. 
-Navigate to [Your event] → "Products" → "Categories". This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
-Click the :btn:+ Create a new category: button. 
-Give the category a name such as "Extras". 
-Do __not__ check the box next to "products in this category are add-on products". 
+For that, we will navigate to [Event] → "Products" → "Categories". 
+This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
+We will click the :btn:+ Create a new category: button and give the category a name such as "Extras". 
+We will __not__ check the box next to "products in this category are add-on products". 
 Leaving that box unchecked means that people will still be able to purchase products in this category even if they don't buy an admission ticket. 
 Click the :btn:Save: button at the bottom of the page. 
 This takes you back to the product categories page, which now lists two entries: "Tickets" and your newly created category for extras. 
 
-## How to create and edit products
+## Creating and editing products
 
 Now that we have prepared all necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
 We will edit the "regular ticket" so that we can base all other tickets on this one. 
-Navigate to [Your event] → "Products" → "Products". 
-The website should show you two tickets that have already been created along with the event: "regular ticket" and "reduced ticket". 
-Click the "regular ticket". 
-This takes you to the "modify product" dialog. 
-Change the English item name to "Standard Ticket" and add an appropriate translation for any other languages you have activated. 
-Add a description that tells your customers what services are included in the ticket and what conditions have to be met in order for them to purchase it. 
-You may also add a .png or .jpg file via the "product picture" button to further distinguish this products from the others in the shop. 
-Next, click on the "price" tab. 
-Change the "default price" field to your desired value. 
-In our demo shop, that price is 250.00 €. 
-Select the appropriate tax rate from the "sales tax" dropdown. 
+We will navigate to [Your event] → "Products" → "Products". 
+The website should display two tickets that have already been created along with the event: "regular ticket" and "reduced ticket". 
+We will click the "regular ticket". 
+This takes us to the "modify product" dialog. 
+We will change the English item name to "Standard Ticket" and the German translation to "Standard-Ticket". 
+We are going to add the following description: 
+"Regular ticket that gives you access to the entire conference." 
+We are also going to add a .png file via the "product picture" button to further distinguish this products from the others in the shop. 
+Next, we will click on the "price" tab and change the "default price" to 250.00 €. 
+We will also select the appropriate tax rate of 19% from the "sales tax" dropdown. 
 
 We will now create a discount ticket. 
 We are going to base it on the "standard ticket" we just edited so that we don't have to repeat all the same steps. 
