@@ -65,37 +65,36 @@ We will upload a different product picture on this site to better distinguish th
 We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. 250.00 €. 
 Then, we will to the "check-in and validity" tab and check the box next to "requires special attention". 
 We have to provide instructions for the person operating the check-in at your event in the "check-in text" field. 
-Our instruction will say the following: 
+Our instructions say the following: 
 "Only admit the attendee to the event if they can provide a valid student ID or member ID during check-in." 
 We will then click the :btn:Save: button. 
 
 We will now create a speaker ticket that is free, but requires manual approval before purchase. 
-Navigate to [Your event] → "Products" → "Products". 
-Click the :btn:Clone: button next to the standard ticket in order to clone it. 
-Name the new ticket "Speaker ticket", provide a translation, and change the "default price" to 0 euros. 
-Leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
-Check the box next to "Buying this product requires approval". 
-This means that every order that arrives in your shop and includes this ticket will first enter an "approval" state. 
-You will have to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of your invited speakers. 
-Click the :btn:Save: button. 
+For that, we will navigate to [Event] → "Products" → "Products". 
+We will click the :btn:Clone: button next to the standard ticket in order to clone it. 
+We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to 0 euros. 
+We will leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
+We will check the box next to "Buying this product requires approval". 
+This means that every order that arrives in our shop and includes this ticket will first enter an "approval" state. 
+We will have to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of our invited speakers. 
+We will then click the :btn:Save: button. 
 
 We will now create a sticker product with multiple variations to reflect different colors: purple, black, and glitter. 
-Navigate to [Your event] → "Products" → "Products". 
-Click the :btn:+ Create a new product: button. 
-Name it "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
-Under "product variations", select "product with multiple variations". 
-Select the default price, in our case, 5 euros. 
-Then click :btn:Save and continue with more settings:. 
+For that, we will navigate to [Event] → "Products" → "Products". 
+We will click the :btn:+ Create a new product: button. 
+We will name the product "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
+Under "product variations", we will select "product with multiple variations". 
+We will set the default price to 5.00 €. 
+Then, we will click :btn:Save and continue with more settings:. 
 
-Next, click on the "Variations" tab. 
+Next, we will click on the "Variations" tab. 
 There should be one variant called "Standard" here. 
-Click on the name to expand the settings for that variant. 
-Change the name to "Purple". 
-You do not need to change any other settings here. 
-Then scroll down and click the :btn:+ Add a new variation: button. 
-Name it "Black" and keep the other settings the way they are. 
-Repeat the same process for the "Glitter" color variation and set the "default price" option for that variant to 7.50 euros. 
-Then click :btn:Save:. 
+We will click the name to expand the settings for that variant and change the name to "Purple". 
+We do not need to change any other settings here. 
+Then, we will scroll down and click the :btn:+ Add a new variation: button. 
+We will name this new variation "Black" and keep the other settings the way they are. 
+We will repeat the same process for the "Glitter" color variation and set the "default price" option for that variant to 7.50 €. 
+Then, we will click :btn:Save:. 
 
 ## Creating and editing quotas 
 
