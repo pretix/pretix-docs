@@ -44,7 +44,7 @@ Using a custom domain with pretix would mean simply proceed with signup now and 
 
 {% include "note-short-form.md" %}
 
-Once we have filled out the form, we are also going to read the privacy policy and terms of service which are both linked on this page. 
-Once we have read them both carefully, we are going to check the boxes to confirm. 
+The privacy policy and terms of service are both linked on this page. 
+Reading them carefully, agreeing with them and checking the boxes to confirm is a requirement for using pretix. 
 
 We will now click the :btn:Continue: button and our journey to hosting our first event using pretix can finally begin! 
