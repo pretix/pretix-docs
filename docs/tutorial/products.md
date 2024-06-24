@@ -66,7 +66,7 @@ We will then switch to the "price" tab and change the original price to the pric
 Then, we will to the "check-in and validity" tab and check the box next to "requires special attention". 
 We have to provide instructions for the person operating the check-in at our event in the "check-in text" field. 
 Our instructions say the following: 
-"Only admit the attendee to the event if they can provide a valid student ID or member ID during check-in." 
+"Check for student ID/member ID" 
 We will then click the :btn:Save: button. 
 
 We will now create a speaker ticket that is free, but requires manual approval before purchase. 
