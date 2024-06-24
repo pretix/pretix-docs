@@ -19,12 +19,16 @@ Instead of the single button, the page will now display a multitude of settings.
 We will check the boxes next to "credit card payments" and "enable payment method", then scroll to the bottom and click the :btn:Save: button. 
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
 
+For more information on using Stripe as a payment provider, see [Stripe (Topic)](../topics/payment/stripe.md). 
+
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
 We will then check the box to confirm that we have understood the special conditions that apply to bank transfers when using pretix and the box next to "enable payment method". 
 Then, we will click the :btn:Save: button and return to the payment settings. 
 Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag next to them now. 
+
+For more information on using bank transfers, see [bank transfers (Topic)](../topics/payment/bank-transfer.md). 
 
 ## Invoices 
 
