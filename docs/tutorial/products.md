@@ -106,7 +106,7 @@ For most use cases, it is enough to add every product to one quota only.
 That is what we are going to do in this section. 
 
 We will navigate to [Event] → "Products" → "Quotas". 
-This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, containing the reduced ticket as a product. 
+This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 
 We will click the :btn:change: button next to the "regular ticket" quota in the list. 
@@ -117,9 +117,13 @@ We will change the capacity to 1000 because that is the maximum amount of ticket
 We will leave the rest of the settings unchanged and click the :btn:Save: button. 
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
-We will repeat the same process for the discount ticket and speaker ticket. 
-We will name the quota for the discount ticket "Discount ticket" and set its number to 900 because that is the maximum number of discount tickets we want to sell. 
-We will name the quota for the speaker ticket "Speaker ticket" and set its number to 100 because that is the number of speakers at our event. 
+We will now navigate back to [Event] → "Products" → "Quotas" and click the :btn:change: button next to the "reduced ticket" quota. 
+We will rename it to "Discount ticket" and set its number to 900 because that is the maximum number of discount tickets we want to sell. 
+In the list of products, we will check the box next to "Discount ticket". 
+
+We will now navigate back to [Event] → "Products" → "Quotas" and click the :btn:+ Create a new quota: button. 
+We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
+In the list of products, we will check the box next to "Speaker ticket". 
 
 Our sticker product needs three different quotas: one for each product variant, i.e. one for each color. 
 We will navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 
