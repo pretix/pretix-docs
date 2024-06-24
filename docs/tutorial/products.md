@@ -117,10 +117,12 @@ We will change the capacity to 1000 because that is the maximum amount of ticket
 We will leave the rest of the settings unchanged and click the :btn:Save: button. 
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
-We will now navigate back to [Event] → "Products" → "Quotas" and click the :btn:change: button next to the "reduced ticket" quota. 
+Our discount ticket also needs to be assigned to a quota. 
+In order to do that, we will navigate back to [Event] → "Products" → "Quotas" and click the :btn:change: button next to the "reduced ticket" quota. 
 We will rename it to "Discount ticket" and set its number to 900 because that is the maximum number of discount tickets we want to sell. 
 In the list of products, we will check the box next to "Discount ticket". 
 
+Our speaker ticket needs to be assigned to a quota, too. 
 We will now navigate back to [Event] → "Products" → "Quotas" and click the :btn:+ Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
