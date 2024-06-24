@@ -65,8 +65,7 @@ We will upload a different product picture on this site to better distinguish th
 We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. €250.00. 
 Then, we will to the "check-in and validity" tab and check the box next to "requires special attention". 
 We have to provide instructions for the person operating the check-in at our event in the "check-in text" field. 
-Our instructions say the following: 
-"Check for student ID/member ID" 
+Our instructions say: "Check for student ID/member ID". 
 We will then click the :btn:Save: button. 
 
 We will now create a speaker ticket that is free, but requires manual approval before purchase. 
