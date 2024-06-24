@@ -104,7 +104,7 @@ This section describes how to do that.
 We are going to navigate to [Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
 Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for attendee names, addresses per ticket, and company per ticket. 
 We will set those three questions to "ask, but do not require input". 
-By not making the input mandatory, it is still possible for attendees to not give you their data if they do not require a certificate of participation. 
+By not making the input mandatory, it is still possible for attendees to not give us their data if they do not require a certificate of participation. 
 In the text fields labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
 "We require the name, email address and company for every attendee that you're buying a ticket for so that we can issue them certificates of participation."
