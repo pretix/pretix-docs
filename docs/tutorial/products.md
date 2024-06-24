@@ -103,7 +103,7 @@ A product can be part of more than one quota.
 In that case, it will only remain available as long as neither quota is sold out. 
 In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. 
 For most use cases, it is enough to add every product to one quota only. 
-That's what we're going to do in this section. 
+That is what we are going to do in this section. 
 
 We will navigate to [Event] → "Products" → "Quotas". 
 This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, containing the reduced ticket as a product. 
