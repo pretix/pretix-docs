@@ -1,6 +1,6 @@
 # Payment
 
-## Setting up a payment provider
+## Setting up payment providers 
 
 For our conference, we are planning to receive payments via bank transfer and a few other methods that are going to be handled through the payment provider Stripe. 
 We are going to navigate to [Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
