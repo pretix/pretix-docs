@@ -60,7 +60,7 @@ We will then confirm our changes by clicking the :btn:Save: button on the bottom
 After saving the general settings, we are going to switch to the "localization" tab. 
 We are going to finalize our localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
 
-Under "available languages", we can choose which languages your ticket shop will be published in. 
+Under "available languages", we can choose which languages our ticket shop will be published in. 
 The options officially maintained by the pretix team are English, German, and German (informal). 
 German uses "Sie" to address the user whereas German (informal) uses "du". 
 We can also choose one of the community translations for our organizer page. 
