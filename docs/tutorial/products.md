@@ -28,10 +28,10 @@ Clicking the :btn:Save: button at the bottom of the page takes us back to the pr
 
 ## Creating and editing products
 
-Now that we have prepared all necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
+Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
 We will edit the "regular ticket" so that we can base all other tickets on this one. 
-We will navigate to [Your event] → "Products" → "Products". 
+We will navigate to [Event] → "Products" → "Products". 
 The website should display two tickets that have already been created along with the event: "regular ticket" and "reduced ticket". 
 We will click on the "regular ticket". 
 This takes us to the "modify product" dialog. 
@@ -45,7 +45,7 @@ We will also select the appropriate tax rate of 19% from the "sales tax" dropdow
 We will now create the discount ticket. 
 We are going to base it on the "standard ticket" we just edited so that we don't have to repeat all the same steps. 
 This means that the "reduced ticket" is not needed anymore. 
-We will navigate to [Your event] → "Products" → "Products", click the red :btn:🗑: next to the reduced ticket, and confirm that we want to delete it. 
+We will navigate to [Event] → "Products" → "Products", click the red :btn:🗑: next to the reduced ticket, and confirm that we want to delete it. 
 This takes us back to the product overview. 
 We will click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Discount ticket", provide a translation, and change the "default price" to €120.00. 
@@ -64,7 +64,7 @@ Our description says the following:
 We will upload a different product picture on this site to better distinguish the discount ticket from the standard one. 
 We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. €250.00. 
 Then, we will to the "check-in and validity" tab and check the box next to "requires special attention". 
-We have to provide instructions for the person operating the check-in at your event in the "check-in text" field. 
+We have to provide instructions for the person operating the check-in at our event in the "check-in text" field. 
 Our instructions say the following: 
 "Only admit the attendee to the event if they can provide a valid student ID or member ID during check-in." 
 We will then click the :btn:Save: button. 
