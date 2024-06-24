@@ -44,4 +44,4 @@ This means that our organizer's profile and all the events we are going to creat
 The privacy policy and terms of service are both linked on this page. 
 Reading them carefully, agreeing with them and checking the boxes to confirm is a requirement for using pretix. 
 
-We will now click the :btn:Continue: button and our journey to hosting our first event using pretix can finally begin! 
+We will now click the :btn:Continue: button and thus take our first step towards hosting our first event using pretix. 
