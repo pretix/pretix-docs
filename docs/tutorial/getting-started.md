@@ -1,10 +1,10 @@
 # Getting Started
 
 Welcome to the pretix tutorial. 
-Come join us on our journey to hosting our very first event using pretix.
+In this tutorial, we will go through all the necessary steps for hosting our very first event using pretix.
 
-Before we can do anything with pretix, we have to create an account. 
-The good news is: creating an account is __completely free__ of charge and puts us under no obligation to pay rami.io GmbH, the company behind pretix, any money. 
+Before we are able to do anything with pretix, we have to create an account. 
+The good news is: creating an account is __completely free__ of charge and does not come with any obligation to pay money for the use of pretix in the future. 
 We are free to play around with the pretix software to our heart's content before deciding whether pretix is the right choice for us. 
 
 !!! Note
@@ -21,14 +21,14 @@ This takes us to a new website on which we will enter the info for our pretix ac
 ![a website with input fields for account information as well as the name and short form of the organizer](../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup screenshot" ) 
 
 For our personal account, we are going to provide our name, email address, and a secure password. 
-The field on the top left is meant for a **personal name**, not a company name
+The field on the top left is meant for a **personal name**, not a company name. 
 We are going to choose a name by which our co-organizers will recognize us and which our support team can use to address us. 
 For this tutorial, our name is going to be John Doe. 
 
 !!! Warning
 
     The short form is the unique identifier for your company in our website's backend and will also be used in the shop URL. 
-    Please put some careful consideration into the short form and choose it you're absolutely positive that you're happy with it. 
+    Please put careful consideration into the short form and make sure you are happy with it.
 
     The short form cannot be changed without you contacting customer support and our team putting a significant amount of work into it. 
 
