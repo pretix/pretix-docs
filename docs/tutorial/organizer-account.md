@@ -1,7 +1,7 @@
 # Organizer account
 
 An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
-We just created an organizer account when we created your personal account. 
+We just created an organizer account when we created our personal account. 
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
@@ -10,7 +10,7 @@ This entails:
  - navigating to the organizer account settings 
  - adding contact information on the "general" tab
  - choosing language and localization options on the "localization" tab 
- - customizing your organizer page on the "organizer page" and "shop design" tabs
+ - customizing the organizer page on the "organizer page" and "shop design" tabs
  - enabling customer accounts for certain features on the "customer accounts" tab
  - setting up cookie/privacy information on the "privacy" tab 
  - getting our pretix account activated by providing necessary information in the "billing settings"
@@ -49,7 +49,7 @@ It is not possible to change the short form since it is the organizer's unique i
 Since we are operating from Germany, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
 
 We will enter a valid email address into the "contact address" field. 
-This email address will be displayed publicly to allow your customers to contact you. 
+This email address will be displayed under the label "Contact event organizer" in the footer of the public profile. 
 
 We will then confirm our changes by clicking the :btn:Save: button on the bottom of the page. 
 
@@ -86,7 +86,7 @@ An organizer page created with pretix Hosted will always be located at https://p
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
 
 By default, the name of the organizer will be displayed in the page header of our page.
-The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). 
+The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
 We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels from our computer. 
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
