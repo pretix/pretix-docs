@@ -32,15 +32,12 @@ For this tutorial, our name is going to be John Doe.
 
     The short form cannot be changed without you contacting customer support and our team putting a significant amount of work into it. 
 
-The name of the company, association or institution that we want to organize events for goes in the field on the top right. 
-Below that, we are going to enter a short form of the organization's name. 
-This short form will be used for the URL where our events can be found. 
+The "full name" field is meant for the name of the company, association or institution that we want to organize events for. 
+The "address short form" field is for a short form of the organization's name. 
+This short form will be used for the URL under which our events can be found. 
 For this tutorial, we are going to create an account for our Example Organization. 
-So we will enter "Example Organization" into the company name field, and "ex-org" into the short form field. 
+So we will enter "Example Organization" into the full name field, and "ex-org" into the address short form field. 
 This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
-
-It is also possible to use a custom domain. 
-Using a custom domain with pretix would mean simply proceed with signup now and contact the team afterwards via email (support@pretix.eu) or phone (+49 6221 32177-50) 
 
 {% include "note-short-form.md" %}
 
