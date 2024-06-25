@@ -41,6 +41,9 @@ This will send an email to the address we used to place the order containing a l
 The order will now display the "pending" tag in the overview. 
 If we open the link in the email and use the fake payment provider, that status will change to "paid". 
 
+We are going to repeat this process for every language we have activated for the shop. 
+This is to make sure that we have provided all the necessary translations and our localization settings are correct. 
+
 ## Making Final Improvements to our Shop 
 
 By trying out the shop and getting the same picture as our customers, it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
