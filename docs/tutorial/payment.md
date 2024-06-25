@@ -1,5 +1,10 @@
 # Payment
 
+We do not just want to sell tickets in our shop; we also want to get paid for them. 
+That is what we will take care of in this part of the tutorial. 
+We will set up payment via bank transfer and credit card. 
+We will also set up invoices to be sent automatically with every order. 
+
 ## Setting up payment providers 
 
 pretix takes care of payment via a wide selection of payment providers. 
@@ -49,7 +54,7 @@ TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gem
 
 
 
-## Invoices 
+## Setting up invoices 
 
 The invoicing settings are located at [Event] → "Settings" → "Invoicing". 
 On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
