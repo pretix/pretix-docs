@@ -1,4 +1,16 @@
-# Testing
+# Testing and Going Live
 
- - what settings are sensible for testing functionality of the shop?
- - how do you have to change those settings before actually going live?
+This is the last part of the tutorial. 
+In this article, we will test our shop, make sure that everything works as intended, and finally take it live. 
+
+## Testing Orders 
+
+
+
+## Checklist before Going Live 
+
+ - have the contact details under "billing settings" been filled out? 
+ - has the organizer account been activated by the pretix team? 
+ - 
+
+ ## Conclusion 
