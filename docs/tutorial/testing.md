@@ -6,16 +6,16 @@ In this article, we will test our shop, make sure that everything works as inten
 ## Testing Orders 
 
 !!! Warning 
-   The fake payment provider is for test purposes only. 
-   Make absolutely sure that it is disabled before taking the shop live. 
-   Otherwise, it will allow your customers to place orders without paying for them. 
+    The fake payment provider is for test purposes only. 
+    Make absolutely sure that it is disabled before taking the shop live. 
+    Otherwise, it will allow your customers to place orders without paying for them. 
 
 We want to test the functionality that is central to our shop: placing an order. 
 We first need to activate the fake payment method by navigating to [Event] → "Settings" → "Plugins" and opening the "payment providers" tab. 
 We will search for the "fake payment providers" plugin in the list and enable it. 
 We will then browse to [Event] → "Settings" → "Payment". 
 The list should now contain the entry "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
-We will click the :btn:⚙ Settings" button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
+We will click the :btn:⚙ Settings: button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
 
 We will now place an order in our shop using the fake payment method. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
@@ -41,6 +41,7 @@ We may need to add texts, images, new products, questions, checks, or adapt the 
 
  - have the contact details under "billing settings" been filled out? 
  - has the organizer account been activated by the pretix team? 
- - 
+ - has the fake payment provider been disabled? 
+ - have all test mode orders been deleted? 
 
- ## Conclusion 
+## Conclusion 
