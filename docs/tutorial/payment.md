@@ -4,6 +4,7 @@
 
 pretix takes care of payment via a wide selection of payment providers. 
 For our conference, we are planning to receive payments by credit card through the payment provider Stripe and by bank transfer. 
+The prerequisites for this are an active Stripe merchant account and a bank account. 
 pretix will log payments coming in through most payment providers, including Stripe. 
 An order in our shop will be marked as paid automatically as soon as Stripe records a corresponding payment. 
 Bank transfers are the exception to that rule because there is no way for the pretix software to monitor payments arriving at our bank account. 
@@ -18,8 +19,8 @@ We will then navigate to [Event] → "Settings" → "Payment", which displays a 
 The list should now include bank transfer, gift card, and Stripe. 
 By default, gift card will be enabled and all other payment providers will be disabled. 
 
-We will first enable Stripe by clicking on the :btn:⚙️ Settings: button next to it. 
-This takes us to the payment settings for Stripe, which currently only contains a purple :btn:Connect with Stripe: button. 
+We will first enable Stripe by clicking the :btn:⚙️ Settings: button next to it. 
+This takes us to the payment settings page for Stripe, which currently only contains a purple :btn:Connect with Stripe: button. 
 Clicking that button takes us to a dialog on stripe.com, where we will input our mail address and go through the process of connecting our Stripe merchant account to our pretix account. 
 We will then return to pretix.eu, navigate to [Event] → "Settings" → "Payment" and open the Stripe settings. 
 Instead of the single button, the page will now display a multitude of settings. 
@@ -33,7 +34,7 @@ TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gem
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
-We will then check the box to confirm that we have understood the special conditions that apply to bank transfers when using pretix and the box next to "enable payment method". 
+We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "enable payment method". 
 Then, we will click the :btn:Save: button and return to the payment settings. 
 Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag next to them now. 
 
