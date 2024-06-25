@@ -39,9 +39,18 @@ We may need to add texts, images, new products, questions, checks, or adapt the 
 
 ## Checklist before Going Live 
 
- - have the contact details under "billing settings" been filled out? 
- - has the organizer account been activated by the pretix team? 
- - has the fake payment provider been disabled? 
- - have all test mode orders been deleted? 
+This is a list of things that have to be taken care of before the shop can go live: 
+
+ - Does the shop look and function the way we want it to? 
+ - Have the contact details under "billing settings" been filled out? 
+ - Has the organizer account been activated by the pretix team? 
+ - Has the fake payment provider been disabled? 
+ - Have all test mode orders been deleted? 
 
 ## Conclusion 
+
+Once the experience in our shop is satisfactory and all other points have been checked off the list above, we can finally take our shop live. 
+In order to do that, we are going to browse to [Event] → "Dashboard". 
+The event dashboard displays a box saying "Your ticket shop is in private test mode. Click here to change". 
+Clicking that box takes us to a page titled "shop status". 
+We will check the box 
