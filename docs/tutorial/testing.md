@@ -72,7 +72,6 @@ This is a list of things that have to be taken care of before the shop can go li
 
 Once the experience in our shop is satisfactory and all other points have been checked off the list above, we can finally take our shop live. 
 In order to do that, we are going to browse to [Event] → "Dashboard". 
-The event dashboard displays a box saying "Your ticket shop is in private test mode. Click here to change". 
-Clicking that box takes us to a page titled "shop status". 
-We will check the box to "permanently delete all orders created in test mode" and click the :btn:disable test mode: button. 
-Once we have done that, we can click the :btn:Go live" button and our ticket shop will finally go live! 
+The event dashboard displays a box saying "Your ticket shop is not yet public. Click here to change". 
+Clicking that box takes us to the "shop status" page. 
+We are going to click the :btn:Go live" button and our ticket shop will finally go live! 
