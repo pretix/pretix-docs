@@ -57,4 +57,5 @@ Once the experience in our shop is satisfactory and all other points have been c
 In order to do that, we are going to browse to [Event] → "Dashboard". 
 The event dashboard displays a box saying "Your ticket shop is in private test mode. Click here to change". 
 Clicking that box takes us to a page titled "shop status". 
-We will check the box 
+We will check the box to "permanently delete all orders created in test mode" and click the :btn:disable test mode: button. 
+Once we have done that, we can click the :btn:Go live" button and our ticket shop will finally go live! 
