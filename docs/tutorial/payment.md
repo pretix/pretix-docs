@@ -2,7 +2,15 @@
 
 ## Setting up payment providers 
 
-For our conference, we are planning to receive payments via bank transfer and a few other methods that are going to be handled through the payment provider Stripe. 
+pretix takes care of payment via a wide selection of payment providers. 
+For our conference, we are planning to receive payments by credit card through the payment provider Stripe and via bank transfer. 
+pretix will log payments coming in through most payment providers, including Stripe. 
+An order in our shop will be marked as paid automatically as soon as payment arrives via Stripe. 
+Bank transfers are the exception to that rule. 
+There is no way for the pretix software to monitor payments arriving at our bank account. 
+Thus, we have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+
+First of all, we need to enable the plugins for bank transfers and Stripe. 
 We are going to navigate to [Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be activated. 
 Since we are not planning on using PayPal or SEPA Direct debit, we are going to click on the :btn:Disable: buttons for those two plugins. 
