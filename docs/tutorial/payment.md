@@ -31,6 +31,11 @@ For more information on using Stripe as a payment provider, see [Stripe (Topic)]
 
 TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
 
+!!! Warning 
+    There is no way for the pretix software to monitor payments arriving at your bank account. 
+    Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+    Read our guide on [monitoring incoming payments] (../topics/payment/bank-transfer.md#monitoring-incoming-payments) before using bank transfer as a payment method in your shop. 
+
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
@@ -41,6 +46,8 @@ Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag n
 For more information on using bank transfers, see [bank transfers (Topic)] (../topics/payment/bank-transfer.md). 
 
 TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
+
+
 
 ## Invoices 
 
