@@ -5,7 +5,37 @@ In this article, we will test our shop, make sure that everything works as inten
 
 ## Testing Orders 
 
+!!! Warning 
+   The fake payment provider is for test purposes only. 
+   Make absolutely sure that it is disabled before taking the shop live. 
+   Otherwise, it will allow your customers to place orders without paying for them. 
 
+We want to test the functionality that is central to our shop: placing an order. 
+We first need to activate the fake payment method by navigating to [Event] → "Settings" → "Plugins" and opening the "payment providers" tab. 
+We will search for the "fake payment providers" plugin in the list and enable it. 
+We will then browse to [Event] → "Settings" → "Payment". 
+The list should now contain the entry "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
+We will click the :btn:⚙ Settings" button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
+
+We will now place an order in our shop using the fake payment method. 
+We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
+This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
+This is good. 
+We would not want to activate the fake payment provider while the shop is already live and accessible to the public. 
+We will now place an order for a standard ticket and a discount ticket and follow the instructions on the screen. 
+
+During checkout, the option to pay by credit card will appear twice. 
+One of these credit cards is our fake payment provider. 
+The fake payment provider has the credit card number already filled out with repeating sequences of "42". 
+We are going to use this to place our order. 
+We will also place an additional order of a speaker ticket. 
+
+We will now open pretix.eu and navigate to [Event] → "Orders". 
+This page should display a list containing the two test orders we just placed. 
+The first order should have the status "paid" and the second order, which included the speaker ticket, should have the status tag "approval pending". 
+
+This is where it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
+We may need to add texts, images, new products, questions, checks, or adapt the appearance of the shop. 
 
 ## Checklist before Going Live 
 
