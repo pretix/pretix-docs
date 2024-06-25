@@ -52,16 +52,13 @@ For more information on using bank transfers, see [bank transfers (Topic)] (../t
 
 TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
 
-
-
 ## Setting up invoices 
 
-The invoicing settings are located at [Event] → "Settings" → "Invoicing". 
+We will browse to the invoicing settings  at [Event] → "Settings" → "Invoicing". 
 On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
+We will then switch to the "issuer details" tab and provide the name and full address of our organization. 
+If we now click the :btn:Save and show preview: button, our browser is going to download a PDF preview of the invoice with our or organization's address, the invoice number EX-CONF-PREVIEW and an example listing of purchases with a partially received payment. 
 
+## Conclusion
 
- - payment, invoicing and taxes
- - what are the options for payment (payment providers)?
- - how do you enable and set up the payment options you want to use?
- - how to set sane default settings for invoicing
- - make it abundantly clear that none of this is legal/financial/tax advice
+Now that we have given our customers two options for making payments in our shop and set up the automatic dispatching of invoices, we can move on to testing our shop before finally taking it live. 
