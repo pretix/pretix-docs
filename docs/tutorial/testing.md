@@ -9,6 +9,7 @@ In this article, we will test our shop, make sure that everything works as inten
     The fake payment provider is for test purposes only. 
     Make absolutely sure that it is disabled before taking the shop live. 
     Otherwise, it will allow your customers to place orders without paying for them. 
+    Do not enable the fake payment provider while your ticket shop is live. 
 
 We want to test the functionality that is central to our shop: placing an order. 
 We first need to activate the fake payment method by navigating to [Event] → "Settings" → "Plugins" and opening the "payment providers" tab. 
@@ -17,12 +18,12 @@ We will then browse to [Event] → "Settings" → "Payment".
 The list should now contain the entry "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
 We will click the :btn:⚙ Settings: button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
 
-## Testing Orders 
+## Testing and Confirming Orders 
 
 We will now place an order in our shop using the fake payment method. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
-This is good. 
+This is the way it is intended. 
 We would not want to activate the fake payment provider while the shop is already live and accessible to the public. 
 We will now place an order for a standard ticket and a discount ticket and follow the instructions on the screen. 
 
@@ -39,6 +40,8 @@ We will click the code for the second order, then the :btn:Approve" button and c
 This will send an email to the address we used to place the order containing a link under which any pending payment can be completed. 
 The order will now display the "pending" tag in the overview. 
 If we open the link in the email and use the fake payment provider, that status will change to "paid". 
+
+## Making Final Improvements to our Shop 
 
 By trying out the shop and getting the same picture as our customers, it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
 We may need to add texts, images, new products, questions, checks, or adapt the appearance of the shop. 
