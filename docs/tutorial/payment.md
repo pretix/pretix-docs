@@ -3,11 +3,10 @@
 ## Setting up payment providers 
 
 pretix takes care of payment via a wide selection of payment providers. 
-For our conference, we are planning to receive payments by credit card through the payment provider Stripe and via bank transfer. 
+For our conference, we are planning to receive payments by credit card through the payment provider Stripe and by bank transfer. 
 pretix will log payments coming in through most payment providers, including Stripe. 
-An order in our shop will be marked as paid automatically as soon as payment arrives via Stripe. 
-Bank transfers are the exception to that rule. 
-There is no way for the pretix software to monitor payments arriving at our bank account. 
+An order in our shop will be marked as paid automatically as soon as Stripe records a corresponding payment. 
+Bank transfers are the exception to that rule because there is no way for the pretix software to monitor payments arriving at our bank account. 
 Thus, we have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 
 First of all, we need to enable the plugins for bank transfers and Stripe. 
@@ -28,6 +27,7 @@ We will check the boxes next to "credit card payments" and "enable payment metho
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
 
 For more information on using Stripe as a payment provider, see [Stripe (Topic)] (../topics/payment/stripe.md). 
+
 TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
 
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
@@ -38,6 +38,7 @@ Then, we will click the :btn:Save: button and return to the payment settings.
 Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag next to them now. 
 
 For more information on using bank transfers, see [bank transfers (Topic)] (../topics/payment/bank-transfer.md). 
+
 TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
 
 ## Invoices 
