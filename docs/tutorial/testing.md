@@ -33,9 +33,13 @@ We will also place an additional order of a speaker ticket.
 We will now open pretix.eu and navigate to [Event] → "Orders". 
 This page should display a list containing the two test orders we just placed. 
 The first order should have the status "paid" and the second order, which included the speaker ticket, should have the status tag "approval pending". 
+We will click the code for the second order, then the :btn:Approve" button and confirm our choice. 
+This will send an email to the address we used to place the order containing a link under which any pending payment can be completed. 
 
-This is where it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
+By trying out the shop and getting the same picture as our customers, it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
 We may need to add texts, images, new products, questions, checks, or adapt the appearance of the shop. 
+It is possible to adapt these things when the shop is already live. 
+However, we are going to make sure that our shop is exactly in the state we want it to be in before we take it live so that all of our customers have a unified and flawless experience while using it. 
 
 ## Checklist before Going Live 
 
