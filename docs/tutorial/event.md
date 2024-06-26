@@ -48,8 +48,7 @@ The start time and the currency for our event are mandatory information.
 We're going to enter the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
 
 Since we already know the location for our event, we're going to put that location into pretix now. 
-This is an optional step. 
-The location can still be changed later. 
+This is information is optional and can still be changed later. 
 Our input into the "location" field will be used to search OpenStreetMap for that location. 
 If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
 If no results can be found for the input, the marker on the map can be dragged to the event location manually. 
@@ -57,9 +56,8 @@ This will automatically update the "geo coordinates" fields.
 Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the address over to the "location" field. 
 
 This page also allows us to set a sales tax rate for our event. 
-This is an optional step. 
 Taxation rules can also be changed after event creation is finished. 
-We are holding our event in Germany and a single-percentage rule applies to all of our products. 
+We are holding our event in Germany and a single percentage rule applies to all of our products. 
 Thus, we are going to add a 19% tax rule here. 
 
 {% include "warning-tax.md" %}
@@ -75,7 +73,7 @@ Not pictured: setting up payment options and providing contact information.](../
 
 The next page congratulates us on creating our event and gives us a quick overview of products and basic settings for the event. 
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
-All we are going to do on this page is adding two more pieces of information that are mandatory for our ticket shop to go live. 
+All we are going to do on this page is to add two more pieces of information that are mandatory for our ticket shop to go live. 
 We will provide a general email address at which our customers can contact us in the "contact address" field. 
 This email address will be displayed in the page footer of our shop with the label "contact event organizer". 
 We will provide a URL to legal imprint information for our organization's online presence in the "imprint URL" field. 
@@ -85,7 +83,7 @@ Once we click :btn:Save: at the bottom of the page, we are taken to an overview 
 ## Event-level Dashboard
 
 Now that we have created our event, we have access to all possible options for the event. 
-We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in the top left and then selecting the event we just created in the list titled "your upcoming events". 
+We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in the top left corner and then selecting the event we just created in the list titled "your upcoming events". 
 The event-level dashboard gives us an overview of the event's basic information and status. 
 It allows us to leave an internal comment for ourselves and our team and it logs recent changes. 
 
@@ -95,7 +93,7 @@ Not pictured: event logs for recent changes.](../assets/screens/event/event-dash
 This overview will probably display a warning that our organizer account is not yet active. 
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
 Activating an account is a manual process and may take some time depending on the availability of the pretix team. 
-So, this warning may persist for a while even if all necessary information as already been provided. 
+Thus, this warning may persist for a while even if all necessary information has already been provided. 
 
 ## Customer and attendee data 
 
