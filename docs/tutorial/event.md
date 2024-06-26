@@ -37,14 +37,15 @@ We will simply activate and deactivate the languages as needed.
 Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
 After clicking :btn:Continue:, we are now asked to provide a name and a short form for the event. 
-Our example conference is going to take place in 2027, therefore we choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
+We are going to create a simple example conference for this tutorial. 
+Therefore, we will choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
 The short form is appended to the organizer's URL. 
-This results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
+In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
 
 {% include "note-short-form.md" %}
 
 The start time and the currency for our event are mandatory information. 
-We're going to put the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
+We're going to enter the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
 
 Since we already know the location for our event, we're going to put that location into pretix now. 
 This is an optional step. 
@@ -100,7 +101,6 @@ So, this warning may persist for a while even if all necessary information as al
 
 We want to to issue certificates of participation to the people who attend our conference. 
 That means we have to record their name and affiliation during purchase. 
-This section describes how to do that. 
 We are going to navigate to [Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
 Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for attendee names, addresses per ticket, and company per ticket. 
 We will set those three questions to "ask, but do not require input". 
