@@ -110,10 +110,8 @@ Our explanation reads as follows:
 "We require the name, email address and company for every attendee that you're buying a ticket for so that we can issue them certificates of participation."
 
 Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
-The default option for names is "ask for given name, + family name, display like John Doe". 
-The default option for titles is "free text input". 
-We are happy with those two options, so we are not going to make any changes here. 
-We are going to finalize our choice here before taking the ticket shop live. 
+We are going to select "ask for given name, + family name, display like John Doe" for names and "free text input" for titles. 
+It is important to finalize our choice here before taking the ticket shop live. 
 Changing this after already having received orders can lead to issues when sorting or changing names. 
 
 ## Shop design 
