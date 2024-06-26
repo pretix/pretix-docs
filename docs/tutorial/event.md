@@ -44,7 +44,7 @@ In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-con
 
 {% include "note-short-form.md" %}
 
-The start time and the currency for our event are mandatory information. 
+Just like the name and short form, the start time and the currency for our event are mandatory information. 
 We're going to enter the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
 
 Since we already know the location for our event, we're going to put that location into pretix now. 
