@@ -30,16 +30,14 @@ There we will find a filter function for the list of available organizers and a 
 
 Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer. 
 
-![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. 
-There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
+![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
 We are now going to click :btn:Settings: in the sidebar to set up our organizer account. 
 This lands us on the general settings page for the organizer account. 
 
 ## General 
 
-![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. 
-Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
+![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
 The fields for "name" and "short form" are already filled out. 
 It is not possible to change the short form since it is the organizer's unique identifier. 
@@ -49,23 +47,23 @@ Since we are operating from Germany and thus required by law to include certain 
 We will enter a valid email address into the "contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile. 
 
-We will then confirm our changes by clicking the :btn:Save: button on the bottom of the page. 
+Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
 ## Localization 
 
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
 After saving the general settings, we are going to switch to the "localization" tab. 
-We are going to finalize our localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
+We should finalize our localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
 
 Under "available languages", we can choose which languages our ticket shop will be published in. 
-The options officially maintained by the pretix team are English, German, and German (informal). 
-German uses "Sie" to address the user whereas German (informal) uses "du". 
+The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
+"German" uses "Sie" to address the user whereas "German (informal)" uses "du". 
 We can also choose one of the community translations for our organizer page. 
 They are displayed in the list below along with a percentage of how much of the software is translated. 
 English is used as the fallback language for missing translations. 
 These settings also determine the default languages when creating new events, though languages can be activated or deactivated for each event individually.
-We are going to activate English and German (informal) for our example conference. 
+We are going to activate "English" and "German (informal)" for our example conference. 
 
 {% include "note-translations.md" %}
 
