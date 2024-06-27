@@ -57,7 +57,7 @@ TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gem
 We will browse to the invoicing settings  at [Event] → "Settings" → "Invoicing". 
 On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
 We will then switch to the "issuer details" tab and provide the name and full address of our organization. 
-If we now click the :btn:Save and show preview: button, our browser is going to download a PDF preview of the invoice with our or organization's address, the invoice number EX-CONF-PREVIEW and an example listing of purchases with a partially received payment. 
+If we now click the :btn:Save and show preview: button, our browser is going to download a PDF preview of the invoice with our or organization's address, the invoice number EX-CONF-2027-PREVIEW and an example listing of purchases with a partially received payment. 
 
 ## Conclusion
 
