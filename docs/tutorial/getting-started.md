@@ -39,6 +39,11 @@ For this tutorial, we are going to create an account for our Example Organizatio
 So we will enter "Example Organization" into the full name field, and "ex-org" into the address short form field. 
 This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
 
+There is no need to create a test account or use the word "test" anywhere in the short form or name. 
+By using the official name of our organization for the account right away, we can ensure that we get to use our preferred URL. 
+We can also avoid having to make the same adjustments to two different accounts. 
+Or organizer account will not be visible to the public until we take our first ticket live. 
+
 {% include "note-short-form.md" %}
 
 The privacy policy and terms of service are both linked on this page. 
