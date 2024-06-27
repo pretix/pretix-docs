@@ -119,7 +119,7 @@ Our account is going to be reviewed manually by the pretix team as soon as we ha
 
 In order to do that, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
-We are going to enter the name of a real person whom the pretix team can contact if there is an issue with our account. 
+We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
 This information is mandatory. 
 Merely providing a company name is not enough to get our account activated. 
