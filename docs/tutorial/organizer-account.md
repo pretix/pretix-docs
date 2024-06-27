@@ -130,9 +130,8 @@ We do not provide a VAT ID here since our company is located in Germany.
 The pretix team offers service in English and German. 
 We are going to choose English as our preferred language of correspondence. 
 
-We are going to choose our preferred method of payment. 
-The options are SEPA direct debit, invoice, and credit card. 
-We want to pay by SEPA direct debit, so we are going to fill out the IBAN, BIC, account owner, and bank name of our account, check the box to grant the mandate, and hit the :btn:Save: button. 
+We are going to choose credit card as our preferred method of payment. 
+We need to fill out our credit card info, check the box to authorize payments, and click the :btn:Save: button. 
 
 The page will notify us if any required information is still missing. 
 If we have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." 
