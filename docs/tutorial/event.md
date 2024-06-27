@@ -38,9 +38,9 @@ Not pictured: currency, sales tax rate, time zone, start and end date of presale
 
 After clicking :btn:Continue:, we are now asked to provide a name and a short form for the event. 
 We are going to create a simple example conference for this tutorial. 
-Therefore, we will choose "Example Conference" for the "event name" field, and "ex-conf" for the "short form" field. 
+Therefore, we will choose "Example Conference" for the "event name" field, and "ex-conf-2027" for the "short form" field. 
 The short form is appended to the organizer's URL. 
-In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf](https://pretix.eu/ex-org/ex-conf). 
+In our case, this results in the following URL: [https://pretix.eu/ex-org/ex-conf-2027](https://pretix.eu/ex-org/ex-conf-2027). 
 
 {% include "note-short-form.md" %}
 
@@ -119,7 +119,7 @@ Changing this after already having received orders can lead to issues when sorti
 Switching to the "shop design" tab at the top allows us to add images to our event shop and customize its colors. 
 Clicking the :btn:👁 Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective. 
 A shop created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
-The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/ex-conf/](https://pretix.eu/ex-org/ex-conf/). 
+The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/ex-conf-2027/](https://pretix.eu/ex-org/ex-conf-2027/). 
 
 By default, the name of the event will be displayed in the page header of our shop. 
 The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design). 
