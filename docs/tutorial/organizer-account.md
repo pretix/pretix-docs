@@ -7,35 +7,33 @@ It is also possible to gain (partial) access to an organizer account by being in
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
 This entails: 
 
- - navigating to the organizer account settings 
  - adding contact information on the "general" tab
  - choosing language and localization options on the "localization" tab 
  - customizing the organizer page on the "organizer page" and "shop design" tabs
- - enabling customer accounts for certain features on the "customer accounts" tab
  - setting up cookie/privacy information on the "privacy" tab 
  - getting our pretix account activated by providing necessary information in the "billing settings"
 
-Those are the necessary steps for getting our organizer account up and running so that we can use it to host events using pretix. 
-It also includes a few optional steps that will save us some work in the long run. 
+These are the necessary steps for preparing our organizer account for hosting events with pretix. 
+A few of these steps are optional, but will save us some work in the long term. 
 For instance, organizer-level language and design settings will be used as the default for any events we are going to create in the future. 
-We can always come back to the organizer account settings later and adapt them, should our needs change. 
+We can always come back to adjust the organizer account settings later, in case our needs change. 
 
 ## Navigating to the organizer account settings 
 
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), we are greeted by the dashboard. 
-We will click the :btn:Organizers: button in the sidebar to get to the Organizers page. 
+Clicking the :btn:Organizers: button in the sidebar takes us to the "organizers" page.
 
 ![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
-There is a filter function for the list of organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
+There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
-Clicking our organizer account in the list takes us to a page displaying all events associated with that organizer. 
+Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer. 
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. 
 There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-We are going to click :btn:Settings: in the sidebar to set up our organizer account. 
+We are now going to click :btn:Settings: in the sidebar to set up our organizer account. 
 This lands us on the general settings page for the organizer account. 
 
 ## General 
@@ -46,7 +44,7 @@ Not pictured: 'Allow creating a new team during event creation' option, 'Save' b
 The fields for "name" and "short form" are already filled out. 
 It is not possible to change the short form since it is the organizer's unique identifier. 
 
-Since we are operating from Germany, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
+Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
 
 We will enter a valid email address into the "contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile. 
