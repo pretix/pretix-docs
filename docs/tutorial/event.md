@@ -109,8 +109,8 @@ Our explanation reads as follows:
 
 Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
 We are going to select "ask for given name, + family name, display like John Doe" for names and "free text input" for titles. 
-It is important to finalize our choice here before taking the ticket shop live. 
-Changing this after already having received orders can lead to issues when sorting or changing names. 
+We will finalize our choice here before taking the ticket shop live.
+This is important because changing this after already having received orders can lead to issues when sorting or changing names.
 
 ## Shop design 
 
