@@ -33,7 +33,7 @@ The website should display two tickets that have already been created along with
 We will click "regular ticket", which takes us to the "modify product" dialog. 
 We will change the English item name to "Standard Ticket" and provide a German translation. 
 We are going to add the following description: 
-"Regular ticket that granting access to the entire conference." 
+"Regular ticket granting access to the entire conference." 
 Next, we will click on the "price" tab and change the "default price" to €250.00. 
 We will also select the appropriate tax rate of 19% from the "sales tax" dropdown. 
 
@@ -50,7 +50,7 @@ This warning will also be displayed during the creation of subsequent products.
 We can safely ignore it for now because we will take care of adding products to quotas in the very next section of this article. 
 That will make the warning disappear. 
 
-On the next page, we have to adapt the "description" field so that it tells our customers what criteria they have to fulfill to get access to the discounted ticket. 
+On the next page, we have to adjust the "description" field to inform our customers of the prerequisites for access to the discounted ticket. 
 Our description reads:
 "This ticket is only valid if you provide student ID or member ID during check-in."
 We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. €250.00. 
