@@ -9,7 +9,7 @@ In this article, we will:
  - enable the collection of customer and attendee data 
  - add images to the ticket shop 
 
-This includes all the necessary steps for creating an event and setting up the ticket shop so that we can add products to it in the next article of this tutorial. 
+This covers all the necessary steps for creating an event and setting up the ticket shop so that we can add products to it in the next article of this tutorial. 
 
 ## Event creation 
 
@@ -93,6 +93,7 @@ Not pictured: event logs for recent changes.](../assets/screens/event/event-dash
 At this point, the overview will probably display a warning that our organizer account is not yet active. 
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
 Activating an account is a manual process and may take some time depending on the availability of the pretix team. 
+The account should usually be activated during the following business day. 
 Thus, this warning may persist for a while even if all necessary information has already been provided. 
 
 ## Customer and attendee data 
@@ -110,7 +111,7 @@ Our explanation reads as follows:
 Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
 We are going to select "ask for given name, + family name, display like John Doe" for names and "free text input" for titles. 
 We will finalize our choice here before taking the ticket shop live.
-This is important because changing this after already having received orders can lead to issues when sorting or changing names.
+This is important because changing these settings after already having received orders can lead to issues when sorting or changing names.
 
 ## Shop design 
 
