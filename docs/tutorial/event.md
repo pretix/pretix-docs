@@ -78,7 +78,7 @@ We will provide a general email address at which our customers can contact us in
 This email address will be displayed in the page footer of our shop with the label "contact event organizer". 
 We will provide a URL to legal imprint information for our organization's online presence in the "imprint URL" field. 
 
-Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop, which should be in test mode by this point. 
+Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop, which should be in test mode at this point. 
 
 ## Event-level Dashboard
 
