@@ -49,7 +49,7 @@ Disable any active plugins that you do not want to use for your event.
 
 ### Settings for Payment Providers 
 
-Enabling a plugin does not yet make the payment method available in your shop. 
+Enabling a plugin does not automatically make the payment method available in your shop. 
 You also need to provide some data for each payment provider you want to use on the settings page. 
 This section is going to tell you how to do that. 
 
