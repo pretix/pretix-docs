@@ -60,7 +60,7 @@ Under "available languages", we can choose which languages our ticket shop will 
 The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
 "German" uses "Sie" to address the user whereas "German (informal)" uses "du". 
 We can also choose one of the community translations for our organizer page. 
-They are displayed in the list below along with a percentage of how much of the software is translated. 
+They are displayed in the list below along with a percentage indicating how much of the software is translated. 
 English is used as the fallback language for missing translations. 
 These settings also determine the default languages when creating new events, though languages can be activated or deactivated for each event individually.
 We are going to activate "English" and "German (informal)" for our example conference. 
@@ -68,8 +68,7 @@ We are going to activate "English" and "German (informal)" for our example confe
 {% include "note-translations.md" %}
 
 We are going to choose Germany from the drop-down "region" menu. 
-The selection will be used to determine default date, time, address and phone number formatting. 
-The language chosen above will take a higher priority than the region. 
+The selection will be used to determine default formats for dates, times, addresses and phone numbers. 
 We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu with that title. 
 
 ## Organizer page 
@@ -98,22 +97,23 @@ Our public profile will allow the viewer to switch between those languages via t
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
 On the "privacy" tab, we have to provide an URL pointing to our privacy policy for each language we activated. 
-The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adapted if necessary. 
+The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adjusted if necessary. 
 
-pretix itself only ever sets cookies that are required to provide the service requested by the user or to maintain an appropriate level of security. 
-Therefore, cookies set by pretix itself do not require consent in all jurisdictions that we are aware of. 
+pretix itself only ever sets cookies that are essential for providing the service requested by the user or to maintain an appropriate level of security. 
+Therefore, cookies set by pretix itself do not require consent in any jurisdiction we are aware of. 
 The settings on the "privacy" tab will only have an effect if we use plugins that require additional cookies and participate in our cookie consent mechanism.
 
 !!! Warning 
-    Ultimately, it is your responsibility to make sure you comply with all relevant laws. 
-    We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
+
+    It is ultimately your responsibility to ensure compliance with applicable legislation.
+    We try to help by suggesting these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
 ## Activation
 
 Our organizer account has to be activated before any of our ticket shops can go live. 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-In order to do that, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
+To enter this information, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
