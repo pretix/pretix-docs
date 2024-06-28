@@ -48,7 +48,7 @@ Just like the name and short form, the start time and the currency for our event
 We're going to enter the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
 
 Since we already know the location for our event, we're going to put that location into pretix now. 
-This is information is optional and can still be changed later. 
+This information is optional and can still be changed later. 
 Our input into the "location" field will be used to search OpenStreetMap for that location. 
 If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
 If no results can be found for the input, the marker on the map can be dragged to the event location manually. 
@@ -85,12 +85,12 @@ Once we click :btn:Save: at the bottom of the page, we are taken to an overview 
 Now that we have created our event, we have access to all possible options for the event. 
 We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in the top left corner and then selecting the event we just created in the list titled "your upcoming events". 
 The event-level dashboard gives us an overview of the event's basic information and status. 
-It allows us to leave an internal comment for ourselves and our team and it logs recent changes. 
+It allows us to leave an internal comment for ourselves or our team and it logs recent changes. 
 
 ![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. 
 Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
-This overview will probably display a warning that our organizer account is not yet active. 
+At this point, the overview will probably display a warning that our organizer account is not yet active. 
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
 Activating an account is a manual process and may take some time depending on the availability of the pretix team. 
 Thus, this warning may persist for a while even if all necessary information has already been provided. 
@@ -124,7 +124,7 @@ The shop we are creating for this tutorial is located at [https://pretix.eu/ex-o
 By default, the name of the event will be displayed in the page header of our shop. 
 The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design). 
 We are going to add a header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels to upload from our computer. 
-By default, the  header image will replace the name of the event at the top of the page. 
+By default, the header image will replace the name of the event at the top of the page. 
 We still want to include the name of the event though, so we are going to check the box next to "show event title even if a header image is present". 
 
 We are also going to upload a .png file for the "social media image" option. 
@@ -133,11 +133,11 @@ Not uploading a file here would mean that the header image will be used for prev
 
 !!! Warning
 
-    Unlocking the color and font settings is not reversible.   
+    Unlocking the color and font settings is not reversible. 
     Only click the :btn:🔓 Unlock: button if you are absolutely positive that your event shop should have different color and font settings than your organizer's public profile. 
     Once the settings have been unlocked, they have to be adjusted independently for this event. 
 
-By default, the section with color and font settings is locked and we can only change them on the on organizer level. 
+By default, the section with color and font settings is locked and we can only change them on the organizer level. 
 We are going to leave the settings here locked since that makes it easier to keep the shop designs consistent. 
 
 ## Conclusion 
