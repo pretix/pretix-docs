@@ -9,13 +9,13 @@ We are free to play around with the pretix software to our heart's content befor
 
 !!! Note
 
-    If your company, association or institution already has an organizer account, please do not create a new account. 
-    Instead, ask your co-organizers to send you an invitation and add you to the team. 
+    If your company, association or institution already has an organizer account, it is not necessary to create a new account. 
+    Instead, you can ask your co-organizers to send you an invitation and add you to the team. 
 
 ![pretix.eu, a website introducing pretix and its main features. 
 There is a green button labeled 'Create your first ticket shop' on the right.](../assets/screens/account/pretix-eu.png "pretix.eu screenshot" ) 
 
-To create an account, we are going to open the website [pretix.eu](https://pretix.eu/about/en/ "https://pretix.eu/about/en/") and click the green :btn:Create your first ticket shop: button. 
+To create an account, we are going to click the green :btn:Create you first ticket shop: button on the [pretix website] (https://pretix.eu/about/en/ "https://pretix.eu/about/en").
 This takes us to a new website on which we will enter the info for our pretix account in the left column, and the name and short form for our organization in the right column. 
 
 ![a website with input fields for account information as well as the name and short form of the organizer](../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup screenshot" ) 
