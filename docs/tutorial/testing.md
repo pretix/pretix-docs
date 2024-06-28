@@ -31,7 +31,7 @@ During checkout, the option to pay by credit card will appear twice.
 One of these credit cards is our fake payment provider. 
 The fake payment provider has the credit card number already filled out with repeating sequences of "42". 
 We are going to use this to place our order. 
-We will also place an additional order of a speaker ticket. 
+We will also place an order of a speaker ticket. 
 
 We will now open pretix.eu and navigate to [Event] → "Orders". 
 This page should display a list containing the two test orders we just placed. 
@@ -47,14 +47,14 @@ This is to make sure that we have provided all the necessary translations and ou
 ## Making Final Improvements to our Shop 
 
 By trying out the shop and getting the same picture as our customers, it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
-We may need to add texts, images, new products, questions, checks, or adapt the appearance of the shop. 
-It is possible to adapt these things when the shop is already live. 
+We may need to add texts, images, new products, questions, checks, or fine-tune the appearance of the shop. 
+It is possible to adjust these things when the shop is already live. 
 However, we are going to make sure that our shop is exactly in the state we want it to be in before we take it live so that all of our customers have a unified and flawless experience while using it. 
 
 ## Deactivating the Fake Payment Provider 
 
 It is absolutely vital to deactivate the fake payment provider before going live. 
-In order to do that, we will browse to [Event] → "Settings" → "Payment" and click on the  :btn:⚙ Settings: button next to "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
+In order to do that, we will navigate to [Event] → "Settings" → "Payment" and click on the  :btn:⚙ Settings: button next to "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
 We will uncheck the "enable payment method" box and click :btn:Save:. 
 If we now visit our shop and place an order, the "credit card" payment option corresponding to the fake payment provider will not appear anymore. 
 
@@ -66,7 +66,7 @@ We will check the box labeled "permanently delete all orders created in test mod
 
 ## Checklist before Going Live 
 
-This is a list of things that have to be taken care of before the shop can go live: 
+We should be able to confidently answer the following questions with "yes" before the shop can go live: 
 
  - Does the shop look and function the way we want it to? 
  - Have the contact details under "billing settings" been filled out? 
