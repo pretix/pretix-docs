@@ -21,7 +21,7 @@ This takes us to a site on which we will enter the info for our personal pretix 
 ![a website with input fields for account information as well as the name and short form of the organizer](../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup screenshot" ) 
 
 For our personal account, we are going to provide our name, email address, and a secure password. 
-The field on the top left is meant for the name of a person, not for a company name. 
+The field on the top left is meant for the name of the person to whom the account belongs, not for a company name. 
 We are going to choose a name by which our co-organizers will recognize us and which our support team can use to address us. 
 For this tutorial, our name is going to be Jordan Doe. 
 
@@ -35,11 +35,12 @@ For this tutorial, our name is going to be Jordan Doe.
 The "full name" field is meant for the name of the company, association or institution for which we want to organize events. 
 The "address short form" field is for a short form of the organization's name. 
 This short form will be used for the URL under which our events can be found. 
-For this tutorial, we are going to create an account for our Example Organization. 
-So we will enter "Example Organization" into the full name field, and "ex-org" into the address short form field. 
+For this tutorial, we are going to create an account for our Tutorial Organization. 
+So we will enter "Tutorial Organization" into the full name field, and "ex-org" into the address short form field. 
 This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
 
 There is no need to create a test account or use the word "test" anywhere in the short form or name. 
+pretix offers a test mode that allows our organizer and events to remain invisible to the public, but still gives us access to all functions and settings. 
 By using the official name of our organization for the account right away, we can ensure that we get to use our preferred URL. 
 We can also avoid having to make the same adjustments to two different accounts. 
 Our organizer account will not be visible to the public, nor will it incur any charges, until we take our first shop live. 
