@@ -44,7 +44,7 @@ The plugin is enabled, but bank transfers have not been set up and enabled as a 
 Click on the :btn:⚙ Settings: button next to bank transfer.  
 This takes you to the settings page for bank transfer.  
 
-The first thing you do on this page is choose the "bank account type". 
+The first thing you need to do on this page is choose the "bank account type". 
 If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC and the name of the bank. 
 If you choose "other bank account", you have to provide the full details of the bank connection in the "bank account details" fields. 
 
@@ -78,8 +78,7 @@ In the pretix backend, click on "bank transfer" in the sidebar menu.
 This will take you to a page titled "import bank data". 
 Click on the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
-The pretix software will now attempt to parse your uploaded file automatically. 
-If this does not work, you will be asked to specify which column in your file contains which data. 
+The pretix software will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such an assignment could look like with a small example CSV file. 
 
 ![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
@@ -106,7 +105,7 @@ If your bank account's transaction data has a record that matches the order in q
 
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
-You can stop this from happening by unchecking the box next to "notify customer by email". 
+You can prevent this by unchecking the box next to "notify customer by email". 
 Confirm by clicking the :btn:Create payment" button. 
 This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully." and a green tag in the top right saying "✓ Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
