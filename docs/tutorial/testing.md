@@ -1,9 +1,8 @@
 # Testing and Going Live
 
-This is the last part of the tutorial. 
-In this article, we will test our shop, make sure that everything works as intended, and finally take it live. 
+In this final part of the tutorial, we will test our shop, make sure that everything works as intended, and finally take it live. 
 
-## Activating the Fake Payment Provider for Testing
+## Activating the fake payment provider for testing
 
 !!! Warning 
     The fake payment provider is for test purposes only. 
@@ -18,7 +17,7 @@ We will then browse to [Event] → "Settings" → "Payment".
 The list should now contain the entry "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
 We will click the :btn:⚙ Settings: button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
 
-## Testing and Confirming Orders 
+## Testing and confirming orders 
 
 We will now place an order in our shop using the fake payment method. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
@@ -44,27 +43,27 @@ If we open the link in the email and use the fake payment provider, that status 
 We are going to repeat this process for every language we have activated for the shop. 
 This is to make sure that we have provided all the necessary translations and our localization settings are correct. 
 
-## Making Final Improvements to our Shop 
+## Making final improvements to our shop 
 
 By trying out the shop and getting the same picture as our customers, it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
 We may need to add texts, images, new products, questions, checks, or fine-tune the appearance of the shop. 
 It is possible to adjust these things when the shop is already live. 
 However, we are going to make sure that our shop is exactly in the state we want it to be in before we take it live so that all of our customers have a unified and flawless experience while using it. 
 
-## Deactivating the Fake Payment Provider 
+## Deactivating the fake payment provider 
 
 It is absolutely vital to deactivate the fake payment provider before going live. 
 In order to do that, we will navigate to [Event] → "Settings" → "Payment" and click on the  :btn:⚙ Settings: button next to "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
 We will uncheck the "enable payment method" box and click :btn:Save:. 
 If we now visit our shop and place an order, the "credit card" payment option corresponding to the fake payment provider will not appear anymore. 
 
-## Disabling Test Mode and Deleting Orders 
+## Disabling test mode and deleting orders 
 
 To make sure that only real orders from actual customers appear in our shop from this point onwards, we have to delete the orders we just placed in test mode. 
 For that, we will navigate to [Event] → "TEST MODE". 
 We will check the box labeled "permanently delete all orders created in test mode" and click the :btn:Disable test mode: button. 
 
-## Checklist before Going Live 
+## Checklist before going live 
 
 We should be able to confidently answer the following questions with "yes" before the shop can go live: 
 
