@@ -2,8 +2,7 @@
 
 A product is anything sold via pretix: tickets, gift cards, conference t-shirts and so on. 
 We will be selling a variety of products in our shop. 
-In this article, we will cover the process of creating the following products and making them available in our shop. 
-We will create the following products: 
+In this article, we will cover the process of creating the following products and making them available in our shop: 
 
  - a basic admission ticket 
  - a discount ticket for students and members
@@ -38,7 +37,7 @@ Next, we will click on the "price" tab and change the "default price" to €250.
 We will also select the appropriate tax rate of 19% from the "sales tax" dropdown. 
 
 We will now create the discount ticket based on the "standard ticket" we just edited. 
-There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any. 
+There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
 The "reduced ticket" is not needed anymore. 
 We will navigate to [Event] → "Products" → "Products", click the red :btn:🗑: next to the reduced ticket, and confirm that we want to delete it. 
 Back on the product overview, we will click the :btn:Clone: button next to the standard ticket in order to clone it. 
