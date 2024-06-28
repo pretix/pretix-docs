@@ -2,7 +2,7 @@
 
 Stripe is one of the many options for handling payments within pretix. 
 Stripe allows handling payments via the following methods: 
-Credit card, giropay, iDEAL, Alipay, Bancontact, SEPA Direct debit, SOFORT, EPS, Multibanco, Przelewy24, WeChat Pay, Swish, Affirm, Klarna, Apple Pay and Google Pay. 
+Affirm, Alipay, Apple Pay, Bancontact, credit card, EPS, giropay, Google Pay, iDEAL, Klarna, Multibanco, Przelewy24, SEPA Direct debit, SOFORT, Swish, and WeChat Pay. 
 This article is going to tell you how to connect to your Stripe account and use it to receive payments via pretix. 
 
 ## Prerequisites
