@@ -44,9 +44,9 @@ We will navigate to [Event] → "Products" → "Products", click the red :btn:�
 Back on the product overview, we will click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Discount ticket", provide a translation, change the "default price" to €120.00, and click the :btn:Save: button. 
 
-Now, a warning is displayed in a yellow box at the top of the page, saying: 
+A warning is now displayed in a yellow box at the top of the page, saying: 
 "Please note that your product will not be available for sale until you have added your item to an existing or newly created quota." 
-This warning will also be displayed during the creation of subsequent products. 
+This warning will also appear during the creation of subsequent products. 
 We can safely ignore it for now because we will take care of adding products to quotas in the very next section of this article. 
 That will make the warning disappear. 
 
@@ -68,7 +68,7 @@ Even if the order also includes products that do not require approval, the order
 It will be necessary to to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of our invited speakers. 
 We will then click the :btn:Save: button. 
 
-After having created all the admission products we need,we will now create a sticker product with multiple variations: purple, black, and glitter. 
+After having created all the admission products we need,we will now create a sticker product with multiple variants: purple, black, and glitter. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:+ Create a new product: button. 
 We will name the product "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
 Under "product variations", we will select "product with multiple variations". 
@@ -76,12 +76,12 @@ We will set the default price to €5.00.
 Then, we will click :btn:Save and continue with more settings:. 
 
 Next, we will click on the "Variations" tab. 
-There should be one variation called "Standard" here. 
-We will click the name to expand the settings for that variation and change the name to "Purple". 
+There should be one variant called "Standard" here. 
+We will click the name to expand the settings for that variant and change the name to "Purple". 
 It is not necessary to change any other settings here. 
 Then, we will scroll down and click the :btn:+ Add a new variation: button. 
-We will name this new variation "Black" and keep the other settings the way they are. 
-We will repeat the same process for the "Glitter" variation and set the "default price" option for that variation to €7.50. 
+We will name this new variant "Black" and keep the other settings the way they are. 
+We will repeat the same process for the "Glitter" variant and set the "default price" option for that variant to €7.50. 
 Then, we will click :btn:Save:. 
 
 ## Creating and editing quotas 
@@ -114,7 +114,7 @@ We will now navigate back to [Event] → "Products" → "Quotas" and click the :
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
 
-Our sticker product needs three different quotas: one for each product variation. 
+Our sticker product needs three different quotas: one for each product variant. 
 We will navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 
 We will call the new quota "Sticker purple" and set the total capacity to 100 because that is the number of stickers in that color that we're going to sell. 
 Then, we will select "Sticker - Purple" in the list of products. 
@@ -122,8 +122,8 @@ The purple sticker is not an admission ticket but an additional product that can
 We do not want this quota to add to the total number of tickets available for the event. 
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
-Since we still need quotas for the other variations of the product, we will navigate back to "Quotas" and click the "clone" button next to the sticker quota we just created. 
+Since we still need quotas for the other variants of the product, we will navigate back to "Quotas" and click the "clone" button next to the sticker quota we just created. 
 We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead.  
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 
-If we now navigate back to [Event] → "Products" → "Products" → "Sticker" and click on the "Variations" tab, there should be no more yellow boxes warning us that we need to add the product and variations to a quota before they can be sold. 
+If we now navigate back to [Event] → "Products" → "Products" → "Sticker" and click on the "Variations" tab, there should be no more yellow boxes warning us that we need to add the product and variants to a quota before they can be sold. 
