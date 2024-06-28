@@ -1,6 +1,6 @@
 # Payment
 
-We do not just want to sell tickets in our shop; we also want to get paid for them. 
+We do not just want to offer tickets in our shop; we also want to get paid for them. 
 That is what we will take care of in this part of the tutorial. 
 We will set up payment via bank transfer and credit card. 
 We will also set up invoices to be sent automatically with every order. 
@@ -18,7 +18,7 @@ Thus, we have to notify the pretix software of incoming payments—either by man
 First of all, we need to enable the plugins for bank transfers and Stripe. 
 We are going to navigate to [Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be activated. 
-Since we are not planning on using PayPal or SEPA Direct debit, we are going to click on the :btn:Disable: buttons for those two plugins. 
+Since we do not intend to use PayPal or SEPA Direct debit, we are going to click on the :btn:Disable: buttons for those two plugins. 
 
 We will then navigate to [Event] → "Settings" → "Payment", which displays a list of payment providers. 
 The list should now include bank transfer, gift card, and Stripe. 
