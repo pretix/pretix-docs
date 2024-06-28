@@ -1,113 +1,138 @@
 # Organizer account
 
-An organizer account represents an entity that is running events, for example a company, an institution, or yourself. You have already created an organizer account when you created your personal account—or, if you were invited to pretix by a member of your team, then accepting that invitation has already given you (partial) access to an organizer account. 
+An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
+We just created an organizer account when we created our personal account. 
+It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
-This section of the tutorial tells you how to customize your organizer account and add necessary information to it. 
+In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
+This entails: 
 
-You may not yet be able to make a final decision for every single question that comes up in this section of the tutorial. Some of the questions will only become relevant once you have created your first event with pretix. But that's not a problem at all. You can always go back to these settings and change them later. 
+ - adding contact information on the "general" tab
+ - choosing language and localization options on the "localization" tab 
+ - customizing the organizer page on the "organizer page" and "shop design" tabs
+ - setting up cookie/privacy information on the "privacy" tab 
+ - getting our pretix account activated by providing necessary information in the "billing settings"
 
-We still recommend reading this article and going through the organizer account settings before doing anything else because it will save you some work in the long run. For example, organizer-level language and design settings will be used as the default for any events you create in the future. 
+These are the necessary steps for preparing our organizer account for hosting events with pretix. 
+A few of these steps are optional, but will save us some work in the long term. 
+For instance, organizer-level language and design settings will be used as the default for any events we are going to create in the future. 
+We can always come back to adjust the organizer account settings later, in case our needs change. 
 
 ## Navigating to the organizer account settings 
 
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
-After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), you are greeted by the dashboard. Click the :btn:Organizers: button in the sidebar to get to the Organizers page. 
+After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), we are greeted by the dashboard. 
+Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
-![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Awesome Event Corporation'. There is a filter function for the list of organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
+![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
+There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
-Clicking your organizer account in the list takes you to a page displaying all events associated with that organizer. 
+Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer. 
 
-![pretix.eu organizers page, showing the list of all events associated with 'Awesome Event Corporation'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
+![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-Click :btn:Settings: in the sidebar to set up your organizer account. This lands you on the general settings page for the organizer account. 
+We are now going to click :btn:Settings: in the sidebar to set up our organizer account. 
+This lands us on the general settings page for the organizer account. 
 
 ## General 
 
 ![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
-The fields for "Name" and "Short form" are already filled out. It is not possible to change the short form since it is the organizer's unique identifier. 
+The fields for "name" and "short form" are already filled out. 
+It is not possible to change the short form since it is the organizer's unique identifier. 
 
-If you are operating from Germany, it is recommended that you enter the URL to your website's imprint in the "Imprint URL" field. 
+Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
 
-Your input into the "Contact address" field will be displayed publicly to allow your customers to contact you. 
+We will enter a valid email address into the "contact address" field. 
+This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
 
-You can add an info text to your organizer account. The info text is not displayed anywhere by default, but you can use this in ticket templates if you want to.
-
-Confirm your changes on the "General" tab by clicking the :btn:Save: button on the bottom of the page. 
+Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
 ## Localization 
 
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
-After saving the general settings, switch to the "Localization" tab. We recommend changing localization settings __before__ changing any settings on the "Organizer page" tab because the localization settings determine which customizations are available there. 
+After saving the general settings, we are going to switch to the "localization" tab. 
+We should finalize our localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
 
-Under "Available languages", you can choose which languages your ticket shop will be published in. The options officially maintained by the pretix team are English, German, and German (informal). German uses "Sie" to address the user whereas German (informal) uses "Du". You can also choose one of the community translations for your organizer page. They are displayed in the list below along with a percentage of how much of the software is translated. English is used as the fallback language for missing translations. 
-
-This setting also determines the default languages when creating new events, though languages can be activated or deactivated for each event individually.
+Under "available languages", we can choose which languages our ticket shop will be published in. 
+The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
+"German" uses "Sie" to address the user whereas "German (informal)" uses "du". 
+We can also choose one of the community translations for our organizer page. 
+They are displayed in the list below along with a percentage indicating how much of the software is translated. 
+English is used as the fallback language for missing translations. 
+These settings also determine the default languages when creating new events, though languages can be activated or deactivated for each event individually.
+We are going to activate "English" and "German (informal)" for our example conference. 
 
 {% include "note-translations.md" %}
 
-Choose a country or region from  the drop-down "Region" menu. The selection will be used to determine default date, time, address and phone number formatting. The language chosen above will take a higher priority than the region. 
-
-Also choose a "Default timezone" from the drop-down menu with that title. 
+We are going to choose Germany from the drop-down "region" menu. 
+The selection will be used to determine default formats for dates, times, addresses and phone numbers. 
+We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu with that title. 
 
 ## Organizer page 
 
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
-Switching to the "Organizer page" tab at the top allows you to add content to the public profile of your organizer. You can take a look at the public profile by clicking the :btn:👁 Public profile: button in the bar at the top. It is located at https://pretix.eu/awesome-corp/, where "awesome-corp" is replaced with your organizer short form. 
+Switching to the "organizer page" tab at the top allows us to add images to our event shop and customize its colors.
+Clicking the :btn:👁 Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
+An organizer page created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/.
+The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
 
-![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
+By default, the name of the organizer will be displayed in the page header of our page.
+The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
+We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels from our computer. 
+The header image will replace the name of the event at the top of the page.
+We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
 
-By default, the name of the organizer  will be displayed in the page header of your public profile. The organizer page settings allow you to replace the name with an image that tells your customers who is hosting the event (e.g., by means of your company name, logo, or recognizable design). It should be a .png or .jpg file with a resolution of 1140 × 120 pixels or smaller. You can add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing the image file to upload from your computer. 
+![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text in multiple languages. The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
-In the "homepage text" fields, you can provide text to be displayed on your public profile. You will have one field for each language you activate in the "Localization" tab (see the "Localization" segment of this article). If you have more than one language enabled, your public profile will allow the viewer to switch between those languages via the links in the top right corner. 
-
-You can choose the "Default overview style" for events on your public profile from the drop-down menu. Events will either be displayed in a list, a weekly overview, or a monthly overview. The list overview style is only available if your event series has 50 or less dates in the future. 
-
-## Shop design 
-
-![Organizer settings page, on the shop design tab, showing options for colors and fonts to be used on the public profile of the organizer](../assets/screens/organizer/shop-design.png) 
-
-Switch to the "Shop design" tab. Here, you can customize the colors and font used for your public profile and the ticket shops you are going to create. You can change the colors so that they're in line with the palette you use for your other media. Please heed the notice underneath the input fields and pick a different color if contrast is too low. 
-
-You can also choose your preferred font from the list. If you're creating a ticket shop in a language that doesn't use the Latin alphabet, you should choose a font that supports the writing system you need. All available fonts support the Latin alphabet. The preview should give you an idea which writing systems each font supports. So for example, if you're creating a ticket shop in a language that uses the Cyrillic alphabet, you should pick a font such as DejaVu Sans or Noto Sans. 
-
-The shop design you set here will be the default for all shops you create for your events in the future. You can make individual adjustments to the event shops. 
-
-## Customer accounts 
-
-![Organizer settings page, on the customer accounts tab, showing options for whether or not to allow customers to create accounts, whether or not to match orders based on mail addresses, as well as options for name formatting and allowed titles](../assets/screens/organizer/customer-accounts.png) 
-
-Switch to the "Customer accounts" tab. By default, all boxes on this page should be unchecked. If you don't plan for your customers to create accounts, you can leave them unchecked and you don't have to take any action on this tab. 
-
-pretix offers some features that only work with customer accounts. If you want to offer your customers memberships that give them access to reduced price offers or members-only products, then you have to enable customer accounts. If you expect your customers to repeatedly log in to your shop and make purchases through the same account, then you have to enable customer accounts. You can enable customer accounts by checking the "Allow customers to create accounts" box at the top of the page. 
-
-Checking that box makes another box appear that is checked by default: "Allow customers to log in with email address and password". Keep this box checked if you want customers to log in to your pretix ticket shop directly. Uncheck it if you want them to log in via an external sign-on service. You'll have to enable the corresponding plugin on the event level. 
+In the "homepage text" fields, we can provide text to be displayed on our public profile. 
+There is one field for each language we activated in the "localization" tab (see the "localization" segment of this article)—English and German (informal). 
+Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 ## Privacy 
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
-On the "Privacy" tab, please provide an URL pointing to your privacy policy for each language you activated. The default dialog text and button labels for the cookie consent banner should already be filled out. Feel free to edit or replace these as you see fit. 
+On the "privacy" tab, we have to provide an URL pointing to our privacy policy for each language we activated. 
+The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adjusted if necessary. 
 
-pretix itself only ever sets cookies that are required to provide the service requested by the user or to maintain an appropriate level of security. Therefore, cookies set by pretix itself do not require consent in all jurisdictions that we are aware of. The settings on the "Privacy" tab will only have an effect if you use plugins that require additional cookies and participate in our cookie consent mechanism.
+pretix itself only ever sets cookies that are essential for providing the service requested by the user or to maintain an appropriate level of security. 
+Therefore, cookies set by pretix itself do not require consent in any jurisdiction we are aware of. 
+The settings on the "privacy" tab will only have an effect if we use plugins that require additional cookies and participate in our cookie consent mechanism.
 
-Ultimately, it is your responsibility to make sure you comply with all relevant laws. We try to help by providing these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
+!!! Warning 
+
+    It is ultimately your responsibility to ensure compliance with applicable legislation.
+    We try to help by suggesting these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
 ## Activation
 
-Before any of your ticket shops can go live, your organizer account has to be activated. Your account is reviewed manually by our team as soon as you have provided all necessary information for correspondence and billing.
+Our organizer account has to be activated before any of our ticket shops can go live. 
+Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-Navigate to [Your Organizer]→"Settings"→"Billing settings". The topmost field on the "general" tab is labeled "primary contact person". Enter the name of a real person (e.g. you or a coworker) we can contact if there is an issue with your account. Enter their email address and phone number in the fields below.
+To enter this information, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
+The topmost field on the "general" tab is labeled "primary contact person". 
+We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
+We will enter their email address and phone number in the fields below.
+This information is mandatory. 
+Merely providing a company name is not enough to get our account activated. 
 
-Enter the full contact details of your company further down on the page. If your company is located in the EU but outside of Germany, we recommend entering a VAT ID. If you do not provide your VAT ID here, we will need to charge you VAT on our services and we will not be able to issue reverse charge invoices. Again, this only applies if your company is located in the EU but outside of Germany. 
+We are going to enter the full contact details of our company further down on the page. 
+We do not provide a VAT ID here since our company is located in Germany. 
 
-You can choose a preferred language of correspondence. We offer service in English and German.
+The pretix team offers service in English and German. 
+We are going to choose English as our preferred language of correspondence. 
 
-Choose your preferred method of payment. You may pay by SEPA direct debit, by invoice, or by credit card. If you want to pay by SEPA direct debit, fill out your bank details in the form below and approve the mandate. If you want to pay by credit card, fill out your credit card information and authorize credit card payments to rami.io GmbH. If you are planning on only offering free tickets, you don't have to provide any further information here.
+We are going to choose credit card as our preferred method of payment. 
+We need to fill out our credit card info, check the box to authorize payments, and click the :btn:Save: button. 
 
-Once you are happy with your choices, click the :btn:Save: button. The page will notify you if any required information is still missing. If you have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." This means that your organizer account has been submitted to our team for review and will be activated shortly.
+The page will notify us if any required information is still missing. 
+If we have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved." 
+This means that our organizer account has been submitted to the pretix team for review and will be activated shortly.
 
-The "billing contact" and "privacy contact" tabs allow you to provide different contacts within your organization for billing and privacy matters. This is completely optional. You only need to fill out the information on the "general" tab of the billing settings to get your account approved. 
+## Conclusion
+
+Now that our account's basic setup is complete and it is awaiting activation, we can move on to creating our first event. 
