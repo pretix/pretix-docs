@@ -27,7 +27,7 @@ Next, we have to choose the event type.
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking". 
 For this tutorial, we want to create a simple conference that takes place on a single weekend, so we are going to choose the option "Singular event or non-event shop". 
 
-After that, we are going to choose which languages to use for the event. 
+We are going to choose which languages to use for the event. 
 By default, the languages chosen while setting up the organizer account should already be checked here. 
 We will simply activate and deactivate the languages as needed.
 
