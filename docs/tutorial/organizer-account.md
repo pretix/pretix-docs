@@ -23,7 +23,7 @@ We can always come back to adjust the organizer account settings later, in case 
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), we are greeted by the dashboard. 
-Clicking the :btn:Organizers: button in the sidebar takes us to the "organizers" page.
+Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
 ![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
 There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
@@ -45,7 +45,7 @@ It is not possible to change the short form since it is the organizer's unique i
 Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
 
 We will enter a valid email address into the "contact address" field. 
-This email address will be displayed under the label "Contact event organizer" in the footer of the public profile. 
+This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
 
 Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
