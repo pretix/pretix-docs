@@ -1,20 +1,20 @@
 # Bank transfer
 
-Bank transfers are one of the many options for handling payments within pretix. 
+Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
-There is no way for the pretix software to monitor payments arriving at your bank account. 
+The pretix software does not monitor payments arriving at your bank account. 
 Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
 It is also going to tell you how to notify the pretix software of incoming payments. 
 
 ## Prerequisites
 
-Setting up payment providers is handled on the event level, so you need to create an event first. 
-Make sure you have access to the appropriate bank account. 
+As setting up payment providers is handled on the event level, you need to create an event first. 
+Make sure you have access to the bank account that you want to use. 
 
 ## How To 
 
-Setting up bank transfer as a payment provider in pretix involves the following steps: 
+Setting up bank transfer as a payment provider in pretix requires the following steps: 
 
  1. Enable the bank transfer plugin. 
  2. Choose the type of bank account (SEPA or other)
