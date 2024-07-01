@@ -68,7 +68,7 @@ Even if the order also includes products that do not require approval, the order
 It will be necessary to to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of our invited speakers. 
 We will then click the :btn:Save: button. 
 
-After having created all the admission products we need,we will now create a sticker product with multiple variants: purple, black, and glitter. 
+After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:+ Create a new product: button. 
 We will name the product "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
 Under "product variations", we will select "product with multiple variations". 

@@ -12,8 +12,8 @@ For our conference, we are planning to receive payments by credit card through t
 The prerequisites for this are an active Stripe merchant account and a bank account. 
 pretix will log payments coming in through most payment providers, including Stripe. 
 An order in our shop will be marked as paid automatically as soon as Stripe records a corresponding payment. 
-Bank transfers are the exception to that rule because there is no way for the pretix software to monitor payments arriving at our bank account. 
-Thus, we have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+Bank transfers are the exception to that rule because the pretix software would need to monitor payments arriving at our bank account.
+A connection to your bank account is possible to set up on pretix Hosted, but it is also possible to manually approve payments as thex come in, or by regularly importing digital bank statements. 
 
 First of all, we need to enable the plugins for bank transfers and Stripe. 
 We are going to navigate to [Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
@@ -26,18 +26,14 @@ By default, gift card will be enabled and all other payment providers will be di
 
 We will first enable Stripe by clicking the :btn:⚙️ Settings: button next to it. 
 This takes us to the payment settings page for Stripe, which currently only contains a :btn:Connect with Stripe: button. 
-Clicking that button takes us to a dialog on stripe.com, where we will input our mail address and go through the process of connecting our Stripe merchant account to our pretix account. 
+Clicking that button takes us to a dialog on stripe.com, where we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account. 
+
 We will then return to pretix.eu, navigate to [Event] → "Settings" → "Payment" and open the Stripe settings. 
 Instead of the single button, the page will now display a multitude of settings. 
 We will check the boxes next to "credit card payments" and "enable payment method", then scroll to the bottom and click the :btn:Save: button. 
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
 
-For more information on using Stripe as a payment provider, see [Stripe (Topic)](../topics/payment/stripe.md). 
 
-!!! Warning 
-    There is no way for the pretix software to monitor payments arriving at your bank account. 
-    Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
-    Read our guide on [monitoring incoming payments] (../topics/payment/bank-transfer.md#monitoring-incoming-payments) before using bank transfer as a payment method in your shop. 
 
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
@@ -46,7 +42,14 @@ We will then check the box to confirm that we have understood the special condit
 Then, we will click the :btn:Save: button and return to the payment settings. 
 Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag next to them now. 
 
-For more information on using bank transfers, see [bank transfers (Topic)](../topics/payment/bank-transfer.md). 
+
+!!! Warning 
+    By default, the pretix software is not able to monitor payments arriving at your bank account.
+    On pretix Hosted, you can set up automated bank imports.
+    Otherwise, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+    Read our guide on [monitoring incoming payments] (../topics/payment/bank-transfer.md#monitoring-incoming-payments) before using bank transfer as a payment method in your shop. 
+
+For more information on using bank transfers, see [bank transfers](../topics/payment/bank-transfer.md). 
 
 ## Setting up invoices 
 
