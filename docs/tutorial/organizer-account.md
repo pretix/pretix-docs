@@ -76,7 +76,7 @@ We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu
 
 Switching to the "organizer page" tab at the top allows us to add images to our event shop and customize its colors.
 Clicking the :btn:👁 Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
-An organizer page created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/.
+An organizer page created with pretix Hosted will always be located at [https://pretix.eu/[OrganizerShortForm]/](https://pretix.eu/[OrganizerShortForm]/).
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
 
 By default, the name of the organizer will be displayed in the page header of our page.
