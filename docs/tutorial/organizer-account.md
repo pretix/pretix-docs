@@ -1,7 +1,7 @@
 # Organizer account
 
 An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
-We just created an organizer account when we created our personal account. 
+We just created an organizer account and our personal account at the same time. 
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
@@ -28,7 +28,7 @@ Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers"
 ![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
 There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
-Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer. 
+Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer.
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
@@ -42,7 +42,11 @@ This lands us on the general settings page for the organizer account.
 The fields for "name" and "short form" are already filled out. 
 It is not possible to change the short form since it is the organizer's unique identifier. 
 
-Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
+Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field.
+
+!!! Note
+
+    Even if you are not operating in Germany, we require all pretix Hosted customers to enter a valid imprint URL that points to information on who is reponsible for the published ticket shop.
 
 We will enter a valid email address into the "contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
@@ -54,7 +58,6 @@ Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
 After saving the general settings, we are going to switch to the "localization" tab. 
-We should finalize our localization settings __before__ changing any settings on the "organizer page" tab because the localization settings determine which customizations are available there. 
 
 Under "available languages", we can choose which languages our ticket shop will be published in. 
 The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
@@ -71,11 +74,13 @@ We are going to choose Germany from the drop-down "region" menu.
 The selection will be used to determine default formats for dates, times, addresses and phone numbers. 
 We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu with that title. 
 
+We use the :btn:Save: button to apply our localization settings __before__ changing any settings on the other tabs because the localization settings determine which customizations are available there. 
+
 ## Organizer page 
 
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
-Switching to the "organizer page" tab at the top allows us to add images to our event shop and customize its colors.
+Switching to the "organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
 Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/.
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
@@ -96,7 +101,7 @@ Our public profile will allow the viewer to switch between those languages via t
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
-On the "privacy" tab, we have to provide an URL pointing to our privacy policy for each language we activated. 
+On the "privacy" tab, we can provide an URL pointing to our privacy policy for each language we activated. 
 The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adjusted if necessary. 
 
 pretix itself only ever sets cookies that are essential for providing the service requested by the user or to maintain an appropriate level of security. 
@@ -110,6 +115,8 @@ The settings on the "privacy" tab will only have an effect if we use plugins tha
 
 ## Activation
 
+<!-- md:hosted -->
+
 Our organizer account has to be activated before any of our ticket shops can go live. 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
@@ -121,7 +128,7 @@ This information is mandatory.
 Merely providing a company name is not enough to get our account activated. 
 
 We are going to enter the full contact details of our company further down on the page. 
-We do not provide a VAT ID here since our company is located in Germany. 
+The VAT ID is not mandatory unless we are in a EU country other than Germany and want to make use of the reverse charge policy for our fees.
 
 The pretix team offers service in English and German. 
 We are going to choose English as our preferred language of correspondence. 

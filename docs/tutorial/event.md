@@ -4,12 +4,12 @@ After setting up an organizer account, the next step is creating an event.
 This article describes the creation and basic setup of an event. 
 In this article, we will: 
 
- - create an event in four steps 
+ - create an event
  - get an overview of the event's status on the dashboard
  - enable the collection of customer and attendee data 
  - add images to the ticket shop 
 
-This covers all the necessary steps for creating an event and setting up the ticket shop so that we can add products to it in the next article of this tutorial. 
+This covers all the necessary steps for creating an event and setting up the ticket shop so that we can modify our product to our needs in the next article of this tutorial. 
 
 ## Event creation 
 
@@ -25,7 +25,7 @@ This selection cannot be changed after the event has been created, so it is impo
 
 Next, we have to choose the event type. 
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking". 
-For this tutorial, we want to create a simple conference that takes place on a single weekend, so we are going to choose the option "Singular event or non-event shop". 
+For this tutorial, we want to create a simple conference that takes place on a weekend, so we are going to choose the option "Singular event or non-event shop". 
 
 We are going to choose which languages to use for the event. 
 By default, the languages chosen while setting up the organizer account should already be checked here. 
@@ -66,7 +66,7 @@ Thus, we are going to add a 19% tax rule here.
 
 We are then asked if we want to copy information from a previously created event. 
 This step can save us a lot of work from our second event onwards. 
-But since this is the first event we're organizing using this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue: 
+But since this is the first event we're organizing using this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue:.
 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. 
 Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
@@ -98,18 +98,18 @@ Thus, this warning may persist for a while even if all necessary information has
 
 ## Customer and attendee data 
 
-We want to to issue certificates of participation to the people who attend our conference. 
+We later want to print badges to the people who attend our conference and offer our attendees certificates of attendance. 
 That means we have to record their name and affiliation during purchase. 
 We are going to navigate to [Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
 Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for attendee names, addresses per ticket, and company per ticket. 
-We will set those three questions to "ask, but do not require input". 
-By not making the input mandatory, it is still possible for attendees to not give us their data if they do not require a certificate of participation. 
+We will set the attendee name to "ask and require input" and the other two to "ask, but do not require input".
+By not making the other fields mandatory, it is still possible for attendees to not give us their data if they do not require a certificate of participation. 
 In the text fields labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
-"Information for each individual attendee for whom you are buying a ticket. Without this information, we cannot issue certificates of participation."
+"Information for each individual attendee for whom you are buying a ticket. Please add the address if you want it to show on your certificate of participation."
 
 Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
-We are going to select "ask for given name, + family name, display like John Doe" for names and "free text input" for titles. 
+We are going to select "ask for title + given name + family name, display like John Doe" for names and "free text input" for titles. 
 We will finalize our choice here before taking the ticket shop live.
 This is important because changing these settings after already having received orders can lead to issues when sorting or changing names.
 
@@ -119,7 +119,7 @@ This is important because changing these settings after already having received 
 
 Switching to the "shop design" tab at the top allows us to add images to our event shop and customize its colors. 
 Clicking the :btn-icon:fontawesome-regular-eye:Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective. 
-A shop created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
+A shop created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/ex-conf-2027/](https://pretix.eu/ex-org/ex-conf-2027/). 
 
 By default, the name of the event will be displayed in the page header of our shop. 
@@ -132,14 +132,14 @@ We are also going to upload a .png file for the "social media image" option.
 This will be used as a preview for any links to our ticket shop we post on social media. 
 Not uploading a file here would mean that the header image will be used for previews instead. 
 
+By default, the section with color and font settings is locked and we can only change them on the organizer level. 
+We are going to leave the settings here locked since that makes it easier to keep the shop designs consistent. 
+
 !!! Warning
 
     Unlocking the color and font settings is not reversible. 
     Only click the :btn-icon:fontawesome-solid-unlock:Unlock: button if you are absolutely positive that your event shop should have different color and font settings than your organizer's public profile. 
     Once the settings have been unlocked, they have to be adjusted independently for this event. 
-
-By default, the section with color and font settings is locked and we can only change them on the organizer level. 
-We are going to leave the settings here locked since that makes it easier to keep the shop designs consistent. 
 
 ## Conclusion 
 
