@@ -66,7 +66,7 @@ Thus, we are going to add a 19% tax rule here.
 
 We are then asked if we want to copy information from a previously created event. 
 This step can save us a lot of work from our second event onwards. 
-But since this is the first event we're organizing using this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue: 
+But since this is the first event we're organizing using this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue:. 
 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. 
 Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
