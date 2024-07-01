@@ -112,7 +112,7 @@ The settings on the "privacy" tab will only have an effect if we use plugins tha
 Our organizer account has to be activated before any of our ticket shops can go live. 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-To enter this information, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
+To enter this information, we are going to navigate to [Organizer] → "Settings" → "Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
