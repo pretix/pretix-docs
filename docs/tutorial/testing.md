@@ -34,8 +34,8 @@ We will also place an order of a speaker ticket.
 
 We will now open pretix.eu and navigate to [Event] → "Orders". 
 This page should display a list containing the two test orders we just placed. 
-The first order should have the status "paid" and the second order, which included the speaker ticket, should have the status tag "approval pending". 
-We will click the code for the second order, then the :btn:Approve" button and confirm our choice. 
+The first order should have the status "paid" and the second order, which includes the speaker ticket, should have the status "approval pending". 
+We will click the code for the second order, then the :btn:Approve: button and confirm our choice. 
 This will send an email to the address we used to place the order containing a link under which any pending payment can be completed. 
 The order will now display the "pending" tag in the overview. 
 If we open the link in the email and use the fake payment provider, that status will change to "paid". 
