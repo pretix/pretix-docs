@@ -25,16 +25,14 @@ The list should now include bank transfer, gift card, and Stripe.
 By default, gift card will be enabled and all other payment providers will be disabled. 
 
 We will first enable Stripe by clicking the :btn:⚙️ Settings: button next to it. 
-This takes us to the payment settings page for Stripe, which currently only contains a purple :btn:Connect with Stripe: button. 
+This takes us to the payment settings page for Stripe, which currently only contains a :btn:Connect with Stripe: button. 
 Clicking that button takes us to a dialog on stripe.com, where we will input our mail address and go through the process of connecting our Stripe merchant account to our pretix account. 
 We will then return to pretix.eu, navigate to [Event] → "Settings" → "Payment" and open the Stripe settings. 
 Instead of the single button, the page will now display a multitude of settings. 
 We will check the boxes next to "credit card payments" and "enable payment method", then scroll to the bottom and click the :btn:Save: button. 
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
 
-For more information on using Stripe as a payment provider, see [Stripe (Topic)] (../topics/payment/stripe.md). 
-
-TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
+For more information on using Stripe as a payment provider, see [Stripe (Topic)](../topics/payment/stripe.md). 
 
 !!! Warning 
     There is no way for the pretix software to monitor payments arriving at your bank account. 
@@ -48,9 +46,7 @@ We will then check the box to confirm that we have understood the special condit
 Then, we will click the :btn:Save: button and return to the payment settings. 
 Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag next to them now. 
 
-For more information on using bank transfers, see [bank transfers (Topic)] (../topics/payment/bank-transfer.md). 
-
-TK Leerzeichen zwischen klammern entfernen, sobald PR Payment providers2 #22 gemerget ist
+For more information on using bank transfers, see [bank transfers (Topic)](../topics/payment/bank-transfer.md). 
 
 ## Setting up invoices 
 
