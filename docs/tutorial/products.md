@@ -95,7 +95,7 @@ For most use cases, it is enough to add every product to one quota only.
 That is what we are going to do in this section. 
 
 We will navigate to [Event] → "Products" → "Quotas". 
-This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
+This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the standard ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 
 We will click the :btn:change: button next to the "regular ticket" quota in the list. 
