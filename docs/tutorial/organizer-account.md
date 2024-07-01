@@ -32,8 +32,7 @@ Upon clicking our organizer account in the list, we are taken to a page displayi
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-We are now going to click :btn:Settings: in the sidebar to set up our organizer account. 
-This lands us on the general settings page for the organizer account. 
+We are now going to click :btn:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
 
 ## General 
 
