@@ -39,7 +39,7 @@ We are now going to click :btn:Settings: in the sidebar, which lands us on the g
 ![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
 The fields for "name" and "short form" are already filled out. 
-It is not possible to change the short form since it is the organizer's unique identifier. 
+It is not possible to change the short form because it is the organizer's unique identifier. 
 
 Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field. 
 
