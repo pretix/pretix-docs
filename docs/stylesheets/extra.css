@@ -187,10 +187,34 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 
 /* Custom markup */
 .md-typeset .typo-btn {
-	display: inline-block;
-  	border: 1px solid var(--md-accent-fg-color--transparent);
-  	background: var(--md-accent-fg-color--transparent);
-	padding: 1px 4px;
-	border-radius: 4px;
+    display: inline-block;
+    border: 1px solid var(--md-accent-fg-color--transparent);
+    background: var(--md-accent-fg-color--transparent);
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+
+.md-typeset a[href*="//"]:not(.glightbox):not(:where(
+  /* exclude hash only links */
+  [href^="#"],
+  /* exclude javascript only links */
+  [href^="javascript:" i],
+  /* exclude data URLs */
+  [href^="data:" i],
+  /* exclude relative but not double slash only links */
+  [href^="/"]:not([href^="//"]),
+  /* domains to exclude */
+  [href*="//docs.pretix.eu"]
+)):after {
+    content: ' ';
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.1em;
+    position: relative;
+    top: 0.1em;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%237f4a91%22%20d%3D%22M3.75%202h3.5a.75.75%200%200%201%200%201.5h-3.5a.25.25%200%200%200-.25.25v8.5c0%20.138.112.25.25.25h8.5a.25.25%200%200%200%20.25-.25v-3.5a.75.75%200%200%201%201.5%200v3.5A1.75%201.75%200%200%201%2012.25%2014h-8.5A1.75%201.75%200%200%201%202%2012.25v-8.5C2%202.784%202.784%202%203.75%202Zm6.854-1h4.146a.25.25%200%200%201%20.25.25v4.146a.25.25%200%200%201-.427.177L13.03%204.03%209.28%207.78a.751.751%200%200%201-1.042-.018.751.751%200%200%201-.018-1.042l3.75-3.75-1.543-1.543A.25.25%200%200%201%2010.604%201Z%22%2F%3E%3C%2Fsvg%3E");
 }
 
