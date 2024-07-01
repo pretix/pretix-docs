@@ -5,7 +5,7 @@ We just created an organizer account when we created our personal account.
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
-This entails: 
+We are going to take the following steps: 
 
  - adding contact information on the "general" tab
  - choosing language and localization options on the "localization" tab 
