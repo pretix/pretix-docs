@@ -116,7 +116,7 @@ This is important because changing these settings after already having received 
 
 Switching to the "shop design" tab at the top allows us to add images to our event shop and customize its colors. 
 Clicking the :btn:👁 Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective. 
-A shop created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
+A shop created with pretix will always be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/ex-conf-2027/](https://pretix.eu/ex-org/ex-conf-2027/). 
 
 By default, the name of the event will be displayed in the page header of our shop. 
