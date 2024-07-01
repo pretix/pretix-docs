@@ -24,7 +24,7 @@ We will then navigate to [Event] → "Settings" → "Payment", which displays a 
 The list should now include bank transfer, gift card, and Stripe. 
 By default, gift card will be enabled and all other payment providers will be disabled. 
 
-We will first enable Stripe by clicking the :btn:⚙️ Settings: button next to it. 
+We will first enable Stripe by clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to it. 
 This takes us to the payment settings page for Stripe, which currently only contains a purple :btn:Connect with Stripe: button. 
 Clicking that button takes us to a dialog on stripe.com, where we will input our mail address and go through the process of connecting our Stripe merchant account to our pretix account. 
 We will then return to pretix.eu, navigate to [Event] → "Settings" → "Payment" and open the Stripe settings. 

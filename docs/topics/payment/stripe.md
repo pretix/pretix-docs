@@ -30,7 +30,7 @@ Navigate to [Your Event] → "Settings" → "Plugins".
 Switch to the "payment providers" tab. 
 The Stripe plugin is displayed at the top of the page. 
 It should be enabled by default. 
-If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable: button. 
+If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
@@ -38,9 +38,9 @@ Make sure that the plugin is enabled.
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
-The list should now include an entry for Stripe with a red "❌ Disabled" tag. 
+The list should now include an entry for Stripe with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but Stripe has not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn:⚙ Settings: button next to Stripe. 
+Click on the :btn-icon:fontawesome-solid-cog:Settings: button next to Stripe. 
 This takes you to the settings page for Stripe, which currently only includes the :btn:Connect with Stripe: button. 
 Click the button and complete the the login and authorization process with Stripe. 
 

@@ -39,7 +39,7 @@ We will also select the appropriate tax rate of 19% from the "sales tax" dropdow
 We will now create the discount ticket based on the "standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
 The "reduced ticket" is not needed anymore. 
-We will navigate to [Event] → "Products" → "Products", click the red :btn:🗑: next to the reduced ticket, and confirm that we want to delete it. 
+We will navigate to [Event] → "Products" → "Products", click the red :btn-icon:fontawesome-solid-trash:: next to the reduced ticket, and confirm that we want to delete it. 
 Back on the product overview, we will click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Discount ticket", provide a translation, change the "default price" to €120.00, and click the :btn:Save: button. 
 

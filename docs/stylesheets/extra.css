@@ -193,4 +193,9 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 	padding: 1px 4px;
 	border-radius: 4px;
 }
-
+.md-typeset p .twemoji {
+    --md-icon-size: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+}

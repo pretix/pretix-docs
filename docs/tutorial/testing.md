@@ -15,12 +15,12 @@ We first need to activate the fake payment method by navigating to [Event] → "
 We will search for the "fake payment providers" plugin in the list and enable it. 
 We will then browse to [Event] → "Settings" → "Payment". 
 The list should now contain the entry "FAKE PAYMENT Credit card FOR DEMONSTRATION ONLY". 
-We will click the :btn:⚙ Settings: button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
+We will click the :btn-icon:fontawesome-solid-gear:Settings: button next to that entry, check the boxes next to "I have understood that this payment method is fake and doesn't actually collect payments" and "enable payment method" and click :btn:Save:. 
 
 ## Testing and confirming orders 
 
 We will now place an order in our shop using the fake payment method. 
-We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
+We are going to click the :btn-icon:fontawesome-regular-eye:Go to shop: button in the bar at the top. 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
 This is the way it is intended. 
 We would not want to activate the fake payment provider while the shop is already live and accessible to the public. 

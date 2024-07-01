@@ -31,7 +31,7 @@ Navigate to [Your Event] → "Settings" → "Plugins".
 Switch to the "payment providers" tab. 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
-If it is enabled, it will have a green "✓ Active" tag and a white :btn:Disable: button. 
+If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
@@ -39,9 +39,9 @@ Make sure that the plugin is enabled.
 
 Navigate to [Your Event] → "Settings" → "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
-The list should now include an entry for bank transfer with a red "❌ Disabled" tag. 
+The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn:⚙ Settings: button next to bank transfer.  
+Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer.  
 This takes you to the settings page for bank transfer.  
 
 The first thing you need to do on this page is choose the "bank account type". 
@@ -92,11 +92,11 @@ You can intervene and make manual corrections here on this screen or by navigati
 
 Navigate to [Your Event] → "Orders". 
 This page displays a list of all orders that have been placed in your shop. 
-If orders have been placed and paid via bank transfer, they will be displayed here with the yellow "💵 Pending" status tag. 
+If orders have been placed and paid via bank transfer, they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
 Click on the order code of one of the pending orders. 
 This takes you to the "order details" page for that order. 
 Check the transaction data of your bank account. 
-If your bank account's transaction data has a record that matches the order in question, click the :btn:✓ Mark as paid: button at the top of the order details page. 
+If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fontawesome-solid-check:Mark as paid: button at the top of the order details page. 
 
 !!! Warning 
 
