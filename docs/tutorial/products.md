@@ -52,7 +52,8 @@ That will make the warning disappear.
 On the next page, we have to adjust the "description" field to inform our customers of the prerequisites for access to the discounted ticket. 
 Our description reads:
 "This ticket is only valid if you provide student ID or member ID during check-in."
-We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. €250.00. 
+We will then switch to the "price" tab, change the "default price" to €120.00 and the original price to the price of the standard ticket, i.e. €250.00. 
+The original price will be displayed as struck-through and the new default price will be displayed in bold green, highlighting the discount price. 
 Then, we will go to the "check-in and validity" tab and check the box next to "requires special attention". 
 We have to provide instructions for the person operating the check-in at our event in the "check-in text" field. 
 Our instructions say: "Check for student ID/member ID". 
