@@ -25,6 +25,8 @@ By default, gift card will be enabled and all other payment providers will be di
     Click the :btn:Enable: button next to the plugin you want to use. 
     You can tell that a plugin has been activated by green ":material-check: Active" tag. 
 
+### Stripe
+
 We will first enable Stripe by clicking the :btn::fontawesome-solid-gear: Settings: button next to it. 
 This takes us to the payment settings page for Stripe, which currently only contains a :btn:Connect with Stripe: button. 
 Clicking that button takes us to a dialog on stripe.com, where we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account. 
@@ -33,6 +35,8 @@ We will then return to pretix.eu, navigate to [Event] → "Settings" → "Paymen
 Instead of the single button, the page will now display a multitude of settings. 
 We will check the boxes next to "credit card payments" and "enable payment method", then scroll to the bottom and click the :btn:Save: button. 
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
+
+### Bank transfers 
 
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
