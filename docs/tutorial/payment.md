@@ -10,14 +10,14 @@ We will also set up invoices to be sent automatically with every order.
 pretix takes care of payment via a wide selection of payment providers. 
 For our conference, we are planning to receive payments by credit card through the payment provider Stripe and by bank transfer. 
 The prerequisites for this are an active Stripe merchant account and a bank account. 
-pretix will log payments coming in through most payment providers, including Stripe. 
-An order in our shop will be marked as paid automatically as soon as Stripe records a corresponding payment. 
+pretix will automatically log payments coming in through most payment providers, including Stripe. 
+An order in our shop is marked as paid as soon as Stripe records a corresponding payment. 
 Bank transfers are the exception to that rule because the pretix software would need to monitor payments arriving at our bank account.
 A connection to your bank account is possible to set up on pretix Hosted, but it is also possible to manually approve payments as they come in, or by regularly importing digital bank statements. 
 
-We will then navigate to [Event] → "Settings" → "Payment", which displays a list of payment providers. 
-Bank transfer, gift card, and Stripe should be included in this list. 
-By default, gift card will be enabled and all other payment providers will be disabled. 
+In order to set up payment providers, we will navigate to [Event] → "Settings" → "Payment", which displays a list of payment providers. 
+Bank transfer and Stripe should be included in this list. 
+By default, all payment providers in this list except gift card will be disabled. 
 
 !!! Note 
     If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled. 
