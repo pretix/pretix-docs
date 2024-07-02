@@ -87,12 +87,8 @@ Then, we will click :btn:Save:.
 ## Creating and editing quotas 
 
 A quota determines how many instances of our product can be sold. 
-Every product has to be part of at least one quota before it becomes available in the shop. 
-A product can be part of more than one quota. 
-In that case, it will only remain available as long as neither quota is sold out. 
-In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. 
-For most use cases, it is enough to add every product to one quota only. 
-That is what we are going to do in this section. 
+Every product has to be part of at least one quota before it becomes available in the shop.
+In this section, we are going to create quotas and add our products to them. 
 
 We will navigate to [Event] → "Products" → "Quotas". 
 This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the standard ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
