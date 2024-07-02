@@ -83,7 +83,7 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 Switching to the "organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
 Clicking the :btn:👁 Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will always be located at [https://pretix.eu/[OrganizerShortForm]/](https://pretix.eu/[OrganizerShortForm]/).
-The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
+The page we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
 
 By default, the name of the organizer will be displayed in the page header of our page.
 The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
