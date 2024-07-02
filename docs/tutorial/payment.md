@@ -13,7 +13,7 @@ The prerequisites for this are an active Stripe merchant account and a bank acco
 pretix will log payments coming in through most payment providers, including Stripe. 
 An order in our shop will be marked as paid automatically as soon as Stripe records a corresponding payment. 
 Bank transfers are the exception to that rule because the pretix software would need to monitor payments arriving at our bank account.
-A connection to your bank account is possible to set up on pretix Hosted, but it is also possible to manually approve payments as thex come in, or by regularly importing digital bank statements. 
+A connection to your bank account is possible to set up on pretix Hosted, but it is also possible to manually approve payments as they come in, or by regularly importing digital bank statements. 
 
 First of all, we need to enable the plugins for bank transfers and Stripe. 
 We are going to navigate to [Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
