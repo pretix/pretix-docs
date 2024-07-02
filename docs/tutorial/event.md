@@ -52,7 +52,7 @@ Our input into the "location" field will be used to search OpenStreetMap for tha
 If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
 If no results can be found for the input, the marker on the map can be dragged to the event location manually. 
 This will automatically update the "geo coordinates" fields. 
-Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the address over to the "location" field. 
+Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the coordinates over to the "geo coordinates" fields. 
 
 This page also allows us to set a sales tax rate for our event. 
 Taxation rules can also be changed after event creation is finished. 
