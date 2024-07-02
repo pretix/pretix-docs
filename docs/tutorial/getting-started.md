@@ -44,8 +44,8 @@ The "full name" field is meant for the name of the company, association, or inst
 The "address short form" field is for a short form of the organization's name. 
 This short form will be used for the URL under which our events can be found. 
 For this tutorial, we are going to create an account for our Tutorial Organization. 
-So we will enter "Tutorial Organization" into the full name field, and "ex-org" into the address short form field. 
-This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) from now on. 
+So we will enter "Tutorial Organization" into the full name field, and "tut" into the address short form field. 
+This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/tut/](https://pretix.eu/tut/) from now on. 
 
 There is no need to create a dedicated test account or use the word "test" anywhere in the short form or name. 
 pretix offers a test mode that allows our organizer and events to remain invisible to the public, but still gives us access to all functions and settings. 
