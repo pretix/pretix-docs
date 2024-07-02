@@ -13,8 +13,8 @@ We are going to start by creating categories to sort our products into, then we 
 
 ## Creating and editing categories
 
-Categories serve three purposes: They help keep track of all the different products in the backend; they let us group products into sensible categories in our shop; and they separate standalone products from additional products. 
-
+Categories can help us group products into sensible categories both in the backend and in our shop. 
+They also separate standalone products from additional products. 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
 That means our next step is to create a category for those extras. 
 For that, we will navigate to [Event] → "Products" → "Categories". 
