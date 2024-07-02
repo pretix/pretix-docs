@@ -1,30 +1,29 @@
 # Testing and Going Live
 
 In this final part of the tutorial, we will test our shop, make sure that everything works as intended, and finally take it live. 
+We are going to take the following steps: 
+
+ - placing an order in test mode 
+ - reviewing the order in the backend and marking it as paid
+ - testing the shop in every language we have activated
+ - making final improvements to our shop if necessary 
+ - disabling test mode and deleting test orders 
+ - taking the shop live
 
 ## Testing and confirming orders 
 
-We will now place an order in our shop using the fake payment method. 
+We will now place an order in our shop. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
-This is the way it is intended. 
-We would not want to activate the fake payment provider while the shop is already live and accessible to the public. 
-We will now place an order for a standard ticket and a discount ticket and follow the instructions on the screen. 
-
-During checkout, the option to pay by credit card will appear twice. 
-One of these credit cards is our fake payment provider. 
-The fake payment provider has the credit card number already filled out with repeating sequences of "42". 
-We are going to use this to place our order. 
-We will also place an order of a speaker ticket. 
+We will now place an order for a standard ticket and a discount ticket, follow the instructions on the screen and enter an email address that we have access to when prompted. 
+During checkout, we will choose bank transfer as the payment method, but since this is just a test, we will **not** transfer any money to the bank account as instructed. 
 
 We will now open pretix.eu and navigate to [Event] → "Orders". 
-This page should display a list containing the two test orders we just placed. 
-The first order should have the status "paid" and the second order, which includes the speaker ticket, should have the status "approval pending". 
-
-We will click the code for the second order, then the :btn:Approve: button and confirm our choice. 
-This will send an email to the address we used to place the order containing a link under which any pending payment can be completed. 
-The order will now display the "pending" tag in the overview. 
-If we open the link in the email and use the fake payment provider, that status will change to "paid". 
+This page should display a list containing the test order we just placed. 
+The order should have the status ":fontawesome-regular-money-bill-1: Pending". 
+We will click the code for the order, then the :btn::material-check: Mark as paid: button and confirm our choice. 
+This will send an email to the address we used to place the order confirming that the payment has been received. 
+The order will now display the ":material-check: Paid" tag in the overview. 
 
 We are going to repeat this process for every language we have activated for the shop. 
 This is to make sure that we have provided all the necessary translations and our localization settings are correct. 
