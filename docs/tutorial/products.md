@@ -36,6 +36,8 @@ We are going to add the following description:
 Next, we will click on the "price" tab and change the "default price" to €250.00. 
 We will also select the appropriate tax rate of 19% from the "sales tax" dropdown. 
 
+### Discount ticket
+
 We will now create the discount ticket based on the "standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
 The "reduced ticket" is not needed anymore. 
@@ -59,6 +61,8 @@ We have to provide instructions for the person operating the check-in at our eve
 Our instructions say: "Check for student ID/member ID". 
 We will then click the :btn:Save: button. 
 
+### Speaker ticket
+
 Next, we are going to create a speaker ticket that is free, but requires manual approval before purchase. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
@@ -67,6 +71,8 @@ This means that every order placed in our shop that includes this type of ticket
 Even if the order also includes products that do not require approval, the order will still enter the "approval pending" state. 
 It will be necessary to to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of our invited speakers. 
 We will then click the :btn:Save: button. 
+
+### Product with variants
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:+ Create a new product: button. 
@@ -94,6 +100,8 @@ We will navigate to [Event] → "Products" → "Quotas".
 This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the standard ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 
+### Quotas for tickets 
+
 We will click the :btn:change: button next to the "regular ticket" quota in the list. 
 Since we have renamed our "regular ticket" to "Standard ticket", we are also going to rename this quota to avoid confusion. 
 We will enter "Standard ticket" into the name field and change the capacity to 1000 because that is the maximum amount of tickets of this type that we want to sell. 
@@ -109,6 +117,8 @@ Our speaker ticket needs to be assigned to a quota, too.
 We will now navigate back to [Event] → "Products" → "Quotas" and click the :btn:+ Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
+
+### Quotas for variants 
 
 Our sticker product needs three different quotas: one for each product variant. 
 We will navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 
