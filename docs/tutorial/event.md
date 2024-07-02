@@ -54,12 +54,12 @@ If no results can be found for the input, the marker on the map can be dragged t
 This will automatically update the "geo coordinates" fields. 
 Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the address over to the "location" field. 
 
-{% include "warning-tax.md" %}
-
 This page also allows us to set a sales tax rate for our event. 
 Taxation rules can also be changed after event creation is finished. 
 We are holding our event in Germany and a single percentage rule applies to all of our products. 
 Thus, we are going to add a 19% tax rule here. 
+
+{% include "warning-tax.md" %}
 
 ![Screenshot of page titled "Create new Event—Step 3", showing an infobox asking the user to review all settings extensively and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
