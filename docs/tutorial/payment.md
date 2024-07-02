@@ -15,16 +15,17 @@ An order in our shop will be marked as paid automatically as soon as Stripe reco
 Bank transfers are the exception to that rule because the pretix software would need to monitor payments arriving at our bank account.
 A connection to your bank account is possible to set up on pretix Hosted, but it is also possible to manually approve payments as they come in, or by regularly importing digital bank statements. 
 
-First of all, we need to enable the plugins for bank transfers and Stripe. 
-We are going to navigate to [Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
-By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be activated. 
-Since we do not intend to use PayPal or SEPA Direct debit, we are going to click the :btn:Disable: buttons for those two plugins. 
-
 We will then navigate to [Event] → "Settings" → "Payment", which displays a list of payment providers. 
-The list should now include bank transfer, gift card, and Stripe. 
+Bank transfer, gift card, and Stripe should be included in this list. 
 By default, gift card will be enabled and all other payment providers will be disabled. 
 
-We will first enable Stripe by clicking the :btn:⚙️ Settings: button next to it. 
+!!! Note 
+    If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled. 
+    In order to activate such a plugin, you have to navigate to [Your Event] → "Settings" → "Plugins" and open the "payment providers" tab. 
+    Click the :btn:Enable: button next to the plugin you want to use. 
+    You can tell that a plugin has been activated by green ":material-check: Active" tag. 
+
+We will first enable Stripe by clicking the :btn::fontawesome-solid-gear: Settings: button next to it. 
 This takes us to the payment settings page for Stripe, which currently only contains a :btn:Connect with Stripe: button. 
 Clicking that button takes us to a dialog on stripe.com, where we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account. 
 
