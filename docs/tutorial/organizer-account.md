@@ -101,16 +101,11 @@ Our public profile will allow the viewer to switch between those languages via t
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
 On the "privacy" tab, we can provide an URL pointing to our privacy policy for each language we activated. 
-The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adjusted if necessary. 
 
 !!! Warning 
 
     It is ultimately your responsibility to ensure compliance with applicable legislation.
     We try to help by suggesting these settings, but we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
-
-pretix itself only ever sets cookies that are essential for providing the service requested by the user or to maintain an appropriate level of security. 
-Therefore, cookies set by pretix itself do not require consent in any jurisdiction we are aware of. 
-The settings on the "privacy" tab will only have an effect if we use plugins that require additional cookies and participate in our cookie consent mechanism.
 
 ## Activation
 
