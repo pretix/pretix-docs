@@ -129,15 +129,6 @@ We are also going to upload a .png file for the "social media image" option.
 This will be used as a preview for any links to our ticket shop we post on social media. 
 Not uploading a file here would mean that the header image will be used for previews instead. 
 
-By default, the section with color and font settings is locked and we can only change them on the organizer level. 
-We are going to leave the settings here locked since that makes it easier to keep the shop designs consistent. 
-
-!!! Warning
-
-    Unlocking the color and font settings is not reversible. 
-    Only click the :btn:🔓 Unlock: button if you are absolutely positive that your event shop should have different color and font settings than your organizer's public profile. 
-    Once the settings have been unlocked, they have to be adjusted independently for this event. 
-
 ## Conclusion 
 
 We have gone through the four-step event creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop. 
