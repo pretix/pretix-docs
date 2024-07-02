@@ -6,7 +6,7 @@ In this article, we will cover the process of creating the following products an
 
  - a basic admission ticket 
  - a discount ticket for students and members
- - a free speaker ticket requiring manual approval before purchase 
+ - a free speaker ticket that can only be purchased with a voucher
  - stickers that come in three variants with different prices 
 
 We are going to start by creating categories to sort our products into, then we will create the products themselves, and lastly, we are going to create quotas to determine and keep track of availability numbers for each product. 
@@ -63,14 +63,14 @@ We will then click the :btn:Save: button.
 
 ### Speaker ticket
 
-Next, we are going to create a speaker ticket that is free, but requires manual approval before purchase. 
+Next, we are going to create a speaker ticket that is free, but can onl be purchased with a voucher. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
-We will check the box next to "Buying this product requires approval". 
-This means that every order placed in our shop that includes this type of ticket will first enter an "approval pending" state. 
-Even if the order also includes products that do not require approval, the order will still enter the "approval pending" state. 
-It will be necessary to to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of our invited speakers. 
-We will then click the :btn:Save: button. 
+We will switch to the "Availability" tab, check the box next to "This product can only be bought using a voucher" and click the :btn:Save: button. 
+
+Our plan is to send voucher codes to our invited speakers which will grant them access to this specialized type of ticket. 
+For more information on vouchers, see [vouchers](../topics/index.md)
+TK Placeholder link! Update as soon as the article on vouchers is available 
 
 ### Product with variants
 
@@ -102,9 +102,11 @@ The list also displays the total capacity and how many items are left for each q
 
 ### Quotas for tickets 
 
-We will click the :btn:change: button next to the "regular ticket" quota in the list. 
-Since we have renamed our "regular ticket" to "Standard ticket", we are also going to rename this quota to avoid confusion. 
-We will enter "Standard ticket" into the name field and change the capacity to 1000 because that is the maximum amount of tickets of this type that we want to sell. 
+First, we will edit a quota for our standard and discount tickets. 
+We will click the :btn::material-pencil-box-outline:: button next to the "regular ticket" quota in the list. 
+We are also going to rename this quota to "Standard and discount ticket" to avoid confusion. 
+The "Standard ticket" should already be checked in the list of products. 
+We will also check the "Discount ticket" in the list and change the capacity to 1900 because that is the maximum amount of tickets of these types that we want to sell. 
 We will leave the rest of the settings unchanged and click the :btn:Save: button. 
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
