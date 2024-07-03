@@ -96,15 +96,14 @@ Thus, this warning may persist for a while even if all necessary information has
 
 ## Customer and attendee data 
 
-We later want to print badges to the people who attend our conference and offer our attendees certificates of attendance. 
+We are planning to print badges for our attendees during the conference. 
 That means we have to record their name and affiliation during purchase. 
 We are going to navigate to [Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
-Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for attendee names, addresses per ticket, and company per ticket. 
-We will set the attendee name to "ask and require input" and the other two to "ask, but do not require input".
-By not making the other fields mandatory, it is still possible for attendees to not give us their data if they do not require a certificate of participation. 
+Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking certain information for every ticket purchased.  
+We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
 In the text fields labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
-"Information for each individual attendee for whom you are buying a ticket. Please add the address if you want it to show on your certificate of participation."
+"We will use the name, title and company you submit for your badge."
 
 Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
 We are going to select "ask for title + given name + family name, display like John Doe" for names and "free text input" for titles. 
