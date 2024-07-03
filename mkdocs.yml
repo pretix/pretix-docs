@@ -21,6 +21,7 @@ theme:
     - navigation.footer
     - toc.follow
     - search.highlight
+    - content.tooltips
   font:
     text: Open Sans
   palette:
