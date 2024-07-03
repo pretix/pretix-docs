@@ -46,7 +46,7 @@ Since we are operating from Germany and thus required by law to include certain 
 
 !!! Note
 
-    Even if you are not operating in Germany, we require all pretix Hosted customers to enter a valid imprint URL that points to information on who is reponsible for the published ticket shop.
+    Even if you are not operating in Germany, we require all pretix Hosted customers to enter a valid imprint URL that points to information on who is responsible for the published ticket shop.
 
 We will enter a valid email address into the "contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
