@@ -26,8 +26,7 @@ After finishing account creation and logging in to [pretix.eu/control](https://p
 We can always come back to this page by clicking the :btn:pretix.eu: button in the bar at the top. 
 Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
-![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
-There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
+![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
 Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer.
 
