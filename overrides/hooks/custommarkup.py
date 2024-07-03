@@ -1,10 +1,9 @@
 from __future__ import annotations
 
-import posixpath
 import re
 
 from mkdocs.config.defaults import MkDocsConfig
-from mkdocs.structure.files import File, Files
+from mkdocs.structure.files import Files
 from mkdocs.structure.pages import Page
 from re import Match
 
@@ -13,11 +12,19 @@ def on_page_markdown(
 ):
 
     # Replace callback
-    def replace(match: Match):
+    def replace_btn(match: Match):
         return f'<span class="typo-btn">{match.group(1)}</span>'
 
-    # Find and replace all external asset URLs in current page
-    return re.sub(
+    def replace_btn_mdi(match: Match):
+        return f'<span class="typo-btn">:{match.group(1)}: {match.group(2)}</span>'
+
+    markdown = re.sub(
         r":btn:([^:]+):",
-        replace, markdown, flags = re.I
+        replace_btn, markdown, flags = re.I
     )
+    markdown = re.sub(
+        r":btn-icon:([^:]+):([^:]*):",
+        replace_btn_mdi, markdown, flags = re.I
+    )
+
+    return markdown

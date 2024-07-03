@@ -15,7 +15,7 @@ This covers all the necessary steps for creating an event and setting up the tic
 
 In order to create an event, we must be logged in to our [pretix](https://pretix.eu/control/) account. 
 Clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events. 
-We will now click the :btn:⊕ Create a new event: button. 
+We will now click the :btn-icon:fontawesome-solid-plus:Create a new event: button. 
 
 ![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
@@ -118,7 +118,7 @@ This is important because changing these settings after already having received 
 ![Screenshot of "shop design" tab, showing options for the header image and social media image, as well as a locked section at the bottom.](../assets/screens/event/shop-design.png "Event shop design tab screenshot") 
 
 Switching to the "shop design" tab at the top allows us to add images to our event shop and customize its colors. 
-Clicking the :btn:👁 Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective. 
+Clicking the :btn-icon:fontawesome-regular-eye:Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective. 
 A shop created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/ex-conf-2027/](https://pretix.eu/ex-org/ex-conf-2027/). 
 
@@ -138,7 +138,7 @@ We are going to leave the settings here locked since that makes it easier to kee
 !!! Warning
 
     Unlocking the color and font settings is not reversible. 
-    Only click the :btn:🔓 Unlock: button if you are absolutely positive that your event shop should have different color and font settings than your organizer's public profile. 
+    Only click the :btn-icon:fontawesome-solid-unlock:Unlock: button if you are absolutely positive that your event shop should have different color and font settings than your organizer's public profile. 
     Once the settings have been unlocked, they have to be adjusted independently for this event. 
 
 ## Conclusion 

@@ -81,7 +81,7 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 ![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
 
 Switching to the "organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
-Clicking the :btn:👁 Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
+Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/.
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
 
