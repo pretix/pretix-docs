@@ -43,7 +43,7 @@ We are going to choose "SEPA bank account" as our "bank account type".
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
 We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "enable payment method". 
 Then, we will click the :btn:Save: button and return to the payment settings. 
-Bank transfer, gift card, and Stripe should all have a green :✓ Enabled" tag next to them now. 
+Bank transfer, gift card, and Stripe should all have a green ":material-check: Enabled" tag next to them now. 
 
 !!! Note 
     By default, the pretix software is not able to monitor payments arriving at your bank account.
