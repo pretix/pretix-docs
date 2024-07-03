@@ -12,18 +12,21 @@ We are going to take the following steps:
 
 ## Testing and confirming orders 
 
+!!! Warning 
+    In some cases, the Stripe test cards may be subject to a cross border fee. 
+    Consult the Stripe documentation on [testing](https://docs.stripe.com/testing) and Stripe's [test mode](https://docs.stripe.com/test-mode) before placing a test order using Stripe. 
+
 We will now place an order in our shop. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
 We will now place an order for a standard ticket and a discount ticket, follow the instructions on the screen and enter an email address that we have access to when prompted. 
-During checkout, we will choose bank transfer as the payment method, but since this is just a test, we will **not** transfer any money to the bank account as instructed. 
+During checkout, we will choose credit card as the payment method, which should currently display a note stating that the Stripe plugin is operating in test mode. 
+We will use the credit card data for one of the test cards [listed by Stripe](https://docs.stripe.com/testing#cards) to issue a fake payment for our order. 
 
 We will now open pretix.eu and navigate to [Event] → "Orders". 
-This page should display a list containing the test order we just placed. 
-The order should have the status ":fontawesome-regular-money-bill-1: Pending". 
-We will click the code for the order, then the :btn::material-check: Mark as paid: button and confirm our choice. 
-This will send an email to the address we used to place the order confirming that the payment has been received. 
-The order will now display the ":material-check: Paid" tag in the overview. 
+This page displays a list of orders. 
+If our test has been successful, the list now contains the test order we just placed. 
+The order should have the status ":material-check: Paid". 
 
 We are going to repeat this process for every language we have activated for the shop. 
 This is to make sure that we have provided all the necessary translations and our localization settings are correct. 
