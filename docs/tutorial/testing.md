@@ -15,7 +15,8 @@ We are going to take the following steps:
 ![Our shop page, titled 'Tutorial conference', listing date and location for our event and a selection of products. There is a box warning that the shop is currently in test mode.](../assets/screens/testing/shop.png "Shop screenshot") 
 
 We will now place an order in our shop. 
-We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
+We are going to click the :btn-icon:fontawesome-regular-eye:Go to shop: button in the bar at the top. 
+
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
 We will now place an order for a standard ticket and a discount ticket, follow the instructions on the screen and enter an email address that we have access to when prompted. 
 During checkout, we will choose credit card as the payment method, which should currently display a note stating that the Stripe plugin is operating in test mode. 
