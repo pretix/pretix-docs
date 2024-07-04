@@ -15,6 +15,8 @@ An order in our shop is marked as paid as soon as Stripe records a corresponding
 Bank transfers are the exception to that rule because the pretix software would need to monitor payments arriving at our bank account.
 A connection to your bank account is possible to set up on pretix Hosted, but it is also possible to manually approve payments as they come in, or by regularly importing digital bank statements. 
 
+![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../assets/screens/payment/settings.png "Payment settings screenshot") 
+
 In order to set up payment providers, we will navigate to [Event] → "Settings" → "Payment", which displays a list of payment providers. 
 Bank transfer and Stripe should be included in this list. 
 By default, all payment providers in this list except gift card will be disabled. 
@@ -27,6 +29,8 @@ By default, all payment providers in this list except gift card will be disabled
 
 ### Stripe
 
+![Page titled 'Payment settings—Payment provider:Stripe', displaying a box with a legal warning and buttons for connecting with Stripe and saving.](../assets/screens/payment/stripe.png "Stripe settings screenshot") 
+
 We will first enable Stripe by clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to it. 
 This takes us to the payment settings page for Stripe, which currently only contains a :btn:Connect with Stripe: button. 
 Clicking that button takes us to a dialog on stripe.com, where we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account. 
@@ -37,6 +41,8 @@ We will check the boxes next to "credit card payments" and "enable payment metho
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
 
 ### Bank transfers 
+
+![Page titled 'Payment settings—Payment provider:Bank transfer', displaying options for the bank account type, bank data, details and enabling the payment method.](../assets/screens/payment/bank-transfer.png "Bank transfer settings screenshot") 
 
 We will also enable bank transfers by navigating to [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
@@ -54,6 +60,8 @@ Bank transfer, gift card, and Stripe should all have a green ":material-check: E
 For more information on using bank transfers, see [bank transfers](../topics/payment/bank-transfer.md). 
 
 ## Setting up invoices 
+
+![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
 We will browse to the invoicing settings  at [Event] → "Settings" → "Invoicing". 
 On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
