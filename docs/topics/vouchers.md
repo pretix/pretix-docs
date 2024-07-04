@@ -6,7 +6,7 @@ Vouchers have several useful applications.
 With vouchers, you can: 
 
  - make products available at a reduced price for voucher holders
- - make a product only available for a select group of people such as speakers at a conference or VIPs
+ - make a product only available for a select group of people such as speakers at a conference or invited guests
  - reserve a certain quantity of a product quota for voucher holders
  - make sure that voucher holders still get access to a product even if it is sold out
  - make products only visible to voucher holders in your shop
@@ -15,11 +15,26 @@ Vouchers are not to be confused with [gift cards](gift-cards.md), which essentia
 
 ## Prerequisites
 
-What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
+Vouchers are handled on the event level, so you need to create an event first. 
+Your account needs to be activated before you can send out vouchers via email. 
+This is a measure to prevent against abuse of the system by spammers. 
+See the tutorial's section on [account activation](../tutorial/organizer-account.md#activation) for further information. 
 
-## How To (?)
+## How To 
 
-What does the feature do? How do you use it? How do you apply it to your individual use case? This is the main body of the article. 
+ - voucher codes must be at least 5 characters long
+
+The settings for vouchers are located at [Your Event] → "Vouchers". 
+This page gives you an overview of all vouchers that have already been created and options to search and filter vouchers. 
+As described in the introduction, vouchers have several useful applications. 
+Those applications will be explained in the following subsections. 
+
+### Exclusive product availability
+
+This subsection explains how to make a product only available for a select group of people such as speakers at a conference or invited guests. 
+First, create an admission product. 
+Open the "Availability" tab and check the box next to "This product can only be bought using a voucher".
+
 
 ## Troubleshooting 
 
