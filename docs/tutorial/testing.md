@@ -12,6 +12,8 @@ We are going to take the following steps:
 
 ## Testing and confirming orders 
 
+![Our shop page, titled 'Tutorial conference', listing date and location for our event and a selection of products. There is a box warning that the shop is currently in test mode.](../assets/screens/testing/shop.png "Shop screenshot") 
+
 We will now place an order in our shop. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
@@ -35,6 +37,8 @@ It is possible to adjust these things when the shop is already live.
 However, we are going to make sure that our shop is exactly in the state we want it to be in before we take it live so that all of our customers have a unified and flawless experience while using it. 
 
 ## Disabling test mode and deleting orders 
+
+![Page titled 'Shop status', displaying a box warning about which conditions are not met yet for the shop to go live and options to disable test mode and delete all test mode orders.](../assets/screens/testing/shop-status.png "Shop status screenshot") 
 
 To make sure that only real orders from actual customers appear in our shop from this point onwards, we have to delete the orders we just placed in test mode. 
 For that, we will navigate to [Event] → "TEST MODE". 
