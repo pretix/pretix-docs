@@ -12,10 +12,6 @@ We are going to take the following steps:
 
 ## Testing and confirming orders 
 
-!!! Warning 
-    In some cases, the Stripe test cards may be subject to a cross border fee. 
-    Consult the Stripe documentation on [testing](https://docs.stripe.com/testing) and Stripe's [test mode](https://docs.stripe.com/test-mode) before placing a test order using Stripe. 
-
 We will now place an order in our shop. 
 We are going to click the :btn:👁 Go to shop: button in the bar at the top. 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
