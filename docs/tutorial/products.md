@@ -13,6 +13,8 @@ We are going to start by creating categories to sort our products into, then we 
 
 ## Creating and editing categories
 
+![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
+
 Categories can help us group products into sensible categories both in the backend and in our shop. 
 They also separate standalone products from additional products. 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
@@ -23,6 +25,8 @@ We will click the :btn:+ Create a new category: button and give the category a n
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
 
 ## Creating and editing products
+
+![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../assets/screens/products/products.png "Products screenshot") 
 
 Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
@@ -37,6 +41,8 @@ Next, we will click on the "price" tab and change the "default price" to €250.
 We will also select the appropriate tax rate of 19% from the "sales tax" dropdown. 
 
 ### Discount ticket
+
+![Page titled 'Create product', showing options such as item name, copy product information, product type and personalization.](../assets/screens/products/create.png "Create product screenshot") 
 
 We will now create the discount ticket based on the "standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
@@ -74,6 +80,8 @@ TK Placeholder link! Update as soon as the article on vouchers is available
 
 ### Product with variants
 
+![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../assets/screens/products/products.png "Product variations screenshot") 
+
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:+ Create a new product: button. 
 We will name the product "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
@@ -101,6 +109,8 @@ This page shows the list of all quotas for the event, which at the moment includ
 The list also displays the total capacity and how many items are left for each quota. 
 
 ### Quotas for tickets 
+
+![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../assets/screens/products/quotas.png "Quotas screenshot") 
 
 First, we will edit a quota for our standard and discount tickets. 
 We will click the :btn::material-pencil-box-outline:: button next to the "regular ticket" quota in the list. 
