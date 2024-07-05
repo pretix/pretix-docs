@@ -24,17 +24,31 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
  - voucher codes must be at least 5 characters long
 
-The settings for vouchers are located at [Your Event] → "Vouchers". 
-This page gives you an overview of all vouchers that have already been created and options to search and filter vouchers. 
+The settings page for vouchers are located at [Your Event] → "Vouchers". 
+It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
 
 ### Exclusive product availability
 
-This subsection explains how to make a product only available for a select group of people such as speakers at a conference or invited guests. 
-First, create an admission product. 
-Open the "Availability" tab and check the box next to "This product can only be bought using a voucher".
+This subsection explains how to make a product only available to a select group of invited guests. 
+This option is appropriate for cases in which you know the group of people beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
+First, create or edit the admission product for which you want to restrict availability. 
+Open the "Availability" tab and check the box next to "This product can only be bought using a voucher".
+The visibility toggle next to that options allows you to choose whether the product should still be displayed in your shop even to customers who do not have a voucher code. 
+Next, create a quota, add only this product to it and set the total capacity so that it covers the number of emails you are planning to send out. 
+
+Then, navigate to [Your Event] → "Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
+Generate the same number of voucher codes as emails you are planning to send out. 
+Under "Product", choose the product for which you want to restrict availability. 
+If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher". 
+This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
+
+Check the box next to "Send vouchers via email" in order to display the email settings. 
+You can save your invited guests one step by including the placeholder {voucher_url_list} in the "Message" text. 
+Enter the mail addresses into the "Recipients" field. 
+The software will display an error message if the number of recipients and generated vouchers do not match up. 
 
 ## Troubleshooting 
 
