@@ -22,16 +22,28 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 ## How To 
 
- - voucher codes must be at least 5 characters long
-
-The settings page for vouchers are located at [Your Event] → "Vouchers". 
+The settings page for vouchers is located at [Your Event] → "Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
+
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
 
+### Offering a limited discount 
+
+This subsection explains how to create a voucher code for a limited time discount to attract more customers to your shop. 
+
+Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
+The voucher code has already been filled out automatically, but you can change it and provide your own as long as it is at least five characters in length. 
+Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
+Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
+Set "Price effect" to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
+You can use the "Maximum discount budget" to limit the usage of the voucher to a certain amount of money. 
+Another option of limiting potential losses in case of unexpectedly high usage of the voucher is setting a lower number of "Maximum usages". 
+Uncheck the box next to "Show hidden products that match this voucher" and click :btn:Save:. 
+
 ### Exclusive product availability
 
-This subsection explains how to make a product only available to a select group of invited guests. 
+This subsection explains how to use vouchers to make a product only available to a select group of invited guests. 
 This option is appropriate for cases in which you know the group of people beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
 First, create or edit the admission product for which you want to restrict availability. 
