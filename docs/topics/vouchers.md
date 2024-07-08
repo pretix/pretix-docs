@@ -76,6 +76,8 @@ Generate the same number of voucher codes as emails you are planning to send out
 Under "Product", choose the product for which you want to restrict availability. 
 If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher". 
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
+An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
+This allows voucher holders to freely choose as many add-on products as they like on top of their tickets. 
 
 Check the box next to "Send vouchers via email" in order to display the email settings. 
 You can save your invited guests one step by including the placeholder {voucher_url_list} in the "Message" text. 
