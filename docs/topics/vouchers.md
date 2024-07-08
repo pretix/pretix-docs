@@ -16,8 +16,6 @@ Gift cards essentially function like an additional method of payment for your cu
 They always represent a fixed amount of money that is subtracted from the total of the order. 
 Gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
 
-
-
 ## Prerequisites
 
 Vouchers are handled on the event level, so you need to create an event first. 
@@ -83,6 +81,13 @@ Check the box next to "Send vouchers via email" in order to display the email se
 You can save your invited guests one step by including the placeholder {voucher_url_list} in the "Message" text. 
 Enter the mail addresses into the "Recipients" field. 
 The software will display an error message if the number of recipients and generated vouchers do not match up. 
+
+### Reserving tickets for a certain group
+
+This subsection explains how to use vouchers to reserve tickets from a quota in order to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
+There are two ways to do this: either reserving a certain amount of tickets from a quota, or allowing voucher holders to bypass the quota. 
+Navigate to [Your Event] → "Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button and generate one voucher for every member of the group in question.
+
 
 ## Troubleshooting 
 
