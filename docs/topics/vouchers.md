@@ -17,14 +17,16 @@ Vouchers are not to be confused with [gift cards](gift-cards.md), which essentia
 
 Vouchers are handled on the event level, so you need to create an event first. 
 Your account needs to be activated before you can send out vouchers via email. 
-This is a measure to prevent against abuse of the system by spammers. 
 See the tutorial's section on [account activation](../tutorial/organizer-account.md#activation) for further information. 
 
 ## How To 
 
 The settings page for vouchers is located at [Your Event] → "Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
-
+Whenever you create multiple vouchers, it is recommended that you enter a descriptor in the "Tag" field. 
+This can make it easier to find, edit and clone certain sets of vouchers in the list. 
+A useful entry in the "Tag" field could be the date and time at which the vouchers were created, the purpose for which they were created, or both. 
+For example, "2024-07-08-0945 Limited Time Offer" would be a very useful tag if there is a large total number of vouchers for the event in question. 
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
 
@@ -37,7 +39,7 @@ The voucher code has already been filled out automatically, but you can change i
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
 Set "Price effect" to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
-You can use the "Maximum discount budget" to limit the usage of the voucher to a certain amount of money. 
+You can use the "Maximum discount budget" to limit the usage of the voucher. 
 Another option of limiting potential losses in case of unexpectedly high usage of the voucher is setting a lower number of "Maximum usages". 
 Uncheck the box next to "Show hidden products that match this voucher" and click :btn:Save:. 
 
