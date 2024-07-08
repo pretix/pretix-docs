@@ -84,10 +84,22 @@ The software will display an error message if the number of recipients and gener
 
 ### Reserving tickets for a certain group
 
-This subsection explains how to use vouchers to reserve tickets from a quota in order to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
-There are two ways to do this: either reserving a certain amount of tickets from a quota, or allowing voucher holders to bypass the quota. 
+This subsection explains how to use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
 Navigate to [Your Event] → "Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button and generate one voucher for every member of the group in question.
+Optionally, you may choose a descriptive prefix such as "guest-list-". 
+Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
+This means that the voucher will entitle each holder to one basic admission ticket for free. 
 
+There are two methods for ensuring access to tickets for the voucher holders: reserving tickets from a quota or allowing them to bypass quotas. 
+For the first option, check the box next to "Reserve ticket from quota". 
+You may have to increase the total capacity of the quota, particularly if the quota is already sold out. 
+This method has the advantage that you can still keep track of products purchased using this voucher via quotas, just like all other products. 
+The disadvantage is that this method does not give voucher holders reliable access to products if you selected one of the "Any product in quota" options under "Product" and the products are part of more than one quota with limited capacity. 
+You can still use this method without worrying about that if you select a specific product under "Product", or if the products in question are only part of one quota. 
+
+For the other method, check the box next to "Allow to bypass quota" instead. 
+This gives voucher holders access to tickets even if all corresponding quotas are already sold out. 
+You should choose this method over the other one if you selected one of the "Any product in quota" options under "Product" and the products are part of more than one quota with limited capacity. 
 
 ## Troubleshooting 
 
