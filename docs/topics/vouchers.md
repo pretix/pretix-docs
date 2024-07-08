@@ -11,7 +11,12 @@ With vouchers, you can:
  - make sure that voucher holders still get access to a product even if it is sold out
  - make products only visible to voucher holders in your shop
 
-Vouchers are not to be confused with [gift cards](gift-cards.md), which essentially function like an additional method of payment for your customers. 
+Vouchers are not to be confused with [gift cards](gift-cards.md). 
+Gift cards essentially function like an additional method of payment for your customers. 
+They always represent a fixed amount of money that is subtracted from the total of the order. 
+Gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
+
+
 
 ## Prerequisites
 
