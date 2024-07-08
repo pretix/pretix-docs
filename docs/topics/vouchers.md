@@ -23,10 +23,25 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 The settings page for vouchers is located at [Your Event] → "Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
-Whenever you create multiple vouchers, it is recommended that you enter a descriptor in the "Tag" field. 
+
+Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
+This is useful for when you are planning to publish a single voucher code for multiple people to use. 
+
+The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
+This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
+
+The :tbn-icon:fontawesome-solid-download: Download: button lets you download a .csv file of the full list of vouchers you have created. 
+This is useful for when you want to make a backup of your vouchers, distribute them via a different channel than the pretix-native emailer, or re-use the same type of vouchers for a different event. 
+
+The :fontawesome-solid-upload:Import vouchers: button lets you upload such a list after saving it from a different event. 
+This function is meant for importing a single type of voucher. 
+If you have saved the full list of vouchers from a different event and it includes more than one type of voucher, then it is advisable to split the .csv file according to type and import each part individually. 
+
+Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
 A useful entry in the "Tag" field could be the date and time at which the vouchers were created, the purpose for which they were created, or both. 
-For example, "2024-07-08-0945 Limited Time Offer" would be a very useful tag if there is a large total number of vouchers for the event in question. 
+For example, "2024-07-08 09:45 Limited Time Offer" would be a very useful tag if there is a large total number of vouchers for the event in question. 
+
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
 
