@@ -40,6 +40,11 @@ The :fontawesome-solid-upload:Import vouchers: button lets you upload such a lis
 This function is meant for importing a single type of voucher. 
 If you have saved the full list of vouchers from a different event and it includes more than one type of voucher, then it is advisable to split the .csv file according to type and import each part individually. 
 
+Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file on your computer. 
+
+If you have checked the box next to "Send vouchers via email" and entered email addresses in the Recipients field, make sure that you are happy with the subject line and message text previews before you click :btn:Save. 
+The emails will be sent out as soon as you click the :btn:Save: button. 
+
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
 A useful entry in the "Tag" field could be the date and time at which the vouchers were created, the purpose for which they were created, or both. 
