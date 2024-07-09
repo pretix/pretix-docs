@@ -65,11 +65,11 @@ Thus, we are going to add a 19% tax rule here.
 
 We are then asked if we want to copy information from a previously created event. 
 This step can save us a lot of work from our second event onwards. 
-But since this is the first event we're organizing using this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue:. 
+But since this is the first event we're organizing with this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue:. 
 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
 
-The next page congratulates us on creating our event and gives us the opportunity to make quick changes to the products and basic settings for the event. 
+The next page congratulates us on creating our event and gives us an opportunity to make quick changes to the products and basic settings for the event. 
 We do not need to touch these quick settings at the moment. 
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 All we are going to do on this page is add two more pieces of information that are mandatory for our ticket shop to go live. 
