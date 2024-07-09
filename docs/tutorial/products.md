@@ -59,7 +59,7 @@ That will make the warning disappear.
 
 On the next page, we have to adjust the "description" field to inform our customers of the prerequisites for access to the discounted ticket. 
 Our description reads:
-"This ticket is only valid if you provide a student ID or member ID during check-in."
+"This ticket is only valid if you provide a student ID or member ID at check-in."
 We will then switch to the "price" tab, change the "default price" to €120.00 and the original price to the price of the standard ticket, i.e. €250.00. 
 The original price will be displayed as struck-through and the new default price will be displayed in bold green, highlighting the discount price. 
 Then, we will go to the "check-in and validity" tab and check the box next to "requires special attention". 
@@ -69,10 +69,13 @@ We will then click the :btn:Save: button.
 
 ### Speaker ticket
 
-Next, we are going to create a speaker ticket that is free, but can onl be purchased with a voucher. 
+Next, we are going to create a speaker ticket that is free, but can only be purchased with a voucher. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
-We will switch to the "Availability" tab, check the box next to "This product can only be bought using a voucher" and click the :btn:Save: button. 
+We will switch to the "Availability" tab and check the box next to "This product can only be bought using a voucher". 
+The toggle next to that option needs to be set to "Hide product if unavailable". 
+This means that the ticket will only be displayed to people who hold a corresponding voucher in our shop. 
+Once we have set the checkbox and toggle, we will click the :btn:Save: button. 
 
 Our plan is to send voucher codes to our invited speakers which will grant them access to this specialized type of ticket. 
 For more information on vouchers, see [vouchers](../topics/index.md)
