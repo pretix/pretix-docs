@@ -7,7 +7,7 @@ orders and settings.
 To create an event, you can click the "Create a new event" tile on your dashboard or the button above the list of
 events. You will then be presented with the first step of event creation:
 
-![Step 1](../../assets/screens/event/create_step1.png)
+![Step 1](../../assets/screens/event/create-event1.png)
 
 Here, you first need to decide for the organizer the event belongs to. You will not be able to change this
 association later. This will determine default settings for the event, as well as access control to the event's
@@ -27,7 +27,7 @@ you run e.g. a yearly conference. You can read more on this feature :ref:`here <
 
 Once you set these values, you can proceed to the next step:
 
-![Step 2](../../assets/screens/event/create_step1.png)
+![Step 2](../../assets/screens/event/create-event1.png)
 
 In this step, you will be asked more detailed questions about your event. In particular, you can fill in the
 following fields:
@@ -77,12 +77,12 @@ If all of this is set, you can proceed to the next step. If this is your first e
 and you are done! If you have already created events before, you will be asked if you want to copy settings from one
 of them:
 
-![Step 3](../../assets/screens/event/create_step1.png)
+![Step 3](../../assets/screens/event/create-event1.png)
 
 If you do so, all products, categories, quotas and most settings of the other event will be taken over. You should
 still review them if they make sense for your new event, but it could save you a lot of work. After this step, your
 event is created successfully:
 
-![Step 4](../../assets/screens/event/create_step1.png)
+![Step 4](../../assets/screens/event/create-event1.png)
 
 You can now fine-tune all settings to your liking, publish your event and start selling tickets!

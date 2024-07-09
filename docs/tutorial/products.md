@@ -6,15 +6,17 @@ In this article, we will cover the process of creating the following products an
 
  - a basic admission ticket 
  - a discount ticket for students and members
- - a free speaker ticket requiring manual approval before purchase 
+ - a free speaker ticket that can only be purchased with a voucher
  - stickers that come in three variants with different prices 
 
 We are going to start by creating categories to sort our products into, then we will create the products themselves, and lastly, we are going to create quotas to determine and keep track of availability numbers for each product. 
 
 ## Creating and editing categories
 
-Categories serve three purposes: They help keep track of all the different products in the backend; they let us group products into sensible categories in our shop; and they separate standalone products from additional products. 
+![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
 
+Categories can help us group products into sensible categories both in the backend and in our shop. 
+They also separate standalone products from additional products. 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
 That means our next step is to create a category for those extras. 
 For that, we will navigate to [Event] → "Products" → "Categories". 
@@ -23,6 +25,8 @@ We will click the :btn:+ Create a new category: button and give the category a n
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
 
 ## Creating and editing products
+
+![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../assets/screens/products/products.png "Products screenshot") 
 
 Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
@@ -35,6 +39,10 @@ We are going to add the following description:
 "Regular ticket granting access to the entire conference." 
 Next, we will click on the "price" tab and change the "default price" to €250.00. 
 We will also select the appropriate tax rate of 19% from the "sales tax" dropdown. 
+
+### Discount ticket
+
+![Page titled 'Create product', showing options such as item name, copy product information, product type and personalization.](../assets/screens/products/create.png "Create product screenshot") 
 
 We will now create the discount ticket based on the "standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
@@ -51,21 +59,30 @@ That will make the warning disappear.
 
 On the next page, we have to adjust the "description" field to inform our customers of the prerequisites for access to the discounted ticket. 
 Our description reads:
-"This ticket is only valid if you provide student ID or member ID during check-in."
-We will then switch to the "price" tab and change the original price to the price of the standard ticket, i.e. €250.00. 
+"This ticket is only valid if you provide a student ID or member ID at check-in."
+We will then switch to the "price" tab, change the "default price" to €120.00 and the original price to the price of the standard ticket, i.e. €250.00. 
+The original price will be displayed as struck-through and the new default price will be displayed in bold green, highlighting the discount price. 
 Then, we will go to the "check-in and validity" tab and check the box next to "requires special attention". 
 We have to provide instructions for the person operating the check-in at our event in the "check-in text" field. 
 Our instructions say: "Check for student ID/member ID". 
 We will then click the :btn:Save: button. 
 
-Next, we are going to create a speaker ticket that is free, but requires manual approval before purchase. 
+### Speaker ticket
+
+Next, we are going to create a speaker ticket that is free, but can only be purchased with a voucher. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
-We will check the box next to "Buying this product requires approval". 
-This means that every order placed in our shop that includes this type of ticket will first enter an "approval pending" state. 
-Even if the order also includes products that do not require approval, the order will still enter the "approval pending" state. 
-It will be necessary to to manually review and approve every order that includes this ticket in order to confirm that it has been ordered by one of our invited speakers. 
-We will then click the :btn:Save: button. 
+We will switch to the "Availability" tab and check the box next to "This product can only be bought using a voucher". 
+The toggle next to that option needs to be set to "Hide product if unavailable". 
+This means that the ticket will only be displayed to people who hold a corresponding voucher in our shop. 
+Once we have set the checkbox and toggle, we will click the :btn:Save: button. 
+
+Our plan is to send voucher codes to our invited speakers which will grant them access to this specialized type of ticket. 
+For more information on vouchers, see [vouchers](../topics/vouchers.md)
+
+### Product with variants
+
+![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../assets/screens/products/products.png "Product variations screenshot") 
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
 For that, we will navigate to [Event] → "Products" → "Products" and click the :btn:+ Create a new product: button. 
@@ -86,20 +103,22 @@ Then, we will click :btn:Save:.
 ## Creating and editing quotas 
 
 A quota determines how many instances of our product can be sold. 
-Every product has to be part of at least one quota before it becomes available in the shop. 
-A product can be part of more than one quota. 
-In that case, it will only remain available as long as neither quota is sold out. 
-In other words, if a product is part of several quotas, as soon as one of those quotas is empty, the product will not be available anymore. 
-For most use cases, it is enough to add every product to one quota only. 
-That is what we are going to do in this section. 
+Every product has to be part of at least one quota before it becomes available in the shop.
+In this section, we are going to create quotas and add our products to them. 
 
 We will navigate to [Event] → "Products" → "Quotas". 
-This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the regular ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
+This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the standard ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 
-We will click the :btn:change: button next to the "regular ticket" quota in the list. 
-Since we have renamed our "regular ticket" to "Standard ticket", we are also going to rename this quota to avoid confusion. 
-We will enter "Standard ticket" into the name field and change the capacity to 1000 because that is the maximum amount of tickets of this type that we want to sell. 
+### Quotas for tickets 
+
+![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../assets/screens/products/quotas.png "Quotas screenshot") 
+
+First, we will edit a quota for our standard and discount tickets. 
+We will click the :btn::material-pencil-box-outline:: button next to the "regular ticket" quota in the list. 
+We are also going to rename this quota to "Standard and discount ticket" to avoid confusion. 
+The "Standard ticket" should already be checked in the list of products. 
+We will also check the "Discount ticket" in the list and change the capacity to 1900 because that is the maximum amount of tickets of these types that we want to sell. 
 We will leave the rest of the settings unchanged and click the :btn:Save: button. 
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
@@ -112,6 +131,8 @@ Our speaker ticket needs to be assigned to a quota, too.
 We will now navigate back to [Event] → "Products" → "Quotas" and click the :btn:+ Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
+
+### Quotas for variants 
 
 Our sticker product needs three different quotas: one for each product variant. 
 We will navigate back to "Quotas" and click the :btn:+ Create a new quota: button. 

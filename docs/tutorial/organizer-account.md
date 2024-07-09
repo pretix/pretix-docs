@@ -5,7 +5,7 @@ We just created an organizer account and our personal account at the same time.
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
-This entails: 
+We are going to take the following steps: 
 
  - adding contact information on the "general" tab
  - choosing language and localization options on the "localization" tab 
@@ -23,30 +23,29 @@ We can always come back to adjust the organizer account settings later, in case 
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), we are greeted by the dashboard. 
+We can always come back to this page by clicking the :btn:pretix.eu: button in the bar at the top. 
 Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
-![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. 
-There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
+![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
 Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer.
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-We are now going to click :btn:Settings: in the sidebar to set up our organizer account. 
-This lands us on the general settings page for the organizer account. 
+We are now going to click :btn:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
 
 ## General 
 
 ![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
 The fields for "name" and "short form" are already filled out. 
-It is not possible to change the short form since it is the organizer's unique identifier. 
+It is not possible to change the short form because it is the organizer's unique identifier. 
 
 Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field.
 
 !!! Note
 
-    Even if you are not operating in Germany, we require all pretix Hosted customers to enter a valid imprint URL that points to information on who is reponsible for the published ticket shop.
+    Even if you are not operating in Germany, we require all pretix Hosted customers to enter a valid imprint URL that points to information on who is responsible for the published ticket shop.
 
 We will enter a valid email address into the "contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
@@ -78,11 +77,12 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 
 ## Organizer page 
 
-![Organizer settings page, on the organizer page tab, showing an upload button and options for the header image as well as fields for the homepage text in English and German](../assets/screens/organizer/organizer-page.png) 
+![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text in multiple languages. The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
 Switching to the "organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
+
 Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
-An organizer page created with pretix Hosted will always be located at https://pretix.eu/[OrganizerShortForm]/.
+An organizer page created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/.
 The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
 
 By default, the name of the organizer will be displayed in the page header of our page.
@@ -90,8 +90,6 @@ The organizer page settings allow us to replace the name with a header image tha
 We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels from our computer. 
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
-
-![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text in multiple languages. The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
 In the "homepage text" fields, we can provide text to be displayed on our public profile. 
 There is one field for each language we activated in the "localization" tab (see the "localization" segment of this article)—English and German (informal). 
@@ -102,11 +100,6 @@ Our public profile will allow the viewer to switch between those languages via t
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
 On the "privacy" tab, we can provide an URL pointing to our privacy policy for each language we activated. 
-The default dialog text and button labels for the cookie consent banner should already be filled out, but can be adjusted if necessary. 
-
-pretix itself only ever sets cookies that are essential for providing the service requested by the user or to maintain an appropriate level of security. 
-Therefore, cookies set by pretix itself do not require consent in any jurisdiction we are aware of. 
-The settings on the "privacy" tab will only have an effect if we use plugins that require additional cookies and participate in our cookie consent mechanism.
 
 !!! Warning 
 
@@ -120,7 +113,7 @@ The settings on the "privacy" tab will only have an effect if we use plugins tha
 Our organizer account has to be activated before any of our ticket shops can go live. 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-To enter this information, we are going to navigate to [Organizer]→"Settings"→"Billing settings". 
+To enter this information, we are going to navigate to [Organizer] → "Settings" → "Billing settings". 
 The topmost field on the "general" tab is labeled "primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.

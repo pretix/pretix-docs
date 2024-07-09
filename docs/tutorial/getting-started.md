@@ -9,7 +9,7 @@ This page focuses on the easier way to use our cloud-based pretix Hosted offerin
 If you have pretix installed on your server, you can directly skip to the next chapter.
 
 Before we are able to do anything with pretix, we have to create an account. 
-The good news is: creating an account is __completely free__ of charge and does not come with any obligation to pay money for the use of pretix in the future. 
+Good news: creating an account is __completely free__ of charge and does not come with any obligation to pay money for the use of pretix in the future. 
 We are free to play around with the pretix software to our heart's content before deciding whether pretix is the right choice for us. 
 Costs will only occur when selling actual tickets.
 
@@ -44,8 +44,8 @@ The "full name" field is meant for the name of the company, association, or inst
 The "address short form" field is for a short form of the organization's name. 
 This short form will be used for the URL under which our events can be found. 
 For this tutorial, we are going to create an account for our Tutorial Organization. 
-So we will enter "Tutorial Organization" into the full name field, and "ex-org" into the address short form field. 
-This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org/) in the future. 
+So we will enter "Tutorial Organization" into the full name field, and "tut" into the address short form field. 
+This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/tut/](https://pretix.eu/tut/) from now on. 
 
 There is no need to create a dedicated test account or use the word "test" anywhere in the short form or name. 
 pretix offers a test mode that allows our organizer and events to remain invisible to the public, but still gives us access to all functions and settings. 
