@@ -114,7 +114,7 @@ Our organizer account has to be activated before any of our ticket shops can go 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
 To enter this information, we have to navigate to the billing settings. 
-"Billing settings" is one of the entries nested underneath ":icon:fontawesome-solid-wrench: Settings" in the sidebar on the left. 
+"Billing settings" is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
 It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
 
 The topmost field on the "general" tab is labeled "primary contact person". 
