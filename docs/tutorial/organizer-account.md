@@ -69,7 +69,7 @@ We are going to activate "English" and "German (informal)" for our example confe
 
 {% include "note-translations.md" %}
 
-We are going to choose Germany from the drop-down "region" menu. 
+We are going to choose Germany from the drop-down "region" menu near the bottom of the page. 
 The selection will be used to determine default formats for dates, times, addresses and phone numbers. 
 We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu with that title. 
 
