@@ -22,7 +22,7 @@ That means our next step is to create a category for those extras.
 For that, we will navigate to our personal dashboard by clicking "pretix.eu" in the top left corner of the website. 
 We will then select our event in the list of "Your upcoming events", open ":fontawesome-solid-ticket: Products" in the sidebar and click the "Categories" subentry. 
 This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
-We will click the :btn:+ Create a new category: button and give the category a name such as "Extras". 
+We will click the :btn-icon:fontawesome-solid-plus: Create a new category: button and give the category a name such as "Extras". 
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
 
 ## Creating and editing products
@@ -87,7 +87,7 @@ For more information on vouchers, see [vouchers](../topics/vouchers.md)
 ![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../assets/screens/products/products.png "Product variations screenshot") 
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
-For that, we will navigate to the products page and click the :btn:+ Create a new product: button. 
+For that, we will navigate to the products page and click the :btn-icon:fontawesome-solid-plus: Create a new product: button. 
 We will name the product "Sticker", set it to "non-admission product" and put it in the "Extras" category. 
 Under "product variations", we will select "product with multiple variations". 
 We will set the default price to €5.00. 
