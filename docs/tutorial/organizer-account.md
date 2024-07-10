@@ -113,7 +113,10 @@ On the "privacy" tab, we can provide an URL pointing to our privacy policy for e
 Our organizer account has to be activated before any of our ticket shops can go live. 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-To enter this information, we are going to navigate to [Organizer] → "Settings" → "Billing settings". 
+To enter this information, we have to navigate to the billing settings. 
+"Billing settings" is one of the entries nested underneath ":icon:fontawesome-solid-wrench: Settings" in the sidebar on the left. 
+It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
+
 The topmost field on the "general" tab is labeled "primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
