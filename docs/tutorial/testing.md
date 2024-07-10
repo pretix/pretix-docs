@@ -22,7 +22,7 @@ We will now place an order for a standard ticket and a discount ticket, follow t
 During checkout, we will choose credit card as the payment method, which should currently display a note stating that the Stripe plugin is operating in test mode. 
 We will use the credit card data for one of the test cards [listed by Stripe](https://docs.stripe.com/testing#cards) to issue a fake payment for our order. 
 
-We will now open pretix.eu and navigate to [Event] → "Orders". 
+We will now open pretix.eu, navigate to our event and click ":icon:fontawesome-solid-cart-shopping: Orders" in the sidebar. 
 This page displays a list of orders. 
 If our test has been successful, the list now contains the test order we just placed. 
 The order should have the status ":material-check: Paid". 
@@ -42,7 +42,7 @@ However, we are going to make sure that our shop is exactly in the state we want
 ![Page titled 'Shop status', displaying a box warning about which conditions are not met yet for the shop to go live and options to disable test mode and delete all test mode orders.](../assets/screens/testing/shop-status.png "Shop status screenshot") 
 
 To make sure that only real orders from actual customers appear in our shop from this point onwards, we have to delete the orders we just placed in test mode. 
-For that, we will navigate to [Event] → "TEST MODE". 
+For that, we will navigate to our event and click the ":icon:fontawesome-solid-triangle-exclamation: TEST MODE" entry in the sidebar which is highlighted in orange. 
 We will check the box labeled "permanently delete all orders created in test mode" and click the :btn:Disable test mode: button. 
 
 ## Conclusion 

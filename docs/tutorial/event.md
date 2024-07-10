@@ -98,7 +98,7 @@ Thus, this warning may persist for a while even if all necessary information has
 
 We are planning to print badges for our attendees during the conference. 
 That means we have to record their name and affiliation during purchase. 
-While we are viewing the event-level dashboard, we will click on ":icon:fontawesome-solid-wrench: Settings" in the sidebar, which lands us on the general settings page for the event. 
+While we are viewing the event-level dashboard, we will click ":icon:fontawesome-solid-wrench: Settings" in the sidebar, which lands us on the general settings page for the event. 
 We will open the "customer and attendee data" tab at the top. 
 Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking certain information for every ticket purchased.  
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
