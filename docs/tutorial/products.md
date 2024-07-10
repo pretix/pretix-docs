@@ -118,7 +118,7 @@ The list also displays the total capacity and how many items are left for each q
 ![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../assets/screens/products/quotas.png "Quotas screenshot") 
 
 First, we will edit a quota for our standard and discount tickets. 
-We will click the :btn::material-pencil-box-outline:: button next to the "regular ticket" quota in the list. 
+We will click the :btn-icon:fontawesome-solid-pen-to-square: Change: button next to the "regular ticket" quota in the list. 
 We are also going to rename this quota to "Standard and discount ticket" to avoid confusion. 
 The "Standard ticket" should already be checked in the list of products. 
 We will also check the "Discount ticket" in the list and change the capacity to 1900 because that is the maximum amount of tickets of these types that we want to sell. 
