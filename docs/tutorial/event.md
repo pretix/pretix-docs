@@ -2,7 +2,7 @@
 
 After setting up an organizer account, the next step is creating an event. 
 This article describes the creation and basic setup of an event. 
-In this article, we will: 
+Here is a quick summary of the steps we are going to take in this section: 
 
  - create an event
  - get an overview of the event's status on the dashboard
