@@ -48,7 +48,7 @@ We will also select the appropriate tax rate of 19% from the "sales tax" dropdow
 We will now create the discount ticket based on the "standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
 The "reduced ticket" is not needed anymore. 
-We will navigate to the products page, click the red delete button labeled :btn-icon:fontawesome-solid-trash: next to the reduced ticket, and confirm that we want to delete it. 
+We will navigate to the products page, click the red delete button labeled :btn-icon:fontawesome-solid-trash:: next to the reduced ticket, and confirm that we want to delete it. 
 Back on the product overview, we will click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Discount ticket", provide a translation, change the "default price" to €120.00, and click the :btn:Save: button. 
 
@@ -98,7 +98,7 @@ This tab will only be displayed if we selected "product with multiple variations
 There should be one variant called "Standard" here. 
 We will click the name to expand the settings for that variant and change the name to "Purple". 
 It is not necessary to change any other settings here. 
-Then, we will scroll down and click the :btn:+ Add a new variation: button. 
+Then, we will scroll down and click the :btn-icon:fontawesome-solid-plus: Add a new variation: button. 
 We will name this new variant "Black" and keep the other settings the way they are. 
 We will repeat the same process for the "Glitter" variant and set the "default price" option for that variant to €7.50. 
 Then, we will click :btn:Save:. 
@@ -126,14 +126,14 @@ We will leave the rest of the settings unchanged and click the :btn:Save: button
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
 Our speaker ticket needs to be assigned to a quota, too. 
-We will now navigate back to the quotas page and click the :btn:+ Create a new quota: button. 
+We will now navigate back to the quotas page and click the :btn-icon:fontawesome-solid-plus: Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
 
 ### Quotas for variants 
 
 Our sticker product needs three different quotas: one for each product variant. 
-We will navigate back to the quotas page and click the :btn:+ Create a new quota: button. 
+We will navigate back to the quotas page and click the :btn-icon:fontawesome-solid-plus: Create a new quota: button. 
 We will call the new quota "Sticker purple" and set the total capacity to 100 because that is the number of stickers in that color that we're going to sell. 
 Then, we will select "Sticker - Purple" in the list of products. 
 The purple sticker is not an admission ticket but an additional product that can be purchased in the same shop. 
