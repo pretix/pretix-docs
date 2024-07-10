@@ -43,6 +43,9 @@ In our case, this results in the following URL: [https://pretix.eu/tut/tutcon27]
 
 {% include "note-short-form.md" %}
 
+Just like the name and short form, the start time for our event is mandatory information. 
+We are going to enter the fourth of June, 2027, into the start time field. 
+
 Since we already know the location for our event, we're going to put that location into pretix now. 
 This information is optional and can still be changed later. 
 Our input into the "location" field will be used to search OpenStreetMap for that location. 
@@ -51,8 +54,8 @@ If no results can be found for the input, the marker on the map can be dragged t
 This will automatically update the "geo coordinates" fields. 
 Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the coordinates over to the "geo coordinates" fields. 
 
-Just like the name and short form, the start time and the currency for our event are mandatory information. 
-We're going to enter the fourth of June, 2027, into the start time field and we're going to choose the Euro in the currency drop-down menu. 
+We have to choose a currency for our event. 
+We are going to select the Euro from the currency drop-down menu. 
 
 This page also allows us to set a sales tax rate for our event. 
 Taxation rules can also be changed after event creation is finished. 
