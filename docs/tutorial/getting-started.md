@@ -2,6 +2,9 @@
 
 Welcome to the pretix tutorial. 
 In this tutorial, we will go through all the necessary steps for hosting our very first event using pretix.
+For illustrative purposes, we will create a straightforward conference. 
+We will use specific examples for our organizer, event, products, as well as the names and prices thereof. 
+Feel free to replace these examples with your own as you create your event according to your specific needs. 
 
 pretix is open source software and can be used either in the cloud or on your own server.
 Running pretix on your own server requires in-depth technical knowledge and is described on our [Administrator documentation](https://docs.pretix.eu/en/latest/admin/index.html).
