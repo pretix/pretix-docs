@@ -93,6 +93,7 @@ We will set the default price to €5.00.
 Then, we will click :btn:Save and continue with more settings:. 
 
 Next, we will click on the "Variations" tab. 
+This tab will only be displayed if we selected "product with multiple variations" during the creation of the product. 
 There should be one variant called "Standard" here. 
 We will click the name to expand the settings for that variant and change the name to "Purple". 
 It is not necessary to change any other settings here. 
