@@ -50,6 +50,12 @@ Since we are operating from Germany and thus required by law to include certain 
 We will enter a valid email address into the "contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
 
+It is not necessary to touch all the settings displayed on this page. 
+This is also true for most of the pages that we are going to visit for this tutorial. 
+pretix is a very powerful tool offering lots of detailed adjustments and tweaks. 
+This tutorial includes all the mandatory steps. 
+If a setting is not mentioned, then that means that it is not necessary to interact with that setting. 
+
 Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
 ## Localization 
