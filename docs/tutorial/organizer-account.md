@@ -83,7 +83,7 @@ Switching to the "organizer page" tab at the top allows us to add our logo and c
 
 Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/.
-The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
+The shop we are creating for this tutorial is located at [https://pretix.eu/tut/](https://pretix.eu/tut).
 
 By default, the name of the organizer will be displayed in the page header of our page.
 The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
