@@ -26,7 +26,7 @@ You can do that by browsing to [Your event] → "Settings" → "Tax rules", clic
 The organizer page has general settings for gift cards. 
 Both of these settings only apply to gift cards issued **after** they have been saved. 
 They do **not** apply retroactively to previously created gift cards. 
-It therefore makes sense to finalize your decisions on these settings before you sell or manually issue any gift cards. 
+It therefore makes sense to read this subsection and finalize your decisions on these settings before you sell or manually issue any gift cards. 
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
@@ -40,15 +40,21 @@ This field is empty by default, meaning gift cards will remain valid indefinitel
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
 
-### Offering 
+### Creating a gift card for selling it in your shop
 
-If you want to sell gift cards in your shop, you can simply create them just like any other product. 
+If you want to sell gift cards in your shop, you can create them just like any other product. 
 Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
 Choose "Non-admission product" as the "Product type" and a 0.00% tax rule as the "Sales tax" option. 
 After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card" and click :btn:Save:. 
 If you check the box next to "Free price input", the value of the gift card will be the same as the price that the customer chooses to pay for it. 
 
 Create a new quota, add the gift card to it and check the box next to "Ignore this quota when determining event availability". 
+
+### Using gift cards for refunds 
+
+pretix can automatically issue gift cards as a method for refunds. 
+If you want to use this feature, navigate to [Your event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
+Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 
 ### Manually issuing gift cards
 
