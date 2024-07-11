@@ -77,7 +77,14 @@ A test mode card will only work in test mode and a non-test mode card will only 
 
 ### Products (event level)
 
- - creating a new gift card product
+If you want to sell gift cards in your shop, you can simply create them just like any other product. 
+Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
+Choose "Non-admission product" as the "Product type" and a 0.00% tax rule as the "Sales tax" option. 
+After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card" and click :btn:Save:. 
+If you check the box next to "Free price input", the value of the gift card will be the same as the price that the customer chooses to pay for it. 
+
+Create a new quota, add the gift card to it and check the box next to "Ignore this quota when determining event availability". 
+
 
 ### Payment (event level)
 
