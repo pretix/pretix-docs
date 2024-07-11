@@ -36,7 +36,23 @@ The default is 12 digits, the minimum length is 6 digits, and the maximum length
 
 ### Gift cards entry in the sidebar (organizer level)
 
- - manually issuing gift cards
+You may want to manually issue a single gift card, for example as accommodation for an individual customer. 
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and clicking the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
+
+!!! Warning 
+    Once a gift card has been created, it cannot be deleted. 
+    If you are just trying out this feature, make sure to check the box next to "Test mode card". 
+    This makes the gift card only valid in test mode of your shop. 
+    Do not issue gift cards with secrets that can be easily guessed outside of test mode. 
+
+The "Gift card code" field will already be filled out with a randomly generated code, but you can change that code to your liking. 
+Any code you enter here manually must be between 2 and 190 digits in length and may only contain Latin letters, numbers, dots and dashes.
+Diacritic symbols such as umlauts and accents are not supported. 
+You have to specify a "Gift card value" larger than zero in the currency of your choice. 
+If you want to create a gift card for test mode, check the box next to "Test mode card". 
+If you want to create a gift card for the live shop, do not check that box. 
+A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
+
  - gift card acceptance
    - Other organizers you accept gift cards from
    - Other organizers accepting gift cards from you :btn:Invite new organizer:
