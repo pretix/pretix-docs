@@ -29,12 +29,28 @@ Navigate to [Your organizer] :fontawesome-solid-arrow-right: "Settings" :fontawe
 This page allows you to make organizer-level settings for gift cards. 
 You can choose how many years gift cards are valid for. 
 If you enter a number here, then gift cards will expire after the specified period has passed at the end of the calendar year. 
+For example, if you enter 0 into the field and then create a gift card in the year 2024, then the gift card will be valid until midnight of December 31st, 2024. 
 This field is empty by default, meaning gift cards will remain valid indefinitely. 
 
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
 
-### Gift cards entry in the sidebar (organizer level)
+Both of these settings only apply to gift cards issued **after** these settings have been saved. 
+They do not apply retroactively to previously created gift cards. 
+
+### Accepting gift cards across different organizers
+
+It is possible for other organizer accounts to accept gift cards issued by you. 
+This feature is opt-in. 
+You can invite an organizer to accept your gift cards. 
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
+Enter the organizer's short form into the field and click :btn:Save:. 
+The organizer will then be listed on the acceptance settings page with the status "invited". 
+The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
+If they accept your invitation, the page will display their status as "active". 
+You can retract the invitation or remove their ability to accept your gift cards via the :btn:Remove: button. 
+
+### Manually issuing gift cards
 
 You may want to manually issue a single gift card, for example as accommodation for an individual customer. 
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and clicking the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
