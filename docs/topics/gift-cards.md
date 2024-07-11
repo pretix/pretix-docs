@@ -44,13 +44,17 @@ The default is 12 digits, the minimum length is 6 digits, and the maximum length
 
 It is possible for other organizer accounts to accept gift cards issued by you. 
 By default, gift cards issued by your organizer account will also only be accepted by your organizer account. 
-However, you can invite an organizer to accept your gift cards. 
+However, you can invite another organizer to accept your gift cards. 
+
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
 The organizer will then be listed on the acceptance settings page with the status "invited". 
 The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
 If they accept your invitation, the page will display their status as "active". 
 You can retract the invitation or remove their ability to accept your gift cards via the :btn:Remove: button. 
+
+If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
+Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
 
 ### Manually issuing gift cards
 
@@ -70,10 +74,6 @@ You have to specify a "Gift card value" larger than zero in the currency of your
 If you want to create a gift card for test mode, check the box next to "Test mode card". 
 If you want to create a gift card for the live shop, do not check that box. 
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
-
- - gift card acceptance
-   - Other organizers you accept gift cards from
-   - Other organizers accepting gift cards from you :btn:Invite new organizer:
 
 ### Products (event level)
 
