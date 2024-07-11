@@ -21,7 +21,12 @@ You can do that by browsing to [Your event] → "Settings" → "Tax rules", clic
 
 ## How To
 
-### Organizer settings—gift cards tab
+### Gift card settings
+
+The organizer page has general settings for gift cards. 
+Both of these settings only apply to gift cards issued **after** these settings have been saved. 
+They do not apply retroactively to previously created gift cards. 
+It therefore makes sense to finalize your decisions on these settings before you sell or manually issue any gift cards. 
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
@@ -35,14 +40,11 @@ This field is empty by default, meaning gift cards will remain valid indefinitel
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
 
-Both of these settings only apply to gift cards issued **after** these settings have been saved. 
-They do not apply retroactively to previously created gift cards. 
-
 ### Accepting gift cards across different organizers
 
 It is possible for other organizer accounts to accept gift cards issued by you. 
-This feature is opt-in. 
-You can invite an organizer to accept your gift cards. 
+By default, gift cards issued by your organizer account will also only be accepted by your organizer account. 
+However, you can invite an organizer to accept your gift cards. 
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
 The organizer will then be listed on the acceptance settings page with the status "invited". 
