@@ -40,21 +40,15 @@ This field is empty by default, meaning gift cards will remain valid indefinitel
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
 
-### Accepting gift cards across different organizers
+### Products (event level)
 
-It is possible for other organizer accounts to accept gift cards issued by you. 
-By default, gift cards issued by your organizer account will also only be accepted by your organizer account. 
-However, you can invite another organizer to accept your gift cards. 
+If you want to sell gift cards in your shop, you can simply create them just like any other product. 
+Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
+Choose "Non-admission product" as the "Product type" and a 0.00% tax rule as the "Sales tax" option. 
+After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card" and click :btn:Save:. 
+If you check the box next to "Free price input", the value of the gift card will be the same as the price that the customer chooses to pay for it. 
 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
-Enter the organizer's short form into the field and click :btn:Save:. 
-The organizer will then be listed on the acceptance settings page with the status "invited". 
-The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
-If they accept your invitation, the page will display their status as "active". 
-You can retract the invitation or remove their ability to accept your gift cards via the :btn:Remove: button. 
-
-If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
-Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
+Create a new quota, add the gift card to it and check the box next to "Ignore this quota when determining event availability". 
 
 ### Manually issuing gift cards
 
@@ -76,19 +70,25 @@ If you want to create a gift card for the live shop, do not check that box.
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
 The gift card is created once you click :btn:Save:. 
 
-### Products (event level)
-
-If you want to sell gift cards in your shop, you can simply create them just like any other product. 
-Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
-Choose "Non-admission product" as the "Product type" and a 0.00% tax rule as the "Sales tax" option. 
-After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card" and click :btn:Save:. 
-If you check the box next to "Free price input", the value of the gift card will be the same as the price that the customer chooses to pay for it. 
-
-Create a new quota, add the gift card to it and check the box next to "Ignore this quota when determining event availability". 
-
 ### Payment (event level)
 
  - settings for gift cards as a payment method
+
+### Accepting gift cards across different organizers
+
+It is possible for other organizer accounts to accept gift cards issued by you. 
+By default, gift cards issued by your organizer account will also only be accepted by your organizer account. 
+However, you can invite another organizer to accept your gift cards. 
+
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
+Enter the organizer's short form into the field and click :btn:Save:. 
+The organizer will then be listed on the acceptance settings page with the status "invited". 
+The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
+If they accept your invitation, the page will display their status as "active". 
+You can retract the invitation or remove their ability to accept your gift cards via the :btn:Remove: button. 
+
+If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
+Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
 
 ### Devaluing gift cards 
 
