@@ -24,13 +24,13 @@ You can do that by browsing to [Your event] → "Settings" → "Tax rules", clic
 ### Gift card settings
 
 The organizer page has general settings for gift cards. 
-Both of these settings only apply to gift cards issued **after** these settings have been saved. 
-They do not apply retroactively to previously created gift cards. 
+Both of these settings only apply to gift cards issued **after** they have been saved. 
+They do **not** apply retroactively to previously created gift cards. 
 It therefore makes sense to finalize your decisions on these settings before you sell or manually issue any gift cards. 
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "General" and open the "Gift cards" tab.
+Navigate to [Your organizer] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "General" and open the "Gift cards" tab. 
 This page allows you to make organizer-level settings for gift cards. 
 You can choose how many years gift cards are valid for. 
 If you enter a number here, then gift cards will expire after the specified period has passed at the end of the calendar year. 
@@ -74,6 +74,7 @@ You have to specify a "Gift card value" larger than zero in the currency of your
 If you want to create a gift card for test mode, check the box next to "Test mode card". 
 If you want to create a gift card for the live shop, do not check that box. 
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
+The gift card is created once you click :btn:Save:. 
 
 ### Products (event level)
 
@@ -85,10 +86,20 @@ If you check the box next to "Free price input", the value of the gift card will
 
 Create a new quota, add the gift card to it and check the box next to "Ignore this quota when determining event availability". 
 
-
 ### Payment (event level)
 
  - settings for gift cards as a payment method
+
+### Devaluing gift cards 
+
+Once a gift card has been issued, be it automatically or manually, it cannot be deleted. 
+If you have erroneously created a gift card and want to make sure that it cannot be used for payment, you have to manually devalue it. 
+In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and click the gift card in question in the list. 
+Note down the reason for the devaluing in the text field in the "Information" column.
+The gift card's "Current value" is displayed in the "Details" box. 
+Enter the current value's negative in the "Value" field. 
+For example, for an erroneously created gift card worth €92.50, enter "-92.50" and click the :btn-icon:fontawesome-solid-plus:: button. 
+That will add a new entry to the list of transactions and change the current value of the gift card to €0.00, meaning it cannot be used for payment. 
 
 ## Troubleshooting
 
