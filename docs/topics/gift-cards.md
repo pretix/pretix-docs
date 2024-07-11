@@ -1,7 +1,6 @@
 # Gift Cards
 
 Gift cards are a type of product you sell in one of your shops, which customers can then use as a payment method for another purchase in one of your shops.
-Gift cards are a product.
 Gift cards are a payment method and can be enabled or disabled like any other payment provider.
 The only difference is that there is no dedicated plugin for gift cards since gift cards are part of the core functionality of the pretix software.
 
@@ -11,7 +10,7 @@ Unlike vouchers, gift cards can be used across different events and organizers a
 
 ## Prerequisites
 
-Gift cards have to be enabled as a payment method.
+Gift cards have to be enabled as a payment method for an event.
 They are enabled by default.
 If they are not enabled, you can change that by browsing to [Your event] → "Settings" → "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
 
@@ -26,14 +25,21 @@ You can do that by browsing to [Your event] → "Settings" → "Tax rules", clic
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-The gift cards tab lets you make organizer-level settings for gift cards. You can choose how many years gift cards are valid for. This field is empty by default, meaning gift cards will be valid in your shop indefinitely. You can also choose how long the gift card codes are. The default is 12 digits and you can leave this as it is unless you have a specific reason.
+Navigate to [Your organizer] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "General" and open the "Gift cards" tab.
+This page allows you to make organizer-level settings for gift cards. 
+You can choose how many years gift cards are valid for. 
+If you enter a number here, then gift cards will expire after the specified period has passed at the end of the calendar year. 
+This field is empty by default, meaning gift cards will remain valid indefinitely. 
+
+This page also lets you choose how long gift card codes issued in your shop will be. 
+The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
 
 ### Gift cards entry in the sidebar (organizer level)
 
  - manually issuing gift cards
  - gift card acceptance
    - Other organizers you accept gift cards from
-   -  Other organizers accepting gift cards from you :btn:Invite new organizer:
+   - Other organizers accepting gift cards from you :btn:Invite new organizer:
 
 ### Products (event level)
 
