@@ -40,7 +40,7 @@ This field is empty by default, meaning gift cards will remain valid indefinitel
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
 
-### Products (event level)
+### Offering 
 
 If you want to sell gift cards in your shop, you can simply create them just like any other product. 
 Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
@@ -70,9 +70,17 @@ If you want to create a gift card for the live shop, do not check that box.
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
 The gift card is created once you click :btn:Save:. 
 
-### Payment (event level)
+### Accepting gift cards as a payment method 
 
- - settings for gift cards as a payment method
+Any gift card issued through your organizer account will be valid for every event created by that organizer account. 
+The gift card payment method is enabled by default for any newly created event. 
+In your shops, the option for paying via gift card is hidden by default. 
+This changes as soon as the first gift card is issued through your organizer account, be it manually or automatically. 
+
+You can find the settings for gift cards as a payment method by navigating to [Your event] → "Settings" → "Payment" and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
+Here, you can restrict the availability of the payment method by date, sales channel, and territory, just like you can with any other payment method. 
+If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
+Note that these settings apply on the event level, so they have to be changed for each event individually. 
 
 ### Accepting gift cards across different organizers
 
