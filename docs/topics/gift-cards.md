@@ -4,7 +4,7 @@ Gift cards are a type of product you sell in one of your shops, which customers 
 Gift cards are a payment method and can be enabled or disabled like any other payment provider.
 The only difference is that there is no dedicated plugin for gift cards since gift cards are part of the core functionality of the pretix software.
 
-Gift cards are not to be confused with vouchers.
+Gift cards are not to be confused with [vouchers](vouchers.md).
 Unlike vouchers, gift cards always represent a fixed amount of money that is subtracted from the total of the order.
 Unlike vouchers, gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products
 
@@ -104,25 +104,26 @@ You can retract the invitation or remove their ability to accept your gift cards
 If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
 Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
 
+## Troubleshooting
+
 ### Devaluing gift cards 
 
 Once a gift card has been issued, be it automatically or manually, it cannot be deleted. 
 If you have erroneously created a gift card and want to make sure that it cannot be used for payment, you have to manually devalue it. 
 In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and click the gift card in question in the list. 
+
 Note down the reason for the devaluing in the text field in the "Information" column.
 The gift card's "Current value" is displayed in the "Details" box. 
 Enter the current value's negative in the "Value" field. 
 For example, for an erroneously created gift card worth €92.50, enter "-92.50" and click the :btn-icon:fontawesome-solid-plus:: button. 
 That will add a new entry to the list of transactions and change the current value of the gift card to €0.00, meaning it cannot be used for payment. 
 
-## Troubleshooting
-
-What are common problems that could be encountered here? How do you solve them?
+The same process can be used for increasing or decreasing the value of a gift card if it has been created with the wrong value. 
 
 ## Further Information
 
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
+ - [pretix Tutorial: Geschenkgutscheine (German) on YouTube](https://www.youtube.com/watch?v=ZEnXy2SXNsc)
 
 ## See Also
 
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information.
+ - [Payment](payment/index.md) 
