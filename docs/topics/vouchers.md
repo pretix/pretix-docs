@@ -35,16 +35,16 @@ This is useful for when you are planning to publish a single voucher code for mu
 The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
 This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
 
-The :tbn-icon:fontawesome-solid-download: Download: button lets you download a .csv file of the full list of vouchers you have created. 
+The :btn-icon:fontawesome-solid-download: Download: button lets you download a .csv file of the full list of vouchers you have created. 
 This is useful for when you want to make a backup of your vouchers, distribute them via a different channel than the pretix-native emailer, or re-use the same type of vouchers for a different event. 
 
-The :fontawesome-solid-upload:Import vouchers: button lets you upload such a list after saving it from a different event. 
+The :btn-icon:fontawesome-solid-upload: Import vouchers: button lets you upload such a list after saving it from a different event. 
 This function is meant for importing a single type of voucher. 
 If you have saved the full list of vouchers from a different event and it includes more than one type of voucher, then it is advisable to split the .csv file according to type and import each part individually. 
 
 Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file on your computer. 
 
-If you have checked the box next to "Send vouchers via email" and entered email addresses in the Recipients field, make sure that you are happy with the subject line and message text previews before you click :btn:Save. 
+If you have checked the box next to "Send vouchers via email" and entered email addresses in the Recipients field, make sure that you are happy with the subject line and message text previews before you click :btn:Save:. 
 The emails will be sent out as soon as you click the :btn:Save: button. 
 
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
