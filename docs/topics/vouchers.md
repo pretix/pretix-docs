@@ -24,10 +24,10 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 ## How To 
 
-![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
-
 The settings page for vouchers is located at [Your Event] → "Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
+
+![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
 This is useful for when you are planning to publish a single voucher code for multiple people to use. 
@@ -57,9 +57,9 @@ Those applications will be explained in the following subsections.
 
 ### Offering a limited discount 
 
-![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
-
 This subsection explains how to create a voucher code for a limited time discount to attract more customers to your shop. 
+
+![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
 The voucher code has already been filled out automatically, but you can change it and provide your own as long as it is at least five characters in length. 
@@ -117,15 +117,3 @@ You can still use this method without worrying about that if you select a specif
 For the other method, check the box next to "Allow to bypass quota" instead. 
 This gives voucher holders access to tickets even if all corresponding quotas are already sold out. 
 You should choose this method over the other one if you selected one of the "Any product in quota" options under "Product" and the products are part of more than one quota with limited capacity. 
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
-## Further Information
-
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
