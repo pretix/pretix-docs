@@ -24,6 +24,8 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 ## How To 
 
+![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
+
 The settings page for vouchers is located at [Your Event] → "Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
 
@@ -55,6 +57,8 @@ Those applications will be explained in the following subsections.
 
 ### Offering a limited discount 
 
+![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
+
 This subsection explains how to create a voucher code for a limited time discount to attract more customers to your shop. 
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
@@ -76,6 +80,8 @@ Open the "Availability" tab and check the box next to "This product can only be 
 The visibility toggle next to that options allows you to choose whether the product should still be displayed in your shop even to customers who do not have a voucher code. 
 Next, create a quota, add only this product to it and set the total capacity so that it covers the number of emails you are planning to send out. 
 
+![Page titled Create multiple vouchers, showing options for creating multiple voucher codes.](../assets/screens/vouchers/create-multiple.png)
+
 Then, navigate to [Your Event] → "Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
 Generate the same number of voucher codes as emails you are planning to send out. 
 Under "Product", choose the product for which you want to restrict availability. 
@@ -83,6 +89,8 @@ If you have set the visibility toggle of the product to hidden, check the box ne
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
 An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
 This allows voucher holders to freely choose as many add-on products as they like on top of their tickets. 
+
+![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
 Check the box next to "Send vouchers via email" in order to display the email settings. 
 You can save your invited guests one step by including the placeholder {voucher_url_list} in the "Message" text. 
@@ -96,6 +104,8 @@ Navigate to [Your Event] → "Vouchers", click the :btn-icon:fontawesome-solid-p
 Optionally, you may choose a descriptive prefix such as "guest-list-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
 This means that the voucher will entitle each holder to one basic admission ticket for free. 
+
+![Page titled Create multiple vouchers, highlighted are the options for reserving tickets from a quota and bypassing quotas.](../assets/screens/vouchers/create-multiple-reserve.png)
 
 There are two methods for ensuring access to tickets for the voucher holders: reserving tickets from a quota or allowing them to bypass quotas. 
 For the first option, check the box next to "Reserve ticket from quota". 
