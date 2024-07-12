@@ -2,8 +2,9 @@
 
 Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
-The pretix software does not monitor payments arriving at your bank account. 
-Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+By default, the pretix software does not monitor payments arriving at your bank account. 
+If you are using pretix Hosted, you can use our integration with [GoCardless](https://gocardless.com) to automatically import bank data. 
+The alternatives for notifying the pretix software of incoming payments are: manually approving payments as complete, or regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
 It is also going to tell you how to notify the pretix software of incoming payments. 
 
@@ -21,13 +22,13 @@ Setting up bank transfer as a payment provider in pretix requires the following 
  3. Enter mandatory info on the bank transfer settings page 
  4. Make optional adjustments
  5. Enable payment via bank transfer
- 6. Monitor incoming payments and mark them as complete manually **or** regularly import a digital bank statement
+ 6. Set up monitoring via GoCardless **or** mark incoming payments as complete manually **or** regularly import a digital bank statement
 
 This section will guide you through those steps in detail. 
 
 ### Setting up bank transfers
 
-Navigate to [Your Event] → "Settings" → "Plugins". 
+Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Plugins". 
 Switch to the "payment providers" tab. 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
@@ -37,7 +38,7 @@ Make sure that the plugin is enabled.
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-Navigate to [Your Event] → "Settings" → "Payment". 
+Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Payment". 
 The "payment providers" tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
@@ -57,9 +58,22 @@ Bank transfers will now appear as a payment option for customers in your shop.
 
 There is no way for the pretix software to monitor payments arriving at your bank account. 
 Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
-This section is going to guide you through both options. 
+This section is going to guide you through all three options. 
 
-**Option A: importing bank data** 
+**Option A: automatic transaction import using GoCardless**
+
+<!-- md:hosted -->
+
+If you are using pretix Hosted, you can activate the automatic transaction report via pretix's integration with GoCardless. 
+Navigate to [Your Event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Automatic import". 
+
+![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
+
+Choose your region, bank and start date for importing transactions and click the :btn-icon:material-login: Connect with bank: button. 
+This takes you to a webpage on ob.gocardless.com which asks you to consent to your data being processed by GoCardless and to provide your bank login. 
+Complete the authorization process according to the instructions on the website. 
+
+**Option B: importing bank data** 
 
 Acquire an export of your bank account's transaction data. 
 The export has to be a file in the CSV or MT940 file format. 
@@ -81,22 +95,26 @@ Click the :btn:Start upload: button.
 The pretix software will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such an assignment could look like with a small example CSV file. 
 
-![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
+![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data CSV" )
 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Orders will be ignored if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
-You can intervene and make manual corrections here on this screen or by navigating to [Your Event] → "Orders". 
+You can intervene and make manual corrections here on this screen or by navigating to [Your Event] :fontawesome-solid-arrow-right: "Orders". 
 
-**Option B: approving payments manually** 
+**Option C: approving payments manually** 
 
-Navigate to [Your Event] → "Orders". 
+![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
+
+Navigate to [Your Event] :fontawesome-solid-arrow-right: "Orders". 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and paid via bank transfer, they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
 Click on the order code of one of the pending orders. 
 This takes you to the "order details" page for that order. 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fontawesome-solid-check:Mark as paid: button at the top of the order details page. 
+
+![Page titled Mark order as paid, showing options for changing the payment amount of  €250.00, payment date, and whether or not to notify the customer b email.](../../assets/screens/payment/order-mark-as-paid.png "Orders" )
 
 !!! Warning 
 
