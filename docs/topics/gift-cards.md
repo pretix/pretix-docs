@@ -42,6 +42,8 @@ The default is 12 digits, the minimum length is 6 digits, and the maximum length
 
 ### Creating a gift card for selling it in your shop
 
+![Page titled Modify product: Gift card, on the Additional settings tab, the box next to This product is a gift card is checked.](../assets/screens/products/gift-card.png)
+
 If you want to sell gift cards in your shop, you can create them just like any other product. 
 Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
 Choose "Non-admission product" as the "Product type" and a 0.00% tax rule as the "Sales tax" option. 
@@ -52,11 +54,15 @@ Create a new quota, add the gift card to it and check the box next to "Ignore th
 
 ### Using gift cards for refunds 
 
+![Page titled Cancellation settings, on the Paid orders tab, highlighted are the settings for Refund method, offering four options, two of them involving gift cards.](../assets/screens/gift-cards/refund.png)
+
 pretix can automatically issue gift cards as a method for refunds. 
 If you want to use this feature, navigate to [Your event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 
 ### Manually issuing gift cards
+
+![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
 
 You may want to manually issue a single gift card, for example as accommodation for an individual customer. 
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and clicking the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
@@ -83,6 +89,8 @@ The gift card payment method is enabled by default for any newly created event.
 In your shops, the option for paying via gift card is hidden by default. 
 This changes as soon as the first gift card is issued through your organizer account, be it manually or automatically. 
 
+![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
+
 You can find the settings for gift cards as a payment method by navigating to [Your event] → "Settings" → "Payment" and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
 Here, you can restrict the availability of the payment method by date, sales channel, and territory, just like you can with any other payment method. 
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
@@ -93,6 +101,8 @@ Note that these settings apply on the event level, so they have to be changed fo
 It is possible for other organizer accounts to accept gift cards issued by you. 
 By default, gift cards issued by your organizer account will also only be accepted by your organizer account. 
 However, you can invite another organizer to accept your gift cards. 
+
+![Page titled Invite organizer, showing a text input for the organizer's short form and a checkbox for allowing access to reusable media, both empty.](../assets/screens/gift-cards/invite-organizer.png)
 
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
@@ -111,6 +121,8 @@ Either way, it is your own responsibility to handle the exchange of money to off
 Once a gift card has been issued, be it automatically or manually, it cannot be deleted. 
 If you have erroneously created a gift card and want to make sure that it cannot be used for payment, you have to manually devalue it. 
 In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and click the gift card in question in the list. 
+
+![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
 
 Note down the reason for the devaluing in the text field in the "Information" column.
 The gift card's "Current value" is displayed in the "Details" box. 
