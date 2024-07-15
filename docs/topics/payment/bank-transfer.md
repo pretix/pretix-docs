@@ -65,13 +65,16 @@ This section is going to guide you through all three options.
 <!-- md:hosted -->
 
 If you are using pretix Hosted, you can activate the automatic transaction report via pretix's integration with GoCardless. 
-Navigate to [Your Event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Automatic import". 
+Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Automatic import". 
 
 ![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
 Choose your region, bank and start date for importing transactions and click the :btn-icon:material-login: Connect with bank: button. 
 This takes you to a webpage on ob.gocardless.com which asks you to consent to your data being processed by GoCardless and to provide your bank login. 
 Complete the authorization process according to the instructions on the website. 
+You will then be redirected to the pretix backend. 
+Select the bank connections that you want to process, choose a start date for importing transactions and confirm by clicking the :btn:Connect to bank: button. 
+If you now browse back to the "Automatic import" page, It will display the bank connections you selected on the previous page as connected. 
 
 **Option B: importing bank data** 
 
@@ -119,7 +122,7 @@ If your bank account's transaction data has a record that matches the order in q
 !!! Warning 
 
     Before confirming the order as paid, make absolutely sure that you have the correct order, the correct price, and the correct date. 
-    An order that has been marked as paid once cannot be marked as not paid/pending. 
+    Once an order has been marked as paid, it cannot be marked as not paid/pending. 
 
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
@@ -127,3 +130,18 @@ You can prevent this by unchecking the box next to "notify customer by email".
 Confirm by clicking the :btn:Create payment" button. 
 This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully." and a green tag in the top right saying "✓ Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
+
+### Handling unresolved transactions 
+
+Options A and B described above may sometimes yield unresolved transactions. 
+The most frequent cause for this is a mistyped or missing order number in the reference line. 
+pretix allows you to resolve these transactions manually. 
+Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Import bank data". 
+If there are unresolved transactions, they will be displayed on this page under a list titled "Unresolved transactions". 
+For every transaction in this list, you have two options: 
+Either you delete it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you search for a matching order and assign the order code to the transaction.
+In order to do that, open a new browser tab and navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders". 
+Search the list for an order that matches the parameters of the unresolved transaction. 
+Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
+Repeat this process for all unresolved orders. 
+Delete them only if they have nothing to do with the event you are hosting and no matching order can be found. 
