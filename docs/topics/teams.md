@@ -44,6 +44,8 @@ If the person you added already had a pretix account, they will appear in the li
 If the person you added did not have a pretix account, they will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
 The invited person receive an email. 
 
+This page also lets you add an API token with the same permissions as the team members. 
+For more information on API tokens, see our [API documentation](https://docs.pretix.eu/en/latest/api/tokenauth.html). 
 
 ### Accepting an invitation to a team
 
