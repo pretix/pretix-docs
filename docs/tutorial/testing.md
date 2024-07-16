@@ -22,7 +22,7 @@ We will now place an order for a standard ticket and a discount ticket, follow t
 During checkout, we will choose credit card as the payment method, which should currently display a note stating that the Stripe plugin is operating in test mode. 
 We will use the credit card data for one of the test cards [listed by Stripe](https://docs.stripe.com/testing#cards) to issue a fake payment for our order. 
 
-We will now open pretix.eu, navigate to our event and click ":fontawesome-solid-cart-shopping: Orders" in the sidebar. 
+We will now open pretix.eu, navigate to our event, and click ":fontawesome-solid-cart-shopping: Orders" in the sidebar. 
 This page displays a list of orders. 
 If our test has been successful, the list now contains the test order we just placed. 
 The order should have the status ":material-check: Paid". 

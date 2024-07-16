@@ -71,7 +71,7 @@ We will then click the :btn:Save: button.
 ### Speaker ticket
 
 Next, we are going to create a speaker ticket that is free, but can only be purchased with a voucher. 
-For that, we will navigate back to the products page and click the :btn:Clone: button next to the standard ticket in order to clone it. 
+For that, we will navigate back to the products page [Event] → "Products" → "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
 We will switch to the "Availability" tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page. 
 There is a toggle next to that option with an eye :fontawesome-solid-eye-slash: and an information :fontawesome-solid-info: symbol. 
@@ -109,7 +109,7 @@ A quota determines how many instances of our product can be sold.
 Every product has to be part of at least one quota before it becomes available in the shop.
 In this section, we are going to create quotas and add our products to them. 
 
-We will open the "Quotas" subentry nested underneath ":fontawesome-solid-ticket: Products" in the sidebar. 
+We will open ":fontawesome-solid-ticket: Products" in the sidebar and then the nested "Quotas" subentry. 
 This page shows the list of all quotas for the event, which at the moment includes the "regular ticket" quota, containing the standard ticket as a product, and the "reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 
@@ -140,7 +140,7 @@ The purple sticker is not an admission ticket but an additional product that can
 We do not want this quota to add to the total number of tickets available for the event. 
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
-Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the "clone" button next to the sticker quota we just created. 
+Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fontawesome-regular-copy: Clone:  button next to the sticker quota we just created. 
 We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead.  
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 

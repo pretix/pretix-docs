@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to the pretix tutorial. 
+Welcome to the pretix tutorial! 
 In this tutorial, we will go through all the necessary steps for hosting our very first event using pretix.
 For illustrative purposes, we will create a straightforward conference. 
 We will use specific examples for our organizer, event, products, as well as the names and prices thereof. 

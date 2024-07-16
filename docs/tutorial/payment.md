@@ -47,7 +47,7 @@ Credit card payments via Stripe are now available as a payment method for custom
 
 ![Page titled 'Payment settings—Payment provider:Bank transfer', displaying options for the bank account type, bank data, details and enabling the payment method.](../assets/screens/payment/bank-transfer.png "Bank transfer settings screenshot") 
 
-We will also enable bank transfers by navigating back to the payment page for our event and opening the bank transfer settings. 
+We will also enable bank transfers by navigating back to the payment page for our event [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
 We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "enable payment method". 
@@ -66,7 +66,7 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
-We will browse to the invoicing settings  by navigating to our event, opening ":fontawesome-solid-wrench: Settings" in the sidebar and clicking the "Invoicing" subentry. 
+We will browse to the invoicing settings by navigating to our event, opening ":fontawesome-solid-wrench: Settings" in the sidebar and clicking the "Invoicing" subentry. 
 On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
 We will then switch to the "issuer details" tab and provide the name and full address of our organization. 
 The data we enter here will be used for all invoices we generate from this point on. 

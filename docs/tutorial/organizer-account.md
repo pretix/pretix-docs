@@ -5,7 +5,7 @@ We just created an organizer account and our personal account at the same time.
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
-Here is a quick summary of the steps we are going to take in this section: 
+Here is a brief overview of the steps we are going to take in this section: 
 
  - adding contact information on the "general" tab
  - choosing language and localization options on the "localization" tab 
@@ -52,8 +52,8 @@ This email address will be displayed under the label "Contact event organizer" i
 
 It is not necessary to touch all the settings displayed on this page. 
 This is also true for most of the pages that we are going to visit for this tutorial. 
-pretix is a very powerful tool offering lots of detailed adjustments and tweaks. 
-This tutorial includes all the mandatory steps. 
+pretix is a very powerful tool that offers many detailed adjustments and tweaks. 
+This tutorial covers all the necessary steps for creating our shop. 
 If a setting is not mentioned, then that means that it is not necessary to interact with that setting. 
 
 Clicking the :btn:Save: button at the bottom of the page confirms our changes.
