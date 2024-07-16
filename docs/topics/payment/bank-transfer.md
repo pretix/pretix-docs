@@ -92,10 +92,11 @@ It has to contain the following data:
 
 IBAN and BIC can be omitted for non-SEPA transactions. 
 
-You have two options: importing bank data for a single event, or importing bank data for all events on the organizer level. 
-If you want to import data for a single event, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
-This will take you to a page titled "Import bank data". 
+You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
+We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
 If you want to import data for all events associated with the organizer, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer"
+This will take you to a page titled "Import bank data". 
+If you want to import data for a single event, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
 This will also take you to a page titled "Import bank data". 
 The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
 Whichever option you choose, the process is the same from here on out. 
