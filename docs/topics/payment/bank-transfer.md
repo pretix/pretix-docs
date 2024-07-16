@@ -56,8 +56,8 @@ Bank transfers will now appear as a payment option for customers in your shop.
 
 ### Monitoring incoming payments 
 
-There is no way for the pretix software to monitor payments arriving at your bank account. 
-Thus, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+If you are using pretix Hosted, then the pretix software can monitor payments arriving at your bank account via its integraton with GoCardless.
+Alternatively, you can to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This section is going to guide you through all three options. 
 
 **Option A: automatic transaction import using GoCardless**
@@ -65,6 +65,7 @@ This section is going to guide you through all three options.
 <!-- md:hosted -->
 
 If you are using pretix Hosted, you can activate the automatic transaction report via pretix's integration with GoCardless. 
+This service is on the organizer level, meaning that bank data imported via this method is available for all events associated with the organizer. 
 Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Automatic import". 
 
 ![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
@@ -91,8 +92,14 @@ It has to contain the following data:
 
 IBAN and BIC can be omitted for non-SEPA transactions. 
 
-In the pretix backend, click on "bank transfer" in the sidebar menu. 
-This will take you to a page titled "import bank data". 
+You have two options: importing bank data for a single event, or importing bank data for all events on the organizer level. 
+If you want to import data for a single event, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
+This will take you to a page titled "Import bank data". 
+If you want to import data for all events associated with the organizer, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer"
+This will also take you to a page titled "Import bank data". 
+The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
+Whichever option you choose, the process is the same from here on out. 
+
 Click on the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
 The pretix software will now ask you to specify which column in your file contains which data. 
@@ -136,7 +143,10 @@ Repeat this process for every order that shows up in the list on the "orders" pa
 Options A and B described above may sometimes yield unresolved transactions. 
 The most frequent cause for this is a mistyped or missing order number in the reference line. 
 pretix allows you to resolve these transactions manually. 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Import bank data". 
+If you have imported bank data on the organizer level, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
+If you have imported bank data on the event level, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
+The process is the same from here on out. 
+
 If there are unresolved transactions, they will be displayed on this page under a list titled "Unresolved transactions". 
 For every transaction in this list, you have two options: 
 Either you delete it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you search for a matching order and assign the order code to the transaction.
