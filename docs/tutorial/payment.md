@@ -66,7 +66,7 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
-We will browse to the invoicing settings by navigating to our event, opening ":fontawesome-solid-wrench: Settings" in the sidebar and clicking the "Invoicing" subentry. 
+We will navigate to the invoicing settings by going to our event, opening ":fontawesome-solid-wrench: Settings" in the sidebar and clicking the "Invoicing" subentry. 
 On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
 We will then switch to the "issuer details" tab and provide the name and full address of our organization. 
 The data we enter here will be used for all invoices we generate from this point on. 
