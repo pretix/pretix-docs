@@ -71,7 +71,7 @@ We will then click the :btn:Save: button.
 ### Speaker ticket
 
 Next, we are going to create a speaker ticket that is free, but can only be purchased with a voucher. 
-For that, we will navigate back to the products page [Event] → "Products" → "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
+For that, we will navigate back to the products page [Event] :fontawesome-solid-arrow-right: "Products" :fontawesome-solid-arrow-right: "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
 We will switch to the "Availability" tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page. 
 There is a toggle next to that option with an eye :fontawesome-solid-eye-slash: and an information :fontawesome-solid-info: symbol. 

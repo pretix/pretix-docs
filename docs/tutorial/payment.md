@@ -25,7 +25,7 @@ By default, all payment providers in this list except gift card will be disabled
 
 !!! Note 
     If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled. 
-    In order to activate such a plugin, you have to navigate to [Your Event] → "Settings" → "Plugins" and open the "Payment providers" tab. 
+    In order to activate such a plugin, you have to navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Plugins" and open the "Payment providers" tab. 
     Click the :btn:Enable: button next to the plugin you want to use. 
     You can tell that a plugin has been activated by green ":material-check: Active" tag. 
 
@@ -47,7 +47,7 @@ Credit card payments via Stripe are now available as a payment method for custom
 
 ![Page titled 'Payment settings—Payment provider:Bank transfer', displaying options for the bank account type, bank data, details and enabling the payment method.](../assets/screens/payment/bank-transfer.png "Bank transfer settings screenshot") 
 
-We will also enable bank transfers by navigating back to the payment page for our event [Event] → "Settings" → "Payment" and opening the bank transfer settings. 
+We will also enable bank transfers by navigating back to the payment page for our event [Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Payment" and opening the bank transfer settings. 
 We are going to choose "SEPA bank account" as our "bank account type". 
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
 We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "enable payment method". 
