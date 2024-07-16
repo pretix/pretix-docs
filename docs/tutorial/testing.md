@@ -1,7 +1,7 @@
 # Testing and Going Live
 
 In this final part of the tutorial, we will test our shop, make sure that everything works as intended, and finally take it live. 
-Here is a quick summary of the steps we are going to take in this section: 
+Here is a brief overview of the steps we are going to take in this section: 
 
  - placing an order in test mode 
  - reviewing the order in the backend and marking it as paid
