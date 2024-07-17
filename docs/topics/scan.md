@@ -58,8 +58,6 @@ If you are using pretix Hosted, the system URL will always be https://pretix.eu.
 If you are self-hosting pretix (pretix Community or pretix Enterprise), you will have to enter the address of your server. 
 Enter the token displayed in the backend in the field in the pretixSCAN app. 
 
-![pretixSCAN app with a popup titled 'Select Event', listing a single entry called 'Tutorial Conference'. There are buttons labeled 'SHOW CALENDAR' and 'OK'.](../assets/screens/scan/select-event.png "pretixSCAN Select Event" ) 
-
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event you want to scan tickets for. 
 Check the event in the list or in the calendar and tap :btn:OK:. 
 Then, select a check-in list and tap :btn:OK: again. 
@@ -67,8 +65,32 @@ The app will now land you on the main screen and download event data from the se
 
 ### Scanning tickets 
 
+The app should now be in **entry scanning** mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right in the top right corner. 
+If the pictogram is yellow and the arrow points to the left, that means that the app is in "exit scanning" mode. 
+Switch to entry scanning by tapping the :btn-icon:material-dots-vertical:: button and :btn:Switch to entry scanning: in the popup menu. 
+
 pretixSCAN will scan any QR code or barcode it can detect via the device's camera or scanner. 
 Simply point the device at the code you want to scan. 
+There are three possible results: 
+
+ 1. If the ticket is valid and has not been checked in yet, pretixSCAN displays a green box titled "Valid ticket". 
+ It lists the ticket type, order number, and item number. 
+ 2. If the ticket is valid but has already been checked in and not checked out again, pretixSCAN displays a yellow box titled "Ticket already used". 
+ It lists the ticket type, order number, and item number, and also the date and time when the ticket was first scanned. 
+ 3. If the ticket is invalid or the code is not associated with one of the event's products at all, pretixSCAN displays a red box titled "Invalid ticket". 
+
+If none of these things happen, then the code has not been scanned. 
+Try adjusting the angle and distance between scanner and ticket or improving ambient lighting. 
+You can turn the device's flashlight and automatic focus on or off with the buttons at the bottom of the screen. 
+If you are attempting to scan a code from a mobile phone screen, ask the customer to increase screen brightness to maximum. 
+
+If you want to use the device for **exit scanning**, tap the :btn-icon:material-dots-vertical:: button and :btn:Switch to exit scanning: in the popup menu. 
+The pictogram in the top right corner should now be yellow and the arrow should point to the left. 
+There are two possible results for scanning a ticket in exit mode: 
+
+ 1. If the ticket is valid, pretixSCAN displays a green box titled "Exit recorded". 
+ Scanning the same ticket again will yield the same result.  
+ 2. If the ticket is invalid or the code is not associated with one of the event's products at all, pretixSCAN displays a red box titled "Invalid ticket". 
 
 ## Troubleshooting 
 
