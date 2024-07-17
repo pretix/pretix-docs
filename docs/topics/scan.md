@@ -16,11 +16,13 @@ pretixSCAN is not to be confused with our other apps: pretixPRINT, which takes c
 ## Prerequisites
 
 pretixSCAN is meant for use with an event hosted using pretix. 
-This article assumes that you are hosting an event with pretix or are planning to do so. 
+This article assumes that you are hosting an event with pretix. 
 
 You need to have access to a device running Android version 5 or newer; for full functionality, Android version 6 or newer. 
 The device also needs to have a camera or integrated code scanner. 
 See our [support policy](https://docs.pretix.eu/en/latest/user/android-version-support.html#pretixscan) for more information. 
+
+You also need access to a separate device from which you can access the pretix backend while you are setting up your device running pretixSCAN. 
 
 ## How To
 
@@ -46,6 +48,27 @@ Select "pretixSCAN" from the "Security profile" dropdown menu.
 
 You may add the device to a gate if you have previously created gates to group devices into. 
 This can be helpful if you are hosting an event with more than one entrance (gate). 
+
+Once you click :btn:Save:, you will be taken to a page displaying a QR code. 
+Use pretixSCAN on your Android device to scan the QR code. 
+If you have trouble scanning the QR code, there is an alternative solution: 
+Tap the three button menu in the top right corner of the pretixSCAN app and then tap "Manual setup". 
+You will be asked to enter a system URL and a token. 
+If you are using pretix Hosted, the system URL will always be https://pretix.eu. 
+If you are self-hosting pretix (pretix Community or pretix Enterprise), you will have to enter the address of your server. 
+Enter the token displayed in the backend in the field in the pretixSCAN app. 
+
+![pretixSCAN app with a popup titled 'Select Event', listing a single entry called 'Tutorial Conference'. There are buttons labeled 'SHOW CALENDAR' and 'OK'.](../assets/screens/scan/select-event.png "pretixSCAN Select Event" ) 
+
+Once you scanned the QR code or entered the token successfully, the app will ask you to select the event you want to scan tickets for. 
+Check the event in the list or in the calendar and tap :btn:OK:. 
+Then, select a check-in list and tap :btn:OK: again. 
+The app will now land you on the main screen and download event data from the server. 
+
+### Scanning tickets 
+
+pretixSCAN will scan any QR code or barcode it can detect via the device's camera or scanner. 
+Simply point the device at the code you want to scan. 
 
 ## Troubleshooting 
 
