@@ -63,9 +63,9 @@ Check the event in the list or in the calendar and tap :btn:OK:.
 Then, select a check-in list and tap :btn:OK: again. 
 The app will now land you on the main screen and download event data from the server. 
 
-### Scanning tickets 
+### Entry scanning
 
-The app should now be in **entry scanning** mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right in the top right corner. 
+The app should now be in entry scanning mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right in the top right corner. 
 If the pictogram is yellow and the arrow points to the left, that means that the app is in "exit scanning" mode. 
 Switch to entry scanning by tapping the :btn-icon:material-dots-vertical:: button and :btn:Switch to entry scanning: in the popup menu. 
 
@@ -82,15 +82,29 @@ There are three possible results:
 If none of these things happen, then the code has not been scanned. 
 Try adjusting the angle and distance between scanner and ticket or improving ambient lighting. 
 You can turn the device's flashlight and automatic focus on or off with the buttons at the bottom of the screen. 
-If you are attempting to scan a code from a mobile phone screen, ask the customer to increase screen brightness to maximum. 
+If you have trouble scanning a code from a mobile phone screen, ask the customer to increase screen brightness to maximum. 
 
-If you want to use the device for **exit scanning**, tap the :btn-icon:material-dots-vertical:: button and :btn:Switch to exit scanning: in the popup menu. 
+### Exit scanning
+
+If you want to use the device for exit scanning, tap the :btn-icon:material-dots-vertical:: button and :btn:Switch to exit scanning: in the popup menu. 
 The pictogram in the top right corner should now be yellow and the arrow should point to the left. 
 There are two possible results for scanning a ticket in exit mode: 
 
  1. If the ticket is valid, pretixSCAN displays a green box titled "Exit recorded". 
  Scanning the same ticket again will yield the same result.  
  2. If the ticket is invalid or the code is not associated with one of the event's products at all, pretixSCAN displays a red box titled "Invalid ticket". 
+
+Once the ticket has been checked out, it can be used for entry again. 
+
+### Searching for attendee data 
+
+An alternative to scanning a ticket code is searching for attendee data in pretixSCAN. 
+If an attendee arrives at the check-in without a ticket, but claiming that they have bought one, you can search for their data. 
+Tap the :btn-icon:fontawesome-solid-magnifying-glass:: button at the top of the screen. 
+In the search field, enter the attendee's name, order code, ticket secret, or any of the other data they have provided. 
+Tap the matching result in the list. 
+The app will now check the validity and check-in status of the ticket and return the same results as if the ticket was being scanned. 
+This works in both entry scanning mode and exit scanning mode. 
 
 ## Troubleshooting 
 
