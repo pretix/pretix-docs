@@ -73,11 +73,12 @@ pretixSCAN will scan any QR code or barcode it can detect via the device's camer
 Simply point the device at the code you want to scan. 
 There are three possible results: 
 
- 1. If the ticket is valid and has not been checked in yet, pretixSCAN displays a green box titled "Valid ticket". 
+ 1. If the ticket is valid, has not been checked in yet, and allows entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket". 
  It lists the ticket type, order number, and item number. 
  2. If the ticket is valid but has already been checked in and not checked out again, pretixSCAN displays a yellow box titled "Ticket already used". 
  It lists the ticket type, order number, and item number, and also the date and time when the ticket was first scanned. 
- 3. If the ticket is invalid or the code is not associated with one of the event's products at all, pretixSCAN displays a red box titled "Invalid ticket". 
+ 3. In all other cases, pretixSCAN displays a red box with a title explaining the problem. 
+ Explanations can include  "Invalid ticket", "Order canceled", or "Entry not allowed". 
 
 If none of these things happen, then the code has not been scanned. 
 Try adjusting the angle and distance between scanner and ticket or improving ambient lighting. 
