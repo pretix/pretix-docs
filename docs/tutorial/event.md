@@ -103,7 +103,8 @@ We are planning to print badges for our attendees during the conference.
 That means we have to record their name and affiliation during purchase. 
 While we are viewing the event-level dashboard, we will click ":fontawesome-solid-wrench: Settings" in the sidebar, which lands us on the general settings page for the event. 
 We will open the "customer and attendee data" tab at the top. 
-Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking for certain information for every ticket purchased.  
+The options on this tab allow us to set questions for certain information for every ticket purchased
+The settings that are relevant for us are located underneath the "Attendee data (once per personalized ticket)" subheading. 
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
 In the text field labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
