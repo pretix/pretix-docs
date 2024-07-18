@@ -37,7 +37,7 @@ We will simply activate and deactivate the languages as needed.
 
 After clicking :btn:Continue:, we are now asked to provide a name and a short form for the event. 
 We are going to create a simple example conference for this tutorial. 
-Therefore, we will choose "Example Conference" for the "event name" field, and "tutcon27" for the "short form" field. 
+Therefore, we will choose "Example Conference" for the "Event name" field, and "tutcon27" for the "short form" field. 
 The short form is appended to the organizer's URL. 
 In our case, this results in the following URL: [https://pretix.eu/tut/tutcon27](https://pretix.eu/tut/tutcon27). 
 
@@ -48,11 +48,11 @@ We are going to enter the fourth of June, 2027, into the start time field.
 
 Since we already know the location for our event, we're going to put that location into pretix now. 
 This information is optional and can still be changed later. 
-Our input into the "location" field will be used to search OpenStreetMap for that location. 
-If the location can be found, the "geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
+Our input into the "Location" field will be used to search OpenStreetMap for that location. 
+If the location can be found, the "Geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
 If no results can be found for the input, the marker on the map can be dragged to the event location manually. 
-This will automatically update the "geo coordinates" fields. 
-Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the coordinates over to the "geo coordinates" fields. 
+This will automatically update the "Geo coordinates" fields. 
+Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the coordinates over to the "Geo coordinates" fields. 
 
 We have to choose a currency for our event. 
 We are going to select the Euro from the currency drop-down menu. 
@@ -76,16 +76,16 @@ The next page congratulates us on creating our event and gives us an opportunity
 We do not need to touch these quick settings at the moment. 
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 All we are going to do on this page is add two more pieces of information that are mandatory for our ticket shop to go live. 
-We will provide a general email address at which our customers can contact us in the "contact address" field. 
-This email address will be displayed in the page footer of our shop with the label "contact event organizer". 
-We will provide a URL to legal imprint information for our organization's online presence in the "imprint URL" field. 
+We will provide a general email address at which our customers can contact us in the Contact address" field. 
+This email address will be displayed in the page footer of our shop with the label "Contact event organizer". 
+We will provide a URL to legal imprint information for our organization's online presence in the "Imprint URL" field. 
 
 Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop, which should be in test mode at this point. 
 
 ## Event-level Dashboard
 
 Now that we have created our event, we have access to all possible options for the event. 
-We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in the top left corner and then selecting the event we just created in the list titled "your upcoming events". 
+We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in the top left corner and then selecting the event we just created in the list titled "Your upcoming events". 
 The event-level dashboard gives us an overview of the event's basic information and status. 
 It allows us to leave an internal comment for ourselves or our team and it logs recent changes. 
 
@@ -102,24 +102,24 @@ Thus, this warning may persist for a while even if all necessary information has
 We are planning to print badges for our attendees during the conference. 
 That means we have to record their name and affiliation during purchase. 
 While we are viewing the event-level dashboard, we will click ":fontawesome-solid-wrench: Settings" in the sidebar, which lands us on the general settings page for the event. 
-We will open the "customer and attendee data" tab at the top. 
+We will open the "Customer and attendee data" tab at the top. 
 The options on this tab allow us to set questions for certain information for every ticket purchased
 The settings that are relevant for us are located underneath the "Attendee data (once per personalized ticket)" subheading. 
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
-In the text field labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
+In the text field labeled "Attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
 "We will use the name, title and company you submit for your badge."
 
-Under "form settings", we can choose the format in which pretix will ask attendees for names and titles. 
-We are going to select "ask for title + given name + family name, display like John Doe" for names and "free text input" for titles. 
+Under "Form settings", we can choose the format in which pretix will ask attendees for names and titles. 
+We are going to select "Ask for title + given name + family name, display like John Doe" for names and "Free text input" for titles. 
 We will finalize our choice here before taking the ticket shop live.
 This is important because changing these settings after already having received orders can lead to issues when sorting or changing names.
 
 ## Shop design 
 
-![Screenshot of "shop design" tab, showing options for the header image and social media image, as well as a locked section at the bottom.](../assets/screens/event/shop-design.png "Event shop design tab screenshot") 
+![Screenshot of "Shop design" tab, showing options for the header image and social media image, as well as a locked section at the bottom.](../assets/screens/event/shop-design.png "Event shop design tab screenshot") 
 
-Switching to the "shop design" tab at the top allows us to add images to our event shop and customize its colors. 
+Switching to the "Shop design" tab at the top allows us to add images to our event shop and customize its colors. 
 Clicking the :btn-icon:fontawesome-regular-eye:Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective. 
 A shop created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/[EventShortForm]/. 
 The shop we are creating for this tutorial is located at [https://pretix.eu/tut/tutcon27/](https://pretix.eu/tut/tutcon27/). 
@@ -128,9 +128,9 @@ By default, the name of the event will be displayed in the page header of our sh
 The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design). 
 We are going to add a header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels to upload from our computer. 
 By default, the header image will replace the name of the event at the top of the page. 
-We still want to include the name of the event though, so we are going to check the box next to "show event title even if a header image is present". 
+We still want to include the name of the event though, so we are going to check the box next to "Show event title even if a header image is present". 
 
-We are also going to upload a .png file for the "social media image" option. 
+We are also going to upload a .png file for the "Social media image" option. 
 This will be used as a preview for any links to our ticket shop we post on social media. 
 Not uploading a file here would mean that the header image will be used for previews instead. 
 

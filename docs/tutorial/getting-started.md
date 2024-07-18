@@ -43,8 +43,8 @@ If other persons should use the system as well, we will be able to invite them l
 
     The short form cannot be changed without you contacting customer support and might no longer if you have already set up some parts of the system.
 
-The "full name" field is meant for the name of the company, association, or institution for which we want to organize events. 
-The "address short form" field is for a short form of the organization's name. 
+The "Full name" field is meant for the name of the company, association, or institution for which we want to organize events. 
+The "Address short form" field is for a short form of the organization's name. 
 This short form will be used for the URL under which our events can be found. 
 For this tutorial, we are going to create an account for our Tutorial Organization. 
 So we will enter "Tutorial Organization" into the full name field, and "tut" into the address short form field. 

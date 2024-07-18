@@ -40,7 +40,7 @@ Clicking that button takes us to a dialog on stripe.com, where we will input our
 
 We will then return to pretix.eu, navigate to our event, open ":fontawesome-solid-wrench: Settings" in the sidebar, click the "Payment" subentry and open the Stripe settings. 
 Instead of the single button, the page will now display a multitude of settings. 
-We will check the boxes next to "credit card payments" and "enable payment method", then scroll to the bottom and click the :btn:Save: button. 
+We will check the boxes next to "Credit card payments" and "Enable payment method", then scroll to the bottom and click the :btn:Save: button. 
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
 
 ### Bank transfers 
@@ -48,9 +48,9 @@ Credit card payments via Stripe are now available as a payment method for custom
 ![Page titled 'Payment settings—Payment provider:Bank transfer', displaying options for the bank account type, bank data, details and enabling the payment method.](../assets/screens/payment/bank-transfer.png "Bank transfer settings screenshot") 
 
 We will also enable bank transfers by navigating back to the payment page for our event [Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Payment" and opening the bank transfer settings. 
-We are going to choose "SEPA bank account" as our "bank account type". 
+We are going to choose "SEPA bank account" as our "Bank account type". 
 We will provide our bank account info, i.e. the name of the account holder, IBAN, BIC and the name of the bank in the fields labeled as such. 
-We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "enable payment method". 
+We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "Enable payment method". 
 Then, we will click the :btn:Save: button and return to the payment settings. 
 Bank transfer, gift card, and Stripe should all have a green ":material-check: Enabled" tag next to them now. 
 
@@ -67,8 +67,8 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
 We will navigate to the invoicing settings by going to our event, opening ":fontawesome-solid-wrench: Settings" in the sidebar and clicking the "Invoicing" subentry. 
-On the "invoice generation" tab, we will set the "generate invoices" option to "automatically after payment or when required by payment method."
-We will then switch to the "issuer details" tab and provide the name and full address of our organization. 
+On the "Invoice generation" tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
+We will then switch to the "Issuer details" tab and provide the name and full address of our organization. 
 The data we enter here will be used for all invoices we generate from this point on. 
 If we now click the :btn:Save and show preview: button, our browser is going to download a PDF preview of the invoice with our organization's address, the invoice number TUTCON27-PREVIEW and an example listing of purchases with a partially received payment. 
 

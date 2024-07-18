@@ -28,29 +28,29 @@ This section will guide you through those steps in detail.
 ### Setting up bank transfers
 
 Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Plugins". 
-Switch to the "payment providers" tab. 
+Switch to the "Payment providers" tab. 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
 If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Payment". 
-The "payment providers" tab on this page displays the list of active payment providers. 
+The "Payment providers" tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
 Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer.  
 This takes you to the settings page for bank transfer.  
 
-The first thing you need to do on this page is choose the "bank account type". 
+The first thing you need to do on this page is choose the "Bank account type". 
 If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC and the name of the bank. 
-If you choose "other bank account", you have to provide the full details of the bank connection in the "bank account details" fields. 
+If you choose "Other bank account", you have to provide the full details of the bank connection in the "Bank account details" fields. 
 
 All settings further down on the page are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
-Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "enable payment method". 
+Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "Enable payment method". 
 Bank transfers will now appear as a payment option for customers in your shop. 
 
 ### Monitoring incoming payments 
@@ -74,8 +74,8 @@ It has to contain the following data:
 
 IBAN and BIC can be omitted for non-SEPA transactions. 
 
-In the pretix backend, click on "bank transfer" in the sidebar menu. 
-This will take you to a page titled "import bank data". 
+In the pretix backend, click on "Bank transfer" in the sidebar menu. 
+This will take you to a page titled "Import bank data". 
 Click on the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
 The pretix software will now ask you to specify which column in your file contains which data. 
@@ -94,7 +94,7 @@ Navigate to [Your Event] :fontawesome-solid-arrow-right: "Orders".
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and paid via bank transfer, they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
 Click on the order code of one of the pending orders. 
-This takes you to the "order details" page for that order. 
+This takes you to the "Order details" page for that order. 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fontawesome-solid-check:Mark as paid: button at the top of the order details page. 
 
@@ -105,7 +105,7 @@ If your bank account's transaction data has a record that matches the order in q
 
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
-You can prevent this by unchecking the box next to "notify customer by email". 
+You can prevent this by unchecking the box next to "Notify customer by email". 
 Confirm by clicking the :btn:Create payment" button. 
-This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully." and a green tag in the top right saying "✓ Paid". 
-Repeat this process for every order that shows up in the list on the "orders" page. 
+This takes you back to the "Order details" page, now with a notification box at the top saying "The payment has been created successfully." and a green tag in the top right saying "✓ Paid". 
+Repeat this process for every order that shows up in the list on the "Orders" page. 
