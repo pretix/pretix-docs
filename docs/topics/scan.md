@@ -84,18 +84,6 @@ Try adjusting the angle and distance between scanner and ticket or improving amb
 You can turn the device's flashlight and automatic focus on or off with the buttons at the bottom of the screen. 
 If you have trouble scanning a code from a mobile phone screen, ask the customer to increase screen brightness to maximum. 
 
-### Exit scanning
-
-If you want to use the device for exit scanning, tap the :btn-icon:material-dots-vertical:: button and :btn:Switch to exit scanning: in the popup menu. 
-The pictogram in the top right corner should now be yellow and the arrow should point to the left. 
-There are two possible results for scanning a ticket in exit mode: 
-
- 1. If the ticket is valid, pretixSCAN displays a green box titled "Exit recorded". 
- Scanning the same ticket again will yield the same result.  
- 2. If the ticket is invalid or the code is not associated with one of the event's products at all, pretixSCAN displays a red box titled "Invalid ticket". 
-
-Once the ticket has been checked out, it can be used for entry again. 
-
 ### Searching for attendee data 
 
 An alternative to scanning a ticket code is searching for attendee data in pretixSCAN. 
