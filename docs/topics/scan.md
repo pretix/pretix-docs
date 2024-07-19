@@ -102,15 +102,24 @@ Tap the matching result in the list.
 The app will now check the validity and check-in status of the ticket and return the same results as if the ticket was being scanned. 
 This works in both entry scanning mode and exit scanning mode. 
 
-## Troubleshooting 
+### Enabling badge printing 
 
-What are common problems that could be encountered here? How do you solve them? 
+Badge printing only works if the "Badges" plugin has been enabled and the ticket you are scanning has a badge layout selected. 
+
+In order to enable badge printing in pretixSCAN, you have to first install and set up pretixPRINT on the same device. 
+Once you have done that, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
+The app will now check if pretixPRINT is installed. 
+From now on, a :btn-icon:fontawesome-solid-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
+Tap the :btn-icon:fontawesome-solid-print:: button to print a badge for the ticket holder. 
+A push notification will pop up while the print job is being sent. 
+
+If you want to automatically print a badge for every ticket you scan, go back to the settings page and check the box next to "Print badges automatically after successful scan". 
+The :btn-icon:fontawesome-solid-print:: button will still be displayed, allowing you to manually print an extra badge. 
+
+If you want all badges to be printed twice, go to the settings page and check the box next to "Print every badge twice". 
 
 ## Further Information
 
  - [pretixSCAN repository on GitHub](https://github.com/pretix/pretixscan-android)
  - [Kurzanleitung pretixSCAN on Youtube (German)](https://www.youtube.com/watch?v=csy017Dm6vA)
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
