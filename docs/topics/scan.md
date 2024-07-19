@@ -119,6 +119,31 @@ The :btn-icon:fontawesome-solid-print:: button will still be displayed, allowing
 
 If you want all badges to be printed twice, go to the settings page and check the box next to "Print every badge twice". 
 
+### Locking the settings 
+
+pretixSCAN offers you the option to lock settings behind a PIN. 
+This can be useful if you want to prevent the people operating the check-in from changing any of the settings. 
+Open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+Scroll to the "User interface" subheading and tap "PIN protection". 
+Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
+As soon as you check the box next to "Enable PIN protection", the settings will be locked by PIN. 
+This means that the next time you return to the home screen and attempt to open the settings, you will be prompted to enter the PIN. 
+You also have the option to protect the other functions of the app with the same PIN: statistics, switching between events, as well as switching between entrance and exit scanning mode. 
+
+### Kiosk mode 
+
+pretixSCAN offers you the option to operate a device in kiosk mode. 
+This is useful for a self-serve check-in situation with customers scanning their own tickets. 
+If you want to use a device in kiosk mode only, you should choose the security profile "pretixSCAN (kiosk mode, no order sync, no search)" in the backend during the initial connection process. 
+If you have connected the device already, you can retroactively change the security profile by opening the [pretix backend](https://pretix.eu/control/), navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-mobile-screen: Devices" and clicking the :btn::material-pencil-box-outline:: button next to the device in the list. 
+Once you have set the security profile, open pretixSCAN on your Android device , tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+Scroll to the "User interface" subheading and tap "PIN protection". 
+Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
+Generate a QR code containing your PIN, for example by going to https://duckduckgo.com and entering "qr code" followed by your pin into the search field. 
+Store the resulting image. 
+As soon as you check the box next to "Enable PIN protection", the settings will be locked by PIN. 
+The only way to leave kiosk mode and access the settings is by scanning the QR code of the PIN. 
+
 ## Further Information
 
  - [pretixSCAN repository on GitHub](https://github.com/pretix/pretixscan-android)
