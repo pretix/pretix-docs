@@ -4,6 +4,7 @@ pretixSCAN is a powerful Android application that helps you handle the check-in 
 The primary function of pretixSCAN is to validate tickets, but it also offers many other features, such as: 
 
  - searching for participants manually if they do not have their ticket on hand 
+ - 
 
 This article will tell you how to get install pretixSCAN for **Android** and how to make use of its features. 
 
@@ -28,9 +29,10 @@ You also need a separate device from which you can access the pretix backend whi
 
 ### Installation and setup 
 
-pretixSCAN comes preinstalled on the scanner smartphones that are available for rent and for sale on our website. 
-You can skip this step if you are using devices that you rented or bought from us. 
-For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
+!!! Note 
+    pretixSCAN comes preinstalled on the scanner smartphones that are available for rent and for sale on our website. 
+    You can skip this step if you are using devices that you rented or bought from us. 
+    For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
 
 ![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot") 
 
@@ -97,10 +99,9 @@ If you have trouble scanning a code from a mobile phone screen, ask the customer
 An alternative to scanning a ticket code is searching for attendee data in pretixSCAN. 
 If an attendee arrives at the check-in without a ticket, but claiming that they have bought one, you can search for their data. 
 Tap the :btn-icon:fontawesome-solid-magnifying-glass:: button at the top of the screen. 
-In the search field, enter the attendee's name, order code, ticket secret, or any of the other data they have provided. 
+In the search field, enter the attendee's name, order code, ticket secret, or mail address. 
 Tap the matching result in the list. 
 The app will now check the validity and check-in status of the ticket and return the same results as if the ticket was being scanned. 
-This works in both entry scanning mode and exit scanning mode. 
 
 ### Enabling badge printing 
 
@@ -130,19 +131,12 @@ As soon as you check the box next to "Enable PIN protection", the settings will 
 This means that the next time you return to the home screen and attempt to open the settings, you will be prompted to enter the PIN. 
 You also have the option to protect the other functions of the app with the same PIN: statistics, switching between events, as well as switching between entrance and exit scanning mode. 
 
-### Kiosk mode 
-
-pretixSCAN offers you the option to operate a device in kiosk mode. 
-This is useful for a self-serve check-in situation with customers scanning their own tickets. 
-If you want to use a device in kiosk mode only, you should choose the security profile "pretixSCAN (kiosk mode, no order sync, no search)" in the backend during the initial connection process. 
-If you have connected the device already, you can retroactively change the security profile by opening the [pretix backend](https://pretix.eu/control/), navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-mobile-screen: Devices" and clicking the :btn::material-pencil-box-outline:: button next to the device in the list. 
-Once you have set the security profile, open pretixSCAN on your Android device , tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
-Scroll to the "User interface" subheading and tap "PIN protection". 
-Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
-Generate a QR code containing your PIN, for example by going to https://duckduckgo.com and entering "qr code" followed by your pin into the search field. 
-Store the resulting image. 
-As soon as you check the box next to "Enable PIN protection", the settings will be locked by PIN. 
-The only way to leave kiosk mode and access the settings is by scanning the QR code of the PIN. 
+!!! Warning
+    The PIN settings page also has the option to turn on kiosk mode. 
+    Kiosk mode fundamentally limits the functionality of the app. 
+    The only way to leave kiosk mode is to scan a QR code of the PIN. 
+    **Do not** turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
+    **Do not** turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
 
 ## Further Information
 
