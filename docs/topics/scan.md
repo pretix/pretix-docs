@@ -153,6 +153,9 @@ You can scan codes and search for attendee data without encountering errors desp
 Installing the app, connecting it to the backend and synchronizing data between the device and the server at least once still requires a working connection to the internet. 
 Do these steps ahead of time in a setting where you do have a reliable connection if you are planning to use pretixSCAN in offline mode. 
 
+!!! Warning 
+    If you are using offline scanning with more than one device, then a single ticket can potentially be used for entry twice if it is scanned at two different devices within a short timeframe. 
+
 If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
 Then check the box next to "Offline scanning". 
 Make sure that the settings "Automatic Synchronization" and "Download orders" are also both checked. 
