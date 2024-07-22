@@ -78,6 +78,7 @@ Switch to entry scanning by tapping the :btn-icon:material-dots-vertical:: butto
 
 pretixSCAN will scan any QR code or barcode it can detect via the device's camera or scanner. 
 Simply point the device at the code you want to scan. 
+The app will then check the code against the selected check-in list on the server. 
 There are three possible results: 
 
  1. If the ticket is valid, has not been checked in yet, and allows entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket". 
@@ -106,8 +107,8 @@ The app will now check the validity and check-in status of the ticket and return
 ### Enabling badge printing 
 
 Badge printing only works if the "Badges" plugin has been enabled and the ticket you are scanning has a badge layout selected. 
-
 In order to enable badge printing in pretixSCAN, you have to first install and set up pretixPRINT on the same device. 
+
 Once you have done that, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
 The app will now check if pretixPRINT is installed. 
@@ -137,6 +138,32 @@ You also have the option to protect the other functions of the app with the same
     The only way to leave kiosk mode is to scan a QR code of the PIN. 
     **Do not** turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
     **Do not** turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
+
+### Offline scanning 
+
+The default scanning behavior of pretixSCAN requires a reliable network connection. 
+Every code scanned is compared with the selected check-in list that is stored on either pretix.eu (pretix Hosted) or your own server (pretix Enterprise and pretix Community). 
+If you are using pretixSCAN in a setting with an unreliable network connection or no connection at all, you may run into error messages while attempting to scan a code or search for attendee data. 
+The solution for this problem is pretixSCAN's offline mode. 
+
+In offline mode, the app will verify data with its internal database instead of the database on the server. 
+It will still occasionally attempt to synchronize its own internal data with the server. 
+You can scan codes and search for attendee data without encountering errors despite the missing connection. 
+
+Installing the app, connecting it to the backend and synchronizing data between the device and the server at least once still requires a working connection to the internet. 
+Do these steps ahead of time in a setting where you do have a reliable connection if you are planning to use pretixSCAN in offline mode. 
+
+If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+Then check the box next to "Offline scanning". 
+Make sure that the settings "Automatic Synchronization" and "Download orders" are also both checked. 
+
+If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap the setting "Automatically turn offline mode on and off". 
+By default, "Manual mode (off)" is selected, which means that offline scanning will not be enabled or disabled automatically. 
+If you select, for example, "3 seconds or errors", pretixSCAN will enable offline scanning after unsuccessfully attempting to verify a code for 3 seconds; after encountering 3 errors while attempting to verify a code; or after detecting a loss of connection while attempting to verify a code. 
+If you select "Only errors or connection loss", then pretixSCAN will enable offline scanning after encountering an error or detecting a loss of connection while attempting to verify a code. 
+
+!!! Note 
+    Tickets ordered while your shop is in test mode will not be recognized as valid and will also not show up in the search while you are using pretixSCAN in offline mode. 
 
 ## Further Information
 
