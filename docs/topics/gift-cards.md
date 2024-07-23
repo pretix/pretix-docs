@@ -29,15 +29,15 @@ You should also take a look at the subsection on [accepting gift cards as a paym
 
 ### Gift card validity and code length
 
-The organizer page has general settings for gift cards. 
-Both of these settings only apply to gift cards issued **after** they have been saved. 
+General settings for gift cards can be found on your organizer page. 
+Settings on the organizer level only apply to gift cards issued **after** these settings have been saved. 
 They do **not** apply retroactively to previously created gift cards. 
-It therefore makes sense to read this subsection and finalize your decisions on these settings before you sell or manually issue any gift cards. 
+It is therefore advisable to read this subsection and finalize your decisions on these settings before selling or manually issuing any gift cards. 
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "General" and open the "Gift cards" tab. 
-This page allows you to make organizer-level settings for gift cards. 
+Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "General" and switch to the "Gift cards" tab. 
+Any organizer-level settings for gift cards can be found and adjusted on this page.
 You can choose how many years gift cards are valid for. 
 If you enter a number here, then gift cards will expire after the specified period has passed at the end of the calendar year. 
 For example, if you enter 0 into the field and then create a gift card in the year 2024, then the gift card will be valid until midnight of December 31st, 2024. 
