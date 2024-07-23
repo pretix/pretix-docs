@@ -6,18 +6,18 @@ The only difference is that there is no dedicated plugin for gift cards since gi
 
 Gift cards are not to be confused with [vouchers](vouchers.md).
 Unlike vouchers, gift cards always represent a fixed amount of money that is subtracted from the total of the order.
-Unlike vouchers, gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products
+Also unlike vouchers, gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
 
 ## Prerequisites
 
-Gift cards have to be enabled as a payment method for an event.
-They are enabled by default.
-If they are not enabled, you can change that by browsing to [Your event] → "Settings" → "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
+In order to use gift cards as a payment method for an event, they have to be enabled for that event.
+Gift cards are enabled by default.
+If they are not enabled, you can change that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
 
 Gift cards must be sold at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
 That means you have to create a tax rule with a rate of 0% before you can create a gift card.
-You can do that by browsing to [Your event] → "Settings" → "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under an distinct internal name.
+You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under an distinct internal name.
 
 ## How To
 
@@ -65,7 +65,7 @@ Under "Refund method", choose either "Customers can choose between a gift card a
 ![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
 
 You may want to manually issue a single gift card, for example as accommodation for an individual customer. 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and clicking the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and clicking the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
 
 !!! Warning 
     Once a gift card has been created, it cannot be deleted. 
@@ -91,7 +91,7 @@ This changes as soon as the first gift card is issued through your organizer acc
 
 ![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
 
-You can find the settings for gift cards as a payment method by navigating to [Your event] → "Settings" → "Payment" and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
+You can find the settings for gift cards as a payment method by navigating to [Your event] :fontawesome-solid-arrow-right: ":icon:fontawesome-solid-wrench:  Settings" :fontawesome-solid-arrow-right: "Payment" and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
 Here, you can restrict the availability of the payment method by date, sales channel, and territory, just like you can with any other payment method. 
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
 Note that these settings apply on the event level, so they have to be changed for each event individually. 
@@ -104,7 +104,7 @@ However, you can invite another organizer to accept your gift cards.
 
 ![Page titled Invite organizer, showing a text input for the organizer's short form and a checkbox for allowing access to reusable media, both empty.](../assets/screens/gift-cards/invite-organizer.png)
 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
 The organizer will then be listed on the acceptance settings page with the status "invited". 
 The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
@@ -120,7 +120,7 @@ Either way, it is your own responsibility to handle the exchange of money to off
 
 Once a gift card has been issued, be it automatically or manually, it cannot be deleted. 
 If you have erroneously created a gift card and want to make sure that it cannot be used for payment, you have to manually devalue it. 
-In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: "Gift cards" and click the gift card in question in the list. 
+In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and click the gift card in question in the list. 
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
 
