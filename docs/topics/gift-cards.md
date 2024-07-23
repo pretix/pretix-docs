@@ -8,17 +8,24 @@ Gift cards are not to be confused with [vouchers](vouchers.md).
 Unlike vouchers, gift cards always represent a fixed amount of money that is subtracted from the total of the order.
 Also unlike vouchers, gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
 
+!!! Note 
+    pretix treats gift cards as "multi-purpose vouchers" within the meaning of EU Council Directive 2016/1065 of 27 June 2016. 
+    pretix does not support charging taxes on the sale of gift cards. 
+    Instead, taxes will always be charged on the purchase for which gift cards are used. 
+
 ## Prerequisites
 
 In order to use gift cards as a payment method for an event, they have to be enabled for that event.
 Gift cards are enabled by default.
 If they are not enabled, you can change that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
 
-Gift cards must be sold at a tax rate of 0%.
+pretix only supports selling gift cards at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
-This is the procedure prescribed by German tax law. 
+This is the procedure prescribed by tax law in Germany and in some other countries. 
 You have to create a tax rule with a rate of 0% before you can create a gift card.
 You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
+
+{% include "warning-tax.md" %}
 
 ## How To
 
