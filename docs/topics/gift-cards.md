@@ -22,6 +22,11 @@ You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fo
 
 ## How To
 
+There are three methods for giving your customers access to gift cards: selling them in your shop, using them for refunds, and issuing them manually. 
+These methods will be described in the following subsections. 
+Regardless which of these methods you use, read the subsection on [validity and code length](gift-cards.md#gift-card-validity-and-code-length) first and make your choices there. 
+You should also take a look at the subsection on [accepting gift cards as a payment method](gift-cards.md#accepting-gift-cards-as-a-payment-method) and make sure the payment method is enabled before you issue any gift cards. 
+
 ### Gift card validity and code length
 
 The organizer page has general settings for gift cards. 
