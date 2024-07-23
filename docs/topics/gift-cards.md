@@ -42,11 +42,13 @@ It is therefore advisable to read this subsection and finalize your decisions on
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
 Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "General" and switch to the "Gift cards" tab. 
-Any organizer-level settings for gift cards can be found and adjusted on this page.
-You can choose how many years gift cards are valid for. 
-If you enter a number here, then gift cards will expire after the specified period has passed at the end of the calendar year. 
-For example, if you enter 0 into the field and then create a gift card in the year 2024, then the gift card will be valid until midnight of December 31st, 2024. 
+Organizer-level settings for gift cards can be adjusted on this page.
+The "Validity of gift card codes in years" field allows you to specify for how many years your gift cards should be valid. 
+The field accepts whole numbers as input. 
+The exact expiry date is always the end of the calendar year. 
+For example, if you enter 0 into the field and then create a gift card in the year 2025, then the gift card will be valid until midnight of December 31st, 2025. 
 This field is empty by default, meaning gift cards will remain valid indefinitely. 
+If you issue gift cards manually, you can set an individual date of expiration before or after the end of the period you chose here. 
 
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
@@ -110,6 +112,9 @@ You have to specify a "Gift card value" larger than zero in the currency of your
 If you want to create a gift card for test mode, check the box next to "Test mode card". 
 If you want to create a gift card for the live shop, do not check that box. 
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
+
+The default value in the "Expiry date" fields is determined by the "Validity of gift card codes in years" setting on the organizer settings page. 
+If you clear the contents of the "Expiry date" fields, the gift card you are creating will remain valid indefinitely regardless of the organizer-level settings. 
 The gift card is created once you click :btn:Save:. 
 
 ### Accepting gift cards across different organizers
