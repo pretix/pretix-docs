@@ -72,17 +72,19 @@ Note that these settings apply on the event level, so they have to be changed fo
 There are three methods for giving your customers access to gift cards: selling them in your shop, using them for refunds, and issuing them manually. 
 These methods will be described in the following subsections. 
 
-### Creating a gift card for selling it in your shop
+### Creating a gift card to offer in your shop
 
 ![Page titled Modify product: Gift card, on the Additional settings tab, the box next to This product is a gift card is checked.](../assets/screens/products/gift-card.png)
 
 If you want to sell gift cards in your shop, you can create them just like any other product. 
-Navigate to [Your event] :fontawesome-solid-arrow-right: "Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
-Choose "Non-admission product" as the "Product type" and a 0.00% tax rule as the "Sales tax" option. 
+Navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-ticket: Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
+Choose "Non-admission product" as the "Product type" and a 0.00% tax rule for the "Sales tax". 
 After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card" and click :btn:Save:. 
-If you check the box next to "Free price input", the value of the gift card will be the same as the price that the customer chooses to pay for it. 
+If you check the box next to "Free price input", the value of the gift card will be equal to the price that the customer chooses to pay for it. 
 
-Create a new quota, add the gift card to it and check the box next to "Ignore this quota when determining event availability". 
+Once you have created the gift card, create a new quota and add the gift card to it. 
+It is advisable to check the box next to "Ignore this quota when determining event availability" because the gift card is not an admission product. 
+The number of gift cards you are selling has nothing to do with the total number of admission tickets you are planning to sell for your event. 
 
 ### Using gift cards for refunds 
 
