@@ -16,12 +16,13 @@ If they are not enabled, you can change that by browsing to [Your event] :fontaw
 
 Gift cards must be sold at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
-That means you have to create a tax rule with a rate of 0% before you can create a gift card.
-You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under an distinct internal name.
+This is the procedure prescribed by German tax law. 
+You have to create a tax rule with a rate of 0% before you can create a gift card.
+You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
 
 ## How To
 
-### Gift card settings
+### Gift card validity and code length
 
 The organizer page has general settings for gift cards. 
 Both of these settings only apply to gift cards issued **after** they have been saved. 
@@ -30,7 +31,7 @@ It therefore makes sense to read this subsection and finalize your decisions on 
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "General" and open the "Gift cards" tab. 
+Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "General" and open the "Gift cards" tab. 
 This page allows you to make organizer-level settings for gift cards. 
 You can choose how many years gift cards are valid for. 
 If you enter a number here, then gift cards will expire after the specified period has passed at the end of the calendar year. 
