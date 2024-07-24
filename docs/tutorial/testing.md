@@ -42,13 +42,13 @@ However, we are going to make sure that our shop is exactly in the state we want
 ![Page titled 'Shop status', displaying a box warning about which conditions are not met yet for the shop to go live and options to disable test mode and delete all test mode orders.](../assets/screens/testing/shop-status.png "Shop status screenshot") 
 
 To make sure that only real orders from actual customers appear in our shop from this point onwards, we have to delete the orders we just placed in test mode. 
-For that, we will navigate to [Event] → "TEST MODE". 
+For that, we will navigate to :navpath:Event → TEST MODE:. 
 We will check the box labeled "permanently delete all orders created in test mode" and click the :btn:Disable test mode: button. 
 
 ## Conclusion 
 
 Once the experience in our shop is satisfactory and all other points have been checked off the list above, we can finally take our shop live. 
-In order to do that, we are going to browse to [Event] → "Dashboard". 
+In order to do that, we are going to browse to :navpath:Event → Dashboard:. 
 The event dashboard displays a box saying "Your ticket shop is not yet public. Click here to change". 
 Clicking that box takes us to the "shop status" page. 
 We are going to click the :btn:Go live: button and our ticket shop will finally go live! 

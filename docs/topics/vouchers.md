@@ -24,7 +24,7 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 ## How To 
 
-The settings page for vouchers is located at [Your Event] → "Vouchers". 
+The settings page for vouchers is located at :navpath:Your Event → Vouchers:. 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
@@ -76,7 +76,7 @@ Open the "Availability" tab and check the box next to "This product can only be 
 The visibility toggle next to that options allows you to choose whether the product should still be displayed in your shop even to customers who do not have a voucher code. 
 Next, create a quota, add only this product to it and set the total capacity so that it covers the number of emails you are planning to send out. 
 
-Then, navigate to [Your Event] → "Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
+Then, navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
 Generate the same number of voucher codes as emails you are planning to send out. 
 Under "Product", choose the product for which you want to restrict availability. 
 If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher". 
@@ -92,7 +92,7 @@ The software will display an error message if the number of recipients and gener
 ### Reserving tickets for a certain group
 
 This subsection explains how to use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
-Navigate to [Your Event] → "Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button and generate one voucher for every member of the group in question.
+Navigate to :navpath:Your Event → Vouchers:, click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button and generate one voucher for every member of the group in question.
 Optionally, you may choose a descriptive prefix such as "guest-list-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
 This means that the voucher will entitle each holder to one basic admission ticket for free. 

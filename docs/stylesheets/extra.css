@@ -184,6 +184,18 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
   color: var(--md-default-fg-color--light);
 }
 
+/* Utilities */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
 
 /* Custom markup */
 .md-typeset .typo-btn {
@@ -193,6 +205,15 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
     padding: 1px 4px;
     border-radius: 4px;
 }
+.md-typeset .typo-navlayer {
+    display: inline-block;
+    border: 2px solid var(--md-accent-fg-color);
+	border-style: dashed;
+    padding: 1px 4px;
+    border-radius: 4px;
+	font-style: italic;
+}
+
 
 /* External links */
 .md-typeset a[href*="//"]:not(.glightbox):not(:where(

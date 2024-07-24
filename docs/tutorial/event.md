@@ -98,7 +98,7 @@ Thus, this warning may persist for a while even if all necessary information has
 
 We are planning to print badges for our attendees during the conference. 
 That means we have to record their name and affiliation during purchase. 
-We are going to navigate to [Event] → "Settings" → "General" and open the "customer and attendee data" tab. 
+We are going to navigate to :navpath:Event → Settings → General: and open the :btn:Customer and attendee data: tab. 
 Here, under the "attendee data (once per personalized ticket)" subheading, there are options for asking certain information for every ticket purchased.  
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
 In the text fields labeled "attendee data explanation", we will add an explanation as to why we're collecting the data in question. 

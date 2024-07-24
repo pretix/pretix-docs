@@ -27,8 +27,8 @@ This section will guide you through those steps in detail.
 
 ### Setting up bank transfers
 
-Navigate to [Your Event] → "Settings" → "Plugins". 
-Switch to the "payment providers" tab. 
+Navigate to :btn:Your Event → Settings → Plugins:. 
+Switch to the :btn:Payment providers: tab. 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
 If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
@@ -37,8 +37,8 @@ Make sure that the plugin is enabled.
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-Navigate to [Your Event] → "Settings" → "Payment". 
-The "payment providers" tab on this page displays the list of active payment providers. 
+Navigate to :btn:Your Event → Settings → Payment:. 
+The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
 Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer.  
@@ -86,11 +86,11 @@ The screenshot illustrates what such an assignment could look like with a small 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Orders will be ignored if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
-You can intervene and make manual corrections here on this screen or by navigating to [Your Event] → "Orders". 
+You can intervene and make manual corrections here on this screen or by navigating to :navpath:Your Event → Orders:. 
 
 **Option B: approving payments manually** 
 
-Navigate to [Your Event] → "Orders". 
+Navigate to :navpath:Your Event → Orders:. 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and paid via bank transfer, they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
 Click on the order code of one of the pending orders. 

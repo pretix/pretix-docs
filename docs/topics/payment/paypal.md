@@ -25,8 +25,8 @@ Setting up PayPal as a payment provider in pretix involves the following steps:
 
 This section will guide you through those steps in detail. 
 
-Navigate to [Your Event] → "Settings" → "Plugins". 
-Switch to the "payment providers" tab. 
+Navigate to :navpath:Your Event → Settings → Plugins:. 
+Switch to the :btn:Payment providers: tab. 
 The PayPal plugin is displayed at the top of the page. 
 It should be enabled by default. 
 If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
@@ -35,8 +35,8 @@ Make sure that the plugin is enabled.
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
 
-Navigate to [Your Event] → "Settings" → "Payment". 
-The "payment providers" tab on this page displays the list of active payment providers. 
+Navigate to :btn:Your Event → Settings → Payment:. 
+The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for PayPal with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but PayPal has not been set up and enabled as a payment provider for the event yet. 
 Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to PayPal. 
