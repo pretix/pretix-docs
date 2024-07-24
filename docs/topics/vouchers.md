@@ -35,10 +35,10 @@ The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes
 This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
 
 The :btn-icon:fontawesome-solid-download: Download: button lets you download a .csv file of the full list of vouchers you have created. 
-This is useful for when you want to make a backup of your vouchers, distribute them via a different channel than the pretix-native emailer, or re-use the same type of vouchers for a different event. 
+This is useful for when you want to create a backup of your vouchers, distribute them via a different channel than the pretix-native emailer, or re-use the same type of vouchers for a different event. 
 
 The :btn-icon:fontawesome-solid-upload: Import vouchers: button lets you upload such a list after saving it from a different event. 
-This function is meant for importing a single type of voucher. 
+This function is meant for importing a set of vouchers that have all been created using the same settings.
 If you have saved the full list of vouchers from a different event and it includes more than one type of voucher, then it is advisable to split the .csv file according to type and import each part individually. 
 
 Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file on your computer. 
