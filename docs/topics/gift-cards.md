@@ -55,15 +55,15 @@ The default is 12 digits, the minimum length is 6 digits, and the maximum length
 
 ### Accepting gift cards as a payment method 
 
-Any gift card issued through your organizer account will be valid for every event created by that organizer account. 
+Any gift card issued by your organizer account will be valid for every event created by that organizer account. 
 The gift card payment method is enabled by default for any newly created event. 
-In your shops, the option for paying via gift card is hidden by default. 
-This changes as soon as the first gift card is issued through your organizer account, be it manually or automatically. 
+In your customers' view of your shops, the option for paying via gift card is hidden by default. 
+This changes as soon as the first gift card is issued by your organizer account, be it manually or automatically. 
 
 ![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
 
 You can find the settings for gift cards as a payment method by navigating to [Your event] :fontawesome-solid-arrow-right: ":icon:fontawesome-solid-wrench:  Settings" :fontawesome-solid-arrow-right: "Payment" and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
-Here, you can restrict the availability of the payment method by date, sales channel, and territory, just like you can with any other payment method. 
+Here, you can restrict the availability of the payment method by date, time period relative to the event, sales channel, and region, just like you can with any other payment method. 
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
 Note that these settings apply on the event level, so they have to be changed for each event individually. 
 
@@ -90,23 +90,27 @@ The number of gift cards you are selling has nothing to do with the total number
 
 ![Page titled Cancellation settings, on the Paid orders tab, highlighted are the settings for Refund method, offering four options, two of them involving gift cards.](../assets/screens/gift-cards/refund.png)
 
-pretix can automatically issue gift cards as a method for refunds. 
-If you want to use this feature, navigate to [Your event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
+pretix can automatically issue refunds in the form of gift cards.
+To set up this feature, navigate to, navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
+Click the :btn:Save: button to confirm your changes. 
 
 ### Manually issuing gift cards
 
 ![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
 
 You may want to manually issue a single gift card, for example as accommodation for an individual customer. 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and clicking the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards".
+This will land you on a page titled "Issued gift cards" displaying a search dialog, a button for manually issuing a gift card, and a list of gift card codes that have been issued already. 
 
 !!! Warning 
-    Once a gift card has been created, it cannot be deleted. 
-    If you are just trying out this feature, make sure to check the box next to "Test mode card". 
+    Once a gift card has been created, it cannot be deleted (only devalued—see [devaluing gift cards](gift-cards.md#devaluing-gift-cards)). 
+    If you are just exploring this feature for preliminary tests, make sure to check the box next to "Test mode card". 
     This makes the gift card only valid in test mode of your shop. 
-    Do not issue gift cards with secrets that can be easily guessed outside of test mode. 
+    A test mode card cannot be turned into a non-test mode card or vice versa after it has been created. 
+    Do not issue non-test mode gift cards with codes that can be easily guessed. 
 
+Click the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
 The "Gift card code" field will already be filled out with a randomly generated code, but you can change that code to your liking. 
 Any code you enter here manually must be between 2 and 190 digits in length and may only contain Latin letters, numbers, dots and dashes.
 Diacritic symbols such as umlauts and accents are not supported. 
@@ -129,7 +133,7 @@ However, you can invite another organizer to accept your gift cards.
 
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
-The organizer will then be listed on the acceptance settings page with the status "invited". 
+This will return you to the acceptance settings page, where the organizer will now be listed with the status "invited". 
 The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
 If they accept your invitation, the page will display their status as "active". 
 You can retract the invitation or remove their ability to accept your gift cards via the :btn:Remove: button. 
@@ -141,8 +145,14 @@ Either way, it is your own responsibility to handle the exchange of money to off
 
 ### Devaluing gift cards 
 
-Once a gift card has been issued, be it automatically or manually, it cannot be deleted. 
-If you have erroneously created a gift card and want to make sure that it cannot be used for payment, you have to manually devalue it. 
+!!! Warning 
+    **Do not** devalue a gift card that you have sold in your shop or issued for a refund. 
+    Issuing your customer a gift card and then devaluing it would amount to a crime. 
+    Only ever devalue gift cards that exist exclusively inside the pretix backend, i.e. have not been sold, sent, or issued to anyone yet. 
+
+Once a gift card has been issued automatically or manually, it cannot be deleted. 
+If you created a gift card erroneously and want to ensure that it cannot be used for payment, you need to devalue it manually. 
+This process has to be done for each gift card individually. 
 In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and click the gift card in question in the list. 
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
@@ -151,7 +161,8 @@ Note down the reason for the devaluing in the text field in the "Information" co
 The gift card's "Current value" is displayed in the "Details" box. 
 Enter the current value's negative in the "Value" field. 
 For example, for an erroneously created gift card worth €92.50, enter "-92.50" and click the :btn-icon:fontawesome-solid-plus:: button. 
-That will add a new entry to the list of transactions and change the current value of the gift card to €0.00, meaning it cannot be used for payment. 
+This will add a new entry to the list of transactions and change the current value of the gift card to €0.00, meaning that it can no longer be used for payment.
+Attempting to use the gift card in your shop will now yield a message stating that all credit on the card has been used up. 
 
 The same process can be used for increasing or decreasing the value of a gift card if it has been created with the wrong value. 
 
