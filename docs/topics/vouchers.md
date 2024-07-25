@@ -21,7 +21,7 @@ Gift cards can be used across different events and organizers and do not affect 
 Vouchers are handled on the event level, so you first need to create the event for which you want to create vouchers. 
 Your account needs to be activated before you can send out vouchers via email. 
 
-## How To 
+## General usage
 
 The settings page for vouchers is located at [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
@@ -35,7 +35,8 @@ The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes
 This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
 
 The :btn-icon:fontawesome-solid-download: Download: button lets you download a .csv file of the full list of vouchers you have created. 
-This is useful for when you want to create a backup of your vouchers, distribute them via a different channel than the pretix-native emailer, or re-use the same type of vouchers for a different event. 
+It is generally advisable to download and save your vouchers using this button whenever you create a set of vouchers. 
+The .csv export can serve as a backup archive for your voucher codes, lets you to distribute the codes by methods other than the pretix-native emailer, and allows you to re-use the same codes for a different event. 
 
 The :btn-icon:fontawesome-solid-upload: Import vouchers: button lets you upload such a list after saving it from a different event. 
 This function is meant for importing a set of vouchers that have all been created using the same settings.
@@ -53,6 +54,8 @@ For example, "2024-07-08 09:45 Limited Time Offer" would be a very useful tag if
 
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
+
+## Applications 
 
 ### Offering a limited discount 
 
