@@ -5,13 +5,13 @@ We just created an organizer account and our personal account at the same time.
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
-We are going to take the following steps: 
+Here is a brief overview of the steps we are going to take in this section: 
 
- - adding contact information on the "general" tab
- - choosing language and localization options on the "localization" tab 
- - customizing the organizer page on the "organizer page" and "shop design" tabs
- - setting up cookie/privacy information on the "privacy" tab 
- - getting our pretix account activated by providing necessary information in the "billing settings"
+ - adding contact information on the "General" tab
+ - choosing language and localization options on the "Localization" tab 
+ - customizing the organizer page on the "Organizer page" and "Shop design" tabs
+ - setting up cookie/privacy information on the "Privacy" tab 
+ - getting our pretix account activated by providing necessary information in the "Billing settings"
 
 These are the necessary steps for preparing our organizer account for hosting events with pretix. 
 A few of these steps are optional, but will save us some work in the long term. 
@@ -38,7 +38,7 @@ We are now going to click :btn:Settings: in the sidebar, which lands us on the g
 
 ![Organizer settings page, on the general tab, showing the following options: Name, Short form, Imprint URL, Contact address, Info text. Not pictured: 'Allow creating a new team during event creation' option, 'Save' button](../assets/screens/organizer/general-settings.png) 
 
-The fields for "name" and "short form" are already filled out. 
+The fields for "Name" and "Short form" are already filled out. 
 It is not possible to change the short form because it is the organizer's unique identifier. 
 
 Since we are operating from Germany and thus required by law to include certain legal information on all our websites, we are going to enter the URL to our website's imprint in the "Imprint URL" field.
@@ -47,8 +47,14 @@ Since we are operating from Germany and thus required by law to include certain 
 
     Even if you are not operating in Germany, we require all pretix Hosted customers to enter a valid imprint URL that points to information on who is responsible for the published ticket shop.
 
-We will enter a valid email address into the "contact address" field. 
+We will enter a valid email address into the "Contact address" field. 
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
+
+It is not necessary to touch all the settings displayed on this page. 
+This is also true for most of the pages that we are going to visit for this tutorial. 
+pretix is a very powerful tool that offers many detailed adjustments and tweaks. 
+This tutorial covers all the necessary steps for creating our shop. 
+If a setting is not mentioned, then that means that it is not necessary to interact with that setting. 
 
 Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
@@ -56,9 +62,9 @@ Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
-After saving the general settings, we are going to switch to the "localization" tab. 
+After saving the general settings, we are going to switch to the "Localization" tab. 
 
-Under "available languages", we can choose which languages our ticket shop will be published in. 
+Under "Available languages", we can choose which languages our ticket shop will be published in. 
 The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
 "German" uses "Sie" to address the user whereas "German (informal)" uses "du". 
 We can also choose one of the community translations for our organizer page. 
@@ -69,9 +75,9 @@ We are going to activate "English" and "German (informal)" for our example confe
 
 {% include "note-translations.md" %}
 
-We are going to choose Germany from the drop-down "region" menu. 
+We are going to choose Germany from the drop-down "Region" menu near the bottom of the page. 
 The selection will be used to determine default formats for dates, times, addresses and phone numbers. 
-We will choose "Europe/Berlin" as the "default timezone" from the drop-down menu with that title. 
+We will choose "Europe/Berlin" as the "Default timezone" from the drop-down menu with that title. 
 
 We use the :btn:Save: button to apply our localization settings __before__ changing any settings on the other tabs because the localization settings determine which customizations are available there. 
 
@@ -79,11 +85,11 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text in multiple languages. The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
-Switching to the "organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
+Switching to the "Organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
 
 Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/.
-The shop we are creating for this tutorial is located at [https://pretix.eu/ex-org/](https://pretix.eu/ex-org).
+The shop we are creating for this tutorial is located at [https://pretix.eu/tut/](https://pretix.eu/tut).
 
 By default, the name of the organizer will be displayed in the page header of our page.
 The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
@@ -91,15 +97,15 @@ We are going to add the header image by clicking the :btn:Browse...: button next
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
 
-In the "homepage text" fields, we can provide text to be displayed on our public profile. 
-There is one field for each language we activated in the "localization" tab (see the "localization" segment of this article)—English and German (informal). 
+In the "Homepage text" fields, we can provide text to be displayed on our public profile. 
+There is one field for each language we activated in the "Localization" tab (see the "Localization" segment of this article)—English and German (informal). 
 Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 ## Privacy 
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
-On the "privacy" tab, we can provide an URL pointing to our privacy policy for each language we activated. 
+On the "Privacy" tab, we can provide an URL pointing to our privacy policy for each language we activated. 
 
 !!! Warning 
 
@@ -113,8 +119,11 @@ On the "privacy" tab, we can provide an URL pointing to our privacy policy for e
 Our organizer account has to be activated before any of our ticket shops can go live. 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
-To enter this information, we are going to navigate to [Organizer] → "Settings" → "Billing settings". 
-The topmost field on the "general" tab is labeled "primary contact person". 
+To enter this information, we have to navigate to the billing settings. 
+"Billing settings" is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
+It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
+
+The topmost field on the "General" tab is labeled "Primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
 This information is mandatory. 
