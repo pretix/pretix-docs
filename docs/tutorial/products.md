@@ -52,11 +52,12 @@ We will navigate to the products page, click the red delete button labeled :btn-
 Back on the product overview, we will click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Discount ticket", provide a translation, change the "Default price" to €120.00, and click the :btn:Save: button. 
 
-A warning is now displayed in a yellow box at the top of the page, saying: 
-"Please note that your product will not be available for sale until you have added your item to an existing or newly created quota." 
-This warning will also appear during the creation of subsequent products. 
-We can safely ignore it for now because we will take care of adding products to quotas in the very next section of this article. 
-That will make the warning disappear. 
+!!! Note 
+    A warning is now displayed in a yellow box at the top of the page, saying: 
+    "Please note that your product will not be available for sale until you have added your item to an existing or newly created quota." 
+    This warning will also appear during the creation of subsequent products. 
+    We can safely ignore it for now because we will take care of adding products to quotas in the very next section of this article. 
+    That will make the warning disappear. 
 
 On the next page, we have to adjust the "Description" field to inform our customers of the prerequisites for access to the discounted ticket. 
 Our description reads:
