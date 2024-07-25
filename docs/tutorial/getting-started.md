@@ -1,7 +1,10 @@
 # Getting Started
 
-Welcome to the pretix tutorial. 
+Welcome to the pretix tutorial! 
 In this tutorial, we will go through all the necessary steps for hosting our very first event using pretix.
+For illustrative purposes, we will create a straightforward conference. 
+We will use specific examples for our organizer, event, products, as well as the names and prices thereof. 
+Feel free to replace these examples with your own as you create your event according to your specific needs. 
 
 pretix is open source software and can be used either in the cloud or on your own server.
 Running pretix on your own server requires in-depth technical knowledge and is described on our [Administrator documentation](https://docs.pretix.eu/en/latest/admin/index.html).
@@ -40,8 +43,8 @@ If other persons should use the system as well, we will be able to invite them l
 
     The short form cannot be changed without you contacting customer support and might no longer if you have already set up some parts of the system.
 
-The "full name" field is meant for the name of the company, association, or institution for which we want to organize events. 
-The "address short form" field is for a short form of the organization's name. 
+The "Full name" field is meant for the name of the company, association, or institution for which we want to organize events. 
+The "Address short form" field is for a short form of the organization's name. 
 This short form will be used for the URL under which our events can be found. 
 For this tutorial, we are going to create an account for our Tutorial Organization. 
 So we will enter "Tutorial Organization" into the full name field, and "tut" into the address short form field. 

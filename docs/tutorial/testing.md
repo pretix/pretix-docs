@@ -1,7 +1,7 @@
 # Testing and Going Live
 
 In this final part of the tutorial, we will test our shop, make sure that everything works as intended, and finally take it live. 
-We are going to take the following steps: 
+Here is a brief overview of the steps we are going to take in this section: 
 
  - placing an order in test mode 
  - reviewing the order in the backend and marking it as paid
@@ -22,7 +22,7 @@ We will now place an order for a standard ticket and a discount ticket, follow t
 During checkout, we will choose credit card as the payment method, which should currently display a note stating that the Stripe plugin is operating in test mode. 
 We will use the credit card data for one of the test cards [listed by Stripe](https://docs.stripe.com/testing#cards) to issue a fake payment for our order. 
 
-We will now open pretix.eu and navigate to [Event] → "Orders". 
+We will now open pretix.eu, navigate to our event, and click ":fontawesome-solid-cart-shopping: Orders" in the sidebar. 
 This page displays a list of orders. 
 If our test has been successful, the list now contains the test order we just placed. 
 The order should have the status ":material-check: Paid". 
@@ -42,13 +42,13 @@ However, we are going to make sure that our shop is exactly in the state we want
 ![Page titled 'Shop status', displaying a box warning about which conditions are not met yet for the shop to go live and options to disable test mode and delete all test mode orders.](../assets/screens/testing/shop-status.png "Shop status screenshot") 
 
 To make sure that only real orders from actual customers appear in our shop from this point onwards, we have to delete the orders we just placed in test mode. 
-For that, we will navigate to :navpath:Event → TEST MODE:. 
-We will check the box labeled "permanently delete all orders created in test mode" and click the :btn:Disable test mode: button. 
+For that, we will navigate to our event and click the ":fontawesome-solid-triangle-exclamation: TEST MODE" entry in the sidebar which is highlighted in orange. 
+We will check the box labeled "Permanently delete all orders created in test mode" and click the :btn:Disable test mode: button. 
 
 ## Conclusion 
 
 Once the experience in our shop is satisfactory and all other points have been checked off the list above, we can finally take our shop live. 
-In order to do that, we are going to browse to :navpath:Event → Dashboard:. 
+In order to do that, we are going to navigate to :navpath:Event → Dashboard:. 
 The event dashboard displays a box saying "Your ticket shop is not yet public. Click here to change". 
-Clicking that box takes us to the "shop status" page. 
+Clicking that box takes us to the "Shop status" page. 
 We are going to click the :btn:Go live: button and our ticket shop will finally go live! 
