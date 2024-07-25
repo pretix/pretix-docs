@@ -87,7 +87,8 @@ For more information on vouchers, see [vouchers](../topics/vouchers.md)
 ![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../assets/screens/products/products.png "Product variations screenshot") 
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
-For that, we will navigate to the products page and click the :btn-icon:fontawesome-solid-plus: Create a new product: button. 
+It is not possible to edit a product without variations into a product with multiple variations. 
+Therefore, we will navigate to the products page and click the :btn-icon:fontawesome-solid-plus: Create a new product: button. 
 We will name the product "Sticker", set it to "Non-admission product" and put it in the "Extras" category. 
 Under "Product variations", we will select "Product with multiple variations". 
 We will set the default price to €5.00. 

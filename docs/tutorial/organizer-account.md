@@ -51,7 +51,7 @@ We will enter a valid email address into the "Contact address" field.
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
 
 It is not necessary to touch all the settings displayed on this page. 
-This is also true for most of the pages that we are going to visit for this tutorial. 
+This is also true for most of the pages that we are going to visit for this tutorial.  
 pretix is a very powerful tool that offers many detailed adjustments and tweaks. 
 This tutorial covers all the necessary steps for creating our shop. 
 If a setting is not mentioned, then that means that it is not necessary to interact with that setting. 
@@ -123,7 +123,7 @@ To enter this information, we have to navigate to the billing settings.
 "Billing settings" is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
 It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
 
-The topmost field on the :btn:General: tab is labeled "Primary contact person". 
+In the "Billing settings", the topmost field on the :btn:General: tab is labeled "Primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
 This information is mandatory. 
