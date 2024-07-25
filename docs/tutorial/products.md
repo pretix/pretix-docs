@@ -38,7 +38,7 @@ We will click "Regular ticket", which takes us to the "Modify product" dialog.
 We will change the English item name to "Standard Ticket" and provide a German translation. 
 We are going to add the following description: 
 "Regular ticket granting access to the entire conference." 
-Next, we will click on the "Price" tab and change the "Default price" to €250.00. 
+Next, we will click on the :btn:Price: tab and change the "Default price" to €250.00. 
 We will also select the appropriate tax rate of 19% from the "Sales tax" dropdown. 
 
 ### Discount ticket
@@ -61,9 +61,9 @@ That will make the warning disappear.
 On the next page, we have to adjust the "Description" field to inform our customers of the prerequisites for access to the discounted ticket. 
 Our description reads:
 "This ticket is only valid if you provide a student ID or member ID at check-in."
-We will then switch to the "Price" tab, change the "Default price" to €120.00 and the original price to the price of the standard ticket, i.e. €250.00. 
+We will then switch to the :btn:Price: tab, change the "Default price" to €120.00 and the original price to the price of the standard ticket, i.e. €250.00. 
 The original price will be displayed as struck-through and the new default price will be displayed in bold green, highlighting the discount price. 
-Then, we will go to the "Check-in and validity" tab and check the box next to "Requires special attention". 
+Then, we will go to the :btn:Check-in and validity: tab and check the box next to "Requires special attention". 
 We have to provide instructions for the person operating the check-in at our event in the "Check-in text" field. 
 Our instructions say: "Check for student ID/member ID". 
 We will then click the :btn:Save: button. 
@@ -71,7 +71,7 @@ We will then click the :btn:Save: button.
 ### Speaker ticket
 
 Next, we are going to create a speaker ticket that is free, but can only be purchased with a voucher. 
-For that, we will navigate back to the products page [Event] :fontawesome-solid-arrow-right: "Products" :fontawesome-solid-arrow-right: "Products" and click the :btn:Clone: button next to the standard ticket in order to clone it. 
+For that, we will navigate back to the products page :navpath:Event → Products → Products: and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "Default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
 We will switch to the "Availability" tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page. 
 There is a toggle next to that option with an eye :fontawesome-solid-eye-slash: and an information :fontawesome-solid-info: symbol. 
@@ -93,7 +93,7 @@ Under "Product variations", we will select "Product with multiple variations".
 We will set the default price to €5.00. 
 Then, we will click :btn:Save and continue with more settings:. 
 
-Next, we will click on the "Variations" tab. 
+Next, we will click on the :btn:Variations: tab. 
 This tab will only be displayed if we selected "Product with multiple variations" during the creation of the product. 
 There should be one variant called "Standard" here. 
 We will click the name to expand the settings for that variant and change the name to "Purple". 
@@ -144,4 +144,4 @@ Since we still need quotas for the other variants of the product, we will naviga
 We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead.  
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 
-If we now navigate back to the "Products" page, open the "Sticker" product and click on the "Variations" tab, there should be no more yellow boxes warning us that we need to add the product and variants to a quota before they can be sold. 
+If we now navigate back to the "Products" page, open the "Sticker" product and click on the :btn:Variations: tab, there should be no more yellow boxes warning us that we need to add the product and variants to a quota before they can be sold. 

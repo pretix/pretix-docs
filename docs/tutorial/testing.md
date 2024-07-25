@@ -48,7 +48,7 @@ We will check the box labeled "Permanently delete all orders created in test mod
 ## Conclusion 
 
 Once the experience in our shop is satisfactory and all other points have been checked off the list above, we can finally take our shop live. 
-In order to do that, we are going to navigate to [Event] :fontawesome-solid-arrow-right: "Dashboard". 
+In order to do that, we are going to navigate to :navpath:Event → Dashboard:. 
 The event dashboard displays a box saying "Your ticket shop is not yet public. Click here to change". 
 Clicking that box takes us to the "Shop status" page. 
 We are going to click the :btn:Go live: button and our ticket shop will finally go live! 

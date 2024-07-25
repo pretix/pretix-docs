@@ -62,7 +62,7 @@ Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 
 ![Organizer settings page, on the localization tab, showing the official language options English, German, and German (informal) as well as a list of community translations from Arabic to Polish](../assets/screens/organizer/localization.png) 
 
-After saving the general settings, we are going to switch to the "Localization" tab. 
+After saving the general settings, we are going to switch to the :btn:Localization: tab. 
 
 Under "Available languages", we can choose which languages our ticket shop will be published in. 
 The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
@@ -85,7 +85,7 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text in multiple languages. The "public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
-Switching to the "Organizer page" tab at the top allows us to add our logo and customize our shop's interface colors.
+Switching to the :btn:Organizer page: tab at the top allows us to add our logo and customize our shop's interface colors.
 
 Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/.
@@ -97,15 +97,15 @@ We are going to add the header image by clicking the :btn:Browse...: button next
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
 
-In the "Homepage text" fields, we can provide text to be displayed on our public profile. 
-There is one field for each language we activated in the "Localization" tab (see the "Localization" segment of this article)—English and German (informal). 
+In the "homepage text" fields, we can provide text to be displayed on our public profile. 
+There is one field for each language we activated in the :btn:Localization: tab (see the "Localization" segment of this article)—English and German (informal). 
 Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
 ## Privacy 
 
 ![Organizer settings page, on the privacy tab, showing input fields for the URLs to a privacy policy in different languages, a large blue box with legal info, and prefilled text fields for the privacy settings dialog](../assets/screens/organizer/privacy.png) 
 
-On the "Privacy" tab, we can provide an URL pointing to our privacy policy for each language we activated. 
+On the :btn:Privacy: tab, we can provide an URL pointing to our privacy policy for each language we activated. 
 
 !!! Warning 
 
@@ -123,7 +123,7 @@ To enter this information, we have to navigate to the billing settings.
 "Billing settings" is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
 It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
 
-The topmost field on the "General" tab is labeled "Primary contact person". 
+The topmost field on the :btn:General: tab is labeled "Primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
 This information is mandatory. 
