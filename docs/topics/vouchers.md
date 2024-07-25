@@ -67,11 +67,15 @@ Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button take
 The voucher code has already been filled out automatically, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
-The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the ticket. 
-As an example, you could to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
+The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the product. 
+As an example, you could set "Price effect" to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
+
 You can use the "Maximum discount budget" to limit the usage of the voucher. 
-Another option of limiting potential losses in case of unexpectedly high usage of the voucher is setting a lower number of "Maximum usages". 
-Uncheck the box next to "Show hidden products that match this voucher" and click :btn:Save:. 
+Another option of limiting potential losses in case of unexpectedly high usage of the voucher is limiting the number of "Maximum usages". 
+Simply set that number to a reasonable limit. 
+Uncheck the box next to "Show hidden products that match this voucher". 
+Leaving this option checked while issuing vouchers for "All products" would mean that all hidden products are visible to a customer who is using the voucher. 
+Click :btn:Save: once you are happy with your choices. 
 
 ### Exclusive product availability
 
