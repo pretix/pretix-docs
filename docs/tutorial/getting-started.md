@@ -11,6 +11,8 @@ Running pretix on your own server requires in-depth technical knowledge and is d
 This page focuses on the easier way to use our cloud-based pretix Hosted offering.
 If you have pretix installed on your server, you can directly skip to the next chapter.
 
+
+
 Before we are able to do anything with pretix, we have to create an account. 
 Good news: creating an account is __completely free__ of charge and does not come with any obligation to pay money for the use of pretix in the future. 
 We are free to play around with the pretix software to our heart's content before deciding whether pretix is the right choice for us. 
