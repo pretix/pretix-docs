@@ -29,7 +29,7 @@ It gives you an overview of all vouchers that have already been created as well 
 ![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
-This is useful for when you are planning to publish a single voucher code for multiple people to use. 
+This is useful for when you are planning to publish a single voucher code that can then either be used by a single person or by multiple people. 
 
 The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
 This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
@@ -79,20 +79,26 @@ Click :btn:Save: once you are happy with your choices.
 
 ### Exclusive product availability
 
-This subsection explains how to use vouchers to make a product only available to a select group of invited guests. 
-This option is appropriate for cases in which you know the group of people beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
+This subsection explains how to use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
+This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
-First, create or edit the admission product for which you want to restrict availability. 
-Open the "Availability" tab and check the box next to "This product can only be bought using a voucher".
-The visibility toggle next to that options allows you to choose whether the product should still be displayed in your shop even to customers who do not have a voucher code. 
-Next, create a quota, add only this product to it and set the total capacity so that it covers the number of emails you are planning to send out. 
+Navigate to  [Your event] → ":fontawesome-solid-ticket: Products" → "Products" and create or edit the admission product for which you want to restrict availability. 
+While you are doing that, open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
+If you set the visibility toggle next to this option to "Hide product if unavailable", then the product will be hidden in your shop. 
+I will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
+Repeat these steps for each product that you want to make available through this voucher. 
+
+Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
 ![Page titled Create multiple vouchers, showing options for creating multiple voucher codes.](../assets/screens/vouchers/create-multiple.png)
 
-Then, navigate to [Your Event] :fontawesome-solid-arrow-right: "Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
-Generate the same number of voucher codes as emails you are planning to send out. 
-Under "Product", choose the product for which you want to restrict availability. 
-If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher". 
+Then, navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
+Generate the same number of voucher codes as people you are planning to invite. 
+The number of vouchers does not have to be equivalent to the number of emails you are sending out. 
+You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
+
+Under "Product", choose the product for which you want to restrict availability (or the quota, if there is more than one product). 
+If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
 An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
 This allows voucher holders to freely choose as many add-on products as they like on top of their tickets. 
@@ -100,14 +106,15 @@ This allows voucher holders to freely choose as many add-on products as they lik
 ![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
 Check the box next to "Send vouchers via email" in order to display the email settings. 
-You can save your invited guests one step by including the placeholder {voucher_url_list} in the "Message" text. 
+You can save your invited guests the step of opening your shop and then entering the voucher code by including the placeholder {voucher_url_list} in the "Message" text. 
+Opening that link will take them to the shop with the voucher code preselected and all associated products visible. 
 Enter the mail addresses into the "Recipients" field. 
 The software will display an error message if the number of recipients and generated vouchers do not match up. 
 
 ### Reserving tickets for a certain group
 
 This subsection explains how to use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
-Navigate to [Your Event] :fontawesome-solid-arrow-right: "Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button and generate one voucher for every member of the group in question.
+Navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
 Optionally, you may choose a descriptive prefix such as "guest-list-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
 This means that the voucher will entitle each holder to one basic admission ticket for free. 
