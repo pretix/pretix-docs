@@ -91,7 +91,7 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 Switching to the :btn:Organizer page: tab at the top allows us to add our logo and customize our shop's interface colors.
 
 Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
-An organizer page created with pretix Hosted will by default be located at https://pretix.eu/:navpath:OrganizerShortForm:/.
+An organizer page created with pretix Hosted will by default be located at https://pretix.eu/[OrganizerShortForm]/.
 The shop we are creating for this tutorial is located at [https://pretix.eu/tut/](https://pretix.eu/tut).
 
 By default, the name of the organizer will be displayed in the page header of our page.
