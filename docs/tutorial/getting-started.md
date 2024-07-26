@@ -44,6 +44,7 @@ For our personal account, we are going to provide our name, email address, and a
 The field on the top left is meant for the name of the person to whom the account belongs, **not** for a company name. 
 We are going to choose a name by which our co-organizers will recognize us and which our support team can use to address us. 
 For this tutorial, our name is going to be Jordan Doe.
+
 Everyone should have their own personal login.
 If other members of our team should have access to the system as well, we will be able to invite them later in the process.
 
@@ -57,12 +58,14 @@ If other members of our team should have access to the system as well, we will b
 The "Full name" field is meant for the name of the company, association, or institution for which we want to organize events. 
 The "Address short form" field is for a short form of the organization's name. 
 This short form will be used for the URL under which our events can be found. 
+
 For this tutorial, we are going to create an account for our Tutorial Organization. 
 So we will enter "Tutorial Organization" into the full name field, and "tut" into the address short form field. 
 This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/tut/](https://pretix.eu/tut/) from now on. 
 
 There is no need to create a dedicated test account or use the word "test" anywhere in the short form or name. 
 pretix offers a test mode that allows our organizer and events to remain invisible to the public, but still gives us access to all functions and settings. 
+
 By using the official name of our organization for the account right away, we can ensure that we get to use our preferred URL. 
 We can also avoid having to make the same adjustments to two different accounts. 
 Our events will not be visible to the public, nor will we be charged, until we explicitly take them live. 

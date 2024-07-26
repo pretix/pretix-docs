@@ -19,6 +19,7 @@ We are going to click the :btn-icon:fontawesome-regular-eye:Go to shop: button i
 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
 We will now place an order for a standard ticket and a discount ticket, follow the instructions on the screen, and enter an email address that we have access to when prompted. 
+
 During checkout, we will choose credit card as the payment method, which should currently display a note stating that the Stripe plugin is operating in test mode. 
 We will use the credit card data for one of the test cards [listed by Stripe](https://docs.stripe.com/testing#cards) to issue a fake payment for our order. 
 
@@ -34,6 +35,7 @@ This is to make sure that we have provided all the necessary translations and ou
 
 By trying out the shop and getting the same view as our customers, it will become obvious if we have made any mistakes or forgotten anything while setting up our event. 
 We may need to add texts, images, new products, questions, checks, or fine-tune the appearance of the shop. 
+
 It is possible to adjust these things when the shop is already live. 
 However, we are going to make sure that our shop is exactly in the state we want it to be in before we take it live so that all of our customers have a unified and flawless experience while using it. 
 
@@ -49,6 +51,7 @@ We will check the box labeled "Permanently delete all orders created in test mod
 
 Once the experience in our shop is satisfactory and all other points have been checked off the list above, we can finally take our shop live. 
 In order to do that, we are going to navigate to :navpath:Event → Dashboard:. 
+
 The event dashboard displays a box saying "Your ticket shop is not yet public. Click here to change". 
 Clicking that box takes us to the "Shop status" page. 
 We are going to click the :btn:Go live: button and our ticket shop will finally go live! 

@@ -51,7 +51,8 @@ We will enter a valid email address into the "Contact address" field.
 This email address will be displayed under the label "Contact event organizer" in the footer of the public profile to allow customers to contact us. 
 
 It is not necessary to touch all the settings displayed on this page. 
-This is also true for most of the pages that we are going to visit for this tutorial.  
+This is also true for most of the pages that we are going to visit for this tutorial. 
+
 pretix is a very powerful tool that offers many detailed adjustments and tweaks. 
 This tutorial covers all the necessary steps for creating our shop. 
 If a setting is not mentioned, then that means that it is not necessary to interact with that setting. 
@@ -67,9 +68,11 @@ After saving the general settings, we are going to switch to the :btn:Localizati
 Under "Available languages", we can choose which languages our ticket shop will be published in. 
 The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
 "German" uses "Sie" to address the user whereas "German (informal)" uses "du". 
+
 We can also choose one of the community translations for our organizer page. 
 They are displayed in the list below along with a percentage indicating how much of the software is translated. 
 English is used as the fallback language for missing translations. 
+
 These settings also determine the default languages when creating new events, though languages can be activated or deactivated for each event individually.
 We are going to activate "English" and "German (informal)" for our example conference. 
 
@@ -93,6 +96,7 @@ The shop we are creating for this tutorial is located at [https://pretix.eu/tut/
 
 By default, the name of the organizer will be displayed in the page header of our page.
 The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
+
 We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels from our computer. 
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
