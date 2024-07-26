@@ -102,7 +102,7 @@ Thus, this warning may persist for a while even if all necessary information has
 We are planning to print badges for our attendees during the conference. 
 That means we have to record their name and affiliation during purchase. 
 
-While we are viewing the event-level dashboard, we will click ":fontawesome-solid-wrench: Settings" in the sidebar, which lands us on the general settings page for the event. 
+While we are viewing the event-level dashboard, we will click :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar, which lands us on the general settings page for the event. 
 We will open the :btn:Customer and attendee data: tab at the top. 
 The options on this tab allow us to set questions for certain information for every ticket purchased
 The settings that are relevant for us are located underneath the "Attendee data (once per personalized ticket)" subheading. 

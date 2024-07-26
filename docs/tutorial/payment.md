@@ -17,8 +17,8 @@ A connection to your bank account is possible to set up on pretix Hosted, but it
 
 ![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../assets/screens/payment/settings.png "Payment settings screenshot") 
 
-In order to set up payment providers, we will navigate to our personal dashboard by clicking "pretix.eu" in the top left corner of the website. 
-We will then select our event in the list of "Your upcoming events", open ":fontawesome-solid-wrench: Settings" in the sidebar and click the "Payment" subentry. 
+In order to set up payment providers, we will navigate to our personal dashboard by clicking :btn:pretix.eu: in the top left corner of the website. 
+We will then select our event in the list of "Your upcoming events", open :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar and click the :btn:Payment: subentry. 
 This page displays a list of payment providers. 
 Bank transfer and Stripe should be included in this list. 
 By default, all payment providers in this list except gift card will be disabled. 
@@ -38,7 +38,7 @@ This takes us to the payment settings page for Stripe, which currently only cont
 
 Clicking that button takes us to a dialog on stripe.com, where we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account. 
 
-We will then return to pretix.eu, navigate to our event, open ":fontawesome-solid-wrench: Settings" in the sidebar, click the "Payment" subentry and open the Stripe settings. 
+We will then return to pretix.eu, navigate to our event, open :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar, click the :btn:Payment: subentry and open the Stripe settings. 
 Instead of the single button, the page will now display a multitude of settings. 
 We will check the boxes next to "Credit card payments" and "Enable payment method", then scroll to the bottom and click the :btn:Save: button. 
 Credit card payments via Stripe are now available as a payment method for customers in our shop. 
@@ -66,7 +66,7 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
-We will navigate to the invoicing settings by going to our event, opening ":fontawesome-solid-wrench: Settings" in the sidebar and clicking the "Invoicing" subentry. 
+We will navigate to the invoicing settings by going to our event, opening :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry. 
 On the :bzn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
 We will then switch to the :btn:Issuer details: tab and provide the name and full address of our organization. 
 The data we enter here will be used for all invoices we generate from this point on. 

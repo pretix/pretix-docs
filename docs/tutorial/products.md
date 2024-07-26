@@ -19,8 +19,8 @@ Categories can help us group products into sensible categories both in the backe
 They also separate standalone products from additional products. 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
 That means our next step is to create a category for those extras. 
-For that, we will navigate to our personal dashboard by clicking "pretix.eu" in the top left corner of the website. 
-We will then select our event in the list of "Your upcoming events", open ":fontawesome-solid-ticket: Products" in the sidebar and click the "Categories" subentry. 
+For that, we will navigate to our personal dashboard by clicking :btn:pretix.eu: in the top left corner of the website. 
+We will then select our event in the list of "Your upcoming events", open :btn-icon:fontawesome-solid-ticket: Products: in the sidebar and click the :btn:Categories: subentry. 
 This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
 We will click the :btn-icon:fontawesome-solid-plus: Create a new category: button and give the category a name such as "Extras". 
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
@@ -32,7 +32,7 @@ Clicking the :btn:Save: button at the bottom of the page takes us back to the pr
 Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
 First, we will edit the "Regular ticket" so that we can base all other tickets on this one. 
-In order to do that, we will click the "Products" subentry nested under ":fontawesome-solid-ticket: Products" in the sidebar. 
+In order to do that, we will click the :btn:Products: subentry nested under :btn-icon:fontawesome-solid-ticket: Products: in the sidebar. 
 The website should display two tickets that have already been created along with the event: "Regular ticket" and "Reduced ticket". 
 We will click "Regular ticket", which takes us to the "Modify product" dialog. 
 We will change the English item name to "Standard Ticket" and provide a German translation. 
@@ -56,7 +56,7 @@ We will name the new ticket "Discount ticket", provide a translation, change the
     A warning is now displayed in a yellow box at the top of the page, saying: 
     "Please note that your product will not be available for sale until you have added your item to an existing or newly created quota." 
     This warning will also appear during the creation of subsequent products. 
-    We can safely ignore it for now because we will take care of adding products to quotas in the very next section of this article. 
+    **We can safely ignore it** for now because we will take care of adding products to quotas in the very next section of this article. 
     That will make the warning disappear. 
 
 On the next page, we have to adjust the "Description" field to inform our customers of the prerequisites for access to the discounted ticket. 
@@ -74,7 +74,7 @@ We will then click the :btn:Save: button.
 Next, we are going to create a speaker ticket that is free, but can only be purchased with a voucher. 
 For that, we will navigate back to the products page :navpath:Event → Products → Products: and click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Speaker ticket", provide a translation, and change the "Default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
-We will switch to the "Availability" tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page. 
+We will switch to the :btn:Availability: tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page. 
 There is a toggle next to that option with an eye :fontawesome-solid-eye-slash: and an information :fontawesome-solid-info: symbol. 
 We are going to set that toggle to ":fontawesome-solid-eye-slash: Hide product if unavailable". 
 This means that the ticket will only be displayed to people who hold a corresponding voucher in our shop. 
@@ -111,7 +111,7 @@ A quota determines how many instances of our product can be sold.
 Every product has to be part of at least one quota before it becomes available in the shop.
 In this section, we are going to create quotas and add our products to them. 
 
-We will open ":fontawesome-solid-ticket: Products" in the sidebar and then the nested "Quotas" subentry. 
+We will open :btn-icon:fontawesome-solid-ticket: Products: in the sidebar and then the nested :btn:Quotas: subentry. 
 This page shows the list of all quotas for the event, which at the moment includes the "Regular ticket" quota, containing the standard ticket as a product, and the "Reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 

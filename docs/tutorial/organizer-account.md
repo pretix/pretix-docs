@@ -32,7 +32,7 @@ Upon clicking our organizer account in the list, we are taken to a page displayi
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-We are now going to click :btn:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
+We are now going to click :btn-icon:fontawesome-solid-wrench:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
 
 ## General 
 
@@ -97,7 +97,7 @@ We are going to add the header image by clicking the :btn:Browse...: button next
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
 
-In the "homepage text" fields, we can provide text to be displayed on our public profile. 
+In the "Homepage text" fields, we can provide text to be displayed on our public profile. 
 There is one field for each language we activated in the :btn:Localization: tab (see the "Localization" segment of this article)—English and German (informal). 
 Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
@@ -120,7 +120,7 @@ Our organizer account has to be activated before any of our ticket shops can go 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
 To enter this information, we have to navigate to the billing settings. 
-"Billing settings" is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
+:btn:Billing settings: is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
 It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
 
 In the "Billing settings", the topmost field on the :btn:General: tab is labeled "Primary contact person". 
