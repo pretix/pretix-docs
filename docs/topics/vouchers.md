@@ -34,14 +34,6 @@ This is useful for when you are planning to publish a single voucher code that c
 The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
 This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
 
-The :btn-icon:fontawesome-solid-download: Download: button lets you download a .csv file of the full list of vouchers you have created. 
-It is generally advisable to download and save your vouchers using this button whenever you create a set of vouchers. 
-The .csv export can serve as a backup archive for your voucher codes, lets you to distribute the codes by methods other than the pretix-native emailer, and allows you to re-use the same codes for a different event. 
-
-The :btn-icon:fontawesome-solid-upload: Import vouchers: button lets you upload such a list after saving it from a different event. 
-This function is meant for importing a set of vouchers that have all been created using the same settings.
-If you have saved the full list of vouchers from a different event and it includes more than one type of voucher, then it is advisable to split the .csv file according to type and import each part individually. 
-
 Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file on your computer. 
 
 If you have checked the box next to "Send vouchers via email" and entered email addresses in the Recipients field, make sure that you are happy with the subject line and message text previews before you click :btn:Save:. 
@@ -49,8 +41,7 @@ The emails will be sent out as soon as you click the :btn:Save: button.
 
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
-A useful entry in the "Tag" field could be the date and time at which the vouchers were created, the purpose for which they were created, or both. 
-For example, "2024-07-08 09:45 Limited Time Offer" would be a very useful tag if there is a large total number of vouchers for the event in question. 
+A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
 
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
@@ -64,7 +55,8 @@ This subsection explains how to create a voucher code for a limited time discoun
 ![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
-The voucher code has already been filled out automatically, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
+The "Voucher code" already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
+Any lower-case letters will be converted to upper case. 
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
 The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the product. 
@@ -101,7 +93,7 @@ Under "Product", choose the product for which you want to restrict availability 
 If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
 An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
-This allows voucher holders to freely choose as many add-on products as they like on top of their tickets. 
+This means that the cost for all add-on products that voucher holders select on top of their ticket will be waived. 
 
 ![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
@@ -115,7 +107,7 @@ The software will display an error message if the number of recipients and gener
 
 This subsection explains how to use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
 Navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
-Optionally, you may choose a descriptive prefix such as "guest-list-". 
+Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
 This means that the voucher will entitle each holder to one basic admission ticket for free. 
 
