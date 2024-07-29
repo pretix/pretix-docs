@@ -31,9 +31,6 @@ It gives you an overview of all vouchers that have already been created as well 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
 This is useful for when you are planning to publish a single voucher code that can then either be used by a single person or by multiple people. 
 
-The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
-This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
-
 Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file on your computer. 
 
 If you have checked the box next to "Send vouchers via email" and entered email addresses in the Recipients field, make sure that you are happy with the subject line and message text previews before you click :btn:Save:. 
@@ -45,6 +42,43 @@ A useful entry in the "Tag" field could be the purpose for which they were creat
 
 As described in the introduction, vouchers have several useful applications. 
 Those applications will be explained in the following subsections. 
+
+### Sending out emails 
+
+The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
+This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
+Check the box next to "Send vouchers via email" to expand the email settings. 
+
+The email settings allow you to specify the subject line and the message content of the emails you want to send out. 
+Each field lists the placeholders that are available for that field and comes with default pre-written content. 
+
+There are two methods for specifying the recipients. 
+The more basic method is providing a list of email addresses separated by line breaks in the "Recipients" field. 
+Each mail address gets its own line. 
+When using this method, the number of email addresses (and thus, lines) must be the same as the number of voucher codes generated. 
+
+The more advanced method is entering a comma-separated list into the "Recipients" field with up to four columns: 
+
+ - "email", containing the recipient email addresses
+ - "number, containing the number of voucher codes that will be sent to each email address
+ - "name", the name associated with the email address; this name will be used to fill the {name} placeholder in the "Subject" and "Message" fields above 
+ - "tag", which can be used to track additional information 
+
+Enter the columns you wish to populate and use into the first line, separated by commas and **without** spaces or quotation marks. 
+Enter the contact data below, again with each email address getting its own line and additional data going into the same line, separated by commas. 
+In the following example, Jordan would be sent 3, Morgan 1, and Jamie 10 voucher codes: 
+
+```
+email,number,name
+jordan@example.org,3,Jordan Doe
+morgan@example.org,1,Morgan Doe
+jamie@example.org,10,Jamie Doe
+
+```
+
+The total number of voucher codes you are sending out with this method has to match the number of voucher codes generated. 
+Emails will be sent out as soon as you click the :btn:Save: button. 
+The software will display an error message if the number of recipients and generated vouchers do not match up. 
 
 ## Applications 
 
