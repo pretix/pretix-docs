@@ -37,7 +37,21 @@ Whenever you create more than one type of voucher for an event, it is recommende
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
 A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
 
-### Sending out emails 
+### Importing vouchers 
+
+The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
+Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
+If the file can be successfully imported and parsed as a .csv file, you will land on a new page giving you a preview of the data and a wide selection of import settings. 
+
+These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
+Only the options for generating the voucher codes and sending out emails are missing here. 
+For each individual setting, you can specify a column from the .csv file or leave the default value. 
+Once you click :btn:Perform import:, pretix will attempt to parse the columns from the .csv file according to the settings you specified. 
+
+An error message will be displayed if any of the data in the columns does not fit the expected variable type. 
+
+
+### Sending out vouchers via email 
 
 The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
 This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
@@ -58,7 +72,7 @@ The more advanced method is entering a comma-separated list into the "Recipients
  - "name", the name associated with the email address; this name will be used to fill the {name} placeholder in the "Subject" and "Message" fields above 
  - "tag", which can be used to track additional information 
 
-Enter the columns you wish to populate and use into the first line, separated by commas and **without** spaces or quotation marks. 
+Enter the names of the columns you wish to populate and use into the first line, separated by commas and **without** spaces or quotation marks. 
 Enter the contact data below, again with each email address getting its own line and additional data going into the same line, separated by commas. 
 In the following example, Jordan would be sent 3, Morgan 1, and Jamie 10 voucher codes: 
 
