@@ -39,6 +39,7 @@ Any lower-case letters will be converted to upper case.
 ![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
 
 Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file or a spreadsheet on your computer. 
+
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
 A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
@@ -124,6 +125,7 @@ If the file can be successfully imported and parsed as a .csv file, you will lan
 These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
 Only the options for generating the voucher codes and sending out emails are missing here. 
 For each individual setting, you can specify a column from the .csv file. 
+
 The contents of that column will then be used to set the option for each individual voucher. 
 If your .csv file does not have a corresponding column, you can instead leave the default value. 
 Once you click :btn:Perform import:, pretix will attempt to parse the columns from the .csv file according to the settings you specified. 
@@ -150,9 +152,10 @@ These applications will be explained in the following subsections.
 
 This subsection explains how to create a voucher code for a limited time discount to attract more customers to your shop. 
 
-Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
+Navigate to [Your Event] → ":fontawesome-solid-tags: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
+
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
 The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the product. 
 As an example, you could set "Price effect" to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
@@ -160,6 +163,7 @@ As an example, you could set "Price effect" to "Reduce product price by (%)" and
 You can use the "Maximum discount budget" to limit the usage of the voucher. 
 Another option of limiting potential losses in case of unexpectedly high usage of the voucher is limiting the number of "Maximum usages". 
 Simply set that number to a reasonable limit. 
+
 Uncheck the box next to "Show hidden products that match this voucher". 
 Leaving this option checked while issuing vouchers for "All products" would mean that all hidden products are visible to a customer who is using the voucher. 
 Click :btn:Save: once you are happy with your choices. 
@@ -171,13 +175,14 @@ This option is appropriate for cases in which you know the group of recipients b
 
 Navigate to  [Your event] → ":fontawesome-solid-ticket: Products" → "Products" and create or edit the admission product for which you want to restrict availability. 
 While you are doing that, open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
+
 If you set the visibility toggle next to this option to "Hide product if unavailable", then the product will be hidden in your shop. 
 It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
 Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-Then, navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
+Then, navigate to [Your Event] → ":fontawesome-solid-tags: Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
 Generate the same number of voucher codes as people you are planning to invite. 
 The number of vouchers does not have to be equivalent to the number of emails you are sending out. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
@@ -185,6 +190,7 @@ You can send multiple vouchers to the same email address using the "number" colu
 Under "Product", choose the product for which you want to restrict availability (or the quota, if there is more than one product). 
 If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
+
 An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
 This means that the cost for all add-on products that voucher holders select on top of their ticket will be waived. 
 
@@ -198,6 +204,7 @@ The software will display an error message if the number of recipients and gener
 
 This subsection explains how to use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
 Navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
+
 Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
 This means that the voucher will entitle each holder to one basic admission ticket for free. 
@@ -205,9 +212,11 @@ This means that the voucher will entitle each holder to one basic admission tick
 ![Page titled Create multiple vouchers, highlighted are the options for reserving tickets from a quota and bypassing quotas.](../assets/screens/vouchers/create-multiple-reserve.png)
 
 There are two methods for ensuring access to tickets for the voucher holders: reserving tickets from a quota or allowing them to bypass quotas. 
+
 For the first option, check the box next to "Reserve ticket from quota". 
 You may have to increase the total capacity of the quota, particularly if the quota is already sold out. 
 This method has the advantage that you can still keep track of products purchased using this voucher via quotas, just like all other products. 
+
 The disadvantage is that this method does not give voucher holders reliable access to products if you selected one of the "Any product in quota" options under "Product" and the products are part of more than one quota with limited capacity. 
 You can still use this method without worrying about that if you select a specific product under "Product", or if the products in question are only part of one quota. 
 
