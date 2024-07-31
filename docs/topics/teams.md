@@ -46,21 +46,21 @@ They will appear in the list with either a gray or a green :fontawesome-solid-sh
 If the person you added does not have a pretix account yet, they will receive an email containing an invitation for creating one. 
 They will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
 
-This page also lets you add an API token with the same permissions as the team members. 
+This page also lets you add an API token that will grant access to the pretix API using the same level of permissions as the team members. 
 For more information on API tokens, see our [API documentation](https://docs.pretix.eu/en/latest/api/tokenauth.html). 
 
 ### Accepting an invitation to a team
 
 ![Email titled 'pretix account invitation', specifying the organizer Tutorial Ltd. and the team Helpers, displaying a link for joining that team.](../assets/screens/teams/account-invitation.png "pretix account invitation screenshot") 
 
-If you have been invited to a team and you do not have a personal pretix account yet, you will receive an email from support@pretix.eu that looks similar to the one in the screenshot above. 
-Clicking the link in that email takes you to a dialog on pretix.eu where you can create an account by simply entering a password and clicking the :btn:Register: button. 
+If you have been invited to a team and you do not have a personal pretix account yet, you will receive an email that looks similar to the one in the screenshot above. 
+Clicking the link in that email takes you to a dialog where you can create an account by simply entering a password and clicking the :btn:Register: button. 
 Once you have done that, you will land on the dashboard displaying a notification saying "Welcome to pretix! You are now part of the team 'Helpers'." 
 You will now have access to the organizer account and associated events as specified by the person inviting you. 
 
 ![Page titled 'Accept an invitation' with inputs for email address and password as well as buttons for logging in or registering.](../assets/screens/teams/accept-invitation.png "pretix accept an invitation screenshot") 
 
-If you have been invited to a team and you already have a personal pretix account, you can simply log in to pretix, or, if you are already logged in, refresh or open a new page. 
+If you have been invited to a team and you already have a personal pretix account, you can simply log in to pretix. 
 You will now have access to the organizer account and associated events as specified by the person inviting you. 
 
 ## See Also 
