@@ -40,10 +40,11 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-people-group: Teams" and select the team for which you want to send out an invitation. 
 You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fontawesome-solid-plus: Add: button. 
-If the person you added already had a pretix account, they will appear in the list with either a gray or a green :fontawesome-solid-shield-halved: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
+If the person you added already has a pretix account, they will be granted access to this organizer account instantly.
+They will appear in the list with either a gray or a green :fontawesome-solid-shield-halved: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
 
-If the person you added did not have a pretix account, they will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
-The invited person receive an email. 
+If the person you added does not have a pretix account yet, they will receive an email containing an invitation for creating one. 
+They will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
 
 This page also lets you add an API token with the same permissions as the team members. 
 For more information on API tokens, see our [API documentation](https://docs.pretix.eu/en/latest/api/tokenauth.html). 
