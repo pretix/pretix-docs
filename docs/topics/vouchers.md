@@ -141,8 +141,7 @@ This subsection explains how to create a voucher code for a limited time discoun
 ![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
-The "Voucher code" already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
-Any lower-case letters will be converted to upper case. 
+Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
 The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the product. 
@@ -163,8 +162,8 @@ This option is appropriate for cases in which you know the group of recipients b
 Navigate to  [Your event] → ":fontawesome-solid-ticket: Products" → "Products" and create or edit the admission product for which you want to restrict availability. 
 While you are doing that, open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 If you set the visibility toggle next to this option to "Hide product if unavailable", then the product will be hidden in your shop. 
-I will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
-Repeat these steps for each product that you want to make available through this voucher. 
+It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
+Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
