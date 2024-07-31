@@ -88,7 +88,7 @@ Choose a start date for importing transactions and confirm by clicking the :btn:
 If you now browse back to the "Automatic import" page, it will display the bank connections you selected on the previous page as connected. 
 
 Once the automatic import is active, you should check it for unresolved transactions occasionally. 
-The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle these transactions manually. 
+The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
 **Option B: importing bank data** 
 
@@ -100,10 +100,10 @@ It has to contain the following data:
  - amount 
  - reference 
  - payer 
- - IBAN (optional)
- - BIC (optional)
+ - IBAN 
+ - BIC 
 
-Refund files cannot be generated if IBAN and BIC are not provided here. 
+IBAN and BIC are optional, but refund files cannot be generated if they are not provided here. 
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
 We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
@@ -119,12 +119,14 @@ Click the :btn:Start upload: button.
 The pretix software will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such an assignment could look like with a small example CSV file. 
 
-![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data CSV" )
+![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
-Orders will be ignored if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
-You can intervene and make manual corrections here on this screen or by navigating to [Your Event] :fontawesome-solid-arrow-right: "Orders". 
+Transactions that are already known to the system because they have been imported at an earlier date will be ignored. 
+Transactions will be unresolved if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
+You can intervene and make manual corrections here on this screen. 
+The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
 **Option C: approving payments manually** 
 
@@ -132,18 +134,18 @@ You can intervene and make manual corrections here on this screen or by navigati
 
 Navigate to [Your Event] :fontawesome-solid-arrow-right: "Orders". 
 This page displays a list of all orders that have been placed in your shop. 
-If orders have been placed and paid via bank transfer, they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
+If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
 Click on the order code of one of the pending orders. 
 This takes you to the "order details" page for that order. 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fontawesome-solid-check:Mark as paid: button at the top of the order details page. 
 
-![Page titled Mark order as paid, showing options for changing the payment amount of  €250.00, payment date, and whether or not to notify the customer b email.](../../assets/screens/payment/order-mark-as-paid.png "Orders" )
+![Page titled Mark order as paid, showing options for changing the payment amount of  €250.00, payment date, and whether or not to notify the customer by email.](../../assets/screens/payment/order-mark-as-paid.png "Orders" )
 
 !!! Warning 
 
     Before confirming the order as paid, make absolutely sure that you have the correct order, the correct price, and the correct date. 
-    Once an order has been marked as paid, it cannot be marked as not paid/pending. 
+    Once a payment has been recorded, it cannot be deleted. 
 
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
@@ -156,6 +158,7 @@ Repeat this process for every order that shows up in the list on the "orders" pa
 
 Options A and B described above may sometimes yield unresolved transactions. 
 The most frequent cause for this is a mistyped or missing order number in the reference line. 
+If the bank account is also used for transactions unrelated to sales via pretix, this will also produce unresolved transactions. 
 pretix allows you to resolve these transactions manually. 
 If you have imported bank data on the organizer level, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
 If you have imported bank data on the event level, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
@@ -163,9 +166,14 @@ The process is the same from here on out.
 
 If there are unresolved transactions, they will be displayed on this page under a list titled "Unresolved transactions". 
 For every transaction in this list, you have two options: 
-Either you delete it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you search for a matching order and assign the order code to the transaction.
-In order to do that, open a new browser tab and navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders". 
+You can either tell pretix to ignore it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you can search for a matching order and assign the order code to the transaction.
+In order to do that, enter part of the order code or the name recorded in the transaction into the "Order code" field on the unresolved transaction. 
+Select the correct order from the search results and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
+Repeat this process for all unresolved orders. 
+
+If you cannot find and resolve all transactions this way, open a new browser tab and navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders". 
 Search the list for an order that matches the parameters of the unresolved transaction. 
 Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
-Repeat this process for all unresolved orders. 
-Delete them only if they have nothing to do with the event you are hosting and no matching order can be found. 
+
+Only delete orders if they have nothing to do with the event you are hosting and no matching order can be found. 
+
