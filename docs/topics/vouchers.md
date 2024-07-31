@@ -112,9 +112,14 @@ The software will display an error message if the number of recipients and gener
 
 ### Importing vouchers 
 
+![Page titled Import vouchers, showing a file upload and a setting for the character set.](../assets/screens/vouchers/import.png)
+
+
 The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
 Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
 If the file can be successfully imported and parsed as a .csv file, you will land on a new page giving you a preview of the data and a wide selection of import settings. 
+
+![Page titled Import vouchers, showing a preview of the uploaded data and import settings.](../assets/screens/vouchers/import-preview.png)
 
 These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
 Only the options for generating the voucher codes and sending out emails are missing here. 
