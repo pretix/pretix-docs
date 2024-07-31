@@ -71,19 +71,24 @@ Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Ba
 
 ![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
-Choose your region, bank, and start date for importing transactions. 
+Choose your country, bank, and start date for importing transactions. 
 If you leave the "Import Transactions since" field empty, pretix will import as many transactions as possible. 
 Usually, this includes all transactions of the last 90 days. 
 This can lead to problems if you have previously imported bank data to the same organizer account because the datapoints will be formatted differently and may not be easily recognized as depicting the same transactions. 
-Select the first day on which you have not imported bank data to the same organizer account if this applies to you. 
+Select the first day on which you have **not** imported bank data to the same organizer account if this applies to you. 
 In all other cases, you can leave the field empty. 
 
 Click the :btn-icon:material-login: Connect with bank: button. 
 This takes you to a webpage on ob.gocardless.com which asks you to consent to your data being processed by GoCardless and to provide your bank login. 
 Complete the authorization process according to the instructions on the website. 
-You will then be redirected to the pretix backend. 
-Select the bank connections that you want to process, choose a start date for importing transactions and confirm by clicking the :btn:Connect to bank: button. 
-If you now browse back to the "Automatic import" page, It will display the bank connections you selected on the previous page as connected. 
+You will then be redirected back to the pretix backend. 
+
+If you have multiple accounts at the bank, you have to select the bank account that you want to import data from. 
+Choose a start date for importing transactions and confirm by clicking the :btn:Connect to bank: button. 
+If you now browse back to the "Automatic import" page, it will display the bank connections you selected on the previous page as connected. 
+
+Once the automatic import is active, you should check it for unresolved transactions occasionally. 
+The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle these transactions manually. 
 
 **Option B: importing bank data** 
 
@@ -95,10 +100,10 @@ It has to contain the following data:
  - amount 
  - reference 
  - payer 
- - IBAN 	
- - BIC 
+ - IBAN (optional)
+ - BIC (optional)
 
-IBAN and BIC can be omitted for non-SEPA transactions. 
+Refund files cannot be generated if IBAN and BIC are not provided here. 
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
 We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
