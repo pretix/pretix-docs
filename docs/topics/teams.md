@@ -9,7 +9,7 @@ This article is going to tell you how use the "Teams" settings page, how to crea
 This article assumes that you have administrator access to an organizer account—that is, that you have the rights to change teams and permissions within pretix. 
 If you do not have access to an organizer account at all, then you are probably looking for the subsection on how to [accept an invitation to a team](teams.md#accepting-an-invitation-to-a-team). 
 
-## How To 
+## General usage
 
 ![Page titled 'Teams', listing a team called 'Administrators' and showing buttons for creating, editing and viewing teams.](../assets/screens/teams/teams.png "Teams screenshot") 
 
