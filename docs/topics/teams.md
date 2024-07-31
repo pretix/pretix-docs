@@ -1,12 +1,13 @@
 # Teams
 
 You do not have to manage your events all by yourself. 
-pretix allows you to invite other people, organize them in multiple teams, and manage permissions on who is allowed to access which settings and events. 
-This article is going to tell you how to do that. 
+pretix allows you to invite people, organize them into multiple teams, and manage permissions as to who is allowed to access which settings and events. 
+This article is going to tell you how use the "Teams" settings page, how to create teams, how to send out team invitations, and how to accept an such an invitation. 
 
 ## Prerequisites
 
 This article assumes that you have administrator access to an organizer account—that is, that you have the rights to change teams and permissions within pretix. 
+If you do not have access to an organizer account at all, then you are probably looking for the subsection on how to [accept an invitation to a team](teams.md#accepting-an-invitation-to-a-team). 
 
 ## How To 
 
