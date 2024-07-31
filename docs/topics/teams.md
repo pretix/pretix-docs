@@ -1,7 +1,7 @@
 # Teams
 
 You do not have to manage your events all by yourself. 
-pretix allows you to invite people, sort them into teams, and manage permissions on who is allowed to access which settings and events. 
+pretix allows you to invite other people, organize them in multiple teams, and manage permissions on who is allowed to access which settings and events. 
 This article is going to tell you how to do that. 
 
 ## Prerequisites
