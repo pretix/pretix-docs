@@ -32,7 +32,7 @@ Upon clicking our organizer account in the list, we are taken to a page displayi
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-We are now going to click :btn:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
+We are now going to click :btn-icon:fontawesome-solid-wrench:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
 
 ## General 
 
@@ -52,6 +52,7 @@ This email address will be displayed under the label "Contact event organizer" i
 
 It is not necessary to touch all the settings displayed on this page. 
 This is also true for most of the pages that we are going to visit for this tutorial. 
+
 pretix is a very powerful tool that offers many detailed adjustments and tweaks. 
 This tutorial covers all the necessary steps for creating our shop. 
 If a setting is not mentioned, then that means that it is not necessary to interact with that setting. 
@@ -67,9 +68,11 @@ After saving the general settings, we are going to switch to the :btn:Localizati
 Under "Available languages", we can choose which languages our ticket shop will be published in. 
 The options officially maintained by the pretix team are "English", "German", and "German (informal)". 
 "German" uses "Sie" to address the user whereas "German (informal)" uses "du". 
+
 We can also choose one of the community translations for our organizer page. 
 They are displayed in the list below along with a percentage indicating how much of the software is translated. 
 English is used as the fallback language for missing translations. 
+
 These settings also determine the default languages when creating new events, though languages can be activated or deactivated for each event individually.
 We are going to activate "English" and "German (informal)" for our example conference. 
 
@@ -93,11 +96,12 @@ The shop we are creating for this tutorial is located at [https://pretix.eu/tut/
 
 By default, the name of the organizer will be displayed in the page header of our page.
 The organizer page settings allow us to replace the name with a header image that tells our customers who is hosting the event (e.g., by means of our company name, logo, or recognizable design). 
+
 We are going to add the header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels from our computer. 
 The header image will replace the name of the event at the top of the page.
 We are going to check the box next to "Use header image also for events without an individually uploaded logo". 
 
-In the "homepage text" fields, we can provide text to be displayed on our public profile. 
+In the "Homepage text" fields, we can provide text to be displayed on our public profile. 
 There is one field for each language we activated in the :btn:Localization: tab (see the "Localization" segment of this article)—English and German (informal). 
 Our public profile will allow the viewer to switch between those languages via the links in the top right corner. 
 
@@ -120,10 +124,10 @@ Our organizer account has to be activated before any of our ticket shops can go 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
 To enter this information, we have to navigate to the billing settings. 
-"Billing settings" is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
+:btn:Billing settings: is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
 It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
 
-The topmost field on the :btn:General: tab is labeled "Primary contact person". 
+In the "Billing settings", the topmost field on the :btn:General: tab is labeled "Primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
 We will enter their email address and phone number in the fields below.
 This information is mandatory. 

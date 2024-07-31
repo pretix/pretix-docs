@@ -49,6 +49,7 @@ We are going to enter the fourth of June, 2027, into the start time field.
 Since we already know the location for our event, we're going to put that location into pretix now. 
 This information is optional and can still be changed later. 
 Our input into the "Location" field will be used to search OpenStreetMap for that location. 
+
 If the location can be found, the "Geo coordinates" fields will be filled out automatically and the map preview will center on that location. 
 If no results can be found for the input, the marker on the map can be dragged to the event location manually. 
 This will automatically update the "Geo coordinates" fields. 
@@ -75,9 +76,11 @@ But since this is the first event we're organizing with this organizer account, 
 The next page congratulates us on creating our event and gives us an opportunity to make quick changes to the products and basic settings for the event. 
 We do not need to touch these quick settings at the moment. 
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
+
 All we are going to do on this page is add two more pieces of information that are mandatory for our ticket shop to go live. 
 We will provide a general email address at which our customers can contact us in the Contact address" field. 
 This email address will be displayed in the page footer of our shop with the label "Contact event organizer". 
+
 We will provide a URL to legal imprint information for our organization's online presence in the "Imprint URL" field. 
 
 Once we click :btn:Save: at the bottom of the page, we are taken to an overview of the event, which gives us its name, the timeline of tickets sales and presale, and the status of our ticket shop, which should be in test mode at this point. 
@@ -93,6 +96,7 @@ It allows us to leave an internal comment for ourselves or our team and it logs 
 
 At this point, the overview will probably display a warning that our organizer account is not yet active. 
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
+
 Activating an account is a manual process and may take some time depending on the availability of the pretix team. 
 The account should usually be activated during the following business day. 
 Thus, this warning may persist for a while even if all necessary information has already been provided. 
@@ -102,10 +106,11 @@ Thus, this warning may persist for a while even if all necessary information has
 We are planning to print badges for our attendees during the conference. 
 That means we have to record their name and affiliation during purchase. 
 
-While we are viewing the event-level dashboard, we will click ":fontawesome-solid-wrench: Settings" in the sidebar, which lands us on the general settings page for the event. 
+While we are viewing the event-level dashboard, we will click :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar, which lands us on the general settings page for the event. 
 We will open the :btn:Customer and attendee data: tab at the top. 
 The options on this tab allow us to set questions for certain information for every ticket purchased
 The settings that are relevant for us are located underneath the "Attendee data (once per personalized ticket)" subheading. 
+
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
 In the text field labeled "Attendee data explanation", we will add an explanation as to why we're collecting the data in question. 
 Our explanation reads as follows: 
@@ -127,6 +132,7 @@ The shop we are creating for this tutorial is located at [https://pretix.eu/tut/
 
 By default, the name of the event will be displayed in the page header of our shop. 
 The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design). 
+
 We are going to add a header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels to upload from our computer. 
 By default, the header image will replace the name of the event at the top of the page. 
 We still want to include the name of the event though, so we are going to check the box next to "Show event title even if a header image is present". 
