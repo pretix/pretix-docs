@@ -3,8 +3,9 @@
 Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
 By default, the pretix software does not monitor payments arriving at your bank account. 
-If you are using pretix Hosted, you can use our integration with [GoCardless](https://gocardless.com) to automatically import bank data. 
-The alternatives for notifying the pretix software of incoming payments are: manually approving payments as complete, or regularly importing digital bank statements. 
+If you are using pretix Hosted, you can set up a connection to your bank account for automatic imports of bank data. 
+This works with most European banks. 
+The alternatives for notifying the pretix software of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
 It is also going to tell you how to notify the pretix software of incoming payments. 
 
@@ -22,7 +23,7 @@ Setting up bank transfer as a payment provider in pretix requires the following 
  3. Enter mandatory info on the bank transfer settings page 
  4. Make optional adjustments
  5. Enable payment via bank transfer
- 6. Set up monitoring via GoCardless **or** mark incoming payments as complete manually **or** regularly import a digital bank statement
+ 6. Set up automatic transaction import **or** regularly import a digital bank statement **or** mark incoming payments as complete manually
 
 This section will guide you through those steps in detail. 
 
@@ -56,7 +57,7 @@ Bank transfers will now appear as a payment option for customers in your shop.
 
 ### Monitoring incoming payments 
 
-If you are using pretix Hosted, then the pretix software can monitor payments arriving at your bank account via its integraton with GoCardless.
+If you are using pretix Hosted, then the pretix software can monitor payments arriving at your bank account if you grant us access to your bank account through our partner GoCardless.
 Alternatively, you can to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This section is going to guide you through all three options. 
 
@@ -70,7 +71,14 @@ Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Ba
 
 ![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
-Choose your region, bank and start date for importing transactions and click the :btn-icon:material-login: Connect with bank: button. 
+Choose your region, bank, and start date for importing transactions. 
+If you leave the "Import Transactions since" field empty, pretix will import as many transactions as possible. 
+Usually, this includes all transactions of the last 90 days. 
+This can lead to problems if you have previously imported bank data to the same organizer account because the datapoints will be formatted differently and may not be easily recognized as depicting the same transactions. 
+Select the first day on which you have not imported bank data to the same organizer account if this applies to you. 
+In all other cases, you can leave the field empty. 
+
+Click the :btn-icon:material-login: Connect with bank: button. 
 This takes you to a webpage on ob.gocardless.com which asks you to consent to your data being processed by GoCardless and to provide your bank login. 
 Complete the authorization process according to the instructions on the website. 
 You will then be redirected to the pretix backend. 
