@@ -5,6 +5,7 @@ Payments made via bank transfer go directly to your bank account.
 By default, the pretix software does not monitor payments arriving at your bank account. 
 If you are using pretix Hosted, you can set up a connection to your bank account for automatic imports of bank data. 
 This works with most European banks. 
+
 The alternatives for notifying the pretix software of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
 It is also going to tell you how to notify the pretix software of incoming payments. 
@@ -43,7 +44,7 @@ Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome
 The "payment providers" tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer.  
+Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
 
 The first thing you need to do on this page is choose the "bank account type". 
@@ -74,6 +75,7 @@ Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Ba
 Choose your country, bank, and start date for importing transactions. 
 If you leave the "Import Transactions since" field empty, pretix will import as many transactions as possible. 
 Usually, this includes all transactions of the last 90 days. 
+
 This can lead to problems if you have previously imported bank data to the same organizer account because the datapoints will be formatted differently and may not be easily recognized as depicting the same transactions. 
 Select the first day on which you have **not** imported bank data to the same organizer account if this applies to you. 
 In all other cases, you can leave the field empty. 
@@ -107,8 +109,9 @@ IBAN and BIC are optional, but refund files cannot be generated if they are not 
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
 We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
-If you want to import data for all events associated with the organizer, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer"
+If you want to import data for all events associated with the organizer, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
 This will take you to a page titled "Import bank data". 
+
 If you want to import data for a single event, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
 This will also take you to a page titled "Import bank data". 
 The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
@@ -125,6 +128,7 @@ Click :btn:Continue:.
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Transactions that are already known to the system because they have been imported at an earlier date will be ignored. 
 Transactions will be unresolved if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
+
 You can intervene and make manual corrections here on this screen. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
@@ -135,7 +139,8 @@ The [section below](bank-transfer.md#handling-unresolved-transactions) explains 
 Navigate to [Your Event] :fontawesome-solid-arrow-right: "Orders". 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
-Click on the order code of one of the pending orders. 
+
+Click the order code of one of the pending orders. 
 This takes you to the "order details" page for that order. 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fontawesome-solid-check:Mark as paid: button at the top of the order details page. 
@@ -150,8 +155,9 @@ If your bank account's transaction data has a record that matches the order in q
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
 You can prevent this by unchecking the box next to "notify customer by email". 
-Confirm by clicking the :btn:Create payment" button. 
-This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully." and a green tag in the top right saying "✓ Paid". 
+Confirm by clicking the :btn:Create payment: button. 
+
+This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying "✓ Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
 
 ### Handling unresolved transactions 
@@ -160,13 +166,15 @@ Options A and B described above may sometimes yield unresolved transactions.
 The most frequent cause for this is a mistyped or missing order number in the reference line. 
 If the bank account is also used for transactions unrelated to sales via pretix, this will also produce unresolved transactions. 
 pretix allows you to resolve these transactions manually. 
+
 If you have imported bank data on the organizer level, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
 If you have imported bank data on the event level, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
 The process is the same from here on out. 
 
 If there are unresolved transactions, they will be displayed on this page under a list titled "Unresolved transactions". 
 For every transaction in this list, you have two options: 
-You can either tell pretix to ignore it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you can search for a matching order and assign the order code to the transaction.
+You can either tell pretix to ignore it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you can search for a matching order and assign the order code to the transaction. 
+
 In order to do that, enter part of the order code or the name recorded in the transaction into the "Order code" field on the unresolved transaction. 
 Select the correct order from the search results and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
 Repeat this process for all unresolved orders. 
