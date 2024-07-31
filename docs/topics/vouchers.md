@@ -205,6 +205,10 @@ This method has the advantage that you can still keep track of products purchase
 The disadvantage is that this method does not give voucher holders reliable access to products if you selected one of the "Any product in quota" options under "Product" and the products are part of more than one quota with limited capacity. 
 You can still use this method without worrying about that if you select a specific product under "Product", or if the products in question are only part of one quota. 
 
+!!! Warning 
+    Using the "Allow to bypass quota" option, or retroactively increasing the capacity of a quota both carry the risk of overbooking. 
+    We do not recommend using these features if you are working with strict physical limitations such as the number of available seats, space at the event venue, or the number of meals that have been ordered. 
+
 For the other method, check the box next to "Allow to bypass quota" instead. 
 This gives voucher holders access to tickets even if all corresponding quotas are already sold out. 
 You should choose this method over the other one if you selected one of the "Any product in quota" options under "Product" and the products are part of more than one quota with limited capacity. 
