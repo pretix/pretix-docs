@@ -24,18 +24,25 @@ Your account needs to be activated before you can send out vouchers via email.
 ## General usage
 
 The settings page for vouchers is located at [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers". 
-It gives you an overview of all vouchers that have already been created as well as options to search and filter vouchers. 
+It gives you an overview of all vouchers that have already been created as well as options for searching and filtering vouchers. 
 
 ![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
 
-Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
+### Creating a single voucher 
+
+Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher. 
 This is useful for when you are planning to publish a single voucher code that can then either be used by a single person or by multiple people. 
+The "Voucher code" already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
+Any lower-case letters will be converted to upper case. 
 
-Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file on your computer. 
-
+Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file or a spreadsheet on your computer. 
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
 A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
+
+The voucher will be created as soon as you click the :btn:Save: button. 
+This will take you to the "Voucher details" page which displays the "Voucher link". 
+All settings that are available previous to creation can also be changed after the voucher has already been created. 
 
 ### Importing vouchers 
 
