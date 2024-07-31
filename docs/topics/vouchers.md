@@ -11,10 +11,11 @@ You can use them to:
  - make sure that voucher holders still have access to a product even if it is sold out
  - make products in your shop visible only to voucher holders
 
-Vouchers are not to be confused with [gift cards](gift-cards.md). 
-Gift cards essentially function like an additional method of payment for your customers. 
-They always represent a fixed amount of money that is subtracted from the total of the order. 
-Gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
+!!! Note 
+    Vouchers are not to be confused with [gift cards](gift-cards.md). 
+    Gift cards essentially function like an additional method of payment for your customers. 
+    They always represent a fixed amount of money that is subtracted from the total of the order. 
+    Gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
 
 ## Prerequisites
 
@@ -34,6 +35,8 @@ Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button take
 This is useful for when you are planning to publish a single voucher code that can then either be used by a single person or by multiple people. 
 The "Voucher code" already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
 Any lower-case letters will be converted to upper case. 
+
+![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
 
 Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file or a spreadsheet on your computer. 
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
@@ -56,6 +59,8 @@ You can also use a combination of randomly generated and manually entered codes.
 The codes must not repeat. 
 Codes are separated by line breaks, i.e., each code must be entered in a new line. 
 
+![Page titled Create multiple vouchers, showing options for creating multiple voucher codes.](../assets/screens/vouchers/create-multiple.png)
+
 The settings under "Voucher details" and "Advanced settings" are the same as in the dialog for creating a single voucher. 
 
 If you intend to use pretix to send out vouchers via email, do **not** save the vouchers yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
@@ -74,6 +79,8 @@ Check the box next to "Send vouchers via email" at the bottom of the page to exp
 
 The email settings allow you to specify the subject line and the message content of the emails you want to send out. 
 Each field lists the placeholders that are available for that field and comes with default pre-written content. 
+
+![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
 There are two methods for specifying the recipients. 
 The more basic method is providing a list of email addresses separated by line breaks in the "Recipients" field. 
@@ -138,8 +145,6 @@ These applications will be explained in the following subsections.
 
 This subsection explains how to create a voucher code for a limited time discount to attract more customers to your shop. 
 
-![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
-
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher code. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
@@ -167,8 +172,6 @@ Repeat these steps for each product that you want to make available exclusively 
 
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-![Page titled Create multiple vouchers, showing options for creating multiple voucher codes.](../assets/screens/vouchers/create-multiple.png)
-
 Then, navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
 Generate the same number of voucher codes as people you are planning to invite. 
 The number of vouchers does not have to be equivalent to the number of emails you are sending out. 
@@ -179,8 +182,6 @@ If you have set the visibility toggle of the product to hidden, check the box ne
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
 An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
 This means that the cost for all add-on products that voucher holders select on top of their ticket will be waived. 
-
-![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
 Check the box next to "Send vouchers via email" in order to display the email settings. 
 You can save your invited guests the step of opening your shop and then entering the voucher code by including the placeholder {voucher_url_list} in the "Message" text. 
