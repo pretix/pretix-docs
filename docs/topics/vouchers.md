@@ -44,19 +44,27 @@ The voucher will be created as soon as you click the :btn:Save: button.
 This will take you to the "Voucher details" page which displays the "Voucher link". 
 All settings that are available previous to creation can also be changed after the voucher has already been created. 
 
-### Importing vouchers 
+### Creating multiple vouchers 
 
-The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
-Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
-If the file can be successfully imported and parsed as a .csv file, you will land on a new page giving you a preview of the data and a wide selection of import settings. 
+The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
+Enter the number of voucher codes you want to create in the "Number" field. 
+If you type anything into the "Prefix" field prior to generating the codes, then each code you generate will start with that prefix. 
+Once you click :btn:Generate random codes:, the number of codes you specified will be displayed in the "Codes" field. 
 
-These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
-Only the options for generating the voucher codes and sending out emails are missing here. 
-For each individual setting, you can specify a column from the .csv file or leave the default value. 
-Once you click :btn:Perform import:, pretix will attempt to parse the columns from the .csv file according to the settings you specified. 
+You may also provide your own voucher codes by manually entering them into the "Codes" field. 
+You can also use a combination of randomly generated and manually entered codes. 
+The codes must not repeat. 
+Codes are separated by line breaks, i.e., each code must be entered in a new line. 
 
-An error message will be displayed if any of the data in the columns does not fit the expected variable type. 
+The settings under "Voucher details" and "Advanced settings" are the same as in the dialog for creating a single voucher. 
 
+If you intend to use pretix to send out vouchers via email, do **not** save the vouchers yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
+It is recommended that you choose a tag in the "Tag" field, copy the codes, and save them in a text file or in a spreadsheet. 
+This is particularly useful if you intend to distribute them by means other than the pretix-native mail server. 
+
+Once you have done that, click the :btn:Save: button and the vouchers will be created. 
+This will take to the "Vouchers" overview page. 
+You can still edit the settings for the vouchers, but you have to do that for each voucher individually. 
 
 ### Sending out vouchers via email 
 
@@ -94,6 +102,20 @@ jamie@example.org,10,Jamie Doe
 The total number of voucher codes you are sending out with this method has to match the number of voucher codes generated. 
 Emails will be sent out as soon as you click the :btn:Save: button. 
 The software will display an error message if the number of recipients and generated vouchers do not match up. 
+
+### Importing vouchers 
+
+The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
+Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
+If the file can be successfully imported and parsed as a .csv file, you will land on a new page giving you a preview of the data and a wide selection of import settings. 
+
+These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
+Only the options for generating the voucher codes and sending out emails are missing here. 
+For each individual setting, you can specify a column from the .csv file or leave the default value. 
+Once you click :btn:Perform import:, pretix will attempt to parse the columns from the .csv file according to the settings you specified. 
+
+An error message will be displayed if any of the data in the columns does not fit the expected variable type. 
+
 
 ## Applications 
 
