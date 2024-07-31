@@ -111,11 +111,23 @@ If the file can be successfully imported and parsed as a .csv file, you will lan
 
 These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
 Only the options for generating the voucher codes and sending out emails are missing here. 
-For each individual setting, you can specify a column from the .csv file or leave the default value. 
+For each individual setting, you can specify a column from the .csv file. 
+The contents of that column will then be used to set the option for each individual voucher. 
+If your .csv file does not have a corresponding column, you can instead leave the default value. 
 Once you click :btn:Perform import:, pretix will attempt to parse the columns from the .csv file according to the settings you specified. 
 
 An error message will be displayed if any of the data in the columns does not fit the expected variable type. 
+If the import is successful, the vouchers will be created for the current event as specified and can be viewed and edited in the overview on the "Vouchers" page. 
 
+### Downloading the full list of vouchers
+
+You can download the full list of vouchers for the current event by clicking the :btn-icon:fontawesome-solid-download: Download list: button. 
+Clicking that button will instantly start a download of a file named "vouchers.csv" to your device which can then be edited with a text editor or a spreadsheet editor. 
+The vouchers.csv file will contain the following columns: 
+
+Voucher code, Valid until, Product, Reserve quota, Bypass quota, Price effect, Value, Tag, Redeemed, Maximum usages, Seat, Comment
+
+The unedited file can also serve as a template for what a .csv file should look like when you upload it using the voucher import function. 
 
 ## Applications 
 
