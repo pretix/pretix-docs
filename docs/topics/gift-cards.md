@@ -102,6 +102,18 @@ To set up this feature, navigate to [Your event] :fontawesome-solid-arrow-right:
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 Click the :btn:Save: button to confirm your changes. 
 
+### Using gift cards for manual refunds 
+
+You can use pretix to refund an order by creating a gift card. 
+Navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders" and click the order you want to refund. 
+Under the subheading "Payments", click the :btn:Create a refund: button. 
+Choose the amount to be refunded and the action you want to take with the order, then click :btn:Continue:. 
+Enter an amount larger than 0.00 into the "Refund amound" field next to "Create a new gift card. 
+Optionally, you may select an "Expiration date". 
+A gift card of the specified value will be created as soon as you click "Perform refund". 
+You will then land on a page titled "Send email" where you have the option to send the customer an email containing the gift card code. 
+Gift cards created for refunds will also appear under [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards". 
+
 ### Manually issuing gift cards
 
 ![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
