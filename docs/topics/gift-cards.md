@@ -1,11 +1,12 @@
 # Gift Cards
 
-Gift cards are a type of product you sell in one of your shops, which customers can then use as a payment method for another purchase in one of your shops.
-Gift cards are a payment method and can be enabled or disabled like any other payment provider.
+Gift cards are a type of product you can sell in one of your shops, which customers can then use as a payment method for another purchase in one of your shops. 
+Gift cards behave like a payment method when used in your shop and can be enabled or disabled like any other payment provider.
 The only difference is that there is no dedicated plugin for gift cards since gift cards are part of the core functionality of the pretix software.
 
 Gift cards are not to be confused with [vouchers](vouchers.md).
-Unlike vouchers, gift cards always represent a fixed amount of money that is subtracted from the total of the order.
+Unlike vouchers, gift cards always represent a fixed amount of money that is subtracted from the total of the order. 
+Gift cards are not suitable for promotional campaigns as they do not allow a discount on the purchased products. 
 Also unlike vouchers, gift cards can be used across different events and organizers and do not affect the availability and visibility of certain products. 
 
 !!! Note 
@@ -17,11 +18,11 @@ Also unlike vouchers, gift cards can be used across different events and organiz
 
 In order to use gift cards as a payment method for an event, they have to be enabled for that event.
 Gift cards are enabled by default.
-If they are not enabled, you can change that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
+If they are not enabled, you can enable them by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
 
 pretix only supports selling gift cards at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
-This is the procedure prescribed by tax law in Germany and in some other countries. 
+This is the procedure prescribed by tax law in Germany and in some other countries for multi-purpose vouchers. 
 You have to create a tax rule with a rate of 0% before you can create a gift card.
 You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
 
@@ -30,7 +31,8 @@ You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fo
 ## General usage
 
 The following two subsections tell you how to do the basic setup for gift cards. 
-These steps are needed regardless of your individual use case. 
+By default, gift cards will be valid indefinitely; they will have codes that are 12 digits and length; and they will be accepted as a payment method for any newly created event without any restrictions. 
+If you want to change any of these things, then the next two subsections will tell you how. 
 
 ### Gift card validity and code length
 
@@ -45,10 +47,15 @@ Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid
 Organizer-level settings for gift cards can be adjusted on this page.
 The "Validity of gift card codes in years" field allows you to specify for how many years your gift cards should be valid. 
 The field accepts whole numbers as input. 
+
 The exact expiry date is always the end of the calendar year. 
 For example, if you enter 0 into the field and then create a gift card in the year 2025, then the gift card will be valid until midnight of December 31st, 2025. 
 This field is empty by default, meaning gift cards will remain valid indefinitely. 
 If you issue gift cards manually, you can set an individual date of expiration before or after the end of the period you chose here. 
+
+!!! Warning 
+    Many jurisdictions require a minimum period of validity of three years for gift cards. 
+    We recommend seeking legal advice before restricting the period of validity for gift cards. 
 
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
@@ -57,8 +64,7 @@ The default is 12 digits, the minimum length is 6 digits, and the maximum length
 
 Any gift card issued by your organizer account will be valid for every event created by that organizer account. 
 The gift card payment method is enabled by default for any newly created event. 
-In your customers' view of your shops, the option for paying via gift card is hidden by default. 
-This changes as soon as the first gift card is issued by your organizer account, be it manually or automatically. 
+In your customers' view of your shops, the option for paying via gift card is hidden until the first gift card has been issued by your organizer account. 
 
 ![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
 
@@ -69,7 +75,7 @@ Note that these settings apply on the event level, so they have to be changed fo
 
 ## Applications 
 
-There are three methods for giving your customers access to gift cards: selling them in your shop, using them for refunds, and issuing them manually. 
+There are three methods for giving your customers access to gift cards: selling them in your shop or via pretixPOS, using them for refunds, and issuing them manually. 
 These methods will be described in the following subsections. 
 
 ### Creating a gift card to offer in your shop
@@ -79,19 +85,20 @@ These methods will be described in the following subsections.
 If you want to sell gift cards in your shop, you can create them just like any other product. 
 Navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-ticket: Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
 Choose "Non-admission product" as the "Product type" and a 0.00% tax rule for the "Sales tax". 
-After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card" and click :btn:Save:. 
-If you check the box next to "Free price input", the value of the gift card will be equal to the price that the customer chooses to pay for it. 
+After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card", and click :btn:Save:. 
+If you check the box next to "Free price input", the customer will be able to freely choose the value of the gift card. 
 
 Once you have created the gift card, create a new quota and add the gift card to it. 
+Since gift cards are usually not bound by any physical limitations, it makes sense to give this quota an unlimited capacity by leaving the "Total capacity" field empty. 
 It is advisable to check the box next to "Ignore this quota when determining event availability" because the gift card is not an admission product. 
 The number of gift cards you are selling has nothing to do with the total number of admission tickets you are planning to sell for your event. 
 
-### Using gift cards for refunds 
+### Using gift cards for self-service refunds 
 
 ![Page titled Cancellation settings, on the Paid orders tab, highlighted are the settings for Refund method, offering four options, two of them involving gift cards.](../assets/screens/gift-cards/refund.png)
 
-pretix can automatically issue refunds in the form of gift cards.
-To set up this feature, navigate to, navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
+pretix can automatically refunds in the form of gift cards.
+To set up this feature, navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 Click the :btn:Save: button to confirm your changes. 
 
@@ -153,7 +160,7 @@ Either way, it is your own responsibility to handle the exchange of money to off
 Once a gift card has been issued automatically or manually, it cannot be deleted. 
 If you created a gift card erroneously and want to ensure that it cannot be used for payment, you need to devalue it manually. 
 This process has to be done for each gift card individually. 
-In order to do that, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and click the gift card in question in the list. 
+In order to do so, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and click the gift card in question in the list. 
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
 
