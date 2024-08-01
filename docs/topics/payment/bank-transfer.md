@@ -30,30 +30,30 @@ This section will guide you through those steps in detail.
 
 ### Setting up bank transfers
 
-Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Plugins". 
-Switch to the "payment providers" tab. 
+Navigate to :navpath:Your Event → Settings → Plugins:. 
+Switch to the "Payment providers" tab. 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
 If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-Navigate to [Your Event] :fontawesome-solid-arrow-right: "Settings" :fontawesome-solid-arrow-right: "Payment". 
-The "payment providers" tab on this page displays the list of active payment providers. 
+Navigate to :navpath:Your Event → Settings → Payment:. 
+The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
 Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
 
-The first thing you need to do on this page is choose the "bank account type". 
+The first thing you need to do on this page is choose the "Bank account type". 
 If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC and the name of the bank. 
-If you choose "other bank account", you have to provide the full details of the bank connection in the "bank account details" fields. 
+If you choose "Other bank account", you have to provide the full details of the bank connection in the "Bank account details" fields. 
 
 All settings further down on the page are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
-Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "enable payment method". 
+Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "Enable payment method". 
 Bank transfers will now appear as a payment option for customers in your shop. 
 
 ### Monitoring incoming payments 
@@ -68,7 +68,7 @@ This section is going to guide you through all three options.
 
 If you are using pretix Hosted, you can activate the automatic transaction report via pretix's integration with GoCardless. 
 This service is on the organizer level, meaning that bank data imported via this method is available for all events associated with the organizer. 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right: "Automatic import". 
+Navigate to :navpath:Your organizer → :material-bank: Bank transfer → Automatic import: . 
 
 ![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
@@ -109,14 +109,16 @@ IBAN and BIC are optional, but refund files cannot be generated if they are not 
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
 We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
-If you want to import data for all events associated with the organizer, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
+If you want to import data for all events associated with the organizer, navigate to :navpath:Your organizer → :material-bank: Bank transfer:. 
 This will take you to a page titled "Import bank data". 
 
-If you want to import data for a single event, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer". 
+If you want to import data for a single event, navigate to :navpath:Your event → :material-bank: Bank transfer:. 
 This will also take you to a page titled "Import bank data". 
 The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
 Whichever option you choose, the process is the same from here on out. 
 
+In the pretix backend, click on "Bank transfer" in the sidebar menu. 
+This will take you to a page titled "Import bank data". 
 Click on the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
 The pretix software will now ask you to specify which column in your file contains which data. 
@@ -136,7 +138,7 @@ The [section below](bank-transfer.md#handling-unresolved-transactions) explains 
 
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
-Navigate to [Your Event] :fontawesome-solid-arrow-right: "Orders". 
+Navigate to :navpath:Your Event → Orders:. 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
 
@@ -167,8 +169,8 @@ The most frequent cause for this is a mistyped or missing order number in the re
 If the bank account is also used for transactions unrelated to sales via pretix, this will also produce unresolved transactions. 
 pretix allows you to resolve these transactions manually. 
 
-If you have imported bank data on the organizer level, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
-If you have imported bank data on the event level, navigate to [Your event] :fontawesome-solid-arrow-right: ":material-bank: Bank transfer" :fontawesome-solid-arrow-right:, which lands you on the page titled "Import bank data". 
+If you have imported bank data on the organizer level, navigate to :navpath:Your organizer → :material-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
+If you have imported bank data on the event level, navigate to :navpath:Your event → :material-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 The process is the same from here on out. 
 
 If there are unresolved transactions, they will be displayed on this page under a list titled "Unresolved transactions". 
@@ -179,9 +181,8 @@ In order to do that, enter part of the order code or the name recorded in the tr
 Select the correct order from the search results and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
 Repeat this process for all unresolved orders. 
 
-If you cannot find and resolve all transactions this way, open a new browser tab and navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders". 
+If you cannot find and resolve all transactions this way, open a new browser tab and navigate to :navpath:Your event: → :fontawesome-solid-cart-shopping: Orders:. 
 Search the list for an order that matches the parameters of the unresolved transaction. 
 Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
 
 Only delete orders if they have nothing to do with the event you are hosting and no matching order can be found. 
-
