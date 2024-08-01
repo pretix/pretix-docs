@@ -108,7 +108,7 @@ You can use pretix to refund an order by creating a gift card.
 Navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders" and click the order you want to refund. 
 Under the subheading "Payments", click the :btn:Create a refund: button. 
 Choose the amount to be refunded and the action you want to take with the order, then click :btn:Continue:. 
-Enter an amount larger than 0.00 into the "Refund amound" field next to "Create a new gift card. 
+Enter an amount larger than 0.00 into the "Refund amount" field next to "Create a new gift card. 
 Optionally, you may select an "Expiration date". 
 A gift card of the specified value will be created as soon as you click "Perform refund". 
 You will then land on a page titled "Send email" where you have the option to send the customer an email containing the gift card code. 
@@ -118,11 +118,11 @@ Gift cards created for refunds will also appear under [Your organizer] :fontawes
 
 ![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
 
-You may want to manually issue a single gift card, for example as accommodation for an individual customer. 
+You may want to manually issue a single gift card, for example for a customer who acquired a voucher in paper form or via a different software. 
 You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards".
 This will land you on a page titled "Issued gift cards" displaying a search dialog, a button for manually issuing a gift card, and a list of gift card codes that have been issued already. 
 
-!!! Warning 
+!!! Note 
     Once a gift card has been created, it cannot be deleted (only devalued—see [devaluing gift cards](gift-cards.md#devaluing-gift-cards)). 
     If you are just exploring this feature for preliminary tests, make sure to check the box next to "Test mode card". 
     This makes the gift card only valid in test mode of your shop. 
@@ -133,9 +133,11 @@ Click the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button.
 The "Gift card code" field will already be filled out with a randomly generated code, but you can change that code to your liking. 
 Any code you enter here manually must be between 2 and 190 digits in length and may only contain Latin letters, numbers, dots and dashes.
 Diacritic symbols such as umlauts and accents are not supported. 
+
 You have to specify a "Gift card value" larger than zero in the currency of your choice. 
-If you want to create a gift card for test mode, check the box next to "Test mode card". 
-If you want to create a gift card for the live shop, do not check that box. 
+The currency you choose here has to match the currency of the events for which the gift card is intended to be used. 
+If you want to create a gift card for use in test mode, check the box next to "Test mode card". 
+If you want to create a gift card for use in the live shop, do not check that box. 
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
 
 The default value in the "Expiry date" fields is determined by the "Validity of gift card codes in years" setting on the organizer settings page. 
@@ -163,11 +165,6 @@ Either way, it is your own responsibility to handle the exchange of money to off
 ## Troubleshooting
 
 ### Devaluing gift cards 
-
-!!! Warning 
-    **Do not** devalue a gift card that you have sold in your shop or issued for a refund. 
-    Issuing your customer a gift card and then devaluing it would amount to a crime. 
-    Only ever devalue gift cards that exist exclusively inside the pretix backend, i.e. have not been sold, sent, or issued to anyone yet. 
 
 Once a gift card has been issued automatically or manually, it cannot be deleted. 
 If you created a gift card erroneously and want to ensure that it cannot be used for payment, you need to devalue it manually. 
