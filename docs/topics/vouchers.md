@@ -20,7 +20,7 @@ You can use them to:
 ## Prerequisites
 
 Vouchers are handled on the event level, so you first need to create the event for which you want to create vouchers. 
-Your account needs to be activated before you can send out vouchers via email. 
+If you are using pretix Hosted, your account needs to be activated before you can send out vouchers via email. 
 
 ## General usage
 
@@ -32,8 +32,8 @@ It gives you an overview of all vouchers that have already been created as well 
 ### Creating a single voucher 
 
 Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher. 
-This is useful for when you are planning to publish a single voucher code that can then either be used by a single person or by multiple people. 
-The "Voucher code" already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
+This is useful for when you are planning to publish a single voucher code that can then either be used once or multiple times. 
+The "Voucher code" field already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
 Any lower-case letters will be converted to upper case. 
 
 ![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
@@ -45,7 +45,9 @@ This can make it easier to find, edit and clone certain sets of vouchers in the 
 A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
 
 The voucher will be created as soon as you click the :btn:Save: button. 
-This will take you to the "Voucher details" page which displays the "Voucher link". 
+This will take you to the "Voucher details" page 
+This page displays the "Voucher link" which you can send to your customers. 
+Opening that link will take them to the shop with the voucher code preselected and all associated products visible. 
 All settings that are available previous to creation can also be changed after the voucher has already been created. 
 
 ### Creating multiple vouchers 
@@ -56,29 +58,27 @@ If you type anything into the "Prefix" field prior to generating the codes, then
 Once you click :btn:Generate random codes:, the number of codes you specified will be displayed in the "Codes" field. 
 
 You may also provide your own voucher codes by manually entering them into the "Codes" field. 
-You can also use a combination of randomly generated and manually entered codes. 
-The codes must not repeat. 
 Codes are separated by line breaks, i.e., each code must be entered in a new line. 
 
 ![Page titled Create multiple vouchers, showing options for creating multiple voucher codes.](../assets/screens/vouchers/create-multiple.png)
 
-The settings under "Voucher details" and "Advanced settings" are the same as in the dialog for creating a single voucher. 
+The settings in the "Voucher details" and "Advanced settings" sections are the same as in the dialog for creating a single voucher. 
 
 If you intend to use pretix to send out vouchers via email, do **not** save the vouchers yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 It is recommended that you choose a tag in the "Tag" field, copy the codes, and save them in a text file or in a spreadsheet. 
-This is particularly useful if you intend to distribute them by means other than the pretix-native mail server. 
+This is particularly useful if you intend to distribute them by means other than the pretix-native mail functionality. 
 
-Once you have done that, click the :btn:Save: button and the vouchers will be created. 
+Once you have made your choices, click the :btn:Save: button and the vouchers will be created. 
 This will take to the "Vouchers" overview page. 
 You can still edit the settings for the vouchers, but you have to do that for each voucher individually. 
 
 ### Sending out vouchers via email 
 
 The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
-This dialog also gives you access to the email settings, allowing you to instantly send out vouchers via email after creating them. 
-Check the box next to "Send vouchers via email" at the bottom of the page to expand the email settings. 
+This dialog also gives you access to the email options, allowing you to instantly send out vouchers via email after creating them. 
+Check the box next to "Send vouchers via email" at the bottom of the page to expand the email options. 
 
-The email settings allow you to specify the subject line and the message content of the emails you want to send out. 
+The email options allow you to specify the subject line and the message content of the emails you want to send out. 
 Each field lists the placeholders that are available for that field and comes with default pre-written content. 
 
 ![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
