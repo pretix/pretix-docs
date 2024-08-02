@@ -144,6 +144,10 @@ The default value in the "Expiry date" fields is determined by the "Validity of 
 If you clear the contents of the "Expiry date" fields, the gift card you are creating will remain valid indefinitely regardless of the organizer-level settings. 
 The gift card is created once you click :btn:Save:. 
 
+Once a gift card has been created, it cannot be deleted and only the following properties can be edited: date and time of expiry, ownership, and special terms and conditions. 
+You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards", clicking the gift card, and then clicking the :btn-icon:fontawesome-solid-pen-to-square: Edit: button. 
+Changing a gift card's value by manually adding transactions is described in the section on [devaluing gift cards](gift-cards.md#devaluing-gift-cards). 
+
 ### Accepting gift cards across different organizers
 
 It is possible for other organizer accounts to accept gift cards issued by you. 
