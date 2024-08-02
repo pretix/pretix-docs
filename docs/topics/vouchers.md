@@ -24,7 +24,7 @@ If you are using pretix Hosted, your account needs to be activated before you ca
 
 ## General usage
 
-The settings page for vouchers is located at [Your Event] → ":fontawesome-solid-tags: Vouchers". 
+The settings page for vouchers is located at :navpath:Your Event → :fontawesome-solid-tags: Vouchers:. 
 It gives you an overview of all vouchers that have already been created as well as options for searching and filtering vouchers. 
 
 ![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
@@ -149,7 +149,7 @@ These applications will be explained in the following subsections.
 
 You can create a voucher code for a limited time discount to attract more customers to your shop. 
 
-Navigate to [Your Event] → ":fontawesome-solid-tags: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
+Navigate to :navpath:Your Event → ":fontawesome-solid-tags: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
 
@@ -170,7 +170,7 @@ Click :btn:Save: once you are happy with your choices.
 You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
 This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
-Navigate to  [Your event] → ":fontawesome-solid-ticket: Products" → "Products" and create or edit the admission product for which you want to restrict availability. 
+Navigate to  :navpath:Your Event → :fontawesome-solid-ticket: Products → Products: and create or edit the admission product for which you want to restrict availability. 
 While you are doing that, open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
 If you set the visibility toggle next to this option to "Hide product if unavailable", then the product will be hidden in your shop. 
@@ -179,7 +179,7 @@ Repeat these steps for each product that you want to make available exclusively 
 
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-Then, navigate to [Your Event] → ":fontawesome-solid-tags: Vouchers" and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
+Then, navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
 Generate the same number of voucher codes as people you are planning to invite. 
 The number of vouchers does not have to be equivalent to the number of emails you are sending out. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
@@ -200,7 +200,7 @@ The software will display an error message if the number of recipients and gener
 ### Reserving tickets for a certain group
 
 You can use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
-Navigate to [Your Event] → ":fontawesome-solid-tags: Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
+Navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers:, click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
 
 Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
