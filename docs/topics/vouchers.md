@@ -109,11 +109,9 @@ The total number of voucher codes you are sending out with this method has to ma
 Otherwise, the software will display an error message. 
 Emails will be sent out as soon as you click the :btn:Save: button. 
 
-
 ### Importing vouchers 
 
 ![Page titled Import vouchers, showing a file upload and a setting for the character set.](../assets/screens/vouchers/import.png)
-
 
 The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
 Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
@@ -180,23 +178,21 @@ Next, create a quota, add only the products in question to it, and set the "Tota
 
 Then, navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
 Generate the same number of voucher codes as people you are planning to invite. 
-The number of vouchers does not have to be equivalent to the number of emails you are sending out. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
+See also: [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
-Under "Product", choose the product for which you want to restrict availability (or the quota, if there is more than one product). 
+Under "Product", choose the product (or the quota, if there is more than one product) which you want to make available to the voucher holders. 
 If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
 
 An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
 This means that the cost for all add-on products that voucher holders select on top of their ticket will be waived. 
 
-Check the box next to "Send vouchers via email" in order to display the email settings. 
-You can save your invited guests the step of opening your shop and then entering the voucher code by including the placeholder {voucher_url_list} in the "Message" text. 
-Opening that link will take them to the shop with the voucher code preselected and all associated products visible. 
+Check the box next to "Send vouchers via email" in order to display the email options. 
 Enter the mail addresses into the "Recipients" field. 
 The software will display an error message if the number of recipients and generated vouchers do not match up. 
 
-### Reserving tickets for a certain group
+### Reserving tickets
 
 You can use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
 Navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers:, click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
