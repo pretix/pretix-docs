@@ -24,7 +24,7 @@ If you are using pretix Hosted, your account needs to be activated before you ca
 
 ## General usage
 
-The settings page for vouchers is located at [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers". 
+The settings page for vouchers is located at [Your Event] → ":fontawesome-solid-tags: Vouchers". 
 It gives you an overview of all vouchers that have already been created as well as options for searching and filtering vouchers. 
 
 ![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
@@ -74,8 +74,7 @@ You can still edit the settings for the vouchers, but you have to do that for ea
 
 ### Sending out vouchers via email 
 
-The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
-This dialog also gives you access to the email options, allowing you to instantly send out vouchers via email after creating them. 
+The dialog for creating multiple new vouchers also gives you access to the email options, allowing you to instantly send out vouchers via email through pretix after creating them. 
 Check the box next to "Send vouchers via email" at the bottom of the page to expand the email options. 
 
 The email options allow you to specify the subject line and the message content of the emails you want to send out. 
@@ -83,19 +82,19 @@ Each field lists the placeholders that are available for that field and comes wi
 
 ![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
-There are two methods for specifying the recipients. 
+There are two methods for specifying the recipients: 
 The more basic method is providing a list of email addresses separated by line breaks in the "Recipients" field. 
 When using this method, the number of email addresses (and thus, lines) must be the same as the number of voucher codes generated. 
 If you enter the same email address more than once, then multiple emails will be sent to that address, each one containing a different voucher code. 
 
 The more advanced method is entering a comma-separated list into the "Recipients" field with up to four columns: 
 
- - "email", containing the recipient email addresses
- - "number, containing the number of voucher codes that will be sent to each email address
- - "name", the name associated with the email address; this name will be used to fill the {name} placeholder in the "Subject" and "Message" fields above 
- - "tag", which can be used to track additional information 
+ - **email**, containing the recipient email addresses
+ - **number**, containing the number of voucher codes that will be sent to each email address
+ - **name**, the name associated with the email address; this name will be used to fill the {name} placeholder in the "Subject" and "Message" fields above 
+ - **tag**, which can be used to track additional information 
 
-Enter the names of the columns you wish to populate and use into the first line, separated by commas and **without** spaces or quotation marks. 
+Enter the names of the columns you wish to populate and use into the first line, separated by commas and **without** spaces. 
 Enter the contact data below, again with each email address getting its own line and additional data going into the same line, separated by commas. 
 In the following example, Jordan would be sent 3, Morgan 1, and Jamie 10 voucher codes: 
 
@@ -104,12 +103,12 @@ email,number,name
 jordan@example.org,3,Jordan Doe
 morgan@example.org,1,Morgan Doe
 jamie@example.org,10,Jamie Doe
-
 ```
 
 The total number of voucher codes you are sending out with this method has to match the number of voucher codes generated. 
+Otherwise, the software will display an error message. 
 Emails will be sent out as soon as you click the :btn:Save: button. 
-The software will display an error message if the number of recipients and generated vouchers do not match up. 
+
 
 ### Importing vouchers 
 
@@ -118,19 +117,19 @@ The software will display an error message if the number of recipients and gener
 
 The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
 Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
-If the file can be successfully imported and parsed as a .csv file, you will land on a new page giving you a preview of the data and a wide selection of import settings. 
+If the file can be successfully imported and parsed as a .csv file, you will land on a new page with a preview of the data and a wide selection of import settings. 
 
 ![Page titled Import vouchers, showing a preview of the uploaded data and import settings.](../assets/screens/vouchers/import-preview.png)
 
-These settings are the same as the ones on the "Create multiple vouchers" page under the subheadings "Voucher details" and "Advanced settings". 
+These settings are the same as the ones on the "Create multiple vouchers" page in the sections "Voucher details" and "Advanced settings". 
 Only the options for generating the voucher codes and sending out emails are missing here. 
 For each individual setting, you can specify a column from the .csv file. 
 
 The contents of that column will then be used to set the option for each individual voucher. 
-If your .csv file does not have a corresponding column, you can instead leave the default value. 
+If your .csv file does not have a corresponding column, you can instead use one of the default values. 
 Once you click :btn:Perform import:, pretix will attempt to parse the columns from the .csv file according to the settings you specified. 
 
-An error message will be displayed if any of the data in the columns does not fit the expected variable type. 
+An error message will be displayed if any of the data in the columns does not fit the expected data type. 
 If the import is successful, the vouchers will be created for the current event as specified and can be viewed and edited in the overview on the "Vouchers" page. 
 
 ### Downloading the full list of vouchers
@@ -141,8 +140,6 @@ The vouchers.csv file will contain the following columns:
 
 Voucher code, Valid until, Product, Reserve quota, Bypass quota, Price effect, Value, Tag, Redeemed, Maximum usages, Seat, Comment
 
-The unedited file can also serve as a template for what a .csv file should look like when you upload it using the voucher import function. 
-
 ## Applications 
 
 As described in the introduction, vouchers have several useful applications. 
@@ -150,7 +147,7 @@ These applications will be explained in the following subsections.
 
 ### Offering a limited discount 
 
-This subsection explains how to create a voucher code for a limited time discount to attract more customers to your shop. 
+You can create a voucher code for a limited time discount to attract more customers to your shop. 
 
 Navigate to [Your Event] → ":fontawesome-solid-tags: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
@@ -170,7 +167,7 @@ Click :btn:Save: once you are happy with your choices.
 
 ### Exclusive product availability
 
-This subsection explains how to use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
+You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
 This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
 Navigate to  [Your event] → ":fontawesome-solid-ticket: Products" → "Products" and create or edit the admission product for which you want to restrict availability. 
@@ -202,8 +199,8 @@ The software will display an error message if the number of recipients and gener
 
 ### Reserving tickets for a certain group
 
-This subsection explains how to use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
-Navigate to [Your Event] :fontawesome-solid-arrow-right: ":fontawesome-solid-tags: Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
+You can use vouchers to ensure that a certain group of people gains access to an event, for example, guests invited to a concert by the performing artists. 
+Navigate to [Your Event] → ":fontawesome-solid-tags: Vouchers", click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
 
 Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
