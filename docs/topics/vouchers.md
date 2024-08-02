@@ -151,15 +151,14 @@ You can create a voucher code for a limited time discount to attract more custom
 
 Navigate to :navpath:Your Event → ":fontawesome-solid-tags: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
-Since this code is supposed to be able to be used more than once, set "Maximum usages" to 9999999. 
+Set "Maximum usages" to the upper limit of discounted purchases that you want to allow.
+If you do not want to set a limit, use a very high number such as 999999. 
+Alternatively, you can use the "Maximum discount budget" option below to limit potential losses in case of unexpectedly high usage of the voucher. 
 
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
+You can restrict usage of this voucher to only certain products by selecting a product or quota in the "Product" field. 
 The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the product. 
 As an example, you could set "Price effect" to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
-
-You can use the "Maximum discount budget" to limit the usage of the voucher. 
-Another option of limiting potential losses in case of unexpectedly high usage of the voucher is limiting the number of "Maximum usages". 
-Simply set that number to a reasonable limit. 
 
 Uncheck the box next to "Show hidden products that match this voucher". 
 Leaving this option checked while issuing vouchers for "All products" would mean that all hidden products are visible to a customer who is using the voucher. 
@@ -171,9 +170,9 @@ You can use vouchers to make a product (or multiple products) only available to 
 This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
 Navigate to  :navpath:Your Event → :fontawesome-solid-ticket: Products → Products: and create or edit the admission product for which you want to restrict availability. 
-While you are doing that, open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
+Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
-If you set the visibility toggle next to this option to "Hide product if unavailable", then the product will be hidden in your shop. 
+If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fontawesome-solid-eye-slash:), then the product will be hidden in your shop. 
 It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
 Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
