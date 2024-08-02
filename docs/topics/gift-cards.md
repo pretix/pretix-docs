@@ -162,25 +162,23 @@ You can retract the invitation or remove their ability to accept your gift cards
 If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
 Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
 
-## Troubleshooting
-
 ### Devaluing gift cards 
 
-Once a gift card has been issued automatically or manually, it cannot be deleted. 
-If you created a gift card erroneously and want to ensure that it cannot be used for payment, you need to devalue it manually. 
-This process has to be done for each gift card individually. 
+Gift cards can be devalued manually. 
+This is useful if a customer uses a gift card for a transaction that is not tracked by pretix. 
+For example, if you are using a separate point of sale system for selling food and drinks and a customer uses a gift card for a payment at that point of sale, you can track the value of the gift card by subtracting the amount from the gift card manually. 
 In order to do so, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and click the gift card in question in the list. 
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
 
 Note down the reason for the devaluing in the text field in the "Information" column.
 The gift card's "Current value" is displayed in the "Details" box. 
-Enter the current value's negative in the "Value" field. 
-For example, for an erroneously created gift card worth €92.50, enter "-92.50" and click the :btn-icon:fontawesome-solid-plus:: button. 
-This will add a new entry to the list of transactions and change the current value of the gift card to €0.00, meaning that it can no longer be used for payment.
-Attempting to use the gift card in your shop will now yield a message stating that all credit on the card has been used up. 
+Enter the negative amount of the transaction into the "Value" field. 
+For example, for a purchase totaling 12.50, enter "-12.50" and click the :btn-icon:fontawesome-solid-plus:: button. 
+This will add a new entry to the list of transactions and change the "Current value" of the gift card accordingly. 
 
-The same process can be used for increasing or decreasing the value of a gift card if it has been created with the wrong value. 
+The same process can be used for increasing or decreasing the value of a gift card if it has been created with the wrong value, or if it has been created in error, in which case you simply subtract the entire value from the gift card. 
+If you do so, attempting to use the gift card in your shop will yield a message stating that all credit on the card has been used up. 
 
 ## Further Information
 
