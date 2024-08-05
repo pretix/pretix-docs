@@ -40,22 +40,24 @@ from re import Match
 def on_page_markdown(
         markdown: str, *, page: Page, config: MkDocsConfig, files: Files
 ):
+    language = config.theme["language"]
+
     # Replace callback
     def replace(match: Match):
         type, args = match.groups()
         args = args.strip()
         if type == "version":
-            return _badge_for_version(args, page, files)
+            return _badge_for_version(args, page, files, language)
         elif type == "plugin":
-            return _badge_for_plugin(args, page, files)
+            return _badge_for_plugin(args, page, files, language)
         elif type == "enterprise":
-            return _badge_for_enterprise(page, files)
+            return _badge_for_enterprise(page, files, language)
         elif type == "hosted":
-            return _badge_for_hosted(page, files)
+            return _badge_for_hosted(page, files, language)
         elif type == "community":
-            return _badge_for_community(page, files)
+            return _badge_for_community(page, files, language)
         elif type == "experimental":
-            return _badge_for_experimental(page, files)
+            return _badge_for_experimental(page, files, language)
         else:
             raise RuntimeError(f"Unknown shortcode: {type}")
 
@@ -64,6 +66,14 @@ def on_page_markdown(
         r"<!-- md:(\w+)(.*?) -->",
         replace, markdown, flags=re.I | re.M
     )
+
+
+def i18n(language, strings):
+    if language in strings:
+        return strings[language]
+    if "en" in strings:
+        return strings[language]
+    return list(strings.values())[0]
 
 
 def _badge(icon: str, text: str = "", type: str = "", title: str = ""):
@@ -76,61 +86,79 @@ def _badge(icon: str, text: str = "", type: str = "", title: str = ""):
     ])
 
 
-def _badge_for_version(text: str, page: Page, files: Files):
+def _badge_for_version(text: str, page: Page, files: Files, language: str):
     icon = "material-tag-outline"
     return _badge(
         icon=f":{icon}:",
         text=text,
         type="version",
-        title=f"This section applies starting with pretix version {text}",
+        title=i18n(language, {
+            "de": f"This section applies starting with pretix version {text}",
+            "de": f"Dieser Abschnitt gilt ab pretix-Version {text}",
+        })
     )
 
 
-def _badge_for_experimental(page: Page, files: Files):
+def _badge_for_experimental(page: Page, files: Files, language: str):
     icon = "material-flask-outline"
     return _badge(
         icon=f":{icon}:",
         text="Experimental",
         type="experimental",
-        title="This section refers to experimental features that may be changed or removed in the future",
+        title=i18n(language, {
+            "en": "This section refers to experimental features that may be changed or removed in the future",
+            "de": "Dieser Abschnitt bezieht sich auf experimentelle Funktionen, die sich in der Zukunft wieder entfernt oder stark verändert werden könnten",
+        }),
     )
 
 
-def _badge_for_plugin(text, page: Page, files: Files):
+def _badge_for_plugin(text, page: Page, files: Files, language: str):
     icon = "material-puzzle"
     return _badge(
         icon=f":{icon}:",
         text="Plugin: " + text,
         type="plugin",
-        title="This section requires you to use the plugin " + text,
+        title=i18n(language, {
+            "en": "This section requires you to use the plugin " + plugin + ".",
+            "de": "Dieser Abschnitt setzt die Verwendung der Erweiterung " + plugin + " voraus.",
+        }),
     )
 
 
-def _badge_for_enterprise(page: Page, files: Files):
+def _badge_for_enterprise(page: Page, files: Files, language: str):
     icon = "material-star"
     return _badge(
         icon=f":{icon}:",
         text="pretix Enterprise",
         type="enterprise",
-        title="This section applies if you are using the commercial on-premise edition of pretix.",
+        title=i18n(language, {
+            "en": "This section applies if you are using the commercial on-premise edition of pretix.",
+            "de": "Dieser Abschnitt bezieht sich auf die kommerzielle selbst-gehostete Variante von pretix.",
+        }),
     )
 
 
-def _badge_for_hosted(page: Page, files: Files):
+def _badge_for_hosted(page: Page, files: Files, language: str):
     icon = "material-cloud"
     return _badge(
         icon=f":{icon}:",
         text="pretix Hosted",
         type="hosted",
-        title="This section applies if you are using our cloud offering pretix Hosted.",
+        title=i18n(language, {
+            "en": "This section applies if you are using our cloud offering pretix Hosted.",
+            "de": "Dieser Abschnitt bezieht sich auf unser Cloud-Angebot pretix Hosted.",
+        }),
     )
 
 
-def _badge_for_community(page: Page, files: Files):
+def _badge_for_community(page: Page, files: Files, language: str):
     icon = "material-heart-outline"
     return _badge(
         icon=f":{icon}:",
         text="pretix Community",
         type="community",
-        title="This section applies if you are using the open-source edition of pretix.",
+        title=i18n(language, {
+            "en": "This section applies if you are using the open-source edition of pretix.",
+            "de": "Dieser Abschnitt bezieht sich auf die selbst-gehostete Open-Source-Edition von pretix.",
+        }),
     )
