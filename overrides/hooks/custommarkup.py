@@ -39,7 +39,7 @@ def on_page_markdown(
             "en": "navigation path"
         })
         title = 'title="' + i18n(language, {
-            "de": "Starten Sie, in dem Sie zu diesem Element navigieren",
+            "de": "Starten Sie, indem Sie zu diesem Element navigieren",
             "en": "Start by navigating to this element, then go from here"
         }) + '"'
         return f'<span class="sr-only">{sr_prefix}</span>' + (f' :fontawesome-solid-arrow-right: <span class="sr-only">{sr_text}</span> '.join(
