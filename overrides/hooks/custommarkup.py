@@ -25,6 +25,15 @@ def on_page_markdown(
         )
         return f'<span class="typo-navlayer">{match.group(1)}</span>'
 
+    def replace_rootnavpath(match: Match):
+        parts = match.group(1).split("→")
+        return ' :fontawesome-solid-arrow-right: <span class="sr-only">→</span> '.join([
+            ':i-pretix:'
+        ] + [
+            f'<span class="typo-btn">{p.strip()}</span>' for i, p in enumerate(parts)
+        ])
+        return f'<span class="typo-navlayer">{match.group(1)}</span>'
+
     def replace_placeholder(match: Match):
         return f'<span class="typo-placeholder">{match.group(1)}</span>'
 
@@ -41,8 +50,12 @@ def on_page_markdown(
         replace_btn_mdi, markdown, flags = re.I
     )
     markdown = re.sub(
-        r":navpath:([^:]*):",
+        r":navpath:(([^:]|:[a-z0-9-]+:)*):",
         replace_navpath, markdown, flags = re.I
+    )
+    markdown = re.sub(
+        r":rootnavpath:(([^:]|:[a-z0-9-]+:)*):",
+        replace_rootnavpath, markdown, flags = re.I
     )
 
     return markdown
