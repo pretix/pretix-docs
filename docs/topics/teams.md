@@ -69,13 +69,17 @@ You will now have access to the organizer account and associated events as speci
 
 You can enable two-factor authentication by clicking your name in the top right corner of the website, which takes you to a page titled "Account settings". 
 Next to "Two-factor authentication", click :btn:Enable:. 
-You will then be asked to add a device: a smartphone with an Authenticator application
-WebAuthn-compatible hardware token (e.g. Yubikey) 
+You will then be asked to add a device: a smartphone with Google Authenticator or a comparable application, or a WebAuthn-compatible hardware token such as a Yubikey. 
+Provide a "Device name", choose the "Device type", and click :btn:Continue:. 
+
+If you choose your smartphone as an authentication device, you have to open the authenticator app on your smartphone and scan the QR code displayed in the pretix backend. 
+If you choose a WebAthn-compatible hardware token, your browser will prompt you to touch it. 
+In either case, the box next to "Require second factor for future logins" will be checked by default, meaning that you have to have this device on hand every time you want to log in ot pretix now. 
 
 While creating or editing a team, you can check the box next to "Require all members of this team to use two-factor authentication". 
 This setting may take a few minutes to take effect. 
-The next time a member of that team who has not enabled 2FA logs in, they will be taken to a page titled "Two-factor authentication". 
-They cannot leave that page until they enable 2FA (or add a new device if they have not done so yet) or leave the team in question. 
+The next time a member of that team who has not enabled 2FA logs in, they will be taken to the page titled "Two-factor authentication". 
+They cannot leave that page until they enable 2FA (and add a device if necessary), or leave the team in question. 
 
 ## See Also 
 
