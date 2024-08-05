@@ -47,8 +47,9 @@ The person will appear in the list with either a gray or a green :fontawesome-so
 If the person you added does not have a pretix account yet, they will receive an email containing an invitation for creating one. 
 They will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
 
-This page also lets you add an API token that will grant access to the pretix API using the same level of permissions as the team members. 
-For more information on API tokens, see our [API documentation](https://docs.pretix.eu/en/latest/api/tokenauth.html). 
+!!! Note 
+    This page also lets you add an API token that will grant access to the pretix API using the same level of permissions as the team members. 
+    For more information on API tokens, see our [API documentation](https://docs.pretix.eu/en/latest/api/tokenauth.html). 
 
 ### Accepting an invitation to a team
 
@@ -63,6 +64,18 @@ You will now have access to the organizer account and associated events as speci
 
 If you have been invited to a team and you already have a personal pretix account, you can log in to pretix. 
 You will now have access to the organizer account and associated events as specified by the person who invited you. 
+
+### Two-factor authentication (2FA) 
+
+You can enable two-factor authentication by clicking your name in the top right corner of the website, which takes you to a page titled "Account settings". 
+Next to "Two-factor authentication", click :btn:Enable:. 
+You will then be asked to add a device: a smartphone with an Authenticator application
+WebAuthn-compatible hardware token (e.g. Yubikey) 
+
+While creating or editing a team, you can check the box next to "Require all members of this team to use two-factor authentication". 
+This setting may take a few minutes to take effect. 
+The next time a member of that team who has not enabled 2FA logs in, they will be taken to a page titled "Two-factor authentication". 
+They cannot leave that page until they enable 2FA (or add a new device if they have not done so yet) or leave the team in question. 
 
 ## See Also 
 
