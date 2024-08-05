@@ -93,6 +93,32 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Payment: Zahlung
+          admonition_translations:
+            note: Hinweis
+            Note: Hinweis
+            abstract: Zusammenfassung
+            Abstract: Zusammenfassung
+            info: Information
+            Info: Information
+            tip: Tipp
+            Tip: Tipp
+            success: Erfolg
+            Success: Erfolg
+            question: Frage
+            Question: Frage
+            warning: Warnung
+            Warning: Warnung
+            failure: Fehler
+            Failure: Fehler
+            danger: Gefahr
+            Danger: Gefahr
+            bug: Fehler
+            Bug: Fehler
+            example: Beispiel
+            Example: Beispiel
+            quote: Zitat
+            Quote: Zitat
+
   - git-revision-date-localized
   - awesome-pages
 extra:
