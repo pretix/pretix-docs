@@ -25,7 +25,7 @@ You can view the settings and permissions by clicking the :btn-icon:fontawesome-
 
 Click the :btn-icon:fontawesome-solid-plus: Create a new team: button. 
 How you name your new team and which permissions you grant it is completely up to you. 
-For example, you could name your team "Helpers" to distinguish it from the administrators, activate the requirement for two-factor authentication, and give it the following organizer permissions: 
+For example, you could name your team "Helpers" to distinguish it from the administrators and give it the following organizer permissions: 
 "Can create events", "Can manage gift cards", and "Can manage customer accounts". 
 You could give the team access to "All events (including newly created ones)" and grant it the following event permissions: 
 "Can change event settings", "Can change product settings", "Can view orders", "Can change orders", "Can view vouchers", and "Can change vouchers". 
@@ -44,7 +44,7 @@ If the person you added already has a pretix account, they will be granted acces
 They will not be notified by the system, so you should let them know them that they have been granted access. 
 The person will appear in the list with either a gray or a green :fontawesome-solid-shield-halved: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
 
-If the person you added does not have a pretix account yet, they will receive an email containing an invitation for creating one. 
+If the person you added does not yet have a pretix account, they will receive an email invitation to create one. 
 They will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
 
 !!! Note 
