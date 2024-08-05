@@ -107,7 +107,7 @@ def _badge_for_experimental(page: Page, files: Files, language: str):
         type="experimental",
         title=i18n(language, {
             "en": "This section refers to experimental features that may be changed or removed in the future",
-            "de": "Dieser Abschnitt bezieht sich auf experimentelle Funktionen, die sich in der Zukunft wieder entfernt oder stark verändert werden könnten",
+            "de": "Dieser Abschnitt bezieht sich auf experimentelle Funktionen, die in der Zukunft wieder entfernt oder stark verändert werden könnten",
         }),
     )
 
