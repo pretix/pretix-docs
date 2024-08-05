@@ -57,7 +57,7 @@ def on_page_markdown(
             "en": "navigation path starting at the dashboard"
         })
         logo_hover = i18n(language, {
-            "de": "Beginnen Sie bei der Backend-Startseite (Klick aufs Logo links oben)",
+            "de": "Beginnen Sie auf der Backend-Startseite (Klick aufs Logo links oben)",
             "en": "Start at our backend home page (click on the logo in the top left)"
         })
         return f'<span class="sr-only">{sr_prefix}</span>' + (f' :fontawesome-solid-arrow-right: <span class="sr-only">{sr_text}</span> '.join([

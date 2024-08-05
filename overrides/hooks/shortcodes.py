@@ -133,7 +133,7 @@ def _badge_for_enterprise(page: Page, files: Files, language: str):
         type="enterprise",
         title=i18n(language, {
             "en": "This section applies if you are using the commercial on-premise edition of pretix.",
-            "de": "Dieser Abschnitt bezieht sich auf die kommerzielle selbst-gehostete Variante von pretix.",
+            "de": "Dieser Abschnitt bezieht sich auf die kommerzielle Variante von pretix zum Einsatz auf Ihrem eigenen Server.",
         }),
     )
 
@@ -159,6 +159,6 @@ def _badge_for_community(page: Page, files: Files, language: str):
         type="community",
         title=i18n(language, {
             "en": "This section applies if you are using the open-source edition of pretix.",
-            "de": "Dieser Abschnitt bezieht sich auf die selbst-gehostete Open-Source-Edition von pretix.",
+            "de": "Dieser Abschnitt bezieht sich auf die Open-Source-Variante von pretix zum Einsatz auf Ihrem eigenen Server.",
         }),
     )
