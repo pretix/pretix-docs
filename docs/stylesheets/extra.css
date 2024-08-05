@@ -213,6 +213,15 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
     border-radius: 4px;
 	font-style: italic;
 }
+.md-typeset .typo-placeholder {
+    display: inline-block;
+    border: 1px solid var(--md-accent-fg-color);
+	border-style: dashed;
+    padding: 0 2px;
+	margin: 0 2px;
+    border-radius: 4px;
+	font-style: italic;
+}
 
 
 /* External links */

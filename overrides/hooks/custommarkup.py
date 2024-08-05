@@ -25,6 +25,13 @@ def on_page_markdown(
         )
         return f'<span class="typo-navlayer">{match.group(1)}</span>'
 
+    def replace_placeholder(match: Match):
+        return f'<span class="typo-placeholder">{match.group(1)}</span>'
+
+    markdown = re.sub(
+        r":placeholder:([^:]*):",
+        replace_placeholder, markdown, flags = re.I
+    )
     markdown = re.sub(
         r":btn:([^:]+):",
         replace_btn, markdown, flags = re.I
