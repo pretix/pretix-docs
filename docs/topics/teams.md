@@ -1,19 +1,19 @@
 # Teams
 
 You do not have to manage your events all by yourself. 
-pretix allows you to invite people, organize them into multiple teams, and manage permissions as to who is allowed to access which settings and events. 
-This article is going to tell you how use the "Teams" settings page, how to create teams, how to send out team invitations, and how to accept an such an invitation. 
+pretix allows you to invite colleagues, organize them into multiple teams, and grant or revoke their access settings and events. 
+This article is going to tell you how to use the "Teams" settings page, create teams, send out team invitations, and accept an such an invitation. 
 
 ## Prerequisites
 
-This article assumes that you have administrator access to an organizer account—that is, that you have the rights to change teams and permissions within pretix. 
+Creating teams and managing permissions for them requires administrator access to an organizer account. 
 If you do not have access to an organizer account at all, then you are probably looking for the subsection on how to [accept an invitation to a team](teams.md#accepting-an-invitation-to-a-team). 
 
 ## General usage
 
 ![Page titled 'Teams', listing a team called 'Administrators' and showing buttons for creating, editing and viewing teams.](../assets/screens/teams/teams.png "Teams screenshot") 
 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-people-group: Teams". 
+Navigate to :navpath:Your organizer → Teams:. 
 This page will list all teams that are associated with your organizer account. 
 If you have not made any changes here, the list will contain a single entry named "Administrators" which contains you and has all possible permissions. 
 You can view the list of members and API tokens of a team by clicking the :btn-icon:fontawesome-solid-list:: button next to it. 
@@ -38,10 +38,11 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 ![Page titled 'Team: Helpers', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Helpers screenshot") 
 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-people-group: Teams" and select the team for which you want to send out an invitation. 
+Navigate to :navpath:Your organizer → Teams: and select the team for which you want to send out an invitation. 
 You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fontawesome-solid-plus: Add: button. 
-If the person you added already has a pretix account, they will be granted access to this organizer account instantly.
-They will appear in the list with either a gray or a green :fontawesome-solid-shield-halved: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
+If the person you added already has a pretix account, they will be granted access to this organizer account instantly. 
+They will not be notified by the system, so you should let them know them that they have been granted access. 
+The person will appear in the list with either a gray or a green :fontawesome-solid-shield-halved: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
 
 If the person you added does not have a pretix account yet, they will receive an email containing an invitation for creating one. 
 They will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
@@ -54,14 +55,14 @@ For more information on API tokens, see our [API documentation](https://docs.pre
 ![Email titled 'pretix account invitation', specifying the organizer Tutorial Ltd. and the team Helpers, displaying a link for joining that team.](../assets/screens/teams/account-invitation.png "pretix account invitation screenshot") 
 
 If you have been invited to a team and you do not have a personal pretix account yet, you will receive an email that looks similar to the one in the screenshot above. 
-Clicking the link in that email takes you to a dialog where you can create an account by simply entering a password and clicking the :btn:Register: button. 
+Clicking the link in that email takes you to a dialog where you can create an account by entering a password and clicking the :btn:Register: button. 
 Once you have done that, you will land on the dashboard displaying a notification saying "Welcome to pretix! You are now part of the team 'Helpers'." 
 You will now have access to the organizer account and associated events as specified by the person inviting you. 
 
 ![Page titled 'Accept an invitation' with inputs for email address and password as well as buttons for logging in or registering.](../assets/screens/teams/accept-invitation.png "pretix accept an invitation screenshot") 
 
-If you have been invited to a team and you already have a personal pretix account, you can simply log in to pretix. 
-You will now have access to the organizer account and associated events as specified by the person inviting you. 
+If you have been invited to a team and you already have a personal pretix account, you can log in to pretix. 
+You will now have access to the organizer account and associated events as specified by the person who invited you. 
 
 ## See Also 
 
