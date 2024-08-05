@@ -45,8 +45,7 @@ This can make it easier to find, edit and clone certain sets of vouchers in the 
 A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
 
 The voucher will be created as soon as you click the :btn:Save: button. 
-This will take you to the "Voucher details" page 
-This page displays the "Voucher link" which you can send to your customers. 
+The takes you to a new page titled "Voucher details" displaying the "Voucher link" which you can send to your customers. 
 Opening that link will take them to the shop with the voucher code preselected and all associated products visible. 
 All settings that are available previous to creation can also be changed after the voucher has already been created. 
 
@@ -147,7 +146,7 @@ These applications will be explained in the following subsections.
 
 You can create a voucher code for a limited time discount to attract more customers to your shop. 
 
-Navigate to :navpath:Your Event → ":fontawesome-solid-tags: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
+Navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Set "Maximum usages" to the upper limit of discounted purchases that you want to allow.
 If you do not want to set a limit, use a very high number such as 999999. 
@@ -176,8 +175,7 @@ Repeat these steps for each product that you want to make available exclusively 
 
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-Then, navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. 
-Generate the same number of voucher codes as people you are planning to invite. 
+Then, navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
 See also: [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
@@ -205,7 +203,8 @@ This means that the voucher will entitle each holder to one basic admission tick
 ![Page titled Create multiple vouchers, highlighted are the options for reserving tickets from a quota and bypassing quotas.](../assets/screens/vouchers/create-multiple-reserve.png)
 
 Check the box next to "Reserve ticket from quota". 
-This means that a number of products equal to the number of vouchers you are creating will be reserved from the quota so that they cannot be purchased without a voucher. 
+This means that a number of products equal to the number of vouchers you are creating multiplied with the maximum number of usages per voucher voucher will be reserved from the quota so that they cannot be purchased without a voucher. 
+For example, if you are creating 5 vouchers that each have 3 usages maximum, then 15 products will be reserved from the quota. 
 
 Please note that this does not give voucher holders reliable access to products if you selected one of the "Any product in quota" options under "Product" **and** the products are part of more than one quota with limited capacity. 
 You can still use this method without worrying about that if you select a specific product under "Product", or if the products in question are only part of one quota. 
