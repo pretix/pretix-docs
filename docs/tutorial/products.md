@@ -21,7 +21,7 @@ We are not only going to sell admission tickets in our shop, but also extras suc
 That means our next step is to create a category for those extras. 
 
 For that, we will navigate to our personal dashboard by clicking :btn:pretix.eu: in the top left corner of the website. 
-We will then select our event in the list of "Your upcoming events", open :btn-icon:fontawesome-solid-ticket: Products: in the sidebar and click the :btn:Categories: subentry. 
+We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-ticket: Products: in the sidebar and click the :btn:Categories: subentry. 
 This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
 
 We will click the :btn-icon:fontawesome-solid-plus: Create a new category: button and give the category a name such as "Extras". 
@@ -34,7 +34,7 @@ Clicking the :btn:Save: button at the bottom of the page takes us back to the pr
 Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
 First, we will edit the "Regular ticket" so that we can base all other tickets on this one. 
-In order to do that, we will click the :btn:Products: subentry nested under :btn-icon:fontawesome-solid-ticket: Products: in the sidebar. 
+In order to do that, we will click the :btn:Products: subentry nested under :btn-icon:fa3-ticket: Products: in the sidebar. 
 The website should display two tickets that have already been created along with the event: "Regular ticket" and "Reduced ticket". 
 We will click "Regular ticket", which takes us to the "Modify product" dialog. 
 
@@ -120,7 +120,7 @@ A quota determines how many instances of our product can be sold.
 Every product has to be part of at least one quota before it becomes available in the shop.
 In this section, we are going to create quotas and add our products to them. 
 
-We will open :btn-icon:fontawesome-solid-ticket: Products: in the sidebar and then the nested :btn:Quotas: subentry. 
+We will open :btn-icon:fa3-ticket: Products: in the sidebar and then the nested :btn:Quotas: subentry. 
 This page shows the list of all quotas for the event, which at the moment includes the "Regular ticket" quota, containing the standard ticket as a product, and the "Reduced ticket" quota, not containing any ticket. 
 The list also displays the total capacity and how many items are left for each quota. 
 
