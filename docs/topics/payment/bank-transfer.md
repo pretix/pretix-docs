@@ -105,7 +105,7 @@ It has to contain the following data:
  - IBAN 
  - BIC 
 
-IBAN and BIC are optional, but refund files cannot be generated if they are not provided here. 
+IBAN and BIC are optional, but pretix can offer additional functionality if they are provided (such as automatically generating refund files). 
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
 We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
@@ -173,7 +173,7 @@ If you have imported bank data on the organizer level, navigate to :navpath:Your
 If you have imported bank data on the event level, navigate to :navpath:Your event → :material-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 The process is the same from here on out. 
 
-If there are unresolved transactions, they will be displayed on this page under a list titled "Unresolved transactions". 
+If there are unresolved transactions, they will be displayed on this page as a list titled "Unresolved transactions". 
 For every transaction in this list, you have two options: 
 You can either tell pretix to ignore it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you can search for a matching order and assign the order code to the transaction. 
 
@@ -185,4 +185,4 @@ If you cannot find and resolve all transactions this way, open a new browser tab
 Search the list for an order that matches the parameters of the unresolved transaction. 
 Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
 
-Only delete orders if they have nothing to do with the event you are hosting and no matching order can be found. 
+Only delete transactions if they are unrelated to the event you are hosting and no matching order can be found. 
