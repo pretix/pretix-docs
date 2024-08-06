@@ -4,7 +4,8 @@ pretixSCAN is a powerful Android application that helps you handle the check-in 
 The primary function of pretixSCAN is to validate tickets, but it also offers many other features, such as: 
 
  - searching for participants manually if they do not have their ticket on hand 
- - 
+ - printing attendee badges
+ - quickly viewing attendance statistics
 
 This article will tell you how to get install pretixSCAN for **Android** and how to make use of its features. 
 
@@ -17,11 +18,9 @@ pretixSCAN is not to be confused with our other apps: pretixPRINT, which takes c
 ## Prerequisites
 
 pretixSCAN is meant for use with an event hosted using pretix. 
-This article assumes that you are hosting an event with pretix. 
 
-You need to have access to a device running Android version 5 or newer; for full functionality, Android version 6 or newer. 
-The device also needs to have a camera or integrated code scanner. 
-See our [support policy](https://docs.pretix.eu/en/latest/user/android-version-support.html#pretixscan) for more information. 
+You need to have access to a device running Android version 5 or newer. 
+See our [Android version support policy](https://docs.pretix.eu/en/latest/user/android-version-support.html#pretixscan) for more information. 
 
 You also need a separate device from which you can access the pretix backend while you are setting up your device running pretixSCAN. 
 
@@ -30,13 +29,16 @@ You also need a separate device from which you can access the pretix backend whi
 ### Installation and setup 
 
 !!! Note 
-    pretixSCAN comes preinstalled on the scanner smartphones that are available for rent and for sale on our website. 
-    You can skip this step if you are using devices that you rented or bought from us. 
+    pretixSCAN comes preinstalled on the scanner smartphones that are available for rent on our website. 
+    You can skip this step if you are using devices that you rented from us. 
     For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
 
 ![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot") 
 
 You can install pretixSCAN on your Android device [through the Google Play Store](https://play.google.com/store/apps/details?id=eu.pretix.pretixscan.droid) like any other app. 
+If your device does not have access to the Google Play Store, you can download the latest version from our [pretix Marketplace](https://marketplace.pretix.eu/products/pretixscan-android/versions). 
+On devices manufactured by Sunmi, you can also find the app in the Sunmi App Store. 
+
 When you launch pretixSCAN for the first time, confirm that you understand the privacy and security implications of storing attendee data on your device. 
 You have to grant pretixSCAN access to the device's camera in order to use the core functionality of validating tickets. 
 pretixSCAN will start accessing the scanner or camera instantly once you have granted permission. 
@@ -55,20 +57,18 @@ Select "pretixSCAN" from the "Security profile" dropdown menu.
 !["Connect to device" page, displaying instructions for installing pretixSCAN, a QR and a token.](../assets/screens/scan/connect-device.png "Connect to device screenshot") 
 
 Once you click :btn:Save:, you will be taken to a page displaying a QR code. 
-Use pretixSCAN on your Android device to scan the QR code. 
+Scan the QR code with the camera or hardware scanner while on the setup screen of pretixSCAN. 
+
 If you have trouble scanning the QR code, there is an alternative solution: 
 Tap the three button menu in the top right corner of the pretixSCAN app and then tap "Manual setup". 
-You will be asked to enter a system URL and a token. 
-If you are using pretix Hosted, the system URL will always be https://pretix.eu. 
-If you are self-hosting pretix (pretix Community or pretix Enterprise), you will have to enter the address of your server. 
-Enter the token displayed in the backend in the field in the pretixSCAN app. 
+Enter the system URL and token displayed in the pretix backend below the QR code. 
 
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../assets/screens/scan/select-event.png "Select event screenshot") 
 
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event you want to scan tickets for. 
 Check the event in the list or in the calendar and tap :btn:OK:. 
 Then, select a check-in list and tap :btn:OK: again. 
-The app will now land you on the main screen and download event data from the server. 
+The app will now land you on the main screen and start downloading event data from the server in the background. 
 
 ### Entry scanning
 
@@ -81,12 +81,12 @@ Simply point the device at the code you want to scan.
 The app will then check the code against the selected check-in list on the server. 
 There are three possible results: 
 
- 1. If the ticket is valid, has not been checked in yet, and allows entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket". 
- It lists the ticket type, order number, and item number. 
+ 1. If the ticket is valid and allows entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket". 
+ Underneath the green box, it lists the ticket type, order number, and position number. 
  2. If the ticket is valid but has already been checked in and not checked out again, pretixSCAN displays a yellow box titled "Ticket already used". 
- It lists the ticket type, order number, and item number, and also the date and time when the ticket was first scanned. 
+ Underneath the green box, it lists the ticket type, order number, and position number, and also the date and time when the ticket was first scanned. 
  3. In all other cases, pretixSCAN displays a red box with a title explaining the problem. 
- Explanations can include  "Invalid ticket", "Order canceled", or "Entry not allowed". 
+ Explanations can include, among others, "Invalid ticket", "Order canceled", or "Entry not allowed". 
 
 ![Scanning a ticket in pretixSCAN. A green box appears at the top of the screen, displaying a checkmark, the text: "Valid ticket (Speaker ticket)" and the order code suffixed with "-1".](../assets/screens/scan/valid.png "Valid ticket screenshot") 
 
@@ -97,21 +97,20 @@ If you have trouble scanning a code from a mobile phone screen, ask the customer
 
 ### Searching for attendee data 
 
-An alternative to scanning a ticket code is searching for attendee data in pretixSCAN. 
+An alternative to scanning a ticket code is searching for an attendee in pretixSCAN. 
 If an attendee arrives at the check-in without a ticket, but claiming that they have bought one, you can search for their data. 
 Tap the :btn-icon:fontawesome-solid-magnifying-glass:: button at the top of the screen. 
-In the search field, enter the attendee's name, order code, ticket secret, or mail address. 
+In the search field, enter the attendee's name, order code, ticket secret, or email address. 
 Tap the matching result in the list. 
-The app will now check the validity and check-in status of the ticket and return the same results as if the ticket was being scanned. 
+The app will now check the validity of the ticket and return the same results as if the ticket was being scanned. 
 
 ### Enabling badge printing 
 
-Badge printing only works if the "Badges" plugin has been enabled and the ticket you are scanning has a badge layout selected. 
-In order to enable badge printing in pretixSCAN, you have to first install and set up pretixPRINT on the same device. 
+Badge printing only works if the "Badges" plugin has been enabled for the current event and the ticket you are scanning has a badge layout selected. 
+In order to enable badge printing in pretixSCAN, you have to first install our additional app pretixPRINT on the same device and configure a connection to a printer. 
 
-Once you have done that, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+Once you have done that, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
-The app will now check if pretixPRINT is installed. 
 From now on, a :btn-icon:fontawesome-solid-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
 Tap the :btn-icon:fontawesome-solid-print:: button to print a badge for the ticket holder. 
 A push notification will pop up while the print job is being sent. 
@@ -136,13 +135,13 @@ You also have the option to protect the other functions of the app with the same
     The PIN settings page also has the option to turn on kiosk mode. 
     Kiosk mode fundamentally limits the functionality of the app. 
     The only way to leave kiosk mode is to scan a QR code of the PIN. 
-    **Do not** turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
-    **Do not** turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
+    Do not turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
+    Do not turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
 
 ### Offline scanning 
 
 The default scanning behavior of pretixSCAN requires a reliable network connection. 
-Every code scanned is compared with the selected check-in list that is stored on either pretix.eu (pretix Hosted) or your own server (pretix Enterprise and pretix Community). 
+Every code scanned is compared with the selected check-in list that is stored on the pretix server. 
 If you are using pretixSCAN in a setting with an unreliable network connection or no connection at all, you may run into error messages while attempting to scan a code or search for attendee data. 
 The solution for this problem is pretixSCAN's offline mode. 
 
