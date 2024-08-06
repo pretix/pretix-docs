@@ -18,13 +18,13 @@ Also unlike vouchers, gift cards can be used across different events and organiz
 
 In order to use gift cards as a payment method for an event, they have to be enabled for that event.
 Gift cards are enabled by default.
-If they are not enabled, you can enable them by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Payment", clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
+If they are not enabled, you can enable them by browsing to :navpath:Your event → :fontawesome-solid-wrench: Settings → Payment:, clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
 
 pretix only supports selling gift cards at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
 This is the procedure prescribed by tax law in Germany and in some other countries for multi-purpose vouchers. 
 You have to create a tax rule with a rate of 0% before you can create a gift card.
-You can do that by browsing to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Tax rules", clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
+You can do that by browsing to :navpath:Your event → :fontawesome-solid-wrench: Settings → Tax rules:, clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
 
 {% include "warning-tax.md" %}
 
@@ -43,7 +43,7 @@ It is therefore advisable to read this subsection and finalize your decisions on
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-Navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "General" and switch to the "Gift cards" tab. 
+Navigate to :navpathYour organizer → :fontawesome-solid-wrench: Settings → General: and switch to the "Gift cards" tab. 
 Organizer-level settings for gift cards can be adjusted on this page.
 The "Validity of gift card codes in years" field allows you to specify for how many years your gift cards should be valid. 
 The field accepts whole numbers as input. 
@@ -59,6 +59,8 @@ If you issue gift cards manually, you can set an individual date of expiration b
 
 This page also lets you choose how long gift card codes issued in your shop will be. 
 The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
+We recommend that you keep the default length of 12 characters unless you have a specific reason to change it. 
+
 
 ### Accepting gift cards as a payment method 
 
@@ -68,7 +70,7 @@ In your customers' view of your shops, the option for paying via gift card is hi
 
 ![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
 
-You can find the settings for gift cards as a payment method by navigating to [Your event] :fontawesome-solid-arrow-right: ":icon:fontawesome-solid-wrench:  Settings" :fontawesome-solid-arrow-right: "Payment" and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
+You can find the settings for gift cards as a payment method by navigating to :navpath:Your event → :icon:fontawesome-solid-wrench: Settings → Payment: and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
 Here, you can restrict the availability of the payment method by date, time period relative to the event, sales channel, and region, just like you can with any other payment method. 
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
 Note that these settings apply on the event level, so they have to be changed for each event individually. 
@@ -83,7 +85,7 @@ These methods will be described in the following subsections.
 ![Page titled Modify product: Gift card, on the Additional settings tab, the box next to This product is a gift card is checked.](../assets/screens/products/gift-card.png)
 
 If you want to sell gift cards in your shop, you can create them just like any other product. 
-Navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-ticket: Products" and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
+Navigate to :navpath:Your event → :fontawesome-solid-ticket: Products: and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
 Choose "Non-admission product" as the "Product type" and a 0.00% tax rule for the "Sales tax". 
 After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card", and click :btn:Save:. 
 If you check the box next to "Free price input", the customer will be able to freely choose the value of the gift card. 
@@ -97,29 +99,28 @@ The number of gift cards you are selling has nothing to do with the total number
 
 ![Page titled Cancellation settings, on the Paid orders tab, highlighted are the settings for Refund method, offering four options, two of them involving gift cards.](../assets/screens/gift-cards/refund.png)
 
-pretix can automatically refunds in the form of gift cards.
-To set up this feature, navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-wrench: Settings" :fontawesome-solid-arrow-right: "Cancellation" and open the "Paid orders" tab. 
+pretix can automatically issue refunds in the form of gift cards.
+To set up this feature, navigate to :navpath:Your event → :fontawesome-solid-wrench: Settings → Cancellation: and open the "Paid orders" tab. 
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 Click the :btn:Save: button to confirm your changes. 
 
 ### Using gift cards for manual refunds 
 
 You can use pretix to refund an order by creating a gift card. 
-Navigate to [Your event] :fontawesome-solid-arrow-right: ":fontawesome-solid-cart-shopping: Orders" and click the order you want to refund. 
-Under the subheading "Payments", click the :btn:Create a refund: button. 
+Navigate to :navpath:Your event → :fontawesome-solid-cart-shopping: Orders: and click the order you want to refund. Under the subheading "Payments", click the :btn:Create a refund: button. 
 Choose the amount to be refunded and the action you want to take with the order, then click :btn:Continue:. 
 Enter an amount larger than 0.00 into the "Refund amount" field next to "Create a new gift card. 
 Optionally, you may select an "Expiration date". 
 A gift card of the specified value will be created as soon as you click "Perform refund". 
 You will then land on a page titled "Send email" where you have the option to send the customer an email containing the gift card code. 
-Gift cards created for refunds will also appear under [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards". 
+Gift cards created for refunds will also appear under :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:. 
 
 ### Manually issuing gift cards
 
 ![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
 
 You may want to manually issue a single gift card, for example for a customer who acquired a voucher in paper form or via a different software. 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards".
+You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:.
 This will land you on a page titled "Issued gift cards" displaying a search dialog, a button for manually issuing a gift card, and a list of gift card codes that have been issued already. 
 
 !!! Note 
@@ -145,7 +146,7 @@ If you clear the contents of the "Expiry date" fields, the gift card you are cre
 The gift card is created once you click :btn:Save:. 
 
 Once a gift card has been created, it cannot be deleted and only the following properties can be edited: date and time of expiry, ownership, and special terms and conditions. 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards", clicking the gift card, and then clicking the :btn-icon:fontawesome-solid-pen-to-square: Edit: button. 
+You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:, clicking the gift card, and then clicking the :btn-icon:fontawesome-solid-pen-to-square: Edit: button. 
 Changing a gift card's value by manually adding transactions is described in the section on [devaluing gift cards](gift-cards.md#devaluing-gift-cards). 
 
 ### Accepting gift cards across different organizers
@@ -156,7 +157,7 @@ However, you can invite another organizer to accept your gift cards.
 
 ![Page titled Invite organizer, showing a text input for the organizer's short form and a checkbox for allowing access to reusable media, both empty.](../assets/screens/gift-cards/invite-organizer.png)
 
-You can do that by navigating to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" :fontawesome-solid-arrow-right: "Acceptance" and clicking the :btn:Invite new organizer: button. 
+You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards → Acceptance: and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
 This will return you to the acceptance settings page, where the organizer will now be listed with the status "invited". 
 The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
@@ -165,13 +166,14 @@ You can retract the invitation or remove their ability to accept your gift cards
 
 If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
 Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
+The export "Gift card redemptions" at :navpath:Organizer → Export: can be helpful with sorting out this exchange of money.
 
 ### Devaluing gift cards 
 
 Gift cards can be devalued manually. 
 This is useful if a customer uses a gift card for a transaction that is not tracked by pretix. 
 For example, if you are using a separate point of sale system for selling food and drinks and a customer uses a gift card for a payment at that point of sale, you can track the value of the gift card by subtracting the amount from the gift card manually. 
-In order to do so, navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-regular-credit-card: Gift cards" and click the gift card in question in the list. 
+In order to do so, navigate to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards: and click the gift card in question in the list. 
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
 
