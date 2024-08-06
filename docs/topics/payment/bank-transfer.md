@@ -31,7 +31,7 @@ This section will guide you through those steps in detail.
 ### Setting up bank transfers
 
 Navigate to :navpath:Your Event → Settings → Plugins:. 
-Switch to the "Payment providers" tab. 
+Switch to the :btn:Payment providers: tab. 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
 If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
@@ -58,11 +58,11 @@ Bank transfers will now appear as a payment option for customers in your shop.
 
 ### Monitoring incoming payments 
 
-If you are using pretix Hosted, then the pretix software can monitor payments arriving at your bank account if you grant us access to your bank account through our partner GoCardless.
+For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
 Alternatively, you can to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This section is going to guide you through all three options. 
 
-**Option A: automatic transaction import using GoCardless**
+#### Option A: automatic transaction import using GoCardless 
 
 <!-- md:hosted -->
 
@@ -92,7 +92,7 @@ If you now browse back to the "Automatic import" page, it will display the bank 
 Once the automatic import is active, you should check it for unresolved transactions occasionally. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
-**Option B: importing bank data** 
+#### Option B: importing bank data 
 
 Acquire an export of your bank account's transaction data. 
 The export has to be a file in the CSV or MT940 file format. 
@@ -134,7 +134,7 @@ Transactions will be unresolved if the pretix software cannot make a connection 
 You can intervene and make manual corrections here on this screen. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
-**Option C: approving payments manually** 
+#### Option C: approving payments manually 
 
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
