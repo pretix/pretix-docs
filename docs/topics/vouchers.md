@@ -203,7 +203,7 @@ This means that the voucher will entitle each holder to one basic admission tick
 ![Page titled Create multiple vouchers, highlighted are the options for reserving tickets from a quota and bypassing quotas.](../assets/screens/vouchers/create-multiple-reserve.png)
 
 Check the box next to "Reserve ticket from quota". 
-This means that a number of products equal to the number of vouchers you are creating multiplied with the maximum number of usages per voucher voucher will be reserved from the quota so that they cannot be purchased without a voucher. 
+This means that a number of products equal to the combined maximum number of usages of all the vouchers you are creating will be reserved from the quota so that they cannot be purchased without a voucher. 
 For example, if you are creating 5 vouchers that each have 3 usages maximum, then 15 products will be reserved from the quota. 
 
 Please note that this does not give voucher holders reliable access to products if you selected one of the "Any product in quota" options under "Product" **and** the products are part of more than one quota with limited capacity. 
