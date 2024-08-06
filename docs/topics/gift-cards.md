@@ -109,7 +109,7 @@ Click the :btn:Save: button to confirm your changes.
 You can use pretix to refund an order by creating a gift card. 
 Navigate to :navpath:Your event → :fontawesome-solid-cart-shopping: Orders: and click the order you want to refund. Under the subheading "Payments", click the :btn:Create a refund: button. 
 Choose the amount to be refunded and the action you want to take with the order, then click :btn:Continue:. 
-Enter an amount larger than 0.00 into the "Refund amount" field next to "Create a new gift card. 
+Enter an amount larger than 0.00 into the "Refund amount" field next to "Create a new gift card". 
 Optionally, you may select an "Expiration date". 
 A gift card of the specified value will be created as soon as you click "Perform refund". 
 You will then land on a page titled "Send email" where you have the option to send the customer an email containing the gift card code. 
