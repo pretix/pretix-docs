@@ -135,7 +135,7 @@ You can download the full list of vouchers for the current event by clicking the
 Clicking that button will instantly start a download of a file named "vouchers.csv" to your device which can then be edited with a text editor or a spreadsheet editor. 
 The vouchers.csv file will contain the following columns: 
 
-Voucher code, Valid until, Product, Reserve quota, Bypass quota, Price effect, Value, Tag, Redeemed, Maximum usages, Seat, Comment
+Voucher code, Valid until, Product, Reserve quota, Bypass quota, Price effect, Value, Tag, Redeemed, Maximum usages, Seat, Comment. 
 
 ## Applications 
 
@@ -160,6 +160,7 @@ As an example, you could set "Price effect" to "Reduce product price by (%)" and
 Uncheck the box next to "Show hidden products that match this voucher". 
 Leaving this option checked while issuing vouchers for "All products" would mean that all hidden products are visible to a customer who is using the voucher. 
 Click :btn:Save: once you are happy with your choices. 
+You can copy the code from the overview of vouchers and include it in, e.g., a newsletter, a social media post, or print media. 
 
 ### Exclusive product availability
 
@@ -169,7 +170,7 @@ This option is appropriate for cases in which you know the group of recipients b
 Navigate to  :navpath:Your Event → :fontawesome-solid-ticket: Products → Products: and create or edit the admission product for which you want to restrict availability. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
-If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fontawesome-solid-eye-slash:), then the product will be hidden in your shop. 
+If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fontawesome-solid-eye-slash::), then the product will be hidden in your shop. 
 It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
 Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
@@ -187,8 +188,8 @@ An optional step that can be useful if e.g. you are inviting VIPs is checking th
 This means that the cost for all add-on products that voucher holders select on top of their ticket will be waived. 
 
 Check the box next to "Send vouchers via email" in order to display the email options. 
-Enter the mail addresses into the "Recipients" field. 
-The software will display an error message if the number of recipients and generated vouchers do not match up. 
+Enter the mail addresses into the "Recipients" field or use the more advanced method described in the section on [sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
+Emails will be sent out as soon as you click the :btn:Save: button. 
 
 ### Reserving tickets
 
