@@ -2,13 +2,13 @@
 
 Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
-By default, the pretix software does not monitor payments arriving at your bank account. 
+By default, pretix does not monitor payments arriving at your bank account. 
 If you are using pretix Hosted, you can set up a connection to your bank account for automatic imports of bank data. 
 This works with most European banks. 
 
-The alternatives for notifying the pretix software of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
+The alternatives for notifying pretix of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
-It is also going to tell you how to notify the pretix software of incoming payments. 
+It is also going to tell you how to notify pretix of incoming payments. 
 
 ## Prerequisites
 
@@ -30,13 +30,14 @@ This section will guide you through those steps in detail.
 
 ### Setting up bank transfers
 
-Navigate to :navpath:Your Event → Settings → Plugins:. 
+If you want to use bank transfers to receive payments in pretix, the "Bank transfer" plugin needs to be enabled. 
+In order to make sure that the plugin is enabled, navigate to :navpath:Your Event → Settings → Plugins:. 
 Switch to the :btn:Payment providers: tab. 
+
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
 If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
-Make sure that the plugin is enabled. 
 
 ![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
@@ -59,7 +60,7 @@ Bank transfers will now appear as a payment option for customers in your shop.
 ### Monitoring incoming payments 
 
 For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
-Alternatively, you can to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+Alternatively, you can to notify pretix of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This section is going to guide you through all three options. 
 
 #### Option A: automatic transaction import using GoCardless 
@@ -121,7 +122,7 @@ In the pretix backend, click on "Bank transfer" in the sidebar menu.
 This will take you to a page titled "Import bank data". 
 Click on the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
-The pretix software will now ask you to specify which column in your file contains which data. 
+pretix will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such an assignment could look like with a small example CSV file. 
 
 ![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
@@ -129,7 +130,7 @@ The screenshot illustrates what such an assignment could look like with a small 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Transactions that are already known to the system because they have been imported at an earlier date will be ignored. 
-Transactions will be unresolved if the pretix software cannot make a connection between the bank transaction and any order in your shop. 
+Transactions will be unresolved if pretix cannot make a connection between the bank transaction and any order in your shop. 
 
 You can intervene and make manual corrections here on this screen. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
