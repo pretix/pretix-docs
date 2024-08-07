@@ -118,9 +118,7 @@ This will also take you to a page titled "Import bank data".
 The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
 Whichever option you choose, the process is the same from here on out. 
 
-In the pretix backend, click on "Bank transfer" in the sidebar menu. 
-This will take you to a page titled "Import bank data". 
-Click on the :btn:Browse...: button and select the export file for upload. 
+Click the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
 pretix will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such an assignment could look like with a small example CSV file. 
@@ -167,7 +165,7 @@ Repeat this process for every order that shows up in the list on the "orders" pa
 
 Options A and B described above may sometimes yield unresolved transactions. 
 The most frequent cause for this is a mistyped or missing order number in the reference line. 
-If the bank account is also used for transactions unrelated to sales via pretix, this will also produce unresolved transactions. 
+If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
 pretix allows you to resolve these transactions manually. 
 
 If you have imported bank data on the organizer level, navigate to :navpath:Your organizer → :material-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
