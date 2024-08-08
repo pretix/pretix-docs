@@ -15,7 +15,7 @@ Here is a brief overview of the steps we are going to take in this section:
 ![Our shop page, titled 'Tutorial conference', listing date and location for our event and a selection of products. There is a box warning that the shop is currently in test mode.](../assets/screens/testing/shop.png "Shop screenshot") 
 
 We will now place an order in our shop. 
-We are going to click the :btn-icon:fontawesome-regular-eye:Go to shop: button in the bar at the top. 
+We are going to click the :btn-icon:fa3-eye:Go to shop: button in the bar at the top. 
 
 This takes us to the shop which should currently have a red bar at the top stating that it is only visible to us and our team, and a yellow box warning that it is in test mode. 
 We will now place an order for a standard ticket and a discount ticket, follow the instructions on the screen, and enter an email address that we have access to when prompted. 
@@ -26,7 +26,7 @@ We will use the credit card data for one of the test cards [listed by Stripe](ht
 We will now open pretix.eu, navigate to our event, and click :btn-icon:fa3-shopping-cart: Orders: in the sidebar. 
 This page displays a list of orders. 
 If our test has been successful, the list now contains the test order we just placed. 
-The order should have the status ":material-check: Paid". 
+The order should have the status ":fa3-check: Paid". 
 
 We are going to repeat this process for every language we have activated for the shop. 
 This is to make sure that we have provided all the necessary translations and our localization settings are correct. 

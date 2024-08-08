@@ -153,7 +153,7 @@ The purple sticker is not an admission ticket but an additional product that can
 We do not want this quota to add to the total number of tickets available for the event. 
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
-Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fontawesome-regular-copy: Clone:  button next to the sticker quota we just created. 
+Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fa3-copy: Clone:  button next to the sticker quota we just created. 
 We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead. 
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 

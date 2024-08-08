@@ -15,7 +15,8 @@ This covers all the necessary steps for creating an event and setting up the tic
 
 In order to create an event, we must be logged in to our [pretix](https://pretix.eu/control/) account. 
 Clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events. 
-We will now click the :btn-icon:fa3-plus:Create a new event: button. 
+We will now click the :btn-icon:
+-plus:Create a new event: button. 
 
 ![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 

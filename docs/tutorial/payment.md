@@ -33,7 +33,7 @@ By default, all payment providers in this list except gift card will be disabled
     If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled. 
     In order to activate such a plugin, you have to navigate to :navpath:Your Event → Settings → Plugins: and open the :btn:Payment providers: tab. 
     Click the :btn:Enable: button next to the plugin you want to use. 
-    You can tell that a plugin has been activated by green ":material-check: Active" tag. 
+    You can tell that a plugin has been activated by green ":fa3-check: Active" tag. 
 
 ### Stripe
 
@@ -60,7 +60,7 @@ We will provide our bank account info, i.e. the name of the account holder, IBAN
 
 We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "Enable payment method". 
 Then, we will click the :btn:Save: button and return to the payment settings. 
-Bank transfer, gift card, and Stripe should all have a green ":material-check: Enabled" tag next to them now. 
+Bank transfer, gift card, and Stripe should all have a green ":fa3-check: Enabled" tag next to them now. 
 
 !!! Note 
     By default, the pretix software is not able to monitor payments arriving at your bank account.
