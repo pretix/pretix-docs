@@ -49,7 +49,7 @@ The next section is going to tell you how to do that.
 
 !["Connect a new device" page, showing options for the name of the device, the events it should have access to, its security profile, and gate.](../assets/screens/scan/connect-new-device.png "Connect new device screenshot") 
 
-Open the [pretix backend](https://pretix.eu/control/) and navigate to [Your organizer] :fontawesome-solid-arrow-right: ":fontawesome-solid-mobile-screen: Devices". 
+Open the [pretix backend](https://pretix.eu/control/) and navigate to [Your organizer] :fa3-arrow-right: ":fa3-mobile-phone: Devices". 
 Give the device a unique and recognizable name such as "Entrance B phone 1". 
 You can authorize the device for all events or limit its access to certain events only. 
 Select "pretixSCAN" from the "Security profile" dropdown menu. 
@@ -74,7 +74,7 @@ The app will now land you on the main screen and start downloading event data fr
 
 The app should now be in entry scanning mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right in the top right corner. 
 If the pictogram is yellow and the arrow points to the left, that means that the app is in "exit scanning" mode. 
-Switch to entry scanning by tapping the :btn-icon:material-dots-vertical:: button and :btn:Switch to entry scanning: in the popup menu. 
+Switch to entry scanning by tapping the :btn-icon:fa3-ellipsis-v:: button and :btn:Switch to entry scanning: in the popup menu. 
 
 pretixSCAN will scan any QR code or barcode it can detect via the device's camera or scanner. 
 Simply point the device at the code you want to scan. 
@@ -99,7 +99,7 @@ If you have trouble scanning a code from a mobile phone screen, ask the customer
 
 An alternative to scanning a ticket code is searching for an attendee in pretixSCAN. 
 If an attendee arrives at the check-in without a ticket, but claiming that they have bought one, you can search for their data. 
-Tap the :btn-icon:fontawesome-solid-magnifying-glass:: button at the top of the screen. 
+Tap the :btn-icon::fa3-search:: button at the top of the screen. 
 In the search field, enter the attendee's name, order code, ticket secret, or email address. 
 Tap the matching result in the list. 
 The app will now check the validity of the ticket and return the same results as if the ticket was being scanned. 
@@ -109,14 +109,14 @@ The app will now check the validity of the ticket and return the same results as
 Badge printing only works if the "Badges" plugin has been enabled for the current event and the ticket you are scanning has a badge layout selected. 
 In order to enable badge printing in pretixSCAN, you have to first install our additional app pretixPRINT on the same device and configure a connection to a printer. 
 
-Once you have done that, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner, and then tap :btn:Settings:. 
+Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
-From now on, a :btn-icon:fontawesome-solid-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
-Tap the :btn-icon:fontawesome-solid-print:: button to print a badge for the ticket holder. 
+From now on, a :btn-icon:fa3-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
+Tap the :btn-icon:fa3-print:: button to print a badge for the ticket holder. 
 A push notification will pop up while the print job is being sent. 
 
 If you want to automatically print a badge for every ticket you scan, go back to the settings page and check the box next to "Print badges automatically after successful scan". 
-The :btn-icon:fontawesome-solid-print:: button will still be displayed, allowing you to manually print an extra badge. 
+The :btn-icon:fa3-print:: button will still be displayed, allowing you to manually print an extra badge. 
 
 If you want all badges to be printed twice, go to the settings page and check the box next to "Print every badge twice". 
 
@@ -124,7 +124,7 @@ If you want all badges to be printed twice, go to the settings page and check th
 
 pretixSCAN offers you the option to lock settings behind a PIN. 
 This can be useful if you want to prevent the people operating the check-in from changing any of the settings. 
-Open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+Open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
 Scroll to the "User interface" subheading and tap "PIN protection". 
 Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
 As soon as you check the box next to "Enable PIN protection", the settings will be locked by PIN. 
@@ -155,7 +155,7 @@ Do these steps ahead of time in a setting where you do have a reliable connectio
 !!! Warning 
     If you are using offline scanning with more than one device, then a single ticket can potentially be used for entry twice if it is scanned at two different devices within a short timeframe. 
 
-If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:material-dots-vertical:: button in the top right corner and then tap :btn:Settings:. 
+If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
 Then check the box next to "Offline scanning". 
 Make sure that the settings "Automatic Synchronization" and "Download orders" are also both checked. 
 
