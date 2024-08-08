@@ -81,7 +81,7 @@ This can lead to problems if you have previously imported bank data to the same 
 Select the first day on which you have **not** imported bank data to the same organizer account if this applies to you. 
 In all other cases, you can leave the field empty. 
 
-Click the :btn-icon:material-login: Connect with bank: button. 
+Click the :btn-icon:fa3-sign-in: Connect with bank: button. 
 This takes you to a webpage on ob.gocardless.com which asks you to consent to your data being processed by GoCardless and to provide your bank login. 
 Complete the authorization process according to the instructions on the website. 
 You will then be redirected back to the pretix backend. 
