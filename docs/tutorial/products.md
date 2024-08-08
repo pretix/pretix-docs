@@ -24,7 +24,7 @@ For that, we will navigate to our personal dashboard by clicking :btn:pretix.eu:
 We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-ticket: Products: in the sidebar and click the :btn:Categories: subentry. 
 This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
 
-We will click the :btn-icon:fontawesome-solid-plus: Create a new category: button and give the category a name such as "Extras". 
+We will click the :btn-icon:fa3-plus: Create a new category: button and give the category a name such as "Extras". 
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
 
 ## Creating and editing products
@@ -51,7 +51,7 @@ We will also select the appropriate tax rate of 19% from the "Sales tax" dropdow
 We will now create the discount ticket based on the "Standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
 The "Reduced ticket" is not needed anymore. 
-We will navigate to the products page, click the red delete button labeled :btn-icon:fontawesome-solid-trash:: next to the reduced ticket, and confirm that we want to delete it. 
+We will navigate to the products page, click the red delete button labeled :btn-icon:fa3-trash:: next to the reduced ticket, and confirm that we want to delete it. 
 
 Back on the product overview, we will click the :btn:Clone: button next to the standard ticket in order to clone it. 
 We will name the new ticket "Discount ticket", provide a translation, change the "Default price" to €120.00, and click the :btn:Save: button. 
@@ -82,8 +82,8 @@ For that, we will navigate back to the products page :navpath:Event → Products
 We will name the new ticket "Speaker ticket", provide a translation, and change the "Default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button. 
 
 We will switch to the :btn:Availability: tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page. 
-There is a toggle next to that option with an eye :fontawesome-solid-eye-slash: and an information :fontawesome-solid-info: symbol. 
-We are going to set that toggle to ":fontawesome-solid-eye-slash: Hide product if unavailable". 
+There is a toggle next to that option with an eye :fa3-eye-slash: and an information :fa3-info: symbol. 
+We are going to set that toggle to ":fa3-eye-slash: Hide product if unavailable". 
 This means that the ticket will only be displayed to people who hold a corresponding voucher in our shop. 
 Once we have set the checkbox and toggle, we will click the :btn:Save: button. 
 
@@ -96,7 +96,7 @@ For more information on vouchers, see [vouchers](../topics/vouchers.md)
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
 It is not possible to edit a product without variations into a product with multiple variations. 
-Therefore, we will navigate to the products page and click the :btn-icon:fontawesome-solid-plus: Create a new product: button. 
+Therefore, we will navigate to the products page and click the :btn-icon:fa3-plus: Create a new product: button. 
 
 We will name the product "Sticker", set it to "Non-admission product" and put it in the "Extras" category. 
 Under "Product variations", we will select "Product with multiple variations". 
@@ -109,7 +109,7 @@ There should be one variant called "Standard" here.
 We will click the name to expand the settings for that variant and change the name to "Purple". 
 It is not necessary to change any other settings here. 
 
-Then, we will scroll down and click the :btn-icon:fontawesome-solid-plus: Add a new variation: button. 
+Then, we will scroll down and click the :btn-icon:fa3-plus: Add a new variation: button. 
 We will name this new variant "Black" and keep the other settings the way they are. 
 We will repeat the same process for the "Glitter" variant and set the "Default price" option for that variant to €7.50. 
 Then, we will click :btn:Save:. 
@@ -129,7 +129,7 @@ The list also displays the total capacity and how many items are left for each q
 ![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../assets/screens/products/quotas.png "Quotas screenshot") 
 
 First, we will edit a quota for our standard and discount tickets. 
-We will click the :btn-icon:fontawesome-solid-pen-to-square: Change: button next to the "Regular ticket" quota in the list. 
+We will click the :btn-icon:fa3-edit: Change: button next to the "Regular ticket" quota in the list. 
 We are also going to rename this quota to "Standard and discount ticket" to avoid confusion. 
 The "Standard ticket" should already be checked in the list of products. 
 
@@ -138,14 +138,14 @@ We will leave the rest of the settings unchanged and click the :btn:Save: button
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
 Our speaker ticket needs to be assigned to a quota, too. 
-We will now navigate back to the quotas page and click the :btn-icon:fontawesome-solid-plus: Create a new quota: button. 
+We will now navigate back to the quotas page and click the :btn-icon:fa3-plus: Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
 
 ### Quotas for variants 
 
 Our sticker product needs three different quotas: one for each product variant. 
-We will navigate back to the quotas page and click the :btn-icon:fontawesome-solid-plus: Create a new quota: button. 
+We will navigate back to the quotas page and click the :btn-icon:fa3-plus: Create a new quota: button. 
 We will call the new quota "Sticker purple" and set the total capacity to 100 because that is the number of stickers in that color that we're going to sell. 
 
 Then, we will select "Sticker - Purple" in the list of products. 
@@ -153,7 +153,7 @@ The purple sticker is not an admission ticket but an additional product that can
 We do not want this quota to add to the total number of tickets available for the event. 
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
-Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fontawesome-regular-copy: Clone:  button next to the sticker quota we just created. 
+Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fa3-copy: Clone:  button next to the sticker quota we just created. 
 We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead. 
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 

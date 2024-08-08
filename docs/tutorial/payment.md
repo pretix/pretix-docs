@@ -24,7 +24,7 @@ On all versions of pretix, payments via bank transfer can be monitored either by
 ![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../assets/screens/payment/settings.png "Payment settings screenshot") 
 
 In order to set up payment providers, we will navigate to our personal dashboard by clicking :btn:pretix.eu: in the top left corner of the website. 
-We will then select our event in the list of "Your upcoming events", open :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar and click the :btn:Payment: subentry. 
+We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-wrench: Settings: in the sidebar and click the :btn:Payment: subentry. 
 This page displays a list of payment providers. 
 Bank transfer and Stripe should be included in this list. 
 By default, all payment providers in this list except gift card will be disabled. 
@@ -33,18 +33,18 @@ By default, all payment providers in this list except gift card will be disabled
     If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled. 
     In order to activate such a plugin, you have to navigate to :navpath:Your Event → Settings → Plugins: and open the :btn:Payment providers: tab. 
     Click the :btn:Enable: button next to the plugin you want to use. 
-    You can tell that a plugin has been activated by green ":material-check: Active" tag. 
+    You can tell that a plugin has been activated by green ":fa3-check: Active" tag. 
 
 ### Stripe
 
 ![Page titled 'Payment settings—Payment provider:Stripe', displaying a box with a legal warning and buttons for connecting with Stripe and saving.](../assets/screens/payment/stripe.png "Stripe settings screenshot") 
 
-We will first enable Stripe by clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to it. 
+We will first enable Stripe by clicking the :btn-icon:fa3-gear:Settings: button next to it. 
 This takes us to the payment settings page for Stripe, which currently only contains a :btn:Connect with Stripe: button. 
 
 Clicking that button takes us to a dialog on stripe.com, where we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account. 
 
-We will then return to pretix.eu, navigate to our event, open :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar, click the :btn:Payment: subentry and open the Stripe settings. 
+We will then return to pretix.eu, navigate to our event, open :btn-icon:fa3-wrench: Settings: in the sidebar, click the :btn:Payment: subentry and open the Stripe settings. 
 Instead of the single button, the page will now display a multitude of settings. 
 
 We will check the boxes next to "Credit card payments" and "Enable payment method", then scroll to the bottom and click the :btn:Save: button. 
@@ -60,7 +60,7 @@ We will provide our bank account info, i.e. the name of the account holder, IBAN
 
 We will then check the box to confirm that we have understood the special conditions that apply to bank transfers as a payment provider in pretix and the box next to "Enable payment method". 
 Then, we will click the :btn:Save: button and return to the payment settings. 
-Bank transfer, gift card, and Stripe should all have a green ":material-check: Enabled" tag next to them now. 
+Bank transfer, gift card, and Stripe should all have a green ":fa3-check: Enabled" tag next to them now. 
 
 !!! Note 
     By default, the pretix software is not able to monitor payments arriving at your bank account.
@@ -74,7 +74,7 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
-We will navigate to the invoicing settings by going to our event, opening :btn-icon:fontawesome-solid-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry. 
+We will navigate to the invoicing settings by going to our event, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry. 
 On the :bzn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
 
 We will then switch to the :btn:Issuer details: tab and provide the name and full address of our organization. 
