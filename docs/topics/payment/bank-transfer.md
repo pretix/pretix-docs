@@ -43,7 +43,7 @@ If it isn't enabled, the tag will be missing and it will have a purple :btn:Enab
 
 Navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
-The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
+The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
 Click on the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
@@ -69,7 +69,7 @@ This section is going to guide you through all three options.
 
 If you are using pretix Hosted, you can activate the automatic transaction report via pretix's integration with GoCardless. 
 This service is on the organizer level, meaning that bank data imported via this method is available for all events associated with the organizer. 
-Navigate to :navpath:Your organizer → :material-bank: Bank transfer → Automatic import: . 
+Navigate to :navpath:Your organizer → :fa3-bank: Bank transfer → Automatic import: . 
 
 ![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
@@ -110,10 +110,10 @@ IBAN and BIC are optional, but pretix can offer additional functionality if they
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
 We recommend the first option, unless you have separate bank accounts for every event you are hosting. 
-If you want to import data for all events associated with the organizer, navigate to :navpath:Your organizer → :material-bank: Bank transfer:. 
+If you want to import data for all events associated with the organizer, navigate to :navpath:Your organizer → :fa3-bank: Bank transfer:. 
 This will take you to a page titled "Import bank data". 
 
-If you want to import data for a single event, navigate to :navpath:Your event → :material-bank: Bank transfer:. 
+If you want to import data for a single event, navigate to :navpath:Your event → :fa3-bank: Bank transfer:. 
 This will also take you to a page titled "Import bank data". 
 The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
 Whichever option you choose, the process is the same from here on out. 
@@ -168,8 +168,8 @@ The most frequent cause for this is a mistyped or missing order number in the re
 If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
 pretix allows you to resolve these transactions manually. 
 
-If you have imported bank data on the organizer level, navigate to :navpath:Your organizer → :material-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
-If you have imported bank data on the event level, navigate to :navpath:Your event → :material-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
+If you have imported bank data on the organizer level, navigate to :navpath:Your organizer → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
+If you have imported bank data on the event level, navigate to :navpath:Your event → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 The process is the same from here on out. 
 
 If there are unresolved transactions, they will be displayed on this page as a list titled "Unresolved transactions". 
