@@ -32,7 +32,7 @@ Upon clicking our organizer account in the list, we are taken to a page displayi
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
-We are now going to click :btn-icon:fontawesome-solid-wrench:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
+We are now going to click :btn-icon:fa3-wrench:Settings: in the sidebar, which lands us on the general settings page for the organizer account. 
 
 ## General 
 
@@ -90,7 +90,7 @@ We use the :btn:Save: button to apply our localization settings __before__ chang
 
 Switching to the :btn:Organizer page: tab at the top allows us to add our logo and customize our shop's interface colors.
 
-Clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
+Clicking the :btn-icon:fa3-eye:Public profile: button in the bar at the top takes us to a preview of the organizer page from the customers' perspective.
 An organizer page created with pretix Hosted will by default be located at https://pretix.eu/:placeholder:OrganizerShortForm:/.
 The shop we are creating for this tutorial is located at [https://pretix.eu/tut/](https://pretix.eu/tut).
 
@@ -124,8 +124,8 @@ Our organizer account has to be activated before any of our ticket shops can go 
 Our account is going to be reviewed manually by the pretix team as soon as we have provided all necessary information for correspondence and billing.
 
 To enter this information, we have to navigate to the billing settings. 
-:btn:Billing settings: is one of the entries nested underneath ":fontawesome-solid-wrench: Settings" in the sidebar on the left. 
-It is not to be confused with ":fontawesome-regular-money-bill-1: Billing", which is an independent entry further down in the sidebar. 
+:btn:Billing settings: is one of the entries nested underneath ":fa3-wrench: Settings" in the sidebar on the left. 
+It is not to be confused with ":fa3-money: Billing", which is an independent entry further down in the sidebar. 
 
 In the "Billing settings", the topmost field on the :btn:General: tab is labeled "Primary contact person". 
 We are going to enter the name of a real person within our organization so the pretix team knows whom to contact if there is an issue with our account. 
