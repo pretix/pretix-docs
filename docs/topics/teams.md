@@ -16,14 +16,14 @@ If you do not have access to an organizer account at all, then you are probably 
 Navigate to :navpath:Your organizer → Teams:. 
 This page will list all teams that are associated with your organizer account. 
 If you have not made any changes here, the list will contain a single entry named "Administrators" which contains you and has all possible permissions. 
-You can view the list of members and API tokens of a team by clicking the :btn-icon:fontawesome-solid-list:: button next to it. 
-You can view the settings and permissions by clicking the :btn-icon:fontawesome-solid-pen-to-square:: button. 
+You can view the list of members and API tokens of a team by clicking the :btn-icon:fa3-list:: button next to it. 
+You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: button. 
 
 ### Creating a new team
 
 ![Page titled 'Create a new team', with a name input, the option to require 2FA as well as several organizer and event permission settings.](../assets/screens/teams/create-team.png "Create a new team screenshot") 
 
-Click the :btn-icon:fontawesome-solid-plus: Create a new team: button. 
+Click the :btn-icon:fa3-plus: Create a new team: button. 
 How you name your new team and which permissions you grant it is completely up to you. 
 For example, you could name your team "Helpers" to distinguish it from the administrators and give it the following organizer permissions: 
 "Can create events", "Can manage gift cards", and "Can manage customer accounts". 
@@ -39,13 +39,13 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 ![Page titled 'Team: Helpers', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Helpers screenshot") 
 
 Navigate to :navpath:Your organizer → Teams: and select the team for which you want to send out an invitation. 
-You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fontawesome-solid-plus: Add: button. 
+You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fa3-plus: Add: button. 
 If the person you added already has a pretix account, they will be granted access to this organizer account instantly. 
 They will not be notified by the system, so you should let them know them that they have been granted access. 
-The person will appear in the list with either a gray or a green :fontawesome-solid-shield-halved: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
+The person will appear in the list with either a gray or a green :fa3-shield: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
 
 If the person you added does not yet have a pretix account, they will receive an email invitation to create one. 
-They will appear in the list with a :material-email-outline: symbol for their status as "invited, pending response" and a :btn-icon:fontawesome-solid-arrow-rotate-right:: button for resending the invitation email. 
+They will appear in the list with a :fa3-envelope-o: symbol for their status as "invited, pending response" and a :btn-icon:fa3-rotate-right:: button for resending the invitation email. 
 
 !!! Note 
     This page also lets you add an API token that will grant access to the pretix API using the same level of permissions as the team members. 
