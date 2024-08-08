@@ -36,7 +36,7 @@ Switch to the :btn:Payment providers: tab.
 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
-If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
+If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 
 ![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
@@ -45,7 +45,7 @@ Navigate to :navpath:Your Event → Settings → Payment:.
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fontawesome-solid-x: Disabled" tag. 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to bank transfer. 
+Click on the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
 
 The first thing you need to do on this page is choose the "Bank account type". 
@@ -139,12 +139,12 @@ The [section below](bank-transfer.md#handling-unresolved-transactions) explains 
 
 Navigate to :navpath:Your Event → Orders:. 
 This page displays a list of all orders that have been placed in your shop. 
-If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fontawesome-solid-money-bill: Pending" status tag. 
+If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fa3-money: Pending" status tag. 
 
 Click the order code of one of the pending orders. 
 This takes you to the "order details" page for that order. 
 Check the transaction data of your bank account. 
-If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fontawesome-solid-check:Mark as paid: button at the top of the order details page. 
+If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fa3-check:Mark as paid: button at the top of the order details page. 
 
 ![Page titled Mark order as paid, showing options for changing the payment amount of  €250.00, payment date, and whether or not to notify the customer by email.](../../assets/screens/payment/order-mark-as-paid.png "Orders" )
 
@@ -174,14 +174,14 @@ The process is the same from here on out.
 
 If there are unresolved transactions, they will be displayed on this page as a list titled "Unresolved transactions". 
 For every transaction in this list, you have two options: 
-You can either tell pretix to ignore it by clicking the :btn-icon:fontawesome-solid-trash-can:: button, or you can search for a matching order and assign the order code to the transaction. 
+You can either tell pretix to ignore it by clicking the :btn-icon:fa3-trash:: button, or you can search for a matching order and assign the order code to the transaction. 
 
 In order to do that, enter part of the order code or the name recorded in the transaction into the "Order code" field on the unresolved transaction. 
-Select the correct order from the search results and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
+Select the correct order from the search results and click the :btn-icon:fa3-check:: button to confirm. 
 Repeat this process for all unresolved orders. 
 
-If you cannot find and resolve all transactions this way, open a new browser tab and navigate to :navpath:Your event: → :fontawesome-solid-cart-shopping: Orders:. 
+If you cannot find and resolve all transactions this way, open a new browser tab and navigate to :navpath:Your event: → :fa3-shopping-cart: Orders:. 
 Search the list for an order that matches the parameters of the unresolved transaction. 
-Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fontawesome-solid-check:: button to confirm. 
+Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fa3-check:: button to confirm. 
 
 Only delete transactions if they are unrelated to the event you are hosting and no matching order can be found. 
