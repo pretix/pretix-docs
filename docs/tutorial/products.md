@@ -129,7 +129,7 @@ The list also displays the total capacity and how many items are left for each q
 ![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../assets/screens/products/quotas.png "Quotas screenshot") 
 
 First, we will edit a quota for our standard and discount tickets. 
-We will click the :btn-icon:fa3-pencil-square-o: Change: button next to the "Regular ticket" quota in the list. 
+We will click the :btn-icon:fa3-edit: Change: button next to the "Regular ticket" quota in the list. 
 We are also going to rename this quota to "Standard and discount ticket" to avoid confusion. 
 The "Standard ticket" should already be checked in the list of products. 
 
