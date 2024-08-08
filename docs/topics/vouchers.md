@@ -24,14 +24,14 @@ If you are using pretix Hosted, your account needs to be activated before you ca
 
 ## General usage
 
-The settings page for vouchers is located at :navpath:Your Event → :fontawesome-solid-tags: Vouchers:. 
+The settings page for vouchers is located at :navpath:Your Event → :fa3-tags: Vouchers:. 
 It gives you an overview of all vouchers that have already been created as well as options for searching and filtering vouchers. 
 
 ![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
 
 ### Creating a single voucher 
 
-Clicking the :btn-icon:fontawesome-solid-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher. 
+Clicking the :btn-icon:fa3-plus: Create a new voucher: button takes you to a dialog for creating a single new voucher. 
 This is useful for when you are planning to publish a single voucher code that can then either be used once or multiple times. 
 The "Voucher code" field already contains an automatically generated suggestion, but you can change it and provide your own as long as it is at least 5 and no more than 255 characters in length. 
 Any lower-case letters will be converted to upper case. 
@@ -51,7 +51,7 @@ All settings that are available previous to creation can also be changed after t
 
 ### Creating multiple vouchers 
 
-The :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
+The :btn-icon:fa3-plus: Create multiple new vouchers: button takes you to a dialog for creating multiple new vouchers. 
 Enter the number of voucher codes you want to create in the "Number" field. 
 If you type anything into the "Prefix" field prior to generating the codes, then each code you generate will start with that prefix. 
 Once you click :btn:Generate random codes:, the number of codes you specified will be displayed in the "Codes" field. 
@@ -112,7 +112,7 @@ Emails will be sent out as soon as you click the :btn:Save: button.
 
 ![Page titled Import vouchers, showing a file upload and a setting for the character set.](../assets/screens/vouchers/import.png)
 
-The :btn-icon:fontawesome-solid-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
+The :btn-icon:fa3-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
 Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
 If the file can be successfully imported and parsed as a .csv file, you will land on a new page with a preview of the data and a wide selection of import settings. 
 
@@ -131,7 +131,7 @@ If the import is successful, the vouchers will be created for the current event 
 
 ### Downloading the full list of vouchers
 
-You can download the full list of vouchers for the current event by clicking the :btn-icon:fontawesome-solid-download: Download list: button. 
+You can download the full list of vouchers for the current event by clicking the :btn-icon:fa3-download: Download list: button. 
 Clicking that button will instantly start a download of a file named "vouchers.csv" to your device which can then be edited with a text editor or a spreadsheet editor. 
 The vouchers.csv file will contain the following columns: 
 
@@ -146,7 +146,7 @@ These applications will be explained in the following subsections.
 
 You can create a voucher code for a limited time discount to attract more customers to your shop. 
 
-Navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create a new voucher: button. 
+Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Set "Maximum usages" to the upper limit of discounted purchases that you want to allow.
 If you do not want to set a limit, use a very high number such as 999999. 
@@ -167,16 +167,16 @@ You can copy the code from the overview of vouchers and include it in, e.g., a n
 You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
 This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
-Navigate to  :navpath:Your Event → :fontawesome-solid-ticket: Products → Products: and create or edit the admission product for which you want to restrict availability. 
+Navigate to  :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product for which you want to restrict availability. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
-If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fontawesome-solid-eye-slash::), then the product will be hidden in your shop. 
+If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fa3-eye-slash::), then the product will be hidden in your shop. 
 It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
 Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-Then, navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
+Then, navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
 See also: [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
@@ -195,7 +195,7 @@ Emails will be sent out as soon as you click the :btn:Save: button.
 
 You can use vouchers to reserve products from a quota. 
 This is useful if you need to ensure that a certain group of people gains access to your event, for example, guests invited to a concert by the performing artists. 
-Navigate to :navpath:Your Event → :fontawesome-solid-tags: Vouchers:, click the :btn-icon:fontawesome-solid-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
+Navigate to :navpath:Your Event → :fa3-tags: Vouchers:, click the :btn-icon:fa3-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
 
 Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
