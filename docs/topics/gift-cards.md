@@ -18,13 +18,13 @@ Also unlike vouchers, gift cards can be used across different events and organiz
 
 In order to use gift cards as a payment method for an event, they have to be enabled for that event.
 Gift cards are enabled by default.
-If they are not enabled, you can enable them by browsing to :navpath:Your event → :fontawesome-solid-wrench: Settings → Payment:, clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
+If they are not enabled, you can enable them by browsing to :navpath:Your event → :fa3-wrench: Settings → Payment:, clicking the :btn-icon:fa3-gear:Settings: button next to "Gift cards" and checking the box next to " Enable payment method" at the top of the page.
 
 pretix only supports selling gift cards at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
 This is the procedure prescribed by tax law in Germany and in some other countries for multi-purpose vouchers. 
 You have to create a tax rule with a rate of 0% before you can create a gift card.
-You can do that by browsing to :navpath:Your event → :fontawesome-solid-wrench: Settings → Tax rules:, clicking the :btn-icon:fontawesome-solid-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
+You can do that by browsing to :navpath:Your event → :fa3-wrench: Settings → Tax rules:, clicking the :btn-icon:fa3-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
 
 {% include "warning-tax.md" %}
 
@@ -43,7 +43,7 @@ It is therefore advisable to read this subsection and finalize your decisions on
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-Navigate to :navpathYour organizer → :fontawesome-solid-wrench: Settings → General: and switch to the "Gift cards" tab. 
+Navigate to :navpathYour organizer → :fa3-wrench: Settings → General: and switch to the "Gift cards" tab. 
 Organizer-level settings for gift cards can be adjusted on this page.
 The "Validity of gift card codes in years" field allows you to specify for how many years your gift cards should be valid. 
 The field accepts whole numbers as input. 
@@ -70,7 +70,7 @@ In your customers' view of your shops, the option for paying via gift card is hi
 
 ![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
 
-You can find the settings for gift cards as a payment method by navigating to :navpath:Your event → :icon:fontawesome-solid-wrench: Settings → Payment: and clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to "Gift cards". 
+You can find the settings for gift cards as a payment method by navigating to :navpath:Your event → :icon:fa3-wrench: Settings → Payment: and clicking the :btn-icon:fa3-gear:Settings: button next to "Gift cards". 
 Here, you can restrict the availability of the payment method by date, time period relative to the event, sales channel, and region, just like you can with any other payment method. 
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
 Note that these settings apply on the event level, so they have to be changed for each event individually. 
@@ -85,7 +85,7 @@ These methods will be described in the following subsections.
 ![Page titled Modify product: Gift card, on the Additional settings tab, the box next to This product is a gift card is checked.](../assets/screens/products/gift-card.png)
 
 If you want to sell gift cards in your shop, you can create them just like any other product. 
-Navigate to :navpath:Your event → :fontawesome-solid-ticket: Products: and click the :btn-icon:fontawesome-solid-plus:Create a new product: button. 
+Navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus:Create a new product: button. 
 Choose "Non-admission product" as the "Product type" and a 0.00% tax rule for the "Sales tax". 
 After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card", and click :btn:Save:. 
 If you check the box next to "Free price input", the customer will be able to freely choose the value of the gift card. 
@@ -100,14 +100,14 @@ The number of gift cards you are selling has nothing to do with the total number
 ![Page titled Cancellation settings, on the Paid orders tab, highlighted are the settings for Refund method, offering four options, two of them involving gift cards.](../assets/screens/gift-cards/refund.png)
 
 pretix can automatically issue refunds in the form of gift cards.
-To set up this feature, navigate to :navpath:Your event → :fontawesome-solid-wrench: Settings → Cancellation: and open the "Paid orders" tab. 
+To set up this feature, navigate to :navpath:Your event → :fa3-wrench: Settings → Cancellation: and open the "Paid orders" tab. 
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 Click the :btn:Save: button to confirm your changes. 
 
 ### Using gift cards for manual refunds 
 
 You can use pretix to refund an order by creating a gift card. 
-Navigate to :navpath:Your event → :fontawesome-solid-cart-shopping: Orders: and click the order you want to refund. Under the subheading "Payments", click the :btn:Create a refund: button. 
+Navigate to :navpath:Your event → :fa3-shopping-cart: Orders: and click the order you want to refund. Under the subheading "Payments", click the :btn:Create a refund: button. 
 Choose the amount to be refunded and the action you want to take with the order, then click :btn:Continue:. 
 Enter an amount larger than 0.00 into the "Refund amount" field next to "Create a new gift card". 
 Optionally, you may select an "Expiration date". 
@@ -130,7 +130,7 @@ This will land you on a page titled "Issued gift cards" displaying a search dial
     A test mode card cannot be turned into a non-test mode card or vice versa after it has been created. 
     Do not issue non-test mode gift cards with codes that can be easily guessed. 
 
-Click the :btn-icon:fontawesome-solid-plus:Manually issue a gift card: button. 
+Click the :btn-icon:fa3-plus:Manually issue a gift card: button. 
 The "Gift card code" field will already be filled out with a randomly generated code, but you can change that code to your liking. 
 Any code you enter here manually must be between 2 and 190 digits in length and may only contain Latin letters, numbers, dots and dashes.
 Diacritic symbols such as umlauts and accents are not supported. 
@@ -146,7 +146,7 @@ If you clear the contents of the "Expiry date" fields, the gift card you are cre
 The gift card is created once you click :btn:Save:. 
 
 Once a gift card has been created, it cannot be deleted and only the following properties can be edited: date and time of expiry, ownership, and special terms and conditions. 
-You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:, clicking the gift card, and then clicking the :btn-icon:fontawesome-solid-pen-to-square: Edit: button. 
+You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:, clicking the gift card, and then clicking the :btn-icon:fa3-edit: Edit: button. 
 Changing a gift card's value by manually adding transactions is described in the section on [devaluing gift cards](gift-cards.md#devaluing-gift-cards). 
 
 ### Accepting gift cards across different organizers
@@ -180,7 +180,7 @@ In order to do so, navigate to :navpath:Your organizer → :fontawesome-regular-
 Note down the reason for the devaluing in the text field in the "Information" column.
 The gift card's "Current value" is displayed in the "Details" box. 
 Enter the negative amount of the transaction into the "Value" field. 
-For example, for a purchase totaling 12.50, enter "-12.50" and click the :btn-icon:fontawesome-solid-plus:: button. 
+For example, for a purchase totaling 12.50, enter "-12.50" and click the :btn-icon:fa3-plus:: button. 
 This will add a new entry to the list of transactions and change the "Current value" of the gift card accordingly. 
 
 The same process can be used for increasing or decreasing the value of a gift card if it has been created with the wrong value, or if it has been created in error, in which case you simply subtract the entire value from the gift card. 
