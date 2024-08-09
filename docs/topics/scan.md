@@ -41,6 +41,7 @@ On devices manufactured by Sunmi, you can also find the app in the Sunmi App Sto
 
 When you launch pretixSCAN for the first time, confirm that you understand the privacy and security implications of storing attendee data on your device. 
 You have to grant pretixSCAN access to the device's camera in order to use the core functionality of validating tickets. 
+
 pretixSCAN will start accessing the scanner or camera instantly once you have granted permission. 
 It will also display a text box telling you to create a new device in our organizer account in the pretix backend. 
 The next section is going to tell you how to do that. 
@@ -49,7 +50,7 @@ The next section is going to tell you how to do that.
 
 !["Connect a new device" page, showing options for the name of the device, the events it should have access to, its security profile, and gate.](../assets/screens/scan/connect-new-device.png "Connect new device screenshot") 
 
-Open the [pretix backend](https://pretix.eu/control/) and navigate to [Your organizer] :fa3-arrow-right: ":fa3-mobile-phone: Devices". 
+Open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
 Give the device a unique and recognizable name such as "Entrance B phone 1". 
 You can authorize the device for all events or limit its access to certain events only. 
 Select "pretixSCAN" from the "Security profile" dropdown menu. 
@@ -65,26 +66,26 @@ Enter the system URL and token displayed in the pretix backend below the QR code
 
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../assets/screens/scan/select-event.png "Select event screenshot") 
 
-Once you scanned the QR code or entered the token successfully, the app will ask you to select the event you want to scan tickets for. 
+Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets. 
 Check the event in the list or in the calendar and tap :btn:OK:. 
 Then, select a check-in list and tap :btn:OK: again. 
 The app will now land you on the main screen and start downloading event data from the server in the background. 
 
 ### Entry scanning
 
-The app should now be in entry scanning mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right in the top right corner. 
-If the pictogram is yellow and the arrow points to the left, that means that the app is in "exit scanning" mode. 
+The app should now be in entry scanning mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right :fa3-sign-in: in the top right corner. 
+If the pictogram is yellow and the arrow points to the left :fa3-sign-out:, that means that the app is in "exit scanning" mode. 
 Switch to entry scanning by tapping the :btn-icon:fa3-ellipsis-v:: button and :btn:Switch to entry scanning: in the popup menu. 
 
 pretixSCAN will scan any QR code or barcode it can detect via the device's camera or scanner. 
-Simply point the device at the code you want to scan. 
+Point the device at the code you want to scan. 
 The app will then check the code against the selected check-in list on the server. 
 There are three possible results: 
 
  1. If the ticket is valid and allows entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket". 
  Underneath the green box, it lists the ticket type, order number, and position number. 
  2. If the ticket is valid but has already been checked in and not checked out again, pretixSCAN displays a yellow box titled "Ticket already used". 
- Underneath the green box, it lists the ticket type, order number, and position number, and also the date and time when the ticket was first scanned. 
+ Underneath the yellow box, it lists the ticket type, order number, and position number, and also the date and time when the ticket was first scanned. 
  3. In all other cases, pretixSCAN displays a red box with a title explaining the problem. 
  Explanations can include, among others, "Invalid ticket", "Order canceled", or "Entry not allowed". 
 
@@ -102,6 +103,7 @@ If an attendee arrives at the check-in without a ticket, but claiming that they 
 Tap the :btn-icon::fa3-search:: button at the top of the screen. 
 In the search field, enter the attendee's name, order code, ticket secret, or email address. 
 Tap the matching result in the list. 
+
 The app will now check the validity of the ticket and return the same results as if the ticket was being scanned. 
 
 ### Enabling badge printing 
@@ -111,6 +113,7 @@ In order to enable badge printing in pretixSCAN, you have to first install our a
 
 Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
+
 From now on, a :btn-icon:fa3-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
 Tap the :btn-icon:fa3-print:: button to print a badge for the ticket holder. 
 A push notification will pop up while the print job is being sent. 
@@ -124,10 +127,12 @@ If you want all badges to be printed twice, go to the settings page and check th
 
 pretixSCAN offers you the option to lock settings behind a PIN. 
 This can be useful if you want to prevent the people operating the check-in from changing any of the settings. 
+
 Open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
 Scroll to the "User interface" subheading and tap "PIN protection". 
 Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
 As soon as you check the box next to "Enable PIN protection", the settings will be locked by PIN. 
+
 This means that the next time you return to the home screen and attempt to open the settings, you will be prompted to enter the PIN. 
 You also have the option to protect the other functions of the app with the same PIN: statistics, switching between events, as well as switching between entrance and exit scanning mode. 
 
@@ -135,6 +140,7 @@ You also have the option to protect the other functions of the app with the same
     The PIN settings page also has the option to turn on kiosk mode. 
     Kiosk mode fundamentally limits the functionality of the app. 
     The only way to leave kiosk mode is to scan a QR code of the PIN. 
+
     Do not turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
     Do not turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
 
@@ -161,7 +167,9 @@ Make sure that the settings "Automatic Synchronization" and "Download orders" ar
 
 If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap the setting "Automatically turn offline mode on and off". 
 By default, "Manual mode (off)" is selected, which means that offline scanning will not be enabled or disabled automatically. 
+
 If you select, for example, "3 seconds or errors", pretixSCAN will enable offline scanning after unsuccessfully attempting to verify a code for 3 seconds; after encountering 3 errors while attempting to verify a code; or after detecting a loss of connection while attempting to verify a code. 
+
 If you select "Only errors or connection loss", then pretixSCAN will enable offline scanning after encountering an error or detecting a loss of connection while attempting to verify a code. 
 
 !!! Note 
