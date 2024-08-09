@@ -23,6 +23,7 @@ If they are not enabled, you can enable them by browsing to :navpath:Your event 
 pretix only supports selling gift cards at a tax rate of 0%.
 Sales tax is applied to the purchase that is made using the gift card—not to the purchase of the gift card itself.
 This is the procedure prescribed by tax law in Germany and in some other countries for multi-purpose vouchers. 
+
 You have to create a tax rule with a rate of 0% before you can create a gift card.
 You can do that by browsing to :navpath:Your event → :fa3-wrench: Settings → Tax rules:, clicking the :btn-icon:fa3-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
 
@@ -30,7 +31,6 @@ You can do that by browsing to :navpath:Your event → :fa3-wrench: Settings →
 
 ## General usage
 
-The following two subsections tell you how to do the basic setup for gift cards. 
 By default, gift cards will be valid indefinitely; they will have codes that are 12 digits and length; and they will be accepted as a payment method for any newly created event without any restrictions. 
 If you want to change any of these things, then the next two subsections will tell you how. 
 
@@ -72,6 +72,7 @@ In your customers' view of your shops, the option for paying via gift card is hi
 
 You can find the settings for gift cards as a payment method by navigating to :navpath:Your event → :icon:fa3-wrench: Settings → Payment: and clicking the :btn-icon:fa3-gear:Settings: button next to "Gift cards". 
 Here, you can restrict the availability of the payment method by date, time period relative to the event, sales channel, and region, just like you can with any other payment method. 
+
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
 Note that these settings apply on the event level, so they have to be changed for each event individually. 
 
@@ -87,11 +88,13 @@ These methods will be described in the following subsections.
 If you want to sell gift cards in your shop, you can create them just like any other product. 
 Navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus:Create a new product: button. 
 Choose "Non-admission product" as the "Product type" and a 0.00% tax rule for the "Sales tax". 
+
 After clicking :btn:Save and continue with more settings:, switch to the "Additional settings" tab, check the box next to "This product is a gift card", and click :btn:Save:. 
 If you check the box next to "Free price input", the customer will be able to freely choose the value of the gift card. 
 
 Once you have created the gift card, create a new quota and add the gift card to it. 
 Since gift cards are usually not bound by any physical limitations, it makes sense to give this quota an unlimited capacity by leaving the "Total capacity" field empty. 
+
 It is advisable to check the box next to "Ignore this quota when determining event availability" because the gift card is not an admission product. 
 The number of gift cards you are selling has nothing to do with the total number of admission tickets you are planning to sell for your event. 
 
@@ -106,11 +109,13 @@ Click the :btn:Save: button to confirm your changes.
 
 ### Using gift cards for manual refunds 
 
-You can use pretix to refund an order by creating a gift card. 
+You can use pretix to manually issue a refund for an order by creating a gift card. 
 Navigate to :navpath:Your event → :fa3-shopping-cart: Orders: and click the order you want to refund. Under the subheading "Payments", click the :btn:Create a refund: button. 
+
 Choose the amount to be refunded and the action you want to take with the order, then click :btn:Continue:. 
 Enter an amount larger than 0.00 into the "Refund amount" field next to "Create a new gift card". 
 Optionally, you may select an "Expiration date". 
+
 A gift card of the specified value will be created as soon as you click "Perform refund". 
 You will then land on a page titled "Send email" where you have the option to send the customer an email containing the gift card code. 
 Gift cards created for refunds will also appear under :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:. 
@@ -127,6 +132,7 @@ This will land you on a page titled "Issued gift cards" displaying a search dial
     Once a gift card has been created, it cannot be deleted (only devalued—see [devaluing gift cards](gift-cards.md#devaluing-gift-cards)). 
     If you are just exploring this feature for preliminary tests, make sure to check the box next to "Test mode card". 
     This makes the gift card only valid in test mode of your shop. 
+
     A test mode card cannot be turned into a non-test mode card or vice versa after it has been created. 
     Do not issue non-test mode gift cards with codes that can be easily guessed. 
 
@@ -137,6 +143,7 @@ Diacritic symbols such as umlauts and accents are not supported.
 
 You have to specify a "Gift card value" larger than zero in the currency of your choice. 
 The currency you choose here has to match the currency of the events for which the gift card is intended to be used. 
+
 If you want to create a gift card for use in test mode, check the box next to "Test mode card". 
 If you want to create a gift card for use in the live shop, do not check that box. 
 A test mode card will only work in test mode and a non-test mode card will only work when the shop is live. 
@@ -160,7 +167,8 @@ However, you can invite another organizer to accept your gift cards.
 You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards → Acceptance: and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
 This will return you to the acceptance settings page, where the organizer will now be listed with the status "invited". 
-The organizer can navigate to same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
+
+The organizer can then navigate to the same settings page and "Accept" or "Decline" the invitation via the corresponding buttons. 
 If they accept your invitation, the page will display their status as "active". 
 You can retract the invitation or remove their ability to accept your gift cards via the :btn:Remove: button. 
 
@@ -173,6 +181,7 @@ The export "Gift card redemptions" at :navpath:Organizer → Export: can be help
 Gift cards can be devalued manually. 
 This is useful if a customer uses a gift card for a transaction that is not tracked by pretix. 
 For example, if you are using a separate point of sale system for selling food and drinks and a customer uses a gift card for a payment at that point of sale, you can track the value of the gift card by subtracting the amount from the gift card manually. 
+
 In order to do so, navigate to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards: and click the gift card in question in the list. 
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
