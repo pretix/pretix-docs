@@ -184,8 +184,8 @@ Under "Product", choose the product (or the quota, if there is more than one pro
 If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
 
-An optional step that can be useful if e.g. you are inviting VIPs is checking the box next to "Offer all add-on products for free when redeeming this voucher". 
-This means that the cost for all add-on products that voucher holders select on top of their ticket will be waived. 
+When inviting staff members or VIPs, you may want to waive the cost for all add-on products that voucher holders select on top of their ticket. 
+If you want to do that, check the box next to "Offer all add-on products for free when redeeming this voucher". 
 
 Check the box next to "Send vouchers via email" in order to display the email options. 
 Enter the mail addresses into the "Recipients" field or use the more advanced method described in the section on [sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
