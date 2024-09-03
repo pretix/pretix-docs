@@ -174,6 +174,9 @@ If you set the visibility toggle next to this option to "Hide product if unavail
 It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
 Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
+If you want to restrict availability for certain product variations, edit the variation and check the box next to "Show only if a matching voucher is redeemed". 
+For product variations, it is not possible to make them available through a voucher only but still display them in your shop. 
+
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
 Then, navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
