@@ -181,8 +181,8 @@ You can send multiple vouchers to the same email address using the "number" colu
 See also: [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
 Under "Product", choose the product (or the quota, if there is more than one product) which you want to make available to the voucher holders. 
-If you have set the visibility toggle of the product to hidden, check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
-This option has no effect if the visibility toggle is set to "Show product with info on why it's unavailable". 
+Check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
+This option only has an effect if the visibility toggle of the product is set to to hidden. 
 
 When inviting staff members or VIPs, you may want to waive the cost for all add-on products that voucher holders select on top of their ticket. 
 If you want to do that, check the box next to "Offer all add-on products for free when redeeming this voucher". 
