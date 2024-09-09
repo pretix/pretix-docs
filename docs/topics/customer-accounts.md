@@ -4,8 +4,16 @@ pretix allows your customers to use your ticket shop without having to create an
 However, pretix also lets you enable customer accounts. 
 Customer accounts have three advantages: 
 First, they allow your customers to log back in to their account to make adjustments to their personal data and attendee profiles. 
-Second, they give you more fine-grained control over customer accounts, their personal data, and the orders placed over them. 
+Second, they give you more fine-grained control over customer accounts, personal data, and the orders placed through them. 
 Third, they allow you to grant memberships to your customers, which can then be used for season passes, special members-only offers, and reusable media. 
+
+!!! Note 
+    Customer accounts and memberships are not the same thing. 
+    Customer accounts are usually created by the customers themselves. 
+    Activating customer accounts is a prerequisite for access to the memberships feature. 
+    Having access to a customer account is a prerequisite for getting access to a membership. 
+
+    Memberships are usually assigned to a customer account with the purchase of a product and can then be used for exclusive discounts and access to products. 
 
 This article tells you how to enable and manage customer accounts. 
 
@@ -37,7 +45,19 @@ If you check the box next to "Match orders based on email address", they will al
 
 ### Customer accounts from the customers' perspective 
 
+From your customers' perspective, a pretix ticket shop is perfectly usable without creating an account. 
+Giving your customers the option to create an account makes sense if you expect them to place orders repeatedly and to access and change their own account information after placing an order. 
 
+![Page for an order at an organizer named 'Tutorial Ltd.', displaying an order with pending payment.](../assets/screens/customer-accounts/order-details.png) 
+
+If a customer places an order without creating and logging in to a customer account, they receive an email with a URL. 
+The URL points to a page on which they can make a payment, download their ticket, as well as change the details of their orders, shipping, and personal information. 
+The URL is specific to that order. 
+
+!['Your account' page for an organizer named 'Tutorial Ltd.', displaying account information, orders, memberships, addresses, attendee profiles, and options to view and edit those.](../assets/screens/customer-accounts/your-account.png) 
+
+If the customer creates an account and then logs into that account, they will see an overview of their orders which they can view and edit individually just like described above. 
+They will also be able to view and edit their memberships, addresses, attendee profiles, account information, and password. 
 
 ### Managing customer accounts 
 
@@ -84,7 +104,7 @@ If pretix is the SSO provider, pretix will be the central source of truth for yo
 
 All SSO support for customer accounts in pretix is currently built on the OpenID Connect standard, a modern and widely accepted standard for SSO in all industries.
 
-### Using pretix as an SSO provider 
+#### Using pretix as an SSO provider 
 
 To connect an external application as a SSO client, go to “Customer accounts” → “SSO clients” → “Create a new SSO client” in your organizer account.
 
@@ -144,7 +164,7 @@ The various endpoints are located relative to the issuer URI as described above:
 
 We currently do not reproduce their documentation here as they follow the OpenID Connect and OAuth specifications without any special behavior.
 
-### Using pretix as a Single Sign-On client 
+#### Using pretix as a Single Sign-On client 
 
 To connect an external application as an SSO client, go to “Customer accounts” → “SSO providers” → “Create a new SSO provider” in your organizer account.
 
