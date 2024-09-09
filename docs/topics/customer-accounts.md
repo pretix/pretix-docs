@@ -1,8 +1,9 @@
-## Customer accounts 
+# Customer accounts 
 
 pretix allows your customers to use your ticket shop without having to create an account. 
 However, pretix also lets you enable customer accounts. 
 Customer accounts have three advantages: 
+
 First, they allow your customers to log back in to their account to make adjustments to their personal data and attendee profiles. 
 Second, they give you more fine-grained control over customer accounts, personal data, and the orders placed through them. 
 Third, they allow you to grant memberships to your customers, which can then be used for season passes, special members-only offers, and reusable media. 
