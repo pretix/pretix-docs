@@ -42,7 +42,7 @@ Keep this box checked if you want customers to log in to your pretix ticket shop
 Uncheck it if you want them to log in via an external single sign-on service only. 
 
 By default, customers will be able to view and edit orders placed with the same customer account. 
-If you check the box next to "Match orders based on email address", they will also be able to view and edit any orders that have been placed with the same email address. 
+If you check the box next to "Match orders based on email address", they will also be able to view and edit any orders that have been placed with the same email address without logging in. 
 
 ### Customer accounts from the customers' perspective 
 
@@ -60,12 +60,16 @@ The URL is specific to that order.
 If the customer creates an account and then logs into that account, they will see an overview of their orders which they can view and edit individually just like described above. 
 They will also be able to view and edit their memberships, addresses, attendee profiles, account information, and password. 
 
-### Managing customer accounts 
+### Managing customer accounts (new) 
 
-If customer accounts are enabled, the sidebar will contain the entry :btn-icon:fa3-user: Customer accounts: on the organizer level. 
-Here, you can create and manage customers, memberships, SSO clients, and SSO providers. 
+Navigate to :navpath:Your organizer → :fa3-user: Customer accounts → Customers:. 
+This menu option will only appear if customer accounts are enabled in the organizer account settings. 
+The "Customers" page displays a list of all customer accounts known to your organizer account with their "Customer ID", email address, name, and optional "External identifier". 
+The page also gives you the option to search and filter customer accounts as well as to create a new one with the :btn-icon:fa3-plus: Create a new customer: button. 
 
-The first sub-item, “Customers”, allows you to search and inspect the list of your customer accounts, as well as to create a new customer account from the backend:
+### Managing customer accounts (old)
+
+After customer accounts have been enabled, you will find a new menu option “Customer accounts” in the organizer-level main menu. The first sub-item, “Customers”, allows you to search and inspect the list of your customer accounts, as well as to create a new customer account from the backend:
 
 If you click on a customer ID, you can see all details of this customer account, including registration information, active memberships, past ticket orders, and account history:
 
