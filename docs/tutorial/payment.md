@@ -75,7 +75,7 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
 We will navigate to the invoicing settings by going to our event, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry. 
-On the :bzn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
+On the :btn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
 
 We will then switch to the :btn:Issuer details: tab and provide the name and full address of our organization. 
 The data we enter here will be used for all invoices we generate from this point on. 
