@@ -33,8 +33,7 @@ Costs will only occur when selling actual tickets.
     Instead, you can ask your co-organizers to send you an invitation and add you to the team. 
     Instructions on inviting someone to a team can be found [here](../topics/teams.md#inviting-someone-to-your-team). 
 
-![pretix.eu, a website introducing pretix and its main features. 
-There is a green button labeled 'Create your first ticket shop' on the right.](../assets/screens/account/pretix-eu.png "pretix.eu screenshot" ) 
+![pretix.eu, a website introducing pretix and its main features. There is a green button labeled 'Create your first ticket shop' on the right.](../assets/screens/account/pretix-eu.png "pretix.eu screenshot" ) 
 
 To create an account, we are going to click the green :btn:Create you first ticket shop: button on the [pretix.eu website](https://pretix.eu/about/en/ "https://pretix.eu/about/en").
 This takes us to a site on which we will enter the info for our personal pretix account in the left column, and the name and short form for our organization in the right column. 
