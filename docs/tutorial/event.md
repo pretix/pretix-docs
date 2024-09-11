@@ -150,4 +150,4 @@ Not uploading a file here would mean that the header image will be used for prev
 ## Conclusion 
 
 We have gone through the four-step event creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop. 
-We can now move on to creating products to be sold in our shop. 
+We can now move on to [creating products](products.md) to be sold in our shop. 

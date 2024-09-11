@@ -162,4 +162,4 @@ If we now navigate back to the "Products" page, open the "Sticker" product and c
 ## Conclusion 
 
 We have created all the tickets and other products that we are planning to sell in our shop, sorted them into categories, and added them to quotas. 
-We can now move on to setting up payment methods that our customers can use to purchase these products. 
+We can now move on to [setting up payment methods](payment.md) that our customers can use to purchase these products. 

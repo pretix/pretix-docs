@@ -86,4 +86,4 @@ If we now click the :btn:Save and show preview: button, our browser is going to 
 
 ## Conclusion
 
-Now that we have given our customers two options for making payments in our shop and set up the automatic dispatching of invoices, we can move on to testing our shop before finally taking it live. 
+Now that we have given our customers two options for making payments in our shop and set up the automatic dispatching of invoices, we can move on to [testing our shop](testing.md) before finally taking it live. 

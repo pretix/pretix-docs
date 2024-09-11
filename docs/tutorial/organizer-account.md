@@ -152,4 +152,4 @@ This means that our organizer account has been submitted to the pretix team for 
 
 ## Conclusion
 
-Now that our account's basic setup is complete and it is awaiting activation, we can move on to creating our first event. 
+Now that our account's basic setup is complete and it is awaiting activation, we can move on to [creating our first event](event.md). 
