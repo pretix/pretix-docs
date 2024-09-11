@@ -7,11 +7,11 @@ It is also possible to gain (partial) access to an organizer account by being in
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
 Here is a brief overview of the steps we are going to take in this section: 
 
- - adding contact information on the "General" tab
- - choosing language and localization options on the "Localization" tab 
- - customizing the organizer page on the "Organizer page" and "Shop design" tabs
- - setting up cookie/privacy information on the "Privacy" tab 
- - getting our pretix account activated by providing necessary information in the "Billing settings"
+ - [adding contact information](organizer-account.md#general) on the "General" tab
+ - [choosing language and localization options](organizer-account.md#localization) on the "Localization" tab 
+ - [customizing the organizer page](organizer-account.md#organizer-page) on the "Organizer page" and "Shop design" tabs
+ - [setting up cookie/privacy information](organizer-account.md#privacy) on the "Privacy" tab 
+ - [getting our pretix account activated](organizer-account.md#activation) by providing necessary information in the "Billing settings"
 
 These are the necessary steps for preparing our organizer account for hosting events with pretix. 
 A few of these steps are optional, but will save us some work in the long term. 

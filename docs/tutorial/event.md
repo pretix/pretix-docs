@@ -4,10 +4,10 @@ After setting up an organizer account, the next step is creating an event.
 This article describes the creation and basic setup of an event. 
 Here is a quick summary of the steps we are going to take in this section: 
 
- - create an event
- - get an overview of the event's status on the dashboard
- - enable the collection of customer and attendee data 
- - add images to the ticket shop 
+ - [create an event](event.md#event-creation)
+ - [get an overview](event.md#event-level-dashboard) of the event's status on the dashboard
+ - [enable the collection](event.md#customer-and-attendee-data) of customer and attendee data 
+ - [add images](event.md#shop-design) to the ticket shop 
 
 This covers all the necessary steps for creating an event and setting up the ticket shop so that we can modify our product to our needs in the next article of this tutorial. 
 

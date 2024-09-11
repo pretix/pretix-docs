@@ -3,12 +3,12 @@
 In this final part of the tutorial, we will test our shop, make sure that everything works as intended, and finally take it live. 
 Here is a brief overview of the steps we are going to take in this section: 
 
- - placing an order in test mode 
+ - [placing an order](testing.md#testing-and-confirming-orders) in test mode 
  - reviewing the order in the backend and marking it as paid
  - testing the shop in every language we have activated
- - making final improvements to our shop if necessary 
- - disabling test mode and deleting test orders 
- - taking the shop live
+ - [making final improvements](testing.md#making-final-improvements-to-our-shop) to our shop if necessary 
+ - [disabling test mode](testing.md#disabling-test-mode-and-deleting-orders) and deleting test orders 
+ - [taking the shop live](testing.md#conclusion)
 
 ## Testing and confirming orders 
 

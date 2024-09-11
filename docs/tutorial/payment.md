@@ -4,9 +4,9 @@ We do not just want to offer tickets in our shop; we also want to get paid for t
 That is what we will take care of in this part of the tutorial. 
 We are going to take the following steps: 
 
- - enabling payment via credit card using Stripe
- - enabling payment via bank transfer 
- - setting up invoices to be sent automatically with every order
+ - enabling payment via credit card using [Stripe](payment.md#stripe)
+ - enabling payment via [bank transfer](payment.md#bank-transfers)
+ - setting up [invoices](payment.md#setting-up-invoices) to be sent automatically with every order
 
 ## Setting up payment providers 
 
