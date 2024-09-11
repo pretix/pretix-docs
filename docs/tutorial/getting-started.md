@@ -75,7 +75,7 @@ Our events will not be visible to the public, nor will we be charged, until we e
 
 {% include "note-short-form.md" %}
 
-The privacy policy and terms of service are both linked on this page. 
+The [privacy policy](https://pretix.eu/about/en/privacy) and [terms of service](https://pretix.eu/about/en/terms) are both linked on this page. 
 Reading them carefully, agreeing with them and checking the boxes to confirm is a requirement for using pretix. 
 
 We will now click the :btn:Continue: button and thus take our first step towards hosting our first event using pretix. 
