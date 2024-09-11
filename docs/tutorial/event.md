@@ -17,6 +17,8 @@ In order to create an event, we must be logged in to our [pretix](https://pretix
 Clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events. 
 We will now click the :btn-icon:fa3-plus:Create a new event: button. 
 
+<br>
+
 ![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
 An event in pretix is always associated with an organizer account, so we have to choose one here. 
@@ -65,11 +67,15 @@ Thus, we are going to add a 19% tax rule here.
 
 {% include "warning-tax.md" %}
 
+<br>
+
 ![Screenshot of page titled "Create new Event—Step 3", showing an infobox asking the user to review all settings extensively and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
 We are then asked if we want to copy information from a previously created event. 
 This step can save us a lot of work from our second event onwards. 
 But since this is the first event we're organizing with this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue:. 
+
+<br>
 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
 

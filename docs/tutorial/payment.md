@@ -21,6 +21,8 @@ Bank transfers are the exception to that rule because the pretix software would 
 On pretix Hosted, it is possible to set up a connection to our bank account. 
 On all versions of pretix, payments via bank transfer can be monitored either by manually approving them as they come in, or by regularly importing digital bank statements. 
 
+<br>
+
 ![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../assets/screens/payment/settings.png "Payment settings screenshot") 
 
 In order to set up payment providers, we will navigate to our personal dashboard by clicking :btn:pretix.eu: in the top left corner of the website. 

@@ -38,6 +38,8 @@ There is a green button labeled 'Create your first ticket shop' on the right.](.
 To create an account, we are going to click the green :btn:Create you first ticket shop: button on the [pretix.eu website](https://pretix.eu/about/en/ "https://pretix.eu/about/en").
 This takes us to a site on which we will enter the info for our personal pretix account in the left column, and the name and short form for our organization in the right column. 
 
+<br>
+
 ![a website with input fields for account information as well as the name and short form of the organizer](../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup screenshot" ) 
 
 For our personal account, we are going to provide our name, email address, and a secure password. 
