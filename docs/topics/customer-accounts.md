@@ -65,7 +65,14 @@ They will also be able to view and edit their memberships, addresses, attendee p
 Navigate to :navpath:Your organizer → :fa3-user: Customer accounts → Customers:. 
 This menu option will only appear if customer accounts are enabled in the organizer account settings. 
 The "Customers" page displays a list of all customer accounts known to your organizer account with their "Customer ID", email address, name, and optional "External identifier". 
+
 The page also gives you the option to search and filter customer accounts as well as to create a new one with the :btn-icon:fa3-plus: Create a new customer: button. 
+pretix will automatically generate a "Customer ID" for every customer account. 
+You can change this customer ID manually.  
+The only other mandatory piece of information for a customer account is the associated email address. 
+
+The customer can only log in to their account if the boxes next to "Account active" **and** "Verified email address" are checked. 
+The "Verified email address" box will be checked automatically as soon as the customer clicks the link in the verification email or password reset email. 
 
 ### Managing customer accounts (old)
 
