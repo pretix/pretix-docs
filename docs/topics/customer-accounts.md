@@ -85,12 +85,17 @@ Entries in the "Notes" field will only be visible to you and your team; they wil
 
 ### Single Sign-On (SSO) 
 
-“Single-Sign-On” (SSO) is a technical term for a situation in which a person can log in to multiple systems using just one login. 
-This can be convenient if you have multiple applications that are exposed to your customers: 
-They won’t have to remember multiple passwords or understand how your application landscape is structured, they can just always log in with the same credentials whenever they see your brand.
+"Single sign-on" or SSO refers to a setup that allows users to sign in to multiple systems (e.g. apps or websites) with a single set of login data. 
+It makes sense to implement SSO if pretix is just one of multiple applications you are planning for your customers to use. 
+This has the advantage of unburdening your customers from memorizing the difference between your various systems and keeping track of different usernames and passwords for them. 
+With an SSO setup, your customers can use the same credentials for every interaction with your company or your brand. 
 
-In this scenario, pretix can be either the “SSO provider” or the “SSO client”. 
-If pretix is the SSO provider, pretix will be the central source of truth for your customer accounts and your other applications can connect to pretix to use pretix’s login functionality. If pretix is the SSO client, one of your existing systems will be the source of truth for the customer accounts and pretix will use that system’s login functionality.
+You can use pretix as an SSO provider. 
+Customers will be able to create a pretix account and then use that account for all other applications you connect as SSO clients with pretix serving as the single source of truth (SSOT). 
+
+You can also use pretix as the SSO client. 
+If you are already using a different SSO provider that serves as the single source of truth (SSOT) for your applications, you can connect pretix as an SSO client. 
+This means that customers will be able to log into your pretix shop and make purchases there using your existing SSO setup. 
 
 All SSO support for customer accounts in pretix is currently built on the OpenID Connect standard, a modern and widely accepted standard for SSO in all industries.
 
