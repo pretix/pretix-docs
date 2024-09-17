@@ -101,30 +101,34 @@ All SSO support for customer accounts in pretix is currently built on the OpenID
 
 #### Using pretix as an SSO provider 
 
-To connect an external application as a SSO client, go to “Customer accounts” → “SSO clients” → “Create a new SSO client” in your organizer account.
+If you want to use pretix as an SSO provider, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO clients: and click the :btn-icon:fa3-plus: Create a new SSO client: button. 
 
-You will need to fill out the following fields:
+The checkbox next to "Active" is enabled by default. 
+Disable it if you want to disable SSO integration with the client in question. 
 
-Active
+Insert an unambiguous name in the "Application name" field. 
 
-    If this checkbox is removed, the SSO client can not be used.
-Application name
+Under "Client type", choose "Confidential" if the server-side application is able to store a secret that will be inaccessible to end users.
+For a client-side application such as a typical mobile apps, choose "Public".
 
-    The name of your external application, e.g. “digital event marketplace”.
-Client type
+Your choice for the "Grant type" depends on the implementation of the OpenID Connect standard used by the application you are connecting. 
 
-    For a server-side application which is able to store a secret that will be inaccessible to end users, chose “confidential”. For a client-side application, such as many mobile apps, choose “public”.
-Grant type
+Enter one or multiple URIs that the user might be redirected to after the successful or failed login into the "Redirection URIs" field. 
 
-    This value depends on the OpenID Connect implementation of your software.
-Redirection URIs
+Under "Allowed access scopes", check the boxes for which you want to grant access to the application. 
 
-    One or multiple URIs that the user might be redirected to after the successful or failed login.
-Allowed access scopes
+Once you click the :btn:Save: button, the client secret will be displayed at the top of the page. 
+The client secret will only be displayed once. 
+Copy and paste it to your application. 
+You will also need the "Client ID" which will be displayed in a new field underneath "Application name". 
 
-    The types of data the SSO client may access about the customer.
+If you need a new client secret, check the box next to "Invalidate old client secret and generate a new one" and click the :btn:Save: button. 
+The old client secret will not be usable anymore. 
+The new client secret will be displayed in a green box at the top of the page. 
 
-After you submitted all data, you will receive a client ID as well as a client secret. The client secret is shown in the green success message and will only ever be shown once. If you need it again, use the option “Invalidate old client secret and generate a new one”.
+you will receive a client ID as well as a client secret. The client secret is shown in the green success message and will only ever be shown once. If you need it again, use the option “Invalidate old client secret and generate a new one”.
+
+------------
 
 You will need the client ID and client secret to configure your external application. The application will also likely need some other information from you, such as your issuer URI. If you use pretix Hosted and your organizer account does not have a custom domain, your issuer will be https://pretix.eu/myorgname, where myorgname is the short form of your organizer account. If you use a custom domain, such as tickets.mycompany.net, then your issuer will be https://tickets.mycompany.net.
 Technical details
