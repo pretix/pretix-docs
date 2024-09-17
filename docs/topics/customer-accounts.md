@@ -60,50 +60,28 @@ The URL is specific to that order.
 If the customer creates an account and then logs into that account, they will see an overview of their orders which they can view and edit individually just like described above. 
 They will also be able to view and edit their memberships, addresses, attendee profiles, account information, and password. 
 
-### Managing customer accounts (new) 
+### Managing customer accounts 
 
 Navigate to :navpath:Your organizer → :fa3-user: Customer accounts → Customers:. 
 This menu option will only appear if customer accounts are enabled in the organizer account settings. 
 The "Customers" page displays a list of all customer accounts known to your organizer account with their "Customer ID", email address, name, and optional "External identifier". 
 
-The page also gives you the option to search and filter customer accounts as well as to create a new one with the :btn-icon:fa3-plus: Create a new customer: button. 
+The page gives you the option to search and filter customer accounts as well as to create a new one with the :btn-icon:fa3-plus: Create a new customer: button. 
 pretix will automatically generate a "Customer ID" for every customer account. 
-You can change this customer ID manually.  
+You can change this customer ID manually during creation. 
+It serves as the accounts unique identifier and cannot be changed after the account has been created. 
+The identifier may only contain letters, numbers, dots, dashes, and underscores. 
+It must start and end with a letter or number. 
+
 The only other mandatory piece of information for a customer account is the associated email address. 
 
 The customer can only log in to their account if the boxes next to "Account active" **and** "Verified email address" are checked. 
 The "Verified email address" box will be checked automatically as soon as the customer clicks the link in the verification email or password reset email. 
 
-### Managing customer accounts (old)
+If you already have customer accounts in a different software, then it makes sense to fill the "External identifier" field with the unique identifier of the account from the other software. 
+If you want to import, export, or sync data between pretix and another software, then it makes sense to fill this field automatically using an integration with the pretix API. 
 
-After customer accounts have been enabled, you will find a new menu option “Customer accounts” in the organizer-level main menu. The first sub-item, “Customers”, allows you to search and inspect the list of your customer accounts, as well as to create a new customer account from the backend:
-
-If you click on a customer ID, you can see all details of this customer account, including registration information, active memberships, past ticket orders, and account history:
-
-You can also perform various actions from this view, such as:
-
-    Send a password reset link
-
-    Change registration information
-
-    Anonymize the customer account (does not anonymize connected orders)
-
-When creating or changing a customer, you will be presented with the following form:
-
-Most fields, such as name, e-mail address, phone number, and language should be self-explanatory. The following fields might require some explanation:
-
-Account active
-
-    If this checkbox is removed, the customer will not be able to log in.
-External identifier
-
-    This field can be used to cross-reference your customer database with other sources. For example, if the customer already has a number in another system, you can insert that number here. This can be especially powerful if you use our API for synchronization with an external system.
-Verified email address
-
-    This checkbox signifies whether you have verified that this customer in fact controls the given email address. This will automatically be checked after a successful registration or after a successful password reset. Before it is checked, the customer will not be able to log in. You should usually not modify this field manually.
-Notes
-
-    Entries in this field will only be visible to you and your team, not to the customer.
+Entries in the "Notes" field will only be visible to you and your team; they will not be visible to the customer. 
 
 ### Single Sign-On (SSO) 
 
