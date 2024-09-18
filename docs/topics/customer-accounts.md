@@ -135,37 +135,11 @@ For instance, if your custom domain is tickets.mycompany.net, then your issuer U
 
 #### Using pretix as a Single Sign-On client 
 
-To connect an external application as an SSO client, go to “Customer accounts” → “SSO providers” → “Create a new SSO provider” in your organizer account.
+If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button. 
 
-The “Provider name” and “Login button label” is what we’ll use to show the new login option to the user. For the actual connection, we will require information such as the issuer URL, client ID, client secret, scope, and field (or claim) names that you will receive from your SSO provider.
+Choose a "Provider name" and "Login button label". 
+These texts will be used as a label for the login option in your shop. 
+Under "Single-sign-on method", choose "OpenID Connect". 
+Fill out the fields that are displayed after you selected "OpenID Connect" with the information from your SSO provider. 
 
-Note
-
-If you want your customers to only use your SSO provider, it makes sense to turn off the “Allow customers to log in with email address and password” settings option (see above).
-Technical details
-
-We assume that SSO providers fulfill the following requirements:
-
-    Implementation according to OpenID Connect Core 1.0.
-
-    Published meta-data document at <issuer>/.well-known/openid-configuration as specified in OpenID Connect Discovery 1.0.
-
-    Support for Authorization code flow (response_type=code) with response_mode=query.
-
-    Support for client authentication using client ID and client secret and without public key cryptography.
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? 
-How do you solve them? 
-
-## Further Information
-
-What other media do we have on the topic? 
-Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? 
-Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. 
-Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
+If you want your customers to log in via SSO only and not create accounts via pretix directly, navigate to :navpath:Your organizer → Settings → General:, open the :btn:Customer accounts: tab, and uncheck the box next to "Allow customers to log in with email address and password". 
