@@ -4,10 +4,10 @@ After setting up an organizer account, the next step is creating an event.
 This article describes the creation and basic setup of an event. 
 Here is a quick summary of the steps we are going to take in this section: 
 
- - create an event
- - get an overview of the event's status on the dashboard
- - enable the collection of customer and attendee data 
- - add images to the ticket shop 
+ - [create an event](event.md#event-creation)
+ - [get an overview](event.md#event-level-dashboard) of the event's status on the dashboard
+ - [enable the collection](event.md#customer-and-attendee-data) of customer and attendee data 
+ - [add images](event.md#shop-design) to the ticket shop 
 
 This covers all the necessary steps for creating an event and setting up the ticket shop so that we can modify our product to our needs in the next article of this tutorial. 
 
@@ -15,8 +15,9 @@ This covers all the necessary steps for creating an event and setting up the tic
 
 In order to create an event, we must be logged in to our [pretix](https://pretix.eu/control/) account. 
 Clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events. 
-We will now click the :btn-icon:
--plus:Create a new event: button. 
+We will now click the :btn-icon:fa3-plus:Create a new event: button. 
+
+<br>
 
 ![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
@@ -66,11 +67,15 @@ Thus, we are going to add a 19% tax rule here.
 
 {% include "warning-tax.md" %}
 
+<br>
+
 ![Screenshot of page titled "Create new Event—Step 3", showing an infobox asking the user to review all settings extensively and the option to import settings from a previously created event.](../assets/screens/event/create-event3.png "Create new event step 3 screenshot" ) 
 
 We are then asked if we want to copy information from a previously created event. 
 This step can save us a lot of work from our second event onwards. 
 But since this is the first event we're organizing with this organizer account, we will simply leave the default (_"Do not copy"_) and click :btn:Continue:. 
+
+<br>
 
 ![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../assets/screens/event/create-event4.png "Create new event step 4 screenshot" ) 
 
@@ -145,4 +150,4 @@ Not uploading a file here would mean that the header image will be used for prev
 ## Conclusion 
 
 We have gone through the four-step event creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop. 
-We can now move on to creating products to be sold in our shop. 
+We can now move on to [creating products](products.md) to be sold in our shop. 

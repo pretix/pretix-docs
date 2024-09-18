@@ -4,9 +4,9 @@ We do not just want to offer tickets in our shop; we also want to get paid for t
 That is what we will take care of in this part of the tutorial. 
 We are going to take the following steps: 
 
- - enabling payment via credit card using Stripe
- - enabling payment via bank transfer 
- - setting up invoices to be sent automatically with every order
+ - enabling payment via credit card using [Stripe](payment.md#stripe)
+ - enabling payment via [bank transfer](payment.md#bank-transfers)
+ - setting up [invoices](payment.md#setting-up-invoices) to be sent automatically with every order
 
 ## Setting up payment providers 
 
@@ -20,6 +20,8 @@ Bank transfers are the exception to that rule because the pretix software would 
 
 On pretix Hosted, it is possible to set up a connection to our bank account. 
 On all versions of pretix, payments via bank transfer can be monitored either by manually approving them as they come in, or by regularly importing digital bank statements. 
+
+<br>
 
 ![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../assets/screens/payment/settings.png "Payment settings screenshot") 
 
@@ -75,7 +77,7 @@ For more information on using bank transfers, see [bank transfers](../topics/pay
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../assets/screens/payment/invoice.png "Invoice settings screenshot") 
 
 We will navigate to the invoicing settings by going to our event, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry. 
-On the :bzn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
+On the :btn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
 
 We will then switch to the :btn:Issuer details: tab and provide the name and full address of our organization. 
 The data we enter here will be used for all invoices we generate from this point on. 
@@ -84,4 +86,4 @@ If we now click the :btn:Save and show preview: button, our browser is going to 
 
 ## Conclusion
 
-Now that we have given our customers two options for making payments in our shop and set up the automatic dispatching of invoices, we can move on to testing our shop before finally taking it live. 
+Now that we have given our customers two options for making payments in our shop and set up the automatic dispatching of invoices, we can move on to [testing our shop](testing.md) before finally taking it live. 

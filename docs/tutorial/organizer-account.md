@@ -2,16 +2,18 @@
 
 An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
 We just created an organizer account and our personal account at the same time. 
-It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and accepting that invitation. 
+It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member../topics/teams.md#accepting-an-invitation-to-a-team and accepting that invitation. 
+TK nach dem Mergen in richtigen Link verwandeln 
+
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
 Here is a brief overview of the steps we are going to take in this section: 
 
- - adding contact information on the "General" tab
- - choosing language and localization options on the "Localization" tab 
- - customizing the organizer page on the "Organizer page" and "Shop design" tabs
- - setting up cookie/privacy information on the "Privacy" tab 
- - getting our pretix account activated by providing necessary information in the "Billing settings"
+ - [adding contact information](organizer-account.md#general) on the "General" tab
+ - [choosing language and localization options](organizer-account.md#localization) on the "Localization" tab 
+ - [customizing the organizer page](organizer-account.md#organizer-page) on the "Organizer page" and "Shop design" tabs
+ - [setting up cookie/privacy information](organizer-account.md#privacy) on the "Privacy" tab 
+ - [getting our pretix account activated](organizer-account.md#activation) by providing necessary information in the "Billing settings"
 
 These are the necessary steps for preparing our organizer account for hosting events with pretix. 
 A few of these steps are optional, but will save us some work in the long term. 
@@ -26,9 +28,13 @@ After finishing account creation and logging in to [pretix.eu/control](https://p
 We can always come back to this page by clicking the :btn:pretix.eu: button in the bar at the top. 
 Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
+<br>
+
 ![pretix.eu organizers page, showing the list of available organizer accounts which only includes 'Example Organizer'. There we will find a filter function for the list of available organizers and a button labeled 'Create a new organizer'](../assets/screens/organizer/organizers.png) 
 
 Upon clicking our organizer account in the list, we are taken to a page displaying all events associated with that organizer.
+
+<br>
 
 ![pretix.eu organizers page, showing the list of all events associated with 'Example Organizer'. There is a filter function for the list of events and a button labeled 'Create a new event'](../assets/screens/organizer/event-list.png) 
 
@@ -148,4 +154,4 @@ This means that our organizer account has been submitted to the pretix team for 
 
 ## Conclusion
 
-Now that our account's basic setup is complete and it is awaiting activation, we can move on to creating our first event. 
+Now that our account's basic setup is complete and it is awaiting activation, we can move on to [creating our first event](event.md). 
