@@ -126,42 +126,12 @@ If you need a new client secret, check the box next to "Invalidate old client se
 The old client secret will not be usable anymore. 
 The new client secret will be displayed in a green box at the top of the page. 
 
-you will receive a client ID as well as a client secret. The client secret is shown in the green success message and will only ever be shown once. If you need it again, use the option “Invalidate old client secret and generate a new one”.
+Beyond the client ID and secret, the service you are connecting is also going to need your issuer URI. 
+If you are using pretix Hosted without a custom domain, your issuer URI will be the address of your organizer's public profile **without** the final slash. 
+For instance, the issuer URI of our Tutorial Ltd. with the organizer short form will be [https://pretix.eu/tut](https://pretix.eu/tut). 
 
-------------
-
-You will need the client ID and client secret to configure your external application. The application will also likely need some other information from you, such as your issuer URI. If you use pretix Hosted and your organizer account does not have a custom domain, your issuer will be https://pretix.eu/myorgname, where myorgname is the short form of your organizer account. If you use a custom domain, such as tickets.mycompany.net, then your issuer will be https://tickets.mycompany.net.
-Technical details
-
-We implement OpenID Connect Core 1.0, except for some optional parts that do not make sense for pretix or bring no additional value. For example, we do not currently support encrypted tokens, offline access, refresh tokens, or passing request parameters as JWTs.
-
-We implement the provider metadata section from OpenID Connect Discovery 1.0. You can find the endpoint relative to the issuer URI as described above, for example http://pretix.eu/demo/.well-known/openid-configuration.
-
-We implement all three OpenID Connect Core flows:
-
-    Authorization Code Flow (response type code)
-
-    Implicit Flow (response types id_token token and id_token)
-
-    Hybrid Flow (response types code id_token, code id_token token, and code token)
-
-We implement the response modes query and fragment.
-
-We currently offer the following scopes: openid, profile, email, phone
-
-As well as the following standardized claims: iss, aud, exp, iat, auth_time, nonce, c_hash, at_hash, sub, locale, name, given_name, family_name, middle_name, nickname, email, email_verified, phone_number.
-
-The various endpoints are located relative to the issuer URI as described above:
-
-    Authorization: <issuer>/oauth2/v1/authorize
-
-    Token: <issuer>/oauth2/v1/token
-
-    User info: <issuer>/oauth2/v1/userinfo
-
-    Keys: <issuer>/oauth2/v1/keys
-
-We currently do not reproduce their documentation here as they follow the OpenID Connect and OAuth specifications without any special behavior.
+If you are using a custom domain, then your issuer URI will be the custom domain preceded by "https://". 
+For instance, if your custom domain is tickets.mycompany.net, then your issuer URI will be [https://tickets.mycompany.net](https://tickets.mycompany.net). 
 
 #### Using pretix as a Single Sign-On client 
 
