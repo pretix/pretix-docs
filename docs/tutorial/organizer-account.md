@@ -25,7 +25,7 @@ We can always come back to adjust the organizer account settings later, in case 
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), we are greeted by the dashboard. 
-We can always come back to this page by clicking the :btn:pretix.eu: button in the bar at the top. 
+We can always come back to this page by clicking the :btn-icon:i-pretix:pretix.eu: button in the bar at the top. 
 Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
 <br>
