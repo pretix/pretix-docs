@@ -166,7 +166,7 @@ They follow the OpenID Connect and OAuth specifications without any special beha
 Please refer to the specifications for further information. 
 
 
-#### Using pretix as a Single Sign-On client 
+#### Using pretix as an SSO client 
 
 If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button. 
 
@@ -177,3 +177,12 @@ Under "Single-sign-on method", choose "OpenID Connect".
 Fill out the fields that are displayed after you selected "OpenID Connect" with the information from your SSO provider. 
 
 If you want your customers to log in exclusively via SSO and not create accounts via pretix directly, navigate to :navpath:Your organizer → Settings → General:, open the :btn:Customer accounts: tab, and uncheck the box next to "Allow customers to log in with email address and password". 
+
+#### Technical details for using pretix as an SSO client
+
+In order to use an SSO provider with pretix, it has to fulfill the following requirements:
+
+ - Implementation according to OpenID Connect Core 1.0.
+ - Published meta-data document at <issuer>/.well-known/openid-configuration as specified in [https://openid.net/specs/openid-connect-discovery-1_0.html](OpenID Connect Discovery 1.0).
+ - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
+ - Support for client authentication using client ID and client secret and without public key cryptography.
