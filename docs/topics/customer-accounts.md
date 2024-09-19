@@ -138,7 +138,8 @@ For instance, if your custom domain is tickets.mycompany.net, then your issuer U
 If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button. 
 
 Choose a "Provider name" and "Login button label". 
-These texts will be used as a label for the login option in your shop. 
+The "Provider name" is used to refer to the provider internally in the pretix backend. 
+The "Login button label" is used as the label for the login button that is displayed to customers in your shop. 
 Under "Single-sign-on method", choose "OpenID Connect". 
 Fill out the fields that are displayed after you selected "OpenID Connect" with the information from your SSO provider. 
 
