@@ -183,6 +183,6 @@ If you want your customers to log in exclusively via SSO and not create accounts
 In order to use an SSO provider with pretix, it has to fulfill the following requirements:
 
  - Implementation according to OpenID Connect Core 1.0.
- - Published meta-data document at <issuer>/.well-known/openid-configuration as specified in [https://openid.net/specs/openid-connect-discovery-1_0.html](OpenID Connect Discovery 1.0).
+ - Published meta-data document at <issuer>/.well-known/openid-configuration as specified in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
  - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
  - Support for client authentication using client ID and client secret and without public key cryptography.
