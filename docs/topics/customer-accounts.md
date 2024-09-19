@@ -91,10 +91,10 @@ This has the advantage of unburdening your customers from memorizing the differe
 With an SSO setup, your customers can use the same credentials for every interaction with your company or your brand. 
 
 You can use pretix as an SSO provider. 
-Customers will be able to create a pretix account and then use that account for all other applications you connect as SSO clients with pretix serving as the single source of truth (SSOT). 
+Customers will be able to create a pretix account and then use that account for all other applications you connect as SSO clients with pretix serving as the source of truth. 
 
 You can also use pretix as the SSO client. 
-If you are already using a different SSO provider that serves as the single source of truth (SSOT) for your applications, you can connect pretix as an SSO client. 
+If you are already using a different SSO provider that serves as the source of truth for your applications, you can connect pretix as an SSO client. 
 This means that customers will be able to log into your pretix shop and make purchases there using your existing SSO setup. 
 
 All SSO support for customer accounts in pretix is currently built on the OpenID Connect standard, a modern and widely accepted standard for SSO in all industries.
