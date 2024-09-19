@@ -5,7 +5,7 @@ However, pretix also lets you enable customer accounts.
 Customer accounts have three advantages: 
 
 First, they allow your customers to store their personal data so that they do not have to enter addresses and attendee information on every purchase. 
-Second, they give you more fine-grained control over customer accounts, personal data, and the orders placed through them. 
+Second, they allow you to interact with customers through their personal accounts, and not just through individual orders. 
 Third, they allow you to grant memberships to your customers, which can then be used for season passes, special members-only offers, and reusable media. 
 
 !!! Note 
@@ -39,7 +39,7 @@ If you want to allow your customers to create accounts, navigate to :navpath:You
 
 Checking that box makes another box appear that is checked by default: "Allow customers to log in with email address and password". 
 Keep this box checked if you want customers to log in to your pretix ticket shop directly. 
-Uncheck it if you want them to log in via an external single sign-on service only. 
+Uncheck it if you want them to log in exclusively via an external single sign-on service. 
 
 By default, customers will be able to view and edit orders placed with the same customer account. 
 If you check the box next to "Match orders based on email address", they will also be able to view and edit any orders that have been placed with the same email address without logging in. 
@@ -69,7 +69,7 @@ The "Customers" page displays a list of all customer accounts known to your orga
 The page gives you the option to search and filter customer accounts as well as to create a new one with the :btn-icon:fa3-plus: Create a new customer: button. 
 pretix will automatically generate a "Customer ID" for every customer account. 
 You can change this customer ID manually during creation. 
-It serves as the accounts unique identifier and cannot be changed after the account has been created. 
+It serves as the account's unique identifier and cannot be changed after the account has been created. 
 The identifier may only contain letters, numbers, dots, dashes, and underscores. 
 It must start and end with a letter or number. 
 
@@ -128,7 +128,7 @@ The new client secret will be displayed in a green box at the top of the page.
 
 Beyond the client ID and secret, the service you are connecting is also going to need your issuer URI. 
 If you are using pretix Hosted without a custom domain, your issuer URI will be the address of your organizer's public profile **without** the final slash. 
-For instance, the issuer URI of our Tutorial Ltd. with the organizer short form will be [https://pretix.eu/tut](https://pretix.eu/tut). 
+For instance, the issuer URI of our Tutorial Ltd. with the organizer short form "tut" will be [https://pretix.eu/tut](https://pretix.eu/tut). 
 
 If you are using a custom domain, then your issuer URI will be the custom domain preceded by "https://". 
 For instance, if your custom domain is tickets.mycompany.net, then your issuer URI will be [https://tickets.mycompany.net](https://tickets.mycompany.net). 
@@ -142,4 +142,4 @@ These texts will be used as a label for the login option in your shop.
 Under "Single-sign-on method", choose "OpenID Connect". 
 Fill out the fields that are displayed after you selected "OpenID Connect" with the information from your SSO provider. 
 
-If you want your customers to log in via SSO only and not create accounts via pretix directly, navigate to :navpath:Your organizer → Settings → General:, open the :btn:Customer accounts: tab, and uncheck the box next to "Allow customers to log in with email address and password". 
+If you want your customers to log in exclusively via SSO and not create accounts via pretix directly, navigate to :navpath:Your organizer → Settings → General:, open the :btn:Customer accounts: tab, and uncheck the box next to "Allow customers to log in with email address and password". 
