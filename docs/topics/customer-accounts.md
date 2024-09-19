@@ -135,11 +135,11 @@ For instance, if your custom domain is tickets.mycompany.net, then your issuer U
 
 #### Technical details for using pretix as an SSO provider
 
-pretix uses the OpenID Connect Core 1.0 specification.
+pretix uses the [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) specification. 
 A few optional parts that have no use within pretix are excluded. 
 For example, encrypted tokens, offline access, refresh tokens, and passing request parameters as JWTs are not supported. 
 
-pretix uses the provider metadata section from OpenID Connect Discovery 1.0. 
+pretix uses the provider metadata section from [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html). 
 You can find the endpoint relative to the issuer URI as described above, for example  
 https://pretix.eu/demo/.well-known/openid-configuration.
 
@@ -182,7 +182,7 @@ If you want your customers to log in exclusively via SSO and not create accounts
 
 In order to use an SSO provider with pretix, it has to fulfill the following requirements:
 
- - Implementation according to OpenID Connect Core 1.0.
+ - Implementation according to [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html).
  - Published meta-data document at <issuer>/.well-known/openid-configuration as specified in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
  - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
  - Support for client authentication using client ID and client secret and without public key cryptography.
