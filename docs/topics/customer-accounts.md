@@ -133,6 +133,39 @@ For instance, the issuer URI of our Tutorial Ltd. with the organizer short form 
 If you are using a custom domain, then your issuer URI will be the custom domain preceded by "https://". 
 For instance, if your custom domain is tickets.mycompany.net, then your issuer URI will be [https://tickets.mycompany.net](https://tickets.mycompany.net). 
 
+#### Technical details for using pretix as an SSO provider
+
+pretix uses the OpenID Connect Core 1.0 specification.
+A few optional parts that have no use within pretix are excluded. 
+For example, encrypted tokens, offline access, refresh tokens, and passing request parameters as JWTs are not supported. 
+
+pretix uses the provider metadata section from OpenID Connect Discovery 1.0. 
+You can find the endpoint relative to the issuer URI as described above, for example  
+https://pretix.eu/demo/.well-known/openid-configuration.
+
+All three OpenID Connect Core flows are implemented:
+
+ - Authorization Code Flow (`response type code`)
+ - Implicit Flow (response `types id_token token` and `id_token`)
+ - Hybrid Flow (response types `code id_token`, `code id_token token`, and `code token`)
+
+The response modes `query` and `fragment` are implemented
+
+pretix offers the following scopes: `openid`, `profile`, `email`, `phone`
+
+As well as the following standardized claims: `iss`, `aud`, `exp`, `iat`, `auth_time`, `nonce`, `c_hash`, `at_hash`, `sub`, `locale`, `name`, `given_name`, `family_name`, `middle_name`, `nickname`, `email`, `email_verified`, `phone_number`.
+
+The various endpoints are located relative to the issuer URI as described above:
+
+ - Authorization: `<issuer>/oauth2/v1/authorize`
+ - Token: `<issuer>/oauth2/v1/token`
+ - User info: `<issuer>/oauth2/v1/userinfo`
+ - Keys: `<issuer>/oauth2/v1/keys`
+
+They follow the OpenID Connect and OAuth specifications without any special behavior. 
+Please refer to the specifications for further information. 
+
+
 #### Using pretix as a Single Sign-On client 
 
 If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button. 
