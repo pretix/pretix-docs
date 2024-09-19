@@ -142,7 +142,7 @@ We will leave the rest of the settings unchanged and click the :btn:Save: button
 This takes us to a detailed overview of the status of the "Standard ticket" quota. 
 
 Since both the standard and discount tickets are covered by the same quota now, the "Reduced ticket" quota is not needed anymore. 
-We will navigate back to the quotas page and click the :btn-icon:fa3-delete:: delete button next to the "Reduced ticket" quota. 
+We will navigate back to the quotas page and click the :btn-icon:fa3-trash:: delete button next to the "Reduced ticket" quota. 
 
 Our speaker ticket needs to be assigned to a quota, too. 
 We will now navigate to the quotas page again and click the :btn-icon:fa3-plus: Create a new quota: button. 
@@ -160,7 +160,7 @@ The purple sticker is not an admission ticket but an additional product that can
 We do not want this quota to add to the total number of tickets available for the event. 
 Thus, we are going to check the box next to "Ignore this quota when determining event availability" before clicking the :btn:Save: button. 
 
-Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fa3-copy: Clone:  button next to the sticker quota we just created. 
+Since we still need quotas for the other variants of the product, we will navigate back to the quotas page and click the :btn-icon:fa3-copy:: clone button next to the sticker quota we just created. 
 We will name the new quota "Sticker Black", unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead. 
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed. 
 
