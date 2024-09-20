@@ -18,7 +18,7 @@ Taxes are handled on the event level, so you have to create an event first.
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
 Then, you assign that tax rule to each individual product. 
-If you are selling products with a 0% tax rate (such as gift cards), you still need to create a 0% tax rule first. 
+If you are selling products with a 0 % tax rate (such as gift cards), you still need to create a 0 % tax rule first. 
 
 ### Creating tax rules 
 
@@ -35,9 +35,14 @@ Optionally, you may choose an "Internal name" that will only be displayed in the
 Under "Tax rate", choose a rate in percent. 
 For example, if your products are sold with the regular value-added tax rate in Germany, set the "Tax rate" to 19%. 
 
-By default, the box next to "The configured product prices include the tax amount" is checked. 
-Uncheck this box if you want to add the tax rate on top of the specified product price. 
-This applies to all products that use this specific tax rule. 
+The box next to "The configured product prices include the tax amount" determines whether the price of a product with this tax rule is handled as its net price (before tax) or its gross price (after tax).  
+By default, this box is checked, so all product prices with this tax rule are handled as gross prices (tax is included in the price). 
+This means that a product with a listed price of €10.00 and a tax rate of 19.00 % has a net price of €8.40, €1.60 worth of value-added tax, and a total gross price of €10.00. 
+
+If you uncheck this box, all product prices with this tax rule are handled as net prices (tax is added on top of the listed price). 
+A product with a price of €10.00 and a 19.00 % tax rule will have €1.90 worth of taxes added on top of the net price, leading to a gross price of €11.90. 
+This setting applies to all products that use this specific tax rule. 
+It does **not** apply to all products in your shop. 
 
 Click the :btn:Save button once you are happy with your choices. 
 
