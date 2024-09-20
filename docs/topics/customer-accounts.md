@@ -145,13 +145,13 @@ https://pretix.eu/demo/.well-known/openid-configuration.
 
 All three OpenID Connect Core flows are implemented:
 
- - Authorization Code Flow (`response type code`)
- - Implicit Flow (response `types id_token token` and `id_token`)
+ - Authorization Code Flow (response type `code`)
+ - Implicit Flow (response types `id_token token` and `id_token`)
  - Hybrid Flow (response types `code id_token`, `code id_token token`, and `code token`)
 
-The response modes `query` and `fragment` are implemented
+The response modes `query` and `fragment` are implemented. 
 
-pretix offers the following scopes: `openid`, `profile`, `email`, `phone`
+pretix offers the following scopes: `openid`, `profile`, `email`, `phone`. 
 
 As well as the following standardized claims: `iss`, `aud`, `exp`, `iat`, `auth_time`, `nonce`, `c_hash`, `at_hash`, `sub`, `locale`, `name`, `given_name`, `family_name`, `middle_name`, `nickname`, `email`, `email_verified`, `phone_number`.
 
@@ -183,6 +183,6 @@ If you want your customers to log in exclusively via SSO and not create accounts
 In order to use an SSO provider with pretix, it has to fulfill the following requirements:
 
  - Implementation according to [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html).
- - Published meta-data document at <issuer>/.well-known/openid-configuration as specified in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
+ - Published meta-data document at `<issuer>/.well-known/openid-configuration` as specified in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
  - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
  - Support for client authentication using client ID and client secret and without public key cryptography.
