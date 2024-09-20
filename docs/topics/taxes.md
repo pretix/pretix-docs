@@ -14,7 +14,11 @@ Please speak to a professional tax consultant before setting tax rates in your s
 
 Taxes are handled on the event level, so you have to create an event first. 
 
-## How To 
+## General usage
+
+pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
+Then, you assign that tax rule to each individual product. 
+If you are selling products with a 0% tax rate (such as gift cards), you still need to create a 0% tax rule first. 
 
 ### Creating tax rules 
 
@@ -37,7 +41,21 @@ This applies to all products that use this specific tax rule.
 
 Click the :btn:Save button once you are happy with your choices. 
 
-### Applying tax rules 
+### Assigning tax rules 
+
+If you want to assign a tax rule to a new product you are creating, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
+Click the :btn-icon:fa3-plus: Create a new product: button. 
+Under the "Price settings" subheading, click on the "Sales tax" drop-down menu and select the tax rule that you want to assign to the product. 
+This list will use the internal name you specified on the tax rules settings page and the specified percentage. 
+Once you have made your selection, click the :btn:Save and continue with more settings: button. 
+
+If you want to assign a tax rule to an existing product, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
+Click the :btn-icon:fa3-edit: edit button next to the product in question and switch to the :btn:Price: tab. 
+In the "Sales tax" drop-down menu, select the tax rule that you want to assign to the product. 
+This list will use the internal name you specified on the tax rules settings page and the specified percentage. 
+Once you have made your selection, click the :btn:Save: button. 
+
+### Advanced settings  
 
 ## Troubleshooting 
 
