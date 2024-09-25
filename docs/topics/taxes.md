@@ -50,12 +50,24 @@ Click the :btn:Save: button once you are happy with your choices.
 
 ### Custom tax rules
 
-If you have very special requirements for the conditions in which VAT will or will not be charged, you can use the “Custom tax rules” section instead of the options listed above. 
-Here, you can create a set of rules consisting of conditions (i.e. a country or a type of customer) and actions (i.e. do or do not charge VAT).
+!!! Note 
+    Using custom tax rules is mutually exclusive with the EU reverse charge option. 
+    If you have defined one or more custom tax rules, then the EU reverse charge taxation rule will not apply, even if the box next to "Use EU reverse charge taxation rules" is checked. 
 
-The rules will then be checked from top to bottom and the first matching rule will be used to decide if VAT will be charged to the user.
-Using custom tax rules is mutually exclusive with the EU reverse charge option. 
-If you have defined one or more custom tax rules, then the EU reverse charge taxation rule will not apply, even if the box next to "Use EU reverse charge taxation rules" is checked. 
+pretix allows you to set custom rules if you have special requirements for the conditions in which VAT will or will not be charged. 
+In order to set these custom rules, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax rules:. 
+Click the tax rule for which you want to set custom rules, switch to the :btn:Advanced: tab and click the :btn-icon:fa3-plus: Add a new rule: button. 
+
+In the first dropdown menu, select the country or territory where the custom rule will apply or select "Any country". 
+In the second menu, select the type of customer (individual, business, or business with valid VAT ID) or to which the rule will apply select "Any customer". 
+
+In the third dropdown menu, select the action to be taken under the specified conditions (country and customer). 
+You may select "Charge VAT" and then specify a "Deviating tax rate" in the input field below. 
+You may also select a different option and leave the field empty. 
+
+When a customer places an order, pretix will check the custom rules from top to bottom. 
+The first rule matching the order will be used to decide if and how VAT will be charged. 
+You may move the rules up or down the priority list using the arrow buttons :btn-icon:fa3-arrow-up:: and :btn-icon:fa3-arrow-down::. 
 
 ### EU reverse charge
 
@@ -65,6 +77,12 @@ If you have defined one or more custom tax rules, then the EU reverse charge tax
     According to article 52 of the [VAT directive](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32006L0112&from=EN) (page 17), the place of supply is always the location of your event. 
     Therefore, tax always has to be paid according to the laws of the country where the event is held, regardless of the location of the customer. 
 
+!!! Note 
+    The EU reverse charge feature is deprecated. 
+    It will be removed in a future version of pretix. 
+    Avoid using EU reverse charge if possible and define custom tax rules instead. 
+    That way, you can tailor taxation rules to your individual use case and make sure you are complying with all relevant laws. 
+
 “Reverse charge” is a rule in European Union VAT legislation that specifies how taxes are paid if the seller and buyer of a good reside in different EU countries. 
 If the buyer is registered as a VAT-paying business in their country, you charge them only the net price without taxes and state that the buyer is responsible for paying the correct taxes. 
 
@@ -73,13 +91,14 @@ Select the tax rule for which you want to enable reverse charge and switch to th
 Check the box next to "Use EU reverse charge taxation rules" and select your country from the "Merchant country" dropdown menu. 
 
 If you enable the reverse charge feature and specify your merchant country, then the following process will be performed whenever an order is placed:
- - The user will first be presented with the “normal” prices (net or gross, as configured).
- - The user adds a product to their cart. 
-   The cart will at this point always show gross prices including taxes. 
- - In the next step, the user can enter an invoice address. Tax will be removed from the price if one of the following statements is true:
-   - The invoice address is in a non-EU country.
-   - The invoice address is a business address in an EU-country different from the merchant country **and** has a valid VAT ID.
-     In this second case, a reverse charge note will be added to the invoice.
+
+ 1. The user will first be presented with the “normal” prices (net or gross, as configured).
+ 2. The user adds a product to their cart. 
+    The cart will at this point always show gross prices including taxes. 
+ 3. In the next step, the user can enter an invoice address. Tax will be removed from the price if one of the following statements is true:
+    - The invoice address is in a non-EU country.
+    - The invoice address is a business address in an EU-country different from the merchant country **and** has a valid VAT ID.
+     In this case, a reverse charge note will be added to the invoice. 
 
 VAT IDs are validated against the EU's validation web service. 
 Should that service be unavailable, the user needs to pay VAT tax and reclaim the taxes at a later point in time with their government.
@@ -106,16 +125,3 @@ Click the :btn-icon:fa3-edit: edit button next to the product in question and sw
 In the "Sales tax" drop-down menu, select the tax rule that you want to assign to the product. 
 This list will use the internal name you specified on the tax rules settings page and the specified percentage. 
 Once you have made your selection, click the :btn:Save: button. 
-
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
-## Further Information
-
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
