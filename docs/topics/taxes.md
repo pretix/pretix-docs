@@ -53,7 +53,6 @@ It does **not** apply to all products in your shop.
 
 Click the :btn:Save: button once you are happy with your choices. 
 
-
 ### Custom tax rules
 
 !!! Note 
@@ -98,22 +97,22 @@ Check the box next to "Use EU reverse charge taxation rules" and select your cou
 
 If you enable the reverse charge feature and specify your merchant country, then the following process will be performed whenever an order is placed:
 
- 1. The user will first be presented with the “normal” prices (net or gross, as configured).
- 2. The user adds a product to their cart. 
-    The cart will at this point always show gross prices including taxes. 
- 3. In the next step, the user can enter an invoice address. Tax will be removed from the price if one of the following statements is true:
+ 1. The customer will first be presented with the “normal” prices (net or gross, as configured).
+ 2. The customer adds a product to their cart. 
+    The shop will display gross prices including taxes. 
+ 3. In the next step, the customer can enter an invoice address. Tax will be removed from the price if one of the following statements is true:
     - The invoice address is in a non-EU country.
     - The invoice address is a business address in an EU-country different from the merchant country **and** has a valid VAT ID.
      In this case, a reverse charge note will be added to the invoice. 
 
 VAT IDs are validated against the EU's validation web service. 
-Should that service be unavailable, the user needs to pay VAT tax and reclaim the taxes at a later point in time with their government.
+Should that service be unavailable, the customer needs to pay VAT tax and reclaim the taxes at a later point in time with their government.
 
 If your and your buyer's EU countries use different currencies, the invoice will include the total and VAT amount in the local currency of the buyer in addition to your event's currency. 
 
 For existing orders, a change of the invoice address will **not** result in an automatic change of taxes. 
 If you want to trigger this manually, navigate to :navpath:Your event → :fa3-shopping-cart: Orders → All orders: and click one of the orders in question. 
-There, first click the “Check” button next to the VAT ID. 
+Click the “Check” button next to the VAT ID. 
 Then, go to “Change products” and select the option “Recalculate taxes” at the end of the page.
 
 During back-and-forth modification of taxation status, unfortunately there can be rounding errors of usually up to one cent from the intended price. This is unavoidable due to the flexible nature in which prices are being calculated.
@@ -131,3 +130,10 @@ Click the :btn-icon:fa3-edit: edit button next to the product in question and sw
 In the "Sales tax" drop-down menu, select the tax rule that you want to assign to the product. 
 This list will use the internal name you specified on the tax rules settings page and the specified percentage. 
 Once you have made your selection, click the :btn:Save: button. 
+
+## Troubleshooting 
+
+If an international business customer places an order without giving you their VAT ID, you can manually edit the order in question. 
+On the "Order details" page, click :btn-icon:fa3-edit: Change answers:. 
+Under "Invoice information", select "Business or institutional customer". 
+The page will now display a "VAT ID" field where you can enter the customer's VAT ID. 
