@@ -13,7 +13,13 @@ Please speak to a professional tax consultant before setting tax rates in your s
 ## Prerequisites
 
 Taxes are handled on the event level, so you have to create an event first. 
-If you want to use reverse charge or more advanced tax application rules, the box next to "Ask for VAT ID" in the invoicing settings needs to be checked.
+
+If you want to use reverse charge or more advanced tax application rules, you have to ask your customers for their VAT ID. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
+Under "Generate invoices", select any option that generates invoices. 
+The recommended setting here is "Automatically after payment or when required by payment method". 
+Switch to the :btn:Address form: tab and check the box next to "Ask for VAT ID". 
+Click the :btn:Save: button to confirm. 
 
 ## General usage
 
