@@ -47,6 +47,16 @@ It does **not** apply to all products in your shop.
 
 Click the :btn:Save: button once you are happy with your choices. 
 
+
+### Custom tax rules
+
+If you have very special requirements for the conditions in which VAT will or will not be charged, you can use the “Custom tax rules” section instead of the options listed above. 
+Here, you can create a set of rules consisting of conditions (i.e. a country or a type of customer) and actions (i.e. do or do not charge VAT).
+
+The rules will then be checked from top to bottom and the first matching rule will be used to decide if VAT will be charged to the user.
+Using custom tax rules is mutually exclusive with the EU reverse charge option. 
+If you have defined one or more custom tax rules, then the EU reverse charge taxation rule will not apply, even if the box next to "Use EU reverse charge taxation rules" is checked. 
+
 ### EU reverse charge
 
 !!! Warning 
@@ -82,7 +92,6 @@ There, first click the “Check” button next to the VAT ID.
 Then, go to “Change products” and select the option “Recalculate taxes” at the end of the page.
 
 During back-and-forth modification of taxation status, unfortunately there can be rounding errors of usually up to one cent from the intended price. This is unavoidable due to the flexible nature in which prices are being calculated.
-
 
 ### Assigning tax rules 
 
