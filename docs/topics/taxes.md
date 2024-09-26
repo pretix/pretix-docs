@@ -1,7 +1,7 @@
 # Taxes
 
 In most legislations, you are required to pay taxes for sales you make using pretix. 
-pretix lets you make sure that you pay the correct amount of tax for each sale. 
+pretix gives you the tools you need to make sure that you pay the appropriate tax for each sale. 
 You can set up a tax rule for each relevant tax rate, and then assign that tax rule to each individual product. 
 
 The amount of taxes you need to pay for each product depend on your local legislation, the type of your business, and a number of other factors. 
@@ -14,10 +14,11 @@ Please speak to a professional tax consultant before setting tax rates in your s
 
 Taxes are handled on the event level, so you have to create an event first. 
 
-If you want to use reverse charge or more advanced tax application rules, you have to ask your customers for their VAT ID. 
+If you want to use reverse charge or advanced tax application rules, you have to ask your customers for their VAT ID. 
 Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
 Under "Generate invoices", select any option that generates invoices. 
 The recommended setting here is "Automatically after payment or when required by payment method". 
+
 Switch to the :btn:Address form: tab and check the box next to "Ask for VAT ID". 
 Click the :btn:Save: button to confirm. 
 
@@ -25,7 +26,7 @@ Click the :btn:Save: button to confirm.
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
 Then, you assign that tax rule to each individual product. 
-If you are selling products with a 0% tax rate (such as gift cards), you still need to create a 0% tax rule first. 
+If you are selling products with a 0% tax rate (such as [gift cards](../topics/gift-cards.md)), you still need to create a 0% tax rule first. 
 
 ### Creating tax rules 
 
