@@ -42,7 +42,8 @@ Optionally, you may choose an "Internal name" that will only be displayed in the
 Under "Tax rate", choose a rate in percent. 
 For example, if your products are sold with the regular value-added tax rate in Germany, set the "Tax rate" to 19%. 
 
-The box next to "The configured product prices include the tax amount" determines whether the price of a product with this tax rule is handled as its net price (before tax) or its gross price (after tax).  
+The box next to "The configured product prices include the tax amount" determines whether the price of a product with this tax rule is handled as its net price (before tax) or its gross price (after tax). 
+
 By default, this box is checked, so all product prices with this tax rule are handled as gross prices (tax is included in the price). 
 This means that a product with a listed price of €10.00 and a tax rate of 19% has a net price of €8.40, €1.60 worth of value-added tax, and a total gross price of €10.00. 
 
@@ -116,7 +117,9 @@ If you want to trigger this manually, navigate to :navpath:Your event → :fa3-s
 Click the “Check” button next to the VAT ID. 
 Then, go to “Change products” and select the option “Recalculate taxes” at the end of the page.
 
-During back-and-forth modification of taxation status, unfortunately there can be rounding errors of usually up to one cent from the intended price. This is unavoidable due to the flexible nature in which prices are being calculated.
+!!! Note 
+    Modifying tax status back and forth may introduce rounding errors of up to one cent from the intended price. 
+    This is unavoidable due to the flexible nature in which prices are being calculated. 
 
 ### Assigning tax rules 
 
@@ -127,7 +130,7 @@ This list will use the internal name you specified on the tax rules settings pag
 Once you have made your selection, click the :btn:Save and continue with more settings: button. 
 
 If you want to assign a tax rule to an existing product, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
-Click the :btn-icon:fa3-edit: edit button next to the product in question and switch to the :btn:Price: tab. 
+Click the :btn-icon:fa3-edit:: edit button next to the product in question and switch to the :btn:Price: tab. 
 In the "Sales tax" drop-down menu, select the tax rule that you want to assign to the product. 
 This list will use the internal name you specified on the tax rules settings page and the specified percentage. 
 Once you have made your selection, click the :btn:Save: button. 
