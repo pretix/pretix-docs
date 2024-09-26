@@ -97,16 +97,17 @@ Check the box next to "Use EU reverse charge taxation rules" and select your cou
 
 If you enable the reverse charge feature and specify your merchant country, then the following process will be performed whenever an order is placed:
 
- 1. The customer will first be presented with the “normal” prices (net or gross, as configured).
+ 1. The customer is presented with net or gross prices, as configured for the applicable tax rule. 
  2. The customer adds a product to their cart. 
-    The shop will display gross prices including taxes. 
- 3. In the next step, the customer can enter an invoice address. Tax will be removed from the price if one of the following statements is true:
+    The shop displays gross prices including taxes. 
+ 3. In the "Your information" step, the customer can enter their "Invoice information". 
+    Tax will be removed from the price if one of the following statements is true:
     - The invoice address is in a non-EU country.
     - The invoice address is a business address in an EU-country different from the merchant country **and** has a valid VAT ID.
-     In this case, a reverse charge note will be added to the invoice. 
+      In this case, a reverse charge note will be added to the invoice. 
 
-VAT IDs are validated against the EU's validation web service. 
-Should that service be unavailable, the customer needs to pay VAT tax and reclaim the taxes at a later point in time with their government.
+VAT IDs are validated against the EU's validation web service when the customer clicks the "Continue" button. 
+If the service is unavailable at that moment, then the customer has to pay VAT tax and reclaim the taxes with their government at a later point. 
 
 If your and your buyer's EU countries use different currencies, the invoice will include the total and VAT amount in the local currency of the buyer in addition to your event's currency. 
 
