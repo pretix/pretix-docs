@@ -34,7 +34,7 @@ In order to create a new tax rule, navigate to :navpath:Your event → :fa3-wren
 This page displays a list of all tax rules that have been created for the event. 
 To create a new tax rule, click the :btn-icon:fa3-plus: Create a new tax rule: button. 
 
-![Tax rule dialog. The 'General' tab is open, displaying options for official and internal name, tax rate, and whether to include the tax in the product price.](../../assets/screens/tax/edit-rule.png "Tax rule advanced options" )
+![Tax rule dialog. The 'General' tab is open, displaying options for official and internal name, tax rate, and whether to include the tax in the product price.](../assets/screens/tax/edit-rule.png "Tax rule advanced options" )
 
 This takes you to a dialog for creating the new tax rule. 
 On the "General" tab, choose an "Official name" that will be displayed to customers in your shop. 
@@ -59,7 +59,7 @@ Click the :btn:Save: button once you are happy with your choices.
 
 ### Custom tax rules
 
-![Tax rule dialog. The 'Advanced' tab is open, displaying options for EU reverse charge, merchant country, and adding new custom rules.](../../assets/screens/tax/advanced.png "Tax rule advanced options" )
+![Tax rule dialog. The 'Advanced' tab is open, displaying options for EU reverse charge, merchant country, and adding new custom rules.](../assets/screens/tax/advanced.png "Tax rule advanced options" )
 
 !!! Note 
     Using custom tax rules is mutually exclusive with the EU reverse charge option. 
@@ -128,7 +128,7 @@ Then, go to “Change products” and select the option “Recalculate taxes” 
 
 ### Assigning tax rules 
 
-![Create product dialog. The last option is a dropdown menu labeled 'Sales tax'. The current selection is 'No taxation'. At the bottom of the page, there is a button labeled 'Save and continue with more settings'.](../../assets/screens/tax/create-product.png "Create product dialog" )
+![Create product dialog. The last option is a dropdown menu labeled 'Sales tax'. The current selection is 'No taxation'. At the bottom of the page, there is a button labeled 'Save and continue with more settings'.](../assets/screens/tax/create-product.png "Create product dialog" )
 
 If you want to assign a tax rule to a new product you are creating, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
 Click the :btn-icon:fa3-plus: Create a new product: button. 
@@ -138,7 +138,7 @@ Once you have made your selection, click the :btn:Save and continue with more se
 
 <br>
 
-![Edit product dialog. The 'Price' tab is open. The second option is a dropdown menu labeled 'Sales tax'. The current selection is 'VAT (incl- 19.00% VAT)'. At the bottom of the page, there is a button labeled 'Save'.](../../assets/screens/tax/edit-product.png "Edit product dialog" )
+![Edit product dialog. The 'Price' tab is open. The second option is a dropdown menu labeled 'Sales tax'. The current selection is 'VAT (incl- 19.00% VAT)'. At the bottom of the page, there is a button labeled 'Save'.](../assets/screens/tax/edit-product.png "Edit product dialog" )
 
 If you want to assign a tax rule to an existing product, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
 Click the :btn-icon:fa3-edit:: edit button next to the product in question and switch to the :btn:Price: tab. 
