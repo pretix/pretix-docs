@@ -78,12 +78,12 @@ You may also select a different option and leave the field empty.
 
 When a customer places an order, pretix will check the custom rules from top to bottom. 
 The first rule matching the order will be used to decide if and how VAT will be charged. 
-You may move the rules up or down the priority list using the arrow buttons :btn-icon:fa3-arrow-up:: and :btn-icon:fa3-arrow-down::. 
+You can move the rules up or down the priority list using the arrow buttons :btn-icon:fa3-arrow-up:: and :btn-icon:fa3-arrow-down::. 
 
 ### EU reverse charge
 
 !!! Warning 
-    Reverse charge rules are **not applicable** for most events handled with pretix. 
+    Reverse charge rules are **not applicable** to most events handled with pretix. 
     We therefore **strongly recommend not to enable this feature** if you do not have a specific reason to do so. 
     According to article 52 of the [VAT directive](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32006L0112&from=EN) (page 17), the place of supply is always the location of your event. 
     Therefore, tax always has to be paid according to the laws of the country where the event is held, regardless of the location of the customer. 
@@ -94,7 +94,7 @@ You may move the rules up or down the priority list using the arrow buttons :btn
     Avoid using EU reverse charge if possible and define custom tax rules instead. 
     That way, you can tailor taxation rules to your individual use case and make sure you are complying with all relevant laws. 
 
-“Reverse charge” is a rule in European Union VAT legislation that specifies how taxes are paid if the seller and buyer of a good reside in different EU countries. 
+"Reverse charge" is a rule in European Union VAT legislation that specifies how taxes are paid if the seller and buyer of a good reside in different EU countries. 
 If the buyer is registered as a VAT-paying business in their country, you charge them only the net price without taxes and state that the buyer is responsible for paying the correct taxes. 
 
 If you want to enable reverse charge, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax rules:. 
@@ -119,8 +119,10 @@ If your and your buyer's EU countries use different currencies, the invoice will
 
 For existing orders, a change of the invoice address will **not** result in an automatic change of taxes. 
 If you want to trigger this manually, navigate to :navpath:Your event → :fa3-shopping-cart: Orders → All orders: and click one of the orders in question. 
-Click the “Check” button next to the VAT ID. 
-Then, go to “Change products” and select the option “Recalculate taxes” at the end of the page.
+Click the :btn:Check: button next to the VAT ID. 
+Then, click the :btn-icon:fa3-edit: Change products: button. 
+Under the "Other operations" heading, select one of the options next to "Recalculate taxes". 
+Confirm your choices by clicking the :btn:Perform changes: button. 
 
 !!! Note 
     Modifying tax status back and forth may introduce rounding errors of up to one cent from the intended price. 
