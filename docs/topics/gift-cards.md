@@ -25,14 +25,14 @@ Sales tax is applied to the purchase that is made using the gift card—not to t
 This is the procedure prescribed by tax law in Germany and in some other countries for multi-purpose vouchers. 
 
 You have to create a tax rule with a rate of 0% before you can create a gift card.
-You can do that by browsing to :navpath:Your event → :fa3-wrench: Settings → Tax rules:, clicking the :btn-icon:fa3-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00% and saving the rule under a distinct internal name.
+You can do so by navigating to :navpath:Your event → :fa3-wrench: Settings → Tax rules:, clicking the :btn-icon:fa3-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00%, and saving the rule under a distinct internal name.
 
 {% include "warning-tax.md" %}
 
 ## General usage
 
-By default, gift cards will be valid indefinitely; they will have codes that are 12 digits and length; and they will be accepted as a payment method for any newly created event without any restrictions. 
-If you want to change any of these things, then the next two subsections will tell you how. 
+By default, gift cards will be valid indefinitely; they will have codes which are 12 digits in length; and they will be accepted as a payment method for any newly created event without any restrictions. 
+The next two sections will tell you how to change these settings. 
 
 ### Gift card validity and code length
 
@@ -43,13 +43,13 @@ It is therefore advisable to read this subsection and finalize your decisions on
 
 ![Organizer settings page, on the gift cards tab, showing options for how many years gift cards are valid for, and for how many digits gift card codes have.](../assets/screens/organizer/gift-cards.png)
 
-Navigate to :navpathYour organizer → :fa3-wrench: Settings → General: and switch to the "Gift cards" tab. 
+Navigate to :navpath:Your organizer → :fa3-wrench: Settings → General: and switch to the "Gift cards" tab. 
 Organizer-level settings for gift cards can be adjusted on this page.
 The "Validity of gift card codes in years" field allows you to specify for how many years your gift cards should be valid. 
 The field accepts whole numbers as input. 
 
-The exact expiry date is always the end of the calendar year. 
-For example, if you enter 0 into the field and then create a gift card in the year 2025, then the gift card will be valid until midnight of December 31st, 2025. 
+The exact expiry date is always the end of the calendar year in which the specified duration runs out. 
+For example, if you enter 1 into the field and then create a gift card in the year 2025, then the gift card will be valid until midnight of December 31st, 2026. 
 This field is empty by default, meaning gift cards will remain valid indefinitely. 
 If you issue gift cards manually, you can set an individual date of expiration before or after the end of the period you chose here. 
 
@@ -57,8 +57,8 @@ If you issue gift cards manually, you can set an individual date of expiration b
     Many jurisdictions require a minimum period of validity of three years for gift cards. 
     We recommend seeking legal advice before restricting the period of validity for gift cards. 
 
-This page also lets you choose how long gift card codes issued in your shop will be. 
-The default is 12 digits, the minimum length is 6 digits, and the maximum length is 64 digits. 
+This page also lets you choose the length of gift card codes issued in your shop. 
+The default is 12 digits, the minimum is 6 digits, and the maximum is 64 digits. 
 We recommend that you keep the default length of 12 characters unless you have a specific reason to change it. 
 
 
@@ -76,10 +76,10 @@ Here, you can restrict the availability of the payment method by date, time peri
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
 Note that these settings apply on the event level, so they have to be changed for each event individually. 
 
-## Applications 
+## Methods for issuing gift cards 
 
-There are three methods for giving your customers access to gift cards: selling them in your shop or via pretixPOS, using them for refunds, and issuing them manually. 
-These methods will be described in the following subsections. 
+There are three methods for issuing gift cards to your customers: selling them in your shop or via pretixPOS, refunding a purchase in the form of a gift card, and issuing them manually. 
+These methods will be described in the following sections. 
 
 ### Creating a gift card to offer in your shop
 
@@ -107,6 +107,9 @@ To set up this feature, navigate to :navpath:Your event → :fa3-wrench: Setting
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 Click the :btn:Save: button to confirm your changes. 
 
+!!! Note 
+    Issuing refunds in the form of gift cards only makes sense if gift cards are enabled as a payment method for the same event, or at the very least for a future event for which customers will realistically be willing to use their gift cards. 
+
 ### Using gift cards for manual refunds 
 
 You can use pretix to manually issue a refund for an order by creating a gift card. 
@@ -125,7 +128,7 @@ Gift cards created for refunds will also appear under :navpath:Your organizer �
 ![Page titled Create a new gift card featuring text input fields for code, value, expiry date as well as special terms and conditions, plus choices for currency and whether or not the card is for test mode.](../assets/screens/gift-cards/create.png)
 
 You may want to manually issue a single gift card, for example for a customer who acquired a voucher in paper form or via a different software. 
-You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:.
+You can do so by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:.
 This will land you on a page titled "Issued gift cards" displaying a search dialog, a button for manually issuing a gift card, and a list of gift card codes that have been issued already. 
 
 !!! Note 
@@ -153,8 +156,15 @@ If you clear the contents of the "Expiry date" fields, the gift card you are cre
 The gift card is created once you click :btn:Save:. 
 
 Once a gift card has been created, it cannot be deleted and only the following properties can be edited: date and time of expiry, ownership, and special terms and conditions. 
-You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:, clicking the gift card, and then clicking the :btn-icon:fa3-edit: Edit: button. 
+You can do so by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:, clicking the gift card, and then clicking the :btn-icon:fa3-edit: Edit: button. 
 Changing a gift card's value by manually adding transactions is described in the section on [devaluing gift cards](gift-cards.md#devaluing-gift-cards). 
+
+## Advanced usage 
+
+There are some optional applications for gift cards that are only relevant for some use cases. 
+pretix allows you to invite another organizer to accept your gift cards, or have another organizer invite you to accept theirs. 
+pretix also allows you to devalue gift cards manually. 
+These processes will be explained in the following sections. 
 
 ### Accepting gift cards across different organizers
 
@@ -164,7 +174,7 @@ However, you can invite another organizer to accept your gift cards.
 
 ![Page titled Invite organizer, showing a text input for the organizer's short form and a checkbox for allowing access to reusable media, both empty.](../assets/screens/gift-cards/invite-organizer.png)
 
-You can do that by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards → Acceptance: and clicking the :btn:Invite new organizer: button. 
+You can do so by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards → Acceptance: and clicking the :btn:Invite new organizer: button. 
 Enter the organizer's short form into the field and click :btn:Save:. 
 This will return you to the acceptance settings page, where the organizer will now be listed with the status "invited". 
 
