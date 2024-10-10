@@ -5,7 +5,6 @@ We just created an organizer account and our personal account at the same time.
 It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member../topics/teams.md#accepting-an-invitation-to-a-team and accepting that invitation. 
 TK nach dem Mergen in richtigen Link verwandeln 
 
-
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
 Here is a brief overview of the steps we are going to take in this section: 
 
@@ -25,7 +24,7 @@ We can always come back to adjust the organizer account settings later, in case 
 ![pretix.eu dashboard, showing upcoming events, a button for creating a new event, the mail address of the account currently logged in, and a sidebar with the following options: Dashboard, Events, Organizers, Search, User settings, Reports, Shipping list](../assets/screens/account/dashboard.png)
 
 After finishing account creation and logging in to [pretix.eu/control](https://pretix.eu/control/), we are greeted by the dashboard. 
-We can always come back to this page by clicking the :btn:pretix.eu: button in the bar at the top. 
+We can always come back to this page by clicking the :btn-icon:i-pretix:pretix.eu: button in the bar at the top. 
 Clicking the :btn:Organizers: button in the sidebar takes us to the "Organizers" page.
 
 <br>

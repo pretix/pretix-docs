@@ -23,7 +23,7 @@ We will now click the :btn-icon:fa3-plus:Create a new event: button.
 
 An event in pretix is always associated with an organizer account, so we have to choose one here. 
 We will choose the organizer that is hosting this event—that is, the one we just set up in the previous step of this tutorial. 
-This selection cannot be changed after the event has been created, so it is important to pick the correct organizer account here. 
+This selection **cannot be changed** after the event has been created, so it is important to pick the correct organizer account here. 
 
 Next, we have to choose the event type. 
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking". 
@@ -33,15 +33,20 @@ We are going to choose which languages to use for the event.
 By default, the languages chosen while setting up the organizer account should already be checked here. 
 We will simply activate and deactivate the languages as needed.
 
+Once we are happy with our choices, we are going to click the :btn:Continue: button. 
+
 {% include "note-translations.md" %}
 
 ![Screenshot of page titled "Create new Event—Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot" ) 
 
-After clicking :btn:Continue:, we are now asked to provide a name and a short form for the event. 
-We are going to create a simple example conference for this tutorial. 
-Therefore, we will choose "Example Conference" for the "Event name" field, and "tutcon27" for the "short form" field. 
+We are now asked to provide a name and a short form for the event. 
+We are going to create a simple conference for this tutorial that takes place in 2027. 
+Therefore, we will choose "Tutorial Conference" for the "Event name" field. 
+For the "Short form" field, we will come up with an abbreviation for "Tutorial Conference" and include the last two digits of the year. 
+We will enter "tutcon27" into the field. 
 The short form is appended to the organizer's URL. 
-In our case, this results in the following URL: [https://pretix.eu/tut/tutcon27](https://pretix.eu/tut/tutcon27). 
+In our case, this results in the following URL: 
+https://pretix.eu/tut/tutcon27 
 
 {% include "note-short-form.md" %}
 
@@ -64,6 +69,8 @@ This page also allows us to set a sales tax rate for our event.
 Taxation rules can also be changed after event creation is finished. 
 We are holding our event in Germany and a single percentage rule applies to all of our products. 
 Thus, we are going to add a 19% tax rule here. 
+
+Once we are happy with our choices, we are going to click the :btn:Continue: button. 
 
 {% include "warning-tax.md" %}
 
@@ -98,7 +105,7 @@ We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in
 The event-level dashboard gives us an overview of the event's basic information and status. 
 It allows us to leave an internal comment for ourselves or our team and it logs recent changes. 
 
-![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
+![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard2.png "Event dashboard screenshot") 
 
 At this point, the overview will probably display a warning that our organizer account is not yet active. 
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
@@ -114,7 +121,7 @@ That means we have to record their name and affiliation during purchase.
 
 While we are viewing the event-level dashboard, we will click :btn-icon:fa3-wrench: Settings: in the sidebar, which lands us on the general settings page for the event. 
 We will open the :btn:Customer and attendee data: tab at the top. 
-The options on this tab allow us to set questions for certain information for every ticket purchased
+The options on this tab allow us to set questions for certain information for every ticket purchased. 
 The settings that are relevant for us are located underneath the "Attendee data (once per personalized ticket)" subheading. 
 
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input". 
@@ -126,6 +133,8 @@ Under "Form settings", we can choose the format in which pretix will ask attende
 We are going to select "Ask for title + given name + family name, display like John Doe" for names and "Free text input" for titles. 
 We will finalize our choice here before taking the ticket shop live.
 This is important because changing these settings after already having received orders can lead to issues when sorting or changing names.
+
+Click the :btn:Save: button to save these settings. 
 
 ## Shop design 
 
@@ -146,6 +155,8 @@ We still want to include the name of the event though, so we are going to check 
 We are also going to upload a .png file for the "Social media image" option. 
 This will be used as a preview for any links to our ticket shop we post on social media. 
 Not uploading a file here would mean that the header image will be used for previews instead. 
+
+Any changes you make on this page will only become visible in the event shop after you have clicked the :btn:Save: button. 
 
 ## Conclusion 
 

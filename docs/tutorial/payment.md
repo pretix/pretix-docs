@@ -25,7 +25,7 @@ On all versions of pretix, payments via bank transfer can be monitored either by
 
 ![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../assets/screens/payment/settings.png "Payment settings screenshot") 
 
-In order to set up payment providers, we will navigate to our personal dashboard by clicking :btn:pretix.eu: in the top left corner of the website. 
+In order to set up payment providers, we will navigate to our personal dashboard by clicking :btn-icon:i-pretix:pretix.eu: in the top left corner of the website. 
 We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-wrench: Settings: in the sidebar and click the :btn:Payment: subentry. 
 This page displays a list of payment providers. 
 Bank transfer and Stripe should be included in this list. 
