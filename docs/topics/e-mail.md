@@ -10,8 +10,28 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 ## How To 
 
-Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:. 
+### General e-mail settings 
 
+By default, the general email settings are handled on the organizer level. 
+Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:. 
+Click the :btn-icon:fa3-edit: Edit: button next to "Sending method" and choose one of the three options: 
+
+ 1. **Use system default:** system-provided email server. 
+ Emails will be sent from `support@pretix.eu` with your organizer account's name in the name field. 
+ The "contact address" you specified for the organizer account under general settings will be used as the reply-to address. 
+ 2. **Use system email server with a custom sender address:** system-provided email server. 
+ Emails will be sent from a custom email address. 
+ This requires adding the pretix application server to your mail server's SPF record.
+ 3. **Use a custom SMTP server:** Use your organization's own SMTP server and fully customize mailing. 
+
+
+If you want to change the general email settings for an individual event, you can unlock them for that event. 
+Unlocking the settings is irreversible. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail: and click the :btn-icon:fa3-unlock: Unlock: buttons as required. 
+
+### Customizing email content 
+
+Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:. 
 On the "E-mail content" tab, you can customize the content of emails for customer account registration, email change, and password reset. 
 All other types of email content are customized on the event level. 
 
@@ -19,8 +39,9 @@ Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail:.
 On the "E-mail content" tab, you can customize the content of emails for orders, purchased products, and payments. 
 Emails related to the customer account are handled on the organizer level. 
 
-
 ## Troubleshooting 
+
+! All of this is actually mandatory 
 
 If you use an email address with your own domain as the sender address and do not use a custom SMTP server, it is very likely that at least some of your emails will go to the spam folders of their recipients. 
 If you do not want to or cannot use your organization's own SMTP server, you should add the pretix application server to your SPF record.
