@@ -4,10 +4,13 @@ In most legislations, you are required to pay taxes for sales you make using pre
 pretix gives you the tools you need to calculate the appropriate tax for each sale. 
 You can set up a tax rule for each relevant tax rate, and then assign that tax rule to each individual product. 
 
-You have to define at least one tax rule before you can create products for sale in your shop. 
-This article tells you how to create both basic and more advanced tax rules and how to apply them to your products. 
-It will not tell you what taxes are appropriate for your individual situation. 
+You have to define at least one tax rule before you can create products to be sold in your shop. 
+Even if you all products in your shop are free, you still have to create a 0.00% tax rule. 
+You are prompted to create one simple tax rule during event creation. 
+This might already be enough for the most simple use cases. 
+This article tells you how to create more than one tax rule, how to configure complex custom tax rules, and how to assign them to products. 
 
+This article does **not** tell you what taxes are appropriate for your individual situation. 
 This depends on your local legislation, the type of your business, and a number of other factors. 
 The pretix documentation does not contain any information on the appropriate tax rates for your situation. 
 Please speak to a professional tax consultant before setting tax rates in your shop. 
