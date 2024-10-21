@@ -13,7 +13,7 @@ If you do not have access to an organizer account at all, then you are probably 
 
 ![Page titled 'Teams', listing a team called 'Administrators' and showing buttons for creating, editing and viewing teams.](../assets/screens/teams/teams.png "Teams screenshot") 
 
-Navigate to :navpath:Your organizer → Teams:. 
+Navigate to :navpath:Your organizer →  :fa3-users: Teams:. 
 This page will list all teams that are associated with your organizer account. 
 If you have not made any changes here, the list will contain a single entry named "Administrators" which contains you and has all possible permissions. 
 You can view the list of members and API tokens of a team by clicking the :btn-icon:fa3-list:: button next to it. 
@@ -38,9 +38,9 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 ![Page titled 'Team: Helpers', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Helpers screenshot") 
 
-Navigate to :navpath:Your organizer → Teams: and select the team for which you want to send out an invitation. 
+Navigate to :navpath:Your organizer → :fa3-users: Teams: and select the team for which you want to send out an invitation. 
 You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fa3-plus: Add: button. 
-If the person you added already has a pretix account, they will be granted access to this organizer account instantly. 
+If the person you added already has a pretix account using that same email address, they will be granted access to this organizer account instantly. 
 They will not be notified by the system, so you should let them know them that they have been granted access. 
 The person will appear in the list with either a gray or a green :fa3-shield: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
 
