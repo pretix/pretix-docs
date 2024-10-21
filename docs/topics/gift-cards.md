@@ -132,7 +132,7 @@ You can do so by navigating to :navpath:Your organizer → :fontawesome-regular-
 This will land you on a page titled "Issued gift cards" displaying a search dialog, a button for manually issuing a gift card, and a list of gift card codes that have been issued already. 
 
 !!! Note 
-    Once a gift card has been created, it cannot be deleted (only devalued—see [devaluing gift cards](gift-cards.md#devaluing-gift-cards)). 
+    Once a gift card has been created, it cannot be deleted (only devalued—see [manually changing a gift card's value](gift-cards.md#manually-changing-a-gift-cards-value)). 
     If you are just exploring this feature for preliminary tests, make sure to check the box next to "Test mode card". 
     This makes the gift card only valid in test mode of your shop. 
 
@@ -157,7 +157,7 @@ The gift card is created once you click :btn:Save:.
 
 Once a gift card has been created, it cannot be deleted and only the following properties can be edited: date and time of expiry, ownership, and special terms and conditions. 
 You can do so by navigating to :navpath:Your organizer → :fontawesome-regular-credit-card: Gift cards:, clicking the gift card, and then clicking the :btn-icon:fa3-edit: Edit: button. 
-Changing a gift card's value by manually adding transactions is described in the section on [devaluing gift cards](gift-cards.md#devaluing-gift-cards). 
+Changing a gift card's value by manually adding transactions is described in the section on [manually changing a gift card's value](gift-cards.md#manually-changing-a-gift-cards-value). 
 
 ## Advanced usage 
 
@@ -184,11 +184,11 @@ You can retract the invitation or remove their ability to accept your gift cards
 
 If you want to accept another organizer's gift cards in your shops, you will have to ask them to send you an invitation and accept it as described above. 
 Either way, it is your own responsibility to handle the exchange of money to offset the transactions between you and the other organizers. 
-The export "Gift card redemptions" at :navpath:Organizer → Export: can be helpful with sorting out this exchange of money.
+The export "Gift card redemptions" at :navpath:Organizer → Export: can be helpful for sorting out this exchange of money.
 
-### Devaluing gift cards 
+### Manually changing a gift card's value
 
-Gift cards can be devalued manually. 
+A gift card's value can be changed manually. 
 This is useful if a customer uses a gift card for a transaction that is not tracked by pretix. 
 For example, if you are using a separate point of sale system for selling food and drinks and a customer uses a gift card for a payment at that point of sale, you can track the value of the gift card by subtracting the amount from the gift card manually. 
 
@@ -196,7 +196,7 @@ In order to do so, navigate to :navpath:Your organizer → :fontawesome-regular-
 
 ![Page titled Gift card: gift card code, showing a gift card that has been created through an order with a value of €92.00 and a manual transaction of minus €92.00, leaving the gift card at a value of €0.00.](../assets/screens/gift-cards/devalue.png)
 
-Note down the reason for the devaluing in the text field in the "Information" column.
+Note down the reason for the change in the text field in the "Information" column.
 The gift card's "Current value" is displayed in the "Details" box. 
 Enter the negative amount of the transaction into the "Value" field. 
 For example, for a purchase totaling 12.50, enter "-12.50" and click the :btn-icon:fa3-plus:: button. 
