@@ -62,3 +62,47 @@ All other types of email content are customized on the event level.
 Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail:. 
 On the "E-mail content" tab, you can customize the content of emails for orders, purchased products, and payments. 
 Emails related to the customer account are handled on the organizer level. 
+
+What follows is a list of all available placeholders and their function: 
+
+| Placeholder | Function              | Example             | 
+|-------------|-----------------------|---------------------|
+| `{event}`   | the name of the event | Tutorial Conference | 
+| `{event_slug}` | the short form of the event | tutcon27 |
+| `{code}` | the order code **or** the voucher code to redeem for the waiting list | F8VVL **or** 68CYU2H6ZTP3WLK5 |
+| `{currency}` | three-letter code for the event's currency  | EUR |
+| `{total}` | invoice total for the order|  |
+| `{total_with_currency}` | invoice total for the order including localized currency sign |  |
+| `{refund_amount}` | (For cancellation emails) The amount of money that will be refunded, including the currency DEPRECATED?  |  |
+| `{payment_info}` | Information text specific to the payment method (e.g. banking details) |  |
+| `{url}` | An URL pointing to the download/status page of the order |  |
+| `{url_info_change}` | An URL pointing to the page of the order that can be used to change ticket information |  |
+| `{url_products_change}` | An URL pointing to the page of the order that can be used to change the products in the order |  |
+| `{url_cancel}` | An URL pointing to the page of the order that can be used to cancel the order |  |
+| `{name, name_*}` | Any name that can be used to address the recipient (e.g. name from invoice address, name from first ticket, …) |  |
+| `{invoice_name, invoice_name_*}` | The name field of the invoice address |  |
+| `{invoice_company}` | The company field of the invoice address |  |
+| `{attendee_name, attendee_name_*}` | The name of the attendee represented by the ticket |  |
+| `{expire_date}` | The order’s expiration date |  |
+| `{comment}` | When rejecting an order, this will contain the reason for the rejection |  |
+| `{date}` | The same as expire_date, but in a different e-mail (for backwards compatibility) |  |
+| `{orders}` | A list of orders including links to their status pages, specific to the “resend link (requested by user)” e-mail |  |
+| `{hours}` | In case of the waiting list, the number of hours the voucher code is valid
+| `{product}` | In case of the waiting list, the product that has become available |  |
+| `{voucher_list}` | When sending out vouchers in bulk, this will be replaced with the list of vouchers |  |
+
+	
+
+	
+
+
+	
+
+
+
+	
+
+
+
+	
+
