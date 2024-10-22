@@ -1,6 +1,9 @@
 # Email settings 
 
 pretix offers you many options for contacting your customers and attendees via email—both on the organizer level and on the event level. 
+You can use either the system-provided email server or your organization's own. 
+pretix comes with many pre-configured email messages that you can customize to your needs. 
+This article tells you how to set up your desired email server solution within pretix and how to customize email content. 
 
 ## Prerequisites
 
@@ -22,7 +25,6 @@ Click the :btn-icon:fa3-edit: Edit: button next to "Sending method" and choose o
  Emails will be sent from a custom email address. 
  This requires adding the pretix application server to your mail server's SPF record.
  3. **Use a custom SMTP server:** Use your organization's own SMTP server and fully customize mailing. 
-
 
 If you want to change the general email settings for an individual event, you can unlock them for that event. 
 Unlocking the settings is irreversible. 
