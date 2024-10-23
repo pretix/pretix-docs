@@ -107,8 +107,7 @@ To set up this feature, navigate to :navpath:Your event → :fa3-wrench: Setting
 Under "Refund method", choose either "Customers can choose between a gift card and a refund to their payment method" or "All refunds are issued as gift cards". 
 Click the :btn:Save: button to confirm your changes. 
 
-!!! Note 
-    Issuing refunds in the form of gift cards only makes sense if gift cards are enabled as a payment method for the same event, or at the very least for a future event for which customers will realistically be willing to use their gift cards. 
+Make sure gift cards are enabled as a payment method for the same event, or a current or future event for which customers will realistically be willing to use their gift cards. 
 
 ### Using gift cards for manual refunds 
 
