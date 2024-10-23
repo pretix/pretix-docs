@@ -23,9 +23,9 @@ You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: b
 
 ![Page titled 'Create a new team', with a name input, the option to require 2FA as well as several organizer and event permission settings.](../assets/screens/teams/create-team.png "Create a new team screenshot") 
 
-Click the :btn-icon:fa3-plus: Create a new team: button. 
-How you name your new team and which permissions you grant it is completely up to you. 
-For example, you could name your team "Helpers" to distinguish it from the administrators and give it the following organizer permissions: 
+In order to create a new team, click the :btn-icon:fa3-plus: Create a new team: button. 
+What you name your new team and which permissions you grant it is up to you. 
+For example, you could name your team "Staff" to distinguish it from the administrators and give it the following organizer permissions: 
 "Can create events", "Can manage gift cards", and "Can manage customer accounts". 
 You could give the team access to "All events (including newly created ones)" and grant it the following event permissions: 
 "Can change event settings", "Can change product settings", "Can view orders", "Can change orders", "Can view vouchers", and "Can change vouchers". 
@@ -57,7 +57,7 @@ They will appear in the list with a :fa3-envelope-o: symbol for their status as 
 
 If you have been invited to a team and you do not have a personal pretix account yet, you will receive an email that looks similar to the one in the screenshot above. 
 Clicking the link in that email takes you to a dialog where you can create an account by entering a password and clicking the :btn:Register: button. 
-Once you have done that, you will land on the dashboard displaying a notification saying "Welcome to pretix! You are now part of the team 'Helpers'." 
+Once you have done that, you will land on the dashboard displaying a notification saying "Welcome to pretix! You are now part of the team 'Staff'." 
 You will now have access to the organizer account and associated events as specified by the person inviting you. 
 
 ![Page titled 'Accept an invitation' with inputs for email address and password as well as buttons for logging in or registering.](../assets/screens/teams/accept-invitation.png "pretix accept an invitation screenshot") 
@@ -80,7 +80,3 @@ While creating or editing a team, you can check the box next to "Require all mem
 This setting may take a few minutes to take effect. 
 The next time a member of that team who has not enabled 2FA logs in, they will be taken to the page titled "Two-factor authentication". 
 They cannot leave that page until they enable 2FA (and add a device if necessary), or leave the team in question. 
-
-## See Also 
-
-If you came to this page from the tutorial, [this link](../tutorial/organizer-account.md)  will take you back there. 
