@@ -9,7 +9,7 @@ This article is going to tell you how to use the "Teams" settings page, create t
 Creating teams and managing permissions for them requires administrator access to an organizer account. 
 If you do not have access to an organizer account at all, then you are probably looking for the subsection on how to [accept an invitation to a team](teams.md#accepting-an-invitation-to-a-team). 
 
-## General usage
+## How to
 
 ![Page titled 'Teams', listing a team called 'Administrators' and showing buttons for creating, editing and viewing teams.](../assets/screens/teams/teams.png "Teams screenshot") 
 
@@ -36,12 +36,12 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 ### Inviting someone to your team
 
-![Page titled 'Team: Helpers', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Helpers screenshot") 
+![Page titled 'Team: Staff', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Staff screenshot") 
 
 Navigate to :navpath:Your organizer → :fa3-users: Teams: and select the team for which you want to send out an invitation. 
 You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fa3-plus: Add: button. 
 If the person you added already has a pretix account using that same email address, they will be granted access to this organizer account instantly. 
-They will not be notified by the system, so you should let them know them that they have been granted access. 
+They will not be notified by the system, so you should let them know that they have been granted access. 
 The person will appear in the list with either a gray or a green :fa3-shield: symbol next to them, indicating whether or not they have enabled two-factor authentication. 
 
 If the person you added does not yet have a pretix account, they will receive an email invitation to create one. 
@@ -53,11 +53,11 @@ They will appear in the list with a :fa3-envelope-o: symbol for their status as 
 
 ### Accepting an invitation to a team
 
-![Email titled 'pretix account invitation', specifying the organizer Tutorial Ltd. and the team Helpers, displaying a link for joining that team.](../assets/screens/teams/account-invitation.png "pretix account invitation screenshot") 
+![Email titled 'pretix account invitation', specifying the organizer Tutorial Ltd. and the team Staff, displaying a link for joining that team.](../assets/screens/teams/account-invitation.png "pretix account invitation screenshot") 
 
 If you have been invited to a team and you do not have a personal pretix account yet, you will receive an email that looks similar to the one in the screenshot above. 
 Clicking the link in that email takes you to a dialog where you can create an account by entering a password and clicking the :btn:Register: button. 
-Once you have done that, you will land on the dashboard displaying a notification saying "Welcome to pretix! You are now part of the team 'Staff'." 
+Once you have done so, you will land on the dashboard displaying a notification saying "Welcome to pretix! You are now part of the team 'Staff'." 
 You will now have access to the organizer account and associated events as specified by the person inviting you. 
 
 ![Page titled 'Accept an invitation' with inputs for email address and password as well as buttons for logging in or registering.](../assets/screens/teams/accept-invitation.png "pretix accept an invitation screenshot") 
