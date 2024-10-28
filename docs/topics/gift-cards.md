@@ -12,7 +12,7 @@ Also unlike vouchers, gift cards can be used across different events and organiz
 !!! Note 
     pretix treats gift cards as "multi-purpose vouchers" within the meaning of EU Council Directive 2016/1065 of 27 June 2016. 
     pretix does not support charging taxes on the sale of gift cards. 
-    Instead, taxes will always be charged on the purchase for which gift cards are used. 
+    Instead, taxes will always be charged on the purchase for which the respective gift card is used.
 
 ## Prerequisites
 
@@ -133,7 +133,7 @@ This will land you on a page titled "Issued gift cards" displaying a search dial
 !!! Note 
     Once a gift card has been created, it cannot be deleted (only devalued—see [manually changing a gift card's value](gift-cards.md#manually-changing-a-gift-cards-value)). 
     If you are just exploring this feature for preliminary tests, make sure to check the box next to "Test mode card". 
-    This makes the gift card only valid in test mode of your shop. 
+    This means the gift card is only valid while your shop is in test mode. 
 
     A test mode card cannot be turned into a non-test mode card or vice versa after it has been created. 
     Do not issue non-test mode gift cards with codes that can be easily guessed. 
