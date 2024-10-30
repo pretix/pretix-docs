@@ -88,9 +88,9 @@ What follows is a list of all available placeholders, their function and an exam
 | `{invoice_company}`                | company from invoice address                                                                                     | Sample Corporation |
 | `{attendee_name}`                  | name of the attendee represented by the ticket                                                                   | John Doe |
 | `{expire_date}`                    | order expiration date                                                                                            | 2024-11-13 |
-| `{comment}`                        | reason for the rejection or cancellation of an order                                                             |  |
-| `{orders}`                         | list of orders including links to their status pages, specific to the “resend link (requested by user)” e-mail   |  |
-| `{hours}`                          | the number of hours the voucher code can be redeemed for the waiting list                                        |  |
+| `{comment}`                        | reason for the rejection or cancellation of an order                                                             | An individual text with a reason can be inserted here. |
+| `{orders}`                         | list of orders including links to their status pages, specific to the “resend link (requested by user)” e-mail   |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
+| `{hours}`                          | the number of hours the voucher code can be redeemed for the waiting list                                        | 48 |
 | `{product}`                        | the product that has become available on the waiting list                                                        |  |
 | `{subevent}`                       |                                                                                                                  | Tutorial Conference |
 | `{subevent_date_form}` |  | June 4, 2027, midnight |
@@ -98,17 +98,10 @@ What follows is a list of all available placeholders, their function and an exam
 Clicking the :btn-icon:fa3-tv: Preview: tab gives you a preview of the content with placeholders replaced by examples. 
 If you have used a placeholder that is not available for that particular mail, then an error notification is displayed saying "Invalid placeholder: {placeholder}". 
 
+The "Free order" email is sent if a customer places an order exclusively containing free products. 
+The "Placed order" email is sent if a customer places an order with a total higher than zero. 
+The "Paid order" email is sent after the payment for an order has been registered. 
+Depending on the payment method, this can be right after the "Placed order" email. 
 
-	
-
-
-	
-
-
-
-	
-
-
-
-	
+### Manually sending out emails 
 
