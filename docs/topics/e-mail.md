@@ -63,41 +63,43 @@ Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail:.
 On the "E-mail content" tab, you can customize the content of emails for orders, purchased products, and payments. 
 Emails related to the customer account are handled on the organizer level. 
 
-What follows is a list of all available placeholders, their function and an example: 
+What follows is a list of all available placeholders, their function and an example. 
+Not all placeholders are available for every type of email. 
+The available palceholders are listed underneath the email in the backend. 
 
 | Placeholder                        | Function                                                                                                         | Example             | 
 |------------------------------------|------------------------------------------------------------------------------------------------------------------|-------------|
-| `{organizer}`                      | name of the organizer                                                                                            | Tutorial Ltd. | 
-| `{event}`                          | name of the event                                                                                                | Tutorial Conference | 
-| `{event_slug}`                     | short form of the event                                                                                          | tutcon27 |
-| `{event_location}`                 | location of the event                                                                                            | tutcon27 |
-| `{event_admission_time}`           | admission time of the event                                                                                      | tutcon27 |
+| `{attendee_name}`                  | name of the attendee represented by the ticket                                                                   | John Doe |
 | `{code}`                           | order code **or** voucher code to redeem for the waiting list                                                    | F8VVL **or** 68CYU2H6ZTP3WLK5 |
+| `{comment}`                        | reason for the rejection or cancellation of an order                                                             | An individual text with a reason can be inserted here. |
 | `{currency}`                       | three-letter code for the event's currency                                                                       | EUR |
-| `{total}`                          | invoice total for the order                                                                                      | 42.23 |
-| `{total_with_currency}`            | invoice total for the order including localized currency sign                                                    | 42,23 € |
-| `{refund_amount}`                  | in event cancellation emails, the amount of money that will be refunded, including the currency                  | 42,23 € |
-| `{payment_info}`                   | information about the payment method (e.g. banking details)                                                      | The amount has been charged to your card. |
-| `{url}`                            | event level: URL pointing to the order's download/status page **or** organizer level: account activation URL     | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/98kusd8ofsj8dnkd/ **or** https://pretix.eu/tut/account/activate?token=RAW71yeKrZiYgQCxh7DLLmoQbJePha |
-| `{url_info_change}`                | URL pointing to the order's ticket information page                                                              | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/modify |
-| `{url_products_change}`            | URL pointing to the order's products page of the order                                                           | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/change |
-| `{url_cancel}`                     | URL pointing to the order's cancellation page                                                                    | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/cancel |
-| `{url_remove}`                     | URL that allows the customer to remove themselves from the waiting list                                          | https://pretix.eu/tut/tutcon27/waitinglist/remove?voucher=68CYU2H6ZTP3WLK5 | 
+| `{event}`                          | name of the event                                                                                                | Tutorial Conference | 
+| `{event_admission_time}`           | admission time of the event                                                                                      | tutcon27 |
+| `{event_location}`                 | location of the event                                                                                            | tutcon27 |
+| `{event_slug}`                     | short form of the event                                                                                          | tutcon27 |
+| `{expire_date}`                    | order expiration date                                                                                            | 2024-11-13 |
+| `{hours}`                          | the number of hours the voucher code can be redeemed for the waiting list                                        | 48 |
+| `{invoice_company}`                | company from invoice address                                                                                     | Sample Corporation |
+| `{invoice_name}`                   | name from invoice address                                                                                        | John Doe |
 | `{name}`                           | any name that can be used to address the recipient (e.g. name from invoice address, name from first ticket)      | Mr Doe |
 | `{name_family_name}`               | family name of recipient                                                                                         | Doe |
 | `{name_for_salutation}`            | preferred address, title and name                                                                                | Dr. Jane Doe |
 | `{name_given_name}`                | given name of recipient                                                                                          | John |
-| `{invoice_name}`                   | name from invoice address                                                                                        | John Doe |
-| `{invoice_company}`                | company from invoice address                                                                                     | Sample Corporation |
-| `{attendee_name}`                  | name of the attendee represented by the ticket                                                                   | John Doe |
-| `{expire_date}`                    | order expiration date                                                                                            | 2024-11-13 |
-| `{comment}`                        | reason for the rejection or cancellation of an order                                                             | An individual text with a reason can be inserted here. |
+| `{order_modification_deadline_date_and_time}` | the deadline date and time for making modifications to the order                                      | June 4, 2027, 6:00 AM    
 | `{orders}`                         | list of orders including links to their status pages, specific to the “resend link (requested by user)” e-mail   |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
-| `{hours}`                          | the number of hours the voucher code can be redeemed for the waiting list                                        | 48 |
+| `{organizer}`                      | name of the organizer                                                                                            | Tutorial Ltd. | 
+| `{payment_info}`                   | information about the payment method (e.g. banking details)                                                      | The amount has been charged to your card. |
 | `{product}`                        | the product that has become available on the waiting list                                                        | Discount ticket |
+| `{refund_amount}`                  | in event cancellation emails, the amount of money that will be refunded, including the currency                  | 42,23 € |
 | `{subevent}`                       | the relevant event in an event series                                                                            | Tutorial Conference |
 | `{subevent_date_form}`             | the date of the relevant event in an event series                                                                | June 4, 2027, midnight |
-| `{order_modification_deadline_date_and_time}` | the deadline date and time for making modifications to the order                                      | June 4, 2027, 6:00 AM    
+| `{total}`                          | invoice total for the order                                                                                      | 42.23 |
+| `{total_with_currency}`            | invoice total for the order including localized currency sign                                                    | 42,23 € |
+| `{url}`                            | event level: URL pointing to the order's download/status page **or** organizer level: account activation URL     | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/98kusd8ofsj8dnkd/ **or** https://pretix.eu/tut/account/activate?token=RAW71yeKrZiYgQCxh7DLLmoQbJePha |
+| `{url_cancel}`                     | URL pointing to the order's cancellation page                                                                    | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/cancel |
+| `{url_info_change}`                | URL pointing to the order's ticket information page                                                              | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/modify |
+| `{url_products_change}`            | URL pointing to the order's products page of the order                                                           | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/change |
+| `{url_remove}`                     | URL that allows the customer to remove themselves from the waiting list                                          | https://pretix.eu/tut/tutcon27/waitinglist/remove?voucher=68CYU2H6ZTP3WLK5 | 
 
 Clicking the :btn-icon:fa3-tv: Preview: tab gives you a preview of the content with placeholders replaced by examples. 
 If you have used a placeholder that is not available for that particular mail, then an error notification is displayed saying "Invalid placeholder: {placeholder}". 
