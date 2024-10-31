@@ -70,6 +70,8 @@ What follows is a list of all available placeholders, their function and an exam
 | `{organizer}`                      | name of the organizer                                                                                            | Tutorial Ltd. | 
 | `{event}`                          | name of the event                                                                                                | Tutorial Conference | 
 | `{event_slug}`                     | short form of the event                                                                                          | tutcon27 |
+| `{event_location}`                 | location of the event                                                                                            | tutcon27 |
+| `{event_admission_time}`           | admission time of the event                                                                                      | tutcon27 |
 | `{code}`                           | order code **or** voucher code to redeem for the waiting list                                                    | F8VVL **or** 68CYU2H6ZTP3WLK5 |
 | `{currency}`                       | three-letter code for the event's currency                                                                       | EUR |
 | `{total}`                          | invoice total for the order                                                                                      | 42.23 |
@@ -94,7 +96,8 @@ What follows is a list of all available placeholders, their function and an exam
 | `{hours}`                          | the number of hours the voucher code can be redeemed for the waiting list                                        | 48 |
 | `{product}`                        | the product that has become available on the waiting list                                                        | Discount ticket |
 | `{subevent}`                       | the relevant event in an event series                                                                            | Tutorial Conference |
-| `{subevent_date_form}` | the date of the relevant event in an event series                                                                            | June 4, 2027, midnight |
+| `{subevent_date_form}`             | the date of the relevant event in an event series                                                                | June 4, 2027, midnight |
+| `{order_modification_deadline_date_and_time}` | the deadline date and time for making modifications to the order                                      | June 4, 2027, 6:00 AM    
 
 Clicking the :btn-icon:fa3-tv: Preview: tab gives you a preview of the content with placeholders replaced by examples. 
 If you have used a placeholder that is not available for that particular mail, then an error notification is displayed saying "Invalid placeholder: {placeholder}". 
