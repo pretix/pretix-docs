@@ -47,7 +47,7 @@ A useful entry in the "Tag" field could be the purpose for which they were creat
 The voucher will be created as soon as you click the :btn:Save: button. 
 The takes you to a new page titled "Voucher details" displaying the "Voucher link" which you can send to your customers. 
 Opening that link will take them to the shop with the voucher code preselected and all associated products visible. 
-All settings that are available previous to creation can also be changed after the voucher has already been created. 
+All settings that are available prior to creation can also be changed after the voucher has already been created. 
 
 ### Creating multiple vouchers 
 
@@ -64,12 +64,12 @@ Codes are separated by line breaks, i.e., each code must be entered in a new lin
 The settings in the "Voucher details" and "Advanced settings" sections are the same as in the dialog for creating a single voucher. 
 
 If you intend to use pretix to send out vouchers via email, do **not** save the vouchers yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
-It is recommended that you choose a tag in the "Tag" field, copy the codes, and save them in a text file or in a spreadsheet. 
+It is recommended that you enter a tag in the "Tag" field, copy the codes, and save them in a text file or in a spreadsheet. 
 This is particularly useful if you intend to distribute them by means other than the pretix-native mail functionality. 
 
 Once you have made your choices, click the :btn:Save: button and the vouchers will be created. 
 This will take to the "Vouchers" overview page. 
-You can still edit the settings for the vouchers, but you have to do that for each voucher individually. 
+You can still edit the settings for the vouchers, but you need to do so for each voucher individually. 
 
 ### Sending out vouchers via email 
 
@@ -112,7 +112,7 @@ Emails will be sent out as soon as you click the :btn:Save: button.
 
 ![Page titled Import vouchers, showing a file upload and a setting for the character set.](../assets/screens/vouchers/import.png)
 
-The :btn-icon:fa3-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or exported from a previous pretix event. 
+The :btn-icon:fa3-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or one exported from a previous pretix event. 
 Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
 If the file can be successfully imported and parsed as a .csv file, you will land on a new page with a preview of the data and a wide selection of import settings. 
 
@@ -150,7 +150,7 @@ Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Set "Maximum usages" to the upper limit of discounted purchases that you want to allow.
 If you do not want to set a limit, use a very high number such as 999999. 
-Alternatively, you can use the "Maximum discount budget" option below to limit potential losses in case of unexpectedly high usage of the voucher. 
+Alternatively, you can use the "Maximum discount budget" option to limit potential losses in case of unexpectedly high usage of the voucher. 
 
 Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
 You can restrict usage of this voucher to only certain products by selecting a product or quota in the "Product" field. 
