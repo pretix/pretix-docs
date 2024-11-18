@@ -169,19 +169,20 @@ You can copy the code from the overview of vouchers and include it in, e.g., a n
 You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
 This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
 
-Navigate to  :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product for which you want to restrict availability. 
+If you want to restrict availability for a **single product**, navigate to :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
 If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fa3-eye-slash::), then the product will be hidden in your shop. 
 It will only be displayed to customers who entered one of the voucher codes into the voucher field, or who landed in the shop by following one of the voucher links. 
-Repeat these steps for each product that you want to make available exclusively through this voucher. 
 
 If you want to restrict availability for certain product variations, edit the variation and check the box next to "Show only if a matching voucher is redeemed". 
 For product variations, it is not possible to make them available through a voucher only but still display them in your shop. 
 
+If you want to restrict availability for **multiple products**, take the steps described above for each product.
 Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-Then, navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
+Regardless whether you have set restricted availability for only one or for multiple products, it makes sense to send the voucher codes to your recipients via email. 
+Navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
 See also: [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
