@@ -116,3 +116,16 @@ Depending on the payment method, this can be right after the "Placed order" emai
 
 ### Manually sending out emails 
 
+The settings for emails described above are all tied to certain actions in the pretix backend.
+However, you can also send out emails at a time of your choosing. 
+
+If you want to send out an email right away, navigate to :navpath:Your event → :fa3-wrench: :fa3-envelope: Send out emails → Send email:. 
+If your email is related to waiting lists, select :btn:Waiting list:. 
+In all other cases, select :btn:Orders or attendees:. 
+
+You can restrict the set of recipients by product, order status, time that the order was placed, and check-in status. 
+The subject line and message can be customized with text and placeholders. 
+Tickets, calendar files or other files can be attached. 
+Once you are happy with the email's contents, click :btn:Preview email:. 
+The ":fa3-send: Send" button displays the number of matching recipients. 
+You can double-check your settings on the preview page and then click :btn-icon:fa3-send: Send (# matching order):
