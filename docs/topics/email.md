@@ -23,7 +23,7 @@ Click the :btn-icon:fa3-edit: Edit: button next to "Sending method" and choose o
  The "contact address" you specified for the organizer account under general settings will be used as the reply-to address. 
  2. **Use system email server with a custom sender address:** system-provided email server. 
  Emails will be sent from a custom email address. 
- This requires adding the pretix application server to your mail server's SPF record (see [Using system email server with a custom sender address](e-mail.md#using-system-email-server-with-a-custom-sender-address) below).
+ This requires adding the pretix application server to your mail server's SPF record (see [Using system email server with a custom sender address](email.md#using-system-email-server-with-a-custom-sender-address) below).
  3. **Use a custom SMTP server:** Use your organization's own SMTP server and fully customize mailing. 
 
 If you want to change the general email settings for an individual event, you can unlock them for that event. 
