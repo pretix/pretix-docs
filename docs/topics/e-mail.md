@@ -34,6 +34,11 @@ Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail: and click 
 
 If you use an email address with your own domain as the sender address and do not use a custom SMTP server, you have to add the pretix application server to your SPF record.
 This is necessary to prevent your emails being misidentified as spam. 
+
+You can add SPF record in the administrative console of the provider with whom you registered your domain.
+The exact process varies from provider to provider.
+The settings can usually be found on the "DNS records" page or one with a similar name.
+
 If you are using our hosted service at pretix.eu, you can add the following to your SPF record:
 
 `include:_spf.pretix.eu`
