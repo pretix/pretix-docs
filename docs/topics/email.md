@@ -119,7 +119,7 @@ Depending on the payment method, this can be right after the "Placed order" emai
 The settings for emails described above are all tied to certain actions in the pretix backend.
 However, you can also send out emails at a time of your choosing. 
 
-If you want to send out an email right away, navigate to :navpath:Your event → :fa3-wrench: :fa3-envelope: Send out emails → Send email:. 
+If you want to send out an email right away, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Send email:. 
 If your email is related to waiting lists, select :btn:Waiting list:. 
 In all other cases, select :btn:Orders or attendees:. 
 
@@ -128,4 +128,10 @@ The subject line and message can be customized with text and placeholders.
 Tickets, calendar files or other files can be attached. 
 Once you are happy with the email's contents, click :btn:Preview email:. 
 The ":fa3-send: Send" button displays the number of matching recipients. 
-You can double-check your settings on the preview page and then click :btn-icon:fa3-send: Send (# matching order):
+You can double-check your settings on the preview page and then click the :btn-icon:fa3-send: Send (# matching orders): button. 
+
+If you want to schedule emails to be sent out at a later date, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Scheduled emails:
+This page displays a list of all scheduled email rules. 
+You can add a new one by clicking the :btn:Create a new rule: button. 
+Specify your email contents, recipients, and the date and time at which the email shall be sent. 
+The date and time can be absolute or relative to the event start or end. 
