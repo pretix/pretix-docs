@@ -94,6 +94,8 @@ The more advanced method is entering a comma-separated list into the "Recipients
  - **tag**, which can be used to track additional information 
 
 Enter the names of the columns you wish to populate and use into the first line, separated by commas and **without** spaces. 
+Including the header line is mandatory. 
+You can freely choose the order of the columns. 
 Enter the contact data below, again with each email address getting its own line and additional data going into the same line, separated by commas. 
 In the following example, Jordan would be sent 3, Morgan 1, and Jamie 10 voucher codes: 
 
@@ -105,7 +107,7 @@ jamie@example.org,10,Jamie Doe
 ```
 
 The total number of voucher codes you are sending out with this method has to match the number of voucher codes generated. 
-Otherwise, the software will display an error message. 
+The software will display an error message if the numbers do not match. 
 Emails will be sent out as soon as you click the :btn:Save: button. 
 
 ### Importing vouchers 
