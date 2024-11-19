@@ -77,9 +77,12 @@ Choose your country, bank, and start date for importing transactions.
 If you leave the "Import Transactions since" field empty, pretix will import as many transactions as possible. 
 Usually, this includes all transactions of the last 90 days. 
 
-This can lead to problems if you have previously imported bank data to the same organizer account because the datapoints will be formatted differently and may not be easily recognized as depicting the same transactions. 
+This can lead to problems if you have previously used a different method to import bank data to the same organizer account. 
+Datapoints may be formatted differently and thus not be easily recognized as depicting the same transactions. 
 Select the first day for which you have **not** imported bank data to the same organizer account if this applies to you. 
-In all other cases, you can leave the field empty. 
+Make sure you do not leave a gap between the old and new imports, for example, if you previously imported data before the end of the banking day. 
+
+If you have not previously used a different method for bank data imports, you can leave the field empty. 
 
 Click the :btn-icon:fa3-sign-in: Connect with bank: button. 
 This takes you to a webpage on ob.gocardless.com which asks you to consent to your data being processed by GoCardless and to provide your bank login. 
@@ -88,7 +91,7 @@ You will then be redirected back to the pretix backend.
 
 If you have multiple accounts at the bank, you have to select the bank account that you want to import data from. 
 Choose a start date for importing transactions and confirm by clicking the :btn:Connect to bank: button. 
-If you now browse back to the "Automatic import" page, it will display the bank connections you selected on the previous page as connected. 
+If you now navigate back to the "Automatic import" page, it will display the bank connections you selected on the previous page as connected. 
 
 Once the automatic import is active, you should check it for unresolved transactions occasionally. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
@@ -106,6 +109,8 @@ It has to contain the following data:
  - IBAN 
  - BIC 
 
+"Payer" should contain the name of the person making the payment. 
+IBAN and BIC refer to IBAN and BIC of the bank account making the payment. 
 IBAN and BIC are optional, but pretix can offer additional functionality if they are provided (such as automatically generating refund files). 
 
 You have two options: importing bank data for all events on the organizer level, or importing bank data for a single event. 
@@ -127,7 +132,7 @@ The screenshot illustrates what such a mapping could look like with a small exam
 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
-Transactions that are already known to the system because they have been imported at an earlier date will be ignored. 
+Transactions that are already known to the system because they have been imported using the same method at an earlier date will be ignored. 
 Transactions will be marked as unresolved if pretix cannot match the bank transaction with any order in your shop. 
 
 You can intervene and make manual corrections here on this screen. 
@@ -176,7 +181,7 @@ If there are unresolved transactions, they will be displayed on this page as a l
 For every transaction in this list, you have two options: 
 You can either tell pretix to ignore it by clicking the :btn-icon:fa3-trash:: button, or you can search for a matching order and assign the order code to the transaction. 
 
-In order to do that, enter part of the order code or the name recorded in the transaction into the "Order code" field on the unresolved transaction. 
+In order to do so, enter part of the order code or the name recorded in the transaction into the "Order code" field on the unresolved transaction. 
 Select the correct order from the search results and click the :btn-icon:fa3-check:: button to confirm. 
 Repeat this process for all unresolved orders. 
 
