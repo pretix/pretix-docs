@@ -39,7 +39,7 @@ It should be enabled by default.
 If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 
-![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 Navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
@@ -60,14 +60,14 @@ Bank transfers will now appear as a payment option for customers in your shop.
 ### Monitoring incoming payments 
 
 For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
-Alternatively, you can to notify pretix of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+Alternatively, you can notify pretix of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
 This section is going to guide you through all three options. 
 
 #### Option A: automatic transaction import using GoCardless 
 
 <!-- md:hosted -->
 
-If you are using pretix Hosted, you can activate the automatic transaction report via pretix's integration with GoCardless. 
+If you are using pretix Hosted, you can activate the automatic transaction import via pretix's integration with GoCardless. 
 This service is on the organizer level, meaning that bank data imported via this method is available for all events associated with the organizer. 
 Navigate to :navpath:Your organizer → :fa3-bank: Bank transfer → Automatic import: . 
 
@@ -78,7 +78,7 @@ If you leave the "Import Transactions since" field empty, pretix will import as 
 Usually, this includes all transactions of the last 90 days. 
 
 This can lead to problems if you have previously imported bank data to the same organizer account because the datapoints will be formatted differently and may not be easily recognized as depicting the same transactions. 
-Select the first day on which you have **not** imported bank data to the same organizer account if this applies to you. 
+Select the first day for which you have **not** imported bank data to the same organizer account if this applies to you. 
 In all other cases, you can leave the field empty. 
 
 Click the :btn-icon:fa3-sign-in: Connect with bank: button. 
@@ -121,14 +121,14 @@ Whichever option you choose, the process is the same from here on out.
 Click the :btn:Browse...: button and select the export file for upload. 
 Click the :btn:Start upload: button. 
 pretix will now ask you to specify which column in your file contains which data. 
-The screenshot illustrates what such an assignment could look like with a small example CSV file. 
+The screenshot illustrates what such a mapping could look like with a small example CSV file. 
 
-![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC.](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
+![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC. Each data point is mapped to a column in the CSV containing that type of data with radio buttons or checkboxes. ](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Transactions that are already known to the system because they have been imported at an earlier date will be ignored. 
-Transactions will be unresolved if pretix cannot make a connection between the bank transaction and any order in your shop. 
+Transactions will be marked as unresolved if pretix cannot match the bank transaction with any order in your shop. 
 
 You can intervene and make manual corrections here on this screen. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
@@ -158,7 +158,7 @@ By default, the customer will be notified about the order being marked as paid v
 You can prevent this by unchecking the box next to "notify customer by email". 
 Confirm by clicking the :btn:Create payment: button. 
 
-This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying "✓ Paid". 
+This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying ":fa3-check: Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
 
 ### Handling unresolved transactions 
