@@ -121,6 +121,8 @@ However, you can also send out emails at a time of your choosing.
 
 If you want to send out an email right away, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Send email:. 
 If your email is related to waiting lists, select :btn:Waiting list:. 
+If your email is relevant for exhibitors, select :btn:Exhibitors:. 
+This option is only displayed if the "Exhibitors" plugin is enabled. 
 In all other cases, select :btn:Orders or attendees:. 
 
 You can restrict the set of recipients by product, order status, time that the order was placed, and check-in status. 
