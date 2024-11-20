@@ -60,7 +60,7 @@ Bank transfers will now appear as a payment option for customers in your shop.
 ### Monitoring incoming payments 
 
 For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
-Alternatively, you can notify pretix of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
+Alternatively, you can notify pretix of incoming payments by regularly importing digital bank statements. 
 This section is going to guide you through all three options. 
 
 #### Option A: automatic transaction import using GoCardless 
@@ -92,8 +92,11 @@ You will then be redirected back to the pretix backend.
 If you have multiple accounts at the bank, you have to select the bank account that you want to import data from. 
 Choose a start date for importing transactions and confirm by clicking the :btn:Connect to bank: button. 
 If you now navigate back to the "Automatic import" page, it will display the bank connections you selected on the previous page as connected. 
-
 Once the automatic import is active, you should check it for unresolved transactions occasionally. 
+
+The most frequent cause for unresolved transactions is a mistyped or missing order number in the reference line. 
+If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
+pretix allows you to resolve these transactions manually. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
 #### Option B: importing bank data 
@@ -134,15 +137,20 @@ Click :btn:Continue:.
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Transactions that are already known to the system because they have been imported using the same method at an earlier date will be ignored. 
 Transactions will be marked as unresolved if pretix cannot match the bank transaction with any order in your shop. 
-
 You can intervene and make manual corrections here on this screen. 
+
+This method may sometimes yield unresolved transactions. 
+The most frequent cause for this is a mistyped or missing order number in the reference line. 
+If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
+pretix allows you to resolve these transactions manually. 
 The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
 
-#### Option C: approving payments manually 
+### Approving transactions manually 
 
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
-Navigate to :navpath:Your Event → Orders:. 
+In addition to the automated or semi-automated options A and B described above, pretix also allows you to approve payments manually. 
+In order to do so, navigate to :navpath:Your Event → Orders:. 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fa3-money: Pending" status tag. 
 
@@ -168,12 +176,8 @@ Repeat this process for every order that shows up in the list on the "orders" pa
 
 ### Handling unresolved transactions 
 
-Options A and B described above may sometimes yield unresolved transactions. 
-The most frequent cause for this is a mistyped or missing order number in the reference line. 
-If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
-pretix allows you to resolve these transactions manually. 
-
-If you have imported bank data on the organizer level, navigate to :navpath:Your organizer → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
+You can handle unresolved transactions either on the organizer level or on the event level. 
+If you are using the automated import via GoCardless **or** have imported bank data on the organizer level, navigate to :navpath:Your organizer → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 If you have imported bank data on the event level, navigate to :navpath:Your event → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 The process is the same from here on out. 
 
