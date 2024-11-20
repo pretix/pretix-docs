@@ -19,14 +19,12 @@ Make sure you have access to the bank account that you want to use.
 
 Setting up bank transfer as a payment provider in pretix requires the following steps: 
 
- 1. Enable the bank transfer plugin. 
- 2. Choose the type of bank account (SEPA or other)
- 3. Enter mandatory info on the bank transfer settings page 
- 4. Make optional adjustments
- 5. Enable payment via bank transfer
- 6. Set up automatic transaction import **or** regularly import a digital bank statement **or** mark incoming payments as complete manually
+ 1. Setting up bank transfers by enabling the bank transfer plugin, editing the bank transfer settings 
+ 2. Setting up automatic transaction import **or** regularly import a digital bank statement 
+ 3. Approving transactions manually 
+ 4. Handling transactions that manually 
 
-This section will guide you through those steps in detail. 
+This section will guide you through these steps in detail. 
 
 ### Setting up bank transfers
 
@@ -57,7 +55,7 @@ Take a detailed look at the page and enable any settings you want for this payme
 Once you are satisfied, scroll to the top of the page and check the box confirming that you have understood how bank transfers work in pretix, and the box next to "Enable payment method". 
 Bank transfers will now appear as a payment option for customers in your shop. 
 
-### Monitoring incoming payments 
+### Monitoring incoming payments automatically
 
 For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
 Alternatively, you can notify pretix of incoming payments by regularly importing digital bank statements. 
@@ -185,12 +183,11 @@ If there are unresolved transactions, they will be displayed on this page as a l
 For every transaction in this list, you have two options: 
 You can either tell pretix to ignore it by clicking the :btn-icon:fa3-trash:: button, or you can search for a matching order and assign the order code to the transaction. 
 
-In order to do so, enter part of the order code or the name recorded in the transaction into the "Order code" field on the unresolved transaction. 
-Select the correct order from the search results and click the :btn-icon:fa3-check:: button to confirm. 
+In order to do so, use the "Order code" field on the unresolved transaction. 
+You can enter part of the order code, the buyer's name, one of the attendees' names, or the email address used to place the order.  
+Select the matching order from the suggested search results and click the :btn-icon:fa3-check:: button to confirm. 
 Repeat this process for all unresolved orders. 
 
-If you cannot find and resolve all transactions this way, open a new browser tab and navigate to :navpath:Your event: → :fa3-shopping-cart: Orders:. 
-Search the list for an order that matches the parameters of the unresolved transaction. 
-Copy the order code, paste it into the "order code" input field on the unresolved transaction, and click the :btn-icon:fa3-check:: button to confirm. 
+You can view orders by navigating to :navpath:Your event: → :fa3-shopping-cart: Orders:. 
 
 Only delete transactions if they are unrelated to the event you are hosting and no matching order can be found. 
