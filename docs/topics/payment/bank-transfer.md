@@ -10,6 +10,11 @@ The alternatives for notifying pretix of incoming payments are: manually approvi
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
 It is also going to tell you how to notify pretix of incoming payments. 
 
+!!! Note 
+    pretix does not handle refunds via bank transfer automatically. 
+    If a customer cancels their order and requests a refund via the original payment method, and that payment method is bank transfer, you will receive an email notification. 
+    You will have to issue the refund manually. 
+
 ## Prerequisites
 
 As setting up payment providers is handled on the event level, you need to create an event first. 
@@ -175,7 +180,8 @@ Repeat this process for every order that shows up in the list on the "orders" pa
 ### Handling unresolved transactions 
 
 You can handle unresolved transactions either on the organizer level or on the event level. 
-If you are using the automated import via GoCardless **or** have imported bank data on the organizer level, navigate to :navpath:Your organizer → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
+
+If you are using the automated import via GoCardless or have imported bank data on the organizer level, navigate to :navpath:Your organizer → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 If you have imported bank data on the event level, navigate to :navpath:Your event → :fa3-bank: Bank transfer:, which lands you on the page titled "Import bank data". 
 The process is the same from here on out. 
 
