@@ -47,7 +47,7 @@ Choose the payment providers that you want to use from the top recommendations a
 You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btnEnable: button being replaced by a white :btn:Disable: button. 
 Disable any active plugins that you do not want to use for your event. 
 
-### Settings for Payment Providers 
+### General settings for Payment Providers 
 
 Enabling a plugin does not automatically make the payment method available in your shop. 
 You also need to provide some data for each payment provider you want to use on the settings page. 
@@ -74,6 +74,27 @@ For example, you can restrict availability of the payment method by date, countr
 If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. 
 Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
 For detailed information on how to set up and enable specific payment providers, refer to the pages nested below this one. 
+
+### Additional fees 
+
+!!! Warning 
+    EU Directive 2015/2366 bans surcharging payment fees for most common payment methods within the European Union. 
+    Consult a lawyer or refrain from charging payment fees for transactions within the European Union.
+
+Most payment providers charge a fee on every transaction they handle. 
+If you are planning to pay this fee yourself, you do not need to change any settings. 
+If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
+Once you have done that, navigate to the settings page for the payment provider for which you want to enable additional fees. 
+
+There are two fields labeled "Additional fee". 
+The first one has the additional label "Absolute value". 
+Enter the fixed portion of the fee that the payment provider charges you. 
+The next field has the additional label "Percentage of the order total". 
+Enter the percentage portion of the fee that the payment provider charges you. 
+
+The box next to "Calculate the fee from the total value including the fee" should be checked by default. 
+It is recommended that you leave this box checked if you want your users to cover the payment fees charged by the payment provider. 
+
 
 ### Deadlines
 
