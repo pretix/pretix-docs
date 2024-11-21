@@ -73,28 +73,7 @@ For example, you can restrict availability of the payment method by date, countr
 
 If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. 
 Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
-For detailed information on how to set up and enable specific payment providers, refer to the next three sections. 
-
-### Bank transfer 
-
-This section is going to tell you how to set up bank transfers as a method for receiving payments via pretix. 
-Navigate to :navpath:Your Event → Settings → Payment:.
-On the :btn:Payment providers: tab, click on the :btn-icon:fontawesome-solid-gear:Settings: button next to the entry for "bank transfer" in the list. 
-This takes you to the settings page for bank transfers. 
-
-![Settings page for bank transfer, including fields for entering the account data and boxes that need to be checked in order to enable the payment method.](../../assets/screens/payment-providers/bank-transfer-settings1.png "Bank transfer settings")
-
-### PayPal
-
-This section is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
-
-### Stripe
-
-This section is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
-
-For example, the settings page for Stripe contains a :btn:Connect with Stripe: button. 
-Clicking this button redirects you to stripe.com and opens a dialog for authorizing the connection between your Stripe and pretix accounts. 
-Once the connection has been confirmed, the settings page for the payment provider contains the usual mandatory and optional settings. 
+For detailed information on how to set up and enable specific payment providers, refer to the pages nested below this one. 
 
 ### Deadlines
 
