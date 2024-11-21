@@ -197,3 +197,4 @@ Repeat this process for all unresolved orders.
 You can view orders by navigating to :navpath:Your event: → :fa3-shopping-cart: Orders:. 
 
 Only delete transactions if they are unrelated to the event you are hosting and no matching order can be found. 
+If a transaction has been imported before, it is recognized as a duplicate and ignored upon repeated import, even if the original entry has been deleted. 
