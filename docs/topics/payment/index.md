@@ -86,56 +86,67 @@ If you are planning to pay this fee yourself, you do not need to change any sett
 If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
 Once you have done that, navigate to the settings page for the payment provider for which you want to enable additional fees. 
 
+Three elements on this page are relevant for additional fees: two fields labeled "Additional fee" and a checkbox labeled "Calculate the fee from the total value including the fee". 
+The first field has the description "Absolute value" and interprets input as currency. 
+The second field has the description "Percentage of the order total" and interprets input as a percentage. 
+Your choices here depend on your exact use case. 
+The next sections explain what to do if you want to pass on a fee to your customers, or if you want to discourage use of a payment provider with an extra fee. 
+
+#### Passing payment provider fees on to your customers 
+
 For illustrative purposes, let us assume that your payment provider is charging you a transaction fee of 2.99% plus a fixed rate of $0.49. 
-Let us also assume that the payment provider uses the full price including the total net price of the transaction and the fees as the base 100% for the calculation of its fee. 
+Enter 0.49 in the "Absolute value" field and 2.99 in the "Percentage of the order total" field. 
 
-There are two fields labeled "Additional fee". 
-The first one has the description "Absolute value". 
-Enter the fixed portion of the fee that the payment provider charges you. 
-In our example, that is 0.49. 
-
-The next field has the description "Percentage of the order total" and interprets input as a percentage. 
-Enter the percentage portion of the fee that the payment provider charges you. 
-In our example, that's 2.99. 
-
-The box next to "Calculate the fee from the total value including the fee" should be checked by default. 
-It makes sense to leave this box checked if you want your users to cover the payment fees charged by the payment provider. 
+Make sure that the "Calculate the fee from the total value including the fee" is checked. 
+This checkbox determines the way pretix calculates additional fees. 
 If the box is checked, pretix will calculate fees in the following way: 
 
 ```
 ((price + fee_abs) * (1 / (1 - fee_percent / 100)) - price)
 ```
 
-Where `price` is the net total of the order, `fee_abs` is the fixed portion of the fee, and `fee_percent` is the percentage portion of the fee. 
+`price` is the net total of the order, `fee_abs` is the fixed portion of the fee, and `fee_percent` is the percentage portion of the fee. 
 If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
 ((100 + 0.49) * (1 / (1 - 2.99 / 100)) - 100) = 3.58725904546 ≈ 3.59
 ```
-This is the fee that pretix calculates on top of the net total. 
-pretix assumes that a payment provider will then make the following calculation: 
+
+The result is the fee that pretix calculates on top of the net total of the order. 
+In this example, your customer will have to pay $103.59, the payment provider will subtract $3.59 in transaction fees, and $100 will be added to your balance. 
+Depending on the exact method of calculation used by the payment provider, the final amount that is added to your balance may vary by one cent. 
+
+This method for calculating the additional fees has been implemented because many payment providers will calculate fees the following way: 
 
 ```
 (fee_total + 100) * (1 - fee_percent) - fee_abs ≈ price
 ```
 
+If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
-(3.59 + 100) * (1 - 0,0299) - 0.49 = 100,002659 ≈ 100 
+(3.59 + 100) * (1 - 0.0299) - 0.49 = 100.002659 ≈ 100 
 ```
 
-Unchecking this box changes the formula pretix uses for this calculation to the following: 
+#### Discouraging use of a payment provider with an extra fee 
+
+If you want to discourage your customers from using a certain payment provider by adding an additional fee, pretix allows you to use a more straightforward formula for the calculation of that fee. 
+If you uncheck the box next to "Calculate the fee from the total value including the fee", pretix will use the following formula for the calculation: 
 
 ```
-(price * (1 / 1 + (fee_percent / 100)) + fee_absolute - price
+price * fee_percent / 100 + fee_abs
 ```
 
 If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
-100 * (1 / 1 + 2.99 / 100) + 0.49 - 100 = 3.48
+100 * 2.99 / 100 + 0.49 = 3.48 
 ```
 
+Your customer will have to pay $103.48. 
+Note that this sum is smaller than the one resulting from the formula described above. 
+If you use this method for calculating the fee raised by an external payment provider, the amount added to your balance will be 99.895948 ≈ 99.90 and thus slightly smaller than the originally intended net total of $100. 
+Use the method described [above](index.md#passing-payment-provider-fees-on-to-your-customers) if you want your users to cover the payment fees charged by the payment provider.
 
 ### Deadlines
 
