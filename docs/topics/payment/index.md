@@ -86,14 +86,44 @@ If you are planning to pay this fee yourself, you do not need to change any sett
 If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
 Once you have done that, navigate to the settings page for the payment provider for which you want to enable additional fees. 
 
+For illustrative purposes, let us assume that your payment provider is charging you a transaction fee of 2.99% plus a fixed rate of $0.49. 
+Let us also assume that the payment provider uses the full price including the total net price of the transaction and the fees as the base 100% for the calculation of its fee. 
+
 There are two fields labeled "Additional fee". 
-The first one has the additional label "Absolute value". 
+The first one has the description "Absolute value". 
 Enter the fixed portion of the fee that the payment provider charges you. 
-The next field has the additional label "Percentage of the order total". 
+In our example, that is 0.49. 
+
+The next field has the description "Percentage of the order total" and interprets input as a percentage. 
 Enter the percentage portion of the fee that the payment provider charges you. 
+In our example, that's 2.99. 
 
 The box next to "Calculate the fee from the total value including the fee" should be checked by default. 
-It is recommended that you leave this box checked if you want your users to cover the payment fees charged by the payment provider. 
+It makes sense to leave this box checked if you want your users to cover the payment fees charged by the payment provider. 
+If the box is checked, pretix will calculate fees in the following way: 
+
+```
+((price + fee_abs) * (1 / (1 - fee_percent / 100)) - price)
+```
+
+Where `price` is the net total of the order, `fee_abs` is the fixed portion of the fee, and `fee_percent` is the percentage portion of the fee. 
+If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
+
+```
+((100 + 0.49) * (1 / (1 - 2.99 / 100)) - 100) = 3.58725904546 ≈ 3.59
+```
+
+Unchecking this box changes the formula pretix uses for this calculation to the following: 
+
+```
+(price * (1 / 1 + fee_percent / 100) + fee_absolute - price
+```
+
+If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
+
+```
+100 * (1 / 1 + 2.99 / 100) + 0.49 - 100 = 3.48
+```
 
 
 ### Deadlines
