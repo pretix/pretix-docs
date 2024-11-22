@@ -63,12 +63,12 @@ Codes are separated by line breaks, i.e., each code must be entered in a new lin
 
 The settings in the "Voucher details" and "Advanced settings" sections are the same as in the dialog for creating a single voucher. 
 
-If you intend to use pretix to send out vouchers via email, do **not** save the vouchers yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
+If you intend to use pretix to send out vouchers via the pretix-native mail functionality, do **not** click the "Save" button yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 It is recommended that you enter a tag in the "Tag" field, copy the codes, and save them in a text file or in a spreadsheet. 
 This is particularly useful if you intend to distribute them by means other than the pretix-native mail functionality. 
 
 Once you have made your choices, click the :btn:Save: button and the vouchers will be created. 
-This will take to the "Vouchers" overview page. 
+This will take you to the "Vouchers" overview page. 
 You can still edit the settings for the vouchers, but you need to do so for each voucher individually. 
 
 ### Sending out vouchers via email 
@@ -77,7 +77,7 @@ The dialog for creating multiple new vouchers also gives you access to the email
 Check the box next to "Send vouchers via email" at the bottom of the page to expand the email options. 
 
 The email options allow you to specify the subject line and the message content of the emails you want to send out. 
-Each field lists the placeholders that are available for that field and comes with default pre-written content. 
+Each field lists the placeholders which are available for that field and comes with default pre-written content. 
 
 ![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
@@ -86,7 +86,7 @@ The more basic method is providing a list of email addresses separated by line b
 When using this method, the number of email addresses (and thus, lines) must be the same as the number of voucher codes generated. 
 If you enter the same email address more than once, then multiple emails will be sent to that address, each one containing a different voucher code. 
 
-The more advanced method is entering a comma-separated list into the "Recipients" field with up to four columns: 
+The more advanced method is to enter a comma-separated list into the "Recipients" field with up to four columns: 
 
  - **email**, containing the recipient email addresses
  - **number**, containing the number of voucher codes that will be sent to each email address
@@ -96,7 +96,7 @@ The more advanced method is entering a comma-separated list into the "Recipients
 Enter the names of the columns you wish to populate and use into the first line, separated by commas and **without** spaces. 
 Including the header line is mandatory. 
 You can freely choose the order of the columns. 
-Enter the contact data below, again with each email address getting its own line and additional data going into the same line, separated by commas. 
+Enter the contact data below, again with each email address getting its own line and any additional data going into the same line, separated by commas. 
 In the following example, Jordan would be sent 3, Morgan 1, and Jamie 10 voucher codes: 
 
 ```
@@ -114,7 +114,7 @@ Emails will be sent out as soon as you click the :btn:Save: button.
 
 ![Page titled Import vouchers, showing a file upload and a setting for the character set.](../assets/screens/vouchers/import.png)
 
-The :btn-icon:fa3-upload: Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or one exported from a previous pretix event. 
+The :btn-icon:fa3-upload:Import vouchers: button on the "Vouchers" page lets you upload a list of vouchers from an external source or one exported from a previous pretix event. 
 Click the :btn:Browse...: button,  choose a .csv file with a header row, and click the :btn:Start import: button. 
 If the file can be successfully imported and parsed as a .csv file, you will land on a new page with a preview of the data and a wide selection of import settings. 
 
@@ -167,7 +167,7 @@ You can copy the code from the overview of vouchers and include it in, e.g., a n
 ### Exclusive product availability
 
 You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
-This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g. members of a club, speakers at a conference, or VIPs who get an invitation. 
+This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g., members of a club, speakers at a conference, or VIPs who get an invitation. 
 
 If you want to restrict availability for a **single product**, navigate to :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
@@ -178,13 +178,15 @@ It will only be displayed to customers who entered one of the voucher codes into
 If you want to restrict availability for certain product variations, edit the variation and check the box next to "Show only if a matching voucher is redeemed". 
 For product variations, it is not possible to make them available through a voucher only but still display them in your shop. 
 
-If you want to restrict availability for **multiple products**, take the steps described above for each product.
-Next, create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
+If you want to restrict availability for **multiple products**, take the steps described above for each product. 
+A voucher can be set to affect the availability of a single product or of all products in a quota. 
+Thus, it is necessary to create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
-Regardless whether you have set restricted availability for only one or for multiple products, it makes sense to send the voucher codes to your recipients via email. 
-Navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. Generate the same number of voucher codes as people you are planning to invite. 
+Regardless of whether you have set restricted availability for only one or for multiple products, it makes sense to send the voucher codes to your recipients via email. 
+Navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. 
+This process is described in detail in the section [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email)
+Generate the same number of voucher codes as people you are planning to invite. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
-See also: [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
 Under "Product", choose the product (or the quota, if there is more than one product) which you want to make available to the voucher holders. 
 Check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
