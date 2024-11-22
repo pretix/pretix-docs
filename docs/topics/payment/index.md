@@ -112,11 +112,22 @@ If the example fee from above is applied to a purchase with a net total of $100,
 ```
 ((100 + 0.49) * (1 / (1 - 2.99 / 100)) - 100) = 3.58725904546 ≈ 3.59
 ```
+This is the fee that pretix calculates on top of the net total. 
+pretix assumes that a payment provider will then make the following calculation: 
+
+```
+(fee_total + 100) * (1 - fee_percent) - fee_abs ≈ price
+```
+
+
+```
+(3.59 + 100) * (1 - 0,0299) - 0.49 = 100,002659 ≈ 100 
+```
 
 Unchecking this box changes the formula pretix uses for this calculation to the following: 
 
 ```
-(price * (1 / 1 + fee_percent / 100) + fee_absolute - price
+(price * (1 / 1 + (fee_percent / 100)) + fee_absolute - price
 ```
 
 If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
