@@ -58,7 +58,7 @@ You also need to provide some data for each payment provider you want to use on 
 This section is going to tell you how to do that. 
 
 Navigate to :navpath:Your Event → Settings → Payment:. 
-The :btn:payment providers: tab on this page displays the list of active payment providers. 
+The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. 
 If you have enabled or disabled any of the default plugins for payment providers, your list will look different. 
 
@@ -91,10 +91,10 @@ For detailed information on how to set up and enable specific payment providers,
     EU Directive 2015/2366 bans surcharging payment fees for most common payment methods within the European Union. 
     Consult a lawyer or refrain from charging payment fees for transactions within the European Union.
 
-Most payment providers charge a fee on every transaction they handle. 
+Most payment providers charge a fee on every transaction they process. 
 If you are planning to pay this fee yourself, you do not need to change any settings. 
 If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
-Once you have done that, navigate to the settings page for the payment provider for which you want to enable additional fees. 
+Once you have done that, navigate to :navpath:Your Event → Settings → Payment:, open the :btn:Payment providers: tab and then open the settings page for the payment provider for which you want to enable additional fees. 
 
 Three elements on this page are relevant for additional fees: two fields labeled "Additional fee" and a checkbox labeled "Calculate the fee from the total value including the fee". 
 The first field has the description "Absolute value" and interprets input as currency. 
@@ -117,7 +117,7 @@ If the box is checked, pretix will calculate fees in the following way:
 ```
 
 `price` is the net total of the order, `fee_abs` is the fixed portion of the fee, and `fee_percent` is the percentage portion of the fee. 
-If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
+If the example fees from above are applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
 ((100 + 0.49) * (1 / (1 - 2.99 / 100)) - 100) = 3.58725904546 ≈ 3.59
@@ -127,31 +127,35 @@ The result is the fee that pretix calculates on top of the net total of the orde
 In this example, your customer will have to pay $103.59, the payment provider will subtract $3.59 in transaction fees, and $100 will be added to your balance. 
 Depending on the exact method of calculation used by the payment provider, the final amount that is added to your balance may vary by one cent. 
 
-This method for calculating the additional fees has been implemented because many payment providers will calculate fees the following way: 
+This method for calculating the additional fees has been implemented because a payment provider does not have insight into how much of the total amount is the net price, and how much of it are fees.
+Thus, they will use the total amount processed as the base for their calculation of the amount due as presented below: 
 
 ```
-(fee_total + 100) * (1 - fee_percent) - fee_abs ≈ price
+(amount_processed) * (1 - fee_percent) - fee_abs ≈ amount_due
 ```
 
-If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
+`amount_processed` is the full amount of the transaction the payment provider is handling and `amount_due` is the amount they will add to your balance. 
+
+If the example fees from above are applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
-(3.59 + 100) * (1 - 0.0299) - 0.49 = 100.002659 ≈ 100 
+(103.59) * (1 - 0.0299) - 0.49 = 100.002659 ≈ 100 
 ```
 
 #### Discouraging use of a payment provider with an extra fee 
 
-If you want to discourage your customers from using a certain payment provider by adding an additional fee, pretix allows you to use a more straightforward formula for the calculation of that fee. 
+pretix allows you to use a more straightforward formula for the calculation of that fee. 
+This is useful if, for instance, you want to discourage your customers from using a certain payment provider by adding an additional fee. 
 If you uncheck the box next to "Calculate the fee from the total value including the fee" and click the :btn:Save: button, pretix will use the following formula for the calculation: 
 
 ```
-price * fee_percent / 100 + fee_abs
+price * (fee_percent / 100) + fee_abs
 ```
 
-If the example fee from above is applied to a purchase with a net total of $100, this yields the following calculation: 
+If the example fees from above are applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
-100 * 2.99 / 100 + 0.49 = 3.48 
+100 * (2.99 / 100) + 0.49 = 3.48 
 ```
 
 Your customer will have to pay $103.48. 
