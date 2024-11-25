@@ -2,7 +2,11 @@
 
 If you are not operating an entirely free shop, your customers need some way of sending you payments. 
 pretix takes care of payment via a wide selection of payment providers. 
-There are two types of payment providers: methods that are handled entirely within pretix, such as bank transfers and gift cards; and integrations with external services such as Stripe and PayPal. 
+There are two types of payment providers: 
+
+ - methods that are handled entirely within pretix, such as bank transfers and gift cards 
+ - integrations with external services such as Stripe and PayPal 
+
 You have to enable and set up at least one payment provider if you want to receive payments from your customers via pretix. 
 This article will show you how to do that. 
 
@@ -21,7 +25,7 @@ Setting up payment providers in pretix involves the following steps:
  2. Connect to your account with the payment provider 
  3. Enter mandatory info on the settings page for the payment provider
  4. Make optional adjustments
- 5. Enable the payment provider
+ 5. Enable the payment provider for use in your shop
  6. Repeat steps 1 through 5 for each payment provider you want to use
  7. Set deadlines and advanced settings
 
@@ -44,7 +48,7 @@ By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit 
 ![Part of the list of available payment provider plugins. Entries for Saferpay, secuconnect, SEPA direct debit, SOFORT and Stadtguthaben are visible. The SEPA option is active. The other entries have a purple 'enable' button next to them.](../../assets/screens/payment-providers/plugins-list.png "Plugins Payment providers list")
 
 Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
-You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btnEnable: button being replaced by a white :btn:Disable: button. 
+You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btn:Enable: button being replaced by a white :btn:Disable: button. 
 Disable any active plugins that you do not want to use for your event. 
 
 ### General settings for Payment Providers 
@@ -57,15 +61,17 @@ Navigate to :navpath:Your Event → Settings → Payment:.
 The :btn:payment providers: tab on this page displays the list of active payment providers. 
 By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. 
 If you have enabled or disabled any of the default plugins for payment providers, your list will look different. 
+
 Every payment provider that you have enabled the plugin for on the "plugins" page appears in this list. 
 The list will also always contain the entry for gift cards. 
-Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of the pretix software. 
+Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of pretix. 
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. ](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 You can edit and enable payment providers by clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
 For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the specific conditions that apply to this payment method. 
+
 You can also apply a wide range of optional settings to each payment provider. 
 For example, you can restrict availability of the payment method by date, country and sales channel. 
 
@@ -73,7 +79,11 @@ For example, you can restrict availability of the payment method by date, countr
 
 If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. 
 Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
-For detailed information on how to set up and enable specific payment providers, refer to the pages nested below this one. 
+For detailed information on how to set up and enable specific payment providers, refer to the pages nested below this one: 
+
+ -  [Bank transfer](bank-transfer.md) 
+ -  [Stripe](stripe.md) 
+ -  [PayPal](paypal.md) 
 
 ### Additional fees 
 
@@ -90,6 +100,7 @@ Three elements on this page are relevant for additional fees: two fields labeled
 The first field has the description "Absolute value" and interprets input as currency. 
 The second field has the description "Percentage of the order total" and interprets input as a percentage. 
 Your choices here depend on your exact use case. 
+
 The next sections explain what to do if you want to pass on a fee to your customers, or if you want to discourage use of a payment provider with an extra fee. 
 
 #### Passing payment provider fees on to your customers 
@@ -97,7 +108,7 @@ The next sections explain what to do if you want to pass on a fee to your custom
 For illustrative purposes, let us assume that your payment provider is charging you a transaction fee of 2.99% plus a fixed rate of $0.49. 
 Enter 0.49 in the "Absolute value" field and 2.99 in the "Percentage of the order total" field. 
 
-Make sure that the "Calculate the fee from the total value including the fee" is checked. 
+Make sure that the "Calculate the fee from the total value including the fee" is checked and click the :btn:Save: button. 
 This checkbox determines the way pretix calculates additional fees. 
 If the box is checked, pretix will calculate fees in the following way: 
 
@@ -131,7 +142,7 @@ If the example fee from above is applied to a purchase with a net total of $100,
 #### Discouraging use of a payment provider with an extra fee 
 
 If you want to discourage your customers from using a certain payment provider by adding an additional fee, pretix allows you to use a more straightforward formula for the calculation of that fee. 
-If you uncheck the box next to "Calculate the fee from the total value including the fee", pretix will use the following formula for the calculation: 
+If you uncheck the box next to "Calculate the fee from the total value including the fee" and click the :btn:Save: button, pretix will use the following formula for the calculation: 
 
 ```
 price * fee_percent / 100 + fee_abs
@@ -172,6 +183,7 @@ __A payment provider does not show up in your test shop/Customers cannot select 
 Navigate to :navpath:Your Event → Settings → Payment: and open the "payment" tab. 
 Click the :btn-icon:fontawesome-solid-gear:Settings: button next to the payment provider that isn't showing up in the shop. Check the "☑ Enable payment method" box. 
 Then scroll to the bottom of the page and click :btn:Save:. 
+
 If any mandatory information hasn't been filled out yet, the webpage will notify you. 
 Fill out all the mandatory information and click :btn:Save: again. 
 The corresponding payment method should now show up in your online shop. 
