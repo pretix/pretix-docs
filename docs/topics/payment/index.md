@@ -95,7 +95,12 @@ For detailed information on how to set up and enable specific payment providers,
 Most payment providers charge a fee on every transaction they process. 
 If you are planning to pay this fee yourself, you do not need to change any settings. 
 If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
-Once you have done that, navigate to :navpath:Your Event → Settings → Payment:, open the :btn:Payment providers: tab and then open the settings page for the payment provider for which you want to enable additional fees. 
+Once you have done that, navigate to :navpath:Your Event → Settings → Payment:, and open the :btn:Advanced: tab. 
+In the dropdown menu labeled "Tax rule for payment fees", select the appropriate tax rule. 
+
+TK link to article on tax rules after merge
+
+Then, open the :btn:Payment providers: tab and then open the settings page for the payment provider for which you want to enable additional fees. 
 
 Three elements on this page are relevant for additional fees: two fields labeled "Additional fee" and a checkbox labeled "Calculate the fee from the total value including the fee". 
 The first field has the description "Absolute value" and interprets input as currency. 
@@ -129,6 +134,10 @@ If the example fees from above are applied to a purchase with a net total of $25
 The result is the fee that pretix calculates on top of the net total of the order. 
 In this example, your customer will have to pay $258.21, the payment provider will subtract $8.21 in transaction fees, and $250 will be added to your balance. 
 Depending on the exact calculation and rounding methods used by the payment provider, the final amount that is added to your balance may vary by one cent. 
+
+A payment provider will always use the total amount of a transaction or multiple transactions to calculate their fees. 
+The "Calculate the fee from the total value including the fee" method gives you better control over the final amount of money added to your bank account by the payment provider. 
+The following table compares the two different calculation methods provided by pretix: 
 
 |                                         | calculation from subtotal without the fee | calculation from total value including the fee |
 |-----------------------------------------|-------------------------------------------|------------------------------------------------|
