@@ -127,6 +127,14 @@ The result is the fee that pretix calculates on top of the net total of the orde
 In this example, your customer will have to pay $258.21, the payment provider will subtract $8.21 in transaction fees, and $250 will be added to your balance. 
 Depending on the exact calculation and rounding methods used by the payment provider, the final amount that is added to your balance may vary by one cent. 
 
+|                                         | calculation from subtotal without the fee | calculation from total value including the fee |
+|-----------------------------------------|-------------------------------------------|------------------------------------------------|
+| ticket price                            | $250.00                                   | $250.00                                        |
+| fee calculated by pretix                | $7.96                                     | $8.21                                          | 
+| total paid by customer                  | $257.96                                   | $258.21                                        |
+| fee calculated by payment provider      | $8.20                                     | $8.21                                          |
+| final amount added to your bank balance | $249.76                                   | $250.00                                        |
+
 This method for calculating the additional fees has been implemented because a payment provider does not have insight into how much of the total amount is the net price, and how much of it are fees.
 Thus, they will use the total amount processed as the base for their calculation of the amount due as presented below: 
 
