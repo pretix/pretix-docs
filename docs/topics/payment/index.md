@@ -120,11 +120,11 @@ If the box is checked, pretix will calculate fees in the following way:
 If the example fees from above are applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
-((100 + 0.49) * (1 / (1 - 2.99 / 100)) - 100) = 3.58725904546 ≈ 3.59
+((250 + 0.49) * (1 / (1 - 2.99 / 100)) - 250) = 8.21049376353 ≈ 8.21
 ```
 
 The result is the fee that pretix calculates on top of the net total of the order. 
-In this example, your customer will have to pay $103.59, the payment provider will subtract $3.59 in transaction fees, and $100 will be added to your balance. 
+In this example, your customer will have to pay $258.21, the payment provider will subtract $8.21 in transaction fees, and $250 will be added to your balance. 
 Depending on the exact method of calculation used by the payment provider, the final amount that is added to your balance may vary by one cent. 
 
 This method for calculating the additional fees has been implemented because a payment provider does not have insight into how much of the total amount is the net price, and how much of it are fees.
@@ -135,11 +135,10 @@ Thus, they will use the total amount processed as the base for their calculation
 ```
 
 `amount_processed` is the full amount of the transaction the payment provider is handling and `amount_due` is the amount they will add to your balance. 
-
-If the example fees from above are applied to a purchase with a net total of $100, this yields the following calculation: 
+If the example fees from above are applied to a purchase with a net total of $250, this yields the following calculation: 
 
 ```
-(103.59) * (1 - 0.0299) - 0.49 = 100.002659 ≈ 100 
+(258.21) * (1 - 0.0299) - 0.49 = 249.999521 ≈ 250 
 ```
 
 #### Discouraging use of a payment provider with an extra fee 
@@ -155,12 +154,12 @@ price * (fee_percent / 100) + fee_abs
 If the example fees from above are applied to a purchase with a net total of $100, this yields the following calculation: 
 
 ```
-100 * (2.99 / 100) + 0.49 = 3.48 
+250 * (2.99 / 100) + 0.49 = 7.965 ≈ 7.96
 ```
 
-Your customer will have to pay $103.48. 
+Your customer will have to pay $257.96. 
 Note that this sum is smaller than the one resulting from the formula described above. 
-If you use this method for calculating the fee raised by an external payment provider, the amount added to your balance will be 99.895948 ≈ 99.90 and thus slightly smaller than the originally intended net total of $100. 
+If you use this method for calculating the fee raised by an external payment provider, the amount added to your balance will be 249.756996 ≈ 249.76 and thus slightly smaller than the originally intended net total of $250. 
 Use the method described [above](index.md#passing-payment-provider-fees-on-to-your-customers) if you want your users to cover the payment fees charged by the payment provider.
 
 ### Deadlines
