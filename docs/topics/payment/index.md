@@ -173,10 +173,7 @@ Navigate to :navpath:Your Event → Settings → Payment:.
 The "deadlines" tab lets you set payment terms measured in either days or minutes. 
 By default, the payment term for your customers is set to 14 days. 
 This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
-
-!!! Note
- 
-    Payment deadlines are configured on the event level. The same settings apply to all payment providers. 
+These settings apply on the event level, i.e. equally to all payment providers. 
 
 ## Troubleshooting 
 
