@@ -74,7 +74,7 @@ Each payment method requires some mandatory information and settings before you 
 For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the specific conditions that apply to this payment method. 
 
 You can also apply a wide range of optional settings to each payment provider. 
-For example, you can restrict availability of the payment method by date, country and sales channel. 
+You can restrict availability of the payment method by date ("Available from" and "Available until"), country ("Restrict to countries") and sales channel ("Restrict to specific sales channels"). 
 
 ![Settings page for stripe, showing a large purple button labeled 'Connect with Stripe'](../../assets/screens/payment-providers/payment-external.png "Stripe settings")
 
