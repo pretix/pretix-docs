@@ -107,6 +107,8 @@ The next sections explain what to do if you want to pass on a fee to your custom
 
 For illustrative purposes, let us assume that your payment provider is charging you a transaction fee of 2.99% plus a fixed rate of $0.49. 
 Enter 0.49 in the "Absolute value" field and 2.99 in the "Percentage of the order total" field. 
+Neither input is mandatory. 
+You can also add an absolute value only, or a percentage value only. 
 
 Make sure that the "Calculate the fee from the total value including the fee" is checked and click the :btn:Save: button. 
 This checkbox determines the way pretix calculates additional fees. 
@@ -135,24 +137,16 @@ Depending on the exact calculation and rounding methods used by the payment prov
 | fee calculated by payment provider      | $8.20                                     | $8.21                                          |
 | final amount added to your bank balance | $249.76                                   | $250.00                                        |
 
-This method for calculating the additional fees has been implemented because a payment provider does not have insight into how much of the total amount is the net price, and how much of it are fees.
-Thus, they will use the total amount processed as the base for their calculation of the amount due as presented below: 
-
-```
-(amount_processed) * (1 - fee_percent) - fee_abs ≈ amount_due
-```
-
-`amount_processed` is the full amount of the transaction the payment provider is handling and `amount_due` is the amount they will add to your balance. 
-If the example fees from above are applied to a purchase with a net total of $250, this yields the following calculation: 
-
-```
-(258.21) * (1 - 0.0299) - 0.49 = 249.999521 ≈ 250 
-```
-
 #### Discouraging use of a payment provider with an extra fee 
 
 pretix allows you to use a more straightforward formula for the calculation of that fee. 
 This is useful if, for instance, you want to discourage your customers from using a certain payment provider by adding an additional fee. 
+
+For illustrative purposes, we will use a fee of 2.99% plus a fixed rate of $0.49. 
+Enter 0.49 in the "Absolute value" field and 2.99 in the "Percentage of the order total" field. 
+Neither input is mandatory. 
+You can also add an absolute value only, or a percentage value only. 
+
 If you uncheck the box next to "Calculate the fee from the total value including the fee" and click the :btn:Save: button, pretix will use the following formula for the calculation: 
 
 ```
