@@ -38,14 +38,14 @@ Any lower-case letters will be converted to upper case.
 
 ![Page titled Voucher, showing options for creating a single voucher code.](../assets/screens/vouchers/create-single.png)
 
-Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plain text file or a spreadsheet on your computer. 
+Whenever you generate one or more vouchers, it is recommended that you copy them and save them, for example in a plaintext file or a spreadsheet on your computer. 
 
 Whenever you create more than one type of voucher for an event, it is recommended that you enter a descriptor in the "Tag" field. 
 This can make it easier to find, edit and clone certain sets of vouchers in the list. 
 A useful entry in the "Tag" field could be the purpose for which they were created, for example, "Limited Time Offer". 
 
 The voucher will be created as soon as you click the :btn:Save: button. 
-The takes you to a new page titled "Voucher details" displaying the "Voucher link" which you can send to your customers. 
+This takes you to a new page titled "Voucher details" displaying the "Voucher link" which you can send to your customers. 
 Opening that link will take them to the shop with the voucher code preselected and all associated products visible. 
 All settings that are available prior to creation can also be changed after the voucher has already been created. 
 
@@ -73,7 +73,7 @@ You can still edit the settings for the vouchers, but you need to do so for each
 
 ### Sending out vouchers via email 
 
-The dialog for creating multiple new vouchers also gives you access to the email options, allowing you to instantly send out vouchers via email through pretix after creating them. 
+The dialog for creating multiple new vouchers also gives you access to the email options, allowing you to send out vouchers via email through pretix instantly after creating them. 
 Check the box next to "Send vouchers via email" at the bottom of the page to expand the email options. 
 
 The email options allow you to specify the subject line and the message content of the emails you want to send out. 
@@ -82,7 +82,7 @@ Each field lists the placeholders which are available for that field and comes w
 ![Page titled Create multiple vouchers, showing options for sending out emails.](../assets/screens/vouchers/send-emails.png)
 
 There are two methods for specifying the recipients: 
-The more basic method is providing a list of email addresses separated by line breaks in the "Recipients" field. 
+The more basic method is to enter a list of email addresses separated by line breaks in the "Recipients" field. 
 When using this method, the number of email addresses (and thus, lines) must be the same as the number of voucher codes generated. 
 If you enter the same email address more than once, then multiple emails will be sent to that address, each one containing a different voucher code. 
 
