@@ -9,6 +9,7 @@ There are two types of payment providers:
 
 You have to enable and set up at least one payment provider if you want to receive payments from your customers via pretix. 
 This article will show you how to do that. 
+It will also tell you how to take some optional steps such as setting up additional fees or deadlines. 
 
 ## Prerequisites
 
@@ -21,13 +22,13 @@ For example, if you want to receive payments via PayPal, you need to have a PayP
 
 Setting up payment providers in pretix involves the following steps: 
 
- 1. Enable the plugin for the payment provider
+ 1. [Enable the plugin](index.md#plugins-for-payment-providers) for the payment provider
  2. Connect to your account with the payment provider 
- 3. Enter mandatory info on the settings page for the payment provider
- 4. Make optional adjustments
+ 3. Enter mandatory info on the [settings page](index.md#general-settings-for-payment-providers) for the payment provider
+ 4. Make optional adjustments, such as adding [additional fees](index.md#additional-fees)
  5. Enable the payment provider for use in your shop
  6. Repeat steps 1 through 5 for each payment provider you want to use
- 7. Set deadlines and advanced settings
+ 7. Set [deadlines](index.md#deadlines) and advanced settings
 
 The following sections will guide you through those steps in detail. 
 
