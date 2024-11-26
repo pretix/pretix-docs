@@ -146,21 +146,31 @@ These applications will be explained in the following subsections.
 
 ### Offering a limited discount 
 
-You can create a voucher code for a limited time discount to attract more customers to your shop. 
+You can create a voucher code for a limited discount to attract more customers to your shop. 
+The validity of the voucher can be restricted to a limited timeframe, a certain number of uses, or a maximum discount budget. 
+It is also possible to use a combination of these restrictions. 
 
 Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
-Set "Maximum usages" to the upper limit of discounted purchases that you want to allow.
-If you do not want to set a limit, use a very high number such as 999999. 
-Alternatively, you can use the "Maximum discount budget" option to limit potential losses in case of unexpectedly high usage of the voucher. 
 
-Set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
-You can restrict usage of this voucher to only certain products by selecting a product or quota in the "Product" field. 
-The "Price effect" option offers several different possibilities as to what effect the voucher should have on the price of the product. 
+If you want the voucher to apply only to one specific product, select that product in the "Product" field. 
+If you want it to apply to all products in a quota, select that quota in this field. 
+If you want the voucher to be able to be used for all products in your shop, leave the field empty. 
+
+The "Price effect" option gives you several different possibilities as to what effect the voucher should have on the price of the product. 
 As an example, you could set "Price effect" to "Reduce product price by (%)" and set "Voucher value" to "10" for a 10% discount upon use of the voucher. 
 
 Uncheck the box next to "Show hidden products that match this voucher". 
 Leaving this option checked while issuing vouchers for "All products" would mean that all hidden products are visible to a customer who is using the voucher. 
+
+If you want to limit the validity of the voucher to a certain number of uses, set the "Maximum usages" field to the upper limit of discounted purchases that you want to allow.
+If you do not want to set a limit, use a very high number such as 999999. 
+
+If you want to limit the validity of the voucher to a certain maximum budget, you can use the "Maximum discount budget" option. 
+For instance, if you set "Maximum discount budget" to €1000.00 and the voucher gives the customer a flat €10.00, then the voucher will lose its validity after it has been used 100 times. 
+
+If you want to limit the validity of the voucher to a certain timeframe, set the "Valid until" option to the end of the limited time offer, for example the end of the following day. 
+
 Click :btn:Save: once you are happy with your choices. 
 You can copy the code from the overview of vouchers and include it in, e.g., a newsletter, a social media post, or print media. 
 
