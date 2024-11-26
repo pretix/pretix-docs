@@ -2,13 +2,8 @@
 
 In most legislations, you are required to pay taxes for sales you make using pretix. 
 pretix gives you the tools you need to calculate the appropriate tax for each sale. 
-You can set up a tax rule for each relevant tax rate, and then assign that tax rule to each individual product. 
-
-You have to define at least one tax rule before you can create products to be sold in your shop. 
-Even if you all products in your shop are free, you still have to create a 0.00% tax rule. 
-You are prompted to create one simple tax rule during event creation. 
-This might already be enough for the most simple use cases. 
-This article tells you how to create more than one tax rule, how to configure complex custom tax rules, and how to assign them to products. 
+You are prompted to create one simple tax rule during event creation, which may already be enough for the most simple use cases. 
+This article tells you how to create additional tax rules, how to configure complex custom tax rules, and how to assign them to products. 
 
 This article does **not** tell you what taxes are appropriate for your individual situation. 
 This depends on your local legislation, the type of your business, and a number of other factors. 
@@ -33,7 +28,7 @@ Click the :btn:Save: button to confirm.
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
 Then, you assign that tax rule to each individual product. 
-If you are selling products with a 0% tax rate (such as [gift cards](../topics/gift-cards.md)), you still need to create a 0% tax rule first. 
+If you are selling products with a 0.00% tax rate (such as [gift cards](../topics/gift-cards.md)), you still need to create a 0% tax rule first. 
 
 When it comes to tax rules for free products, the only material difference is the tax rate printed on the invoice. 
 Create and assign the tax rule that you want to see on the invoice. 
