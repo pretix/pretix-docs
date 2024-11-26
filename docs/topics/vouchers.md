@@ -5,11 +5,10 @@ pretix allows you to automatically generate these codes as well as associated UR
 Vouchers have several useful applications. 
 You can use them to:
 
- - make products available at a reduced price for voucher holders
- - make a product available only to a select group of people (such as speakers at a conference or invited guests)
- - reserve a certain quantity of a product quota for voucher holders
- - make sure that voucher holders still have access to a product even if it is sold out
- - make products in your shop visible only to voucher holders
+ - make products available at a [reduced price](vouchers.md#offering-a-limited-discount) for voucher holders
+ - make a product available or even visible only to a [select group](vouchers.md#exclusive-product-availability) of people (such as speakers at a conference or invited guests)
+ - [reserve](vouchers.md#reserving-tickets) a certain quantity of a product quota for voucher holders
+ - make sure that voucher holders [still have access](vouchers.md#bypassing-a-quota) to a product even if it is sold out
 
 !!! Note 
     Vouchers are not to be confused with [gift cards](gift-cards.md). 
