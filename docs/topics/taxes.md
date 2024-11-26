@@ -74,7 +74,7 @@ In order to set these custom rules, navigate to :navpath:Your event → :fa3-wre
 Click the tax rule for which you want to set custom rules, switch to the :btn:Advanced: tab and click the :btn-icon:fa3-plus: Add a new rule: button. 
 
 In the first dropdown menu, select the country or territory where the custom rule will apply or select "Any country". 
-In the second menu, select the type of customer (individual, business, or business with valid VAT ID) or to which the rule will apply select "Any customer". 
+In the second menu, select the type of customer (individual, business, or business with valid VAT ID) or select "Any customer". 
 
 In the third dropdown menu, select the action to be taken under the specified conditions (country and customer). 
 You may select "Charge VAT" and then specify a "Deviating tax rate" in the input field below. 
@@ -153,6 +153,8 @@ This list will use the internal name you specified on the tax rules settings pag
 Once you have made your selection, click the :btn:Save: button. 
 
 ## Troubleshooting 
+
+### International business customer places order without VAT ID 
 
 If an international business customer places an order without giving you their VAT ID, you can manually edit the order in question. 
 On the "Order details" page, click :btn-icon:fa3-edit: Change answers:. 
