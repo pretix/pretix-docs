@@ -18,9 +18,6 @@ Taxes are handled on the event level, so you have to create an event first.
 
 If you want to use reverse charge or custom rules specific to businesses with VAT IDs, you have to ask your customers for their VAT ID. 
 Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
-Under "Generate invoices", select any option that generates invoices. 
-The recommended setting here is "Automatically after payment or when required by payment method". 
-
 Switch to the :btn:Address form: tab and check the box next to "Ask for VAT ID". 
 Click the :btn:Save: button to confirm. 
 
