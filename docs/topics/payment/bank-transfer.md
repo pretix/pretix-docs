@@ -73,7 +73,7 @@ If you are using pretix Hosted, you can activate the automatic transaction impor
 This service is on the organizer level, meaning that bank data imported via this method is available for all events associated with the organizer. 
 Navigate to :navpath:Your organizer → :fa3-bank: Bank transfer → Automatic import: . 
 
-![Page titled Automatic transaction import, containing a lot of information and a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
+![Page titled Automatic transaction import, containing text with the subheadings 'Why importing transactions automatically?', 'Unmatched transactions' and 'Security and privacy', as well as a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
 Choose your country, bank, and start date for importing transactions. 
 If you leave the "Import Transactions since" field empty, pretix will import as many transactions as possible. 
