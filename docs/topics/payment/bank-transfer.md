@@ -151,7 +151,7 @@ The section below explains [how to handle unresolved transactions manually](bank
 
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
-In addition to the automated or semi-automated options A and B described above, pretix also allows you to approve payments manually. 
+In addition to the [automated option A](bank-transfer.md#option-a-automatic-transaction-import-using-gocardless) and the [semi-automated option B](bank-transfer.md#option-b-importing-bank-data) described above, pretix also allows you to approve payments manually. 
 In order to do so, navigate to :navpath:Your Event → Orders:. 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fa3-money: Pending" status tag. 
