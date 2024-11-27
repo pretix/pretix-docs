@@ -21,7 +21,7 @@ Make sure you have access to the bank account that you want to use.
 
 ## How To 
 
-Setting up bank transfer as a payment provider in pretix requires the following steps: 
+Successfully using bank transfer as a payment provider in pretix requires the following steps: 
 
  1. Setting up bank transfers by enabling the bank transfer plugin and adjusting the bank transfer settings 
  2. Setting up automatic transaction import **or** regularly importing a digital bank statement 
@@ -63,7 +63,7 @@ Bank transfers will now appear as a payment option for customers in your shop.
 
 For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
 Alternatively, you can notify pretix of incoming payments by regularly importing digital bank statements. 
-This section is going to guide you through all three options. 
+This section is going to guide you through both options. 
 
 #### Option A: automatic transaction import using GoCardless 
 
