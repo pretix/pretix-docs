@@ -133,19 +133,18 @@ Click the :btn:Start upload: button.
 pretix will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such a mapping could look like with a small example CSV file. 
 
-![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC. Each data point is mapped to a column in the CSV containing that type of data with radio buttons or checkboxes. ](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
+![Import bank data page with a dialog asking the user to assign columns from a CSV file to the data points date, amount, reference, payer, IBAN and BIC. Radio buttons and checkboxes map each type of data to a column in the CSV containing that type of data. ](../../assets/screens/payment-providers/import-bank-data.png "Import bank data" )
 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
 Transactions that are already known to the system because they were imported using the same method at an earlier date will be ignored. 
-Transactions will be marked as unresolved if pretix cannot match the bank transaction with any order in your shop. 
-You can intervene and make manual corrections here on this screen. 
 
 This method may sometimes yield unresolved transactions. 
 The most frequent cause of this is a mistyped or missing order number in the reference line. 
 If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
-pretix allows you to resolve these transactions manually. 
-The section below explains [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
+You can intervene and make manual corrections here on this screen. 
+
+Refer to the section below for a more detailed explanation on [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
 ### Approving transactions manually 
 
