@@ -85,6 +85,17 @@ When a customer places an order, pretix will check the custom rules from top to 
 The first rule matching the order will be used to decide if and how VAT will be charged. 
 You can move the rules up or down the priority list using the arrow buttons :btn-icon:fa3-arrow-up:: and :btn-icon:fa3-arrow-down::. 
 
+![Tax rule dialog. The 'Advanced' tab is open, four custom rules, as described in the paragraph below.](../assets/screens/tax/custom-rules.png "Example for custom rules" )
+
+For illustrative purposes, let us assume an event hosted by a company in Germany which is eligible for EU reverse charge. 
+Such a company might first create a rule for "Germany", applying to "Any customer" the action "Charge VAT". 
+It might then create a rule for "European Union", applying to "Business with valid VAT ID" the action "Reverse charge". 
+It might then create a rule for Austria, applying to "Any customer" the action "Charge VAT" with the deviating tax rate set to the VAT rate of the country in question. 
+It might then create the same rule for every single member state in the EU from Belgium to Sweden, always setting the appropriate deviating tax rate. 
+Finally, the company might create a rule for "Any country", applying to "Any customer" the action "Charge VAT". 
+
+This example is for illustrating the use of the software only; it constitutes no legal advice. 
+
 ### EU reverse charge
 
 !!! Warning 
@@ -102,7 +113,7 @@ You can move the rules up or down the priority list using the arrow buttons :btn
 "Reverse charge" is a rule in European Union VAT legislation that specifies how taxes are paid if the seller and buyer of a good reside in different EU countries. 
 If the buyer is registered as a VAT-paying business in their country, you charge them only the net price without taxes and state that the buyer is responsible for paying the correct taxes. 
 
-If you want to use reverse charge or custom rules specific to businesses with VAT IDs, you have to ask your customers for their VAT ID. 
+If you want to use reverse charge, you have to ask your customers for their VAT ID. 
 Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
 Switch to the :btn:Address form: tab and make sure that the boxes next to "Ask for invoice address" and "Ask for VAT ID" are checked. 
 Click the :btn:Save: button to confirm. 
