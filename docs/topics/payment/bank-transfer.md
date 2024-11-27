@@ -3,8 +3,7 @@
 Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
 By default, pretix does not monitor payments arriving at your bank account. 
-If you are using pretix Hosted, you can set up a connection to your bank account for automatic imports of bank data. 
-This works with most European banks. 
+If you are using pretix Hosted, you can connect your bank account via our integration with GoCardless for automatic imports of bank data. 
 
 The alternatives for notifying pretix of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
 This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
@@ -24,10 +23,10 @@ Make sure you have access to the bank account that you want to use.
 
 Setting up bank transfer as a payment provider in pretix requires the following steps: 
 
- 1. Setting up bank transfers by enabling the bank transfer plugin, editing the bank transfer settings 
- 2. Setting up automatic transaction import **or** regularly import a digital bank statement 
+ 1. Setting up bank transfers by enabling the bank transfer plugin and adjusting the bank transfer settings 
+ 2. Setting up automatic transaction import **or** regularly importing a digital bank statement 
  3. Approving transactions manually 
- 4. Handling transactions that manually 
+ 4. Handling transactions manually 
 
 This section will guide you through these steps in detail. 
 
@@ -81,9 +80,9 @@ If you leave the "Import Transactions since" field empty, pretix will import as 
 Usually, this includes all transactions of the last 90 days. 
 
 This can lead to problems if you have previously used a different method to import bank data to the same organizer account. 
-Datapoints may be formatted differently and thus not be easily recognized as depicting the same transactions. 
+Data may be formatted differently and thus not be easily recognized as depicting the same transactions. 
 Select the first day for which you have **not** imported bank data to the same organizer account if this applies to you. 
-Make sure you do not leave a gap between the old and new imports, for example, if you previously imported data before the end of the banking day. 
+Make sure you do not leave a gap between the old and new imports, for example if you previously imported data before the end of the banking day. 
 
 If you have not previously used a different method for bank data imports, you can leave the field empty. 
 
@@ -92,15 +91,15 @@ This takes you to a webpage on ob.gocardless.com which asks you to consent to yo
 Complete the authorization process according to the instructions on the website. 
 You will then be redirected back to the pretix backend. 
 
-If you have multiple accounts at the bank, you have to select the bank account that you want to import data from. 
+If your GoCardless account contains information for multiple accounts at the same bank, you have to select the bank account that you want to import data from. 
 Choose a start date for importing transactions and confirm by clicking the :btn:Connect to bank: button. 
-If you now navigate back to the "Automatic import" page, it will display the bank connections you selected on the previous page as connected. 
+If you now navigate back to the "Automatic import" page, it will display the bank accounts you selected on the previous page as connected. 
 Once the automatic import is active, you should check it for unresolved transactions occasionally. 
 
-The most frequent cause for unresolved transactions is a mistyped or missing order number in the reference line. 
+The most frequent cause of unresolved transactions is a mistyped or missing order number in the reference line. 
 If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
 pretix allows you to resolve these transactions manually. 
-The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
+The section below explains [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
 #### Option B: importing bank data 
 
@@ -138,15 +137,15 @@ The screenshot illustrates what such a mapping could look like with a small exam
 
 Click :btn:Continue:. 
 You will be taken to a loading screen while your data is being processed and then to an overview of how many orders were marked as paid, invalid, or ignored. 
-Transactions that are already known to the system because they have been imported using the same method at an earlier date will be ignored. 
+Transactions that are already known to the system because they were imported using the same method at an earlier date will be ignored. 
 Transactions will be marked as unresolved if pretix cannot match the bank transaction with any order in your shop. 
 You can intervene and make manual corrections here on this screen. 
 
 This method may sometimes yield unresolved transactions. 
-The most frequent cause for this is a mistyped or missing order number in the reference line. 
+The most frequent cause of this is a mistyped or missing order number in the reference line. 
 If the bank account is also used for transactions unrelated to sales via pretix, this will produce unresolved transactions as well. 
 pretix allows you to resolve these transactions manually. 
-The [section below](bank-transfer.md#handling-unresolved-transactions) explains how to handle unresolved transactions manually. 
+The section below explains [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
 ### Approving transactions manually 
 
