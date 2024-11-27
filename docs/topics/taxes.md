@@ -16,11 +16,6 @@ Please speak to a professional tax consultant before setting tax rates in your s
 
 Taxes are handled on the event level, so you have to create an event first. 
 
-If you want to use reverse charge or custom rules specific to businesses with VAT IDs, you have to ask your customers for their VAT ID. 
-Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
-Switch to the :btn:Address form: tab and check the box next to "Ask for VAT ID". 
-Click the :btn:Save: button to confirm. 
-
 ## General usage
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
@@ -70,7 +65,13 @@ Click the :btn:Save: button once you are happy with your choices.
 
 pretix allows you to set "custom rules" if you have special requirements for the conditions in which VAT will or will not be charged. 
 These "custom rules" are subordinate to a tax rule and optional. 
-In order to set these custom rules, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax rules:. 
+
+If you want to use custom rules specific to businesses with VAT IDs, you have to ask your customers for their VAT ID. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
+Switch to the :btn:Address form: tab and make sure that the boxes next to "Ask for invoice address" and "Ask for VAT ID" are checked. 
+Click the :btn:Save: button to confirm. 
+
+In order to set custom tax rules, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax rules:. 
 Click the tax rule for which you want to set custom rules, switch to the :btn:Advanced: tab and click the :btn-icon:fa3-plus: Add a new rule: button. 
 
 In the first dropdown menu, select the country or territory where the custom rule will apply or select "Any country". 
@@ -100,6 +101,11 @@ You can move the rules up or down the priority list using the arrow buttons :btn
 
 "Reverse charge" is a rule in European Union VAT legislation that specifies how taxes are paid if the seller and buyer of a good reside in different EU countries. 
 If the buyer is registered as a VAT-paying business in their country, you charge them only the net price without taxes and state that the buyer is responsible for paying the correct taxes. 
+
+If you want to use reverse charge or custom rules specific to businesses with VAT IDs, you have to ask your customers for their VAT ID. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
+Switch to the :btn:Address form: tab and make sure that the boxes next to "Ask for invoice address" and "Ask for VAT ID" are checked. 
+Click the :btn:Save: button to confirm. 
 
 If you want to enable reverse charge, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax rules:. 
 Select the tax rule for which you want to enable reverse charge and switch to the :btn:Advanced: tab. 
