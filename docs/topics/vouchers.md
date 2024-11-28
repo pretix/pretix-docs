@@ -62,9 +62,8 @@ Codes are separated by line breaks, i.e., each code must be entered in a new lin
 
 The settings in the "Voucher details" and "Advanced settings" sections are the same as in the dialog for creating a single voucher. 
 
-If you intend to use pretix to send out vouchers via the pretix-native mail functionality, do **not** click the "Save" button yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 It is recommended that you enter a tag in the "Tag" field, copy the codes, and save them in a text file or in a spreadsheet. 
-This is particularly useful if you intend to distribute them by means other than the pretix-native mail functionality. 
+If you intend to use pretix to send out vouchers via the pretix-native mail functionality, do **not** click the "Save" button yet, but instead refer to the [subsection on sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email). 
 
 Once you have made your choices, click the :btn:Save: button and the vouchers will be created. 
 This will take you to the "Vouchers" overview page. 
