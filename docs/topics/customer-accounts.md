@@ -27,7 +27,7 @@ You need access to an organizer account if you want to enable customer accounts.
 
 Customer accounts are always tied to the organizer account. 
 Once a customer has created an account while placing an order for one of your events, they will be able to log in and place an order through the same account for all events managed by the same organizer account. 
-Customers may **not** log in to the same customer account with a different organizer. 
+Creating a customer account for a purchase at one organizer does not create a customer account for a transaction with any other organizer. 
 
 It is not possible to activate or deactivate customer accounts on a per-event basis. 
 It is also not possible to force customers to create an account. 
@@ -47,11 +47,11 @@ If you check the box next to "Match orders based on email address", they will al
 ### Customer accounts from the customers' perspective 
 
 From your customers' perspective, a pretix ticket shop is perfectly usable without creating an account. 
-Giving your customers the option to create an account makes sense if you expect them to place orders repeatedly and to access and change their own account information after placing an order. 
+Giving your customers the option to create an account makes sense if you expect them to place orders repeatedly and to access and change their memberships, addresses, attendee profiles, account information, and password after placing an order. 
 
 ![Page for an order at an organizer named 'Tutorial Ltd.', displaying an order with pending payment.](../assets/screens/customer-accounts/order-details.png) 
 
-If a customer places an order without creating and logging in to a customer account, they receive an email with a URL. 
+If a customer places an order without logging into a customer account or creating one, they receive an email with a URL. 
 The URL points to a page on which they can make a payment, download their ticket, as well as change the details of their orders, shipping, and personal information. 
 The URL is specific to that order. 
 
@@ -77,8 +77,10 @@ The only other mandatory piece of information for a customer account is the asso
 
 The customer can only log in to their account if the boxes next to "Account active" **and** "Verified email address" are checked. 
 The "Verified email address" box will be checked automatically as soon as the customer clicks the link in the verification email or password reset email. 
+This box can also be checked or unchecked manually. 
+If the customer attempts to log in while this box is unchecked, they will be prompted to either click the verification link or to reset their password. 
 
-If you already have customer accounts in a different software, then it makes sense to fill the "External identifier" field with the unique identifier of the account from the other software. 
+If you already have customer accounts in a different software and you need to connect them to the pretix customer accounts unambiguously, then it makes sense to fill the "External identifier" field with the unique identifier of the account from the other software. 
 If you want to import, export, or sync data between pretix and another software, then it makes sense to fill this field automatically using an integration with the pretix API. 
 
 Entries in the "Notes" field will only be visible to you and your team; they will not be visible to the customer. 
@@ -106,10 +108,10 @@ If you want to use pretix as an SSO provider, navigate to :navpath:Your organize
 The checkbox next to "Active" is enabled by default. 
 Disable it if you want to disable SSO integration with the client in question. 
 
-Insert an unambiguous name in the "Application name" field. 
+Enter an informative and unambiguous name in the "Application name" field, for example the name of the application or website for which you want to use pretix as an SSO provider. 
 
 Under "Client type", choose "Confidential" if the server-side application is able to store a secret that will be inaccessible to end users.
-For a client-side application such as a typical mobile apps, choose "Public".
+For a client-side application such as a typical mobile app, choose "Public".
 
 Your choice for the "Grant type" depends on the implementation of the OpenID Connect standard used by the application you are connecting. 
 
@@ -140,8 +142,7 @@ A few optional parts that have no use within pretix are excluded.
 For example, encrypted tokens, offline access, refresh tokens, and passing request parameters as JWTs are not supported. 
 
 pretix implements the provider metadata section from [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html). 
-You can find the endpoint relative to the issuer URI as described above, for example  
-https://pretix.eu/demo/.well-known/openid-configuration.
+You can find the endpoint relative to the issuer URI as described above, for example at https://pretix.eu/demo/.well-known/openid-configuration.
 
 All three OpenID Connect Core flows are implemented:
 
@@ -163,8 +164,7 @@ The various endpoints are located relative to the issuer URI as described above:
  - Keys: `<issuer>/oauth2/v1/keys`
 
 They follow the OpenID Connect and OAuth specifications without any special behavior. 
-Please refer to the specifications for further information. 
-
+Please refer to those specifications for further information. 
 
 #### Using pretix as an SSO client 
 
