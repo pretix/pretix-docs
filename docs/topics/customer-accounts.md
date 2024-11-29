@@ -82,6 +82,7 @@ If the customer attempts to log in while this box is unchecked, they will be pro
 
 If you already have customer accounts in a different software and you need to connect them to the pretix customer accounts unambiguously, then it makes sense to fill the "External identifier" field with the unique identifier of the account from the other software. 
 If you want to import, export, or sync data between pretix and another software, then it makes sense to fill this field automatically using an integration with the pretix API. 
+Consult the [pretix REST API documentation](https://docs.pretix.eu/en/latest/api/resources/customers.html) for further information. 
 
 Entries in the "Notes" field will only be visible to you and your team; they will not be visible to the customer. 
 
