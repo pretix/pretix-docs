@@ -23,7 +23,8 @@ You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: b
 
 ![Page titled 'Create a new team', with a name input, the option to require 2FA as well as several organizer and event permission settings.](../assets/screens/teams/create-team.png "Create a new team screenshot") 
 
-Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :btn-icon:fa3-plus: Create a new team: button in order to create a new team.What you name your new team and which permissions you grant it is up to you. 
+Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :btn-icon:fa3-plus: Create a new team: button in order to create a new team.
+What you name your new team and which permissions you grant it is up to you. 
 For example, you could name your team "Staff" to distinguish it from the administrators and give it the following organizer permissions: 
 "Can create events", "Can manage gift cards", and "Can manage customer accounts". 
 You could give the team access to "All events (including newly created ones)" and grant it the following event permissions: 
