@@ -26,6 +26,7 @@ If you are using pretix Hosted, your account needs to be activated before you ca
 The settings page for vouchers is located at :navpath:Your Event → :fa3-tags: Vouchers:. 
 It gives you an overview of all vouchers that have already been created as well as options for searching and filtering vouchers. 
 
+
 ![Page titled Vouchers, showing an overview of all vouchers that have already been created, options to search and filter vouchers, and buttons for creating or importing vouchers.](../assets/screens/vouchers/vouchers-all.png)
 
 ### Creating a single voucher 
@@ -200,6 +201,7 @@ Under "Product", choose the product (or the quota, if there is more than one pro
 Check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 This option only has an effect if the visibility toggle of the product is set to to hidden. 
 
+
 When inviting staff members or VIPs, you may want to waive the cost for all add-on products that voucher holders select on top of their ticket. 
 If you want to do that, check the box next to "Offer all add-on products for free when redeeming this voucher". 
 
@@ -214,6 +216,7 @@ This is useful if you need to ensure that a certain group of people gains access
 Navigate to :navpath:Your Event → :fa3-tags: Vouchers:, click the :btn-icon:fa3-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
 
 Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
+
 Set "Product" to your event's basic admission ticket, set "Price effect" to "Set product price to" and the voucher value to 0.00. 
 This means that the voucher will entitle each holder to one basic admission ticket for free. 
 
@@ -238,3 +241,4 @@ This gives voucher holders access to products even if all corresponding quotas a
 !!! Note 
     Using the "Allow to bypass quota" option carries the risk of overbooking. 
     We do not recommend using this feature if you are working with strict physical limitations such as the number of available seats, space at the event venue, or the number of meals that have been ordered.
+

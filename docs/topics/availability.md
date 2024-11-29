@@ -20,7 +20,7 @@ If you have enabled box office sales (pretixPOS) during event creation or on the
 This page also lets you set restrictions on when and how your customers can make modifications to the details of their orders. 
 The restrictions you set up on the "timeline" tab apply to all products in your shop. 
 
-You can also restrict availability for individual products by navigating to [Your event] → "Products" → "Products", clicking the product in question, and switching to the "availability" tab. 
+You can also restrict availability for individual products by navigating to :navpath:Your event → Products → Products:, clicking the product in question, and switching to the "availability" tab. 
 
 ## Troubleshooting 
 
