@@ -61,6 +61,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 plugins:
   - search
   - privacy
@@ -90,6 +93,32 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Payment: Zahlung
+          admonition_translations:
+            note: Hinweis
+            Note: Hinweis
+            abstract: Zusammenfassung
+            Abstract: Zusammenfassung
+            info: Information
+            Info: Information
+            tip: Tipp
+            Tip: Tipp
+            success: Erfolg
+            Success: Erfolg
+            question: Frage
+            Question: Frage
+            warning: Warnung
+            Warning: Warnung
+            failure: Fehler
+            Failure: Fehler
+            danger: Gefahr
+            Danger: Gefahr
+            bug: Fehler
+            Bug: Fehler
+            example: Beispiel
+            Example: Beispiel
+            quote: Zitat
+            Quote: Zitat
+
   - git-revision-date-localized
   - awesome-pages
 extra:

@@ -4,3 +4,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i%7CTitillium+Web:400,700' }}&display=fallback">
 {% endblock %}
+
+{% block content %}
+	{% if i18n_file_locale != i18n_page_locale %}
+	<div class="admonition info">
+		{% if i18n_page_locale == "de" %}
+			<p class="admonition-title">Übersetzungshinweis</p>
+			<p>Leider war es uns noch nicht möglich, diese Seite für Sie auf Deutsch zu übersetzen. Wir zeigen daher stattdessen die englischsprachige Version der Seite und bitten um Verständnis.</p>
+		{% else %}
+			<p class="admonition-title">Translation notice</p>
+			<p>This page unfortunately has not yet been translated into your language. We are showing the English version instead.</p>
+		{% endif %}
+	</div>
+	{% endif %}
+	{% include "partials/content.html" %}
+{% endblock %}

@@ -46,6 +46,7 @@ If it isn't enabled, the tag will be missing and it will have a purple :btn:Enab
 Navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
+
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
 Click on the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
@@ -129,6 +130,7 @@ The two pages are very similar, but one is located on the event level and the ot
 Whichever option you choose, the process is the same from here on out. 
 
 Click the :btn:Browse...: button and select the export file for upload. 
+
 Click the :btn:Start upload: button. 
 pretix will now ask you to specify which column in your file contains which data. 
 The screenshot illustrates what such a mapping could look like with a small example CSV file. 
@@ -148,6 +150,7 @@ Refer to the section below for a more detailed explanation on [how to handle unr
 
 ### Approving transactions manually 
 
+
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
 In addition to the [automated option A](bank-transfer.md#option-a-automatic-transaction-import-using-gocardless) and the [semi-automated option B](bank-transfer.md#option-b-importing-bank-data) described above, pretix also allows you to approve payments manually. 
@@ -157,6 +160,8 @@ If orders have been placed and not yet received a payment (which is expected if 
 
 Click the order code of one of the pending orders. 
 This takes you to the "order details" page for that order. 
+
+
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fa3-check:Mark as paid: button at the top of the order details page. 
 
