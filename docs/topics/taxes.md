@@ -85,16 +85,21 @@ When a customer places an order, pretix will check the custom rules from top to 
 The first rule matching the order will be used to decide if and how VAT will be charged. 
 You can move the rules up or down the priority list using the arrow buttons :btn-icon:fa3-arrow-up:: and :btn-icon:fa3-arrow-down::. 
 
-![Tax rule dialog. The 'Advanced' tab is open, four custom rules, as described in the paragraph below.](../assets/screens/tax/custom-rules.png "Example for custom rules" )
+![Tax rule dialog. The 'Advanced' tab is open, displaying four custom rules, as described in the paragraph below.](../assets/screens/tax/custom-rules.png "Example for custom rules" )
 
 For illustrative purposes, let us assume an event hosted by a company in Germany which is eligible for EU reverse charge. 
 Such a company might first create a rule for "Germany", applying to "Any customer" the action "Charge VAT". 
 It might then create a rule for "European Union", applying to "Business with valid VAT ID" the action "Reverse charge". 
+
 It might then create a rule for Austria, applying to "Any customer" the action "Charge VAT" with the deviating tax rate set to the VAT rate of the country in question. 
 It might then create the same rule for every single member state in the EU from Belgium to Sweden, always setting the appropriate deviating tax rate. 
 Finally, the company might create a rule for "Any country", applying to "Any customer" the action "Charge VAT". 
 
-This example is for illustrating the use of the software only; it constitutes no legal advice. 
+In this example, if a company located in Austria with a valid VAT ID places an order, matches both the second and the third rule. 
+However, since custom rules are always checked top to bottom and only the first matching rule is applied, only the second rule will be applied to the transaction. 
+The order in which rules are arranged here also ensures that no business from an EU country outside of Germany will be charged VAT on their transaction, as long as they provide a valid VAT ID while placing their order. 
+
+The example case described above is for illustrating the use of the software only; it constitutes no legal advice. 
 
 ### EU reverse charge
 
