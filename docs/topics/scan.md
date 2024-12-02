@@ -13,7 +13,7 @@ The primary function of pretixSCAN is to validate tickets, but it also offers ma
 
 This article will tell you how to install pretixSCAN for **Android** and how to make use of its features. 
 
-pretixSCAN is not to be confused with our other apps: pretixPRINT, which takes care of the printing of tickets, badges and receipts for you; pretixPOS, which handles product sales; or pretixLEAD, which collects and manages contact data of attendees at your event. 
+pretixSCAN is not to be confused with our other apps: pretixPRINT, which takes care of the printing of tickets, badges and receipts for you; pretixPOS, which handles product sales; or pretixLEAD, which facilitates lead acquisition at your events. 
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ pretixSCAN is meant for use with an event hosted using pretix.
 You need to have access to a device running Android version 5 or newer. 
 See our [Android version support policy](https://docs.pretix.eu/en/latest/user/android-version-support.html#pretixscan) for more information. 
 
-You also need a separate device from which you can access the pretix backend while you are setting up your device running pretixSCAN. 
+You also need access to the pretix backend in order to set up pretixSCAN on your device. 
 
 ## How To
 
@@ -60,14 +60,18 @@ Select "pretixSCAN" from the "Security profile" dropdown menu.
 Once you click :btn:Save:, you will be taken to a page displaying a QR code. 
 Scan the QR code with the camera or hardware scanner while on the setup screen of pretixSCAN. 
 
-If you have trouble scanning the QR code, there is an alternative solution: 
+If you cannot scan the QR code, there is an alternative solution: 
 Tap the three button menu in the top right corner of the pretixSCAN app and then tap "Manual setup". 
 Enter the system URL and token displayed in the pretix backend below the QR code. 
 
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../assets/screens/scan/select-event.png "Select event screenshot") 
 
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets. 
-Check the event in the list or in the calendar and tap :btn:OK:. 
+Select the event in the list or in the calendar and tap :btn:OK:. 
+
+If you want to scan tickets for multiple events at the same time, check the box next to "Expert mode". 
+In most cases, scanning tickets for one event at a time is enough. 
+Do not enable expert mode if you do not want to scan tickets for multiple events simultaneously. 
 Then, select a check-in list and tap :btn:OK: again. 
 The app will now land you on the main screen and start downloading event data from the server in the background. 
 
@@ -115,10 +119,10 @@ Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: but
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
 
 From now on, a :btn-icon:fa3-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
-Tap the :btn-icon:fa3-print:: button to print a badge for the ticket holder. 
+You can manually print a badge for the ticket holder by tapping the :btn-icon:fa3-print:: button. 
 A push notification will pop up while the print job is being sent. 
 
-If you want to automatically print a badge for every ticket you scan, go back to the settings page and check the box next to "Print badges automatically after successful scan". 
+If you want to automatically print a badge for every ticket you scan, go back to the settings page, tap "Print badges automatically" and select "Always". 
 The :btn-icon:fa3-print:: button will still be displayed, allowing you to manually print an extra badge. 
 
 If you want all badges to be printed twice, go to the settings page and check the box next to "Print every badge twice". 
@@ -139,7 +143,7 @@ You also have the option to protect the other functions of the app with the same
 !!! Warning
     The PIN settings page also has the option to turn on kiosk mode. 
     Kiosk mode fundamentally limits the functionality of the app. 
-    The only way to leave kiosk mode is to scan a QR code of the PIN. 
+    There are only two ways to leave kiosk mode: scanning a QR code of the PIN, or performing a hard reset of the pretixSCAN app. 
 
     Do not turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
     Do not turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
@@ -147,19 +151,20 @@ You also have the option to protect the other functions of the app with the same
 ### Offline scanning 
 
 The default scanning behavior of pretixSCAN requires a reliable network connection. 
-Every code scanned is compared with the selected check-in list that is stored on the pretix server. 
-If you are using pretixSCAN in a setting with an unreliable network connection or no connection at all, you may run into error messages while attempting to scan a code or search for attendee data. 
+Every code scanned is compared against the selected check-in list that is stored on the pretix server. 
+If you are using pretixSCAN in an environment with an unreliable network connection or no connection at all, you may run into error messages while attempting to scan a code or search for attendee data. 
 The solution for this problem is pretixSCAN's offline mode. 
 
-In offline mode, the app will verify data with its internal database instead of the database on the server. 
+In offline mode, the app will verify data against its internal database instead of the database on the server. 
 It will still occasionally attempt to synchronize its own internal data with the server. 
-You can scan codes and search for attendee data without encountering errors despite the missing connection. 
+You can scan codes and search for attendee data without encountering errors despite the lack of a network connection. 
 
 Installing the app, connecting it to the backend and synchronizing data between the device and the server at least once still requires a working connection to the internet. 
 Do these steps ahead of time in a setting where you do have a reliable connection if you are planning to use pretixSCAN in offline mode. 
 
 !!! Warning 
-    If you are using offline scanning with more than one device, then a single ticket can potentially be used for entry twice if it is scanned at two different devices within a short timeframe. 
+    If you are using offline scanning with more than one device, then a single ticket can potentially be used for entry more than once. 
+    As soon as the device that has scanned the ticket performs a successful synchronization, and then the other devices also perform a successful synchronization, the ticket will be recognized as "Ticket already used". 
 
 If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
 Then check the box next to "Offline scanning". 
@@ -173,7 +178,7 @@ If you select, for example, "3 seconds or errors", pretixSCAN will enable offlin
 If you select "Only errors or connection loss", then pretixSCAN will enable offline scanning after encountering an error or detecting a loss of connection while attempting to verify a code. 
 
 !!! Note 
-    Tickets ordered while your shop is in test mode will not be recognized as valid and will also not show up in the search while you are using pretixSCAN in offline mode. 
+    While you are using pretixSCAN in offline mode, tickets ordered while your shop is in test mode will not be recognized as valid and will also not show up in the search. 
 
 ## Further Information
 
