@@ -95,11 +95,11 @@ It might then create a rule for Austria, applying to "Any customer" the action "
 It might then create the same rule for every single member state in the EU from Belgium to Sweden, always setting the appropriate deviating tax rate. 
 Finally, the company might create a rule for "Any country", applying to "Any customer" the action "Charge VAT". 
 
-In this example, if a company located in Austria with a valid VAT ID places an order, matches both the second and the third rule. 
-However, since custom rules are always checked top to bottom and only the first matching rule is applied, only the second rule will be applied to the transaction. 
+In this example, if a company located in Austria with a valid VAT ID places an order, this matches both the second and the third rule. 
+However, since custom rules are always checked top to bottom and only the first matching rule is applied, only the only the second rule from our list (Austria → "Any customer" → "Charge VAT") will be applied to the transaction. 
 The order in which rules are arranged here also ensures that no business from an EU country outside of Germany will be charged VAT on their transaction, as long as they provide a valid VAT ID while placing their order. 
 
-The example case described above is for illustrating the use of the software only; it constitutes no legal advice. 
+The example case described above is for illustrating the use of the software only; it does not constitute legal advice. 
 
 ### EU reverse charge
 
@@ -114,6 +114,10 @@ The example case described above is for illustrating the use of the software onl
     It will be removed in a future version of pretix. 
     Avoid using EU reverse charge if possible and define custom tax rules instead. 
     That way, you can tailor taxation rules to your individual use case and make sure you are complying with all relevant laws. 
+
+!!! Note 
+    Using custom tax rules is mutually exclusive with the EU reverse charge option. 
+    If you have defined one or more custom tax rules, then the EU reverse charge taxation rule will not apply, even if the box next to "Use EU reverse charge taxation rules" is checked. 
 
 "Reverse charge" is a rule in European Union VAT legislation that specifies how taxes are paid if the seller and buyer of a good reside in different EU countries. 
 If the buyer is registered as a VAT-paying business in their country, you charge them only the net price without taxes and state that the buyer is responsible for paying the correct taxes. 
