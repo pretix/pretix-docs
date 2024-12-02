@@ -19,8 +19,11 @@ Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:.
 Click the :btn-icon:fa3-edit: Edit: button next to "Sending method" and choose one of the three options: 
 
  1. **Use system default:** system-provided email server. 
- Emails will be sent from `support@pretix.eu` with your organizer account's name in the name field. 
- The "contact address" you specified for the organizer account under general settings will be used as the reply-to address. 
+ Emails will be sent from `support@pretix.eu`. 
+ Emails for customer account registration, email change, and password reset will have your organizer account's name in the name field. 
+ All other emails with have the event name in the name field. 
+ Your organizer's contact address will be used as the reply-to address. 
+ If you want to change the reply-to address, navigate to :navpath: Your organizer → :fa3-wrench: Settings → General:, change "Contact address" and click the :btn:Save: button. 
  2. **Use system email server with a custom sender address:** system-provided email server. 
  Emails will be sent from a custom email address. 
  This requires adding the pretix application server to your mail server's SPF record (see [Using system email server with a custom sender address](email.md#using-system-email-server-with-a-custom-sender-address) below).
