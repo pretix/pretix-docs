@@ -31,6 +31,7 @@ Click the :btn-icon:fa3-edit: Edit: button next to "Sending method" and choose o
 
 If you want to change the general email settings for an individual event, you can unlock them for that event. 
 Unlocking the settings is irreversible. 
+Once they are unlocked, changing email settings for your organizer does not change the settings for this particular event anymore. 
 Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail: and click the :btn-icon:fa3-unlock: Unlock: buttons as required. 
 
 ### Using system email server with a custom sender address
@@ -38,7 +39,7 @@ Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail: and click 
 If you use an email address with your own domain as the sender address and do not use a custom SMTP server, you have to add the pretix application server to your SPF record.
 This is necessary to prevent your emails being misidentified as spam. 
 
-You can add SPF record in the administrative console of the provider with whom you registered your domain.
+You can add an SPF record in the administrative console of the provider with whom you registered your domain.
 The exact process varies from provider to provider.
 The settings can usually be found on the "DNS records" page or one with a similar name.
 
@@ -58,22 +59,20 @@ If you want to authenticate your emails with DKIM, set up a `CNAME` record for t
 
 Contact our support team to enable DKIM for your domain on our mail servers. 
 
-If you are sending out a large volume of emails, Google Mail also requires you to have a DMARC policy. 
+If you are sending out a large volume of emails, email providers such as Google Mail also require you to have a DMARC policy. 
 Specifying the DMARC policy as `p=none` is enough. 
 
 ### Customizing email content 
 
-Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:. 
-On the "E-mail content" tab, you can customize the content of emails for customer account registration, email change, and password reset. 
+If you want to customize the content of emails for customer account registration, email change, and password reset, navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail: and switch to the :btn:E-mail content: tab.  
 All other types of email content are customized on the event level. 
 
-Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail:. 
-On the "E-mail content" tab, you can customize the content of emails for orders, purchased products, and payments. 
+If you want to customize the content of emails for orders, purchased products, and payments, navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail: and open the :btn:E-mail content: tab. 
 Emails related to the customer account are handled on the organizer level. 
 
 What follows is a list of all available placeholders, their function and an example. 
 Not all placeholders are available for every type of email. 
-The available palceholders are listed underneath the email in the backend. 
+The available placeholders are listed underneath the fields for the email's subject line and body in the backend. 
 
 | Placeholder                        | Function                                                                                                         | Example             | 
 |------------------------------------|------------------------------------------------------------------------------------------------------------------|-------------|
@@ -91,18 +90,18 @@ The available palceholders are listed underneath the email in the backend.
 | `{invoice_name}`                   | name from invoice address                                                                                        | John Doe |
 | `{name}`                           | any name that can be used to address the recipient (e.g. name from invoice address, name from first ticket)      | Mr Doe |
 | `{name_family_name}`               | family name of recipient                                                                                         | Doe |
-| `{name_for_salutation}`            | preferred address, title and name                                                                                | Dr. Jane Doe |
+| `{name_for_salutation}`            | preferred address, title and name                                                                                | Dr. John Doe |
 | `{name_given_name}`                | given name of recipient                                                                                          | John |
-| `{order_modification_deadline_date_and_time}` | the deadline date and time for making modifications to the order                                      | June 4, 2027, 6:00 AM    
+| `{order_modification_deadline_date_and_time}` | time and date of the deadline for making modifications to the order                                   | June 4, 2027, 6:00 AM    
 | `{orders}`                         | list of orders including links to their status pages, specific to the “resend link (requested by user)” e-mail   |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
 | `{organizer}`                      | name of the organizer                                                                                            | Tutorial Ltd. | 
 | `{payment_info}`                   | information about the payment method (e.g. banking details)                                                      | The amount has been charged to your card. |
 | `{product}`                        | the product that has become available on the waiting list                                                        | Discount ticket |
-| `{refund_amount}`                  | in event cancellation emails, the amount of money that will be refunded, including the currency                  | 42,23 € |
+| `{refund_amount}`                  | in event cancellation emails, the amount of money that will be refunded, including the currency                  | €42.23 |
 | `{subevent}`                       | the relevant event in an event series                                                                            | Tutorial Conference |
 | `{subevent_date_form}`             | the date of the relevant event in an event series                                                                | June 4, 2027, midnight |
 | `{total}`                          | invoice total for the order                                                                                      | 42.23 |
-| `{total_with_currency}`            | invoice total for the order including localized currency sign                                                    | 42,23 € |
+| `{total_with_currency}`            | invoice total for the order including localized currency sign                                                    | €42.23 |
 | `{url}`                            | event level: URL pointing to the order's download/status page **or** organizer level: account activation URL     | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/98kusd8ofsj8dnkd/ **or** https://pretix.eu/tut/account/activate?token=RAW71yeKrZiYgQCxh7DLLmoQbJePha |
 | `{url_cancel}`                     | URL pointing to the order's cancellation page                                                                    | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/cancel |
 | `{url_info_change}`                | URL pointing to the order's ticket information page                                                              | https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/modify |
