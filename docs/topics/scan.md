@@ -1,17 +1,17 @@
-# pretixSCAN—Android app 
+# pretixSCAN (Android)
 
-pretixSCAN is a powerful Android application that helps you handle the check-in at your events. 
+pretixSCAN is a powerful application that helps you handle the check-in at your events. 
+This article is about the Android version of pretixSCAN, which is also the most feature-rich version of the application. 
+pretixSCAN is also available for Windows, Linux, and iOS. 
+Those versions of the software will be documented on separate pages. 
+
 The primary function of pretixSCAN is to validate tickets, but it also offers many other features, such as: 
 
  - searching for participants manually if they do not have their ticket on hand 
  - printing attendee badges
  - quickly viewing attendance statistics
 
-This article will tell you how to get install pretixSCAN for **Android** and how to make use of its features. 
-
-pretixSCAN is also available for Windows, Linux, and iOS. 
-Those versions of the software will be documented on separate pages. 
-This article is about the Android version of pretixSCAN, which is also the most feature-rich version of the application. 
+This article will tell you how to install pretixSCAN for **Android** and how to make use of its features. 
 
 pretixSCAN is not to be confused with our other apps: pretixPRINT, which takes care of the printing of tickets, badges and receipts for you; pretixPOS, which handles product sales; or pretixLEAD, which collects and manages contact data of attendees at your event. 
 
