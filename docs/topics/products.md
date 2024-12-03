@@ -36,12 +36,9 @@ You can also edit an already existing category and change its name, description 
 
 ![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../assets/screens/products/products.png "Products screenshot") 
 
-Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
-
-First, we will edit the "Regular ticket" so that we can base all other tickets on this one. 
-In order to do that, we will navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
-The website should display two tickets that have already been created along with the event: "Regular ticket" and "Reduced ticket". 
-We will click "Regular ticket", which takes us to the "Modify product" dialog. 
+If you want to create or edit products, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+This page shows the list of all products. 
+Click one of the products in order to edit it. 
 
 We will change the English item name to "Standard Ticket" and provide a German translation. 
 We are going to add the following description: 
@@ -67,7 +64,8 @@ The list also displays the total capacity and how many items are left for each q
 
 ### Early bird products 
 
-### Upselling extras 
+ - time 
+ - number
 
 ### Workshops at a conference 
 
@@ -75,13 +73,21 @@ The list also displays the total capacity and how many items are left for each q
 
 ### Group discounts 
 
+TK muss umgeschrieben werden 
+
 ### Restricted audience 
+
+TK nur auf externe Artikel verlinken 
 
 ### Time slots 
 
 ### Season tickets
 
+TK recherchieren, inwieweit sich das mit Customer accounts überschneidet 
+
 ### Mixed taxation 
+
+TK eventuell unter Taxation besser aufgehoben
 
 ## Troubleshooting 
 
@@ -89,16 +95,16 @@ The list also displays the total capacity and how many items are left for each q
 
 If you have created a product and it is not displayed in your ticket shop, perform the following checks: 
 
- 1. Check if the product’s "active” checkbox is enabled.
+ 1. Check if the product's "active” checkbox is enabled.
 
- 2. Check if the product’s "Available from” or "Available until” settings restrict it to a date range.
+ 2. Check if the product's "Available from” or "Available until” settings restrict it to a date range.
 
- 3. Check if the product’s checkbox "This product will only be shown if a voucher matching the product is redeemed.” is enabled. 
+ 3. Check if the product's checkbox "This product will only be shown if a voucher matching the product is redeemed.” is enabled. 
  If this is the case, the product will  only be shown if the customer redeems a voucher that directly matches to this product. 
  It will not be shown if the voucher only is configured to match a quota that contains the product.
 
  4. Check if the product is in a category that has the "Products in this category are add-on products” checkbox enabled. 
- If this is the case, the product won’t show up on the shop front page, but only in the first step of checkout when a product in the cart allows to add add-on products from this category.
+ If this is the case, the product won't show up on the shop front page, but only in the first step of checkout when a product in the cart allows to add add-on products from this category.
 
  5. Check that a quota exists that contains this product. 
  If your product has variations, check that at least one variation is contained in a quota. 
