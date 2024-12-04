@@ -131,7 +131,7 @@ You can restrict the set of recipients by product, order status, time that the o
 The subject line and message can be customized with text and placeholders. 
 Tickets, calendar files or other files can be attached. 
 Once you are happy with the email's contents, click :btn:Preview email:. 
-The ":fa3-send: Send" button displays the number of matching recipients. 
+The :btn-icon:fa3-send: Send: button displays the number of matching recipients. 
 You can double-check your settings on the preview page and then click the :btn-icon:fa3-send: Send (# matching orders): button. 
 
 If you want to schedule emails to be sent out at a later date, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Scheduled emails:
