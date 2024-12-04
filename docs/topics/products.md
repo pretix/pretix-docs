@@ -364,13 +364,13 @@ Then, scroll to the times section and create your time slots.
 You can do any interval you like. 
 If you have different opening times on different week days, you will need to go through the creation process multiple times.
 
-![](../assets/screens/products/timeslots_create21.png "Timeslots create 21")
+![](../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
 
 
 Scroll further down and create one or multiple quotas that define how many people can book a ticket for that time slot. 
 In this example, 50 people in total are allowed to enter within every slot:
 
-![](../assets/screens/products/timeslots_create31.png "Timeslots create 31")
+![](../assets/screens/products/timeslots_create_31.png "Timeslots create 31")
 
 Do **not** create a check-in list at this point. We will deal with this further below in the guide. Now, press "Save" to create your slots.
 
