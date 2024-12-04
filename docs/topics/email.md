@@ -81,8 +81,8 @@ The available placeholders are listed underneath the fields for the email's subj
 | `{comment}`                        | reason for the rejection or cancellation of an order                                                             | An individual text with a reason can be inserted here. |
 | `{currency}`                       | three-letter code for the event's currency                                                                       | EUR |
 | `{event}`                          | name of the event                                                                                                | Tutorial Conference | 
-| `{event_admission_time}`           | admission time of the event                                                                                      | tutcon27 |
-| `{event_location}`                 | location of the event                                                                                            | tutcon27 |
+| `{event_admission_time}`           | admission time of the event                                                                                      | 6:00 AM |
+| `{event_location}`                 | location of the event                                                                                            | Berthold-Mogel-Straße 1 |
 | `{event_slug}`                     | short form of the event                                                                                          | tutcon27 |
 | `{expire_date}`                    | order expiration date                                                                                            | 2024-11-13 |
 | `{hours}`                          | the number of hours the voucher code can be redeemed for the waiting list                                        | 48 |
@@ -127,11 +127,11 @@ If your email is relevant for exhibitors, select :btn:Exhibitors:.
 This option is only displayed if the "Exhibitors" plugin is enabled. 
 In all other cases, select :btn:Orders or attendees:. 
 
-You can restrict the set of recipients by product, order status, time that the order was placed, and check-in status. 
+You can further restrict who receives the email by product, order status, time that the order was placed, and check-in status. 
 The subject line and message can be customized with text and placeholders. 
 Tickets, calendar files or other files can be attached. 
 Once you are happy with the email's contents, click :btn:Preview email:. 
-The :btn-icon:fa3-send: Send: button displays the number of matching recipients. 
+The ":fa3-send: Send" button displays the number of matching recipients. 
 You can double-check your settings on the preview page and then click the :btn-icon:fa3-send: Send (# matching orders): button. 
 
 If you want to schedule emails to be sent out at a later date, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Scheduled emails:
