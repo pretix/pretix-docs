@@ -2,8 +2,8 @@
 
 Willkommen in unserer neuen Dokumentation! 
 
-Wenn Du zum pretix zum ersten Mal benutzt, dann kann unser [Tutorial](tutorial/getting-started) Dir die Grundlagen zeigen. 
+Wenn Du zum pretix zum ersten Mal benutzt, dann kann unser [Tutorial](tutorial/getting-started/index.md) Dir die Grundlagen zeigen. 
 
-Wenn Du nach detaillierteren Informationen über die Funktionen von pretix und ihre Benutzung suchst, dann bist du bei den [topics](topics) richtig. 
+Wenn Du nach detaillierteren Informationen über die Funktionen von pretix und ihre Benutzung suchst, dann bist du bei den [topics](topics/index.md) richtig. 
 
 Du kannst auch ein Suchwort im Suchfeld oben auf der Webseite eingeben. 
