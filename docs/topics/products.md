@@ -76,6 +76,13 @@ pretix will subtract from both quotas whenever a discount ticket is sold, and on
 
 ### Early bird products 
 
+You may want to offer cheaper products based on how long in advance your customers book them (early bird tickets). 
+There are two ways to implement this. 
+You can restrict the availability of the products to certain dates, or by 
+In order to do so, create a product for the full price tier, give it a descriptive name and enter the full price in the "Default price" field. 
+Then, switch to the :btn:Availability: tab and specify the period of time in which the product shall be available by entering dates in the "Available from" and "Available until" fields. 
+
+
 TK überarbeiten 
 
 Let's say you run a conference that has the following pricing scheme:
@@ -88,9 +95,12 @@ Let's say you run a conference that has the following pricing scheme:
 
 Of course, you could just set up one product and change its price at the given dates manually, but if you want to set this up automatically, here's how:
 
-Create three products (e.g. "super early bird”, "early bird”, "regular ticket”) with the respective prices and one shared quota of your total event capacity. Then, set the available from and available until configuration fields of the products to automatically turn them on and off based on the current date.
+Create three products (e.g. "super early bird”, "early bird”, "regular ticket”) with the respective prices and one shared quota of your total event capacity. 
+Then, set the available from and available until configuration fields of the products to automatically turn them on and off based on the current date.
 
-If you're in an event series, this will likely not help you since these dates would need to be the same for all dates in your series. As an alternative, you can go to the "Dates” section of your event series, select one or more dates, and scroll down to the "product settings” section. Here, you can also define availability times for individual products just for this date individually.
+If you're in an event series, this will likely not help you since these dates would need to be the same for all dates in your series. 
+As an alternative, you can go to the "Dates” section of your event series, select one or more dates, and scroll down to the "product settings” section. 
+Here, you can also define availability times for individual products just for this date individually.
 
 Let's say you run a conference with 400 tickets that has the following pricing scheme:
 
