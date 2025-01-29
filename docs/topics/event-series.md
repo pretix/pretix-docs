@@ -26,11 +26,12 @@ The main benefits of an event series over a singular event are the following:
  - settings only have to be adjusted once and will apply to every single date in the series 
  - customers can order tickets for multiple dates at the same time via the same shop 
 
-We recommend creating an event series for the following use cases: 
+We recommend creating an event series use cases such as the following: 
 
  - a theater performing the same play on several nights 
  - a touring act playing the same concert in several different locations on different dates 
  - a workshop hosted in several different locations
+ - an escape room allowing customers to book one of several time slots throughout the day 
  
 We **do not** recommend creating an event series for the following use cases: 
 
@@ -40,6 +41,59 @@ We **do not** recommend creating an event series for the following use cases:
  
 
 ### How to create an event series 
+
+Navigate to the dashboard. 
+In the list titled "Your upcoming events", click the :btn-icon:fa3-plus:Create a new event: button. 
+Under "Event type", select "Event series or time slot booking". 
+The rest of the process is the same as the creation of a singular event. 
+For more information on creating an event, see the tutorial section on [event creation](../tutorial/event.md). 
+
+![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
+
+### Editing dates in the event series 
+
+Click on “Dates” in the left navigation menu of your event. This page shows you the list of currently existing event dates and allows you to create, edit, clone and delete them.
+
+If “Dates” is missing from the navigation menu, you have insufficient permission or your event has not been set up as an event series and you need to create a new event.
+
+If you click on one of them or create a new one, you will see the following form:
+
+Here, you can make changes to the following fields, most of which are optional:
+
+Name
+
+    This is the public name of your date. It should be descriptive enough to tell the user which date to select in a calendar.
+Active
+
+    This date will only show up for customers if you check this box. In this sense, it corresponds to the “live” setting of events.
+Event start time
+
+    The date and time that this date starts at.
+Event end time
+
+    The date and time this date ends at.
+Location
+
+    This is the location of your date in a human-readable format. We will show this on the ticket shop frontpage, but it might also be used e.g. in Wallet tickets.
+Admission time
+
+    The admission date and time to show on the ticket shop page or on the tickets.
+Frontpage text
+
+    A text to show on the front page of the ticket shop for this date.
+Start of presale
+
+    If you set this, no ticket will be sold before the time you set. If you set this on event series level as well, both dates must be in the past for the tickets to be available.
+End of presale
+
+    If you set this, no ticket will be sold after the time you set. If you set this on event series level as well, both dates must be in the future for the tickets to be available.
+Quotas
+
+    As for all events, no tickets will be available unless there is a quota created for them that specifies the number of tickets available. You can create multiple quotas that are assigned to this date directly from this interface.
+Item prices
+
+    This is a table of all products configured for your shop. If you want, you can enter a new price for each one of them in the right column to make them cheaper or more expensive for this date. If you leave a field empty, the price will follow the product’s default price.
+
 
 ## Troubleshooting 
 
