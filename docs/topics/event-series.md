@@ -39,7 +39,6 @@ We **do not** recommend creating an event series for the following use cases:
  Many parameters can change over the course of a year and attendees will typically only buy a ticket for the upcoming date. 
  - events that take place over the course of several days, such as conferences or festivals, if customers typically attend more than one day of the event. 
  
-
 ### How to create an event series 
 
 Navigate to the dashboard. 
@@ -58,48 +57,6 @@ In order to create a single new date for this event series, click :btn-icon:fa3-
 
 In order to create several new dates for this event series, click :btn-icon:fa3-plus: Create many new dates:. 
 
-
-If “Dates” is missing from the navigation menu, you have insufficient permission or your event has not been set up as an event series and you need to create a new event.
-
-If you click on one of them or create a new one, you will see the following form:
-
-Here, you can make changes to the following fields, most of which are optional:
-
-Name
-
-    This is the public name of your date. It should be descriptive enough to tell the user which date to select in a calendar.
-Active
-
-    This date will only show up for customers if you check this box. In this sense, it corresponds to the “live” setting of events.
-Event start time
-
-    The date and time that this date starts at.
-Event end time
-
-    The date and time this date ends at.
-Location
-
-    This is the location of your date in a human-readable format. We will show this on the ticket shop frontpage, but it might also be used e.g. in Wallet tickets.
-Admission time
-
-    The admission date and time to show on the ticket shop page or on the tickets.
-Frontpage text
-
-    A text to show on the front page of the ticket shop for this date.
-Start of presale
-
-    If you set this, no ticket will be sold before the time you set. If you set this on event series level as well, both dates must be in the past for the tickets to be available.
-End of presale
-
-    If you set this, no ticket will be sold after the time you set. If you set this on event series level as well, both dates must be in the future for the tickets to be available.
-Quotas
-
-    As for all events, no tickets will be available unless there is a quota created for them that specifies the number of tickets available. You can create multiple quotas that are assigned to this date directly from this interface.
-Item prices
-
-    This is a table of all products configured for your shop. If you want, you can enter a new price for each one of them in the right column to make them cheaper or more expensive for this date. If you leave a field empty, the price will follow the product’s default price.
-
-
 ## Troubleshooting 
 
 #### The button :fa3-calendar: Dates: does not appear in the sidebar on the left 
@@ -109,11 +66,3 @@ If the button :fa3-calendar: Dates: does not appear in the sidebar on the left, 
  - you have selected the wrong event (a singular event instead of an event series)
  - the event is set up as a singular event instead of an event series
  - you do not have permission to edit dates for this event 
-
-## Further Information
-
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
