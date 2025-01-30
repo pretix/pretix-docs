@@ -20,7 +20,6 @@ This segment tells you how an event series behaves compared to singular events.
 It will help you decide whether you should create an event series, or if one or more singular events are more appropriate for your situation. 
 
 An event series is useful if you are planning the same event to take place several times, with at most small variations. 
-
 The individual dates of an event series will always share the same settings, with the following exceptions: 
 
  - date and time 
