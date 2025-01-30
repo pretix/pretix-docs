@@ -67,6 +67,7 @@ markdown_extensions:
 plugins:
   - search
   - privacy
+  - awesome-pages
   - glightbox
   - macros:
       include_dir: include
@@ -120,7 +121,6 @@ plugins:
             Quote: Zitat
 
   - git-revision-date-localized
-  - awesome-pages
 extra:
   generator: false
   social:
