@@ -2,3 +2,4 @@ nav:
  - ... | index*.md
  - tutorial
  - topics
+ - Developer and API Docs: https://docs.pretix.eu/dev/
