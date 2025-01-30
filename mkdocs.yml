@@ -85,6 +85,7 @@ plugins:
           build: true
           nav_translations:
             User guide: User Guide
+            Trust: Trust & Compliance
         - locale: de
           name: Deutsch
           build: true
@@ -94,6 +95,7 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Payment: Zahlung
+            Trust: Trust & Compliance
           admonition_translations:
             note: Hinweis
             Note: Hinweis
