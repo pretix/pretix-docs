@@ -1,0 +1,10 @@
+nav:
+ - installation
+ - index.md
+ - updates.md
+ - config.md
+ - maintenance.md
+ - scaling.md
+ - errors.md
+ - mysql2postgres.md
+ - indexes.md

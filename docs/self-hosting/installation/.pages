@@ -1,0 +1,7 @@
+nav:
+ - general.md
+ - manual_smallscale.md
+ - docker_smallscale.md
+ - dev_version.md
+ - enterprise.md
+ - community.md
