@@ -1,4 +1,4 @@
-# Title
+# Event series
 
 When creating a new event, you can either create a singular event, or you can create an event series. 
 This article explains the difference between a singular event and an event series, helps you decide which one to choose, and tells you how to set up an event series. 
@@ -52,7 +52,12 @@ For more information on creating an event, see the tutorial section on [event cr
 
 ### Editing dates in the event series 
 
-Click on “Dates” in the left navigation menu of your event. This page shows you the list of currently existing event dates and allows you to create, edit, clone and delete them.
+Navigate to :navpath:Your event series → :fa3-calendar: Dates:. 
+This page displays the list of currently existing event dates and allows you to create, edit, clone and delete them.
+In order to create a single new date for this event series, click :btn-icon:fa3-plus: Create a new date:. 
+
+In order to create several new dates for this event series, click :btn-icon:fa3-plus: Create many new dates:. 
+
 
 If “Dates” is missing from the navigation menu, you have insufficient permission or your event has not been set up as an event series and you need to create a new event.
 
@@ -97,7 +102,13 @@ Item prices
 
 ## Troubleshooting 
 
-What are common problems that could be encountered here? How do you solve them? 
+#### The button :fa3-calendar: Dates: does not appear in the sidebar on the left 
+
+If the button :fa3-calendar: Dates: does not appear in the sidebar on the left, there are three possible explanations for this: 
+
+ - you have selected the wrong event (a singular event instead of an event series)
+ - the event is set up as a singular event instead of an event series
+ - you do not have permission to edit dates for this event 
 
 ## Further Information
 
