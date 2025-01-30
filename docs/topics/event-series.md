@@ -2,6 +2,9 @@
 
 When creating a new event, you can either create a singular event, or you can create an event series. 
 This article explains the difference between a singular event and an event series, helps you decide which one to choose, and tells you how to set up an event series. 
+An event series allows you to create multiple dates that are all part of the event series. 
+You should create an event series if you are offering the same experience more than once at several different times. 
+In all other cases, creating a singular event should suffice. 
 
 ## Prerequisites 
 
@@ -21,7 +24,7 @@ The individual dates of an event series will always share the same settings, wit
 
 These parameters can be adjusted for each date individually. 
 
-The main benefits of an event series over a singular event are the following: 
+The main benefits of an event series over several separate singular events are the following: 
 
  - settings only have to be adjusted once and will apply to every single date in the series 
  - customers can order tickets for multiple dates at the same time via the same shop 
