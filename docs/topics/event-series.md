@@ -69,9 +69,18 @@ For more information on creating an event, see the tutorial page on [event creat
 
 Navigate to :navpath:Your event series → :fa3-calendar: Dates:. 
 This page displays the list of currently existing event dates and allows you to create, edit, clone and delete them.
+
 In order to create a single new date for this event series, click :btn-icon:fa3-plus: Create a new date:. 
+Choose a name, an event start time, and at least one product for the date. 
+Once you are happy with your choices for the mandatory settings and the many optional settings on the page, click the :btn:Save: button. 
+You will be taken back to the dates overview page. 
+The date you just created is now displayed in the list on this page. 
 
 In order to create several new dates for this event series, click :btn-icon:fa3-plus: Create many new dates:. 
+Choose a name, event start time, and at least one product for the date. 
+Once you are happy with your choices for the mandatory settings and the many optional settings on the page, click the :btn:Save: button. 
+You will be taken back to the dates overview page titled "Dates". 
+The dates you just created are now displayed in the list on this page. 
 
 ## Troubleshooting 
 
