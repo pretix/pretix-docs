@@ -3,7 +3,7 @@
 When creating a new event, you can either create a singular event, or you can create an event series. 
 This article explains the difference between a singular event and an event series, helps you decide which one to choose, and tells you how to set up an event series. 
 An event series allows you to create multiple dates that are all part of the event series. 
-You should create an event series if you are offering the same experience more than once at several different times. 
+You should create an event series if you are offering the same or a similar experience more than once at several different times. 
 In all other cases, creating singular events should suffice. 
 
 ## Prerequisites 
@@ -15,16 +15,19 @@ This article assumes that you have access to an organizer account, either becaus
 ### When does it make sense to create an event series? 
 
 The question whether you are hosting one single event, multiple events, or an event series does not always have a clear-cut answer. 
-pretix offers multiple solutions for each use case. 
+It is possible that there is more than one sensible solution for your use case. 
 This segment tells you how an event series behaves compared to singular events. 
 It will help you decide whether you should create an event series, or if one or more singular events are more appropriate for your situation. 
 
 An event series is useful if you are planning the same event to take place several times, with at most small variations. 
 The individual dates of an event series will always share the same settings, with the following exceptions: 
 
+ - event title 
  - date and time 
  - location
- - text on the shop page 
+ - frontpage text
+ - prices 
+ - seating
  - product quotas 
  - check-in rules 
 
@@ -32,7 +35,7 @@ These parameters can be adjusted for each date individually.
 The main benefits of an event series over several separate singular events are the following: 
 
  - settings only have to be adjusted once and will apply to every single date in the series 
- - customers can order tickets for multiple dates at the same time via the same shop 
+ - customers can buy tickets for multiple dates in a single order 
  
 We recommend creating an **event series** in use cases such as the following: 
 
@@ -40,7 +43,8 @@ We recommend creating an **event series** in use cases such as the following:
  - a touring act playing the same concert in several different locations on different dates 
  - a workshop hosted in several different locations
  - an escape room allowing customers to book one of several time slots throughout the day 
- 
+ - a museum offering guided tours at different times
+
 We recommend creating **multiple independent** events for the following use cases: 
 
  - events with large gaps of time between the individual dates, such as annual conferences. 
