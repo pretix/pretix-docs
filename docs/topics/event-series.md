@@ -70,6 +70,9 @@ For more information on creating an event, see the tutorial page on [event creat
 Navigate to :navpath:Your event series → :fa3-calendar: Dates:. 
 This page displays the list of currently existing event dates and allows you to create, edit, clone and delete them.
 
+![Screenshot of page titled "Dates", displaying buttons for creating a single or multiple new dates. ](../assets/screens/event-series/dates.png "Dates screenshot" ) 
+
+
 In order to create a single new date for this event series, click :btn-icon:fa3-plus: Create a new date:. 
 Choose a name, an event start time, and at least one product for the date. 
 Once you are happy with your choices for the mandatory settings and the many optional settings on the page, click the :btn:Save: button. 
@@ -81,6 +84,24 @@ Choose a name, event start time, and at least one product for the date.
 Once you are happy with your choices for the mandatory settings and the many optional settings on the page, click the :btn:Save: button. 
 You will be taken back to the dates overview page titled "Dates". 
 The dates you just created are now displayed in the list on this page. 
+
+As a practical example, let us assume you are offering an event titled "Sales workshop" every Monday and Wednesday at 10 AM in the second half of the year 2025. 
+In the box titled "Repetition rule", make the following choice: 
+"Repeat every 1 week(s), starting at 2025-07-01." 
+Check the boxes next to "Monday" and "Wednesday". 
+Select the radio button next to "Repeat until" and choose the date 2025-12-31. 
+
+The "Preview" on the right side of the page is useful for double-checking the repetition rule. 
+It will display the first ten and last ten dates you are about to create. 
+
+Under "Times", click the :btn-icon:fa3-plus: Add a single time slot: button. 
+Choose an event start time of 10:00:00. 
+Optionally, you may choose an event end time of 12:00:00 and an admission time of 09:30:00. 
+
+Under "General information", put the name "Sales workshop" into the "Name" field. 
+Under "Quotas", choose "Standard ticket" in the "Products" field. 
+
+Once you have taken these steps and made your optional choices, click the :btn:Save: button. 
 
 ## Troubleshooting 
 
