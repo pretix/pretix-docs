@@ -63,15 +63,14 @@ Under "Event type", select "Event series or time slot booking".
 The rest of the process is the same as the creation of a singular event. 
 For more information on creating an event, see the tutorial page on [event creation](../tutorial/event.md). 
 
-![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
+![Page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
 ### Editing dates in the event series 
 
 Navigate to :navpath:Your event series → :fa3-calendar: Dates:. 
 This page displays the list of currently existing event dates and allows you to create, edit, clone and delete them.
 
-![Screenshot of page titled "Dates", displaying buttons for creating a single or multiple new dates. ](../assets/screens/event-series/dates.png "Dates screenshot" ) 
-
+![Page titled "Dates", displaying buttons for creating a single or multiple new dates. ](../assets/screens/event-series/dates.png "Dates screenshot" ) 
 
 In order to create a single new date for this event series, click :btn-icon:fa3-plus: Create a new date:. 
 Choose a name, an event start time, and at least one product for the date. 
@@ -84,6 +83,8 @@ Choose a name, event start time, and at least one product for the date.
 Once you are happy with your choices for the mandatory settings and the many optional settings on the page, click the :btn:Save: button. 
 You will be taken back to the dates overview page titled "Dates". 
 The dates you just created are now displayed in the list on this page. 
+
+![Page titled "Create multiple dates", displaying options for a repetition rule and times, as well as a preview of dates about to be created. ](../assets/screens/event-series/create-multiple-example.png "Create multiple dates example" ) 
 
 As a practical example, let us assume you are offering an event titled "Sales workshop" every Monday and Wednesday at 10 AM in the second half of the year 2025. 
 In the box titled "Repetition rule", make the following choice: 
@@ -102,6 +103,8 @@ Under "General information", put the name "Sales workshop" into the "Name" field
 Under "Quotas", choose "Standard ticket" in the "Products" field. 
 
 Once you have taken these steps and made your optional choices, click the :btn:Save: button. 
+You will be taken back to the dates overview page titled "Dates". 
+If your venue closes on Christmas Eve and New Year's Eve, check the boxes next to those dates, scroll to the bottom of the page and click the :btn-icon:fa3-trash: Delete selected (2): button. 
 
 ## Troubleshooting 
 
