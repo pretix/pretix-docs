@@ -66,7 +66,7 @@ For more information on creating an event, see the tutorial page on [event creat
 
 ![Page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" ) 
 
-### Editing dates in the event series 
+### Creating and editing dates in the event series 
 
 Navigate to :navpath:Your event series → :fa3-calendar: Dates:. 
 This page displays the list of currently existing event dates and allows you to create, edit, clone and delete them.
