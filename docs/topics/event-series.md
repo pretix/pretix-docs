@@ -38,7 +38,8 @@ The individual dates of an event series will always share the same settings, wit
  - product quotas 
  - check-in rules 
 
-These parameters can be unified across several dates, or adjusted for each one individually. 
+These settings can be adjusted for each individual date, but you can also create several dates with unified settings in a single step. 
+For more information, see [Creating and editing dates in the event series](#creating-and-editing-dates-in-the-event-series). 
 
 We recommend creating an **event series** in use cases such as the following: 
 
