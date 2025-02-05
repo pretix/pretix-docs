@@ -1,6 +1,6 @@
 nav:
- - installation
  - index.md
+ - installation
  - updates.md
  - config.md
  - maintenance.md
