@@ -34,6 +34,7 @@ The exact process on your domain registrar or DNS provider.
 Navigate to :navpath:Your organizer → :fa3-wrench: Settings → Custom domain:. 
 In the "Domain name" field, enter the subdomain you just created. 
 Under "Domain usage", assign the domain one of three roles. 
+
 The "Organizer main domain" will be used used for your organizer page as well as all events with no other domain specified.
 The "Event domain" will be used for a single event. 
 The "Alternative domain" can be selected for some of your events individually.
@@ -60,3 +61,10 @@ You will have to specify an event in the "Event" field.
 The "Alternative organizer domain for a set of events" can be selected for some of your events individually.
 The events assigned to the alternative domain will be displayed on the alternative domain. 
 The organizer page will not be displayed on the alternative domain. 
+
+### Moving an event to a different domain 
+
+In order to move an event to a different domain, navigate to :navpath:Your event: → :fa3-wrench: Settings → General:. 
+On the :btn:Basics: tab, click the "Domain" drop-down menu. 
+The default setting is "Same as organizer account". 
+Select your preferred domain from the list and click the :btn:Save: button. 
