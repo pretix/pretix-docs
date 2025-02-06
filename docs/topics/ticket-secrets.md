@@ -63,3 +63,12 @@ The ticket becomes unusable and the attendee has to download a new one.
 
 If you want to switch to the signature scheme, navigate to :navpath:Your event: → :fa3-wrench: Settings → Tickets:.
 Under "Ticket code generator", select "pretix signature scheme 1". 
+
+## Additional information 
+
+pretix does not support linear barcodes, also known as 1D barcodes. 
+There are several reasons for this: 
+
+ 1. A linear barcode with 32 characters is too long to be scanned from a phone screen or from a small printed ticket. 
+ 2. A linear barcode does not have the redundancy of a QR code, so scanning it from damaged or dirty paper may be impossible. 
+ 3. Laser barcode scanners do not work on most phone screens, so a more advanced barcode scanner is necessary anyway. 
