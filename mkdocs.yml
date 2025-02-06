@@ -57,6 +57,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - def_list
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -85,6 +86,7 @@ plugins:
           build: true
           nav_translations:
             User guide: User Guide
+            Self hosting: Self-hosting
         - locale: de
           name: Deutsch
           build: true
@@ -94,6 +96,7 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Payment: Zahlung
+            Self hosting: Self-Hosting
           admonition_translations:
             note: Hinweis
             Note: Hinweis
