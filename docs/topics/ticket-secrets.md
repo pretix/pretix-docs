@@ -49,6 +49,7 @@ For all other cases, we recommend using the default option with randomly generat
 
 pretix offers an alternative to random ticket secrets: a signature-based code generation scheme called "pretix signature scheme 1". 
 Secrets generated with this scheme encode the product, the product variation, and, in case of an event series, the date. 
+
 The secret is then signed with an Ed25519 signature to prevent forging. 
 This means that neither a working connection to the server nor a database stored on the scanning device is necessary for ticket validation. 
 pretixSCAN needs only the ticket secret itself to validate the product. 
@@ -60,18 +61,19 @@ Thus, printing badges is also not possible.
 
 Second, if one of the main data points (product, variation, or date) is changed, then the ticket secret has to be moved to a revocation list and a new ticket secret has to be generated. 
 If the ticket is canceled, it also has to be moved to the revocation list. 
+
 The revocation list needs to be downloaded by all scanning devices, though it is usually much smaller than the full ticket database. 
 The original ticket becomes unusable and the attendee has to download the updated version of the ticket. 
 
-If you want to switch to the signature scheme, navigate to :navpath:Your event: → :fa3-wrench: Settings → Tickets:.
+If you want to switch to the signature scheme, navigate to :navpath:Your event → :fa3-wrench: Settings → Tickets:.
 Under "Ticket code generator", select "pretix signature scheme 1". 
 
 ### Comparison of scanning behavior 
 
 | Scan mode                                    | Online                | Offline                    |                                   |                          |                                                                           |
 |----------------------------------------------|-----------------------|----------------------------|                                   |                          |                                                                           |
-| Synchronization setting                      | any                   | Synchronize orders         |                                   | Don't synchronize orders |                                                                           |
-| Ticket secrets                               | any                   | Random                     | Signed                            | Random                   | Signed                                                                    |
+| **Synchronization setting**                      | **any**                   | **Synchronize orders**         |                                   | **Don't synchronize orders** |                                                                           |
+| **Ticket secrets**                               | **any**                   | **Random**                     | **Signed**                            | **Random**                   | **Signed**                                                                    |
 | Scenario supported on platforms              | Android, Desktop, iOS | Android, Desktop, iOS      | Android, Desktop                  | Android, Desktop, iOS    | Android, Desktop, iOS                                                     |
 | Synchronization speed for large data sets    |                       | slow                       | slow                              | fast                     | fast                                                                      |
 | Tickets can be scanned                       | yes                   | yes                        | yes                               | no                       | yes                                                                       |
