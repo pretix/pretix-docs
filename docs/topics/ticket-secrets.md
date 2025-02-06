@@ -18,11 +18,31 @@ This ticket secret is a code that can be represented as a sequence of characters
 By default, this code consists of 32 lower case characters and numbers. 
 The characters `o`, `O`, `1`, `i`, and `l` are **not** used to avoid confusion. 
 
+If you want to change the length of the ticket secret code, navigate to :navpath:Your event: → :fa3-wrench: Settings → Tickets:.
+Under "Length of ticket codes", choose a number between 12 and 64. 
+
 The approach with random ticket secrets has several advantages: 
 
  - Codes are short and easy to scan or type. 
  - Guessing or forging a valid ticket code is impossible. 
  - The code remains the same even if the product itself changes due to rebooking. 
 
-The main disadvantage to this approach is that random ticket secrets can only be validated by comparison to the database. 
+Random ticket secrets can only be validated by checking them against the database. 
 The device running pretixSCAN needs access to a database containing all ticket secrets that have been generated for the current event. 
+The default behavior of pretixSCAN is that it downloads the entire database onto the device itself. 
+This makes it possible to fall back to offline mode when the connection between the scanning device and the server is unreliable or unavailable. 
+
+There are a few situation in which this can lead to problems: 
+
+ - If the number of valid tickets for a single event exceeds 25,000, downloading the entire database onto the scanning device may be too resource-heavy and time-consuming. 
+ - If losing sensible data contained in the ticket database along with one of the scanning devices is unacceptable. 
+ - If the scanners operate in offline mode regularly and tickets have to be valid instantly after purchase (and a delay of a few minutes is unacceptable)
+
+If one or more conditions apply to the event you are organizing, you may want to switch to the pretix signature scheme for ticket secret generation instead. 
+The next section tells you how it works. 
+
+### pretix signature scheme 1
+
+
+If you want to switch to the signature scheme, navigate to :navpath:Your event: → :fa3-wrench: Settings → Tickets:.
+Under "Ticket code generator", select "pretix signature scheme 1". 
