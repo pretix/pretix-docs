@@ -57,7 +57,7 @@ The signature-based approach has two main downsides:
 First, scanning in offline mode is much more limited. 
 The scanning device does not have information about attendee names, seating, previous uses of the ticket, etc. 
 
-Second, if one of the main data points (product, variation, or date) is changed or canceled, then the ticket secret has to be moved to a revocation list and a new ticket secret has to be generated. 
+Second, if one of the main data points (product, variation, or date) is changed or the ticket is canceled, then the ticket secret has to be moved to a revocation list and a new ticket secret has to be generated. 
 The revocation list needs to be downloaded by all scanning devices, though it is usually much smaller than the full ticket database. 
 The ticket becomes unusable and the attendee has to download a new one. 
 
