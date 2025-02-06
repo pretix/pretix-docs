@@ -66,6 +66,24 @@ The original ticket becomes unusable and the attendee has to download the update
 If you want to switch to the signature scheme, navigate to :navpath:Your event: → :fa3-wrench: Settings → Tickets:.
 Under "Ticket code generator", select "pretix signature scheme 1". 
 
+### Comparison of scanning behavior 
+
+| Scan mode                                    | Online                | Offline                    |                                   |                          |                                                                           |
+|----------------------------------------------|-----------------------|----------------------------|                                   |                          |                                                                           |
+| Synchronization setting                      | any                   | Synchronize orders         |                                   | Don't synchronize orders |                                                                           |
+| Ticket secrets                               | any                   | Random                     | Signed                            | Random                   | Signed                                                                    |
+| Scenario supported on platforms              | Android, Desktop, iOS | Android, Desktop, iOS      | Android, Desktop                  | Android, Desktop, iOS    | Android, Desktop, iOS                                                     |
+| Synchronization speed for large data sets    |                       | slow                       | slow                              | fast                     | fast                                                                      |
+| Tickets can be scanned                       | yes                   | yes                        | yes                               | no                       | yes                                                                       |
+| Ticket is valid after sale                   | immediately           | next sync (~5 minutes)     | immediately                       | never                    | immediately                                                               |
+| Same ticket can be scanned multiple times    | no                    | yes, before data is synced | yes, before data is synced        | n/a                      | yes, always                                                               |
+| Custom check-in rules                        | yes                   | yes                        | yes (limited directly after sale) | n/a                      | yes, but only based on product, variation and date, not on previous scans |
+| Name and seat visible on scanner             | yes                   | yes                        | yes (except directly after sale)  | n/a                      | no                                                                        |
+| Order-specific check-in attention flag       | yes                   | yes                        | yes (except directly after sale)  | n/a                      | no                                                                        |
+| Ticket search by order code or name          | yes                   | yes                        | yes (except directly after sale)  | no                       | no                                                                        |
+| Check-in statistics on scanner               | yes                   | yes                        | mostly accurate                   | no                       | no                                                                        |
+| Support for add-on check-in with main ticket | yes                   | yes                        | yes (except directly after sale)  | no                       | no                                                                        |
+
 ## Additional information 
 
 pretix does not support generating linear barcodes, also known as 1D barcodes. 
