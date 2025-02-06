@@ -268,3 +268,21 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
     position: relative;
     top: -.1em;
 }
+
+/* pretix Widget */
+.md-typeset .pretix-widget a:before {
+    display: none !important;
+}
+.md-typeset .pretix-widget a:after {
+    display: none !important;
+}
+.md-typeset .pretix-button {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.md-typeset .pretix-button:hover {
+    border-color: #000;
+    background: #ccc;
+}
