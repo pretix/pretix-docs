@@ -95,6 +95,7 @@ For detailed information on how to set up and enable specific payment providers,
 Most payment providers charge a fee on every transaction they process. 
 If you are planning to pay this fee yourself, you do not need to change any settings. 
 If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
+
 Once you have done that, navigate to :navpath:Your Event → Settings → Payment:, and open the :btn:Advanced: tab. 
 In the dropdown menu labeled "Tax rule for payment fees", select the appropriate tax rule. 
 
@@ -172,6 +173,7 @@ If the example fees from above are applied to a purchase with a net total of $10
 Your customer will have to pay $257.96. 
 Note that this sum is smaller than the one resulting from the formula described above. 
 If you use this method for calculating the fee raised by an external payment provider, the amount added to your balance will be 249.756996 ≈ 249.76 and thus slightly smaller than the originally intended net total of $250. 
+
 Use the method described [above](index.md#passing-payment-provider-fees-on-to-your-customers) if you want your users to cover the payment fees charged by the payment provider.
 
 ### Deadlines
@@ -182,7 +184,15 @@ Navigate to :navpath:Your Event → Settings → Payment:.
 The "deadlines" tab lets you set payment terms measured in either days or minutes. 
 By default, the payment term for your customers is set to 14 days. 
 This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
+
 These settings apply on the event level, i.e. equally to all payment providers. 
+pretix does not support setting different deadlines for different payment providers because this could potentially make ordering and paying very confusing and frustrating for your customers. 
+
+Consider, for example, if pretix allowed different deadlines and a customer first places their order with one payment method, but then switched to a different one with a shorter deadline. 
+The customer's order would be rendered invalid and they would have to place a new one for reasons that are not clearly evident to them. 
+
+Alternatively, if each payment method's deadline was added on top of the old one, switching back and forth between payment methods would allow a customer to extend the deadline indefinitely. 
+It is for these reasons that pretix only lets you set unified payment deadlines that apply to all payment methods equally. 
 
 ## Troubleshooting 
 
@@ -207,8 +217,3 @@ Here is the full list of articles on setting up and using specific payment provi
  -  [Bank transfer](bank-transfer.md) 
  -  [Stripe](stripe.md) 
  -  [PayPal](paypal.md) 
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. 
-Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
