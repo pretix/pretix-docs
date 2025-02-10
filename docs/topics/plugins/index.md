@@ -1,40 +1,38 @@
-# Title
+# Plugins
 
-Plugins are optional parts of pretix that can be installed to extend the available functionality and that can be turned on or off completely for every event. For your event, a number of plugins might be active already, but you can unlock even more functionality by going to “Settings” → “Plugins” and enable more of them, if you need.
+Plugins are optional pieces of software that can be enabled or disabled for every event. 
+Plugins handle functions such as, but not limited to: 
 
-For each plugin, you will find a short description as well as an Enable/Disable button. The pretix website has an overview of available plugins and more details of them. If you are on the pretix.eu hosted service, look for the “pretix Hosted” badge in the plugin list to learn which ones are supported there.
+ - native features such as participant badges, emails, and seating plans
+ - integrations with payment providers such as Mollie or PayPal
+ - integrations with external services such as Google Analytics or Venueless 
+ - output formats such as PDF tickets or sales reports 
 
-If you are running pretix on your own server, refer to the installation manual of your installation type to learn how to install additional plugins (manual or Docker).
+Some plugins are active by default while others have to be enabled first. 
+The availability of plugins depends on the edition of pretix you are using. 
+You may have to install plugins before you can enable them. 
+If you are using pretix Enterprise, refer to the guide on [installing pretix Enterprise plugins](../../self-hosting/installation/enterprise.md). 
 
-This part of the documentation contains information about available plugins that can be used to extend pretix’s functionality. If you want to create a plugin, please go to the Developer documentation instead.
+This article explains how to manage pretix plugins that are already available. 
+If you want to create a plugin yourself, refer to the developer documentation.
+
+If you want to learn how to activate payment providers for your events, refer to the guide on [payment providers](../payment/index.md). 
 
 ## Prerequisites
 
-What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
+Plugins are handled on the event level, so you have to create an event first. 
 
 ## How To 
 
-What does the feature do? How do you use it? How do you apply it to your individual use case? This is the main body of the article. 
+In order to enable or disable plugins, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+This lands you on the :btn:Features: tab which lists plugins for optional features. 
+More plugins for functions such as integrations with payment providers or other external services can be found on the other tabs at the top of the page. 
 
-### Plugins for Payment Providers 
-
-pretix allows handling payment via more than three dozen payment providers. 
-There is a plugin for each one of them. 
-You have to enable the plugins for every payment provider that you want to use for your event. 
-This section is going to tell you how to do that. 
-
-![Top recommendations for available payment provider plugins. The Top recommendations are bank transfer, PayPal and Stripe. All of them have a green 'active' tag and a 'disable' button next to them.](../../assets/screens/payment-providers/plugins-top.png "Plugins Payment providers top recommendations")
-
-Navigate to :navpath:Your Event → Settings → Plugins:. 
-The :btn:payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe at the top of the page. 
-Below that, you can find the list of plugins for all other payment providers available in pretix. 
-By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
-
-![Part of the list of available payment provider plugins. Entries for Saferpay, secuconnect, SEPA direct debit, SOFORT and Stadtguthaben are visible. The SEPA option is active. The other entries have a purple 'enable' button next to them.](../../assets/screens/payment-providers/plugins-list.png "Plugins Payment providers list")
-
-Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
+On each tab, choose the plugins that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
 You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btn:Enable: button being replaced by a white :btn:Disable: button. 
 Disable any active plugins that you do not want to use for your event. 
+
+Most enabled plugins will add a corresponding entry to the sidebar menu via which grants access to its settings. 
 
 ## Troubleshooting 
 
