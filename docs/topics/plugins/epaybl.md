@@ -1,22 +1,14 @@
 # ePayBL
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
+    Since ePayBL is only available to german federal, provincial and communal entities, the following page is also only provided in german. Should you require assistance with ePayBL and do not speak this language, please feel free reach out to <support@pretix.eu>.
 
-Since ePayBL is only available to german federal, provincial and communal entities, the following page is also only provided in german. Should you require assistance with ePayBL and do not speak this language, please feel free reach out to <support@pretix.eu>.
-::::
 
 ## Einführung
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
+    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion `Kontierungsmodus`{.interpreted-text role="ref"}.
 
-Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion `Kontierungsmodus`{.interpreted-text role="ref"}.
-::::
 
 [ePayBL](https://www.epaybl.de/) - das ePayment-System von Bund und Länder - ist das am weitesten verbreitete Zahlungssystem für Bundes-, Länder-sowie kommunale Aufgabenträger. Während es nur wie eines von vielen anderen Zahlungssystemen scheint, so bietet es seinen Nutzern besondere Vorteile, wie die automatische Erfassung von Zahlungsbelegen, dem Übertragen von Buchungen in Haushaltskassen/-systeme sowie die automatische Erfassung von Kontierungen und Steuermerkmalen.
 
@@ -24,10 +16,9 @@ Rein technisch gesehen ist ePayBL hierbei nicht ein eigenständiger Zahlungsdien
 
 Im folgenden der schematische Aufbau einer Umgebung, in welcher ePayBL zum Einsatz kommt:
 
-<figure>
-<img src="img/epaybl_flowchart.png" class="screenshot" alt="img/epaybl_flowchart.png" />
-<figcaption>Quelle: Integrationshandbuch ePayBL-Konnektor, DResearch Digital Media Systems GmbH</figcaption>
-</figure>
+![Flowchart, das die Funktionsweise von ePayBVL erklären soll.](../../assets/screens/plugins/epaybl_flowchart.png "Flowchart ePayBL") 
+
+Quelle: Integrationshandbuch ePayBL-Konnektor, DResearch Digital Media Systems GmbH
 
 In diesem Schaubild stellt pretix, bzw. die von Ihnen als Veranstalter angelegten Ticketshops, das Fachverfahren dar.
 
@@ -39,7 +30,7 @@ Aus diesem Grund gibt es mit dem ePayBL-Konnektor eine weitere Abstraktionsschic
 
 Im Grunde müsste daher eigentlich immer gesagt werden, dass pretix eine Anbindung an den ePayBL-Konnektor bietet; nicht an "ePayBL" oder den "ePayBL-Server". Diese Unterscheidung kann bei der Ersteinrichtung und Anforderung von Zugangsdaten von Relevanz sein. Da in der Praxis jedoch beide Begriffe gleichbedeutend genutzt werden, wird im Folgenden auch nur von einer ePayBL-Anbindung die Rede sein - auch wenn explizit der Konnektor gemeint ist.
 
-## Kontierungsmodus {#Kontierungsmodus}
+## Kontierungsmodus 
 
 ePayBL ist ein Produkt, welches für die Abwicklung von Online-Zahlungsvorgängen in der Verwaltung geschaffen wurde. Ein Umfeld, in dem klar definiert ist, was ein Kunde gerade bezahlt und wohin das Geld genau fließt. Diese Annahmen lassen sich in einem Ticketshop wie pretix jedoch nur teilweise genauso abbilden.
 
