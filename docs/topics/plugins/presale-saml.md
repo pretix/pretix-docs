@@ -1,5 +1,3 @@
-> IdP skIDentity ePA NPA
-
 # Presale SAML Authentication
 
 The Presale SAML Authentication plugin is an advanced plugin, which most event organizers will not need to use. However, for the select few who do require strong customer authentication that cannot be covered by the built-in customer account functionality, this plugin allows pretix to connect to a SAML IdP and perform authentication and retrieval of user information.
@@ -8,13 +6,8 @@ Usage of the plugin is governed by two separate sets of settings: The plugin ins
 
 ## Plugin installation and initial configuration
 
-:::: note
-::: title
-Note
-:::
-
-If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section.
-::::
+!!! Note 
+    If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section.
 
 The plugin is installed as any other plugin in the pretix ecosystem. As a pretix system administrator, please follow the instructions in the the `Administrator documentation <admindocs>`{.interpreted-text role="ref"}.
 
@@ -42,13 +35,8 @@ level=global
 
 ### Global Level
 
-:::: note
-::: title
-Note
-:::
-
-If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section and follow the instructions on the upcoming Organizer Level settings.
-::::
+!!! Note 
+    If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section and follow the instructions on the upcoming Organizer Level settings.
 
 As a user with administrative privileges, please activate them by clicking the [Admin Mode]{.title-ref} button in the top right hand corner.
 
@@ -58,13 +46,8 @@ You should now see a new menu-item titled [SAML]{.title-ref} appear.
 
 Navigate to the organizer settings in the pretix backend. In the navigation bar, you will find a menu-item titled [SAML]{.title-ref} if your user has the [Can change organizer settings]{.title-ref} permission.
 
-:::: note
-::: title
-Note
-:::
-
-If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, the menu will only appear once one of our friendly customer service agents has enabled the Presale SAML Authentication plugin for at least one of your events. Feel free to get in touch with us!
-::::
+!!! Note 
+    If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, the menu will only appear once one of our friendly customer service agents has enabled the Presale SAML Authentication plugin for at least one of your events. Feel free to get in touch with us!
 
 ### Setting up the SP
 

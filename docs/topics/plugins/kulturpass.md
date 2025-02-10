@@ -1,12 +1,8 @@
 # KulturPass
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
+    Since the KulturPass is specific to event organizers within Germany, the following page is also only provided in German. Should you require assistance with the KulturPass and do not speak this language, please feel free reach out to <support@pretix.eu>.
 
-Since the KulturPass is specific to event organizers within Germany, the following page is also only provided in German. Should you require assistance with the KulturPass and do not speak this language, please feel free reach out to <support@pretix.eu>.
-::::
 
 ## Einführung
 
@@ -44,12 +40,9 @@ Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz
 
         Im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) finden Sie die benötigten Informationen indem Sie auf das Benutzer-Symbol in der oberen, rechten Ecke klicken, "Profil" und dann "API Schlüssel" auswählen bzw. indem Sie auf "Einstellungen" in der Navigation links und dann "Shop" auswählen.
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
 
-Zu jedem Zeitpunkt kann nur ein Hintergrundsystem mit dem KulturPass-System verbunden sein. Werden unterschiedliche Systeme oder gar mehrere pretix-Veranstalterkonten mit dem gleichen KulturPass-System verbunden, können keine Bestellungen mehr verarbeitet werden und Angebote nicht automatisiert an den KulturPass-Marktplatz übermittelt werden. Eingehende Bestellungen von Jugendlichen werden in diesem Fall automatisch abgelehnt, da diese nicht eindeutig zugeordnet werden können. Ebenso überschreibt die Bereitstellung der Angebote eines Systems die Angebote eines anderen Systems.
+    Zu jedem Zeitpunkt kann nur ein Hintergrundsystem mit dem KulturPass-System verbunden sein. Werden unterschiedliche Systeme oder gar mehrere pretix-Veranstalterkonten mit dem gleichen KulturPass-System verbunden, können keine Bestellungen mehr verarbeitet werden und Angebote nicht automatisiert an den KulturPass-Marktplatz übermittelt werden. Eingehende Bestellungen von Jugendlichen werden in diesem Fall automatisch abgelehnt, da diese nicht eindeutig zugeordnet werden können. Ebenso überschreibt die Bereitstellung der Angebote eines Systems die Angebote eines anderen Systems.
 
 Wenn Sie mehrere Systeme haben, die den KulturPass-Marktplatz bedienen sollen, wenden Sie sich bitte an den KulturPass-Support, um sich einen weiteren Shop einrichten zu lassen.
 ::::
@@ -66,15 +59,10 @@ Wenn Sie mehrere Systeme haben, die den KulturPass-Marktplatz bedienen sollen, w
 
     :   Nachdem die KulturPass-Erweiterung aktiviert wurde, müssen Sie sich entscheiden, welche Produkte Sie über den KulturPass-Marktplatz anbieten möchten. In der Bearbeitungs-Ansicht des jeweiligen Produktes finden Sie hierzu im Tab "Zusätzliche Einstellungen" eine Checkbox "Das Produkt kann mit dem KulturPass erworben werden".
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
+    Die Eigenschaft, dass ein Produkt durch den KulturPass-Marktplatz erworben werden kann, kann für beliebig viele Produkte aktiviert werden. Auf Grund der Funktionsweise des KulturPasses sollten Sie jedoch gerade bei vielen Artikeln mit unterschiedlich hohen Preisen darauf achten, dass die Preisspanne nicht zu hoch ausfällt.
+    Aktivieren Sie die Option für drei Produkte für 1, 10 und 100 Euro, so wird Ihr Angebot im KulturPass-Marktplatz für 100 Euro gelistet werden. Dies bedeutet im Umkehrschluss auch, dass das KulturPass-Guthaben eines Jugendlichen auch mindestens 100 Euro betragen muss, damit er Ihr Angebot in Anspruch nehmen kann - auch wenn die betroffene Person lediglich das 1 Euro-Angebot wahrnehmen möchte. Erst mit dem 100 Euro KulturPass-Einlösecode wählt die kaufende Person in Ihrem pretix-Shop aus, welches Produkt erworben werden soll. Ein Restguthaben wird nach dem Kauf automatisch zurückerstattet und dem KulturPass-Konto wieder gutgeschrieben.
 
-Die Eigenschaft, dass ein Produkt durch den KulturPass-Marktplatz erworben werden kann, kann für beliebig viele Produkte aktiviert werden. Auf Grund der Funktionsweise des KulturPasses sollten Sie jedoch gerade bei vielen Artikeln mit unterschiedlich hohen Preisen darauf achten, dass die Preisspanne nicht zu hoch ausfällt.
-
-Aktivieren Sie die Option für drei Produkte für 1, 10 und 100 Euro, so wird Ihr Angebot im KulturPass-Marktplatz für 100 Euro gelistet werden. Dies bedeutet im Umkehrschluss auch, dass das KulturPass-Guthaben eines Jugendlichen auch mindestens 100 Euro betragen muss, damit er Ihr Angebot in Anspruch nehmen kann - auch wenn die betroffene Person lediglich das 1 Euro-Angebot wahrnehmen möchte. Erst mit dem 100 Euro KulturPass-Einlösecode wählt die kaufende Person in Ihrem pretix-Shop aus, welches Produkt erworben werden soll. Ein Restguthaben wird nach dem Kauf automatisch zurückerstattet und dem KulturPass-Konto wieder gutgeschrieben.
-::::
 
 7.  
 
@@ -88,15 +76,9 @@ Aktivieren Sie die Option für drei Produkte für 1, 10 und 100 Euro, so wird Ih
 
         Bitte beachten Sie, dass Sie bei den Angaben präzise Titel und Beschreibungen verwenden, da der KulturPass-Marktplatz ausschließlich die Informationen aus diesem Bereich verwendet. Etwaige andere Informationen die Sie bspw. in den "Text auf Startseite"-Felder eingeben haben, erreichen das KulturPass-System nicht.
 
-:::: note
-::: title
-Note
-:::
-
-Gerade bei Veranstaltungsreihen nutzen viele pretix-Veranstalter gerne verkürzte Termin-Namen. Ein Schwimmbad würde beispielsweise Ihre Veranstaltungsreihe "Freibad Musterstadt" und die einzelnen Termine nur "Schwimmen" nennen.
-
-Während dies im pretix-Shop in einem gemeinsamen Kontext wunderbar funktioniert, würde eine Veranstaltung mit dem Titel "Schwimmen" im KulturPass-Marktplatz Informationen vermissen lassen. Wählen Sie daher für das Eingabefeld "Veranstaltungstitel" in der KulturPass-Konfiguration einen sprechenden Wert.
-::::
+!!! Note 
+    Gerade bei Veranstaltungsreihen nutzen viele pretix-Veranstalter gerne verkürzte Termin-Namen. Ein Schwimmbad würde beispielsweise Ihre Veranstaltungsreihe "Freibad Musterstadt" und die einzelnen Termine nur "Schwimmen" nennen.
+    Während dies im pretix-Shop in einem gemeinsamen Kontext wunderbar funktioniert, würde eine Veranstaltung mit dem Titel "Schwimmen" im KulturPass-Marktplatz Informationen vermissen lassen. Wählen Sie daher für das Eingabefeld "Veranstaltungstitel" in der KulturPass-Konfiguration einen sprechenden Wert.
 
 8.  
 
@@ -120,17 +102,11 @@ Die Gelder für mit dem KulturPass bezahlte Tickets erhalten Sie in Form einer S
 
 In Ihrem [KulturPass-Backend](https://kulturpass-de.mirakl.net/) können Sie über den Menüpunkt "Buchhaltung" Ihre bereits erfolgten und kommenden Auszahlungen betrachten.
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
+    Es ist von äußerster Wichtigkeit, dass Sie weder die eingehenden Bestellungen noch die Produkte und Angebote im KulturPass-Backend händisch bearbeiten - auch wenn dies möglich wäre.
+    Bei händischen Änderungen riskieren Sie, dass die Datenbasis zwischen pretix und dem KulturPass-System divergiert und es zu fehlerhaften Buchungen kommt. Wann immer möglich, sollten Sie Korrekturbuchungen und Änderungen ausschließlich über pretix vornehmen.
+    Sollte eine händische Änderung/Korrektur notwendig werden, wenden Sie sich bitte an den pretix-Support, damit wir die Auswirkungen evaluieren und vorab mit Ihnen besprechen können!
 
-Es ist von äußerster Wichtigkeit, dass Sie weder die eingehenden Bestellungen noch die Produkte und Angebote im KulturPass-Backend händisch bearbeiten - auch wenn dies möglich wäre.
-
-Bei händischen Änderungen riskieren Sie, dass die Datenbasis zwischen pretix und dem KulturPass-System divergiert und es zu fehlerhaften Buchungen kommt. Wann immer möglich, sollten Sie Korrekturbuchungen und Änderungen ausschließlich über pretix vornehmen.
-
-Sollte eine händische Änderung/Korrektur notwendig werden, wenden Sie sich bitte an den pretix-Support, damit wir die Auswirkungen evaluieren und vorab mit Ihnen besprechen können!
-::::
 
 Erstattungen für Stornos und Absagen können Sie wie gehabt über das pretix-Backend vornehmen. Der jeweilige Betrag wird dem KulturPass-Konto dann automatisch gutgeschrieben.
 

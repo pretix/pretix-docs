@@ -1,12 +1,7 @@
 # GetYourGuide
 
-:::: note
-::: title
-Note
-:::
-
-The GetYourGuide integration is currently in Beta. Please contact <support@pretix.eu> to enable the integration for your pretix.eu organizer account.
-::::
+!!! Note 
+    The GetYourGuide integration is currently in Beta. Please contact <support@pretix.eu> to enable the integration for your pretix.eu organizer account.
 
 ## Introduction
 
@@ -72,13 +67,9 @@ First of all, you need to make the decision on how you are planning on selling y
 
 Of course, in addition to creating products, you will also need to add them to a quota for them to be available for sale. The process for doing this is the very same as for any regular event or event series.
 
-:::: note
-::: title
-Note
-:::
+!!! Note 
+    When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.
 
-When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.
-::::
 
 For this reason, we recommend to place all GetYourGuide-eligible products into the same quota. Should you however opt to create multiple quotas which create an imbalance, pretix will report only the available number of tickets for the lowest relevant quota.
 
