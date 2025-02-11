@@ -35,10 +35,11 @@ Typically, the user interface will have a menu called "DNS entries", "DNS settin
 Wait for the changes to take place. 
 This may take a few minutes or a few hours. 
 
+Open the pretix backend and navigate to :navpath:Your organizer → :fa3-wrench: Settings → Custom domain:
 In the "Domain name" field, enter the subdomain you just created. 
 Under "Domain usage", assign the domain one of three roles. 
 
-The "Organizer main domain" will be used used for your organizer page as well as all events with no other domain specified.
+The "Organizer main domain" will be used for your organizer page as well as all events with no other domain specified.
 The "Event domain" will be used for a single event. 
 The "Alternative domain" can be selected for some of your events individually. 
 See section [Moving an event to an alternative domain](custom-domain.md#moving-an-event-to-an-alternative-domain) below for further information. 
@@ -52,7 +53,7 @@ It may take a few minutes for the changes to take place.
 
 ### pretix Enterprise and pretix Community 
 
-If you use pretix Enterprise or pretix Community, configure your webserver or reverse proxy to pass requests to the new domain to pretix. 
+If you are using pretix Enterprise or pretix Community, configure your webserver or reverse proxy to pass requests to the new domain to pretix. 
 The exact process depends on your setup. 
 
 Navigate to :navpath:Your organizer → :fa3-wrench: Settings: and open the :btn:Domains: tab. 
@@ -61,7 +62,7 @@ A new empty line will appear on the page.
 In that new line, enter the name of the new domain in the "Domain name" field. 
 
 Select a mode for the new domain. 
-The "Organizer domain" will be used used for your organizer page as well as all events with no other domain specified.
+The "Organizer domain" will be used for your organizer page as well as all events with no other domain specified.
 The "Event domain" will be used for a single event. 
 You will have to specify an event in the "Event" field. 
 The "Alternative organizer domain for a set of events" can be selected for some of your events individually.
