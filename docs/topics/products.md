@@ -1,8 +1,8 @@
-# Product structure guide
+# Product structure 
 
 A product is anything sold via pretix: tickets, gift cards, conference t-shirts and so on. 
 pretix offers you almost unlimited possibilities for configuring and structuring products. 
-This article guides you through the basic process of creating a product and explain how to implement a complex product structure with some of the more advanced features of pretix. 
+This article guides you through the basic process of creating a product and explains several practical applications of some of the more advanced features of pretix. 
 
 ## Prerequisites
 
@@ -12,21 +12,32 @@ Products are configured on the event level, so you have to create an event first
 
 This section guides you through the basic process of product creation. 
 This involves first creating categories, then the products themselves, and finally quotas. 
+You cannot create a product without choosing a category for it. 
+You cannot create a quota without adding at least one product to it. 
+So this sequence of actions is the most sensible. 
 
 ### Creating and editing categories
 
 ![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
 
 Categories separate standalone products from additional products. 
-You have to have at least two different categories if you want to sell not only admission tickets, but also extras such as stickers. 
+If you want to sell not only admission tickets, but also extras such as stickers, you have to have at least two different categories. 
 You also need an extra category if you are planning to use the cross-selling feature. 
-Finally, categories can help you group products into sensible categories both in the backend and in your shop. 
+Sorting products into categories can help you better keep track of them in the backend. 
+Finally, your shop page will display products grouped by categories which can help customers find the article they are looking for more easily. 
 
 In order to edit categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
 This page shows the list of all product categories. 
 
 Click the :btn-icon:fa3-plus: Create a new category: button and give the new category a descriptive name. 
 Choose the category type depending on the type of products in this category: normal, add-on, cross-selling, or normal + cross-selling. 
+
+Normal products are standalone products that can be purchased directly. 
+Add-on products are products that are only offered as add-ons to normal products. 
+Cross-selling products are products that are only offered in the cross-selling step as a customer is purchasing other products. 
+Finally, products in the "normal + cross-selling" category are both offered as standalone products and in the cross-selling step. 
+The "Cross-selling condition" setting below determines how products in cross-selling and normal + cross-selling categories are offered in your shop. 
+
 Click the :btn:Save: button at the bottom of the page. 
 This takes you back to the product categories page, which now also lists the newly created category. 
 
@@ -43,7 +54,7 @@ Choose a name, a description, a default price and a sales tax and click the :btn
 
 You can also edit an already existing product by clicking its name or the :btn-icon:fa3-edit:: edit button next to it in the list. 
 
-## Creating and editing quotas 
+### Creating and editing quotas 
 
 A quota determines how many instances of your product can be sold. 
 Every product has to be part of at least one quota before it becomes available in the shop. 
@@ -76,7 +87,7 @@ pretix will subtract from both quotas whenever a discount ticket is sold, and on
 
 ### Early-bird tiers based on dates 
 
-Let's say you run a conference that has the following pricing scheme:
+Let's say you run a conference with the following pricing scheme:
 
  - 12 to 6 months before the event: € 450
  - 6 to 3 months before the event: € 550
@@ -85,7 +96,7 @@ Let's say you run a conference that has the following pricing scheme:
 Of course, you could just set up one product and change its price at the given dates manually, but if you want to set this up automatically, here's how:
 
 Create three products (e.g. "super early bird", "early bird", "regular ticket") with the respective prices and one shared quota of your total event capacity. 
-Then, set the available from and available until configuration fields of the products to automatically turn them on and off based on the current date.
+Then, set the "available from" and "available until" configuration fields of the products to automatically activate and deactivate them for sale based on the current date.
 
 If you're in an event series, this will likely not help you since these dates would need to be the same for all dates in your series. 
 As an alternative, you can go to the "Dates" section of your event series, select one or more dates, and scroll down to the "product settings" section. 
@@ -93,7 +104,7 @@ Here, you can also define availability times for individual products just for th
 
 ### Early-bird tiers based on ticket numbers
 
-Let's say you run a conference with 400 tickets that has the following pricing scheme:
+Let's say you run a conference with 400 tickets with the following pricing scheme:
 
  - First 100 tickets ("super early bird"): € 450
  - Next 100 tickets ("early bird"): € 550
