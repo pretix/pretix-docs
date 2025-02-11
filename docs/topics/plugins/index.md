@@ -33,15 +33,3 @@ You can tell that a plugin is enabled by the green "✓ Active" tag and the purp
 Disable any active plugins that you do not want to use for your event. 
 
 Most enabled plugins will add a corresponding entry to the sidebar menu via which grants access to its settings. 
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
-## Further Information
-
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
