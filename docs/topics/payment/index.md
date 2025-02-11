@@ -181,17 +181,22 @@ Use the method described [above](index.md#passing-payment-provider-fees-on-to-yo
 ![Payment settings page. The "deadlines" tab is open, showing various options for settings deadlines.](../../assets/screens/payment-providers/payment-deadlines.png "Payment deadlines settings")
 
 Navigate to :navpath:Your Event → Settings → Payment:. 
-The "deadlines" tab lets you set payment terms measured in either days or minutes. 
+The :btn:Deadlines: tab lets you set payment terms measured in either days or minutes. 
 By default, the payment term for your customers is set to 14 days. 
 This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
 
 These settings apply on the event level, i.e. equally to all payment providers. 
-pretix does not support setting different deadlines for different payment providers because this could potentially make ordering and paying very confusing and frustrating for your customers. 
+Keep this in mind if you are using payment methods with long processing times, such as bank transfers. 
 
-Consider, for example, if pretix allowed different deadlines and a customer first places their order with one payment method, but then switched to a different one with a shorter deadline. 
+pretix does not support setting different deadlines for different payment providers because this could make ordering and paying very confusing and frustrating for your customers. 
+
+Consider, for example, if pretix allowed different deadlines for each payment method. 
+A customer first places their order with one payment method, but then switched to a different one with a shorter deadline. 
 The customer's order would be rendered invalid and they would have to place a new one for reasons that are not clearly evident to them. 
+Placing a new order also means losing the reservation for the items in the shopping cart. 
+If a quota has been exhausted in the meantime, then your customer cannot order their preferred product anymore, possibly discouraging them from placing an order at all. 
 
-Alternatively, if each payment method's deadline was added on top of the old one, switching back and forth between payment methods would allow a customer to extend the deadline indefinitely. 
+Alternatively, if each payment method's deadline was added on top of the old one, switching back and forth between payment methods would allow a customer to extend the deadline indefinitely, thus never actually being required to pay you. 
 It is for these reasons that pretix only lets you set unified payment deadlines that apply to all payment methods equally. 
 
 ## Troubleshooting 
