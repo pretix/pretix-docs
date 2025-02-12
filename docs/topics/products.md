@@ -163,7 +163,6 @@ Let's take for example the following conference schedule, in which the lecture c
 | Wednesday afternoon | Workshop A | Workshop B                     |
 | Thursday morning    | Workshop C | Workshop D (20 € extra charge) |
 
-
 Assuming you already created one or more products for your general conference admission, we suggest that you additionally create:
 
  - A category called "Workshops" with the checkbox "Products in this category are add-on products" activated
@@ -187,7 +186,6 @@ If your schedule looks like this, it's not going to work great:
 | 11:00-13:00 | Talk 2                  | Workshop 1 (second half) |
 | 14:00-16:00 | Workshop 2 (first half) | Talk 3                   |
 | 16:00-18:00 | Workshop 2 (second half | Talk 4                   |
-
 
 In this case, we recommend that you go to Settings, then Plugins and activate the plugin Agenda constraints.
 
@@ -280,7 +278,6 @@ This approach makes your order data more complicated, since e.g. someone who buy
 
     Depending on the packages you offer, you might not need both the add-on and the bundle feature, i.e. you only need the add-on feature for the two-day pass and only the bundle feature for the all-day pass. 
     You could also set up the two-day pass like we showed here, but the all-day pass like in option A!
-
 
 ### Group discounts 
 
