@@ -315,23 +315,14 @@ This way, your ticket can be bought an arbitrary number of times – but no less
 
 ### Restricted audience 
 
-
 Not all events are for everyone. 
 Sometimes, there is a good reason to restrict access to your event or parts of your event only to a specific, invited group. 
-There's two ways to implement this with pretix:
+There are three ways to implement this with pretix:
 
 #### Option A: Required voucher codes
 
-If you check the option "This product can only be bought using a voucher" of one or multiple products, only people holding an applicable voucher code will be able to buy the product.
-
-You can then generate voucher codes for the respective product and send them out to the group of possible attendees. 
-If the recipients should still be able to choose between different products, you can create an additional quota and map the voucher to that quota instead of the products themselves.
-
-There's also the second option "This product will only be shown if a voucher matching the product is redeemed". 
-In this case, the existence of the product won't even be shown before a voucher code is entered – useful for a VIP option in a shop where you also sell other products to the general public. 
-Please note that this option does not work with vouchers assigned to a quota, only with vouchers assigned directly to the product.
-
-This option is appropriate if you know the group of people beforehand, e.g. members of a club, and you can mail them their access codes.
+You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
+Refer to [Vouchers: Exclusive product availability](vouchers.md#exclusive-product-availability) for detailed instructions. 
 
 #### Option B: Order approvals
 
@@ -343,8 +334,8 @@ This requires the customer to interact with the ticket shop twice (once for the 
 
 #### Option C: Registered customers & memberships
 
-You can also do this by requiring that customers have a customer account and an active membership. 
-You can find more information on this mechanism in the Use case: Season tickets article.
+You can also do this by requiring that customers have a [customer account](customer-accounts.md) and an active membership. 
+You can find more information on this mechanism under [season tickets](products.md#season-tickets).
 
 ### Time slots 
 
@@ -356,10 +347,7 @@ First of all, when creating your event, you need to select that your event repre
 ![](../assets/screens/products/create_step11.png "Create step 11")
 
 You can click here for a more general description of event series with pretix, but everything you need to know is in this chapter as well.
-
-#### General event setup
-
-Before you go further, set up your products that you want to sell for each time slot, such as different types of entry.
+TK nach dem Mergen auf event-series.md verlinken 
 
 #### Creating slots
 
@@ -376,7 +364,6 @@ You can do any interval you like.
 If you have different opening times on different week days, you will need to go through the creation process multiple times.
 
 ![](../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
-
 
 Scroll further down and create one or multiple quotas that define how many people can book a ticket for that time slot. 
 In this example, 50 people in total are allowed to enter within every slot:
@@ -431,7 +418,6 @@ Since this approach requires customers to be identified with a customer account,
 
 ![](../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
 
-
 After doing so, a new menu item "Customer accounts" will also show up in the main menu of your organizer account on the left. 
 Open it's menu and click on "Membership types". Then, select to "create a new membership type".
 
@@ -452,7 +438,6 @@ By default, the checkbox "The duration of the membership is the same as the dura
 
 ![](../assets/screens/products/seasontickets_issue1.png "Season tickets issue 1")
 
-
 To prevent confusion, it might be useful to turn off ticket downloading at "Settings" → "Tickets" for your new event. 
 That's it, you are now ready to sell season tickets!
 
@@ -462,7 +447,6 @@ In the "Availability" section of the product or variation settings, check the op
 You can of course repeat this with all events the season ticket holder should have access to.
 
 ![](../assets/screens/products/seasontickets_require1.png "Season tickets require 1")
-
 
 #### Option B: All-access in a single pass
 
