@@ -1,9 +1,8 @@
 # Ticket secrets 
 
 Every individual product sold via pretix has a ticket secret. 
-It is a series of characters that can be represented as a QR code. 
-The ticket secret serves as a unique identifier. 
-The QR code can be scanned with pretixSCAN to validate a ticket at your event's check-in. 
+The ticket secret is a series of characters that can be represented as a QR code and serves as a unique identifier. 
+The QR code can be scanned with pretixSCAN to validate an admission ticket or proof of purchase for merch at your event. 
 By default, the ticket secret is generated randomly. 
 
 This article tells you about pretix' default method for ticket secret generation in detail. 
@@ -38,14 +37,18 @@ This makes it possible to fall back to offline mode when a reliable connection b
 There are a few situation in which this can lead to problems: 
 
  - If the number of valid tickets for a single event exceeds 25,000 and downloading the entire database onto the scanning device is thus too resource-heavy and time-consuming. 
- - If losing sensible data contained in the ticket database along with one of the scanning devices is unacceptable. 
+ - If the risk of losing sensitive data contained in the ticket database along with one of the scanning devices is unacceptable. 
  - If the scanners operate in offline mode regularly and tickets have to be valid instantly after purchase (and a delay of a few minutes is unacceptable). 
 
-If one or more conditions apply to your event, you may want to switch to the pretix signature scheme for ticket secret generation instead. 
+If one or more of these conditions apply to your event, you may want to switch to the pretix signature scheme for ticket secret generation instead. 
 The next section tells you how it works. 
 For all other cases, we recommend using the default option with randomly generated ticket secrets. 
 
 ## Alternative method: ticket secret generation via signature scheme
+
+!!! Note 
+    Ticket secret generation via signature scheme is intended for advanced use cases only, primarily for events with more than 25,000 tickets. 
+    If you are uncertain whether you need to use this feature, it is very likely that you do not. 
 
 pretix offers an alternative to random ticket secrets: a signature-based code generation scheme called "pretix signature scheme 1". 
 Secrets generated with this scheme encode the product, the product variation, and, in case of an event series, the date. 
