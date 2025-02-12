@@ -225,7 +225,7 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 
 
 /* External links */
-.md-typeset a[href*="//"]:not(.glightbox):not(:where(
+.md-typeset a[href*="//"]:not(.glightbox):not(.md-social__link):not(:where(
   /* exclude hash only links */
   [href^="#"],
   /* exclude javascript only links */
