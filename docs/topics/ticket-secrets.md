@@ -2,7 +2,7 @@
 
 Every individual product sold via pretix has a ticket secret. 
 The ticket secret is a series of characters that can be represented as a QR code and serves as a unique identifier. 
-The QR code can be scanned with pretixSCAN to validate an admission ticket or proof of purchase for merch at your event. 
+The QR code can be scanned with pretixSCAN to validate an admission ticket or proof of purchase for merchandise at your event. 
 By default, the ticket secret is generated randomly. 
 
 This article tells you about pretix' default method for ticket secret generation in detail. 
