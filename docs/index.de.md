@@ -83,7 +83,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Möchten Sie immer auf dem neusten Stand bleiben? Folge unserem Blog oder melden Sie sich zu unserem Newsletter an.
+    Möchten Sie immer auf dem neusten Stand bleiben? Folgen Sie unserem Blog oder melden Sie sich zu unserem Newsletter an.
 
     :fa3-arrow-right: [Blog und Newsletter](https://pretix.eu/about/de/blog/)
 
