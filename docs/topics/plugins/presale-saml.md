@@ -33,7 +33,7 @@ level=global
 
 `level`
 
-:   `global` to use only a single, system-wide SP, `organizer` for multiple SPs, configured on the organizer-level. 
+"`global` to use only a single, system-wide SP, `organizer` for multiple SPs, configured on the organizer-level. 
 Defaults to `organizer`.
 
 ## Service Provider configuration
@@ -65,7 +65,7 @@ If you are not sure what setting you should choose for any of the fields, you sh
 
 `IdP Metadata URL`
 
-:   Please provide the URL where your IdP outputs its metadata. 
+"Please provide the URL where your IdP outputs its metadata. 
 For most IdPs, this URL is static and the same for all SPs. 
 If you are a member of the DFN-AAI, you can find the meta-data for the [Test-, Basic- and Advanced-Federation](https://doku.tid.dfn.de/en:metadata) on their website. 
 Please do talk with your local IdP operator though, as you might not even need to go through the DFN-AAI and might just use your institutions local IdP which will also host their metadata on a different URL.
@@ -75,29 +75,29 @@ Please do talk with your local IdP operator though, as you might not even need t
 
 `SP Entity Id`
 
-:   By default, we recommend that you use the system-proposed metadata-URL as the Entity Id of your SP. 
+"By default, we recommend that you use the system-proposed metadata-URL as the Entity Id of your SP. 
 However, if so desired or required by your IdP, you can also set any other, arbitrary URL as the SP Entity Id.
 
 `SP Name / SP Decription`
 
-:   Most IdP will display the name and description of your SP to the users during authentication. 
+"Most IdP will display the name and description of your SP to the users during authentication. 
 The description field can be used to explain to the users how their data is being used.
 
 `SP X.509 Certificate / SP X.509 Private Key`
 
-:   Your SP needs a certificate and a private key for said certificate. 
+"Your SP needs a certificate and a private key for said certificate. 
 Please coordinate with your IdP, if you are supposed to generate these yourself or if they are provided to you.
 
 `SP X.509 New Certificate`
 
-:   As certificates have an expiry date, they need to be renewed on a regular basis. 
+"As certificates have an expiry date, they need to be renewed on a regular basis. 
 In order to facilitate the rollover from the expiring to the new certificate, you can provide the new certificate already before the expiration of the existing one. 
 That way, the system will automatically use the correct one. 
 Once the old certificate has expired and is not used anymore at all, you can move the new certificate into the slot of the normal certificate and keep the new slot empty for your next renewal process.
 
 `Requested Attributes`
 
-:   An IdP can hold a variety of attributes of an authenticating user. 
+"An IdP can hold a variety of attributes of an authenticating user. 
 While your IdP will dictate which of the available attributes your SP can consume in theory, you will still need to define exactly which attributes the SP should request.
 
     The notation is a JSON list of objects with 5 attributes each:
@@ -121,17 +121,17 @@ While your IdP will dictate which of the available attributes your SP can consum
 
 `Encrypt/Sign/Require ...`
 
-:   Does what is says on the box - please inquire with your IdP for the necessary settings. 
+"Does what is says on the box - please inquire with your IdP for the necessary settings. 
 Most settings can be turned on as they increase security, however some IdPs might stumble over some of them.
 
 `Signature / Digest Algorithm`
 
-:   Please chose appropriate algorithms, that both pretix/your SP and the IdP can communicate with. 
+"Please chose appropriate algorithms, that both pretix/your SP and the IdP can communicate with. 
 A common source of issues when connecting to a Shibboleth-based IdP is the Digest Algorithm: pretix does not support `http://www.w3.org/2009/xmlenc11#rsa-oaep` and authentication will fail if the IdP enforces this.
 
 `Technical/Support Contacts`
 
-:   Those contacts are encoded into the SPs public meta data and might be displayed to users having trouble authenticating. 
+"Those contacts are encoded into the SPs public meta data and might be displayed to users having trouble authenticating. 
 It is recommended to provide a dedicated point of contact for technical issues, as those will be the ones to change the configuration for the SP.
 
 ## Event / Authentication configuration
@@ -144,12 +144,12 @@ On this page, the actual authentication can be configured.
 
 `Checkout Explanation`
 
-:   Since most users probably won't be familiar with why they have to authenticate to buy a ticket, you can provide them a small blurb here. 
+"Since most users probably won't be familiar with why they have to authenticate to buy a ticket, you can provide them a small blurb here. 
 Markdown is supported.
 
 `Attribute RegEx`
 
-:   By default, any successful authentication with the IdP will allow the user to proceed with their purchase. 
+"By default, any successful authentication with the IdP will allow the user to proceed with their purchase. 
 Should the allowed audience needed to be restricted further, a set of regular Expressions can be used to do this.
 
     An Attribute RegEx of `{}` will allow any authenticated user to pass.
@@ -160,14 +160,14 @@ Should the allowed audience needed to be restricted further, a set of regular Ex
 
 `RegEx Fail Explanation`
 
-:   Only used in conjunction with the above Attribute RegEx. 
+"Only used in conjunction with the above Attribute RegEx. 
 Should the user not pass the restrictions imposed by the regular expression, the user is shown this error-message.
 
     If you are - for example in an university context - restricting access to students only, you might want to explain here that Employees are not allowed to book tickets.
 
 `Ticket Secret SAML Attribute`
 
-:   In very specific instances, it might be desirable that the ticket-secret is not the randomly one generated by pretix but rather based on one of the users attributes - for example their unique ID or access card number.
+"In very specific instances, it might be desirable that the ticket-secret is not the randomly one generated by pretix but rather based on one of the users attributes - for example their unique ID or access card number.
 
     To achieve this, the name of a SAML-attribute can be specified here.
 
