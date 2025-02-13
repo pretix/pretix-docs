@@ -490,8 +490,19 @@ The logic needs to ensure the following requirements:
  - Season ticket holders can always get in.
 
 Here's an example on how to set this up:
+Create an OR-bracket (At least one of the conditions below). 
+Within that OR-condition, create two AND-brackets (All of the conditions below). 
+Within the first AND-bracket, create the following conditions: 
 
-![](../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
+ - "Product" "is one of" "Day pass" 
+ - "Current date and time" "is after" "Event start" with a tolerance of 0 
+ - "Current date and time" "is before" "Event end" with a tolerance of 0 
+ - "Number of previous entries" equals 0 
+
+Then, within the second AND-bracket, create the following condition: 
+"Product" "is one of" "Season pass".  
+
+![Custom check-in rule page set up according to the instructions above.](../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
 
 ### Mixed taxation 
 
