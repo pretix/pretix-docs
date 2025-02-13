@@ -38,7 +38,7 @@ Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz
     Hinterlegen Sie hier die ID-Nummer Ihres KulturPass Marktplatz-Shops sowie einen API-Key. 
     Diese Daten müssen Sie nur einmalig für alle Ihre Veranstaltungen angeben.
 
-    Im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) finden Sie die benötigten Informationen indem Sie auf das Benutzer-Symbol in der oberen, rechten Ecke klicken, "Profil" und dann "API Schlüssel" auswählen bzw. indem Sie auf "Einstellungen" in der Navigation links und dann "Shop" auswählen.
+    Im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) finden Sie die benötigten Informationen indem Sie auf das Benutzer-Symbol in der oberen, rechten Ecke klicken, "Profil" und dann "API Schlüssel" auswählen bzw. indem Sie "Einstellungen" in der Navigation links und dann "Shop" auswählen.
 
 !!! Note 
     Zu jedem Zeitpunkt kann nur ein Hintergrundsystem mit dem KulturPass-System verbunden sein. 
