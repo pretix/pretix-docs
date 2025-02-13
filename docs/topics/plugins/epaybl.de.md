@@ -7,20 +7,20 @@
 ## Einführung
 
 !!! Note 
-    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion `Kontierungsmodus`{.interpreted-text role="ref"}.
+    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.de.md#kontierungsmodus).
 
-[ePayBL](https://www.epaybl.de/) – das ePayment-System von Bund und Länder – ist das am weitesten verbreitete Zahlungssystem für Bundes-, Länder-sowie kommunale Aufgabenträger. 
-Während es nur wie eines von vielen anderen Zahlungssystemen scheint, so bietet es seinen Nutzern besondere Vorteile, wie die automatische Erfassung von Zahlungsbelegen, dem Übertragen von Buchungen in Haushaltskassen/-systeme sowie die automatische Erfassung von Kontierungen und Steuermerkmalen.
+[ePayBL](https://www.epaybl.de/) – das ePayment-System von Bund und Länder – ist das am weitesten verbreitete Zahlungssystem für Bundes-, Länder- sowie kommunale Aufgabenträger. 
+Während es nur wie eines von vielen anderen Zahlungssystemen scheint, so bietet es seinen Nutzern besondere Vorteile, wie die automatische Erfassung von Zahlungsbelegen, das Übertragen von Buchungen in Haushaltskassen/-systeme sowie die automatische Erfassung von Kontierungen und Steuermerkmalen.
 
-Rein technisch gesehen ist ePayBL hierbei nicht ein eigenständiger Zahlungsdienstleister sondern nur ein eine Komponente im komplexen System, das die Zahlungsabwicklung für Kommunen und Behörden ist.
+Rein technisch gesehen ist ePayBL hierbei nicht ein eigenständiger Zahlungsdienstleister, sondern nur eine Komponente im komplexen System der Zahlungsabwicklung für Kommunen und Behörden.
 
 Im folgenden der schematische Aufbau einer Umgebung, in welcher ePayBL zum Einsatz kommt:
 
-![Flowchart, das die Funktionsweise von ePayBVL erklären soll.](../../assets/screens/plugins/epaybl_flowchart.png "Flowchart ePayBL") 
+![Flowchart, das die Funktionsweise von ePayBL erklären soll.](../../assets/screens/plugins/epaybl_flowchart.png "Flowchart ePayBL") 
 
 Quelle: Integrationshandbuch ePayBL-Konnektor, DResearch Digital Media Systems GmbH
 
-In diesem Schaubild stellt pretix, bzw. die von Ihnen als Veranstalter angelegten Ticketshops, das Fachverfahren dar.
+Der als "Fachverfahren" beschriftete Kasten in diesem Schaubild steht für die Ticketshops, die Sie als Veranstalter in pretix angelegt haben. 
 
 ePayBL stellt das Bindeglied zwischen den Fachverfahren, Haushaltssystemen und dem eigentlichen Zahlungsdienstleister, dem sog. ZV-Provider dar. 
 Dieser ZV-Provider ist die Stelle, welche die eigentlichen Kundengelder einzieht und an den Händler auszahlt. 
@@ -29,7 +29,7 @@ Das Gros der Zahlungsdienstleister unterstützt pretix hierbei auch direkt; spri
 In der Vergangenheit zeigte sich jedoch schnell, dass nicht jeder IT-Dienstleister immer sofort die neueste Version von ePayBL seinen Nutzern angeboten hat. 
 Die Gründe hierfür sind mannigfaltig: Von fest vorgegebenen Update-Zyklen bis hin zu Systeme mit speziellen Anpassungen, kann leider nicht davon ausgegangen werden, dass alle ePayBL-Systeme exakt gleich ansprechbar sind - auch wenn es sich dabei eigentlich um einen standardisierten Dienst handelt.
 
-Aus diesem Grund gibt es mit dem ePayBL-Konnektor eine weitere Abstraktionsschicht welche optional zwischen den Fachverfahren und dem ePayBL-Server sitzt. 
+Aus diesem Grund gibt es mit dem ePayBL-Konnektor eine weitere Abstraktionsschicht, welche optional zwischen den Fachverfahren und dem ePayBL-Server sitzt. 
 Dieser Konnektor wird so gepflegt, dass er zum einen eine dauerhaft gleichartige Schnittstelle den Fachverfahren bietet aber gleichzeitig auch mit jeder Version des ePayBL-Servers kommunizieren kann – egal wie neu oder alt, wie regulär oder angepasst diese ist.
 
 Im Grunde müsste daher eigentlich immer gesagt werden, dass pretix eine Anbindung an den ePayBL-Konnektor bietet; nicht an "ePayBL" oder den "ePayBL-Server". 
@@ -46,9 +46,13 @@ Die ePayBL-Integration für pretix bietet daher zwei unterschiedliche Modi an, w
 
 ### Kontierung pro Position/Artikel
 
-Dieser Modus versucht den klassischen, behördentypischen ePayBL-Zahlungsvorgang abzubilden: Jede einzelne Position, die ein Kunde in den Warenkorb legt, wird auch genauso 1:1 an ePayBL und die Hintergrundsysteme übermittelt.
+Dieser Modus versucht den klassischen, behördentypischen ePayBL-Zahlungsvorgang abzubilden: Jede einzelne Position, die ein Kunde in den Warenkorb legt, wird genau so an ePayBL und die Hintergrundsysteme übermittelt.
 
-Hierbei muss zwingend auch für jede Position ein Kennzeichen für Haushaltsstelle und Objektnummer, sowie optional ein Kontierungsobjekt (`HREF`; bspw. `stsl=Steuerschlüssel;psp=gsb:Geschäftsbereich,auft:Innenauftrag,kst:Kostenstelle;` ) übermittelt werden.
+Hierbei muss zwingend auch für jede Position ein Kennzeichen für Haushaltsstelle und Objektnummer sowie optional ein Kontierungsobjekt (`HREF`; bspw. `stsl=Steuerschlüssel;psp=gsb:Geschäftsbereich,auft:Innenauftrag,kst:Kostenstelle;` ) übermittelt werden.
+
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und bearbeiten Sie eines der Produkte. 
+Öffnen Sie den Tab :btn:Zusätzliche Einstellungen: und hinterlegen Sie die oben genannten Daten. 
+Wiederholen Sie diese Schritte für jedes Produkt, dessen Kauf an ePayBL übermittelt werden soll. 
 
 Diese Daten sind vom Veranstalter entsprechend für jeden in der Veranstaltung angelegten Artikel innerhalb des Tabs "Zusätzliche Einstellungen" der Produkteinstellungen zu hinterlegen.
 
@@ -61,7 +65,7 @@ Aber auch wenn eine "Nachmeldung" möglich wäre, so wäre ein konkretes Auflös
 
 Daher gilt bei der Nutzung der Kontierung pro Position/Artikel: Der Kunde kann nur eine (erfolgreiche) Zahlung auf seine Bestellung leisten.
 
-Eine weitere Einschränkung dieses Modus ist, dass aktuell keine Gebühren-Positionen (Versandkosten, Zahlungs-, Storno-oder Servicegebühren) in diesem Modus übertragen werden können. 
+Eine weitere Einschränkung dieses Modus ist, dass aktuell keine Gebühren-Positionen (Versandkosten, Zahlungs-, Storno- oder Servicegebühren) in diesem Modus übertragen werden können. 
 Bitte wenden Sie sich an uns, wenn Sie diese Funktionalität benötigen.
 
 ### Kontierung pro Zahlvorgang
@@ -69,12 +73,12 @@ Bitte wenden Sie sich an uns, wenn Sie diese Funktionalität benötigen.
 Dieser Modus verabschiedet sich vom behördlichen "Jede Position gehört genau zu einem Haushaltskonto und muss genau zugeordnet werden". 
 Stattdessen werden alle Bestellpositionen – inklusive eventuell definierter Gebühren – vermengt und nur als ein großer Warenkorb, genauer gesagt: eine einzige Position an ePayBL sowie die Hintergrundsysteme gemeldet.
 
-Während im "pro Postion/Artikel"-Modus jeder Artikel einzeln übermittelt wird und damit auch korrekt pro Artikel der jeweilige Brutto- und Nettopreis, sowie der anfallende Steuerbetrag und ein Steuerkennzeichen (mit Hilfe des optionalen `HREF`-Attributs) übermittelt werden, ist dies im "pro Zahlvorgang"-Modus nicht möglich.
+Während im "pro Postion/Artikel"-Modus jeder Artikel einzeln übermittelt wird und damit auch korrekt pro Artikel der jeweilige Brutto- und Nettopreis sowie der anfallende Steuerbetrag und ein Steuerkennzeichen (mit Hilfe des optionalen `HREF`-Attributs) übermittelt werden, ist dies im "pro Zahlvorgang"-Modus nicht möglich.
 
 Stattdessen übermittelt pretix nur einen Betrag für den gesamten Warenkorb: Bruttopreis == Nettopreis. 
 Der Steuerbetrag wird hierbei als 0 übermittelt.
 
-Die Angabe einer Haushaltsstelle und Objektnummer, sowie optional der `HREF`-Kontierungsinformationen ist jedoch weiterhin notwendig – allerdings nicht mehr individuell für jeden Artikel/jede Position sondern nur für die gesamte Bestellung. 
+Die Angabe einer Haushaltsstelle und Objektnummer sowie optional der `HREF`-Kontierungsinformationen ist jedoch weiterhin notwendig – allerdings nicht mehr individuell für jeden Artikel/jede Position sondern nur für die gesamte Bestellung. 
 Diese Daten sind direkt in den ePayBL-Einstellungen der Veranstaltung unter Einstellungen -\> Zahlung -\> ePayBL vorzunehmen
 
 In der Praxis bedeutet dies, dass in einem angeschlossenen Haushaltssystem nicht nachvollzogen kann, welche Positionen konkret erworben und bezahlt wurden – stattdessen kann nur der Fakt, dass etwas verkauft wurde erfasst werden.
