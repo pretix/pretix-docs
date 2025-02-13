@@ -40,7 +40,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    When selling tickets, there is a number of legal or technical requirements to keep in mind. Our Trust and Compliance section shows you how pretix can help.
+    When selling tickets, there are a number of legal or technical requirements to keep in mind. Our Trust and Compliance section shows you how pretix can help.
 
     :fa3-arrow-right: [Trust and Compliance](trust/index.md)
 
