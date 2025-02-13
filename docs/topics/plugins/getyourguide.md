@@ -6,14 +6,14 @@
 
 ## Introduction
 
-Using third party aggregators, such als GetYourGuide, event organizers can sell tickets to their events not only on their own ticket-shop but also on the aggregator's portal. 
-While this service is not for free, it allows event organizers to reacher a larger audience that would otherwise not have found their way into the organizers webshop.
+Using third party aggregators, such als GetYourGuide, event organizers can sell tickets to their events not only on their own ticket shop but also on the aggregator's portal. 
+While this service is not for free, it allows event organizers to reach a larger audience that would otherwise not have found their way into the organizer's webshop.
 
 Using pretix' integration with GetYourGuide, event organizers can profit from an additional sales and revenue channel, while keeping the effort for setting up and maintaining multiple ticket shops to a minimum.
 
 ## Preparing your organizer account
 
-The first step in enabling the GetYourGuide integration, is to setup a corresponding Sales Channel, which will be used to properly attribute the sales generated. 
+The first step in enabling the GetYourGuide integration is to setup a corresponding Sales Channel, which will be used to properly attribute the sales generated. 
 This needs to be done only once per organizer account.
 
 In order to do so, navigate to :navpath:Your Organizer → :fa3-wrench: Settings → Sales channels: and click the :btn-icon:fa3-plus:Add a new channel: button.
@@ -36,14 +36,14 @@ In order to now sell your events on GetYourGuide, you will need to configure eac
 
  3. Configure one or more products to be sold on GetYourGuide
 
-    Either create a new or edit an existing product, that you would like to sell on GetYourGuide. 
+    Either create a new or edit an existing product that you would like to sell on GetYourGuide. 
     To do so, navigate to :navpath:Your Event → :fa3-ticket: Products: and select the product in question. 
     Switch to the :btn:Availability: tab and either check the box next to "Sell on all sales channels" or at least one of the boxes next to "Restrict to specific sales channels". 
-    Then, switch to the :btn:GetYourGuide: tab and set the GetYourGuide equivalent ticket category. 
+    Then, switch to the :btn:Additional settings: tab and set the GetYourGuide equivalent ticket category. 
     Within your event, there can be only one product per ticket category. 
     Depending on your further configuration, you must at least select one product to be in the "Adult" or "Group" category.
 
- 4. Configuring the GetYourGuide-plugin
+ 4. Configuring the GetYourGuide plugin
 
     Once you have configured one or more products to be eligible to be sold on GetYourGuide, you'll need to configure a few basic settings within the event. 
     Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
@@ -76,13 +76,13 @@ TK nach dem Mergen auf Product Structure verweisen
 !!! Note 
     When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.
 
-For this reason, we recommend to place all GetYourGuide-eligible products into the same quota. 
+For this reason, we recommend placing all GetYourGuide-eligible products into the same quota. 
 Should you however opt to create multiple quotas which create an imbalance, pretix will report only the available number of tickets for the lowest relevant quota.
 
 ## Connecting your event to GetYourGuide
 
 Once you have set up your event and products and performed all necessary configuration, you may want to use the Analyzer feature of the GetYourGuide-plugin. 
-If you want to do so, navigate to     Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
+If you want to do so, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
 
 The Analyzer should not display any blocking error messages and at least one event date that is ready for publishing on the GetYourGuide platform.
 
