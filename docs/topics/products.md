@@ -441,13 +441,14 @@ This makes sense if the capacity of your venue is virtually unlimited and you do
 
 #### Option A: Memberships and multiple tickets
 
-Since this approach requires customers to be identified with a customer account, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab.
+Since this approach requires customers to be identified with a customer account, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab. 
+See also: [Customer accounts](customer-accounts.md) 
 
 ![](../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
 
 After doing so, a new menu item "Customer accounts" will also show up in the main menu of your organizer account on the left. 
 Open its menu and click "Membership types". 
-Then, select "create a new membership type".
+Then, select to "create a new membership type".
 
 You can name the membership type in a way that clearly explains where it is valid, e.g. "season pass main location" or "season pass all locations". 
 There are a few details you can configure on this page, such as whether the season pass can be used by multiple different persons, or if the season pass can be used for multiple tickets for the same time slot. 
@@ -493,6 +494,10 @@ Here's an example on how to set this up:
 ![](../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
 
 ### Mixed taxation 
+
+{% include "warning-tax.md" %}
+
+For general information on how to set up taxation in pretix, refer to our article on [taxes](taxes.md). 
 
 Let's say you are a charitable organization in Germany and are allowed to charge a reduced tax rate of 7% for your educational event. 
 However, your event includes a significant amount of food, you might need to charge a 19% tax rate on that portion. 
