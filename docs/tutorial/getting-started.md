@@ -31,7 +31,7 @@ Costs will only occur when selling actual tickets.
 
     If your company, association or institution already has an organizer account, it is not necessary to create a new account. 
     Instead, you can ask your co-organizers to send you an invitation and add you to the team. 
-    Instructions on inviting someone to a team can be found  here../topics/teams.md#inviting-someone-to-your-team. 
+    Instructions on inviting someone to a team can be found  here../guides/teams.md#inviting-someone-to-your-team. 
     TK nach dem Mergen in richtigen Link verwandeln 
 
 ![pretix.eu, a website introducing pretix and its main features. There is a green button labeled 'Create your first ticket shop' on the right.](../assets/screens/account/pretix-eu.png "pretix.eu screenshot" ) 
@@ -49,7 +49,7 @@ We are going to choose a name by which our co-organizers will recognize us and w
 For this tutorial, our name is going to be Jordan Doe.
 
 Everyone should have their own personal login.
-If other members of our team should have access to the system as well, we will be able to invite ../topics/teams.md#inviting-someone-to-your-team them later in the process.
+If other members of our team should have access to the system as well, we will be able to invite ../guides/teams.md#inviting-someone-to-your-team them later in the process.
 TK nach dem Mergen in richtigen Link verwandeln 
 
 
