@@ -75,6 +75,7 @@ TK nach dem Mergen auf Product Structure verweisen
 
 !!! Note 
     When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.
+    GetYourGuide will always default to the smallest relevant quota, except if that quota is exhausted and another one is available. 
 
 For this reason, we recommend placing all GetYourGuide-eligible products into the same quota. 
 Should you however opt to create multiple quotas which create an imbalance, pretix will report only the available number of tickets for the lowest relevant quota.
