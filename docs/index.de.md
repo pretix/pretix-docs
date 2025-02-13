@@ -14,7 +14,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie zum pretix zum ersten Mal nutzen, dann kann unser [Tutorial](tutorial/getting-started.md) Ihnen die Grundlagen zeigen. 
+    Wenn Sie pretix zum ersten Mal nutzen, dann kann unser [Tutorial](tutorial/getting-started.md) Ihnen die Grundlagen zeigen. 
 
     :fa3-arrow-right: [Erste Schritte](tutorial/getting-started.md)
 
