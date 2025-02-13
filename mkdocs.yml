@@ -2,7 +2,7 @@ site_name: pretix Documentation
 repo_url: https://github.com/pretix/pretix-docs
 site_url: https://docs.pretix.eu
 site_author: pretix
-site_description: "Documentation on pretix, the all-in-one ticketing system."
+site_description: ""
 copyright: |
   © rami.io GmbH ·
   <a href="https://pretix.eu/about/en/imprint" target="_blank">Legal notice</a> ·
@@ -101,7 +101,7 @@ plugins:
           name: Deutsch
           build: true
           site_name: "pretix Dokumentation"
-          site_description: "Documentation von pretix: Ticketing von Anfang bis Ende gedacht."
+          site_description: ""
           copyright: |
             © rami.io GmbH ·
             <a href="https://pretix.eu/about/de/imprint" target="_blank">Impressum</a> ·
