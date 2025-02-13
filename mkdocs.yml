@@ -2,7 +2,11 @@ site_name: pretix Documentation
 repo_url: https://github.com/pretix/pretix-docs
 site_url: https://docs.pretix.eu
 site_author: pretix
-copyright: 2023 rami.io GmbH
+copyright: |
+  © rami.io GmbH ·
+  <a href="https://pretix.eu/about/en/imprint" target="_blank">Legal notice</a> ·
+  <a href="https://pretix.eu/about/en/privacy" target="_blank">Privacy policy</a> ·
+  Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
 validation:
   omitted_files: warn
   absolute_links: warn
@@ -93,6 +97,11 @@ plugins:
           name: Deutsch
           build: true
           site_name: "pretix Dokumentation"
+          copyright: |
+            © rami.io GmbH ·
+            <a href="https://pretix.eu/about/de/imprint" target="_blank">Impressum</a> ·
+            <a href="https://pretix.eu/about/de/privacy" target="_blank">Datenschutz</a> ·
+            Lizensiert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>
           nav_translations:
             User guide: Handbuch
             Organizers: Veranstalter

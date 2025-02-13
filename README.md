@@ -34,3 +34,18 @@ so view those pages for in-depth details. A number of plugins are installed that
 - ``<!-- md:enterprise -->`` Feature requires pretix Enterprise
 - ``<!-- md:plugin XY -->`` Feature requires plugin XY
 - ``<!-- md:experimental -->`` Feature is experimental
+
+## License
+
+The contents of this repository are licensed with the Creative Commons Attribution-ShareAlike 4.0 International license.
+You can find the full license text in the LICENSE file.
+
+## Contributing
+
+If you want to contribute to this project, feel free to send a pull request.
+If you plan a larger contribution, we encourage you to contact us first to discuss how it fits in the general structure of the project.
+By contributing to this repository, you agree that your contribution will be published under the before-mentioned Creative Commons license, where "attribution" is sufficiently given if a link to this page (or docs.pretix.eu, where this repository is published) is given, since naming each individual contributor to each file is often not feasible.
+
+## Contact
+
+You can contact our documentation team through support@pretix.eu.
