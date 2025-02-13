@@ -1,4 +1,4 @@
-# Gift Cards
+# Gift cards
 
 Gift cards are a type of product you can sell in one of your shops, which customers can then use as a payment method for another purchase in one of your shops. 
 Gift cards behave like a payment method when used in your shop and can be enabled or disabled like any other payment provider.
