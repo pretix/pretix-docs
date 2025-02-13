@@ -54,7 +54,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Suchen Sie etwas bestimmtes?
+    Suchen Sie etwas Bestimmtes?
     Sie können oben im Suchfeld ein Stichwort eingeben und unsere Dokumentation durchsuchen.
 
 </div>
