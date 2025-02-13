@@ -14,7 +14,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Du zum pretix zum ersten Mal benutzt, dann kann unser [Tutorial](tutorial/getting-started.md) Dir die Grundlagen zeigen. 
+    Wenn Sie zum pretix zum ersten Mal nutzen, dann kann unser [Tutorial](tutorial/getting-started.md) Ihnen die Grundlagen zeigen. 
 
     :fa3-arrow-right: [Erste Schritte](tutorial/getting-started.md)
 
@@ -22,7 +22,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Du nach detaillierteren Informationen über die Funktionen von pretix und ihre Benutzung suchst, dann bist Du bei den [Topics](topics/index.md) richtig. 
+    Wenn Sie nach detaillierteren Informationen über die Funktionen von pretix und ihre Benutzung suchen, dann sind Sie bei den [Topics](topics/index.md) richtig. 
 
     :fa3-arrow-right: [Topics](topics/index.md)
 
@@ -30,7 +30,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Du pretix auf einem eigenen Server betreiben willst, zeigt Dir unsere Dokumentation, wie Du das System installierst und pflegst.
+    Wenn Sie pretix auf einem eigenen Server betreiben willst, zeigt Ihnen unsere Dokumentation, wie Sie das System installieren und pflegen.
 
     :fa3-arrow-right: [Self-Hosting](self-hosting/index.md)
 
@@ -38,7 +38,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Du an pretix selbst arbeiten willst oder Dich an unsere REST-API anbinden möchtest, findet Du alle notwendigen Informationen in unserer Entwickler-Dokumentation.
+    Wenn Sie an pretix selbst arbeiten wollen oder sich an unsere REST-API anbinden möchten, finden Sie alle notwendigen Informationen in unserer Entwickler-Dokumentation.
 
     :fa3-arrow-right: [Entwickler- und API-Dokumentation](https://docs.pretix.eu/dev/)
 
@@ -46,7 +46,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. Bei manchen davon kann pretix helfen, mehr Information findest du im entsprechenden Bereich dieser Seite.
+    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. Bei manchen davon kann pretix helfen, mehr Information finden Sie im entsprechenden Bereich dieser Seite.
 
     :fa3-arrow-right: [Trust und Compliance](trust/index.md)
 
@@ -54,8 +54,8 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Suchst Du etwas bestimmtes?
-    Du kannst oben im Suchfeld ein Stichwort eingeben und unsere Dokumentation durchsuchen.
+    Suchen Sie etwas bestimmtes?
+    Sie können oben im Suchfeld ein Stichwort eingeben und unsere Dokumentation durchsuchen.
 
 </div>
 
@@ -75,7 +75,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wir sind open source! Auf GitHub findest Du sowohl den Quellcode für pretix und viele Erweiterungen, als auch für diese Dokumentation.
+    Wir sind open source! Auf GitHub finden Sie sowohl den Quellcode für pretix und viele Erweiterungen, als auch für diese Dokumentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
 
@@ -83,7 +83,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Möchtest Du auf dem neusten Stand bleiben? Folge unserem Blog oder melde dich zu unserem Newsletter an.
+    Möchten Sie immer auf dem neusten Stand bleiben? Folge unserem Blog oder melden Sie sich zu unserem Newsletter an.
 
     :fa3-arrow-right: [Blog und Newsletter](https://pretix.eu/about/de/blog/)
 
