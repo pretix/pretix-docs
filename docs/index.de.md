@@ -55,7 +55,7 @@ Willkommen in unserer neuen Dokumentation!
     ---
 
     Suchen Sie etwas Bestimmtes?
-    Sie können oben im Suchfeld ein Stichwort eingeben und unsere Dokumentation durchsuchen.
+    Sie können oben im Suchfeld ein Stichwort eingeben, um unsere Dokumentation zu durchsuchen.
 
 </div>
 
