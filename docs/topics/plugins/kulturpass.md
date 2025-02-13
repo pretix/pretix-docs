@@ -1,5 +1,9 @@
 # KulturPass
 
+!!! Note 
+    Since the KulturPass is specific to event organizers within Germany, the following page is also only provided in German. 
+    Should you require assistance with the KulturPass and do not speak this language, please feel free reach out to <support@pretix.eu>.
+
 ## Einführung
 
 Der [KulturPass](https://www.kulturpass.de/) ist ein Angebot der Bundesregierung für alle, die im laufenden Jahr ihren 18. Geburtstag feiern. 
