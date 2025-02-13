@@ -2,7 +2,7 @@ site_name: pretix Documentation
 repo_url: https://github.com/pretix/pretix-docs
 site_url: https://docs.pretix.eu
 site_author: pretix
-site_description: ""
+site_description: "Documentation on pretix, the all-in-one ticketing system."
 copyright: |
   © rami.io GmbH ·
   <a href="https://pretix.eu/about/en/imprint" target="_blank">Legal notice</a> ·
@@ -80,28 +80,15 @@ plugins:
   - glightbox
   - macros:
       include_dir: include
-  - social:
-      cards_layout_options:
-        background_color: "#3B1C4A"
-        font_family: "Titillium Web"
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
       languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-          nav_translations:
-            User guide: User Guide
-            Developer and API Docs: Developer and API docs
-            Trust: Trust and Compliance
-            Self hosting: Self-hosting
         - locale: de
           name: Deutsch
           build: true
           site_name: "pretix Dokumentation"
-          site_description: ""
+          site_description: "Dokumentation von pretix: Ticketing von Anfang bis Ende gedacht."
           copyright: |
             © rami.io GmbH ·
             <a href="https://pretix.eu/about/de/imprint" target="_blank">Impressum</a> ·
@@ -140,7 +127,21 @@ plugins:
             Example: Beispiel
             quote: Zitat
             Quote: Zitat
-
+        # English must be listed as the LAST language, otherwise the social preview card images
+        # get overridden with the other languages.
+        - locale: en
+          default: true
+          name: English
+          build: true
+          nav_translations:
+            User guide: User Guide
+            Developer and API Docs: Developer and API docs
+            Trust: Trust and Compliance
+            Self hosting: Self-hosting
+  - social:
+      cards_layout_options:
+        background_color: "#3B1C4A"
+        font_family: "Titillium Web"
   - git-revision-date-localized
 extra:
   generator: false
