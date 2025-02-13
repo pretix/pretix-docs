@@ -1,10 +1,10 @@
 # Plugins
 
 Plugins are optional pieces of software that can be enabled or disabled for every event. 
-Plugins handle functions such as, but not limited to: 
+Plugins handle functions including, but not limited to: 
 
- - native features such as participant badges, emails, and seating plans
- - integrations with payment providers such as Mollie or PayPal
+ - native features such as participant badges, [emails](../email.md), and seating plans
+ - integrations with [payment providers](../payment/index.md) such as Mollie or [PayPal](../payment/paypal.md)
  - integrations with external services such as Google Analytics or Venueless 
  - output formats such as PDF tickets or sales reports 
 
