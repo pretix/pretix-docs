@@ -4,7 +4,6 @@
     Since the KulturPass is specific to event organizers within Germany, the following page is also only provided in German. 
     Should you require assistance with the KulturPass and do not speak this language, please feel free reach out to <support@pretix.eu>.
 
-
 ## Einführung
 
 Der [KulturPass](https://www.kulturpass.de/) ist ein Angebot der Bundesregierung für alle, die im laufenden Jahr ihren 18. Geburtstag feiern. 
@@ -35,7 +34,8 @@ Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz
 
  4. Ersteinrichtung in pretix
 
-    Hinterlegen Sie nun die ID-Nummer Ihres KulturPass Marktplatz-Shops sowie einen API-Key in den [Einstellungen Ihres Veranstalterkontos](https://pretix.eu/control/organizer/-/settings/kulturpass) (Veranstalter-Konto -\> Einstellungen -\> KulturPass). 
+    Navigieren Sie zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → Kulturpass:. 
+    Hinterlegen Sie hier die ID-Nummer Ihres KulturPass Marktplatz-Shops sowie einen API-Key. 
     Diese Daten müssen Sie nur einmalig für alle Ihre Veranstaltungen angeben.
 
     Im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) finden Sie die benötigten Informationen indem Sie auf das Benutzer-Symbol in der oberen, rechten Ecke klicken, "Profil" und dann "API Schlüssel" auswählen bzw. indem Sie auf "Einstellungen" in der Navigation links und dann "Shop" auswählen.
@@ -51,13 +51,17 @@ Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz
 
  5. Aktivierung der KulturPass-Erweiterungen
 
-    Alle Veranstaltungen, die Sie über den KulturPass anbieten möchten, benötigen die [KulturPass-Erweiterung](https://pretix.eu/control/event/-/-/settings/plugins#tab-0-2-open). 
-    Aktivieren Sie diese bitte in jeder relevanten Veranstaltung über Einstellungen -\> Erweiterungen -\> Tab "Integrationen" -\> KulturPass.
+    Alle Veranstaltungen, die Sie über den KulturPass anbieten möchten, benötigen die KulturPass-Erweiterung. 
+    Um diese zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Plugins: und wechseln Sie zum Tab :btn:Integrationen:. 
+    Aktivieren Sie hier das Plugin "Kulturpass". 
+    Wiederholen Sie diese Schritte für jede Veranstaltung, für die Sie den Kulturpass nutzen möchten. 
 
  6. Konfiguration der Artikel
 
     Nachdem die KulturPass-Erweiterung aktiviert wurde, müssen Sie sich entscheiden, welche Produkte Sie über den KulturPass-Marktplatz anbieten möchten. 
-    In der Bearbeitungs-Ansicht des jeweiligen Produktes finden Sie hierzu im Tab "Zusätzliche Einstellungen" eine Checkbox "Das Produkt kann mit dem KulturPass erworben werden".
+    Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und bearbeiten Sie das relevante Produkt. 
+    Öffnen Sie den Tab :btn:Zusätzliche Einstellungen: und setzen Sie das Häkchen bei "Das Produkt kann mit dem KulturPass erworben werden".
+    Wiederholen Sie diese Schritte für jedes Produkt, dass Sie über den KulturPass-Marktplatz anbieten möchten. 
 
 !!! Note 
     Die Eigenschaft, dass ein Produkt durch den KulturPass-Marktplatz erworben werden kann, kann für beliebig viele Produkte aktiviert werden. 
@@ -72,13 +76,13 @@ Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz
 
    Je nach dem, ob es sich bei Ihrer Veranstaltung um eine Einzelveranstaltung oder eine Veranstaltungsreihe handelt, müssen Sie die folgende Einstellung einmalig oder pro Veranstaltungstermin vornehmen.
 
-    Einzelveranstaltungen konfigurieren Sie über den Menüpunkt "KulturPass" in den Einstellungen Ihrer Veranstaltung; Veranstaltungsreihen beim Anlegen oder Editieren eines jeden einzelnen Termins am Ende der Seite.
+   Einzelveranstaltungen konfigurieren Sie über den Menüpunkt "KulturPass" in den Einstellungen Ihrer Veranstaltung; Veranstaltungsreihen beim Anlegen oder Editieren eines jeden einzelnen Termins am Ende der Seite.
 
-    Um eine Veranstaltung oder einen Veranstaltungstermin im KulturPass-Marktplatz anzubieten, aktivieren Sie zunächst die Option "Diese Veranstaltung via KulturPass anbieten". 
-    Geben Sie im folgenden die benötigten Informationen an.
+   Um eine Veranstaltung oder einen Veranstaltungstermin im KulturPass-Marktplatz anzubieten, aktivieren Sie zunächst die Option "Diese Veranstaltung via KulturPass anbieten". 
+   Geben Sie im folgenden die benötigten Informationen an.
 
-    Bitte beachten Sie, dass Sie bei den Angaben präzise Titel und Beschreibungen verwenden, da der KulturPass-Marktplatz ausschließlich die Informationen aus diesem Bereich verwendet. 
-    Etwaige andere Informationen die Sie bspw. in den "Text auf Startseite"-Felder eingeben haben, erreichen das KulturPass-System nicht.
+   Bitte beachten Sie, dass Sie bei den Angaben präzise Titel und Beschreibungen verwenden, da der KulturPass-Marktplatz ausschließlich die Informationen aus diesem Bereich verwendet. 
+   Etwaige andere Informationen die Sie bspw. in den "Text auf Startseite"-Feldern eingeben haben, erreichen das KulturPass-System nicht.
 
 !!! Note 
     Gerade bei Veranstaltungsreihen nutzen viele pretix-Veranstalter gerne verkürzte Termin-Namen. 
@@ -104,7 +108,7 @@ Durch die Nutzung der pretix-Integration mit dem KulturPass-System müssen Sie s
 
 Für Ihre Kunden verhält sich der KulturPass wie eine Zahlungsmethode im Bestellprozess und wird dort neben Ihren anderen Zahlungsmethoden mit angeboten.
 
-Die Gelder für mit dem KulturPass bezahlte Tickets erhalten Sie in Form einer Sammel-Überweisung von der Stiftung Digitale Chancen auf das von Ihnen beim KulturPass Onboarding angegeben Bankkonto.
+Die Gelder für mit dem KulturPass bezahlte Tickets erhalten Sie in Form einer Sammel-Überweisung von der Stiftung Digitale Chancen auf das von Ihnen beim KulturPass-Onboarding angegeben Bankkonto.
 
 In Ihrem [KulturPass-Backend](https://kulturpass-de.mirakl.net/) können Sie über den Menüpunkt "Buchhaltung" Ihre bereits erfolgten und kommenden Auszahlungen betrachten.
 
@@ -118,7 +122,7 @@ In Ihrem [KulturPass-Backend](https://kulturpass-de.mirakl.net/) können Sie üb
 Erstattungen für Stornos und Absagen können Sie wie gehabt über das pretix-Backend vornehmen. 
 Der jeweilige Betrag wird dem KulturPass-Konto dann automatisch gutgeschrieben.
 
-Da nach Ausgabe eines KulturPass Einlöse-Codes dieser vom Kunden jederzeit oder vom System bei Nicht-(Komplett)Einlösung binnen 48 Stunden storniert werden kann, kann das im KulturPass-Backend angezeigte, auszuzahlende Guthaben fluktuieren. 
+Da nach Ausgabe eines KulturPass-Einlöse-Codes dieser vom Kunden jederzeit oder vom System bei Nicht-(Komplett-)Einlösung binnen 48 Stunden storniert werden kann, kann das im KulturPass-Backend angezeigte auszuzahlende Guthaben fluktuieren. 
 Da in der Regel Auszahlungen frühestens 48 Stunden nach der Aufgabe einer KulturPass-Bestellungen erfolgen, sollte Ihr Guthaben in der Regel nicht ins Negative gehen.
 
 ## Ablauf für Kunden
@@ -129,15 +133,15 @@ Im Falle von Veranstaltungen, die per pretix verkauft werden, wählt der Kunde e
 Der Link bringt den Kunden direkt auf die Seite der betreffenden pretix-Veranstaltung. 
 Hier wird der Kunde darauf hingewiesen, für welche Produkte der Code genutzt werden kann.
 
-Im Bezahlschritt des Verkaufsprozesses wird dem Kunden vorgeschlagen, seinen KulturPass Einlösecode nun zu nutzen, um die gewünschte Leistung zu erhalten.
+Im Bezahlschritt des Verkaufsprozesses wird dem Kunden vorgeschlagen, seinen KulturPass-Einlösecode nun zu nutzen, um die gewünschte Leistung zu erhalten.
 
 Wurde ein Artikel gewählt, welcher günstiger als der Wert des Einlösecodes war, wird das Restguthaben automatisch auf das KulturPass-Konto erstattet.
 
-Wurden hingegen mehrere Artikel in den Warenkorb gelegt, so kann die Differenz mit einem anderen, regulären Zahlungsmittel erfolgen.
+Wurden hingegen mehrere Artikel in den Warenkorb gelegt, so kann die Differenz mit einem anderen regulären Zahlungsmittel erfolgen.
 
 Einlösecodes, die vom Kunden nicht binnen 48 Stunden eingelöst werden, werden automatisch storniert und dem KulturPass-Konto wieder gutgeschrieben. 
-Dieser Mechanismus greift auch, wenn eine Veranstaltung mittlerweile ausverkauft ist und daher der Einlösecode nicht mehr Nutzbar ist.
+Dieser Mechanismus greift auch, wenn eine Veranstaltung mittlerweile ausverkauft ist und daher der Einlösecode nicht mehr nutzbar ist.
 
 ## Unterstützung
 
-Weitergehende Informationen zum KulturPass finden Sie auch auf der [Webseite des KulturPasses](https://www.kulturpass.de/), sowie im [KulturPass Serviceportal](https://service.kulturpass.de/help/).
+Weitergehende Informationen zum KulturPass finden Sie auch auf der [Webseite des KulturPasses](https://www.kulturpass.de/) sowie im [KulturPass Serviceportal](https://service.kulturpass.de/help/).
