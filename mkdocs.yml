@@ -108,7 +108,7 @@ plugins:
             Events: Veranstaltungen
             Payment: Zahlung
             Developer and API Docs: Entwickler- und API-Dokumentation
-            Trust: Trust and Compliance
+            Trust: Trust und Compliance
             Self hosting: Self-Hosting
           admonition_translations:
             note: Hinweis
