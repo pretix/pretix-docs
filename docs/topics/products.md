@@ -14,7 +14,7 @@ This section guides you through the basic process of product creation.
 This involves first creating categories, then the products themselves, and finally quotas. 
 You cannot create a product without choosing a category for it. 
 You cannot create a quota without adding at least one product to it. 
-So this sequence of actions is the most sensible. 
+Thus, this guide will explain those steps in that order.
 
 ### Creating and editing categories
 
@@ -187,7 +187,9 @@ If your schedule looks like this, it's not going to work great:
 | 14:00-16:00 | Workshop 2 (first half) | Talk 3                   |
 | 16:00-18:00 | Workshop 2 (second half | Talk 4                   |
 
-In this case, we recommend that you go to Settings, then Plugins and activate the plugin Agenda constraints.
+This issue can be solved with the "Agenda constraints" plugin. 
+In order to activate that plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
+Seek out the "Agenda constraints" plugin in the list and click the :btn:Enable: button next to it. 
 
 Then, create a product (without variations) for every single part that should be bookable (talks 1-4 and long workshops 1 and 2) as well as appropriate quotas for each of them.
 
@@ -199,7 +201,8 @@ If you fill in these values, pretix will automatically ensure no overlapping tal
 
 !!! Note
 
-    This option is currently only available on pretix Hosted. If you are interested in using it with pretix Enterprise, please contact sales@pretix.eu.
+    This option is currently only available on pretix Hosted. 
+    If you are interested in using it with pretix Enterprise, please contact sales@pretix.eu.
 
 ### Discount packages 
 
@@ -213,7 +216,8 @@ In this case, there are multiple different ways you could set this up with preti
 
 #### Option A: Combination products
 
-With this option, you just set up all the different combinations someone could by as a separate product. In this case, you would need 7 products:
+With this option, you just set up all the different combinations someone could by as a separate product. 
+In this case, you would need 7 products:
 
  - Day 1 pass
  - Day 2 pass
@@ -229,15 +233,18 @@ Then, you create three quotas, each one with the maximum capacity of your venue 
  - Day 2 quota, linked to "Day 2 pass", "Day 1+2 pass", "Day 2+3 pass", and "All-day pass"
  - Day 3 quota, linked to "Day 3 pass", "Day 2+3 pass", "Day 1+3 pass", and "All-day pass"
 
-This way, every person gets exactly one ticket that they can use for all days that they attend. You can later set up check-in lists appropriately to make sure only tickets valid for a certain day can be scanned on that day.
+This way, every person gets exactly one ticket that they can use for all days that they attend. 
+You can later set up check-in lists appropriately to make sure only tickets valid for a certain day can be scanned on that day.
 
-The benefit of this option is that your product structure and order structure stays very simple. However, the two-day packages scale badly when you need many products.
+The benefit of this option is that your product structure and order structure stays very simple. 
+However, the two-day packages scale badly when you need many products.
 
 We recommend this setup for most setups in which the number of possible combinations does not exceed the number of parts (here: number of days) by much.
 
 #### Option B: Add-ons and bundles
 
-We can combine the two features "product add-ons" and "product bundles" to set this up in a different way. Here, you would create the following five products:
+We can combine the two features "product add-ons" and "product bundles" to set this up in a different way. 
+Here, you would create the following five products:
 
  - Day 1 pass in a category called "Day passes"
  - Day 2 pass in a category called "Day passes"
@@ -272,7 +279,8 @@ For the all-day pass, you open the "Bundled products" tab in the settings of the
 This way, when buying an all-day pass, three free day passes will automatically be added to the cart. 
 Depending on your specific configuration, the user will now receive three separate tickets, one for each day.
 
-This approach makes your order data more complicated, since e.g. someone who buys an all-day pass now technically bought four products. However, this option allows for more flexibility when you have lots of options to choose from.
+This approach makes your order data more complicated, since e.g. someone who buys an all-day pass now technically bought four products. 
+However, this option allows for more flexibility when you have lots of options to choose from.
 
 !!! Tip
 
@@ -281,13 +289,14 @@ This approach makes your order data more complicated, since e.g. someone who buy
 
 ### Group discounts 
 
-Often times, you want to give discounts for whole groups attending your event.
+This section explains how to give discounts for whole groups attending your event.
 
 #### Automatic discounts
 
 pretix can automatically grant discounts if a certain condition is met, such as a specific group size. 
-To set this up, head to **Products**, **Discounts** in the event navigation and **Create a new discount**. 
-You can choose a name so you can later find this again. 
+
+To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
+You can choose a descriptive name such as "Discount for school classes" so you can find this again later. 
 You can also optionally restrict the discount to a specific time frame or a specific sales channel.
 
 Next, either select **Apply to all products** or create a selection of products that are eligible for the discount.
@@ -298,9 +307,13 @@ For a **buy-X-get-Y discount**, e.g. “if you buy 5 tickets, you get one free",
 
 #### Fixed group packages
 
-If you want to sell group tickets in fixed sizes, e.g. a table of eight at your gala dinner, you can use product bundles. Assuming you already set up a ticket for admission of single persons, you then set up a second product **Table (8 persons)** with a discounted full price. Then, head to the **Bundled products** tab of that product and add one bundle configuration to include the single admission product **eight times**. Next, create an unlimited quota mapped to the new product.
+If you want to sell group tickets in fixed sizes, e.g. a table of eight at your gala dinner, you can use product bundles. 
+Assuming you already set up a ticket for admission of individual persons, you then set up a second product **Table (8 persons)** with a discounted full price. 
+Then, head to the **Bundled products** tab of that product and add one bundle configuration to include the single admission product **eight times**. 
+Next, create an unlimited quota mapped to the new product.
 
-This way, the purchase of a table will automatically create eight tickets, leading to a correct calculation of your total quota and, as expected, eight persons on your check-in list. You can even ask for the individual names of the persons during checkout.
+This way, the purchase of a table will automatically create eight tickets, leading to a correct calculation of your total quota and, as expected, eight persons on your check-in list. 
+You can even ask for the individual names of the persons during checkout.
 
 #### Minimum order amount
 
@@ -323,8 +336,8 @@ Refer to [Vouchers: Exclusive product availability](vouchers.md#exclusive-produc
 
 #### Option B: Order approvals
 
-If you do not know your audience already, but still want to restrict it to a certain group, e.g. people with a given profession, you can check the "Buying this product requires approval" in the settings of your product. 
-If a customer tries to buy such a product, they will be able to place their order but can not proceed to payment. 
+If you do not know individual members of your audience already, but still want to restrict it to a certain group, e.g. people with a given profession, you can check the "Buying this product requires approval" in the settings of your product. 
+If a customer tries to buy such a product, they will be able to place their order but cannot proceed to payment. 
 Instead, you will be asked to approve or deny the order and only if you approve it, we will send a payment link to the customer.
 
 This requires the customer to interact with the ticket shop twice (once for the order, once for the payment) which adds a little more friction, but gives you full control over who attends the event.
@@ -343,13 +356,13 @@ First of all, when creating your event, you need to select that your event repre
 
 ![](../assets/screens/products/create_step11.png "Create step 11")
 
-You can click here for a more general description of event series with pretix, but everything you need to know is in this chapter as well.
+For general instructions on how to set up an event series with pretix, refer to our article on event series.
 TK nach dem Mergen auf event-series.md verlinken 
 
 #### Creating slots
 
 To create the time slots, you need to create a number of "dates" in the event series. 
-Select "Dates" in the navigation menu on the left side and click "Create many new dates". 
+Navigate to :navpath:Your event → :fa3-calendar: Dates: and click the :btn-icon:fa3-plus:Create many new dates: button. 
 Then, first enter the pattern of your opening days. 
 In the example, the museum is open week Tuesday to Sunday. 
 We recommend to create the slots for a few weeks at a time, but not e.g. for a full year, since it will be more complicated to change things later.
@@ -358,7 +371,7 @@ We recommend to create the slots for a few weeks at a time, but not e.g. for a f
 
 Then, scroll to the times section and create your time slots. 
 You can do any interval you like. 
-If you have different opening times on different week days, you will need to go through the creation process multiple times.
+If you have different opening times on different days of the week, you will need to go through the creation process multiple times.
 
 ![](../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
 
@@ -367,15 +380,20 @@ In this example, 50 people in total are allowed to enter within every slot:
 
 ![](../assets/screens/products/timeslots_create_31.png "Timeslots create 31")
 
-Do **not** create a check-in list at this point. We will deal with this further below in the guide. Now, press "Save" to create your slots.
+Do **not** create a check-in list at this point. 
+We will deal with this further below in the guide. 
+Now, press "Save" to create your slots.
 
 !!! Warning
 
-    If you create a lot of time slots at once, the server might need a few minutes to create them all in our system. If you receive an error page because it took too long, please do not try again immediately but wait for a few minutes. Most likely, the slots will be created successfully even though you saw an error.
+    If you create a lot of time slots at once, the server might need a few minutes to create them all in our system. 
+    If you receive an error page because it took too long, please do not try again immediately but wait for a few minutes. 
+    Most likely, the slots will be created successfully even though you saw an error.
 
 #### Event settings
 
-We recommend that you navigate to "Settings" > "General" > "Display" and set the settings "Default overview style" to "Week calendar":
+We recommend that you navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
+Open the :btn:Display: tab and set "Default overview style" to "Week calendar":
 
 ![](../assets/screens/products/timeslots_settings_11.png "Timeslots settings 11")
 
@@ -385,29 +403,41 @@ Now, your ticket shop should give users a nice weekly overview over all time slo
 
 #### Check-in
 
-If you want to scan people at the entrance of your event and only admit them at their designated time, we recommend the following setup: 
+If you want to scan tickets at the entrance to your event and only admit the ticket holders at their designated time, we recommend the following setup: 
 Go to "Check-in" in the main navigation on the left and create a new check-in list. 
-Give it a name and do not choose a specific data. We will use one check-in list for all dates. 
+Give it a name and do not choose a specific data. 
+We will use one check-in list for all dates. 
 Then, go to the "Advanced" tab at the top and set up two restrictions to make sure people can only get in during the time slot they registered for. 
-You can create the rules exactly like shown in the following screenshot:
 
-![](../assets/screens/products/timeslots_checkinlists1.png "Timeslots check-in lists 1")
+Under "Custom check-in rule", click the :btn-icon:fa3-plus-circle: Add condition: button and select "All of the conditions below (AND)" from the dropdown menu. 
+Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is after", then "Event start". 
+Leave the "Tolerance (minutes)" field empty. 
+Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is before", then "Event end". 
+Again, leave the "Tolerance (minutes)" field empty. 
+Your custom check-in rule should now look like the one in the following screenshot: 
+
+![Custom check-in rule page set up according to the instructions above.](../assets/screens/products/timeslots_checkinlists1.png "Timeslots check-in lists 1")
 
 If you want, you can enter a tolerance of e.g. "10" if you want to be a little bit more relaxed and admit people up to 10 minutes before or after their time slot.
 
 Now, download our Android or Desktop app and register it to your account. 
-The app will ask you to select one the time slots, but it does not matter, you can select any one of them and then select your newly created check-in list. 
+The app will ask you to select one of the time slots, but it does not matter, you can select any one of them and then select your newly created check-in list. 
 That's it, you're good to go!
 
 ### Season tickets
 
-Season tickets and similar time-based tickets are popular for swimming pools, sports clubs, theaters and lots of other types of venues. In this article, we show you different ways to set them up with pretix. Of course, other types of tickets such as week tickets, month tickets or tickets of ten can be created with the same mechanism.
+Season tickets and similar time-based tickets are popular for swimming pools, sports clubs, theaters and lots of other types of venues. 
+In this article, we show you different ways to set them up with pretix. 
+Of course, other types of tickets such as week tickets, month tickets or tickets of ten can be created with the same mechanism.
 
 There is a big difference between the two ways we show below.
 
-With Option A, a customer who purchases a season ticket creates an account with their email address and a password and the season ticket will be saved in that account. If the customer wants to use the season ticket, they need to buy an additional free ticket for the specific event they want to visit. This makes sense for all events or venues with limited capacity or reserved seating, because it still allows you to set an upper limit of people showing up for a specific event or time slot.
+With Option A, a customer who purchases a season ticket creates an account with their email address and a password and the season ticket will be saved in that account. 
+If the customer wants to use the season ticket, they need to buy an additional free ticket for the specific event they want to visit. 
+This makes sense for all events or venues with limited capacity or reserved seating, because it still allows you to set an upper limit of people showing up for a specific event or time slot.
 
-With Option B, a customer who purchases a season ticket receives a single ticket with a single QR code that can be used an unlimited number of times. This makes sense if the capacity of your venue is virtually unlimited and you do not need to know in advance how many season ticket holders will show up.
+With Option B, a customer who purchases a season ticket receives a single ticket with a single QR code that can be used an unlimited number of times. 
+This makes sense if the capacity of your venue is virtually unlimited and you do not need to know in advance how many season ticket holders will show up.
 
 #### Option A: Memberships and multiple tickets
 
@@ -416,7 +446,8 @@ Since this approach requires customers to be identified with a customer account,
 ![](../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
 
 After doing so, a new menu item "Customer accounts" will also show up in the main menu of your organizer account on the left. 
-Open it's menu and click on "Membership types". Then, select to "create a new membership type".
+Open its menu and click "Membership types". 
+Then, select "create a new membership type".
 
 You can name the membership type in a way that clearly explains where it is valid, e.g. "season pass main location" or "season pass all locations". 
 There are a few details you can configure on this page, such as whether the season pass can be used by multiple different persons, or if the season pass can be used for multiple tickets for the same time slot. 
@@ -473,7 +504,8 @@ For example, your desired tax structure might then look like this:
 
   - incl. € 23.95 VAT at 19%
 
-You can implement this in pretix using product bundles. In order to do so, you should create the following two products:
+You can implement this in pretix using product bundles. 
+In order to do so, you should create the following two products:
 
  - Conference ticket at € 450 with a 7% tax rule
 
