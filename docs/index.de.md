@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Wilkommen
 
 Willkommen in unserer neuen Dokumentation! 
