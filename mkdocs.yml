@@ -72,7 +72,10 @@ markdown_extensions:
 plugins:
   - search
   - privacy
-  - awesome-pages
+  - awesome-pages:
+      order: asc
+      sort_type: natural
+      order_by: title
   - glightbox
   - macros:
       include_dir: include
