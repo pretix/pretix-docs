@@ -46,7 +46,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. Bei manchen davon kann pretix helfen, mehr Information finden Sie im entsprechenden Bereich dieser Seite.
+    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. Bei manchen davon kann pretix helfen, mehr Informationen finden Sie im entsprechenden Bereich dieser Seite.
 
     :fa3-arrow-right: [Trust und Compliance](trust/index.md)
 
