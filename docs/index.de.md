@@ -30,7 +30,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie pretix auf einem eigenen Server betreiben willst, zeigt Ihnen unsere Dokumentation, wie Sie das System installieren und pflegen.
+    Wenn Sie pretix auf einem eigenen Server betreiben wollen, zeigt Ihnen unsere Dokumentation, wie Sie das System installieren und pflegen.
 
     :fa3-arrow-right: [Self-Hosting](self-hosting/index.md)
 
