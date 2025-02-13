@@ -61,7 +61,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    pretix.eu is the central entry-point to the pretix project and also the home of the commercial hosting service available.
+    pretix.eu is the central entry point to the pretix project and also the home of the commercial hosting service available.
 
     :fa3-arrow-right: [pretix.eu](https://pretix.eu)
 
