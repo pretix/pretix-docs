@@ -85,4 +85,5 @@ Dieser Modus der Kontierung bietet Ihnen auch als Vorteil gegenüber dem vorherg
 
 ## Einschränkungen
 
-Zum aktuellen Zeitpunkt erlaubt die pretix-Anbindung an ePayBL nicht das durchführen von Erstattungen von bereits geleisteten Zahlungen. Der Prozess hierfür unterscheidet sich von Behörde zu Behörde und muss daher händisch durchgeführt werden.
+Zum aktuellen Zeitpunkt erlaubt die pretix-Anbindung an ePayBL nicht das durchführen von Erstattungen von bereits geleisteten Zahlungen. 
+Der Prozess hierfür unterscheidet sich von Behörde zu Behörde und muss daher händisch durchgeführt werden.
