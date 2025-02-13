@@ -91,7 +91,7 @@ plugins:
           nav_translations:
             User guide: User Guide
             Developer and API Docs: Developer and API docs
-            Trust: Trust & Compliance
+            Trust: Trust and Compliance
             Self hosting: Self-hosting
         - locale: de
           name: Deutsch
@@ -108,7 +108,7 @@ plugins:
             Events: Veranstaltungen
             Payment: Zahlung
             Developer and API Docs: Entwickler- und API-Dokumentation
-            Trust: Trust & Compliance
+            Trust: Trust and Compliance
             Self hosting: Self-Hosting
           admonition_translations:
             note: Hinweis

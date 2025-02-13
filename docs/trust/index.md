@@ -1,4 +1,4 @@
-# Trust & Compliance
+# Trust and Compliance
 
 In this area, we inform you about legal and compliance topics and how they affect your usage of pretix.
 
