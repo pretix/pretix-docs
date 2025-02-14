@@ -356,8 +356,7 @@ First of all, when creating your event, you need to select that your event repre
 
 ![](../assets/screens/products/create_step11.png "Create step 11")
 
-For general instructions on how to set up an event series with pretix, refer to our article on event series.
-TK nach dem Mergen auf event-series.md verlinken 
+For general instructions on how to set up an event series with pretix, refer to our guide on [event series](event-series.md).
 
 #### Creating slots
 
