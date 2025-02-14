@@ -14,7 +14,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie pretix zum ersten Mal nutzen, dann kann unser [Tutorial](tutorial/getting-started.md) Ihnen die Grundlagen zeigen. 
+    Wenn Sie pretix zum ersten Mal nutzen, dann kann unser Tutorial Ihnen die Grundlagen zeigen. 
 
     :fa3-arrow-right: [Erste Schritte](tutorial/getting-started.md)
 
@@ -22,7 +22,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den [Topics](topics/index.md) richtig. 
+    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Topic richtig. 
 
     :fa3-arrow-right: [Topics](topics/index.md)
 
@@ -34,13 +34,13 @@ Willkommen in unserer neuen Dokumentation!
 
     :fa3-arrow-right: [Self-Hosting](self-hosting/index.md)
 
--   :fa3-wrench:{ .lg .middle } __Entwickler- und API-Dokumentation__
+-   :fa3-wrench:{ .lg .middle } __Entwicklungs- und API-Dokumentation__
 
     ---
 
-    Wenn Sie an pretix selbst arbeiten wollen oder sich an unsere REST-API anbinden möchten, finden Sie alle notwendigen Informationen in unserer Entwickler-Dokumentation.
+    Wenn Sie an pretix selbst arbeiten wollen oder sich an unsere REST-API anbinden möchten, finden Sie alle notwendigen Informationen in unserer Entwicklungs-Dokumentation.
 
-    :fa3-arrow-right: [Entwickler- und API-Dokumentation](https://docs.pretix.eu/dev/)
+    :fa3-arrow-right: [Entwicklungs- und API-Dokumentation](https://docs.pretix.eu/dev/)
 
 -   :fa3-legal:{ .lg .middle } __Trust und Compliance__
 
