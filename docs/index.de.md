@@ -46,7 +46,8 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. Bei manchen davon kann pretix helfen, mehr Informationen finden Sie im entsprechenden Bereich dieser Seite.
+    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. 
+    Bei manchen davon kann pretix helfen, mehr Informationen finden Sie im entsprechenden Bereich dieser Seite.
 
     :fa3-arrow-right: [Trust und Compliance](trust/index.md)
 
@@ -75,7 +76,8 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wir sind open source! Auf GitHub finden Sie sowohl den Quellcode für pretix und viele Erweiterungen, als auch für diese Dokumentation.
+    Wir sind open source! 
+    Auf GitHub finden Sie sowohl den Quellcode für pretix und viele Erweiterungen, als auch für diese Dokumentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
 
@@ -83,7 +85,8 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Möchten Sie immer auf dem neusten Stand bleiben? Folgen Sie unserem Blog oder melden Sie sich zu unserem Newsletter an.
+    Möchten Sie immer auf dem neusten Stand bleiben? 
+    Folgen Sie unserem Blog oder melden Sie sich zu unserem Newsletter an.
 
     :fa3-arrow-right: [Blog und Newsletter](https://pretix.eu/about/de/blog/)
 
