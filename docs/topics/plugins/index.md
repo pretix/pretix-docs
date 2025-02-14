@@ -14,8 +14,7 @@ You may have to install plugins before you can enable them.
 If you are using pretix Enterprise, refer to the guide on [installing pretix Enterprise plugins](../../self-hosting/installation/enterprise.md). 
 
 This article explains how to manage pretix plugins that are already available. 
-If you want to create a plugin yourself, refer to the developer documentation.
-TK nach dem Mergen auf Developer Docs verlinken
+If you want to create a plugin yourself, refer to the [developer documentation](https://docs.pretix.eu/dev/).
 
 If you want to learn how to activate payment providers for your events, refer to the guide on [payment providers](../payment/index.md). 
 
