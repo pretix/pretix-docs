@@ -31,7 +31,7 @@ Costs will only occur when selling actual tickets.
 
     If your company, association or institution already has an organizer account, it is not necessary to create a new account. 
     Instead, you can ask your co-organizers to send you an invitation and add you to the team. 
-    Instructions on inviting someone to a team can be found  [here](../topics/teams.md#inviting-someone-to-your-team). 
+    Instructions on inviting someone to a team can be found in our [guide on teams](../topics/teams.md#inviting-someone-to-your-team). 
 
 ![pretix.eu, a website introducing pretix and its main features. There is a green button labeled 'Create your first ticket shop' on the right.](../assets/screens/account/pretix-eu.png "pretix.eu screenshot" ) 
 
