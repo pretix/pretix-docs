@@ -30,7 +30,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie pretix auf einem eigenen Server betreiben wollen, zeigt Ihnen unsere Dokumentation, wie Sie das System installieren und pflegen.
+    Wenn Sie pretix auf einem eigenen Server betreiben wollen, zeigt Ihnen unsere Rubrik Self-Hosting, wie Sie das System installieren und pflegen.
 
     :fa3-arrow-right: [Self-Hosting](self-hosting/index.md)
 
@@ -38,7 +38,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie an pretix selbst oder mit unserer REST-API arbeiten wollen, finden Sie alle notwendigen Informationen in unserer Entwickler-Dokumentation.
+    Wenn Sie an pretix selbst oder mit unserer REST-API arbeiten wollen, finden Sie alle notwendigen Informationen in unserer Entwicklungs-Dokumentation.
 
     :fa3-arrow-right: [Entwicklungs- und API-Dokumentation](https://docs.pretix.eu/dev/)
 
