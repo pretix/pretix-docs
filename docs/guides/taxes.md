@@ -20,7 +20,7 @@ Taxes are handled on the event level, so you have to create an event first.
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
 Then, you assign that tax rule to each individual product. 
-If you are selling products with a 0.00% tax rate (such as [gift cards](../topics/gift-cards.md)), you still need to create a 0% tax rule first. 
+If you are selling products with a 0.00% tax rate (such as [gift cards](../guides/gift-cards.md)), you still need to create a 0% tax rule first. 
 
 When it comes to tax rules for free products, the only material difference is the tax rate printed on the invoice. 
 Create and assign the tax rule that you want to see on the invoice. 

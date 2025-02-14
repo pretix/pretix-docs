@@ -1,7 +1,7 @@
 nav:
  - ... | index*.md
  - tutorial
- - topics
+ - guides
  - self-hosting
  - Developer and API Docs: https://docs.pretix.eu/dev/
  - trust

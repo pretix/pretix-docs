@@ -2,7 +2,7 @@
 
 An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
 We just created an organizer account and our personal account at the same time. 
-It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and [accepting that invitation](../topics/teams.md#accepting-an-invitation-to-a-team). 
+It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and [accepting that invitation](../guides/teams.md#accepting-an-invitation-to-a-team). 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
 Here is a brief overview of the steps we are going to take in this section: 

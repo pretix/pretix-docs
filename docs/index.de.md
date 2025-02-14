@@ -18,13 +18,13 @@ Willkommen in unserer neuen Dokumentation!
 
     :fa3-arrow-right: [Erste Schritte](tutorial/getting-started.md)
 
--   :fa3-book:{ .lg .middle } __Topics__
+-   :fa3-book:{ .lg .middle } __Guides__
 
     ---
 
-    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Topics richtig. 
+    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Guides richtig. 
 
-    :fa3-arrow-right: [Topics](topics/index.md)
+    :fa3-arrow-right: [Guides](guides/index.md)
 
 -   :fa3-server:{ .lg .middle } __Self-Hosting__
 

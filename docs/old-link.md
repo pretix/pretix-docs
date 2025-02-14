@@ -7,7 +7,7 @@ We'd like to apologize for any inconvenience this causes.
 
 If you are using pretix for the first time, the best entry point into our new documentation is our [tutorial](tutorial/getting-started.md).
 
-If you are looking for in-depth information on the features of pretix and how to use them, refer to the [topics](topics/index.md) pages.
+If you are looking for in-depth information on the features of pretix and how to use them, refer to the [guides](guides/index.md) pages.
 
 You can also enter a keyword in the search field at the top of the page. 
 

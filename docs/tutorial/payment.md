@@ -68,9 +68,9 @@ Bank transfer, gift card, and Stripe should all have a green ":fa3-check: Enable
     By default, the pretix software is not able to monitor payments arriving at your bank account.
     On pretix Hosted, you can set up automated bank imports.
     On pretix Community and pretix Enterprise, you have to notify the pretix software of incoming payments—either by manually approving payments as complete, or by regularly importing digital bank statements. 
-    Read our guide on [monitoring incoming payments](../topics/payment/bank-transfer.md#monitoring-incoming-payments) before using bank transfer as a payment method in your shop. 
+    Read our guide on [monitoring incoming payments](../guides/payment/bank-transfer.md#monitoring-incoming-payments) before using bank transfer as a payment method in your shop. 
 
-For more information on using bank transfers, see [bank transfers](../topics/payment/bank-transfer.md). 
+For more information on using bank transfers, see [bank transfers](../guides/payment/bank-transfer.md). 
 
 ## Setting up invoices 
 
