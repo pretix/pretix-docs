@@ -9,7 +9,7 @@ Here is a quick summary of the steps we are going to take in this section:
  - [enable the collection](event.md#customer-and-attendee-data) of customer and attendee data 
  - [add images](event.md#shop-design) to the ticket shop 
 
-This covers all the necessary steps for creating an event and setting up the ticket shop so that we can modify our product to our needs in the next article of this tutorial. 
+This covers all the necessary steps for creating an event and setting up the ticket shop so that we can modify our products according to our needs in the next article of this tutorial. 
 
 ## Event creation 
 
@@ -91,7 +91,7 @@ We do not need to touch these quick settings at the moment.
 We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
 
 All we are going to do on this page is add two more pieces of information that are mandatory for our ticket shop to go live. 
-We will provide a general email address at which our customers can contact us in the Contact address" field. 
+We will provide a general email address at which our customers can contact us in the "Contact address" field. 
 This email address will be displayed in the page footer of our shop with the label "Contact event organizer". 
 
 We will provide a URL to legal imprint information for our organization's online presence in the "Imprint URL" field. 
@@ -105,7 +105,7 @@ We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in
 The event-level dashboard gives us an overview of the event's basic information and status. 
 It allows us to leave an internal comment for ourselves or our team and it logs recent changes. 
 
-![Screenshot of dashboard for a demo event titled Example Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard2.png "Event dashboard screenshot") 
+![Screenshot of dashboard for a demo event titled Tutorial Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../assets/screens/event/event-dashboard.png "Event dashboard screenshot") 
 
 At this point, the overview will probably display a warning that our organizer account is not yet active. 
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form. 
