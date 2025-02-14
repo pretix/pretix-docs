@@ -1,7 +1,7 @@
 # Guides
 
 Welcome to the guides section of the pretix documentation! 
-Our guides pages give you in-depth information on the features of pretix and how to use them. 
+Our guides give you in-depth information on the features of pretix and how to use them. 
 You can find an overview of those pages on the left. 
 
 You can also enter a keyword in the search field at the top of the page. 

@@ -22,7 +22,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    If you are looking for in-depth information on the features of pretix and how to use them, refer to the guides pages. 
+    If you are looking for in-depth information on the features of pretix and how to use them, refer to the guides. 
 
     :fa3-arrow-right: [Guides](guides/index.md)
 
