@@ -2,8 +2,7 @@
 
 An organizer account represents an entity that is running events, for example a company, an institution, or a person. 
 We just created an organizer account and our personal account at the same time. 
-It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member../topics/teams.md#accepting-an-invitation-to-a-team and accepting that invitation. 
-TK nach dem Mergen in richtigen Link verwandeln 
+It is also possible to gain (partial) access to an organizer account by being invited to pretix by a team member and [accepting that invitation](../topics/teams.md#accepting-an-invitation-to-a-team). 
 
 In this section of the tutorial, we will customize our organizer account and add necessary information to it. 
 Here is a brief overview of the steps we are going to take in this section: 
@@ -139,7 +138,7 @@ This information is mandatory.
 Merely providing a company name is not enough to get our account activated. 
 
 We are going to enter the full contact details of our company further down on the page. 
-The VAT ID is not mandatory unless we are in a EU country other than Germany and want to make use of the reverse charge policy for our fees.
+The VAT ID is not mandatory unless we are in an EU country other than Germany and want to make use of the reverse charge policy for our fees.
 
 The pretix team offers service in English and German. 
 We are going to choose English as our preferred language of correspondence. 
