@@ -90,7 +90,7 @@ This means that the ticket will only be displayed to people who hold a correspon
 Once we have set the checkbox and toggle, we will click the :btn:Save: button. 
 
 Our plan is to send voucher codes to our invited speakers which will grant them access to this specialized type of ticket. 
-For more information on vouchers, see [vouchers](../topics/vouchers.md). 
+For more information on vouchers, see [vouchers](../guides/vouchers.md). 
 
 ### Product with variants
 

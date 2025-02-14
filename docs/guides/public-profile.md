@@ -52,15 +52,3 @@ The primary color is used for headlines, links, and focus design elements. The d
 You can customize the accent colors for success and for errors. We strongly suggest using shades of green and red here. 
 
 The page background color refers to the background and __not__ the main body of the page. All text and elements will be displayed on the off-white main body, so you are free to choose a dark background along with dark primary and accent colors without sacrificing readability. 
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
-## Further Information
-
-What other media do we have on the topic? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant topics, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 

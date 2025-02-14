@@ -99,7 +99,7 @@ If you want to add the fee to your customer's total, consult an expert to make s
 Once you have done that, navigate to :navpath:Your Event → Settings → Payment:, and open the :btn:Advanced: tab. 
 In the dropdown menu labeled "Tax rule for payment fees", select the appropriate tax rule. 
 
-TK link to article on tax rules after merge
+If you want to learn more on how to handle taxes in pretix, refer to our guide on [taxes](../taxes.md). 
 
 Then, open the :btn:Payment providers: tab and then open the settings page for the payment provider for which you want to enable additional fees. 
 

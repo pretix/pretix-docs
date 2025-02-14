@@ -71,7 +71,7 @@ First of all, you need to make the decision on how you are planning on selling y
 
 Of course, in addition to creating products, you will also need to add them to a quota for them to be available for sale. 
 The process for doing this is the very same as for any regular event or event series.
-TK nach dem Mergen auf Product Structure verweisen  
+If you want to learn more on how to handle taxes in pretix, refer to our guide on [products](../products.md). 
 
 !!! Note 
     When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.

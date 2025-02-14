@@ -18,13 +18,13 @@ Welcome to the pretix documentation!
 
     :fa3-arrow-right: [Getting Started](tutorial/getting-started.md)
 
--   :fa3-book:{ .lg .middle } __Topics__
+-   :fa3-book:{ .lg .middle } __Guides__
 
     ---
 
-    If you are looking for in-depth information on the features of pretix and how to use them, refer to the topics pages. 
+    If you are looking for in-depth information on the features of pretix and how to use them, refer to the guides. 
 
-    :fa3-arrow-right: [Topics](topics/index.md)
+    :fa3-arrow-right: [Guides](guides/index.md)
 
 -   :fa3-server:{ .lg .middle } __Self-hosting__
 
