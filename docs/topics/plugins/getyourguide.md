@@ -82,13 +82,13 @@ Should you however opt to create multiple quotas which create an imbalance, pret
 
 ## Connecting your event to GetYourGuide
 
-Once you have set up your event and products and performed all necessary configuration, you may want to use the Analyzer feature of the GetYourGuide-plugin. 
+Once you have set up your event and products and performed all necessary configuration, you may want to use the Analyzer feature of the GetYourGuide plugin. 
 If you want to do so, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
 
 The Analyzer should not display any blocking error messages and at least one event date that is ready for publishing on the GetYourGuide platform.
 
 At this point, you will need to setup your event (called "product" in the GetYourGuide universe) on their [Supplier Portal](https://suppliers.getyourguide.com/) and connect it with your pretix shop. 
-To do so, please follow the [Connecting a new product to your Reservation System](https://supply.getyourguide.support/hc/en-us/articles/18008029689373-Connecting-a-new-product-to-your-Reservation-system) on the GetYourGuide Supply Partner Help Center.
+To do so, please follow the instructions for [Connecting a new product to your Reservation System](https://supply.getyourguide.support/hc/en-us/articles/18008029689373-Connecting-a-new-product-to-your-Reservation-system) on the GetYourGuide Supply Partner Help Center.
 
 Select "pretix.eu" as your reservation system; the required "product ID" can be found in the "Configuration" tab of the GetYourGuide plugin settings page.
 

@@ -7,7 +7,7 @@
 ## Einführung
 
 !!! Note 
-    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.de.md#kontierungsmodus).
+    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.md#kontierungsmodus).
 
 [ePayBL](https://www.epaybl.de/) – das ePayment-System von Bund und Länder – ist das am weitesten verbreitete Zahlungssystem für Bundes-, Landes- sowie kommunale Aufgabenträger. 
 Während es nur wie eines von vielen anderen Zahlungssystemen scheint, so bietet es in der Anwednung besondere Vorteile, wie die automatische Erfassung von Zahlungsbelegen, das Übertragen von Buchungen in Haushaltskassen/-systeme sowie die automatische Erfassung von Kontierungen und Steuermerkmalen.
