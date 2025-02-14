@@ -1,7 +1,7 @@
 # GetYourGuide
 
 !!! Note 
-    The GetYourGuide integration is currently in Beta. 
+    The GetYourGuide integration is currently in beta. 
     Please contact <support@pretix.eu> to enable the integration for your pretix.eu organizer account.
 
 ## Introduction
