@@ -22,7 +22,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Topic richtig. 
+    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Topics richtig. 
 
     :fa3-arrow-right: [Topics](topics/index.md)
 
