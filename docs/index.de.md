@@ -38,7 +38,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie an pretix selbst arbeiten wollen oder sich an unsere REST-API anbinden möchten, finden Sie alle notwendigen Informationen in unserer Entwicklungs-Dokumentation.
+    Wenn Sie an pretix selbst oder mit unserer REST-API arbeiten wollen, finden Sie alle notwendigen Informationen in unserer Entwickler-Dokumentation.
 
     :fa3-arrow-right: [Entwicklungs- und API-Dokumentation](https://docs.pretix.eu/dev/)
 
@@ -77,7 +77,7 @@ Willkommen in unserer neuen Dokumentation!
     ---
 
     Wir sind open source! 
-    Auf GitHub finden Sie sowohl den Quellcode für pretix und viele Erweiterungen, als auch für diese Dokumentation.
+    Auf GitHub finden Sie den Quellcode sowohl für pretix und viele Erweiterungen, als auch für diese Dokumentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
 

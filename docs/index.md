@@ -46,7 +46,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    When selling tickets, there are a number of legal or technical requirements to keep in mind. 
+    Selling tickets comes with some legal and technical requirements to keep in mind.
     Our Trust and Compliance section shows you how pretix can help.
 
     :fa3-arrow-right: [Trust and Compliance](trust/index.md)
@@ -68,7 +68,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    pretix.eu is the central entry point to the pretix project and also the home of the commercial hosting service available.
+    pretix.eu is the central entry point to the pretix project and the home of our commercial hosting service.
 
     :fa3-arrow-right: [pretix.eu](https://pretix.eu)
 
@@ -77,7 +77,7 @@ Welcome to the pretix documentation!
     ---
 
     We're open source! 
-    On GitHub, you can find both the source code for pretix and many plugins, as well as this documentation.
+    On GitHub, you can find the source both code for pretix and many plugins, as well as for this documentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
 
