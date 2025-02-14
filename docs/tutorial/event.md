@@ -88,7 +88,7 @@ But since this is the first event we're organizing with this organizer account, 
 
 The next page congratulates us on creating our event and gives us an opportunity to make quick changes to the products and basic settings for the event. 
 We do not need to touch these quick settings at the moment. 
-We will take a closer look at products (tickets, gift cards, etc.) in the next section of this tutorial. 
+We will take a closer look at products (tickets, gift cards, etc.) in the [next section](products.md) of this tutorial. 
 
 All we are going to do on this page is add two more pieces of information that are mandatory for our ticket shop to go live. 
 We will provide a general email address at which our customers can contact us in the "Contact address" field. 
