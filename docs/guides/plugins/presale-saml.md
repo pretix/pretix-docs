@@ -11,7 +11,7 @@ Usage of the plugin is governed by two separate sets of settings: The plugin ins
     If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section.
 
 The plugin is installed as any other plugin in the pretix ecosystem. 
-If you are hosting pretix yourself, please follow the [instructions](../../self-hosting/installation/enterprise.md) in the self-hosting documentation. 
+If you are hosting pretix yourself, please follow the [instructions in the self-hosting documentation](../../self-hosting/installation/enterprise.md). 
 
 Once installed, you will need to assess if you want (or need) your pretix instance to be a single SP for all organizers and events or if every event organizer has to provide their own SP.
 
