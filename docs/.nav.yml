@@ -1,3 +1,9 @@
+sort: 
+  by: title
+  sections: mixed
+  ignore_case: true
+  type: natural
+
 nav:
  - ... | index*.md
  - tutorial
