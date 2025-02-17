@@ -78,6 +78,7 @@ plugins:
   - awesome-pages:
       order: asc
       sort_type: natural
+      ignore_case: true
       order_by: title
   - glightbox
   - macros:
