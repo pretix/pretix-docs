@@ -13,7 +13,7 @@ We are going to start by [creating categories](products.md#creating-and-editing-
 
 ## Creating and editing categories
 
-![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
+![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../../assets/screens/products/categories.png "Product categories screenshot") 
 
 Categories can help us group products into sensible categories both in the backend and in our shop. 
 They also separate standalone products from additional products. 
@@ -29,7 +29,7 @@ Clicking the :btn:Save: button at the bottom of the page takes us back to the pr
 
 ## Creating and editing products
 
-![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../assets/screens/products/products.png "Products screenshot") 
+![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../../assets/screens/products/products.png "Products screenshot") 
 
 Now that we have prepared the necessary categories for our products, we can set about editing the existing products and creating new ones to suit our needs. 
 
@@ -48,7 +48,7 @@ Once we have done that, we are going to click the :btn:Save: button.
 
 ### Discount ticket
 
-![Page titled 'Create product', showing options such as item name, copy product information, product type and personalization.](../assets/screens/products/create.png "Create product screenshot") 
+![Page titled 'Create product', showing options such as item name, copy product information, product type and personalization.](../../assets/screens/products/create.png "Create product screenshot") 
 
 We will now create the discount ticket based on the "Standard ticket" we just edited. 
 There are two advantages to  this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them. 
@@ -94,7 +94,7 @@ For more information on vouchers, see [vouchers](../guides/vouchers.md).
 
 ### Product with variants
 
-![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../assets/screens/products/products.png "Product variations screenshot") 
+![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../../assets/screens/products/products.png "Product variations screenshot") 
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter. 
 It is not possible to edit a product without variations into a product with multiple variations. 
@@ -128,7 +128,7 @@ The list also displays the total capacity and how many items are left for each q
 
 ### Quotas for tickets 
 
-![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../assets/screens/products/quotas.png "Quotas screenshot") 
+![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../../assets/screens/products/quotas.png "Quotas screenshot") 
 
 First, we will edit a quota for our standard and discount tickets. 
 It makes sense to include both tickets in a single quota because we cannot plan ahead how many of the tickets we sell are going to be discount tickets. 
