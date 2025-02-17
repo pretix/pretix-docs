@@ -18,7 +18,7 @@ Thus, this guide will explain those steps in that order.
 
 ### Creating and editing categories
 
-![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
+![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../../assets/screens/products/categories.png "Product categories screenshot") 
 
 Categories separate standalone products from additional products. 
 If you want to sell not only admission tickets, but also extras such as stickers, you have to have at least two different categories. 
@@ -45,7 +45,7 @@ You can also edit an already existing category and change its name, description 
 
 ### Creating and editing products
 
-![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../assets/screens/products/products.png "Products screenshot") 
+![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../../assets/screens/products/products.png "Products screenshot") 
 
 If you want to create or edit products, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
 This page shows the list of all products. 
@@ -141,7 +141,7 @@ This guide will show you the quickest way to set up such an event with pretix.
 
 First of all, when creating your event, you need to select that your event represents an "event series":
 
-![](../assets/screens/products/create_step11.png "Create step 11")
+![](../../assets/screens/products/create_step11.png "Create step 11")
 
 For general instructions on how to set up an event series with pretix, refer to our guide on [event series](../event-series.md).
 
@@ -153,18 +153,18 @@ Then, first enter the pattern of your opening days.
 In the example, the museum is open week Tuesday to Sunday. 
 We recommend to create the slots for a few weeks at a time, but not e.g. for a full year, since it will be more complicated to change things later.
 
-![](../assets/screens/products/timeslots_create1.png "Timeslots create 1")
+![](../../assets/screens/products/timeslots_create1.png "Timeslots create 1")
 
 Then, scroll to the times section and create your time slots. 
 You can do any interval you like. 
 If you have different opening times on different days of the week, you will need to go through the creation process multiple times.
 
-![](../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
+![](../../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
 
 Scroll further down and create one or multiple quotas that define how many people can book a ticket for that time slot. 
 In this example, 50 people in total are allowed to enter within every slot:
 
-![](../assets/screens/products/timeslots_create_31.png "Timeslots create 31")
+![](../../assets/screens/products/timeslots_create_31.png "Timeslots create 31")
 
 Do **not** create a check-in list at this point. 
 We will deal with this further below in the guide. 
@@ -181,11 +181,11 @@ Now, press "Save" to create your slots.
 We recommend that you navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
 Open the :btn:Display: tab and set "Default overview style" to "Week calendar":
 
-![](../assets/screens/products/timeslots_settings_11.png "Timeslots settings 11")
+![](../../assets/screens/products/timeslots_settings_11.png "Timeslots settings 11")
 
 Now, your ticket shop should give users a nice weekly overview over all time slots and their availability:
 
-![](../assets/screens/products/timeslots_presale1.png "Timeslots presale 1")
+![](../../assets/screens/products/timeslots_presale1.png "Timeslots presale 1")
 
 #### Check-in
 
@@ -202,7 +202,7 @@ Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date a
 Again, leave the "Tolerance (minutes)" field empty. 
 Your custom check-in rule should now look like the one in the following screenshot: 
 
-![Custom check-in rule page set up according to the instructions above.](../assets/screens/products/timeslots_checkinlists1.png "Timeslots check-in lists 1")
+![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/timeslots_checkinlists1.png "Timeslots check-in lists 1")
 
 If you want, you can enter a tolerance of e.g. "10" if you want to be a little bit more relaxed and admit people up to 10 minutes before or after their time slot.
 
@@ -230,7 +230,7 @@ This makes sense if the capacity of your venue is virtually unlimited and you do
 Since this approach requires customers to be identified with a customer account, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab. 
 See also: [Customer accounts](../customer-accounts.md) 
 
-![](../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
+![](../../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
 
 After doing so, a new menu item "Customer accounts" will also show up in the main menu of your organizer account on the left. 
 Open its menu and click "Membership types". 
@@ -240,7 +240,7 @@ You can name the membership type in a way that clearly explains where it is vali
 There are a few details you can configure on this page, such as whether the season pass can be used by multiple different persons, or if the season pass can be used for multiple tickets for the same time slot. 
 You can also define a maximum number of usages, which is useful if you e.g. use this feature to add a "ticket of ten".
 
-![](../assets/screens/products/seasontickets_membershiptype1.png "Season tickets membership type 1")
+![](../../assets/screens/products/seasontickets_membershiptype1.png "Season tickets membership type 1")
 
 Next, you need a way of selling these season passes. 
 Theoretically this can be done through the same event series that you usually use, but it's probably cleaner and easier to find for customers if you create a new event that you only use to sell season passes. 
@@ -251,7 +251,7 @@ Inside that product's settings, head to the "Additional settings" section and lo
 Select the membership type you just created. 
 By default, the checkbox "The duration of the membership is the same as the duration of the event or event series date" is active, which is fine for our season ticket example, but you might need to unset it and provide custom timing for other ticket types such as week passes.
 
-![](../assets/screens/products/seasontickets_issue1.png "Season tickets issue 1")
+![](../../assets/screens/products/seasontickets_issue1.png "Season tickets issue 1")
 
 To prevent confusion, it might be useful to turn off ticket downloading at "Settings" → "Tickets" for your new event. 
 That's it, you are now ready to sell season tickets!
@@ -261,7 +261,7 @@ Move back to your existing event and create a new product or product variation o
 In the "Availability" section of the product or variation settings, check the option "Require a valid membership" and again select the membership type you created. 
 You can of course repeat this with all events the season ticket holder should have access to.
 
-![](../assets/screens/products/seasontickets_require1.png "Season tickets require 1")
+![](../../assets/screens/products/seasontickets_require1.png "Season tickets require 1")
 
 #### Option B: All-access in a single pass
 
@@ -288,7 +288,7 @@ Within the first AND-bracket, create the following conditions:
 Then, within the second AND-bracket, create the following condition: 
 "Product" "is one of" "Season pass".  
 
-![Custom check-in rule page set up according to the instructions above.](../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
+![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
 
 ### Mixed taxation 
 
