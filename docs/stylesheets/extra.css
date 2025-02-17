@@ -9,7 +9,14 @@
     --md-accent-fg-color--dark: #3b774c;
 }
 [data-md-color-scheme="default"] {
-    --md-typeset-a-color: #7F4A91;
+    --md-typeset-a-color: #7F5A91;
+    --md-accent-fg-color: #563D62;
+    --md-accent-fg-color--transparent: #563D621A;
+}
+[data-md-color-scheme="slate"] {
+    --md-typeset-a-color: #B568CF;
+    --md-accent-fg-color: #da7df8;
+    --md-accent-fg-color--transparent: #da7df81a;
 }
 
 /* Typo */
