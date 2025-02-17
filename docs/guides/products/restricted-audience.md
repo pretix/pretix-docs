@@ -12,7 +12,7 @@ This article will guide you through all of them.
 ### Option A: Required voucher codes
 
 You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
-Refer to [Vouchers: Exclusive product availability](vouchers.md#exclusive-product-availability) for detailed instructions. 
+Refer to [Vouchers: Exclusive product availability](../vouchers.md#exclusive-product-availability) for detailed instructions. 
 
 ### Option B: Order approvals
 
@@ -24,5 +24,5 @@ This requires the customer to interact with the ticket shop twice (once for the 
 
 ### Option C: Registered customers & memberships
 
-You can also do this by requiring that customers have a [customer account](customer-accounts.md) and an active membership. 
-You can find more information on this mechanism under [season tickets](products.md#season-tickets).
+You can also do this by requiring that customers have a [customer account](../customer-accounts.md) and an active membership. 
+You can find more information on this mechanism under [season tickets](index.md#season-tickets).

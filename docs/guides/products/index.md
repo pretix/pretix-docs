@@ -143,7 +143,7 @@ First of all, when creating your event, you need to select that your event repre
 
 ![](../assets/screens/products/create_step11.png "Create step 11")
 
-For general instructions on how to set up an event series with pretix, refer to our guide on [event series](event-series.md).
+For general instructions on how to set up an event series with pretix, refer to our guide on [event series](../event-series.md).
 
 #### Creating slots
 
@@ -228,7 +228,7 @@ This makes sense if the capacity of your venue is virtually unlimited and you do
 #### Option A: Memberships and multiple tickets
 
 Since this approach requires customers to be identified with a customer account, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab. 
-See also: [Customer accounts](customer-accounts.md) 
+See also: [Customer accounts](../customer-accounts.md) 
 
 ![](../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
 
@@ -294,7 +294,7 @@ Then, within the second AND-bracket, create the following condition:
 
 {% include "warning-tax.md" %}
 
-For general information on how to set up taxation in pretix, refer to our article on [taxes](taxes.md). 
+For general information on how to set up taxation in pretix, refer to our article on [taxes](../taxes.md). 
 
 Let's say you are a charitable organization in Germany and are allowed to charge a reduced tax rate of 7% for your educational event. 
 However, your event includes a significant amount of food, you might need to charge a 19% tax rate on that portion. 
