@@ -30,31 +30,55 @@ pretix will subtract from both quotas whenever a discount ticket is sold, and on
 
 The following sections will guide you through some more advanced methods for offering discounts based on certain conditions. 
 
-### Early-bird tiers based on dates 
+### Early bird tickets
 
-Let's say you run a conference with the following pricing scheme:
+This section explains how to offer early bird tickets that can only be bought far in advance of the event and which get replaced with more expensive tickets at some point. 
+It is possible to create a ticket and manually increase the price as the event approaches. 
+But pretix also offers two methods for automating this:  
+You can offer different pricing tiers based on date, or based on the number of tickets that are still available. 
+Regardless of which method you use, the first step is creating one admission ticket for each price tier. 
 
- - 12 to 6 months before the event: € 450
- - 6 to 3 months before the event: € 550
- - closer than 3 months to the event: € 650
+If you want to offer early bird tickets based on dates for a singular event, edit one of the products and switch to the :btn:Availability: tab. 
+Use the "Available from" and "Available until" fields to define the period of time in which the product can be purchased. 
+Repeat this step for each product. 
+Make sure that the "Available until" option for the first ticket has the same date and time as the "Available from" option for the following ticket. 
+This is to ensure that there is no overlap during which more than one pricing tier is available, and no gap during which no tickets are available. 
 
-Of course, you could just set up one product and change its price at the given dates manually, but if you want to set this up automatically, here's how:
+The method described above does not work for an event series with dates repeating over a large span of time. 
+If you want to offer early bird tickets based on dates for a singular event, navigate to :navpath:Your event series → :fa3-calendar: Dates: and edit one of the dates. 
+Under "Product settings", use the "Available from" and "Available until" fields to define the period of time in which the product can be purchased for this individual date. 
 
-Create three products (e.g. "super early bird", "early bird", "regular ticket") with the respective prices and one shared quota of your total event capacity. 
-Then, set the "available from" and "available until" configuration fields of the products to automatically activate and deactivate them for sale based on the current date.
+If you want to set the same availability for multiple dates, navigate to :navpath:Your event series → :fa3-calendar: Dates:, check the box next to each date you want to edit and click the :btn-icon:fa3-edit: Edit selected: button. 
+Under "Item prices", use the "Available from" and "Available until" fields to define the period of time in which the product can be purchased for the selected dates. 
+Check the boxes labeled "change" next to "Available from" and "Available until" to ensure that the product settings are overridden. 
 
-If you're in an event series, this will likely not help you since these dates would need to be the same for all dates in your series. 
-As an alternative, you can go to the "Dates" section of your event series, select one or more dates, and scroll down to the "product settings" section. 
-Here, you can also define availability times for individual products just for this date individually.
+If you want to offer early bird tickets based on ticket numbers for a singular event, create one quota for each price level. 
+For all price tiers except the last one, enter a limited number in the "Total capacity" field and check the box next to "Close this quota permanently once it is sold out". 
+This means that once one price tier is sold out, the shop will **not** move back to a previous price tier even if orders are canceled and spots in the quota open up. 
+Whether you need to enable these options for the last quota as well depends on your individual use case.
 
-### Early-bird tiers based on ticket numbers
+Add only the first product to the first quota. 
+Add the first **and** second product to the second quota and set the "Total capacity" so that it includes the capacity of the first quota plus the amount of the second ticket that you want to sell. 
+Continue like this until you arrive at the last quota, which should contain all relevant products. 
+This quota setup ensures that you can still sell the maximum number of tickets for your event, even if orders for tickets in the earlier quotas are canceled. 
 
-Let's say you run a conference with 400 tickets with the following pricing scheme:
+Navigate to :navpath:Event → :fa3-ticket: Products → Products: and edit the second product in the sequence. 
+Switch to the :btn:Availability: tab. 
+Under "Only show after sellout of", select the first quota. 
+Repeat this process for each following product, always selecting the previous quota. 
+This means that each price tier is only displayed in the shop after the previous price tier is sold out (the quota is empty). 
 
- - First 100 tickets ("super early bird"): € 450
- - Next 100 tickets ("early bird"): € 550
- - Remaining tickets ("regular"): € 650
+If you want to hide the prices for the previous tickets, navigate to :navpath:Your event → :fa3-wrench: Settings → General: and switch to the :btn:Display: tab. 
+Under "Product list", check the box next to "Hide all products that are sold out". 
 
+!!! Note 
+    There are some rare cases in which prices in your shop may switch back and forth between price tiers. 
+    If a customer places the last products of one price tier in their cart but does not buy them yet, these tickets will be marked as "Reserved" and the next price tier will be displayed. 
+    If the customer does not actually place the order, the previously reserved tickets will be displayed in the shop again and the tickets of the following price tier will disappear. 
+
+    This behavior is preferable to a situation in which a malicious user would be able to reserve all tickets of a cheaper tier without buying them. 
+
+For illustrative purposes, assume you intend to sell 400 tickets in three price tiers. 
 First of all, create three products:
 
  - "Super early bird ticket"
@@ -63,29 +87,13 @@ First of all, create three products:
 
 Then, create three quotas:
 
- - "Super early bird" with a size of 100 and the "Super early bird ticket" product selected. 
-   At "Advanced options", select the box "Close this quota permanently once it is sold out".
- - "Early bird and lower" with a size of 200 and both of the "Super early bird ticket" and "Early bird ticket" products selected. 
-   At "Advanced options", select the box "Close this quota permanently once it is sold out".
- - "All participants" with a size of 400, all three products selected and no additional options.
+ - "Super early bird" with a total capacity of 100 and the "Super early bird ticket" product selected. 
+ - "Early bird and lower" with a total capacity of 200 and both the "Super early bird ticket" and the "Early bird ticket" products selected. 
+ - "All participants" with a total capacity of 400, all three products selected and no additional options.
 
-Next, modify the product "Regular ticket". 
-In the section "Availability", you should look for the option "Only show after sellout of" and select your quota "Early bird and lower". 
+Next, modify the product "Regular ticket" and switch to the :btn:Availability: tab.
+Under "Only show after sellout of", select your quota "Early bird and lower". 
 Do the same for the "Early bird ticket" with the quota "Super early bird ticket".
-
-This will ensure the following things:
-
- - Each ticket level is only visible after the previous level is sold out.
- - As soon as one level is really sold out, it's not coming back, because the quota "closes", i.e. locks in place.
- - By creating a total quota of 400 with all tickets included, you can still make sure to sell the maximum number of tickets, even if e.g. early-bird tickets are canceled.
-
-Optionally, if you want to hide the early bird prices once they are sold out, go to "Settings", then "Display" and select "Hide all products that are sold out". 
-Of course, it might be a nice idea to keep showing the prices to remind people to buy earlier next time ;)
-
-Please note that there might be short time intervals where the prices switch back and forth: 
-When the last early bird tickets are in someone's cart (but not yet sold!), the early bird tickets will show as "Reserved" and the regular tickets start showing up. 
-However, if the customers holding the reservations do not complete their order, the early bird tickets will become available again. 
-This is not avoidable if we want to prevent malicious users from blocking all the cheap tickets without an actual sale happening.
 
 ### Discount packages 
 
