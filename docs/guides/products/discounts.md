@@ -18,7 +18,7 @@ Then, clone the ticket once for each differing price level.
 Adjust the name and the price of each cloned ticket. 
 In the "Description" field, add an informative text along the following lines: 
 "This ticket is only valid if you provide a student ID during check-in."
-Switch to the :btn:Check-in & Validity" tab and add a "Check-in text" with instructions for the person scanning the ticket, for example: 
+Switch to the :btn:Check-in & Validity: tab and add a "Check-in text" with instructions for the person scanning the ticket, for example: 
 "Check for student ID". 
 
 Add all products to one general quota. 
@@ -34,13 +34,15 @@ The following sections will guide you through some more advanced methods for off
 
 This section explains how to offer early bird tickets that can only be bought far in advance of the event and which get replaced with more expensive tickets at some point. 
 It is possible to create a ticket and manually increase the price as the event approaches. 
-But pretix also offers two methods for automating this:  
+
+But pretix also offers two methods for automating this: 
 You can offer different pricing tiers based on date, or based on the number of tickets that are still available. 
 Regardless of which method you use, the first step is creating one admission ticket for each price tier. 
 
 If you want to offer early bird tickets based on dates for a singular event, edit one of the products and switch to the :btn:Availability: tab. 
 Use the "Available from" and "Available until" fields to define the period of time in which the product can be purchased. 
 Repeat this step for each product. 
+
 Make sure that the "Available until" option for the first ticket has the same date and time as the "Available from" option for the following ticket. 
 This is to ensure that there is no overlap during which more than one pricing tier is available, and no gap during which no tickets are available. 
 
@@ -190,17 +192,17 @@ To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Di
 You can choose a descriptive name such as "Discount for school classes" so you can find this again later. 
 You can also optionally restrict the discount to a specific time frame or a specific sales channel.
 
-Next, either select **Apply to all products** or create a selection of products that are eligible for the discount.
+Next, either select Apply to all products or create a selection of products that are eligible for the discount.
 
-For a **percentual group discount** similar to “if you buy at least 5 tickets, you get 20 percent off", set **Minimum number of matching products** to “5" and **Percentual discount on matching products** to “20.00".
+For a percentual group discount similar to “if you buy at least 5 tickets, you get 20 percent off", set Minimum number of matching products to “5" and Percentual discount on matching products to “20.00".
 
-For a **buy-X-get-Y discount**, e.g. “if you buy 5 tickets, you get one free", set **Minimum number of matching products** to “5", **Percentual discount on matching products** to “100.00", and **Apply discount only to this number of matching products** to “1".
+For a buy-X-get-Y discount, e.g. “if you buy 5 tickets, you get one free", set Minimum number of matching products to “5", Percentual discount on matching products to “100.00", and Apply discount only to this number of matching products to “1".
 
 #### Fixed group packages
 
 If you want to sell group tickets in fixed sizes, e.g. a table of eight at your gala dinner, you can use product bundles. 
-Assuming you already set up a ticket for admission of individual persons, you then set up a second product **Table (8 persons)** with a discounted full price. 
-Then, head to the **Bundled products** tab of that product and add one bundle configuration to include the single admission product **eight times**. 
+Assuming you already set up a ticket for admission of individual persons, you then set up a second product Table (8 persons) with a discounted full price. 
+Then, head to the Bundled products tab of that product and add one bundle configuration to include the single admission product eight times. 
 Next, create an unlimited quota mapped to the new product.
 
 This way, the purchase of a table will automatically create eight tickets, leading to a correct calculation of your total quota and, as expected, eight persons on your check-in list. 
@@ -208,7 +210,7 @@ You can even ask for the individual names of the persons during checkout.
 
 #### Minimum order amount
 
-If you want to promote discounted group tickets in your price list, you can also do so by creating a special **Group ticket** at the reduced per-person price and set the **Minimum amount per order** option of the ticket to the minimal group size.
+If you want to promote discounted group tickets in your price list, you can also do so by creating a special Group ticket at the reduced per-person price and set the Minimum amount per order option of the ticket to the minimal group size.
 
 For more complex use cases, you can also use add-on products that can be chosen multiple times.
 
