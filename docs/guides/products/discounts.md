@@ -39,6 +39,8 @@ But pretix also offers two methods for automating this:
 You can offer different pricing tiers based on date, or based on the number of tickets that are still available. 
 Regardless of which method you use, the first step is creating one admission ticket for each price tier. 
 
+#### Early bird tickets based on dates for singular events
+
 If you want to offer early bird tickets based on dates for a singular event, edit one of the products and switch to the :btn:Availability: tab. 
 Use the "Available from" and "Available until" fields to define the period of time in which the product can be purchased. 
 Repeat this step for each product. 
@@ -53,6 +55,8 @@ Under "Product settings", use the "Available from" and "Available until" fields 
 If you want to set the same availability for multiple dates, navigate to :navpath:Your event series → :fa3-calendar: Dates:, check the box next to each date you want to edit and click the :btn-icon:fa3-edit: Edit selected: button. 
 Under "Item prices", use the "Available from" and "Available until" fields to define the period of time in which the product can be purchased for the selected dates. 
 Check the boxes labeled "change" next to "Available from" and "Available until" to ensure that the product settings are overridden. 
+
+#### Early bird tickets based on ticket numbers 
 
 If you want to offer early bird tickets based on ticket numbers for a singular event, create one quota for each price level. 
 For all price tiers except the last one, enter a limited number in the "Total capacity" field and check the box next to "Close this quota permanently once it is sold out". 
@@ -81,7 +85,7 @@ Under "Product list", check the box next to "Hide all products that are sold out
     This behavior is preferable to a situation in which a malicious user would be able to reserve all tickets of a cheaper tier without buying them. 
 
 For illustrative purposes, assume you intend to sell 400 tickets in three price tiers. 
-First of all, create three products:
+First of all, create three products with different prices:
 
  - "Super early bird ticket"
  - "Early bird ticket"
@@ -99,40 +103,60 @@ Do the same for the "Early bird ticket" with the quota "Super early bird ticket"
 
 ### Discount packages 
 
-Imagine you run a trade show that opens on three consecutive days and you want to have the following pricing:
+This section explains how to offer combinations of several products at lower prices than the sum of the prices of each individual product. 
+This is useful whenever you are offering several products, expect customers to purchase different combinations of those products, and want to offer lower prices for larger combinations. 
+You can apply this, for example, to any of the following use cases: 
 
- - Single day: € 10
- - Any two days: € 17
- - All three days: € 25
+ - a trade fair or festival opening on three consecutive days with different pricing for single-day, two-day, and three-day passes
+ - different levels of merch packages with larger packages offered at reduced rates 
+ - different offers such as swimming, sauna, and spa, which are offered at a cheaper price if purchased in combination 
 
-In this case, there are multiple different ways you could set this up with pretix.
+There are two methods to implement this using pretix: 
+One method uses combination products. 
+The other uses bundles. 
+Both methods will be explained in the following subsections. 
+
+Depending on your use case, it may also be appropriate to forgo these options and offer all products at full price. 
+If you want to offer a discount for large orders regardless of which products are purchased, refer to the section on [group discounts](discounts.md#group-discounts) instead. 
 
 #### Option A: Combination products
 
-With this option, you just set up all the different combinations someone could by as a separate product. 
-In this case, you would need 7 products:
+One option is to create the basic products and quotas, and to then create separate products for all possible combinations of basic products. 
+This has the advantage of keeping your products and possible orders fairly straightforward. 
+It can be implemented without touching the add-ons or bundles features. 
 
- - Day 1 pass
- - Day 2 pass
- - Day 3 pass
- - Day 1+2 pass
- - Day 2+3 pass
- - Day 1+3 pass
-  - All-day pass
+However, this method is only feasible if the total number of possible combinations is rather small. 
+The number of products you need to offer in your shop is `n²-1`, where `n` is the number of basic products. 
+This number grows exponentially with every additional basic product. 
+If you have three basic products, it results in seven products having to be offered in your shop. 
+If you have four basic products, it results in fifteen products. 
+For this level of complexity and beyond, the [method using bundles](discounts.md#option-b-add-ons-and-bundles) described below may be more suitable. 
 
-Then, you create three quotas, each one with the maximum capacity of your venue on any given day:
+For illustrative purposes, assume you are hosting a three-day trade fair. 
+Create a basic ticket for each day of the trade fair, three combination tickets for two days, and one combination ticket for all three days: 
 
- - Day 1 quota, linked to "Day 1 pass", "Day 1+2 pass", "Day 1+3 pass", and "All-day pass"
- - Day 2 quota, linked to "Day 2 pass", "Day 1+2 pass", "Day 2+3 pass", and "All-day pass"
- - Day 3 quota, linked to "Day 3 pass", "Day 2+3 pass", "Day 1+3 pass", and "All-day pass"
+ - Day 1 ticket
+ - Day 2 ticket
+ - Day 3 ticket
+ - Day 1 + day 2 ticket  
+ - Day 1 + day 3 ticket 
+ - Day 2 + day 3 ticket
+ - Ticket for all three days
 
-This way, every person gets exactly one ticket that they can use for all days that they attend. 
-You can later set up check-in lists appropriately to make sure only tickets valid for a certain day can be scanned on that day.
+Then, create three quotas, each one with a total capacity equal to your venue's maximum capacity on any given day:
 
-The benefit of this option is that your product structure and order structure stays very simple. 
-However, the two-day packages scale badly when you need many products.
+ - Day 1 quota, linked to "Day 1 ticket", "Day 1 + day 2 ticket", "Day 1 + day 3 ticket", and "Ticket for all three days"
+ - Day 2 quota, linked to "Day 2 ticket", "Day 1 + day 2 ticket", "Day 1 + day 2 ticket", and "Ticket for all three days"
+ - Day 3 quota, linked to "Day 3 ticket", "Day 1 + day 3 ticket", "Day 2 + day 3 ticket", and "Ticket for all three days"
 
-We recommend this setup for most setups in which the number of possible combinations does not exceed the number of parts (here: number of days) by much.
+This way, every attendee can order exactly one ticket that they can use for all days that they are going to attend. 
+Finally, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:, edit your check-in list and switch to the :btn:Advanced: tab. 
+Define custom check-in rules so that the tickets in the first quota are only valid on the first day of the event; the tickets in the second quota are only valid on the second day; and the tickets in the third quota are only valid on the third day. 
+
+You can do this either using the "Current day of the week" or the "Current date and time" condition. 
+The check-in rule could look similar to the one in the screenshot below. 
+
+![Custom check-in rule with three sets of AND-conditions. The first one demands that the product is one of the products for day one AND that the current day of the week is Monday. The second and third set do the same thing, but for day 2 and Tuesday as well as day 3 and Wednesday respectively. The three sets of AND-conditions are all included in one OR-condition.](../../assets/screens/products/check-in-rules-combination-products.png "Custom check-in rule") 
 
 #### Option B: Add-ons and bundles
 
