@@ -155,6 +155,19 @@ Define custom check-in rules so that the tickets in the first quota are only val
 
 You can do this either using the "Current day of the week" or the "Current date and time" condition. 
 The check-in rule could look similar to the one in the screenshot below. 
+The logic looks like this: 
+
+At least one of the conditions below (OR)
+
+ - All of the conditions below (AND)
+    - Product is one of "Day 1 ticket", "Day 1 + day 2 ticket", "Day 1 + day 3 ticket", or "Ticket for all three days"
+    - Current day of the week = 1 (Monday)
+ - All of the conditions below (AND)
+    - Product is one of "Day 2 ticket", "Day 1 + day 2 ticket", "Day 1 + day 2 ticket", or "Ticket for all three days"
+    - Current day of the week = 2 (Tuesday)
+ - All of the conditions below (AND)
+    - Product is one of "Day 3 ticket", "Day 1 + day 3 ticket", "Day 2 + day 3 ticket", or "Ticket for all three days"
+    - Current day of the week = 3 (Wednesday)
 
 ![Custom check-in rule with three sets of AND-conditions. The first one demands that the product is one of the products for day one AND that the current day of the week is Monday. The second and third set do the same thing, but for day 2 and Tuesday as well as day 3 and Wednesday respectively. The three sets of AND-conditions are all included in one OR-condition.](../../assets/screens/products/check-in-rules-combination-products.png "Custom check-in rule") 
 
