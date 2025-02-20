@@ -173,49 +173,46 @@ At least one of the conditions below (OR)
 
 #### Option B: Add-ons and bundles
 
-We can combine the two features "product add-ons" and "product bundles" to set this up in a different way. 
-Here, you would create the following five products:
+Another option is to create the basic products and quotas, and to then create products with mandatory addons for all possible combinations. 
+An exception can be made for the combination product containing **all** basic products. 
+The full combination product can either be set up as described above in the section [Option A: Combination products](discounts.md#option-a-combination-products), or as a bundle. 
+The approach using the bundle will also be described in this section. 
 
- - Day 1 pass in a category called "Day passes"
- - Day 2 pass in a category called "Day passes"
- - Day 3 pass in a category called "Day passes"
- - Two-day pass
- - All-day pass
+This option has the advantage that the number of products needed does not grow exponentially as the number of basic products increases. 
+The main disadvantage is that orders become more complex because ever order containing a product with mandatory addons will contain at least three products. 
 
-This time, you will need five quotas:
- - Day 1 quota, linked to "Day 1 pass"
- - Day 2 quota, linked to "Day 2 pass"
- - Day 3 quota, linked to "Day 3 pass"
- - Two-day pass quota, linked to "Two-day pass" (can be unlimited)
- - All-day pass quota, linked to "All-day pass" (can be unlimited)
+For illustrative purposes, assume you are hosting a three-day trade fair. 
+First, create a category for "Day tickets". 
+Then, create a basic ticket for each day of the trade fair, one ticket for any two days, and one ticket for all three days: 
 
-Then, you open the "Add-On" tab in the settings of the Two-day pass product and create a new add-on configuration specifying the following options:
+ - Day 1 ticket
+ - Day 2 ticket
+ - Day 3 ticket
+ - Ticket for two days
+ - Ticket for all three days
 
- - Category: "Day passes"
- - Minimum number: 2
- - Maximum number: 2
- - Add-Ons are included in the price: Yes
+Add the tickets for day 1, 2 and 3 to the "Day tickets" category. 
+Do **not** add any other tickets to that category. 
+Then, create one quota for each of the tickets. 
+When creating the quotas for each single day ticket, set the "Total capacity" to a number equal to the capacity of your venue for each one. 
+The quotas for the two-day and three-day ticket can be unlimited. 
 
-This way, when buying a two-day pass, the user will be able to select exactly two days for free, which will then be added to the cart. 
-Depending on your specific configuration, the user will now receive two separate tickets, one for each day.
+Edit the "Ticket for two days", switch to the :btn:Add-on: tab and click the :btn-icon:fa3-plus: Add a new add-on: button. 
+Select the category "Day tickets", set the minimum and maximum number to 2 and check the box next to "Add-ons are included in the price". 
+Click the :btn:Save: button. 
+With this configuration, a customer purchasing the "Ticket for two days" will be prompted to add two tickets from the "Day tickets" category to their purchase as addons. 
+The customer will receive three tickets: one for each day of the event that they selected, and the "Ticket for two days". 
 
-For the all-day pass, you open the "Bundled products" tab in the settings of the All-day pass product and add three new bundled items with the following options:
+It does not make sense to set up the "Ticket for all three days" the same way because then the customer would have to select all three day tickets manually. 
+You can either set up the "Ticket for all three days" of the event as described in the section [Option A: Combination products](discounts.md#option-a-combination-products), or as a bundle.
+If you want to set it up as a bundle, edit it and open the :btn:Bundled products: tab. 
+Click the :btn-icon:fa3-plus: Add a new bundled product: button. 
+For the "Bundled product, choose the "Day 1 ticket". 
+Leave the "Quantity" at 1 and the "Designated price part" at 0.00. 
+Repeat the same process for "Day 2 ticket" and "Day 3 ticket". 
 
- - Bundled product: "Day 1/2/3"
- - Bundled variation: None
- - Count: 1
- - Designated price: 0
-
-This way, when buying an all-day pass, three free day passes will automatically be added to the cart. 
-Depending on your specific configuration, the user will now receive three separate tickets, one for each day.
-
-This approach makes your order data more complicated, since e.g. someone who buys an all-day pass now technically bought four products. 
-However, this option allows for more flexibility when you have lots of options to choose from.
-
-!!! Tip
-
-    Depending on the packages you offer, you might not need both the add-on and the bundle feature, i.e. you only need the add-on feature for the two-day pass and only the bundle feature for the all-day pass. 
-    You could also set up the two-day pass like we showed here, but the all-day pass like in option A!
+This configuration means that when a customer purchases the "Ticket for all three days", the three day tickets will be added to their cart automatically for free. 
+The customer will receive four tickets: one for each day of the event, and the "Ticket for all three days". 
 
 ### Group discounts 
 
