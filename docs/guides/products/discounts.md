@@ -178,12 +178,12 @@ An exception can be made for the combination product containing **all** basic pr
 The full combination product can either be set up as described above in the section [Option A: Combination products](discounts.md#option-a-combination-products), or as a bundle. 
 The approach using the bundle will also be described in this section. 
 
-This option has the advantage that the number of products needed does not grow exponentially as the number of basic products increases. 
+This option has the advantage that the number of products needed does not grow exponentially with the number of basic products. 
 The main disadvantage is that orders become more complex because ever order containing a product with mandatory addons will contain at least three products. 
 
 For illustrative purposes, assume you are hosting a three-day trade fair. 
 First, create a category for "Day tickets". 
-Then, create a basic ticket for each day of the trade fair, one ticket for any two days, and one ticket for all three days: 
+Then, create a basic admission ticket for each day of the trade fair, one non-admission product for any two days, and one non-admission product for all three days: 
 
  - Day 1 ticket
  - Day 2 ticket
@@ -201,22 +201,43 @@ Edit the "Ticket for two days", switch to the :btn:Add-on: tab and click the :bt
 Select the category "Day tickets", set the minimum and maximum number to 2 and check the box next to "Add-ons are included in the price". 
 Click the :btn:Save: button. 
 With this configuration, a customer purchasing the "Ticket for two days" will be prompted to add two tickets from the "Day tickets" category to their purchase as addons. 
-The customer will receive three tickets: one for each day of the event that they selected, and the "Ticket for two days". 
+The customer will receive two tickets: one for each day of the event that they selected. 
 
 It does not make sense to set up the "Ticket for all three days" the same way because then the customer would have to select all three day tickets manually. 
-You can either set up the "Ticket for all three days" of the event as described in the section [Option A: Combination products](discounts.md#option-a-combination-products), or as a bundle.
-If you want to set it up as a bundle, edit it and open the :btn:Bundled products: tab. 
+If you want to set up the "Ticket for all three days" as a bundle, edit it and open the :btn:Bundled products: tab. 
 Click the :btn-icon:fa3-plus: Add a new bundled product: button. 
 For the "Bundled product, choose the "Day 1 ticket". 
 Leave the "Quantity" at 1 and the "Designated price part" at 0.00. 
 Repeat the same process for "Day 2 ticket" and "Day 3 ticket". 
 
 This configuration means that when a customer purchases the "Ticket for all three days", the three day tickets will be added to their cart automatically for free. 
-The customer will receive four tickets: one for each day of the event, and the "Ticket for all three days". 
+The customer will receive three tickets: one for each day of the event. 
+
+Finally, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:, edit your check-in list and switch to the :btn:Advanced: tab. 
+Define custom check-in rules so that the "Day 1 ticket" is only valid on the first day of the event; the "Day 2 ticket" is only valid on the second day; and the "Day 3 ticket" is only valid on the third day. 
+If you have set up the "Ticket for all three days" as a combination product, define the rule so that it is also valid on each day. 
+You can do this either using the "Current day of the week" or the "Current date and time" condition. 
+The logic looks like this: 
+
+At least one of the conditions below (OR)
+
+ - All of the conditions below (AND)
+    - Product is one of "Day 1 ticket" or "Ticket for all three days"
+    - Current day of the week = 1 (Monday)
+ - All of the conditions below (AND)
+    - Product is one of "Day 2 ticket" or "Ticket for all three days"
+    - Current day of the week = 2 (Tuesday)
+ - All of the conditions below (AND)
+    - Product is one of "Day 3 ticket"
+    - Current day of the week = 3 (Wednesday)
+    
+!!! Note 
+    You can also set up the "Ticket for all three days" as described in the section [Option A: Combination products](discounts.md#option-a-combination-products). 
+    If you decide to do so, also include this ticket in each condition starting with "Product is one of". 
 
 ### Group discounts 
 
-This section explains how to give discounts for whole groups attending your event.
+This section explains how to offer discounts for whole groups attending your event.
 
 #### Automatic discounts
 
