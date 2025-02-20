@@ -230,24 +230,26 @@ At least one of the conditions below (OR)
  - All of the conditions below (AND)
     - Product is one of "Day 3 ticket"
     - Current day of the week = 3 (Wednesday)
-    
+
 !!! Note 
     You can also set up the "Ticket for all three days" as described in the section [Option A: Combination products](discounts.md#option-a-combination-products). 
     If you decide to do so, also include this ticket in each condition starting with "Product is one of". 
 
 ### Group discounts 
 
-This section explains how to offer discounts for whole groups attending your event.
+pretix gives you several methods for offering discounts to whole groups of people attending your event. 
+You can either set up a rule for discounts that is applied automatically if a purchase meets certain conditions; offer fixed group packages at reduced prices; or offer cheaper tickets tied to a minimum order amount. 
+The following subsections will explain each method. 
 
 #### Automatic discounts
 
-pretix can automatically grant discounts if a certain condition is met, such as a specific group size. 
+You can use pretix to automatically grant a discount on an order if a certain condition is met, such as a certain group size. 
 
 To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
-You can choose a descriptive name such as "Discount for school classes" so you can find this again later. 
-You can also optionally restrict the discount to a specific time frame or a specific sales channel.
+You may choose a descriptive name such as "Discount for school classes" to better keep track of your discounts. 
+It is possible to restrict the discount to a certain time frame or a certain sales channel.
 
-Next, either select Apply to all products or create a selection of products that are eligible for the discount.
+Next, either select :btn:Apply to all products: or choose a selection of products that are eligible for the discount.
 
 For a percentual group discount similar to “if you buy at least 5 tickets, you get 20 percent off", set Minimum number of matching products to “5" and Percentual discount on matching products to “20.00".
 
