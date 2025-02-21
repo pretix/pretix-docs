@@ -278,6 +278,8 @@ Currently, the following attributes are understood by pretix itself:
 
     When using the pretix-tracking plugin, the following values are supported:: `adform, facebook, gosquared, google_ads, google_analytics, hubspot, linkedin, matomo, twitter`
 
+    If the user refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
+
 Any configured pretix plugins might understand more data fields. For example, if the appropriate plugins on pretix Hosted or pretix Enterprise are active, you can pass the following fields:
 
 -   If you use the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. This way, all orders made through this widget will be counted towards this campaign.
