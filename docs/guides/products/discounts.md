@@ -246,24 +246,26 @@ The following subsections will explain each method.
 You can use pretix to automatically grant a discount on an order if a certain condition is met, such as a certain group size. 
 
 To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
-You may choose a descriptive name such as "Discount for school classes" to better keep track of your discounts. 
-It is possible to restrict the discount to a certain time frame or a certain sales channel.
+Choose an "Internal name" for the discount. 
+For a percentage discount such as "20 percent off if you buy 5 tickets", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 20.00. 
 
-Next, either select :btn:Apply to all products: or choose a selection of products that are eligible for the discount.
-
-For a percentual group discount similar to “if you buy at least 5 tickets, you get 20 percent off", set Minimum number of matching products to “5" and Percentual discount on matching products to “20.00".
-
-For a buy-X-get-Y discount, e.g. “if you buy 5 tickets, you get one free", set Minimum number of matching products to “5", Percentual discount on matching products to “100.00", and Apply discount only to this number of matching products to “1".
+For a discount such as “buy 5, get one free", set the "Minimum number of matching products" to 5, "Percentual discount on matching products" to 100.00, and "Apply discount only to this number of matching products" to 1. 
 
 #### Fixed group packages
 
-If you want to sell group tickets in fixed sizes, e.g. a table of eight at your gala dinner, you can use product bundles. 
-Assuming you already set up a ticket for admission of individual persons, you then set up a second product Table (8 persons) with a discounted full price. 
-Then, head to the Bundled products tab of that product and add one bundle configuration to include the single admission product eight times. 
-Next, create an unlimited quota mapped to the new product.
+You can use bundles to sell group tickets with fixed sizes, for example a table of eight at your gala dinner. 
 
-This way, the purchase of a table will automatically create eight tickets, leading to a correct calculation of your total quota and, as expected, eight persons on your check-in list. 
-You can even ask for the individual names of the persons during checkout.
+First, create a basic admission ticket for a single person. 
+Then, create a non-admission product with a price lower than the full price for eight individual tickets. 
+Open the :btn:Bundled products: tab of that product and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
+Choose your basic admission ticket as the "Bundled product", set "Quantity" to 8 and click the :btn:Save: button. 
+
+Create a quota that includes only the eight person bundle. 
+This quota can have an unlimited capacity. 
+
+This configuration means that whenever one of the bundles is purchased, pretix creates eight individual tickets. 
+This results in the proper number being subtracted from the basic product quota and eight new entries for attendees on your check-in list. 
+If you need each individual attendee's personal data, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
 
 #### Minimum order amount
 
