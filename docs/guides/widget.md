@@ -274,7 +274,7 @@ Currently, the following attributes are understood by pretix itself:
 
 -   If `data-fix="true"` is given, the user will not be able to change the other given values later. This currently only works for the order email address as well as the invoice address. Attendee-level fields and questions can always be modified. Note that this is not a security feature and can easily be overridden by users, so do not rely on this for authentication.
 
--   If `data-consent="…"` is given, the cookie consent mechanism will be initialized with consent for the given cookie providers. All other providers will be disabled, no consent dialog will be shown. This is useful if you already asked the user for consent and don't want them to be asked again. Example: `data-consent="facebook,google_analytics"`
+-   If `data-consent="…"` is given, the cookie consent mechanism will adopt the consent for the given cookie providers. All other providers will be disabled, no consent dialog will be shown and the cookie settings can not be changed inside the widget. This is useful if you already asked the user for consent and don't want them to be asked again. Example: `data-consent="facebook,google_analytics"`
 
     When using the pretix-tracking plugin, the following values are supported:: `adform, facebook, gosquared, google_ads, google_analytics, hubspot, linkedin, matomo, twitter`
 
