@@ -269,8 +269,7 @@ If you need each individual attendee's personal data, navigate to :navpath:Your 
 
 #### Minimum order amount
 
-If you want to promote discounted group tickets in your price list, you can also do so by creating a special Group ticket at the reduced per-person price and set the Minimum amount per order option of the ticket to the minimal group size.
-
-For more complex use cases, you can also use add-on products that can be chosen multiple times.
-
+You can use the minimum order amount feature to promote discounted group tickets. 
+In order to do so, create a single-person ticket at a reduced price. 
+Open the :btn:Availability: tab and set the "Minimum amount per order" to the minimal group size for which you want to grant the discount. 
 This way, your ticket can be bought an arbitrary number of times – but no less than the given minimal amount per order.
