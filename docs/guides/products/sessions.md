@@ -6,7 +6,7 @@ If you are planning a conference with multiple workshops, a celebration with a v
 pretix offers you several methods to do this: simply adding a mandatory question to be asked with every order, add-on products with fixed time slots, or a plugin with advanced functions for variable time slots. 
 This article will guide you through all three of them. 
 
-If you are not looking for sessions that all take place within the scope of one big main event, but for a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
+If you are not planning sessions that all take place within the scope of one big main event, but for a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
 
 ## Option A: Questions
 
@@ -20,7 +20,7 @@ It will also not allow you to charge extra for any of the sessions.
 In order to set up a question, navigate to :navpath:Event → :fa3-ticket: Products → Questions: and click the :btn:fa3-plus:Create a new question: button. 
 Under "Question", add text for each language that your shop uses. 
 This text will be displayed to the customer while they are making their purchase. 
-The "Question" could read something like: "Which workshop do you want to attend in the 10 AM timeslot?" 
+The "Question" could read something like: "Which workshop do you want to attend in the 10 AM time slot?" 
 
 For "Question type", select "Choose one from a list". 
 For "Products", select every product during the purchase of which the question should be asked—typically, this wil apply to any basic admission product for your event. 
@@ -30,7 +30,14 @@ Click :btn-icon:fa3-plus:Add a new option: and add an answer option for each ses
 
 ## Option B: Add-on products with fixed time slots
 
-The usually better option is to go with add-on products. 
+If the selection of sessions offered at your event is more complex than described in the previous section, you should use add-on products instead of questions. 
+This makes sense if you are working with space constraints at your venue or if you want to charge more for some of the sessions. 
+First, create at least one basic admission products for your event and a category for add-on products. 
+Then, create new product for your first time slot. 
+Add it to the add-on category you just created, select "Product with multiple variations" and set the price to zero. 
+Open the "Variations" tab and create one variation for each session taking place within that time slot. 
+Repeat these steps for each time slot and session at your event. 
+
 Let's take for example the following conference schedule, in which the lecture can be attended by anyone, but the workshops only have space for 20 persons each:
 
 | Time                | Room A     | Room B                         |
@@ -43,11 +50,11 @@ Assuming you already created one or more products for your general conference ad
 
  - A category called "Workshops" with the checkbox "Products in this category are add-on products" activated
  - A free product called "Wednesday afternoon" within the category "Workshops" and with two variations:
-    - Workshop A
-    - Workshop B
+     - Workshop A
+     - Workshop B
  - A free product called "Thursday morning" within the category "Workshops" and with two variations:
-    - Workshop C
-    - Workshop D with a price of 20 €
+     - Workshop C
+     - Workshop D with a price of 20 €
  - Four quotas for each of the workshops
  - One add-on configuration on your base product that allows users to choose between 0 and 2 products from the category "Workshops"
 
