@@ -1,4 +1,3 @@
-
 # Sessions
 
 Your event may be made up of several smaller events ("sessions") with more limited capacities, with attendees being able to pick and choose which of these sessions they want to attend. 
@@ -22,6 +21,8 @@ This has the upside of making it easy for users to change their mind later on.
 It can also be set up fairly quickly. 
 However, it will not allow you to restrict the number of attendees signing up for a given session. 
 It will also not allow you to charge extra for any of the sessions. 
+
+![Question set up according to the instructions below, with answer options for "Workshop A" and "Workshop B"](../../assets/screens/products/question-sessions.png "Question for sessions")
 
 In order to set up a question, navigate to :navpath:Event → :fa3-ticket: Products → Questions: and click the :btn-icon:fa3-plus:Create a new question: button. 
 Under "Question", add text for each language that your shop uses. 
@@ -64,6 +65,8 @@ In addition to the basic admission products for this conference, you also have t
      - Workshop D (€20)
  - One quota for each additional product (workshop), each with a total capacity of 20 
 
+!["Edit product" page, on the "Add-ons" tab. The category "Workshops" is selected. The minimum number is 0 and the maximum is 2](../../assets/screens/products/add-on.png "Add Add-Ons to product")
+
 After you have created these categories, products, and quotas, edit your basic admission tickets and open the :btn:Add-ons: tab. 
 Add an add-on from the "Workshops" category with "Minimum number" of 0 and a "Maximum number" of 2 and click the :btn:Save: button. 
 This enables your customers to choose which of the workshops they want to attend. 
@@ -90,6 +93,8 @@ You can handle more complicated schedules like this one with the agenda constrai
 
 In order to activate that plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
 Seek out the "Agenda constraints" plugin in the list and click the :btn:Enable: button next to it. 
+
+!["Edit product" page, on the "Additional settings" tab. Options for "Start date"and "End date" are displayed, and a date and time has been entered for each.](../../assets/screens/products/agenda-constraints.png "Agenda constraints on product")
 
 Create a category for session tickets and check the box next to "Products in this category are add-on products". 
 Create a product for each individual session, add it to the sessions category and switch to the :btn:Additional settings: tab. 
