@@ -108,7 +108,6 @@ Click the :btn:Save: button.
 This enables your customers to choose which of the workshops they want to attend. 
 The "Start date" and "End date" you defined for each add-on product will restrict which combinations of sessions your customers can book. 
 You can track planned attendance numbers through the quotas for each workshop. 
-You can also 
 
 !!! Note
 
