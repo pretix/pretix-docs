@@ -150,7 +150,7 @@ That's it, you're good to go!
 ### Season tickets
 
 Season tickets and similar time-based tickets are popular for swimming pools, sports clubs, theaters and lots of other types of venues. 
-In this article, we show you different ways to set them up with pretix. 
+In this section, we show you different ways to set them up with pretix. 
 Of course, other types of tickets such as week tickets, month tickets or tickets of ten can be created with the same mechanism.
 
 There is a big difference between the two ways we show below.
