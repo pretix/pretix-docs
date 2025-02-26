@@ -23,7 +23,7 @@ It can also be set up fairly quickly.
 However, it will not allow you to restrict the number of attendees signing up for a given session. 
 It will also not allow you to charge extra for any of the sessions. 
 
-In order to set up a question, navigate to :navpath:Event → :fa3-ticket: Products → Questions: and click the :btn:fa3-plus:Create a new question: button. 
+In order to set up a question, navigate to :navpath:Event → :fa3-ticket: Products → Questions: and click the :btn-icon:fa3-plus:Create a new question: button. 
 Under "Question", add text for each language that your shop uses. 
 This text will be displayed to the customer while they are making their purchase. 
 The "Question" could read something like: "Which workshop do you want to attend in the 10 AM time slot?" 
