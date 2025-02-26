@@ -231,8 +231,7 @@ Then, within the second AND-bracket, create the following condition:
 
 {% include "warning-tax.md" %}
 
-For general information on how to set up taxation in pretix, refer to our article on [taxes](../taxes.md). 
-
+The article on [taxes](../taxes.md) has a section explaining how to set up products with [mixed taxation](../taxes.md#mixed-taxation) using bundles. 
 
 ## Troubleshooting 
 
