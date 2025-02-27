@@ -92,9 +92,11 @@ If you want the checkout process to always open a new tab regardless of screen s
 ## Always show events info
 
 By default, the widget will only display event info such as title, location, and front page text if it is linked to an event series. 
-You can pass the optional `display-event-info` attribute with either a value of `"false"`, `"true"` or `"auto"` – the latter being the default if the attribute is not present at all.
-
-Note that any other value than `"false"` or `"auto"` means `"true"`:
+You can pass the optional `display-event-info` attribute to change this behavior. 
+If you pass it with the value `"false"`, even an event series will be displayed without information. 
+If you pass the attribute with `"true"` or any other value other than 
+Pass it with the value `"auto"` for the default behavior. 
+Any other value than `"false"` or `"auto"` is handled like `"true"`. 
 
     <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
 
@@ -104,7 +106,8 @@ You can pre-select a voucher for the widget with the `voucher` attribute:
 
     <pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
 
-This way, the widget will only show products that can be bought with the voucher and prices according to the voucher's settings.
+This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
+You can also generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
 
 <pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
 <noscript>
@@ -123,13 +126,15 @@ If you want to disable voucher input in the widget, you can pass the `disable-vo
 
 ## Enabling the button-style single item select
 
-By default, the widget uses a checkbox to select items, that can only be bought in quantities of one. If you want to match the button-style of that checkbox with the one in the pretix shop, you can use the `single-item-select` attribute:
+By default, the widget uses simple checkboxes for the selection of items that can only be bought in quantities of one. 
+This is different from the shop page, which uses a button containing a checkbox and the label ":fa3-shopping-cart: Select". 
+If you want to use the same style of checkbox button in the widget, pass the `single-item-select` attribute:
 
     <pretix-widget event="https://pretix.eu/demo/democon/" single-item-select="button"></pretix-widget>
 
 The result will look like this:
 
-![Visual of the button-like checkbox rendered by the widget](../assets/screens/widget/checkbox_button.png)
+![A plain wide button containing a checkbox, a shopping cart symbol and the text "Select"](../assets/screens/widget/checkbox_button.png "Button-like checkbox")
 
 !!! Note
 
@@ -137,17 +142,34 @@ The result will look like this:
 
 ## Filtering products
 
-You can filter the products shown in the widget by passing in a list of product IDs:
+You can filter the products shown in the widget by passing a list of product IDs separated by comma. 
+In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+The product ID is displayed as a number preceded by a hashtag below the product's name in the list. 
+You need the number **without** the hashtag. 
+Alternatively, edit the product. 
+The number before the last slash in the URL is the product ID.
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" items="23,42"></pretix-widget>
+In order to display only products `#562195` and `#562202` in the widget, pass them like this: 
 
-Alternatively, you can select one or more categories to be shown:
+    <pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" categories="12,25"></pretix-widget>
+You can also filter for categories. 
+In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
+Edit the category in question. 
+The number before the last slash in the URL is the category ID.
+In order to display only products from the categories `#162620` and `#162647` in the widget, pass them like this: 
 
-Or variation IDs:
+    <pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" variations="15,2,68"></pretix-widget>
+You can also filter for product variations. 
+In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+Edit the product in question and open the :btn:Variations: tab. 
+The product ID is displayed as a number preceded by a hashtag below the variation's name in the list. 
+You need the number **without** the hashtag. 
+
+In order to display only variations `#437143`, `#437154`, and `#437155` in the widget, pass them like this: 
+
+    <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 
 ## Multi-event selection
 
