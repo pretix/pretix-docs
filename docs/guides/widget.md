@@ -76,7 +76,9 @@ Your customers might not trust your website if their browser does not display th
 If your website does not use SSL, the checkout process will open in a new tab in your customer's browsers. 
 If you are confident to have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
+```
 
 !!! Note 
     The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
@@ -87,7 +89,9 @@ If you are confident to have a good reason for not using SSL, you can override t
 By default, the checkout process will open in a new tab on devices with smaller screens. 
 If you want the checkout process to always open a new tab regardless of screen size, you can pass the `disable-iframe` attribute: 
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
+```
 
 ## Always show events info
 
@@ -98,13 +102,17 @@ If you pass the attribute with `"true"` or any other value other than
 Pass it with the value `"auto"` for the default behavior. 
 Any other value than `"false"` or `"auto"` is handled like `"true"`. 
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
+```
 
 ## Pre-selecting a voucher
 
 You can pre-select a voucher for the widget with the `voucher` attribute:
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+```
 
 This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
 You can also generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
@@ -122,7 +130,9 @@ You can also generate a code snippet that includes a voucher by using the "Pre-s
 
 If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
+```
 
 ## Enabling the button-style single item select
 
@@ -130,7 +140,9 @@ By default, the widget uses simple checkboxes for the selection of items that ca
 This is different from the shop page, which uses a button containing a checkbox and the label ":fa3-shopping-cart: Select". 
 If you want to use the same style of checkbox button in the widget, pass the `single-item-select` attribute:
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" single-item-select="button"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" single-item-select="button"></pretix-widget>
+```
 
 The result will look like this:
 
@@ -151,7 +163,9 @@ The number before the last slash in the URL is the product ID.
 
 In order to display only products `#562195` and `#562202` in the widget, pass them like this: 
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
+```
 
 You can also filter for categories. 
 In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
@@ -159,7 +173,9 @@ Edit the category in question.
 The number before the last slash in the URL is the category ID.
 In order to display only products from the categories `#162620` and `#162647` in the widget, pass them like this: 
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
+```
 
 You can also filter for product variations. 
 In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
@@ -169,18 +185,27 @@ You need the number **without** the hashtag.
 
 In order to display only variations `#437143`, `#437154`, and `#437155` in the widget, pass them like this: 
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
+```
 
 ## Multi-event selection
 
 You can display multiple event shops in a single widget. 
-If it's multiple dates of an event series, just leave off the `series` attribute: 
 
-    <pretix-widget event="https://pretix.eu/demo/series/"></pretix-widget>
+If you want to display only a single date from an event series, use the `subevent` attribute: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
+```
+
+If you do not use the `subevent` attribute, all dates in the event series will be displayed. 
 
 If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
 
-    <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
+```
 
 You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view or a list view. 
 If you do not include this attribute,it will default to the setting you setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General, 
@@ -213,12 +238,16 @@ Edit or create the dates in question and set the relevant property under "Meta d
 
 For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
 
-    <pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
+```
 
 If you have enabled public filters in your meta data attribute configuration, the widget will display a filter form. 
 To disable the filter form, use:
 
-    <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
+```
 
 ## pretix Button
 
@@ -235,9 +264,11 @@ Instead of a product list, you can also display just a single button. When press
 
 You can embed the pretix Button just like the pretix Widget. Just like above, first embed the CSS and JavaScript resources. Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
-    <pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
-        Buy ticket!
-    </pretix-button>
+```
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
+    Buy ticket!
+</pretix-button>
+```
 
 As you can see, the `pretix-button` element takes an additional `items` attribute that specifies the items that should be added to the cart. The syntax of this attribute is `item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4` where `ITEMID` are the internal IDs of items to be added and `VARID` are the internal IDs of variations of those items, if the items have variations. If you omit the `items` attribute, the general start page will be presented.
 
@@ -270,20 +301,24 @@ Parameters:
 
 If you need to control the way or timing the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript, you can register a listener that we will call before creating the widget:
 
-    <script type="text/javascript">
-    window.pretixWidgetCallback = function () {
-        // Will be run before we create the widget.
-    }
-    </script>
+```
+<script type="text/javascript">
+window.pretixWidgetCallback = function () {
+    // Will be run before we create the widget.
+}
+</script>
+```
 
 If you want, you can suppress us loading the widget and/or modify the user data passed to the widget:
 
-    <script type="text/javascript">
-    window.pretixWidgetCallback = function () {
-        window.PretixWidget.build_widgets = false;
-        window.PretixWidget.widget_data["email"] = "test@example.org";
-    }
-    </script>
+```
+<script type="text/javascript">
+window.pretixWidgetCallback = function () {
+    window.PretixWidget.build_widgets = false;
+    window.PretixWidget.widget_data["email"] = "test@example.org";
+}
+</script>
+```
 
 If you then later want to trigger loading the widgets, just call `window.PretixWidget.buildWidgets()`.
 
@@ -291,29 +326,33 @@ If you then later want to trigger loading the widgets, just call `window.PretixW
 
 If you want to run custom JavaScript once the widget is fully loaded or when it is closed, you can register callback functions. Note that these function might be run multiple times, for example if you have multiple widgets on a page or if the user switches e.g. from an event list to an event detail view:
 
-    <script type="text/javascript">
-    window.pretixWidgetCallback = function () {
-        window.PretixWidget.addLoadListener(function () {
-            console.log("Widget has loaded!");
-        });
-        window.PretixWidget.addCloseListener(function () {
-            console.log("Widget has been closed!");
-        });
-    }
-    </script>
+```
+<script type="text/javascript">
+window.pretixWidgetCallback = function () {
+    window.PretixWidget.addLoadListener(function () {
+        console.log("Widget has loaded!");
+    });
+    window.PretixWidget.addCloseListener(function () {
+        console.log("Widget has been closed!");
+    });
+}
+</script>
+```
 
 ## Passing user data to the widget
 
 If you display the widget in a restricted area of your website and you want to pre-fill fields in the checkout process with known user data to save your users some typing and increase conversions, you can pass additional data attributes with that information:
 
-    <pretix-widget event="https://pretix.eu/demo/democon/"
-        data-attendee-name-given-name="John"
-        data-attendee-name-family-name="Doe"
-        data-invoice-address-name-given-name="John"
-        data-invoice-address-name-family-name="Doe"
-        data-email="test@example.org"
-        data-question-L9G8NG9M="Foobar">
-    </pretix-widget>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/"
+    data-attendee-name-given-name="John"
+    data-attendee-name-family-name="Doe"
+    data-invoice-address-name-given-name="John"
+    data-invoice-address-name-family-name="Doe"
+    data-email="test@example.org"
+    data-question-L9G8NG9M="Foobar">
+</pretix-widget>
+```
 
 This works for the pretix Button as well, if you also specify a product.
 
