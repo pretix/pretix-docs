@@ -1,34 +1,45 @@
 # Widget
 
-If you want to show your ticket shop on your event website or blog, you can use our embeddable widget. This way, users will not need to leave your site to buy their ticket in most cases.
+If you want to include your ticket shop on your event website or blog, you can use our embeddable widget. 
+This way, users can buy their tickets without leaving your website. 
 
-To obtain the correct HTML code for embedding your event into your website, we recommend that you go to :navpath:Your Event → Settings → Widget:. You can specify some optional settings there (for example the language of the widget) and then click :btn:Generate widget code:.
+In order to obtain the HTML code for embedding your shop on your website, navigate to :navpath:Your Event → Settings → Widget:. 
+Choose the "Language" in which the widget should be displayed. 
+You may also choose a "Pre-selected voucher" for the widget. 
+Once you have made your choices, click the :btn:Generate widget code: button. 
 
-You will obtain two code snippets that look *roughly* like the following. The first should be embedded into the `<head>` part of your website, if possible. If this inconvenient, you can put it in the `<body>` part as well:
+The website will produce two code snippets. 
+Add the first code snippet to the `<head>` part of your website if possible. 
+Alternatively, you can add it to `<body>`. 
+It will look similar to this: 
 
-    <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css" crossorigin>
-    <script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async crossorigin></script>
+```
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+```
+Add the second code snippet at the position where you want the widget to be displayed on your website. 
+It will look similar to this: 
 
-The second snippet should be embedded at the position where the widget should show up:
-
-    <pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
-    <noscript>
-       <div class="pretix-widget">
-            <div class="pretix-widget-info-message">
-                JavaScript is disabled in your browser. To access our ticket shop without JavaScript,
-                please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
-            </div>
+```
+<pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
         </div>
-    </noscript>
+    </div>
+</noscript>
+```
 
+If you want to embed multiple widgets for different events on your page, add the first snippet only **once**. 
+Generate the second snippet for every event and add each one to your website's HTML. 
 
 !!! Note
 
-    You can of course embed multiple widgets of multiple events on your page. In this case, please add the first snippet only *once* and the second snippets once *for each event*.
-
-!!! Note
-
-    Some website builders like Jimdo have trouble with our custom HTML tag. In that case, you can use `<div class="pretix-widget-compat" …></div>` instead of `<pretix-widget …></pretix-widget>` starting with pretix 1.14.
+    Some website builders such as Jimdo have trouble with our custom HTML tag. 
+    In that case, edit the opening and closing tags in the first line of the second code snippet:  
+    Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`.  
+    Replace `</pretix-widget>` with `</div>`.  
 
 ## Example
 
@@ -47,27 +58,41 @@ Your embedded widget could look like the following:
 
 ## Styling
 
-If you want, you can customize the appearance of the widget to fit your website with CSS. If you inspect the rendered HTML of the widget with your browser's developer tools, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. You can override the styles as much as you want to and if you want to go all custom, you don't even need to use the stylesheet provided by us at all.
+You can use CSS to customize the appearance of the widget to match your website. 
+If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
+You can override the styles or use your own custom stylesheet. 
 
 ## SSL
 
-Since buying a ticket normally involves entering sensitive data, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. Initiatives like [Let's Encrypt](https://letsencrypt.org/) allow you to obtain a SSL certificate free of charge.
+Buying a ticket usually involves entering sensitive data. 
+Thus, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. 
+Initiatives such as [Let's Encrypt](https://letsencrypt.org/) allow you to obtain a SSL certificate free of charge.
 
-All data transferred to pretix will be made over SSL, even if using the widget on a non-SSL site. However, without using SSL for your site, a man-in-the-middle attacker could potentially alter the widget in dangerous ways. Moreover, using SSL is becoming standard practice and your customers might want expect see the secure lock icon in their browser granted to SSL-enabled web pages.
+pretix will use SSL for all data transferred from the widget even if the widget is included on a non-SSL site. 
+However, if you are not using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
+Using SSL for data transfers is a standard practice now. 
+Your customers might not trust your website if their browser does not display the secure lock icon :fa3-lock: while they are using it. 
 
-By default, the checkout process will open in a new tab in your customer's browsers if you don't use SSL for your website. If you confident to have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
+If your website does not use SSL, the checkout process will open in a new tab in your customer's browsers. 
+If you are confident to have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
 
     <pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
 
+!!! Note 
+    The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
+    If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
+
 ## Always open a new tab
 
-If you want the checkout process to always open a new tab regardless of screen size, you can pass the `disable-iframe` attribute:
+By default, the checkout process will open in a new tab on devices with smaller screens. 
+If you want the checkout process to always open a new tab regardless of screen size, you can pass the `disable-iframe` attribute: 
 
     <pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
 
-## Always show event’s info
+## Always show events info
 
-If you want the widget to show the event’s info such as title, location and frontpage text, you can pass the optional `display-event-info` attribute with either a value of `"false"`, `"true"` or `"auto"` – the latter being the default if the attribute is not present at all.
+By default, the widget will only display event info such as title, location, and front page text if it is linked to an event series. 
+You can pass the optional `display-event-info` attribute with either a value of `"false"`, `"true"` or `"auto"` – the latter being the default if the attribute is not present at all.
 
 Note that any other value than `"false"` or `"auto"` means `"true"`:
 
