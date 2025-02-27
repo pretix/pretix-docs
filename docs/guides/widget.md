@@ -212,7 +212,7 @@ If you want to include all your public events, pass the URL to your customer acc
 ```
 
 You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view or a list view. 
-If you do not include this attribute,it will default to the setting you setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General, 
+If you do not include this attribute,it will default to the setting you setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
 If you do not set it, the choice will be taken from your organizer settings:
 
 ```
