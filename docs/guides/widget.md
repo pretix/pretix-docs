@@ -173,22 +173,24 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 
 ## Multi-event selection
 
-If you want to embed multiple events in a single widget, you can do so. If it's multiple dates of an event series, just leave off the `series` attribute:
+You can display multiple event shops in a single widget. 
+If it's multiple dates of an event series, just leave off the `series` attribute: 
 
     <pretix-widget event="https://pretix.eu/demo/series/"></pretix-widget>
 
-If you want to include all your public events, you can just reference your organizer:
+If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
 
     <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
 
-There is an optional `style` parameter that let's you choose between a monthly calendar view, a week view and a list view. If you do not set it, the choice will be taken from your organizer settings:
+You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view or a list view. 
+If you do not include this attribute,it will default to the setting you setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General, 
+If you do not set it, the choice will be taken from your organizer settings:
 
     <pretix-widget event="https://pretix.eu/demo/series/" list-type="list"></pretix-widget>
     <pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
     <pretix-widget event="https://pretix.eu/demo/series/" list-type="week"></pretix-widget>
 
-If you have more than 100 events, the system might refuse to show a list view and always show a calendar for performance reasons instead.
-
+For performance reasons, the system will always display a calendar view if you have more than 100 events. 
 You can see an example here:
 
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
@@ -200,11 +202,21 @@ You can see an example here:
     </div>
 </noscript>
 
-You can filter events by meta data attributes. You can create those attributes in your order profile and set their values in both event and series date settings. For example, if you set up a meta data property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
+You can filter events by metadata attributes. 
+You can create these attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
+
+If you want to assign the metadata property to a singular event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
+On the :btn:Basics: tab, edit the relevant property under "Meta data". 
+
+If you want to assign the property to dates in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
+Edit or create the dates in question and set the relevant property under "Meta data". 
+
+For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
 
     <pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
 
-If you have enabled public filters in your meta data attribute configuration, a filter-form shows up. To disable, use:
+If you have enabled public filters in your meta data attribute configuration, the widget will display a filter form. 
+To disable the filter form, use:
 
     <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
 
