@@ -330,7 +330,8 @@ Parameters:
 
 ## Lading the widget dynamically 
 
-If you need to control the way or timing the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript, you can register a listener that we will call before creating the widget:
+You may need to control when and how the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript. 
+You can register a listener that will be run before creating the widget:
 
 ```
 <script type="text/javascript">
@@ -340,7 +341,7 @@ window.pretixWidgetCallback = function () {
 </script>
 ```
 
-You can suppress us loading the widget and/or modify the user data passed to the widget:
+You can suppress the loading of the widget or modify the user data passed to the widget:
 
 ```
 <script type="text/javascript">
@@ -351,12 +352,11 @@ window.pretixWidgetCallback = function () {
 </script>
 ```
 
-If you want to trigger loading the widgets, call `window.PretixWidget.buildWidgets()`.
+In order to trigger loading the widgets, call `window.PretixWidget.buildWidgets()`.
 
 ## Waiting for the widget to load or close
 
-If you want to run custom JavaScript once the widget is fully loaded or when it is closed, you can register callback functions. 
-Note that these function might be run multiple times, for example if you have multiple widgets on a page or if the user switches e.g. from an event list to an event detail view:
+If you want to run custom JavaScript once the widget is fully loaded or when it is closed, you can register callback functions:
 
 ```
 <script type="text/javascript">
@@ -371,40 +371,56 @@ window.pretixWidgetCallback = function () {
 </script>
 ```
 
+These function may be run multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
+
 ## Passing user data to the widget
 
-If you display the widget in a restricted area of your website and you want to pre-fill fields in the checkout process with known user data to save your users some typing and increase conversions, you can pass additional data attributes with that information:
+If you display the widget on a page that requires user login, you can pre-fill fields in the checkout process with known user data. 
+This can save your customers some typing and increase conversions. 
+You can also pass additional data attributes with that information: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/"
-    data-attendee-name-given-name="John"
+    data-attendee-name-given-name="Jamie"
     data-attendee-name-family-name="Doe"
-    data-invoice-address-name-given-name="John"
+    data-invoice-address-name-given-name="Jamie"
     data-invoice-address-name-family-name="Doe"
     data-email="test@example.org"
     data-question-L9G8NG9M="Foobar">
 </pretix-widget>
 ```
 
-This works for the pretix Button as well, if you also specify a product.
+You can also do this on the pretix Button, but you also need to specify the `items` attribute. 
 
-As data attributes are reactive, you can change them with JavaScript as well. 
-Please note that once the user started the checkout process, we do not update the data-attributes in the existing checkout process to not interrupt the checkout UX.
+Data attributes are reactive. 
+Thus, you can use JavaScript to change them. 
+Once the user started the checkout process, pretix does not update data attributes in the existing checkout process. 
+Doing so would interrupt the process and the user would have to start over. 
 
-When updating data-attributes through JavaScript, make sure you do not have a stale reference to the HTMLNode of the widget. 
-When the widget is created, the original HTMLNode can happen to be replaced. 
-So make sure to always have a fresh reference like so `document.querySelectorAll("pretix-widget, pretix-button, .pretix-widget-wrapper")`
+When updating data attributes through JavaScript, make sure you do not have a stale reference to the HTMLNode of the widget. 
+When the widget is created, it is possible that the original HTMLNode is replaced. 
+Use the following code to ensure that the reference is fresh:  
 
-Currently, the following attributes are understood by pretix itself:
+```document.querySelectorAll("pretix-widget, pretix-button, .pretix-widget-wrapper")```
+
+Currently, the following data attributes are understood by pretix:
 
  - `data-email` will pre-fill the order email field as well as the attendee email field (if enabled).
 
  - `data-question-IDENTIFIER` will pre-fill the answer for the question with the given identifier. 
  You can view and set identifiers in the *Questions* section of the backend.
 
- - Depending on the person name scheme configured in your event settings, you can pass one or more of `data-attendee-name-full-name`, `data-attendee-name-given-name`, `data-attendee-name-family-name`, `data-attendee-name-middle-name`, `data-attendee-name-title`, `data-attendee-name-calling-name`, `data-attendee-name-latin-transcription`. 
- If you don't know or don't care, you can also just pass a string as `data-attendee-name`, which will pre-fill the last part of the name, whatever that is.
-
+ - `data-attendee-name` will pre-fill the last part of the name. 
+   For more control over the name that is pre-filled, use the following attributes. 
+   The best choice depends on your configuration of the naming scheme in the event settings. 
+    - `data-attendee-name-full-name`
+     -  `data-attendee-name-given-name`
+     - `data-attendee-name-family-name`
+     - `data-attendee-name-middle-name`
+     - `data-attendee-name-title`
+     - `data-attendee-name-calling-name`
+     - `data-attendee-name-latin-transcription`
+   
  - `data-invoice-address-FIELD` will pre-fill the corresponding field of the invoice address. 
  Possible values for `FIELD` are `company`, `street`, `zipcode`, `city`, `country`, `internal-reference`, `vat-id`, and `custom-field`, as well as fields specified by the naming scheme such as `name-title` or `name-given-name` (see above). `country` expects a two-character country code.
 
