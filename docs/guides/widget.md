@@ -328,7 +328,7 @@ Parameters:
 - **skip_ssl_check** (boolean): Whether to ignore the check for HTTPS. 
   Only use this during development.
 
-## Lading the widget dynamically 
+## Loading the widget dynamically 
 
 You may need to control when and how the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript. 
 You can register a listener that will be run before creating the widget:
@@ -422,42 +422,61 @@ Currently, the following data attributes are understood by pretix:
      - `data-attendee-name-latin-transcription`
    
  - `data-invoice-address-FIELD` will pre-fill the corresponding field of the invoice address. 
- Possible values for `FIELD` are `company`, `street`, `zipcode`, `city`, `country`, `internal-reference`, `vat-id`, and `custom-field`, as well as fields specified by the naming scheme such as `name-title` or `name-given-name` (see above). `country` expects a two-character country code.
+   Possible values for `FIELD` are:  
+     - `company`
+     - `street`
+     - `zipcode`
+     - `city`
+     - `country` (expects a two-character country code)
+     - `internal-reference`
+     - `vat-id`
+     - `custom-field`
+     - fields specified by the naming scheme such as `name-title` or `name-given-name` 
+     `country` 
 
  - If `data-fix="true"` is given, the user will not be able to change the other given values later. 
- This currently only works for the order email address as well as the invoice address. 
- Attendee-level fields and questions can always be modified. 
- Note that this is not a security feature and can easily be overridden by users, so do not rely on this for authentication.
+   This currently only works for the order email address as well as the invoice address. 
+   Attendee-level fields and questions can always be modified. 
+   This is not a security feature and can easily be overridden by users
+   Do not rely on this for authentication.
 
  - If `data-consent="…"` is given, the cookie consent mechanism will adopt the consent for the given cookie providers. 
- All other providers will be disabled, no consent dialog will be shown and it will not be possible to change the cookie settings inside the widget. 
- This is useful if you already asked the user for consent and don't want them to be asked again. 
- Example: `data-consent="facebook,google_analytics"`
+   All other providers will be disabled, no consent dialog will be shown and it will not be possible to change the cookie settings inside the widget. 
+   This is useful if you already asked the user for consent and do not want them to be asked again. 
+   Example: `data-consent="facebook,google_analytics"`
+   If the user has refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
+   The following values are supported by the pretix "Tracking codes" plugin: 
+     - `adform`
+     - `facebook`
+     - `gosquared`
+     - `google_ads`
+     - `google_analytics`
+     - `hubspot`
+     - `linkedin`
+     - `matomo`
+     - `twitter`
 
-    When using the pretix-tracking plugin, the following values are supported:: `adform, facebook, gosquared, google_ads, google_analytics, hubspot, linkedin, matomo, twitter`
+Any active pretix plugins might understand more data attributes. 
+For instance, if you are using the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. 
+This way, all orders made through this widget will be counted towards this campaign. 
 
-    If the user has refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
+## Using tracking with the pretix Widget
 
-Any configured pretix plugins might understand more data fields. 
-For example, if the appropriate plugins on pretix Hosted or pretix Enterprise are active, you can pass the following fields:
-
- - If you use the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. 
- This way, all orders made through this widget will be counted towards this campaign.
-
- - If you use the tracking plugin, you can enable cross-domain tracking. 
- Please note: when you run your pretix-shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking as tracking automatically works across subdomains. 
- See `custom_domain`{.interpreted-text role="ref"} for how to set this up.
+If you use the tracking plugin, you can enable cross-domain tracking. 
+When you run your pretix-shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
+Tracking across subdomains works with no cross-domain tracking setup needed. 
+Refer to the article on [custom domain](custom-domain.md) for further information. 
 
 Add the embedding website to your [Referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
 
-Add Google Analytics as you normally would with all your [window.dataLayer]{.title-ref} and [gtag]{.title-ref} configurations. 
-Also add the widget code normally. 
+Add Google Analytics like you would on any other page, including your [window.dataLayer]{.title-ref} and [gtag]{.title-ref} configurations. 
+Add the widget code. 
 Then you have two options:
 
-- Block loading of the widget at most 2 seconds or until Google's client- and session-ID are loaded. 
-  This method uses [window.pretixWidgetCallback]{.title-ref}. 
-  Note that if it takes longer than 2 seconds to load, client- and session-ID are never passed to the widget. 
-  Make sure to replace all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX):
+The first option is blocking the loading of the widget until Google's client and session ID are loaded, or for a maximum of two seconds. 
+This is similar to [loading the widget dynamically](widget.md#loading-the-widget-dynamically). 
+If it takes longer than two seconds to load, client and session ID are not passed to the widget. 
+Include the following code on your website after replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX):
 
 ```
 <script type="text/javascript">
@@ -497,8 +516,9 @@ Then you have two options:
 </script>
 ``` 
 
-- Or asynchronously set data-attributes – the widgets are shown immediately, but once the user has started checkout, data-attributes are not updated. 
-  Make sure to replace all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX):
+The other option is asynchronously setting data-attributes. 
+The widgets are displayed immediately, but once the user has entered checkout, data attributes are not updated. 
+Include the following code on your website after replacing all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX):
 
 ``` 
 <script type="text/javascript">
