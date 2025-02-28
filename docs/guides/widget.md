@@ -9,7 +9,8 @@ You may also choose a "Pre-selected voucher" for the widget.
 Once you have made your choices, click the :btn:Generate widget code: button. 
 
 The website will produce two code snippets. 
-Add the first code snippet to the `<head>` part of your website if possible. 
+The first snippet contains CSS and javascript resources. 
+Add it to the `<head>` part of your website if possible. 
 Alternatively, you can add it to `<body>`. 
 It will look similar to this: 
 
@@ -193,22 +194,14 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
-## Multi-event selection
+## Using the widget for an event series 
 
-You can display multiple event shops in a single widget. 
-
-If you want to display only a single date from an event series, use the `subevent` attribute: 
+You can link the widget to an event series 
+By default, the widget will display all dates in the event series. 
+If you want to display only a single date from the series, use the `subevent` attribute: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
-```
-
-If you do not use the `subevent` attribute, all dates in the event series will be displayed. 
-
-If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
 ```
 
 You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view or a list view. 
@@ -234,6 +227,18 @@ You can see an example here:
     </div>
 </noscript>
 
+
+## Using the widget for multiple events
+
+You can display multiple event shops in a single widget. 
+If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
+```
+
+## Filtering by metadata attributes 
+
 You can filter events by metadata attributes. 
 You can create these attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
 
@@ -258,11 +263,11 @@ To disable the filter form, use:
 
 ## pretix Button
 
-Instead of a product list, you can also display just a single button. 
-When pressed, the button will add a number of products associated with the button to the cart and will immediately proceed to checkout. 
+Instead of the full widget, you can also display just a single button. 
+Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
 You can try out this behavior here:
 
-<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">Buy ticket!</pretix-button>
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
 <noscript>
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
@@ -273,7 +278,7 @@ You can try out this behavior here:
 </noscript>
 
 You can embed the pretix Button just like the pretix Widget. 
-Just like above, first embed the CSS and JavaScript resources. 
+In order to add the pretix Button to your website, add the CSS and JavaScript resources as described in the [introduction](widget.md)
 Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
 ```
@@ -281,25 +286,33 @@ Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
     Buy ticket!
 </pretix-button>
 ```
+Use the `items` attribute to specify the items to be added to the cart. 
+The syntax of this attribute is: 
 
-The `pretix-button` element takes an additional `items` attribute that specifies the items that should be added to the cart. 
-The syntax of this attribute is `item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4` where `ITEMID` are the internal IDs of items to be added and `VARID` are the internal IDs of variations of those items, if the items have variations. 
-If you omit the `items` attribute, the general start page will be presented.
+```item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4```
 
-In case you are using an event series, you will need to specify the date for which the item(s) should be put in the cart. 
-This can be done by specifying the `subevent`-attribute. 
+Replace each instance of `ITEMID` with the ID of the item to be added. 
+Replace each instance of `VARID` with the ID of variations of those items. 
+Omit `variation_ITEMID_VARID=4` if the items do not have variations. 
+Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
 
-Just as the widget, the button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
+If you do not include the `items` attribute or do not pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
 
+If the button is linked to an event series, use the `subevent`-attribute to specify the date for which the items should be put in the cart. 
+
+The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
 You can style the button using the `pretix-button` CSS class.
 
-## Dynamically opening the widget
+## Opening the widget dynamically
 
-You can get the behavior of the pretix button without a button at all, so you can trigger it from your own code in response to a user action. 
-Usually, this will open an overlay with your ticket shop, however in some cases, such as missing HTTPS encryption on your case or a really small screen (mobile), it will open a new tab instead of an overlay. 
-Therefore, make sure you call this *in direct response to a user action*, otherwise most browser will block it as an unwanted pop-up.
+You can call a function to open the widget dynamically in response to a user action. 
+This is similar to the behavior of the [pretix Button](widget.md#pretix-button), but can be called from any part of your website's code. 
 
-To do so, you can call `window.PretixWidget.open`, which has the following signature:
+Usually, this will open an overlay with your ticket shop. 
+In some circumstances, such as missing HTTPS encryption or a small screen size, it will open a new tab instead. 
+Therefore, only call this function *in direct response to a user action*, otherwise most browser will block it as an unwanted pop-up. 
+
+Call `window.PretixWidget.open`, which has the following signature:
 
 ```
 window.PretixWidget.open(target_url[, voucher[, subevent[, items[, widget_data[, skip_ssl_check]]]]]) 
@@ -309,13 +322,13 @@ Parameters:
 
 - **target_url** (string): The URL of the ticket shop. 
 - **voucher** (string): A voucher code to be pre-selected, or `null`.
-- **subevent** (string): A subevent to be pre-selected, or `null`.
+- **subevent** (string): A date from an event series to be pre-selected, or `null`.
 - **items** (array): A collection of items to be put in the cart, of the form `[{"item": "item_3", "count": 1}, {"item": "variation_5_6", "count": 4}]`
 - **widget_data** (object): Additional data to be passed to the shop, see below.
 - **skip_ssl_check** (boolean): Whether to ignore the check for HTTPS. 
-  Only to be used during development.
+  Only use this during development.
 
-## Dynamically loading the widget
+## Lading the widget dynamically 
 
 If you need to control the way or timing the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript, you can register a listener that we will call before creating the widget:
 
@@ -373,7 +386,7 @@ If you display the widget in a restricted area of your website and you want to p
 </pretix-widget>
 ```
 
-This works for the pretix button as well, if you also specify a product.
+This works for the pretix Button as well, if you also specify a product.
 
 As data attributes are reactive, you can change them with JavaScript as well. 
 Please note that once the user started the checkout process, we do not update the data-attributes in the existing checkout process to not interrupt the checkout UX.
@@ -520,6 +533,6 @@ To mitigate this, you either need to always open the widget's checkout in a new 
 
 ## Working with Cross-Origin-Embedder-Policy
 
-The pretix widget is unfortunately not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
+The pretix Widget is unfortunately not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag as shown above, the widget can show a calendar or product list, but will not be able to open the checkout process in an iframe. 
 If you also set `Cross-Origin-Opener-Policy: same-origin`, the widget can auto-detect that it is running in an isolated enviroment and will instead open the checkout process in a new tab.
