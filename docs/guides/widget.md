@@ -537,14 +537,14 @@ Include the following code on your website after replacing all occurrences of \<
 
 ## Offering wallet payments (Apple Pay, Google Pay) within the widget
 
-Some payment providers (such as Stripe) also offer Apple or Google Pay. 
-But in order to use them, the domain of the payment needs to be approved first. 
-As of right now, pretix will take care of the domain verification process for you automatically, when using Stripe. 
-However, pretix can only validate the domain that is being used for your default, "stand-alone" shop (such as <https://pretix.eu/demo/democon/> ).
-
+If you want to offer payments via Apple Pay or Google Pay through the widget, the domain needs to be verified first. 
+pretix will take care of the domain verification process for you. 
+However, pretix can only validate the default domain that is being used for your shop (such as <https://pretix.eu/demo/democon/> ).
 When embedding the widget on your website, the domain of the embedding page will also need to be validated in order to be able to use it for wallet payments.
 
-The details might vary from payment provider to payment provider, but generally speaking, it will either involve just telling your payment provider the domain name and (for Apple Pay) placing an `apple-developer-merchantid-domain-association`-file into the `.well-known`-directory of your domain.
+The details might vary from payment provider to payment provider.
+Generally speaking, you need to give your payment provider the domain name and placing a merchant ID file into the `.well-known`-directory of your domain.
+For Apple Pay, this file is called `apple-developer-merchantid-domain-association`. 
 
 Further reading:
 
@@ -552,23 +552,25 @@ Further reading:
 
 ## Content Security Policy
 
-When using a Content Security Policy (CSP) on your website, you may need to make some adjustments. 
+If you are using a Content Security Policy (CSP) on your website, you may need to make some adjustments. 
 If your pretix shop is running under a custom domain, you need to add the following rules:
 
  - `script-src`: `'unsafe-eval' https://pretix.eu` (adjust to your domain for self-hosted pretix)
  - `style-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
  - `connect-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
  - `frame-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
- - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted) and for pretix Hosted additionally add `https://cdn.pretix.space`
+ - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
+    For pretix Hosted, also add `https://cdn.pretix.space`. 
 
-## External payment providers and Cross-Origin-Opener-Policy
+## External payment providers and Cross Origin Opener Policy
 
-If you use a payment provider that opens a new window during checkout (such as PayPal), be aware that setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup-window being opened in the foreground. 
+If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window being opened in the foreground. 
 This is due to JavaScript not having access to the opened window. 
-To mitigate this, you either need to always open the widget's checkout in a new tab (see `Always open a new tab`{.interpreted-text role="ref"}) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
+To mitigate this, you either need to [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
 
-## Working with Cross-Origin-Embedder-Policy
+## Working with Cross Origin Embedder Policy
 
-The pretix Widget is unfortunately not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
-If you include the `crossorigin` attributes on the `<script>` and `<link>` tag as shown above, the widget can show a calendar or product list, but will not be able to open the checkout process in an iframe. 
-If you also set `Cross-Origin-Opener-Policy: same-origin`, the widget can auto-detect that it is running in an isolated enviroment and will instead open the checkout process in a new tab.
+The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
+If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
+But it will not be able to open the checkout process in an iframe. 
+If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
