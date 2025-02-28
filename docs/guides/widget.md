@@ -2,6 +2,32 @@
 
 If you want to include your ticket shop on your event website or blog, you can use our embeddable widget. 
 This way, users can buy their tickets without leaving your website. 
+Alternatively, you can use the [pretix Button](widget.md#pretix-button) to instantly select some products and proceed to checkout for the user. 
+
+Your embedded widget could look like the following:
+
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+<pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. 
+            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+        </div>
+    </div>
+</noscript>
+
+
+This article will guide you through the basic setup of the widget and some advanced configuration options. 
+
+## Prerequisites 
+
+You need to create at least one event before you can offer access to your ticket shop through the widget. 
+You need to have a website and the possibility to make changes to it. 
+Some basic knowledge of JavaScript is helpful. 
+
+## How to
 
 In order to obtain the HTML code for embedding your shop on your website, navigate to :navpath:Your Event → Settings → Widget:. 
 Choose the "Language" in which the widget should be displayed. 
@@ -43,29 +69,13 @@ Generate the second snippet for every event and add each one to your website's H
     Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`.  
     Replace `</pretix-widget>` with `</div>`.  
 
-## Example
-
-Your embedded widget could look like the following:
-
-<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
-<pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
-        </div>
-    </div>
-</noscript>
-
-## Styling
+### Styling
 
 You can use CSS to customize the appearance of the widget to match your website. 
 If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
 You can override the styles or use your own custom stylesheet. 
 
-## SSL
+### SSL
 
 Buying a ticket usually involves entering sensitive data. 
 Thus, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. 
@@ -87,7 +97,7 @@ If you are confident to have a good reason for not using SSL, you can override t
     The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
     If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
 
-## Always open a new tab
+### Always open a new tab
 
 By default, the checkout process will open in a new tab on devices with smaller screens. 
 If you want the checkout process to always open a new tab regardless of screen size, you can pass the `disable-iframe` attribute: 
@@ -96,7 +106,7 @@ If you want the checkout process to always open a new tab regardless of screen s
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
 ```
 
-## Always show events info
+### Always show events info
 
 By default, the widget will only display event info such as title, location, and front page text if it is linked to an event series. 
 You can pass the optional `display-event-info` attribute to change this behavior. 
@@ -109,7 +119,7 @@ Any other value than `"false"` or `"auto"` is handled like `"true"`.
 <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
 ```
 
-## Pre-selecting a voucher
+### Pre-selecting a voucher
 
 You can pre-select a voucher for the widget with the `voucher` attribute:
 
@@ -130,7 +140,7 @@ You can also generate a code snippet that includes a voucher by using the "Pre-s
     </div>
 </noscript>
 
-## Disabling the voucher input
+### Disabling the voucher input
 
 If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
 
@@ -138,7 +148,7 @@ If you want to disable voucher input in the widget, you can pass the `disable-vo
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
 ```
 
-## Enabling the button-style single item select
+### Enabling the button-style single item select
 
 By default, the widget uses simple checkboxes for the selection of items that can only be bought in quantities of one. 
 This is different from the shop page, which uses a button containing a checkbox and the label ":fa3-shopping-cart: Select". 
@@ -157,7 +167,7 @@ The result will look like this:
     Due to compatibility with existing widget installations, the default value for `single-item-select` is `checkbox`. 
     This might change in the future, so make sure, to set the attribute to `single-item-select="checkbox"` if you need it.
 
-## Filtering products
+### Filtering products
 
 You can filter the products shown in the widget by passing a list of product IDs separated by comma. 
 In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
@@ -194,7 +204,7 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
-## Using the widget for an event series 
+### Using the widget for an event series 
 
 You can link the widget to an event series 
 By default, the widget will display all dates in the event series. 
@@ -228,7 +238,7 @@ You can see an example here:
 </noscript>
 
 
-## Using the widget for multiple events
+### Using the widget for multiple events
 
 You can display multiple event shops in a single widget. 
 If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
@@ -237,7 +247,7 @@ If you want to include all your public events, pass the URL to your customer acc
 <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
 ```
 
-## Filtering by metadata attributes 
+### Filtering by metadata attributes 
 
 You can filter events by metadata attributes. 
 You can create these attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
@@ -261,7 +271,7 @@ To disable the filter form, use:
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
 ```
 
-## pretix Button
+### pretix Button
 
 Instead of the full widget, you can also display just a single button. 
 Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
@@ -303,7 +313,7 @@ If the button is linked to an event series, use the `subevent`-attribute to spec
 The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
 You can style the button using the `pretix-button` CSS class.
 
-## Opening the widget dynamically
+### Opening the widget dynamically
 
 You can call a function to open the widget dynamically in response to a user action. 
 This is similar to the behavior of the [pretix Button](widget.md#pretix-button), but can be called from any part of your website's code. 
@@ -328,7 +338,7 @@ Parameters:
 - **skip_ssl_check** (boolean): Whether to ignore the check for HTTPS. 
   Only use this during development.
 
-## Loading the widget dynamically 
+### Loading the widget dynamically 
 
 You may need to control when and how the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript. 
 You can register a listener that will be run before creating the widget:
@@ -354,7 +364,7 @@ window.pretixWidgetCallback = function () {
 
 In order to trigger loading the widgets, call `window.PretixWidget.buildWidgets()`.
 
-## Waiting for the widget to load or close
+### Waiting for the widget to load or close
 
 If you want to run custom JavaScript once the widget is fully loaded or when it is closed, you can register callback functions:
 
@@ -373,7 +383,7 @@ window.pretixWidgetCallback = function () {
 
 These function may be run multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
 
-## Passing user data to the widget
+### Passing user data to the widget
 
 If you display the widget on a page that requires user login, you can pre-fill fields in the checkout process with known user data. 
 This can save your customers some typing and increase conversions. 
@@ -460,7 +470,7 @@ Any active pretix plugins might understand more data attributes.
 For instance, if you are using the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. 
 This way, all orders made through this widget will be counted towards this campaign. 
 
-## Using tracking with the pretix Widget
+### Using tracking with the pretix Widget
 
 If you use the tracking plugin, you can enable cross-domain tracking. 
 When you run your pretix-shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
@@ -535,7 +545,7 @@ Include the following code on your website after replacing all occurrences of \<
 </script>  
 ``` 
 
-## Offering wallet payments (Apple Pay, Google Pay) within the widget
+### Offering wallet payments (Apple Pay, Google Pay) within the widget
 
 If you want to offer payments via Apple Pay or Google Pay through the widget, the domain needs to be verified first. 
 pretix will take care of the domain verification process for you. 
@@ -546,11 +556,9 @@ The details might vary from payment provider to payment provider.
 Generally speaking, you need to give your payment provider the domain name and placing a merchant ID file into the `.well-known`-directory of your domain.
 For Apple Pay, this file is called `apple-developer-merchantid-domain-association`. 
 
-Further reading:
+Further reading: [Stripe Payment Method Domain registration](https://stripe.com/docs/payments/payment-methods/pmd-registration)
 
- - [Stripe Payment Method Domain registration](https://stripe.com/docs/payments/payment-methods/pmd-registration)
-
-## Content Security Policy
+### Content Security Policy
 
 If you are using a Content Security Policy (CSP) on your website, you may need to make some adjustments. 
 If your pretix shop is running under a custom domain, you need to add the following rules:
@@ -562,13 +570,13 @@ If your pretix shop is running under a custom domain, you need to add the follow
  - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
     For pretix Hosted, also add `https://cdn.pretix.space`. 
 
-## External payment providers and Cross Origin Opener Policy
+### External payment providers and Cross Origin Opener Policy
 
 If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window being opened in the foreground. 
 This is due to JavaScript not having access to the opened window. 
 To mitigate this, you either need to [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
 
-## Working with Cross Origin Embedder Policy
+### Working with Cross Origin Embedder Policy
 
 The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
