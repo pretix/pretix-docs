@@ -341,18 +341,13 @@ If your pretix shop is running under a custom domain, you need to add the follow
  - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
     For pretix Hosted, also add `https://cdn.pretix.space`. 
 
-#### Offering wallet payments (Apple Pay, Google Pay) within the widget
+#### Offering Apple Pay via Stripe through the widget
 
-If you want to offer payments via Apple Pay or Google Pay through the widget, the domain needs to be verified first. 
-pretix will take care of the domain verification process for you. 
-However, pretix can only validate the default domain that is being used for your shop (such as <https://pretix.eu/demo/democon/> ).
-When embedding the widget on your website, the domain of the embedding page will also need to be validated in order to be able to use it for wallet payments.
+If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
+pretix will automatically validate the domain that is being used for your shop regardless of the edition of pretix and your domain settings. 
+But when embedding the widget on your website, your domain will also need to be validated in order to be able to use it for Apple Pay. 
 
-The details might vary from payment provider to payment provider.
-Generally speaking, you need to give your payment provider the domain name and placing a merchant ID file into the `.well-known`-directory of your domain.
-For Apple Pay, this file is called `apple-developer-merchantid-domain-association`. 
-
-Further reading: [Stripe Payment Method Domain registration](https://stripe.com/docs/payments/payment-methods/pmd-registration)
+Please refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
 
 #### External payment providers and Cross Origin Opener Policy
 
