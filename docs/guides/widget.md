@@ -304,7 +304,7 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 
 ### Security
 
-This section explains aspects of embedding the widget that are relevant for security. 
+This section explains aspects of embedding the widget that are relevant for security: SSL/HTTPS, policy settings on your website, and domain verification for certain payment methods. 
 
 #### SSL
 
