@@ -341,7 +341,7 @@ If your pretix shop is running under a custom domain, you need to add the follow
  - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
     For pretix Hosted, also add `https://cdn.pretix.space`. 
 
-### Offering wallet payments (Apple Pay, Google Pay) within the widget
+#### Offering wallet payments (Apple Pay, Google Pay) within the widget
 
 If you want to offer payments via Apple Pay or Google Pay through the widget, the domain needs to be verified first. 
 pretix will take care of the domain verification process for you. 
