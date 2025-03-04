@@ -2,8 +2,10 @@
 
 Stripe is one of the many options for handling payments within pretix. 
 Stripe allows handling payments via the following methods: 
+
 Affirm, Alipay, Apple Pay, Bancontact, credit card, EPS, giropay, Google Pay, iDEAL, Klarna, Multibanco, Przelewy24, SEPA Direct debit, SOFORT, Swish, and WeChat Pay. 
-This article is going to tell you how to connect to your Stripe account and use it to receive payments via pretix. 
+
+This article tells you how to connect to your Stripe account and use it to receive payments via pretix. 
 
 ## Prerequisites
 
@@ -24,13 +26,15 @@ Setting up Stripe as a payment provider in pretix involves the following steps:
  6. Test it 
  7. Switch the Stripe endpoint to "live" 
 
-This section will guide you through those steps in detail. 
+This section guides you through those steps in detail. 
+
+![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
 Navigate to :navpath:Your Event → Settings → Plugins:.
 Switch to the :btn:Payment providers: tab. 
 The Stripe plugin is displayed at the top of the page. 
 It should be enabled by default. 
-If it is enabled, it will have a green ":fontawesome-solid-check: Active" tag and a white :btn:Disable: button. 
+If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn:Disable: button. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
@@ -38,9 +42,9 @@ Make sure that the plugin is enabled.
 
 Navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
-The list should now include an entry for Stripe with a red ":fontawesome-solid-x: Disabled" tag. 
+The list should now include an entry for Stripe with a red ":fa3-times: Disabled" tag. 
 The plugin is enabled, but Stripe has not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn-icon:fontawesome-solid-cog:Settings: button next to Stripe. 
+Click on the :btn-icon:fa3-cog:Settings: button next to Stripe. 
 This takes you to the settings page for Stripe, which currently only includes the :btn:Connect with Stripe: button. 
 Click the button and complete the the login and authorization process with Stripe. 
 
