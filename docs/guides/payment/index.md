@@ -36,7 +36,7 @@ The following sections guide you through those steps in detail.
 
 pretix allows handling payment via more than three dozen payment providers. 
 There is a plugin for each one of them. 
-You have to activate the plugins for every payment provider that you want to use for your event. 
+You have to enable the plugins for every payment provider that you want to use for your event. 
 This section tells you how to do that. 
 
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
@@ -233,6 +233,7 @@ The corresponding payment method should now show up in your online shop.
 
 Here is the full list of articles on setting up and using specific payment providers: 
 
- -  [Bank transfer](bank-transfer.md) 
- -  [Stripe](stripe.md) 
- -  [PayPal](paypal.md) 
+ - [Bank transfer](bank-transfer.md) 
+ - [Mollie](mollie.md)
+ - [PayPal](paypal.md) 
+ - [Stripe](stripe.md) 

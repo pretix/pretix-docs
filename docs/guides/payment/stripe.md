@@ -24,7 +24,9 @@ Setting up Stripe as a payment provider in pretix involves the following steps:
  6. Test it 
  7. Switch the Stripe endpoint to "Live" 
 
-This section will guide you through those steps in detail. 
+This section guides you through those steps in detail. 
+
+![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
 Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:.
 Switch to the :btn:Payment providers: tab. 
