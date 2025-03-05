@@ -16,15 +16,17 @@ We are going to start by [creating categories](products.md#creating-and-editing-
 ![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
 
 Categories can help us group products into sensible categories both in the backend and in our shop. 
-They also separate standalone products from additional products. 
+They also separate standalone products from add-on products. 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
 That means our next step is to create a category for those extras. 
 
 For that, we will navigate to our personal dashboard by clicking :btn-icon:i-pretix: pretix.eu: in the top left corner of the website. 
 We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-ticket: Products: in the sidebar and click the :btn:Categories: subentry. 
-This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
+This page shows the list of all product categories, which at the moment should only include a single category named "Tickets" of the type "Normal category". 
 
 We will click the :btn-icon:fa3-plus: Create a new category: button and give the category a name such as "Extras". 
+Under "Category type", we will select "Add-on product category". 
+We are not planning to use the cross-selling feature for this event, so the cross-selling categories are not relevant for us. 
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
 
 ## Creating and editing products
