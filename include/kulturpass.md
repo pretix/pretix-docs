@@ -1,62 +1,45 @@
-
-## Einführung
-
-Der [KulturPass](https://www.kulturpass.de/) ist ein Angebot der Bundesregierung für alle, die im laufenden Jahr ihren 18. Geburtstag feiern. 
+Der [KulturPass](https://www.kulturpass.de/) ist ein Programm der deutschen Bundesregierung für alle, die im laufenden Jahr ihren 18. Geburtstag feiern. 
 Sie erhalten ab ihrem 18. Geburtstag ein Budget von 200 Euro, das sie für Eintrittskarten, Bücher, CDs, Platten und vieles andere einsetzen können. 
-So wird Kultur vor Ort noch einfacher erlebbar. 
-Gleichzeitig stärkt das die Nachfrage bei den Anbietenden.
+Als Ticketing-System stellt pretix einen automatisierten Prozess für den Verkauf von Eintrittskarten über den KulturPass-Marktplatz bereit. 
 
-Da pretix ein Ticketing-System ist, stellen wir ausschließlich einen automatisierten Prozess für den Verkauf von Eintrittskarten über den KulturPass-Marktplatz bereit.
+Dieser Artikel erklärt die Einrichtung der Schnittstelle zwischen dem KulturPass-Marktplatz und Ihrem pretix-Shop, die Verwaltung von KulturPass-Bestellungen und den Bestellprozess aus Sicht der Kund*innen. 
 
-## Registrierung und Einrichtung
+## Voraussetzungen
 
-Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz anbieten zu können, ist zunächst eine Registerung und die Einrichtung eines "Shops" sowie der dazugehörigen Angebote notwendig.
+Sie benötigen Zugriff auf ein Veranstalterkonto und mindestens eine Veranstaltung. 
+Außerdem müssen Sie sich bei kulturpass.de registrieren, einen Shop einrichten und Angebote erstellen. 
+Falls Sie das nicht bereits getan haben, registrieren Sie Ihr Unternehmen/Ihre Einrichtung zunächst auf der [KulturPass-Webseite](https://storefront.prod.kulturpass.de/seller-registration). 
 
- 1. Registrierung
+## Anleitung
 
-    Registrieren Sie sich zunächst unter <https://www.kulturpass.de/anbietende/layer> als Anbieter. 
-    Im Zuge der Registrierung beantworten Sie einige Fragen zu Ihrem Unternehmen/Ihrer Kultureinrichtung, hinterlegen Ihre E-Mail-Adresse und beantworten Fragen zu Ihren Angebotsformen sowie Finanzierung Ihrer Einrichtung.
+### Verbindung der Konten
 
- 2. Anlegen eines KulturPass Shops
-
-    Nach Ihrer Registrierung müssen Sie der Weitergabe Ihrer Daten an die technische Platform hinter dem KulturPass, Mirakl, zustimmen. 
-    Hier benennen Sie auch Ihren Shop.
-
- 3. Identifizierung mit ELSTER-Zertifikat
-
-    Als nächsten Schritt müssen Sie Ihr Unternehmen oder Ihre Einrichtung mit Hilfe eines sog. ELSTER-Zertifikates identifizieren. 
-    Dieses Zertifikat nutzen Sie auch bereits jetzt schon, wenn Sie auf elektronischem Wege mit der Finanzverwaltung kommunizieren.
-
- 4. Ersteinrichtung in pretix
-
-    Navigieren Sie zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → Kulturpass:. 
-    Hinterlegen Sie hier die ID-Nummer Ihres KulturPass Marktplatz-Shops sowie einen API-Key. 
-    Diese Daten müssen Sie nur einmalig für alle Ihre Veranstaltungen angeben.
-
-    Im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) finden Sie die benötigten Informationen indem Sie auf das Benutzer-Symbol in der oberen, rechten Ecke klicken, "Profil" und dann "API Schlüssel" auswählen bzw. indem Sie "Einstellungen" in der Navigation links und dann "Shop" auswählen.
-
-!!! Note 
-    Zu jedem Zeitpunkt kann nur ein Hintergrundsystem mit dem KulturPass-System verbunden sein. 
-    Werden unterschiedliche Systeme oder gar mehrere pretix-Veranstalterkonten mit dem gleichen KulturPass-System verbunden, können keine Bestellungen mehr verarbeitet werden und Angebote nicht automatisiert an den KulturPass-Marktplatz übermittelt werden. 
-    Eingehende Bestellungen von Jugendlichen werden in diesem Fall automatisch abgelehnt, da diese nicht eindeutig zugeordnet werden können. 
-    Ebenso überschreibt die Bereitstellung der Angebote eines Systems die Angebote eines anderen Systems.
+!!! Warning 
+    Ein KulturPass-Shop kann nur mit einem einzigen externen System verbunden werden. 
+    Wenn der KulturPass-Shop mit mehreren externen Systemen verbunden ist, ist es nicht möglich, Bestellungen zu verarbeiten oder Angebote automatisiert an den KulturPass-Marktplatz zu übermitteln. 
+    Eingehende Bestellungen automatisch abgelehnt, da sie nicht eindeutig zugeordnet werden können. 
+    Das gilt auch, wenn Sie Ihren KulturPass-Shop mit mehreren pretix-Veranstalterkonten verbinden. 
 
     Wenn Sie mehrere Systeme haben, die den KulturPass-Marktplatz bedienen sollen, wenden Sie sich bitte an den KulturPass-Support, um sich einen weiteren Shop einrichten zu lassen.
 
+Um Ihr pretix-Veranstalterkonto mit Ihrem KulturPass-Konto zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → KulturPass:. 
+Hinterlegen Sie hier den "API Schlüssel" und die "Shop ID" Ihres KulturPass-Shops. 
 
- 5. Aktivierung der KulturPass-Erweiterungen
+Sie finden den API-Schlüssel im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) indem Sie diesen aufrufen und sich einloggen. 
+Klicken Sie das Benutzer-Symbol in der oberen, rechten Ecke, :btn:Profil: und dann "API Schlüssel".
+Sie finden die Shop-ID, indem Sie in der Navigation links "Einstellungen" und dann "Shop" auswählen.
 
-    Alle Veranstaltungen, die Sie über den KulturPass anbieten möchten, benötigen die KulturPass-Erweiterung. 
-    Um diese zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Plugins: und wechseln Sie zum Tab :btn:Integrationen:. 
-    Aktivieren Sie hier das Plugin "Kulturpass". 
-    Wiederholen Sie diese Schritte für jede Veranstaltung, für die Sie den Kulturpass nutzen möchten. 
+### Verbindung der Veranstaltung 
 
- 6. Konfiguration der Artikel
+Alle Veranstaltungen, die Sie über den KulturPass anbieten möchten, benötigen die KulturPass-Erweiterung. 
+Um diese zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Plugins: und wechseln Sie zum Tab :btn:Integrationen:. 
+Aktivieren Sie hier das Plugin "KulturPass". 
+Wiederholen Sie diese Schritte für jede Veranstaltung, für die Sie den KulturPass nutzen möchten. 
 
-    Nachdem die KulturPass-Erweiterung aktiviert wurde, müssen Sie sich entscheiden, welche Produkte Sie über den KulturPass-Marktplatz anbieten möchten. 
-    Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und bearbeiten Sie das relevante Produkt. 
-    Öffnen Sie den Tab :btn:Zusätzliche Einstellungen: und setzen Sie das Häkchen bei "Das Produkt kann mit dem KulturPass erworben werden".
-    Wiederholen Sie diese Schritte für jedes Produkt, dass Sie über den KulturPass-Marktplatz anbieten möchten. 
+Nachdem die KulturPass-Erweiterung aktiviert wurde, müssen Sie sich entscheiden, welche Produkte Sie über den KulturPass-Marktplatz anbieten möchten. 
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und bearbeiten Sie das relevante Produkt. 
+Öffnen Sie den Tab :btn:Zusätzliche Einstellungen: und setzen Sie das Häkchen bei "Das Produkt kann mit dem KulturPass erworben werden".
+Wiederholen Sie diese Schritte für jedes Produkt, dass Sie über den KulturPass-Marktplatz anbieten möchten. 
 
 !!! Note 
     Die Eigenschaft, dass ein Produkt durch den KulturPass-Marktplatz erworben werden kann, kann für beliebig viele Produkte aktiviert werden. 
