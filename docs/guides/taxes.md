@@ -178,6 +178,43 @@ In the "Sales tax" drop-down menu, select the tax rule that you want to assign t
 This list will use the internal name you specified on the tax rules settings page and the specified percentage. 
 Once you have made your selection, click the :btn:Save: button. 
 
+#### Mixed taxation 
+
+This section explains how to implement a mixed tax situation for a single product. 
+pretix allows you to do this by combining several products, each with their own tax rate, into a single bundle. 
+
+Create one product for each relevant tax rate. 
+Assign each product a different tax rate. 
+For all products except one, switch to the :btn:Availability: tab, check the box next to "Only sell this product as part of a bundle" and click the :btn:Save: button. 
+Skip this step for the last of the products you created. 
+
+Instead, switch to the :btn:Bundled products: tab and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
+Choose one of the other products you created under "Bundled product" and set the "Designated price part". 
+Repeat this step for each product with a diverging tax rate that you want to include in this bundle. 
+Then, click the :btn:Save: button. 
+
+For illustrative purposes, let's say you are organizing an educational event for a charitable organization in Germany and you have permission to charge a reduced tax rate of 7% that event. 
+However, the admission ticket price also includes catering, which is still taxed at a rate of 19%. 
+The tax situation may look something like this: 
+
+ - event ticket price: €450 (including €150 for food)
+
+   - including €19.63 VAT at 7%
+   - incl. €23.95 VAT at 19%
+
+If you want to depict this tax situation using the method described above, create the following two products:
+
+ - "Event ticket" with a price of €450 and a tax rate of 7% 
+
+ - "Catering" with a price of €150, a 19% tax rule and the box “Only sell this product as part of a bundle" checked 
+
+Then, select the "Event ticket" and open the :btn:Bundled products: tab. 
+Add the "Catering" product and enter a "Designated price part" of €150. 
+
+When a customer purchases the event ticket, the catering will be added as a bundled product automatically.
+The product price of €450 will split into the two components. 
+€300 will be taxed at 7% and €150 will be taxed at 19%, just as intended. 
+
 ## Troubleshooting 
 
 ### International business customer places order without VAT ID 
