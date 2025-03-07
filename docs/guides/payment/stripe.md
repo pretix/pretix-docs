@@ -72,28 +72,34 @@ Take a detailed look at the page and enable any settings you want for this payme
 Once you are satisfied, scroll to the top of the page and check the box next to "Enable payment method". 
 The payment methods you enabled on this page and in your Stripe account settings will now appear as options for customers in your shop during payment. 
 
-Once you take your ticket shop live, you also have to switch the "Endpoint" option on this page from "Testing" to "Live". 
+Once you take your ticket shop live, switch the "Endpoint" option on this page from "Testing" to "Live". 
 While your event is in test mode, the pretix software will always use Stripe's testing endpoint regardless of the setting here. 
 
-### Connecting to PayPal with a self-hosted edition of pretix 
+### Connecting to Stripe with a self-hosted edition of pretix 
 
 <!-- md:community --> 
 <!-- md:enterprise -->
 
-If you are using pretix Community or pretix Enterprise and you have not connected your account to Stripe yet, the settings page for Stripe will display two fields labeled "Stripe account". 
-Go to [https://developer.paypal.com](https://developer.paypal.com) and log in to your account. 
-Create a new REST API app and switch it from "Sandbox" to "Live". 
-Copy the Client ID and Secret from the PayPal REST API app page to the settings page for PayPal in pretix. 
-For further information, refer to the PayPal documentation page on [PayPal REST APIs](https://developer.paypal.com/api/rest/). 
+If you are using pretix Community or pretix Enterprise and you have not connected your account to Stripe yet, the settings page for Stripe will display fields for API keys. 
+Go to [https://dashboard.stripe.com/login](https://dashboard.stripe.com/login) and log in to your account. 
+The "API" page in the Stripe backend displays two pairs of keys: a secret key and a publishable key, once for sandbox mode and once for live mode. 
+If you want to test payments via Stripe, copy the sandbox keys form the Stripe API page to the corresponding fields on the settings page for Stripe in pretix. 
+
+Once you are ready to receive actual payments via Stripe, copy the live keys form the Stripe API page to the corresponding fields on the settings page for Stripe in pretix.
+For further information, refer to the Stripe documentation pages on [API keys](https://docs.stripe.com/keys#obtain-api-keys).  
 
 You also need to create a webhook so that Stripe can update pretix with information such as payment cancellations. 
-Copy the webhook URL from the Stripe settings page in pretix. 
-Open [https://developer.paypal.com](https://developer.paypal.com) and edit the REST API app you created for this event. 
-Add a webhook and paste the webhook URL into the corresponding field. 
-Check the box next to "All events" and save your settings. 
+Copy the webhook URL from the infobox near the bottom of the Stripe settings page in pretix. 
+Open [https://dashboard.stripe.com/webhooks](https://dashboard.stripe.com/webhooks) and create a new destination. 
+During the event destination setup process, select all event types for being sent to pretix. 
+Paste the webhook URL into the corresponding field and click :tbn:Create destination:. 
+For further information, refer to the Stripe documentation pages on [event destinations](https://docs.stripe.com/workbench/event-destinations). 
 
-After you have set up the connection between pretix and PayPal, the PayPal settings page in the pretix backend will now offer a multitude of settings. 
-All settings here are optional. 
+After you have set up the connection between pretix and Stripe, the Stripe settings page in the pretix backend will now offer a multitude of settings. 
+All new settings here are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
-PayPal and the other payment methods you enabled on this site will now appear as a payment option for customers in your shop. 
+Stripe and the other payment methods you enabled on this site will now appear as a payment option for customers in your shop. 
+
+Once you take your ticket shop live, switch the "Endpoint" option on this page from "Testing" to "Live". 
+While your event is in test mode, the pretix software will always use Stripe's testing endpoint regardless of the setting here. 

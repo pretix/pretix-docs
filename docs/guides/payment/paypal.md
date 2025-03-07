@@ -84,13 +84,13 @@ Copy the Client ID and Secret from the PayPal REST API app page to the settings 
 For further information, refer to the PayPal documentation page on [PayPal REST APIs](https://developer.paypal.com/api/rest/). 
 
 You also need to create a webhook so that PayPal can update pretix with information such as payment cancellations. 
-Copy the webhook URL from the PayPal settings page in pretix. 
+Copy the webhook URL from the infobox near the bottom of the PayPal settings page in pretix. 
 Open [https://developer.paypal.com](https://developer.paypal.com) and edit the REST API app you created for this event. 
 Add a webhook and paste the webhook URL into the corresponding field. 
 Check the box next to "All events" and save your settings. 
 
 After you have set up the connection between pretix and PayPal, the PayPal settings page in the pretix backend will now offer a multitude of settings. 
-All settings here are optional. 
+All new settings here are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
 PayPal and the other payment methods you enabled on this site will now appear as a payment option for customers in your shop. 
