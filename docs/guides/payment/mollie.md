@@ -45,7 +45,13 @@ The list should now include an entry for Mollie with a red ":fa3-times: Disabled
 The plugin is enabled, but Mollie has not been set up and enabled as a payment provider for the event yet. 
 
 Click the :btn-icon:fa3-cog:Settings: button next to Mollie. 
-This takes you to the settings page for Mollie, which currently only includes the :btn:Connect with Mollie: button. 
+From this point on, the process is different depending on whether you are using pretix Hosted or a self-hosted edition of pretix (Community or Enterprise). 
+
+### Connecting to Mollie with pretix Hosted 
+
+<!-- md:hosted -->
+
+If you are using pretix Hosted and you have not connected your account to Mollie yet, the settings page for Mollie only includes the :btn:Connect with Mollie: button. 
 Click the button and complete the the login and authorization process with Mollie. 
 
 ![Mollie website with a form for singing in and an image advertising "Tap to Pay on iPhone".](../../assets/screens/payment-providers/mollie-sign-in.png "Mollie–Sign in" )
@@ -64,7 +70,31 @@ If you enable them, you need to click the :btn:Reconnect to Mollie (update permi
 All further settings on this page are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
 Once you are satisfied, check the box next to "Enable payment method" and click the :btn:Save: button. 
-The payment methods you enabled on this page and in your Mollie account settings will now appear as options for customers in your shop during payment. 
+The payment methods you enabled on this page and in your Mollie account settings will now appear as options for customers in your shop. 
 
 Once you take your ticket shop live, switch the "endpoint" option on this page from "testing" to "live". 
-While your event is in test mode, the pretix software will always use Mollie's testing endpoint regardless of the setting here. 
+
+### Connecting to Mollie with a self-hosted edition of pretix 
+
+<!-- md:community --> 
+<!-- md:enterprise -->
+
+If you are using pretix Community or pretix Enterprise and you have not connected your account to Mollie yet, the settings page for Mollie will display fields for API keys. 
+Go to [https://www.mollie.com/dashboard/settings/profiles](https://www.mollie.com/dashboard/settings/profiles) and log in to your account. 
+If you want to test payments via Mollie, copy the testing keys form the Mollie API page to the corresponding fields on the settings page for Mollie in pretix. 
+
+Once you are ready to receive actual payments via Mollie, copy the live keys form the Mollie API page to the corresponding fields on the settings page for Mollie in pretix.
+For further information, refer to the Mollie documentation pages on [API keys]https://docs.mollie.com/reference/authentication#creating-api-keys).  
+
+You also need to create a webhook so that Mollie can update pretix with information such as payment cancellations. 
+Copy the webhook URL from the infobox near the bottom of the Mollie settings page in pretix and paste it into the corresponding field in the Mollie backend. 
+During the webhook setup process, select all event types for being sent to pretix. 
+For further information, refer to the Mollie documentation pages on [webhooks](https://docs.mollie.com/reference/webhooks). 
+
+After you have set up the connection between pretix and Mollie, the Mollie settings page in the pretix backend will now offer a multitude of settings. 
+All new settings here are optional. 
+Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
+Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
+Mollie and the other payment methods you enabled on this site will now appear as a payment option for customers in your shop. 
+
+Once you take your ticket shop live, switch the "Endpoint" option on this page from "Testing" to "Live". 
