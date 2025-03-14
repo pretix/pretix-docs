@@ -1,4 +1,4 @@
-mkdocs[i18n]==1.5.*
+mkdocs[i18n]==1.6.*
 mkdocs-material[imaging]==9.*
 mkdocs-glightbox
 mkdocs-git-revision-date-localized-plugin==1.2.*
