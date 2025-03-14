@@ -75,10 +75,7 @@ markdown_extensions:
 plugins:
   - search
   - privacy
-  - awesome-nav:
-      order: asc
-      sort_type: natural
-      order_by: title
+  - awesome-nav
   - glightbox
   - macros:
       include_dir: include
