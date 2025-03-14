@@ -5,10 +5,7 @@ sort:
   type: natural
 
 not_in_nav: |
- - old-link.md
-
-exclude_docs: |
- - old-link.md
+ old-link.md
 
 hidden: 
  - old-link.md
