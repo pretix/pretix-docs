@@ -11,3 +11,6 @@ nav:
  - self-hosting
  - Entwicklungs- und API-Dokumentation: https://docs.pretix.eu/dev/
  - trust
+
+ignore:
+ - old-link.md
