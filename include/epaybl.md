@@ -55,7 +55,7 @@ Die nächsten beiden Unterabschnitte stellen Ihnen die beiden Optionen vor und h
 
 ### Kontierung pro Position/Artikel
 
-Dieser Modus "pro Position/Artikel" versucht den klassischen behördentypischen ePayBL-Zahlungsvorgang abzubilden. 
+Der Modus "pro Position/Artikel" versucht den klassischen behördentypischen ePayBL-Zahlungsvorgang abzubilden. 
 Jede einzelne Position, die ein Kunde in den Warenkorb legt, wird genau so an ePayBL und die Hintergrundsysteme übermittelt.
 Wenn Sie diesen Kontierungsmodus wählen, dann müssen Sie bei Ihren Produkten die relevanten Informationen angeben. 
 
@@ -65,26 +65,16 @@ Wiederholen Sie diese Schritte für jedes Produkt, dessen Kauf an ePayBL übermi
 
 Die Vorteile dieser Option sind, dass die größtmögliche Menge an Kontierungsdaten an ePayBL übertragen wird und dass ein separates Verbuchen von Leistungen auf unterschiedliche Haushaltsstellen möglicht ist. 
 Ein Nachteil der Kontierung pro Position/Artikel ist, dass keine Gebühren-Positionen (Versandkosten, Zahlungs-, Storno- oder Servicegebühren) übertragen werden können. 
-Bitte kontaktieren Sie unseren Support, falls Sie diese Funktionen benötigen. 
 
 Ein weiterer Nachteil ist, dass Kund*innen pro Bestellung nur eine einzige Zahlung leisten können. 
-Das kann zu Frust führen. 
-
-pretix bietet die Option an, dass ein Veranstalter eine Bestellung jederzeit verändern kann: Ändern von Preisen von Positionen in einer aufgegebenen Bestellung, Zubuchen und Entfernen von Bestellpositionen, etc. 
-Hat der Kunde seine ursprüngliche Bestellung jedoch schon über ePayBL bezahlt, kann pretix nicht mehr die komplette Bestellung mit den passenden Kontierungen übertragen – es müsste nur ein Differenz-Abbild zwischen Ursprungsbestellung und aktueller Bestellung übertragen werden. 
-Aber auch wenn eine "Nachmeldung" möglich wäre, so wäre ein konkretes Auflösen für was jetzt genau gezahlt wird, nicht mehr möglich.
-
-Daher gilt bei der Nutzung der Kontierung pro Position/Artikel: Der Kunde kann nur eine (erfolgreiche) Zahlung auf seine Bestellung leisten.
+Die Schnittstelle zu ePayBL unterstützt in diesem Modus nur die erstmalige Übermittlung einer Bestellung, nicht aber die Aktualisierung der Daten der Bestellung. 
+Bestellungen können zwar in pretix nachträglich verändert werden, aber das führt nicht zu einer Aktualisierung der Informationen auf Seiten von ePayBL. 
+Das kann im Bestellprozess zu Frust führen. 
 
 ### Kontierung pro Zahlvorgang
 
-Dieser Modus verabschiedet sich vom behördlichen "Jede Position gehört genau zu einem Haushaltskonto und muss genau zugeordnet werden". 
-Stattdessen werden alle Bestellpositionen – inklusive eventuell definierter Gebühren – vermengt und nur als ein großer Warenkorb, genauer gesagt eine einzige Position, an ePayBL sowie die Hintergrundsysteme gemeldet.
-
-Während im "pro Postion/Artikel"-Modus jeder Artikel einzeln übermittelt wird und damit auch korrekt pro Artikel der jeweilige Brutto- und Nettopreis sowie der anfallende Steuerbetrag und ein Steuerkennzeichen (mit Hilfe des optionalen `HREF`-Attributs) übermittelt werden, ist dies im "pro Zahlvorgang"-Modus nicht möglich.
-
-Stattdessen übermittelt pretix nur einen Betrag für den gesamten Warenkorb: Bruttopreis == Nettopreis. 
-Der Steuerbetrag wird hierbei als 0 übermittelt.
+Der Modus "pro Zahlvorgang" fasst alle Positionen einer Bestellung zu einer einzelnen zusammen und übermittelt diese an ePayBL. 
+In diesem Modus werden die Preise der einzelnen Produkte sowie die Anteile an Steuern nicht unterschieden. 
 
 Die Angabe einer Haushaltsstelle und Objektnummer sowie optional der `HREF`-Kontierungsinformationen ist jedoch weiterhin notwendig – allerdings nicht mehr individuell für jeden Artikel/jede Position sondern nur für die gesamte Bestellung. 
 Diese Daten sind direkt in den ePayBL-Einstellungen der Veranstaltung unter Einstellungen -\> Zahlung -\> ePayBL vorzunehmen
