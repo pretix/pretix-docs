@@ -5,7 +5,7 @@ sort:
   type: natural
 
 nav:
- - ... | index*.md
+ - index*.md
  - tutorial
  - guides
  - self-hosting
