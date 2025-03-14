@@ -64,7 +64,10 @@ Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und bea
 Wiederholen Sie diese Schritte für jedes Produkt, dessen Kauf an ePayBL übermittelt werden soll. 
 
 Die Vorteile dieser Option sind, dass die größtmögliche Menge an Kontierungsdaten an ePayBL übertragen wird und dass ein separates Verbuchen von Leistungen auf unterschiedliche Haushaltsstellen möglicht ist. 
-Der Nachteil ist, dass Kund*innen pro Bestellung nur eine einzige Zahlung leisten können. 
+Ein Nachteil der Kontierung pro Position/Artikel ist, dass keine Gebühren-Positionen (Versandkosten, Zahlungs-, Storno- oder Servicegebühren) übertragen werden können. 
+Bitte kontaktieren Sie unseren Support, falls Sie diese Funktionen benötigen. 
+
+Ein weiterer Nachteil ist, dass Kund*innen pro Bestellung nur eine einzige Zahlung leisten können. 
 Das kann zu Frust führen. 
 
 pretix bietet die Option an, dass ein Veranstalter eine Bestellung jederzeit verändern kann: Ändern von Preisen von Positionen in einer aufgegebenen Bestellung, Zubuchen und Entfernen von Bestellpositionen, etc. 
@@ -72,9 +75,6 @@ Hat der Kunde seine ursprüngliche Bestellung jedoch schon über ePayBL bezahlt,
 Aber auch wenn eine "Nachmeldung" möglich wäre, so wäre ein konkretes Auflösen für was jetzt genau gezahlt wird, nicht mehr möglich.
 
 Daher gilt bei der Nutzung der Kontierung pro Position/Artikel: Der Kunde kann nur eine (erfolgreiche) Zahlung auf seine Bestellung leisten.
-
-Eine weitere Einschränkung dieses Modus ist, dass aktuell keine Gebühren-Positionen (Versandkosten, Zahlungs-, Storno- oder Servicegebühren) in diesem Modus übertragen werden können. 
-Bitte kontaktieren Sie unseren Support, falls Sie diese Funktionen benötigen. 
 
 ### Kontierung pro Zahlvorgang
 
