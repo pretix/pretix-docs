@@ -12,5 +12,5 @@ nav:
  - Entwicklungs- und API-Dokumentation: https://docs.pretix.eu/dev/
  - trust
 
-not_in_nav: 
- - old-link.md
+not_in_nav: |
+ /old-link.md
