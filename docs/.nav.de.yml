@@ -4,6 +4,9 @@ sort:
   ignore_case: true
   type: natural
 
+ignore:
+ - old-link.md
+
 nav:
  - index*.md
  - tutorial
@@ -11,6 +14,3 @@ nav:
  - self-hosting
  - Entwicklungs- und API-Dokumentation: https://docs.pretix.eu/dev/
  - trust
-
-ignore:
- - old-link.md
