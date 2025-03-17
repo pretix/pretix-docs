@@ -1,15 +1,20 @@
 # GetYourGuide
 
-!!! Note 
-    The GetYourGuide integration is currently in beta. 
-    Please contact <support@pretix.eu> to enable the integration for your pretix.eu organizer account.
+You can use third-party aggregators such als GetYourGuide to sell tickets not only through our own own ticket shop, but also through the aggregator's website. 
+Using GetYourGuide is not free. 
+But it allows you to reach a larger audience that would otherwise not have found their way to your shop. 
+pretix offers an integration with GetYourGuide that allows you to profit from an additional sales and revenue channel, while keeping the effort for setting up and maintaining multiple ticket shops at a minimum. 
+This article is going to tell you how to do that. 
 
-## Introduction
+## Prerequisites
 
-Using third party aggregators, such als GetYourGuide, event organizers can sell tickets to their events not only on their own ticket shop but also on the aggregator's portal. 
-While this service is not for free, it allows event organizers to reach a larger audience that would otherwise not have found their way into the organizer's webshop.
+If you want to use the GetYourGuide integration for pretix, then you need to have access to an active GetYourGuide account. 
 
-Using pretix' integration with GetYourGuide, event organizers can profit from an additional sales and revenue channel, while keeping the effort for setting up and maintaining multiple ticket shops to a minimum.
+## How to 
+
+Setting up the GetYourGuide integration involves the following steps: 
+
+ 1. Contact support via [email](support@pretix.eu) or [phone](tel:+4962213217750) and ask them to unlock the GetYourGuide plugin on your account. 
 
 ## Preparing your organizer account
 
