@@ -47,6 +47,12 @@ Repeat this step for every event that you want to offer via GetYourGuide.
 In order to sell your event via the GetYourGuide sales channel, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
 Under "Sales channels", check the box next to "GetYourGuide" or the box next to "Sell on all sales channels". 
 
+In order to configure the GetYourGuide integration, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
+Supply the required information, choose the "Event time mode", and the "Booking mode". 
+For each of your events, you can only offer either individual tickets or group tickets through GetYourGuide. 
+For more information on individual vs. group tickets, see the [next section](getyourguide.md#setting-up-tickets-for-getyourguide). 
+Once you are happy with your choices, click the :btn:Save: button. 
+
 ### Setting up tickets for GetYourGuide 
 
 Configure at least one product to be sold via GetYourGuide. 
@@ -76,18 +82,16 @@ GetYourGuide will always default to the smallest applying quota, except if that 
 pretix will only report the available number of tickets for the lowest applying quota.
 Thus, you should add all products that you are selling through GetYourGuide to the same quota. 
 
-### Configuring the GetYourGuide plugin
-
-In order to configure the GetYourGuide integration, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
-Supply the required information and click the :btn:Save: button. 
-If you want to use the analyzer feature of the GetYourGuide plugin, open the :btn:Analyzer: tab and set it up. 
-
 ### Connecting to GetYourGuide 
 
 The GetYourGuide backend refers to your pretix event as a "product". 
 Open the GetYourGuide [Supplier Portal](https://suppliers.getyourguide.com/) and connect it with your pretix shop. 
 In order to do so, follow the instructions for [Connecting a new product to your Reservation System](https://supply.getyourguide.support/hc/en-us/articles/18008029689373-Connecting-a-new-product-to-your-Reservation-system) in the GetYourGuide Supply Partner Help Center.
 Select "pretix.eu" as your "reservation system". 
-You can find the required "product ID" by navigating to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and opening the :btn:Configuration: tab. .
+You can find the required "product ID" by navigating to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and opening the :btn:Configuration: tab. 
+It is displayed in the infobox at the bottom of the page as soon as you have entered and saved all mandatory information. 
 
 From this point on, GetYourGuide will automatically import products along with their availability status and offer them for sale. 
+Once your shop is live and connected to GetYourGuide, you can use the analyzer feature. 
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
+This page displays the availability information that pretix has communicated to GetYourGuide for each product. 
