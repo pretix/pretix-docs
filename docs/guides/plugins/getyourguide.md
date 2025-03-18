@@ -15,49 +15,35 @@ The GetYourGuide integration is handled on the event level, so you have to creat
 Setting up the GetYourGuide integration involves the following steps: 
 
  1. Ask pretix support to unlock the GetYourGuide plugin on your account. 
- 2. Enabling the plugin 
+ 2. Creating a sales channel
+ 3. Enabling the plugin 
 
-### Contacting support 
+
+### Setting up your organizer account for GetYourGuide
+
+The following actions need to be taken once for every organizer account that you want to integrate with GetYourGuide. 
 
 The pretix integration with GetYourGuide is currently in beta. 
 The pretix team has to activate it once for your organizer account before you can use it. 
 Contact support via [email](support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the GetYourGuide plugin. 
 
-### Creating a sales channel 
-
+Before you can use GetYourGuide for any of your events, you need to create a corresponding sales channel on your organizer account. 
+pretix will use the sales channel to properly attribute sales via GetYourGuide. 
 Navigate to :navpath:Your organizer → :fa3-wrench: Settings → Sales channels:. 
 Click the :btn-icon:fa3-plus: Add a new channel: button. 
 On the page titled "Add sales channel", select :btn:GetYourGuide:. 
 Click the :btn:Save: button. 
 
-### Enabling the plugin
+### Setting up your event for GetYourGuide
+
+The following actions need to be taken once for every event account that you want to sell via GetYourGuide. 
 
 In order to enable the GetYourGuide plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Integrations: tab. 
 Seek out the plugin labeled "GetYourGuide" in the list and click the :btn:Enable: button next to it. 
 Repeat this step for every event that you want to offer via GetYourGuide. 
 
-## Preparing your organizer account
-
-The first step in enabling the GetYourGuide integration is to setup a corresponding Sales Channel, which will be used to properly attribute the sales generated. 
-This needs to be done only once per organizer account.
-
-In order to do so, navigate to :navpath:Your Organizer → :fa3-wrench: Settings → Sales channels: and click the :btn-icon:fa3-plus:Add a new channel: button.
-
-On the following page, you will be able to select "GetYourGuide" as the sales channel type and give it a custom name.
-
-## Preparing your event
-
-In order to now sell your events on GetYourGuide, you will need to configure each event in question.
-
- 1. Enabling the plugin
-
-    Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
-    Click the :btn:Enable: button next to the "GetYourGuide" plugin. 
-
- 2. Sell the event on the sales channel
-
-    Navigate to :navpath:Your Event  → :fa3-wrench: Settings → General: 
-    Check either the box next to "Sell on all sales channels" or at least one of the boxes next to "Restrict to specific sales channels". 
+In order to sell your event via the GetYourGuide sales channel, navigate to :navpath:Your Event  → :fa3-wrench: Settings → General:.  
+Check either the box next to "Sell on all sales channels" or the box next to "GetYourGuide". 
 
  3. Configure one or more products to be sold on GetYourGuide
 
