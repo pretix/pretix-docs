@@ -15,9 +15,9 @@ The GetYourGuide integration is handled on the event level, so you have to creat
 Setting up the GetYourGuide integration involves the following steps: 
 
  1. Ask pretix support to unlock the GetYourGuide plugin on your account. 
- 2. Creating a sales channel
- 3. Enabling the plugin 
-
+ 2. Create a sales channel
+ 3. Enable the plugin 
+ 4. Configure products
 
 ### Setting up your organizer account for GetYourGuide
 
@@ -42,65 +42,48 @@ In order to enable the GetYourGuide plugin, navigate to :navpath:Your event → 
 Seek out the plugin labeled "GetYourGuide" in the list and click the :btn:Enable: button next to it. 
 Repeat this step for every event that you want to offer via GetYourGuide. 
 
-In order to sell your event via the GetYourGuide sales channel, navigate to :navpath:Your Event  → :fa3-wrench: Settings → General:.  
-Check either the box next to "Sell on all sales channels" or the box next to "GetYourGuide". 
+In order to sell your event via the GetYourGuide sales channel, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
+Under "Sales channels", check the box next to "GetYourGuide" or the box next to "Sell on all sales channels". 
 
- 3. Configure one or more products to be sold on GetYourGuide
+### Setting up tickets for GetYourGuide 
 
-    Either create a new or edit an existing product that you would like to sell on GetYourGuide. 
-    To do so, navigate to :navpath:Your Event → :fa3-ticket: Products: and select the product in question. 
-    Switch to the :btn:Availability: tab and either check the box next to "Sell on all sales channels" or at least one of the boxes next to "Restrict to specific sales channels". 
-    Then, switch to the :btn:Additional settings: tab and set the GetYourGuide equivalent ticket category. 
-    Within your event, there can be only one product per ticket category. 
-    Depending on your further configuration, you must at least select one product to be in the "Adult" or "Group" category.
+Configure at least one product to be sold via GetYourGuide. 
+In order to do so, navigate to :navpath:Your Event → :fa3-ticket: Products: and create or edit a product. 
+Switch to the :btn:Availability: tab and under "Sales channels", check the box next to "GetYourGuide" or the box next to "Sell on all sales channels". 
 
- 4. Configuring the GetYourGuide plugin
+Then, switch to the :btn:Additional settings: tab and set the GetYourGuide equivalent ticket category. 
+There can only be one product per GetYourGuide ticket category for each one of your events. 
+Depending on your configuration, you have to add at least one product to be in the "Adult" or "Group" GetYourGuide ticket category.
 
-    Once you have configured one or more products to be eligible to be sold on GetYourGuide, you'll need to configure a few basic settings within the event. 
-    Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
-    The most important settings, such as the location of the event on sale, can be found here. 
+GetYourGuide relies on pretix product categories for ticket pricing. 
+For each one of your pretix events, you can only either sell individual tickets or group tickets via GetYourGuide—not both. 
+If you want to sell individual tickets, then you will have to offer at least one ticket of the GetYourGuide ticket category "Adult". 
+In addition to that, you can also offer tickets of an of the other GetYourGuide ticket categories ("Child", "Youth", "Senior", etc.). 
+Customers will have to buy one ticket for every attendee. 
 
-## Ticket Categories
+If you want to sell group tickets, then you have to offer at least one product of the GetYourGuide ticket category "Group". 
+If you are offering group tickets, then it is not possible to offer any other GetYourGuide ticket categories (single tickets). 
+Customers will only have to purchase one ticket for their whole group of attendees. 
+You can limit the configure the size limit of the group for every ticket. 
 
-While pretix only uses the ticket category term loosely to group together multiple products for nicer display, GetYourGuide is relying on the ticket categories to price the tickets.
+Just like with any other product, you also have to add the tickets you intend to sell via GetYourGuide to a quota in pretix before they become available in your shop. 
+If you want to learn more on how to handle categories in pretix, refer to the section on [categories](../products.md#creating-and-editing-categories). 
 
-First of all, you need to make the decision on how you are planning on selling your tickets on GetYourGuide - in most cases, this will reflect your current sales strategy within your pretix shop.
+You cannot offer more than one quantity for individual ticket categories sold through GetYourGuide.
+GetYourGuide will always default to the smallest applying quota, except if that quota is exhausted and another one is available. 
+pretix will only report the available number of tickets for the lowest applying quota.
+Thus, you should add all products that you are selling through GetYourGuide to the same quota. 
 
- - Individual tickets
-   Every single person attending will need to purchase their own ticket. 
-   A family of two adults and two children will have to purchase and pay for a total of 4 tickets. 
-   In this case, you will need to offer *at least* a ticket of the "Adult" type, but may offer any other ticket category type (Child, Youth, Senior, ...) in addition. 
-   But you cannot offer a "Group" ticket.
+### Configuring the GetYourGuide plugin
 
- - Group tickets
+In order to configure the GetYourGuide integration, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
+Supply the required information and click the :btn:Save: button. 
+If you want to use the analyzer feature of the GetYourGuide plugin, open the :btn:Analyzer: tab and set it up. 
 
-   Two groups, consisting of 10 and 20 participants respectively, won't need to purchase a total of 30 tickets, but rather two group tickets. 
-   It is up to you to configure the group size limits within the GetYourGuide-settings of your product. 
-   Choosing this option, you cannot offer any other ticket categories besides "Group".
+The GetYourGuide backend refers to your pretix event as a "product". 
+Open the GetYourGuide [Supplier Portal](https://suppliers.getyourguide.com/) and connect it with your pretix shop. 
+In order to do so, follow the instructions for [Connecting a new product to your Reservation System](https://supply.getyourguide.support/hc/en-us/articles/18008029689373-Connecting-a-new-product-to-your-Reservation-system) in the GetYourGuide Supply Partner Help Center.
+Select "pretix.eu" as your "reservation system". 
+You can find the required "product ID" by navigating to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and opening the :btn:Configuration: tab. .
 
-## Setting up event dates and quotas
-
-Of course, in addition to creating products, you will also need to add them to a quota for them to be available for sale. 
-The process for doing this is the very same as for any regular event or event series.
-If you want to learn more on how to handle taxes in pretix, refer to our guide on [products](../products.md). 
-
-!!! Note 
-    When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.
-    GetYourGuide will always default to the smallest relevant quota, except if that quota is exhausted and another one is available. 
-
-For this reason, we recommend placing all GetYourGuide-eligible products into the same quota. 
-Should you however opt to create multiple quotas which create an imbalance, pretix will report only the available number of tickets for the lowest relevant quota.
-
-## Connecting your event to GetYourGuide
-
-Once you have set up your event and products and performed all necessary configuration, you may want to use the Analyzer feature of the GetYourGuide plugin. 
-If you want to do so, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
-
-The Analyzer should not display any blocking error messages and at least one event date that is ready for publishing on the GetYourGuide platform.
-
-At this point, you will need to setup your event (called "product" in the GetYourGuide universe) on their [Supplier Portal](https://suppliers.getyourguide.com/) and connect it with your pretix shop. 
-To do so, please follow the instructions for [Connecting a new product to your Reservation System](https://supply.getyourguide.support/hc/en-us/articles/18008029689373-Connecting-a-new-product-to-your-Reservation-system) on the GetYourGuide Supply Partner Help Center.
-
-Select "pretix.eu" as your reservation system; the required "product ID" can be found in the "Configuration" tab of the GetYourGuide plugin settings page.
-
-From this point on, GetYourGuide will automatically import the availabilities and products and offer them for sale.
+From this point on, GetYourGuide will automatically import products along with their availability status and offer them for sale. 
