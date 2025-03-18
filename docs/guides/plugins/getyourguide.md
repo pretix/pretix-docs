@@ -18,6 +18,8 @@ Setting up the GetYourGuide integration involves the following steps:
  2. Create a sales channel
  3. Enable the plugin 
  4. Configure products
+ 5. Configure the plugin
+ 6. Connect to GetYourGuide
 
 ### Setting up your organizer account for GetYourGuide
 
@@ -25,7 +27,7 @@ The following actions need to be taken once for every organizer account that you
 
 The pretix integration with GetYourGuide is currently in beta. 
 The pretix team has to activate it once for your organizer account before you can use it. 
-Contact support via [email](support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the GetYourGuide plugin. 
+Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the GetYourGuide plugin. 
 
 Before you can use GetYourGuide for any of your events, you need to create a corresponding sales channel on your organizer account. 
 pretix will use the sales channel to properly attribute sales via GetYourGuide. 
@@ -79,6 +81,8 @@ Thus, you should add all products that you are selling through GetYourGuide to t
 In order to configure the GetYourGuide integration, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
 Supply the required information and click the :btn:Save: button. 
 If you want to use the analyzer feature of the GetYourGuide plugin, open the :btn:Analyzer: tab and set it up. 
+
+### Connecting to GetYourGuide 
 
 The GetYourGuide backend refers to your pretix event as a "product". 
 Open the GetYourGuide [Supplier Portal](https://suppliers.getyourguide.com/) and connect it with your pretix shop. 
