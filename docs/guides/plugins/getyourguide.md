@@ -1,20 +1,40 @@
 # GetYourGuide
 
-You can use third-party aggregators such als GetYourGuide to sell tickets not only through our own own ticket shop, but also through the aggregator's website. 
-Using GetYourGuide is not free. 
-But it allows you to reach a larger audience that would otherwise not have found their way to your shop. 
+You can use third-party aggregators such als GetYourGuide to sell tickets not only through your own own ticket shop, but also through the aggregator's website. 
+Using GetYourGuide entails costs, but it allows you to reach a larger audience that would otherwise not have found their way to your shop. 
 pretix offers an integration with GetYourGuide that allows you to profit from an additional sales and revenue channel, while keeping the effort for setting up and maintaining multiple ticket shops at a minimum. 
 This article is going to tell you how to do that. 
 
 ## Prerequisites
 
-If you want to use the GetYourGuide integration for pretix, then you need to have access to an active GetYourGuide account. 
+If you want to use the GetYourGuide integration for pretix, then you need to have access to an active GetYourGuide supplier account. 
+The GetYourGuide integration is handled on the event level, so you have to create an event first. 
 
 ## How to 
 
 Setting up the GetYourGuide integration involves the following steps: 
 
- 1. Contact support via [email](support@pretix.eu) or [phone](tel:+4962213217750) and ask them to unlock the GetYourGuide plugin on your account. 
+ 1. Ask pretix support to unlock the GetYourGuide plugin on your account. 
+ 2. Enabling the plugin 
+
+### Contacting support 
+
+The pretix integration with GetYourGuide is currently in beta. 
+The pretix team has to activate it once for your organizer account before you can use it. 
+Contact support via [email](support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the GetYourGuide plugin. 
+
+### Creating a sales channel 
+
+Navigate to :navpath:Your organizer → :fa3-wrench: Settings → Sales channels:. 
+Click the :btn-icon:fa3-plus: Add a new channel: button. 
+On the page titled "Add sales channel", select :btn:GetYourGuide:. 
+Click the :btn:Save: button. 
+
+### Enabling the plugin
+
+In order to enable the GetYourGuide plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Integrations: tab. 
+Seek out the plugin labeled "GetYourGuide" in the list and click the :btn:Enable: button next to it. 
+Repeat this step for every event that you want to offer via GetYourGuide. 
 
 ## Preparing your organizer account
 
