@@ -78,15 +78,12 @@ If you are using pretix Enterprise but do not have access to an admin account, a
 ### Setting up the SP
 
 If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: in the sidebar menu. 
-
-If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML:.  
-
+If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML: instead. 
 The process is the same from here on out. 
 
-No matter where your SP configuration lives, you will be greeted by a very long list of fields of which almost all of them will need to be filled. 
-Please don't be discouraged - most of the settings don't need to be decided by yourself and/or are already preset with a sensible default setting.
-
-If you are not sure what setting you should choose for any of the fields, you should reach out to your IdP operator as they can tell you exactly what the IdP expects and - more importantly - supports.
+Setting up the connection between SP and IdP requires a lot of information. 
+If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
+They should know exactly what information the IdP expects and supports. 
 
 `IdP Metadata URL`
 
