@@ -61,21 +61,27 @@ If you do not define `level`, then it defaults to `organizer`.
 
 If you are using pretix Hosted, the pretix team has to activate the "Presale SAML Authentication" plugin once for your organizer account before you can use it. 
 Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the SAML plugin. 
-Once the plugin has been activated for the organizer account, a button :fa3-key: SAML: will appear in the sidebar menu. 
+Once the plugin has been activated for the organizer account, a button ":fa3-key: SAML" will appear under the organizer settings in the sidebar menu. 
 
-<!-- md:enterprise -->  
+<!-- md:enterprise --> 
 
 If you are using pretix Enterprise and have access to an admin account, you have to activate the "Presale SAML Authentication" plugin once for your organizer account. 
 Click the :btn-icon:fa3-id-card: Admin mode: button. 
 Navigate to :navpath:Your organizer: → :fa3-wrench: Settings: and open the :btn:General: tab. 
 Under "Allow usage of restricted plugins", check the box next to "Presale SAML Authentication" and click the :btn:Save: button. 
-A button :fa3-key: SAML: will now appear in the sidebar menu. 
+A button ":fa3-key: SAML" will now appear under the organizer settings in the sidebar menu. 
 
 Repeat these steps for every organizer account with which you want to use SAML authentication. 
 
 If you are using pretix Enterprise but do not have access to an admin account, ask someone with access to an admin account to perform these steps for you. 
 
 ### Setting up the SP
+
+If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: in the sidebar menu. 
+
+If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML:.  
+
+The process is the same from here on out. 
 
 No matter where your SP configuration lives, you will be greeted by a very long list of fields of which almost all of them will need to be filled. 
 Please don't be discouraged - most of the settings don't need to be decided by yourself and/or are already preset with a sensible default setting.
