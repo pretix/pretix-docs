@@ -85,20 +85,22 @@ Setting up the connection between SP and IdP requires a lot of information.
 If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
 They should know exactly what information the IdP expects and supports. 
 
-`IdP Metadata URL`
 
-"Please provide the URL where your IdP outputs its metadata. 
+Provide the URL where your IdP outputs its metadata under "IdP Metadata URL". 
 For most IdPs, this URL is static and the same for all SPs. 
 If you are a member of the DFN-AAI, you can find the metadata for the [Test-, Basic- and Advanced-Federation](https://doku.tid.dfn.de/en:metadata) on their website. 
-Please do talk with your local IdP operator though, as you might not even need to go through the DFN-AAI and might just use your institution's local IdP which will also host their metadata on a different URL.
 
-    The URL needs to be publicly accessible, as saving the settings form will fail if the IdP metadata cannot be retrieved. 
-    pretix will also automatically refresh the IdP metadata on a regular basis.
+Contact your IdP operator and ask them whether or not you need to go through the DFN-AAI
+It is also possible that you can just use your institution's local IdP, which will also host their metadata on a different URL.
+
+The URL needs to be publicly accessible.
+Saving the settings will fail if the IdP metadata cannot be retrieved. 
+pretix will automatically refresh the IdP metadata on a regular basis.
 
 `SP Entity Id`
 
-"By default, we recommend that you use the system-proposed metadata URL as the Entity Id of your SP. 
-However, if so desired or required by your IdP, you can also set any other, arbitrary URL as the SP Entity Id.
+Use the system-proposed metadata URL as the Entity Id of your SP. 
+You can also set any URL as the SP Entity Id if required by your IdP. 
 
 `SP Name / SP Decription`
 
