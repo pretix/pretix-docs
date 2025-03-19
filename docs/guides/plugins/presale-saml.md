@@ -1,59 +1,79 @@
 # Presale SAML Authentication
 
-The Presale SAML Authentication plugin is an advanced plugin, which most event organizers will not need to use. 
-However, for the select few who do require strong customer authentication that cannot be covered by the built-in customer account functionality, this plugin allows pretix to connect to a SAML IdP and perform authentication and retrieval of user information.
-
-Usage of the plugin is governed by two separate sets of settings: The plugin installation, the Service Provider (SP) configuration and the event configuration.
-
-## Plugin installation and initial configuration
+This guide explains how to set up strong customer authentication using Security Assertion Markup Language (SAML). 
+You can use the plugin "Presale SAML Authentication" to integrate pretix as a service provider (SP) with a SAML identity provider (IdP). 
+Once this is set up, customers will have to log in to your SAML IdP during checkout. 
 
 !!! Note 
-    If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section.
+    SAML authentication is intended for advanced use cases only. 
+    If you do not already have a working SAML setup outside of pretix, it is very likely that you do not need to use this feature. 
 
-The plugin is installed as any other plugin in the pretix ecosystem. 
-If you are hosting pretix yourself, please follow the [instructions in the self-hosting documentation](../../self-hosting/installation/enterprise.md). 
+## Prerequisites 
 
-Once installed, you will need to assess if you want (or need) your pretix instance to be a single SP for all organizers and events or if every event organizer has to provide their own SP.
+Before you can use the SAML integration, you need to have access to a 
 
-Take the example of a university which runs pretix under an pretix Enterprise agreement. 
-Since they only provide ticketing services to themselves (every organizer is still just a different department of the same university), a single SP should be enough.
+## How to 
 
-On the other hand, a reseller such as [pretix.eu](https://pretix.eu) who services a multitude of clients would not work that way. 
-Here, every organizer is a separate legal entity and as such will also need to provide their own SP configuration: Company A will expect their SP to reflect their company - and not a generalized "pretix SP".
+Setting up the SAML integration involves the following steps: 
 
-Once you have decided on the mode of operation, the `Configuration file <config>` needs to be extended to reflect your choice.
+ 1. If you are using pretix Hosted, ask pretix support to unlock the GetYourGuide plugin on your account. 
+ If you are using pretix Enterprise, install the plugin and set it up. 
+ 2. 
 
-Example:
+### Plugin installation and initial configuration
+
+<!-- md:enterprise -->  
+
+If you are using pretix Enterprise, then you first have to install the plugin "Presale SAML Authentication" and do some setup on your pretix instance. 
+These steps are **not** necessary if you are using pretix Hosted. 
+
+Follow the instructions on [how to install pretix Enterprise plugins](../../self-hosting/installation/enterprise.md) in the self-hosting documentation. 
+
+You have to decide if you want your pretix instance to be a single service provider (SP) for all organizers, or if every organizer has to provide their own SP.
+A single unified SP makes sense if all organizers hosted on the pretix instance are part of the same organization. 
+For example, if your company controls the SP, the pretix instance, and all organizers hosted on it, then a single SP is enough. 
+
+If every organizer is a separate legal entity, then you have to set up the pretix instance so that every organizer has to provide their own SP. 
+For example, pretix Hosted as provided on [pretix.eu](https://pretix.eu) serves a multitude of clients. 
+Every organizer is a separate legal entity and as such will have to provide their own SP if they need to use the SAML integration. 
+
+If you want to use a single SP for the entire instance, extend the configuration file `<config>` with the following lines: 
 
 ``` ini
 [presale-saml]
 level=global
 ```
 
-`level`
+If you want every organizer to provide their own SP, extend the configuration file `<config>` with the following lines instead: 
 
-"`global` to use only a single, system-wide SP, `organizer` for multiple SPs, configured on the organizer level. 
-Defaults to `organizer`.
+``` ini
+[presale-saml]
+level=organizer
+```
 
-## Service Provider configuration
+If you set `level` to `global`, then your instance will use a single system-wide SP
+If you set `level`to `organizer`, then the SP will have to be configured for each organizer individually. 
+If you do not define `level`, then it defaults to `organizer`. 
 
-### Global Level
+### Plugin activation 
 
-!!! Note 
-    If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, you can skip this section and follow the instructions in [organizer level settings](presale-saml.md#organizer-level).
+<!-- md:hosted -->
 
-As a user with administrative privileges, please activate them by clicking the :btn:Admin Mode: button in the top right hand corner.
+If you are using pretix Hosted, the pretix team has to activate the "Presale SAML Authentication" plugin once for your organizer account before you can use it. 
+Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the SAML plugin. 
+Once the plugin has been activated for the organizer account, a button :fa3-key: SAML: will appear in the sidebar menu. 
 
-You should now see a new menuitem titled "SAML" appear.
+<!-- md:enterprise -->  
 
-### Organizer Level
+If you are using pretix Enterprise and have access to an admin account, you have to activate the "Presale SAML Authentication" plugin once for your organizer account. 
+Click the :btn-icon:fa3-id-card: Admin mode: button. 
+Navigate to :navpath:Your organizer: → :fa3-wrench: Settings: and open the :btn:General: tab. 
+Under "Allow usage of restricted plugins", check the box next to "Presale SAML Authentication" and click the :btn:Save: button. 
+A button :fa3-key: SAML: will now appear in the sidebar menu. 
 
-Navigate to the organizer settings in the pretix backend. 
-In the navigation bar, you will find a menu item titled "SAML" if your user has the "Can change organizer settings" permission.
+Repeat these steps for every organizer account with which you want to use SAML authentication. 
 
-!!! Note 
-    If you are a customer of our hosted [pretix.eu](https://pretix.eu) offering, the menu will only appear once one of our friendly customer service agents has enabled the Presale SAML Authentication plugin for at least one of your events. 
-    Feel free to get in touch with us!
+If you are using pretix Enterprise but do not have access to an admin account, ask someone with access to an admin account to perform these steps for you. 
 
 ### Setting up the SP
 
