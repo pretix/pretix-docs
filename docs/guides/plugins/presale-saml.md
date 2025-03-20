@@ -143,7 +143,6 @@ Inquire with your IdP for the correct settings for the checkboxes on the SAML se
 Every checked box improves the security of the setup. 
 Some IdP setups may cause problems with some of these settings. 
 
-
 Choose a "Signature Algorithm" and a "Digest algorithm" that both pretix/your SP and the IdP can communicate with. 
 A common source of issues when connecting to a Shibboleth-based IdP is the Digest Algorithm. 
 pretix does not support RSA-OAEP and authentication will fail if the IdP enforces this.
@@ -152,13 +151,13 @@ Technical contacts and support contacts are encoded into the SPs public metadata
 They might be displayed to customers if they run into problems while trying to authenticate. 
 We recommend providing two dedicated point of contact, one for general support and one for technical issues. 
 
+Once you are happy with your settings, click the :btn:Save: button. 
+
 ## Event / Authentication configuration
 
-### Basic settings
-
-Contact support and ask them to unlock the "Presale SAML Authentication" plugin for your account. 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
-Click the :btn:Enable: button next to the " Presale SAML Authentication" plugin. 
+This section explains the setup of SAML authentication on the event level. 
+In order to activate the plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
+Click the :btn:Enable: button next to the "Presale SAML Authentication" plugin. 
 A new "SAML" menu item will appear now. 
 
 On this page, the actual authentication can be configured.
