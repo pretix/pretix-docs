@@ -8,7 +8,6 @@ ignore: old-link.md
 
 nav:
  - index*.md
- - "*"
  - tutorial
  - guides
  - self-hosting
