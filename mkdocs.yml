@@ -9,7 +9,7 @@ copyright: |
   <a href="https://pretix.eu/about/en/privacy" target="_blank">Privacy policy</a> ·
   Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
 validation:
-  omitted_files: warn
+  omitted_files: info
   absolute_links: warn
   unrecognized_links: warn
 extra_css:
@@ -75,10 +75,7 @@ markdown_extensions:
 plugins:
   - search
   - privacy
-  - awesome-pages:
-      order: asc
-      sort_type: natural
-      order_by: title
+  - awesome-nav
   - glightbox
   - macros:
       include_dir: include
@@ -97,13 +94,8 @@ plugins:
             <a href="https://pretix.eu/about/de/privacy" target="_blank">Datenschutz</a> ·
             Lizensiert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>
           nav_translations:
-            User guide: Handbuch
             Organizers: Veranstalter
             Events: Veranstaltungen
-            Payment: Zahlung
-            Developer and API Docs: Entwickler- und API-Dokumentation
-            Trust: Trust und Compliance
-            Self hosting: Self-Hosting
           admonition_translations:
             note: Hinweis
             Note: Hinweis
