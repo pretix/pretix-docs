@@ -75,7 +75,7 @@ Repeat these steps for every organizer account with which you want to use SAML a
 
 If you are using pretix Enterprise but do not have access to an admin account, ask someone with access to an admin account to perform these steps for you. 
 
-### Setting up the SP
+### Setting up the SP 
 
 If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: in the sidebar menu. 
 If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML: instead. 
@@ -84,7 +84,6 @@ The process is the same from here on out.
 Setting up the connection between SP and IdP requires a lot of information. 
 If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
 They should know exactly what information the IdP expects and supports. 
-
 
 Provide the URL where your IdP outputs its metadata under "IdP Metadata URL". 
 For most IdPs, this URL is static and the same for all SPs. 
@@ -97,66 +96,61 @@ The URL needs to be publicly accessible.
 Saving the settings will fail if the IdP metadata cannot be retrieved. 
 pretix will automatically refresh the IdP metadata on a regular basis.
 
-`SP Entity Id`
-
-Use the system-proposed metadata URL as the Entity Id of your SP. 
+Use the system-proposed metadata URL as the "SP Entity Id". 
 You can also set any URL as the SP Entity Id if required by your IdP. 
 
-`SP Name / SP Decription`
+Most IdPs will display the name and description of your SP to the users during authentication. 
+The "SP Name" and "SP Decription" fields can be used to explain to the users how their data is being used.
 
-"Most IdP will display the name and description of your SP to the users during authentication. 
-The description field can be used to explain to the users how their data is being used.
+Your SP needs an "SP X.509 Certificate" and an "SP X.509 Private Key". 
+Ask your IdP if they can provide you with a certificate and key. 
+If not, you need to generate these yourself. 
 
-`SP X.509 Certificate / SP X.509 Private Key`
-
-"Your SP needs a certificate and a private key for said certificate. 
-Please ask your IdP if you are supposed to generate these yourself or if they are provided to you.
-
-`SP X.509 New Certificate`
-
-"As certificates have an expiry date, they need to be renewed on a regular basis. 
-In order to facilitate the rollover from the expiring to the new certificate, you can provide the new certificate already before the expiration of the existing one. 
-That way, the system will automatically use the correct one. 
-Once the old certificate has expired and is not used anymore at all, you can move the new certificate into the slot of the normal certificate and keep the new slot empty for your next renewal process.
+Certificates have an expiry date and need to be renewed on a regular basis. 
+In order to facilitate the rollover from the expiring to the new certificate, you can provide an "SP X.509 New Certificate" before the expiration of the existing one. 
+pretix will automatically use the correct one. 
+Once the old certificate has expired and is not in use anymore, you can move the new certificate to the "SP X.509 Certificate" field and keep the new slot empty for your next renewal process.
 
 `Requested Attributes`
 
-"An IdP can hold a variety of attributes of an authenticating user. 
-While your IdP will dictate which of the available attributes your SP can consume in theory, you will still need to define exactly which attributes the SP should request.
+Not all IdPs use the same attributes to authenticate a user. 
+Your IdP will dictate which of the available attributes your SP can receive. 
+Use the "Requested Attributes" field to define exactly which attributes the SP should request.
+This field comes with a template input that will help you use the proper formatting. 
+The notation is a JSON list of objects with 5 properties each:
 
-    The notation is a JSON list of objects with 5 attributes each:
+ - `attributeValue`: can be defaulted to `[]`.
+ - `friendlyName`: string used in the event-level settings to retrieve the attribute data.
+ - `isRequired`: boolean indicating whether the IdP must enforce the transmission of this attribute. 
+   In most cases, `true` is the best choice.
+ - `name`: string containing the internal/technical name of the requested attribute. 
+   Often starting with `urn:mace:dir:attribute-def:`, `urn:oid:` or `http://`/`https://`.
+ - `nameFormat`: String describing the type of `name` that has been set in the previous section. 
+   Often starting with `urn:mace:shibboleth:1.0:` or `urn:oasis:names:tc:SAML:2.0:`.
 
-    > -   `attributeValue`: Can be defaulted to `[]`.
-    > -   `friendlyName`: String used in the upcoming event-level settings to retrieve the attributes data.
-    > -   `isRequired`: Boolean indicating whether the IdP must enforce the transmission of this attribute. 
-    In most cases, `true` is the best choice.
-    > -   `name`: String of the internal, technical name of the requested attribute. 
-    Often starting with `urn:mace:dir:attribute-def:`, `urn:oid:` or `http://`/`https://`.
-    > -   `nameFormat`: String describing the type of `name` that has been set in the previous section. 
-    Often starting with `urn:mace:shibboleth:1.0:` or `urn:oasis:names:tc:SAML:2.0:`.
+Ask your IdP for a list of available attributes. 
+See below for a sample configuration in an academic context. 
 
-    Your IdP can provide you with a list of available attributes. 
-    See below for a sample configuration in an academic context.
+!!! Note
+    You can have multiple attributes with the same `friendlyName` value but different `name` values. 
+    This can be used in cases in which the same information, for example a customer's name, is stored in more than one field. 
+    Such a setup may be necessary in a case in which one piece of software returns SAML 1.0 and another piece of software returns SAML 2.0-style attributes. 
 
-    Note that you can have multiple attributes with the same `friendlyName` but different `name` value. 
-    This is often used in systems, where the same information (for example a person's name) is saved in different fields -for example because one institution is returning SAML 1.0 and other institutions are returning SAML 2.0-style attributes. 
-    Typically, this only occurs in mixed environments like the DFN-AAI with a large number of participants. 
-    If you are only using your own institution's IdP and not authenticating anyone outside of your realm, this should not be a common sight.
+    This mostly occurs in mixed environments like the DFN-AAI with a large number of participants. 
+    If you are only using your own institution's IdP and not providing authentication for any third parties, then this will probably not apply to you. 
 
-`Encrypt/Sign/Require ...`
+Inquire with your IdP for the correct settings for the checkboxes on the SAML settings page. 
+Every checked box improves the security of the setup. 
+Some IdP setups may cause problems with some of these settings. 
 
-"Does what is says on the box - please inquire with your IdP for the necessary settings. 
-Most settings can be turned on as they increase security, however some IdPs might stumble over some of them.
 
-`Signature / Digest Algorithm`
+Choose a "Signature Algorithm" and a "Digest algorithm" that both pretix/your SP and the IdP can communicate with. 
+A common source of issues when connecting to a Shibboleth-based IdP is the Digest Algorithm. 
+pretix does not support RSA-OAEP and authentication will fail if the IdP enforces this.
 
-"Please chose appropriate algorithms that both pretix/your SP and the IdP can communicate with. 
-A common source of issues when connecting to a Shibboleth-based IdP is the Digest Algorithm: pretix does not support `http://www.w3.org/2009/xmlenc11#rsa-oaep` and authentication will fail if the IdP enforces this.
-
-`Technical/Support Contacts`
-
-"Those contacts are encoded into the SPs public meta data and might be displayed to users having trouble authenticating. 
-It is recommended to provide a dedicated point of contact for technical issues, as those will be the ones to change the configuration for the SP.
+Technical contacts and support contacts are encoded into the SPs public metadata. 
+They might be displayed to customers if they run into problems while trying to authenticate. 
+We recommend providing two dedicated point of contact, one for general support and one for technical issues. 
 
 ## Event / Authentication configuration
 
