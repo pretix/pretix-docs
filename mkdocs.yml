@@ -9,7 +9,7 @@ copyright: |
   <a href="https://pretix.eu/about/en/privacy" target="_blank">Privacy policy</a> ·
   Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
 validation:
-  omitted_files: info
+  omitted_files: warn
   absolute_links: warn
   unrecognized_links: warn
 extra_css:
