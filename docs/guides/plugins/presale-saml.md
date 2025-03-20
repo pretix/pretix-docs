@@ -53,11 +53,11 @@ level=organizer
 
 If you set `level` to `global`, then your instance will use a single system-wide SP
 If you set `level`to `organizer`, then the SP will have to be configured for each organizer individually. 
-If you do not define `level`, then it defaults to `organizer`. 
+If you do not define `level`, then it will default to `organizer`. 
 
 ### Plugin activation 
 
-<!-- md:hosted -->
+<!-- md:hosted --> 
 
 If you are using pretix Hosted, the pretix team has to activate the "Presale SAML Authentication" plugin once for your organizer account before you can use it. 
 Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the SAML plugin. 
@@ -100,7 +100,7 @@ Use the system-proposed metadata URL as the "SP Entity Id".
 You can also set any URL as the SP Entity Id if required by your IdP. 
 
 Most IdPs will display the name and description of your SP to the users during authentication. 
-The "SP Name" and "SP Decription" fields can be used to explain to the users how their data is being used.
+The "SP Name" and "SP Description" fields can be used to explain to the users how their data is being used.
 
 Your SP needs an "SP X.509 Certificate" and an "SP X.509 Private Key". 
 Ask your IdP if they can provide you with a certificate and key. 
@@ -153,12 +153,12 @@ We recommend providing two dedicated point of contact, one for general support a
 
 Once you are happy with your settings, click the :btn:Save: button. 
 
-## Event / Authentication configuration
+## Event-level configuration 
 
-This section explains the setup of SAML authentication on the event level. 
+This section explains how to set up SAML authentication on the event level. 
 In order to activate the plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "Presale SAML Authentication" plugin. 
-A new "SAML" menu item will appear now. 
+A button :btn-icon:fa3-key: SAML: will now appear under in the sidebar menu. 
 
 On this page, the actual authentication can be configured.
 
