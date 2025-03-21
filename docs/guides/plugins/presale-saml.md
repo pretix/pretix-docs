@@ -10,7 +10,7 @@ Once this is set up, customers will have to log in to your SAML IdP during check
 
 ## Prerequisites 
 
-Before you can use the SAML integration, you need to have access to a 
+Before you can use the SAML integration, you need to have access to a SAML identity provider. 
 
 ## How to 
 
@@ -18,7 +18,9 @@ Setting up the SAML integration involves the following steps:
 
  1. If you are using pretix Hosted, ask pretix support to unlock the GetYourGuide plugin on your account. 
  If you are using pretix Enterprise, install the plugin and set it up. 
- 2. 
+ 2. Set up the Service Provider (SP) on the global or organizer level. 
+ 3. Activate the plugin for the event. 
+ 4. Set up SAML authentication on the event level. 
 
 ### Plugin installation and initial configuration
 
@@ -51,7 +53,7 @@ If you want every organizer to provide their own SP, extend the configuration fi
 level=organizer
 ```
 
-If you set `level` to `global`, then your instance will use a single system-wide SP
+If you set `level` to `global`, then your instance will use a single system-wide SP. 
 If you set `level`to `organizer`, then the SP will have to be configured for each organizer individually. 
 If you do not define `level`, then it will default to `organizer`. 
 
@@ -80,6 +82,8 @@ If you are using pretix Enterprise but do not have access to an admin account, a
 If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: in the sidebar menu. 
 If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML: instead. 
 The process is the same from here on out. 
+
+#### Setting up the connection 
 
 Setting up the connection between SP and IdP requires a lot of information. 
 If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
@@ -111,12 +115,22 @@ In order to facilitate the rollover from the expiring to the new certificate, yo
 pretix will automatically use the correct one. 
 Once the old certificate has expired and is not in use anymore, you can move the new certificate to the "SP X.509 Certificate" field and keep the new slot empty for your next renewal process.
 
-`Requested Attributes`
+#### Choosing which attributes to request
 
 Not all IdPs use the same attributes to authenticate a user. 
 Your IdP will dictate which of the available attributes your SP can receive. 
+
+pretix will use most attributes only to authenticate the user and not process the received data any further. 
+There are two special cases in which pretix will automatically populate the corresponding fields during the checkout process and lock them so that they **cannot be edited** by the user:  
+
+ - If both `givenName` and `sn` are present and pretix is configured to collect the customer's name, then pretix will use `givenName` for the given name and `sn` for the family name. 
+ - If the attribute `email`is present, pretix will use it for the email address of the user. 
+
+This latter case can cause problems if the IdP is transmitting an `email` attribute which does contain a system-level mail address which is only used as an internal identifier but not as a real mailbox. 
+You can fix this by setting the `friendlyName` property to any value other than `email` or by removing the attribute from the list entirely. 
+
 Use the "Requested Attributes" field to define exactly which attributes the SP should request.
-This field comes with a template input that will help you use the proper formatting. 
+This field comes with a template input that will help you with the proper formatting. 
 The notation is a JSON list of objects with 5 properties each:
 
  - `attributeValue`: can be defaulted to `[]`.
@@ -129,7 +143,7 @@ The notation is a JSON list of objects with 5 properties each:
    Often starting with `urn:mace:shibboleth:1.0:` or `urn:oasis:names:tc:SAML:2.0:`.
 
 Ask your IdP for a list of available attributes. 
-See below for a sample configuration in an academic context. 
+For two examples on what this configuration could look like, refer to the section on [configuration examples](presale-saml.md#configuration-examples) below. 
 
 !!! Note
     You can have multiple attributes with the same `friendlyName` value but different `name` values. 
@@ -138,6 +152,8 @@ See below for a sample configuration in an academic context.
 
     This mostly occurs in mixed environments like the DFN-AAI with a large number of participants. 
     If you are only using your own institution's IdP and not providing authentication for any third parties, then this will probably not apply to you. 
+
+#### Optional settings 
 
 Inquire with your IdP for the correct settings for the checkboxes on the SAML settings page. 
 Every checked box improves the security of the setup. 
@@ -153,77 +169,64 @@ We recommend providing two dedicated point of contact, one for general support a
 
 Once you are happy with your settings, click the :btn:Save: button. 
 
-## Event-level configuration 
+### Event-level configuration 
 
 This section explains how to set up SAML authentication on the event level. 
 In order to activate the plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "Presale SAML Authentication" plugin. 
+
 A button :btn-icon:fa3-key: SAML: will now appear under in the sidebar menu. 
+Click that button in order to access the event-level SAML settings. 
 
-On this page, the actual authentication can be configured.
+Many users will not know the reason why they have to authenticate in order to make a purchase in your shop. 
+Use the "Checkout Explanation" field to provide an explanation for the process and the reasoning behind it to be displayed in the shop. 
 
-`Checkout Explanation`
+#### Using "Attribute RegEx" to further restrict possible attendees
 
-"Since most users probably won't be familiar with why they have to authenticate to buy a ticket, you can provide them a small blurb here. 
-Markdown is supported.
+By default, any successful authentication with the IdP will allow the customer to proceed with their purchase. 
+If you need to restrict the intended audience further, you can use the "Attribute RegEx" field to define a set of regular expressions to do this.
+The default regular expression is`{}`. 
+This will allow any authenticated user to pass.
 
-`Attribute RegEx`
+If, for example, you edit the "Attribute RegEx" field to contain `{ "affiliation": "^(employee@pretix.eu|staff@pretix.eu)$" }`, then only customers who have the `affiliation` attribute and whose attribute matches `employee@pretix.eu` or `staff@pretix.eu` will be allowed to pass. 
+You can only query attributes that are requested by the IdP. 
+The "Information" section at the top of this page lists all currently configured attributes. 
 
-"By default, any successful authentication with the IdP will allow the user to proceed with their purchase. 
-Should the allowed audience needed to be restricted further, a set of regular expressions can be used to do this.
+The "RegEx Fail Explanation" field is only used in conjunction with the "Attribute RegEx" field described above. 
+Use it to define an error message which will be displayed to the customer if they do not pass the restrictions put into place by the regular expression. 
+For example, if you are organizing a university event and restricting access to students only, you can use the "RegEx Fail Explanation" field to explain that employees are not allowed to book tickets.
 
-    An Attribute RegEx of `{}` will allow any authenticated user to pass.
+#### Using "Ticket Secret SAML Attribute" to include a SAML attribute in the ticket secret 
 
-    A RegEx of `{ "affiliation": "^(employee@pretix.eu|staff@pretix.eu)$" }` will only allow user to pass which have the `affiliation` attribute and whose attribute either matches `employee@pretix.eu` or `staff@pretix.eu`.
+pretix can use one of the customer's attributes to generate the ticket secret, for example their ID or access card number. 
+If you want pretix to generate ticket secrets this way, specify the SAML attribute under "Ticket Secret SAML Attribute". 
+Ticket secrets still need to be unique. 
+If an attribute is specified in "Ticket Secret SAML attribute", pretix generates ticket secrets prefixed with the attribute value. 
 
-    Please make sure that the attribute you are querying is also requested from the IdP in the first place - for a quick check you can have a look at the top of the page where all currently configured attributes are listed.
+For illustrative purposes, consider the following example: 
+A customer's `cardid` attribute has the value `01189998819991197253`. 
+With nothing specified under "Ticket Secret SAML attribute", the random ticket secret is `yczygpw9877akz2xwdhtdyvdqwkv7npj`. 
+If you specify an attribute under "Ticket Secret SAML attribute", the full random ticket secret is `01189998819991197253_yczygpw9877akz2xwdhtdyvdqwkv7npj`.
 
-`RegEx Fail Explanation`
-
-"Only used in conjunction with the above Attribute RegEx. 
-Should the user not pass the restrictions imposed by the regular expression, the user is shown this error message.
-
-    If you are - for example in an university context - restricting access to students only, you might want to explain here that employees are not allowed to book tickets.
-
-`Ticket Secret SAML Attribute`
-
-"In very specific instances, it might be desirable that the ticket secret is not the randomly one generated by pretix but rather based on one of the user's attributes - for example their unique ID or access card number.
-
-    To achieve this, the name of a SAML attribute can be specified here.
-
-    It is however necessary to note that even with this setting in use, ticket secrets need to be unique. 
-    This is why when this setting is enabled, the default, pretix-generated ticket secret is prefixed with the attributes value.
-
-    Example: A user's `cardid` attribute has the value of `01189998819991197253`. 
-    The default random ticket secret would have been `yczygpw9877akz2xwdhtdyvdqwkv7npj`. 
-    The resulting new secret will now be `01189998819991197253_yczygpw9877akz2xwdhtdyvdqwkv7npj`.
-
-    That way, the ticket secret is still unique, but when checking into an event, the user can easily be searched and found using their identifier.
-
-### IdP-provided email addresses, names
-
-By default, pretix will only authenticate the user and not process the received data any further.
-
-However, there are a few exceptions to this rule.
-
-There are a few magic attributes that pretix will use to automatically populate the corresponding fields within the checkout process **and lock them out from user editing**.
-
-> -   `givenName` and `sn`: If both of those attributes are present and pretix is configured to collect the user's name, these attributes' values are used for the given and family name respectively.
-> -   `email`: If this attribute is present, the email address of the user will be set to the one transmitted through the attributes.
-
-The latter might pose a problem if the IdP is transmitting an `email` attribute which does contain a system-level mail address which is only used as an internal identifier but not as a real mailbox. 
-In this case, please consider setting the `friendlyName` of the attribute to a different value than `email` or removing this field from the list of requested attributes altogether.
+This way, the ticket secret is still unique, but when checking into an event, the user can easily be searched and found using their identifier.
 
 ### Saving attributes to questions
 
-By setting the `internal identifier` of a user-defined question to the same name as a SAML attribute, pretix will save the value of said attribute into the question.
+You can save the value of a SAML attribute into the answer to a user-defined question. 
+The answer will then be fixed and cannot be edited by the customer anymore. 
 
-All the same as in the above section on email addresses, those fields become non-editable by the user.
+In order to set up a question this way, navigate to :navpath:Your event: → :fa3-ticket: Products → Questions. 
+Click the :btn-icon:fa3-plus: Create a new question: button or click the edit button :btn-icon:fa3-wrench: next to an existing question. 
+Switch to the :btn:Advanced: tab. 
+Set the "Internal identifier" field to the same as the `name` of one of the SAML attributes that you defined under "Requested Attributes" in the global or organizer-level SAML settings. 
 
-Please be aware that some specialty question types might not be compatible with the SAML attributes due to specific format requirements. 
-If in doubt (or if the checkout fails/the information is not properly saved), try setting the question type to a simple type like "Text (one line)".
+Some more complex question types may not be compatible with SAML attributes due to format requirements. 
+If you are unsure whether your question type is supported, or if you are encountering an error, switch to the :btn:General: tab and under "Question type", select "Text (one line)". 
 
-## Notes and configuration examples
+## Configuration examples
+
+This section contains two examples for SAML configurations with which the "Requested Attributes" field in the global or organizer-level SAML settings could be populated. 
+For more information on that field, see the section on [Choosing which attributes to request](presale-saml.md#choosing-which-attributes-to-request). 
 
 ### Requesting SAML 1.0 and 2.0 attributes from an academic IdP
 
@@ -290,13 +293,9 @@ This requests the `eduPersonPrincipalName` (also sometimes called EPPN), `email`
 ]
 ```
 
-### skIDentity IdP Metadata URL
-
-Since the IdP Metadata URL for [skIDentity](https://www.skidentity.de/) is not readily documented/visible in their backend, we document it here: `https://service.skidentity.de/fs/saml/metadata`
-
 ### Requesting skIDentity attributes for electronic identity cards
 
-This requests the basic `eIdentifier`, `IDType`, `IDIssuer`, and `NameID` from the [skIDentity](https://www.skidentity.de/) SAML service, which are available for electronic ID cards such as the German ePA/NPA. (Other attributes such as the name and address are available at additional cost from the IdP).
+This requests the basic `eIdentifier`, `IDType`, `IDIssuer`, and `NameID` attributes from the [skIDentity](https://www.skidentity.de/) SAML service, which are available for electronic ID cards such as the German ePA/NPA. (Other attributes such as the name and address are available at additional cost from the IdP).
 
 ``` json
 [
