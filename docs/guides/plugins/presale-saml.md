@@ -89,6 +89,8 @@ Setting up the connection between SP and IdP requires a lot of information.
 If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
 They should know exactly what information the IdP expects and supports. 
 
+![Page titled "SAML Settings", showing settings for IdP Metadata URL, SP Entity Id, NameID format, SP Name and SP Description.](../../assets/screens/saml/saml-global.png "SAML global settings screenshot")
+
 Provide the URL where your IdP outputs its metadata under "IdP Metadata URL". 
 For most IdPs, this URL is static and the same for all SPs. 
 If you are a member of the DFN-AAI, you can find the metadata for the [Test-, Basic- and Advanced-Federation](https://doku.tid.dfn.de/en:metadata) on their website. 
@@ -178,6 +180,8 @@ Click the :btn:Enable: button next to the "Presale SAML Authentication" plugin.
 A button :btn-icon:fa3-key: SAML: will now appear under in the sidebar menu. 
 Click that button in order to access the event-level SAML settings. 
 
+![Page titled SAML settings, displaying information on which attributes are requested from the IdP and settings such as Login button label, skip button label and checkboxes for allowing name changes and skipping the login .](../../assets/screens/saml/saml-settings.png "SAML settings screenshot" )
+
 Many users will not know the reason why they have to authenticate in order to make a purchase in your shop. 
 Use the "Checkout Explanation" field to provide an explanation for the process and the reasoning behind it to be displayed in the shop. 
 
@@ -215,6 +219,8 @@ This way, the ticket secret is still unique, but when checking into an event, th
 You can save the value of a SAML attribute into the answer to a user-defined question. 
 The answer will then be fixed and cannot be edited by the customer anymore. 
 
+![Page titled Question. The "Advanced" tab is open, showing input fields for Help text in two languages and for Internal identifier.](../../assets/screens/saml/question-advanced.png "Question advanced screenshot" )
+
 In order to set up a question this way, navigate to :navpath:Your event: → :fa3-ticket: Products → Questions. 
 Click the :btn-icon:fa3-plus: Create a new question: button or click the edit button :btn-icon:fa3-wrench: next to an existing question. 
 Switch to the :btn:Advanced: tab. 
@@ -223,14 +229,14 @@ Set the "Internal identifier" field to the same as the `name` of one of the SAML
 Some more complex question types may not be compatible with SAML attributes due to format requirements. 
 If you are unsure whether your question type is supported, or if you are encountering an error, switch to the :btn:General: tab and under "Question type", select "Text (one line)". 
 
-## Configuration examples
+### Configuration examples
 
 This section contains two examples for SAML configurations with which the "Requested Attributes" field in the global or organizer-level SAML settings could be populated. 
 For more information on that field, see the section on [Choosing which attributes to request](presale-saml.md#choosing-which-attributes-to-request). 
 
-### Requesting SAML 1.0 and 2.0 attributes from an academic IdP
+#### Requesting SAML 1.0 and 2.0 attributes from an academic IdP
 
-This requests the `eduPersonPrincipalName` (also sometimes called EPPN), `email`, `givenName` and `sn` both in SAML 1.0 and SAML 2.0 attributes.
+This requests `eduPersonPrincipalName` (also sometimes called EPPN), `email`, `givenName` and `sn` both in SAML 1.0 and SAML 2.0 attributes.
 
 ``` json
 [
@@ -293,9 +299,11 @@ This requests the `eduPersonPrincipalName` (also sometimes called EPPN), `email`
 ]
 ```
 
-### Requesting skIDentity attributes for electronic identity cards
+#### Requesting skIDentity attributes for electronic identity cards
 
-This requests the basic `eIdentifier`, `IDType`, `IDIssuer`, and `NameID` attributes from the [skIDentity](https://www.skidentity.de/) SAML service, which are available for electronic ID cards such as the German ePA/NPA. (Other attributes such as the name and address are available at additional cost from the IdP).
+This requests the basic attributes `eIdentifier`, `IDType`, `IDIssuer`, and `NameID` from the [skIDentity](https://www.skidentity.de/) SAML service. 
+These attributes are available for electronic ID cards such as the German ePA/NPA. 
+(Other attributes such as the name and address are available from the IdP for an extra charge).
 
 ``` json
 [
