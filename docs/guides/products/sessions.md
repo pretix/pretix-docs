@@ -7,11 +7,11 @@ This article will guide you through all three of them.
 
 If your event's schedule is small and straightforward, all sessions are included in the basic admission price, and you do not need to keep track of who attends which session, you should use [questions](sessions.md#option-a-questions). 
 
-If your event's schedule is large, you have deviating prices for some of the sessions, or each session can only be attended by a number of limited people, you should use [add-on products](sessions.md#option-b-add-on-products-with-fixed-time-slots). 
+If your event's schedule is large, you have deviating prices for some of the sessions, or each session can only be attended by a limited number of people, you should use [add-on products](sessions.md#option-b-add-on-products-with-fixed-time-slots). 
 
-If the conditions above apply and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-c-add-on-products-with-variable-time-slots). 
+If the above conditions apply and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-c-add-on-products-with-variable-time-slots). 
 
-If you are not planning sessions that all take place within the scope of one big main event, but for a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
+If you are not planning sessions that all take place within the scope of one big main event, but a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
 
 ## Option A: Questions
 
@@ -19,7 +19,7 @@ If you are only offering a limited number of sessions and are not faced with a r
 Customers will be prompted to answer this question while placing their order. 
 This has the upside of making it easy for users to change their mind later on. 
 It can also be set up fairly quickly. 
-However, it will not allow you to restrict the number of attendees signing up for a given session. 
+However, this method will not allow you to restrict the number of attendees signing up for a given session. 
 It will also not allow you to charge extra for any of the sessions. 
 
 ![Question set up according to the instructions below, with answer options for "Workshop A" and "Workshop B"](../../assets/screens/products/question-sessions.png "Question for sessions")
@@ -37,10 +37,11 @@ Click :btn-icon:fa3-plus:Add a new option: and add an answer option for each ses
 
 ## Option B: Add-on products with fixed time slots
 
-If the selection of sessions offered at your event is more complex than described in the previous section, you should use add-on products instead of questions. 
-This makes sense if you are working with space constraints at your venue or if you want to charge more for some of the sessions. 
-First, create at least one basic admission products for your event and a category for add-on products. 
-Then, create new product for your first time slot. 
+If you are offering a large number of sessions, are working with space constraints at your venue, or want to charge extra for at least one of the sessions, then you should use add-on products with fixed time slots. 
+This section tells you how to do that. 
+
+First, create at least one basic admission product for your event and a category for add-on products. 
+Then, create a new product for your first time slot. 
 Add it to the add-on category you just created, select "Product with multiple variations" and set the price to zero. 
 Open the "Variations" tab and create one variation for each session taking place within that time slot. 
 Repeat these steps for each time slot and session at your event. 
@@ -60,7 +61,7 @@ In addition to the basic admission products for this conference, you also have t
  - A free product called "Wednesday afternoon" in the "Workshops" category with two variations:
      - Workshop A
      - Workshop B
- - A product called "Thursday morning" in the "Workshops" category with with two variations:
+ - A product called "Thursday morning" in the "Workshops" category with two variations:
      - Workshop C (free)
      - Workshop D (€20)
  - One quota for each additional product (workshop), each with a total capacity of 20 
@@ -92,22 +93,22 @@ This would either result in customers having to book each half of the workshops 
 You can handle more complicated schedules like this one with the agenda constraints plugin. 
 
 In order to activate that plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
-Seek out the "Agenda constraints" plugin in the list and click the :btn:Enable: button next to it. 
+Search for the "Agenda constraints" plugin in the list and click the :btn:Enable: button next to it. 
 
-!["Edit product" page, on the "Additional settings" tab. Options for "Start date"and "End date" are displayed, and a date and time has been entered for each.](../../assets/screens/products/agenda-constraints.png "Agenda constraints on product")
+!["Edit product" page, on the "Additional settings" tab. Options for "Start date" and "End date" are displayed, and a date and time has been entered for each.](../../assets/screens/products/agenda-constraints.png "Agenda constraints on product")
 
 Create a category for session tickets and check the box next to "Products in this category are add-on products". 
 Create a product for each individual session, add it to the sessions category and switch to the :btn:Additional settings: tab. 
 Use the fields "Start date" and "End date" to define the span of time in which the session is taking place. 
-Create a quota for each of those products, with the total capacity of the quota reflecting the maximum number of attendants for each session. 
+Create a quota for each of the session add-on products, with the total capacity of the quota reflecting the maximum number of attendants for each session. 
 
 Edit the basic admission tickets for your event and open the :btn:Add-ons: tab. 
-Add an add-on from the sessions category with "Minimum number" of 0 and a "Maximum number" equal to or greater than the largest possible number of workshops a guest can attend. 
+Add an add-on from the sessions category with a "Minimum number" of 0 and a "Maximum number" equal to or greater than the largest possible number of workshops a guest can attend. 
 Click the :btn:Save: button. 
 
 This enables your customers to choose which of the workshops they want to attend. 
 The "Start date" and "End date" you defined for each add-on product will restrict which combinations of sessions your customers can book. 
-You can track planned attendance numbers through the quotas for each workshop. 
+You can limit planned attendance numbers through the quotas for each workshop. 
 
 !!! Note
 
