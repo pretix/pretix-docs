@@ -41,15 +41,15 @@ Provide a translation for each language you are using.
 Optionally, you may choose an "Internal name" that will only be displayed in the backend. 
 
 Under "Tax rate", choose a rate in percent. 
-For example, if your products are sold with the regular value-added tax rate in Germany, set the "Tax rate" to 19%. 
+For example, if your products are sold with the regular value-added tax rate in Germany, set the "Tax rate" to 19.00%. 
 
 The box next to "The configured product prices include the tax amount" determines whether the price of a product with this tax rule is handled as its net price (before tax) or its gross price (after tax). 
 
 By default, this box is checked, so all product prices with this tax rule are handled as gross prices (tax is included in the price). 
-This means that a product with a listed price of €10.00 and a tax rate of 19% has a net price of €8.40, €1.60 worth of value-added tax, and a total gross price of €10.00. 
+This means that a product with a listed price of €10.00 and a tax rate of 19.00% has a net price of €8.40, €1.60 worth of value-added tax, and a total gross price of €10.00. 
 
 If you uncheck this box, all product prices with this tax rule are handled as net prices (tax is added on top of the listed price). 
-A product with a price of €10.00 and a 19% tax rule will have €1.90 worth of taxes added on top of the net price, leading to a gross price of €11.90. 
+A product with a price of €10.00 and a 19.00% tax rule will have €1.90 worth of taxes added on top of the net price, leading to a gross price of €11.90. 
 This setting applies to all products that use this specific tax rule. 
 It does **not** apply to all products in your shop. 
 
@@ -158,7 +158,7 @@ Confirm your choices by clicking the :btn:Perform changes: button.
     Modifying tax status back and forth may introduce rounding errors of up to one cent from the intended price. 
     This is unavoidable due to the flexible nature in which prices are being calculated. 
 
-### Assigning tax rules 
+sp### Assigning tax rules 
 
 ![Create product dialog. The last option is a dropdown menu labeled 'Sales tax'. The current selection is 'No taxation'. At the bottom of the page, there is a button labeled 'Save and continue with more settings'.](../assets/screens/tax/create-product.png "Create product dialog" )
 
@@ -180,6 +180,8 @@ Once you have made your selection, click the :btn:Save: button.
 
 #### Mixed taxation 
 
+{% include "warning-tax.md" %}
+
 This section explains how to implement a mixed tax situation for a single product. 
 pretix allows you to do this by combining several products, each with their own tax rate, into a single bundle. 
 
@@ -188,32 +190,36 @@ Assign each product a different tax rate.
 For all products except one, switch to the :btn:Availability: tab, check the box next to "Only sell this product as part of a bundle" and click the :btn:Save: button. 
 Skip this step for the last of the products you created. 
 
-Instead, switch to the :btn:Bundled products: tab and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
+Assign this product the total price of the combination of differently taxed products. 
+Its price represents the full price of the bundle. 
+The price does **not** result out of the addition of the price parts. 
+
+Edit the ticket with the full price, switch to the :btn:Bundled products: tab and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
 Choose one of the other products you created under "Bundled product" and set the "Designated price part". 
 Repeat this step for each product with a diverging tax rate that you want to include in this bundle. 
 Then, click the :btn:Save: button. 
 
-For illustrative purposes, let's say you are organizing an educational event for a charitable organization in Germany and you have permission to charge a reduced tax rate of 7% that event. 
-However, the admission ticket price also includes catering, which is still taxed at a rate of 19%. 
+For illustrative purposes, let's say you are organizing an educational event for a charitable organization in Germany and you have permission to charge a reduced tax rate of 7.00% that event. 
+However, the admission ticket price also includes catering, which is still taxed at a rate of 19.00%. 
 The tax situation may look something like this: 
 
  - event ticket price: €450 (including €150 for food)
 
-   - including €19.63 VAT at 7%
-   - incl. €23.95 VAT at 19%
+   - including €19.63 VAT at 7.00%
+   - incl. €23.95 VAT at 19.00%
 
 If you want to depict this tax situation using the method described above, create the following two products:
 
- - "Event ticket" with a price of €450 and a tax rate of 7% 
+ - "Event ticket" with a price of €450 and a tax rate of 7.00% 
 
- - "Catering" with a price of €150, a 19% tax rule and the box “Only sell this product as part of a bundle" checked 
+ - "Catering" with a price of €150, a 19.00% tax rule and the box “Only sell this product as part of a bundle" checked 
 
 Then, select the "Event ticket" and open the :btn:Bundled products: tab. 
 Add the "Catering" product and enter a "Designated price part" of €150. 
 
 When a customer purchases the event ticket, the catering will be added as a bundled product automatically.
-The product price of €450 will split into the two components. 
-€300 will be taxed at 7% and €150 will be taxed at 19%, just as intended. 
+The product price of €450 will be split into the two components. 
+€300 will be taxed at 7.00% and €150 will be taxed at 19.00%, just as intended. 
 
 ## Troubleshooting 
 
