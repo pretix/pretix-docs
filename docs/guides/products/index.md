@@ -76,10 +76,11 @@ This section covers advanced use cases and how to implement them using the optio
 
 ### Time slots 
 
-A more advanced use case of pretix is using pretix for time-slot-based access to an area with a limited visitor capacity, such as a museum or other attraction. 
-This guide will show you the quickest way to set up such an event with pretix.
+You can use pretix to set up access to a venue with a limited visitor capacity, such as a museum, based on time slots. 
+This guide shows you how to create an event with time slots. 
 
-First of all, when creating your event, you need to select that your event represents an "event series":
+Create a new event. 
+Under "Event type", select "Event series or time slot booking". 
 
 ![](../../assets/screens/products/create_step11.png "Create step 11")
 
@@ -87,43 +88,52 @@ For general instructions on how to set up an event series with pretix, refer to 
 
 #### Creating slots
 
-To create the time slots, you need to create a number of "dates" in the event series. 
+In order to create time slots, you have to create a number of "dates" in the event series. 
 Navigate to :navpath:Your event → :fa3-calendar: Dates: and click the :btn-icon:fa3-plus:Create many new dates: button. 
-Then, first enter the pattern of your opening days. 
-In the example, the museum is open every week from Tuesday to Sunday. 
-We recommend to create the slots for a few weeks at a time, but not e.g. for a full year, since it will be more complicated to change things later.
+Enter a pattern for your opening days. 
+If your venue opens every week from Tuesday to Sunday in January of 2027, enter the following pattern: 
+"Repeat every `1` `week(s)`, starting at `2027-01-01`" 
+Check the boxes for Tuesday, Wednesday, Thursday, Friday, and Saturday. 
+Select "Repeat until" and enter `2027-01-31` into the field.  
+
+It makes sense to create time slots for a few weeks at a time. 
+Do not create time slots for a full year or an even longer period of time. 
+Doing so would make it too complicated to make changes later. 
 
 ![](../../assets/screens/products/timeslots_create1.png "Timeslots create 1")
 
-Then, scroll to the times section and create your time slots. 
-You can do any interval you like. 
+Under "Times", specify the time slots for each opening day. 
+If your venue opens every day from 10 AM to 6 PM and each time slot corresponds to a full hour, add a total of seven lines. 
+Enter an "Event start time" of `10:00:00` and an "Event end time" of `11:00:00` into the first line. 
+Repeat this for every line, incrementing the hours for both start and end time by one for each line. 
+
 If you have different opening times on different days of the week, you will need to go through the creation process multiple times.
 
 ![](../../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
 
-Scroll further down and create one or multiple quotas that define how many people can book a ticket for that time slot. 
-In this example, 50 people in total are allowed to enter within every slot:
+Under "Quotas, create one or multiple quotas. 
+These quotas determine how many people can book a ticket for each time slot. 
+If you want each time slot to be attended by a maximum of 50 people, set the "Total capacity" to `50`
 
 ![](../../assets/screens/products/timeslots_create_31.png "Timeslots create 31")
 
-Do **not** create a check-in list at this point. 
-We will deal with this further below in the guide. 
-Now, press "Save" to create your slots.
+Once you are happy with your choices, click the :btn:Save: button. 
 
-!!! Warning
+!!! Note
+    If you create a large number of time slots at once, it may take a moment until all of them can be displayed. 
+    If you encounter an error message during this stage, wait a few minutes for the server to finish the task. 
+    Do **not** try again immediately. 
+    In most cases, the dates will be created successfully even if an error message is displayed. 
 
-    If you create a lot of time slots at once, the server might need a few minutes to create them all in our system. 
-    If you receive an error page because it took too long, please do not try again immediately but wait for a few minutes. 
-    Most likely, the slots will be created successfully even though you saw an error.
+#### Enabling the week calendar view
 
-#### Event settings
-
-We recommend that you navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
+For an event series or time slot booking, it makes sense to enable the "Week calendar" overview style for the shop page. 
+In order to do so, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
 Open the :btn:Display: tab and set "Default overview style" to "Week calendar":
 
 ![](../../assets/screens/products/timeslots_settings_11.png "Timeslots settings 11")
 
-Now, your ticket shop should give users a nice weekly overview over all time slots and their availability:
+Your ticket shop will now display a weekly overview over all time slots and their availability. 
 
 ![](../../assets/screens/products/timeslots_presale1.png "Timeslots presale 1")
 
