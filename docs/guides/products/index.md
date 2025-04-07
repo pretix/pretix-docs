@@ -12,7 +12,7 @@ Products are configured on the event level, so you have to create an event first
 
 This section guides you through the basic process of product creation. 
 This involves first creating categories, then the products themselves, and finally quotas. 
-You cannot create a product without choosing a category for it. 
+You cannot create add-on products or products for cross-selling without choosing a category for them. 
 You cannot create a quota without adding at least one product to it. 
 Thus, this guide will explain those steps in that order.
 
@@ -20,11 +20,14 @@ Thus, this guide will explain those steps in that order.
 
 ![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../../assets/screens/products/categories.png "Product categories screenshot") 
 
-Categories separate standalone products from additional products. 
+Categories do several things. 
+They help you group products into sensible categories both in the backend and in your shop. 
+Your shop page will display products grouped by categories which can help customers find the article they are looking for more easily.  
+Sorting products into categories can help you better keep track of them in the backend. 
+
+Categories also separate normal products, which can be purchased directly, from additional products, which are only offered as add-ons to normal products. 
 If you want to sell not only admission tickets, but also extras such as stickers, you have to have at least two different categories. 
 You also need an extra category if you are planning to use the cross-selling feature. 
-Sorting products into categories can help you better keep track of them in the backend. 
-Finally, your shop page will display products grouped by categories which can help customers find the article they are looking for more easily. 
 
 In order to edit categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
 This page shows the list of all product categories. 
