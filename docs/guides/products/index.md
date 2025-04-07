@@ -22,11 +22,11 @@ Thus, this guide will explain those steps in that order.
 
 Categories do several things. 
 They help you group products into sensible categories both in the backend and in your shop. 
-Your shop page will display products grouped by categories which can help customers find the article they are looking for more easily.  
-Sorting products into categories can help you better keep track of them in the backend. 
+Your shop page will display products grouped by categories which can help customers find the item they are looking for more easily.  
+Sorting products into categories can help you keep track of them in the backend. 
 
 Categories also separate normal products, which can be purchased directly, from additional products, which are only offered as add-ons to normal products. 
-If you want to sell not only admission tickets, but also extras such as stickers, you have to have at least two different categories. 
+If you want to sell not only admission tickets, but also extras such as merchandise, you have create a category for add-on products. 
 You also need an extra category if you are planning to use the cross-selling feature. 
 
 In order to edit categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
@@ -39,12 +39,12 @@ Normal products are standalone products that can be purchased directly.
 Add-on products are products that are only offered as add-ons to normal products. 
 Cross-selling products are products that are only offered in the cross-selling step as a customer is purchasing other products. 
 Finally, products in the "normal + cross-selling" category are both offered as standalone products and in the cross-selling step. 
-The "Cross-selling condition" setting below determines how products in cross-selling and normal + cross-selling categories are offered in your shop. 
+The "Cross-selling condition" setting below determines how products in the "cross-selling" and "normal + cross-selling" categories are offered in your shop. 
 
 Click the :btn:Save: button at the bottom of the page. 
 This takes you back to the product categories page, which now also lists the newly created category. 
 
-You can also edit an already existing category and change its name, description and type by clicking its name or the :btn-icon:fa3-edit:: edit button next to it in the list. 
+You can also edit an already existing category and change its name, description, and type, by clicking its name or the :btn-icon:fa3-edit:: edit button next to it in the list. 
 
 ### Creating and editing products
 
@@ -90,7 +90,7 @@ For general instructions on how to set up an event series with pretix, refer to 
 To create the time slots, you need to create a number of "dates" in the event series. 
 Navigate to :navpath:Your event → :fa3-calendar: Dates: and click the :btn-icon:fa3-plus:Create many new dates: button. 
 Then, first enter the pattern of your opening days. 
-In the example, the museum is open week Tuesday to Sunday. 
+In the example, the museum is open every week from Tuesday to Sunday. 
 We recommend to create the slots for a few weeks at a time, but not e.g. for a full year, since it will be more complicated to change things later.
 
 ![](../../assets/screens/products/timeslots_create1.png "Timeslots create 1")
