@@ -164,54 +164,66 @@ Select any time slot that is part of the event series and then select the check-
 
 ### Season tickets
 
-Season tickets and similar time-based tickets are popular for swimming pools, sports clubs, theaters and lots of other types of venues. 
-In this section, we show you different ways to set them up with pretix. 
-Of course, other types of tickets such as week tickets, month tickets or tickets of ten can be created with the same mechanism.
+Season tickets are often used for public swimming pools, sports clubs, theaters, and other types of venues. 
+This section explains two methods for setting them up in pretix. 
+These methods can be used for any ticket that grants access to all events during a certain time period. 
+It does not matter whether that time period spans several years or just a single day. 
 
-There is a big difference between the two ways we show below.
+The first method, option A, uses memberships. 
+The second method, option B, uses a single season ticket. 
 
-With Option A, a customer who purchases a season ticket creates an account with their email address and a password and the season ticket will be saved in that account. 
-If the customer wants to use the season ticket, they need to buy an additional free ticket for the specific event they want to visit. 
-This makes sense for all events or venues with limited capacity or reserved seating, because it still allows you to set an upper limit of people showing up for a specific event or time slot.
+With **Option A**, a customer who purchases a season ticket creates an account with their email address and a password. 
+The season ticket will be stored in that account. 
+Whenever the customer wants to use the season ticket, they need to purchase a ticket for that event. 
+Their membership allows them to get that ticket for free. 
+If your venue has limited capacity or reserved seating, use option A. 
+This method allows you to control the total number of people that can be admitted to an event or time slot using quotas. 
 
-With Option B, a customer who purchases a season ticket receives a single ticket with a single QR code that can be used an unlimited number of times. 
-This makes sense if the capacity of your venue is virtually unlimited and you do not need to know in advance how many season ticket holders will show up.
+With **Option B**, a customer who purchases a season ticket receives a single ticket with a single ticket secret that can be used an unlimited number of times. 
+Use option B if the capacity of your venue is virtually unlimited and you do not need to know in advance how many season ticket holders will show up.
 
 #### Option A: Memberships and multiple tickets
 
-Since this approach requires customers to be identified with a customer account, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab. 
+Option A requires customers to be identified with a customer account.
+Thus, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab. 
 See also: [Customer accounts](../customer-accounts.md) 
 
 ![](../../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
 
-After doing so, a new menu item "Customer accounts" will also show up in the main menu of your organizer account on the left. 
-Open its menu and click "Membership types". 
-Then, select to "create a new membership type".
+Once you have done that, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → Membership types:. 
+Click the :btn-icon:fa3-plus: Create a new membership type: button. 
 
-You can name the membership type in a way that clearly explains where it is valid, e.g. "season pass main location" or "season pass all locations". 
-There are a few details you can configure on this page, such as whether the season pass can be used by multiple different persons, or if the season pass can be used for multiple tickets for the same time slot. 
-You can also define a maximum number of usages, which is useful if you e.g. use this feature to add a "ticket of ten".
+Give the new membership type a distinct and informative name. 
+If you want the membership to allow purchase of tickets for multiple different people, check the box next to "Membership is transferable". 
+If you want the membership to allow purchase for multiple different events or dates with the same start time, check the box next to "Parallel usage is allowed". 
+
+If you want to limit the membership to a certain number of purchases, specify that number in the "Maximum usages" field. 
+If you want to allow unlimited purchases within the specified time frame, leave this field empty. 
+Once you are happy with your choices, click the :btn:Save: button. 
 
 ![](../../assets/screens/products/seasontickets_membershiptype1.png "Season tickets membership type 1")
 
-Next, you need a way of selling these season passes. 
-Theoretically this can be done through the same event series that you usually use, but it's probably cleaner and easier to find for customers if you create a new event that you only use to sell season passes. 
-The start and end date of the new event should correspond to the dates of your season.
+Once you have created the membership type, you also need a way to sell these memberships. 
+Create a new event with start and end dates corresponding to the duration of the season for which you want to sell season passes. 
+Navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
+Choose a name such as "Season pass" and a price, and then click the :btn:Save and continue with more settings: button. 
 
-Inside the new event, you only need to create a single product which you can call "season ticket". 
-Inside that product's settings, head to the "Additional settings" section and look for the option "This product creates a membership of type". 
-Select the membership type you just created. 
-By default, the checkbox "The duration of the membership is the same as the duration of the event or event series date" is active, which is fine for our season ticket example, but you might need to unset it and provide custom timing for other ticket types such as week passes.
+Then, open the :btn:Additional settings: tab. 
+Under "This product creates a membership of type", select the membership you just created. 
+By default, the next to "The duration of the membership is the same as the duration of the event or event series date" is checked. 
+If you are selling multiple time-based passes with different periods of validity which do not match the duration of the event, uncheck the box. 
 
 ![](../../assets/screens/products/seasontickets_issue1.png "Season tickets issue 1")
 
-To prevent confusion, it might be useful to turn off ticket downloading at "Settings" → "Tickets" for your new event. 
-That's it, you are now ready to sell season tickets!
+In order to prevent customers from confusing their season pass with their ticket, it makes sense to disable ticket downloads. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings: and uncheck the box next to "Allow users to download tickets". 
 
-We can now deal with how to use the season tickets. 
-Move back to your existing event and create a new product or product variation of your regular product which you call "ticket for season ticket holders" and assign a price of zero. 
-In the "Availability" section of the product or variation settings, check the option "Require a valid membership" and again select the membership type you created. 
-You can of course repeat this with all events the season ticket holder should have access to.
+Once the season pass shop has been set up, you need to create free products that can only be purchased with the season pass for each applicable event. 
+Clone an existing admission ticket, append a descriptor such as "for season ticket holders" to the name, and set the price to zero. 
+Click the :btn:Save and continue with more settings: button and then open the :btn:Availability: tab. 
+Check the box next to "Require a valid membership" and select the membership type you created. 
+Repeat these steps for every product you want to make available for free for season pass holders. 
+If you want season pass holders to be able to attend multiple of your events for free, repeat these steps for every applicable event. 
 
 ![](../../assets/screens/products/seasontickets_require1.png "Season tickets require 1")
 
