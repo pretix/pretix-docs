@@ -32,7 +32,7 @@ You also need an extra category if you are planning to use the cross-selling fea
 In order to edit categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
 This page shows the list of all product categories. 
 
-Click the :btn-icon:fa3-plus: Create a new category: button and give the new category a descriptive name. 
+Click the :btn-icon:fa3-plus: Create a new category: button and give the new category a name. 
 Choose the category type depending on the type of products in this category: normal, add-on, cross-selling, or normal + cross-selling. 
 
 Normal products are standalone products that can be purchased directly. 
@@ -206,7 +206,7 @@ Choose a name such as "Season pass" and a price, and then click the :btn:Save an
 
 Then, open the :btn:Additional settings: tab. 
 Under "This product creates a membership of type", select the membership you just created. 
-By default, the next to "The duration of the membership is the same as the duration of the event or event series date" is checked. 
+By default, the box next to "The duration of the membership is the same as the duration of the event or event series date" is checked. 
 If you are selling multiple time-based passes with different periods of validity which do not match the duration of the event, uncheck the box. 
 
 ![Page titled Modify product: Season pass, on the Additional settings tab. Under 'This product creates a membership of type', the membership 'Season pass 2027-1' is selected. The checkbox next to ' The duration of the membership is the same as the duration of the event or event series date' is checked.](../../assets/screens/products/product-creates-membership.png "Modify product: Season pass")
