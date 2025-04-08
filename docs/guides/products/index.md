@@ -82,7 +82,7 @@ This guide shows you how to create an event with time slots.
 Create a new event. 
 Under "Event type", select "Event series or time slot booking". 
 
-![](../../assets/screens/products/create_step11.png "Create step 11")
+![Page titled 'Create a new event (Step 1)'. Under 'Event type' the option 'Event series or time slot booking' is selected'  ](../../assets/screens/event/create-series.png "Create a new event")
 
 For general instructions on how to set up an event series with pretix, refer to our guide on [event series](../event-series.md).
 
@@ -100,16 +100,17 @@ It makes sense to create time slots for a few weeks at a time.
 Do not create time slots for a full year or an even longer period of time. 
 Doing so would make it too complicated to make changes later. 
 
-![](../../assets/screens/products/timeslots_create1.png "Timeslots create 1")
+![Page titled 'Create multiple dates', with selections made as described above. A preview listing all dates to be created is displayed on the right.](../../assets/screens/event-series/create-multiple-example2.png "Create multiple dates")
 
 Under "Times", specify the time slots for each opening day. 
-If your venue opens every day from 10 AM to 6 PM and each time slot corresponds to a full hour, add a total of seven lines. 
-Enter an "Event start time" of `10:00:00` and an "Event end time" of `11:00:00` into the first line. 
-Repeat this for every line, incrementing the hours for both start and end time by one for each line. 
+If your venue opens every day from 10 AM to 6 PM and each time slot corresponds to a full hour, you can click the :btn-icon:fa3-calendar: Add many time slots: button. 
+Specify "Start of first slot" as "10:00:00", "End of time slots" as "18:00:00", "Length of slots" as "60" and "Break between slots" as "0". 
+Then, click the :btn-icon:fa3-check: Create: button. 
+If your time slot pattern is more irregular or complex, use the :btn-icon:fa3-plus: Add a single time slot: button and edit each line individually. 
 
 If you have different opening times on different days of the week, you will need to go through the creation process multiple times.
 
-![](../../assets/screens/products/timeslots_create_21.png "Timeslots create 21")
+![Page displaying the headline 'Times' and eight time slots ranging from 10 AM to 6 PM, each lasting an hour with no admission time specified.](../../assets/screens/event-series/create-times.png "Create multiple dates–Times")
 
 Under "Quotas, create one or multiple quotas. 
 These quotas determine how many people can book a ticket for each time slot. 
