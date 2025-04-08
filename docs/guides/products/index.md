@@ -139,26 +139,28 @@ Your ticket shop will now display a weekly overview over all time slots and thei
 
 #### Check-in
 
-If you want to scan tickets at the entrance to your event and only admit the ticket holders at their designated time, we recommend the following setup: 
-Go to "Check-in" in the main navigation on the left and create a new check-in list. 
-Give it a name and do not choose a specific data. 
-We will use one check-in list for all dates. 
-Then, go to the "Advanced" tab at the top and set up two restrictions to make sure people can only get in during the time slot they registered for. 
+If you are selling tickets for certain time slots, then you also want customers to be admitted to the event only if their ticket matches the current time slot. 
+This section explains how to set this up using custom check-in rules. 
+Navigate to :navpath:Your event → :fa3-check-square-o: Check-in → Check-in lists: and click the :btn-icon:fa3-plus: Create a new check-in list: button. 
+
+Specify a name, but do **not** choose a specific date. 
+This check-in list will apply to all dates. 
+Open the :btn:Advanced: tab. 
 
 Under "Custom check-in rule", click the :btn-icon:fa3-plus-circle: Add condition: button and select "All of the conditions below (AND)" from the dropdown menu. 
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is after", then "Event start". 
-Leave the "Tolerance (minutes)" field empty. 
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is before", then "Event end". 
-Again, leave the "Tolerance (minutes)" field empty. 
-Your custom check-in rule should now look like the one in the following screenshot: 
+You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
 
 ![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/timeslots_checkinlists1.png "Timeslots check-in lists 1")
 
-If you want, you can enter a tolerance of e.g. "10" if you want to be a little bit more relaxed and admit people up to 10 minutes before or after their time slot.
+With these two restrictions, customers can only access your event during the time slot for which they bought a ticket. 
+Once you are happy with your choices, click the :btn:Save: button. 
 
-Now, download our Android or Desktop app and register it to your account. 
-The app will ask you to select one of the time slots, but it does not matter, you can select any one of them and then select your newly created check-in list. 
-That's it, you're good to go!
+When using pretixSCAN with this setup, the app will ask you to select one of the time slots. 
+The choice does not matter. 
+It is only important that you select the check-in list you just set up. 
+Select any time slot that is part of the event series and then select the check-in list described above. 
 
 ### Season tickets
 
