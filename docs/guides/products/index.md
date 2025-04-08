@@ -249,10 +249,11 @@ Under "Custom check-in rule", click the :btn-icon:fa3-plus-circle: Add condition
 Click the :btn-icon:fa3-plus-circle: Add condition: button again and select "All of the conditions below (AND)" from the dropdown menu. 
 You now have an OR-bracket with an AND-bracket inside it. 
 
-Click the :btn-icon:fa3-plus-circle: Add condition: button **within the AND-bracket** and select "Current date and time", then "is after", then "Event start". 
-Click :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is before", then "Event end". 
+Click the :btn-icon:fa3-plus-circle: Add condition: button **within the AND-bracket** and select "Product", then "is one of", and then all admission tickets **other than** the season pass. 
+Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is after", then "Event start". 
+Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is before", then "Event end". 
 You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
-Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket a third time and select "Number of previous entries", then "=", then "0". 
+Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket a final time and select "Number of previous entries", then "=", then "0". 
 
 Then, click the :btn-icon:fa3-plus-circle: Add condition: button that is located within the OR-bracket, but **not** within the AND-bracket. 
 It should be further down on the page. 
