@@ -115,9 +115,6 @@ If you have different opening times on different days of the week, you will need
 Under "Quotas, create one or multiple quotas. 
 These quotas determine how many people can book a ticket for each time slot. 
 If you want each time slot to be attended by a maximum of 50 people, set the "Total capacity" to `50`
-
-![](../../assets/screens/products/timeslots_create_31.png "Timeslots create 31")
-
 Once you are happy with your choices, click the :btn:Save: button. 
 
 !!! Note
@@ -132,11 +129,9 @@ For an event series or time slot booking, it makes sense to enable the "Week cal
 In order to do so, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
 Open the :btn:Display: tab and set "Default overview style" to "Week calendar":
 
-![](../../assets/screens/products/timeslots_settings_11.png "Timeslots settings 11")
+![Page displaying the headline 'Calendar list and views'. Under 'Default overview style', the option 'Week calendar' has been selected.](../../assets/screens/event-series/calendar-views.png "Display–Calendar list and views")
 
 Your ticket shop will now display a weekly overview over all time slots and their availability. 
-
-![](../../assets/screens/products/timeslots_presale1.png "Timeslots presale 1")
 
 #### Check-in
 
@@ -153,7 +148,7 @@ Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date a
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is before", then "Event end". 
 You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
 
-![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/timeslots_checkinlists1.png "Timeslots check-in lists 1")
+![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/time-slot-check-in-rule.png "Custom check-in rule")
 
 With these two restrictions, customers can only access your event during the time slot for which they bought a ticket. 
 Once you are happy with your choices, click the :btn:Save: button. 
@@ -189,7 +184,7 @@ Option A requires customers to be identified with a customer account.
 Thus, you first need to enable the customer accounts feature in your organizer settings in the "Customer accounts" tab. 
 See also: [Customer accounts](../customer-accounts.md) 
 
-![](../../assets/screens/products/seasontickets_orgsettings1.png "Season tickets organizer settings 1")
+![Organizer settings page, on the Customer accounts tab. The boxes next to 'Allow customers to create accounts', 'Allow customers to create accounts', and 'Allow customers to log in with email address and password' have been checked.](../../assets/screens/organizer/customer-accounts.png "Organizer settings–Customer accounts")
 
 Once you have done that, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → Membership types:. 
 Click the :btn-icon:fa3-plus: Create a new membership type: button. 
@@ -202,7 +197,7 @@ If you want to limit the membership to a certain number of purchases, specify th
 If you want to allow unlimited purchases within the specified time frame, leave this field empty. 
 Once you are happy with your choices, click the :btn:Save: button. 
 
-![](../../assets/screens/products/seasontickets_membershiptype1.png "Season tickets membership type 1")
+![Page titled Create a new membership type. The name is specified as Season pass 2027-1. The boxes next to 'Membership is transferable' and 'Parallel usage is allowed' are checked. The 'Maximum usages' field is empty.](../../assets/screens/products/membership-type.png "Create a new membership type")
 
 Once you have created the membership type, you also need a way to sell these memberships. 
 Create a new event with start and end dates corresponding to the duration of the season for which you want to sell season passes. 
@@ -214,7 +209,7 @@ Under "This product creates a membership of type", select the membership you jus
 By default, the next to "The duration of the membership is the same as the duration of the event or event series date" is checked. 
 If you are selling multiple time-based passes with different periods of validity which do not match the duration of the event, uncheck the box. 
 
-![](../../assets/screens/products/seasontickets_issue1.png "Season tickets issue 1")
+![Page titled Modify product: Season pass, on the Additional settings tab. Under 'This product creates a membership of type', the membership 'Season pass 2027-1' is selected. The checkbox next to ' The duration of the membership is the same as the duration of the event or event series date' is checked.](../../assets/screens/products/product-creates-membership.png "Modify product: Season pass")
 
 In order to prevent customers from confusing their season pass with their ticket, it makes sense to disable ticket downloads. 
 Navigate to :navpath:Your event → :fa3-wrench: Settings: and uncheck the box next to "Allow users to download tickets". 
@@ -223,11 +218,12 @@ Once the season pass shop has been set up, you need to create free products that
 Clone an existing admission ticket, append a descriptor such as "for season ticket holders" to the name, and set the price to zero. 
 Click the :btn:Save and continue with more settings: button and then open the :btn:Availability: tab. 
 Check the box next to "Require a valid membership" and select the membership type you created. 
+If you want to display this product only to customers who already have an active membership in your shop, check the box next to "Hide without a valid membership". 
 
 Repeat these steps for every product you want to make available for free for season pass holders. 
 If you want season pass holders to be able to attend multiple of your events for free, repeat these steps for every applicable event. 
 
-![](../../assets/screens/products/seasontickets_require1.png "Season tickets require 1")
+![Page displaying the option 'Require a valid membership', which is checked, and 'Allowed membership types', under which 'Season pass 2027-1' is selected. The box next to 'Hide without a valid membership' is checked.](../../assets/screens/products/require.png "Require a valid membership")
 
 #### Option B: All-access in a single pass
 
