@@ -180,7 +180,7 @@ If your venue has limited capacity or reserved seating, use option A.
 This method allows you to control the total number of people that can be admitted to an event or time slot using quotas. 
 
 With **Option B**, a customer who purchases a season ticket receives a single ticket with a single ticket secret that can be used an unlimited number of times. 
-Use option B if the capacity of your venue is virtually unlimited and you do not need to know in advance how many season ticket holders will show up.
+Use option B if you are only hosting a single event or event series, the capacity of your venue is virtually unlimited, and you do not need to know in advance how many season ticket holders will show up.
 
 #### Option A: Memberships and multiple tickets
 
@@ -222,6 +222,7 @@ Once the season pass shop has been set up, you need to create free products that
 Clone an existing admission ticket, append a descriptor such as "for season ticket holders" to the name, and set the price to zero. 
 Click the :btn:Save and continue with more settings: button and then open the :btn:Availability: tab. 
 Check the box next to "Require a valid membership" and select the membership type you created. 
+
 Repeat these steps for every product you want to make available for free for season pass holders. 
 If you want season pass holders to be able to attend multiple of your events for free, repeat these steps for every applicable event. 
 
@@ -229,30 +230,39 @@ If you want season pass holders to be able to attend multiple of your events for
 
 #### Option B: All-access in a single pass
 
-If you have only a single event series with many time slots and you do not care how many season ticket holders show up, there's a solution that does not require your customers to set up accounts and book a new ticket on every visit.
+Option B is setting up a single all-access pass. 
+This is less complicated to set up than option A because it does not require your customers to set up accounts and book a new ticket on every visit.
+However, you can only use option B if you have only a single event series, and no space limitations at your venue. 
 
-Instead, you can just create an additional product "Season ticket" that you enable either in a "special" date of your event series just created for this purpose, or in all of your dates so it can be easily found by customers.
+In order to set up a single all-access pass, navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
+Give the new product a name such as "Season ticket". 
+Enable this product for all dates in your event series. 
 
-Then, you can set up your check-in lists with custom logic in the "Advanced" tab of your check-in list settings. 
-The logic needs to ensure the following requirements:
+You have to set up custom check-in rules to allow customers access to all dates with the season pass. 
+Navigate to :navpath:Your event → :fa3-check-square-o: Check-in → Check-in lists: and click the :btn-icon:fa3-plus: Create a new check-in list: button. 
 
- - Regular ticket holders can only get in during their assigned time frame and when they haven't used their ticket before.
- - Season ticket holders can always get in.
+Specify a name, but do **not** choose a specific date. 
+This check-in list will apply to all dates. 
+Open the :btn:Advanced: tab. 
 
-Here's an example on how to set this up:
-Create an OR-bracket (At least one of the conditions below). 
-Within that OR-condition, create two AND-brackets (All of the conditions below). 
-Within the first AND-bracket, create the following conditions: 
+Under "Custom check-in rule", click the :btn-icon:fa3-plus-circle: Add condition: button and select "At least one of the conditions below (OR)" from the dropdown menu. 
+Click the :btn-icon:fa3-plus-circle: Add condition: button again and select "All of the conditions below (AND)" from the dropdown menu. 
+You now have an OR-bracket with an AND-bracket inside it. 
 
- - "Product" "is one of" "Day pass" 
- - "Current date and time" "is after" "Event start" with a tolerance of 0 
- - "Current date and time" "is before" "Event end" with a tolerance of 0 
- - "Number of previous entries" equals 0 
+Click the :btn-icon:fa3-plus-circle: Add condition: button **within the AND-bracket** and select "Current date and time", then "is after", then "Event start". 
+Click :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is before", then "Event end". 
+You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
+Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket a third time and select "Number of previous entries", then "=", then "0". 
 
-Then, within the second AND-bracket, create the following condition: 
-"Product" "is one of" "Season pass".  
+Then, click the :btn-icon:fa3-plus-circle: Add condition: button that is located within the OR-bracket, but **not** within the AND-bracket. 
+It should be further down on the page. 
+Select "Product", then "is one of", and then your season pass product. 
 
 ![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
+
+The logic is depicted in the screenshot above. 
+These rules ensure that regular tickets holders are only admitted to their chosen date and if their ticket has not been used before. 
+They also ensure that season ticket holders are always admitted. 
 
 ### Mixed taxation 
 
