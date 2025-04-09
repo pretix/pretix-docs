@@ -24,6 +24,8 @@ This article will guide you through the basic setup of the widget and some advan
 ## Prerequisites 
 
 You need to create at least one event before you can offer access to your ticket shop through the widget. 
+The widget will only be displayed if your ticket shop is active. 
+
 You need to have a website and the possibility to make changes to it. 
 Some basic knowledge of JavaScript is helpful. 
 
