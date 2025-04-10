@@ -191,6 +191,7 @@ In order to use an SSO provider with pretix, it has to fulfill the following req
 #### Using GitHub as an SSO provider for pretix 
 
 If you want to use GitHub as an SSO provider for pretix, follow the instructions on [authorizing OAuth apps](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps) in the GitHub documentation. 
+
 While creating a "New OAuth App" in GitHub, 
 3. Fill in the details:
    - **Application name**: Something your users will recognize, like "MyConference Tickets"
@@ -217,7 +218,7 @@ While creating a "New OAuth App" in GitHub,
    - **Issuer URL**: `https://github.com`
    - **Client ID**: Paste from GitHub (looks like `a1b2c3d4e5f6g7h8i9j0`)
    - **Client secret**: Paste from GitHub (looks like `a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9`)
-   - **Scopes**: `openid user:email` (to get verified email addresses)
+   - **Scope**: `openid user:email` (to get verified email addresses)
    - Leave other fields with default values
    - **Email address claim**: `email`
    - **Identity claim**: `sub`
@@ -225,67 +226,48 @@ While creating a "New OAuth App" in GitHub,
 
 4. Save your changes
 
-#### Setting up Google login
+#### Using Google Accounts as an SSO provider for pretix 
 
-Google login is perfect for general audience events as most people already have a Google account.
+If you want to use Google as an SSO provider for pretix, follow the instructions on [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect) in the Google documentation. 
+Open the [Google Cloud backend](https://console.cloud.google.com/auth/clients) and create a new client. 
+During the creation process, under "Application type", select "Web application". 
+Note down the "Client ID" and "Client secret" so that you can enter them in the pretix backend later. 
 
-##### Create your Google OAuth credentials
+Open the pretix backend and navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button. 
+Choose a "Provider name" such as "Google" and a "Login button label" such as "Sign in with Google". 
+Fill in the following details: 
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a project or select an existing one
-3. Navigate to **APIs & Services → Credentials**
-4. Click "Create Credentials" then "OAuth client ID"
-5. If you haven't configured the consent screen yet:
-   - Select "External" for most cases
-   - Enter basic app information - your organization name and support email
-   - For "Authorized domains" add your pretix domain
-   - Add your email for developer contact information
-   - You only need basic scopes for OAuth login, so select only what's necessary
+ - **Single-sign-on method**: `OpenID Connect`
+ - **Base URL**: `https://accounts.google.com`
+ - **Client ID**: Insert the ID you noted down during the client creation process in the Google backend. 
+ - **Client secret**: Insert the secret you noted down during the client creation process in the Google backend. 
 
-6. Back on the OAuth client creation screen:
-   - Application type: "Web application"
-   - Name: Your ticket shop name
-   - Authorized JavaScript origins: `https://your-pretix-domain.com`
-   - Authorized redirect URIs: `https://your-pretix-domain.com/your-organizer/oauth2/v1/callback`
+For the next three fields, consult the documentation linked above under [technical details](customer-accounts.md#technical-details-for-using-pretix-as-an-sso-client). 
+An example configuration might look like this: 
 
-7. Click "Create" and note both the **Client ID** and **Client Secret**
+ - **Scope**: `openid email profile`
+ - **Email address claim**: `email`
+ - **Identity claim**: `sub`
 
-##### Configure Google in pretix
+Click the :btn:Save: button. 
+You will be taken back to the overview page titled "SSO providers". 
+Click the "Google" entry in the list. 
+Copy the value from the "Redirection URL" field. 
+It will look similar to, but **not exactly** like `https://pretix.eu/tut/account/login/199/return`. 
+Open the Google backend, edit your client, add a URL, paste the value into the field, and save the settings. 
 
-1. Go to **Your organizer → Customer accounts → SSO providers**
-2. Click "Create a new SSO provider"
-3. Fill in the details:
-   - **Provider name**: `Google`
-   - **Login button label**: `Continue with Google`
-   - **Single-sign-on method**: `OpenID Connect`
-   - **Issuer URL**: `https://accounts.google.com`
-   - **Client ID**: Use the value from Google (looks like `123456789012-abc123def456ghi789jkl012mno345p.apps.googleusercontent.com`)
-   - **Client secret**: Use the value from Google (looks like `GOCSPX-A1b2C3d4E5f6G7h8I9j0K1l2M3`)
-   - **Scopes**: `openid email profile`
-   - **Email address claim**: `email`
-   - **Identity claim**: `sub`
-   - **First name claim**: `given_name`
-   - **Last name claim**: `family_name`
+#### Using Wikimedia as an SSO provider for pretix 
 
-4. Save the configuration
-
-#### Setting up Wikimedia login
-
-Wikimedia login is useful for events related to Wikipedia, open knowledge communities, and educational institutions.
-
-##### Register your Wikimedia OAuth consumer
-
-1. Go to [Meta-Wiki's OAuth Consumer Registration](https://meta.wikimedia.org/wiki/Special:OAuthConsumerRegistration/propose)
-2. Complete the registration form:
-   - **Application name**: Your event or organization name
-   - **Application description**: Brief explanation of your use case
-   - **OAuth callback URL**: `https://your-pretix-domain.com/your-organizer/oauth2/v1/callback`
-   - **Contact email**: Your support email
-   - **Public RSA key**: Leave blank (not needed)
-   - **Consumer version**: `1.0` (OAuth 1.0a)
-   - **Applicable project**: Usually "all" is appropriate
-   - **Permissions**: Basic rights and High-volume editing (minimum required)
-   - **Grant types**: `authorization_code`
+If you want to use Google as an SSO provider for pretix, follow the instructions on [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect) in the Google documentation. 
+Open the [Google Cloud backend](https://console.cloud.google.com/auth/clients) and create a new client. 
+ - **Application name**: Your event or organization name
+ - **Consumer version**: 1.0 
+ - **Application description**: Brief explanation of your use case
+ - **Contact email**: Your support email
+ - **Public RSA key**: Leave blank (not needed)
+ - **Applicable project**: Usually "all" is appropriate
+ - **Permissions**: Basic rights and High-volume editing (minimum required)
+ - **Grant types**: `authorization_code`
 
 3. Accept the developer agreement and submit
 4. After approval (which may take some time), note your **Consumer Key** and **Consumer Secret**
@@ -295,16 +277,15 @@ Wikimedia login is useful for events related to Wikipedia, open knowledge commun
 1. In pretix, go to **Your organizer → Customer accounts → SSO providers**
 2. Click "Create a new SSO provider"
 3. Fill in the form:
-   - **Provider name**: `Wikimedia`
-   - **Login button label**: `Log in with Wikimedia`
-   - **Single-sign-on method**: `OpenID Connect`
-   - **Issuer URL**: `https://meta.wikimedia.org/w/rest.php/oauth2`
-   - **Client ID**: Your Consumer Key (looks like `a12b34c56d78e90f1a2b3c4d5e6f7g8h`)
-   - **Client secret**: Your Consumer Secret (looks like `a12b34c56d78e90f1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9`)
-   - **Scopes**: `openid profile email`
-   - **Email address claim**: `email`
-   - **Identity claim**: `sub`
-   - First and last name claims can be left empty
+ - **Provider name**: `Wikimedia`
+ - **Login button label**: `Log in with Wikimedia`
+ - **Single-sign-on method**: `OpenID Connect`
+
+ - **Client ID**: Your Consumer Key (looks like `a12b34c56d78e90f1a2b3c4d5e6f7g8h`)
+ - **Client secret**: Your Consumer Secret (looks like `a12b34c56d78e90f1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9`)
+ - **Scope**: `openid profile email`
+ - **Email field**: `email`
+ - **User ID field**: `sub`
 
 4. Save your settings
 
