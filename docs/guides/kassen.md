@@ -12,7 +12,21 @@ What conditions have to be met for this information to be applicable? Which sett
 
 ## Anleitung
 
-What does the feature do? How do you use it? How do you apply it to your individual use case? This is the main body of the article. 
+### pretixPOS-Kasse mit pretix verbinden 
+
+Um ein Gerät, auf dem pretixPOS läuft, mit pretix zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassen: und klicken den Button :btn-icon:fa3-plus Neues Gerät verbinden:. 
+Wählen Sie Namen und Veranstaltungen. 
+Unter "Security profile" wählen Sie "pretixPOS" und klicken dann den Button :btn:Speichern:. 
+Auf der nächsten Seite werden ein QR-Code und ein Anmeldecode angezeigt.
+Öffnen Sie die App pretixPOS auf dem Kassengerät und scannen Sie den QR-Code oder geben Sie den Anmeldecode ein. 
+
+pretixPOS stellt Ihnen nun folgende Frage: "In welchem Land ist der Betrieb dieser Kasse steuerpflichtig?". 
+Wählen Sie das entsprechende Land aus und tippen Sie auf den Button :btn:OK:. 
+Wählen Sie dann die Veranstaltungen, für die Sie die Kasse benutzen möchten. 
+
+### Betriebsstätte anlegen
+
+### Kasse einer Betriebsstätte zuweisen
 
 ## Problemlösung 
 
@@ -22,6 +36,6 @@ What are common problems that could be encountered here? How do you solve them?
 
 Lesen Sie unseren Blogbeitrag: [So geht's: Kassenanmeldung in Deutschland](https://pretix.eu/about/de/blog/20250317-so-gehts-kassenanmeldung-in-deutschland/). 
 
-## See Also 
+## Siehe auch
 
 Link to other relevant guides, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
