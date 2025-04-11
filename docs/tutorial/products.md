@@ -46,6 +46,12 @@ We are going to add the following description:
 Next, we will click on the :btn:Price: tab and change the "Default price" to €250.00. 
 We will also select the appropriate tax rate of 19% from the "Sales tax" dropdown. 
 
+!!! Note 
+    Every tax rate you assign to a product, you have to create first. 
+    If there are multiple different tax rates that apply to your products, create one tax rate for each of them. 
+    If you are selling products with a 0% tax rate (such as [gift cards](../guides/gift-cards.md)), you still need to create a 0% tax rule first. 
+    For more information, see our guide on [creating tax rules](../guides/taxes.md#creating-tax-rules). 
+
 Once we have done that, we are going to click the :btn:Save: button. 
 
 ### Discount ticket
