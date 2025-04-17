@@ -2,6 +2,12 @@
 
 {% include "warning-tax.de.md" %}
 
+!!! Note 
+    This article covers the registration of a cash register in Germany. 
+    The process is specific to the country of Germany. 
+    Thus, the following page is only provided in German. 
+    If you require assistance with registering a cash register in Germany and do not speak German, feel free reach out to [pretix support](mailto:support@pretix.eu). 
+
 Dieser Artikel erklärt die Anmeldung von Kassensystemen in Deutschland. 
 Falls Sie als Einzelperson oder Firma steuerpflichtig in der Bundesrepublik Deutschland sind und eine Kasse haben, die Sie für den Verkauf über pretix benutzen, dann ist dieser Artikel relevant für Sie. 
 Das gilt nicht nur dann, wenn Sie selbst eine Kasse besitzen, sondern auch, wenn Sie eine Kasse von pretix mieten. 
@@ -24,11 +30,13 @@ pretixPOS stellt Ihnen nun folgende Frage: "In welchem Land ist der Betrieb dies
 Wählen Sie das entsprechende Land aus und tippen Sie auf den Button :btn:OK:. 
 Wählen Sie dann eine oder mehrere Veranstaltungen, für die Sie die Kasse benutzen möchten. 
 
+Falls eine technische Sicherheitseinrichtung (TSE) in das Kassengerät eingebaut wurde, dann überträgt das Gerät nun 
+
 ### Betriebsstätte anlegen
 
 Die Anmeldung von Kassen in Deutschland erfolgt immer als Bruttomeldung, bei der alle Kassen an einer Betriebsstätte gesammelt übermittelt werden. 
 Legen Sie daher zunächst in pretix eine Betriebsstätte an. 
-Navigieren Sie dazu zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE) und klicken Sie den Button :btn-icon:fa3-plus: Neue Betriebsstätte anlegen:. 
+Navigieren Sie dazu zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE): und klicken Sie den Button :btn-icon:fa3-plus: Neue Betriebsstätte anlegen:. 
 
 Auf der Seite mit dem Titel "Neue Betriebsstätte anlegen" geben Sie zunächst Steuernummer, Bundesland und Umsatzsteuer-Identifikationsnummer an. 
 Wählen Sie dann unter "Rechtsform" entweder "Natürliche Person" oder "Firma" aus. 
