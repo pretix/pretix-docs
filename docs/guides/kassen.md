@@ -30,7 +30,7 @@ pretixPOS stellt Ihnen nun folgende Frage: "In welchem Land ist der Betrieb dies
 Wählen Sie das entsprechende Land aus und tippen Sie auf den Button :btn:OK:. 
 Wählen Sie dann eine oder mehrere Veranstaltungen, für die Sie die Kasse benutzen möchten. 
 
-Falls eine technische Sicherheitseinrichtung (TSE) in das Kassengerät eingebaut wurde, dann überträgt das Gerät nun 
+Falls eine technische Sicherheitseinrichtung (TSE) in das Kassengerät eingebaut wurde, dann überträgt es nun automatisch die Daten der Kasse und der TSE an das pretix-Backend. 
 
 ### Betriebsstätte anlegen
 
@@ -47,8 +47,19 @@ Falls die Daten Ihrer Betriebsstätte mit Ihren Daten als Steuerpflichtiger übe
 Falls nicht, füllen Sie diese Felder ebenfalls aus. 
 Sobald Sie den Button :btn:Speichern: klicken, prüft pretix, ob die eingegebene Steuernummer gültig ist, und ob die anderen Eingaben vollständig sind. 
 
-
 ### Kasse einer Betriebsstätte zuweisen
+
+Um eine Kasse einer Betriebsstätte zuzuordnen, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
+Diese Seite zeigt eine Liste mit dem Titel "Kassen, die keiner Betriebsstätte zugewiesen sind" an und unterhalb davon eine weitere Liste für jede Betriebsstätte, die Sie angelegt haben. 
+Klicken Sie neben einer der nicht zugeordneten Kassen den Bearbeiten-Button :btn-icon:fa3-edit::.
+
+Wählen Sie unter "Betriebsstätte" die Betriebsstätte aus, die Sie im vorigen Schritt erstellt haben. 
+Überprüfen Sie die Angaben auf dieser Seite und korrigieren oder vervollständigen Sie sie falls nötig. 
+Wechseln Sie dann zum Reiter :btn:Technische Sicherheitseinrichtung: und tun Sie dort das gleiche. 
+Wenn alle Angaben vollständig und korrekt sind, klicken Sie den Button:btn:Speichern:. 
+
+Sie kehren dadurch zurück zur Seite "Kassenanmeldung (DE)". 
+Die bearbeitete Kasse befindet sich nun in der Liste für die Betriebsstätte, der Sie sie zugewiesen haben. 
 
 ## Problemlösung 
 
