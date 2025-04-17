@@ -18,6 +18,17 @@ What conditions have to be met for this information to be applicable? Which sett
 
 ## Anleitung 
 
+pretix bietet Ihnen Features, um Ihnen die ordnungsgemäße Anmeldung einer Betriebsstätte mit allen zugehörigen Kassen zu erleichtern. 
+Dazu unternehmen Sie folgende Schritte: 
+
+ 1. Verbinden Sie die pretixPOS-Kasse mit pretix 
+ 2. Legen Sie eine Betriebsstätte an 
+ 3. Weisen Sie die Kasse einer Betriebsstätte zu 
+ 4. Exportieren Sie Kassendaten in eine XML-Datei
+
+Die XML-Datei nutzen Sie dann, um Ihre Betriebsstätte und Kassen über das ELSTER-Portal anzumelden. 
+Die Schritte dahin werden in den folgenden Abschnitten beschrieben. 
+
 ### pretixPOS-Kasse mit pretix verbinden 
 
 Um ein Gerät, auf dem pretixPOS läuft, mit pretix zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassen: und klicken den Button :btn-icon:fa3-plus: Neues Gerät verbinden:. 
@@ -61,6 +72,16 @@ Wenn alle Felder ausgefüllt und die Angaben korrekt sind, klicken Sie den Butto
 
 Sie kehren dadurch zurück zur Seite "Kassenanmeldung (DE)". 
 Die bearbeitete Kasse befindet sich nun in der Liste für die Betriebsstätte, der Sie sie zugewiesen haben. 
+Wiederholen Sie diese Schritte für alle Kassen, die Sie an der Betriebsstätte im Einsatz oder auf Reserve haben. 
+
+### Daten exportieren 
+
+Um Kassendaten für die Meldung über das ELSTER-Portal zu exportieren, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
+Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-share: Export:. 
+Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-download: Exportieren:. 
+Daraufhin werden die Kassendaten in Form einer XML-Datei heruntergeladen. 
+Sie können diese Datei nutzen, um über das ELSTER-Portal eine Mitteilung über elektronische Aufzeichnungssysteme (Kassengeräte) zu machen. 
+Lesen Sie dazu auch die Hilfeseite von ELSTER: [Mitteilung über elektronische Aufzeichnungssysteme (§ 146a Absatz 4 AO)](https://www.elster.de/eportal/formulare-leistungen/alleformulare/aufzeichnung146a). 
 
 ## Problemlösung 
 
