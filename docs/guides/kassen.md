@@ -56,7 +56,8 @@ Klicken Sie neben einer der nicht zugeordneten Kassen den Bearbeiten-Button :btn
 Wählen Sie unter "Betriebsstätte" die Betriebsstätte aus, die Sie im vorigen Schritt erstellt haben. 
 Überprüfen Sie die Angaben auf dieser Seite und korrigieren oder vervollständigen Sie sie falls nötig. 
 Wechseln Sie dann zum Reiter :btn:Technische Sicherheitseinrichtung: und tun Sie dort das gleiche. 
-Wenn alle Angaben vollständig und korrekt sind, klicken Sie den Button:btn:Speichern:. 
+Wählen Sie unter "Vorlage" das TSE-Modell um die Felder "Typ" und "BSI-Zertifizierungs-ID" automatisch füllen zu lassen. 
+Wenn alle Felder ausgefüllt und die Angaben korrekt sind, klicken Sie den Button:btn:Speichern:. 
 
 Sie kehren dadurch zurück zur Seite "Kassenanmeldung (DE)". 
 Die bearbeitete Kasse befindet sich nun in der Liste für die Betriebsstätte, der Sie sie zugewiesen haben. 
