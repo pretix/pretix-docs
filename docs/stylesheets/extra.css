@@ -166,7 +166,6 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
   padding:.2rem;
 }
 .md-typeset .mdx-badge__icon .twemoji {
-  top: 2px;
   left: 1px;
   position: relative;
 }
