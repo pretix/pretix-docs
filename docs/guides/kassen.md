@@ -76,12 +76,23 @@ Wiederholen Sie diese Schritte für alle Kassen, die Sie an der Betriebsstätte 
 
 ### Daten exportieren 
 
-Um Kassendaten für die Meldung über das ELSTER-Portal zu exportieren, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
-Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-share: Export:. 
+Um Kassendaten **einmalig** für die Meldung über das ELSTER-Portal zu exportieren, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
+Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-download: Export:. 
 Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-download: Exportieren:. 
 Daraufhin werden die Kassendaten in Form einer XML-Datei heruntergeladen. 
 Sie können diese Datei nutzen, um über das ELSTER-Portal eine Mitteilung über elektronische Aufzeichnungssysteme (Kassengeräte) zu machen. 
 Lesen Sie dazu auch die Hilfeseite von ELSTER: [Mitteilung über elektronische Aufzeichnungssysteme (§ 146a Absatz 4 AO)](https://www.elster.de/eportal/formulare-leistungen/alleformulare/aufzeichnung146a). 
+
+Sie können auch einen regelmäßigen Export der Kassendaten planen. 
+Um dies zu tun, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
+Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-download: Export:. 
+Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-clock: Export planen:. 
+
+Auf der nächsten Seite können Sie den Zeitraum und die Wiederholungen für den automatischen Export definieren. 
+Anders als beim einmaligen Export wird die XML-Datei nicht über den Browser heruntergeladen, sondern per Mail verschickt. 
+Verwenden Sie den geplanten Export daher **nicht** für sensible personenbezogene Daten. 
+Falls die Exportdatei auf über 20 Megabyte anwächst, dann kann Sie nicht mehr per Mail verschickt werden. 
+Nutzen Sie in diesen Fällen stattdessen den einmaligen Export. 
 
 ## Problemlösung 
 
