@@ -80,6 +80,7 @@ Wählen Sie unter "Betriebsstätte" die Betriebsstätte aus, die Sie im vorigen 
 Überprüfen Sie die Angaben auf dieser Seite und korrigieren oder vervollständigen Sie sie falls nötig. 
 Wechseln Sie dann zum Reiter :btn:Technische Sicherheitseinrichtung: und tun Sie dort das gleiche. 
 Wählen Sie unter "Vorlage" das TSE-Modell um die Felder "Typ" und "BSI-Zertifizierungs-ID" automatisch füllen zu lassen. 
+Die Module, die vermutlich am besten passen, werden farbig hervorgehoben. 
 Wenn alle Felder ausgefüllt und die Angaben korrekt sind, klicken Sie den Button:btn:Speichern:. 
 
 Sie kehren dadurch zurück zur Seite "Kassenanmeldung (DE)". 
@@ -92,7 +93,7 @@ Falls an derselben Betriebsstätte weitere Kassen vorhanden sind, die Sie nicht 
 Um dies zu tun, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE): und klicken den Button :btn-icon:fa3-plus: Neue Drittanbieter-Kasse anlegen:. 
 Wählen Sie unter "Betriebsstätte" die Betriebsstätte aus, die Sie im vorigen Schritt erstellt haben. 
 Füllen Sie die Angaben auf dieser Seite vollständig aus. 
-. 
+
 Wechseln Sie dann zum Reiter :btn:Technische Sicherheitseinrichtung: und tun Sie dort das gleiche. 
 Wählen Sie unter "Vorlage" das TSE-Modell um die Felder "Typ" und "BSI-Zertifizierungs-ID" automatisch füllen zu lassen. 
 Wenn alle Felder ausgefüllt und die Angaben korrekt sind, klicken Sie den Button:btn:Speichern:. 
