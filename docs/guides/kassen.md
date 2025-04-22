@@ -38,7 +38,7 @@ Auf der nächsten Seite werden ein QR-Code und ein Anmeldecode angezeigt.
 
 Öffnen Sie die App pretixPOS auf dem Kassengerät und scannen Sie den QR-Code oder geben Sie den Anmeldecode ein. 
 pretixPOS stellt Ihnen nun folgende Frage: "In welchem Land ist der Betrieb dieser Kasse steuerpflichtig?". 
-Wählen Sie das entsprechende Land aus und tippen Sie auf den Button :btn:OK:. 
+Wählen Sie das entsprechende Land aus und tippen Sie den Button :btn:OK:. 
 Wählen Sie dann eine oder mehrere Veranstaltungen, für die Sie die Kasse benutzen möchten. 
 
 Falls eine technische Sicherheitseinrichtung (TSE) in das Kassengerät eingebaut wurde, dann überträgt es nun automatisch die Daten der Kasse und der TSE an das pretix-Backend. 
@@ -86,7 +86,7 @@ Lesen Sie dazu auch die Hilfeseite von ELSTER: [Mitteilung über elektronische A
 Sie können auch einen regelmäßigen Export der Kassendaten planen. 
 Um dies zu tun, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
 Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-download: Export:. 
-Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-clock: Export planen:. 
+Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-clock-o: Export planen:. 
 
 Auf der nächsten Seite können Sie den Zeitraum und die Wiederholungen für den automatischen Export definieren. 
 Anders als beim einmaligen Export wird die XML-Datei nicht über den Browser heruntergeladen, sondern per Mail verschickt. 
@@ -94,14 +94,14 @@ Verwenden Sie den geplanten Export daher **nicht** für sensible personenbezogen
 Falls die Exportdatei auf über 20 Megabyte anwächst, dann kann Sie nicht mehr per Mail verschickt werden. 
 Nutzen Sie in diesen Fällen stattdessen den einmaligen Export. 
 
-## Problemlösung 
+## Problemlösungen 
 
-What are common problems that could be encountered here? How do you solve them? 
+### Die Seite :btn-icon:fa3-clock-o: Export planen: zeigt nur einen Warnhinweis an: 
+
+Falls die Seite hinter dem Button :btn-icon:fa3-clock-o: Export planen: nur einen Warnhinweis anzeigt, dann bedeutet dies, das Ihr pretix-Account noch nicht aktiviert wurde. 
+Klicken Sie den Button :btn:Zu den Account-Einstellungen: und vervollständigen Sie Ihre Kontaktinformationen. 
+Lesen Sie den Tutorial-Abschnitt zur [Aktivierung des Veranstalterkontos](../tutorial/organizer-account.md#activation) für mehr Informationen. 
 
 ## Weitere Informationen
 
 Lesen Sie unseren Blogbeitrag: [So geht's: Kassenanmeldung in Deutschland](https://pretix.eu/about/de/blog/20250317-so-gehts-kassenanmeldung-in-deutschland/). 
-
-## Siehe auch
-
-Link to other relevant guides, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
