@@ -14,20 +14,32 @@ Das gilt nicht nur dann, wenn Sie selbst eine Kasse besitzen, sondern auch, wenn
 
 ## Voraussetzungen 
 
-What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
+Für die Anmeldung einer Kasse mit pretix benötigen Sie: 
+
+ - ein aktives Veranstalterkonto 
+ - eine Veranstaltung 
+ - ein Kassengerät mit aktiver technischer Sicherheitseinrichtung TSE und pretixPOS 
+ - ein Konto bei [ELSTER](https://www.elster.de/) 
 
 ## Anleitung 
 
-pretix bietet Ihnen Features, um Ihnen die ordnungsgemäße Anmeldung einer Betriebsstätte mit allen zugehörigen Kassen zu erleichtern. 
+pretix erleichtert Ihnen die ordnungsgemäße Anmeldung einer Betriebsstätte mit allen zugehörigen Kassen. 
 Dazu unternehmen Sie folgende Schritte: 
 
  1. Verbinden Sie die pretixPOS-Kasse mit pretix 
  2. Legen Sie eine Betriebsstätte an 
- 3. Weisen Sie die Kasse einer Betriebsstätte zu 
- 4. Exportieren Sie Kassendaten in eine XML-Datei
+ 3. Weisen Sie die pretixPOS-Kasse einer Betriebsstätte zu 
+ 4. Legen Sie falls vorhanden Drittanbieter-Kassen an
+ 5. Exportieren Sie Kassendaten in eine XML-Datei
 
 Die XML-Datei nutzen Sie dann, um Ihre Betriebsstätte und Kassen über das ELSTER-Portal anzumelden. 
 Die Schritte dahin werden in den folgenden Abschnitten beschrieben. 
+
+Dieses Vorgehen ist sinnvoll, wenn Sie an Ihrer Betriebsstätte alle Verkäufe über pretixPOS abwickeln. 
+Es ist genauso sinnvoll, wenn Sie an einer Betriebsstätte mehrere Kassen mit unterschiedlichen Softwares nutzen, aber den Großteil dieser Kassen mit pretixPOS betreiben. 
+
+Falls Sie Ihre Kassen überwiegend mit einer anderen Software benutzen, ist es möglicherweise sinnvoller, die Anmeldung über diese andere Software vorzunehmen. 
+In diesem Fall [verbinden Sie Ihre pretixPOS-Kasse mit pretix](kassen.md#pretixpos-kasse-mit-pretix-verbinden) und folgen dann den Anweisungen unter [Alternative: Manuelle Anmeldung](kassen.md#alternative-manuelle-anmeldung). 
 
 ### pretixPOS-Kasse mit pretix verbinden 
 
@@ -74,6 +86,17 @@ Sie kehren dadurch zurück zur Seite "Kassenanmeldung (DE)".
 Die bearbeitete Kasse befindet sich nun in der Liste für die Betriebsstätte, der Sie sie zugewiesen haben. 
 Wiederholen Sie diese Schritte für alle Kassen, die Sie an der Betriebsstätte im Einsatz oder auf Reserve haben. 
 
+### Drittanbieter-Kasse anlegen
+
+Falls an derselben Betriebsstätte weitere Kassen vorhanden sind, die Sie nicht mit pretixPOS betreiben, dann können Sie diese Kassen trotzdem auch über pretix erfassen. 
+Um dies zu tun, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE): und klicken den Button :btn-icon:fa3-plus: Neue Drittanbieter-Kasse anlegen:. 
+Wählen Sie unter "Betriebsstätte" die Betriebsstätte aus, die Sie im vorigen Schritt erstellt haben. 
+Füllen Sie die Angaben auf dieser Seite vollständig aus. 
+. 
+Wechseln Sie dann zum Reiter :btn:Technische Sicherheitseinrichtung: und tun Sie dort das gleiche. 
+Wählen Sie unter "Vorlage" das TSE-Modell um die Felder "Typ" und "BSI-Zertifizierungs-ID" automatisch füllen zu lassen. 
+Wenn alle Felder ausgefüllt und die Angaben korrekt sind, klicken Sie den Button:btn:Speichern:. 
+
 ### Daten exportieren 
 
 Um Kassendaten **einmalig** für die Meldung über das ELSTER-Portal zu exportieren, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
@@ -93,6 +116,16 @@ Anders als beim einmaligen Export wird die XML-Datei nicht über den Browser her
 Verwenden Sie den geplanten Export daher **nicht** für sensible personenbezogene Daten. 
 Falls die Exportdatei auf über 20 Megabyte anwächst, dann kann Sie nicht mehr per Mail verschickt werden. 
 Nutzen Sie in diesen Fällen stattdessen den einmaligen Export. 
+
+### Alternative: Manuelle Anmeldung 
+
+Alternativ zur Erstellung der Betriebsstätte und zum automatisierten Export über pretix können Sie die Daten auch manuell exportieren. 
+Das ist sinnvoll, wenn Sie die Kassenanmeldung über einen Drittanbieter oder direkt manuell bei ELSTER vornehmen wollen. 
+
+Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
+Klicken Sie neben der Kasse, die Sie anmelden wollen, auf den Bearbeiten-Button :btn-icon:fa3-edit::. 
+Diese Seite zeigt Ihnen alle Daten an, die für die Anmeldung über einen Drittanbieter oder direkt bei ELSTER relevant sind. 
+Übertragen Sie diese Daten an den gewünschten Ort. 
 
 ## Problemlösungen 
 
