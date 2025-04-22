@@ -32,13 +32,13 @@ For example, you could name your team "Staff" to distinguish it from the adminis
 You could give the team access to "All events (including newly created ones)" and grant it the following event permissions: 
 "Can change event settings", "Can change product settings", "Can view orders", "Can change orders", "Can view vouchers", and "Can change vouchers". 
 
-The option "Can change organizer settings" applies to all settings that are nested under :navpath:Your organizer: and that are not controlled by any of the other options on this page. 
-If the URL of the settings page you want to grant or revoke permissions for includes `/control/organizer/`, then it is controlled by this option. 
-Again, this only applies to settings that are not controlled by any of the other checkboxes under "Organizer permissions". 
+The option "Can change organizer settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page. 
+If the URL of the settings page for which you want to grant or revoke permissions includes `/control/organizer/`, then it is controlled by this option. 
+Again, this only applies to settings which are not controlled by any of the other checkboxes under "Organizer permissions". 
 
-The option "Can change event settings" applies to all settings that are nested under :navpath:Your event: and that are not controlled by any of the other options on this page. 
-If the URL of the settings page you want to grant or revoke permissions for includes `/control/event/`, then it is controlled by this option. 
-Again, this only applies to settings that are not controlled by any of the other checkboxes under "Event permissions". 
+The option "Can change event settings" applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page. 
+If the URL of the settings page for which you want to grant or revoke permissions includes `/control/event/`, then it is controlled by this option. 
+Again, this only applies to settings which are not controlled by any of the other checkboxes under "Event permissions". 
 It also applies only to events you checked under "Limit to events", or to all events if you checked "All events (including newly created ones)". 
 
 If you need to grant different permissions for other events, you need to create an additional team and use it to grant permissions for the other event. 
