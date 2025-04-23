@@ -108,10 +108,16 @@ If your venue closes on Christmas Eve and New Year's Eve, check the boxes next t
 
 ## Troubleshooting 
 
-#### The button :fa3-calendar: Dates: does not appear in the sidebar on the left 
+### The button :fa3-calendar: Dates: does not appear in the sidebar on the left 
 
 If the button :fa3-calendar: Dates: does not appear in the sidebar on the left, there are three possible explanations for this: 
 
  - you have selected the wrong event (a singular event instead of an event series)
  - the event is set up as a singular event instead of an event series
  - you do not have permission to edit dates for this event 
+
+### Date names are not displayed 
+
+If date names are not displayed in your shop's date overview, then that means that all dates names are the same. 
+Create an additional date or set of dates with a different name. 
+Date names will be displayed in the overview if there are dates with at least two different names. 
