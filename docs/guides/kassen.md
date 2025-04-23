@@ -116,6 +116,7 @@ Sie können diese Datei nutzen, um über das ELSTER-Portal eine Mitteilung über
 Lesen Sie dazu auch die Hilfeseite von ELSTER: [Mitteilung über elektronische Aufzeichnungssysteme (§ 146a Absatz 4 AO)](https://www.elster.de/eportal/formulare-leistungen/alleformulare/aufzeichnung146a). 
 
 Wiederholen Sie diese Schritte jedes mal, wenn sich an den Kassen an Ihrer Betriebsstätte etwas ändert – also zum Beispiel dann, wenn Sie eine Kasse in Betrieb nehmen, eine Kasse außer Betrieb nehmen, eine TSE tauschen oder entfernen, oder wenn Sie ein neues Kassengerät erwerben. 
+pretix zeigt auf der Seite mit dem Titel "Kassenanmeldung (DE)" einen entsprechenden Hinweis neben der Betriebsstätte an, wenn es entsprechende meldepflichtige Änderungen entdeckt. 
 
 !!! Warning
     Falls Sie einen regelmäßigen Export planen, müssen Sie jede der exportierten Dateien auf etwaige Änderungen überprüfen und bei ELSTER hochladen. 
