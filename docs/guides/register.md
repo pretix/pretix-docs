@@ -1,4 +1,4 @@
-# Kassen
+# Cash registers
 
 !!! Note 
     This article covers the registration of a cash register in Germany. 
