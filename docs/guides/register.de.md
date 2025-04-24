@@ -1,3 +1,3 @@
 # Kassen
 
-{% include "kassen.md" %}
+{% include "register.md" %}

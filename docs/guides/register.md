@@ -6,4 +6,4 @@
     Thus, the following page is only provided in German. 
     If you require assistance with registering a cash register in Germany and do not speak German, feel free reach out to [pretix support](mailto:support@pretix.eu). 
 
-{% include "kassen.md" %}
+{% include "register.md" %}
