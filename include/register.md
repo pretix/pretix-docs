@@ -36,7 +36,7 @@ Dieses Vorgehen ist sinnvoll, wenn Sie an Ihrer Betriebsstätte alle Verkäufe �
 Es ist genauso sinnvoll, wenn Sie an einer Betriebsstätte mehrere Kassen mit unterschiedlichen Softwares nutzen, aber den Großteil dieser Kassen mit pretixPOS betreiben. 
 
 Falls Sie Ihre Kassen überwiegend mit einer anderen Software benutzen, ist es möglicherweise einfacher, die Anmeldung über diese andere Software vorzunehmen. 
-In diesem Fall [verbinden Sie Ihre pretixPOS-Kasse mit pretix](kassen.md#pretixpos-kasse-mit-pretix-verbinden) und folgen dann den Anweisungen unter [Alternative: Manuelle Anmeldung](kassen.md#alternative-manuelle-anmeldung). 
+In diesem Fall [verbinden Sie Ihre pretixPOS-Kasse mit pretix](register.md#pretixpos-kasse-mit-pretix-verbinden) und folgen dann den Anweisungen unter [Alternative: Manuelle Anmeldung](register.md#alternative-manuelle-anmeldung). 
 
 ### pretixPOS-Kasse mit pretix verbinden 
 
@@ -45,7 +45,7 @@ Wählen Sie Namen und Veranstaltungen.
 Unter "Security profile" wählen Sie "pretixPOS" und klicken dann den Button :btn:Speichern:. 
 Auf der nächsten Seite werden ein QR-Code und ein Anmeldecode angezeigt.
 
-![Seite mit Titel 'Gerät verbinden: Kasse 1', die einen Button zum Herunterladen von pretixSCAN, einen QR-Code, eine Systemadresse und ein Token anzeigt.](../docs/assets/screens/register/geraet-qr.png "Gerät verbinden: Kasse 1")
+![Seite mit Titel 'Gerät verbinden: Kasse 1', die einen Button zum Herunterladen von pretixSCAN, einen QR-Code, eine Systemadresse und ein Token anzeigt.](../assets/screens/register/geraet-qr.png "Gerät verbinden: Kasse 1")
 
 Öffnen Sie die App pretixPOS auf dem Kassengerät und scannen Sie den QR-Code oder geben Sie den Anmeldecode ein. 
 pretixPOS stellt Ihnen nun folgende Frage: "In welchem Land ist der Betrieb dieser Kasse steuerpflichtig?". 
@@ -60,6 +60,8 @@ Wiederholen Sie diese Schritte für jedes Gerät mit pretixPOS, das Sie in Verbi
 Die Anmeldung von Kassen in Deutschland erfolgt immer als Bruttomeldung, bei der alle Kassen an einer Betriebsstätte gesammelt übermittelt werden. 
 Legen Sie daher zunächst in pretix eine Betriebsstätte an. 
 Navigieren Sie dazu zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE): und klicken Sie den Button :btn-icon:fa3-plus: Neue Betriebsstätte anlegen:. 
+
+![Seite mit Titel 'Neue Betriebsstätte anlegen' mit Eingabefeldern für die Daten der Betriebsstätte.](../assets/screens/register/betriebsstaette-anlegen.png "Neue Betriebsstätte anlegen")
 
 Auf der Seite mit dem Titel "Neue Betriebsstätte anlegen" geben Sie zunächst Steuernummer, Bundesland und Umsatzsteuer-Identifikationsnummer an. 
 Wählen Sie dann unter "Rechtsform" entweder "Natürliche Person" oder "Firma" aus. 
@@ -94,6 +96,8 @@ Um dies zu tun, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-ba
 Wählen Sie unter "Betriebsstätte" die Betriebsstätte aus, die Sie im vorigen Schritt erstellt haben. 
 Füllen Sie die Angaben auf dieser Seite vollständig aus. 
 
+![Seite mit Titel 'Neue Drittanbieter-Kasse anlegen' mit Eingabefeldern für die Daten der Kasse.](../assets/screens/register/drittanbieter.png "Neue Drittanbieter-Kasse anlegen")
+
 Wechseln Sie dann zum Reiter :btn:Technische Sicherheitseinrichtung: und tun Sie dort das gleiche. 
 Wählen Sie unter "Vorlage" das TSE-Modell um die Felder "Typ" und "BSI-Zertifizierungs-ID" automatisch füllen zu lassen. 
 Wenn alle Felder ausgefüllt und die Angaben korrekt sind, klicken Sie den Button:btn:Speichern:. 
@@ -104,6 +108,9 @@ Wiederholen Sie diese Schritte für alle Kassen mit Drittanbieter-Software an de
 
 Um Kassendaten **einmalig** für die Meldung über das ELSTER-Portal zu exportieren, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
 Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-download: Export:. 
+
+![Seite mit Titel 'Kassenanmeldung (DE)' mit inhaltlichen Hinweisen und einer Liste von Kassen mit drei Zwischenüberschriften.](../assets/screens/register/kassenanmeldung-de.png "Kassenanmeldung (DE)")
+
 Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-download: Exportieren:. 
 Daraufhin werden die Kassendaten in Form einer XML-Datei heruntergeladen. 
 Sie können diese Datei nutzen, um über das ELSTER-Portal eine Mitteilung über elektronische Aufzeichnungssysteme (Kassengeräte) zu machen. 
