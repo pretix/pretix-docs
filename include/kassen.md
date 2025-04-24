@@ -1,12 +1,4 @@
-# Kassen
-
 {% include "warning-tax.de.md" %}
-
-!!! Note 
-    This article covers the registration of a cash register in Germany. 
-    The process is specific to the country of Germany. 
-    Thus, the following page is only provided in German. 
-    If you require assistance with registering a cash register in Germany and do not speak German, feel free reach out to [pretix support](mailto:support@pretix.eu). 
 
 Dieser Artikel erklärt die Anmeldung von Kassensystemen in Deutschland. 
 Falls Sie als Einzelperson oder Firma steuerpflichtig in der Bundesrepublik Deutschland sind und eine Kasse haben, die Sie für den Verkauf über pretix benutzen, dann ist dieser Artikel relevant für Sie. 
@@ -52,6 +44,8 @@ Um ein Gerät, auf dem pretixPOS läuft, mit pretix zu verbinden, navigieren Sie
 Wählen Sie Namen und Veranstaltungen. 
 Unter "Security profile" wählen Sie "pretixPOS" und klicken dann den Button :btn:Speichern:. 
 Auf der nächsten Seite werden ein QR-Code und ein Anmeldecode angezeigt.
+
+![Seite mit Titel 'Gerät verbinden: Kasse 1', die einen Button zum Herunterladen von pretixSCAN, einen QR-Code, eine Systemadresse und ein Token anzeigt.](../docs/assets/screens/register/geraet-qr.png "Gerät verbinden: Kasse 1")
 
 Öffnen Sie die App pretixPOS auf dem Kassengerät und scannen Sie den QR-Code oder geben Sie den Anmeldecode ein. 
 pretixPOS stellt Ihnen nun folgende Frage: "In welchem Land ist der Betrieb dieser Kasse steuerpflichtig?". 
