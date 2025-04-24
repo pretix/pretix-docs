@@ -48,7 +48,7 @@ In diesem Fall [verbinden Sie Ihre pretixPOS-Kasse mit pretix](kassen.md#pretixp
 
 ### pretixPOS-Kasse mit pretix verbinden 
 
-Um ein Gerät, auf dem pretixPOS läuft, mit pretix zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassen: und klicken den Button :btn-icon:fa3-plus: Neues Gerät verbinden:. 
+Um ein Gerät, auf dem pretixPOS läuft, mit pretix zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-tablet: Geräte → Geräte: und klicken den Button :btn-icon:fa3-plus: Neues Gerät verbinden:. 
 Wählen Sie Namen und Veranstaltungen. 
 Unter "Security profile" wählen Sie "pretixPOS" und klicken dann den Button :btn:Speichern:. 
 Auf der nächsten Seite werden ein QR-Code und ein Anmeldecode angezeigt.
