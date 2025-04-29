@@ -24,7 +24,7 @@ The self-hosted version of pretix that builds the basis for both pretix Communit
 
 If a serious security issue arises, we publish bugfix releases for the **last three feature releases**.
 For example, if a security issue becomes known after the release of 2025.5.0, we will publish versions 2025.5.1, 2025.4.1, and 2025.3.1.
-This allows you a quick and safe upgrade even if you did not upgrade to the latest feature release yet.
+This allows you to do a quick and safe upgrade even if you did not upgrade to the latest feature release yet.
 We recommend to always update to new feature releases within three months to ensure compatibility with upcoming security releases.
 
 All new releases are announced on [our blog](https://pretix.eu/about/en/blog/), as well as through our social media channels and newsletter.
