@@ -60,7 +60,8 @@ Since this information is stored in local storage and not in a cookie, it is nev
 </table>
 
 Additional cookies may occur due to the usage of plugins, e.g. by embedding payment providers or tracking scripts.
-pretix includes native functionality to provide a unified cookie consent management to plugins, see also our [developer documentation](https://docs.pretix.eu/dev/development/api/cookieconsent.html).
+pretix includes native functionality to provide a unified cookie consent management to plugins.
+For more information, refer to the developer documentation page on [Handling cookie consent](https://docs.pretix.eu/dev/development/api/cookieconsent.html).
 
 ## pretix Widget
 
