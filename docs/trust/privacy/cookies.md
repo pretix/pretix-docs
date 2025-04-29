@@ -24,7 +24,7 @@ We do not correlate this ID with other data sources and do not use it for tracki
 </tr>
 <tr>
 <td><code>__Host-pretix_session</code></td>
-<td>Language ID</td>
+<td>Session ID</td>
 <td>14 days</td>
 <td>This cookie is used to recognize the user session across page loads for all features that require this, such as assigning a cart to the user or realizing a login functionality for customer accounts.<br>
 The cookie will only be set when the user uses a feature that requires this.<br>
