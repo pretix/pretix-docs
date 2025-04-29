@@ -31,7 +31,9 @@ All new releases are announced on [our blog](https://pretix.eu/about/en/blog/), 
 
 ### Plugins
 
-Plugins published by us (either as open source packages or as part of pretix Enterprise) usually are published in a new version on the same day as a new feature release of pretix (if there have been any significant changes since the previous feature release of pretix) and are announced as part of the same blog post.
+We usually publish updates to our plugins on the same day as a new feature release of pretix if there have been significant changes since the previous feature release of pretix. 
+Plugin updates are announced in the same blog post as the pretix feature release. 
+This applies to all plugins that are developed by us, both the open source packages and the packages that are part of pretix Enterprise. 
 Occasionally there may be plugin updates in between feature releases if there is an urgent need.
 We ensure that the latest published versions of a plugin will always be compatible with the latest feature release of pretix.
 We therefore recommend updating plugins and the core system at the same time.
