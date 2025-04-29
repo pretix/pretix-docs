@@ -28,7 +28,7 @@ Unfortunately, we are unable to provide you with a template for pretix is used f
 
 pretix is designed to minimize the risks by collecting only very minimal data in its default configuration.
 Specifically, in its most simple configuration, pretix will only store the email address entered by the customer and nothing else.
-Everything other data collection feature can be turned off and is either disabled or optional by default.
+Every other data collection feature can be turned off and is either disabled or optional by default.
 It is your obligation to only collect additional personal data that you require to provide your service to your customers.
 
 ## Security of processing
