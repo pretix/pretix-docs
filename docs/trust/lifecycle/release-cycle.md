@@ -20,7 +20,7 @@ The self-hosted version of pretix that builds the basis for both pretix Communit
 
 - Bugfix releases with a version number of ``year.number.PATCH`` (e.g. 2025.5.1 is the first bugfix release after 2025.5.0).
   These are not released on a schedule, but when required to fix a critical issue that cannot wait for the next monthly release.
-  These releases may not contain any functional changes, unless that functional changes are required to fix a security issue.
+  These releases do not contain functional changes unless those functional changes are required to fix a security issue.
 
 If a serious security issue arises, we publish bugfix releases for the **last three feature releases**.
 For example, if a security issue becomes known after the release of 2025.5.0, we will publish versions 2025.5.1, 2025.4.1, and 2025.3.1.
