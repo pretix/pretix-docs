@@ -3,7 +3,7 @@
 ## pretix Hosted
 
 Our Software as a Service offering "pretix Hosted" is released using a [continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery) scheme.
-We roll out new versions with improvements, bug fixes, or new features often multiple times a day without interruption to the system.
+We roll out new versions with improvements, bug fixes, or new features without interrupting the system–often multiple times a day.
 
 ## Self-hosted versions of pretix
 
