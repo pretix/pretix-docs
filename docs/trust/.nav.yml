@@ -1,6 +1,7 @@
 title: Trust and Compliance
 nav:
   - index*.md
+  - accessibility*.md
   - licensing
   - lifecycle
   - privacy
