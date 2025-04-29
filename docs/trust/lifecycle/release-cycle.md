@@ -16,7 +16,7 @@ The self-hosted version of pretix that builds the basis for both pretix Communit
 
 - Feature releases per year with a version number of ``YEAR.NUMBER.0`` (e.g. 2025.5.0 is the fifth feature release of 2025) are usually released in the last week of every month, except for December and sometimes except for either July or August.
   These releases may contain new functionality, removal of functionality, or any other kind of change.
-  It is recommended that you study the release notes before upgrading if you are concerned about API or plugin compatibility.
+  We recommend studying the release notes before upgrading if you are concerned about API or plugin compatibility.
 
 - Bugfix releases with a version number of ``year.number.PATCH`` (e.g. 2025.5.1 is the first bugfix release after 2025.5.0).
   These are not released on a schedule, but when required to fix a critical issue that cannot wait for the next monthly release.
