@@ -7,6 +7,9 @@ We roll out new versions with improvements, bug fixes, or new features without i
 
 ## Self-hosted versions of pretix
 
+<!-- md:community -->
+<!-- md:enterprise -->
+
 The self-hosted version of pretix that builds the basis for both "pretix Community" and "pretix Enterprise", follows the following release cycle and versioning scheme:
 
 - Feature releases per year with a version number of ``YEAR.NUMBER.0`` (e.g. 2025.5.0 is the fifth feature release of 2025) are usually released in the last week of every month, except for December and sometimes except for either July or August.
