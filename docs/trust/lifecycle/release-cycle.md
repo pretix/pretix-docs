@@ -41,6 +41,6 @@ Most plugins follow a ``MAJOR.MINOR.PATCH`` version number scheme.
 
 ## Android, iOS, and Desktop apps
 
-Our apps, such as pretixSCAN, pretixPOS, pretixPRINT, or pretixLEAD, each follow their own versioning cycle.
+Our apps pretixSCAN, pretixPOS, pretixPRINT, and pretixLEAD each follow their own versioning cycle.
 While we recommend keeping them always up-to-date, new versions of the apps always stay compatible with old versions of pretix and vice versa for at least a few months, so they do not need to be updated on the same day.
 You can view their release history and change log on [pretix Marketplace](https://marketplace.pretix.eu/categories/12/).
