@@ -2,7 +2,7 @@
 
 ## Ticket shop
 
-When purchasing a ticket or interacting with the ticket shop in other ways, the following cookies are used in a default configuration of pretix:
+If your pretix ticket shop uses the default configuration, then it will issue the following cookies to any client interacting with it (e.g., by purchasing a ticket): 
 
 <table>
 <thead>
