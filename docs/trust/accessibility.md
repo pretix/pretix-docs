@@ -18,7 +18,8 @@ For example, this includes:
 
 - Keep all information [presented in images](https://www.w3.org/TR/WCAG22/#images-of-text) (such as the header image or product pictures) accessible in text form on the same page as well.
 
-- When providing formatted text using [Markdown](/guides/markdown.md), make sure to make semantically correct use of the markup. We recommend against using headlines (``##``) or tables in most cases.
+- When providing formatted text using [Markdown](../guides/markdown.md), make sure to make semantically correct use of the markup. 
+We recommend against using headlines (``##``) or tables in most cases.
 
 - Select payment providers that provide good accessibility support.
 
