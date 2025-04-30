@@ -1,6 +1,6 @@
 # Privacy
 
-On the pages in this section, we inform you on how pretix assists you in staying compliant with privacy regulations.
+This section contains information on how pretix assists you in staying compliant with privacy regulations.
 
 Additional information, including our own privacy policy, can be found on [our website](https://pretix.eu/about/en/privacy).
 

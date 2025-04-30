@@ -35,7 +35,7 @@ This cookie is not used for any tracking purposes in the default configuration.<
 <td><code>pretix_language</code></td>
 <td>Language ID, such as "en" or "de"</td>
 <td>10 years</td>
-<td>Storage of the user's selected language to display the ticket shop in such that we cna later show the shop in the same preferred language.
+<td>Storage of the user's selected language to display the ticket shop in such that we can later show the shop in the same preferred language.
 Will only be set if the user explicitly sets the language.<br>
 We consider the cookie to be technically necessary to provide the desired functionality and therefore not require consent before setting it.
 Using this cookie for tracking is practically impossible due to the low information content.</td>
@@ -83,7 +83,7 @@ In the context of the embedding website, the following cookie will be set:
 <td><code>pretix_widget_&lt;ticketshop_url&gt;</code></td>
 <td>Cart ID</td>
 <td>30 days</td>
-<td>The cookie is used such that the user can resume the purchase after the process was interrupted (e.g. by a browser crash) and does not lose the reserved tickets.<br>
+<td>The cookie is used so that the user can resume the purchase after the process was interrupted (e.g. by a browser crash) and does not lose the reserved tickets.<br>
 We consider the cookie to be technically necessary to provide the desired functionality and therefore not require consent before setting it.</td>
 </tr>
 </tbody>
