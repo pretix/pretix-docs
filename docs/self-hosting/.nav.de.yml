@@ -1,0 +1,12 @@
+title: Self-Hosting 
+
+nav:
+ - index.md
+ - installation
+ - updates.md
+ - config.md
+ - maintenance.md
+ - scaling.md
+ - errors.md
+ - mysql2postgres.md
+ - indexes.md
