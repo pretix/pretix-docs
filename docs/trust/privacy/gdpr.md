@@ -10,7 +10,7 @@ We strongly recommend that you sign a Data Protection Agreement (DPA) with us to
 You can do so within your pretix account at :navpath:Your organizer → :fa3-lock: Data protection:.
 
 Unfortunately, we are usually not able to accommodate requests for a customized DPA based on a customer's DPA template.
-This is because we act as a processor for a large number of controllers and can only efficiently ensure enforcement of the DPA when the same rules apply across our customer base.
+This is because we act as a processor for a large number of controllers and can only efficiently ensure enforcement of the DPA if the same rules apply across our customer base.
 
 ## Processing location
 
@@ -22,7 +22,8 @@ At the moment, all of our data centers are located within Germany.
 ## Records of processing activities
 
 When describing pretix in your internal record of processing activities (Art. 30 GDPR), we recommend that you describe why you use pretix, what data you configure pretix to collect, and who will receive that data.
-Unfortunately, we are unable to provide you with a template for pretix is used for a wide number of purposes and depending on your specific use cases, the categories of data subjects and the categories of personal data might be completely different to those of another user of pretix.
+We cannot provide you with a template for that description because pretix is used for a large number of purposes. 
+Depending on your specific use case, the categories of data subjects and the categories of personal data might be completely different to those of another user of pretix.
 
 ## Data protection by design and by default
 
