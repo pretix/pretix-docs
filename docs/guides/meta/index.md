@@ -74,6 +74,8 @@ Avoid unnecessary fluff such as:
  - "It is, however, necessary to note that" 
  - "important" 
  - "critical" 
+ - "just" 
+ - "simply" 
 
 ### Do not overuse notes and warnings 
 
@@ -111,6 +113,9 @@ What follows is an incomplete list of Best Practices, i.e., things you **should*
 The more familiar you are with the documentation, the better prepared you are for contributing to it. 
 In addition to the webpages themselves, also take a look at the source code. 
 Try to make your contribution look like the pages that are already there. 
+
+For an example of a comprehensive article that represents a good implementation of our guides template, take a look at the guide on [gift cards](../gift-cards.md). 
+If you are writing a guide, try to structure your guide like the one on gift cards. 
 
 ### Contact the team
 
