@@ -17,6 +17,7 @@ working with the pretix server.
 
 | Android Version | Support Schedule                        |
 |-----------------|-----------------------------------------|
+| Android 15      | Support planned until at least 12/2031. |
 | Android 14      | Support planned until at least 12/2030. |
 | Android 13      | Support planned until at least 12/2029. |
 | Android 12      | Support planned until at least 12/2028. |
@@ -33,6 +34,7 @@ working with the pretix server.
 
 | Android Version | Support schedule                                                                                                                                                                             |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Android 15      | Support planned until at least 12/2031.<br>Limited support for Swissbit microSD TSE (only tested devices).                                                                                   |
 | Android 14      | Support planned until at least 12/2030.<br>Limited support for Swissbit microSD TSE (only tested devices).                                                                                   |
 | Android 13      | Support planned until at least 12/2029.<br>Limited support for Swissbit microSD TSE (only tested devices).                                                                                   |
 | Android 12      | Support planned until at least 12/2028.<br>Limited support for Swissbit microSD TSE (only tested devices).                                                                                   |
@@ -42,13 +44,14 @@ working with the pretix server.
 | Android 8       | Support planned until at least 12/2026.<br>Support for Stripe Terminal on some devices dropped.                                                                                              |
 | Android 7       | Support planned until at least 12/2026.<br>Support for Stripe Terminal dropped.<br>No support for Cryptovision TSE.<br>No support for SumUp.                                                 |
 | Android 6       | Phase-out (still works, but no longer officially supported).<br>No support for Cryptovision TSE.<br>No support for Fiskal Cloud.<br>No support for Stripe Terminal.<br>No support for SumUp. |
-| Android 5       | Phase-out (still works, but no longer officially supported).<br>No support for Cryptovision TSE.<br>No support for Fiskal Cloud.<br>No support for Stripe Terminal.<br>No support for SumUp.                                             |
+| Android 5       | Phase-out (still works, but no longer officially supported).<br>No support for Cryptovision TSE.<br>No support for Fiskal Cloud.<br>No support for Stripe Terminal.<br>No support for SumUp. |
 | Android 4       | Support dropped.                                                                                                                                                                             |
 
 ## pretixPRINT
 
 | Android Version | Support schedule                                                                             |
 |-----------------|----------------------------------------------------------------------------------------------|
+| Android 15      | Support planned until at least 12/2031.                                                      |
 | Android 14      | Support planned until at least 12/2030.                                                      |
 | Android 13      | Support planned until at least 12/2029.                                                      |
 | Android 12      | Support planned until at least 12/2028.                                                      |
@@ -65,6 +68,7 @@ working with the pretix server.
 
 | Android Version | Support schedule                        |
 |-----------------|-----------------------------------------|
+| Android 15      | Support planned until at least 12/2031. |
 | Android 14      | Support planned until at least 12/2030. |
 | Android 13      | Support planned until at least 12/2029. |
 | Android 12      | Support planned until at least 12/2028. |
