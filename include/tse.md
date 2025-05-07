@@ -3,7 +3,7 @@ Jede Kasse im deutschen Rechtsraum muss mit einer TSE ausgestattet sein.
 Wenn Sie eine Kasse von pretix oder von einem Drittanbieter gekauft haben, dann müssen Sie dort eine TSE einbauen. 
 Physikalisch handelt es sich bei einer TSE meistens um eine microSD-Karte oder um einen USB-Stick. 
 
-Wenn Sie eine Kasse für den Gebrauch mit pretixPOS **mieten**, dann mieten Sie damit auch eine TSE und Sie müssen sich nicht weiter darum kümmern. 
+Wenn Sie eine Kasse inklusive TSE für den Gebrauch mit pretixPOS **mieten**, dann nehmen wir die Einrichtung bereits fertig für Sie vor. 
 
 ## Voraussetzungen 
 
@@ -29,7 +29,7 @@ Sollten die Zugangsdaten zu einer TSE verloren gehen, dann kann sie nicht mehr b
     Sorgen Sie aber auch dafür, dass die Daten auffindbar sind, wenn die Kasse genutzt werden soll, Sie aber nicht persönlich anwesend sind. 
     Treffen Sie Vorkehrungen für den Fall, dass sich Ihre Zuständigkeit ändert (z.B. wenn Sie Ihren Job wechseln). 
 
-Falls Ihre TSE bereits benutzt wurde, dann geben Sie PIN, PUK und Zeitadmin-PIN ein. 
+Falls Ihre TSE bereits benutzt wurde, dann geben Sie die bereits in der TSE konfigurierte PIN, PUK und Zeitadmin-PIN ein. 
 
 In beiden Fällen stellen Sie sicher, dass Sie die richtigen Daten eingegeben haben und tippen dann :btn:OK:. 
 Es dauert einen Moment, die TSE einzurichten. 
@@ -52,6 +52,11 @@ Sie können sie nun an einer anderen Kasse oder erneut an derselben Kasse anmeld
 ### TSE tauschen
 
 Um eine TSE zu tauschen, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den Button :btn:Einstellungen:, dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:, und dann :btn-icon:fa3-microchip: Sicherheitseinrichtung verwalten:. 
-Tippen Sie :btn:TSE-Speicher exportieren:. 
-Sobald die Daten fertig exportiert sind, folgen Sie den Schritten unter [TSE entfernen](tse.md#tse-entfernen) und entfernen die alte TSE. 
+Tippen Sie :btn:TSE-Speicher exportieren:.
+Wählen Sie einen Ordner auf dem Android-Gerät aus, in den die TSE-Daten exportiert werden.
+Diese Daten sind bei einer Steuerprüfung gegebenenfalls notwendig.
+Wir empfehlen daher, die beim Export erzeugte Datei mindestens auf ein zweites Gerät zu sichern bzw. besser so zu archivieren, wie Sie auch Ihre Buchhaltungsdaten archivieren.
+Sie können die Datei beispielsweise mit einem USB-Stick auf ein anderes Gerät übertragen.
+
+Nachdem der Export abgeschlossen ist, folgen Sie den Schritten unter [TSE entfernen](tse.md#tse-entfernen) und entfernen die alte TSE. 
 Nachdem die TSE entfernt ist, folgen Sie den Schritten unter [TSE einrichten](tse.md#tse-einrichten) und nehmen die neue TSE in Betrieb. 
