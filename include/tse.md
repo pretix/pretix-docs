@@ -38,7 +38,7 @@ Falls Ihre TSE schon einmal benutzt wurde, dann geben Sie die bereits in der TSE
 In beiden Fällen stellen Sie sicher, dass Sie die richtigen Daten eingegeben haben und tippen dann :btn:OK:. 
 Es dauert einen Moment, die TSE einzurichten. 
 
-!!! Warnung 
+!!! Warning 
     Während pretixPOS die TSE einrichtet, dürfen Sie sie **auf keinen Fall** entfernen, die App beenden, oder die Kasse ausschalten. 
     Dies kann dazu führen, dass die TSE unbrauchbar wird. 
 
