@@ -20,16 +20,20 @@ Schalten Sie die Kasse ein, öffnen Sie pretixPOS, tippen Sie den Button :btn:Ei
 Tippen Sie den Button :btn-icon:fa3-microchip: Neue Sicherheitseinrichtung hinzufügen:. 
 Wählen Sie in dem Dialog den Typ (Hersteller) der TSE, die Sie soeben eingesetzt haben, und tippen Sie :btn:OK:. 
 
-Falls Ihre TSE noch nie zuvor benutzt wurde, dann wählen Sie eine 5-stellige PIN, eine 6-stellige PUK, sowie eine 5-stellige Zeitadmin-PIN. 
+Falls Ihre TSE noch nie zuvor benutzt wurde, dann definieren Sie nun die Zugangsdaten. 
+Welche Daten das genau sind, hängt von Hersteller und Modell der TSE ab. 
+Beim Hersteller Swissbit benötigen Sie z.B. eine 5-stellige PIN, eine 6-stellige PUK, sowie eine 5-stellige Zeitadmin-PIN. 
+Nähere Informationen zu den Zugangsdaten nach Hersteller und Modell der TSE finden Sie im Abschnitt Abschnitt [9.7 Fiskalisierung / Technische Sicherheitseinrichtung](https://download.pretix.eu/pretixpos.pdf#section.9.7) des pretixPOS-Nutzerhandbuchs. 
+
 Notieren Sie diese Daten unbedingt und verwahren Sie sie an einem sicheren Ort. 
 Sollten die Zugangsdaten zu einer TSE verloren gehen, dann kann sie nicht mehr benutzt werden. 
 
 !!! Note 
-    Verwahren Sie die Daten so, dass sie nicht in die Hände von Unbefugten gelangen können. 
+    Verwahren Sie die Zugangsdaten so, dass sie nicht in die Hände von Unbefugten gelangen können. 
     Sorgen Sie aber auch dafür, dass die Daten bei Bedarf (z.B. Steuerprüfung oder Tausch der TSE) auffindbar sind, wenn Sie nicht persönlich anwesend sind. 
     Treffen Sie Vorkehrungen für den Fall, dass sich Ihre Zuständigkeit ändert (z.B. wenn Sie Ihren Job wechseln). 
 
-Falls Ihre TSE bereits benutzt wurde, dann geben Sie die bereits in der TSE konfigurierte PIN, PUK und Zeitadmin-PIN ein. 
+Falls Ihre TSE schon einmal benutzt wurde, dann geben Sie die bereits in der TSE konfigurierten Zugangsdaten ein. 
 
 In beiden Fällen stellen Sie sicher, dass Sie die richtigen Daten eingegeben haben und tippen dann :btn:OK:. 
 Es dauert einen Moment, die TSE einzurichten. 
