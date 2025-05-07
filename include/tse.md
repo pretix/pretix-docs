@@ -7,7 +7,7 @@ Wenn Sie eine Kasse inklusive TSE für den Gebrauch mit pretixPOS **mieten**, da
 
 ## Voraussetzungen 
 
-Sie benötigen ein Kassengerät mit der App pretixPOS, eine TSE und eine stabile Internetverbindung. 
+Sie benötigen ein Kassengerät mit der App pretixPOS und eine TSE. 
 
 ## Anleitung 
 
@@ -26,7 +26,7 @@ Sollten die Zugangsdaten zu einer TSE verloren gehen, dann kann sie nicht mehr b
 
 !!! Note 
     Verwahren Sie die Daten so, dass sie nicht in die Hände von Unbefugten gelangen können. 
-    Sorgen Sie aber auch dafür, dass die Daten auffindbar sind, wenn die Kasse genutzt werden soll, Sie aber nicht persönlich anwesend sind. 
+    Sorgen Sie aber auch dafür, dass die Daten bei Bedarf (z.B. Steuerprüfung oder Tausch der TSE) auffindbar sind, wenn Sie nicht persönlich anwesend sind. 
     Treffen Sie Vorkehrungen für den Fall, dass sich Ihre Zuständigkeit ändert (z.B. wenn Sie Ihren Job wechseln). 
 
 Falls Ihre TSE bereits benutzt wurde, dann geben Sie die bereits in der TSE konfigurierte PIN, PUK und Zeitadmin-PIN ein. 
@@ -39,7 +39,11 @@ Es dauert einen Moment, die TSE einzurichten.
     Dies kann dazu führen, dass die TSE unbrauchbar wird. 
 
 Sobald pretixPOS damit fertig ist, die TSE einzurichten, werden Sie auf die Seite mit dem Titel "Sicherheitseinrichtung verwalten" geleitet. 
-Kasse und TSE können nun für den regulären Betrieb verwendet werden. 
+Für die weiteren Optionen auf dieser Seite konsultieren Sie den Abschnitt [9.7 Fiskalisierung / Technische Sicherheitseinrichtung](https://download.pretix.eu/pretixpos.pdf#section.9.7) im pretixPOS-Nutzerhandbuch. 
+
+Melden Sie Ihre Kasse nun beim Finanzamt an oder aktualisieren Sie die Angaben. 
+TK nach dem Mergen auf register.md verlinken
+Nachdem Sie das getan haben, können Sie Kasse und TSE für den regulären Betrieb verwenden. 
 
 ### TSE-Speicher exportieren 
 
@@ -60,8 +64,14 @@ In dem sich daraufhin öffnenden Dialog geben Sie die PIN der TSE ein.
 Schalten Sie die Kasse aus und entfernen Sie die TSE. 
 Sie können sie nun an einer anderen Kasse oder erneut an derselben Kasse anmelden. 
 
+Falls Sie die Kasse außer Betrieb nehmen und nicht sofort eine neue TSE einsetzen, dann melden Sie das nun dem Finanzamt. 
+TK nach dem Mergen auf register.md verlinken
+
 ### TSE tauschen
 
 Um eine TSE zu tauschen, folgen Sie zunächst den Schritten unter [TSE-Speicher exportieren](tse.md#tse-speicher-exportieren), um die Daten der alten TSE zu exportieren. 
 Nachdem der Export abgeschlossen ist, folgen Sie den Schritten unter [TSE entfernen](tse.md#tse-entfernen) und entfernen die alte TSE. 
 Nachdem die TSE entfernt ist, folgen Sie den Schritten unter [TSE einrichten](tse.md#tse-einrichten) und nehmen die neue TSE in Betrieb. 
+Aktualisieren Sie die Anmeldung Ihrer Kasse beim Finanzamt. 
+TK nach dem Mergen auf register.md verlinken
+Nachdem Sie das getan haben, können Sie die Kasse mit der neuen TSE für den regulären Betrieb verwenden. 
