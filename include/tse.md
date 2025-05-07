@@ -41,6 +41,17 @@ Es dauert einen Moment, die TSE einzurichten.
 Sobald pretixPOS damit fertig ist, die TSE einzurichten, werden Sie auf die Seite mit dem Titel "Sicherheitseinrichtung verwalten" geleitet. 
 Kasse und TSE können nun für den regulären Betrieb verwendet werden. 
 
+### TSE-Speicher exportieren 
+
+Wenn eine Steuerprüfung ansteht oder wenn Sie die TSE außer Betrieb nehmen wollen, dann sollten Sie den TSE-Speicher exportieren. 
+Um dies zu tun, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den Button :btn:Einstellungen:, dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:, und dann :btn-icon:fa3-microchip: Sicherheitseinrichtung verwalten:. 
+Tippen Sie :btn:TSE-Speicher exportieren:.
+Wählen Sie einen Ordner auf dem Kassengerät aus, in den die TSE-Daten exportiert werden sollen.
+
+Sichern Sie die Exportdatei mindestens auf einem zweites Gerät. 
+Im besten Fall archivieren Sie die Exportdatei genau so, wie Sie auch Ihre Buchhaltungsdaten archivieren. 
+Sie können die Datei beispielsweise mit einem USB-Stick oder einer SD-Speicherkarte auf ein anderes Gerät übertragen. 
+
 ### TSE entfernen
 
 Um eine TSE zu entfernen, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den Button :btn:Einstellungen:, dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:, und dann :btn-icon:fa3-microchip: Sicherheitseinrichtung verwalten:. 
@@ -51,12 +62,6 @@ Sie können sie nun an einer anderen Kasse oder erneut an derselben Kasse anmeld
 
 ### TSE tauschen
 
-Um eine TSE zu tauschen, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den Button :btn:Einstellungen:, dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:, und dann :btn-icon:fa3-microchip: Sicherheitseinrichtung verwalten:. 
-Tippen Sie :btn:TSE-Speicher exportieren:.
-Wählen Sie einen Ordner auf dem Android-Gerät aus, in den die TSE-Daten exportiert werden.
-Diese Daten sind bei einer Steuerprüfung gegebenenfalls notwendig.
-Wir empfehlen daher, die beim Export erzeugte Datei mindestens auf ein zweites Gerät zu sichern bzw. besser so zu archivieren, wie Sie auch Ihre Buchhaltungsdaten archivieren.
-Sie können die Datei beispielsweise mit einem USB-Stick auf ein anderes Gerät übertragen.
-
+Um eine TSE zu tauschen, folgen Sie zunächst den Schritten unter [TSE-Speicher exportieren](tse.md#tse-speicher-exportieren), um die Daten der alten TSE zu exportieren. 
 Nachdem der Export abgeschlossen ist, folgen Sie den Schritten unter [TSE entfernen](tse.md#tse-entfernen) und entfernen die alte TSE. 
 Nachdem die TSE entfernt ist, folgen Sie den Schritten unter [TSE einrichten](tse.md#tse-einrichten) und nehmen die neue TSE in Betrieb. 
