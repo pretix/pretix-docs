@@ -75,7 +75,9 @@ TK nach dem Mergen auf register.md verlinken
 
 Um eine TSE zu tauschen, folgen Sie zunächst den Schritten unter [TSE-Speicher exportieren](tse.md#tse-speicher-exportieren), um die Daten der alten TSE zu exportieren. 
 Nachdem der Export abgeschlossen ist, folgen Sie den Schritten unter [TSE entfernen](tse.md#tse-entfernen) und entfernen die alte TSE. 
+Falls Sie daraufhin sofort eine neue TSE einsetzen, müssen Sie dem Finanzamt zu diesem Zeitpunkt noch nicht Meldung machen. 
+
 Nachdem die TSE entfernt ist, folgen Sie den Schritten unter [TSE einrichten](tse.md#tse-einrichten) und nehmen die neue TSE in Betrieb. 
-Aktualisieren Sie die Anmeldung Ihrer Kasse beim Finanzamt. 
+Aktualisieren Sie jetzt die Anmeldung Ihrer Kasse beim Finanzamt. 
 TK nach dem Mergen auf register.md verlinken
 Nachdem Sie das getan haben, können Sie die Kasse mit der neuen TSE für den regulären Betrieb verwenden. 
