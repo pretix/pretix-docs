@@ -146,7 +146,7 @@ Diese Seite zeigt Ihnen alle Daten an, die für die Anmeldung über einen Dritta
 
 ## Problemlösungen 
 
-### Die Seite :btn-icon:fa3-clock-o: Export planen: zeigt nur einen Warnhinweis an: 
+### Die Seite ":fa3-clock-o: Export planen" zeigt nur einen Warnhinweis an: 
 
 Falls die Seite hinter dem Button :btn-icon:fa3-clock-o: Export planen: nur einen Warnhinweis anzeigt, dann bedeutet dies, das Ihr pretix-Account noch nicht aktiviert wurde. 
 Klicken Sie den Button :btn:Zu den Account-Einstellungen: und vervollständigen Sie Ihre Kontaktinformationen. 
