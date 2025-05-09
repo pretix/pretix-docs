@@ -136,7 +136,7 @@ Our explanation reads as follows:
 "We will use the name, title and company you submit for your badge."
 
 Under "Form settings", we can choose the format in which pretix will ask attendees for names and titles. 
-We are going to select "Ask for title + given name + family name, display like John Doe" for names and "Free text input" for titles. 
+We are going to select "Ask for Title + Given name + Family name, display like Dr John Doe" for names and "Free text input" for titles. 
 We will finalize our choice here before taking the ticket shop live.
 This is important because changing these settings after already having received orders can lead to issues when sorting or changing names.
 
