@@ -100,3 +100,24 @@ $ mkdocs serve
 Open the URL [https://127.0.0.1:8000/](https://127.0.0.1:8000/) in your browser. 
 Use your preferred IDE or text editor to work on the docs. 
 Saving, creating or moving a file makes the MkDocs server do an update within a few seconds. 
+
+### Checking for issues
+
+In order to detect issues in the changes you have made, do a strict build: 
+
+```
+$ mkdocs build --strict
+```
+
+Check the output for lines starting with `WARNING -`. 
+If there are warnings, then the output ends with a line such as the following: 
+
+```
+Aborted with 1 warnings in strict mode!
+``` 
+
+If no issues can be detected, then the output ends with a line such as the following: 
+
+``` 
+INFO    -  Documentation built in 4.03 seconds
+``` 
