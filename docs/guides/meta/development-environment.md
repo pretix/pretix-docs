@@ -4,7 +4,7 @@ This article explains how to set up the development environment for working on t
 Since this documentation uses the docs-as-code approach, the setup is similar to that of other software development projects. 
 
 !!! Note 
-    These instructions were tested using Arch Linux, Bash, and Nano. 
+    These instructions were tested using Arch Linux and Bash. 
     If you are using a different operating system and software, adapt the commands given here to your own use case. 
 
 ## Prerequisites 
