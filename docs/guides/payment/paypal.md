@@ -35,7 +35,7 @@ Make sure that the plugin is enabled.
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
 
-You can jump straight to the PayPal settings by clicking the :btn-icon:fa3-gear: Settings 🞃: drop-down menu and then :btn:Payment > PayPal:. 
+You can jump straight to the PayPal settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > PayPal:. 
 
 Alternatively, navigate to :btn:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 

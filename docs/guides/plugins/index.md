@@ -42,7 +42,7 @@ Disable any active plugins that you do not want to use for your event.
 Some enabled plugins will add a corresponding entry to the sidebar menu which grants access to its settings. 
 If there are settings pages associated with an active plugin, then extra buttons will be displayed next to the "Available plugins" page. 
 In order to configure a plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
-Search the plugin and click the :btn-icon:fa3-gear: Settings 🞃: drop-down menu next to it. 
+Search the plugin and click the :btn-icon:fa3-gear: Settings: drop-down menu next to it. 
 The drop-down menu displays links to the settings pages for the plugin. 
 
 ### Controlling plugins 
@@ -51,5 +51,5 @@ Some enabled plugins will add a corresponding entry to the sidebar menu which al
 For instance, the "Statistics" plugin will gather statistics on orders placed on your shop and display them in the pretix backend. 
 The "Bank transfer" plugin will require handling of bank data imports and refunds. 
 In order to control such plugin functions, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
-Search the plugin and click the :btn-icon:fa3-compass: Go to 🞃: drop-down menu next to it. 
+Search the plugin and click the :btn-icon:fa3-compass: Go to: drop-down menu next to it. 
 The drop-down menu displays links to pages that are relevant for the plugin. 
