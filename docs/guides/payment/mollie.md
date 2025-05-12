@@ -29,7 +29,9 @@ This section will guide you through those steps in detail.
 
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
-Navigate to :navpath:Your Event → Settings → Plugins:.
+You can jump straight to the Mollie settings by clicking the :btn-icon:fa3-gear: Settings 🞃: drop-down menu and then :btn:Payment > Mollie:. 
+
+Alternatively, navigate to :navpath:Your Event → Settings → Plugins:.
 Switch to the :btn:Payment providers: tab. 
 The Mollie plugin is displayed at the top of the page. 
 It should be enabled by default. 
