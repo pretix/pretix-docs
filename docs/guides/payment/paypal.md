@@ -12,7 +12,7 @@ Make sure you have an active PayPal business account.
 A regular PayPal account is not enough for integration with pretix. 
 You can find [instructions on how to sign up for a PayPal business account](https://www.paypal.com/c2/webapps/mpp/how-to-guides/sign-up-business-account) on the PayPal website. 
 
-## How To 
+## How To
 
 Setting up PayPal as a payment provider in pretix involves the following steps: 
 

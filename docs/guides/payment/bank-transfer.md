@@ -19,7 +19,7 @@ It is also going to tell you how to notify pretix of incoming payments.
 As setting up payment providers is handled on the event level, you need to create an event first. 
 Make sure you have access to the bank account that you want to use. 
 
-## How To 
+## How To
 
 Successfully using bank transfer as a payment provider in pretix requires the following steps: 
 
@@ -68,7 +68,7 @@ For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) t
 Alternatively, you can notify pretix of incoming payments by regularly importing digital bank statements. 
 This section is going to guide you through both options. 
 
-#### Option A: automatic transaction import using GoCardless 
+#### Option A: automatic transaction import using GoCardless
 
 <!-- md:hosted -->
 
@@ -104,7 +104,7 @@ If the bank account is also used for transactions unrelated to sales via pretix,
 pretix allows you to resolve these transactions manually. 
 The section below explains [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
-#### Option B: importing bank data 
+#### Option B: importing bank data
 
 Acquire an export of your bank account's transaction data. 
 The export has to be a file in the CSV or MT940 file format. 
@@ -150,7 +150,7 @@ You can intervene and make manual corrections here on this screen.
 
 Refer to the section below for a more detailed explanation on [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
-### Approving transactions manually 
+### Approving transactions manually
 
 
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
@@ -182,7 +182,7 @@ Confirm by clicking the :btn:Create payment: button.
 This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying ":fa3-check: Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
 
-### Handling unresolved transactions 
+### Handling unresolved transactions
 
 You can handle unresolved transactions either on the organizer level or on the event level. 
 

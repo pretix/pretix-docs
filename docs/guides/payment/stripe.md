@@ -12,7 +12,7 @@ Make sure you have an active Stripe merchant account.
 A regular Stripe account is not enough for integration with pretix. 
 You can find [instructions on how to sign up for a Stripe merchant account](https://stripe.com/resources/more/how-to-get-a-merchant-account) on the Stripe website. 
 
-## How To 
+## How To
 
 Setting up Stripe as a payment provider in pretix involves the following steps: 
 

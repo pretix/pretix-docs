@@ -18,7 +18,7 @@ Setting up payment providers is handled on the event level, so you need to creat
 Make sure you have an active account with each external payment provider you intend to use with pretix. 
 For example, if you want to receive payments via Mollie, you need to have a Mollie account. 
 
-## How To 
+## How To
 
 Setting up payment providers in pretix involves the following steps: 
 
@@ -32,7 +32,7 @@ Setting up payment providers in pretix involves the following steps:
 
 The following sections guide you through those steps in detail. 
 
-### Plugins for Payment Providers 
+### Plugins for Payment Providers
 
 pretix allows handling payment via more than three dozen payment providers. 
 There is a plugin for each one of them. 
@@ -52,7 +52,7 @@ Choose the payment providers that you want to use from the top recommendations a
 A plugin that has been enabled will have a green "✓ Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
 Disable any active plugins that you do not want to use for your event. 
 
-### General settings for Payment Providers 
+### General settings for Payment Providers
 
 Enabling a plugin does not automatically make the payment method available in your shop. 
 You also need to provide some data for each payment provider you want to use on the settings page. 
@@ -86,7 +86,7 @@ For detailed information on how to set up and enable specific payment providers,
  -  [Stripe](stripe.md) 
  -  [PayPal](paypal.md) 
 
-### Additional fees 
+### Additional fees
 
 !!! Warning 
     EU Directive 2015/2366 bans surcharging payment fees for most common payment methods within the European Union. 
@@ -110,7 +110,7 @@ Your choices here depend on your exact use case.
 
 The next sections explain what to do if you want to pass on a fee to your customers, or if you want to discourage use of a payment provider with an extra fee. 
 
-#### Passing payment provider fees on to your customers 
+#### Passing payment provider fees on to your customers
 
 For illustrative purposes, let us assume that your payment provider is charging you a transaction fee of 2.99% plus a fixed rate of $0.49. 
 Enter 0.49 in the "Absolute value" field and 2.99 in the "Percentage of the order total" field. 
@@ -148,7 +148,7 @@ The following table compares the two different calculation methods provided by p
 | fee calculated by payment provider      | $8.20                                     | $8.21                                          |
 | final amount added to your bank balance | $249.76                                   | $250.00                                        |
 
-#### Discouraging use of a payment provider with an extra fee 
+#### Discouraging use of a payment provider with an extra fee
 
 pretix allows you to use a more straightforward formula for the calculation of that fee. 
 This is useful if, for instance, you want to discourage your customers from using a certain payment provider by adding an additional fee. 
@@ -199,7 +199,7 @@ If a quota has been exhausted in the meantime, then your customer cannot order t
 Alternatively, if each payment method's deadline was added on top of the old one, switching back and forth between payment methods would allow a customer to extend the deadline indefinitely, thus never actually being required to pay you. 
 It is for these reasons that pretix only lets you set unified payment deadlines that apply to all payment methods equally. 
 
-## Troubleshooting 
+## Troubleshooting
 
 __A payment provider does not show up in :navpath:Your Event → Settings → Payment:__
 Navigate to :navpath:Your Event → Settings → Plugins: and open the "payment providers" tab. 
