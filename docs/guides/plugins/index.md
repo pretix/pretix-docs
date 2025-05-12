@@ -1,4 +1,4 @@
-# Plugins
+# Plugins 
 
 Plugins are optional pieces of software that can be enabled or disabled for every event. 
 Plugins handle functions including, but not limited to: 
@@ -18,7 +18,7 @@ If you want to create a plugin yourself, refer to the [developer documentation](
 
 If you want to learn how to activate payment providers for your events, refer to the guide on [payment providers](../payment/index.md). 
 
-## Prerequisites
+## Prerequisites 
 
 Plugins are handled on the event level, so you have to create an event first. 
 
@@ -34,10 +34,10 @@ On each tab, choose the plugins that you want to use from the top recommendation
 You can also use the search function to find the plugin you need. 
 
 A plugin that has been enabled will have a green "✓ Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
-If you want to filter for active plugins only, click :btn:Active: in the "All|Actice" toggle next to the search field. 
+If you want to filter for active plugins only, click :btn:Active: in the "All|Active" toggle next to the search field. 
 Disable any active plugins that you do not want to use for your event. 
 
-### Configuring plugins
+### Configuring plugins 
 
 Some enabled plugins will add a corresponding entry to the sidebar menu which grants access to its settings. 
 If there are settings pages associated with an active plugin, then extra buttons will be displayed next to the "Available plugins" page. 
