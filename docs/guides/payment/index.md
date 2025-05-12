@@ -42,14 +42,14 @@ This section is going to tell you how to do that.
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
 Navigate to :navpath:Your Event → Settings → Plugins:. 
-The :btn:payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe at the top of the page. 
+The :btn:payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, Mollie, PayPal and Stripe at the top of the page. 
 Below that, you can find the list of plugins for all other payment providers available in pretix. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
 
 ![Part of the list of available payment provider plugins. Entries for Saferpay, secuconnect, SEPA direct debit, SOFORT and Stadtguthaben are visible. The SEPA option is active. The other entries have a purple 'enable' button next to them.](../../assets/screens/payment-providers/plugins-list.png "Plugins Payment providers list")
 
 Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
-You can tell that a plugin is enabled by the green "✓ Active" tag and the purple :btn:Enable: button being replaced by a white :btn:Disable: button. 
+A plugin that has been enabled will have a green "✓ Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
 Disable any active plugins that you do not want to use for your event. 
 
 ### General settings for Payment Providers 

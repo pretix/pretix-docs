@@ -38,17 +38,19 @@ Switch to the :btn:Payment providers: tab.
 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
-If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn:Disable: button. 
+If it is enabled, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 
 ![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-Navigate to :navpath:Your Event → Settings → Payment:. 
+You can jump straight to the bank transfer settings by clicking the :btn-icon:fa3-gear: Settings 🞃: drop-down menu and then :btn:Payment > Bank transfer:. 
+
+Alternatively, navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
+Click the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
 
 The first thing you need to do on this page is choose the "Bank account type". 
