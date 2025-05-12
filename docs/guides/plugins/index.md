@@ -1,4 +1,4 @@
-# Plugins 
+# Plugins
 
 Plugins are optional pieces of software that can be enabled or disabled for every event. 
 Plugins handle functions including, but not limited to: 
