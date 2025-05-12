@@ -20,7 +20,7 @@ Schalten Sie die Kasse ein, öffnen Sie pretixPOS, tippen Sie den Button :btn:Ei
 Tippen Sie den Button :btn-icon:fa3-microchip: Neue Sicherheitseinrichtung hinzufügen:. 
 Wählen Sie in dem Dialog den Typ (Hersteller) der TSE, die Sie soeben eingesetzt haben, und tippen Sie :btn:OK:. 
 
-![App pretixPOS, Dialog 'Swissbit TSE-Einrichtung' mit Hinweistext sowie Eingabefeldern für PIN, PUK, Zeitadmin-PIN und Zugangsdaten-Seed.](../docs/assets/screens/pos/einrichtung-swissbit.png "Swissbit TSE-Einrichtung")
+![App pretixPOS, Dialog 'Swissbit TSE-Einrichtung' mit Hinweistext sowie Eingabefeldern für PIN, PUK, Zeitadmin-PIN und Zugangsdaten-Seed.](../../assets/screens/pos/einrichtung-swissbit.png "Swissbit TSE-Einrichtung")
 
 Falls Ihre TSE noch nie zuvor benutzt wurde, dann definieren Sie nun die Zugangsdaten. 
 Welche Daten das genau sind, hängt von Hersteller und Modell der TSE ab. 
