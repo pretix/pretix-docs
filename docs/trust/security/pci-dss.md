@@ -5,7 +5,7 @@ Following PCI DSS standards is not required by law, but your payment service pro
 Depending on what role you play in the credit card acceptance process, you may only need to follow a subset of the requirements. 
 If in doubt, ask your payment service provider what exactly you need to do.
 
-pretix never handles credit card direction directly.
+pretix never handles credit card account data directly.
 All of our official integrations with payment providers are built in a way that embeds the credit card form from the payment provider either through a redirect or iframe.
 Therefore, you usually need to fill out the questionnaire [SAQ A](https://docs-prv.pcisecuritystandards.org/SAQ%20(Assessment)/SAQ/PCI-DSS-v4_0_1-SAQ-A-r1.pdf) and comply with the requirements listed there.
 Whether this questionnaire and the requirements apply to you depend on how your payment provider categorizes your business. 
@@ -14,7 +14,7 @@ Whether this questionnaire and the requirements apply to you depend on how your 
 
 <!-- md:hosted -->
 
-If you use our Software-as-a-Service offering, pretix Hosted, we are responsible for complying with many of the requirements.
+If you use our SaaS offer, pretix Hosted, then the responsibility to comply with many of the requirements lies with us.
 
 Specifically, we ensure that the technical configuration of our systems is in line with all technical requirements listed in SAQ A.
 We ensure all required processes for security policies, risk management, employee training, and incident response are in place on our end.
@@ -34,7 +34,7 @@ We handle most of the technical requirements, but, for example, requirements 12.
 
 You can find the latest version of all relevant documents, such as our **Attestation of Scan Compliance**, our **Attestation of Compliance** and the **Responsibility Matrix** for our relationship with you in your pretix account at :navpath:Your organizer → :fa3-wrench: Settings → PCI DSS compliance:.
 
-Should you require any additional documentation or have any further questions on the topic, please reach out to us at [pci@pretix.eu](mailto:support@pretix.eu).
+Should you require any additional documentation or have any further questions on the topic, please reach out to us at [pci@pretix.eu](mailto:pci@pretix.eu).
 
 ## Self-hosted versions of pretix
 
@@ -44,7 +44,7 @@ Should you require any additional documentation or have any further questions on
 If you host pretix on your own servers, you need to ensure compliance with **all requirements** listed in the SAQ A questionnaire.
 This includes technical requirements such as using strong authentication methods, process requirements such as ensuring you always apply security updates quickly and having an incident response plan, as well as the requirement to perform **quarterly vulnerability scans** on your server through a PCI Approved Scanning Vendor (ASV).
 
-The scan should at the very least include all servers used to run pretix, as well as possibly your website embeding our [Widget](../../guides/widget.md).
+The scan should include all servers used to run pretix and, if applicable, your website embedding our [Widget](../../guides/widget.md).
 This does not apply if your payment provider's credit card form always opens in a new tab. 
 You can also avoid this requirement by configuring the widget to [always open in a new tab](../../guides/widget.md#always-open-a-new-tab).
 There is a list of [Approved Scanning Vendors](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors/) on the PCI website, such as [usd AG](https://www.usd.de/en/pci-payment-security/pci-security-scans/) which is performing our scans.
@@ -56,7 +56,7 @@ If you create a custom payment plugin, make it so that it also fulfills this req
 All credit card inputs must be served directly by a PCI-certified payment provider through an iframe or redirect.
 If you want to implement a payment provider plugin with an HTML form within pretix collecting credit card information, then you need to comply with the requirements of the SAQ A-EP questionnaire. 
 
-The most recent version of the SAQ A also includes the following requirement:
+Version 4.0.1 of the SAQ A also includes the following requirement:
 
 > The merchant has confirmed that their site is not susceptible to attacks from scripts that could affect the merchant's e-commerce system(s).
 
