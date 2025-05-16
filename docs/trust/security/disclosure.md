@@ -3,7 +3,7 @@
 !!! Warning
 
     If you discover a vulnerability with our software or server systems, please report it to us in private.
-    Do not to attempt to harm our users, customer's data or our system's availability when looking for vulneratbilities.
+    Do not to attempt to harm our users, customer's data or our system's availability when looking for vulnerabilities.
 
     Please contact us at [security@pretix.eu](mailto:security@pretix.eu) with full details and steps to reproduce and allow reasonable time for us to resolve the issue before publishing your findings.
     If you wish to encrypt your email, you can use our [GPG key](https://pretix.eu/.well-known/security@pretix.eu.asc).
@@ -46,12 +46,13 @@ Security incidents concerning products under the pretix brand are announced on t
 
 ## Bug Bounties
 
-We're not large enough to run a formal bug bounty program. If you find a serious vulnerability in our service, we will find a way to show our gratitude.
+rami.io GmbH is not a large enough company to run a formal bug bounty program. 
+If you find a serious vulnerability in our service, we will find a way to show our gratitude.
 We have, on occasion, issued monetary bug bounties for issues of high severity in our core services.
 
-We consider an issue to have a high or critical severity if it allows the extraction of non-trivial confidential data, privilege escalation, authentication bypass, account takeover, or XSS in combination with a CSP bypass possibility.
+We consider an issue to have a high or critical severity if it allows the extraction of non-trivial confidential data, privilege escalation, authentication bypass, account takeover, or cross-site scripting in combination with a possibility of bypassing our content security policy. 
 
-We do not consider issues to have a high or critical severity that provide DoS or brute force attack vectors, can only be exploited in combination with significant other security flaws that have not been found, logic bugs.
+We do not consider issues to have a high or critical severity that provide DoS or brute force attack vectors, can only be exploited in combination with significant other security flaws that have not been found, or issues that are mere logic bugs.
 
 We do not issue bounties for any reports referring to best practices around HTTP headers, email headers, SPF/DKIM/DMARC records, TLS ciphers, etc.
 
