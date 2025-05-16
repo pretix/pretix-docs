@@ -26,7 +26,8 @@ The following products and services are within the scope for our disclosure proc
 *   The Desktop and Server applications pretixSCAN, pretixSCAN Proxy, pretixKIOSK, pretixTURNSTILE.
 
 We are also happy to receive reports for all other security issues regarding our infrastructure.
-However, if they affect software not created by us, we will pass the reports on to the respective software vendor and will not be able to issue bug bounties or CVE numbers.
+However, if they affect software not created by us, we will pass the reports on to the respective software vendor.
+We will only issue [CVE](https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures) numbers or bug bounties for products and services listed above.
 
 ## CVE Numbering Authority
 
@@ -46,19 +47,25 @@ Security incidents concerning products under the pretix brand are announced on t
 
 ## Bug Bounties
 
-rami.io GmbH is not a large enough company to run a formal bug bounty program. 
+rami.io GmbH is not a large enough company to run a formal bug bounty program.
 If you find a serious vulnerability in our service, we will find a way to show our gratitude.
 We have, on occasion, issued monetary bug bounties for issues of high severity in our core services.
 
-We consider an issue to have a high or critical severity if it allows the extraction of non-trivial confidential data, privilege escalation, authentication bypass, account takeover, or cross-site scripting in combination with a possibility of bypassing our content security policy. 
+We consider an issue to have a high or critical severity if it allows the extraction of non-trivial confidential data, privilege escalation, authentication bypass, account takeover, or cross-site scripting in combination with a possibility of bypassing our content security policy.
 
 We do not consider issues to have a high or critical severity that provide DoS or brute force attack vectors, can only be exploited in combination with significant other security flaws that have not been found, or issues that are mere logic bugs.
 
-We do not issue bounties for any reports referring to best practices around HTTP headers, email headers, SPF/DKIM/DMARC records, TLS ciphers, etc.
+We do not issue bounties for any reports referring to best practices around [HTTP](https://en.wikipedia.org/wiki/HTTP) or email headers, [SPF/DKIM/DMARC](https://en.wikipedia.org/wiki/Email_authentication) records, [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) ciphers, etc.
 
 ## Rules
 
-If you report a security issue in our services to us in private without taking actions that attempt to harm our users, confidentiality of our customer's data or availability of our systems, we will treat your report properly and will not be threatening you with legal action.
+Report a security issue in our services to us in private using the contact information at the start of this page.
+All reports will be considered for appropriate action.
+If you follow the rules below, we will not be threatening you with legal action.
 
-Specifically, access only the data necessary to show that the vulnerability exists. Do not modify or delete any data not owned by you. Do not impact the availability of any of our internal or external services (e.g. through DDoS or similar attacks). Do not implement backdoors or use similar methods to obtain persistent access.
-Do not send phishing e-mails or use any other social engineering techniques.
+* **Only** access the data necessary to demonstrate that the vulnerability exists.
+* **Do not** take any actions that attempt to harm our users, confidentiality of our customer's data or availability of our systems.
+* **Do not** modify or delete any data not owned by you.
+* **Do not** impact the availability of any of our internal or external services (e.g. through DDoS or similar attacks).
+* **Do not** implement backdoors or use similar methods to obtain persistent access.
+* **Do not** send phishing e-mails or use any other social engineering techniques. 
