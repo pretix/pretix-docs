@@ -78,7 +78,7 @@ Thus, we are going to add a 19% tax rule here.
 
 Once we are happy with our choices, we are going to click the :btn:Continue: button. 
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 <br>
 
