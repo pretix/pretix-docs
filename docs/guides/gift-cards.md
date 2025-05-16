@@ -27,7 +27,7 @@ This is the procedure prescribed by tax law in Germany and in some other countri
 You have to create a tax rule with a rate of 0% before you can create a gift card.
 You can do so by navigating to :navpath:Your event → :fa3-wrench: Settings → Tax rules:, clicking the :btn-icon:fa3-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00%, and saving the rule under a distinct internal name.
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 ## General usage
 
