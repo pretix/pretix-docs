@@ -10,7 +10,7 @@ This depends on your local legislation, the type of your business, and a number 
 The pretix documentation does not contain any information on the appropriate tax rates for your situation. 
 Please speak to a professional tax consultant before setting tax rates in your shop. 
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 ## Prerequisites
 
