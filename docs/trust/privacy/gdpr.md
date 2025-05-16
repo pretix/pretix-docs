@@ -1,5 +1,10 @@
 # GDPR compliance
 
+!!! Warning
+
+    The pretix Documentation is not legal advice.
+    Please consult a lawyer specialized on privacy law for binding legal advice.
+
 ## Data processing
 
 <!-- md:hosted -->
@@ -17,7 +22,7 @@ This is because we act as a processor for a large number of controllers and can 
 <!-- md:hosted -->
 
 When using pretix Hosted, we only process data within the European Union.
-At the moment, all of our data centers are located within Germany.
+Your data is stored in data centers within Germany.
 
 ## Records of processing activities
 
@@ -27,37 +32,42 @@ Depending on your specific use case, the categories of data subjects and the cat
 
 ## Data protection by design and by default
 
-pretix is designed to minimize the risks by collecting only very minimal data in its default configuration.
+pretix is designed to minimize risk by collecting only very minimal data in its default configuration (Art. 25 GDPR).
 Specifically, in its most simple configuration, pretix will only store the email address entered by the customer and nothing else.
 Every other data collection feature can be turned off and is either disabled or optional by default.
 It is your obligation to only collect additional personal data that you require to provide your service to your customers.
 
 ## Security of processing
 
-pretix applies state-of-the-art security mechanisms.
+pretix applies state-of-the-art security mechanisms (Art. 32 GDPR).
 The application supports modern cryptography and authentication schemes.
 For pretix Hosted, we take care of automated monitoring and backups.
-You can learn more [on our website](https://pretix.eu/about/en/security).
+You can learn more on our website: [security at pretix](https://pretix.eu/about/en/security).
 
 ## Rights of the data subject
 
 pretix includes tools to allow you to help your users with exercising their rights.
 
-### Transparent information
+### Transparent information (Art. 12-13 GDPR)
 
-You can include links to your privacy policy within pretix, or even include it directly inside pretix using the [pages](https://marketplace.pretix.eu/products/pages/) plugin.
+You can include a link to your privacy policy within pretix at :navpath:Your organizer → :fa3-wrench: Settings → General → Privacy:.
+Alternatively, you can include it directly inside pretix using the [pages](https://marketplace.pretix.eu/products/pages/) plugin.
 
-### Right of access
+### Right of access (Art. 15 GDPR)
 
 <!-- md:hosted -->
 
 At :navpath:Your organizer → :fa3-lock: Data protection:, we have provided a tool that generates a PDF summary of the data stored within pretix for a specific email address.
 You can use this tool to easily provide access to the data on request.
 
-### Right to rectification, erasure, and restriction
+### Right to rectification, erasure, and restriction (Art. 16-18 GDPR)
 
 You can, at any time, modify the data stored in pretix through its interface.
 Since pretix is not only affected by privacy regulations, but also needs to provide audit-proof data for tax purposes, some data cannot be modified or will be stored within the historical records even after it has been replaced.
 pretix provides a tool to scrub all personal data from an event after the event is over and all financial data has been archived on your end, which can be found at :navpath:Your event → Dashboard → Event status → Cancel or delete event → Delete personal data:.
 
 Additional tools on the level of individual records will be provided in the future.
+
+### Automated decision-making (Art. 22 GDPR)
+
+In our opinion, pretix does not include any functionality that falls under the provisions of Art. 22 GDPR.
