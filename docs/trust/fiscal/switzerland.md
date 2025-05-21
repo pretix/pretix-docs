@@ -5,7 +5,7 @@
 ## Value Added Tax (VAT)
 
 When selling goods and services in Switzerland, VAT ("Mehrwertsteuer") may apply.
-All Swiss VAT rates can be configured in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. cross-border transactions).
+You can configure all Swiss VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. cross-border transactions).
 
 ## Invoicing
 
@@ -13,7 +13,7 @@ All Swiss VAT rates can be configured in pretix using [tax rules](../../guides/t
 
 Swiss requirements on information contained on invoices are defined in [Art. 26 MWSTG](https://www.fedlex.admin.ch/eli/cc/2009/615/de#art_26).
 
-Invoices created by pretix, if properly configured, can include all necessary information.
+You can configure invoices created by pretix to include all necessary information.
 
 ### Invoice numbering
 
