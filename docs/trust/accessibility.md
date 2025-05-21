@@ -19,13 +19,24 @@ For example, this includes:
 - Keep all information [presented in images](https://www.w3.org/TR/WCAG22/#images-of-text) (such as the header image or product pictures) accessible in text form on the same page as well.
 
 - When providing formatted text using [Markdown](../guides/markdown.md), make sure to make semantically correct use of the markup. 
-We recommend against using headlines (``##``) or tables in most cases.
+We recommend against using headlines (``##``) or HTML tags in most cases.
 
 - Select payment providers that provide good accessibility support.
 
+- When embedding the [widget](../guides/widget.md), make sure that the CSS styling on the embedding website does not interfere with the accessibility and make sure that the users path to the widget is also accessible.
+
 ## Declaration of accessibility
 
-TBD
+Depending on your jurisdiction, you might need to publish information on the accessibility of your ticket shop.
+You can embed this information using the configuration options at :navpath:Your organizer → :fa3-wrench: Settings → General → Accessibility:. 
+
+Here is a Markdown-formatted sample based on the requirements of German law for a non-governmental entity.
+Please note that we are not lawyers and the example it is given **without warranty**.
+Feel free to use it at your own risk.
+
+```
+TODO
+```
 
 ## Accessibility testing
 
