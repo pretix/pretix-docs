@@ -24,11 +24,24 @@ You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: b
 ![Page titled 'Create a new team', with a name input, the option to require 2FA as well as several organizer and event permission settings.](../assets/screens/teams/create-team.png "Create a new team screenshot") 
 
 Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :btn-icon:fa3-plus: Create a new team: button in order to create a new team.
+
 What you name your new team and which permissions you grant it is up to you. 
 For example, you could name your team "Staff" to distinguish it from the administrators and give it the following organizer permissions: 
 "Can create events", "Can manage gift cards", and "Can manage customer accounts". 
+
 You could give the team access to "All events (including newly created ones)" and grant it the following event permissions: 
 "Can change event settings", "Can change product settings", "Can view orders", "Can change orders", "Can view vouchers", and "Can change vouchers". 
+
+The option "Can change organizer settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page. 
+If the URL of the settings page for which you want to grant or revoke permissions includes `/control/organizer/`, then it is controlled by this option. 
+Again, this only applies to settings which are not controlled by any of the other checkboxes under "Organizer permissions". 
+
+The option "Can change event settings" applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page. 
+If the URL of the settings page for which you want to grant or revoke permissions includes `/control/event/`, then it is controlled by this option. 
+Again, this only applies to settings which are not controlled by any of the other checkboxes under "Event permissions". 
+It also applies only to events you checked under "Limit to events", or to all events if you checked "All events (including newly created ones)". 
+
+If you need to grant different permissions for other events, you need to create an additional team and use it to grant permissions for the other event. 
 
 Again, the name and exact permissions you grant depend on your individual use case. 
 You can always change these settings later, but you can prevent future problems and confusion by finalizing these choices before inviting anyone to the team. 
