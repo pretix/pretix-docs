@@ -3,7 +3,7 @@ Jede Kasse im deutschen Rechtsraum muss mit einer TSE ausgestattet sein.
 Wenn Sie eine Kasse von pretix oder von einem Drittanbieter gekauft haben, dann müssen Sie dort eine TSE einbauen. 
 Physikalisch handelt es sich bei einer TSE meistens um eine microSD-Karte oder um einen USB-Stick. 
 
-Wenn Sie eine Kasse inklusive TSE für den Gebrauch mit pretixPOS **mieten**, dann nehmen wir die Einrichtung bereits fertig für Sie vor. 
+Wenn Sie eine Kasse inklusive TSE für den Gebrauch mit pretixPOS **mieten**, dann nehmen wir die Einrichtung bereits vollständig für Sie vor. 
 
 ## Voraussetzungen 
 
@@ -11,7 +11,7 @@ Sie benötigen ein Kassengerät mit der App pretixPOS und eine TSE.
 
 ## Anleitung 
 
-Die folgenden Abschnitte behandeln die ordnungsgemäße Einrichtung, Entfernung, und den Austausch einer TSE. 
+Die folgenden Abschnitte behandeln die ordnungsgemäße Einrichtung, Entfernung, und den Austausch einer TSE.
 
 ### TSE einrichten
 
@@ -22,7 +22,7 @@ Wählen Sie in dem Dialog den Typ (Hersteller) der TSE, die Sie soeben eingesetz
 
 ![App pretixPOS, Dialog 'Swissbit TSE-Einrichtung' mit Hinweistext sowie Eingabefeldern für PIN, PUK, Zeitadmin-PIN und Zugangsdaten-Seed.](../../assets/screens/pos/einrichtung-swissbit.png "Swissbit TSE-Einrichtung")
 
-Falls Ihre TSE noch nie zuvor benutzt wurde, dann definieren Sie nun die Zugangsdaten. 
+Falls Ihre TSE noch nicht eingerichtet wurde, dann definieren Sie nun die Zugangsdaten. 
 Welche Daten das genau sind, hängt von Hersteller und Modell der TSE ab. 
 Beim Hersteller Swissbit benötigen Sie z.B. eine 5-stellige PIN, eine 6-stellige PUK, sowie eine 5-stellige Zeitadmin-PIN. 
 Nähere Informationen zu den Zugangsdaten nach Hersteller und Modell der TSE finden Sie im Abschnitt Abschnitt [9.7 Fiskalisierung / Technische Sicherheitseinrichtung](https://download.pretix.eu/pretixpos.pdf#section.9.7) des pretixPOS-Nutzerhandbuchs. 
@@ -35,9 +35,9 @@ Sollten die Zugangsdaten zu einer TSE verloren gehen, dann kann sie nicht mehr b
     Sorgen Sie aber auch dafür, dass die Daten bei Bedarf (z.B. Steuerprüfung oder Tausch der TSE) auffindbar sind, wenn Sie nicht persönlich anwesend sind. 
     Treffen Sie Vorkehrungen für den Fall, dass sich Ihre Zuständigkeit ändert (z.B. wenn Sie Ihren Job wechseln). 
 
-Falls Ihre TSE schon einmal benutzt wurde, dann geben Sie die bereits in der TSE konfigurierten Zugangsdaten ein. 
+Falls Ihre TSE bereits eingerichtet wurde, dann geben Sie die bereits in der TSE konfigurierten Zugangsdaten ein. 
 
-In beiden Fällen stellen Sie sicher, dass Sie die richtigen Daten eingegeben haben und tippen dann :btn:OK:. 
+In beiden Fällen stellen Sie sicher, dass die eingegebenen Daten mit den notierten Daten übereinstimmen und tippen dann :btn:OK:. 
 Es dauert einen Moment, die TSE einzurichten. 
 
 !!! Warning 
@@ -45,8 +45,6 @@ Es dauert einen Moment, die TSE einzurichten.
     Dies kann dazu führen, dass die TSE unbrauchbar wird. 
 
 Sobald pretixPOS damit fertig ist, die TSE einzurichten, werden Sie auf die Seite mit dem Titel "Sicherheitseinrichtung verwalten" geleitet. 
-Für die weiteren Optionen auf dieser Seite konsultieren Sie den Abschnitt [9.7 Fiskalisierung / Technische Sicherheitseinrichtung](https://download.pretix.eu/pretixpos.pdf#section.9.7) im pretixPOS-Nutzerhandbuch. 
-
 Melden Sie Ihre Kasse nun beim Finanzamt an oder aktualisieren Sie die dort hinterlegten Angaben. 
 TK nach dem Mergen auf register.md verlinken
 Nachdem Sie das getan haben, können Sie Kasse und TSE für den regulären Betrieb verwenden. 
@@ -59,16 +57,17 @@ Tippen Sie :btn:TSE-Speicher exportieren:.
 Wählen Sie einen Ordner auf dem Kassengerät aus, in den die TSE-Daten exportiert werden sollen.
 
 Sichern Sie die Exportdatei mindestens auf einem zweiten Gerät. 
-Im besten Fall archivieren Sie die Exportdatei genau so, wie Sie auch Ihre Buchhaltungsdaten archivieren. 
+Da diese Exportdatei für Ihre Buchhaltung relevant ist, sollten Sie sie genau so archivieren, wie Ihre sonstigen Buchhaltungsdaten. 
 Sie können die Datei beispielsweise mit einem USB-Stick oder einer SD-Speicherkarte auf ein anderes Gerät übertragen. 
+Achten Sie darauf, dass die Exportdatei später leicht aufgefunden und zugeordnet werden kann. 
 
 ### TSE entfernen
 
-Um eine TSE zu entfernen, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den Button :btn:Einstellungen:, dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:, und dann :btn-icon:fa3-microchip: Sicherheitseinrichtung verwalten:. 
+Um eine TSE ordnungsgemäß zu entfernen, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den Button :btn:Einstellungen:, dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:, und dann :btn-icon:fa3-microchip: Sicherheitseinrichtung verwalten:. 
 Tippen Sie den Button :btn:Gerät abmelden:. 
 In dem sich daraufhin öffnenden Dialog geben Sie die PIN der TSE ein. 
-Schalten Sie die Kasse aus und entfernen Sie die TSE. 
-Sie können sie nun an einer anderen Kasse oder erneut an derselben Kasse anmelden. 
+Sie können die Kasse nun ausschalten und die TSE entfernen. 
+Danach können Sie sie wieder wie unter [TSE einrichten](tse.md#tse-einrichten) beschrieben an einer Kasse anmelden. 
 
 Falls Sie die Kasse außer Betrieb nehmen und nicht sofort eine neue TSE einsetzen, dann melden Sie das nun dem Finanzamt. 
 TK nach dem Mergen auf register.md verlinken
@@ -83,3 +82,7 @@ Nachdem die TSE entfernt ist, folgen Sie den Schritten unter [TSE einrichten](ts
 Aktualisieren Sie jetzt die Anmeldung Ihrer Kasse beim Finanzamt. 
 TK nach dem Mergen auf register.md verlinken
 Nachdem Sie das getan haben, können Sie die Kasse mit der neuen TSE für den regulären Betrieb verwenden. 
+
+## Weiterführende Informationen 
+
+Für nähere Informationen zu pretixPOS konsultieren Sie das [pretixPOS-Nutzerhandbuch](https://download.pretix.eu/pretixpos.pdf). 
