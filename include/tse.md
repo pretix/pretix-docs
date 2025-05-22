@@ -11,7 +11,7 @@ Sie benötigen ein Kassengerät mit der App pretixPOS und eine TSE.
 
 ## Anleitung 
 
-Die folgenden Abschnitte behandeln die ordnungsgemäße Einrichtung, Entfernung, und das Tauschen einer alten TSE gegen eine neue. 
+Die folgenden Abschnitte behandeln die ordnungsgemäße Einrichtung, Entfernung, und den Austausch einer TSE. 
 
 ### TSE einrichten
 
@@ -47,7 +47,7 @@ Es dauert einen Moment, die TSE einzurichten.
 Sobald pretixPOS damit fertig ist, die TSE einzurichten, werden Sie auf die Seite mit dem Titel "Sicherheitseinrichtung verwalten" geleitet. 
 Für die weiteren Optionen auf dieser Seite konsultieren Sie den Abschnitt [9.7 Fiskalisierung / Technische Sicherheitseinrichtung](https://download.pretix.eu/pretixpos.pdf#section.9.7) im pretixPOS-Nutzerhandbuch. 
 
-Melden Sie Ihre Kasse nun beim Finanzamt an oder aktualisieren Sie die Angaben. 
+Melden Sie Ihre Kasse nun beim Finanzamt an oder aktualisieren Sie die dort hinterlegten Angaben. 
 TK nach dem Mergen auf register.md verlinken
 Nachdem Sie das getan haben, können Sie Kasse und TSE für den regulären Betrieb verwenden. 
 
@@ -58,7 +58,7 @@ Um dies zu tun, öffnen Sie auf Ihrem Kassengerät pretixPOS, tippen Sie den But
 Tippen Sie :btn:TSE-Speicher exportieren:.
 Wählen Sie einen Ordner auf dem Kassengerät aus, in den die TSE-Daten exportiert werden sollen.
 
-Sichern Sie die Exportdatei mindestens auf einem zweites Gerät. 
+Sichern Sie die Exportdatei mindestens auf einem zweiten Gerät. 
 Im besten Fall archivieren Sie die Exportdatei genau so, wie Sie auch Ihre Buchhaltungsdaten archivieren. 
 Sie können die Datei beispielsweise mit einem USB-Stick oder einer SD-Speicherkarte auf ein anderes Gerät übertragen. 
 
