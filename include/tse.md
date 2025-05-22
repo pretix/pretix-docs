@@ -16,7 +16,8 @@ Die folgenden Abschnitte behandeln die ordnungsgemäße Einrichtung, Entfernung,
 ### TSE einrichten
 
 Setzen Sie die TSE in Ihr Kassengerät ein. 
-Schalten Sie die Kasse ein, öffnen Sie pretixPOS, tippen Sie den Button :btn:Einstellungen: und dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:. 
+Öffnen Sie pretixPOS auf Ihrem Kassengerät, tippen Sie den Button :btn:Einstellungen: und dann :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:. 
+Falls pretixPOS einen Neustart zum Erkennen der TSE anfordert, starten Sie das Gerät neu und navigieren Sie erneut zum Menü :btn-icon:fa3-gavel: Fiskalisierung / Technische Sicherheitseinrichtung:. 
 Tippen Sie den Button :btn-icon:fa3-microchip: Neue Sicherheitseinrichtung hinzufügen:. 
 Wählen Sie in dem Dialog den Typ (Hersteller) der TSE, die Sie soeben eingesetzt haben, und tippen Sie :btn:OK:. 
 
