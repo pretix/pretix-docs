@@ -13,7 +13,7 @@ Therefore, we develop pretix in a way that makes it easy for you to achieve **WC
 pretix is not a ticket shop, but rather a software to create ticket shops.
 As such, the real-world accessibility of the shop depends on a combination of our efforts of creating the software and your efforts of configuring it for good accessibility.
 It is your responsibilities to choose configuration parameters for pretix that are in line with accessibility requirements.
-For example, this includes:
+This includes, but is not limited to:
 
 - Use user-configured colors that are [well-distinguishable](https://www.w3.org/TR/WCAG22/#use-of-color) and provide [sufficient contrast](https://www.w3.org/TR/WCAG22/#contrast-minimum) to surrounding colors.
 
