@@ -109,7 +109,7 @@ Wiederholen Sie diese Schritte für alle Kassen mit Drittanbieter-Software an de
 Um Kassendaten für die Meldung über das ELSTER-Portal zu exportieren, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-shopping-basket: Kassensystem → Kassenanmeldung (DE):. 
 Klicken Sie neben der Betriebsstätte, deren Daten Sie exportieren wollen, den Button :btn-icon:fa3-download: Export:. 
 
-![Seite mit Titel 'Kassenanmeldung (DE)' mit inhaltlichen Hinweisen und einer Liste von Kassen mit drei Zwischenüberschriften.](../../assets/screens/register/kassenanmeldung-de.png "Kassenanmeldung (DE)")
+![Seite mit Titel 'Kassenanmeldung (DE)' mit Hinweisen zu rechtlichen Hintergründen und zur Funktion der Seite sowie einer Liste von Kassen mit den Zwischenüberschriften 'Kassen, die keiner Betriebsstätte zugewiesen sind', 'Dokutest' und 'Dokutest2'.](../../assets/screens/register/kassenanmeldung-de.png "Kassenanmeldung (DE)")
 
 Klicken Sie auf der Seite mit dem Titel "Datenexport" den Button :btn-icon:fa3-download: Exportieren:. 
 Daraufhin werden die Kassendaten in Form einer XML-Datei heruntergeladen. 
