@@ -1,16 +1,17 @@
 # Accessibility
 
-When creating a ticket shop, accessibility of the shop to everyone is not only important for both ethical and business purposes, but also a legal obligation.
+The accessibility of your pretix ticket shop is not only important from ethics and business standpoints, but also a legal obligation.
 As of 2025, the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act) and its national implementation laws mandate that all websites that are used to close contracts with consumers need to be in compliance with accessibility standards.
-This therefore applies to all ticket shops selling tickets to consumers within the EU.
+If you operate an online shop selling products or services to consumers within the EU, then this applies to you. 
+This includes ticket shops created using pretix. 
 
-The relevant European norm, [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549), refers to the well-known [WCAG 2.1 AA](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines) standard.
+The relevant European norm, [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549), refers to the [WCAG 2.1 AA](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines) standard.
 Therefore, we develop pretix in a way that makes it easy for you to achieve **WCAG 2.1/2.2 AA** compliance for your ticket shop.
 
 ## Your responsibilities
 
 pretix is not a ticket shop, but rather a software to create ticket shops.
-As such, the real-world accessibility of the shop is defined by a combination of our efforts of creating the software and your efforts of configuring it correctly.
+As such, the real-world accessibility of the shop depends on a combination of our efforts of creating the software and your efforts of configuring it for good accessibility.
 It is your responsibilities to choose configuration parameters for pretix that are in line with accessibility requirements.
 For example, this includes:
 
@@ -31,7 +32,9 @@ Depending on your jurisdiction, you might need to publish information on the acc
 You can embed this information using the configuration options at :navpath:Your organizer → :fa3-wrench: Settings → General → Accessibility:. 
 
 Here is a Markdown-formatted sample based on the requirements of German law for a non-governmental entity.
-Please note that we are not lawyers and the example it is given **without warranty**.
+!!! Warning 
+    The pretix documentation is not legal advice. 
+    The information below is provided **without warranty**. 
 Feel free to use it at your own risk.
 
 ```
@@ -50,15 +53,15 @@ These last round of tests was between November 2024 and May 2025.
 
 ### Scope of testing
 
-Due to the complex and highly configurable nature of pretix, it is impossible to test all different configurations that pretix may be used in.
+Due to the complex and highly configurable nature of pretix, it is impossible to test all possible configurations.
 Therefore, we performed the test on sample ticket shops and attempted to include as many pretix features and configurations as possible.
-Configurations, plugins or processes not listed here have not been included in our accessibility tests.
-Should you require a proof of compliance for your specific ticket shop that uses pretix, you will need to perform your own testing.
+If a configuration, plugin, or process is not listed here, then we did not include it in our accessibility tests.
+If you require proof of compliance for your individual pretix ticket shop, then you need to perform your own tests.
 
-The accessibility test included core system functionalities as well as the following plugins:
+The accessibility tests included **all core system functions** as well as the following plugins:
 
 - Bank transfer
-- Double-Opt-In-Step
+- Double opt-in step 
 - Passbook tickets
 - PDF ticket output
 - Newsletter integration (rapidmail used as an example)
@@ -66,7 +69,7 @@ The accessibility test included core system functionalities as well as the follo
 - Seating
 - Shipping
 
-The following features of pretix were used as part of the accessibility test:
+We tested the following features of pretix for accessibility: 
 
 #### Organizer pages
 
@@ -81,18 +84,19 @@ The following features of pretix were used as part of the accessibility test:
 
 #### Event pages
 
-- Navigating the event dates of an event series.
+- Navigating the dates of an event series.
 - Discovering all event information (date, time, location, description).
-- Discovering and navigating the list of products including reduced tickets, sold-out tickets, tickets with variations, tickets with a waiting list, tickets that require a voucher.
+- Discovering and navigating the list of products including reduced tickets, sold-out tickets, tickets with variations, tickets with a waiting list, and tickets that require a voucher.
 - Discovering and navigating the seating plan.
-- Signing up for the waiting list of a sold-out ticket.
-- Adding tickets to the cart and interacting with cart.
+- Signing up for the waiting list for a sold-out ticket.
+- Adding tickets to the cart. 
+- Interacting with the cart. 
 - Selecting add-on and cross-selling products.
 - Going through checkout without creating a customer account, using an existing customer account, or creating a customer account.
 - Answering custom questions of various types.
 - Completing the double-opt-in step.
 - Selecting a shipping method.
-- Selecting a payment method (without testing of external components of payment methods).
+- Selecting a payment method (We did not test any external components of payment methods).
 - Clicking consent checkboxes before confirming the order.
 - Completing the order.
 
