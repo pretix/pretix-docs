@@ -17,7 +17,7 @@ This includes, but is not limited to:
 
 - Use user-configured colors that are [well-distinguishable](https://www.w3.org/TR/WCAG22/#use-of-color) and provide [sufficient contrast](https://www.w3.org/TR/WCAG22/#contrast-minimum) to surrounding colors.
 
-- Keep all information [presented in images](https://www.w3.org/TR/WCAG22/#images-of-text) (such as the header image or product pictures) accessible in text form on the same page as well.
+- Provide any information that you [present as images](https://www.w3.org/TR/WCAG22/#images-of-text) (such as the header image or product pictures) also as text on the same page. 
 
 - When providing formatted text using [Markdown](../guides/markdown.md), make sure to make semantically correct use of the markup. 
 We recommend against using headlines (``##``) or HTML tags in most cases.
