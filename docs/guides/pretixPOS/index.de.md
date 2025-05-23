@@ -6,4 +6,4 @@ pretixPOS ist unsere App für den Verkauf von Produkten aus einem pretix-Shop an
 
 
 
-Eine Anleitung zur Anmeldung einer Kasse beim Finanzamt in Deutschland finden Sie unter [Kassen](register.de.md). 
+Eine Anleitung zur Anmeldung einer Kasse mit pretixPOS beim Finanzamt in Deutschland finden Sie unter [Kassen](register.de.md). 
