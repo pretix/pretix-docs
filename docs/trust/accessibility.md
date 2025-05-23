@@ -43,7 +43,7 @@ TODO
 
 ## Accessibility testing
 
-To ensure that our ticket shops are accessible, we have conducted testing of by external experts.
+External experts have tested the accessibility of several example shops. 
 These last round of tests was between November 2024 and May 2025.
 
 !!! Note
