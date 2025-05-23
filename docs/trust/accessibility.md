@@ -20,7 +20,7 @@ This includes, but is not limited to:
 - Provide any information that you [present as images](https://www.w3.org/TR/WCAG22/#images-of-text) (such as the header image or product pictures) also as text on the same page. 
 
 - When providing formatted text using [Markdown](../guides/markdown.md), make sure to make semantically correct use of the markup. 
-We recommend against using headlines (``##``) or HTML tags in most cases.
+We recommend not using headlines (``##``) or HTML tags. 
 
 - Select payment providers that provide good accessibility support.
 
