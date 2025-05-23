@@ -49,7 +49,8 @@ These last round of tests was between November 2024 and May 2025.
 !!! Note
 
     At the moment, our accessibility commitment is only valid for the ticket shops created with pretix.
-    For other functionality, such as the pretix backend, we are also working to improve accessibility, but we have prioritized the ticket shops and have not yet performed intensive accessibility testing and improvements on the backend.
+    We are working on improving accessibility of the pretix backend, but we have not yet performed intensive accessibility testing or updated the backend accordingly. 
+    Our current priority are the ticket shops. 
 
 ### Scope of testing
 
