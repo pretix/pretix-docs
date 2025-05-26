@@ -11,8 +11,8 @@ Therefore, we develop pretix in a way that makes it easy for you to achieve **WC
 ## Your responsibilities
 
 pretix is not a ticket shop, but rather a software to create ticket shops.
-As such, the real-world accessibility of the shop depends on a combination of our efforts of creating the software and your efforts of configuring it for good accessibility.
-It is your responsibilities to choose configuration parameters for pretix that are in line with accessibility requirements.
+As such, the real-world accessibility of the shop depends on a combination of our efforts in creating the software and your efforts in configuring it for good accessibility.
+It is your responsibility to choose configuration parameters for pretix that are in line with accessibility requirements.
 This includes, but is not limited to:
 
 - Use user-configured colors that are [well-distinguishable](https://www.w3.org/TR/WCAG22/#use-of-color) and provide [sufficient contrast](https://www.w3.org/TR/WCAG22/#contrast-minimum) to surrounding colors.
@@ -24,7 +24,7 @@ We recommend not using headlines (``##``) or HTML tags.
 
 - Select payment providers that provide good accessibility support.
 
-- When embedding the [widget](../guides/widget.md), make sure that the CSS styling on the embedding website does not interfere with the accessibility and make sure that the users path to the widget is also accessible.
+- When embedding the [widget](../guides/widget.md), make sure that the CSS styling on the embedding website does not interfere with the accessibility and make sure that the user's path to the widget is also accessible.
 
 ## Declaration of accessibility
 
@@ -44,7 +44,7 @@ TODO
 ## Accessibility testing
 
 External experts have tested the accessibility of several example shops. 
-These last round of tests was between November 2024 and May 2025.
+The last round of tests was between November 2024 and May 2025.
 
 !!! Note
 
