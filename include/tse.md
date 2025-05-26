@@ -47,7 +47,7 @@ Es dauert einen Moment, die TSE einzurichten.
 
 Sobald pretixPOS damit fertig ist, die TSE einzurichten, werden Sie auf die Seite mit dem Titel "Sicherheitseinrichtung verwalten" geleitet. 
 Melden Sie Ihre Kasse nun beim Finanzamt an oder aktualisieren Sie die dort hinterlegten Angaben. 
-TK nach dem Mergen auf register.md verlinken
+Für mehr Informationen lesen Sie den Artikel zur [Anmeldung von Kassen in Deutschland](register.md). 
 Nachdem Sie das getan haben, können Sie Kasse und TSE für den regulären Betrieb verwenden. 
 
 ### TSE-Speicher exportieren 
@@ -71,7 +71,7 @@ Sie können die Kasse nun ausschalten und die TSE entfernen.
 Danach können Sie sie wieder wie unter [TSE einrichten](tse.md#tse-einrichten) beschrieben an einer Kasse anmelden. 
 
 Falls Sie die Kasse außer Betrieb nehmen und nicht sofort eine neue TSE einsetzen, dann melden Sie das nun dem Finanzamt. 
-TK nach dem Mergen auf register.md verlinken
+Für mehr Informationen lesen Sie den Artikel zur [Anmeldung von Kassen in Deutschland](register.md). 
 
 ### TSE tauschen
 
@@ -81,7 +81,7 @@ Falls Sie daraufhin sofort eine neue TSE einsetzen, müssen Sie dem Finanzamt zu
 
 Nachdem die TSE entfernt ist, folgen Sie den Schritten unter [TSE einrichten](tse.md#tse-einrichten) und nehmen die neue TSE in Betrieb. 
 Aktualisieren Sie jetzt die Anmeldung Ihrer Kasse beim Finanzamt. 
-TK nach dem Mergen auf register.md verlinken
+Für mehr Informationen lesen Sie den Artikel zur [Anmeldung von Kassen in Deutschland](register.md). 
 Nachdem Sie das getan haben, können Sie die Kasse mit der neuen TSE für den regulären Betrieb verwenden. 
 
 ## Weiterführende Informationen 
