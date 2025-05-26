@@ -6,4 +6,4 @@ pretixPOS is an app for selling products from a pretix shop at a point of sale s
 
 
 
-You can find a guide on registering a cash register running pretixPOS with the financial authorities in Germany under [cash register](register.md). 
+You can find a guide on registering a cash register running pretixPOS with the financial authorities in Germany under [cash register reporting in Germany](register.md). 

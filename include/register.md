@@ -1,8 +1,8 @@
 {% include "warning-tax.de.md" %}
 
 Dieser Artikel erklärt die Anmeldung von Kassensystemen in Deutschland. 
-Falls Sie als Einzelperson oder Firma steuerpflichtig in der Bundesrepublik Deutschland sind und eine Kasse haben, die Sie für den Verkauf über pretix benutzen, dann ist dieser Artikel relevant für Sie. 
-Das gilt nicht nur dann, wenn Sie selbst eine Kasse besitzen, sondern auch, wenn Sie eine Kasse von pretix mieten. 
+Falls Sie als Einzelperson oder Firma in der Bundesrepublik Deutschland steuerpflichtig sind und eine Kasse haben, die Sie für den Verkauf über pretix nutzen, dann ist dieser Artikel relevant für Sie. 
+Das gilt nicht nur dann, wenn es sich bei der Kasse um Ihr Eigentum handelt, sondern auch, wenn Sie eine Kasse von pretix mieten. 
 
 Sie müssen grundsätzlich jede Kasse anmelden. 
 Das gilt auch für Kassen ohne technische Sicherheitseinrichtung (TSE) und für Kassen, die nicht in aktiv in Benutzung sind. 
@@ -21,7 +21,7 @@ Für die Anmeldung einer Kasse mit pretix benötigen Sie:
 ## Anleitung 
 
 pretix erleichtert Ihnen die ordnungsgemäße Anmeldung einer Betriebsstätte mit allen zugehörigen Kassen. 
-Dazu sind folgende Schritte notwendig, welche in diesem Artikel erläutert werden: 
+Das beinhaltet folgende Schritte, welche in diesem Artikel erläutert werden: 
 
  1. Verbinden Sie die pretixPOS-Kasse mit pretix 
  2. Legen Sie in pretix eine Betriebsstätte an 
@@ -29,7 +29,8 @@ Dazu sind folgende Schritte notwendig, welche in diesem Artikel erläutert werde
  4. Falls vorhanden legen Sie in pretix Drittanbieter-Kassen an
  5. Exportieren Sie Kassendaten in eine XML-Datei
 
-Die XML-Datei nutzen Sie dann, um Ihre Betriebsstätte und Kassen über das ELSTER-Portal anzumelden. 
+Die XML-Datei laden Sie dann beim ELSTER-Portal hoch. 
+Diese Vorgehensweise vereinfacht den Prozess der Anmeldung von Kassen und Betriebsstätte bei ELSTER erheblich. 
 Die Schritte dahin werden in den folgenden Abschnitten beschrieben. 
 
 Dieses Vorgehen ist sinnvoll, wenn Sie an Ihrer Betriebsstätte alle Verkäufe über pretixPOS abwickeln. 

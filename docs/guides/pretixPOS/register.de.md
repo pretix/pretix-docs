@@ -1,3 +1,3 @@
-# Kassen
+# Kassenanmeldung in Deutschland
 
 {% include "register.md" %}
