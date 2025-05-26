@@ -6,8 +6,8 @@ To obtain the correct HTML code for embedding your event into your website, we r
 
 You will obtain two code snippets that look *roughly* like the following. The first should be embedded into the `<head>` part of your website, if possible. If this inconvenient, you can put it in the `<body>` part as well:
 
-    <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css" crossorigin>
-    <script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async crossorigin></script>
+    <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css" crossorigin>
+    <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 
 The second snippet should be embedded at the position where the widget should show up:
 
@@ -34,8 +34,8 @@ The second snippet should be embedded at the position where the widget should sh
 
 Your embedded widget could look like the following:
 
-<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
 <pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
 <noscript>
    <div class="pretix-widget">
@@ -95,20 +95,6 @@ This way, the widget will only show products that can be bought with the voucher
 If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
 
     <pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
-
-## Enabling the button-style single item select
-
-By default, the widget uses a checkbox to select items, that can only be bought in quantities of one. If you want to match the button-style of that checkbox with the one in the pretix shop, you can use the `single-item-select` attribute:
-
-    <pretix-widget event="https://pretix.eu/demo/democon/" single-item-select="button"></pretix-widget>
-
-The result will look like this:
-
-![Visual of the button-like checkbox rendered by the widget](../assets/screens/widget/checkbox_button.png)
-
-!!! Note
-
-    Due to compatibility with existing widget installations, the default value for `single-item-select` is `checkbox`. This might change in the future, so make sure, to set the attribute to `single-item-select="checkbox"` if you need it.
 
 ## Filtering products
 
@@ -372,3 +358,33 @@ If you use a payment provider that opens a new window during checkout (such as P
 ## Working with Cross-Origin-Embedder-Policy
 
 The pretix widget is unfortunately not compatible with `Cross-Origin-Embedder-Policy: require-corp`. If you include the `crossorigin` attributes on the `<script>` and `<link>` tag as shown above, the widget can show a calendar or product list, but will not be able to open the checkout process in an iframe. If you also set `Cross-Origin-Opener-Policy: same-origin`, the widget can auto-detect that it is running in an isolated enviroment and will instead open the checkout process in a new tab.
+
+## Versioning
+
+Whenever possible, we make changes or improvements to the widget in a way that does not interfere with any of the configuration options listed on this page and does not cause compatibility issues with custom styling of your page.
+Occasionally, we do however need to make changes that change the structure of the widget and might cause incompatibility.
+In this case, we release a new version of the widget, noted by an incremented version number in both the script and stylesheet location.
+
+New versions of the widget are announced with the monthly pretix release notes, also available through [our newsletter](https://pretix.eu/about/en/blog/).
+You can then switch to the new version at a time of your choice with the chance to test if any changes to your custom styling is necessary.
+
+When announcing a new version, we also announce a date of deprecation for the old version.
+After this date, we will automatically replace the old version with the new one.
+In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date – with the possibility of some issues with custom styling.
+
+## Changelog
+
+### Version 2
+
+- Various changes to the HTML structure of the widget have been made to improve the accessibility of the widget.
+The most significant changes have been made to the calendar view, which now resembles the calendar view of the standalone ticket shop more closely.
+The updated default stylesheet comes with stronger color contrasts, clear highlighting of focused elements and similar accessibility features.
+
+- The attribute `single-item-select` has been removed and a button-style rendering is now always used.
+
+**Availability**:
+Version 2 is available starting with pretix 2025.5.0 (released late May, 2025).
+
+**Deprecation schedule**:
+Starting with pretix 2025.6.0 (released late June, 2025), all users of version 1 will be automatically upgraded to version 2.
+This time frame is kept intentionally short to allow all users easy compliance with the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act).
