@@ -1,4 +1,4 @@
-# Cash register reporting in Germany
+# Registration of cash registers in Germany
 
 !!! Note 
     This article covers the registration of a cash register in Germany. 

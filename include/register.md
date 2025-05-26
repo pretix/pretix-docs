@@ -30,7 +30,7 @@ Das beinhaltet folgende Schritte, welche in diesem Artikel erläutert werden:
  5. Exportieren Sie Kassendaten in eine XML-Datei
 
 Die XML-Datei laden Sie dann beim ELSTER-Portal hoch. 
-Diese Vorgehensweise vereinfacht den Prozess der Anmeldung von Kassen und Betriebsstätte bei ELSTER erheblich. 
+Diese Vorgehensweise vereinfacht den Prozess der Anmeldung von Kassen und Betriebsstätten bei ELSTER erheblich. 
 Die Schritte dahin werden in den folgenden Abschnitten beschrieben. 
 
 Dieses Vorgehen ist sinnvoll, wenn Sie an Ihrer Betriebsstätte alle Verkäufe über pretixPOS abwickeln. 
