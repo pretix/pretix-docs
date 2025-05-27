@@ -30,13 +30,14 @@ Gestalten Sie den Navigationspfad zum Widget ebenfalls barrierefrei.
 ## Erklärung der Barrierefreiheit
 
 Je nach Gerichtsbarkeit müssen Sie möglicherweise Informationen über die Barrierefreiheit Ihres Ticketshops veröffentlichen.
-Sie können diese Informationen mit Hilfe der Konfigurationsoptionen unter :navpath:Ihr Veranstalter → :fa3-wrench einbetten: Einstellungen → Allgemein → Barrierefreiheit:. 
+Sie können diese Informationen einbetten, indem Sie die Konfigurationsoptionen unter :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Allgemein → Barrierefreiheit: nutzen.
 
 Hier ist ein Markdown-formatiertes Beispiel, das auf den Anforderungen des deutschen Rechts für eine nicht-staatliche Einrichtung basiert.
-!!! Warnung 
+
+!!! Warning 
     Die pretix-Dokumentation stellt keine Rechtsberatung dar. 
     Die nachfolgenden Informationen werden **ohne Gewähr** zur Verfügung gestellt. 
-Die Verwendung erfolgt auf eigene Gefahr.
+    Die Verwendung erfolgt auf eigene Gefahr.
 
 ```
 TODO
@@ -44,66 +45,67 @@ TODO
 
 ## Barrierefreiheits-Tests
 
-Externe Experten haben die Erreichbarkeit mehrerer Beispielshops getestet. 
+Externe Expert*innen haben die Barrierefreiheit mehrerer Beispielshops getestet. 
 Die letzte Testrunde fand zwischen November 2024 und Mai 2025 statt.
 
-!!! Hinweis
+!!! Note
 
     Unser Engagement für Barrierefreiheit gilt derzeit nur für die mit pretix erstellten Ticketshops.
-    Wir arbeiten an der Verbesserung der Barrierefreiheit des pretix-Backends, haben aber noch keine intensiven Barrierefreiheitstests durchgeführt oder das Backend entsprechend aktualisiert. 
+    Wir arbeiten an der Verbesserung der Barrierefreiheit des pretix-Backends. 
+    Allerdings haben wir noch keine intensiven Barrierefreiheits-Tests durchgeführt oder das Backend entsprechend aktualisiert. 
     Unsere aktuelle Priorität sind die Ticketshops. 
 
 ### Umfang der Tests
 
 Aufgrund der komplexen und hochgradig konfigurierbaren Natur von pretix ist es unmöglich, alle möglichen Konfigurationen zu testen.
-Daher haben wir den Test an Beispiel-Ticketshops durchgeführt und versucht, möglichst viele pretix Features und Konfigurationen einzubeziehen.
-Wenn eine Konfiguration, ein Plugin oder ein Prozess hier nicht aufgeführt ist, dann haben wir ihn nicht in unsere Barrierefreiheits-Tests einbezogen.
+Daher haben wir den Test an Beispiel-Ticketshops durchgeführt und versucht, möglichst viele Features und Konfigurationen von pretix einzubeziehen.
+Wenn eine Konfiguration, ein Plugin oder ein Prozess hier nicht aufgeführt ist, dann haben wir ihn nicht auf Barrierefreiheit getestet. 
 Wenn Sie den Nachweis der Barrierefreiheit für Ihren individuellen pretix-Ticketshop benötigen, müssen Sie Ihre eigenen Tests durchführen.
 
-Die Barrierefreiheits-Tests umfassten **alle Kernfunktionen des Systems** sowie die folgenden Plugins:
+Die Barrierefreiheits-Tests umfassten **alle Kernfunktionen des Systems** sowie die folgenden Erweiterungen:
 
 - Banküberweisung
-- Doppelter Opt-in-Schritt 
-- Sparbuch-Tickets
-- PDF-Ticket-Ausgabe
-- Newsletter-Integration (am Beispiel von rapidmail)
+- Double-Opt-in Schritt 
+- Passbook-Tickets
+- PDF-Ticketausgabe
+- rapidmail (beispielhaft für Newsletter-Integration)
 - Seiten
 - Sitzplätze
 - Versand
 
-Wir haben folgende Funktionen von pretix auf Barrierefreiheit getestet: 
+Wir haben folgende Features von pretix auf Barrierefreiheit getestet: 
 
 #### Organizer-Seiten
 
-- Umschalten der Seitensprache.
+- Umschalten der Sprache der Webseite.
 - Erkundung der Veranstaltungsliste durch Listen- und Kalenderansichten.
-- Kontaktaufnahme mit dem Organisator.
+- Kontaktaufnahme mit dem Veranstalter.
 - Anlegen eines Kundenkontos.
-- Sich bei einem Kundenkonto anmelden.
-- Zurücksetzen des Passworts für ein Kundenkonto.
-- Aktualisieren von Kundenkontoinformationen.
-- Anzeigen von Mitgliedschaften, letzten Bestellungen, gespeicherten Adressen und Profilen.
+- Anmeldung mit einem Kundenkonto. 
+- Zurücksetzen des Passworts eines Kundenkonto.
+- Ändern von Informationen in einem Kundenkonto. 
+- Anzeigen von Mitgliedschaften, letzten Bestellungen, gespeicherten Adressen sowie Profilen.
 
 #### Veranstaltungsseiten
 
-- Navigation durch die Termine einer Veranstaltungsreihe.
+- Navigation der Termine einer Veranstaltungsreihe.
 - Auffinden aller Veranstaltungsinformationen (Datum, Uhrzeit, Ort, Beschreibung).
-- Entdecken und Navigieren in der Liste der Produkte, einschließlich ermäßigter Tickets, ausverkaufter Tickets, Tickets mit Variationen, Tickets mit Warteliste und Tickets, die einen Gutschein erfordern.
-- Entdecken und Navigieren durch den Sitzplan.
+- Entdecken und Navigieren der Liste der Produkte, einschließlich ermäßigter Tickets, ausverkaufter Tickets, Tickets mit Variationen, Tickets mit Warteliste und Tickets, die einen Gutschein erfordern.
+- Entdecken und Navigieren des Sitzplans.
 - Eintragung in die Warteliste für ein ausverkauftes Ticket.
 - Hinzufügen von Tickets zum Warenkorb. 
-- Mit dem Warenkorb interagieren. 
+- Benutzung des Warenkorbs. 
 - Auswählen von Zusatz- und Cross-Selling-Produkten.
 - Zur Kasse gehen, ohne ein Kundenkonto zu erstellen, ein bestehendes Kundenkonto zu verwenden oder ein Kundenkonto zu erstellen.
 - Beantwortung benutzerdefinierter Fragen verschiedener Art.
-- Abschluss des Double-opt-in-Schritts.
+- Abschließen des Double-Opt-In-Schritts.
 - Auswählen einer Versandart.
 - Auswahl einer Zahlungsmethode (Wir haben keine externen Komponenten von Zahlungsmethoden getestet).
-- Anklicken von Zustimmungs-Checkboxen vor der Bestätigung der Bestellung.
+- Anklicken von Einwilligungs-Checkboxen vor der Bestätigung der Bestellung.
 - Abschließen der Bestellung.
 
 #### Widget
 
-- Entdecken und Navigieren in der Liste der Produkte.
+- Entdecken und Navigieren der Liste der Produkte.
 - Navigation durch die Veranstaltungstermine einer Veranstaltungsreihe in einer Kalenderansicht.
-- Mit der Schaltfläche pretix direkt zur Kasse gehen.
+- Mit dem pretix-Button direkt zur Kasse gehen.
