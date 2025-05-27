@@ -110,7 +110,7 @@ If your venue closes on Christmas Eve and New Year's Eve, check the boxes next t
 
 ### The button :fa3-calendar: Dates: does not appear in the sidebar on the left 
 
-If the button :fa3-calendar: Dates: does not appear in the sidebar on the left, there are three possible explanations for this: 
+If the button :btn-icon:fa3-calendar: Dates: does not appear in the sidebar on the left, there are three possible explanations for this: 
 
  - you have selected the wrong event (a singular event instead of an event series)
  - the event is set up as a singular event instead of an event series
