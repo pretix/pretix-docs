@@ -25,7 +25,7 @@ We recommend using consecutive invoice numbers in Austria.
 
 Austria currently does not require sending electronic invoices in a structured format for transactions between businesses (B2B) or businesses and consumers (B2C).
 Austria only mandates e-invoices for transactions between businesses and the government (B2G).
-This is currently not supported by pretix.
+pretix currently does not support this. 
 
 ## pretixPOS
 

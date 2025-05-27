@@ -54,13 +54,13 @@ To include technical details about pretix in your procedure documentation, you c
 
 pretix logs all changes to configurations or transaction data. 
 This logging includes the user, time, and type of change made in the system.
-The software does not include functionality to modify or delete these logs (other than by applying pseudonymization of personal information through our privacy tools).
-Orders can only be deleted from the system (unless they were made during test mode).
+pretix does not include functionality to modify or delete these logs (other than by applying pseudonymization of personal information through our privacy tools).
+You can never delete orders deleted from the system (unless they were made during test mode).
 We therefore consider pretix to be audit-proof as required by law (e.g. [§ 146 (4) AO](https://www.gesetze-im-internet.de/ao_1977/__146.html), [§ 293 (3) HGB](https://www.gesetze-im-internet.de/hgb/__239.html)).
 
 ### Archiving
 
-All invoices and receipts need to be archived digitally for at least 8 years ([§ 257 HGB](https://www.gesetze-im-internet.de/hgb/__257.html), [§ 147 AO](https://www.gesetze-im-internet.de/ao_1977/__147.html), [§ 14b UStG](https://www.gesetze-im-internet.de/ustg_1980/__14b.html)).
+You have to archive all invoices and receipts digitally for at least 8 years ([§ 257 HGB](https://www.gesetze-im-internet.de/hgb/__257.html), [§ 147 AO](https://www.gesetze-im-internet.de/ao_1977/__147.html), [§ 14b UStG](https://www.gesetze-im-internet.de/ustg_1980/__14b.html)).
 While pretix does not delete old invoices, it is not a suitable system to provide sufficient guarantees about long-term archival.
 We strongly recommend regularly exporting all created invoices and storing them in an archival system.
 
