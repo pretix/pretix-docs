@@ -26,7 +26,7 @@ This article will guide you through the basic setup of the widget and some advan
 You need to create at least one event before you can offer access to your ticket shop through the widget. 
 The widget will only be displayed if your ticket shop is active. 
 
-You need to have a website and the possibility to make changes to it. 
+You need to have a website and the ability to make changes to it. 
 Some basic knowledge of JavaScript is helpful. 
 
 ## How to
@@ -37,7 +37,7 @@ You may also choose a "Pre-selected voucher" for the widget.
 Once you have made your choices, click the :btn:Generate widget code: button. 
 
 The website will produce two code snippets. 
-The first snippet contains CSS and javascript resources. 
+The first snippet contains CSS and JavaScript resources. 
 Add it to the `<head>` part of your website if possible. 
 Alternatively, you can add it to `<body>`. 
 It will look similar to this: 
@@ -130,7 +130,7 @@ This is similar to the behavior of the [pretix Button](widget.md#pretix-button),
 
 Usually, this will open an overlay with your ticket shop. 
 In some circumstances, such as missing HTTPS encryption or a small screen size, it will open a new tab instead. 
-Therefore, only call this function *in direct response to a user action*, otherwise most browser will block it as an unwanted pop-up. 
+Therefore, only call this function *in direct response to a user action*, otherwise most browsers will block it as an unwanted pop-up. 
 
 Call `window.PretixWidget.open`, which has the following signature:
 
@@ -191,7 +191,7 @@ window.pretixWidgetCallback = function () {
 </script>
 ```
 
-These function may be run multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
+These functions may be run multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
 
 ### Customizing the user experience 
 
@@ -200,13 +200,13 @@ This section explains how to customize the behavior of the widget regarding user
 #### Always open a new tab
 
 By default, the checkout process will open in a new tab on devices with smaller screens. 
-If you want the checkout process to always open a new tab regardless of screen size, you can pass the `disable-iframe` attribute: 
+If you want the checkout process to always open in a new tab regardless of screen size, you can pass the `disable-iframe` attribute: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
 ```
 
-#### Always show events info
+#### Always show event info
 
 By default, the widget will only display event info such as title, location, and front page text if it is linked to an event series. 
 You can pass the optional `display-event-info` attribute to change this behavior. 
@@ -265,11 +265,11 @@ The result will look like this:
 !!! Note
 
     Due to compatibility with existing widget installations, the default value for `single-item-select` is `checkbox`. 
-    This might change in the future, so make sure, to set the attribute to `single-item-select="checkbox"` if you need it.
+    This might change in the future, so make sure to set the attribute to `single-item-select="checkbox"` if you need it.
 
 #### Filtering products
 
-You can filter the products shown in the widget by passing a list of product IDs separated by comma. 
+You can filter the products shown in the widget by passing a list of product IDs separated by commas. 
 In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
 The product ID is displayed as a number preceded by a hashtag below the product's name in the list. 
 You need the number **without** the hashtag. 
@@ -316,11 +316,11 @@ Initiatives such as [Let's Encrypt](https://letsencrypt.org/) allow you to obtai
 
 pretix will use SSL for all data transferred from the widget even if the widget is included on a non-SSL site. 
 However, if you are not using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
-Using SSL for data transfers is a standard practice now. 
+Using SSL for data transfers is standard practice now. 
 Your customers might not trust your website if their browser does not display the secure lock icon :fa3-lock: while they are using it. 
 
 If your website does not use SSL, the checkout process will open in a new tab in your customer's browsers. 
-If you are confident to have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
+If you are confident that you have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
@@ -370,7 +370,7 @@ This section explains how to use the widget for more than just a singular event 
 
 #### Using the widget for an event series 
 
-You can link the widget to an event series 
+You can link the widget to an event series. 
 By default, the widget will display all dates in the event series. 
 If you want to display only a single date from the series, use the `subevent` attribute: 
 
@@ -378,8 +378,8 @@ If you want to display only a single date from the series, use the `subevent` at
 <pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
 ```
 
-You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view or a list view. 
-If you do not include this attribute,it will default to the setting you setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
+You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
+If you do not include this attribute,it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
 If you do not set it, the choice will be taken from your organizer settings:
 
 ```
@@ -460,7 +460,7 @@ You can also do this on the pretix Button, but you also need to specify the `ite
 
 Data attributes are reactive. 
 Thus, you can use JavaScript to change them. 
-Once the user started the checkout process, pretix does not update data attributes in the existing checkout process. 
+Once the user has started the checkout process, pretix does not update data attributes in the existing checkout process. 
 Doing so would interrupt the process and the user would have to start over. 
 
 When updating data attributes through JavaScript, make sure you do not have a stale reference to the HTMLNode of the widget. 
@@ -469,7 +469,7 @@ Use the following code to ensure that the reference is fresh:
 
 ```document.querySelectorAll("pretix-widget, pretix-button, .pretix-widget-wrapper")```
 
-Currently, the following data attributes are understood by pretix:
+Currently the following data attributes are understood by pretix:
 
  - `data-email` will pre-fill the order email field as well as the attendee email field (if enabled).
 
@@ -503,7 +503,7 @@ Currently, the following data attributes are understood by pretix:
  - If `data-fix="true"` is given, the user will not be able to change the other given values later. 
    This currently only works for the order email address as well as the invoice address. 
    Attendee-level fields and questions can always be modified. 
-   This is not a security feature and can easily be overridden by users
+   This is not a security feature and can easily be overridden by users.
    Do not rely on this for authentication.
 
  - If `data-consent="…"` is given, the cookie consent mechanism will adopt the consent for the given cookie providers. 
@@ -529,11 +529,11 @@ This way, all orders made through this widget will be counted towards this campa
 #### Using tracking with the pretix Widget
 
 If you use the tracking plugin, you can enable cross-domain tracking. 
-When you run your pretix-shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
+When you run your pretix shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
 Tracking across subdomains works with no cross-domain tracking setup needed. 
-Refer to the article on [custom domain](custom-domain.md) for further information. 
+Refer to the article on [custom domains](custom-domain.md) for further information. 
 
-Add the embedding website to your [Referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
+Add the embedding website to your [referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
 
 Add Google Analytics like you would on any other page, including your [window.dataLayer]{.title-ref} and [gtag]{.title-ref} configurations. 
 Add the widget code. 
