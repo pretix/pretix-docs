@@ -16,16 +16,16 @@ Die tatsächliche Barrierefreiheit des Shops ergibt sich daher aus unseren Bemü
 Es liegt in Ihrer Verantwortung, die Konfiguration für pretix so zu wählen, dass sie den Anforderungen der Barrierefreiheit entspricht.
 Das beinhaltet unter anderem:
 
-- Verwenden Sie benutzerkonfigurierte Farben, die [gut unterscheidbar](https://www.w3.org/TR/WCAG22/#use-of-color) sind und [ausreichenden Kontrast](https://www.w3.org/TR/WCAG22/#contrast-minimum) zu den umgebenden Farben bieten.
+ - Verwenden Sie benutzerkonfigurierte Farben, die [gut unterscheidbar](https://www.w3.org/TR/WCAG22/#use-of-color) sind und [ausreichenden Kontrast](https://www.w3.org/TR/WCAG22/#contrast-minimum) zu den umgebenden Farben bieten.
 
-- Bieten Sie alle Informationen, die Sie [als Bilder](https://www.w3.org/TR/WCAG22/#images-of-text) präsentieren (z. B. das Kopfzeilenbild oder Produktbilder), auch als Text auf derselben Seite an. 
+ - Bieten Sie alle Informationen, die Sie [als Bilder](https://www.w3.org/TR/WCAG22/#images-of-text) präsentieren (z. B. das Kopfzeilenbild oder Produktbilder), auch als Text auf derselben Seite an. 
 
-- Wenn Sie formatierten Text mit [Markdown](../guides/markdown.md) auf Ihre Shopseite stellen, achten Sie auf semantisch korrekte Verwendung des Markups. 
+ - Wenn Sie formatierten Text mit [Markdown](../guides/markdown.md) auf Ihre Shopseite stellen, achten Sie auf semantisch korrekte Verwendung des Markups. 
 Wir empfehlen, keine Überschriften (``##``) oder HTML-Tags zu verwenden. 
 
-- Wählen Sie Zahlungsanbieter, die gute Unterstützung für Barrierefreiheit bieten.
+ - Wählen Sie Zahlungsanbieter, die gute Unterstützung für Barrierefreiheit bieten.
 
-- Achten Sie beim Einbetten des [Widgets](../guides/widget.md) darauf, dass das CSS-Styling auf der einbettenden Website die Barrierefreiheit nicht beeinträchtigt.
+ - Achten Sie beim Einbetten des [Widgets](../guides/widget.md) darauf, dass das CSS-Styling auf der einbettenden Website die Barrierefreiheit nicht beeinträchtigt.
 Gestalten Sie den Navigationspfad zum Widget ebenfalls barrierefrei. 
 
 ## Information zur Barrierefreiheit
@@ -51,7 +51,7 @@ Die letzte Testrunde fand zwischen November 2024 und Mai 2025 statt.
 
 !!! Note
 
-    Unser Engagement für Barrierefreiheit gilt momentan nur für die mit pretix erstellten Ticketshops.
+    Unsere Zusicherung der Barrierefreiheit gilt momentan nur für die mit pretix erstellten Ticketshops.
     Wir arbeiten an der Verbesserung der Barrierefreiheit des pretix-Backends. 
     Allerdings haben wir noch keine intensiven Barrierefreiheits-Tests durchgeführt oder das Backend entsprechend aktualisiert. 
     Unsere derzeitige Priorität sind die Ticketshops. 
@@ -65,50 +65,51 @@ Wenn Sie den Nachweis der Barrierefreiheit für Ihren individuellen pretix-Ticke
 
 Die Barrierefreiheits-Tests umfassten **alle Kernfunktionen des Systems** sowie die folgenden Erweiterungen:
 
-- Banküberweisung
-- Double-Opt-In Schritt 
-- Passbook-Tickets
-- PDF-Ticketausgabe
-- rapidmail (beispielhaft für Newsletter-Integration)
-- Seiten
-- Sitzplätze
-- Versand
+ - Banküberweisung
+ - Double-Opt-In Schritt 
+ - Passbook-Tickets
+ - PDF-Ticketausgabe
+ - rapidmail (beispielhaft für Newsletter-Integration)
+ - Seiten
+ - Sitzplätze
+ - Versand
 
-Wir haben folgende Features von pretix auf Barrierefreiheit getestet: 
+Wir haben folgende Bestandteile von pretix auf Barrierefreiheit getestet: 
 
 #### Organizer-Seiten
 
-- Umschalten der Sprache der Webseite.
-- Erkundung der Veranstaltungsliste durch Listen- und Kalenderansichten.
-- Kontaktaufnahme mit dem Veranstalter.
-- Anlegen eines Kundenkontos.
-- Anmeldung mit einem Kundenkonto. 
-- Zurücksetzen des Passworts eines Kundenkontos.
-- Ändern von Informationen in einem Kundenkonto. 
-- Anzeigen von Mitgliedschaften, letzten Bestellungen, gespeicherten Adressen sowie Profilen.
+ - Umschalten der Sprache der Webseite.
+ - Erkundung der Veranstaltungsliste durch Listen- und Kalenderansichten.
+ - Kontaktaufnahme mit dem Veranstalter.
+ - Anlegen eines Kundenkontos.
+ - Anmeldung mit einem Kundenkonto. 
+ - Zurücksetzen des Passworts eines Kundenkontos.
+ - Ändern von Informationen in einem Kundenkonto. 
+ - Anzeigen von Mitgliedschaften, letzten Bestellungen, gespeicherten Adressen sowie Profilen.
 
 #### Veranstaltungsseiten
 
-- Navigation der Termine einer Veranstaltungsreihe.
-- Auffinden aller Veranstaltungsinformationen (Datum, Uhrzeit, Ort, Beschreibung).
-- Auffinden und Navigieren der Produktliste, einschließlich ermäßigter Tickets, ausverkaufter Tickets, Tickets mit Varianten, Tickets mit Warteliste und Tickets, die einen Gutschein erfordern.
-- Auffinden und Navigieren des Sitzplans.
-- Eintragung in die Warteliste für ein ausverkauftes Ticket.
-- Hinzufügen von Tickets zum Warenkorb. 
-- Benutzung des Warenkorbs. 
-- Auswählen von Zusatz- und Cross-Selling-Produkten.
-- Einloggen in ein bestehendes Kundenkonto. 
-- Erstellen eines neuen Kundenkontos. 
-- Fortfahren ohne Kundenkonto. 
-- Beantwortung verschiedener Typen von benutzerdefinierten Fragen. 
-- Abschließen des Double-Opt-In-Schritts.
-- Auswählen einer Versandart.
-- Auswählen einer Zahlungsmethode (Wir haben keine externen Komponenten von Zahlungsmethoden getestet).
-- Anklicken von Einwilligungs-Checkboxen beim Prüfen der Bestellung.
-- Abschließen der Bestellung.
+ - Navigation der Termine einer Veranstaltungsreihe.
+ - Auffinden aller Veranstaltungsinformationen (Datum, Uhrzeit, Ort, Beschreibung).
+ - Auffinden und Navigieren der Produktliste, einschließlich ermäßigter Tickets, ausverkaufter Tickets, Tickets mit Varianten, Tickets mit Warteliste und Tickets, die einen Gutschein erfordern.
+ - Auffinden und Navigieren des Sitzplans.
+ - Eintragung in die Warteliste für ein ausverkauftes Ticket.
+ - Hinzufügen von Tickets zum Warenkorb. 
+ - Benutzung des Warenkorbs. 
+ - Auswählen von Zusatz- und Cross-Selling-Produkten.
+ - drei Varianten des Schritts "Kundenkonto":
+    - Einloggen in ein bestehendes Kundenkonto. 
+    - Erstellen eines neuen Kundenkontos. 
+    - Fortfahren ohne Kundenkonto. 
+ - Beantwortung verschiedener Typen von benutzerdefinierten Fragen. 
+ - Abschließen des Double-Opt-In-Schritts.
+ - Auswählen einer Versandart.
+ - Auswählen einer Zahlungsmethode (Wir haben keine externen Komponenten von Zahlungsmethoden getestet).
+ - Anklicken von Einwilligungs-Checkboxen beim Prüfen der Bestellung.
+ - Abschließen der Bestellung.
 
 #### Widget
 
-- Entdecken und Navigieren der Produktliste.
-- Navigation durch die Veranstaltungstermine einer Veranstaltungsreihe in einer Kalenderansicht.
-- Mit dem pretix-Button direkt zur Kasse gehen.
+ - Auffinden und Navigieren der Produktliste.
+ - Navigation durch die Veranstaltungstermine einer Veranstaltungsreihe in einer Kalenderansicht.
+ - Mit dem pretix-Button direkt zur Kasse gehen.
