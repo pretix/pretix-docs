@@ -156,6 +156,7 @@ Our speaker ticket needs to be assigned to a quota, too.
 We will now navigate to the quotas page again and click the :btn-icon:fa3-plus: Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
+Then, we will click the :btn:Save: button. 
 
 ### Quotas for variants 
 
