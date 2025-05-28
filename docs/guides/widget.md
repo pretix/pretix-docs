@@ -599,3 +599,13 @@ The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
 But it will not be able to open the checkout process in an iframe. 
 If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
+
+## Troubleshooting 
+
+### The code copied from this page does not work 
+
+The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`. 
+Your own event will use different organizer and event slugs. 
+If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
+The easiest way to ensure that you have the right code is using the code generator. 
+Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
