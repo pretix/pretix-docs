@@ -32,14 +32,15 @@ Some basic knowledge of JavaScript is helpful.
 
 In order to obtain the HTML code for embedding your shop on your website, navigate to :navpath:Your Event → Settings → Widget:. 
 Choose the "Language" in which the widget should be displayed. 
-You may also choose a "Pre-selected voucher" for the widget. 
+The page also allows you to choose a "Pre-selected voucher" for the widget. 
+This can be useful if you want to offer discounts or additional products to visitors of your website. 
 Once you have made your choices, click the :btn:Generate widget code: button. 
 
 The website will produce two code snippets. 
-The first snippet contains CSS and JavaScript resources. 
-Add it to the `<head>` part of your website if possible. 
-Alternatively, you can add it to `<body>`. 
-It will look similar to this: 
+The first snippet sources the CSS and JavaScript resources for the widget from the pretix server. 
+Add this snippet to the `<head>` part of your website if you want to comply with the HTML specification and general conventions in webdesign. 
+Alternatively, you can also add it to `<body>`. 
+The code snippet will look similar to this: 
 
 ```
 <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
@@ -99,7 +100,7 @@ You can try out this behavior here:
 </noscript>
 
 You can embed the pretix Button just like the pretix Widget. 
-In order to add the pretix Button to your website, add the CSS and JavaScript resources as described in the [introduction](widget.md)
+In order to add the pretix Button to your website, add the CSS and JavaScript resources as described under ["How to"](widget.md#how-to)
 Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
 ```
@@ -233,7 +234,10 @@ You can pre-select a voucher for the widget with the `voucher` attribute:
 ```
 
 This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
-You can also generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
+You do **not** need to copy and edit this code. 
+It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
+
+Here is an example of a widget with a voucher pre-selected: 
 
 <pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
 <noscript>
@@ -333,8 +337,7 @@ If you want to display only a single date from the series, use the `subevent` at
 ```
 
 You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
-If you do not include this attribute,it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
-If you do not set it, the choice will be taken from your organizer settings:
+If you do not include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
 
 ```
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="list"></pretix-widget>
@@ -342,7 +345,7 @@ If you do not set it, the choice will be taken from your organizer settings:
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="week"></pretix-widget>
 ```
 
-For performance reasons, the system will always display a calendar view if you have more than 100 events. 
+For performance reasons, the system will always display a monthly calendar view if you have more than 100 events. 
 You can see an example here:
 
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
@@ -357,8 +360,10 @@ You can see an example here:
 
 #### Filtering by metadata attributes 
 
-You can filter events by metadata attributes. 
-You can create these attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
+If you are hosting several events or dates in an event series, but only want to display some of them in the widget, then you should use metadata attributes. 
+This section explains how to create metadata attributes, assign them to your events or dates, and set a filter in the widget. 
+
+You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
 
 If you want to assign the metadata property to a singular event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
 On the :btn:Basics: tab, edit the relevant property under "Meta data". 
@@ -372,7 +377,7 @@ For example, if you set up a metadata property called "Promoted" that you set to
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
 ```
 
-If you have enabled public filters in your meta data attribute configuration, the widget will display a filter form. 
+If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
 To disable the filter form, use:
 
 ```
@@ -418,7 +423,8 @@ Currently the following data attributes are understood by pretix:
  - `data-email` will pre-fill the order email field as well as the attendee email field (if enabled).
 
  - `data-question-IDENTIFIER` will pre-fill the answer for the question with the given identifier. 
- You can view and set identifiers in the *Questions* section of the backend.
+ You can view identifiers by navigating to :navpath:Your event → :fa3-ticket: Products → Questions:. 
+ In order to set an internal identifier, edit or create a question, switch to the :btn:Advanced: tab and use the "Internal identifier" field. 
 
  - `data-attendee-name` will pre-fill the last part of the name. 
    For more control over the name that is pre-filled, use the following attributes. 
