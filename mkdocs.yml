@@ -96,6 +96,7 @@ plugins:
           nav_translations:
             Organizers: Veranstalter
             Events: Veranstaltungen
+            Pretixpos: pretixPOS
           admonition_translations:
             note: Hinweis
             Note: Hinweis
@@ -132,6 +133,7 @@ plugins:
             Developer and API Docs: Developer and API docs
             Trust: Trust and Compliance
             Self hosting: Self-hosting
+            Pretixpos: pretixPOS
   - social:
       cards_layout_options:
         background_color: "#3B1C4A"
