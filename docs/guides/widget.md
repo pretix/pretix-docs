@@ -18,7 +18,6 @@ Your embedded widget could look like the following:
     </div>
 </noscript>
 
-
 This article will guide you through the basic setup of the widget and some advanced configuration options. 
 
 ## Prerequisites 
@@ -60,6 +59,12 @@ It will look similar to this:
     </div>
 </noscript>
 ```
+
+!!! Note 
+    The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
+    If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
+    The easiest way to ensure that you have the right code is using the code generator. 
+    Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
 If you want to embed multiple widgets for different events on your page, add the first snippet only **once**. 
 Generate the second snippet for every event and add each one to your website's HTML. 
@@ -304,69 +309,18 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
-### Security
-
-This section explains aspects of embedding the widget that are relevant for security: SSL/HTTPS, policy settings on your website, and domain verification for certain payment methods. 
-
-#### SSL
-
-Buying a ticket usually involves entering sensitive data. 
-Thus, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. 
-Initiatives such as [Let's Encrypt](https://letsencrypt.org/) allow you to obtain a SSL certificate free of charge.
-
-pretix will use SSL for all data transferred from the widget even if the widget is included on a non-SSL site. 
-However, if you are not using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
-Using SSL for data transfers is standard practice now. 
-Your customers might not trust your website if their browser does not display the secure lock icon :fa3-lock: while they are using it. 
-
-If your website does not use SSL, the checkout process will open in a new tab in your customer's browsers. 
-If you are confident that you have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
-```
-
-!!! Note 
-    The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
-    If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-
-
-#### Content Security Policy
-
-If you are using a Content Security Policy (CSP) on your website, you may need to make some adjustments. 
-If your pretix shop is running under a custom domain, you need to add the following rules:
-
- - `script-src`: `'unsafe-eval' https://pretix.eu` (adjust to your domain for self-hosted pretix)
- - `style-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
- - `connect-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
- - `frame-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
- - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
-    For pretix Hosted, also add `https://cdn.pretix.space`. 
-
-#### Offering Apple Pay via Stripe through the widget
-
-If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
-pretix will automatically validate the domain that is being used for your shop regardless of the edition of pretix and your domain settings. 
-But when embedding the widget on your website, your domain will also need to be validated in order to be able to use it for Apple Pay. 
-
-Please refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
-
-#### External payment providers and Cross Origin Opener Policy
-
-If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window being opened in the foreground. 
-This is due to JavaScript not having access to the opened window. 
-To mitigate this, you either need to [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
-
-#### Working with Cross Origin Embedder Policy
-
-The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
-If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
-But it will not be able to open the checkout process in an iframe. 
-If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
-
 ### Event series and multiple events 
 
 This section explains how to use the widget for more than just a singular event or a single date within an event series. 
+
+#### Using the widget for multiple events
+
+You can display multiple event shops in a single widget. 
+If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
+``` 
 
 #### Using the widget for an event series 
 
@@ -400,16 +354,6 @@ You can see an example here:
         </div>
     </div>
 </noscript>
-
-
-#### Using the widget for multiple events
-
-You can display multiple event shops in a single widget. 
-If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
-```
 
 #### Filtering by metadata attributes 
 
@@ -600,3 +544,58 @@ Include the following code on your website after replacing all occurrences of \<
     });
 </script>  
 ``` 
+
+### Security
+
+This section explains aspects of embedding the widget that are relevant for security: SSL/HTTPS, policy settings on your website, and domain verification for certain payment methods. 
+
+#### SSL
+
+Buying a ticket usually involves entering sensitive data. 
+Thus, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. 
+Initiatives such as [Let's Encrypt](https://letsencrypt.org/) allow you to obtain a SSL certificate free of charge.
+
+pretix will use SSL for all data transferred from the widget even if the widget is included on a non-SSL site. 
+However, if you are not using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
+Using SSL for data transfers is standard practice now. 
+Your customers might not trust your website if their browser does not display the secure lock icon :fa3-lock: while they are using it. 
+
+If your website does not use SSL, the checkout process will open in a new tab in your customer's browsers. 
+If you are confident that you have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
+```
+
+#### Content Security Policy
+
+If you are using a Content Security Policy (CSP) on your website, you may need to make some adjustments. 
+If your pretix shop is running under a custom domain, you need to add the following rules:
+
+ - `script-src`: `'unsafe-eval' https://pretix.eu` (adjust to your domain for self-hosted pretix)
+ - `style-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
+ - `connect-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
+ - `frame-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
+ - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
+    For pretix Hosted, also add `https://cdn.pretix.space`. 
+
+#### Offering Apple Pay via Stripe through the widget
+
+If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
+pretix will automatically validate the domain that is being used for your shop regardless of the edition of pretix and your domain settings. 
+But when embedding the widget on your website, your domain will also need to be validated in order to be able to use it for Apple Pay. 
+
+Please refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
+
+#### External payment providers and Cross Origin Opener Policy
+
+If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window being opened in the foreground. 
+This is due to JavaScript not having access to the opened window. 
+To mitigate this, you either need to [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
+
+#### Working with Cross Origin Embedder Policy
+
+The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
+If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
+But it will not be able to open the checkout process in an iframe. 
+If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
