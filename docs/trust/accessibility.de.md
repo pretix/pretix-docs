@@ -97,10 +97,7 @@ Wir haben folgende Bestandteile von pretix auf Barrierefreiheit getestet:
  - Hinzufügen von Tickets zum Warenkorb. 
  - Benutzung des Warenkorbs. 
  - Auswählen von Zusatz- und Cross-Selling-Produkten.
- - drei Varianten des Schritts "Kundenkonto":
-    - Einloggen in ein bestehendes Kundenkonto. 
-    - Erstellen eines neuen Kundenkontos. 
-    - Fortfahren ohne Kundenkonto. 
+ - Im Bestellprozess in ein bestehendes Kundenkonto einloggen, ein neues Kundenkonto erstellen, oder ohne Kundenkonto fortfahren. 
  - Beantwortung verschiedener Typen von benutzerdefinierten Fragen. 
  - Abschließen des Double-Opt-In-Schritts.
  - Auswählen einer Versandart.
