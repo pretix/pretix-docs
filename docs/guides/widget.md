@@ -6,8 +6,8 @@ Alternatively, you can use the [pretix Button](widget.md#pretix-button) to insta
 
 Your embedded widget could look like the following:
 
-<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
 <pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
 <noscript>
    <div class="pretix-widget">
@@ -49,8 +49,8 @@ Alternatively, you can also add it to `<body>`.
 The code snippet will look similar to this: 
 
 ```
-<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
 ```
 Add the second code snippet at the position where you want the widget to appear on your website. 
 It will look similar to this: 
@@ -598,6 +598,36 @@ The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
 But it will not be able to open the checkout process in an iframe. 
 If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
+
+## Versioning
+
+Whenever possible, we make changes or improvements to the widget in a way that does not interfere with any of the configuration options listed on this page and does not cause compatibility issues with custom styling of your page.
+Occasionally, we do however need to make changes that change the structure of the widget and might cause incompatibility.
+In this case, we release a new version of the widget, noted by an incremented version number in both the script and stylesheet location.
+
+New versions of the widget are announced with the monthly pretix release notes, also available through [our newsletter](https://pretix.eu/about/en/blog/).
+You can then switch to the new version at a time of your choice with the chance to test if any changes to your custom styling is necessary.
+
+When announcing a new version, we also announce a date of deprecation for the old version.
+After this date, we will automatically replace the old version with the new one.
+In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date – with the possibility of some issues with custom styling.
+
+## Changelog
+
+### Version 2
+
+- Various changes to the HTML structure of the widget have been made to improve the accessibility of the widget.
+The most significant changes have been made to the calendar view, which now resembles the calendar view of the standalone ticket shop more closely.
+The updated default stylesheet comes with stronger color contrasts, clear highlighting of focused elements and similar accessibility features.
+
+- The attribute `single-item-select` has been removed and a button-style rendering is now always used.
+
+**Availability**:
+Version 2 is available starting with pretix 2025.5.0 (released late May, 2025).
+
+**Deprecation schedule**:
+Starting with pretix 2025.6.0 (released late June, 2025), all users of version 1 will be automatically upgraded to version 2.
+This time frame is kept intentionally short to allow all users easy compliance with the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act).
 
 ## Troubleshooting 
 
