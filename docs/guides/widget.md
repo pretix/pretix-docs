@@ -43,7 +43,7 @@ Once you have made your choices, click the :btn:Generate widget code: button.
 
 The website will produce two code snippets. 
 The first snippet sources the CSS and JavaScript resources for the widget from the pretix server. 
-Add this snippet to the `<head>` part of your website if you want to comply general conventions in webdesign. 
+Add this snippet to the `<head>` part of your website if you want to comply with general conventions in webdesign. 
 This has the advantage of slightly better performance on slow connections. 
 Alternatively, you can also add it to `<body>`. 
 The code snippet will look similar to this: 
