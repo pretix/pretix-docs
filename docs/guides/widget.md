@@ -1,6 +1,6 @@
 # Widget
 
-If you want to include your ticket shop on your event website or blog, you can use our embeddable widget. 
+If you want to include your ticket shop on your event website or blog, you can use the embeddable widget. 
 This way, users can buy their tickets without leaving your website. 
 Alternatively, you can use the [pretix Button](widget.md#pretix-button) to instantly select some products and proceed to checkout for the user. 
 
@@ -13,7 +13,7 @@ Your embedded widget could look like the following:
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
             JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+            To access our ticket shop without javacript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
         </div>
     </div>
 </noscript>
@@ -23,22 +23,28 @@ This article will guide you through the basic setup of the widget and some advan
 ## Prerequisites 
 
 You need to create at least one event before you can offer access to your ticket shop through the widget. 
-The widget will only be displayed if your ticket shop is active. 
+The website will only display the widget if your ticket shop is active. 
 
 You need to have a website and the ability to make changes to it. 
 Some basic knowledge of JavaScript is helpful. 
 
-## How to
+## General usage
+
+This section explains how to embed the pretix widget or the pretix button on your website once or several times, as well as how to style the widget. 
+It also explains how to use the widget for more than just a singular event or a single date within an event series. 
+
+### Embedding the widget on your website
 
 In order to obtain the HTML code for embedding your shop on your website, navigate to :navpath:Your Event → Settings → Widget:. 
-Choose the "Language" in which the widget should be displayed. 
+Choose the "Language" for the widget. 
 The page also allows you to choose a "Pre-selected voucher" for the widget. 
-This can be useful if you want to offer discounts or additional products to visitors of your website. 
+This can be useful if you want to offer discounts or voucher-exclusive products to visitors of your website. 
 Once you have made your choices, click the :btn:Generate widget code: button. 
 
 The website will produce two code snippets. 
 The first snippet sources the CSS and JavaScript resources for the widget from the pretix server. 
-Add this snippet to the `<head>` part of your website if you want to comply with the HTML specification and general conventions in webdesign. 
+Add this snippet to the `<head>` part of your website if you want to comply general conventions in webdesign. 
+This has the advantage of slightly better performance on slow connections. 
 Alternatively, you can also add it to `<body>`. 
 The code snippet will look similar to this: 
 
@@ -46,7 +52,7 @@ The code snippet will look similar to this:
 <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v1.css">
 <script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
 ```
-Add the second code snippet at the position where you want the widget to be displayed on your website. 
+Add the second code snippet at the position where you want the widget to appear on your website. 
 It will look similar to this: 
 
 ```
@@ -67,6 +73,8 @@ It will look similar to this:
     The easiest way to ensure that you have the right code is using the code generator. 
     Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
+### Embedding multiple widgets on your website
+
 If you want to embed multiple widgets for different events on your page, add the first snippet only **once**. 
 Generate the second snippet for every event and add each one to your website's HTML. 
 
@@ -83,9 +91,14 @@ You can use CSS to customize the appearance of the widget to match your website.
 If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
 You can override the styles or use your own custom stylesheet. 
 
+!!! Note 
+    The widget is designed to conform with European accessibility standards. 
+    Make sure that any changes you make to customize the widget do not break accessibility, for instance by choosing colors with too little contrast. 
+
+
 ### pretix Button
 
-Instead of the full widget, you can also display just a single button. 
+Instead of the full widget, you can also display a simple button. 
 Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
 You can try out this behavior here:
 
@@ -120,10 +133,53 @@ Use the number behind the `=` symbol to specify the number of this item or varia
 
 If you do not include the `items` attribute or do not pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
 
-If the button is linked to an event series, use the `subevent`-attribute to specify the date for which the items should be put in the cart. 
+If the button is linked to an event series, use the `subevent`-attribute to specify the date for which the items should be added to the cart. 
 
 The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
 You can style the button using the `pretix-button` CSS class.
+
+### Using the widget for multiple events
+
+You can display multiple event shops in a single widget. 
+If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
+``` 
+
+### Using the widget for an event series 
+
+You can link the widget to an event series. 
+By default, the widget will display all dates in the event series. 
+If you want to display only a single date from the series, use the `subevent` attribute: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
+```
+
+You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
+If you do not include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="list"></pretix-widget>
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="week"></pretix-widget>
+```
+
+For performance reasons, the system will always display a monthly calendar view if you have more than 100 events. 
+You can see an example here:
+
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. 
+            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/series/">click here</a>.
+        </div>
+    </div>
+</noscript>
+
+## Advanced
 
 ### Loading
 
@@ -132,7 +188,7 @@ This section explains how to customize the way in which the widget loads and ope
 #### Opening the widget dynamically
 
 You can call a function to open the widget dynamically in response to a user action. 
-This is similar to the behavior of the [pretix Button](widget.md#pretix-button), but can be called from any part of your website's code. 
+This is similar to the behavior of the [pretix Button](widget.md#pretix-button), but you can call it from any part of your website's code. 
 
 Usually, this will open an overlay with your ticket shop. 
 In some circumstances, such as missing HTTPS encryption or a small screen size, it will open a new tab instead. 
@@ -197,7 +253,7 @@ window.pretixWidgetCallback = function () {
 </script>
 ```
 
-These functions may be run multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
+You can run these functions multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
 
 ### Customizing the user experience 
 
@@ -217,9 +273,8 @@ If you want the checkout process to always open in a new tab regardless of scree
 By default, the widget will only display event info such as title, location, and front page text if it is linked to an event series. 
 You can pass the optional `display-event-info` attribute to change this behavior. 
 If you pass it with the value `"false"`, even an event series will be displayed without information. 
-If you pass the attribute with `"true"` or any other value other than 
 Pass it with the value `"auto"` for the default behavior. 
-Any other value than `"false"` or `"auto"` is handled like `"true"`. 
+Any value other than `"false"` or `"auto"` is handled like `"true"`. 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
@@ -257,30 +312,11 @@ If you want to disable voucher input in the widget, you can pass the `disable-vo
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
 ```
 
-#### Enabling the button-style single item select
-
-By default, the widget uses simple checkboxes for the selection of items that can only be bought in quantities of one. 
-This is different from the shop page, which uses a button containing a checkbox and the label ":fa3-shopping-cart: Select". 
-If you want to use the same style of checkbox button in the widget, pass the `single-item-select` attribute:
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" single-item-select="button"></pretix-widget>
-```
-
-The result will look like this:
-
-![A plain wide button containing a checkbox, a shopping cart symbol and the text "Select"](../assets/screens/widget/checkbox_button.png "Button-like checkbox")
-
-!!! Note
-
-    Due to compatibility with existing widget installations, the default value for `single-item-select` is `checkbox`. 
-    This might change in the future, so make sure to set the attribute to `single-item-select="checkbox"` if you need it.
-
 #### Filtering products
 
-You can filter the products shown in the widget by passing a list of product IDs separated by commas. 
+You can filter the products displayed in the widget by passing a list of product IDs separated by commas. 
 In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
-The product ID is displayed as a number preceded by a hashtag below the product's name in the list. 
+The page displays the product ID as a number preceded by a hashtag below the product's name in the list. 
 You need the number **without** the hashtag. 
 Alternatively, edit the product. 
 The number before the last slash in the URL is the product ID.
@@ -312,51 +348,6 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
-
-### Event series and multiple events 
-
-This section explains how to use the widget for more than just a singular event or a single date within an event series. 
-
-#### Using the widget for multiple events
-
-You can display multiple event shops in a single widget. 
-If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
-``` 
-
-#### Using the widget for an event series 
-
-You can link the widget to an event series. 
-By default, the widget will display all dates in the event series. 
-If you want to display only a single date from the series, use the `subevent` attribute: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
-```
-
-You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
-If you do not include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
-
-```
-<pretix-widget event="https://pretix.eu/demo/series/" list-type="list"></pretix-widget>
-<pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
-<pretix-widget event="https://pretix.eu/demo/series/" list-type="week"></pretix-widget>
-```
-
-For performance reasons, the system will always display a monthly calendar view if you have more than 100 events. 
-You can see an example here:
-
-<pretix-widget event="https://pretix.eu/demo/series/" list-type="calendar"></pretix-widget>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/series/">click here</a>.
-        </div>
-    </div>
-</noscript>
 
 #### Filtering by metadata attributes 
 
@@ -427,6 +418,7 @@ Currently the following data attributes are understood by pretix:
  In order to set an internal identifier, edit or create a question, switch to the :btn:Advanced: tab and use the "Internal identifier" field. 
 
  - `data-attendee-name` will pre-fill the last part of the name. 
+   The exact behavior depends on your configuration under :navpath:Your event → :fa3-wrench: Settings → General:, on the :btn:Customer and attendee data: tab. 
    For more control over the name that is pre-filled, use the following attributes. 
    The best choice depends on your configuration of the naming scheme in the event settings. 
     - `data-attendee-name-full-name`
@@ -452,13 +444,14 @@ Currently the following data attributes are understood by pretix:
 
  - If `data-fix="true"` is given, the user will not be able to change the other given values later. 
    This currently only works for the order email address as well as the invoice address. 
-   Attendee-level fields and questions can always be modified. 
-   This is not a security feature and can easily be overridden by users.
+   The user will always be able to modify attendee-level fields and questions. 
+   This is not a security feature. 
+   Users can easily override it. 
    Do not rely on this for authentication.
 
  - If `data-consent="…"` is given, the cookie consent mechanism will adopt the consent for the given cookie providers. 
    All other providers will be disabled, no consent dialog will be shown and it will not be possible to change the cookie settings inside the widget. 
-   This is useful if you already asked the user for consent and do not want them to be asked again. 
+   This is useful if you already asked the user for consent and do not want the widget to aske them again. 
    Example: `data-consent="facebook,google_analytics"`
    If the user has refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
    The following values are supported by the pretix "Tracking codes" plugin: 
@@ -474,7 +467,7 @@ Currently the following data attributes are understood by pretix:
 
 Any active pretix plugins might understand more data attributes. 
 For instance, if you are using the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. 
-This way, all orders made through this widget will be counted towards this campaign. 
+This way, the plugin will count all orders made through this widget towards this campaign. 
 
 #### Using tracking with the pretix Widget
 
@@ -589,7 +582,7 @@ If your pretix shop is running under a custom domain, you need to add the follow
 
 If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
 pretix will automatically validate the domain that is being used for your shop regardless of the edition of pretix and your domain settings. 
-But when embedding the widget on your website, your domain will also need to be validated in order to be able to use it for Apple Pay. 
+But when embedding the widget on your website, your domain will also need to get validation in order to be able to use it for Apple Pay. 
 
 Please refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
 
