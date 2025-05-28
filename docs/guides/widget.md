@@ -6,8 +6,8 @@ Alternatively, you can use the [pretix Button](widget.md#pretix-button) to insta
 
 Your embedded widget could look like the following:
 
-<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css" crossorigin>
+<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 <pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
 <noscript>
    <div class="pretix-widget">
