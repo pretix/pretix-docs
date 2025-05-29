@@ -2,7 +2,7 @@
 
 {% include "warning-tax-law.md" %}
 
-## Value Added Tax (VAT)
+## Value-added Tax (VAT)
 
 When selling goods and services in Australia, GST ("Goods and services tax") may apply.
 You can configure all Australian VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. cross-border transactions).
