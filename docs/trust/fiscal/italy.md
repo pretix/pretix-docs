@@ -2,7 +2,7 @@
 
 {% include "warning-tax-law.md" %}
 
-## Value Added Tax (VAT)
+## Value-added Tax (VAT)
 
 When selling goods and services in Italy, VAT ("imposta sul valore aggiunto", "IVA") may apply.
 You can configure all Italian VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. intra-EU reverse charge transactions).
