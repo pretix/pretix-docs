@@ -42,7 +42,7 @@ It is your obligation to only collect additional personal data that you require 
 pretix applies state-of-the-art security mechanisms (Art. 32 GDPR).
 The application supports modern cryptography and authentication schemes.
 For pretix Hosted, we take care of automated monitoring and backups.
-You can learn more on our website: [security at pretix](https://pretix.eu/about/en/security).
+You can learn more on our website: [Security at pretix](https://pretix.eu/about/en/security).
 
 ## Rights of the data subject
 
