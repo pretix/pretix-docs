@@ -505,7 +505,7 @@ Then, within the second AND-bracket, create the following condition:
 
 ### Mixed taxation 
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 For general information on how to set up taxation in pretix, refer to our article on [taxes](taxes.md). 
 
