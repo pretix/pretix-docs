@@ -97,6 +97,11 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Pretixpos: pretixPOS
+            Payment: Zahlung
+            Developer and API Docs: Entwickler- und API-Dokumentation
+            Trust: Trust und Compliance
+            Self hosting: Self-Hosting
+            Fiscal: Steuerrecht
           admonition_translations:
             note: Hinweis
             Note: Hinweis
@@ -134,6 +139,7 @@ plugins:
             Trust: Trust and Compliance
             Self hosting: Self-hosting
             Pretixpos: pretixPOS
+            Fiscal: Fiscal requirements
   - social:
       cards_layout_options:
         background_color: "#3B1C4A"
