@@ -21,7 +21,7 @@ More information is available on the website of the European Commission: [eInvoi
 ## pretixPOS
 
 Cash registers in Belgium are required to use a certified cash register that automatically reports data to the fiscal authority.
-pretixPOS is not certified and does not support this.
+pretixPOS is **not** certified and does **not** support this.
 More information is available on the website of the Belgian government: [Le système de caisse enregistreuse](https://www.systemedecaisseenregistreuse.be/).
 
 However, this requirement [only applies to](https://www.systemedecaisseenregistreuse.be/fr/klant/algemeen/qui-doit-utiliser-le-sce) businesses who operate restaurant or catering services with a turnover of €25,000 or more.

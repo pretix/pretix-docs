@@ -27,6 +27,8 @@ Austria currently does not require sending electronic invoices in a structured f
 Austria only mandates e-invoices for transactions between businesses and the government (B2G).
 pretix currently does not support this. 
 
+More information is available on the website of the European Commission: [eInvoicing in Austria](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Austria).
+
 ## pretixPOS
 
 You can use pretixPOS in compliance with Austrian laws on cash registers ([§ 131b BAO](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&FassungVom=2025-01-27&Artikel=&Paragraf=131b&Anlage=&Uebergangsrecht=), [RKSV](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009390)).

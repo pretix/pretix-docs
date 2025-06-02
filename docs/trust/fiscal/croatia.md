@@ -21,4 +21,4 @@ More information is available on the website of the European Commission: [eInvoi
 ## pretixPOS
 
 When operating a cash register in Croatia, the cash register must [report all data](https://www.fina.hr/poslovni-digitalni-certifikati/poslovni-certifikati-za-fiskalizaciju#info) to the fiscal authority in real-time.
-pretix does not support this.
+pretixPOS does **not** support this and can therefore **not** be used as cash register software in Croatia.

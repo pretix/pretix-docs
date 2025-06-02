@@ -12,6 +12,7 @@ You can configure all Czech VAT rates in pretix using [tax rules](../../guides/t
 ### E-invoicing
 
 The Czech Republic currently does not require sending electronic invoices in a structured format.
+
 More information is available on the website of the European Commission: [eInvoicing in Czech Republic](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Czech+Republic).
 
 ## pretixPOS

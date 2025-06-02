@@ -9,9 +9,14 @@ You can configure all Italian VAT rates in pretix using [tax rules](../../guides
 
 ## Invoicing
 
+### E-invoicing
+
 Italy requires all domestic invoices to be issued using an [electronic standard](https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica) and sent through the national invoicing system.
 
 pretix currently does **not** support this process, but we are working on a solution to this.
+In the meantime, it is possible to sell tickets through pretix and send invoices outside of pretix.
+
+More information is available on the website of the European Commission: [eInvoicing in Italy](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Italy).
 
 ## pretixPOS
 

@@ -12,6 +12,12 @@ pretix currently only supports tax rates with at most two decimal places (e.g. 6
 At the time of writing 8 states have tax rates with three decimal places (Arizona, Arkansas, Hawaii, Minnesota, Nevada, New Jersey, New Mexico, New York).
 We are working on allowing precise calculation of these tax rates in the future.
 
+## Invoicing
+
+### E-invoicing
+
+The US currently do not require sending electronic invoices in a structured format.
+
 ## pretixPOS
 
 We are not aware of specific requirements on cash registers in the US.
