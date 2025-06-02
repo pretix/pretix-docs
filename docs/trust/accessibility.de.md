@@ -41,7 +41,53 @@ Hier ist ein Markdown-formatiertes Beispiel, das auf den Anforderungen des deuts
     Die Verwendung erfolgt auf eigene Gefahr.
 
 ```
-TODO
+# Musterinformation zur Barrierefreiheit 
+
+## Allgemeine Beschreibung
+
+Auf dieser Website können Sie Tickets für unsere Veranstaltungen erwerben. Weitere Informationen zu den jeweiligen Veranstaltungen finden Sie in der jeweiligen Beschreibung.
+
+Für die Bezahlung der Ticket stehen Ihnen folgende Zahlungsmöglichkeiten zur Verfügung:
+
+ - zu ergänzen
+
+## Information zum Anbieter
+
+_Max Mustermann, Sesamstraße 1, 12345 Berlin, Telefon: 0815 12345678, E-Mail: mustermann@example.org._
+
+## Gesetzliche Anforderungen
+
+Die gesetzlichen Anforderungen ergeben sich aus dem Barrierefreiheitsstärkungsgesetz (BFSG), insbesondere § 14 im Verbindung mit § 3 Abs. 1 BFSG unter Verweis auf die Verordnung zum Barrierefreiheitsstärkungsgesetz (BFSGV).
+
+## Erfüllung der Barrierefreiheitsanforderungen:
+
+Bei der Erfüllung der Barrierefreiheitsanforderungen dieses Ticketshops wurden folgende Normen und Richtlinien angewandt:
+
+ - Harmonisierte Europäische Norm (EN) 301 549, Version 3.2.1
+ - Web Content Accessibility Guidelines (WCAG), Version 2.2, Stufen A und AA
+
+Unser Angebot basiert auf einer standardisierten Software für Ticketshops. Der Hersteller dieser Software hat diese Software mit der Unterstützung von Fachleuten für digitale Barrierefreiheit optimiert und anhand von Beispielen einem unabhängigen externen Barrierefreiheitstest unterzogen. Der Hersteller führt intern regelmäßig weitere automatisierte oder manuelle Tests durch.
+
+Bei der Konfiguration der Software zur Umsetzung unseres Ticketshops haben wir die Hinweise des Herstellers berücksichtigt, um ein barrierefreies Ergebnis zu erzielen.
+
+Konkret erfüllt der Ticketshop die Anforderungen unter anderem durch folgende Maßnahmen:
+
+ - Der Ticketshop ist klar strukturiert, enthält aussagekräftige und sinnvoll strukturierte Überschriften und Beschriftungen. Links sind gut erkennbar und aussagekräftig beschriftet.
+ - Sie können diesen Ticketshop ohne Verlust von Informationen mit assistiven Technologien, wie z.B. Screenreadern, nutzen.
+ - Sie können den Ticketshop mit einer externen Tastatur nutzen und steuern. Das funktioniert für alle Bereiche und Funktionen. Die Navigation erfolgt in einer sinnvollen Reihenfolge. 
+Wenn Sie interaktive Elemente, wie beispielsweise Links oder Schaltflächen, mit der Tastatur auswählen, heben sich diese visuell deutlich hervor (Fokusmarkierung).
+ - Texte und visuelle Inhalte haben gut erkennbare Kontraste. Die Darstellung (z.B. Schriftgrößen) ist über die Einstellungen im Browser und/oder in Ihrem Betriebssystem anpassbar. Alle Inhalte sind ohne Farbunterscheidung zugänglich und es gibt Textalternativen für Nutzer mit eingeschränktem Sehvermögen.
+ - Unser Ticketshop funktioniert mit unterschiedlichen Ausrichtungen. Sie können Ihren Bildschirm sowohl quer, als auch hochkant ausrichten. Die Darstellung der Bereiche, Inhalte und Funktionen passt sich automatisch an.
+ - Die Benutzung unseres Ticketshops setzt kein Hör- oder Sprechvermögen voraus.
+ - Wenn der Abschluss einer Buchung eine Zeitbegrenzung hat, wird das rechtzeitig angekündigt. Sie können die Begrenzung dann verlängern.
+ - Der Ticketshop wurde so gestaltet, dass er Sie beim Vermeiden von Fehlern und bei der Korrektur von Fehlern unterstützt.
+ - Die Benutzung des Ticketshops funktioniert ohne komplexe, pfadbasierte oder gleichzeitige Bewegungen.
+ - Der Ticketshop enthält keine Licht- oder Blitz-Effekte, die fotosensitive Anfälle auslösen.
+ - Wenn Sie uns Feedback zur Barrierefreiheit unseres Ticketshops geben möchten, kontaktieren Sie uns bitte unter den oben unter “Informationen zum Anbieter” angegebenen Kontaktdaten.
+
+Z## uständige Marktüberwachungsbehörde:
+
+Marktüberwachungsstelle der Länder für die Barrierefreiheit von Produkten und Dienstleistungen (MLBF) in Magdeburg (Sachsen-Anhalt).
 ```
 
 ## Barrierefreiheits-Tests
