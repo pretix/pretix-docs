@@ -97,6 +97,10 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Pretixpos: pretixPOS
+            Licensing: Lizensierung
+            Lifecycle: Lebenszyklus
+            Privacy: Datenschutz
+            Security: Sicherheit
           admonition_translations:
             note: Hinweis
             Note: Hinweis
