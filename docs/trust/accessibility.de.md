@@ -28,6 +28,10 @@ Wir empfehlen, keine Überschriften (``##``) oder HTML-Tags zu verwenden.
  - Achten Sie beim Einbetten des [Widgets](../guides/widget.md) darauf, dass das CSS-Styling auf der einbettenden Website die Barrierefreiheit nicht beeinträchtigt.
 Gestalten Sie den Navigationspfad zum Widget ebenfalls barrierefrei. 
 
+- Verwenden Sie einfache Sprache für Ihre Veranstaltungsbeschreibung, Produktbezeichnungen, etc.
+
+Durch die Vielfältigkeit der von pretix angebotenen Konfigurationsoptionen können wir keine abschließende Liste von Schritten angeben, die eine Barrierefreiheit des Shops unter allen Umständen garantieren.
+
 ## Information zur Barrierefreiheit
 
 Abhängig von den für Sie geltenden Gesetzen müssen Sie möglicherweise Informationen über die Barrierefreiheit Ihres Ticketshops veröffentlichen.
@@ -83,12 +87,15 @@ Wenn Sie interaktive Elemente, wie beispielsweise Links oder Schaltflächen, mit
  - Der Ticketshop wurde so gestaltet, dass er Sie beim Vermeiden von Fehlern und bei der Korrektur von Fehlern unterstützt.
  - Die Benutzung des Ticketshops funktioniert ohne komplexe, pfadbasierte oder gleichzeitige Bewegungen.
  - Der Ticketshop enthält keine Licht- oder Blitz-Effekte, die fotosensitive Anfälle auslösen.
- - Wenn Sie uns Feedback zur Barrierefreiheit unseres Ticketshops geben möchten, kontaktieren Sie uns bitte unter den oben unter "Informationen zum Anbieter" angegebenen Kontaktdaten.
+
+Wenn Sie uns Feedback zur Barrierefreiheit unseres Ticketshops geben möchten, kontaktieren Sie uns bitte unter den oben unter "Informationen zum Anbieter" angegebenen Kontaktdaten.
 
 ## Zuständige Marktüberwachungsbehörde:
 
 Marktüberwachungsstelle der Länder für die Barrierefreiheit von Produkten und Dienstleistungen (MLBF) in Magdeburg (Sachsen-Anhalt).
 ```
+
+**Achtung für öffentliche Stellen:** Das BFSG gilt zusätzlich zur bereits länger gültigen [BITV](https://de.wikipedia.org/wiki/Barrierefreie-Informationstechnik-Verordnung). Die BITV erfordert eine *Erklärung der Barrierefreiheit*, deren Umfang über die von BFSG geforderten Informationen hinausgeht. Die EU-Kommission hat eine [offizielle Vorlage](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32018D1523) zum Aufbau einer solchen Erklärung herausgegeben.
 
 ## Barrierefreiheits-Tests
 
