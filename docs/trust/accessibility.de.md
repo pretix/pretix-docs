@@ -83,9 +83,9 @@ Wenn Sie interaktive Elemente, wie beispielsweise Links oder Schaltflächen, mit
  - Der Ticketshop wurde so gestaltet, dass er Sie beim Vermeiden von Fehlern und bei der Korrektur von Fehlern unterstützt.
  - Die Benutzung des Ticketshops funktioniert ohne komplexe, pfadbasierte oder gleichzeitige Bewegungen.
  - Der Ticketshop enthält keine Licht- oder Blitz-Effekte, die fotosensitive Anfälle auslösen.
- - Wenn Sie uns Feedback zur Barrierefreiheit unseres Ticketshops geben möchten, kontaktieren Sie uns bitte unter den oben unter “Informationen zum Anbieter” angegebenen Kontaktdaten.
+ - Wenn Sie uns Feedback zur Barrierefreiheit unseres Ticketshops geben möchten, kontaktieren Sie uns bitte unter den oben unter "Informationen zum Anbieter" angegebenen Kontaktdaten.
 
-Z## uständige Marktüberwachungsbehörde:
+## Zuständige Marktüberwachungsbehörde:
 
 Marktüberwachungsstelle der Länder für die Barrierefreiheit von Produkten und Dienstleistungen (MLBF) in Magdeburg (Sachsen-Anhalt).
 ```
