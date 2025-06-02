@@ -11,7 +11,8 @@ You can configure all Portuguese VAT rates in pretix using [tax rules](../../gui
 
 ### E-invoicing
 
-Starting in 2026, all PDF invoices in Portugal [must be signed](https://diariodarepublica.pt/dr/en/detail/decree-law/28-2019-119622094) using a [qualified electronic signature](https://en.wikipedia.org/wiki/Qualified_electronic_signature).
+All invoices in Portugal must be created by [certified invoicing software](https://vat-one-stop-shop.ec.europa.eu/national-vat-rules/portugal-vat-rules_en).
+Starting in 2026, they must also be [signed](https://diariodarepublica.pt/dr/en/detail/decree-law/28-2019-119622094) using a [qualified electronic signature](https://en.wikipedia.org/wiki/Qualified_electronic_signature).
 pretix does not support this.
 
 More information is available on the website of the European Commission: [eInvoicing in Portugal](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Portugal).

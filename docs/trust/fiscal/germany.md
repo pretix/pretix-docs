@@ -75,11 +75,11 @@ pretixPOS can be used in compliance with German laws on cash registers ([§ 146a
 Use of a cash register is not mandatory in Germany.
 If you use a cash register, take the following steps to ensure that you are complying with legal requirements:
 
-- Use a so-called [technische Sicherheitseinrichtung](../../guides/pretixPOS/tse.md) (TSE), a specialized device that ensures that no modification of recorded data can go unnoticed.
+- Use a so-called [technische Sicherheitseinrichtung](../../guides/pretixpos/tse.md) (TSE), a specialized device that ensures that no modification of recorded data can go unnoticed.
   pretixPOS is compatible with TSEs from multiple vendors.
 
 - Register all cash registers with the tax authorities.
-  pretix includes [utilities to simplify registration](../../guides/pretixPOS/register.md).
+  pretix includes [utilities to simplify registration](../../guides/pretixpos/register.md).
 
 - Issue receipts with all information required by [§ 6 KassenSichV](https://www.gesetze-im-internet.de/kassensichv/BJNR351500017.html) and [§ 14 (4) UStG](https://www.gesetze-im-internet.de/ustg_1980/__14.html).
   pretixPOS allows issuing compliant receipts using a receipt printer or in digital form.
