@@ -1,10 +1,29 @@
 # Writing for MkDocs
 
-This article describes the more technical side of technical writing for pretix. 
+This article describes the more technical side of writing documentation for pretix. 
 It explains how to structure certain types of information, and what syntax to use to do it properly. 
 
-!!! Warning 
-    As of now, the text below has been machine-translated, so take it with a grain of salt. 
+## Screenshots 
+
+Take screenshots of the pretix backend in a resolution of 1200 × 800 pixels. 
+Resize your browser window or use the "Responsive Design View" in Firefox by pressing Ctrl + Shift + M. 
+Log in as "Jordan Doe". 
+Manage the "Tutorial Ltd." organizer account. 
+Edit the "Tutorial Conference" event.
+If the page in question is specific to event series, edit "Tutorial series" instead. 
+
+If you do not have access to these accounts or events, edit your screenshots with the top and sidebar of already existing screenshots. 
+
+If you are adding the screenshot to help the user with navigating the website, that is, you just want them to know they are on the right page, do **not** use highlighting. 
+If you want to tell the user to interact with one specific element on the page, highlight that element. 
+Use the color OrangeRed #FF4500 (255, 69, 0) for highlighting. 
+Use the Fontawesome-3 arrow symbols and boxes with a width of [0.5em](https://en.wikipedia.org/wiki/Em_(typography)).
+Take a look at the screenshots in the [tutorial](../tutorial/getting-started.md) to get an idea what it should look like. 
+
+Save screenshots in one of the directories in `/pretix-docs/site/assets/screens/`. 
+If there is no directory corresponding to your subject, create a new one. 
+Choose a simple and descriptive name for the screenshot. 
+Use a hyphen-minus `-` to separate two words in the filename. 
 
 ## Image Descriptions
 
@@ -19,8 +38,6 @@ Example:
 ```
 ![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot")
 ```
-
-For creating screenshots, see [this guide](https://ramiio.atlassian.net/wiki/spaces/DOCS/pages/1149599746).
 
 ## Buttons
 
@@ -110,7 +127,7 @@ Example:
 
 If a note or warning box is used in multiple articles, place it in the `include` directory. 
 If it is used in only one article, you do not have to do that. 
-Just write the warning right into the article. 
+In that case, include the warning in the article. 
 
 To include a reusable text block, use the following formatting:
 
@@ -129,7 +146,7 @@ These icons can be found in the repo at `/overrides/.icons/`.
 In order to insert an icon into the text, use `:fa3-iconname:`, where `iconname` is the filename of the icon minus the file type extension. 
 For example, use `:fa3-transgender-alt:` for the icon :fa3-transgender-alt: and use `:i-seat:` for :i-seat:. 
 
-## Links and Cross-References
+## Links and cross references
 
 Do **not** insert external or internal links without context. 
 Make them as informative as possible in their descriptive text (i.e. what is visible to readers in the text and looks like a hyperlink). 
@@ -143,7 +160,7 @@ Even without a screen reader, it helpful for the reader if they have a general i
 Internal and external links are preceded by different symbols in the documentation visible to readers to make it easier to distinguish between them. 
 You do not have to specify this because it works automatically. 
 The formatting for both types of links is "link text in square brackets, URL/path in round brackets". 
-Insert cross-references to a subheading within another (or the same) article work as follows: 
+Insert cross references to a subheading within another (or the same) article work as follows: 
 
 ```
 [monitoring incoming payments](../topics/payment/bank-transfer.md#monitoring-incoming-payments) 
