@@ -52,7 +52,7 @@ The more familiar you are with the documentation, the better prepared you are fo
 In addition to the webpages themselves, also take a look at the source code. 
 Try to make your contribution look like the pages that are already there. 
 
-For an example of a comprehensive article that represents a good implementation of our guides template, take a look at the guide on [gift cards](../gift-cards.md). 
+For an example of a comprehensive article that represents a good implementation of our guides template, take a look at the guide on [gift cards](../guides/gift-cards.md). 
 If you are writing a guide, try to structure your guide like the one on gift cards. 
 You can also use the file `template-guides.md` in the root directory of this repository. 
 
