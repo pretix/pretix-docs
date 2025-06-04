@@ -4,6 +4,11 @@ This section of the documentation explains how the documentation itself works, h
 This is directed at both coworkers, and at external contributors. 
 It also serves as a reminder for the people writing the docs themselves how we do certain things, and why we decided to do them that way. 
 
+## Code of Conduct 
+
+Before you contribute to pretix itself or its documentation, read our [code of conduct](https://docs.pretix.eu/dev/development/contribution/codeofconduct.html) carefully. 
+Adhere to this code of conduct while making contributions. 
+
 ## How to write documentation for pretix 
 
 When writing documentation for pretix, do your best to stick to the [maxims of conversation](https://en.wikipedia.org/wiki/Cooperative_principle#Grice's_maxims) as postulated by linguist Paul Grice. 
@@ -77,6 +82,8 @@ Avoid unnecessary fluff such as:
  - "just" 
  - "simply" 
 
+The linter [Vale](https://github.com/mschrumpf/vale-pretix) will help you avoid some of these expressions, but it will not catch all of them. 
+
 ### Do not overuse notes and warnings 
 
 Before adding an admonition (a note or a warning), ask yourself if the information is necessary for following the instructions in the main text. 
@@ -116,6 +123,7 @@ Try to make your contribution look like the pages that are already there.
 
 For an example of a comprehensive article that represents a good implementation of our guides template, take a look at the guide on [gift cards](../gift-cards.md). 
 If you are writing a guide, try to structure your guide like the one on gift cards. 
+You can also use the file `template-guides.md` in the root directory of this repository. 
 
 ### Contact the team
 
