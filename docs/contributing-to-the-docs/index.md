@@ -1,4 +1,4 @@
-# Meta documentation 
+# Contributing to the docs 
 
 This section of the documentation explains how the documentation itself works, how it was written, and how to contribute to it. 
 This is directed at both coworkers, and at external contributors. 
@@ -9,7 +9,7 @@ It also serves as a reminder for the people writing the docs themselves how we d
 Before you contribute to pretix itself or its documentation, read our [code of conduct](https://docs.pretix.eu/dev/development/contribution/codeofconduct.html) carefully. 
 Adhere to this code of conduct while making contributions. 
 
-## How to write documentation for pretix 
+## The four maxims of documentation
 
 When writing documentation for pretix, do your best to stick to the [maxims of conversation](https://en.wikipedia.org/wiki/Cooperative_principle#Grice's_maxims) as postulated by linguist Paul Grice. 
 These maxims, when applied to the task of documenting pretix, entail the following: 
