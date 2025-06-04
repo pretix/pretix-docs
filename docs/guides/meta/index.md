@@ -172,3 +172,11 @@ That way, they do not have to search for the missing information themselves and 
 
 Strip any and all unnecessary data (such as tracking) from a link before inserting it. 
 Any links to external websites will have to be checked frequently to make sure that they still point to the desired website. 
+
+### Use Vale to improve your text 
+
+The linter Vale can help improve your writing. 
+Think of it as an automated review relying on grammar and style rules implemented with regular expressions. 
+Take a look at the [vale-pretix](https://github.com/mschrumpf/vale-pretix) repository and follow the instructions there to use Vale on your own writing. 
+The vale-pretix repo contains custom vocabulary and rules for the pretix documentation. 
+You can also contribute to the improvement of these rules by following the instructions in the repo readme. 
