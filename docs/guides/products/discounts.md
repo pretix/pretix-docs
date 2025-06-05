@@ -11,7 +11,7 @@ c
 ## Prerequisites 
 
 Most of the methods described here are handled on the event level, so you have to create an event first. 
-The article assumes some general knowledge on how to create and edit products, so it makes sense to take a look at the guide on [products](index.md) first. 
+This article assumes some general knowledge on how to create and edit products, so it makes sense to take a look at the guide on [products](index.md) first. 
 
 ## How To 
 
@@ -122,7 +122,7 @@ You can apply this, for example, to any of the following use cases:
  - different levels of merch packages with larger packages offered at reduced rates 
  - different offers such as in-person workshops, online content, and a networking event, which are offered at a cheaper price if purchased in combination 
 
-There are two methods to implement this using pretix: 
+There are two methods of implementing this in pretix: 
 One method uses [combination products](discounts.md#option-a-combination-products). 
 It has the advantage of keeping your products and possible orders fairly straightforward. 
 However, this method is only feasible if there are no more than three or four basic products. 
@@ -269,7 +269,7 @@ For a discount such as “buy 5, get one free", set the "Minimum number of match
 
 #### Fixed group packages
 
-You can use bundles to sell group tickets with fixed sizes, for example a table of eight at your gala dinner. 
+You can use bundles to sell group tickets for fixed numbers, for example a table of eight at your gala dinner. 
 
 First, create a basic admission ticket for a single person. 
 Then, create a non-admission product with a price lower than the full price for eight individual tickets. 

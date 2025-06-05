@@ -2,7 +2,7 @@
 
 A product is anything sold via pretix: tickets, gift cards, conference t-shirts and so on. 
 pretix offers you almost unlimited possibilities for configuring and structuring products. 
-This article guides you through the basic process of creating a product and explains several practical applications of some of the more advanced features of pretix. 
+This article guides you through the basic process of creating a product and explains several practical applications for some of the more advanced features of pretix. 
 
 ## Prerequisites
 
@@ -26,11 +26,11 @@ Your shop page will display products grouped by categories which can help custom
 Sorting products into categories can help you keep track of them in the backend. 
 
 Categories also separate normal products, which can be purchased directly, from additional products, which are only offered as add-ons to normal products. 
-If you want to sell not only admission tickets, but also extras such as merchandise, you have create a category for add-on products. 
+If you want to sell not only admission tickets, but also extras such as merchandise, you have to create a category for add-on products. 
 You also need an extra category if you are planning to use the cross-selling feature. 
 
-In order to edit categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
-This page shows the list of all product categories. 
+In order to edit or create categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
+This page lists all previously created product categories. 
 
 Click the :btn-icon:fa3-plus: Create a new category: button and give the new category a name. 
 Choose the category type depending on the type of products in this category: normal, add-on, cross-selling, or normal + cross-selling. 
@@ -38,7 +38,7 @@ Choose the category type depending on the type of products in this category: nor
 Normal products are standalone products that can be purchased directly. 
 Add-on products are products that are only offered as add-ons to normal products. 
 Cross-selling products are products that are only offered in the cross-selling step as a customer is purchasing other products. 
-Finally, products in the "normal + cross-selling" category are both offered as standalone products and in the cross-selling step. 
+Finally, products of the "normal + cross-selling" type are offered as both standalone products and in the cross-selling step. 
 The "Cross-selling condition" setting below determines how products in the "cross-selling" and "normal + cross-selling" categories are offered in your shop. 
 
 Click the :btn:Save: button at the bottom of the page. 
@@ -51,7 +51,7 @@ You can also edit an already existing category and change its name, description,
 ![Page titled 'Products', showing a list of products containing two entries and a button for creating a new product.](../../assets/screens/products/products.png "Products screenshot") 
 
 If you want to create or edit products, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
-This page shows the list of all products. 
+This page shows the list of all products of this event. 
 Click the :btn-icon:fa3-plus: Create a new product: button. 
 Choose a name, a description, a default price and a sales tax and click the :btn:Save: button. 
 
