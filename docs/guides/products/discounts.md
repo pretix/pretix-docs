@@ -5,7 +5,7 @@ This article explains several different types of discounts as well as common use
  - [different price levels](discounts.md#different-price-levels) 
  - [early bird prices](discounts.md#early-bird-tickets)
  - [discount packages](discounts.md#discount-packages)
- - [group discounts](discounts.md#group-discounts). 
+ - [group discounts](discounts.md#group-discounts-and-discounts-for-large-orders). 
 
 ## Prerequisites 
 
@@ -16,7 +16,7 @@ This article assumes some general knowledge on how to create and edit products, 
 
 pretix allows you to create as many different products with different price levels as you need. 
 This approach is explained under the section [different price levels](discounts.md#different-price-levels). 
-The sections after that will guide you through some more advanced methods for offering discounts based on certain conditions, such as [early bird prices](discounts.md#early-bird-tickets), [discount packages](discounts.md#discount-packages), and [group discounts](discounts.md#group-discounts). 
+The sections after that will guide you through some more advanced methods for offering discounts based on certain conditions, such as [early bird prices](discounts.md#early-bird-tickets), [discount packages](discounts.md#discount-packages), and [group discounts](discounts.md#group-discounts-and-discounts-for-large-orders). 
 
 ### Different price levels
 
@@ -71,7 +71,10 @@ Check the boxes labeled "change" next to "Available from" and "Available until" 
 If you want to offer early bird tickets based on the number of tickets already sold for a singular event, create one quota for each price level. 
 For all price tiers except the last one, enter a limited number in the "Total capacity" field and check the box next to "Close this quota permanently once it is sold out". 
 This means that once one price tier is sold out, the shop will **not** move back to a previous price tier even if orders are canceled and spots in the quota open up. 
-Whether you also need to limit the "Total capacity" of the last quota and enable the "Close this quota permanently once it is sold out" option for the last quota depends on your individual use case. 
+You do **not** need to enable the "Close this quota permanently once it is sold out" option for the last quota for this approach. 
+
+If you are planning to sell only a limited amount of tickets, for instance due to space constraints at your venue, limit the "Total capacity" of the last quota. 
+The sum of the "Total capacity" of all quotas combined should not exceed the total number of tickets you are planning to sell. 
 
 Add only the first product to the first quota. 
 Add the first **and** second product to the second quota and set the "Total capacity" so that it includes the capacity of the first quota plus the amount of the second ticket that you want to sell. 
@@ -250,9 +253,10 @@ At least one of the conditions below (OR)
     You can also set up the "Ticket for all three days" as described in the section [Option A: Combination products](discounts.md#option-a-combination-products). 
     If you decide to do so, also include this ticket in each condition starting with "Product is one of". 
 
-### Group discounts 
+### Group discounts and discounts for large orders
 
 pretix gives you several methods for offering discounts to whole groups of people attending your event. 
+These methods work for any large orders regardless of which products are purchased. 
 You can either set up a rule for discounts that is applied automatically if a purchase meets certain conditions; offer fixed group packages at reduced prices; or offer cheaper tickets tied to a minimum order amount. 
 The following subsections will explain each method. 
 
@@ -262,7 +266,7 @@ You can use pretix to automatically grant a discount on an order if a certain co
 
 To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
 Choose an "Internal name" for the discount. 
-For a percentage discount such as "20 percent off if you buy 5 tickets", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 20.00. 
+For a percentage discount such as "25 percent off if you buy 5 tickets", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 25.00. 
 
 For a discount such as “buy 5, get one free", set the "Minimum number of matching products" to 5, "Percentual discount on matching products" to 100.00, and "Apply discount only to this number of matching products" to 1. 
 
@@ -270,7 +274,7 @@ For a discount such as “buy 5, get one free", set the "Minimum number of match
 
 You can use bundles to sell group tickets for fixed numbers, for example a table of eight at your gala dinner. 
 
-First, create a basic admission ticket for a single person. 
+First, create a basic admission ticket for a single person and a corresponding quota. 
 Then, create a non-admission product with a price lower than the full price for eight individual tickets. 
 Open the :btn:Bundled products: tab of that product and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
 Choose your basic admission ticket as the "Bundled product", set "Quantity" to 8 and click the :btn:Save: button. 
@@ -286,5 +290,10 @@ If you need each individual attendee's personal data, navigate to :navpath:Your 
 
 You can use the minimum order amount feature to promote discounted group tickets. 
 In order to do so, create a single-person ticket at a reduced price. 
-Open the :btn:Availability: tab and set the "Minimum amount per order" to the minimal group size for which you want to grant the discount. 
-This way, your ticket can be bought an arbitrary number of times – but no less than the given minimal amount per order.
+Use the "Minimum amount per order" option to define the minimal group size for which you want to grant the discount. 
+
+For illustrative purposes, assume that your basic admission ticket is priced at €20.00. 
+Clone that ticket, give it a name such as "Reduced ticket for groups of five or more", and set the price to €15.00. 
+Save the ticket and edit it. 
+Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
+This way, customers can purchase 5 or more of the tickets at the discounted price. 
