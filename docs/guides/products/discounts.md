@@ -1,6 +1,6 @@
 # Discounts 
 
-pretix has several different ways methods offering your customers discounts on their purchase under certain conditions. 
+pretix has several different methods for offering your customers discounts on their purchase under certain conditions. 
 This article explains several different types of discounts as well as common use cases: 
  - [different price levels](discounts.md#different-price-levels) 
  - [early bird prices](discounts.md#early-bird-tickets)
