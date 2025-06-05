@@ -4,7 +4,7 @@ This article explains how to set up the development environment for working on t
 Since this documentation uses the docs-as-code approach, the setup is similar to that of other software development projects. 
 
 !!! Note 
-    These instructions were tested using Arch Linux and Bash. 
+    We tested these instructions with using Arch Linux and Bash. 
     If you are using a different operating system and software, adapt the commands given here to your own use case. 
 
 ## Prerequisites 
@@ -116,7 +116,7 @@ If there are warnings, then the output ends with a line such as the following:
 Aborted with 1 warnings in strict mode!
 ``` 
 
-If no issues can be detected, then the output ends with a line such as the following: 
+If MkDocs does **not** detect any issues, then the output ends with a line such as the following: 
 
 ``` 
 INFO    -  Documentation built in 4.03 seconds
