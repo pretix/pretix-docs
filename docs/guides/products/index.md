@@ -38,8 +38,11 @@ Click the :btn-icon:fa3-plus: Create a new category: button and give the new cat
 Choose the category type depending on the type of products in this category: normal, add-on, cross-selling, or normal + cross-selling. 
 
 Normal products are standalone products that can be purchased directly. 
-Add-on products are products that **cannot** be purchased directly, but only as add-ons when purchasing other products. 
-Cross-selling products are products that are only offered in the cross-selling step after a customer has added other products to their cart. 
+Add-on products are products that **cannot** be purchased directly, but only as add-ons to other products during checkout. 
+The types and numbers of products in the cart decides what add-on products the customer can select. 
+
+Cross-selling products are also not offered in the shop, but during checkout. 
+Unlike add-on products, the contents of the cart to not decide what cross-selling products the customer can buy. 
 Finally, products of the "normal + cross-selling" type are offered as both standalone products and in the cross-selling step. 
 The "Cross-selling condition" setting below determines how products in the "cross-selling" and "normal + cross-selling" categories are offered in your shop. 
 
