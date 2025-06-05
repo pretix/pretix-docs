@@ -12,8 +12,8 @@ Products are configured on the event level, so you have to create an event first
 
 This section guides you through the basic process of product creation. 
 This involves first creating categories, then the products themselves, and finally quotas. 
-You cannot create add-on products or products for cross-selling without choosing a category for them. 
-You cannot create a quota without adding at least one product to it. 
+You **cannot** create add-on products or products for cross-selling without choosing a category for them. 
+You **cannot** create a quota without adding at least one product to it. 
 Thus, this guide will explain those steps in that order.
 
 ### Creating and editing categories
@@ -21,13 +21,15 @@ Thus, this guide will explain those steps in that order.
 ![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../../assets/screens/products/categories.png "Product categories screenshot") 
 
 Categories do several things. 
-They help you group products into sensible categories both in the backend and in your shop. 
+They help you group products sensibly, both in the backend and in your shop. 
 Your shop page will display products grouped by categories which can help customers find the item they are looking for more easily.  
 Sorting products into categories can help you keep track of them in the backend. 
 
 Categories also separate normal products, which can be purchased directly, from additional products, which are only offered as add-ons to normal products. 
 If you want to sell not only admission tickets, but also extras such as merchandise, you have to create a category for add-on products. 
 You also need an extra category if you are planning to use the cross-selling feature. 
+
+If you only sell a limited number of different products and you are not using the add-ons or cross-selling feature, then you do not need to edit or create any categories. 
 
 In order to edit or create categories, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
 This page lists all previously created product categories. 
@@ -36,8 +38,8 @@ Click the :btn-icon:fa3-plus: Create a new category: button and give the new cat
 Choose the category type depending on the type of products in this category: normal, add-on, cross-selling, or normal + cross-selling. 
 
 Normal products are standalone products that can be purchased directly. 
-Add-on products are products that are only offered as add-ons to normal products. 
-Cross-selling products are products that are only offered in the cross-selling step as a customer is purchasing other products. 
+Add-on products are products that **cannot** be purchased directly, but only as add-ons when purchasing other products. 
+Cross-selling products are products that are only offered in the cross-selling step after a customer has added other products to their cart. 
 Finally, products of the "normal + cross-selling" type are offered as both standalone products and in the cross-selling step. 
 The "Cross-selling condition" setting below determines how products in the "cross-selling" and "normal + cross-selling" categories are offered in your shop. 
 
@@ -53,7 +55,7 @@ You can also edit an already existing category and change its name, description,
 If you want to create or edit products, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
 This page shows the list of all products of this event. 
 Click the :btn-icon:fa3-plus: Create a new product: button. 
-Choose a name, a description, a default price and a sales tax and click the :btn:Save: button. 
+Choose a name, a description, a default price and a [sales tax](../taxes.md) and click the :btn:Save: button. 
 
 You can also edit an already existing product by clicking its name or the :btn-icon:fa3-edit:: edit button next to it in the list. 
 
