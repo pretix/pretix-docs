@@ -17,15 +17,15 @@ These maxims, when applied to the task of documenting pretix, entail the followi
  1. Maxim of quantity: be informative. 
 
     Give complete instructions. 
-    Do not skip any necessary steps. 
+    Do **not** skip any necessary steps. 
     For instance, if it is necessary to save the settings before they can take effect, then clicking the "Save" button is an essential step. 
-    Omit any information that is not needed for the task at hand. 
+    Omit any information that is **not** needed for the task at hand. 
 
  2. Maxim of quality: be truthful. 
 
     Check and double-check that your instructions actually work when using pretix. 
-    Do not include any factually inaccurate information. 
-    Do not include any uncertain information. 
+    Do **not** include any factually inaccurate information. 
+    Do **not** include any uncertain information. 
     Missing information is still better than wrong information. 
 
  3. Maxim of relation: be relevant. 
