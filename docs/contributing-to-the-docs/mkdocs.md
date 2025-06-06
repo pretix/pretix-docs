@@ -12,7 +12,7 @@ Manage the "Tutorial Ltd." organizer account.
 Edit the "Tutorial Conference" event.
 If the page in question is specific to event series, edit "Tutorial series" instead. 
 
-If you do not have access to these accounts or events, edit your screenshots with the top and sidebar of already existing screenshots. 
+If you do **not** have access to these accounts or events, edit your screenshots with the top and sidebar of already existing screenshots. 
 
 If you are adding the screenshot to help the user with navigating the website, that is, you just want them to know they are on the right page, do **not** use highlighting. 
 If you want to tell the user to interact with one specific element on the page, highlight that element. 
