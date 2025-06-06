@@ -54,7 +54,7 @@ Clone the Git repository:
 $ git clone git@github.com:pretix/pretix-docs.git
 ``` 
 
-### Prepare a Python environment for MkDocs 
+### Preparing a Python environment for MkDocs 
 
 Set up a Python environment for MkDocs using the following commands. 
 Navigate to the directory to which you cloned the Git repository. 
