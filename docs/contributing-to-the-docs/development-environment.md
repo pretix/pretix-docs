@@ -10,7 +10,7 @@ Since this documentation uses the docs-as-code approach, the setup is similar to
 ## Prerequisites 
 
 In order to contribute to this documentation, you need an SSH key and a GitHub account. 
-You need to have the following packages installed: 
+You also need to have the following packages installed: 
 
  - Git 
  - OpenSSH
@@ -30,7 +30,7 @@ Setting up the development environment for the pretix documentation involves thr
 ### Environment variable 
 
 Set your `WORKON_HOME` environment variable to `~/.virtualenvs`. 
-There are several ways to do this. 
+There is more than one way to do this. 
 For instance, if you want to do this using Linux, Bash and nano, run the following command: 
 
 ```
