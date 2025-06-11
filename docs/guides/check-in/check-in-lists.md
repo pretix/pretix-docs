@@ -12,7 +12,7 @@ If you are hosting subevents with more exclusive attendance, then each of those 
 
 We recommend using the pretixSCAN app running on dedicated devices for your check-in. 
 It is by far the most convenient method. 
-You can also do a manual check-in through the the backend, or you can print your lists and check people in with a pen and paper. 
+You can also do a manual check-in through the backend, or you can print your lists and check people in with a pen and paper. 
 
 ## Prerequisites 
 
@@ -30,12 +30,12 @@ This section explains how you can use check-in lists to manage the check-in at y
 
 The most convenient and powerful method for checking in customers is using the pretixSCAN app. 
 Acquire a device with a scanner or camera, install pretixSCAN on it, connect it to your organizer account, and place it at the entrance to your event. 
-The specifics of using pretixSCAN will be covered in a dedicated article. 
+We will cover the specifics of using pretixSCAN in a dedicated article. 
 
 ### Paper check-in 
 
 !!! Note 
-    This method is very slow and only feasible if you are dealing with a low volume of customers. 
+    This method is slow and only feasible if you are dealing with a low volume of customers. 
     We recommend using pretixSCAN instead. 
 
 If you want to print a check-in list, navigate to :navpath:Your event: → :fa3-check-square-o: Check-in → Check-in lists:. 
@@ -51,13 +51,13 @@ If you want to use the export for manual check-in, then it makes sense to select
 
 Under "Include questions", select any questions that are relevant for check-in. 
 Once you are satisfied with your settings, click the :btn-icon:fa3-download: Start export: button. 
-Your browser will now download the list in PDF format or open it in a new tab. 
+Your browser will now download a PDF of the list or open it in a new tab. 
 The list includes the following columns: 
 
  - a column containing a double exclamation mark ‼ for products that require special attention. 
  This cell is empty for products that do not have the "Requires special attention" setting activated. 
  - a box for checking off tickets. 
- This box will be checked for tickets that were already checked in before the list was exported. 
+ This box will be checked for tickets that were already checked in before you exported the list. 
  - "Paid" contains a check for orders that have been paid. 
  - "Order" contains the order code. 
  - "Name" contains the attendee's name. 
@@ -65,13 +65,13 @@ The list includes the following columns:
  - optional columns for questions you chose to include in the export 
 
 Print the exported list, place it at your check-in, and check entries off the list manually as visitors appear. 
-This method is slow and only feasible if you are dealing with a relatively low volume of customers. 
+This method is slow and only feasible if you are dealing with a low volume of customers. 
 We recommend using pretixSCAN instead. 
 
 ### Manual check-in via backend 
 
 !!! Note 
-    This method is slow and only feasible if you are dealing with a relatively low volume of customers. 
+    This method is slow and only feasible if you are dealing with a low volume of customers. 
     We recommend using pretixSCAN instead. 
 
 If you want to perform manual checks using the pretix backend, place a computer at the check-in. 
