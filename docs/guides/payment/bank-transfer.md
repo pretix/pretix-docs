@@ -19,7 +19,7 @@ It is also going to tell you how to notify pretix of incoming payments.
 As setting up payment providers is handled on the event level, you need to create an event first. 
 Make sure you have access to the bank account that you want to use. 
 
-## How To 
+## How To
 
 Successfully using bank transfer as a payment provider in pretix requires the following steps: 
 
@@ -38,17 +38,19 @@ Switch to the :btn:Payment providers: tab.
 
 The bank transfer plugin is displayed at the top of the page. 
 It should be enabled by default. 
-If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn:Disable: button. 
+If it is enabled, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 
 ![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-Navigate to :navpath:Your Event → Settings → Payment:. 
+You can jump straight to the bank transfer settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > Bank transfer:. 
+
+Alternatively, navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
-Click on the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
+Click the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer.  
 
 The first thing you need to do on this page is choose the "Bank account type". 
@@ -66,7 +68,7 @@ For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) t
 Alternatively, you can notify pretix of incoming payments by regularly importing digital bank statements. 
 This section is going to guide you through both options. 
 
-#### Option A: automatic transaction import using GoCardless 
+#### Option A: automatic transaction import using GoCardless
 
 <!-- md:hosted -->
 
@@ -102,7 +104,7 @@ If the bank account is also used for transactions unrelated to sales via pretix,
 pretix allows you to resolve these transactions manually. 
 The section below explains [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
-#### Option B: importing bank data 
+#### Option B: importing bank data
 
 Acquire an export of your bank account's transaction data. 
 The export has to be a file in the CSV or MT940 file format. 
@@ -148,7 +150,7 @@ You can intervene and make manual corrections here on this screen.
 
 Refer to the section below for a more detailed explanation on [how to handle unresolved transactions manually](bank-transfer.md#handling-unresolved-transactions). 
 
-### Approving transactions manually 
+### Approving transactions manually
 
 
 ![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
@@ -180,7 +182,7 @@ Confirm by clicking the :btn:Create payment: button.
 This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying ":fa3-check: Paid". 
 Repeat this process for every order that shows up in the list on the "orders" page. 
 
-### Handling unresolved transactions 
+### Handling unresolved transactions
 
 You can handle unresolved transactions either on the organizer level or on the event level. 
 
