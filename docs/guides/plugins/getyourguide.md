@@ -73,13 +73,6 @@ Of course, in addition to creating products, you will also need to add them to a
 The process for doing this is the very same as for any regular event or event series.
 If you want to learn more on how to handle taxes in pretix, refer to our guide on [products](../products.md). 
 
-!!! Note 
-    When selling individual tickets through GetYourGuide, you will not be able to offer differing quantities for individual ticket categories.
-    GetYourGuide will always default to the smallest relevant quota, except if that quota is exhausted and another one is available. 
-
-For this reason, we recommend placing all GetYourGuide-eligible products into the same quota. 
-Should you however opt to create multiple quotas which create an imbalance, pretix will report only the available number of tickets for the lowest relevant quota.
-
 ## Connecting your event to GetYourGuide
 
 Once you have set up your event and products and performed all necessary configuration, you may want to use the Analyzer feature of the GetYourGuide plugin. 
