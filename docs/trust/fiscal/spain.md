@@ -15,7 +15,7 @@ Spain is planning to introduce mandatory electronic invoicing for business-to-bu
 Additionally, digital signatures of invoices are already mandatory.
 pretix does **not** support this, but it is possible to sell tickets through pretix and issue invoices outside of pretix.
 
-More information is available on the [website of the Spanish Government](https://www.facturae.gob.es/) as well as the website of the European Commission: [eInvoicing in Spain](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Spain).
+More information is available on the [website of the Spanish Ministry of Digital Transformation](https://www.facturae.gob.es/) as well as the website of the European Commission: [eInvoicing in Spain](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Spain).
 
 ## pretixPOS
 
