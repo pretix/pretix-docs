@@ -102,6 +102,10 @@ plugins:
             Trust: Trust und Compliance
             Self hosting: Self-Hosting
             Fiscal: Steuerrecht
+            Licensing: Lizensierung
+            Lifecycle: Lebenszyklus
+            Privacy: Datenschutz
+            Security: Sicherheit
           admonition_translations:
             note: Hinweis
             Note: Hinweis
