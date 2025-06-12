@@ -5,11 +5,11 @@ pretix takes care of payment via a wide selection of payment providers.
 There are two types of payment providers: 
 
  - methods that are handled entirely within pretix, such as bank transfers and gift cards 
- - integrations with external services such as Stripe and PayPal 
+ - integrations with external services such as Mollie, PayPal or Stripe 
 
 You have to enable and set up at least one payment provider if you want to receive payments from your customers via pretix. 
-This article will show you how to do that. 
-It will also tell you how to take some optional steps such as setting up additional fees or deadlines. 
+This article shows you how to do that. 
+It also tells you how to take some optional steps such as setting up additional fees or deadlines. 
 
 ## Prerequisites
 
@@ -30,16 +30,16 @@ Setting up payment providers in pretix involves the following steps:
  6. Repeat steps 1 through 5 for each payment provider you want to use
  7. Set [deadlines](index.md#deadlines) and advanced settings
 
-The following sections will guide you through those steps in detail. 
+The following sections guide you through those steps in detail. 
 
 ### Plugins for Payment Providers 
 
 pretix allows handling payment via more than three dozen payment providers. 
 There is a plugin for each one of them. 
 You have to enable the plugins for every payment provider that you want to use for your event. 
-This section is going to tell you how to do that. 
+This section tells you how to do that. 
 
-![Top recommendations for available payment provider plugins. The Top recommendations are bank transfer, PayPal and Stripe. All of them have a green 'active' tag and a 'disable' button next to them.](../../assets/screens/payment-providers/plugins-top.png "Plugins Payment providers top recommendations")
+![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
 Navigate to :navpath:Your Event → Settings → Plugins:. 
 The :btn:payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, PayPal and Stripe at the top of the page. 
@@ -56,7 +56,7 @@ Disable any active plugins that you do not want to use for your event.
 
 Enabling a plugin does not automatically make the payment method available in your shop. 
 You also need to provide some data for each payment provider you want to use on the settings page. 
-This section is going to tell you how to do that. 
+This section tells you how to do that. 
 
 Navigate to :navpath:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
@@ -69,7 +69,7 @@ Gift cards are the only payment method that is not handled by a plugin since gif
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. ](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
-You can edit and enable payment providers by clicking the :btn-icon:fontawesome-solid-gear:Settings: button next to them. 
+You can edit and enable payment providers by clicking the :btn-icon:fa3-gear:Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
 For example, the settings page for bank transfer requires you to enter your bank details and to check a box confirming that you have understood the specific conditions that apply to this payment method. 
 
@@ -208,7 +208,7 @@ Make sure it has the green "✓ Active" tag next to it.
 
 __A payment provider does not show up in your test shop/Customers cannot select a payment method during their purchase:__ 
 Navigate to :navpath:Your Event → Settings → Payment: and open the "payment" tab. 
-Click the :btn-icon:fontawesome-solid-gear:Settings: button next to the payment provider that isn't showing up in the shop. Check the "☑ Enable payment method" box. 
+Click the :btn-icon:fa3-gear:Settings: button next to the payment provider that isn't showing up in the shop. Check the "☑ Enable payment method" box. 
 Then scroll to the bottom of the page and click :btn:Save:. 
 
 If any mandatory information hasn't been filled out yet, the webpage will notify you. 
@@ -219,6 +219,7 @@ The corresponding payment method should now show up in your online shop.
 
 Here is the full list of articles on setting up and using specific payment providers: 
 
- -  [Bank transfer](bank-transfer.md) 
- -  [Stripe](stripe.md) 
- -  [PayPal](paypal.md) 
+ - [Bank transfer](bank-transfer.md) 
+ - [Mollie](mollie.md)
+ - [PayPal](paypal.md) 
+ - [Stripe](stripe.md) 
