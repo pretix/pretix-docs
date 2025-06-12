@@ -19,5 +19,9 @@ Some provinces (see e.g. [official guidance for Quebec](https://www.revenuquebec
 
 ## pretixPOS
 
-We are not aware of specific requirements on cash registers in Canada.
-Therefore, we believe pretixPOS can generally be used in Canada.
+Restaurant establishments in the province of Québec are required to use a Sales Recording Module (SRM), either physical or WEB-SRM. 
+pretixPOS does not support these technologies. 
+If you operate a restaurant establishment in Québec, then you should **not** use pretixPOS. 
+
+We are not aware of any other specific requirements on cash registers in Canada.
+Therefore, we believe pretixPOS can generally be used in Canada, except in the situation described above.

@@ -4,8 +4,8 @@
 
 ## Value-added Tax (VAT)
 
-When selling goods and services in Switzerland, VAT ("Value-added tax") may apply.
-You can configure all Swiss VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. cross-border transactions).
+When selling goods and services in the United Kingdom, VAT ("Value-added tax") may apply.
+You can configure all UK VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. cross-border transactions).
 
 ## Invoicing
 

@@ -45,7 +45,7 @@ Report every failure of the cash register or signature creation unit.
 - Create so-called "initial receipts" after registration, "monthly receipts" at the end of every month, "yearly receipts" at the end of every year, and "final receipts" before you decommission the cash register. 
   pretixPOS supports creating these receipts. 
   
-- Use the [Beleg Check app](https://play.google.com/store/apps/details?id=at.gv.bmf.belegcheck&hl=de) by Bundesministerium für Finanzen (BMF) to scan these receipts. 
+- Use the app [BMF Belegcheck](https://www.bmf.gv.at/services/apps.html#belegcheck) by Bundesministerium für Finanzen (BMF) to scan these receipts. 
 
 - Issue receipts with all information required by [§ 11 RKSV](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009390) and [§ 11 UStG 1994](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873&FassungVom=2024-08-29&Artikel=&Paragraf=11&Anlage=&Uebergangsrecht=).
   pretixPOS allows issuing compliant receipts using a receipt printer.

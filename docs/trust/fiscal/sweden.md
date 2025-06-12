@@ -12,8 +12,8 @@ You can configure all Swedish VAT rates in pretix using [tax rules](../../guides
 ### E-invoicing
 
 Sweden currently does not require sending electronic invoices in a structured format for transactions between businesses (B2B) or businesses and consumers (B2C).
-There are widespread formats for B2B e-invoicing, including EDIFACT, Svefaktura, and PEPPOL.
-pretix currently does not support these but is planning to provide a PEPPOl integration.
+Widespread formats for B2B e-invoicing include EDIFACT, Svefaktura, and PEPPOL.
+pretix currently does not support these but is planning to provide a PEPPOL integration.
 
 Sweden mandates e-invoices for transactions between businesses and the government (B2G) using the PEPPOL network.
 pretix is planning to provide a PEPPOL integration.
@@ -22,6 +22,6 @@ More information is available on the website of the European Commission: [eInvoi
 
 ## pretixPOS
 
-Use of a cash register ist [mandatory](https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/startingandrunningaswedishbusiness/cashregisters.4.57cadbbd15a3688ff44ddf9.html) in Sweden in most cases.
+According to the [website of the Swedish Tax Agency](https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/startingandrunningaswedishbusiness/cashregisters.4.57cadbbd15a3688ff44ddf9.html), Skatteverket, use of a cash register is mandatory in Sweden in most cases.
 The cash register must follow Swedish regulations including the use of a certified control unit.
 pretixPOS does **not** support this and can therefore **not** be used as a cash register in Sweden.

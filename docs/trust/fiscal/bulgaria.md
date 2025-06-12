@@ -13,7 +13,7 @@ You can configure all Bulgarian VAT rates in pretix using [tax rules](../../guid
 
 Bulgaria currently does not require sending electronic invoices in a structured format.
 
-More information is available on the website of the European Commission: [eInvoicing in Hungary](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Bulgaria).
+More information is available on the website of the European Commission: [eInvoicing in Bulgaria](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Bulgaria).
 
 ## pretixPOS
 

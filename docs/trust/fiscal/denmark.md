@@ -4,7 +4,7 @@
 
 ## Value-added tax (VAT)
 
-When selling goods and services in Denmark, VAT ("Merværdiafgift o Moms", "DPH") may apply.
+When selling goods and services in Denmark, VAT ("Merværdiafgift", aka "Moms") may apply.
 You can configure all Danish VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. intra-EU reverse charge transactions).
 
 ## Invoicing
@@ -20,8 +20,8 @@ More information is available on the website of the European Commission: [eInvoi
 ## pretixPOS
 
 When operating in Denmark, you need to be able to supply your financial data in the "Standard Audit File for Tax (SAF-T)" format during a tax audit.
-This is not supported by pretix, but might be supported by a bookkeeping system where you can import your data from pretix.
+This is not supported by pretix, but might be supported by a bookkeeping system to which you can import your data from pretix.
 Please consult your attorney or accountant for more information.
 
-We are not aware of other specific requirements on cash registers in Denmark.
+We are not aware of any other specific requirements on cash registers in Denmark.
 Therefore, we believe pretixPOS can generally be used in Denmark.

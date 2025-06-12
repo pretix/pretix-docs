@@ -4,7 +4,7 @@
 
 ## Value-added Tax (VAT)
 
-When selling goods and services in Switzerland, VAT ("Mehrwertsteuer") may apply.
+When selling goods and services in Switzerland, VAT may apply.
 You can configure all Swiss VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. cross-border transactions).
 
 ## Invoicing

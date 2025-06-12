@@ -17,5 +17,5 @@ More information is available on the website of the European Commission: [eInvoi
 
 ## pretixPOS
 
-When operating a cash register in Malta, the cash register must be certified according to [local legislation](https://www.mcw.gov.cy/mcw/ems/ems.nsf/All/A9EA69CCF2A643A64325795E002770CE?OpenDocument).
+When operating a cash register in Cyprus, the cash register must be certified according to [local legislation](https://www.mcw.gov.cy/mcw/ems/ems.nsf/All/A9EA69CCF2A643A64325795E002770CE?OpenDocument).
 pretixPOS is **not** certified and can therefore **not** be used as cash register software in Cyprus.

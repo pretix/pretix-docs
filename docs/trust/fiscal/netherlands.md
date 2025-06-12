@@ -4,7 +4,7 @@
 
 ## Value-added tax (VAT)
 
-When selling goods and services in The Netherlands, VAT ("omzetbelasting", "Btw") may apply.
+When selling goods and services in The Netherlands, VAT ("omzetbelasting"/"Belasting (over de) toegevoegde waarde", "Btw") may apply.
 You can configure all Dutch VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. intra-EU reverse charge transactions).
 
 ## Invoicing

@@ -4,7 +4,7 @@
 
 ## Value-added tax (VAT)
 
-When selling goods and services in Greece, VAT ("Foros prostithemenis aksias", "FPA") may apply.
+When selling goods and services in Greece, VAT ("Φόρος Προστιθέμενης Αξίας", "ΦΠΑ") may apply.
 You can configure all Greek VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. intra-EU reverse charge transactions).
 
 ## Invoicing

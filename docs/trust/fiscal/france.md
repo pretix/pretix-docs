@@ -12,10 +12,10 @@ You can configure all French VAT rates in pretix using [tax rules](../../guides/
 ### E-invoicing
 
 France is introducing mandatory electronic invoicing for B2B transactions in 2026/2027.
-All invoices must be transmitted through certified service providers ("PDPs") and reported to the government through Chorus Pro.
+All invoices must be transmitted through certified service providers ("PDPs") and reported to the government through [Chorus Pro](https://portail.chorus-pro.gouv.fr).
 
-pretix will be able to generate invoice files in one the supported formats, but will not become a certified service provider.
-If you are interested in an integration with a third-party certified service provider, please reach out to us.
+pretix will be able to generate invoice files in one of the supported formats, but will not become a certified service provider.
+If you are interested in an integration with a certified third-party service provider, reach out to us at [support@pretix.eu](mailto:support@pretix.eu]. 
 
 More information is available on the website of the European Commission: [eInvoicing in France](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+France).
 

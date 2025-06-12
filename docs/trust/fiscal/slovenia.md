@@ -20,4 +20,4 @@ More information is available on the website of the European Commission: [eInvoi
 
 When operating a cash register in Slovenia, the cash register needs to comply with the [Act on fiscal verification of invoices (ZDavPR)](https://www.fu.gov.si/en/supervision/areas_of_work/fiscal_verification_of_invoices_and_pre_numbered_receipt_book#c3177) and report transactions to the fiscal authority in real-time.
 pretixPOS currently does **not** support this, but implementation appears to be feasible given sufficient demand.
-Please let us know if you are interested in using pretixPOS in Slovenia.
+Let us know if you are interested in using pretixPOS in Slovenia.

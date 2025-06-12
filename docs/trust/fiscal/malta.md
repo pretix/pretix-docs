@@ -4,7 +4,7 @@
 
 ## Value-added tax (VAT)
 
-When selling goods and services in Malta, VAT ("as It-taxxa fuq il-valur mizjud") may apply.
+When selling goods and services in Malta, VAT ("It-taxxa fuq il-valur mizjud") may apply.
 You can configure all Maltese VAT rates in pretix using [tax rules](../../guides/taxes.md), including more complex tax cases (e.g. intra-EU reverse charge transactions).
 
 ## Invoicing
