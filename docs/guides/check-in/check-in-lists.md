@@ -2,12 +2,12 @@
 
 This article tells you how to create, configure, and use check-in lists. 
 Check-in lists keep track of who attends your event. 
-Generally speaking, you need one check-in list for every separate entrance at your event. 
+In most cases, you need one check-in list for every separate entrance at your event. 
 If there is one venue with multiple entrances, then one shared check-in list is enough. 
 If you have separate entrances for separate products, such as fast lane access or VIP tickets, then you will need one check-in list for every entrance. 
 
-Check-in lists are completely independent from one another. 
-A ticket is valid once on every list on which it is included. 
+Check-in lists operate independently from one another. 
+A ticket is valid once on every check-in list that includes it. 
 If you are hosting subevents with more exclusive attendance, then each of those subevents will need its own check-in list. 
 
 We recommend using the pretixSCAN app running on dedicated devices for your check-in. 
@@ -47,7 +47,8 @@ Alternatively, navigate to :navpath:Your event: → :fa3-shopping-cart: Orders �
 Regardless of which path you take, you will land on a page titled "Data export – Check-in List (PDF)". 
 Under "Check-in list", select the list you want to export. 
 You can use the settings on this page to filter and sort the file export by certain parameters. 
-If you want to use the export for manual check-in, then it makes sense to select the "Check-in status" "All attendees" and "Sort by" one of the attendee name options. 
+If you want to use the export for manual check-in, then you probably want an alphabetical list of all ticket holders. 
+Select the "Check-in status" "All attendees" and "Sort by" one of the attendee name options. 
 
 Under "Include questions", select any questions that are relevant for check-in. 
 Once you are satisfied with your settings, click the :btn-icon:fa3-download: Start export: button. 
@@ -55,7 +56,7 @@ Your browser will now download a PDF of the list or open it in a new tab.
 The list includes the following columns: 
 
  - a column containing a double exclamation mark ‼ for products that require special attention. 
- This cell is empty for products that do not have the "Requires special attention" setting activated. 
+ This cell is empty for products that do **not** have the "Requires special attention" setting activated. 
  - a box for checking off tickets. 
  This box will be checked for tickets that were already checked in before you exported the list. 
  - "Paid" contains a check for orders that have been paid. 
