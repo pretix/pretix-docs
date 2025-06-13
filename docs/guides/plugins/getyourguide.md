@@ -77,11 +77,6 @@ You can limit the configure the size limit of the group for every ticket.
 Just like with any other product, you also have to add the tickets you intend to sell via GetYourGuide to a quota in pretix before they become available in your shop. 
 If you want to learn more on how to handle categories in pretix, refer to the section on [categories](../products.md#creating-and-editing-categories). 
 
-You cannot offer more than one quantity for individual ticket categories sold through GetYourGuide.
-GetYourGuide will always default to the smallest applying quota, except if that quota is exhausted and another one is available. 
-pretix will only report the available number of tickets for the lowest applying quota.
-Thus, you should add all products that you are selling through GetYourGuide to the same quota. 
-
 ### Connecting to GetYourGuide 
 
 The GetYourGuide backend refers to your pretix event as a "product". 
