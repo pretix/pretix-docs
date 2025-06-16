@@ -20,6 +20,11 @@
 }
 
 /* Typo */
+body {
+  text-align: justify; 
+  text-justify: inter-word;
+}
+
 h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summary {
     font-family: "Titillium Web", "Open Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
