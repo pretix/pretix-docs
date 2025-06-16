@@ -13,7 +13,7 @@ Your embedded widget could look like the following:
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
             JavaScript is disabled in your browser. 
-            To access our ticket shop without javacript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
         </div>
     </div>
 </noscript>
@@ -35,15 +35,13 @@ It also explains how to use the widget for more than just a singular event or a 
 
 ### Embedding the widget on your website
 
-In order to obtain the HTML code for embedding your shop on your website, navigate to :navpath:Your Event → Settings → Widget:. 
-Choose the "Language" for the widget. 
-The page also allows you to choose a "Pre-selected voucher" for the widget. 
-This can be useful if you want to offer discounts or voucher-exclusive products to visitors of your website. 
-Once you have made your choices, click the :btn:Generate widget code: button. 
+You can embed the pretix widget on your website by copying two code snippets from the pretix backend and pasting them in your website's HTML. 
+In order to obtain these snippets, navigate to :navpath:Your Event → Settings → Widget:. 
+Choose the "Language" for the widget and click the :btn:Generate widget code: button. 
 
 The website will produce two code snippets. 
 The first snippet sources the CSS and JavaScript resources for the widget from the pretix server. 
-Add this snippet to the `<head>` part of your website if you want to comply with general conventions in webdesign. 
+Add this snippet to the `<head>` of your website if you want to comply with general conventions in webdesign. 
 This has the advantage of slightly better performance on slow connections. 
 Alternatively, you can also add it to `<body>`. 
 The code snippet will look similar to this: 
@@ -61,7 +59,7 @@ It will look similar to this:
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
             JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
         </div>
     </div>
 </noscript>
@@ -81,20 +79,9 @@ Generate the second snippet for every event and add each one to your website's H
 !!! Note
 
     Some website builders such as Jimdo have trouble with our custom HTML tag. 
-    In that case, edit the opening and closing tags in the first line of the second code snippet:  
+    If that is the case, edit the opening and closing tags in the first line of the second code snippet:  
     Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`.  
     Replace `</pretix-widget>` with `</div>`.  
-
-### Styling
-
-You can use CSS to customize the appearance of the widget to match your website. 
-If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
-You can override the styles or use your own custom stylesheet. 
-
-!!! Note 
-    The widget is designed to conform with European accessibility standards. 
-    Make sure that any changes you make to customize the widget do not break accessibility, for instance by choosing colors with too little contrast. 
-
 
 ### pretix Button
 
@@ -107,7 +94,7 @@ You can try out this behavior here:
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
             JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
         </div>
     </div>
 </noscript>
@@ -141,21 +128,41 @@ You can style the button using the `pretix-button` CSS class.
 ### Using the widget for multiple events
 
 You can display multiple event shops in a single widget. 
-If you want to include all your public events, pass the URL to your customer account to the `event` attribute instead of an event: 
+If you want to include all public events of your organizer account, remove the event slug from the URL in the `event` attribute, but leave in your organizer slug: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
 ``` 
 
+#### Filtering events by metadata attributes 
+
+If you are hosting several events, but only want to display some of them in the widget, then you should use metadata attributes. 
+This section explains how to create metadata attributes, assign them to your events, and set a filter in the widget. 
+
+You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
+
+If you want to assign the metadata property to a singular event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
+On the :btn:Basics: tab, edit the relevant property under "Meta data". 
+
+For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
+
+```
+<pretix-widget event="https://pretix.eu/demo/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
+```
+
+If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
+To disable the filter form, use:
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
+```
 ### Using the widget for an event series 
 
 You can link the widget to an event series. 
 By default, the widget will display all dates in the event series. 
-If you want to display only a single date from the series, use the `subevent` attribute: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
-```
+If you only want to display a selection of dates in the widget, you can filter them [by date ID](widget.md#filtering-dates-by-id) or [by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
+If you only want to display a small number of dates in the widget and they do not change over time, filter by date ID. 
+If you want to display a large number of dates in the widget, or if the events change frequently, use metadata attributes instead. 
 
 You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
 If you do not include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
@@ -174,14 +181,52 @@ You can see an example here:
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
             JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/series/">click here</a>.
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/series/">click here</a>.
         </div>
     </div>
 </noscript>
 
+#### Filtering dates by ID 
+
+You can filter the dates displayed in the widget by passing a list of date IDs separated by commas. 
+In order to find a date's ID, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
+The page displays the date ID as a number preceded by a hashtag below the date's name in the list. 
+You need the number **without** the hashtag. 
+Alternatively, edit the date. 
+The number before the last slash in the URL is the product ID.
+
+In order to display only the date `#4387749` in the widget, pass them with the `subevent` attribute like this: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
+```
+
+#### Filtering dates by metadata attribute
+
+If you are hosting several dates in an event series, but only want to display some of them in the widget, then you should use metadata attributes. 
+This section explains how to create metadata attributes, assign them to your dates, and set a filter in the widget. 
+
+You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
+
+In order to assign the property to dates in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
+Edit or create the dates in question and set the relevant property under "Meta data". 
+
+For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
+```
+
+If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
+To disable the filter form, use:
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
+``` 
+
 ## Advanced
 
-### Loading
+### Customizing widget behavior
 
 This section explains how to customize the way in which the widget loads and opens. 
 
@@ -255,10 +300,6 @@ window.pretixWidgetCallback = function () {
 
 You can run these functions multiple times, for example if you have multiple widgets on a page or if the user changes the list/calendar view. 
 
-### Customizing the user experience 
-
-This section explains how to customize the behavior of the widget regarding user experience. 
-
 #### Always open a new tab
 
 By default, the checkout process will open in a new tab on devices with smaller screens. 
@@ -280,6 +321,10 @@ Any value other than `"false"` or `"auto"` is handled like `"true"`.
 <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
 ```
 
+### Availability and pricing
+
+This section explains how to change the availability and pricing of certain products inside the widget. 
+
 #### Pre-selecting a voucher
 
 You can pre-select a voucher for the widget with the `voucher` attribute:
@@ -289,7 +334,7 @@ You can pre-select a voucher for the widget with the `voucher` attribute:
 ```
 
 This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
-You do **not** need to copy and edit this code. 
+You do **not** need to copy and edit the code example below.  
 It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
 
 Here is an example of a widget with a voucher pre-selected: 
@@ -299,7 +344,7 @@ Here is an example of a widget with a voucher pre-selected:
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
             JavaScript is disabled in your browser. 
-            To access our ticket shop without javascript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
         </div>
     </div>
 </noscript>
@@ -349,31 +394,15 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
-#### Filtering by metadata attributes 
+### Styling
 
-If you are hosting several events or dates in an event series, but only want to display some of them in the widget, then you should use metadata attributes. 
-This section explains how to create metadata attributes, assign them to your events or dates, and set a filter in the widget. 
+You can use CSS to customize the appearance of the widget to match your website. 
+If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
+You can override the styles or use your own custom stylesheet. 
 
-You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
-
-If you want to assign the metadata property to a singular event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
-On the :btn:Basics: tab, edit the relevant property under "Meta data". 
-
-If you want to assign the property to dates in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
-Edit or create the dates in question and set the relevant property under "Meta data". 
-
-For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
-
-```
-<pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
-```
-
-If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
-To disable the filter form, use:
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
-```
+!!! Note 
+    The widget is designed to conform with European accessibility standards. 
+    Make sure that any changes you make to customize the widget do not break accessibility, for instance by choosing colors with too little contrast. 
 
 ### User data
 
