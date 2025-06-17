@@ -23,6 +23,7 @@
 body {
   text-align: justify; 
   text-justify: inter-word;
+  hyphens: auto;
 }
 
 h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summary {
