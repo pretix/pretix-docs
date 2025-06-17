@@ -160,8 +160,8 @@ To disable the filter form, use:
 
 You can link the widget to an event series. 
 By default, the widget will display all dates in the event series. 
-If you only want to display a selection of dates in the widget, you can filter them [by date ID](widget.md#filtering-dates-by-id) or [by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
-If you only want to display a small number of dates in the widget and they do not change over time, filter by date ID. 
+If you only want to display a selection of dates in the widget, you can [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
+If you only want to [display a single date](widget.md#using-the-widget-for-a-single-date) in the widget, use the date ID. 
 If you want to display a large number of dates in the widget, or if the events change frequently, use metadata attributes instead. 
 
 You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
@@ -186,20 +186,24 @@ You can see an example here:
     </div>
 </noscript>
 
-#### Filtering dates by ID 
+#### Using the widget for a single date 
 
-You can filter the dates displayed in the widget by passing a list of date IDs separated by commas. 
+If you want to use the widget for only a single date within an event series, pass the date ID to the `subevent` attribute. 
 In order to find a date's ID, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
 The page displays the date ID as a number preceded by a hashtag below the date's name in the list. 
 You need the number **without** the hashtag. 
 Alternatively, edit the date. 
 The number before the last slash in the URL is the product ID.
 
-In order to display only the date `#4387749` in the widget, pass them with the `subevent` attribute like this: 
+In order to display only the date `#4387749` in the widget, pass them to the `subevent` attribute like this: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/series/" subevent="4387749"></pretix-widget>
 ```
+
+The subevent takes only a single date ID as an argument. 
+It is **not** possible to filter for more than one date with this method. 
+If you want to display several dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
 
 #### Filtering dates by metadata attribute
 
