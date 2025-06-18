@@ -134,7 +134,7 @@ If you want to include all public events of your organizer account, remove the e
 <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
 ``` 
 
-#### Filtering events by metadata attributes 
+#### Filtering events by metadata attribute 
 
 If you are hosting several events, but only want to display some of them in the widget, then you should use metadata attributes. 
 This section explains how to create metadata attributes, assign them to your events, and set a filter in the widget. 
@@ -227,6 +227,20 @@ To disable the filter form, use:
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
 ``` 
+
+## Applications 
+
+### Offering discounts through the widget
+
+Preselect voucher or filter for discount tickets only
+
+### Offering only certain products through the widget
+
+Filter tickets
+
+### Offering certain products through the widget only 
+
+Preselect voucher and use exclusive product availability voucher
 
 ## Advanced
 
