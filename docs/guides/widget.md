@@ -232,15 +232,103 @@ To disable the filter form, use:
 
 ### Offering discounts through the widget
 
-Preselect voucher or filter for discount tickets only
+If you want to offer discounts to customers placing their order through the widget, then you should preselect a voucher in the widget. 
+Preselecting a voucher means that the widget will behave as if the user entered the voucher code. 
+This section tells you how to preselect a voucher using the `voucher` attribute in the widget code in order to offer a widget-exclusive discount. 
 
-### Offering only certain products through the widget
+Create a voucher as explained under [offering a limited discount](vouchers.md#offering-a-limited-discount) in the article on vouchers. 
+Do **not** share the voucher code publicly or directly to your customers. 
+Instead, pass the voucher code (for example, `ABCDE123456`) to the `voucher` attribute: 
 
-Filter tickets
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+```
+
+This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
+You do **not** need to copy and edit the code example below.  
+It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
+
+Here is an example of a widget with a voucher preselected: 
+
+<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. 
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+        </div>
+    </div>
+</noscript>
 
 ### Offering certain products through the widget only 
 
-Preselect voucher and use exclusive product availability voucher
+If you want to offer certain products through the widget only and not in your shop, then you should preselect a voucher in the widget. 
+Preselecting a voucher means that the widget will behave as if the user entered the voucher code. 
+This section tells you how to preselect a voucher using the `voucher` attribute in the widget code in order to offer some products through the widget only. 
+
+Navigate to :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
+Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
+
+Set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fa3-eye-slash::). 
+This will hide the product hidden in your shop. 
+If you want to restrict availability for multiple products, take the steps described above for each product.
+Create a quota that includes all products that you want to make available through the widget. 
+
+Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
+Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
+Set the "Maximum usages" field to a very high number such as 999999. 
+
+Under "Product", choose the product (or the quota, if there is more than one product) which you want to make available through the widget. 
+Check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
+
+Do **not** send the voucher code as an email or share it with anyone. 
+Instead, click the :btn:Save: button, copy the voucher code, and pass it (for example, `ABCDE123456`) to the `voucher` attribute: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+```
+
+This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
+For an example of a widget with a preselected voucher, see [Offering discounts through the widget](widget.md#offering-discounts-through-the-widget). 
+
+### Offering only certain products through the widget
+
+You can filter the products displayed in the widget by passing a list of product IDs separated by commas. 
+In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+The page displays the product ID as a number preceded by a hashtag below the product's name in the list. 
+You need the number **without** the hashtag. 
+Alternatively, edit the product. 
+The number before the last slash in the URL is the product ID.
+
+In order to display only products `#562195` and `#562202` in the widget, pass them like this: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
+```
+### Offering only certain categories products through the widget
+
+You can also filter for categories. 
+In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
+Edit the category in question. 
+The number before the last slash in the URL is the category ID.
+In order to display only products from the categories `#162620` and `#162647` in the widget, pass them like this: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
+```
+### Offering only certain product variations through the widget
+
+You can also filter for product variations. 
+In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+Edit the product in question and open the :btn:Variations: tab. 
+The product ID is displayed as a number preceded by a hashtag below the variation's name in the list. 
+You need the number **without** the hashtag. 
+
+In order to display only variations `#437143`, `#437154`, and `#437155` in the widget, pass them like this: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
+```
 
 ## Advanced
 
@@ -266,8 +354,8 @@ window.PretixWidget.open(target_url[, voucher[, subevent[, items[, widget_data[,
 Parameters:
 
 - **target_url** (string): The URL of the ticket shop. 
-- **voucher** (string): A voucher code to be pre-selected, or `null`.
-- **subevent** (string): A date from an event series to be pre-selected, or `null`.
+- **voucher** (string): A voucher code to be preselected, or `null`.
+- **subevent** (string): A date from an event series to be preselected, or `null`.
 - **items** (array): A collection of items to be put in the cart, of the form `[{"item": "item_3", "count": 1}, {"item": "variation_5_6", "count": 4}]`
 - **widget_data** (object): Additional data to be passed to the shop, see below.
 - **skip_ssl_check** (boolean): Whether to ignore the check for HTTPS. 
@@ -343,73 +431,12 @@ Any value other than `"false"` or `"auto"` is handled like `"true"`.
 
 This section explains how to change the availability and pricing of certain products inside the widget. 
 
-#### Pre-selecting a voucher
-
-You can pre-select a voucher for the widget with the `voucher` attribute:
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
-```
-
-This way, the widget will only display products that can be bought with the voucher and prices will be changed as defined by the voucher. 
-You do **not** need to copy and edit the code example below.  
-It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
-
-Here is an example of a widget with a voucher pre-selected: 
-
-<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. 
-            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
-        </div>
-    </div>
-</noscript>
-
 #### Disabling the voucher input
 
 If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
-```
-
-#### Filtering products
-
-You can filter the products displayed in the widget by passing a list of product IDs separated by commas. 
-In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
-The page displays the product ID as a number preceded by a hashtag below the product's name in the list. 
-You need the number **without** the hashtag. 
-Alternatively, edit the product. 
-The number before the last slash in the URL is the product ID.
-
-In order to display only products `#562195` and `#562202` in the widget, pass them like this: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
-```
-
-You can also filter for categories. 
-In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
-Edit the category in question. 
-The number before the last slash in the URL is the category ID.
-In order to display only products from the categories `#162620` and `#162647` in the widget, pass them like this: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
-```
-
-You can also filter for product variations. 
-In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
-Edit the product in question and open the :btn:Variations: tab. 
-The product ID is displayed as a number preceded by a hashtag below the variation's name in the list. 
-You need the number **without** the hashtag. 
-
-In order to display only variations `#437143`, `#437154`, and `#437155` in the widget, pass them like this: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
 ### Styling
