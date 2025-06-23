@@ -13,8 +13,12 @@ Die Voraussetzungen hängen von Ihrem individuellen Anwendungsfall ab.
 Packen Sie Ihre Hardware-Lieferung aus und überprüfen Sie diese anhand des Lieferscheins auf Vollständigkeit. 
 Die Einrichtung der Hardware besteht aus folgenden Schritten: 
 
- - Router einrichten (falls Sie die Hardware nicht mit einem bestehenden Netzwerk verbinden)
+ - Router einrichten (falls Sie die Hardware **nicht** mit einem bestehenden Netzwerk verbinden)
+ - Scan-Smartphones einrichten (falls Sie die Hardware für die Einlasskontrolle nutzen)
+ - Kassengerät einrichten (falls Sie die Hardware für den Verkauf nutzen)
  - Drucker einrichten 
+
+Je nach Anwendungsfall sind nicht alle dieser Schritte für Sie relevant. 
 
 ### Router einrichten 
 
@@ -34,9 +38,9 @@ Die SSID des WLANs lautet ?
 
 ? Switch? Komplexere Netzwerke? 
 
-### Scan-Smartphone einrichten 
+### Scan-Smartphones einrichten 
 
-Die von uns angebotenen Scan-Smartphones sind robustere, schwerere Smartphones mit eingebautem Scanner. 
+Die von uns angebotenen Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
 Schließen Sie das Smartphone an ein Ladegerät an oder stecken Sie es in die Ladestation, bis der Akku ausreichend geladen ist. 
 Schalten Sie das Smartphone ein. 
 
