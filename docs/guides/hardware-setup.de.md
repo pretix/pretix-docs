@@ -86,8 +86,11 @@ Das wird in den nächsten Abschnitten näher erklärt.
 ### Scan-Smartphones einrichten 
 
 Die von uns angebotenen Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
+Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
 Schließen Sie das Smartphone an ein Ladegerät an oder stecken Sie es in die Ladestation, bis der Akku ausreichend geladen ist. 
 Schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
+
+#### Badgedrucker verbinden
 
 Falls Sie beim Einlass Badges drucken wollen, dann öffnen Sie auf dem Scan-Smartphone die App pretixPRINT. 
 Unter "Badgedrucker" tippen Sie :btn:Drucker einrichten:. 
@@ -100,20 +103,19 @@ Unter "Badgedrucker" tippen Sie :btn:Drucker einrichten:.
 
 Auf der Seite "Wie ist Ihr Drucker verbunden?" wählen Sie "Netzwerk (LAN/WLAN) und tippen :btn:Weiter:. 
 Geben Sie die IP-Adresse des Routers ein. 
+Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
+Bearbeiten Sie es nur dann, wenn die Testseite des Druckers eine Port-Nummer ausgibt, die **nicht** `9100` lautet. 
+Tippen Sie dann :btn:Weiter:. 
 
-Öffnen Sie im pretix-Backend zu :navpath:Ihr Veranstalter → Geräte und fügen Sie ein neues Gerät hinzu. 
-Geben Sie dem Gerät einen eindeutigen Namen und erlauben Sie ihm Zugriff auf die aktuelle Veranstaltung oder auf alle Veranstaltungen. 
-Wählen Sie unter "Security Profile" "pretixSCAN" und klicken Sie :btn:Speichern:. 
-
-Auf dem Scan-Smartphone öffnen Sie die App pretixSCAN. 
-Scannen Sie den QR-Code, der im Backend angezeigt wird oder geben Sie den Code ein, um das Gerät mit dem Veranstalterkonto zu verbinden. 
-Wählen Sie dann die aktuelle Veranstaltung aus und tippen Sie :btn:OK:. 
-Das Scan-Smartphone synchronisiert jetzt die Daten mit dem pretix-Server. 
-Wählen Sie die passende Check-In-Liste und tippen Sie :btn:OK:. 
+Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie das Protokoll aus, das am ehesten zu Ihrem Drucker passt. 
+Falls Sie einen Ticketdrucker der Marke Lemur verwenden, wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)". 
+Falls Sie einen Etikettendrucker der Marke Lemur verwenden, wählen Sie 
 
 ### Kassengerät einrichten 
 
 Die von uns angebotenen Kassengeräte sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
+Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
+
 
 ## Problemlösung 
 
