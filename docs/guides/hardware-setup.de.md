@@ -44,6 +44,20 @@ Smartphones verbinden Sie immer mit dem WLAN.
 Drucker verbinden Sie mit einem LAN-Kabel mit einem der nummerierten LAN-Anschlüsse am Router. 
 Verbinden Sie den Drucker **nicht** mit dem Anschluss mit der Aufschrift "WAN" am Router. 
 
+### Scan-Smartphones einrichten 
+
+Die von uns angebotenen Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
+Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
+Schließen Sie das Smartphone an ein Ladegerät an oder stecken Sie es in die Ladestation, bis der Akku ausreichend geladen ist. 
+Schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
+
+### Kassengerät einrichten 
+
+Die von uns angebotenen Kassengeräte sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
+Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
+Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
+Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
+
 ### Drucker einrichten 
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges. 
@@ -81,16 +95,9 @@ Falls Sie danach noch immer keine Testseite drucken können, konsultieren Sie di
 
 Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
-Das wird in den nächsten Abschnitten näher erklärt. 
+Das wird im nächsten Abschnitt näher erklärt. 
 
-### Scan-Smartphones einrichten 
-
-Die von uns angebotenen Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
-Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
-Schließen Sie das Smartphone an ein Ladegerät an oder stecken Sie es in die Ladestation, bis der Akku ausreichend geladen ist. 
-Schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
-
-#### Badgedrucker verbinden
+#### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Falls Sie beim Einlass Badges drucken wollen, dann öffnen Sie auf dem Scan-Smartphone die App pretixPRINT. 
 Unter "Badgedrucker" tippen Sie :btn:Drucker einrichten:. 
@@ -109,17 +116,38 @@ Tippen Sie dann :btn:Weiter:.
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie das Protokoll aus, das am ehesten zu Ihrem Drucker passt. 
 Falls Sie einen Ticketdrucker der Marke Lemur verwenden, wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)". 
-Falls Sie einen Etikettendrucker der Marke Lemur verwenden, wählen Sie 
+Falls Sie einen Etikettendrucker der Marke Bixolon verwenden, wählen Sie "SLCS-Etikettendrucker (z.B. Bixolon, Metapace, ...)". 
+Tippen Sie :btn:Weiter:, nehmen Sie auf der nächsten Seite gegebenenfalls Feineinstellungen vor und tippen Sie erneut :btn:Weiter:. 
 
-### Kassengerät einrichten 
+Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
+Tippen Sie :btn:Einstellungen speichern:. 
 
-Die von uns angebotenen Kassengeräte sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
-Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
+Falls es Probleme mit der pretixPRINT-Testseite gibt, tippen Sie auf der Startseite von pretixPRINT erneut :btn:Drucker einrichten:. 
+Dieser Button enthält nun den zusätzlichen Hinweis: "Aktuell in Verwendung @ :placeholder:IP-Adresse: :placeholder:Typ der Verbindung:". 
+Navigieren Sie erneut durch die Einstellungen und machen Sie folgende Anpassungen: 
+
+
+
+!!! Note 
+    Die Testseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
+    Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
+    Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
+
+
 
 
 ## Problemlösung 
 
-What are common problems that could be encountered here? How do you solve them? 
+#### 
+
+#### 
+
+#### 
+
+- **Ein anderer Drucker druckt die Testseite:** Ändern Sie die IP-Adresse auf die des gewünschten Druckers oder verwenden Sie das Android-Gerät mit dem verbundenen Drucker. 
+ - **Testseite enthält Unsinn:** Ändern Sie Protokoll und gegebenenfalls Dialekt, mit dem pretixPRINT den Drucker anspricht. 
+ - **Testseite ist falsch gedreht:** Ändern Sie 
+
 
 ## Weiterführende Informationen
 
