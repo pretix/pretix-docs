@@ -63,6 +63,7 @@ Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers.
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges. 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Testseite. 
+Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
 #### Anschließen
@@ -72,7 +73,7 @@ Verbinden Sie den Drucker dann über ein LAN-Kabel mit einem der nummerierten "L
 Schließen Sie das Netzteil an den Drucker und an eine Steckdose an. 
 
 Falls Ihr Drucker über einen flachen Papierstapel mit Material versorgt wird (Tickets oder Butterfly-Badges), dann schieben Sie das Papier jetzt in den Drucker. 
-Die bedruckbare Seite muss nach oben Zeigen und die schwarzen quadratischen Markierungen auf der Unterseite müssen sich an der Seite befinden, die weiter vom Drucker entfernt ist. 
+Die bedruckbare Seite muss nach oben Zeigen und die schwarzen quadratischen Markierungen auf der Unterseite müssen sich an dem Ende befinden, das weiter vom Drucker entfernt ist. 
 Der Drucker zieht das Ticketpapier automatisch ein und schneidet das erste Ticket ab. 
 
 #### Testseite drucken
@@ -133,21 +134,49 @@ Navigieren Sie erneut durch die Einstellungen und machen Sie folgende Anpassunge
     Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
 
-
-
-
 ## Problemlösung 
 
-#### 
+#### Drucker druckt die eigene Testseite nicht
 
-#### 
+Falls Sie einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](hardware-setup.de.md#testseite-drucken), kann das mehrere Gründe haben. 
+Überprüfen Sie: 
 
-#### 
+ - ob der Drucker mit Strom versorgt wird
+ - ob das passende Material eingelegt ist
+ - ob das Material richtig eingelegt ist
+ - ob die Klappe des Druckers geschlossen ist
 
-- **Ein anderer Drucker druckt die Testseite:** Ändern Sie die IP-Adresse auf die des gewünschten Druckers oder verwenden Sie das Android-Gerät mit dem verbundenen Drucker. 
- - **Testseite enthält Unsinn:** Ändern Sie Protokoll und gegebenenfalls Dialekt, mit dem pretixPRINT den Drucker anspricht. 
- - **Testseite ist falsch gedreht:** Ändern Sie 
+Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
+Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
+#### IP-Adresse auf der Testseite lautet 0.0.0.0 
+
+Falls die IP-Adresse auf der druckereigenen Testseite `0.0.0.0` oder ein ähnliches unbrauchbares Ergebnis liefert, dann ist der Drucker nicht mit dem Netzwerk verbunden. 
+Prüfen Sie, ob das LAN-Kabel richtig im Port des Druckers steckt. 
+Prüfen Sie, ob das andere Ende desselben LAN-Kabels im LAN-Port (**nicht** im WAN-Port) des Routers steckt. 
+Verwenden Sie gegebenenfalls ein anderes Kabel. 
+
+Geben Sie dem Drucker einen Moment Zeit, um sich mit dem Netzwerk zu verbinden. 
+Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten.  
+
+#### Drucker druckt pretixPRINT-Testseite nicht
+
+Falls der Drucker die Testseite zwar richtig ausdruckt, Sie Ihn aber nicht dazu bringen können, die pretixPRINT-Testseite zu drucken wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden), kann das mehrere Gründe haben. 
+Überprüfen Sie: 
+
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (`pretix-onsite` oder ähnlich)
+ - ob die IP-Adresse in pretixPRINT korrekt ist
+ - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
+
+#### Druckauftrag kommt auf einem anderen Drucker an
+
+Falls die pretixPRINT-Testseite oder Ihre anderen Druckaufträge zwar ausgedruckt werden, aber von einem anderen Drucker als erwartet, dann passt die in pretixPRINT hinterlegte IP-Adresse nicht zum Drucker. 
+Ändern Sie die IP-Adresse auf die des gewünschten Druckers oder verwenden Sie das Gerät mit dem verbundenen Drucker. 
+
+#### Druckauftrag enthält Unsinn 
+
+Falls die pretixPRINT-Testseite oder Ihre anderen Druckaufträge zwar ausgedruckt werden, aber Unsinn enthalten, liegt das am gewählten Protokoll. 
+Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 
 ## Weiterführende Informationen
 
