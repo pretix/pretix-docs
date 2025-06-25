@@ -2,7 +2,7 @@
 
 Dieser Artikel behandelt die Einrichtung von Hardware für Ihr Event. 
 Wir bieten [professionelle Hardware](https://pretix.eu/about/de/hardware) zur Miete und zum Kauf an. 
-Mit diesen Geräten können Sie Produkte verkaufen, Einlasskontrolle machen, sowie Belege, Tickets und Badges ausdrucken.  
+Mit diesen Geräten können Sie Produkte verkaufen, Einlasskontrolle machen, sowie Belege, Tickets und Badges ausdrucken. 
 Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN sowie einen WLAN-Router. 
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatible mit unseren Apps sind. 
 
@@ -33,9 +33,9 @@ Das kann einige Minuten dauern.
 
 Falls Sie den Router mit dem Netzwerk am Veranstaltungsort verbinden wollen, dann verbinden Sie den "WAN"-Port des Routers mit einem LAN-Kabel mit einem Switch. 
 Falls Sie die mobile Datenverbindung des Routers nutzen wollen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
-Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgängig leuchtet, hat der Router eine mobile Datenverbindung hergestellt.  
+Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgängig leuchtet, hat der Router eine mobile Datenverbindung hergestellt. 
 
-Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt  der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
+Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
 Die SSIDs dieser Netze lauten `pretix_onsite` und `pretix_onsite_5ghz`. 
 Falls Sie mehrere Router verwenden, werden an die SSIDs ein Unterstrich und eine Zahl angehängt, z.B. `pretix_onsite_1` und `pretix_onsite_5ghz_1`. 
 
@@ -157,7 +157,7 @@ Prüfen Sie, ob das andere Ende desselben LAN-Kabels im LAN-Port (**nicht** im W
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
 
 Geben Sie dem Drucker einen Moment Zeit, um sich mit dem Netzwerk zu verbinden. 
-Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten.  
+Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
 
 #### Drucker druckt pretixPRINT-Testseite nicht
 
