@@ -125,7 +125,13 @@ Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede tei
 Tippen Sie daher am richtigen Gerät unter der richtigen Überschrift (Belegdrucker, Ticketdrucker oder Badgedrucker) die Schaltfläche :btn:Drucker einrichten:. 
 Danach ist der Prozess immer der gleiche. 
 
-Auf der Seite "Wie ist Ihr Drucker verbunden?" wählen Sie "Netzwerk (LAN/WLAN) und tippen :btn:Weiter:. 
+Falls Sie den **integrierten** Belegdrucker des Kassengeräts verbinden wollen, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Eingebauter Drucker (SUNMI)" und tippen :btn:Weiter:. 
+Sie müssen keine IP-Adresse angeben und unter Protokoll und Dialekt die jeweils einzige Möglichkeit wählen. 
+
+Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
+Tippen Sie :btn:Einstellungen speichern:. 
+
+Falls Sie einen Drucker im **Netzwerk** verbinden wollen, wählen Sie auf der  Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN) und tippen :btn:Weiter:. 
 Geben Sie die IP-Adresse des Routers ein. 
 Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
 Bearbeiten Sie es nur dann, wenn die Testseite des Druckers eine Port-Nummer ausgibt, die **nicht** `9100` lautet. 
@@ -144,6 +150,7 @@ Tippen Sie :btn:Einstellungen speichern:.
     Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
 
+Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten, für jeden Drucker, den Sie von dem Gerät aus ansteuern möchten. 
 Es folgen Beispiele für die pretixPRINT-Testseiten verschiedener Druckermodelle. 
 
 Epson: 
@@ -158,7 +165,7 @@ Boca Lemur:
 
 !["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftgrößen, Muster, Streifen und pretix-Logos."](../assets/screens/hardware-setup/boca-pretixprint.jpg "pretixPRINT-Testseite aus Boca-Drucker")
 
-Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten, für jeden Drucker, den Sie von dem Gerät aus ansteuern möchten. 
+Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](hardware-setup.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](hardware-setup.de.md#problemlösung). 
 
 ## Problemlösung 
 
@@ -167,7 +174,7 @@ Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten
 Falls Sie einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](hardware-setup.de.md#testseite-drucken), kann das mehrere Gründe haben. 
 Überprüfen Sie: 
 
- - ob der Drucker mit Strom versorgt wird
+ - ob der Drucker mit Strom versorgt wird (das Netzteil sollte verbunden sein und Status-LED oder Display am Drucker sollten leuchten)
  - ob das passende Material eingelegt ist
  - ob das Material richtig eingelegt ist
  - ob die Klappe des Druckers geschlossen ist
