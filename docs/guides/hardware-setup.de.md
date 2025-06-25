@@ -68,7 +68,7 @@ Dann drucken Sie eine Testseite.
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
-#### Anschließen
+#### Drucker anschließen
 
 Falls Ihr Drucker intern über eine Rolle mit Material versorgt wird (Thermopapier oder Labels), dann legen Sie zunächst diese Rolle ein. 
 Verbinden Sie den Drucker dann über ein LAN-Kabel mit einem der nummerierten "LAN"-Anschlüsse des Routers. 
@@ -85,12 +85,23 @@ Das Ausdrucken einer **Testseite** wird je nach Modell des Druckers unterschiedl
  - Die Belegdrucker **Epson TM-m30iii** und **TM-T88vii** drucken innerhalb einer Minute nach Einschalten automatisch eine Testseite. 
    Das funktioniert nur, wenn der Drucker mit Stromversorgung und Router verbunden ist und Papier hat. 
    Falls Sie erneut eine Testseite drucken wollen, schalten Sie den Drucker aus und wieder ein. 
+   Die Testseite könnte z.B. so aussehen: 
+
+!["Ein Streifen graublaues Belegpapier mit Text: IP Address 192.168.214.101 SubnetMask 255.255.255.0 Gateway 192.168.214.1 DHCP Enable"](../assets/screens/hardware-setup/epson-test.jpg "Epson Testseite des Druckers")
+
  - Der Etikettendrucker **Bixolon XD5-40d** hat neben dem Strom- und LAN-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
-   Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Knopf zu drücken. 
+   Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
    Das löst den Druck einer Testseite aus. 
- - Die Ticketdrucker **Boca Lemur** und **Lemur C** haben an der Seite drei Aussparungen, in denen jeweils eine Status-LED und ein Knopf verborgen sind. 
-   Drücken Sie den Knopf unter dem Label "TEST — NO TKT". 
+   Die Testseite könnte z.B. so aussehen: 
+
+!["Ein weißes Klebeetikett mit teilweise abgeschnittenem Text: MAC ADDR 00:15:94:61:1a:40 LAN_DHCP LAN_DHCP enabled IP ADDR 192.168.214.122 SUBNETMASK 255.255.255.0 GATEWAY 192.168.214.1 PORT 9100"](../assets/screens/hardware-setup/bixolon-test.jpg "Bixolon Testseite des Druckers")
+
+ - Die Ticketdrucker **Boca Lemur** und **Lemur C** haben an der Seite drei Aussparungen, in denen jeweils eine Status-LED und ein Button verborgen sind. 
+   Drücken Sie den Button unter dem Label "TEST — NO TKT". 
    Dies löst den Druck einer Testseite aus. 
+   Die Testseite könnte z.B. so aussehen: 
+
+!["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
 
 Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
@@ -121,16 +132,24 @@ Tippen Sie :btn:Weiter:, nehmen Sie auf der nächsten Seite gegebenenfalls Feine
 Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
 Tippen Sie :btn:Einstellungen speichern:. 
 
-Falls es Probleme mit der pretixPRINT-Testseite gibt, tippen Sie auf der Startseite von pretixPRINT erneut :btn:Drucker einrichten:. 
-Dieser Button enthält nun den zusätzlichen Hinweis: "Aktuell in Verwendung @ :placeholder:IP-Adresse: :placeholder:Typ der Verbindung:". 
-Navigieren Sie erneut durch die Einstellungen und machen Sie folgende Anpassungen: 
-
-
-
 !!! Note 
     Die Testseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
     Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
+
+Es folgen Beispiele für die pretixPRINT-Testseiten verschiedener Druckermodelle. 
+
+Epson: 
+
+!["Ein Streifen graublaues Belegpapier mit Text, einer Zeile zum Testen der Breite des Belegpapiers, und einem QR-Code"](../assets/screens/hardware-setup/epson-pretixprint.jpg "pretixPRINT-Testseite aus Epson-Drucker")
+
+Bixolon: 
+
+!["Ein weißes Klebeetikett mit Mustern, pretix-Logos und der Papiergröße: 8 x 3,25 Zoll"](../assets/screens/hardware-setup/bixolon-test.jpg "pretixPRINT-Testseite aus Bixolon-Drucker")
+
+Boca Lemur: 
+
+!["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftgrößen, Muster, Streifen und pretix-Logos."](../assets/screens/hardware-setup/boca-pretixprint.jpg "pretixPRINT-Testseite aus Boca-Drucker")
 
 ## Problemlösung 
 
