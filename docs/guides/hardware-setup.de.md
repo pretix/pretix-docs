@@ -62,7 +62,7 @@ Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers.
 
 ### Drucker einrichten 
 
-Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges. 
+Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Testseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
@@ -109,14 +109,21 @@ Das wird im nächsten Abschnitt näher erklärt.
 
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
 
-Falls Sie beim Einlass Badges drucken wollen, dann öffnen Sie auf dem Scan-Smartphone die App pretixPRINT. 
-Unter "Badgedrucker" tippen Sie :btn:Drucker einrichten:. 
+Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um die Drucker anzusteuern. 
+Unser Team hat die App auf den Mietgeräten bereits vorkonfiguriert. 
+Allerdings sollten Sie diese Einrichtung vor Beginn Ihrer Veranstaltung überprüfen. 
+Dieser Abschnitt erklärt Ihnen, wie Sie sicherstellen können, dass der Druck wie gewünscht funktioniert. 
 
-!!! Note
-    pretixPRINT erlaubt die Einrichtung von drei verschiedenen Arten von Druckern. 
-    Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
-    Für die Einlasskontrolle ergibt es keinen Sinn, Ticket- oder Belegdrucker einzusetzen. 
-    Tippen Sie daher die Schaltfläche unter der Überschrift "Badgedrucker". 
+pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker.  
+Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
+Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
+
+Beleg- und Ticketdrucker richten Sie normalerweise an einem Kassengerät ein. 
+Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
+Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
+
+Tippen Sie daher am richtigen Gerät unter der richtigen Überschrift (Belegdrucker, Ticketdrucker oder Badgedrucker) die Schaltfläche :btn:Drucker einrichten:. 
+Danach ist der Prozess immer der gleiche. 
 
 Auf der Seite "Wie ist Ihr Drucker verbunden?" wählen Sie "Netzwerk (LAN/WLAN) und tippen :btn:Weiter:. 
 Geben Sie die IP-Adresse des Routers ein. 
@@ -150,6 +157,8 @@ Bixolon:
 Boca Lemur: 
 
 !["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftgrößen, Muster, Streifen und pretix-Logos."](../assets/screens/hardware-setup/boca-pretixprint.jpg "pretixPRINT-Testseite aus Boca-Drucker")
+
+Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten, für jeden Drucker, den Sie von dem Gerät aus ansteuern möchten. 
 
 ## Problemlösung 
 
