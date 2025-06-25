@@ -4,11 +4,13 @@ Dieser Artikel behandelt die Einrichtung von Hardware für Ihr Event.
 Wir bieten [professionelle Hardware](https://pretix.eu/about/de/hardware) zur Miete und zum Kauf an. 
 Mit diesen Geräten können Sie Produkte verkaufen, Einlasskontrolle machen, sowie Belege, Tickets und Badges ausdrucken. 
 Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN sowie einen WLAN-Router. 
-Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatible mit unseren Apps sind. 
+
+Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
 
 ## Voraussetzungen
 
 Die Voraussetzungen hängen von Ihrem individuellen Anwendungsfall ab. 
+In jedem Fall brauchen Sie ausreichend Steckdosen und mobilen Datenempfang oder einen Kabelanschluss für die Internetverbindung. 
 Für die Einrichtung eines Druckers benötigen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer. 
 
 ## Anleitung
@@ -19,7 +21,7 @@ Die Einrichtung der Hardware besteht aus folgenden Schritten:
  - Router einrichten (außer Sie verbinden die Hardware mit einem bestehenden Netzwerk)
  - Scan-Smartphones einrichten (falls Sie die Hardware für die Einlasskontrolle nutzen)
  - Kassengerät einrichten (falls Sie die Hardware für den Verkauf nutzen)
- - Drucker einrichten 
+ - Drucker einrichten und mit Scan- oder Kassengeräten verbinden 
 
 Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie relevant. 
 
@@ -90,10 +92,6 @@ Das Ausdrucken einer **Testseite** wird je nach Modell des Druckers unterschiedl
    Drücken Sie den Knopf unter dem Label "TEST — NO TKT". 
    Dies löst den Druck einer Testseite aus. 
 
-Falls der Drucker keine Testseite druckt, dann ist entweder das Material nicht richtig eingelegt, oder es gibt ein technisches Problem mit dem Drucker. 
-Überprüfen Sie, ob die Rolle bzw. der Papierstapel richtig in den Drucker eingelegt sind. 
-Falls Sie danach noch immer keine Testseite drucken können, konsultieren Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren Support. 
-
 Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
@@ -151,7 +149,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 #### IP-Adresse auf der Testseite lautet 0.0.0.0 
 
-Falls die IP-Adresse auf der druckereigenen Testseite `0.0.0.0` oder ein ähnliches unbrauchbares Ergebnis liefert, dann ist der Drucker nicht mit dem Netzwerk verbunden. 
+Falls die IP-Adresse auf der Testseite des Druckers `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis liefert, dann ist der Drucker nicht mit dem Netzwerk verbunden. 
 Prüfen Sie, ob das LAN-Kabel richtig im Port des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels im LAN-Port (**nicht** im WAN-Port) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
@@ -164,19 +162,23 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 Falls der Drucker die Testseite zwar richtig ausdruckt, Sie Ihn aber nicht dazu bringen können, die pretixPRINT-Testseite zu drucken wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden), kann das mehrere Gründe haben. 
 Überprüfen Sie: 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (`pretix-onsite` oder ähnlich)
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (SSID fängt an mit `pretix-onsite`)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
+
+Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
 #### Druckauftrag kommt auf einem anderen Drucker an
 
 Falls die pretixPRINT-Testseite oder Ihre anderen Druckaufträge zwar ausgedruckt werden, aber von einem anderen Drucker als erwartet, dann passt die in pretixPRINT hinterlegte IP-Adresse nicht zum Drucker. 
 Ändern Sie die IP-Adresse auf die des gewünschten Druckers oder verwenden Sie das Gerät mit dem verbundenen Drucker. 
+Speichern Sie die Einstellungen und testen Sie erneut. 
 
 #### Druckauftrag enthält Unsinn 
 
 Falls die pretixPRINT-Testseite oder Ihre anderen Druckaufträge zwar ausgedruckt werden, aber Unsinn enthalten, liegt das am gewählten Protokoll. 
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
+Speichern Sie die Einstellungen und testen Sie erneut. 
 
 ## Weiterführende Informationen
 
