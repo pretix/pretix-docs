@@ -7,6 +7,9 @@ Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN.
 
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
 
+Üblicherweise richtet unser Team die Geräte vor dem Versand an Sie so ein, dass Sie sie nur noch anschließen und testen müssen. 
+Das ist jedoch nicht immer möglich. 
+
 ## Voraussetzungen
 
 Die Voraussetzungen hängen von Ihrem individuellen Anwendungsfall ab. 
@@ -25,12 +28,6 @@ Die Einrichtung der Hardware besteht aus folgenden Schritten:
 
 Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie relevant. 
 
-!!! Note 
-    Wenn kleine runde bunte Sticker auf den Geräten kleben, dann sind sie bereits so vorkonfiguriert, dass sie mit anderen Geräten der gleichen Farbe zusammen funktionieren. 
-    Nehmen Sie beispielsweise an, Sie haben zwei Smartphones mit gelben Stickern haben, zwei Smartphones mit blauen Stickern, einen Badgedrucker mit gelben Sticker und einen mit blauem Sticker. 
-    In diesem Fall ist die Hardware so konfiguriert, dass die gelb markierten Smartphones auf dem gelb markierten Drucker drucken. 
-    Die blau markierten Smartphones drucken auf dem blau markierten Drucker. 
-
 ### Router einrichten 
 
 Die von uns angebotenen Router erkennen Sie an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite.  
@@ -38,15 +35,12 @@ Die von uns angebotenen Router erkennen Sie an den Antennen auf der Rückseite u
 Schließen Sie das Netzteil an die Buchse mit der Aufschrift "PWR" am Router und an eine Steckdose an. 
 Warten Sie ab, bis die LEDs des Routers nicht mehr blinken, sondern durchgängig leuchten. 
 Das kann einige Minuten dauern. 
-In dieser Zeit können Sie den Router mit dem weiteren Netzwerk verbinden. 
-Sie können aber Ihre weiteren Geräte (Scanner, Kassen oder Drucker) **noch nicht** über LAN oder WLAN mit dem Router verbinden. 
+In dieser Zeit können Sie die Geräte (Scanner, Kassen oder Drucker) **noch nicht** über LAN oder WLAN mit dem Router verbinden. 
 Warten Sie damit ab, bis die LEDs des Routers nicht mehr blinken. 
 
-Falls Sie den Router mit dem **Kabelnetzwerk** am Veranstaltungsort verbinden wollen, dann verbinden Sie die WAN-Buchse des Routers über ein LAN-Kabel mit einem Switch oder dem Kabelanschluss des Veranstaltungsorts. 
-Die LED an der WAN-Buchse des Routers leuchtet und blinkt, wenn eine Verbindung besteht und Daten übertragen werden.  
-
-Falls Sie die **mobile Datenverbindung** des Routers nutzen wollen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
+Um die mobile Datenverbindung des Routers zu nutzen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
 Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgängig leuchtet, hat der Router eine mobile Datenverbindung hergestellt. 
+Alternativ zur mobilen Datenverbindung können Sie den Router über die WAN-Buchse an eine Kabelverbindung anschließen. 
 
 Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
 Die SSIDs dieser Netze lauten `pretix_onsite` und `pretix_onsite_5ghz`. 
@@ -60,18 +54,35 @@ Verbinden Sie den Drucker **nicht** mit dem WAN-Anschluss am Router.
 ### Scan-Smartphones einrichten 
 
 Die von uns angebotenen Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
-Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
-Schließen Sie das Smartphone an ein Ladegerät an oder stecken Sie es in die Ladestation, bis der Akku ausreichend geladen ist. 
-Schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
+Vor dem Einsatz sollten Sie die Akkus der Smartphones ausreichend laden. 
+
+Je nach Bestellumfang und Verfügbarkeit haben Sie eine Dockingstation geliefert bekommen, auch Cradle genannt. 
+Die Dockingstation bietet Platz für bis zu fünf Smartphones. 
+Verbinden Sie die Dockingstation über das mitgelieferte Kabel mit dem Netzteil. 
+Verbinden Sie das Netzteil mit dem passenden Stromkabel mit einer Steckdose. 
+
+Stecken Sie dann die Smartphones in die Steckplätze der Dockingstation. 
+Bei erfolgreicher Verbindung mit der Station vibrieren die Smartphones, spielen einen Ton ab oder schalten den Bildschirm ein. 
+Das genaue Verhalten hängt von den Einstellungen des Smartphones ab. 
+
+!!! Note 
+    Die Dockingstation ist nur mit bestimmten Smartphone-Modellen kompatibel. 
+    Versuchen Sie **nicht**, ein Smartphone mit Gewalt in den Steckplatz zu stecken. 
+    Sie können Ihre privaten Smartphones **nicht** über die Dockingstation laden.  
+
+Falls Sie keine Dockingstation zur Verfügung haben, nutzen Sie ein herkömmliches Ladegerät. 
+Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
+Stecken Sie den Ladeadapter in eine Steckdose. 
+
+Nachdem das Smartphone ausreichend geladen ist, schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
 
 ### Kassengerät einrichten 
 
 Die von uns angebotenen Kassengeräte sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
-Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
 Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
 
-Schließen Sie die Kassenschublade 
+Schließen Sie die Kassenschublade über den RJ11-Anschluss an der Kasse an. 
 
 ### Drucker einrichten 
 
