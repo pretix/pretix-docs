@@ -44,8 +44,7 @@ Je nach Modell schneidet der Drucker das erste Ticket bzw. den ersten Badge ab.
 
 #### Testseite drucken
 
-Drucken Sie eine Testseite aus. 
-Drücken Sie dazu an der Seite des Geräts den Button unter dem Label "TEST". 
+Um eine Testseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit dem Label "TEST". 
 Die Testseite könnte z.B. so aussehen: 
 
 !["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
@@ -57,7 +56,6 @@ Das wird im nächsten Abschnitt näher erklärt.
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um die Drucker anzusteuern. 
-Unser Team hat die App auf den Mietgeräten bereits vorkonfiguriert. 
 Allerdings sollten Sie diese Einrichtung vor Beginn Ihrer Veranstaltung überprüfen. 
 Dieser Abschnitt erklärt Ihnen, wie Sie sicherstellen können, dass das Drucken wie gewünscht funktioniert. 
 
