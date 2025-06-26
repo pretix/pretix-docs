@@ -25,6 +25,12 @@ Die Einrichtung der Hardware besteht aus folgenden Schritten:
 
 Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie relevant. 
 
+!!! Note 
+    Wenn kleine runde bunte Sticker auf den Geräten kleben, dann sind sie bereits so vorkonfiguriert, dass sie mit anderen Geräten der gleichen Farbe zusammen funktionieren. 
+    Nehmen Sie beispielsweise an, Sie haben zwei Smartphones mit gelben Stickern haben, zwei Smartphones mit blauen Stickern, einen Badgedrucker mit gelben Sticker und einen mit blauem Sticker. 
+    In diesem Fall ist die Hardware so konfiguriert, dass die gelb markierten Smartphones auf dem gelb markierten Drucker drucken. 
+    Die blau markierten Smartphones drucken auf dem blau markierten Drucker. 
+
 ### Router einrichten 
 
 Die von uns angebotenen Router erkennen Sie an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite.  
@@ -32,10 +38,14 @@ Die von uns angebotenen Router erkennen Sie an den Antennen auf der Rückseite u
 Schließen Sie das Netzteil an die Buchse mit der Aufschrift "PWR" am Router und an eine Steckdose an. 
 Warten Sie ab, bis die LEDs des Routers nicht mehr blinken, sondern durchgängig leuchten. 
 Das kann einige Minuten dauern. 
+In dieser Zeit können Sie den Router mit dem weiteren Netzwerk verbinden. 
+Sie können aber Ihre weiteren Geräte (Scanner, Kassen oder Drucker) **noch nicht** über LAN oder WLAN mit dem Router verbinden. 
+Warten Sie damit ab, bis die LEDs des Routers nicht mehr blinken. 
 
-Falls Sie den Router mit dem Netzwerk am Veranstaltungsort verbinden wollen, dann verbinden Sie die WAN-Buchse des Routers über ein LAN-Kabel mit einem Switch oder dem Kabelanschluss des Veranstaltungsorts. 
+Falls Sie den Router mit dem **Kabelnetzwerk** am Veranstaltungsort verbinden wollen, dann verbinden Sie die WAN-Buchse des Routers über ein LAN-Kabel mit einem Switch oder dem Kabelanschluss des Veranstaltungsorts. 
 Die LED an der WAN-Buchse des Routers leuchtet und blinkt, wenn eine Verbindung besteht und Daten übertragen werden.  
-Falls Sie die mobile Datenverbindung des Routers nutzen wollen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
+
+Falls Sie die **mobile Datenverbindung** des Routers nutzen wollen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
 Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgängig leuchtet, hat der Router eine mobile Datenverbindung hergestellt. 
 
 Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
@@ -60,6 +70,8 @@ Die von uns angebotenen Kassengeräte sind Tablets mit großem Bildschirm und ei
 Unser Team hat das Mietgerät bereits Ihrem Veranstalterkonto hinzugefügt. 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
 Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
+
+Schließen Sie die Kassenschublade 
 
 ### Drucker einrichten 
 
@@ -140,6 +152,7 @@ Tippen Sie dann :btn:Weiter:.
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie das Protokoll aus, das am ehesten zu Ihrem Drucker passt. 
 Falls Sie einen Ticketdrucker der Marke Lemur verwenden, wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)". 
+
 Falls Sie einen Etikettendrucker der Marke Bixolon verwenden, wählen Sie "SLCS-Etikettendrucker (z.B. Bixolon, Metapace, ...)". 
 Tippen Sie :btn:Weiter:, nehmen Sie auf der nächsten Seite gegebenenfalls Feineinstellungen vor und tippen Sie erneut :btn:Weiter:. 
 
@@ -169,6 +182,18 @@ Boca Lemur:
 Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](hardware-setup.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](hardware-setup.de.md#problemlösung). 
 
 ## Problemlösung 
+
+#### LEDs 3G und 4G am Router blinken abwechselnd 
+
+**Problem:** Die LEDs mit den Beschriftungen "3G" und "4G" am Router blinken abwechselnd. 
+Die Statusanzeige mit den fünf Balken daneben leuchtet nicht. 
+
+**Lösung:** Der Router kann keine mobile Datenverbindung herstellen. 
+Überprüfen Sie, ob Sie mit anderen Geräten am gleichen Ort eine stabile mobile Datenverbindung haben. 
+Wenn dies der Fall ist, deutet das auf eine Fehlfunktion am Router oder an der eingebauten SIM-Karte hin. 
+Kontaktieren Sie unseren Support. 
+
+Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung herstellen können, nutzen Sie eine Kabelverbindung oder den Offline-Modus von pretixSCAN. 
 
 #### Drucker druckt die eigene Testseite nicht
 
