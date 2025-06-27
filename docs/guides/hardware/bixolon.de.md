@@ -1,7 +1,7 @@
 # Drucker einrichten: Bixolon XD5-40d 
 
 Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Bixolon zusammen mit pretix. 
-Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen verbinden. 
+Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden. 
 
 Note !!! 
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 

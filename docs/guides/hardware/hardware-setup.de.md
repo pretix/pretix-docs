@@ -8,7 +8,10 @@ Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN.
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
 
 Üblicherweise richtet unser Team die Geräte vor dem Versand an Sie so ein, dass Sie sie nur noch anschließen und testen müssen. 
-Das ist jedoch nicht immer möglich. 
+Je nach Auftragslage und Verfügbarkeit de rHardware ist dies jedoch nicht immer möglich. 
+
+Falls Sie Hardware von uns kaufen, gibt es eine größere Vielfalt an Geräten und Konfigurationsmöglichkeiten. 
+Dieser Artikel behandelt in erster Linie die Einrichtung unserer Miethardware. 
 
 ## Voraussetzungen
 
@@ -21,7 +24,7 @@ Für die Einrichtung eines Druckers benötigen Sie einen dünnen, stabilen Gegen
 Packen Sie Ihre Hardware-Lieferung aus und überprüfen Sie diese anhand des Lieferscheins auf Vollständigkeit. 
 Die Einrichtung der Hardware besteht aus folgenden Schritten: 
 
- - Router einrichten (außer Sie verbinden die Hardware mit einem bestehenden Netzwerk)
+ - Router einrichten (außer Sie verbinden die Hardware mit einem geeigneten bestehenden Netzwerk)
  - Scan-Smartphones einrichten (falls Sie die Hardware für die Einlasskontrolle nutzen)
  - Kassen einrichten (falls Sie die Hardware für den Verkauf nutzen)
  - Drucker einrichten und mit Scannern oder Kassen verbinden 
@@ -30,7 +33,8 @@ Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie releva
 
 ### Router einrichten 
 
-Die von uns angebotenen Router erkennen Sie an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite.  
+Als Router vermieten wir den Teltonika RUTX11. 
+Sie erkennen das Gerät an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite.  
 
 Schließen Sie das Netzteil an die Buchse mit der Aufschrift "PWR" am Router und an eine Steckdose an. 
 Warten Sie ab, bis die LEDs des Routers nicht mehr blinken, sondern durchgängig leuchten. 
@@ -40,11 +44,11 @@ Warten Sie damit ab, bis die LEDs des Routers nicht mehr blinken.
 
 Um die mobile Datenverbindung des Routers zu nutzen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
 Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgängig leuchtet, hat der Router eine mobile Datenverbindung hergestellt. 
-Alternativ zur mobilen Datenverbindung können Sie den Router über die WAN-Buchse an eine Kabelverbindung anschließen. 
+Alternativ zur mobilen Datenverbindung können Sie den Router über die WAN-Buchse an den kabelgebundenen Internetanschluss am Einsatzort anschließen. 
 
 Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
-Die SSIDs dieser Netze lauten `pretix_onsite` und `pretix_onsite_5ghz`. 
-Falls Sie mehrere Router verwenden, werden an die SSIDs ein Unterstrich und eine Zahl angehängt, z.B. `pretix_onsite_1` und `pretix_onsite_5ghz_1`. 
+Die Namen dieser Netze lauten `pretix_onsite` und `pretix_onsite_5ghz`. 
+Falls Sie mehrere Router von uns gemietet haben, werden an die Namen ein Unterstrich und eine Zahl angehängt, z.B. `pretix_onsite_1` und `pretix_onsite_5ghz_1`. 
 
 Verbinden Sie die anderen Geräte über LAN-Kabel oder über WLAN mit dem Router. 
 Smartphones verbinden Sie immer mit dem WLAN. 
@@ -53,24 +57,24 @@ Verbinden Sie den Drucker **nicht** mit dem WAN-Anschluss am Router.
 
 ### Scan-Smartphones einrichten 
 
-Die von uns angebotenen Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
+Die von uns vermieteten Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
 Vor dem Einsatz sollten Sie die Akkus der Smartphones ausreichend laden. 
 
-Je nach Bestellumfang und Verfügbarkeit haben Sie eine Dockingstation geliefert bekommen, auch Cradle genannt. 
-Die Dockingstation bietet Platz für bis zu fünf Smartphones. 
-Verbinden Sie die Dockingstation über das mitgelieferte Kabel mit dem Netzteil. 
+Je nach Bestellumfang und Verfügbarkeit haben Sie eine Ladestation geliefert bekommen. 
+Die Ladestation bietet Platz für bis zu fünf Smartphones. 
+Verbinden Sie die Ladestation über das mitgelieferte Kabel mit dem Netzteil. 
 Verbinden Sie das Netzteil mit dem passenden Stromkabel mit einer Steckdose. 
 
-Stecken Sie dann die Smartphones in die Steckplätze der Dockingstation. 
+Stecken Sie dann die Smartphones in die Steckplätze der Ladestation. 
 Bei erfolgreicher Verbindung mit der Station vibrieren die Smartphones, spielen einen Ton ab oder schalten den Bildschirm ein. 
 Das genaue Verhalten hängt von den Einstellungen des Smartphones ab. 
 
 !!! Note 
-    Die Dockingstation ist nur mit bestimmten Smartphone-Modellen kompatibel. 
+    Die Ladestation ist nur mit bestimmten Smartphone-Modellen kompatibel. 
     Versuchen Sie **nicht**, ein Smartphone mit Gewalt in den Steckplatz zu stecken. 
-    Sie können Ihre privaten Smartphones **nicht** über die Dockingstation laden.  
+    Sie können Ihre privaten Smartphones **nicht** über die Ladestation laden.  
 
-Falls Sie keine Dockingstation zur Verfügung haben, nutzen Sie ein herkömmliches Ladegerät. 
+Falls Sie keine Ladestation zur Verfügung haben, nutzen Sie ein herkömmliches Ladegerät. 
 Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
 Stecken Sie den Ladeadapter in eine Steckdose. 
 
@@ -78,7 +82,7 @@ Nachdem das Smartphone ausreichend geladen ist, schalten Sie es ein und verbinde
 
 ### Kasse einrichten 
 
-Die von uns angebotenen Kassen sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
+Die von uns vermieteten Kassen sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
 Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
 
@@ -90,107 +94,13 @@ Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Ba
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Testseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
-Diese Schritte werden im folgenden genauer erklärt. 
+Diese Schritte werden auf den folgenden Seiten genauer erklärt: 
 
-#### Drucker anschließen
+ - Belegdrucker [Epson TM-m30iii und Epson TM-T88vii](epson.de.md)
+ - Ticket- oder Badgedrucker [Boca Lemur und Boca Lemur C](boca.de.md)
+ - Badgedrucker [Bixolon XD5-40d](bixolon.de.md)
 
-Falls Ihr Drucker intern über eine Rolle mit Material versorgt wird (Thermopapier oder Labels), dann legen Sie zunächst diese Rolle ein. 
-Verbinden Sie den Drucker dann über ein LAN-Kabel mit einem der nummerierten "LAN"-Anschlüsse des Routers. 
-Schließen Sie das Netzteil an den Drucker und an eine Steckdose an. 
 
-Falls Ihr Drucker über einen flachen Papierstapel mit Material versorgt wird (Tickets oder Butterfly-Badges), dann schieben Sie das Papier jetzt in den Drucker. 
-Drehen Sie das Papier so, dass die bedruckbare Seite nach oben zeigt und die schwarzen quadratischen Markierungen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
-Sobald Sie das Papier weit genug in den Drucker geschoben haben, zieht er das Papier automatisch ein und schneidet das erste Ticket bzw. den ersten Badge ab. 
-
-#### Testseite drucken
-
-Das Ausdrucken einer **Testseite** wird je nach Modell des Druckers unterschiedlich ausgelöst: 
-
- - Die Belegdrucker **Epson TM-m30iii** und **TM-T88vii** drucken innerhalb einer Minute nach Einschalten automatisch eine Testseite. 
-   Das funktioniert nur, wenn der Drucker mit Stromversorgung und Router verbunden ist und Papier hat. 
-   Falls Sie erneut eine Testseite drucken wollen, schalten Sie den Drucker aus und wieder ein. 
-   Die Testseite könnte z.B. so aussehen: 
-
-!["Ein Streifen graublaues Belegpapier mit Text: IP Address 192.168.214.101 SubnetMask 255.255.255.0 Gateway 192.168.214.1 DHCP Enable"](../../assets/screens/hardware-setup/epson-test.jpg "Epson Testseite des Druckers")
-
- - Der Etikettendrucker **Bixolon XD5-40d** hat neben dem Strom- und LAN-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
-   Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
-   Das löst den Druck einer Testseite aus. 
-   Die Testseite könnte z.B. so aussehen: 
-
-!["Ein weißes Klebeetikett mit teilweise abgeschnittenem Text: MAC ADDR 00:15:94:61:1a:40 LAN_DHCP LAN_DHCP enabled IP ADDR 192.168.214.122 SUBNETMASK 255.255.255.0 GATEWAY 192.168.214.1 PORT 9100"](../../assets/screens/hardware-setup/bixolon-test.jpg "Bixolon Testseite des Druckers")
-
- - Die Ticketdrucker **Boca Lemur** und **Lemur C** haben an der Seite drei Aussparungen, in denen jeweils eine Status-LED und ein Button verborgen sind. 
-   Drücken Sie den Button unter dem Label "TEST — NO TKT". 
-   Dies löst den Druck einer Testseite aus. 
-   Die Testseite könnte z.B. so aussehen: 
-
-!["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
-
-Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
-Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
-Das wird im nächsten Abschnitt näher erklärt. 
-
-#### Drucker mit Scan-Smartphone oder Kasse verbinden
-
-Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um die Drucker anzusteuern. 
-Unser Team hat die App auf den Mietgeräten bereits vorkonfiguriert. 
-Allerdings sollten Sie diese Einrichtung vor Beginn Ihrer Veranstaltung überprüfen. 
-Dieser Abschnitt erklärt Ihnen, wie Sie sicherstellen können, dass das Drucken wie gewünscht funktioniert. 
-
-pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker.  
-Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
-Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
-
-Beleg- und Ticketdrucker richten Sie normalerweise an einer Kasse ein. 
-Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
-Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
-
-Tippen Sie daher am richtigen Gerät unter der richtigen Überschrift (Belegdrucker, Ticketdrucker oder Badgedrucker) die Schaltfläche :btn:Drucker einrichten:. 
-Danach ist der Prozess immer der gleiche. 
-
-Falls Sie den **integrierten** Belegdrucker der Kasse verbinden wollen, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Eingebauter Drucker (SUNMI)" und tippen :btn:Weiter:. 
-Sie müssen keine IP-Adresse angeben und unter Protokoll und Dialekt die jeweils einzige Möglichkeit wählen. 
-
-Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
-Tippen Sie :btn:Einstellungen speichern:. 
-
-Falls Sie einen Drucker im **Netzwerk** verbinden wollen, wählen Sie auf der  Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN) und tippen :btn:Weiter:. 
-Geben Sie die IP-Adresse des Routers ein. 
-Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
-Bearbeiten Sie es nur dann, wenn die Testseite des Druckers eine Port-Nummer ausgibt, die **nicht** `9100` lautet. 
-Tippen Sie dann :btn:Weiter:. 
-
-Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie das Protokoll aus, das am ehesten zu Ihrem Drucker passt. 
-Falls Sie einen Ticketdrucker der Marke Lemur verwenden, wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)". 
-
-Falls Sie einen Etikettendrucker der Marke Bixolon verwenden, wählen Sie "SLCS-Etikettendrucker (z.B. Bixolon, Metapace, ...)". 
-Tippen Sie :btn:Weiter:, nehmen Sie auf der nächsten Seite gegebenenfalls Feineinstellungen vor und tippen Sie erneut :btn:Weiter:. 
-
-Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
-Tippen Sie :btn:Einstellungen speichern:. 
-
-!!! Note 
-    Die Testseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
-    Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
-    Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
-
-Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten, für jeden Drucker, den Sie von dem Gerät aus ansteuern möchten. 
-Es folgen Beispiele für die pretixPRINT-Testseiten verschiedener Druckermodelle. 
-
-Epson: 
-
-!["Ein Streifen graublaues Belegpapier mit Text, einer Zeile zum Testen der Breite des Belegpapiers, und einem QR-Code"](../../assets/screens/hardware-setup/epson-pretixprint.jpg "pretixPRINT-Testseite aus Epson-Drucker")
-
-Bixolon: 
-
-!["Ein weißes Klebeetikett mit Mustern, pretix-Logos und der Papiergröße: 8 x 3,25 Zoll"](../../assets/screens/hardware-setup/bixolon-test.jpg "pretixPRINT-Testseite aus Bixolon-Drucker")
-
-Boca Lemur: 
-
-!["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftgrößen, Muster, Streifen und pretix-Logos."](../../assets/screens/hardware-setup/boca-pretixprint.jpg "pretixPRINT-Testseite aus Boca-Drucker")
-
-Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](hardware-setup.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](hardware-setup.de.md#problemlösung). 
 
 ## Problemlösung 
 
@@ -238,7 +148,7 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 
 **Lösung:** Überprüfen Sie: 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (SSID fängt an mit `pretix-onsite`)
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (Netzwerkname fängt an mit `pretix-onsite`)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 

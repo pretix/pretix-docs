@@ -1,7 +1,7 @@
 # Drucker einrichten: Boca Lemur und Boca Lemur C 
 
 Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Boca zusammen mit pretix. 
-Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Scan- und Kassengeräten verbinden. 
+Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden. 
 
 Note !!! 
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 
