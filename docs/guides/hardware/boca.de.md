@@ -1,6 +1,6 @@
 # Drucker einrichten: Boca Lemur und Boca Lemur C 
 
-Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Lemur zusammen mit pretix. 
+Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Boca zusammen mit pretix. 
 Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Scan- und Kassengeräten verbinden. 
 
 Note !!! 
@@ -18,7 +18,7 @@ Die Geräte Lemur und Boca Lemur C unterscheiden sich in der Bedienung nur in fo
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
-Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur). 
+Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite. 
 
 ## Anleitung
 
@@ -51,8 +51,8 @@ Die Testseite könnte z.B. so aussehen:
 
 !["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
 
-Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
-Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
+Die IP-Adresse befindet sich im oberen linken Viertel des Ausdrucks in der Zeile, die mit `IP ADD=` beginnt. 
+Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
@@ -64,7 +64,7 @@ pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendu
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie üblicherweise an einem Kassengerät ein. 
+Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 

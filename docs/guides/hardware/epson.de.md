@@ -1,7 +1,7 @@
 # Drucker einrichten: Epson TM-m30iii und Epson TM-T88vii 
 
 Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Epson zusammen mit pretix. 
-Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassengeräten verbinden. 
+Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kasseng verbinden. 
 
 Note !!! 
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 
@@ -54,8 +54,8 @@ Die Testseite könnte z.B. so aussehen:
 
 !["Ein Streifen graublaues Belegpapier mit Text: IP Address 192.168.214.101 SubnetMask 255.255.255.0 Gateway 192.168.214.1 DHCP Enable"](../../assets/screens/hardware-setup/epson-test.jpg "Epson Testseite des Druckers")
 
-Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
-Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
+Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP Address` beginnt. 
+Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
@@ -67,7 +67,7 @@ pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendu
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie üblicherweise an einem Kassengerät ein. 
+Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 

@@ -2,7 +2,7 @@
 
 Dieser Artikel behandelt die Einrichtung von Hardware für Ihr Event. 
 Wir bieten [professionelle Hardware](https://pretix.eu/about/de/hardware) zur Miete und zum Kauf an. 
-Mit diesen Geräten können Sie Produkte verkaufen, Einlasskontrolle machen, sowie Belege, Tickets und Badges ausdrucken. 
+Mit diesen Geräten können Sie Produkte verkaufen, am Einlass Tickets kontrollieren, sowie Belege, Tickets und Badges ausdrucken. 
 Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN. 
 
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
@@ -23,8 +23,8 @@ Die Einrichtung der Hardware besteht aus folgenden Schritten:
 
  - Router einrichten (außer Sie verbinden die Hardware mit einem bestehenden Netzwerk)
  - Scan-Smartphones einrichten (falls Sie die Hardware für die Einlasskontrolle nutzen)
- - Kassengerät einrichten (falls Sie die Hardware für den Verkauf nutzen)
- - Drucker einrichten und mit Scan- oder Kassengeräten verbinden 
+ - Kassen einrichten (falls Sie die Hardware für den Verkauf nutzen)
+ - Drucker einrichten und mit Scannern oder Kassen verbinden 
 
 Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie relevant. 
 
@@ -76,9 +76,9 @@ Stecken Sie den Ladeadapter in eine Steckdose.
 
 Nachdem das Smartphone ausreichend geladen ist, schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
 
-### Kassengerät einrichten 
+### Kasse einrichten 
 
-Die von uns angebotenen Kassengeräte sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
+Die von uns angebotenen Kassen sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
 Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
 
@@ -128,7 +128,7 @@ Das Ausdrucken einer **Testseite** wird je nach Modell des Druckers unterschiedl
 !["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
 
 Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
-Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
+Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
@@ -142,14 +142,14 @@ pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendu
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie normalerweise an einem Kassengerät ein. 
+Beleg- und Ticketdrucker richten Sie normalerweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Tippen Sie daher am richtigen Gerät unter der richtigen Überschrift (Belegdrucker, Ticketdrucker oder Badgedrucker) die Schaltfläche :btn:Drucker einrichten:. 
 Danach ist der Prozess immer der gleiche. 
 
-Falls Sie den **integrierten** Belegdrucker des Kassengeräts verbinden wollen, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Eingebauter Drucker (SUNMI)" und tippen :btn:Weiter:. 
+Falls Sie den **integrierten** Belegdrucker der Kasse verbinden wollen, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Eingebauter Drucker (SUNMI)" und tippen :btn:Weiter:. 
 Sie müssen keine IP-Adresse angeben und unter Protokoll und Dialekt die jeweils einzige Möglichkeit wählen. 
 
 Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 

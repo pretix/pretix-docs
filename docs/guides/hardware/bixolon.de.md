@@ -1,7 +1,7 @@
 # Drucker einrichten: Bixolon XD5-40d 
 
 Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Bixolon zusammen mit pretix. 
-Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassengeräten verbinden. 
+Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen verbinden. 
 
 Note !!! 
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 
@@ -45,8 +45,9 @@ Die Testseite könnte z.B. so aussehen:
 
 !["Ein weißes Klebeetikett mit teilweise abgeschnittenem Text: MAC ADDR 00:15:94:61:1a:40 LAN_DHCP LAN_DHCP enabled IP ADDR 192.168.214.122 SUBNETMASK 255.255.255.0 GATEWAY 192.168.214.1 PORT 9100"](../../assets/screens/hardware-setup/bixolon-test.jpg "Bixolon Testseite des Druckers")
 
-Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
-Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
+Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
+Sie ist nicht zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird.  
+Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
@@ -58,7 +59,7 @@ pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendu
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie üblicherweise an einem Kassengerät ein. 
+Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kassen ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
