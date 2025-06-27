@@ -49,7 +49,7 @@ Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche,
 Um eine Testseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit dem Label "TEST". 
 Die Testseite könnte z.B. so aussehen: 
 
-!["Ein weißes Ticket mit lila Streifen,  glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
+!["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
 
 Sie können der Testseite die IP-Adresse des Druckers entnehmen. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassengeräte mit den Druckern zu verbinden. 
@@ -60,7 +60,7 @@ Das wird im nächsten Abschnitt näher erklärt.
 Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker Lemur und Lemur C über die App verbinden und die Funktion testen. 
 
-pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker.  
+pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
@@ -73,10 +73,9 @@ Um den Drucker als Ticketdrucker mit einer Kasse zu verbinden, öffnen Sie preti
 Um den Drucker als Badgedrucker mit einem Scan-Smartphone zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten. 
 Unabhängig von Ihrer Auswahl ist der Prozess danach immer der gleiche. 
 
-Wenn der Drucker über das Netzwerk verbunden ist, wählen Sie auf der  Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
+Wenn der Drucker über das Netzwerk verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
 Geben Sie die IP-Adresse des Routers ein. 
 Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
-Bearbeiten Sie es nur dann, wenn die Testseite des Druckers eine Port-Nummer ausgibt, die **nicht** `9100` lautet. 
 Tippen Sie dann :btn:Weiter:. 
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)" und tippen Sie :btn:Weiter:. 
@@ -118,7 +117,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 **Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
 
-**Lösung:**  Der Drucker ist nicht mit dem Netzwerk verbunden. 
+**Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
 Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
