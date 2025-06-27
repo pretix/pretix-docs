@@ -17,13 +17,13 @@ Die Geräte Lemur und Boca Lemur C unterscheiden sich in der Bedienung nur in fo
 ## Voraussetzungen
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
-Für die Internetverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
+Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
 Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur). 
 
 ## Anleitung
 
 Sie können den Lemur und den Lemur C als Ticketdrucker oder als Badgedrucker verwenden. 
-Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
+Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Testseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 

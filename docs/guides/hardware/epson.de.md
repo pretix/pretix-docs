@@ -16,13 +16,13 @@ Die Geräte Epson TM-m30iii und TM-T88vii unterscheiden sich in der Bedienung nu
 ## Voraussetzungen
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
-Für die Internetverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
+Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
 Sie benötigen aufgerolltes bedruckbares Thermopapier mit einer Breite von 57mm bis 80mm. 
 
 ## Anleitung
 
 Sie können den Epson TM-m30iii und den TM-T88vii als Belegdrucker verwenden. 
-Sie müssen Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
+Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Testseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
