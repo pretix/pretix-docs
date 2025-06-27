@@ -25,16 +25,16 @@ Diese Schritte werden im folgenden genauer erklärt.
 #### Drucker anschließen
 
 Legen Sie zunächst das Druckmaterial in den Drucker ein. 
-Drücken Sie die orangen Hebel an den Seiten des Geräts und klappen Sie den oberen Teil des Gehäuses nach oben. 
+Ziehen Sie die beiden orangen Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben. 
 Im Inneren des Druckers schieben Sie die Halterungen für die Rolle auseinander. 
 Drehen Sie die Etikettenrolle so, dass das Ende des Streifens nach vorne zeigt und die Etiketten oben liegen. 
 Stecken Sie die Etikettenrolle auf die Halterung und schieben Sie dann die Halterungen so zusammen, dass die Rolle zwischen Ihnen klemmt. 
-Ziehen Sie das Papier ein Stück weit nach vorne und schließen Sie die Klappe, sodass das Papier glatt und gerade aus dem Schlitz ragt. 
+Ziehen Sie das Papier bis zum vorderen Ende des Druckers und schließen Sie die Klappe, sodass das Papier glatt und gerade aus dem Schlitz ragt. 
 
 Alle Anschlüsse befinden sich hinten und unten am Gerät. 
-Stecken Sie ein LAN-Kabel in die entsprechende Buchse. 
+Stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET". 
 Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
-Schließen Sie das Netzteil an den Drucker und an eine Steckdose an. 
+Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
 
 #### Testseite drucken
 
@@ -119,7 +119,7 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 
 #### Drucker druckt pretixPRINT-Testseite nicht
 
-**Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+**Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 **Lösung:** Überprüfen Sie: 
 
