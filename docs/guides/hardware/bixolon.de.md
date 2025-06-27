@@ -148,5 +148,3 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 **Lösung:** In pretixPRINT ist das falsche Protokoll für den Drucker konfiguriert. 
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
-
-What are common problems that could be encountered here? How do you solve them? 

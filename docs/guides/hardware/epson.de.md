@@ -157,8 +157,6 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-What are common problems that could be encountered here? How do you solve them? 
-
 ## Weitere Informationen
 
  - [EPSON TM-m30ii: Inbetriebnahme ](https://www.youtube.com/watch?v=iT_66QIcY0I) auf YouTube (deutsch)
