@@ -10,7 +10,8 @@ Note !!!
 Die Geräte Lemur und Boca Lemur C unterscheiden sich in der Bedienung nur in folgenden Punkten voneinander: 
 
  - Stromversorgung (Lemur: integriertes Netzteil und Kaltgeräteanschluss. Lemur C: externes Netzteil) 
- - genaue Position der Anschlüsse und Buttons 
+ - Position der Buttons und LEDs (Lemur: linke Seite. Lemur C: rechte Seite) 
+ - Bildschirm (der Lemur besitzt einen Bildschirm, der Lemur C nicht)
  - maximale Druckbreite (Lemur: 101mm, Lemur C: 82mm)
 
 ## Voraussetzungen
@@ -35,12 +36,13 @@ Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem 
 **Lemur:** Verbinden Sie den Stromanschluss des Routers über ein Kaltgerätekabel mit einer Steckdose. 
 **Lemur C:** Schließen Sie das Netzteil an den Drucker und an eine Steckdose an. 
 
-Schalten Sie das Gerät ein, indem Sie den Schalter an der Seite umlegen. 
+Schalten Sie das Gerät ein, indem Sie den Schalter an der rechten Seite umlegen. 
+Beim Lemur ist der Schalter in einer Nische verborgen. 
 Daraufhin sollten der Bildschirm (nur Lemur) und mindestens eine LED an der Seite des Druckers aufleuchten. 
 
 Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeigt und die schwarzen quadratischen Markierungen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht. 
-Je nach Modell schneidet der Drucker das erste Ticket bzw. den ersten Badge ab. 
+Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur C: alle), schneidet er das erste Ticket bzw. den ersten Badge ab. 
 
 #### Testseite drucken
 
