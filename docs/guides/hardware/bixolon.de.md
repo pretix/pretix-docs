@@ -84,7 +84,8 @@ Das Feld "Port" können Sie in den meisten Fällen unverändert lassen.
 Tippen Sie dann :btn:Weiter:. 
 
 Falls der Drucker über **USB** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "USB (experimentell, funktioniert nicht auf allen Geräten)". 
-Tippen Sie dann den Button :btn:Gerät auswählen: und wählen Sie den Drucker aus der Liste aus, oder geben Sie die Seriennummer des Druckers ein. 
+Tippen Sie dann den Button :btn:Gerät auswählen: und wählen Sie den Drucker aus der Liste aus. 
+Daraufhin trägt die App die Seriennummer in das entsprechende Feld ein. 
 Tippen Sie dann :btn:Weiter:. 
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie "SLCS-Etikettendrucker (z.B. Bixolon, Metapace, ...)" und tippen Sie :btn:Weiter:. 
@@ -139,7 +140,7 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 
 **Lösung:** Überprüfen Sie: 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (SSID fängt an mit `pretix-onsite`)
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 

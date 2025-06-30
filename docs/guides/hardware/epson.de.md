@@ -17,7 +17,7 @@ Die Geräte Epson TM-m30iii und TM-T88vii unterscheiden sich in der Bedienung nu
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
-Sie benötigen aufgerolltes bedruckbares Thermopapier mit einer Breite von 57mm bis 80mm. 
+Sie benötigen aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm. 
 
 ## Anleitung
 
@@ -88,7 +88,8 @@ Das Feld "Port" können Sie in den meisten Fällen unverändert lassen.
 Tippen Sie dann :btn:Weiter:. 
 
 Falls der Drucker über **USB** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "USB (experimentell, funktioniert nicht auf allen Geräten)". 
-Tippen Sie dann den Button :btn:Gerät auswählen: und wählen Sie den Drucker aus der Liste aus, oder geben Sie die Seriennummer des Druckers ein. 
+Tippen Sie dann den Button :btn:Gerät auswählen: und wählen Sie den Drucker aus der Liste aus. 
+Daraufhin trägt die App die Seriennummer in das entsprechende Feld ein. 
 Tippen Sie dann :btn:Weiter:. 
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie "ESC/POS-Bondrucker (z.B. Epson, Bixolon, ...)" und tippen Sie :btn:Weiter:. 
@@ -125,25 +126,13 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-#### IP-Adresse auf der Testseite lautet 0.0.0.0 
-
-**Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
-
-**Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
-Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
-Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
-Verwenden Sie gegebenenfalls ein anderes Kabel. 
-
-Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
-Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
-
 #### Drucker druckt pretixPRINT-Testseite nicht
 
 **Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 **Lösung:** Überprüfen Sie: 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (SSID fängt an mit `pretix-onsite`)
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 

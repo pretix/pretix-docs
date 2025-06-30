@@ -51,6 +51,10 @@ Schalten Sie das Gerät ein, indem Sie den Schalter an der rechten Seite umlegen
 Beim Lemur ist der Schalter in einer Nische verborgen. 
 Daraufhin sollten der Bildschirm (nur Lemur) und mindestens eine LED an der Seite des Druckers aufleuchten. 
 
+!!! Note 
+    Die Anweisungen zum Druckmaterial passen zur Konfiguration unserer Mietgeräte. 
+    Falls Sie Ihre Drucker bei einem Dritthändler gekauft haben oder Ihn in einer abweichenden Konfiguration bei uns geordert haben, müssen Sie das Druckmaterial womöglich anders einlegen. 
+
 Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeigt und die schwarzen quadratischen Markierungen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht. 
 Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur C: alle), schneidet er das erste Ticket bzw. den ersten Badge ab. 
@@ -90,7 +94,8 @@ Das Feld "Port" können Sie in den meisten Fällen unverändert lassen.
 Tippen Sie dann :btn:Weiter:. 
 
 Falls der Drucker über **USB** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "USB (experimentell, funktioniert nicht auf allen Geräten)". 
-Tippen Sie dann den Button :btn:Gerät auswählen: und wählen Sie den Drucker aus der Liste aus, oder geben Sie die Seriennummer des Druckers ein. 
+Tippen Sie dann den Button :btn:Gerät auswählen: und wählen Sie den Drucker aus der Liste aus. 
+Daraufhin trägt die App die Seriennummer in das entsprechende Feld ein. 
 Tippen Sie dann :btn:Weiter:. 
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)" und tippen Sie :btn:Weiter:. 
@@ -136,6 +141,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
+Danach starten Sie den Router neu. 
 
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
 Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
@@ -146,7 +152,7 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 
 **Lösung:** Überprüfen Sie: 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (SSID fängt an mit `pretix-onsite`)
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 
