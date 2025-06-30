@@ -8,7 +8,7 @@ Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN.
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
 
 Üblicherweise richtet unser Team die Geräte vor dem Versand an Sie so ein, dass Sie sie nur noch anschließen und testen müssen. 
-Je nach Auftragslage und Verfügbarkeit de rHardware ist dies jedoch nicht immer möglich. 
+Je nach Auftragslage und Verfügbarkeit der Hardware ist dies jedoch nicht immer möglich. 
 
 Falls Sie Hardware von uns kaufen, gibt es eine größere Vielfalt an Geräten und Konfigurationsmöglichkeiten. 
 Dieser Artikel behandelt in erster Linie die Einrichtung unserer Miethardware. 
@@ -54,6 +54,21 @@ Verbinden Sie die anderen Geräte über LAN-Kabel oder über WLAN mit dem Router
 Smartphones verbinden Sie immer mit dem WLAN. 
 Drucker verbinden Sie mit einem LAN-Kabel mit einem der nummerierten LAN-Anschlüsse am Router. 
 Verbinden Sie den Drucker **nicht** mit dem WAN-Anschluss am Router. 
+
+### Alternative: Eigenes Netzwerk
+
+Alternativ zum einem unserer Router können Sie die Hardware auch an Ihr eigenes Netzwerk anschließen. 
+Das Netzwerk muss folgende Voraussetzungen erfüllen: 
+
+ - Alle Geräte mit pretixSCAN oder pretixPOS brauchen eine stabile https-fähige Internetverbindung für die Synchronisation mit dem pretix-Server. 
+ - Alle Android-Geräte brauchen eine stabile Internetverbindung für Updates und Gerätemanagement über die Google-Server. 
+ - Geräte mit pretixPRINT müssen über verschiedene TCP- und UDP-Ports mit den Druckern kommunizieren können. Das bedeutet: 
+   - **keine** Trennung von kabelgebundenem und kabellosen LAN in unterschiedliche lokale Netzwerke
+   - **keine** Client Isolation
+   - **keine** lokalen Firewalls oder sonstige Blockaden der Kommunikation zwischen den Geräten 
+
+Wir empfehlen, dass Sie potenzielle Verbindungsprobleme vermeiden, indem Sie einen unserer Router nutzen. 
+Die Konfiguration unserer Router erfüllt all die oben genannten Voraussetzungen. 
 
 ### Scan-Smartphones einrichten 
 
