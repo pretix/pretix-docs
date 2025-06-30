@@ -25,16 +25,27 @@ Diese Schritte werden im folgenden genauer erklärt.
 #### Drucker anschließen
 
 Legen Sie zunächst das Druckmaterial in den Drucker ein. 
+Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden ist und nicht eingeschaltet ist. 
+
 Ziehen Sie die beiden orangen Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben. 
 Im Inneren des Druckers schieben Sie die Halterungen für die Rolle auseinander. 
 Drehen Sie die Etikettenrolle so, dass das Ende des Streifens nach vorne zeigt und die Etiketten oben liegen. 
 Stecken Sie die Etikettenrolle auf die Halterung und schieben Sie dann die Halterungen so zusammen, dass die Rolle zwischen Ihnen klemmt. 
 Ziehen Sie das Papier bis zum vorderen Ende des Druckers und schließen Sie die Klappe, sodass das Papier glatt und gerade aus dem Schlitz ragt. 
 
+Überprüfen Sie, ob der Stromschalter des Druckers ausgeschaltet ist, und schalten Sie ihn gegebenenfalls aus. 
+Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet ist. 
 Alle Anschlüsse befinden sich hinten und unten am Gerät. 
-Stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET". 
+
+Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
+
+Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
+Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
+Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
+
 Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
+Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse umlegen. 
 
 #### Testseite drucken
 

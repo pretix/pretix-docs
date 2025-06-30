@@ -30,17 +30,24 @@ Diese Schritte werden im folgenden genauer erklärt.
 #### Drucker anschließen
 
 Legen Sie zunächst das Druckmaterial in den Drucker ein. 
+Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden ist und nicht eingeschaltet ist. 
+
 **TM-m30iii:** Schieben Sie den grauen Hebel an der Oberseite des Geräts nach hinten und öffnen Sie die Materialklappe. 
 **TM-T88vii:** Drücken Sie das graue Element an der Oberseite des Geräts nach unten und öffnen Sie die Materialklappe. 
 Legen Sie die Papierrolle so in die Vertiefung im inneren des Geräts, dass das Papier an der Vorderseite des Innenraums nach oben läuft. 
 Ziehen Sie das Papier ein Stück weit nach oben und schließen Sie die Klappe, sodass das Papier glatt und gerade aus dem Schlitz ragt. 
 
+Überprüfen Sie, ob der Stromschalter des Druckers ausgeschaltet ist, und schalten Sie ihn gegebenenfalls aus. 
+Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet ist. 
 Alle Anschlüsse befinden sich hinten und unten am Gerät. 
 Beim TM-m30iii können Sie die Abdeckung an der Unterseite des Geräts entfernen, um Zugang zu den Anschlüssen zu erhalten. 
 
-Stecken Sie ein LAN-Kabel in die entsprechende Buchse. 
+Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die entsprechende Buchse am Drucker. 
 Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
-Schließen Sie das Netzteil an den Drucker und an eine Steckdose an. 
+
+Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
+Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse am Drucker. 
+Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
 
 **TM-m30iii:** Drücken Sie den Stromschalter an der Oberseite des Druckers ein. 
 **TM-T88vii:** Legen Sie den Stromschalter an der Vorderseite des Druckers um. 
