@@ -115,7 +115,13 @@ Diese Schritte werden auf den folgenden Seiten genauer erklärt:
  - Ticket- oder Badgedrucker [Boca Lemur und Boca Lemur C](boca.de.md)
  - Badgedrucker [Bixolon XD5-40d](bixolon.de.md)
 
+Falls Sie den **integrierten** Drucker der Kasse als Belegdrucker verwenden wollen, öffnen Sie auf der Kasse die App pretixPRINT. 
+Tippen Sie unter der Überschrift "Belegdrucker" den Button :btn:Drucker einrichten:. 
+Auf der Seite "Wie ist Ihr Drucker verbunden?" wählen Sie die Option "Eingebauter Drucker (SUNMI)" und tippen :btn:Weiter:. 
+Sie müssen keine IP-Adresse angeben und unter Protokoll und Dialekt die jeweils einzige Möglichkeit wählen. 
 
+Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
+Tippen Sie :btn:Einstellungen speichern:. 
 
 ## Problemlösung 
 
