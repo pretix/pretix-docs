@@ -30,11 +30,22 @@ Diese Schritte werden im folgenden genauer erklärt.
 
 #### Drucker anschließen
 
-Stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
+Überprüfen Sie, ob der Stromschalter des Druckers ausgeschaltet ist, und schalten Sie ihn gegebenenfalls aus. 
+Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet ist. 
+
+**Lemur:** Schließen Sie das Kaltgerätekabel zuerst an den Drucker und danach an eine Steckdose an. 
+**Lemur C:** Schließen Sie das Netzteil zuerst an den Drucker und danach an eine Steckdose an. 
+
+Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
 
-**Lemur:** Verbinden Sie den Stromanschluss des Routers über ein Kaltgerätekabel mit einer Steckdose. 
-**Lemur C:** Schließen Sie das Netzteil an den Drucker und an eine Steckdose an. 
+!!! Warning 
+    Es ist möglich, die USB-Ports von Drucker und Kasse beim Verbinden über USB zu beschädigen. 
+    Weichen Sie **nicht** von der hier geschilderten Reihenfolge ab, um potenzielle Beschädigungen zu vermeiden. 
+
+Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
+Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
+Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
 
 Schalten Sie das Gerät ein, indem Sie den Schalter an der rechten Seite umlegen. 
 Beim Lemur ist der Schalter in einer Nische verborgen. 
