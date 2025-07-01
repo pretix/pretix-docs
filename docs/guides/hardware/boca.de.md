@@ -180,6 +180,53 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
+#### Druck ist falsch gedreht 
+
+**Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
+
+**Lösung:** In pretixPRINT ist die Drehung nicht richtig konfiguriert. 
+Öffnen Sie auf dem Adnroid-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
+Tippen Sie :btn:Weiter: bis Sie die Seite geöffnet haben, auf der das Dropdown-Menü "Drehung" angezeigt wird. 
+Die Standardeinstellung hier ist `0°`. 
+
+Ändern Sie diese Einstellung entgegen der Fehldrehung auf dem Druck. 
+Tippen Sie :btn:Weiter: und dann :btn:Testseite drucken:. 
+Wenn der Druck jetzt richtig gedreht ist, tippen Sie :btn:Einstellungen speichern:. 
+Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf einen anderen Wert. 
+
+#### Druck ist verschmutzt oder fleckig
+
+**Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
+
+**Lösung:** Der Druckkopf ist verschmutzt. 
+Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
+   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
+
+#### Druck ist leer oder enthält nur Teile des Layouts 
+
+**Problem:** Gedruckte Tickets oder Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
+
+**Lösung:** Das Layout ist zu groß für das Druckmaterial. 
+Ändern Sie das Layout so, dass es auf das Papier passt. 
+
+Öffnen Sie dazu das pretix-Backend und navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Tickets:. 
+Klicken Sie :btn-icon:fa3-paint-brush: Layout-Editor öffnen: oder :btn:Erweiterter Modus (mehrere Layouts) und bearbeiten Sie das relevante Layout. 
+
+Laden Sie ein PDF als Hintergrund in der Größe Ihres Druckmaterials hoch.
+Alternativ wählen Sie die Papiergröße so, dass sie Ihrem Druckmaterial entspricht oder etwas kleiner ist. 
+
+#### Drucker schneidet Papier an der falschen Stelle ab 
+
+**Problem:** Der Drucker schneidet Tickets oder Badges nach dem Drucken an der falschen Stelle ab (mehr als ein paar Millimeter neben der Schnittkante). 
+
+**Lösung:** Überprüfen Sie: 
+
+ - ob das Druckmaterial richtig herum bereitgelegt ist. 
+   Die bedruckbare Seite muss nach oben zeigen. 
+   Die Steuermarken (schwarze quadratische Markierungen) müssen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
+ - ob der Sensor an der richtigen Position ist. 
+   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Cut or Tear Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Cut or Tear SQ Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
+
 ## Weitere Informationen
 
  - [Boca Lemur: Inbetriebname](https://www.youtube.com/watch?v=w5n8h9GMDyg) auf YouTube (deutsch)

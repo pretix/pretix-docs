@@ -125,18 +125,6 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-#### IP-Adresse auf der Testseite lautet 0.0.0.0 
-
-**Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
-
-**Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
-Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
-Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
-Verwenden Sie gegebenenfalls ein anderes Kabel. 
-
-Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
-Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
-
 #### Drucker druckt pretixPRINT-Testseite nicht
 
 **Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
@@ -167,3 +155,38 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 **Lösung:** In pretixPRINT ist das falsche Protokoll für den Drucker konfiguriert. 
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
+
+#### Druck ist falsch gedreht 
+
+**Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
+
+**Lösung:** In pretixPRINT ist die Drehung nicht richtig konfiguriert. 
+Öffnen Sie auf dem Adnroid-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
+Tippen Sie :btn:Weiter: bis Sie die Seite geöffnet haben, auf der das Dropdown-Menü "Drehung" angezeigt wird. 
+Die Standardeinstellung hier ist `0°`. 
+
+Ändern Sie diese Einstellung entgegen der Fehldrehung auf dem Druck. 
+Tippen Sie :btn:Weiter: und dann :btn:Testseite drucken:. 
+Wenn der Druck jetzt richtig gedreht ist, tippen Sie :btn:Einstellungen speichern:. 
+Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf einen anderen Wert. 
+
+#### Druck ist verschmutzt oder fleckig
+
+**Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
+
+**Lösung:** Der Druckkopf ist verschmutzt. 
+Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
+   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate. 
+
+#### Druck ist leer oder enthält nur Teile des Layouts 
+
+**Problem:** Gedruckte Tickets oder Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
+
+**Lösung:** Das Layout ist zu groß für das Druckmaterial. 
+Ändern Sie das Layout so, dass es auf das Papier passt. 
+
+Öffnen Sie dazu das pretix-Backend und navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Tickets:. 
+Klicken Sie :btn-icon:fa3-paint-brush: Layout-Editor öffnen: oder :btn:Erweiterter Modus (mehrere Layouts) und bearbeiten Sie das relevante Layout. 
+
+Laden Sie ein PDF als Hintergrund in der Größe Ihres Druckmaterials hoch.
+Alternativ wählen Sie die Papiergröße so, dass sie Ihrem Druckmaterial entspricht oder etwas kleiner ist. 
