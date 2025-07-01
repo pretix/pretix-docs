@@ -81,7 +81,7 @@ Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendung
 
 Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
-Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
+Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Sie können die Drucker Lemur und Lemur C sowohl als Ticketdrucker als auch als Badgedrucker verwenden. 
 Um den Drucker als Ticketdrucker mit einer Kasse zu verbinden, öffnen Sie pretixPRINT auf der Kasse und tippen dann unter "Ticketdrucker" auf :btn:Drucker einrichten. 
@@ -99,7 +99,10 @@ Daraufhin trägt die App die Seriennummer in das entsprechende Feld ein.
 Tippen Sie dann :btn:Weiter:. 
 
 Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie "FGL-Ticketdrucker (z.B. Boca, Practical Automation, ...)" und tippen Sie :btn:Weiter:. 
-Lassen Sie auf der nächsten Seite unter "DPI" die Eingabe `200` unverändert, da der Drucker nur 200 DPI unterstützt. 
+
+Wenn Sie den Drucker von uns gemietet haben, dann lassen Sie auf der nächsten Seite unter "DPI" die Eingabe `200` unverändert, da der Drucker nur 200 DPI unterstützt. 
+Andere Drucker sind möglicherweise anders konfiguriert. 
+Die Auflösung können Sie dem Typenschild auf der Unterseite des Druckers entnehmen. 
 Nehmen Sie hier gegebenenfalls Feineinstellungen vor und tippen Sie erneut :btn:Weiter:. 
 
 Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
@@ -125,7 +128,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 **Lösung:** Überprüfen Sie: 
 
- - ob der Drucker mit Strom versorgt wird (das Netzteil/Stromkabel sollte verbunden sein und Status-LED oder Display am Drucker sollten leuchten)
+ - ob der Drucker mit Strom versorgt wird (das Netzteil/Stromkabel sollte verbunden sein und "READY"-LED oder Display am Drucker sollten leuchten)
  - ob das passende Material eingelegt ist
  - ob das Material richtig eingelegt ist
  - ob das Gehäuse des Druckers geschlossen ist

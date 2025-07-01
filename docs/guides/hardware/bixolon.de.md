@@ -49,16 +49,19 @@ Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse uml
 
 #### Testseite drucken
 
-Der Etikettendrucker **Bixolon XD5-40d** hat neben dem Strom- und LAN-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
+Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
 Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
 Das löst den Druck einer Testseite aus. 
 Die Testseite könnte z.B. so aussehen: 
 
-!["Ein weißes Klebeetikett mit teilweise abgeschnittenem Text: MAC ADDR 00:15:94:61:1a:40 LAN_DHCP LAN_DHCP enabled IP ADDR 192.168.214.122 SUBNETMASK 255.255.255.0 GATEWAY 192.168.214.1 PORT 9100"](../../assets/screens/hardware-setup/bixolon-test.jpg "Bixolon Testseite des Druckers")
+!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.jpg "Bixolon Testseite des Druckers")
+
+Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für sie relevant. 
+Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen Sie den Teil unter der Überschrift "WLAN CONFIGURATION". 
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
-Sie ist nicht zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird.  
-Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
+Sie ist **nicht** zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird. 
+Sie benötigen die Ethernet-IP-Adresse, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 #### Drucker mit Scan-Smartphone oder Kasse verbinden
@@ -72,7 +75,7 @@ Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendung
 
 Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kassen ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
-Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
+Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Sie können den Bixolon XD5-40d als Badgedrucker verwenden. 
 Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten. 

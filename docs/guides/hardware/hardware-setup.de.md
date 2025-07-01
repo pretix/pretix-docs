@@ -101,7 +101,7 @@ Die von uns vermieteten Kassen sind Tablets mit großem Bildschirm und einem ein
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
 Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
 
-Schließen Sie die Kassenschublade über den RJ11-Anschluss an der Kasse an. 
+Schließen Sie die Kassenschublade über den dafür vorgesehenen Anschluss (RJ11) an der Kasse an. 
 
 ### Drucker einrichten 
 

@@ -54,6 +54,11 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 
 #### Testseite drucken
 
+!!! Note 
+    Falls Sie den Drucker via USB anschließen, können Sie diesen Schritt überspringen. 
+    Der Drucker druckt nur bei aktiver Netzwerkverbindung automatisch eine Testseite. 
+    Sie benötigen die Testseite nicht, da die Verbindung über USB keine IP-Adresse erfordert. 
+
 Die Drucker produzieren innerhalb einer Minute nach dem Einschalten automatisch eine Testseite. 
 Das funktioniert nur, wenn der Drucker mit Stromversorgung und Router verbunden ist und Papier hat. 
 Falls Sie erneut eine Testseite drucken wollen, schalten Sie den Drucker aus, warten Sie einen Moment ab, und schalten Sie ihn dann wieder ein. 
@@ -76,7 +81,7 @@ Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendung
 
 Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
-Den Badgedrucker richten Sie dagegen am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
+Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Sie können die Drucker Epson TM-m30iii und TM-T88vii als Belegdrucker verwenden. 
 Um den Drucker als Belegdrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Belegdrucker" auf :btn:Drucker einrichten. 
