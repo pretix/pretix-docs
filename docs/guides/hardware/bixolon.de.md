@@ -54,7 +54,7 @@ Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand
 Das löst den Druck einer Testseite aus. 
 Die Testseite könnte z.B. so aussehen: 
 
-!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.jpg "Bixolon Testseite des Druckers")
+!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.png "Bixolon Testseite des Druckers")
 
 Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für sie relevant. 
 Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen Sie den Teil unter der Überschrift "WLAN CONFIGURATION". 
