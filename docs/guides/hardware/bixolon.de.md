@@ -134,6 +134,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
  - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
+ - ob der Drucker mit dem Netzwerk verbunden ist (falls das Modell ein Display hat, sollte es dort ein entsprechendes Symbol anzeigen)
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
@@ -176,7 +177,7 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 
 **Lösung:** Der Druckkopf ist verschmutzt. 
 Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
-   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate. 
+   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Printer Maintenance](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A130%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D). 
 
 #### Druck ist leer oder enthält nur Teile des Layouts 
 
