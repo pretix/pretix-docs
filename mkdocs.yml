@@ -28,6 +28,7 @@ theme:
     - toc.follow
     - search.highlight
     - content.tooltips
+    - content.code.copy
   font:
     text: Open Sans
   palette:
