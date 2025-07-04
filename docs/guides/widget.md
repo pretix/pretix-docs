@@ -548,20 +548,26 @@ This way, the plugin will count all orders made through this widget towards this
 #### Using tracking with the pretix Widget
 
 If you use the tracking plugin, you can enable cross-domain tracking. 
-If you run your pretix shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
-Tracking across subdomains works with no cross-domain tracking setup needed. 
+If you run your pretix shop on a subdomain of your main tracking domain, then you do **not** need cross-domain tracking. 
+The tracking plugin supports tracking across subdomains works. 
+A cross-domain tracking setup is **not** needed. 
 Refer to the article on [custom domains](custom-domain.md) for further information. 
 
 Add the embedding website to your [referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
 
 Add Google Analytics like you would on any other page, including your [window.dataLayer]{.title-ref} and [gtag]{.title-ref} configurations. 
 Add the widget code. 
-Then you have two options:
+You have two options:
 
 The first option is blocking the loading of the widget until Google's client and session ID are loaded, or for a maximum of two seconds. 
 This is similar to [loading the widget dynamically](widget.md#loading-the-widget-dynamically). 
 If it takes longer than two seconds to load, client and session ID are not passed to the widget. 
-Include the following code on your website after replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX):
+
+The other option is setting data attributes asynchronously. 
+The website will display widgets immediately, but it is not possible to change data attribute once the user has entered checkout.  
+
+If you want to use the first method (briefly blocking the loading of the widget), include the following code on your website. 
+Replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
 
 ```
 <script type="text/javascript">
@@ -601,9 +607,8 @@ Include the following code on your website after replacing all occurrences of <M
 </script>
 ``` 
 
-The other option is asynchronously setting data-attributes. 
-The widgets are displayed immediately, but once the user has entered checkout, data attributes are not updated. 
-Include the following code on your website after replacing all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX):
+If you want to use the other method (setting data attribute asynchronously), include the following code on your website. 
+Repalce all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
 
 ``` 
 <script type="text/javascript">
