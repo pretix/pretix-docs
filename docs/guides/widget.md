@@ -100,7 +100,7 @@ You can try out this behavior here:
 </noscript>
 
 You can embed the pretix Button exactly like the pretix Widget. 
-In order to add the pretix Button to your website, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website)
+In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
 Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
 ```
@@ -381,14 +381,14 @@ window.PretixWidget.open(target_url[, voucher[, subevent[, items[, widget_data[,
 
 Parameters:
 
-- **target_url** (string): The URL of the ticket shop. 
-- **voucher** (string): A voucher code to be preselected, or `null`.
-- **subevent** (string): A date from an event series to be preselected, or `null`.
-- **items** (array): A collection of items to be put in the cart, of the form `[{"item": "item_3", "count": 1}, {"item": "variation_5_6", "count": 4}]`
-- **widget_data** (object): Additional data to be passed to the shop, see below.
-- **skip_ssl_check** (Boolean): Whether to ignore the check for HTTPS. 
-  Do **not** skip this check on the active website. 
-  Only skip it during development.
+ - **target_url** (string): The URL of the ticket shop. 
+ - **voucher** (string): A voucher code to preselect, or `null`.
+ - **subevent** (string): A date from an event series to preselect, or `null`.
+ - **items** (array): A collection of items to place in the cart, of the form `[{"item": "item_3", "count": 1}, {"item": "variation_5_6", "count": 4}]`
+ - **widget_data** (object): Additional data to pass to the shop, see below.
+ - **skip_ssl_check** (Boolean): Whether to ignore the check for HTTPS. 
+   Do **not** skip this check on the active website. 
+   Only skip it during development.
 
 #### Loading the widget dynamically 
 
@@ -677,20 +677,20 @@ If you are using Stripe as a payment provider and want to offer Apple Pay throug
 pretix will automatically validate the domain you are using for your shop regardless of the edition of pretix and your domain settings. 
 But when embedding the widget on your website, your domain will also need to get validation in order to be able to use it for Apple Pay. 
 
-Please refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
+Refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
 
 #### External payment providers and Cross Origin Opener Policy
 
-If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window being opened in the foreground. 
+If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window opening in the foreground. 
 This is due to JavaScript **not** having access to the opened window. 
-To mitigate this, you either need to [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
+To mitigate this, you need to either [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
 
 #### Working with Cross Origin Embedder Policy
 
 The pretix Widget is **not** compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
 But it will **not** be able to open the checkout process in an iframe. 
-If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
+If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget will be able to detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
 
 ## Versioning
 
@@ -698,29 +698,31 @@ Whenever possible, we make changes or improvements to the widget in a way that d
 Occasionally, we do however need to make changes that change the structure of the widget and might cause incompatibility.
 In this case, we release a new version of the widget, noted by an incremented version number in both the script and stylesheet location.
 
-New versions of the widget are announced with the monthly pretix release notes, also available through [our newsletter](https://pretix.eu/about/en/blog/).
+We announce new versions of the widget with the monthly pretix release notes, also available through [our newsletter](https://pretix.eu/about/en/blog/).
 You can then switch to the new version at a time of your choice with the chance to test if any changes to your custom styling is necessary.
 
 When announcing a new version, we also announce a date of deprecation for the old version.
 After this date, we will automatically replace the old version with the new one.
-In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date—with the possibility of some issues with custom styling.
+In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date. 
+This may lead to issues with custom styling.
 
 ## Changelog
 
 ### Version 2
 
-- We made various changes to the HTML structure of the widget to improve the accessibility of the widget.
-We made the most significant changes to the calendar view, which now resembles the calendar view of the standalone ticket shop more closely. 
-The updated default stylesheet comes with stronger color contrasts, clear highlighting of focused elements and similar accessibility features.
+ - We changed the HTML structure of the widget to improve the accessibility of the widget.
+   We made the most significant changes to the calendar view, which now resembles the calendar view of the standalone ticket shop more closely. 
+   The updated default stylesheet comes with stronger color contrasts, clear highlighting of focused elements and similar accessibility features.
 
-- The attribute `single-item-select` has been removed and a button-style rendering is now always used.
+ - We removed the attribute `single-item-select`. 
+   The widget now always uses a button-style rendering. 
 
 **Availability**:
 Version 2 is available starting with pretix 2025.5.0 (released late May, 2025).
 
 **Deprecation schedule**:
 Starting with pretix 2025.6.0 (released late June, 2025), all users of version 1 will be automatically upgraded to version 2.
-This time frame is kept intentionally short to allow all users easy compliance with the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act).
+We are intentionally keeping this time frame short to help users comply with the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act).
 
 ## Troubleshooting 
 
