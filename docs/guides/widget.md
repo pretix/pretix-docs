@@ -80,8 +80,8 @@ Generate the second snippet for every event and add each one to your website's H
 
     Some website builders such as Jimdo have trouble with our custom HTML tag. 
     If that is the case, edit the opening and closing tags in the first line of the second code snippet:  
-    Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`.  
-    Replace `</pretix-widget>` with `</div>`.  
+    Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`. 
+    Replace `</pretix-widget>` with `</div>`. 
 
 ### pretix Button
 
@@ -164,7 +164,7 @@ If you only want to display a selection of dates in the widget, you can [filter 
 If you only want to [display a single date](widget.md#using-the-widget-for-a-single-date) in the widget, use the date ID. 
 
 You can use the `list-type` attribute to define if the widget will display dates in a monthly calendar view, a weekly calendar view, or a list view. 
-If you do **not** include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
+If you do **not** include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:. 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="list"></pretix-widget>
@@ -240,7 +240,18 @@ You can override the styles or use your own custom stylesheet.
 
 ## Applications
 
-### Offering discounts through the widget
+This section covers all applications that go beyond the basic usage of the widget on your website: 
+
+ - influencing [availability and pricing](widget.md#availability-and-pricing) of products
+ - [customizing the behavior](widget.md#customizing-widget-behavior) of the widget
+ - passing [user data](widget.md#user-data) from your site on to the widget
+ - [security](widget.md#security) considerations
+
+### Availability and pricing 
+
+This section explains how to influence product availability and pricing in the widget by using filters or preselecting vouchers. 
+
+#### Offering discounts through the widget
 
 If you want to offer discounts to customers placing their order through the widget, then you should preselect a voucher in the widget. 
 Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
@@ -270,7 +281,7 @@ Here is an example of a widget with a voucher preselected:
     </div>
 </noscript>
 
-### Offering certain products through the widget only 
+#### Offering certain products through the widget only 
 
 If you want to offer certain products through the widget only and not in your shop, then you should preselect a voucher in the widget. 
 Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
@@ -301,7 +312,7 @@ Instead, click the :btn:Save: button, copy the voucher code, and pass it (for ex
 This way, the widget will only display products that customers can buy with the voucher and prices will change as defined by the voucher. 
 For an example of a widget with a preselected voucher, see [Offering discounts through the widget](widget.md#offering-discounts-through-the-widget). 
 
-### Offering only certain products through the widget
+#### Offering only certain products through the widget
 
 You can filter the products displayed in the widget by passing a list of product IDs separated by commas. 
 In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
@@ -315,7 +326,8 @@ In order to display only products `#562195` and `#562202` in the widget, pass th
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
 ```
-### Offering only certain categories products through the widget
+
+#### Offering only certain categories products through the widget
 
 You can also filter for categories. 
 In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
@@ -326,7 +338,7 @@ In order to display only products from the categories `#162620` and `#162647` in
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
 ```
-### Offering only certain product variations through the widget
+#### Offering only certain product variations through the widget
 
 You can also filter for product variations. 
 In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
@@ -340,7 +352,7 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
-### Disabling the voucher input
+#### Disabling the voucher input
 
 If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
 
@@ -564,7 +576,7 @@ This is similar to [loading the widget dynamically](widget.md#loading-the-widget
 If it takes longer than two seconds to load, client and session ID are not passed to the widget. 
 
 The other option is setting data attributes asynchronously. 
-The website will display widgets immediately, but it is not possible to change data attribute once the user has entered checkout.  
+The website will display widgets immediately, but it is not possible to change data attribute once the user has entered checkout. 
 
 If you want to use the first method (briefly blocking the loading of the widget), include the following code on your website. 
 Replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
