@@ -514,16 +514,20 @@ pretix understands the following data attributes:
      - fields specified by the naming scheme such as `name-title` or `name-given-name` 
      `country` 
 
- - Setting `data-fix="true"` means that the user will not be able to change the other given values later. 
-   This currently only works for the order email address as well as the invoice address. 
+ - Setting `data-fix="true"` means that the user will **not** be able to change the other given values later. 
+   This only works for the order email address as well as the invoice address. 
    The user will always be able to modify attendee-level fields and questions. 
-   This is not a security feature. 
-   Users can easily override it. 
-   Do not rely on this for authentication.
+
+!!! Note
+   The `data-fix="true"` attribute is **not** a security feature. 
+   Your website's users can override it. 
+   Do **not** rely on this for authentication.
 
  - If `data-consent="…"` is given, the cookie consent mechanism will adopt the consent for the given cookie providers. 
-   All other providers will be disabled, no consent dialog will be shown and it will not be possible to change the cookie settings inside the widget. 
-   This is useful if you already asked the user for consent and do not want the widget to ask them again. 
+   This will disable all other providers. 
+   The widget will not display a consent dialog. 
+   It will **not** be possible to change the cookie settings inside the widget. 
+   This is useful if you already asked the user for consent and do **not** want the widget to ask them again. 
    Example: `data-consent="facebook,google_analytics"`
    If the user has refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
    The following values are supported by the pretix "Tracking codes" plugin: 
