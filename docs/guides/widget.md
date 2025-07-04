@@ -30,7 +30,7 @@ Some basic knowledge of JavaScript is helpful.
 
 ## General usage
 
-This section explains how to embed the pretix widget or the pretix button on your website once or several times, as well as how to style the widget. 
+This section explains how to embed the pretix widget or the pretix button on your website once or multiple times, as well as how to style the widget. 
 It also explains how to use the widget for more than just a singular event or a single date within an event series. 
 
 ### Embedding the widget on your website
@@ -41,7 +41,7 @@ Choose the "Language" for the widget and click the :btn:Generate widget code: bu
 
 The website will produce two code snippets. 
 The first snippet sources the CSS and JavaScript resources for the widget from the pretix server. 
-Add this snippet to the `<head>` of your website if you want to comply with general conventions in webdesign. 
+Add this snippet to the `<head>` of your website if you want to comply with general conventions in web design. 
 This has the advantage of slightly better performance on slow connections. 
 Alternatively, you can also add it to `<body>`. 
 The code snippet will look similar to this: 
@@ -68,7 +68,7 @@ It will look similar to this:
 !!! Note 
     The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
     If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-    The easiest way to ensure that you have the right code is using the code generator. 
+    The easiest way to obtain the right code is using the code generator. 
     Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
 ### Embedding multiple widgets on your website
@@ -99,7 +99,7 @@ You can try out this behavior here:
     </div>
 </noscript>
 
-You can embed the pretix Button just like the pretix Widget. 
+You can embed the pretix Button exactly like the pretix Widget. 
 In order to add the pretix Button to your website, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website)
 Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
@@ -108,19 +108,19 @@ Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
     Buy ticket!
 </pretix-button>
 ```
-Use the `items` attribute to specify the items to be added to the cart. 
+Use the `items` attribute to specify the items that the button will add to the cart. 
 The syntax of this attribute is: 
 
 ```item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4```
 
 Replace each instance of `ITEMID` with the ID of the item to be added. 
 Replace each instance of `VARID` with the ID of variations of those items. 
-Omit `variation_ITEMID_VARID=4` if the items do not have variations. 
+Omit `variation_ITEMID_VARID=4` if the items do **not** have variations. 
 Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
 
-If you do not include the `items` attribute or do not pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
+If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
 
-If the button is linked to an event series, use the `subevent`-attribute to specify the date for which the items should be added to the cart. 
+If you link the button to an event series, use the `subevent`-attribute to specify the date for which it should add the items to the cart. 
 
 The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
 You can style the button using the `pretix-button` CSS class.
@@ -136,7 +136,7 @@ If you want to include all public events of your organizer account, remove the e
 
 #### Filtering events by metadata attribute 
 
-If you are hosting several events, but only want to display some of them in the widget, then you should use metadata attributes. 
+If you are hosting multiple events, but only want to display some of them in the widget, then you should use metadata attributes. 
 This section explains how to create metadata attributes, assign them to your events, and set a filter in the widget. 
 
 You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
@@ -162,9 +162,8 @@ You can link the widget to an event series.
 By default, the widget will display all dates in the event series. 
 If you only want to display a selection of dates in the widget, you can [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
 If you only want to [display a single date](widget.md#using-the-widget-for-a-single-date) in the widget, use the date ID. 
-If you want to display a large number of dates in the widget, or if the events change frequently, use metadata attributes instead. 
 
-You can use the `list-type` attribute to define if your events will be displayed in a monthly calendar view, a weekly calendar view, or a list view. 
+You can use the `list-type` attribute to define if the widget will display dates in a monthly calendar view, a weekly calendar view, or a list view. 
 If you do not include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
 
 ```
@@ -203,11 +202,11 @@ In order to display only the date `#4387749` in the widget, pass them to the `su
 
 The subevent takes only a single date ID as an argument. 
 It is **not** possible to filter for more than one date with this method. 
-If you want to display several dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
+If you want to display multiple dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
 
 #### Filtering dates by metadata attribute
 
-If you are hosting several dates in an event series, but only want to display some of them in the widget, then you should use metadata attributes. 
+If you are hosting multiple dates in an event series, but only want to display some of them in the widget, then you should use metadata attributes. 
 This section explains how to create metadata attributes, assign them to your dates, and set a filter in the widget. 
 
 You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
@@ -432,13 +431,16 @@ If you want the checkout process to always open in a new tab regardless of scree
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
 ```
 
-#### Always show event info
+#### Show or hide event info
 
-By default, the widget will only display event info such as title, location, and front page text if it is linked to an event series. 
+By default, the widget will  display event info such as title, location, and front page text if it is linked to an event series. 
+It will not display that info for a single event. 
 You can pass the optional `display-event-info` attribute to change this behavior. 
-If you pass it with the value `"false"`, even an event series will be displayed without information. 
-Pass it with the value `"auto"` for the default behavior. 
-Any value other than `"false"` or `"auto"` is handled like `"true"`. 
+
+If you want the widget to display an event series **without** information, pass the attribute with the value `"false"`. 
+Pass the `display-event-info` attribute with the value `"auto"` for the default behavior. 
+If you want the widget to display a singular event **with** the information, pass it with the value `"true"`. 
+The widget will handle any value other than `"false"` or `"auto"` like `"true"`. 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
