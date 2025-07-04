@@ -68,7 +68,7 @@ It will look similar to this:
 !!! Note 
     The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
     If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-    The easiest way to obtain the right code is using the code generator. 
+    The most straightforward way to obtain the right code is using the code generator. 
     Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
 ### Embedding multiple widgets on your website
@@ -164,7 +164,7 @@ If you only want to display a selection of dates in the widget, you can [filter 
 If you only want to [display a single date](widget.md#using-the-widget-for-a-single-date) in the widget, use the date ID. 
 
 You can use the `list-type` attribute to define if the widget will display dates in a monthly calendar view, a weekly calendar view, or a list view. 
-If you do not include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
+If you do **not** include this attribute, it will default to the setting you chose under :navpath:Your organizer → :fa3-wrench: Settings → General:.  
 
 ```
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="list"></pretix-widget>
@@ -230,12 +230,13 @@ To disable the filter form, use:
 ### Styling
 
 You can use CSS to customize the appearance of the widget to match your website. 
-If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
+You can use your browser's developer tools to inspect the rendered HTML of the widget.
+Almost every element has a custom class and all classes have the prefix `pretix-widget`. 
 You can override the styles or use your own custom stylesheet. 
 
 !!! Note 
-    The widget is designed to conform with European accessibility standards. 
-    Make sure that any changes you make to customize the widget do not break accessibility, for instance by choosing colors with too little contrast. 
+    We designed the widget to conform with European accessibility standards. 
+    Do **not** break accessibility with your customizations to the widget, for instance by choosing colors with too little contrast. 
 
 ## Applications
 
@@ -687,8 +688,8 @@ In other words, if you do not upgrade to the new version intentionally, you will
 
 ### Version 2
 
-- Various changes to the HTML structure of the widget have been made to improve the accessibility of the widget.
-The most significant changes have been made to the calendar view, which now resembles the calendar view of the standalone ticket shop more closely.
+- We made various changes to the HTML structure of the widget to improve the accessibility of the widget.
+We made the most significant changes to the calendar view, which now resembles the calendar view of the standalone ticket shop more closely. 
 The updated default stylesheet comes with stronger color contrasts, clear highlighting of focused elements and similar accessibility features.
 
 - The attribute `single-item-select` has been removed and a button-style rendering is now always used.
@@ -704,8 +705,10 @@ This time frame is kept intentionally short to allow all users easy compliance w
 
 ### The code copied from this page does not work 
 
-The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`. 
-Your own event will use different organizer and event slugs. 
 If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-The easiest way to ensure that you have the right code is using the code generator. 
+The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
+Your own event will use different organizer and event slugs. 
+
+If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
+The most straightforward way to obtain the right code is using the code generator. 
 Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
