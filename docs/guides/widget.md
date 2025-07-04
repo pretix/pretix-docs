@@ -228,7 +228,17 @@ To disable the filter form, use:
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
 ``` 
 
-## Applications 
+### Styling
+
+You can use CSS to customize the appearance of the widget to match your website. 
+If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
+You can override the styles or use your own custom stylesheet. 
+
+!!! Note 
+    The widget is designed to conform with European accessibility standards. 
+    Make sure that any changes you make to customize the widget do not break accessibility, for instance by choosing colors with too little contrast. 
+
+## Applications
 
 ### Offering discounts through the widget
 
@@ -330,7 +340,13 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
-## Advanced
+### Disabling the voucher input
+
+If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
+```
 
 ### Customizing widget behavior
 
@@ -343,7 +359,7 @@ This is similar to the behavior of the [pretix Button](widget.md#pretix-button),
 
 Usually, this will open an overlay with your ticket shop. 
 In some circumstances, such as missing HTTPS encryption or a small screen size, it will open a new tab instead. 
-Therefore, only call this function *in direct response to a user action*, otherwise most browsers will block it as an unwanted pop-up. 
+Therefore, only call this function in direct response to a user action, otherwise most browsers will block it as an unwanted pop-up. 
 
 Call `window.PretixWidget.open`, which has the following signature:
 
@@ -359,17 +375,18 @@ Parameters:
 - **items** (array): A collection of items to be put in the cart, of the form `[{"item": "item_3", "count": 1}, {"item": "variation_5_6", "count": 4}]`
 - **widget_data** (object): Additional data to be passed to the shop, see below.
 - **skip_ssl_check** (boolean): Whether to ignore the check for HTTPS. 
-  Only use this during development.
+  Do not skip this check on the active website. 
+  Only skip it during development.
 
 #### Loading the widget dynamically 
 
 You may need to control when and how the widget loads, for example because you want to modify user data (see below) dynamically via JavaScript. 
-You can register a listener that will be run before creating the widget:
+You can register a listener that will run before creating the widget:
 
 ```
 <script type="text/javascript">
 window.pretixWidgetCallback = function () {
-    // Will be run before we create the widget.
+    // Will run before we create the widget.
 }
 </script>
 ```
@@ -427,33 +444,11 @@ Any value other than `"false"` or `"auto"` is handled like `"true"`.
 <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
 ```
 
-### Availability and pricing
-
-This section explains how to change the availability and pricing of certain products inside the widget. 
-
-#### Disabling the voucher input
-
-If you want to disable voucher input in the widget, you can pass the `disable-vouchers` attribute:
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
-```
-
-### Styling
-
-You can use CSS to customize the appearance of the widget to match your website. 
-If you use your browser's developer tools to inspect the rendered HTML of the widget, you will see that nearly every element has a custom class and all classes are prefixed with `pretix-widget`. 
-You can override the styles or use your own custom stylesheet. 
-
-!!! Note 
-    The widget is designed to conform with European accessibility standards. 
-    Make sure that any changes you make to customize the widget do not break accessibility, for instance by choosing colors with too little contrast. 
-
 ### User data
 
 This section explains how to handle user data using the widget. 
 
-#### Passing user data to the widget
+#### Using your website's user data for the widget
 
 If you display the widget on a page that requires user login, you can pre-fill fields in the checkout process with known user data. 
 This can save your customers some typing and increase conversions. 
@@ -470,7 +465,7 @@ You can also pass additional data attributes with that information:
 </pretix-widget>
 ```
 
-You can also do this on the pretix Button, but you also need to specify the `items` attribute. 
+If you want to do this with the pretix Button, then you also have to specify the `items` attribute. 
 
 Data attributes are reactive. 
 Thus, you can use JavaScript to change them. 
@@ -483,7 +478,7 @@ Use the following code to ensure that the reference is fresh:
 
 ```document.querySelectorAll("pretix-widget, pretix-button, .pretix-widget-wrapper")```
 
-Currently the following data attributes are understood by pretix:
+pretix understands the following data attributes:
 
  - `data-email` will pre-fill the order email field as well as the attendee email field (if enabled).
 
@@ -546,7 +541,7 @@ This way, the plugin will count all orders made through this widget towards this
 #### Using tracking with the pretix Widget
 
 If you use the tracking plugin, you can enable cross-domain tracking. 
-When you run your pretix shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
+If you run your pretix shop on a subdomain of your main tracking domain, then you do not need cross-domain tracking. 
 Tracking across subdomains works with no cross-domain tracking setup needed. 
 Refer to the article on [custom domains](custom-domain.md) for further information. 
 
@@ -615,7 +610,7 @@ Include the following code on your website after replacing all occurrences of \<
             widgets.forEach(widget => widget.setAttribute("data-tracking-ga-sessid", id))
         });
     });
-</script>  
+</script> 
 ``` 
 
 ### Security
