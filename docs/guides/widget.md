@@ -527,7 +527,7 @@ pretix understands the following data attributes:
      `country` 
 
  - Setting `data-fix="true"` means that the user will **not** be able to change the other given values later. 
-   This only works for the order email address as well as the invoice address. 
+   This only works for the order email address and the invoice address. 
    The user will always be able to modify attendee-level fields and questions. 
 
 !!! Note
@@ -535,14 +535,14 @@ pretix understands the following data attributes:
    Your website's users can override it. 
    Do **not** rely on this for authentication.
 
- - If `data-consent="…"` is given, the cookie consent mechanism will adopt the consent for the given cookie providers. 
+ - Setting `data-consent="…"` means that the cookie consent mechanism will adopt the consent for the given cookie providers. 
    This will disable all other providers. 
-   The widget will not display a consent dialog. 
+   The widget will **not** display a consent dialog. 
    It will **not** be possible to change the cookie settings inside the widget. 
    This is useful if you already asked the user for consent and do **not** want the widget to ask them again. 
    Example: `data-consent="facebook,google_analytics"`
    If the user has refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
-   The following values are supported by the pretix "Tracking codes" plugin: 
+   The pretix "Tracking codes" plugin supports the following values: 
      - `adform`
      - `facebook`
      - `gosquared`
@@ -571,14 +571,14 @@ Add Google Analytics like you would on any other page, including your [window.da
 Add the widget code. 
 You have two options:
 
-The first option is blocking the loading of the widget until Google's client and session ID are loaded, or for a maximum of two seconds. 
+The first option is blocking the loading of the widget until Google's client and session ID have finished loading, or for a maximum of two seconds. 
 This is similar to [loading the widget dynamically](widget.md#loading-the-widget-dynamically). 
-If it takes longer than two seconds to load, client and session ID are not passed to the widget. 
+If it takes longer than two seconds to load, client and session ID are **not** passed to the widget. 
 
 The other option is setting data attributes asynchronously. 
-The website will display widgets immediately, but it is not possible to change data attribute once the user has entered checkout. 
+The website will display widgets immediately, but it is **not** possible to change data attribute once the user has entered checkout. 
 
-If you want to use the first method (briefly blocking the loading of the widget), include the following code on your website. 
+If you want to use the first method (temporarily blocking the loading of the widget), include the following code on your website. 
 Replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
 
 ```
@@ -620,7 +620,7 @@ Replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUR
 ``` 
 
 If you want to use the other method (setting data attribute asynchronously), include the following code on your website. 
-Repalce all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
+Replace all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
 
 ``` 
 <script type="text/javascript">
@@ -647,19 +647,19 @@ Buying a ticket usually involves entering sensitive data.
 Thus, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. 
 Initiatives such as [Let's Encrypt](https://letsencrypt.org/) allow you to obtain a SSL certificate free of charge.
 
-pretix will use SSL for all data transferred from the widget even if the widget is included on a non-SSL site. 
-However, if you are not using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
+pretix will use SSL for all data transferred from the widget even if you include the widget a non-SSL site. 
+However, if you are **not** using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
 Using SSL for data transfers is standard practice now. 
-Your users might not trust your website if their browser does not display the secure lock icon :fa3-lock: while they are using it. 
+Your customers may only trust your website if their browser displays the secure lock icon :fa3-lock: while they are accessing it. 
 
-If your website does not use SSL, the checkout process will open in a new tab in your user's browsers. 
-If you are confident that you have a good reason for not using SSL, you can override this behavior with the `skip-ssl-check` attribute:
+If your website does **not** use SSL, the checkout process will open in a new tab in your user's browsers. 
+If you are confident that you have a good reason for **not** using SSL, you can override this behavior with the `skip-ssl-check` attribute:
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" skip-ssl-check></pretix-widget>
 ```
 
-#### Content Security Policy
+#### Content Security Policy (CSP)
 
 If you are using a Content Security Policy (CSP) on your website, you may need to make some adjustments. 
 If your pretix shop is running under a custom domain, you need to add the following rules:
@@ -674,7 +674,7 @@ If your pretix shop is running under a custom domain, you need to add the follow
 #### Offering Apple Pay via Stripe through the widget
 
 If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
-pretix will automatically validate the domain that is being used for your shop regardless of the edition of pretix and your domain settings. 
+pretix will automatically validate the domain you are using for your shop regardless of the edition of pretix and your domain settings. 
 But when embedding the widget on your website, your domain will also need to get validation in order to be able to use it for Apple Pay. 
 
 Please refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
@@ -682,14 +682,14 @@ Please refer to the Stripe documentation page on how to [register domains for pa
 #### External payment providers and Cross Origin Opener Policy
 
 If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window being opened in the foreground. 
-This is due to JavaScript not having access to the opened window. 
+This is due to JavaScript **not** having access to the opened window. 
 To mitigate this, you either need to [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
 
 #### Working with Cross Origin Embedder Policy
 
-The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
+The pretix Widget is **not** compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
-But it will not be able to open the checkout process in an iframe. 
+But it will **not** be able to open the checkout process in an iframe. 
 If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget can auto-detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
 
 ## Versioning
@@ -703,7 +703,7 @@ You can then switch to the new version at a time of your choice with the chance 
 
 When announcing a new version, we also announce a date of deprecation for the old version.
 After this date, we will automatically replace the old version with the new one.
-In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date – with the possibility of some issues with custom styling.
+In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date—with the possibility of some issues with custom styling.
 
 ## Changelog
 
