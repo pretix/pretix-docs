@@ -244,7 +244,7 @@ This section covers all applications that go beyond the basic usage of the widge
 
  - influencing [availability and pricing](widget.md#availability-and-pricing) of products
  - [customizing the behavior](widget.md#customizing-widget-behavior) of the widget
- - passing [user data](widget.md#user-data) from your site on to the widget
+ - using your website's [user data](widget.md#using-your-websites-user-data-for-the-widget) for the widget
  - [security](widget.md#security) considerations
 
 ### Availability and pricing 
@@ -392,7 +392,7 @@ Parameters:
 
 #### Loading the widget dynamically 
 
-You may need to control when and how the widget loads, for example because you want to [modify user data](widget.md#user-data) dynamically with JavaScript. 
+You may need to control when and how the widget loads, for example because you want to [modify user data](widget.md#using-your-websites-user-data-for-the-widget) dynamically with JavaScript. 
 You can register a listener that will run before creating the widget:
 
 ```
@@ -459,11 +459,9 @@ The widget will handle any value other than `"false"` or `"auto"` like `"true"`.
 <pretix-widget event="https://pretix.eu/demo/democon/" display-event-info></pretix-widget>
 ```
 
-### User data
+### Using your website's user data for the widget
 
 This section explains how to handle user data using the widget. 
-
-#### Using your website's user data for the widget
 
 If you display the widget on a page that requires user login, you can pre-fill fields in the checkout process with known user data. 
 This can save your users some typing and increase conversions. 
@@ -560,9 +558,9 @@ This way, the plugin will count all orders made through this widget towards this
 #### Using tracking with the pretix Widget
 
 If you use the tracking plugin, you can enable cross-domain tracking. 
+This is only necessary if you host your pretix shop and the website on which you embed the widget on two separate domains. 
 If you run your pretix shop on a subdomain of your main tracking domain, then you do **not** need cross-domain tracking. 
-The tracking plugin supports tracking across subdomains works. 
-A cross-domain tracking setup is **not** needed. 
+The tracking plugin supports tracking across subdomains, so a cross-domain tracking setup is **not** needed in that case. 
 Refer to the article on [custom domains](custom-domain.md) for further information. 
 
 Add the embedding website to your [referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
@@ -682,7 +680,7 @@ Refer to the Stripe documentation page on how to [register domains for payment m
 #### External payment providers and Cross Origin Opener Policy
 
 If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window opening in the foreground. 
-This is due to JavaScript **not** having access to the opened window. 
+This is due to JavaScript not having access to the opened window. 
 To mitigate this, you need to either [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
 
 #### Working with Cross Origin Embedder Policy
