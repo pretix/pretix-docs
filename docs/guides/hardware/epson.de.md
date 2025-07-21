@@ -2,6 +2,7 @@
 
 Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Epson zusammen mit pretix. 
 Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden. 
+Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des Herstellers. 
 
 Note !!! 
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 

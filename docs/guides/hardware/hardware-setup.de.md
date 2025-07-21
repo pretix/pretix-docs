@@ -109,6 +109,8 @@ Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Ba
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des jeweiligen Herstellers. 
+
 Diese Schritte werden auf den folgenden Seiten genauer erklärt: 
 
  - Belegdrucker [Epson TM-m30iii und Epson TM-T88vii](epson.de.md)
