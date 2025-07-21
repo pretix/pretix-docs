@@ -1,6 +1,6 @@
 # Drucker einrichten: Bixolon XD5-40d 
 
-Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Bixolon zusammen mit pretix. 
+Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung des Druckers Bixolon XD5-40d oder vergleichbaren Geräten zusammen mit pretix. 
 Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden. 
 
 Note !!! 
@@ -22,7 +22,7 @@ Dann drucken Sie eine Testseite.
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
-#### Drucker anschließen
+### Drucker anschließen
 
 Legen Sie zunächst das Druckmaterial in den Drucker ein. 
 Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden ist und nicht eingeschaltet ist. 
@@ -47,7 +47,7 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
 Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse umlegen. 
 
-#### Testseite drucken
+### Testseite drucken
 
 Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
 Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
@@ -64,7 +64,7 @@ Sie ist **nicht** zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `
 Sie benötigen die Ethernet-IP-Adresse, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
-#### Drucker mit Scan-Smartphone oder Kasse verbinden
+### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie den Drucker Bixolon XD5-40d über die App verbinden und die Funktion testen. 
@@ -78,7 +78,7 @@ Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbe
 Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Sie können den Bixolon XD5-40d als Badgedrucker verwenden. 
-Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten. 
+Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Badgedrucker" :btn:Drucker einrichten:. 
 Der Prozess ist danach immer der gleiche. 
 
 Falls der Drucker über das **Netzwerk** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
@@ -111,7 +111,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-#### Drucker druckt die eigene Testseite nicht
+### Drucker druckt die eigene Testseite nicht
 
 **Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](bixolon.de.md#testseite-drucken). 
 
@@ -125,7 +125,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-#### Drucker druckt pretixPRINT-Testseite nicht
+### Drucker druckt pretixPRINT-Testseite nicht
 
 **Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
@@ -138,7 +138,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
-#### Druckauftrag kommt auf einem anderen Drucker an
+### Druckauftrag kommt auf einem anderen Drucker an
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
 
@@ -149,7 +149,7 @@ Passen Sie Ihren Hardware-Aufbau entsprechend an.
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-#### Druckauftrag enthält Unsinn 
+### Druckauftrag enthält Unsinn 
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
 
@@ -157,7 +157,7 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-#### Druck ist falsch gedreht 
+### Druck ist falsch gedreht 
 
 **Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
 
@@ -171,7 +171,7 @@ Tippen Sie :btn:Weiter: und dann :btn:Testseite drucken:.
 Wenn der Druck jetzt richtig gedreht ist, tippen Sie :btn:Einstellungen speichern:. 
 Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf einen anderen Wert. 
 
-#### Druck ist verschmutzt oder fleckig
+### Druck ist verschmutzt oder fleckig
 
 **Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
 
@@ -179,7 +179,7 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
    Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Printer Maintenance](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A130%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D). 
 
-#### Druck ist leer oder enthält nur Teile des Layouts 
+### Druck ist leer oder enthält nur Teile des Layouts 
 
 **Problem:** Gedruckte Tickets oder Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
 

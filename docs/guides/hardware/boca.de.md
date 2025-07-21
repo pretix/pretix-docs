@@ -28,7 +28,7 @@ Dann drucken Sie eine Testseite.
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
-#### Drucker anschließen
+### Drucker anschließen
 
 Überprüfen Sie, ob der Stromschalter des Druckers ausgeschaltet ist, und schalten Sie ihn gegebenenfalls aus. 
 Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet ist. 
@@ -59,7 +59,7 @@ Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeig
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht. 
 Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur C: alle), schneidet er das erste Ticket bzw. den ersten Badge ab. 
 
-#### Testseite drucken
+### Testseite drucken
 
 Um eine Testseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit dem Label "TEST". 
 Die Testseite könnte z.B. so aussehen: 
@@ -70,7 +70,7 @@ Die IP-Adresse befindet sich im oberen linken Viertel des Ausdrucks in der Zeile
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
-#### Drucker mit Scan-Smartphone oder Kasse verbinden
+### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker Lemur und Lemur C über die App verbinden und die Funktion testen. 
@@ -122,7 +122,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-#### Drucker druckt die eigene Testseite nicht
+### Drucker druckt die eigene Testseite nicht
 
 **Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](boca.de.md#testseite-drucken). 
 
@@ -136,7 +136,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-#### IP-Adresse auf der Testseite lautet 0.0.0.0 
+### IP-Adresse auf der Testseite lautet 0.0.0.0 
 
 **Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
 
@@ -149,7 +149,7 @@ Danach starten Sie den Router neu.
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
 Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
 
-#### Drucker druckt pretixPRINT-Testseite nicht
+### Drucker druckt pretixPRINT-Testseite nicht
 
 **Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
@@ -161,7 +161,7 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
-#### Druckauftrag kommt auf einem anderen Drucker an
+### Druckauftrag kommt auf einem anderen Drucker an
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
 
@@ -172,7 +172,7 @@ Passen Sie Ihren Hardware-Aufbau entsprechend an.
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-#### Druckauftrag enthält Unsinn 
+### Druckauftrag enthält Unsinn 
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
 
@@ -180,7 +180,7 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-#### Druck ist falsch gedreht 
+### Druck ist falsch gedreht 
 
 **Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
 
@@ -194,7 +194,7 @@ Tippen Sie :btn:Weiter: und dann :btn:Testseite drucken:.
 Wenn der Druck jetzt richtig gedreht ist, tippen Sie :btn:Einstellungen speichern:. 
 Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf einen anderen Wert. 
 
-#### Druck ist verschmutzt oder fleckig
+### Druck ist verschmutzt oder fleckig
 
 **Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
 
@@ -202,7 +202,7 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
    Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
 
-#### Druck ist leer oder enthält nur Teile des Layouts 
+### Druck ist leer oder enthält nur Teile des Layouts 
 
 **Problem:** Gedruckte Tickets oder Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
 
@@ -215,7 +215,7 @@ Klicken Sie :btn-icon:fa3-paint-brush: Layout-Editor öffnen: oder :btn:Erweiter
 Laden Sie ein PDF als Hintergrund in der Größe Ihres Druckmaterials hoch.
 Alternativ wählen Sie die Papiergröße so, dass sie Ihrem Druckmaterial entspricht oder etwas kleiner ist. 
 
-#### Drucker schneidet Papier an der falschen Stelle ab 
+### Drucker schneidet Papier an der falschen Stelle ab 
 
 **Problem:** Der Drucker schneidet Tickets oder Badges nach dem Drucken an der falschen Stelle ab (mehr als ein paar Millimeter neben der Schnittkante). 
 

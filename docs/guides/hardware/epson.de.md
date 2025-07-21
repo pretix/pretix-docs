@@ -27,7 +27,7 @@ Dann drucken Sie eine Testseite.
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
-#### Drucker anschließen
+### Drucker anschließen
 
 Legen Sie zunächst das Druckmaterial in den Drucker ein. 
 Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden ist und nicht eingeschaltet ist. 
@@ -52,7 +52,7 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 **TM-m30iii:** Drücken Sie den Stromschalter an der Oberseite des Druckers ein. 
 **TM-T88vii:** Legen Sie den Stromschalter an der Vorderseite des Druckers um. 
 
-#### Testseite drucken
+### Testseite drucken
 
 !!! Note 
     Falls Sie den Drucker via USB anschließen, können Sie diesen Schritt überspringen. 
@@ -70,7 +70,7 @@ Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP Address` beg
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
-#### Drucker mit Scan-Smartphone oder Kasse verbinden
+### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker TM-m30iii und TM-T88vii über die App verbinden und die Funktion testen. 
@@ -117,7 +117,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-#### Drucker druckt die eigene Testseite nicht
+### Drucker druckt die eigene Testseite nicht
 
 **Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](epson.de.md#testseite-drucken). 
 
@@ -131,7 +131,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-#### Drucker druckt pretixPRINT-Testseite nicht
+### Drucker druckt pretixPRINT-Testseite nicht
 
 **Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
@@ -143,7 +143,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
-#### Druckauftrag kommt auf einem anderen Drucker an
+### Druckauftrag kommt auf einem anderen Drucker an
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
 
@@ -154,7 +154,7 @@ Passen Sie Ihren Hardware-Aufbau entsprechend an.
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-#### Druckauftrag enthält Unsinn 
+### Druckauftrag enthält Unsinn 
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
 

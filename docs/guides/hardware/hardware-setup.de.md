@@ -125,7 +125,7 @@ Tippen Sie :btn:Einstellungen speichern:.
 
 ## Problemlösung 
 
-#### LEDs 3G und 4G am Router blinken abwechselnd 
+### LEDs 3G und 4G am Router blinken abwechselnd 
 
 **Problem:** Die LEDs mit den Beschriftungen "3G" und "4G" am Router blinken abwechselnd. 
 Die Statusanzeige mit den fünf Balken daneben leuchtet nicht. 
@@ -137,7 +137,7 @@ Kontaktieren Sie unseren Support.
 
 Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung herstellen können, nutzen Sie eine Kabelverbindung oder den Offline-Modus von pretixSCAN. 
 
-#### Drucker druckt die eigene Testseite nicht
+### Drucker druckt die eigene Testseite nicht
 
 **Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](hardware-setup.de.md#testseite-drucken). 
 
@@ -151,7 +151,7 @@ Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung hers
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-#### IP-Adresse auf der Testseite lautet 0.0.0.0 
+### IP-Adresse auf der Testseite lautet 0.0.0.0 
 
 **Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
 
@@ -163,7 +163,7 @@ Verwenden Sie gegebenenfalls ein anderes Kabel.
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
 Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
 
-#### Drucker druckt pretixPRINT-Testseite nicht
+### Drucker druckt pretixPRINT-Testseite nicht
 
 **Problem:** Der Drucker druckt die Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
@@ -175,7 +175,7 @@ Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
-#### Druckauftrag kommt auf einem anderen Drucker an
+### Druckauftrag kommt auf einem anderen Drucker an
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
 
@@ -186,7 +186,7 @@ Passen Sie Ihren Hardware-Aufbau entsprechend an.
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-#### Druckauftrag enthält Unsinn 
+### Druckauftrag enthält Unsinn 
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
 
