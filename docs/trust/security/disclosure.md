@@ -31,7 +31,7 @@ We will only issue [CVE](https://en.wikipedia.org/wiki/Common_Vulnerabilities_an
 
 ## CVE Numbering Authority
 
-rami.io GmbH has been authorized by the CVE Program as a CVE Numbering Authority (CNA) for any vulnerabilities in our own products.
+pretix GmbH (previously rami.io GmbH) has been authorized by the CVE Program as a CVE Numbering Authority (CNA) for any vulnerabilities in our own products.
 CNAs are organizations responsible for the regular assignment of CVE IDs to vulnerabilities, and for creating and publishing information about the vulnerability in the associated CVE Record.
 Our CNA assigns CVE numbers only for the products and services listed above.
 
@@ -47,7 +47,7 @@ Security incidents concerning products under the pretix brand are announced on t
 
 ## Bug Bounties
 
-rami.io GmbH is not a large enough company to run a formal bug bounty program.
+pretix GmbH is not a large enough company to run a formal bug bounty program.
 If you find a serious vulnerability in our service, we will find a way to show our gratitude.
 We have, on occasion, issued monetary bug bounties for issues of high severity in our core services.
 

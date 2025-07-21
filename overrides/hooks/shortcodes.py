@@ -1,7 +1,7 @@
 # Inspired by mkdocs-material
 # Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
 # Adjusted
-# Copyright (c) 2024 rami.io GmbH
+# Copyright (c) 2024 pretix GmbH (previously rami.io GmbH)
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
