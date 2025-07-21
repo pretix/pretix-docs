@@ -40,7 +40,7 @@ Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet
 **Lemur C:** Schließen Sie das Netzteil zuerst an den Drucker und danach an eine Steckdose an. 
 
 Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
-Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
+Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
 !!! Warning 
     Es ist möglich, die USB-Ports von Drucker und Kasse beim Verbinden über USB zu beschädigen. 
@@ -98,7 +98,7 @@ Das wird im nächsten Abschnitt näher erklärt.
 
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
 
-Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
+Auf Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker Lemur und Lemur C über die App verbinden und die Funktion testen. 
 
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
@@ -148,9 +148,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-### Drucker druckt Konfigurationsseite nicht
+### Drucker druckt nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](boca.de.md#Konfigurationsseite-drucken). 
+**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](boca.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -182,6 +182,7 @@ Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse z
 **Lösung:** Überprüfen Sie: 
 
  - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
+ - falls mehr als ein Router verwendet wird: ob alle Router im Betrieb und in Reichweite sind; und ob die Klebemarkierungen auf Android-Gerät, Router und Drucker miteinander übereinstimmen
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 
@@ -211,7 +212,7 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 **Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
 
 **Lösung:** In pretixPRINT ist die Drehung nicht richtig konfiguriert. 
-Öffnen Sie auf dem Adnroid-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
+Öffnen Sie auf dem Android-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
 Tippen Sie :btn:Weiter: bis Sie die Seite geöffnet haben, auf der das Dropdown-Menü "Drehung" angezeigt wird. 
 Die Standardeinstellung hier ist `0°`. 
 

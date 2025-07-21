@@ -45,7 +45,7 @@ Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet
 Alle Anschlüsse befinden sich hinten und unten am Gerät. 
 
 Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
-Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
+Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
 Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
 Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
@@ -79,14 +79,14 @@ Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabsch
 
 ### Konfigurationsseite drucken
 
-Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
+Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites rechteckiges Loch, in dem ein Button verborgen ist. 
 Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
 Das löst den Druck einer Konfigurationsseite aus. 
 Die Konfigurationsseite könnte z.B. so aussehen: 
 
 !["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.png "Bixolon Konfigurationsseite des Druckers")
 
-Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für sie relevant. 
+Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für Sie relevant. 
 Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen Sie den Teil unter der Überschrift "WLAN CONFIGURATION". 
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
@@ -96,14 +96,14 @@ Das wird im nächsten Abschnitt näher erklärt.
 
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
 
-Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
+Auf Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie den Drucker Bixolon XD5-40d über die App verbinden und die Funktion testen. 
 
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kassen ein. 
+Beleg- und Ticketdrucker richten Sie üblicherweise an eine Kassen ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
@@ -141,9 +141,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-### Drucker druckt Konfigurationsseite nicht
+### Drucker druckt nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](bixolon.de.md#Konfigurationsseite-drucken). 
+**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](bixolon.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -161,10 +161,11 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 **Lösung:** Überprüfen Sie: 
 
+ - ob der Drucker mit dem Netzwerk verbunden ist (falls das Modell ein Display hat, sollte es dort ein entsprechendes Symbol anzeigen)
  - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
+ - falls mehr als ein Router verwendet wird: ob alle Router im Betrieb und in Reichweite sind; und ob die Klebemarkierungen auf Android-Gerät, Router und Drucker miteinander übereinstimmen
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
- - ob der Drucker mit dem Netzwerk verbunden ist (falls das Modell ein Display hat, sollte es dort ein entsprechendes Symbol anzeigen)
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
@@ -192,7 +193,7 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 **Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
 
 **Lösung:** In pretixPRINT ist die Drehung nicht richtig konfiguriert. 
-Öffnen Sie auf dem Adnroid-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
+Öffnen Sie auf dem Android-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
 Tippen Sie :btn:Weiter: bis Sie die Seite geöffnet haben, auf der das Dropdown-Menü "Drehung" angezeigt wird. 
 Die Standardeinstellung hier ist `0°`. 
 

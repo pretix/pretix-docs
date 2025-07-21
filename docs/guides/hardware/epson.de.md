@@ -46,7 +46,7 @@ Alle Anschlüsse befinden sich hinten und unten am Gerät.
 Beim TM-m30iii können Sie die Abdeckung an der Unterseite des Geräts entfernen, um Zugang zu den Anschlüssen zu erhalten. 
 
 Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die entsprechende Buchse am Drucker. 
-Stecken Sie das andere Ende des LAN-Kabels in den freien LAN-Anschluss an Ihrem Router. 
+Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
 Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
 Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse am Drucker. 
@@ -98,7 +98,7 @@ Das wird im nächsten Abschnitt näher erklärt.
 
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
 
-Auf den Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
+Auf Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
 Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker TM-m30iii und TM-T88vii über die App verbinden und die Funktion testen. 
 
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
@@ -143,9 +143,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-### Drucker druckt Konfigurationsseite nicht
+### Drucker druckt nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](epson.de.md#Konfigurationsseite-drucken). 
+**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](epson.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -164,6 +164,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 **Lösung:** Überprüfen Sie: 
 
  - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei Mieten fängt der Name an mit `pretix-onsite`)
+ - falls mehr als ein Router verwendet wird: ob alle Router im Betrieb und in Reichweite sind; und ob die Klebemarkierungen auf Android-Gerät, Router und Drucker miteinander übereinstimmen
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 
