@@ -107,7 +107,7 @@ Schließen Sie die Kassenschublade über den dafür vorgesehenen Anschluss (RJ11
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
-Dann drucken Sie eine Testseite. 
+Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden auf den folgenden Seiten genauer erklärt: 
 
@@ -137,9 +137,9 @@ Kontaktieren Sie unseren Support.
 
 Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung herstellen können, nutzen Sie eine Kabelverbindung oder den Offline-Modus von pretixSCAN. 
 
-### Drucker druckt die eigene Testseite nicht
+### Drucker druckt Konfigurationsseite nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](hardware-setup.de.md#testseite-drucken). 
+**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](hardware-setup.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -151,9 +151,9 @@ Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung hers
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-### IP-Adresse auf der Testseite lautet 0.0.0.0 
+### IP-Adresse auf der Konfigurationsseite lautet 0.0.0.0 
 
-**Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
+**Problem:** Die Konfigurationsseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
 
 **Lösung:**  Der Drucker ist nicht mit dem Netzwerk verbunden. 
 Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
@@ -161,11 +161,11 @@ Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht*
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
 
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
-Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
+Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse zu erhalten. 
 
 ### Drucker druckt pretixPRINT-Testseite nicht
 
-**Problem:** Der Drucker druckt die Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+**Problem:** Der Drucker druckt die Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 **Lösung:** Überprüfen Sie: 
 

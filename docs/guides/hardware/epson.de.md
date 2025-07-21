@@ -23,7 +23,7 @@ Sie benötigen aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm.
 
 Sie können den Epson TM-m30iii und den TM-T88vii als Belegdrucker verwenden. 
 Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
-Dann drucken Sie eine Testseite. 
+Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
@@ -52,19 +52,19 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 **TM-m30iii:** Drücken Sie den Stromschalter an der Oberseite des Druckers ein. 
 **TM-T88vii:** Legen Sie den Stromschalter an der Vorderseite des Druckers um. 
 
-### Testseite drucken
+### Konfigurationsseite drucken
 
 !!! Note 
     Falls Sie den Drucker via USB anschließen, können Sie diesen Schritt überspringen. 
-    Der Drucker druckt nur bei aktiver Netzwerkverbindung automatisch eine Testseite. 
-    Sie benötigen die Testseite nicht, da die Verbindung über USB keine IP-Adresse erfordert. 
+    Der Drucker druckt nur bei aktiver Netzwerkverbindung automatisch eine Konfigurationsseite. 
+    Sie benötigen die Konfigurationsseite nicht, da die Verbindung über USB keine IP-Adresse erfordert. 
 
-Die Drucker produzieren innerhalb einer Minute nach dem Einschalten automatisch eine Testseite. 
+Die Drucker produzieren innerhalb einer Minute nach dem Einschalten automatisch eine Konfigurationsseite. 
 Das funktioniert nur, wenn der Drucker mit Stromversorgung und Router verbunden ist und Papier hat. 
-Falls Sie erneut eine Testseite drucken wollen, schalten Sie den Drucker aus, warten Sie einen Moment ab, und schalten Sie ihn dann wieder ein. 
-Die Testseite könnte z.B. so aussehen: 
+Falls Sie erneut eine Konfigurationsseite drucken wollen, schalten Sie den Drucker aus, warten Sie einen Moment ab, und schalten Sie ihn dann wieder ein. 
+Die Konfigurationsseite könnte z.B. so aussehen: 
 
-!["Ein Streifen graublaues Belegpapier mit Text: IP Address 192.168.214.101 SubnetMask 255.255.255.0 Gateway 192.168.214.1 DHCP Enable"](../../assets/screens/hardware-setup/epson-test.jpg "Epson Testseite des Druckers")
+!["Ein Streifen graublaues Belegpapier mit Text: IP Address 192.168.214.101 SubnetMask 255.255.255.0 Gateway 192.168.214.1 DHCP Enable"](../../assets/screens/hardware-setup/epson-test.jpg "Epson Konfigurationsseite des Druckers")
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP Address` beginnt. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
@@ -104,8 +104,8 @@ Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker
 Tippen Sie :btn:Einstellungen speichern:. 
 
 !!! Note 
-    Die Testseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
-    Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
+    Die Konfigurationsseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
+    Die Konfigurationsseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
 
 Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten. 
@@ -117,9 +117,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-### Drucker druckt die eigene Testseite nicht
+### Drucker druckt Konfigurationsseite nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](epson.de.md#testseite-drucken). 
+**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](epson.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -133,7 +133,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 ### Drucker druckt pretixPRINT-Testseite nicht
 
-**Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+**Problem:** Der Drucker druckt die eigene Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 **Lösung:** Überprüfen Sie: 
 

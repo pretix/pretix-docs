@@ -12,13 +12,13 @@ Note !!!
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
 Sie benötigen aufgerollte bedruckbare Thermoetiketten mit einer Breite von bis zu 127mm. 
-Für das Drucken der Testseite benötigen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer. 
+Für das Drucken der Konfigurationsseite benötigen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer. 
 
 ## Anleitung
 
 Sie können den Bixolon XD5-40d als Badgedrucker verwenden. 
 Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
-Dann drucken Sie eine Testseite. 
+Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
@@ -30,7 +30,10 @@ Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden i
 Ziehen Sie die beiden orangen Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben. 
 Im Inneren des Druckers schieben Sie die Halterungen für die Rolle auseinander. 
 Drehen Sie die Etikettenrolle so, dass das Ende des Streifens nach vorne zeigt und die Etiketten oben liegen. 
-Stecken Sie die Etikettenrolle auf die Halterung und schieben Sie dann die Halterungen so zusammen, dass die Rolle zwischen Ihnen klemmt. 
+
+Stecken Sie die Etikettenrolle auf eine der Halterungen lassen Sie die Halterungen so von allein zusammenfahren, dass die Rolle zwischen Ihnen klemmt. 
+Falls diese Bewegung nicht von allein passiert, müssen Sie zuerst den Hebel lösen. 
+Schieben Sie die Halterungen **nicht** gewaltsam zusammen. 
 Ziehen Sie das Papier bis zum vorderen Ende des Druckers und schließen Sie die Klappe, sodass das Papier glatt und gerade aus dem Schlitz ragt. 
 
 Überprüfen Sie, ob der Stromschalter des Druckers ausgeschaltet ist, und schalten Sie ihn gegebenenfalls aus. 
@@ -47,14 +50,14 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
 Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse umlegen. 
 
-### Testseite drucken
+### Konfigurationsseite drucken
 
 Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
 Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
-Das löst den Druck einer Testseite aus. 
-Die Testseite könnte z.B. so aussehen: 
+Das löst den Druck einer Konfigurationsseite aus. 
+Die Konfigurationsseite könnte z.B. so aussehen: 
 
-!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.png "Bixolon Testseite des Druckers")
+!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.png "Bixolon Konfigurationsseite des Druckers")
 
 Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für sie relevant. 
 Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen Sie den Teil unter der Überschrift "WLAN CONFIGURATION". 
@@ -98,8 +101,8 @@ Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker
 Tippen Sie :btn:Einstellungen speichern:. 
 
 !!! Note 
-    Die Testseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
-    Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
+    Die Konfigurationsseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
+    Die Konfigurationsseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
 
 Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten. 
@@ -111,9 +114,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-### Drucker druckt die eigene Testseite nicht
+### Drucker druckt Konfigurationsseite nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](bixolon.de.md#testseite-drucken). 
+**Problem:** Sie können einen Drucker nicht dazu bringen können, seine Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](bixolon.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -127,7 +130,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 ### Drucker druckt pretixPRINT-Testseite nicht
 
-**Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+**Problem:** Der Drucker druckt die eigene Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 **Lösung:** Überprüfen Sie: 
 

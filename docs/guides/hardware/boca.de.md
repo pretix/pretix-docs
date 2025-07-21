@@ -24,7 +24,7 @@ Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfl
 
 Sie können den Lemur und den Lemur C als Ticketdrucker oder als Badgedrucker verwenden. 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
-Dann drucken Sie eine Testseite. 
+Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
@@ -59,12 +59,12 @@ Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeig
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht. 
 Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur C: alle), schneidet er das erste Ticket bzw. den ersten Badge ab. 
 
-### Testseite drucken
+### Konfigurationsseite drucken
 
-Um eine Testseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit dem Label "TEST". 
-Die Testseite könnte z.B. so aussehen: 
+Um eine Konfigurationsseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit dem Label "TEST". 
+Die Konfigurationsseite könnte z.B. so aussehen: 
 
-!["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Testseite des Druckers")
+!["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Konfigurationsseite des Druckers")
 
 Die IP-Adresse befindet sich im oberen linken Viertel des Ausdrucks in der Zeile, die mit `IP ADD=` beginnt. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
@@ -109,8 +109,8 @@ Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker
 Tippen Sie :btn:Einstellungen speichern:. 
 
 !!! Note 
-    Die Testseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
-    Die Testseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
+    Die Konfigurationsseite des Druckers und die Testseite von pretixPRINT erfüllen unterschiedliche Funktionen. 
+    Die Konfigurationsseite des Druckers testet die Funktion des Druckers und enthält Informationen zur Verbindung wie die IP-Adresse. 
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren. 
 
 Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten. 
@@ -122,9 +122,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ## Problemlösung 
 
-### Drucker druckt die eigene Testseite nicht
+### Drucker druckt Konfigurationsseite nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Testseite zu drucken wie beschrieben unter [Testseite drucken](boca.de.md#testseite-drucken). 
+**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](boca.de.md#Konfigurationsseite-drucken). 
 
 **Lösung:** Überprüfen Sie: 
 
@@ -136,9 +136,9 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-### IP-Adresse auf der Testseite lautet 0.0.0.0 
+### IP-Adresse auf der Konfigurationsseite lautet 0.0.0.0 
 
-**Problem:** Die Testseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
+**Problem:** Die Konfigurationsseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
 
 **Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
 Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
@@ -147,11 +147,11 @@ Verwenden Sie gegebenenfalls ein anderes Kabel.
 Danach starten Sie den Router neu. 
 
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
-Drucken Sie dann eine neue Testseite aus, um die korrekte IP-Adresse zu erhalten. 
+Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse zu erhalten. 
 
 ### Drucker druckt pretixPRINT-Testseite nicht
 
-**Problem:** Der Drucker druckt die eigene Testseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+**Problem:** Der Drucker druckt die eigene Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 **Lösung:** Überprüfen Sie: 
 
