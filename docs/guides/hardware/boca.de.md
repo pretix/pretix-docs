@@ -23,10 +23,12 @@ Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfl
 
 ## Anleitung
 
-Sie können den Lemur und den Lemur C als Ticketdrucker oder als Badgedrucker verwenden. 
-Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
-Dann drucken Sie eine Konfigurationsseite. 
-Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+Sie können den Epson TM-m30iii und den TM-T88vii als Belegdrucker verwenden. 
+Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
+Dann testen Sie die Konfiguration. 
+
+Falls die Hardware nicht vorkonfiguriert wurde, drucken Sie eine Konfigurationsseite. 
+Danach verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Diese Schritte werden im folgenden genauer erklärt. 
 
 ### Drucker anschließen
