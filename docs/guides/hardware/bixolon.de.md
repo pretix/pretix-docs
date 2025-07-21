@@ -52,6 +52,29 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
 Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse umlegen. 
 
+### Konfiguration testen
+
+!!! Note 
+    Falls Sie Hardware von uns gemietet haben, dann ist sie bereits betriebsbereit konfiguriert. 
+    Das gilt auch, falls Sie Hardware von uns gekauft haben und vor dem Versand eine entsprechende Konfiguration in Auftrag gegeben haben. 
+    In diesen Fällen müssen Sie die Konfiguration nur testen. 
+
+    Sie können die beiden Unterabschnitte [Konfigurationsseite drucken](bixolon.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) überspringen. 
+
+Um die Konfiguration zu testen, starten Sie das Android-Gerät (Kasse oder Scan-Smartphone), von dem Sie den Drucker ansteuern wollen. 
+Überprüfen Sie, ob das Gerät mit einem WLAN verbunden ist, dessen Name mit `pretix_onsite` beginnt. 
+Öffnen Sie die App pretixPRINT. 
+
+pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
+Falls ein Drucker für eine dieser Rollen eingerichtet ist, wird er unter der entsprechenden Überschrift mit der Art der Verbindung und gegebenenfalls seiner IP-Adresse angezeigt. 
+
+Tippen Sie neben dem Drucker auf das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v::. 
+Beobachten Sie, ob der Drucker wie erwartet eine Testseite produziert. 
+Falls Sie mehrere Drucker von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
+
+Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](bixolon.de.md#problemlösung). 
+Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](bixolon.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+
 ### Konfigurationsseite drucken
 
 Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites Loch, in dem ein Button verborgen ist. 
