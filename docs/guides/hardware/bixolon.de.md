@@ -95,6 +95,7 @@ Die Konfigurationsseite könnte z.B. so aussehen:
 
 Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für Sie relevant. 
 Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen Sie den Teil unter der Überschrift "WLAN CONFIGURATION". 
+Für eine Verbindung über USB brauchen Sie keine Informationen von der Konfigurationsseite. 
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
 Sie ist **nicht** zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird. 
@@ -117,7 +118,7 @@ Sie können den Bixolon XD5-40d als Badgedrucker verwenden.
 Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Badgedrucker" :btn:Drucker einrichten:. 
 Der Prozess ist danach immer der gleiche. 
 
-Falls der Drucker über das **Netzwerk** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
+Falls der Drucker über **LAN** oder **WLAN** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
 Geben Sie die IP-Adresse des Routers ein. 
 Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
 Tippen Sie dann :btn:Weiter:. 

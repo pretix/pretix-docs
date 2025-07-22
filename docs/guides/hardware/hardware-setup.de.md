@@ -1,13 +1,13 @@
 # Hardware-Einrichtung 
 
-Dieser Artikel behandelt die Einrichtung von Hardware für Ihr Event. 
+Dieser Artikel behandelt die Einrichtung von Hardware für Ihre Veranstaltung. 
 Wir bieten [professionelle Hardware](https://pretix.eu/about/de/hardware) zur Miete und zum Kauf an. 
 Mit diesen Geräten können Sie Produkte verkaufen, am Einlass Tickets kontrollieren, sowie Belege, Tickets und Badges ausdrucken. 
 Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN. 
 
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
 
-Üblicherweise richtet unser Team die Geräte vor dem Versand an Sie so ein, dass Sie sie nur noch anschließen und testen müssen. 
+Bei Mietaufträgen richtet unser Team die Geräte üblicherweise vor dem Versand an Sie so ein, dass Sie sie nur noch anschließen und testen müssen. 
 Je nach Auftragslage und Verfügbarkeit der Hardware ist dies jedoch nicht immer möglich. 
 
 Falls Sie Hardware von uns kaufen, gibt es eine größere Vielfalt an Geräten und Konfigurationsmöglichkeiten. 
@@ -17,23 +17,24 @@ Dieser Artikel behandelt in erster Linie die Einrichtung unserer Miethardware.
 
 Die Voraussetzungen hängen von Ihrem individuellen Anwendungsfall ab. 
 In jedem Fall brauchen Sie ausreichend Steckdosen und entweder mobilen Datenempfang oder einen Kabelanschluss für die Internetverbindung. 
-Für die Einrichtung eines Druckers benötigen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer. 
 
 ## Anleitung
 
-Packen Sie Ihre Hardware-Lieferung aus und überprüfen Sie diese anhand des Lieferscheins auf Vollständigkeit. 
+Packen Sie Ihre Hardware-Lieferung aus und überprüfen Sie diese auf Vollständigkeit. 
+Wenn Sie die Geräte von uns gemietet haben, hilft Ihnen der Lieferschein dabei. 
 Die Einrichtung der Hardware besteht aus folgenden Schritten: 
 
- - Router einrichten (außer Sie verbinden die Hardware mit einem geeigneten bestehenden Netzwerk)
- - Scan-Smartphones einrichten (falls Sie die Hardware für die Einlasskontrolle nutzen)
- - Kassen einrichten (falls Sie die Hardware für den Verkauf nutzen)
- - Drucker einrichten und mit Scannern oder Kassen verbinden 
+ - Router anschließen und in Betrieb nehmen (außer Sie verbinden die Hardware mit einem geeigneten bestehenden Netzwerk)
+ - Scan-Smartphones in Betrieb nehmen (falls Sie die Hardware für die Einlasskontrolle nutzen)
+ - Kassen anschließen und in Betrieb nehmen (falls Sie die Hardware für den Verkauf nutzen)
+ - Drucker anschließen, mit Scannern oder Kassen verbinden und in Betrieb nehmen
 
 Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie relevant. 
+Falls Sie die Hardware **nicht** bei uns gemietet haben, müssen Sie zusätzlich dazu noch die Konfiguration der Geräte vornehmen. 
 
 ### Router einrichten 
 
-Als Router vermieten wir den Teltonika RUTX11. 
+Als Router vermieten wir üblicherweise den Teltonika RUTX11. 
 Sie erkennen das Gerät an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite.  
 
 Schließen Sie das Netzteil an die Buchse mit der Aufschrift "PWR" am Router und an eine Steckdose an. 
@@ -51,9 +52,10 @@ Die Namen dieser Netze lauten `pretix_onsite` und `pretix_onsite_5ghz`.
 Falls Sie mehrere Router von uns gemietet haben, werden an die Namen ein Unterstrich und eine Zahl angehängt, z.B. `pretix_onsite_1` und `pretix_onsite_5ghz_1`. 
 
 Verbinden Sie die anderen Geräte über LAN-Kabel oder über WLAN mit dem Router. 
-Smartphones verbinden Sie immer mit dem WLAN. 
+Scan-Smartphones verbinden Sie immer mit dem WLAN. 
 Drucker verbinden Sie mit einem LAN-Kabel mit einem der nummerierten LAN-Anschlüsse am Router. 
 Verbinden Sie den Drucker **nicht** mit dem WAN-Anschluss am Router. 
+Alternativ verbinden Sie den Drucker mit dem WLAN oder per USB direkt mit dem auftraggebenden Gerät. 
 
 ### Alternative: Eigenes Netzwerk
 
@@ -67,13 +69,13 @@ Das Netzwerk muss folgende Voraussetzungen erfüllen:
    - **keine** Client Isolation
    - **keine** lokalen Firewalls oder sonstige Blockaden der Kommunikation zwischen den Geräten 
 
-Wir empfehlen, dass Sie potenzielle Verbindungsprobleme vermeiden, indem Sie einen unserer Router nutzen. 
+Wir empfehlen daher, dass Sie potenzielle Verbindungsprobleme vermeiden, indem Sie einen unserer Router nutzen. 
 Die Konfiguration unserer Router erfüllt all die oben genannten Voraussetzungen. 
 
 ### Scan-Smartphones einrichten 
 
-Die von uns vermieteten Scan-Smartphones sind robuste, schwere Smartphones mit eingebautem Scanner. 
-Vor dem Einsatz sollten Sie die Akkus der Smartphones ausreichend laden. 
+Die von uns vermieteten Scan-Smartphones sind robuste Geräte mit eingebautem Scanner. 
+Vor dem Einsatz sollten Sie bei allen Scan-Smartphones rechtzeitig den Akkustand prüfen und Sie gegebenenfalls laden. 
 
 Je nach Bestellumfang und Verfügbarkeit haben Sie eine Ladestation geliefert bekommen. 
 Die Ladestation bietet Platz für bis zu fünf Smartphones. 
@@ -106,7 +108,7 @@ Schließen Sie die Kassenschublade über den dafür vorgesehenen Anschluss (RJ11
 ### Drucker einrichten 
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
-Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Internetverbindung und bedruckbarem Material versorgen. 
+Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Verbindung (LAN, WLAN oder USB) und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des jeweiligen Herstellers. 
