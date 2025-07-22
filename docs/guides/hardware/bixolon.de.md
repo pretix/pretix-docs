@@ -31,8 +31,14 @@ Diese Schritte werden im folgenden genauer erklärt.
 Legen Sie zunächst das Druckmaterial in den Drucker ein. 
 Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden ist und nicht eingeschaltet ist. 
 
-Ziehen Sie die beiden orangen Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben. 
-Im Inneren des Druckers schieben Sie die Halterungen für die Rolle auseinander. 
+Ziehen Sie die beiden Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben. 
+Im Inneren des Druckers schieben Sie vorsichtig die Halterungen für die Rolle auseinander. 
+
+!!! Note 
+    Falls die Halterungen sich nicht mit geringem Kraftaufwand bewegen lassen, sind sie möglicherweise fixiert. 
+    Lösen Sie die Fixierung vorne an der Außenseite der Halterung. 
+    Konsultieren Sie dazu auch das Handbuch des Herstellers: [User's Manual section 5-12-1](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A124%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D)
+
 Drehen Sie die Etikettenrolle so, dass das Ende des Streifens nach vorne zeigt und die Etiketten oben liegen. 
 
 Stecken Sie die Etikettenrolle auf eine der Halterungen lassen Sie die Halterungen so von allein zusammenfahren, dass die Rolle zwischen Ihnen klemmt. 
@@ -47,8 +53,9 @@ Alle Anschlüsse befinden sich hinten und unten am Gerät.
 Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
-Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
-Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
+Um den Drucker über **WLAN** anzuschließen, stecken Sie einen WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
+
+Um den Drucker über **USB** anzuschließen, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
 
 Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
@@ -79,7 +86,7 @@ Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabsch
 
 ### Konfigurationsseite drucken
 
-Der Etikettendrucker **Bixolon XD5-40d** hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites rechteckiges Loch, in dem ein Button verborgen ist. 
+Der Etikettendrucker Bixolon XD5-40d hat zwischen dem USB- und Ethernet-Anschluss ein wenige Millimeter breites rechteckiges Loch, in dem ein Button verborgen ist. 
 Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer, um den Button zu drücken. 
 Das löst den Druck einer Konfigurationsseite aus. 
 Die Konfigurationsseite könnte z.B. so aussehen: 
@@ -91,7 +98,6 @@ Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen 
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
 Sie ist **nicht** zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird. 
-Sie benötigen die Ethernet-IP-Adresse, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
