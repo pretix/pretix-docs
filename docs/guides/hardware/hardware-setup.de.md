@@ -35,7 +35,7 @@ Falls Sie die Hardware **nicht** bei uns gemietet haben, müssen Sie zusätzlich
 ### Router einrichten 
 
 Als Router vermieten wir üblicherweise den Teltonika RUTX11. 
-Sie erkennen das Gerät an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite.  
+Sie erkennen das Gerät an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite. 
 
 Schließen Sie das Netzteil an die Buchse mit der Aufschrift "PWR" am Router und an eine Steckdose an. 
 Warten Sie ab, bis die LEDs des Routers nicht mehr blinken, sondern durchgängig leuchten. 
@@ -80,16 +80,16 @@ Vor dem Einsatz sollten Sie bei allen Scan-Smartphones rechtzeitig den Akkustand
 Je nach Bestellumfang und Verfügbarkeit haben Sie eine Ladestation geliefert bekommen. 
 Die Ladestation bietet Platz für bis zu fünf Smartphones. 
 Verbinden Sie die Ladestation über das mitgelieferte Kabel mit dem Netzteil. 
-Verbinden Sie das Netzteil mit dem passenden Stromkabel mit einer Steckdose. 
+Verbinden Sie das Netzteil über das passende Stromkabel mit einer Steckdose. 
 
 Stecken Sie dann die Scan-Smartphones in die Steckplätze der Ladestation. 
-Bei erfolgreicher Verbindung mit der Station vibrieren die Scan-Smartphones, spielen einen Ton ab oder schalten den Bildschirm ein. 
-Das genaue Verhalten hängt von den Einstellungen des Scan-Smartphones ab. 
+Bei erfolgreicher Verbindung mit der Station vibrieren die Geräte, spielen einen Ton ab oder schalten den Bildschirm ein. 
+Das genaue Verhalten hängt von den Einstellungen des jeweiligen Scan-Smartphones ab. 
 
 !!! Note 
     Die Ladestation ist nur mit bestimmten Scan-Smartphone-Modellen kompatibel. 
     Versuchen Sie **nicht**, ein Gerät mit Gewalt in den Steckplatz zu stecken. 
-    Sie können Ihre privaten Smartphones **nicht** über die Ladestation laden.  
+    Sie können Ihre privaten Smartphones **nicht** über die Ladestation laden. 
 
 Falls Sie keine Ladestation zur Verfügung haben, nutzen Sie ein herkömmliches Ladegerät. 
 Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Scan-Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
@@ -101,13 +101,16 @@ Nachdem das Scan-Smartphone ausreichend geladen ist, schalten Sie es ein und ver
 
 Die von uns vermieteten Kassen sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
-Schalten Sie Sie ein und verbinden Sie mit dem WLAN des Routers. 
+Schalten Sie Sie ein und verbinden Sie mit dem Netzwerk. 
 
-Schließen Sie die Kassenschublade über den dafür vorgesehenen Anschluss (RJ11) an der Kasse an. 
+Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
 
 ### Drucker einrichten 
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
+Die von uns angebotenen Ticketdrucker wie z.B. der Boca Lemur können auch Butterfly-Badges drucken. 
+Für Badges in Form von Klebeetiketten verwenden Sie hingegen einen Etikettendrucker wie z.B. den Bixolon XD5-40d. 
+
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Verbindung (LAN, WLAN oder USB) und bedruckbarem Material versorgen. 
 Dann drucken Sie eine Konfigurationsseite. 
 Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
@@ -116,8 +119,8 @@ Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren 
 Diese Schritte werden auf den folgenden Seiten genauer erklärt: 
 
  - Belegdrucker [Epson TM-m30iii und Epson TM-T88vii](epson.de.md)
- - Ticket- oder Badgedrucker [Boca Lemur und Boca Lemur C](boca.de.md)
- - Badgedrucker [Bixolon XD5-40d](bixolon.de.md)
+ - Ticket- oder Butterfly-Badgedrucker [Boca Lemur und Boca Lemur C](boca.de.md)
+ - Badgedrucker für Klebeetiketten [Bixolon XD5-40d](bixolon.de.md)
 
 Falls Sie den **integrierten** Drucker der Kasse als Belegdrucker verwenden wollen, öffnen Sie auf der Kasse die App pretixPRINT. 
 Tippen Sie unter der Überschrift "Belegdrucker" den Button :btn:Drucker einrichten:. 
@@ -159,7 +162,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 
 **Problem:** Die Konfigurationsseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
 
-**Lösung:**  Der Drucker ist nicht mit dem Netzwerk verbunden. 
+**Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
 Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
