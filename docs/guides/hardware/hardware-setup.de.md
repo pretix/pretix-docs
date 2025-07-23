@@ -82,20 +82,20 @@ Die Ladestation bietet Platz für bis zu fünf Smartphones.
 Verbinden Sie die Ladestation über das mitgelieferte Kabel mit dem Netzteil. 
 Verbinden Sie das Netzteil mit dem passenden Stromkabel mit einer Steckdose. 
 
-Stecken Sie dann die Smartphones in die Steckplätze der Ladestation. 
-Bei erfolgreicher Verbindung mit der Station vibrieren die Smartphones, spielen einen Ton ab oder schalten den Bildschirm ein. 
-Das genaue Verhalten hängt von den Einstellungen des Smartphones ab. 
+Stecken Sie dann die Scan-Smartphones in die Steckplätze der Ladestation. 
+Bei erfolgreicher Verbindung mit der Station vibrieren die Scan-Smartphones, spielen einen Ton ab oder schalten den Bildschirm ein. 
+Das genaue Verhalten hängt von den Einstellungen des Scan-Smartphones ab. 
 
 !!! Note 
-    Die Ladestation ist nur mit bestimmten Smartphone-Modellen kompatibel. 
-    Versuchen Sie **nicht**, ein Smartphone mit Gewalt in den Steckplatz zu stecken. 
+    Die Ladestation ist nur mit bestimmten Scan-Smartphone-Modellen kompatibel. 
+    Versuchen Sie **nicht**, ein Gerät mit Gewalt in den Steckplatz zu stecken. 
     Sie können Ihre privaten Smartphones **nicht** über die Ladestation laden.  
 
 Falls Sie keine Ladestation zur Verfügung haben, nutzen Sie ein herkömmliches Ladegerät. 
-Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
+Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Scan-Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
 Stecken Sie den Ladeadapter in eine Steckdose. 
 
-Nachdem das Smartphone ausreichend geladen ist, schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
+Nachdem das Scan-Smartphone ausreichend geladen ist, schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
 
 ### Kasse einrichten 
 

@@ -110,7 +110,7 @@ Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbe
 Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Sie können die Drucker Epson TM-m30iii und TM-T88vii als Belegdrucker verwenden. 
-Um den Drucker als Belegdrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Belegdrucker" auf :btn:Drucker einrichten. 
+Um den Drucker als Belegdrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone oder der Kasse und tippen dann unter "Belegdrucker" auf :btn:Drucker einrichten. 
 Der Prozess ist danach immer der gleiche. 
 
 Falls der Drucker über das **Netzwerk** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 

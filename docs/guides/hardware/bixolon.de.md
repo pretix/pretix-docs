@@ -115,7 +115,7 @@ Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbe
 Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
 Sie können den Bixolon XD5-40d als Badgedrucker verwenden. 
-Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Smartphone oder der Kasse und tippen dann unter "Badgedrucker" :btn:Drucker einrichten:. 
+Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone oder der Kasse und tippen dann unter "Badgedrucker" :btn:Drucker einrichten:. 
 Der Prozess ist danach immer der gleiche. 
 
 Falls der Drucker über **LAN** oder **WLAN** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
