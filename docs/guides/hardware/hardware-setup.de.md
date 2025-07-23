@@ -112,20 +112,28 @@ Die von uns angebotenen Ticketdrucker wie z.B. der Boca Lemur können auch Butte
 Für Badges in Form von Klebeetiketten verwenden Sie hingegen einen Etikettendrucker wie z.B. den Bixolon XD5-40d. 
 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Verbindung (LAN, WLAN oder USB) und bedruckbarem Material versorgen. 
-Dann drucken Sie eine Konfigurationsseite. 
-Schließlich verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+Falls Sie die Hardware von uns gemietet haben, testen Sie, ob die Konfiguration wie gewünscht funktioniert. 
+
+Falls Sie die Hardware gekauft haben, drucken Sie eine Konfigurationsseite auf dem Drucker. 
+Dann  verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+
 Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des jeweiligen Herstellers. 
 
-Diese Schritte werden auf den folgenden Seiten genauer erklärt: 
+Für mehr Informationen zum Testen der Konfiguration und zum Verbinden von Druckern mit Android-Geräten mit pretixPRINT lesen Sie folgende Seiten: 
 
  - Belegdrucker [Epson TM-m30iii und Epson TM-T88vii](epson.de.md)
  - Ticket- oder Butterfly-Badgedrucker [Boca Lemur und Boca Lemur C](boca.de.md)
  - Badgedrucker für Klebeetiketten [Bixolon XD5-40d](bixolon.de.md)
 
-Falls Sie den **integrierten** Drucker der Kasse als Belegdrucker verwenden wollen, öffnen Sie auf der Kasse die App pretixPRINT. 
-Tippen Sie unter der Überschrift "Belegdrucker" den Button :btn:Drucker einrichten:. 
+Falls Sie den **integrierten** Drucker der Kasse als Belegdrucker verwenden wollen, legen Sie geeignetes bedruckbares Material ein. 
+Öffnen Sie auf der Kasse die App pretixPRINT. 
+Tippen Sie unter der Überschrift "Belegdrucker" das Drei-Punkte-Menü :btn-icon:ellipsis-v:: und dann :btn:Testseite drucken:. 
+Falls Sie die Hardware von uns gemietet haben, sollte das ohne Probleme funktionieren. 
+
+Falls unter "Belegdrucker" kein Eintrag vorhanden ist oder das Drucken nicht funktioniert, tippen Sie :btn:Drucker einrichten:. 
 Auf der Seite "Wie ist Ihr Drucker verbunden?" wählen Sie die Option "Eingebauter Drucker (SUNMI)" und tippen :btn:Weiter:. 
-Sie müssen keine IP-Adresse angeben und unter Protokoll und Dialekt die jeweils einzige Möglichkeit wählen. 
+Sie müssen keine IP-Adresse angeben.
+Unter "Protokoll" und "Dialekt" wählen Sie die jeweils einzige Möglichkeit. 
 
 Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
 Tippen Sie :btn:Einstellungen speichern:. 
@@ -134,26 +142,31 @@ Tippen Sie :btn:Einstellungen speichern:.
 
 ### LEDs 3G und 4G am Router blinken abwechselnd 
 
-**Problem:** Die LEDs mit den Beschriftungen "3G" und "4G" am Router blinken abwechselnd. 
+**Problem:** Der Router kann also keine mobile Datenverbindung herstellen. 
+Der Teltonika RUTX11 verhält sich in diesem Fall wie folgt:  
+Die LEDs mit den Beschriftungen "3G" und "4G" am Router blinken abwechselnd. 
 Die Statusanzeige mit den fünf Balken daneben leuchtet nicht. 
 
-**Lösung:** Der Router kann keine mobile Datenverbindung herstellen. 
-Überprüfen Sie, ob Sie mit anderen Geräten am gleichen Ort eine stabile mobile Datenverbindung haben. 
+**Lösung:** Überprüfen Sie, ob Sie mit anderen Geräten am gleichen Ort eine stabile mobile Datenverbindung haben. 
 Wenn dies der Fall ist, deutet das auf eine Fehlfunktion am Router oder an der eingebauten SIM-Karte hin. 
 Kontaktieren Sie unseren Support. 
 
-Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung herstellen können, nutzen Sie eine Kabelverbindung oder den Offline-Modus von pretixSCAN. 
+Falls Sie auch mit anderen Geräten keine brauchbare mobile Datenverbindung herstellen können, liegt das Problem womöglich beim Mobilfunkanbieter. 
+Falls Sie einen kabelgebundenen Internetanschluss am Einsatzort zur Verfügung haben, schließen Sie den Router über die WAN-Buchse daran an. 
+Für die Einlasskontrolle können Sie auf den Offline-Modus von pretixSCAN ausweichen. 
+Für alle weiteren Fragen kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
 ### Drucker druckt Konfigurationsseite nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen können, seine eigene Konfigurationsseite zu drucken wie beschrieben unter [Konfigurationsseite drucken](hardware-setup.de.md#Konfigurationsseite-drucken). 
+**Problem:** Sie können einen Drucker nicht dazu bringen, seine eigene Konfigurationsseite zu drucken (wie beschrieben unter [Konfigurationsseite drucken](hardware-setup.de.md#Konfigurationsseite-drucken)). 
 
-**Lösung:** Überprüfen Sie: 
+**Lösung:** Stellen Sie sicher, dass: 
 
- - ob der Drucker mit Strom versorgt wird (das Netzteil sollte verbunden sein und Status-LED oder Display am Drucker sollten leuchten)
- - ob das passende Material eingelegt ist
- - ob das Material richtig eingelegt ist
- - ob die Klappe des Druckers geschlossen ist
+ - der Drucker mit Strom versorgt wird (das Netzteil/-kabel sollte verbunden sein) 
+ - der Drucker eingeschaltet ist (falls vorhanden sollten Status-LED oder Display am Drucker leuchten)
+ - das passende Material eingelegt ist
+ - das Material richtig eingelegt ist
+ - die Klappe des Druckers geschlossen ist (falls vorhanden)
 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
