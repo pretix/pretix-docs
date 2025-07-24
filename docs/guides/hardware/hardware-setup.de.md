@@ -142,7 +142,7 @@ Tippen Sie :btn:Einstellungen speichern:.
 
 ### LEDs 3G und 4G am Router blinken abwechselnd 
 
-**Problem:** Der Router kann also keine mobile Datenverbindung herstellen. 
+**Problem:** Der Router kann keine mobile Datenverbindung herstellen. 
 Der Teltonika RUTX11 verhält sich in diesem Fall wie folgt:  
 Die LEDs mit den Beschriftungen "3G" und "4G" am Router blinken abwechselnd. 
 Die Statusanzeige mit den fünf Balken daneben leuchtet nicht. 
@@ -165,7 +165,6 @@ Für alle weiteren Fragen kontaktieren Sie unseren [Support](mailto:support@pret
  - der Drucker mit Strom versorgt wird (das Netzteil/-kabel sollte verbunden sein) 
  - der Drucker eingeschaltet ist (falls vorhanden sollten Status-LED oder Display am Drucker leuchten)
  - das passende Material eingelegt ist
- - das Material richtig eingelegt ist
  - die Klappe des Druckers geschlossen ist (falls vorhanden)
 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
@@ -174,11 +173,15 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 ### IP-Adresse auf der Konfigurationsseite lautet 0.0.0.0 
 
 **Problem:** Die Konfigurationsseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
+Der Drucker ist also nicht mit dem Netzwerk verbunden. 
 
-**Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
-Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
+**Lösung:** Prüfen Sie, ob der Router mit Strom versorgt und eingeschaltet ist. 
+
+Bei einer Verbindung über **LAN** prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
+
+Bei einer Verbindung über **WLAN** prüfen Sie, ob der WLAN-Dongle verbunden ist, beziehungsweise ob der Drucker eine aktive WLAN-Verbindung anzeigt. 
 
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
 Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse zu erhalten. 
@@ -189,7 +192,7 @@ Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse z
 
 **Lösung:** Überprüfen Sie: 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (Netzwerkname fängt an mit `pretix-onsite`)
+ - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei von uns vermieteten Routern fängt der Netzwerkname mit `pretix-onsite` an)
  - ob die IP-Adresse in pretixPRINT korrekt ist
  - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
 
