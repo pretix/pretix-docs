@@ -18,13 +18,13 @@ Falls Sie die Netzwerkkonfiguration des Druckers ändern, benötigen Sie für da
 
 ## Anleitung
 
-Sie können den Epson TM-m30iii und den TM-T88vii als Belegdrucker verwenden. 
+Mit dem Bixolon XD5-40d können Sie Badges in Form von Klebeetiketten drucken. 
 Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
 Dann testen Sie die Konfiguration. 
 
 Falls die Hardware nicht vorkonfiguriert wurde, drucken Sie eine Konfigurationsseite. 
 Danach verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
-Diese Schritte werden im folgenden genauer erklärt. 
+Diese Schritte werden im Folgenden genauer erklärt. 
 
 ### Drucker anschließen
 
@@ -91,7 +91,7 @@ Schalten Sie den Drucker ein und benutzen Sie einen dünnen, stabilen Gegenstand
 Das löst den Druck einer Konfigurationsseite aus. 
 Die Konfigurationsseite könnte z.B. so aussehen: 
 
-!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN  CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.png "Bixolon Konfigurationsseite des Druckers")
+!["Scan von weißen Klebeetiketten mit zwei Überschriften: 'Ethernet CONFIGURATION' und 'WLAN CONFIGURATION'. Die beiden Abschnitte enthalten Daten für die Netzwerkverbindung."](../../assets/screens/hardware-setup/bixolon-test-scan.png "Bixolon Konfigurationsseite des Druckers")
 
 Wenn Sie den Drucker über das **LAN-Kabel** verbinden wollen, dann ist der Teil unter der Überschrift "Ethernet CONFIGURATION" für Sie relevant. 
 Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen Sie den Teil unter der Überschrift "WLAN CONFIGURATION". 
@@ -215,7 +215,7 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 
 **Lösung:** Der Druckkopf ist verschmutzt. 
 Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
-   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Printer Maintenance](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A130%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D). 
+Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Printer Maintenance](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A130%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D). 
 
 ### Druck ist leer oder enthält nur Teile des Layouts 
 

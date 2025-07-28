@@ -11,9 +11,10 @@ Note !!!
 Die Geräte Boca Lemur und Boca Lemur C unterscheiden sich in ihrem Aufbau nur in folgenden Punkten voneinander: 
 
  - Stromversorgung (Lemur: integriertes Netzteil und Kaltgeräteanschluss. Lemur C: externes Netzteil)
- - Position der Buttons und LEDs (Lemur: linke Seite. Lemur C: rechte Seite)
+ - Position der Buttons und LEDs (Lemur: linke Seite bei Blick auf die Papierausgabe. Lemur C: rechte Seite). 
+   Der Netzschalter befindet sich bei beiden Geräten rechts. 
  - Bildschirm (der Lemur besitzt einen Bildschirm, der Lemur C nicht)
- - maximale Druckbreite (Lemur: 101mm, Lemur C: 82mm)
+ - maximale Druckbreite (Lemur: 101mm. Lemur C: 82mm)
 
 ## Voraussetzungen
 
@@ -23,13 +24,13 @@ Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfl
 
 ## Anleitung
 
-Sie können den Epson TM-m30iii und den TM-T88vii als Belegdrucker verwenden. 
+Mit dem Boca Lemur oder Lemur C können Sie entweder Tickets oder Butterfly-Badges drucken. 
 Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
 Dann testen Sie die Konfiguration. 
 
 Falls die Hardware nicht vorkonfiguriert wurde, drucken Sie eine Konfigurationsseite. 
 Danach verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
-Diese Schritte werden im folgenden genauer erklärt. 
+Diese Schritte werden im Folgenden genauer erklärt. 
 
 ### Drucker anschließen
 
@@ -56,7 +57,7 @@ Daraufhin sollten der Bildschirm (nur Lemur) und mindestens eine LED an der Seit
 
 !!! Note 
     Die Anweisungen zum Druckmaterial passen zur Konfiguration unserer Mietgeräte. 
-    Falls Sie Ihre Drucker bei einem Dritthändler gekauft haben oder Ihn in einer abweichenden Konfiguration bei uns geordert haben, müssen Sie das Druckmaterial womöglich anders einlegen. 
+    Falls Sie Ihre Drucker bei einem Dritthändler gekauft haben oder ihn in einer abweichenden Konfiguration bei uns geordert haben, müssen Sie das Druckmaterial möglicherweise anders einlegen. 
 
 Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeigt und die schwarzen quadratischen Markierungen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht. 
@@ -87,7 +88,7 @@ Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabsch
 
 ### Konfigurationsseite drucken
 
-Um eine Konfigurationsseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit dem Label "TEST". 
+Um eine Konfigurationsseite auszudrucken, drücken Sie an der Seite des Geräts den Button mit der Beschriftung "TEST". 
 Die Konfigurationsseite könnte z.B. so aussehen: 
 
 !["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Konfigurationsseite des Druckers")
@@ -227,7 +228,7 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 
 **Lösung:** Der Druckkopf ist verschmutzt. 
 Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
-   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
+Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
 
 ### Druck ist leer oder enthält nur Teile des Layouts 
 

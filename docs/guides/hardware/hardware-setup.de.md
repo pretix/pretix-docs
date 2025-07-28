@@ -45,10 +45,10 @@ Warten Sie damit ab, bis die LEDs des Routers nicht mehr blinken.
 
 Um die mobile Datenverbindung des Routers zu nutzen, werfen Sie einen Blick auf die LEDs "2G", "3G" und "4G" über dem "SIM1"-Slot des Routers. 
 Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgängig leuchtet, hat der Router eine mobile Datenverbindung hergestellt. 
-Alternativ zur mobilen Datenverbindung können Sie den Router über die WAN-Buchse an den kabelgebundenen Internetanschluss am Einsatzort anschließen. 
+Alternativ zur mobilen Datenverbindung können Sie den Router über die WAN-Buchse an einen kabelgebundenen Internetanschluss am Einsatzort anschließen. 
 
 Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
-Die Namen dieser Netze lauten `pretix_onsite` und `pretix_onsite_5ghz`. 
+Bei den von uns vermieteten Routern lauten die Namen dieser Netze `pretix_onsite` und `pretix_onsite_5ghz`. 
 Falls Sie mehrere Router von uns gemietet haben, werden an die Namen ein Unterstrich und eine Zahl angehängt, z.B. `pretix_onsite_1` und `pretix_onsite_5ghz_1`. 
 
 Verbinden Sie die anderen Geräte über LAN-Kabel oder über WLAN mit dem Router. 
@@ -99,9 +99,14 @@ Nachdem das Scan-Smartphone ausreichend geladen ist, schalten Sie es ein und ver
 
 ### Kasse einrichten 
 
-Die von uns vermieteten Kassen sind Tablets mit großem Bildschirm und einem eingebauten Belegdrucker oder einem Standfuß. 
+Die von uns vermieteten und verkauften Kassen haben unterschiedliche Bauformen. 
+Manche von Ihnen haben einen eingebaute Belegdrucker. 
+Manche haben einen Standfuß. 
+Andere ähneln einfachen Tablets.  
+Die Bildschirme der Kassen sind deutlich größer als die der Scan-Smartphones. 
+
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
-Schalten Sie Sie ein und verbinden Sie mit dem Netzwerk. 
+Schalten Sie sie ein und verbinden Sie mit dem Netzwerk. 
 
 Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
 
@@ -115,7 +120,7 @@ Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer
 Falls Sie die Hardware von uns gemietet haben, testen Sie, ob die Konfiguration wie gewünscht funktioniert. 
 
 Falls Sie die Hardware gekauft haben, drucken Sie eine Konfigurationsseite auf dem Drucker. 
-Dann  verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+Dann verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
 
 Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des jeweiligen Herstellers. 
 
@@ -143,7 +148,7 @@ Tippen Sie :btn:Einstellungen speichern:.
 ### LEDs 3G und 4G am Router blinken abwechselnd 
 
 **Problem:** Der Router kann keine mobile Datenverbindung herstellen. 
-Der Teltonika RUTX11 verhält sich in diesem Fall wie folgt:  
+Der Teltonika RUTX11 verhält sich in diesem Fall wie folgt: 
 Die LEDs mit den Beschriftungen "3G" und "4G" am Router blinken abwechselnd. 
 Die Statusanzeige mit den fünf Balken daneben leuchtet nicht. 
 

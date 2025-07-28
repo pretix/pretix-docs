@@ -22,13 +22,13 @@ Sie benötigen aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm.
 
 ## Anleitung
 
-Sie können den Epson TM-m30iii und den TM-T88vii als Belegdrucker verwenden. 
+Mit dem Epson TM-m30iii oder TM-T88vii können Sie Belege drucken. 
 Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
 Dann testen Sie die Konfiguration. 
 
 Falls die Hardware nicht vorkonfiguriert wurde, drucken Sie eine Konfigurationsseite. 
 Danach verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
-Diese Schritte werden im folgenden genauer erklärt. 
+Diese Schritte werden im Folgenden genauer erklärt. 
 
 ### Drucker anschließen
 
