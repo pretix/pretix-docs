@@ -8,10 +8,10 @@ Note !!!
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 
     Informieren Sie sich auf der Webseite des Herstellers über die Modelle [Boca Lemur](https://tls-bocasystems.com/de/225/lemur/) und [Boca Lemur C](https://tls-bocasystems.com/de/232/lemur-c/). 
 
-Die Geräte Lemur und Boca Lemur C unterscheiden sich in der Bedienung nur in folgenden Punkten voneinander: 
+Die Geräte Boca Lemur und Boca Lemur C unterscheiden sich in ihrem Aufbau nur in folgenden Punkten voneinander: 
 
- - Stromversorgung (Lemur: integriertes Netzteil und Kaltgeräteanschluss. Lemur C: externes Netzteil) 
- - Position der Buttons und LEDs (Lemur: linke Seite. Lemur C: rechte Seite) 
+ - Stromversorgung (Lemur: integriertes Netzteil und Kaltgeräteanschluss. Lemur C: externes Netzteil)
+ - Position der Buttons und LEDs (Lemur: linke Seite. Lemur C: rechte Seite)
  - Bildschirm (der Lemur besitzt einen Bildschirm, der Lemur C nicht)
  - maximale Druckbreite (Lemur: 101mm, Lemur C: 82mm)
 
@@ -105,7 +105,7 @@ pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendu
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie üblicherweise an einer Kasse ein. 
+Drucker für Belege und Tickets richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
@@ -115,7 +115,7 @@ Um den Drucker als Badgedrucker mit einem Scan-Smartphone zu verbinden, öffnen 
 Unabhängig von Ihrer Auswahl ist der Prozess danach immer der gleiche. 
 
 Falls der Drucker über das **Netzwerk** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
-Geben Sie die IP-Adresse des Routers ein. 
+Geben Sie die IP-Adresse des Druckers ein. 
 Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
 Tippen Sie dann :btn:Weiter:. 
 
@@ -170,7 +170,7 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
-Danach starten Sie den Router neu. 
+Danach starten Sie den Drucker neu. 
 
 Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
 Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse zu erhalten. 

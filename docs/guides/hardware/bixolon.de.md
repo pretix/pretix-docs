@@ -110,7 +110,7 @@ pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendu
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
 Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendungszweck entspricht. 
 
-Beleg- und Ticketdrucker richten Sie üblicherweise an eine Kassen ein. 
+Drucker für Belege und Tickets richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
 Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
@@ -119,7 +119,7 @@ Um den Drucker als Badgedrucker mit einem Scan-Smartphone oder einer Kasse zu ve
 Der Prozess ist danach immer der gleiche. 
 
 Falls der Drucker über **LAN** oder **WLAN** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
-Geben Sie die IP-Adresse des Routers ein. 
+Geben Sie die IP-Adresse des Druckers ein. 
 Das Feld "Port" können Sie in den meisten Fällen unverändert lassen. 
 Tippen Sie dann :btn:Weiter:. 
 
