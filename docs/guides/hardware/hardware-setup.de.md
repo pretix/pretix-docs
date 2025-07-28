@@ -190,11 +190,20 @@ Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse z
 
 **Problem:** Der Drucker druckt die Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
-**Lösung:** Überprüfen Sie: 
+**Lösung:** Überprüfen Sie zuerst, ob pretixPRINT auf dem Gerät womöglich für die Benutzung mit einem anderen Drucker konfiguriert ist. 
+Dazu versorgen Sie alle mitgelieferten Drucker mit Strom, Netzwerkverbindung und Druckmaterial. 
+Versuchen Sie dann erneut, die pretixPRINT-Testseite zu drucken. 
 
- - ob das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei von uns vermieteten Routern fängt der Netzwerkname mit `pretix-onsite` an)
- - ob die IP-Adresse in pretixPRINT korrekt ist
- - ob in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt) 
+Falls die Testseite nun von einem anderen Drucker ausgedruckt wird, bedeutet das, dass pretixPRINT auf dem Gerät für die Benutzung mit diesem Drucker konfiguriert ist. 
+Passen Sie Ihren Hardware-Aufbau entsprechend an. 
+
+Falls die Testseite von keinem der Drucker ausgedruckt wird, liegt ein anderes Problem vor. 
+Stellen Sie sicher, dass das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei von uns vermieteten Routern fängt der Netzwerkname mit `pretix-onsite` an). 
+
+Überprüfen Sie die IP-Adresse in pretixPRINT und korrigieren Sie sie gegebenenfalls. 
+Stellen Sie auch sicher, dass in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt). 
+Die Auswahl des Protokolls hängt vom Modell des Druckers ab. 
+Für mehr Informationen zu IP-Adresse und Protokoll lesen Sie den entsprechenden Abschnitt in den Artikeln zu Druckern von [Bixolon](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) [Boca](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) oder [Epson](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
 
