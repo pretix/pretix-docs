@@ -32,7 +32,7 @@ Die Einrichtung der Hardware besteht aus folgenden Schritten:
 Je nach Anwendungsfall sind eventuell nur einige dieser Schritte für Sie relevant. 
 Falls Sie die Hardware **nicht** bei uns gemietet haben, müssen Sie zusätzlich dazu noch die Konfiguration der Geräte vornehmen. 
 
-### Router einrichten 
+### Router in Betrieb nehmen 
 
 Als Router vermieten wir üblicherweise den Teltonika RUTX11. 
 Sie erkennen das Gerät an den Antennen auf der Rückseite und den nummerierten LAN-Buchsen an der Vorderseite. 
@@ -72,12 +72,18 @@ Das Netzwerk muss folgende Voraussetzungen erfüllen:
 Wir empfehlen daher, dass Sie potenzielle Verbindungsprobleme vermeiden, indem Sie einen unserer Router nutzen. 
 Die Konfiguration unserer Router erfüllt all die oben genannten Voraussetzungen. 
 
-### Scan-Smartphones einrichten 
+### Scan-Smartphones in Betrieb nehmen 
 
-Die von uns vermieteten Scan-Smartphones sind robuste Geräte mit eingebautem Scanner. 
+Die von uns vermieteten oder verkauften Scan-Smartphones sind robuste Geräte mit eingebautem Scanner. 
 Vor dem Einsatz sollten Sie bei allen Scan-Smartphones rechtzeitig den Akkustand prüfen und Sie gegebenenfalls laden. 
 
-Je nach Bestellumfang und Verfügbarkeit haben Sie eine Ladestation geliefert bekommen. 
+Dafür nutzen Sie die **Ladegeräte**, die im Lieferumfang enthalten sind. 
+Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Scan-Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
+Stecken Sie den Ladeadapter in eine Steckdose. 
+
+Nachdem das Scan-Smartphone ausreichend geladen ist, schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
+
+Je nach Bestellumfang und Verfügbarkeit haben Sie möglicherweise eine **Ladestation** geliefert bekommen. 
 Die Ladestation bietet Platz für bis zu fünf Smartphones. 
 Verbinden Sie die Ladestation über das mitgelieferte Kabel mit dem Netzteil. 
 Verbinden Sie das Netzteil über das passende Stromkabel mit einer Steckdose. 
@@ -91,13 +97,9 @@ Das genaue Verhalten hängt von den Einstellungen des jeweiligen Scan-Smartphone
     Versuchen Sie **nicht**, ein Gerät mit Gewalt in den Steckplatz zu stecken. 
     Sie können Ihre privaten Smartphones **nicht** über die Ladestation laden. 
 
-Falls Sie keine Ladestation zur Verfügung haben, nutzen Sie ein herkömmliches Ladegerät. 
-Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Scan-Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
-Stecken Sie den Ladeadapter in eine Steckdose. 
+Nachdem die Scan-Smartphones ausreichend geladen sind, schalten Sie sie ein und verbinden sie mit dem WLAN des Routers. 
 
-Nachdem das Scan-Smartphone ausreichend geladen ist, schalten Sie es ein und verbinden Sie es mit dem WLAN des Routers. 
-
-### Kasse einrichten 
+### Kasse in Betrieb nehmen 
 
 Die von uns vermieteten und verkauften Kassen haben unterschiedliche Bauformen. 
 Manche von Ihnen haben einen eingebaute Belegdrucker. 
@@ -110,7 +112,7 @@ Schalten Sie sie ein und verbinden Sie mit dem Netzwerk.
 
 Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
 
-### Drucker einrichten 
+### Drucker in Betrieb nehmen 
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
 Die von uns angebotenen Ticketdrucker wie z.B. der Boca Lemur können auch Butterfly-Badges drucken. 
