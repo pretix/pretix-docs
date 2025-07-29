@@ -152,12 +152,12 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 **Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](bixolon.de.md#Konfigurationsseite-drucken). 
 
-**Lösung:** Überprüfen Sie: 
+**Lösung:** Stellen Sie sicher, dass: 
 
- - ob der Drucker mit Strom versorgt wird (das Netzteil/Stromkabel sollte verbunden sein und Status-LED oder Display am Drucker sollten leuchten)
- - ob das passende Material eingelegt ist
- - ob das Material richtig eingelegt ist
- - ob das Gehäuse des Druckers geschlossen ist
+ - der Drucker mit Strom versorgt wird (das Netzteil/Stromkabel sollte verbunden sein und Status-LED oder Display am Drucker sollten leuchten)
+ - das passende Material eingelegt ist
+ - das Material richtig eingelegt ist
+ - das Gehäuse des Druckers geschlossen ist
 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 

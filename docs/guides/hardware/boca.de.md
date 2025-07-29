@@ -153,12 +153,12 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 **Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](boca.de.md#Konfigurationsseite-drucken). 
 
-**Lösung:** Überprüfen Sie: 
+**Lösung:** Stellen Sie sicher, dass: 
 
- - ob der Drucker mit Strom versorgt wird (das Netzteil/Stromkabel sollte verbunden sein und "READY"-LED oder Display am Drucker sollten leuchten)
- - ob das passende Material eingelegt ist
- - ob das Material richtig eingelegt ist
- - ob das Gehäuse des Druckers geschlossen ist
+ - der Drucker mit Strom versorgt wird (das Netzteil/Stromkabel sollte verbunden sein und "READY"-LED oder Display am Drucker sollten leuchten)
+ - das passende Material eingelegt ist
+ - das Material richtig eingelegt ist
+ - das Gehäuse des Druckers geschlossen ist
 
 Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
 Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
@@ -255,12 +255,12 @@ Alternativ wählen Sie die Papiergröße so, dass sie Ihrem Druckmaterial entspr
 
 **Problem:** Der Drucker schneidet Tickets oder Badges nach dem Drucken an der falschen Stelle ab (mehr als ein paar Millimeter neben der Schnittkante). 
 
-**Lösung:** Überprüfen Sie: 
+**Lösung:** Stellen Sie sicher, dass: 
 
- - ob das Druckmaterial richtig herum bereitgelegt ist. 
+ - das Druckmaterial richtig herum bereitgelegt ist. 
    Die bedruckbare Seite muss nach oben zeigen. 
    Die Steuermarken (schwarze quadratische Markierungen) müssen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
- - ob der Sensor an der richtigen Position ist. 
+ - der Sensor an der richtigen Position ist. 
    Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Cut or Tear Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Cut or Tear SQ Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
 
 ## Weitere Informationen
