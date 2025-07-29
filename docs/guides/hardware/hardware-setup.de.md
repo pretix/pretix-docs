@@ -112,6 +112,14 @@ Schalten Sie sie ein und verbinden Sie mit dem Netzwerk.
 
 Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
 
+Wenn Sie eine Kasse in der Bundesrepublik Deutschland verwenden, dann müssen Sie eine technischen Sicherheitseinrichtung (TSE) benutzen und die Kasse dem Finanzamt melden. 
+Wenn Sie die Hardware gemietet haben, dann ist die TSE bereits eingebaut und eingerichtet. 
+Falls Sie die Hardware gekauft haben, folgen Sie den Anweisungen im Artikel [Technische Sicherheitseinrichtung (TSE)](../pretixpos/tse.de.md). 
+
+Sie müssen jede Kasse in Ihrem Besitz dem Finanzamt melden. 
+Das gilt auch für Mietgeräte und für Kassen, die nicht aktiv im Gebrauch sind. 
+Folgen Sie den Anweisungen im Artikel [Kassenanmeldung in Deutschland](../pretixpos/register.de.md). 
+
 ### Drucker in Betrieb nehmen 
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
