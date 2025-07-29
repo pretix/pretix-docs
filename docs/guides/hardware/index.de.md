@@ -142,7 +142,7 @@ Für mehr Informationen zum Testen der Konfiguration und zum Verbinden von Druck
 
 Falls Sie den **integrierten** Drucker der Kasse als Belegdrucker verwenden wollen, legen Sie geeignetes bedruckbares Material ein. 
 Öffnen Sie auf der Kasse die App pretixPRINT. 
-Tippen Sie unter der Überschrift "Belegdrucker" das Drei-Punkte-Menü :btn-icon:ellipsis-v:: und dann :btn:Testseite drucken:. 
+Tippen Sie unter der Überschrift "Belegdrucker" das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v:: und dann :btn:Testseite drucken:. 
 Falls Sie die Hardware von uns gemietet haben, sollte das ohne Probleme funktionieren. 
 
 Falls unter "Belegdrucker" kein Eintrag vorhanden ist oder das Drucken nicht funktioniert, tippen Sie :btn:Drucker einrichten:. 
@@ -171,72 +171,12 @@ Falls Sie einen kabelgebundenen Internetanschluss am Einsatzort zur Verfügung h
 Für die Einlasskontrolle können Sie auf den Offline-Modus von pretixSCAN ausweichen. 
 Für alle weiteren Fragen kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
 
-### Drucker druckt Konfigurationsseite nicht
+### Probleme beim Drucken 
 
-**Problem:** Sie können einen Drucker nicht dazu bringen, seine eigene Konfigurationsseite zu drucken (wie beschrieben in den Abschnitten "Konfigurationsseite drucken" für [Bixolon](bixolon.de.md#konfigurationsseite-drucken), [Boca](boca.de.md#konfigurationsseite-drucken) und [Epson](epson.de.md#konfigurationsseite-drucken)). 
+Falls beim **integrierten** Drucker einer Kasse Probleme auftreten, wiederholen Sie die Schritte die unter [Drucker in Betrieb nehmen](index.de.md#drucker-in-betrieb-nehmen) beschrieben sind. 
 
-**Lösung:** Stellen Sie sicher, dass: 
+Falls bei einem der anderen Drucker Probleme auftreten, lesen Sie den Abschnitt zur Problemlösung im jeweiligen Artikel: 
 
- - der Drucker mit Strom versorgt wird (das Netzteil/-kabel sollte verbunden sein) 
- - der Drucker eingeschaltet ist (falls vorhanden sollten Status-LED oder Display am Drucker leuchten)
- - das passende Material eingelegt ist
- - die Klappe des Druckers geschlossen ist (falls vorhanden)
-
-Wenn all diese Punkte erfüllt sind, liegt möglicherweise ein technisches Problem vor. 
-Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Support](mailto:support@pretix.eu). 
-
-### IP-Adresse auf der Konfigurationsseite lautet 0.0.0.0 
-
-**Problem:** Die Konfigurationsseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
-Der Drucker ist also nicht mit dem Netzwerk verbunden. 
-
-**Lösung:** Prüfen Sie, ob der Router mit Strom versorgt und eingeschaltet ist. 
-
-Bei einer Verbindung über **LAN** prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
-Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
-Verwenden Sie gegebenenfalls ein anderes Kabel. 
-
-Bei einer Verbindung über **WLAN** prüfen Sie, ob der WLAN-Dongle verbunden ist, beziehungsweise ob der Drucker eine aktive WLAN-Verbindung anzeigt. 
-
-Geben Sie dem Drucker etwa eine Minute Zeit, um sich mit dem Netzwerk zu verbinden. 
-Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse zu erhalten. 
-
-### Drucker druckt pretixPRINT-Testseite nicht
-
-**Problem:** Der Drucker druckt die Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite (wie beschrieben in den Abschnitten "Drucker mit Scan-Smartphone oder Kasse verbinden" für [Bixolon](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden), [Boca](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) und [Epson](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden)). 
-
-**Lösung:** Überprüfen Sie zuerst, ob pretixPRINT auf dem Gerät womöglich für die Benutzung mit einem anderen Drucker konfiguriert ist. 
-Dazu versorgen Sie alle mitgelieferten Drucker mit Strom, Netzwerkverbindung und Druckmaterial. 
-Versuchen Sie dann erneut, die pretixPRINT-Testseite zu drucken. 
-
-Falls die Testseite nun von einem anderen Drucker ausgedruckt wird, bedeutet das, dass pretixPRINT auf dem Gerät für die Benutzung mit diesem Drucker konfiguriert ist. 
-Passen Sie Ihren Hardware-Aufbau entsprechend an. 
-
-Falls die Testseite von keinem der Drucker ausgedruckt wird, liegt ein anderes Problem vor. 
-Stellen Sie sicher, dass das Gerät, auf dem pretixPRINT läuft, mit dem korrekten WLAN verbunden ist (bei von uns vermieteten Routern fängt der Netzwerkname mit `pretix-onsite` an). 
-
-Überprüfen Sie die IP-Adresse in pretixPRINT und korrigieren Sie sie gegebenenfalls. 
-Stellen Sie auch sicher, dass in pretixPRINT das richtige Protokoll ausgewählt ist (plus gegebenenfalls der richtige Dialekt). 
-Die Auswahl des Protokolls hängt vom Modell des Druckers ab. 
-Für mehr Informationen zu IP-Adresse und Protokoll lesen Sie den entsprechenden Abschnitt in den Artikeln zu Druckern von [Bixolon](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) [Boca](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) oder [Epson](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
-
-Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut. 
-
-### Druckauftrag kommt auf einem anderen Drucker an
-
-**Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
-
-**Lösung:** Die in pretixPRINT hinterlegte IP-Adresse ist nicht die des gewünschten Druckers. 
-Verwenden Sie das Gerät mit dem verbundenen Drucker. 
-Passen Sie Ihren Hardware-Aufbau entsprechend an. 
-
-Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
-Speichern Sie die Einstellungen und testen Sie erneut. 
-
-### Druckauftrag enthält Unsinn 
-
-**Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
-
-**Lösung:** In pretixPRINT ist das falsche Protokoll für den Drucker konfiguriert. 
-Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
-Speichern Sie die Einstellungen und testen Sie erneut. 
+ - [Epson TM-m30iii und Epson TM-T88vii](epson.de.md#problemlösung)
+ - [Boca Lemur und Boca Lemur C](boca.de.md#problemlösung)
+ - [Bixolon XD5-40d](bixolon.de.md#problemlösung)
