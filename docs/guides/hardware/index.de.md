@@ -173,7 +173,7 @@ Für alle weiteren Fragen kontaktieren Sie unseren [Support](mailto:support@pret
 
 ### Drucker druckt Konfigurationsseite nicht
 
-**Problem:** Sie können einen Drucker nicht dazu bringen, seine eigene Konfigurationsseite zu drucken (wie beschrieben unter [Konfigurationsseite drucken](hardware-setup.de.md#Konfigurationsseite-drucken)). 
+**Problem:** Sie können einen Drucker nicht dazu bringen, seine eigene Konfigurationsseite zu drucken (wie beschrieben in den Abschnitten "Konfigurationsseite drucken" für [Bixolon](bixolon.de.md#konfigurationsseite-drucken), [Boca](boca.de.md#konfigurationsseite-drucken) und [Epson](epson.de.md#konfigurationsseite-drucken)). 
 
 **Lösung:** Stellen Sie sicher, dass: 
 
@@ -203,7 +203,7 @@ Drucken Sie dann eine neue Konfigurationsseite aus, um die korrekte IP-Adresse z
 
 ### Drucker druckt pretixPRINT-Testseite nicht
 
-**Problem:** Der Drucker druckt die Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite wie beschrieben unter [Drucker mit Scan-Smartphone oder Kasse verbinden](hardware-setup.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
+**Problem:** Der Drucker druckt die Konfigurationsseite zwar richtig aus, aber nicht die pretixPRINT-Testseite (wie beschrieben in den Abschnitten "Drucker mit Scan-Smartphone oder Kasse verbinden" für [Bixolon](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden), [Boca](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) und [Epson](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden)). 
 
 **Lösung:** Überprüfen Sie zuerst, ob pretixPRINT auf dem Gerät womöglich für die Benutzung mit einem anderen Drucker konfiguriert ist. 
 Dazu versorgen Sie alle mitgelieferten Drucker mit Strom, Netzwerkverbindung und Druckmaterial. 
