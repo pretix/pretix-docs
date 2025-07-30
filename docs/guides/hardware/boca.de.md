@@ -4,7 +4,7 @@ Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwe
 Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden. 
 Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des Herstellers. 
 
-Note !!! 
+!!! Note
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 
     Informieren Sie sich auf der Webseite des Herstellers über die Modelle [Boca Lemur](https://tls-bocasystems.com/de/225/lemur/) und [Boca Lemur C](https://tls-bocasystems.com/de/232/lemur-c/). 
 
@@ -19,8 +19,8 @@ Die Geräte Boca Lemur und Boca Lemur C unterscheiden sich in ihrem Aufbau nur i
 ## Voraussetzungen
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
-Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
-Sie benötigen bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite. 
+Für die Netzwerkverbindung über LAN brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
+Als Material benötigen Sie bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite. 
 
 ## Anleitung
 
@@ -47,7 +47,7 @@ Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihre
     Es ist möglich, die USB-Ports von Drucker und Kasse beim Verbinden über USB zu beschädigen. 
     Weichen Sie **nicht** von der hier geschilderten Reihenfolge ab, um potenzielle Beschädigungen zu vermeiden. 
 
-Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 
+Alternativ zur Netzwerkverbindung können Sie den Drucker auch über **USB** anschließen. 
 Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
 
@@ -56,7 +56,7 @@ Beim Lemur ist der Schalter in einer Nische verborgen.
 Daraufhin sollten der Bildschirm (nur Lemur) und mindestens eine LED an der Seite des Druckers aufleuchten. 
 
 !!! Note 
-    Die Anweisungen zum Druckmaterial passen zur Konfiguration unserer Mietgeräte. 
+    Die Anweisungen zum Druckmaterial gelten für die Konfiguration unserer Mietgeräte. 
     Falls Sie Ihre Drucker bei einem Dritthändler gekauft haben oder ihn in einer abweichenden Konfiguration bei uns geordert haben, müssen Sie das Druckmaterial möglicherweise anders einlegen. 
 
 Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeigt und die schwarzen quadratischen Markierungen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
@@ -68,8 +68,8 @@ Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche,
 !!! Note 
     Falls Sie Hardware von uns gemietet haben, dann ist sie bereits betriebsbereit konfiguriert. 
     Das gilt auch, falls Sie Hardware von uns gekauft haben und vor dem Versand eine entsprechende Konfiguration in Auftrag gegeben haben. 
-    In diesen Fällen müssen Sie die Konfiguration nur testen. 
 
+    In diesen Fällen müssen Sie die Konfiguration nur testen. 
     Sie können die beiden Unterabschnitte [Konfigurationsseite drucken](boca.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) überspringen. 
 
 Um die Konfiguration zu testen, starten Sie das Android-Gerät (Kasse oder Scan-Smartphone), von dem Sie den Drucker ansteuern wollen. 
@@ -79,11 +79,11 @@ Um die Konfiguration zu testen, starten Sie das Android-Gerät (Kasse oder Scan-
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
 Falls ein Drucker für eine dieser Rollen eingerichtet ist, wird er unter der entsprechenden Überschrift mit der Art der Verbindung und gegebenenfalls seiner IP-Adresse angezeigt. 
 
-Tippen Sie neben dem Drucker auf das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v::. 
+Tippen Sie neben der Anzeige des Druckers in pretixPRINT das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v:: und dann :btn:Testseite drucken:. 
 Beobachten Sie, ob der Drucker wie erwartet eine Testseite produziert. 
 Falls Sie mehrere Drucker von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
 
-Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](boca.de.md#problemlösung). 
+Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](boca.de.md#problemlosung). 
 Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](boca.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 ### Konfigurationsseite drucken
@@ -100,7 +100,7 @@ Das wird im nächsten Abschnitt näher erklärt.
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
-Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker Lemur und Lemur C über die App verbinden und die Funktion testen. 
+Dieser Abschnitt erklärt, wie Sie die Drucker Lemur und Lemur C über die App verbinden und die Funktion testen. 
 
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
@@ -108,9 +108,9 @@ Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendung
 
 Drucker für Belege und Tickets richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
-Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
+Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
-Sie können die Drucker Lemur und Lemur C sowohl als Ticketdrucker als auch als Badgedrucker verwenden. 
+Die Drucker Lemur und Lemur C sind sowohl für die Verwendung als Ticketdrucker als auch als Badgedrucker geeignet. 
 Um den Drucker als Ticketdrucker mit einer Kasse zu verbinden, öffnen Sie pretixPRINT auf der Kasse und tippen dann unter "Ticketdrucker" auf :btn:Drucker einrichten. 
 Um den Drucker als Badgedrucker mit einem Scan-Smartphone zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten. 
 Unabhängig von Ihrer Auswahl ist der Prozess danach immer der gleiche. 
@@ -129,7 +129,7 @@ Auf der Seite "Welches Protokoll spricht Ihr Drucker?" wählen Sie "FGL-Ticketdr
 
 Wenn Sie den Drucker von uns gemietet haben, dann lassen Sie auf der nächsten Seite unter "DPI" die Eingabe `200` unverändert, da der Drucker nur 200 DPI unterstützt. 
 Andere Drucker sind möglicherweise anders konfiguriert. 
-Die Auflösung können Sie dem Typenschild auf der Unterseite des Druckers entnehmen. 
+Die richtige Auflösung können Sie dem Typenschild auf der Unterseite des Druckers entnehmen. 
 Nehmen Sie hier gegebenenfalls Feineinstellungen vor und tippen Sie erneut :btn:Weiter:. 
 
 Tippen Sie :btn:Testseite drucken: und beobachten Sie, ob der verbundene Drucker wie erwartet druckt. 
@@ -145,7 +145,7 @@ Die pretixPRINT-Testseite könnte beim Lemur und Lemur C z.B. so aussehen:
 
 !["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftgrößen, Muster, Streifen und pretix-Logos."](../../assets/screens/hardware-setup/boca-pretixprint.jpg "pretixPRINT-Testseite aus Boca-Drucker")
 
-Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](boca.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](boca.de.md#problemlösung). 
+Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](boca.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](boca.de.md#problemlosung). 
 
 ## Problemlösung 
 
@@ -166,9 +166,9 @@ Lesen Sie die Dokumentation des Herstellers oder kontaktieren Sie unseren [Suppo
 ### IP-Adresse auf der Konfigurationsseite lautet 0.0.0.0 
 
 **Problem:** Die Konfigurationsseite des Druckers liefert als IP-Adresse `0.0.0.0` oder ein ähnlich unbrauchbares Ergebnis. 
+Der Drucker ist also nicht mit dem Netzwerk verbunden. 
 
-**Lösung:** Der Drucker ist nicht mit dem Netzwerk verbunden. 
-Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
+**Lösung:** Prüfen Sie, ob das LAN-Kabel richtig in der Buchse des Druckers steckt. 
 Prüfen Sie, ob das andere Ende desselben LAN-Kabels in der LAN-Buchse (**nicht** in der WAN-Buchse) des Routers steckt. 
 Verwenden Sie gegebenenfalls ein anderes Kabel. 
 Danach starten Sie den Drucker neu. 
@@ -200,9 +200,9 @@ Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut.
 ### Druckauftrag kommt auf einem anderen Drucker an
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
+Die in pretixPRINT hinterlegte IP-Adresse ist also nicht die des gewünschten Druckers. 
 
-**Lösung:** Die in pretixPRINT hinterlegte IP-Adresse ist nicht die des gewünschten Druckers. 
-Verwenden Sie das Gerät mit dem verbundenen Drucker. 
+**Lösung:** Verwenden Sie das Gerät mit dem verbundenen Drucker. 
 Passen Sie Ihren Hardware-Aufbau entsprechend an. 
 
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
@@ -211,17 +211,17 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 ### Druckauftrag enthält Unsinn 
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
+Das deutet darauf hin, dass in pretixPRINT das falsche Protokoll für den Drucker konfiguriert ist. 
 
-**Lösung:** In pretixPRINT ist das falsche Protokoll für den Drucker konfiguriert. 
-Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
+**Lösung:** Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
 ### Druck ist falsch gedreht 
 
 **Problem:** Das Drucken funktioniert zwar, aber das Ergebnis ist so gedreht, dass es nicht vollständig lesbar ist oder nicht gut aussieht. 
+In pretixPRINT ist die Drehung also nicht richtig konfiguriert. 
 
-**Lösung:** In pretixPRINT ist die Drehung nicht richtig konfiguriert. 
-Öffnen Sie auf dem Android-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
+**Lösung:** Öffnen Sie auf dem Android-Gerät pretixPRINT und tippen Sie unter dem betreffenden Druckertyp "Drucker einrichten". 
 Tippen Sie :btn:Weiter: bis Sie die Seite geöffnet haben, auf der das Dropdown-Menü "Drehung" angezeigt wird. 
 Die Standardeinstellung hier ist `0°`. 
 
@@ -233,17 +233,17 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 ### Druck ist verschmutzt oder fleckig
 
 **Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
+Das bedeutet, dass der Druckkopf verschmutzt ist. 
 
-**Lösung:** Der Druckkopf ist verschmutzt. 
-Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
+**Lösung:** Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
 Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
 
 ### Druck ist leer oder enthält nur Teile des Layouts 
 
 **Problem:** Gedruckte Tickets oder Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
+Das Layout ist also zu groß für das Druckmaterial. 
 
-**Lösung:** Das Layout ist zu groß für das Druckmaterial. 
-Ändern Sie das Layout so, dass es auf das Papier passt. 
+**Lösung:** Ändern Sie das Layout so, dass es auf das Papier passt. 
 
 Öffnen Sie dazu das pretix-Backend und navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Tickets:. 
 Klicken Sie :btn-icon:fa3-paint-brush: Layout-Editor öffnen: oder :btn:Erweiterter Modus (mehrere Layouts) und bearbeiten Sie das relevante Layout. 

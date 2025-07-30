@@ -4,7 +4,7 @@ Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwe
 Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden. 
 Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des Herstellers. 
 
-Note !!! 
+!!! Note 
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst. 
     Informieren Sie sich auf der Webseite des Herstellers über die Modelle [Epson TM-m30iii](https://www.epson.de/de_DE/support/sc/tm-m30iii/s/s3018#manuals) und [Epson TM-T88vii](https://www.epson.de/de_DE/support/sc/tm-t88vii/s/s2258#manuals). 
 
@@ -13,12 +13,13 @@ Die Geräte Epson TM-m30iii und TM-T88vii unterscheiden sich in der Bedienung nu
  - Position des Stromschalters (TM-m30iii: Oberseite. TM-T88vii: Vorderseite)
  - Öffnen der Materialklappe (TM-m30iii: nach hinten schieben. TM-T88vii: nach unten drücken)
  - Die Anschlüsse am TM-m30iii sind unter einer Abdeckung verborgen, die entfernt werden kann. 
+   Am TM-T88vii ist keine solche Abdeckung vorhanden. 
 
 ## Voraussetzungen
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
-Sie benötigen aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm. 
+Als Material benötigen Sie aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm. 
 
 ## Anleitung
 
@@ -32,11 +33,12 @@ Diese Schritte werden im Folgenden genauer erklärt.
 
 ### Drucker anschließen
 
-Legen Sie zunächst das Druckmaterial in den Drucker ein. 
-Stellen Sie dazu zuerst sicher, dass der Drucker nicht mit dem Strom verbunden ist und nicht eingeschaltet ist. 
+Stellen Sie zuerst sicher, dass der Drucker **nicht** mit dem Strom verbunden ist und **nicht** eingeschaltet ist. 
+Legen Sie dann das Druckmaterial in den Drucker ein. 
 
 **TM-m30iii:** Schieben Sie den grauen Hebel an der Oberseite des Geräts nach hinten und öffnen Sie die Materialklappe. 
 **TM-T88vii:** Drücken Sie das graue Element an der Oberseite des Geräts nach unten und öffnen Sie die Materialklappe. 
+
 Legen Sie die Papierrolle so in die Vertiefung im inneren des Geräts, dass das Papier an der Vorderseite des Innenraums nach oben läuft. 
 Ziehen Sie das Papier ein Stück weit nach oben und schließen Sie die Klappe, sodass das Papier glatt und gerade aus dem Schlitz ragt. 
 
@@ -60,8 +62,8 @@ Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Ka
 !!! Note 
     Falls Sie Hardware von uns gemietet haben, dann ist sie bereits betriebsbereit konfiguriert. 
     Das gilt auch, falls Sie Hardware von uns gekauft haben und vor dem Versand eine entsprechende Konfiguration in Auftrag gegeben haben. 
-    In diesen Fällen müssen Sie die Konfiguration nur testen. 
 
+    In diesen Fällen müssen Sie die Konfiguration nur testen. 
     Sie können die beiden Unterabschnitte [Konfigurationsseite drucken](epson.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) überspringen. 
 
 Um die Konfiguration zu testen, starten Sie das Android-Gerät (Kasse oder Scan-Smartphone), von dem Sie den Drucker ansteuern wollen. 
@@ -71,11 +73,11 @@ Um die Konfiguration zu testen, starten Sie das Android-Gerät (Kasse oder Scan-
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
 Falls ein Drucker für eine dieser Rollen eingerichtet ist, wird er unter der entsprechenden Überschrift mit der Art der Verbindung und gegebenenfalls seiner IP-Adresse angezeigt. 
 
-Tippen Sie neben dem Drucker auf das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v::. 
+Tippen Sie neben der Anzeige des Druckers in pretixPRINT das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v:: und dann :btn:Testseite drucken:. 
 Beobachten Sie, ob der Drucker wie erwartet eine Testseite produziert. 
 Falls Sie mehrere Drucker von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
 
-Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](epson.de.md#problemlösung). 
+Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](epson.de.md#problemlosung). 
 Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](epson.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](epson.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
 
 ### Konfigurationsseite drucken
@@ -99,7 +101,7 @@ Das wird im nächsten Abschnitt näher erklärt.
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern. 
-Dieser Abschnitt erklärt Ihnen, wie Sie die Drucker TM-m30iii und TM-T88vii über die App verbinden und die Funktion testen. 
+Dieser Abschnitt erklärt, wie Sie die Drucker TM-m30iii und TM-T88vii über die App verbinden und die Funktion testen. 
 
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker. 
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an. 
@@ -107,11 +109,10 @@ Entscheidend ist die Überschrift oberhalb der Schaltfläche, die dem Verwendung
 
 Drucker für Belege und Tickets richten Sie üblicherweise an einer Kasse ein. 
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken. 
-Den Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
+Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person einen passenden Badge zu drucken. 
 
-Sie können die Drucker Epson TM-m30iii und TM-T88vii als Belegdrucker verwenden. 
-Um den Drucker als Belegdrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone oder der Kasse und tippen dann unter "Belegdrucker" auf :btn:Drucker einrichten. 
-Der Prozess ist danach immer der gleiche. 
+Die Drucker Epson TM-m30iii und TM-T88vii sind für die Verwendung als Belegdrucker geeignet. 
+Um den Drucker als Belegdrucker mit einem Scan-Smartphone oder einer Kasse zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone oder der Kasse und tippen dann unter "Belegdrucker" auf :btn:Drucker einrichten:. 
 
 Falls der Drucker über das **Netzwerk** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:. 
 Geben Sie die IP-Adresse des Druckers ein. 
@@ -139,7 +140,7 @@ Die pretixPRINT-Testseite könnte beim Epson TM-m30iii und TM-T88vii z.B. so aus
 
 !["Ein Streifen graublaues Belegpapier mit Text, einer Zeile zum Testen der Breite des Belegpapiers, und einem QR-Code"](../../assets/screens/hardware-setup/epson-pretixprint.jpg "pretixPRINT-Testseite aus Epson-Drucker")
 
-Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](epson.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](epson.de.md#problemlösung). 
+Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](epson.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](epson.de.md#problemlosung). 
 
 ## Problemlösung 
 
@@ -181,9 +182,9 @@ Speichern Sie die Einstellungen in pretixPRINT und testen Sie erneut.
 ### Druckauftrag kommt auf einem anderen Drucker an
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar gedruckt, aber von einem anderen Drucker als erwartet. 
+Die in pretixPRINT hinterlegte IP-Adresse ist also nicht die des gewünschten Druckers. 
 
-**Lösung:** Die in pretixPRINT hinterlegte IP-Adresse ist nicht die des gewünschten Druckers. 
-Verwenden Sie das Gerät mit dem verbundenen Drucker. 
+**Lösung:** Verwenden Sie das Gerät mit dem verbundenen Drucker. 
 Passen Sie Ihren Hardware-Aufbau entsprechend an. 
 
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
@@ -192,9 +193,9 @@ Speichern Sie die Einstellungen und testen Sie erneut.
 ### Druckauftrag enthält Unsinn 
 
 **Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
+Das deutet darauf hin, dass in pretixPRINT das falsche Protokoll für den Drucker konfiguriert ist. 
 
-**Lösung:** In pretixPRINT ist das falsche Protokoll für den Drucker konfiguriert. 
-Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
+**Lösung:** Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
 ## Weitere Informationen

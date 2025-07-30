@@ -104,7 +104,7 @@ Nachdem die Scan-Smartphones ausreichend geladen sind, schalten Sie sie ein und 
 Die von uns vermieteten und verkauften Kassen haben unterschiedliche Bauformen. 
 Manche von Ihnen haben einen eingebaute Belegdrucker. 
 Manche haben einen Standfuß. 
-Andere ähneln einfachen Tablets.  
+Andere ähneln einfachen Tablets. 
 Die Bildschirme der Kassen sind deutlich größer als die der Scan-Smartphones. 
 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
@@ -112,13 +112,13 @@ Schalten Sie sie ein und verbinden Sie mit dem Netzwerk.
 
 Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
 
-Wenn Sie eine Kasse in der Bundesrepublik Deutschland verwenden, dann müssen Sie eine technischen Sicherheitseinrichtung (TSE) benutzen und die Kasse dem Finanzamt melden. 
+Wenn Sie eine Kasse in der Bundesrepublik Deutschland verwenden, dann müssen Sie eine technische Sicherheitseinrichtung (TSE) benutzen und die Kasse dem Finanzamt melden. 
 Wenn Sie die Hardware gemietet haben, dann ist die TSE bereits eingebaut und eingerichtet. 
 Falls Sie die Hardware gekauft haben, folgen Sie den Anweisungen im Artikel [Technische Sicherheitseinrichtung (TSE)](../pretixpos/tse.de.md). 
 
 Sie müssen jede Kasse in Ihrem Besitz dem Finanzamt melden. 
 Das gilt auch für Mietgeräte und für Kassen, die nicht aktiv im Gebrauch sind. 
-Folgen Sie den Anweisungen im Artikel [Kassenanmeldung in Deutschland](../pretixpos/register.de.md). 
+Folgen Sie dazu den Anweisungen im Artikel [Kassenanmeldung in Deutschland](../pretixpos/register.de.md). 
 
 ### Drucker in Betrieb nehmen 
 
@@ -129,8 +129,9 @@ Für Badges in Form von Klebeetiketten verwenden Sie hingegen einen Etikettendru
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Verbindung (LAN, WLAN oder USB) und bedruckbarem Material versorgen. 
 Falls Sie die Hardware von uns gemietet haben, testen Sie, ob die Konfiguration wie gewünscht funktioniert. 
 
-Falls Sie die Hardware gekauft haben, drucken Sie eine Konfigurationsseite auf dem Drucker. 
-Dann verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+Falls Sie die Hardware gekauft haben, drucken Sie für die LAN- oder WLAN-Verbindung eine Konfigurationsseite. 
+Für die Verbindung über USB ist das nicht notwendig. 
+Dann richten Sie den Drucker auf der Kasse oder dem Scan-Smartphone in unserer App pretixPRINT ein. 
 
 Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren Sie die Dokumentation des jeweiligen Herstellers. 
 
@@ -173,10 +174,10 @@ Für alle weiteren Fragen kontaktieren Sie unseren [Support](mailto:support@pret
 
 ### Probleme beim Drucken 
 
-Falls beim **integrierten** Drucker einer Kasse Probleme auftreten, wiederholen Sie die Schritte die unter [Drucker in Betrieb nehmen](index.de.md#drucker-in-betrieb-nehmen) beschrieben sind. 
+Falls beim **integrierten** Drucker einer Kasse Probleme auftreten, wiederholen Sie die Schritte, die unter [Drucker in Betrieb nehmen](index.de.md#drucker-in-betrieb-nehmen) beschrieben sind. 
 
 Falls bei einem der anderen Drucker Probleme auftreten, lesen Sie den Abschnitt zur Problemlösung im jeweiligen Artikel: 
 
- - [Epson TM-m30iii und Epson TM-T88vii](epson.de.md#problemlösung)
- - [Boca Lemur und Boca Lemur C](boca.de.md#problemlösung)
- - [Bixolon XD5-40d](bixolon.de.md#problemlösung)
+ - [Epson TM-m30iii und Epson TM-T88vii](epson.de.md#problemlosung)
+ - [Boca Lemur und Boca Lemur C](boca.de.md#problemlosung)
+ - [Bixolon XD5-40d](bixolon.de.md#problemlosung)
