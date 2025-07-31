@@ -143,7 +143,7 @@ Tippen Sie :btn:Einstellungen speichern:.
 Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten. 
 Die pretixPRINT-Testseite könnte beim Bixolon XD5-40d z.B. so aussehen: 
 
-!["Ein weißes Klebeetikett mit Mustern, pretix-Logos und der Papiergröße: 8 x 3,25 Zoll"](../../assets/screens/hardware-setup/bixolon-test.jpg "pretixPRINT-Testseite aus Bixolon-Drucker")
+!["Ein weißes Klebeetikett mit Mustern, pretix-Logos und der Papiergröße: 8 x 3,25 Zoll"](../../assets/screens/hardware-setup/bixolon-pretixprint.jpg "pretixPRINT-Testseite aus Bixolon-Drucker")
 
 Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](bixolon.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](bixolon.de.md#problemlosung). 
 
