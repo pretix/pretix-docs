@@ -242,30 +242,20 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
   [href^="/"]:not([href^="//"]),
   /* domains to exclude */
   [href*="//docs.pretix.eu"]
-)):after {
-    content: ' ';
-    display: inline-block;
-    width: 0.8em;
-    height: 0.8em;
-    margin-left: 0.1em;
-    position: relative;
-    top: 0.1em;
-    background-position: bottom;
-    background-size: contain;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%237f4a91%22%20d%3D%22M3.75%202h3.5a.75.75%200%200%201%200%201.5h-3.5a.25.25%200%200%200-.25.25v8.5c0%20.138.112.25.25.25h8.5a.25.25%200%200%200%20.25-.25v-3.5a.75.75%200%200%201%201.5%200v3.5A1.75%201.75%200%200%201%2012.25%2014h-8.5A1.75%201.75%200%200%201%202%2012.25v-8.5C2%202.784%202.784%202%203.75%202Zm6.854-1h4.146a.25.25%200%200%201%20.25.25v4.146a.25.25%200%200%201-.427.177L13.03%204.03%209.28%207.78a.751.751%200%200%201-1.042-.018.751.751%200%200%201-.018-1.042l3.75-3.75-1.543-1.543A.25.25%200%200%201%2010.604%201Z%22%2F%3E%3C%2Fsvg%3E");
+)) {
+    padding-right: 0.9em;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 0.8em;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%20-4%2016%2020%22%3E%3Cpath%20fill%3D%22%237f4a91%22%20d%3D%22M3.75%202h3.5a.75.75%200%200%201%200%201.5h-3.5a.25.25%200%200%200-.25.25v8.5c0%20.138.112.25.25.25h8.5a.25.25%200%200%200%20.25-.25v-3.5a.75.75%200%200%201%201.5%200v3.5A1.75%201.75%200%200%201%2012.25%2014h-8.5A1.75%201.75%200%200%201%202%2012.25v-8.5C2%202.784%202.784%202%203.75%202Zm6.854-1h4.146a.25.25%200%200%201%20.25.25v4.146a.25.25%200%200%201-.427.177L13.03%204.03%209.28%207.78a.751.751%200%200%201-1.042-.018.751.751%200%200%201-.018-1.042l3.75-3.75-1.543-1.543A.25.25%200%200%201%2010.604%201Z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 /* Internal links */
-.md-typeset a:not([href*="//"]):not([href^="mailto:"]):not([href^="tel:"]):not(.glightbox):not(.headerlink):before {
-    content: ' ';
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.1em;
-    position: relative;
-    top: 0.1em;
-    background-position: bottom;
-    background-size: contain;
+.md-typeset a:not([href*="//"]):not([href^="mailto:"]):not([href^="tel:"]):not(.glightbox):not(.headerlink) {
+    padding-left: 1.1em;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 1em;
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23999%22%20d%3D%22M13%209h5.5L13%203.5V9M6%202h8l6%206v12a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2V4c0-1.11.89-2%202-2m9%2016v-2H6v2h9m3-4v-2H6v2h12Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .md-typeset p .twemoji {
