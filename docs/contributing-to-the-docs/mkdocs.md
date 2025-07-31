@@ -182,6 +182,9 @@ Our organizer's profile and all the events we are going to create will be found 
 If you link an article that is not yet available (for example due to an open pull request), GitHub will throw a warning. 
 To avoid this, put a space between square and round brackets and leave a corresponding comment starting with "TK". 
 
+Remove any umlaut from the part of the link after the `#`. 
+For example, replace `ö` with `o`. 
+
 ```
 TK fix link after merge
 ```
