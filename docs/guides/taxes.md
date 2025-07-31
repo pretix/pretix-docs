@@ -74,12 +74,19 @@ Click the :btn:Save: button to confirm.
 In order to set custom tax rules, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax rules:. 
 Click the tax rule for which you want to set custom rules, switch to the :btn:Advanced: tab and click the :btn-icon:fa3-plus: Add a new rule: button. 
 
-In the first dropdown menu, select the country or territory where the custom rule will apply or select "Any country". 
+Under "Condition", in the first dropdown menu, select the country or territory where the custom rule will apply or select "Any country". 
 In the second menu, select the type of customer (individual, business, or business with valid VAT ID) or select "Any customer". 
 
-In the third dropdown menu, select the action to be taken under the specified conditions (country and customer). 
-You may select "Charge VAT" and then specify a "Deviating tax rate" in the input field below. 
-You may also select a different option and leave the field empty. 
+Under "Calculation", select the action to be taken under the specified conditions (country and customer). 
+If you want to charge a tax rate specific to the conditions you defined, select "Charge VAT" and enter the tax rate in the input field below. 
+If you want to implement a reverse charge rule for the condition, select "Reverse charge" and enter the reverse charge tax rate in the input field. 
+
+The other options allow you to charge no tax, to require manual approval, or to forbid sales altogether for the condition you defined. 
+You may leave the input field below empty if there is no tax rate or reverse charge tax rate to be charged. 
+
+Under "Reason", you can select a legal reason for the tax rule you put into place. 
+If the drop-down menu does not offer your specific reason, select a more general option. 
+You can use the "Text on invoice" fields to add an explanation for the taxes charged to your customers' invoices. 
 
 When a customer places an order, pretix will check the custom rules from top to bottom. 
 The first rule matching the order will be used to decide if and how VAT will be charged. 
@@ -87,19 +94,22 @@ You can move the rules up or down the priority list using the arrow buttons :btn
 
 ![Tax rule dialog. The 'Advanced' tab is open, displaying four custom rules, as described in the paragraph below.](../assets/screens/tax/custom-rules.png "Example for custom rules" )
 
-For illustrative purposes, let us assume an event hosted by a company in Germany which is eligible for EU reverse charge. 
-Such a company might first create a rule for "Germany", applying to "Any customer" the action "Charge VAT". 
-It might then create a rule for "European Union", applying to "Business with valid VAT ID" the action "Reverse charge". 
+For illustrative purposes, assume an event is being hosted by a company in Germany which is eligible for EU reverse charge. 
+Such a company might first create a rule for "Germany", applying to "Any customer" the calculation "Charge VAT". 
+The tax rate would be 19.00% and the reason would be "Default tax code". 
+The company might then create a rule for "European Union", applying to "Business with valid VAT ID" the calculation "Reverse charge" with a tax rate of 19.00% and the reason "Reverse charge". 
 
-It might then create a rule for Austria, applying to "Any customer" the action "Charge VAT" with the deviating tax rate set to the VAT rate of the country in question. 
+It might then create a rule for Austria, applying to "Any customer" the calculation "Charge VAT" with the tax rate set to the VAT rate of the country in question. 
 It might then create the same rule for every single member state in the EU from Belgium to Sweden, always setting the appropriate deviating tax rate. 
-Finally, the company might create a rule for "Any country", applying to "Any customer" the action "Charge VAT". 
+Finally, the company might create a rule for "Any country", applying to "Any customer" the calculation "Charge VAT". 
 
 In this example, if a company located in Austria with a valid VAT ID places an order, this matches both the second and the third rule. 
 However, since custom rules are always checked top to bottom and only the first matching rule is applied, only the only the second rule from our list (Austria → "Any customer" → "Charge VAT") will be applied to the transaction. 
+
 The order in which rules are arranged here also ensures that no business from an EU country outside of Germany will be charged VAT on their transaction, as long as they provide a valid VAT ID while placing their order. 
 
-The example case described above is for illustrating the use of the software only; it does not constitute legal advice. 
+!!! Note 
+    The example case described above is for illustrating the use of the software only; it does not constitute legal advice. 
 
 ### EU reverse charge
 
