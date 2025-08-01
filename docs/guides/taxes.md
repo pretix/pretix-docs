@@ -16,6 +16,11 @@ Please speak to a professional tax consultant before setting tax rates in your s
 
 Taxes are handled on the event level, so you have to create an event first. 
 
+If you want to use reverse charge or implement custom rules for reverse charge, you have to ask your customers for their VAT ID. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Invoicing:. 
+Switch to the :btn:Address form: tab and make sure that the boxes next to "Ask for invoice address" and "Ask for VAT ID" are checked. 
+Click the :btn:Save: button to confirm. 
+
 ## General usage
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
@@ -79,10 +84,10 @@ In the second menu, select the type of customer (individual, business, or busine
 
 Under "Calculation", select the action to be taken under the specified conditions (country and customer). 
 If you want to charge a tax rate specific to the conditions you defined, select "Charge VAT" and enter the tax rate in the input field below. 
-If you want to implement a reverse charge rule for the condition, select "Reverse charge" and enter the reverse charge tax rate in the input field. 
+If you want to implement a reverse charge rule for the condition, select "Reverse charge" and leave the field below empty. 
 
 The other options allow you to charge no tax, to require manual approval, or to forbid sales altogether for the condition you defined. 
-You may leave the input field below empty if there is no tax rate or reverse charge tax rate to be charged. 
+You may leave the input field below empty in those cases. 
 
 Under "Reason", you can select a legal reason for the tax rule you put into place. 
 If the drop-down menu does not offer your specific reason, select a more general option. 
@@ -97,7 +102,7 @@ You can move the rules up or down the priority list using the arrow buttons :btn
 For illustrative purposes, assume an event is being hosted by a company in Germany which is eligible for EU reverse charge. 
 Such a company might first create a rule for "Germany", applying to "Any customer" the calculation "Charge VAT". 
 The tax rate would be 19.00% and the reason would be "Default tax code". 
-The company might then create a rule for "European Union", applying to "Business with valid VAT ID" the calculation "Reverse charge" with a tax rate of 19.00% and the reason "Reverse charge". 
+The company might then create a rule for "European Union", applying to "Business with valid VAT ID" the calculation "Reverse charge" with the tax rate field left empty and the reason set to "Reverse charge". 
 
 It might then create a rule for Austria, applying to "Any customer" the calculation "Charge VAT" with the tax rate set to the VAT rate of the country in question. 
 It might then create the same rule for every single member state in the EU from Belgium to Sweden, always setting the appropriate deviating tax rate. 
