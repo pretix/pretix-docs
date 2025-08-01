@@ -20,7 +20,7 @@ The second and third additional term for pretix are additional terms that restri
 
 pretix was born in the open source community and we're deeply committed to building the best open source ticketing solution in the world. It is important to us that pretix is available with a comprehensive feature set under term that are compatible with the [Open Source Definition](https://opensource.org/osd). This enables event organizers from all industries and regions to have access to a self-hosted, privacy-friendly and secure option to host their events.
 
-However, developing and maintaining pretix is a lot of work. Between 2014 and 2021, we've received external contributions from more than 150 individuals. Not counting translations over 90 % of the development was done by staff engineers of rami.io GmbH, the company that started pretix. While we're very happy to receive many more contributions in the future, we also want to ensure that we continue to be able to pay people working on pretix full-time.
+However, developing and maintaining pretix is a lot of work. Between 2014 and 2021, we've received external contributions from more than 150 individuals. Not counting translations over 90 % of the development was done by staff engineers of pretix GmbH, the company that started pretix. While we're very happy to receive many more contributions in the future, we also want to ensure that we continue to be able to pay people working on pretix full-time.
 
 We believe our model creates a good balance between ensuring pretix is available freely as well as protecting our business interests. Unlike licenses chosen by other projects recently, such as the Server-Side Public License, our choice does not restrict using pretix for any possible use case, it just sets a few rules that you have to play by if you do.
 
@@ -70,10 +70,10 @@ In this case, feel free to get in touch with us! We're happy to grant you specia
 
 ## What can I use the name "pretix" for?
 
-The name pretix is a registered trademark by rami.io GmbH.
+The name pretix is a registered trademark by pretix GmbH (previously rami.io GmbH).
 
 -   You **may** use it to **indicate copyright**, such as in the "powered by pretix" or "based on pretix" line, or when indicating that a distribution is based on pretix.
 -   You **may** use it to **indicate compatibility**, for example you are allowed to name your plugin "&lt;name&gt; for pretix" or you may state that an external service is compatible with pretix.
--   You **may not** give the impression that your modified version, plugin or compatible service is official or authorized by rami.io GmbH or pretix unless we specifically allowed you to do so.
+-   You **may not** give the impression that your modified version, plugin or compatible service is official or authorized by pretix GmbH (previously rami.io GmbH) or pretix unless we specifically allowed you to do so.
 -   You **may not** use it to name your modified version of pretix. End-users must be able to easily identify whether a version of pretix is distributed by us.
 -   You **may not** use any variations of the name, such as "MyPretix".

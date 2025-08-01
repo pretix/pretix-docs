@@ -43,7 +43,7 @@ Click on the :btn-icon:fontawesome-solid-gear:Settings: button next to PayPal.
 This takes you to the settings page for PayPal, which currently only includes the :btn:Connect with PayPal: button. 
 Click the button and complete the the login and authorization process with PayPal. 
 
-![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
+![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on pretix GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
 
 After you have completed the authorization process with PayPal, the PayPal settings page in the pretix backend will look different. 
 Instead of the single button, it will now offer a multitude of settings. 

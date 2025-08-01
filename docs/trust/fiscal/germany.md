@@ -87,5 +87,5 @@ If you use a cash register, take the following steps to ensure that you are comp
 - Export data in an officially defined format. 
   pretixPOS can export data in the [DSFinV-K](https://www.bzst.de/DE/Unternehmen/Aussenpruefungen/DigitaleSchnittstelleFinV/digitaleschnittstellefinv_node.html) format.
 
-rami.io GmbH is a member of the [German association of cash register manufacturers](https://dfka.net/). 
+pretix GmbH (previously rami.io GmbH) is a member of the [German association of cash register manufacturers](https://dfka.net/). 
 This means that we always stay up-to-date with changes in cash register regulation.

@@ -4,7 +4,7 @@ site_url: https://docs.pretix.eu
 site_author: pretix
 site_description: "Documentation on pretix, the all-in-one ticketing system."
 copyright: |
-  © rami.io GmbH ·
+  © pretix GmbH ·
   <a href="https://pretix.eu/about/en/imprint" target="_blank">Legal notice</a> ·
   <a href="https://pretix.eu/about/en/privacy" target="_blank">Privacy policy</a> ·
   Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
@@ -90,7 +90,7 @@ plugins:
           site_name: "pretix Dokumentation"
           site_description: "Dokumentation von pretix: Ticketing von Anfang bis Ende gedacht."
           copyright: |
-            © rami.io GmbH ·
+            © pretix GmbH ·
             <a href="https://pretix.eu/about/de/imprint" target="_blank">Impressum</a> ·
             <a href="https://pretix.eu/about/de/privacy" target="_blank">Datenschutz</a> ·
             Lizensiert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>
