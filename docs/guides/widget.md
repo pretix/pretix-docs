@@ -83,48 +83,6 @@ Generate the second snippet for every event and add each one to your website's H
     Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`. 
     Replace `</pretix-widget>` with `</div>`. 
 
-### pretix Button
-
-Instead of the full widget, you can also display a simple button. 
-Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
-You can try out this behavior here:
-
-<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. 
-            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
-        </div>
-    </div>
-</noscript>
-
-You can embed the pretix Button exactly like the pretix Widget. 
-In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
-Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
-
-```
-<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
-    Buy ticket!
-</pretix-button>
-```
-Use the `items` attribute to specify the items that the button will add to the cart. 
-The syntax of this attribute is: 
-
-```item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4```
-
-Replace each instance of `ITEMID` with the ID of the item to be added. 
-Replace each instance of `VARID` with the ID of variations of those items. 
-Omit `variation_ITEMID_VARID=4` if the items do **not** have variations. 
-Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
-
-If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
-
-If you link the button to an event series, use the `subevent`-attribute to specify the date for which it should add the items to the cart. 
-
-The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
-You can style the button using the `pretix-button` CSS class.
-
 ### Using the widget for multiple events
 
 You can display multiple event shops in a single widget. 
@@ -226,6 +184,48 @@ To disable the filter form, use:
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
 ``` 
+
+### pretix Button
+
+Instead of the full widget, you can also display a simple button. 
+Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
+You can try out this behavior here:
+
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. 
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+        </div>
+    </div>
+</noscript>
+
+You can embed the pretix Button exactly like the pretix Widget. 
+In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
+Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
+
+```
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
+    Buy ticket!
+</pretix-button>
+```
+Use the `items` attribute to specify the items that the button will add to the cart. 
+The syntax of this attribute is: 
+
+```item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4```
+
+Replace each instance of `ITEMID` with the ID of the item to be added. 
+Replace each instance of `VARID` with the ID of variations of those items. 
+Omit `variation_ITEMID_VARID=4` if the items do **not** have variations. 
+Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
+
+If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
+
+If you link the button to an event series, use the `subevent`-attribute to specify the date for which it should add the items to the cart. 
+
+The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
+You can style the button using the `pretix-button` CSS class.
 
 ### Styling
 
