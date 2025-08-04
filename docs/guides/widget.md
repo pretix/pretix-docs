@@ -1,8 +1,9 @@
 # Widget
 
-If you want to include your ticket shop on your event website or blog, you can use the embeddable widget. 
-This way, customers can buy their tickets without leaving your website. 
-Alternatively, you can use the [pretix Button](widget.md#pretix-button) to instantly select some products and proceed to checkout for the customer. 
+You can include your ticket shop on your website by embedding the pretix widget. 
+The widget allows your customers to buy tickets without leaving your website. 
+As an alternative to the widget, you can use the [pretix Button](widget.md#pretix-button).
+Clicking this button adds a selection of products to the cart and proceeds to checkout for the customer. 
 
 Your embedded widget could look like the following:
 
@@ -30,12 +31,12 @@ Some basic knowledge of JavaScript is helpful.
 
 ## General usage
 
-This section explains how to embed the pretix widget or the pretix button on your website once or multiple times, as well as how to style the widget. 
+This section explains how to embed the pretix widget or the pretix button on your website either once or multiple times, as well as how to style the widget. 
 It also explains how to use the widget for more than just a singular event or a single date within an event series. 
 
 ### Embedding the widget on your website
 
-You can embed the pretix widget on your website by copying two code snippets from the pretix backend and pasting them in your website's HTML. 
+You can embed the pretix widget on your website by copying two code snippets from the pretix backend and pasting them into your website's HTML. 
 In order to obtain these snippets, navigate to :navpath:Your Event → Settings → Widget:. 
 Choose the "Language" for the widget and click the :btn:Generate widget code: button. 
 
@@ -73,7 +74,7 @@ It will look similar to this:
 
 ### Embedding multiple widgets on your website
 
-If you want to embed multiple widgets for different events on your page, add the first snippet only **once**. 
+If you want to embed multiple widgets for different events on your website, add the first snippet only **once**. 
 Generate the second snippet for every event and add each one to your website's HTML. 
 
 !!! Note
@@ -86,26 +87,28 @@ Generate the second snippet for every event and add each one to your website's H
 ### Using the widget for multiple events
 
 You can display multiple event shops in a single widget. 
-If you want to include all public events of your organizer account, remove the event slug from the URL in the `event` attribute, but leave in your organizer slug: 
+If you want to include **all** public events of your organizer account, remove the event slug from the URL in the `event` attribute, but leave in your organizer slug: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
 ``` 
 
-#### Filtering events by metadata attribute 
+#### Using the widget for a selection of events
 
-If you are hosting multiple events, but only want to display some of them in the widget, then you should use metadata attributes. 
-This section explains how to create metadata attributes, assign them to your events, and set a filter in the widget. 
+If you are hosting multiple events, but only want to display some of them in the widget, then you should use **metadata attributes**. 
+This section explains how to create metadata attributes, assign them to events, and set a filter in the widget. 
 
 You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
+For example, you could set up a metadata property called "Promoted" with the values `True` and `False`, the default value being `False`. 
 
-If you want to assign the metadata property to a singular event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
+In order to assign the metadata property to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
 On the :btn:Basics: tab, edit the relevant property under "Meta data". 
+For example, change the value of the attribute "Promoted" to `True`. 
 
-For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
+For example, if you set up a metadata property called "Promoted" with values `True` and `False` that you set to `True` on some events, you can pass a filter like this:
 
 ```
-<pretix-widget event="https://pretix.eu/demo/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
+<pretix-widget event="https://pretix.eu/demo/" list-type="list" filter="attr[Promoted]=True"></pretix-widget>
 ```
 
 If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
@@ -117,8 +120,8 @@ To disable the filter form, use:
 ### Using the widget for an event series 
 
 You can link the widget to an event series. 
-By default, the widget will display all dates in the event series. 
-If you only want to display a selection of dates in the widget, you can [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
+By default, the widget will display **all dates** in the event series. 
+If you only want to [display a selection of dates](widget.md#using-the-widget-for-a-selection-of-dates) in the widget, you can filter them by metadata attribute. 
 If you only want to [display a single date](widget.md#using-the-widget-for-a-single-date) in the widget, use the date ID. 
 
 You can use the `list-type` attribute to define if the widget will display dates in a monthly calendar view, a weekly calendar view, or a list view. 
@@ -143,6 +146,35 @@ You can see an example here:
     </div>
 </noscript>
 
+#### Using the widget for a selection of dates 
+
+If you only want to display a selection of dates in the widget, you can filter them by **metadata attribute**. 
+This section explains how to create metadata attributes, assign them to dates, and set a filter in the widget. 
+
+You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
+For example, you could set up a metadata property called "Promoted" with the values `True` and `False`, the default value being `False`. 
+
+In order to assign the metadata property to a selection of dates, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
+Select the dates that you want to display in the widget and click the :btn-icon:fa3-edit: Edit selected (#): button. 
+Under "Meta data", check the box labeled "change" next to the attribute and select the value. 
+For example, change the value of the attribute "Promoted" to `True`. 
+
+You can also create one or several new dates and set the metadata attribute to the desired value. 
+
+Then, you add a filter parameter to your widget code. 
+In order to display only dates with the "Promoted" metadata attribute set to `True`, use: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=True"></pretix-widget>
+```
+
+If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
+To disable the filter form, use:
+
+```
+<pretix-widget event="https://pretix.eu/demo/series/" disable-filters></pretix-widget>
+```
+
 #### Using the widget for a single date 
 
 If you want to use the widget for only a single date within an event series, pass the date ID to the `subevent` attribute. 
@@ -161,29 +193,6 @@ In order to display only the date `#4387749` in the widget, pass them to the `su
 The subevent takes only a single date ID as an argument. 
 It is **not** possible to filter for more than one date with this method. 
 If you want to display multiple dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
-
-#### Filtering dates by metadata attribute
-
-If you are hosting multiple dates in an event series, but only want to display some of them in the widget, then you should use metadata attributes. 
-This section explains how to create metadata attributes, assign them to your dates, and set a filter in the widget. 
-
-You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button. 
-
-In order to assign the property to dates in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
-Edit or create the dates in question and set the relevant property under "Meta data". 
-
-For example, if you set up a metadata property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this:
-
-```
-<pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Promoted]=Yes"></pretix-widget>
-```
-
-If you have enabled public filters in your metadata attribute configuration, the widget will display a filter form. 
-To disable the filter form, use:
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
-``` 
 
 ### pretix Button
 
