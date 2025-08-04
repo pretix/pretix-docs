@@ -196,8 +196,8 @@ If you want to display multiple dates from your event series, but not all of the
 
 ### pretix Button
 
-Instead of the full widget, you can also display a simple button. 
-Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
+As an alternative to the full widget, you can embed a simple button on your website. 
+Clicking this button adds a predefined selection of products to the cart and proceeds to checkout. 
 You can try out this behavior here:
 
 <pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
@@ -212,7 +212,7 @@ You can try out this behavior here:
 
 You can embed the pretix Button exactly like the pretix Widget. 
 In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
-Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
+Instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
 ```
 <pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
@@ -222,7 +222,9 @@ Then, instead of the `pretix-widget` tag, use the `pretix-button` tag:
 Use the `items` attribute to specify the items that the button will add to the cart. 
 The syntax of this attribute is: 
 
-```item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4```
+```
+item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4
+```
 
 Replace each instance of `ITEMID` with the ID of the item to be added. 
 Replace each instance of `VARID` with the ID of variations of those items. 
@@ -231,20 +233,20 @@ Use the number behind the `=` symbol to specify the number of this item or varia
 
 If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
 
-If you link the button to an event series, use the `subevent`-attribute to specify the date for which it should add the items to the cart. 
+If you link the button to an event series, use the `subevent` attribute to specify the date for which it should add the items to the cart. 
 
 The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
 You can style the button using the `pretix-button` CSS class.
 
 ### Styling
 
-You can use CSS to customize the appearance of the widget to match your website. 
+You can use CSS to customize the appearance of the widget or button to match your website. 
 You can use your browser's developer tools to inspect the rendered HTML of the widget.
 Almost every element has a custom class and all classes have the prefix `pretix-widget`. 
 You can override the styles or use your own custom stylesheet. 
 
 !!! Note 
-    We designed the widget to conform with European accessibility standards. 
+    We designed the widget to conform with European Union accessibility standards. 
     Do **not** break accessibility with your customizations to the widget, for instance by choosing colors with too little contrast. 
 
 ## Applications
@@ -262,7 +264,7 @@ This section explains how to influence product availability and pricing in the w
 
 #### Offering discounts through the widget
 
-If you want to offer discounts to customers placing their order through the widget, then you should preselect a voucher in the widget. 
+If you want to offer discounts to customers placing their order through the widget, then you should **preselect a voucher** in the widget. 
 Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
 This section tells you how to preselect a voucher using the `voucher` attribute in the widget code in order to offer a widget-exclusive discount. 
 
@@ -275,7 +277,7 @@ Instead, pass the voucher code (for example, `ABCDE123456`) to the `voucher` att
 ```
 
 This way, the widget will only display products that customers can buy with the voucher and prices will change as defined by the voucher. 
-You do **not** need to copy and edit the code example below. 
+You do **not** need to copy and edit the code example above. 
 It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
 
 Here is an example of a widget with a voucher preselected: 
@@ -292,23 +294,26 @@ Here is an example of a widget with a voucher preselected:
 
 #### Offering certain products through the widget only 
 
-If you want to offer certain products through the widget only and not in your shop, then you should preselect a voucher in the widget. 
+If you want to offer certain products through the widget only and not in your shop, then you should **preselect a voucher** in the widget. 
 Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
-This section tells you how to preselect a voucher using the `voucher` attribute in the widget code in order to offer some products through the widget only. 
+This section tells you how to make a product only available with a voucher and how to preselect that voucher using the `voucher` attribute in the widget code. 
 
 Navigate to :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
 Set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fa3-eye-slash::). 
-This will hide the product hidden in your shop. 
+This will hide the product in your shop. 
+It will only be displayed for voucher holders. 
+
 If you want to restrict availability for multiple products, take the steps described above for each product.
-Create a quota that includes all products that you want to make available through the widget. 
+Create a quota that includes all products that you want to make available only through the widget. 
 
 Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Set the "Maximum usages" field to a high number such as 999999. 
 
-Under "Product", choose the product (or the quota, if there is more than one product) which you want to make available through the widget. 
+Under "Product", choose the product which you want to make available through the widget. 
+If there is more than one product, select the quota that includes all those products. 
 Check the box next to "Shows hidden products that match this voucher" at the bottom of the page. 
 
 Do **not** send the voucher code as an email or share it with anyone. 
@@ -323,6 +328,8 @@ For an example of a widget with a preselected voucher, see [Offering discounts t
 
 #### Offering only certain products through the widget
 
+This section explains how to display only some of your products in the widget. 
+
 You can filter the products displayed in the widget by passing a list of product IDs separated by commas. 
 In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
 The page displays the product ID as a number preceded by a hashtag below the product's name in the list. 
@@ -336,9 +343,9 @@ In order to display only products `#562195` and `#562202` in the widget, pass th
 <pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
 ```
 
-#### Offering only certain categories products through the widget
+#### Offering only certain categories of products through the widget
 
-You can also filter for categories. 
+You can filter the products you offer through the widget by category. 
 In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
 Edit the category in question. 
 The number before the last slash in the URL is the category ID.
@@ -349,7 +356,7 @@ In order to display only products from the categories `#162620` and `#162647` in
 ```
 #### Offering only certain product variations through the widget
 
-You can also filter for product variations. 
+You can also filter the products you offer through the widget by product variation. 
 In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
 Edit the product in question and open the :btn:Variations: tab. 
 The page displays the product ID as a number preceded by a hashtag below the variation's name in the list. 
@@ -371,7 +378,7 @@ If you want to disable voucher input in the widget, you can pass the `disable-vo
 
 ### Customizing widget behavior
 
-This section explains how to customize the way in which the widget loads and opens. 
+This section explains how to customize the way in which the widget loads and opens, how it opens the checkout page, and how it displays event info. 
 
 #### Opening the widget dynamically
 
@@ -380,7 +387,8 @@ This is similar to the behavior of the [pretix Button](widget.md#pretix-button),
 
 Calling the function will open an overlay with your ticket shop. 
 In some circumstances, such as missing HTTPS encryption or a small screen size, it will open a new tab instead. 
-Therefore, only call this function in direct response to user action, otherwise most browsers will block it as an unwanted pop-up. 
+Therefore, you should only call this function in direct response to user action. 
+Otherwise most browsers will block it as an unwanted pop-up. 
 
 Call `window.PretixWidget.open`, which has the following signature:
 
@@ -394,7 +402,7 @@ Parameters:
  - **voucher** (string): A voucher code to preselect, or `null`.
  - **subevent** (string): A date from an event series to preselect, or `null`.
  - **items** (array): A collection of items to place in the cart, of the form `[{"item": "item_3", "count": 1}, {"item": "variation_5_6", "count": 4}]`
- - **widget_data** (object): Additional data to pass to the shop, see below.
+ - **widget_data** (object): Additional data to pass to the shop.
  - **skip_ssl_check** (Boolean): Whether to ignore the check for HTTPS. 
    Do **not** skip this check on the active website. 
    Only skip it during development.
@@ -442,7 +450,7 @@ window.pretixWidgetCallback = function () {
 </script>
 ```
 
-You can run these functions multiple times, for example if you have multiple widgets on a page or whenever the user changes the list/calendar view. 
+You can run these functions multiple times, for instance, once for every widget on the page or once every time the user changes the list/calendar view. 
 
 #### Always open a new tab
 
@@ -455,7 +463,7 @@ If you want the checkout process to always open in a new tab regardless of scree
 
 #### Show or hide event info
 
-By default, the widget will  display event info such as title, location, and front page text if you linked it to an event series. 
+If you linked the widget to an event series, then it will display event info such as title, location, and front page text by default. 
 It will **not** display that info for a single event. 
 You can pass the optional `display-event-info` attribute to change this behavior. 
 
@@ -538,9 +546,9 @@ pretix understands the following data attributes:
    The user will always be able to modify attendee-level fields and questions. 
 
 !!! Note
-   The `data-fix="true"` attribute is **not** a security feature. 
-   Your website's users can override it. 
-   Do **not** rely on this for authentication.
+    The `data-fix="true"` attribute is **not** a security feature. 
+    Your website's users can override it. 
+    Do **not** rely on this for authentication.
 
  - Setting `data-consent="…"` means that the cookie consent mechanism will adopt the consent for the given cookie providers. 
    This will disable all other providers. 
@@ -574,7 +582,7 @@ Refer to the article on [custom domains](custom-domain.md) for further informati
 
 Add the embedding website to your [referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
 
-Add Google Analytics like you would on any other page, including your [window.dataLayer]{.title-ref} and [gtag]{.title-ref} configurations. 
+Add Google Analytics like you would on any other page, including your `[window.dataLayer]{.title-ref}` and `[gtag]{.title-ref}` configurations. 
 Add the widget code. 
 You have two options:
 
@@ -586,7 +594,7 @@ The other option is setting data attributes asynchronously.
 The website will display widgets immediately, but it is **not** possible to change data attribute once the user has entered checkout. 
 
 If you want to use the first method (temporarily blocking the loading of the widget), include the following code on your website. 
-Replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
+Replacing all occurrences of `<MEASUREMENT_ID>` with your Google Analytics MEASUREMENT_ID `(G-XXXXXXXX)`: 
 
 ```
 <script type="text/javascript">
@@ -627,7 +635,7 @@ Replacing all occurrences of <MEASUREMENT_ID\> with your Google Analytics MEASUR
 ``` 
 
 If you want to use the other method (setting data attribute asynchronously), include the following code on your website. 
-Replace all occurrences of \<MEASUREMENT_ID\> with your Google Analytics MEASUREMENT_ID (G-XXXXXXXX): 
+Replace all occurrences of `<MEASUREMENT_ID>` with your Google Analytics MEASUREMENT_ID `(G-XXXXXXXX)`: 
 
 ``` 
 <script type="text/javascript">
@@ -654,12 +662,12 @@ Buying a ticket usually involves entering sensitive data.
 Thus, we strongly suggest that you use SSL/HTTPS for the page that includes the widget. 
 Initiatives such as [Let's Encrypt](https://letsencrypt.org/) allow you to obtain a SSL certificate free of charge.
 
-pretix will use SSL for all data transferred from the widget even if you include the widget a non-SSL site. 
+pretix will use SSL for all data transferred from the widget even if you embed the widget on a non-SSL site. 
 However, if you are **not** using SSL for your site, it is possible for a man-in-the-middle attacker to make malicious changes to the widget. 
 Using SSL for data transfers is standard practice now. 
 Your customers may only trust your website if their browser displays the secure lock icon :fa3-lock: while they are accessing it. 
 
-If your website does **not** use SSL, the checkout process will open in a new tab in your user's browsers. 
+If your website does **not** use SSL, the checkout process will open in a new browser tab for your users. 
 If you are confident that you have a good reason for **not** using SSL, you can override this behavior with the `skip-ssl-check` attribute:
 
 ```
@@ -701,16 +709,16 @@ If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget will 
 
 ## Versioning
 
-Whenever possible, we make changes or improvements to the widget in a way that does not interfere with any of the configuration options listed on this page and does not cause compatibility issues with custom styling of your page.
-Occasionally, we do however need to make changes that change the structure of the widget and might cause incompatibility.
-In this case, we release a new version of the widget, noted by an incremented version number in both the script and stylesheet location.
+When making changes to the widget, we try to avoid interfering with the configuration options listen on this page or causing compatibility issues with custom styling of your page as far as possible. 
+Occasionally, we do however need to make changes that alter the structure of the widget and might cause incompatibility.
+In these cases, we release a new version of the widget, indicated by the incremented version number in both the script and stylesheet location.
 
 We announce new versions of the widget with the monthly pretix release notes, also available through [our newsletter](https://pretix.eu/about/en/blog/).
 You can then switch to the new version at a time of your choice with the chance to test if any changes to your custom styling is necessary.
 
 When announcing a new version, we also announce a date of deprecation for the old version.
 After this date, we will automatically replace the old version with the new one.
-In other words, if you do not upgrade to the new version intentionally, you will automatically be upgraded after the deprecation date. 
+In other words, if you do not upgrade to the new version manually, you will automatically be upgraded after the deprecation date. 
 This may lead to issues with custom styling.
 
 ## Changelog
@@ -735,9 +743,10 @@ We are intentionally keeping this time frame short to help users comply with the
 
 ### The code copied from this page does not work 
 
-If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
+If you want to apply code examples from this page to your own event and website, you need to replace the strings with the ones matching your event. 
+The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon` or the event series `series`.
 Your own event will use different organizer and event slugs. 
+If you are using a different domain, then you will also need to use a different base URL. 
 
 If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
 The most straightforward way to obtain the right code is using the code generator. 
