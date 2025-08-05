@@ -2,7 +2,7 @@
 
 Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
-By default, pretix does not monitor payments arriving at your bank account. 
+By default, pretix does **not** monitor payments arriving at your bank account. 
 If you are using pretix Hosted, you can connect your bank account via our integration with GoCardless for automatic imports of bank data. 
 
 The alternatives for notifying pretix of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
@@ -10,18 +10,18 @@ This article tells you how to set up a bank connection so that you can use it to
 It also tells you how to notify pretix of incoming payments. 
 
 !!! Note 
-    pretix does not handle refunds via bank transfer automatically. 
+    pretix does **not** handle refunds via bank transfer automatically. 
     If a customer cancels their order and requests a refund via the original payment method, and that payment method is bank transfer, you will receive an email notification. 
     You will have to issue the refund manually. 
 
 ## Prerequisites
 
-As setting up payment providers is handled on the event level, you need to create an event first. 
-Make sure you have access to the bank account that you want to use. 
+Setting up payment providers is handled on the event level, so you need to create an event first. 
+You need to have access to the bank account that you want to use with pretix. 
 
 ## How To
 
-Successfully using bank transfer as a payment provider in pretix requires the following steps: 
+Using bank transfer as a payment provider in pretix requires the following steps: 
 
  1. Setting up bank transfers by enabling the bank transfer plugin and adjusting the bank transfer settings 
  2. Setting up automatic transaction import **or** regularly importing a digital bank statement 
@@ -32,16 +32,16 @@ This section will guide you through these steps in detail.
 
 ### Setting up bank transfers
 
-If you want to use bank transfers to receive payments in pretix, the "Bank transfer" plugin needs to be enabled. 
-In order to make sure that the plugin is enabled, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+If you want to use bank transfers to receive payments in pretix, the "Bank transfer" plugin needs to be active. 
+In order to verify that the plugin is active, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
 Switch to the :btn:Payment providers: tab. 
 
-The bank transfer plugin is displayed at the top of the page. 
-It should be enabled by default. 
-If it is enabled, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
-If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
+This page displays the bank transfer plugin at the top. 
+It should be active by default. 
+If it is active, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
+If it is **not** active, the tag will be missing and it will have a purple :btn:Enable: button. 
 
-![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'Settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe. Gift card is active and all other entries are inactive. All entries have 'Settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 You can jump straight to the bank transfer settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > Bank transfer:. 
 
@@ -49,12 +49,12 @@ Alternatively, navigate to :navpath:Your Event → :fa3-wrench: Settings → Pay
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
 
-The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
+The plugin is active, but you have not set up bank transfers as a payment provider for the event yet. 
 Click the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
 This takes you to the settings page for bank transfer. 
 
-The first thing you need to do on this page is choose the "Bank account type". 
-If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC and the name of the bank. 
+Choose the "Bank account type". 
+If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC, and the name of the bank. 
 If you choose "Other bank account", you have to provide the full details of the bank connection in the "Bank account details" fields. 
 
 All settings further down on the page are optional. 
