@@ -74,6 +74,6 @@ The name pretix is a registered trademark by pretix GmbH (previously rami.io Gmb
 
 -   You **may** use it to **indicate copyright**, such as in the "powered by pretix" or "based on pretix" line, or when indicating that a distribution is based on pretix.
 -   You **may** use it to **indicate compatibility**, for example you are allowed to name your plugin "&lt;name&gt; for pretix" or you may state that an external service is compatible with pretix.
--   You **may not** give the impression that your modified version, plugin or compatible service is official or authorized by pretix GmbH (previously rami.io GmbH) or pretix unless we specifically allowed you to do so.
+-   You **may not** give the impression that your modified version, plugin or compatible service is official or authorized by pretix GmbH unless we specifically allowed you to do so.
 -   You **may not** use it to name your modified version of pretix. End-users must be able to easily identify whether a version of pretix is distributed by us.
 -   You **may not** use any variations of the name, such as "MyPretix".
