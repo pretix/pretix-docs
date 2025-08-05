@@ -40,6 +40,7 @@ This page displays the bank transfer plugin at the top.
 It should be active by default. 
 If it is active, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
 If it is **not** active, the tag will be missing and it will have a purple :btn:Enable: button. 
+Verify that the plugin is active. 
 
 ![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe. Gift card is active and all other entries are inactive. All entries have 'Settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
