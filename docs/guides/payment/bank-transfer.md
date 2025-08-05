@@ -76,7 +76,7 @@ If you are using pretix Hosted, you can activate the automatic transaction impor
 This service is on the organizer level, meaning that bank data imported via this method is available for all events associated with the organizer. 
 Navigate to :navpath:Your organizer → :fa3-bank: Bank transfer → Automatic import: . 
 
-![Page titled Automatic transaction import, containing text with the subheadings 'Why importing transactions automatically?', 'Unmatched transactions' and 'Security and privacy', as well as a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
+![Page titled 'Automatic transaction import', containing text with the subheadings 'Why importing transactions automatically?', 'Unmatched transactions' and 'Security and privacy', as well as a button for uploading unmatched transactions for review.](../../assets/screens/payment/automatic-transaction-import.png "Automatic transaction import" )
 
 Choose your country, bank, and start date for importing transactions. 
 If you leave the "Import Transactions since" field empty, pretix will import as many transactions as possible. 
@@ -156,13 +156,12 @@ Refer to the section below for a more detailed explanation on [how to handle unr
 ![Page titled 'Orders', showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
 In addition to the [automated option A](bank-transfer.md#option-a-automatic-transaction-import-using-gocardless) and the [semi-automated option B](bank-transfer.md#option-b-importing-bank-data) described above, pretix also allows you to approve payments manually. 
-In order to do so, navigate to :navpath:Your Event → Orders:. 
+In order to do so, navigate to :navpath:Your Event → :fa3-shopping-cart: Orders:. 
 This page displays a list of all orders that have been placed in your shop. 
 If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fa3-money: Pending" status tag. 
 
 Click the order code of one of the pending orders. 
 This takes you to the "Order details" page for that order. 
-
 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fa3-check:Mark as paid: button at the top of the order details page. 

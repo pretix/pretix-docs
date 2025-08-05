@@ -25,7 +25,7 @@ Setting up PayPal as a payment provider in pretix involves the following steps:
 
 This section will guide you through those steps in detail. 
 
-Navigate to :navpath:Your Event → Settings → Plugins:. 
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
 Switch to the :btn:Payment providers: tab. 
 The PayPal plugin is displayed at the top of the page. 
 It should be enabled by default. 
@@ -37,7 +37,7 @@ Make sure that the plugin is enabled.
 
 You can jump straight to the PayPal settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > PayPal:. 
 
-Alternatively, navigate to :btn:Your Event → Settings → Payment:. 
+Alternatively, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for PayPal with a red ":fa3-times: Disabled" tag. 
 The plugin is enabled, but PayPal has not been set up and enabled as a payment provider for the event yet. 
@@ -45,7 +45,7 @@ Click the :btn-icon:fa3-gear:Settings: button next to PayPal.
 This takes you to the settings page for PayPal, which currently only includes the :btn:Connect with PayPal: button. 
 Click the button and complete the login and authorization process with PayPal. 
 
-![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
+![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on pretix GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
 
 After you have completed the authorization process with PayPal, the PayPal settings page in the pretix backend will look different. 
 Instead of the single button, it will now offer a multitude of settings. 

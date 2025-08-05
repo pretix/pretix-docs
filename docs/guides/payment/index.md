@@ -49,7 +49,7 @@ By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit 
 ![Part of the list of available payment provider plugins. Entries for Saferpay, secuconnect, SEPA direct debit, SOFORT and Stadtguthaben are visible. The SEPA option is active. The other entries have a purple 'enable' button next to them.](../../assets/screens/payment-providers/plugins-list.png "Plugins Payment providers list")
 
 Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
-A plugin that has been enabled will have a green "✓ Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
+A plugin that has been enabled will have a green ":fa3-check: Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
 Disable any active plugins that you do not want to use for your event. 
 
 ### General settings for Payment Providers
@@ -207,7 +207,7 @@ If a payment provider does not show up in :navpath:Your Event → :fa3-wrench: S
 
 Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the "Payment providers" tab. 
 Enable the corresponding plugin. 
-Verify that it has the green "✓ Active" tag next to it. 
+Verify that it has the green ":fa3-check: Active" tag next to it. 
 
 ### A payment provider does not show up in your shop 
 
