@@ -216,4 +216,4 @@ You will be taken back to the overview page titled "SSO providers".
 Click the "Google" entry in the list. 
 Copy the value from the "Redirection URL" field. 
 It will look similar to, but **not exactly** like `https://pretix.eu/tut/account/login/199/return`. 
-Open the Google backend, edit your client, add a URL, paste the value into the field, and save the settings. 
+Open the Google backend, edit your client, click to add a URL, paste the value into the field, and save the settings. 
