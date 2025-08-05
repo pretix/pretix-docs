@@ -6,8 +6,8 @@ By default, pretix does not monitor payments arriving at your bank account.
 If you are using pretix Hosted, you can connect your bank account via our integration with GoCardless for automatic imports of bank data. 
 
 The alternatives for notifying pretix of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
-This article is going to tell you how to set up a bank connection so that you can use it to receive payments via pretix. 
-It is also going to tell you how to notify pretix of incoming payments. 
+This article tells you how to set up a bank connection so that you can use it to receive payments via pretix. 
+It also tells you how to notify pretix of incoming payments. 
 
 !!! Note 
     pretix does not handle refunds via bank transfer automatically. 
@@ -33,7 +33,7 @@ This section will guide you through these steps in detail.
 ### Setting up bank transfers
 
 If you want to use bank transfers to receive payments in pretix, the "Bank transfer" plugin needs to be enabled. 
-In order to make sure that the plugin is enabled, navigate to :navpath:Your Event → Settings → Plugins:. 
+In order to make sure that the plugin is enabled, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
 Switch to the :btn:Payment providers: tab. 
 
 The bank transfer plugin is displayed at the top of the page. 
@@ -41,17 +41,17 @@ It should be enabled by default.
 If it is enabled, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 
-![Payment settings page. The "Payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'Settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 You can jump straight to the bank transfer settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > Bank transfer:. 
 
-Alternatively, navigate to :navpath:Your Event → Settings → Payment:. 
+Alternatively, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
 
 The plugin is enabled, but bank transfers have not been set up and enabled as a payment provider for the event yet. 
 Click the :btn-icon:fa3-gear:Settings: button next to bank transfer. 
-This takes you to the settings page for bank transfer.  
+This takes you to the settings page for bank transfer. 
 
 The first thing you need to do on this page is choose the "Bank account type". 
 If you choose "SEPA bank account", you have to provide the name of the account holder, IBAN, BIC and the name of the bank. 
@@ -66,7 +66,7 @@ Bank transfers will now appear as a payment option for customers in your shop.
 
 For pretix Hosted, we have partnered with [GoCardless](https://gocardless.com) to allow a seamless integration for automatic transaction importing for [thousands of banks in over 30 countries](https://gocardless.com/bank-account-data/coverage/).
 Alternatively, you can notify pretix of incoming payments by regularly importing digital bank statements. 
-This section is going to guide you through both options. 
+This section guides you through both options. 
 
 #### Option A: automatic transaction import using GoCardless
 
@@ -153,7 +153,7 @@ Refer to the section below for a more detailed explanation on [how to handle unr
 ### Approving transactions manually
 
 
-![Page titled orders, showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
+![Page titled 'Orders', showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
 In addition to the [automated option A](bank-transfer.md#option-a-automatic-transaction-import-using-gocardless) and the [semi-automated option B](bank-transfer.md#option-b-importing-bank-data) described above, pretix also allows you to approve payments manually. 
 In order to do so, navigate to :navpath:Your Event → Orders:. 
@@ -161,13 +161,13 @@ This page displays a list of all orders that have been placed in your shop.
 If orders have been placed and not yet received a payment (which is expected if they are paid via bank transfer), they will be displayed here with the yellow ":fa3-money: Pending" status tag. 
 
 Click the order code of one of the pending orders. 
-This takes you to the "order details" page for that order. 
+This takes you to the "Order details" page for that order. 
 
 
 Check the transaction data of your bank account. 
 If your bank account's transaction data has a record that matches the order in question, click the :btn-icon:fa3-check:Mark as paid: button at the top of the order details page. 
 
-![Page titled Mark order as paid, showing options for changing the payment amount of  €250.00, payment date, and whether or not to notify the customer by email.](../../assets/screens/payment/order-mark-as-paid.png "Orders" )
+![Page titled 'Mark order as paid', showing options for changing the payment amount of  €250.00, payment date, and whether or not to notify the customer by email.](../../assets/screens/payment/order-mark-as-paid.png "Orders" )
 
 !!! Warning 
 
@@ -176,11 +176,11 @@ If your bank account's transaction data has a record that matches the order in q
 
 Adjust the payment amount and date if necessary. 
 By default, the customer will be notified about the order being marked as paid via email. 
-You can prevent this by unchecking the box next to "notify customer by email". 
+You can prevent this by unchecking the box next to "Notify customer by email". 
 Confirm by clicking the :btn:Create payment: button. 
 
-This takes you back to the "order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying ":fa3-check: Paid". 
-Repeat this process for every order that shows up in the list on the "orders" page. 
+This takes you back to the "Order details" page, now with a notification box at the top saying "The payment has been created successfully" and a green tag in the top right saying ":fa3-check: Paid". 
+Repeat this process for every order that shows up in the list on the "Orders" page. 
 
 ### Handling unresolved transactions
 

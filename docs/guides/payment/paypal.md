@@ -3,7 +3,7 @@
 PayPal is one of the many options for handling payments within pretix. 
 Stripe allows handling payments via the following methods: 
 real-time payment via PayPal account, "Buy Now Pay Later" via PayPal account, SEPA direct debit, and alternative payment methods such as SOFORT, giropay, iDEAL and others. 
-This article is going to tell you how to connect to your PayPal account and use it to receive payments via pretix. 
+This article tells you how to connect to your PayPal account and use it to receive payments via pretix. 
 
 ## Prerequisites
 
@@ -33,17 +33,17 @@ If it is enabled, it will have a green ":fa3-check: Active" tag, a white "Disabl
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
+![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'Settings' buttons next to them. The settings button for PayPal is highlighted.](../../assets/screens/payment-providers/payment-settings-paypal.png "Payment settings PayPal" )
 
 You can jump straight to the PayPal settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > PayPal:. 
 
 Alternatively, navigate to :btn:Your Event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
-The list should now include an entry for PayPal with a red ":fontawesome-solid-x: Disabled" tag. 
+The list should now include an entry for PayPal with a red ":fa3-times: Disabled" tag. 
 The plugin is enabled, but PayPal has not been set up and enabled as a payment provider for the event yet. 
-Click the :btn-icon:fontawesome-solid-gear:Settings: button next to PayPal. 
+Click the :btn-icon:fa3-gear:Settings: button next to PayPal. 
 This takes you to the settings page for PayPal, which currently only includes the :btn:Connect with PayPal: button. 
-Click the button and complete the the login and authorization process with PayPal. 
+Click the button and complete the login and authorization process with PayPal. 
 
 ![PayPal website with the pretix logo in the top right and a dialog in the center telling you to 'Connect a PayPal account to start accepting payments on rami.io GmbH'. You can enter your email and country or region below.](../../assets/screens/payment-providers/paypal-connect-account.png "Connecting to PayPal" )
 
@@ -52,5 +52,5 @@ Instead of the single button, it will now offer a multitude of settings.
 Your PayPal merchant ID will be displayed at the top of the page. 
 All settings here are optional. 
 Take a detailed look at the page and enable any settings you want for this payment provider for your event. 
-Once you are satisfied, scroll to the top of the page and check the box next to "enable payment method". 
+Once you are satisfied, scroll to the top of the page and check the box next to "Enable payment method". 
 PayPal and the other payment methods you enabled on this site will now appear as a payment option for customers in your shop. 

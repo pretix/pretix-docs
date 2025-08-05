@@ -37,12 +37,12 @@ The following sections guide you through those steps in detail.
 pretix allows handling payment via more than three dozen payment providers. 
 There is a plugin for each one of them. 
 You have to enable the plugins for every payment provider that you want to use for your event. 
-This section is going to tell you how to do that. 
+This section tells you how to do that. 
 
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
-Navigate to :navpath:Your Event → Settings → Plugins:. 
-The :btn:payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, Mollie, PayPal and Stripe at the top of the page. 
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+The :btn:Payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, Mollie, PayPal and Stripe at the top of the page. 
 Below that, you can find the list of plugins for all other payment providers available in pretix. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
 
@@ -58,16 +58,16 @@ Enabling a plugin does not automatically make the payment method available in yo
 You also need to provide some data for each payment provider you want to use on the settings page. 
 This section tells you how to do that. 
 
-Navigate to :navpath:Your Event → Settings → Payment:. 
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. 
 If you have enabled or disabled any of the default plugins for payment providers, your list will look different. 
 
-Every payment provider that you have enabled the plugin for on the "plugins" page appears in this list. 
+Every payment provider that you have enabled the plugin for on the "Plugins" page appears in this list. 
 The list will also always contain the entry for gift cards. 
 Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of pretix. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them. ](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe; gift card is enabled and all other entries are disabled. All entries have 'Settings' buttons next to them. ](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 You can edit and enable payment providers by clicking the :btn-icon:fa3-gear:Settings: button next to them. 
 Each payment method requires some mandatory information and settings before you can enable it. 
@@ -76,7 +76,7 @@ For example, the settings page for bank transfer requires you to enter your bank
 You can also apply a wide range of optional settings to each payment provider. 
 You can restrict availability of the payment method by date ("Available from" and "Available until"), country ("Restrict to countries") and sales channel ("Restrict to specific sales channels"). 
 
-![Settings page for stripe, showing a large purple button labeled 'Connect with Stripe'](../../assets/screens/payment-providers/payment-external.png "Stripe settings")
+![Settings page for Stripe, showing a large purple button labeled 'Connect with Stripe'](../../assets/screens/payment-providers/payment-external.png "Stripe settings")
 
 If the payment provider is an external service, the settings page only contains a button for connecting with your account on that service. 
 Once the connection has been confirmed, the settings page for the payment provider will display the usual settings. 
@@ -96,7 +96,7 @@ Most payment providers charge a fee on every transaction they process.
 If you are planning to pay this fee yourself, you do not need to change any settings. 
 If you want to add the fee to your customer's total, consult an expert to make sure that it is legal for you to do so. 
 
-Once you have done that, navigate to :navpath:Your Event → Settings → Payment:, and open the :btn:Advanced: tab. 
+Once you have done that, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:, and open the :btn:Advanced: tab. 
 In the dropdown menu labeled "Tax rule for payment fees", select the appropriate tax rule. 
 
 If you want to learn more on how to handle taxes in pretix, refer to our guide on [taxes](../taxes.md). 
@@ -178,9 +178,9 @@ Use the method described [above](index.md#passing-payment-provider-fees-on-to-yo
 
 ### Deadlines
 
-![Payment settings page. The "deadlines" tab is open, showing various options for settings deadlines.](../../assets/screens/payment-providers/payment-deadlines.png "Payment deadlines settings")
+![Payment settings page. The 'Deadlines' tab is open, showing various options for settings deadlines.](../../assets/screens/payment-providers/payment-deadlines.png "Payment deadlines settings")
 
-Navigate to :navpath:Your Event → Settings → Payment:. 
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
 The :btn:Deadlines: tab lets you set payment terms measured in either days or minutes. 
 By default, the payment term for your customers is set to 14 days. 
 This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
@@ -201,14 +201,22 @@ It is for these reasons that pretix only lets you set unified payment deadlines 
 
 ## Troubleshooting
 
-__A payment provider does not show up in :navpath:Your Event → Settings → Payment:__
-Navigate to :navpath:Your Event → Settings → Plugins: and open the "payment providers" tab. 
-Enable the corresponding plugin. 
-Make sure it has the green "✓ Active" tag next to it. 
+### A payment provider does not show up in the payment settings
 
-__A payment provider does not show up in your test shop/Customers cannot select a payment method during their purchase:__ 
-Navigate to :navpath:Your Event → Settings → Payment: and open the "payment" tab. 
-Click the :btn-icon:fa3-gear:Settings: button next to the payment provider that isn't showing up in the shop. Check the "☑ Enable payment method" box. 
+If a payment provider does not show up in :navpath:Your Event → :fa3-wrench: Settings → Payment:, then the plugin is not active. 
+
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the "Payment providers" tab. 
+Enable the corresponding plugin. 
+Verify that it has the green "✓ Active" tag next to it. 
+
+### A payment provider does not show up in your shop 
+
+If a payment provider does not appear in your test shop or customers cannot select a payment method during their purchase, you should verify that the provider and the method are activated. 
+
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
+This lands you on the "Payment" tab. 
+Click the :btn-icon:fa3-gear:Settings: button next to the payment provider that isn't showing up in the shop. 
+Check the box next to "Enable payment method". 
 Then scroll to the bottom of the page and click :btn:Save:. 
 
 If any mandatory information hasn't been filled out yet, the webpage will notify you. 
