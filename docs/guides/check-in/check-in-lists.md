@@ -21,6 +21,15 @@ Check-in lists are handled on the event level, so you have to create an event fi
 ## General usage 
 
 This section explains how to set up and configure check-in lists. 
+In the most straightforward use case, you only need a single check-in list that includes all of your products. 
+pretix automatically creates such a check-in list named "Default" along with your event. 
+
+In order to view the "Default" list, make changes to it, or create new lists, navigate to :navpath:Your event → :fa3-check-square-o: Check-in. 
+This lands you on the "Check-in lists" page. 
+
+### Configuring a check-in list
+
+In order to configure a check-in list, click its name or the :btn-icon:fa3-wrench:: button. 
 
 ## Applications
 
@@ -31,6 +40,25 @@ This section explains how you can use check-in lists to manage the check-in at y
 The most convenient and powerful method for checking in customers is using the pretixSCAN app. 
 Acquire a device with a scanner or camera, install pretixSCAN on it, connect it to your organizer account, and place it at the entrance to your event. 
 We will cover the specifics of using pretixSCAN in a dedicated article. 
+
+### Manual check-in via backend 
+
+!!! Note 
+    This method is slow and only feasible if you are dealing with a low volume of customers. 
+    We recommend using pretixSCAN instead. 
+
+If you want to perform manual checks using the pretix backend, place a computer at the check-in. 
+You will need a stable internet connection and access to the pretix backend from that computer. 
+Take appropriate security measures so that only authorized personnel can use the computer. 
+
+On that computer, open the pretix backend and navigate to :navpath:Your event: → :fa3-check-square-o: Check-in → Check-in lists:. 
+In the list, click the check-in list on which you want to record check-ins. 
+The next page displays a list with all issued tickets. 
+
+Ask attendees their name, email address, ticket code, or order code. 
+Use the "Search attendee" function or browse the list to locate the corresponding entry. 
+Check the box next to that entry and click the :btn-icon:fa3-sign-in: Check-In selected attendees (#): button. 
+It is possible to select multiple attendees and check them all in at once. 
 
 ### Paper check-in 
 
@@ -68,22 +96,3 @@ The list includes the following columns:
 Print the exported list, place it at your check-in, and check entries off the list manually as visitors appear. 
 This method is slow and only feasible if you are dealing with a low volume of customers. 
 We recommend using pretixSCAN instead. 
-
-### Manual check-in via backend 
-
-!!! Note 
-    This method is slow and only feasible if you are dealing with a low volume of customers. 
-    We recommend using pretixSCAN instead. 
-
-If you want to perform manual checks using the pretix backend, place a computer at the check-in. 
-You will need a stable internet connection and the ability to access the pretix backend from that computer. 
-Take appropriate security measures so that only authorized personnel can use the computer. 
-
-On that computer, open the pretix backend and navigate to :navpath:Your event: → :fa3-check-square-o: Check-in → Check-in lists:. 
-In the list, click the check-in list on which you want to record check-ins. 
-The next page displays a list with all issued tickets. 
-
-Ask attendees their name, email address, ticket code, or order code. 
-Use the "Search attendee" function or browse the list to locate the corresponding entry. 
-Check the box next to that entry and click the :btn-icon:fa3-sign-in: Check-In selected attendees (#): button. 
-It is possible to select multiple attendees and check them all in at once. 
