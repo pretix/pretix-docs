@@ -202,4 +202,4 @@ Repeat this process for all unresolved orders.
 You can view orders by navigating to :navpath:Your event: → :fa3-shopping-cart: Orders:. 
 
 Only delete transactions if they are unrelated to the event you are hosting and you cannot find a matching order. 
-If pretix has imported  a transaction before, the software recognizes it as a duplicate and ignores it upon repeated import, even if you have deleted the original entry. 
+If pretix has imported  a transaction before, the software recognizes it as a duplicate and ignores it upon repeated import, even if the previous entry has been deleted. 
