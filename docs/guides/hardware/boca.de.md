@@ -24,7 +24,7 @@ Als Material benötigen Sie bedruckbares Thermopapier, z.B. in Form von Tickets 
 
 ## Anleitung
 
-Mit dem Boca Lemur oder Lemur C können Sie entweder Tickets oder Butterfly-Badges drucken. 
+Mit dem Boca Lemur oder Lemur C können Sie entweder Tickets oder Butterfly-Badges bedrucken. 
 Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
 Dann testen Sie die Konfiguration. 
 
@@ -39,17 +39,19 @@ Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet
 
 **Lemur:** Schließen Sie das Kaltgerätekabel zuerst an den Drucker und danach an eine Steckdose an. 
 **Lemur C:** Schließen Sie das Netzteil zuerst an den Drucker und danach an eine Steckdose an. 
+Lassen Sie den Drucker weiterhin ausgeschaltet. 
 
-Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
+Um den Drucker über **LAN** mit dem Netzwerk zu verbinden, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
 !!! Warning 
     Es ist möglich, die USB-Ports von Drucker und Kasse beim Verbinden über USB zu beschädigen. 
     Weichen Sie **nicht** von der hier geschilderten Reihenfolge ab, um potenzielle Beschädigungen zu vermeiden. 
 
-Alternativ zur Netzwerkverbindung können Sie den Drucker auch über **USB** anschließen. 
+Alternativ zur Netzwerkverbindung können Sie den Drucker auch über **USB** direkt an eine Kasse anschließen. 
 Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
+Ein Anschluss an ein Scan-Smartphone über USB ist **nicht** möglich. 
 
 Schalten Sie das Gerät ein, indem Sie den Schalter an der rechten Seite umlegen. 
 Beim Lemur ist der Schalter in einer Nische verborgen. 

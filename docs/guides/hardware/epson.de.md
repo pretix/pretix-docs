@@ -47,7 +47,7 @@ Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet
 Alle Anschlüsse befinden sich hinten und unten am Gerät. 
 Beim TM-m30iii können Sie die Abdeckung an der Unterseite des Geräts entfernen, um Zugang zu den Anschlüssen zu erhalten. 
 
-Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die entsprechende Buchse am Drucker. 
+Um den Drucker über **LAN** an den Router anzuschließen, stecken Sie ein LAN-Kabel in die entsprechende Buchse am Drucker. 
 Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
 Alternativ zum Anschluss über LAN können Sie den Drucker auch über **USB** anschließen. 

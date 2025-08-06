@@ -51,14 +51,16 @@ Ziehen Sie das Papier bis zum vorderen Ende des Druckers und schließen Sie die 
 Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet ist. 
 Alle Anschlüsse befinden sich hinten und unten am Gerät. 
 
-Um den Drucker über **LAN** anzuschließen, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
+Um den Drucker über **LAN** mit dem Netzwerk zu verbinden, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
-Um den Drucker über **WLAN** anzuschließen, stecken Sie einen WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
+Um den Drucker über **WLAN** mit dem Netzwerk zu verbinden, stecken Sie einen WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
 Falls der Drucker über ein eingebautes WLAN-Modul verfügt, ist das **nicht** notwendig. 
 
-Um den Drucker über **USB** anzuschließen, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
+Alternativ zur Netzwerkverbindung können Sie den Drucker auch über **USB** direkt an eine Kasse anschließen. 
+Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des Kabels in einen freien USB-Anschluss an Ihrer Kasse. 
+Ein Anschluss an ein Scan-Smartphone über USB ist **nicht** möglich. 
 
 Schließen Sie das Netzteil an die "POWER"-Buchse am Drucker und an eine Steckdose an. 
 Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse umlegen. 
@@ -228,7 +230,7 @@ Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Prin
 
 ### Druck ist leer oder enthält nur Teile des Layouts 
 
-**Problem:** Gedruckte  Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
+**Problem:** Gedruckte Badges sind leer oder enthalten nur Teile des Layouts, z.B. nur das pretix-Logo. 
 Das Layout ist also zu groß für das Druckmaterial. 
 
 **Lösung:** Ändern Sie das Layout so, dass es auf das Papier passt. 

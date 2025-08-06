@@ -2,7 +2,7 @@
 
 Dieser Artikel behandelt die Einrichtung von Hardware für Ihre Veranstaltung. 
 Wir bieten [professionelle Hardware](https://pretix.eu/about/de/hardware) zur Miete und zum Kauf an. 
-Mit diesen Geräten können Sie Produkte verkaufen, am Einlass Tickets kontrollieren, sowie Belege, Tickets und Badges ausdrucken. 
+Mit diesen Geräten können Sie Produkte verkaufen, am Einlass Tickets kontrollieren, sowie Belege, Tickets und Badges drucken. 
 Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN. 
 
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
@@ -102,7 +102,7 @@ Nachdem die Scan-Smartphones ausreichend geladen sind, schalten Sie sie ein und 
 ### Kasse in Betrieb nehmen 
 
 Die von uns vermieteten und verkauften Kassen haben unterschiedliche Bauformen. 
-Manche von Ihnen haben einen eingebaute Belegdrucker. 
+Manche von ihnen haben einen eingebaute Belegdrucker. 
 Manche haben einen Standfuß. 
 Andere ähneln einfachen Tablets. 
 Die Bildschirme der Kassen sind deutlich größer als die der Scan-Smartphones. 
@@ -123,7 +123,7 @@ Folgen Sie dazu den Anweisungen im Artikel [Kassenanmeldung in Deutschland](../p
 ### Drucker in Betrieb nehmen 
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
-Die von uns angebotenen Ticketdrucker wie z.B. der Boca Lemur können auch Butterfly-Badges drucken. 
+Die von uns angebotenen Ticketdrucker wie z.B. der Boca Lemur können auch Butterfly-Badges bedrucken. 
 Für Badges in Form von Klebeetiketten verwenden Sie hingegen einen Etikettendrucker wie z.B. den Bixolon XD5-40d. 
 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Verbindung (LAN, WLAN oder USB) und bedruckbarem Material versorgen. 
