@@ -2,8 +2,8 @@
 
 This article tells you how to create, configure, and use check-in lists. 
 Check-in lists keep track of who attends your event. 
-In most cases, you need one check-in list for every separate entrance at your event. 
-If there is one venue with multiple entrances, then one shared check-in list is enough. 
+In most cases, you need one check-in list for every separate area with its own entrance at your event. 
+If there is one venue with multiple entrances, then one shared check-in list for all entrances is enough. 
 If you have separate entrances for separate products, such as fast lane access or VIP tickets, then you will need one check-in list for every entrance. 
 
 Check-in lists operate independently from one another. 
@@ -21,15 +21,59 @@ Check-in lists are handled on the event level, so you have to create an event fi
 ## General usage 
 
 This section explains how to set up and configure check-in lists. 
-In the most straightforward use case, you only need a single check-in list that includes all of your products. 
-pretix automatically creates such a check-in list named "Default" along with your event. 
+Creating an event also automatically creates a check-in list named "Default". 
+This check-in list includes all your products. 
+If your event only has one area and there are no separate merch tables, no separate sessions, no fast lane access and no VIP tickets, then this list is enough. 
+You do not need to make any changes to it. 
+
+However, if your event does include any of those things, then you need to configure the default check-in list and create new check-in lists. 
 
 In order to view the "Default" list, make changes to it, or create new lists, navigate to :navpath:Your event → :fa3-check-square-o: Check-in. 
 This lands you on the "Check-in lists" page. 
 
+Assume, for example, that you are selling the following types of products: 
+
+ - basic access tickets
+ - fast lane tickets
+ - merchandise that your staff distributes to customers at a designated merch table
+ - registrations for exclusive workshops 
+ - gift cards
+
+The following sections guide you through the usage of the check-in lists settings for the most straightforward use case possible and for the more complex example above. 
+
 ### Configuring a check-in list
 
-In order to configure a check-in list, click its name or the :btn-icon:fa3-wrench:: button. 
+In order to configure a check-in list, click the :btn-icon:fa3-wrench:: button next to it. 
+
+If you also want attendees who have not yet completed the payment for their order to be able to check in at your event, check the box next to "Include pending orders". 
+
+The box next to  "All products (including newly created ones)" is checked by default. 
+If all your products are admission products and there are no separate areas with their own entrances at your event, then you do not need to change that. 
+In any other case, uncheck the box and check the products you want to include on the list under "Limit to products". 
+If you want to implement a use case similar to the example provided above, check the boxes next to your basic access tickets and leave all other boxes unchecked. 
+You would then use this list at the main entrance to your event. 
+
+Once you are done, click the :btn:Save: button. 
+
+### Creating a new check-in list
+
+In order to create a new check-in list, navigate back to :navpath:Your event → :fa3-check-square-o: Check-in. 
+Click the :btn-icon:fa3-plus: Create a new check-in list: button. 
+Enter a name for the new check-in list and check the boxes next to any tickets you want to include on it. 
+
+If you want to implement a use case similar to the example provided above, name the check-in list "Fast lane". 
+Uncheck the box next to  "All products (including newly created ones)" and under "Limit to products", check the boxes next to your fast lane tickets. 
+You would then use this list at the fast lane entrance at your event. 
+
+Click the :btn:Save: button. 
+
+A merchandise table may seem like a very different use case from a check-in, but a check-in list is still useful for keeping track of who gets what merch, and which merch has not been picked up yet. 
+If you want to create a check-in list for the merchandise table, repeat the creation process described above, name it "Merchandise" or something similar, and limit it to the merchandise products. 
+
+If your event offers exclusive additional sessions such as workshops, create another check-in list for each of those workshops. 
+Give it a descriptive name and limit it to the workshop registration products. 
+
+Finally, since gift cards are only relevant for purchases and not for access to your event, you do **not** include gift cards on any of your check-in lists. 
 
 ## Applications
 
