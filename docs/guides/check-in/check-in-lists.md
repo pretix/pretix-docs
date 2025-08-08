@@ -28,8 +28,10 @@ You do not need to make any changes to it.
 
 However, if your event does include any of those things, then you need to configure the default check-in list and create new check-in lists. 
 
-In order to view the "Default" list, make changes to it, or create new lists, navigate to :navpath:Your event → :fa3-check-square-o: Check-in. 
+In order to view the "Default" list, make changes to it, or create new lists, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:. 
 This lands you on the "Check-in lists" page. 
+
+!['Check-in lists' page, including a text explanation and buttons for creating new lists, viewing connected devices, and resetting the check-in. There is a list of check-in lists that only contains the entry 'Default' with buttons for viewing, cloning, simulating, editing, and deleting the entry.](../../assets/screens/check-in/check-in-lists.png "Check-in lists page")
 
 Assume, for example, that you are selling the following types of products: 
 
@@ -53,11 +55,13 @@ In any other case, uncheck the box and check the products you want to include on
 If you want to implement a use case similar to the example provided above, check the boxes next to your basic access tickets and leave all other boxes unchecked. 
 You would then use this list at the main entrance to your event. 
 
+!['Check-in lists' page on the 'General' tab, displaying 'Default' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The standard ticket and discount ticket are checked and everything else is unchecked.](../../assets/screens/check-in/default.png "Edit check-in list default")
+
 Once you are done, click the :btn:Save: button. 
 
 ### Creating a new check-in list
 
-In order to create a new check-in list, navigate back to :navpath:Your event → :fa3-check-square-o: Check-in. 
+In order to create a new check-in list, navigate back to :navpath:Your event → :fa3-check-square-o: Check-in:. 
 Click the :btn-icon:fa3-plus: Create a new check-in list: button. 
 Enter a name for the new check-in list and check the boxes next to any tickets you want to include on it. 
 
@@ -65,13 +69,19 @@ If you want to implement a use case similar to the example provided above, name 
 Uncheck the box next to  "All products (including newly created ones)" and under "Limit to products", check the boxes next to your fast lane tickets. 
 You would then use this list at the fast lane entrance at your event. 
 
+!['Check-in list' page on the 'General' tab, displaying 'Fast lane' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The fast lane ticket is checked and everything else is unchecked.](../../assets/screens/check-in/fast-lane.png "Edit check-in list fast lane")
+
 Click the :btn:Save: button. 
 
 A merchandise table may seem like a very different use case from a check-in, but a check-in list is still useful for keeping track of who gets what merch, and which merch has not been picked up yet. 
 If you want to create a check-in list for the merchandise table, repeat the creation process described above, name it "Merchandise" or something similar, and limit it to the merchandise products. 
 
+!['Check-in list' page on the 'General' tab, displaying 'Merch table' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The sticker product is checked and everything else is unchecked.](../../assets/screens/check-in/merch-table.png "Edit check-in list merch table")
+
 If your event offers exclusive additional sessions such as workshops, create another check-in list for each of those workshops. 
 Give it a descriptive name and limit it to the workshop registration products. 
+
+!['Check-in list' page on the 'General' tab, displaying 'Workshop' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The workshop registration product is checked and everything else is unchecked.](../../assets/screens/check-in/workshop.png "Edit check-in list merch table")
 
 Finally, since gift cards are only relevant for purchases and not for access to your event, you do **not** include gift cards on any of your check-in lists. 
 
