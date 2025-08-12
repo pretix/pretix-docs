@@ -79,6 +79,25 @@ In order to change the details of the data that pretix maps to the entries in Hu
 The first line under "Properties" specifies the identifier. 
 Under "pretix Field", select `Order code [Text (one line)]`. 
 Under "HubSpot Field", select `pretix-order-id (pretix_order_id | string)`. 
+The "Mode" option is fixed to `Identifier`. 
+
+Click the :btn-icon:fa3-plus: Add property: button to add a new property to export to HubSpot. 
+Map the pretix field `Order email [Text (one line)]` to the HubSpot field `Email (email | string). 
+This is useful because HubSpot internally uses the email address as the unique identifier for an entry in the list of contacts. 
+
+If you set "Mode" to `Overwrite`, then the plugin will overwrite any entries in your HubSpot contacts database. 
+If you set it to `Fill if new`, then 
+If you set it to `Fill if empty`, then 
+If you set it to `Add to list`, then 
+
+Add more properties and map the information you ask of your customers to the closest matching field in HubSpot. 
+For example, your mapping could look like this: 
+
+![Page titled 'HubSpot Integration' with an object mapping from Order to Contacts. The configuration maps order code, email, name, address, and company name to HubSpot.](../../assets/screens/hubspot/object-mapping-example.png "Object Mapping Example")
+
+This uses the order code of your orders in pretix to the property `pretix-order-id` in HubSpot. 
+It also maps email, given name, family name, street, post code, country, and company name onto the most closely matching properties in HubSpot. 
+According to the configuration in the screenshot, the plugin overwrites all those properties. 
 
 ## Troubleshooting 
 
