@@ -42,6 +42,44 @@ Instead of the "Request access" button, this page now states that the event is c
 
 Click the :btn:Save: button. 
 
+### Adding customers and attendees to your HubSpot contacts database
+
+This section explains how to add customers or attendees in pretix to your contacts database in HubSpot. 
+
+!!! Note 
+    The following paragraphs decide actions you need to take in the HubSpot backend. 
+    pretix GmbH is not involved in the development of that software. 
+    The process described here may be different due to an update. 
+
+In order to so, you need to create a "pretix-order-id" property in HubSpot. 
+pretix will use this property during export. 
+Refer to the HubSpot documentation on how to [Create a custom property](https://knowledge.hubspot.com/properties/create-and-edit-properties?hubs_content=knowledge.hubspot.com/properties/export-property-history&hubs_content-cta=kb-breadcrumbs__item#create-a-custom-property).
+
+Add the following property details: 
+
+ - Property label: pretix-order-id
+ - Object type: Contact 
+ - Group: Order information 
+ - Field type: Single-line text
+
+![HubSpot page titled 'Add property details', displaying the properties described above plus an optional description field: 'For importing contact information from pretix'. The 'Field type' is on a separate page. ](../../assets/screens/hubspot/property-details.png "HubSpot Add property details")
+
+Confirm by clicking the :btn:Create: button. 
+
+After you have created the property in HubSpot, switch to the pretix backend. 
+Navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Under "Object mappings", edit the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
+
+Under "pretix object type", choose "Order". 
+Under "HubSpot order type", choose "Contacts". 
+Click the :btn:Save: button. 
+
+In order to change the details of the data that pretix maps to the entries in HubSpot, click the :btn-icon:fa3-edit: Edit mapping: button. 
+
+The first line under "Properties" specifies the identifier. 
+Under "pretix Field", select `Order code [Text (one line)]`. 
+Under "HubSpot Field", select `pretix-order-id (pretix_order_id | string)`. 
+
 ## Troubleshooting 
 
 What are common problems that could be encountered here? How do you solve them? 
