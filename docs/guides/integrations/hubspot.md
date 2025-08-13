@@ -7,15 +7,27 @@ This article explains the HubSpot integration plugin in pretix and what you can 
 Plugins are handled on the event level, so you have to create an event first. 
 You need to have access to a HubSpot account. 
 
-## How To
+## General usage
 
-This section explains how to enable the HubSpot plugin and how to set up the connection between your pretix account and your HubSpot account. 
+This section explains: 
+
+ - how to enable the HubSpot plugin
+ - how to set up the connection between your pretix account and your HubSpot account
+ - how to create a custom property in HubSpot for mapping exports
+
+These three steps are necessary before you can export any data from pretix to HubSpot. 
+
+### Enabling the plugin
 
 In order to activate the HubSpot plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "HubSpot" plugin. 
 
-Click the :btn-icon:fa3-gear: Settings: drop-down menu next to HubSpot and then click the entry :btn:Settings > HubSpot:. 
-This takes you to a page titled "HubSpot Integration". 
+### Setting up the connection to HubSpot
+
+Click the :btn-icon:fa3-gear: Settings: drop-down menu next to the HubSpot plugin and then click the entry :btn:Settings > HubSpot:. 
+Alternatively, navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
+Both paths take you to a page titled "HubSpot Integration". 
+
 In order to set up the connection to HubSpot, click the :btn:Request access: button. 
 
 ![Page titled 'HubSpot Integration', displaying a large purple button labeled 'Request access'.](../../assets/screens/hubspot/request-access.png "HubSpot Integration Request access")
@@ -25,7 +37,7 @@ This opens a page on HubSpot, prompting you to create a HubSpot account or to si
 ![Page titled 'Connecting your pretix account to HubSpot', displaying the pretix and HubSpot logos and buttons labeled 'Create a new HubSpot account' and 'Sign in to your HubSpot account'.](../../assets/screens/hubspot/connecting.png "Connecting your pretix account to HubSpot")
 
 Click the :btn:Sign in to your HubSpot account: button. 
-This takes you to a page prompting you to choose an account
+This takes you to a page prompting you to choose an account. 
 
 ![Page titled 'Connecting pretix to HubSpot', displaying a list of accounts to choose from and a button labeled 'Choose account'.](../../assets/screens/hubspot/choose-account.png "Choose account")
 
@@ -35,39 +47,43 @@ The next page warns you that you are connecting an unverified app.
 ![Page titled 'Connecting pretix to HubSpot', displaying a warning that 'You're connecting an unverified app' and a list of permissions for changes pretix needs to be able to make in HubSpot](../../assets/screens/hubspot/connect-app.png "Connect app")
 
 Scroll to the bottom of the page and click the :btn:Connect app: button. 
-Once you have done that, you will be taken back to the HubSpot Integration settings page. 
+Once you have done that, you will be taken back to the HubSpot Integration settings page in the pretix backend. 
 Instead of the "Request access" button, this page now states that the event is connected to HubSpot and displays settings for object mappings. 
 
 ![Page titled 'HubSpot Integration', displaying a green message box saying 'The HubSpot integration is now active', a box with the status of the HubSpot connection, and settings for object mappings.](../../assets/screens/hubspot/integration-active.png "HubSpot Integration active")
 
 Click the :btn:Save: button. 
 
-### Adding customers and attendees to your HubSpot contacts database
+### Creating a custom property for mapping 
 
-This section explains how to add customers or attendees in pretix to your contacts database in HubSpot. 
+Before you can export any information from pretix to HubSpot, you need to create a custom property. 
+The integration plugin will use this property during export. 
 
-!!! Note 
-    The following paragraphs decide actions you need to take in the HubSpot backend. 
-    pretix GmbH is not involved in the development of that software. 
-    The process described here may be different due to an update. 
-
-In order to so, you need to create a "pretix-order-id" property in HubSpot. 
-pretix will use this property during export. 
 Refer to the HubSpot documentation on how to [Create a custom property](https://knowledge.hubspot.com/properties/create-and-edit-properties?hubs_content=knowledge.hubspot.com/properties/export-property-history&hubs_content-cta=kb-breadcrumbs__item#create-a-custom-property).
-
 Add the following property details: 
 
  - Property label: pretix-order-id
  - Object type: Contact 
  - Group: Order information 
- - Field type: Single-line text
+ - Field type: Single-line text 
 
 ![HubSpot page titled 'Add property details', displaying the properties described above plus an optional description field: 'For importing contact information from pretix'. The 'Field type' is on a separate page. ](../../assets/screens/hubspot/property-details.png "HubSpot Add property details")
 
 Confirm by clicking the :btn:Create: button. 
 
-After you have created the property in HubSpot, switch to the pretix backend. 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+## Applications
+
+This section explains some useful applications of the HubSpot integration plugin: 
+
+ - [Adding customers and attendees to your HubSpot contacts database](hubspot.md#adding-customers-and-attendees-to-your-hubspot-contacts-database)
+ - [Adding payments to your HubSpot deals database](hubspot.md#adding-payments-to-your-hubspot-deals-database)
+
+Before you can do any of these things, you have to set up the plugin as described in [General usage](hubspot.md#general-usage). 
+
+### Adding customers and attendees to your HubSpot contacts database
+
+This section explains how to add customers or attendees in pretix to your contacts database in HubSpot. 
+Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 Under "Object mappings", edit the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
 
 Under "pretix object type", choose "Order". 
@@ -85,10 +101,11 @@ Click the :btn-icon:fa3-plus: Add property: button to add a new property to expo
 Map the pretix field `Order email [Text (one line)]` to the HubSpot field `Email (email | string). 
 This is useful because HubSpot internally uses the email address as the unique identifier for an entry in the list of contacts. 
 
-If you set "Mode" to `Overwrite`, then the plugin will overwrite any entries in your HubSpot contacts database. 
-If you set it to `Fill if new`, then 
-If you set it to `Fill if empty`, then 
-If you set it to `Add to list`, then 
+If you set "Mode" to `Overwrite`, then the plugin will overwrite any fields in your HubSpot database. 
+If you set it to `Fill if new`, then it will only fill the field on a new entry. 
+If you set it to `Fill if empty`, then the plugin will only fill the field if the field is empty. 
+If you set it to `Add to list`, then the plugin will create a list in the HubSpot field. 
+The HubSpot field will contain a list of its previous content and the content of the pretix field appended to the end of that list. 
 
 Add more properties and map the information you ask of your customers to the closest matching field in HubSpot. 
 For example, your mapping could look like this: 
@@ -99,14 +116,22 @@ This uses the order code of your orders in pretix to the property `pretix-order-
 It also maps email, given name, family name, street, post code, country, and company name onto the most closely matching properties in HubSpot. 
 According to the configuration in the screenshot, the plugin overwrites all those properties. 
 
-## Troubleshooting 
+If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to the HubSpot integration page. 
+Add an object mapping with the "pretix object type" set to `Order position` and the "HubSpot object type" set to `Contacts`. 
 
-What are common problems that could be encountered here? How do you solve them? 
+Edit the mapping and set it up analogously to the `Order` mapping, replacing invoice data with attendee data. 
 
-## Further Information
+### Adding payments to your HubSpot deals database
 
-What other media do we have on the subject? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
+This section explains how to add payments from pretix to your deals database in HubSpot. 
+Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Under "Object mappings", edit the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
 
-## See Also 
+Under "pretix object type", choose "Order". 
+Under "HubSpot order type", choose "Deals". 
+Click the :btn:Save: button. 
 
-Link to other relevant guides, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
+In order to change the details of the data that pretix maps to the entries in HubSpot, click the :btn-icon:fa3-edit: Edit mapping: button. 
+
+The first line under "Properties" specifies the identifier. 
+Under "pretix Field", select `Order code [Text (one line)]`. 
