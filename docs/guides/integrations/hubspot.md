@@ -59,13 +59,20 @@ Click the :btn:Save: button.
 Before you can export any information from pretix to HubSpot, you need to create a custom property. 
 The integration plugin will use this property during export. 
 
-Refer to the HubSpot documentation on how to [Create a custom property](https://knowledge.hubspot.com/properties/create-and-edit-properties?hubs_content=knowledge.hubspot.com/properties/export-property-history&hubs_content-cta=kb-breadcrumbs__item#create-a-custom-property).
+Refer to the HubSpot documentation on how to [Create a custom property](https://knowledge.hubspot.com/properties/create-and-edit-properties#create-a-custom-property).
 Add the following property details: 
 
- - Property label: pretix-order-id
- - Object type: Contact 
- - Group: Order information 
- - Field type: Single-line text 
+ - Property label: `pretix-order-id`
+ - Object type: `Contact` 
+ - Group: Order `information` 
+ - Field type: `Single-line text` 
+
+The "Object type" detail depends on your intended use case. 
+If you want to export data to the contacts database in HubSpot, select `Contact`. 
+If you want to export to the deals database, select `Deal`. 
+
+If you want to export to both, create two objects: one with the `Contact` type, the other with the `Deal` type. 
+It is possible to give both objects the same name. 
 
 ![HubSpot page titled 'Add property details', displaying the properties described above plus an optional description field: 'For importing contact information from pretix'. The 'Field type' is on a separate page. ](../../assets/screens/hubspot/property-details.png "HubSpot Add property details")
 
@@ -135,3 +142,8 @@ In order to change the details of the data that pretix maps to the entries in Hu
 
 The first line under "Properties" specifies the identifier. 
 Under "pretix Field", select `Order code [Text (one line)]`. 
+Under "HubSpot Field", select `pretix-order-id (pretix_order_id | string)`. 
+The "Mode" option is fixed to `Identifier`. 
+
+Click the :btn-icon:fa3-plus: Add property: button to add a new property to export to HubSpot. 
+Add pretix fields such as the date and time or the amount and map them to corresponding fields in HubSpot. 
