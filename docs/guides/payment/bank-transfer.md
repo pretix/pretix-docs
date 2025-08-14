@@ -2,7 +2,7 @@
 
 Bank transfers are one of the numerous options for handling payments within pretix. 
 Payments made via bank transfer go directly to your bank account. 
-By default, pretix does **not** monitor payments arriving at your bank account. 
+By default, pretix does not monitor payments arriving at your bank account. 
 If you are using pretix Hosted, you can connect your bank account via our integration with GoCardless for automatic imports of bank data. 
 
 The alternatives for notifying pretix of incoming payments are: manually approving payments as complete or regularly importing digital bank statements. 
@@ -10,7 +10,7 @@ This article tells you how to set up a bank connection so that you can use it to
 It also tells you how to notify pretix of incoming payments. 
 
 !!! Note 
-    pretix does **not** handle refunds via bank transfer automatically. 
+    pretix does not handle refunds via bank transfer automatically. 
     If a customer cancels their order and requests a refund via the original payment method, and that payment method is bank transfer, you will receive an email notification. 
     You will have to issue the refund manually. 
 
@@ -21,7 +21,7 @@ You need to have access to the bank account that you want to use with pretix.
 
 ## How To
 
-Using bank transfer as a payment provider in pretix requires the following steps: 
+Using bank transfer as a payment method in pretix requires the following steps: 
 
  1. Setting up bank transfers by enabling the bank transfer plugin and adjusting the bank transfer settings 
  2. Setting up automatic transaction import **or** regularly importing a digital bank statement 
@@ -39,7 +39,7 @@ Switch to the :btn:Payment providers: tab.
 This page displays the bank transfer plugin at the top. 
 It should be active by default. 
 If it is active, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
-If it is **not** active, the tag will be missing and it will have a purple :btn:Enable: button. 
+If it is not active, the tag will be missing and it will have a purple :btn:Enable: button. 
 Verify that the plugin is active. 
 
 ![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe. Gift card is active and all other entries are inactive. All entries have 'Settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
@@ -85,7 +85,7 @@ Usually, this includes all transactions of the last 90 days.
 
 This can lead to problems if you have previously used a different method to import bank data to the same organizer account. 
 Data may be formatted differently and thus, the software may not be able to interpret it as depicting the same transactions. 
-Select the first day for which you have **not** imported bank data to the same organizer account if this applies to you. 
+Select the first day for which you have not imported bank data to the same organizer account if this applies to you. 
 Do not leave a gap between the old and new imports, for example if you previously imported data before the end of the banking day. 
 
 If you have not previously used a different method for bank data imports, you can leave the field empty. 
@@ -131,7 +131,7 @@ This will take you to a page titled "Import bank data".
 If you want to import data for a **single event**, navigate to :navpath:Your event → :fa3-bank: Bank transfer:. 
 This will also take you to a page titled "Import bank data". 
 The two pages are very similar, but one is located on the event level and the other is located on the organizer level. 
-Regardless which option you choose, the process is the same from here on out. 
+Regardless of which option you choose, the process is the same from here on out. 
 
 Click the :btn:Browse…: button and select the export file for upload. 
 

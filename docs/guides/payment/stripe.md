@@ -2,7 +2,7 @@
 
 Stripe is one of the many options for handling payments within pretix. 
 Stripe allows handling payments via the following methods: 
-Affirm, Alipay, Apple Pay, Bancontact, credit card, EPS, giropay, Google Pay, iDEAL, Klarna, Multibanco, Przelewy24, SEPA Direct debit, SOFORT, Swish, and WeChat Pay. 
+Affirm, Alipay, Apple Pay, Bancontact, credit card, EPS, Google Pay, iDEAL, Klarna, MobilePay, Multibanco, Przelewy24, Revolut Pay, SEPA Direct debit, Swish, TWINT, and WeChat Pay. 
 This article tells you how to connect to your Stripe account and use it to receive payments via pretix. 
 
 ## Prerequisites
@@ -31,7 +31,7 @@ Switch to the :btn:Payment providers: tab.
 This page displays the Stripe plugin at the top. 
 It should be active by default. 
 If it is active, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
-If it is **not** active, the tag will be missing and it will have a purple :btn:Enable: button. 
+If it is not active, the tag will be missing and it will have a purple :btn:Enable: button. 
 Verify that the plugin is active. . 
 
 ![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe. Gift card is enabled and all other entries are disabled. All entries have 'Settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
