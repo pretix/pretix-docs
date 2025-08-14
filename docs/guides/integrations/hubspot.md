@@ -139,7 +139,6 @@ Under "HubSpot order type", choose "Deals".
 Click the :btn:Save: button. 
 
 In order to change the details of the data that pretix maps to the entries in HubSpot, click the :btn-icon:fa3-edit: Edit mapping: button. 
-
 The first line under "Properties" specifies the identifier. 
 Under "pretix Field", select `Order code [Text (one line)]`. 
 Under "HubSpot Field", select `pretix-order-id (pretix_order_id | string)`. 
@@ -147,3 +146,26 @@ The "Mode" option is fixed to `Identifier`.
 
 Click the :btn-icon:fa3-plus: Add property: button to add a new property to export to HubSpot. 
 Add pretix fields such as the date and time or the amount and map them to corresponding fields in HubSpot. 
+
+### Managing data transfers 
+
+Once you have set up exports from pretix to HubSpot, the plugin will transfer data every time the server executes `periodic_task`. 
+The frequency depends on the configuration of the server. 
+
+<!-- md:hosted -->
+
+The pretix Hosted server runs the `periodic_task` every ten minutes, starting five minutes after the full hour. 
+Thus, the plugin exports every incoming order to HubSpot within ten minutes or less. 
+
+The plugin does not export any orders your customers placed before you set up the connection to HubSpot. 
+It also does not automatically export any data again after you have made changes to the HubSpot integration settings. 
+If you want to export data from older orders, or export again following a change in the configuration, then you have to trigger a data transfer on those orders manually. 
+
+In order to do so, navigate to :navpath:Your event → :fa3-shopping-cart: Orders: and select the order in question. 
+In the box labeled "Data transfer to external systems", click the :btn-icon:fa3-refresh: Sync now: button. 
+
+The box will then display the status ":fa3-hourglass: Pending". 
+The plugin will transfer data to HubSpot the next time the server executes `periodic_task`. 
+If you refresh the page after that, then the box will display links to the records that were created in HubSpot during the export along with timestamps. 
+
+If an error occurred during the export, then the box will display an ":fa3-warning: Error" status as well as buttons for retrying or canceling the transfer. 
