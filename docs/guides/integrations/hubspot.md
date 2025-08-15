@@ -9,13 +9,8 @@ You need to have access to a HubSpot account.
 
 ## General usage
 
-This section explains: 
-
- - how to enable the HubSpot plugin
- - how to set up the connection between your pretix account and your HubSpot account
- - how to create a custom property in HubSpot for mapping exports
-
-These three steps are necessary before you can export any data from pretix to HubSpot. 
+This section explains how to enable the HubSpot plugin and how to set up the connection between your pretix account and your HubSpot account
+These steps are necessary before you can export any data from pretix to HubSpot. 
 
 ### Enabling the plugin
 
@@ -54,30 +49,6 @@ Instead of the "Request access" button, this page now states that the event is c
 
 Click the :btn:Save: button. 
 
-### Creating a custom property for mapping 
-
-Before you can export any information from pretix to HubSpot, you need to create a custom property. 
-The integration plugin will use this property during export. 
-
-Refer to the HubSpot documentation on how to [Create a custom property](https://knowledge.hubspot.com/properties/create-and-edit-properties#create-a-custom-property).
-Add the following property details: 
-
- - Property label: `pretix-order-id`
- - Object type: `Contact` 
- - Group: Order `information` 
- - Field type: `Single-line text` 
-
-The "Object type" detail depends on your intended use case. 
-If you want to export data to the contacts database in HubSpot, select `Contact`. 
-If you want to export to the deals database, select `Deal`. 
-
-If you want to export to both, create two objects: one with the `Contact` type, the other with the `Deal` type. 
-It is possible to give both objects the same name. 
-
-![HubSpot page titled 'Add property details', displaying the properties described above plus an optional description field: 'For importing contact information from pretix'. The 'Field type' is on a separate page. ](../../assets/screens/hubspot/property-details.png "HubSpot Add property details")
-
-Confirm by clicking the :btn:Create: button. 
-
 ## Applications
 
 This section explains some useful applications of the HubSpot integration plugin: 
@@ -89,50 +60,81 @@ Before you can do any of these things, you have to set up the plugin as describe
 
 ### Adding customers and attendees to your HubSpot contacts database
 
-This section explains how to add customers or attendees in pretix to your contacts database in HubSpot. 
+This section explains how to add customers in pretix to your contacts database in HubSpot. 
 Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
-Under "Object mappings", edit the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
+Under "Object mappings", change the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
 
-Under "pretix object type", choose "Order". 
+Under "pretix object type", choose "Order position". 
 Under "HubSpot order type", choose "Contacts". 
 Click the :btn:Save: button. 
 
 In order to change the details of the data that pretix maps to the entries in HubSpot, click the :btn-icon:fa3-edit: Edit mapping: button. 
 
 The first line under "Properties" specifies the identifier. 
-Under "pretix Field", select `Order code [Text (one line)]`. 
-Under "HubSpot Field", select `pretix-order-id (pretix_order_id | string)`. 
-The "Mode" option is fixed to `Identifier`. 
+Under "pretix Field", select `Order email [Text (one line)]`. 
+Under "HubSpot Field", select `Email (email | string)`. 
+The "Mode" option is fixed to `Identifier`, meaning that HubSpot will use this line as the unique identifier for an entry in the contacts database. 
 
 Click the :btn-icon:fa3-plus: Add property: button to add a new property to export to HubSpot. 
-Map the pretix field `Order email [Text (one line)]` to the HubSpot field `Email (email | string). 
-This is useful because HubSpot internally uses the email address as the unique identifier for an entry in the list of contacts. 
+Map invoice address fields from pretix to corresponding fields in HubSpot. 
 
 If you set "Mode" to `Overwrite`, then the plugin will overwrite any fields in your HubSpot database. 
-If you set it to `Fill if new`, then it will only fill the field on a new entry. 
-If you set it to `Fill if empty`, then the plugin will only fill the field if the field is empty. 
-If you set it to `Add to list`, then the plugin will create a list in the HubSpot field. 
-The HubSpot field will contain a list of its previous content and the content of the pretix field appended to the end of that list. 
 
-Add more properties and map the information you ask of your customers to the closest matching field in HubSpot. 
+If you set it to `Fill if new`, then it will only fill the field on an entirely new entry. 
+The plugin will not make any changes if an entry with the same unique identifier already exists. 
+This avoids overwriting existing entries and filling them with mismatching data. 
+
+If you set "Mode" to `Fill if empty`, then the plugin will only fill empty fields. 
+This can complete an entry with missing information, but it may sometimes complete it with mismatching information. 
+
+If you set it to `Add to list`, then the plugin will add the content from pretix as an item in a list-type HubSpot field. 
+This is suitable for HubSpot variables that allow multiple entries, such as "Multiple checkboxes", "Radio select", and "Dropdown select". 
+If you use this on a text variable in HubSpot, the plugin will append the text from pretix to the end, separated by semicolon. 
+If you use it on a number variable, then the export will work without issues on an empty field, but will cause an error if the field is already filled. 
+
 For example, your mapping could look like this: 
 
-![Page titled 'HubSpot Integration' with an object mapping from Order to Contacts. The configuration maps order code, email, name, address, and company name to HubSpot.](../../assets/screens/hubspot/object-mapping-example.png "Object Mapping Example")
+![Page titled 'HubSpot Integration' with an object mapping from Order to Contacts. The configuration maps order email, as well as invoice name, address, and company name to HubSpot.](../../assets/screens/hubspot/object-mapping-example.png "Object Mapping Example")
 
-This uses the order code of your orders in pretix to the property `pretix-order-id` in HubSpot. 
-It also maps email, given name, family name, street, post code, country, and company name onto the most closely matching properties in HubSpot. 
+This maps the email address used to place an order in pretix to the email property in HubSpot. 
+It also maps  given name, family name, street, post code, city, country code, and company name onto the most closely matching properties in HubSpot. 
 According to the configuration in the screenshot, the plugin overwrites all those properties. 
 
-If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to the HubSpot integration page. 
+Once you are satisfied with your mapping, click the :btn:Save: button. 
+
+### Adding attendees to your HubSpot contacts database
+
+If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 Add an object mapping with the "pretix object type" set to `Order position` and the "HubSpot object type" set to `Contacts`. 
 
-Edit the mapping and set it up analogously to the `Order` mapping, replacing invoice data with attendee data. 
+Edit the mapping and set it up analogously to the `Order` mapping, replacing invoice data with attendee data, but still mapping to the same HubSpot fields. 
 
 ### Adding payments to your HubSpot deals database
 
 This section explains how to add payments from pretix to your deals database in HubSpot. 
+
+Before you can export any information from pretix to the deals database in HubSpot, you need to create a custom property. 
+The integration plugin will use this property during export. 
+
+Refer to the HubSpot documentation on how to [Create a custom property](https://knowledge.hubspot.com/properties/create-and-edit-properties#create-a-custom-property).
+Under "Details", enter the following: 
+
+ - Property label: `pretix-order-id`
+ - Object type: `Deal` 
+ - Group: `Deal information` 
+
+![HubSpot page titled 'Add property details', displaying the properties described above plus an optional description field: 'For importing deal information from pretix'. ](../../assets/screens/hubspot/property-details.png "HubSpot Add property details")
+
+Under "Field type", select `Single-line text`. 
+Under rules, check the box next to "Require unique values for this property". 
+
+![HubSpot page titled 'Select property rules', displaying, among other things, the subheading *Simple validation rules' and the activated checkbox 'Require unique values for this property (0 of 10) . ](../../assets/screens/hubspot/property-rules.png "HubSpot Select property rules")
+
+Some of these settings cannot be changed after the property has been created. 
+Ensure that you have configured the property as described here and then click the :btn:Create: button. 
+
 Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
-Under "Object mappings", edit the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
+Under "Object mappings", change the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
 
 Under "pretix object type", choose "Order". 
 Under "HubSpot order type", choose "Deals". 
@@ -146,6 +148,8 @@ The "Mode" option is fixed to `Identifier`.
 
 Click the :btn-icon:fa3-plus: Add property: button to add a new property to export to HubSpot. 
 Add pretix fields such as the date and time or the amount and map them to corresponding fields in HubSpot. 
+
+Click the :btn:Save: button to confirm. 
 
 ### Managing data transfers 
 
