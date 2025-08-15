@@ -58,7 +58,7 @@ This section explains some useful applications of the HubSpot integration plugin
 
 Before you can do any of these things, you have to set up the plugin as described in [General usage](hubspot.md#general-usage). 
 
-### Adding customers and attendees to your HubSpot contacts database
+### Adding customers to your HubSpot contacts database
 
 This section explains how to add customers in pretix to your contacts database in HubSpot. 
 Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
@@ -107,7 +107,7 @@ Once you are satisfied with your mapping, click the :btn:Save: button.
 If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 Add an object mapping with the "pretix object type" set to `Order position` and the "HubSpot object type" set to `Contacts`. 
 
-Edit the mapping and set it up analogously to the `Order` mapping, replacing invoice data with attendee data, but still mapping to the same HubSpot fields. 
+Edit the mapping and set it up analogously to the customer mapping [described above](hubspot.md#adding-customers-to-your-hubspot-contacts-database), replacing invoice data with attendee data, but still mapping to the same HubSpot fields. 
 
 ### Adding payments to your HubSpot deals database
 
