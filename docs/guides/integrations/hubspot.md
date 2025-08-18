@@ -156,14 +156,12 @@ Click the :btn:Save: button to confirm.
 
 Once you have set up exports from pretix to HubSpot, the plugin will transfer data every time the server executes `periodic_task`. 
 The frequency depends on the configuration of the server. 
-
-<!-- md:hosted -->
-
 The pretix Hosted server runs the `periodic_task` every ten minutes, starting five minutes after the full hour. 
 Thus, the plugin exports every incoming order to HubSpot within ten minutes or less. 
 
-The plugin does not export any orders your customers placed before you set up the connection to HubSpot. 
-It also does not automatically export any data again after you have made changes to the HubSpot integration settings. 
+The plugin only exports data from new incoming orders. 
+It does not export any orders your customers placed before you set up the connection to HubSpot. 
+It also does not automatically export any data a second time, even if you make changes to the configuration. 
 If you want to export data from older orders, or export again following a change in the configuration, then you have to trigger a data transfer on those orders manually. 
 
 In order to do so, navigate to :navpath:Your event → :fa3-shopping-cart: Orders: and select the order in question. 
@@ -173,4 +171,24 @@ The box will then display the status ":fa3-hourglass: Pending".
 The plugin will transfer data to HubSpot the next time the server executes `periodic_task`. 
 If you refresh the page after that, then the box will display links to the records that were created in HubSpot during the export along with timestamps. 
 
-If an error occurred during the export, then the box will display an ":fa3-warning: Error" status as well as buttons for retrying or canceling the transfer. 
+### Handling errors
+
+In order to check for errors that occur during the export to HubSpot, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+If errors have occurred, the page will display a warning box. 
+
+![Page titled 'HubSpot Integration', displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error.png "HubSpot Integration Error")
+
+Click the :btn:Show sync problems: button. 
+This takes you to an overview of orders with which problems have occurred during the export to HubSpot. 
+
+![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/sync-problems.png "Sync problems")
+
+If you have previously made successful exports with the same HubSpot plugin configuration, then the error may be temporary. 
+Check the status of the pretix server, the HubSpot server, and your internet provider. 
+If you are using pretix Hosted, then you can visit [https://pretixstatus.com/](https://pretixstatus.com/) to check the status of the pretix server. 
+
+Once you have confirmed that all of these services are working as intended, navigate back to the "Sync problems" page. 
+Check the box at the top of the list and click the :btn-icon:fa3-refresh: Retry selected: button. 
+This marks these orders for export to HubSpot upon the next time the server runs the job. 
+Wait ten minutes and then either refresh the page or navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+If the errors are resolved, then the list on the "Sync problems" page will be empty and the warning box on the "HubSpot" settings page will have disappeared. 
