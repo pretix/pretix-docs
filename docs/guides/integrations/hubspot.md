@@ -1,6 +1,7 @@
 # HubSpot
 
-This article explains the HubSpot integration plugin in pretix and what you can do with it. 
+The HubSpot integration plugin allows you to export data such as customer contact data or transactions to HubSpot. 
+This article explains how to use it. 
 
 ## Prerequisites
 
