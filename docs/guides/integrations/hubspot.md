@@ -79,6 +79,12 @@ The "Mode" option is fixed to `Identifier`, meaning that HubSpot will use this l
 Click the :btn-icon:fa3-plus: Add property: button to add a new property to export to HubSpot. 
 Map invoice address fields from pretix to corresponding fields in HubSpot. 
 
+Pair pretix fields of the type `Text (one line)` with HubSpot fields of the type `string`. 
+Pair pretix fields of the type `Number` with HubSpot fields of the type `number`. 
+Pair pretix fields of the type `Choose one from a list` with HubSpot fields of the type `enumeration`. 
+Pair pretix fields of the type `Date and Time` with HubSpot fields of the type `datetime`. 
+If a warning symbol :fa3-warning: appears in one of the lines, that means that line may cause issues due to incompatible data types. 
+
 If you set "Mode" to `Overwrite`, then the plugin will overwrite any fields in your HubSpot database. 
 
 If you set it to `Fill if new`, then it will only fill the field on an entirely new entry. 
@@ -171,17 +177,23 @@ The box will then display the status ":fa3-hourglass: Pending".
 The plugin will transfer data to HubSpot the next time the server executes `periodic_task`. 
 If you refresh the page after that, then the box will display links to the records that were created in HubSpot during the export along with timestamps. 
 
-### Handling errors
+## Troubleshooting
 
 In order to check for errors that occur during the export to HubSpot, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 If errors have occurred, the page will display a warning box. 
 
 ![Page titled 'HubSpot Integration', displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error.png "HubSpot Integration Error")
 
-Click the :btn:Show sync problems: button. 
+Click the :btn:Show sync problems: button in the warning box. 
 This takes you to an overview of orders with which problems have occurred during the export to HubSpot. 
 
 ![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/sync-problems.png "Sync problems")
+
+You can also check individual orders for errors by navigating to :navpath:Your event → :fa3-shopping-cart: Orders: and selecting the order in question. 
+Take a look at the box labeled "Data transfer to external systems". 
+If this box displays ":fa3-warning Error" underneath the heading "HubSpot", then there is an issue with the export of this order's data to HubSpot. 
+
+### Handling temporary errors
 
 If you have previously made successful exports with the same HubSpot plugin configuration, then the error may be temporary. 
 Check the status of the pretix server, the HubSpot server, and your internet provider. 
@@ -190,5 +202,22 @@ If you are using pretix Hosted, then you can visit [https://pretixstatus.com/](h
 Once you have confirmed that all of these services are working as intended, navigate back to the "Sync problems" page. 
 Check the box at the top of the list and click the :btn-icon:fa3-refresh: Retry selected: button. 
 This marks these orders for export to HubSpot upon the next time the server runs the job. 
+
 Wait ten minutes and then either refresh the page or navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 If the errors are resolved, then the list on the "Sync problems" page will be empty and the warning box on the "HubSpot" settings page will have disappeared. 
+
+### Handling configuration errors
+
+If errors are occurring after you have made changes to the configuration of the HubSpot plugin, then it is likely that the configuration is faulty and causes the errors. 
+Navigate to navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
+If a warning symbol :fa3-warning: appears in one of the lines, then that line is causing issues due to incompatible data types. 
+
+Change the "pretix Field" and "HubSpot Field" to a compatible pair of entries. 
+Pair pretix fields of the type `Text (one line)` with HubSpot fields of the type `string`. 
+Pair pretix fields of the type `Number` with HubSpot fields of the type `number`. 
+Pair pretix fields of the type `Choose one from a list` with HubSpot fields of the type `enumeration`. 
+Pair pretix fields of the type `Date and Time` with HubSpot fields of the type `datetime`. 
+Click the :btn:Save: button to confirm. 
+
+Repeat this process for every mapping in your configuration. 
+Confirm that no warnings pop up in any of the mappings. 
