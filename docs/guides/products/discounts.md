@@ -135,7 +135,7 @@ This option starts out relatively complex, but the complexity does not grow expo
 Generally speaking, the first option makes more sense if you have a small number of basic products, and the second option makes more sense if that number is larger than four or five. 
 Both methods will be explained in the following subsections. 
 
-If you want to offer a discount for large orders regardless of which products are purchased, refer to the section on [group discounts](discounts.md#group-discounts) instead. 
+If you want to offer a discount for large orders regardless of which products are purchased, refer to the section on [group discounts and discounts for large orders](discounts.md#group-discounts-and-discounts-for-large-orders) instead. 
 
 #### Option A: Combination products
 
@@ -255,10 +255,22 @@ At least one of the conditions below (OR)
 
 ### Group discounts and discounts for large orders
 
-pretix gives you several methods for offering discounts to whole groups of people attending your event. 
-These methods work for any large orders regardless of which products are purchased. 
-You can either set up a rule for discounts that is applied automatically if a purchase meets certain conditions; offer fixed group packages at reduced prices; or offer cheaper tickets tied to a minimum order amount. 
+pretix gives you several methods for offering discounts on large orders regardless of which products are purchased. 
+This can be useful for offering group discounts. 
+You can offer cheaper tickets tied to a minimum order amount; set up a rule for discounts that is applied automatically if a purchase meets certain conditions; or offer fixed group packages at reduced prices. 
 The following subsections will explain each method. 
+
+#### Minimum order amount
+
+You can use the minimum order amount feature to promote discounted group tickets. 
+In order to do so, create a single-person ticket at a reduced price. 
+Use the "Minimum amount per order" option to define the minimal group size for which you want to grant the discount. 
+
+For illustrative purposes, assume that your basic admission ticket is priced at €20.00. 
+Clone that ticket, give it a name such as "Reduced ticket for groups of five or more", and set the price to €15.00. 
+Save the ticket and edit it. 
+Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
+This way, customers can purchase 5 or more of the tickets at the discounted price. 
 
 #### Automatic discounts
 
@@ -285,15 +297,3 @@ This quota can have an unlimited capacity.
 This configuration means that whenever one of the bundles is purchased, pretix creates eight individual tickets. 
 This results in the proper number being subtracted from the basic product quota and eight new entries for attendees on your check-in list. 
 If you need each individual attendee's personal data, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
-
-#### Minimum order amount
-
-You can use the minimum order amount feature to promote discounted group tickets. 
-In order to do so, create a single-person ticket at a reduced price. 
-Use the "Minimum amount per order" option to define the minimal group size for which you want to grant the discount. 
-
-For illustrative purposes, assume that your basic admission ticket is priced at €20.00. 
-Clone that ticket, give it a name such as "Reduced ticket for groups of five or more", and set the price to €15.00. 
-Save the ticket and edit it. 
-Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
-This way, customers can purchase 5 or more of the tickets at the discounted price. 
