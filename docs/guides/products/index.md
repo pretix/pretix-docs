@@ -44,7 +44,7 @@ The types and numbers of products in the cart decides what add-on products the c
 Cross-selling products are also not offered in the shop, but during checkout. 
 Unlike add-on products, the contents of the cart to not decide what cross-selling products the customer can buy. 
 Finally, products of the "normal + cross-selling" type are offered as both standalone products and in the cross-selling step. 
-The "Cross-selling condition" setting below determines how products in the "cross-selling" and "normal + cross-selling" categories are offered in your shop. 
+The "Cross-selling condition" setting below determines how products in categories of the type "cross-selling" and "normal + cross-selling" are offered in your shop. 
 
 Click the :btn:Save: button at the bottom of the page. 
 This takes you back to the product categories page, which now also lists the newly created category. 

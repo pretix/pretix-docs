@@ -158,7 +158,7 @@ Confirm your choices by clicking the :btn:Perform changes: button.
     Modifying tax status back and forth may introduce rounding errors of up to one cent from the intended price. 
     This is unavoidable due to the flexible nature in which prices are being calculated. 
 
-sp### Assigning tax rules 
+### Assigning tax rules 
 
 ![Create product dialog. The last option is a dropdown menu labeled 'Sales tax'. The current selection is 'No taxation'. At the bottom of the page, there is a button labeled 'Save and continue with more settings'.](../assets/screens/tax/create-product.png "Create product dialog" )
 
@@ -190,17 +190,17 @@ Assign each product a different tax rate.
 For all products except one, switch to the :btn:Availability: tab, check the box next to "Only sell this product as part of a bundle" and click the :btn:Save: button. 
 Skip this step for the last of the products you created. 
 
-Assign this product the total price of the combination of differently taxed products. 
-Its price represents the full price of the bundle. 
-The price does **not** result out of the addition of the price parts. 
+Assign this last product the total price of the combination of differently taxed products. 
+This price represents the full price of the bundle. 
+Neither the prices of the other bundled products nor the "Designated price part" setting have an influence on the total price of the combination. 
 
 Edit the ticket with the full price, switch to the :btn:Bundled products: tab and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
 Choose one of the other products you created under "Bundled product" and set the "Designated price part". 
 Repeat this step for each product with a diverging tax rate that you want to include in this bundle. 
 Then, click the :btn:Save: button. 
 
-For illustrative purposes, let's say you are organizing an educational event for a charitable organization in Germany and you have permission to charge a reduced tax rate of 7.00% that event. 
-However, the admission ticket price also includes catering, which is still taxed at a rate of 19.00%. 
+For illustrative purposes, assume you are organizing an educational event for a charitable organization in Germany and you have permission to charge a reduced tax rate of 7.00% for that event. 
+However, the admission ticket price also automatically includes catering, which is still taxed at a rate of 19.00%. 
 The tax situation may look something like this: 
 
  - event ticket price: €450 (including €150 for food)
