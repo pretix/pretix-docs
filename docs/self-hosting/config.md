@@ -56,6 +56,10 @@ plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins
 
 :   A comma-separated list of plugins that are enabled by default for all new events. Defaults to `pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins.checkinlists`.
 
+`plugins_organizer_default`
+
+:   A comma-separated list of plugins that are enabled by default for all new organizers. Defaults to none.
+
 `plugins_exclude`
 
 :   A comma-separated list of plugins that are not available even though they are installed. Defaults to an empty string.
