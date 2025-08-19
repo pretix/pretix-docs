@@ -38,6 +38,52 @@ If you want to place an additional limit on the number of discount tickets avail
 Add only the discount tickets to this quota. 
 pretix will subtract from both quotas whenever a discount ticket is sold, and subtract from the general quota only when a regular ticket is sold. 
 
+### Group discounts and discounts for large orders
+
+pretix gives you several methods for offering discounts on large orders regardless of which products are purchased. 
+This can also be useful for offering group discounts. 
+You can offer cheaper tickets tied to a minimum order amount; set up a rule for discounts that is applied automatically if a purchase meets certain conditions; or offer fixed group packages at reduced prices. 
+The following subsections will explain each method. 
+
+#### Minimum order amount
+
+You can use the minimum order amount feature to promote discounted group tickets. 
+In order to do so, create a single-person ticket at a reduced price. 
+Use the "Minimum amount per order" option to define the minimal group size for which you want to grant the discount. 
+
+For illustrative purposes, assume that your basic admission ticket is priced at €20.00. 
+Clone that ticket, give it a name such as "Reduced ticket for groups of five or more", and set the price to €15.00. 
+Save the ticket and edit it. 
+Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
+This way, customers can purchase 5 or more of the tickets at the discounted price. 
+
+#### Automatic discounts
+
+You can use pretix to automatically grant a discount on an order if a certain condition is met, such as a certain group size. 
+
+To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
+Choose an "Internal name" for the discount. 
+For a percentage discount such as "25 percent off if you buy 5 tickets", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 25.00. 
+
+For a discount such as “buy 5, get one free", set the "Minimum number of matching products" to 5, "Percentual discount on matching products" to 100.00, and "Apply discount only to this number of matching products" to 1. 
+
+#### Fixed group packages
+
+You can use bundles to sell group tickets for fixed numbers, for example a table of eight at your gala dinner. 
+
+First, create a basic admission ticket for a single person and a corresponding quota. 
+Then, create a non-admission product with a price lower than the full price for eight individual tickets. 
+Open the :btn:Bundled products: tab of that product and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
+Choose your basic admission ticket as the "Bundled product", set "Quantity" to 8 and click the :btn:Save: button. 
+
+Create a quota that includes only the eight person bundle. 
+This quota can have an unlimited capacity. 
+
+This configuration means that whenever one of the bundles is purchased, pretix creates eight individual tickets. 
+This results in the proper number being subtracted from the basic product quota and eight new entries for attendees on your check-in list. 
+If you need each individual attendee's personal data, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
+
+
 ### Early bird tickets
 
 This section explains how to offer early bird tickets that can only be bought far in advance of the event and which become unavailable in favor of more expensive tickets at some point. 
@@ -252,48 +298,3 @@ At least one of the conditions below (OR)
 !!! Note 
     You can also set up the "Ticket for all three days" as described in the section [Option A: Combination products](discounts.md#option-a-combination-products). 
     If you decide to do so, also include this ticket in each condition starting with "Product is one of". 
-
-### Group discounts and discounts for large orders
-
-pretix gives you several methods for offering discounts on large orders regardless of which products are purchased. 
-This can be useful for offering group discounts. 
-You can offer cheaper tickets tied to a minimum order amount; set up a rule for discounts that is applied automatically if a purchase meets certain conditions; or offer fixed group packages at reduced prices. 
-The following subsections will explain each method. 
-
-#### Minimum order amount
-
-You can use the minimum order amount feature to promote discounted group tickets. 
-In order to do so, create a single-person ticket at a reduced price. 
-Use the "Minimum amount per order" option to define the minimal group size for which you want to grant the discount. 
-
-For illustrative purposes, assume that your basic admission ticket is priced at €20.00. 
-Clone that ticket, give it a name such as "Reduced ticket for groups of five or more", and set the price to €15.00. 
-Save the ticket and edit it. 
-Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
-This way, customers can purchase 5 or more of the tickets at the discounted price. 
-
-#### Automatic discounts
-
-You can use pretix to automatically grant a discount on an order if a certain condition is met, such as a certain group size. 
-
-To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
-Choose an "Internal name" for the discount. 
-For a percentage discount such as "25 percent off if you buy 5 tickets", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 25.00. 
-
-For a discount such as “buy 5, get one free", set the "Minimum number of matching products" to 5, "Percentual discount on matching products" to 100.00, and "Apply discount only to this number of matching products" to 1. 
-
-#### Fixed group packages
-
-You can use bundles to sell group tickets for fixed numbers, for example a table of eight at your gala dinner. 
-
-First, create a basic admission ticket for a single person and a corresponding quota. 
-Then, create a non-admission product with a price lower than the full price for eight individual tickets. 
-Open the :btn:Bundled products: tab of that product and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
-Choose your basic admission ticket as the "Bundled product", set "Quantity" to 8 and click the :btn:Save: button. 
-
-Create a quota that includes only the eight person bundle. 
-This quota can have an unlimited capacity. 
-
-This configuration means that whenever one of the bundles is purchased, pretix creates eight individual tickets. 
-This results in the proper number being subtracted from the basic product quota and eight new entries for attendees on your check-in list. 
-If you need each individual attendee's personal data, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
