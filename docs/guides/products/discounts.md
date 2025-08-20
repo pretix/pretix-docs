@@ -2,6 +2,7 @@
 
 pretix has several different methods for offering your customers discounts on their purchase under certain conditions. 
 This article explains various types of discounts for different use cases: 
+
  - [different price levels](discounts.md#different-price-levels) 
  - [group discounts](discounts.md#group-discounts-and-discounts-for-large-orders). 
  - [early bird prices](discounts.md#early-bird-tickets)

@@ -166,12 +166,13 @@ Select any time slot that is part of the event series and then select the check-
 ### Season tickets
 
 Season tickets are often used for public swimming pools, sports clubs, theaters, and other types of venues. 
-This section explains two methods for setting them up in pretix. 
+This section explains three methods for setting them up in pretix. 
 These methods can be used for any ticket that grants access to all events during a certain time period. 
 It does not matter whether that time period spans several years or just a single day. 
 
 The first method, option A, uses memberships. 
-The second method, option B, uses a single season ticket. 
+Option B uses a separate event shop that only sells season tickets. 
+Option C, uses a single season ticket. 
 
 With **Option A**, a customer who purchases a season ticket creates an account with their email address and a password. 
 The season ticket will be stored in that account. 
@@ -180,8 +181,12 @@ Their membership allows them to get that ticket for free.
 If your venue has limited capacity or reserved seating, use option A. 
 This method allows you to control the total number of people that can be admitted to an event or time slot using quotas. 
 
-With **Option B**, a customer who purchases a season ticket receives a single ticket with a single ticket secret that can be used an unlimited number of times. 
-Use option B if you are only hosting a single event or event series, the capacity of your venue is virtually unlimited, and you do not need to know in advance how many season ticket holders will show up.
+With **Option B**, you create a separate event for the entire season and sell season passes in that shop. 
+Direct your customers who are interested in season passes to that shop instead of a regular event shop. 
+You then use the expert mode in pretixSCAN to check in attendees for multiple events at the same time: your regular current event and the entire season. 
+
+With **Option C**, a customer who purchases a season ticket receives a single ticket with a single ticket secret that can be used an unlimited number of times. 
+Use option C if you are only hosting a single event or event series, the capacity of your venue is virtually unlimited, and you do not need to know in advance how many season ticket holders will show up.
 
 #### Option A: Memberships and multiple tickets
 
@@ -230,13 +235,49 @@ If you want season pass holders to be able to attend multiple of your events for
 
 ![Page displaying the option 'Require a valid membership', which is checked, and 'Allowed membership types', under which 'Season pass 2027-1' is selected. The box next to 'Hide without a valid membership' is checked.](../../assets/screens/products/require.png "Require a valid membership")
 
-#### Option B: All-access in a single pass
+#### Option B: Separate season pass shop 
 
-Option B is setting up a single all-access pass. 
+Option B is setting up a separate event shop for selling season tickets. 
+
+The most efficient way to do this is to finish the configuration for at least one of your individual events. 
+Then, you [create a new event](../../tutorial/event.md). 
+Use the event name, short form and description to make it clear that the shop sells season passes for a specific time span. 
+For example, the name could be "Season passes summer 2027". 
+Set the "Event start time" and "Event end time" to the start and end dates of your season. 
+
+During step 3 of the event creation process, use the "Copy configuration from" field to copy information from one of your individual events during the season. 
+
+In the newly created event, delete all existing products. 
+Then, create a personalized admission product with a name such as "Season pass summer 2027". 
+Add the product to a quota and edit the quota according to your preferences. 
+
+Take the shop live at the same time you take the first of your individual events during the season live. 
+You may start into the season with a high price on the season pass and reduce that price manually a few times as the season progresses. 
+That way, some customers may still want to buy a season pass even if the season is nearing its end. 
+
+With this method, you need to be prepared to check in attendees to two separate events at the same time. 
+If you are using pretixSCAN, you can use the expert mode to do this. 
+Open pretixSCAN. 
+At the top of the screen, tap the name of the event. 
+Select the individual active event from the list and tap :btn:OK:. 
+Check the box next to "Expert mode". 
+Select the check-in list for the event and tap :btn:OK:. 
+
+Tap the :btn-icon:fa3-plus:: button. 
+Select the season passes event and tap :btn:OK:. 
+Select the check-in list and tap :btn:OK: again. 
+The screen should now list both your individual event and your season passes event along with the start date, short form, check-in list, and buttons for editing and deleting the entry. 
+
+At the top of the screen, tap :btn-icon:fa3-check::. 
+You should now be able to scan tickets for both events at the same time. 
+
+#### Option C: Season access in a single ticket
+
+Option C is setting up a single ticket that grants access to an event series for an entire season. 
 This is less complicated to set up than option A because it does not require your customers to set up accounts and book a new ticket on every visit.
-However, you can only use option B if you have only a single event series, and no space limitations at your venue. 
+However, you can only use option C if you have only a single event series, and no capacity limitations at your venue. 
 
-In order to set up a single all-access pass, navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
+In order to set up a season ticket, navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
 Give the new product a name such as "Season ticket". 
 Enable this product for all dates in your event series. 
 
