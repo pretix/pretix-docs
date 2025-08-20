@@ -11,6 +11,7 @@ This article explains various types of discounts for different use cases:
 
 Most of the methods described here are handled on the event level, so you have to create an event first. 
 This article assumes some general knowledge on how to create and edit products, so it makes sense to take a look at the guide on [products](index.md) first. 
+The implementation of [discount packages](discounts.md#discount-packages) requires some knowledge of check-in lists. 
 
 ## How To 
 
@@ -57,15 +58,23 @@ Save the ticket and edit it.
 Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
 This way, customers can purchase 5 or more of the tickets at the discounted price. 
 
-#### Automatic discounts
+#### Bulk discounts
 
-You can use pretix to automatically grant a discount on an order if a certain condition is met, such as a certain group size. 
+You can use the "Automatic discount" feature to automatically grant a bulk discount on an order if it meets a certain condition: either a minimum number of products or a minimum gross value. 
 
 To set this up, navigate to :navpath:Your event → :fa3-ticket: Products → Discounts: and click the :btn-icon:fa3-plus: Create a new discount: button. 
 Choose an "Internal name" for the discount. 
-For a percentage discount such as "25 percent off if you buy 5 tickets", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 25.00. 
+
+If you want to apply the discount to a selection of products only, uncheck the box next to "Apply to all products (including newly created ones)" and check the individual tickets under "Apply to specific products". 
+This is useful if, for example, you only want to apply the discount to admission tickets. 
+
+For a percentage discount such as "25 percent off if you buy 5 or more", set the "Minimum number of matching products" to 5 and the "Percentual discount on matching products" to 25.00. 
 
 For a discount such as “buy 5, get one free", set the "Minimum number of matching products" to 5, "Percentual discount on matching products" to 100.00, and "Apply discount only to this number of matching products" to 1. 
+
+If you want to apply the discount based on gross value and not on number of products purchased, leave the "Minimum number of matching products" field empty and set the "Minimum gross value of matching products" to the desired value. 
+
+Click the :btn:Save: button to confirm. 
 
 #### Fixed group packages
 
@@ -214,7 +223,8 @@ Then, create three quotas, each one with a total capacity equal to your venue's 
  - Day 3 quota, linked to "Day 3 ticket", "Day 1 + day 3 ticket", "Day 2 + day 3 ticket", and "Ticket for all three days"
 
 This way, every attendee can order exactly one ticket that they can use for all days that they are going to attend. 
-Finally, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:, edit your check-in list and switch to the :btn:Advanced: tab. 
+Finally, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:. 
+Edit or create a check-in list that includes the tickets you created and switch to the :btn:Advanced: tab. 
 Define custom check-in rules so that the tickets in the first quota are valid on the first day of the event; the tickets in the second quota are valid on the second day; and the tickets in the third quota are valid on the third day. 
 
 You can do this either using the "Current day of the week" or the "Current date and time" condition. 
@@ -277,7 +287,8 @@ Repeat the same process for "Day 2 ticket" and "Day 3 ticket".
 This configuration means that when a customer purchases the "Ticket for all three days", the three day tickets will be added to their cart automatically for free. 
 The customer will receive three tickets: one for each day of the event. 
 
-Finally, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:, edit your check-in list and switch to the :btn:Advanced: tab. 
+Finally, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:.
+Edit or create a check-in list that includes the tickets you created and switch to the :btn:Advanced: tab. 
 Define custom check-in rules so that the "Day 1 ticket" is only valid on the first day of the event; the "Day 2 ticket" is only valid on the second day; and the "Day 3 ticket" is only valid on the third day. 
 If you have set up the "Ticket for all three days" as a combination product, define the rule so that it is also valid on each day. 
 You can do this either using the "Current day of the week" or the "Current date and time" condition. 

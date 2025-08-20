@@ -9,7 +9,7 @@ If your event's schedule is small and straightforward, all sessions are included
 
 If your event's schedule is large, you have deviating prices for some of the sessions, or each session can only be attended by a limited number of people, you should use [add-on products](sessions.md#option-b-add-on-products-with-fixed-time-slots). 
 
-If the above conditions apply and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-c-add-on-products-with-variable-time-slots). 
+If you have a large schedule with deviating prices and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-c-add-on-products-with-variable-time-slots). 
 
 If you are not planning sessions that all take place within the scope of one big main event, but a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
 

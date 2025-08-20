@@ -41,8 +41,8 @@ Normal products are standalone products that can be purchased directly.
 Add-on products are products that **cannot** be purchased directly, but only as add-ons to other products during checkout. 
 The types and numbers of products in the cart decides what add-on products the customer can select. 
 
-Cross-selling products are also not offered in the shop, but during checkout. 
-Unlike add-on products, the contents of the cart to not decide what cross-selling products the customer can buy. 
+Cross-selling products are not offered in the shop, but during checkout. 
+Unlike add-on products, the contents of the cart do not decide what cross-selling products the customer can buy. 
 Finally, products of the "normal + cross-selling" type are offered as both standalone products and in the cross-selling step. 
 The "Cross-selling condition" setting below determines how products in categories of the type "cross-selling" and "normal + cross-selling" are offered in your shop. 
 
@@ -96,7 +96,7 @@ For general instructions on how to set up an event series with pretix, refer to 
 In order to create time slots, you have to create a number of "dates" in the event series. 
 Navigate to :navpath:Your event → :fa3-calendar: Dates: and click the :btn-icon:fa3-plus:Create many new dates: button. 
 Enter a pattern for your opening days. 
-If your venue opens every week from Tuesday to Sunday in January of 2027, enter the following pattern: 
+If your venue opens every week from Tuesday to Saturday in January of 2027, enter the following pattern: 
 "Repeat every `1` `week(s)`, starting at `2027-01-01`" 
 Check the boxes for Tuesday, Wednesday, Thursday, Friday, and Saturday. 
 Select "Repeat until" and enter `2027-01-31` into the field.  
@@ -113,13 +113,13 @@ Specify "Start of first slot" as "10:00:00", "End of time slots" as "18:00:00", 
 Then, click the :btn-icon:fa3-check: Create: button. 
 If your time slot pattern is more irregular or complex, use the :btn-icon:fa3-plus: Add a single time slot: button and edit each line individually. 
 
-If you have different opening times on different days of the week, you will need to go through the creation process multiple times.
+If you have different opening times on different days of the week, you will need to go through the creation process once for each individual variation of opening hours. 
 
 ![Page displaying the headline 'Times' and eight time slots ranging from 10 AM to 6 PM, each lasting an hour with no admission time specified.](../../assets/screens/event-series/create-times.png "Create multiple dates–Times")
 
-Under "Quotas, create one or multiple quotas. 
+Under "Quotas", create one or multiple quotas. 
 These quotas determine how many people can book a ticket for each time slot. 
-If you want each time slot to be attended by a maximum of 50 people, set the "Total capacity" to `50`
+If you want each time slot to be attended by a maximum of 50 people, set the "Total capacity" to `50`. 
 Once you are happy with your choices, click the :btn:Save: button. 
 
 !!! Note
