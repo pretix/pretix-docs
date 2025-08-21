@@ -50,7 +50,7 @@ By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit 
 
 Choose the payment providers that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
 After you have activated a plugin, it will have a green ":fa3-check: Active" tag next to it and a white "Disable" button will take the place of the purple "Enable" button. 
-Disable any active plugins that you do not want to use for your event. 
+Deactivate any active plugins that you do not want to use for your event. 
 
 ### General settings for payment providers
 
@@ -62,7 +62,7 @@ Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:.
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe. 
 Gift card is enabled and all other entries are disabled. 
-If you have enabled or disabled any of the default plugins for payment providers, your list will look different. 
+If you have enabled or disabled any of the plugins for payment providers, your list will look different. 
 
 Every payment provider for which you have enabled the plugin on the "Plugins" page appears in this list. 
 The list will also always contain the entry for gift cards. 
@@ -186,22 +186,22 @@ The :btn:Deadlines: tab lets you set payment terms measured in either days or mi
 The default value for the payment term for your customers is 14 days. 
 This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
 
-Deadlines settings apply on the event level, i.e. equally to all payment providers. 
+Deadlines settings apply on the event level, i.e. equally to all payment methods. 
 If you are using payment methods with long processing times such as bank transfers, set the deadlines long enough to incorporate those processing times. 
     
-pretix does not support setting different deadlines for different payment providers because this could make ordering and paying very confusing and frustrating for your customers. 
+pretix does not support setting different deadlines for different payment methods because this could make ordering and paying very confusing and frustrating for your customers. 
 
-Consider, for example, if pretix allowed different deadlines for each payment provider. 
-A customer first places their order with one payment provider, but then switches to a different one with a shorter deadline. 
+Consider, for example, if pretix allowed different deadlines for each payment method. 
+A customer first places their order with one payment method, but then switches to a different one with a shorter deadline. 
 The customer's order would be rendered invalid. 
 They would have to place a new one for reasons that are not clearly evident to them. 
 
 Placing a new order also means losing the reservation for the items in the shopping cart. 
 If a quota has been exhausted in the meantime, then your customer cannot order their preferred product anymore, possibly discouraging them from placing an order at all. 
 
-Alternatively, if pretix added each payment provider's deadline on top of the old one, switching back and forth between payment providers would allow a customer to extend the deadline indefinitely, thus never actually being required to pay you. 
+Alternatively, if pretix added each payment method's deadline on top of the old one, switching back and forth between payment methods would allow a customer to extend the deadline indefinitely, thus never actually being required to pay you. 
 
-It is for these reasons that pretix only lets you set unified payment deadlines that apply to all payment providers equally. 
+It is for these reasons that pretix only lets you set unified payment deadlines that apply to all payment methods equally. 
 
 ## Troubleshooting
 
