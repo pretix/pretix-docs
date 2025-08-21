@@ -251,9 +251,12 @@ In the newly created event, delete all existing products.
 Then, create a personalized admission product with a name such as "Season pass summer 2027". 
 Add the product to a quota and edit the quota according to your preferences. 
 
-Take the shop live at the same time you take the first of your individual events during the season live. 
-You may start into the season with a high price on the season pass and reduce that price manually a few times as the season progresses. 
-That way, some customers may still want to buy a season pass even if the season is nearing its end. 
+You can offer more than one type of season pass. 
+For example, you could offer [different price levels](discounts.md#different-price-levels). 
+
+You can encourage customers to still buy a season pass later in the season by reducing its price. 
+If you want to offer cheaper season passes as the season progresses, you could use a reverse implementation of the [early bird tickets based on time](discounts.md#early-bird-tickets-based-on-time-for-singular-events) with the season pass being replaced by a cheaper version every month. 
+Alternatively, if there are long pauses between the individual events throughout the season, you could start with a high price on the season pass and reduce that price manually a few times between events as the season progresses. 
 
 With this method, you need to be prepared to check in attendees to two separate events at the same time. 
 If you are using pretixSCAN, you can use the expert mode to do this. 
@@ -274,8 +277,7 @@ You should now be able to scan tickets for both events at the same time.
 #### Option C: Season access in a single ticket
 
 Option C is setting up a single ticket that grants access to an event series for an entire season. 
-This is less complicated to set up than option A because it does not require your customers to set up accounts and book a new ticket on every visit.
-However, you can only use option C if you have only a single event series, and no capacity limitations at your venue. 
+This option is easier to use for your customers than option A because it does not require them to set up accounts and book a new ticket on every visit.
 
 In order to set up a season ticket, navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
 Give the new product a name such as "Season ticket". 

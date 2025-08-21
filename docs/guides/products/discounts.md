@@ -93,7 +93,6 @@ This configuration means that whenever one of the bundles is purchased, pretix c
 This results in the proper number being subtracted from the basic product quota and eight new entries for attendees on your check-in list. 
 If you need each individual attendee's personal data, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
 
-
 ### Early bird tickets
 
 This section explains how to offer early bird tickets that can only be bought far in advance of the event and which become unavailable in favor of more expensive tickets at some point. 
