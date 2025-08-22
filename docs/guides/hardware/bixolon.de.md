@@ -54,8 +54,9 @@ Alle Anschlüsse befinden sich hinten und unten am Gerät.
 Um den Drucker über **LAN** mit dem Netzwerk zu verbinden, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
-Um den Drucker über **WLAN** mit dem Netzwerk zu verbinden, stecken Sie einen WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
-Falls der Drucker über ein eingebautes WLAN-Modul verfügt, ist das **nicht** notwendig. 
+Um den Drucker über **WLAN** mit dem Netzwerk zu verbinden, stecken Sie den einen WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
+Falls der Drucker über ein eingebautes WLAN-Modul verfügt, ist dieser Schritt nicht notwendig. 
+Wir schicken Ihnen nur dann einen WLAN-Dongle, wenn einer Ihrer Drucker ihn benötigt. 
 
 Alternativ zur Netzwerkverbindung können Sie den Drucker auch über **USB** direkt an eine Kasse anschließen. 
 Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
