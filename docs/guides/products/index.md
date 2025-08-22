@@ -150,8 +150,9 @@ Open the :btn:Advanced: tab.
 
 Under "Custom check-in rule", click the :btn-icon:fa3-plus-circle: Add condition: button and select "All of the conditions below (AND)" from the dropdown menu. 
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is after", then "Event start". 
+You can leave the "Tolerance (minutes)" field empty. 
+If you want attendants to be able get in, for example, 10 minutes before the event starts, specify a "Tolerance (minutes)" of `10`. 
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is before", then "Event end". 
-You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
 
 ![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/time-slot-check-in-rule.png "Custom check-in rule")
 
@@ -296,6 +297,7 @@ You now have an OR-bracket with an AND-bracket inside it.
 
 Click the :btn-icon:fa3-plus-circle: Add condition: button **within the AND-bracket** and select "Product", then "is one of", and then all admission tickets **other than** the season pass. 
 Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is after", then "Event start". 
+
 Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is before", then "Event end". 
 You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
 Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket a final time and select "Number of previous entries", then "=", then "0". 
@@ -303,6 +305,18 @@ Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracke
 Then, click the :btn-icon:fa3-plus-circle: Add condition: button that is located within the OR-bracket, but **not** within the AND-bracket. 
 It should be further down on the page. 
 Select "Product", then "is one of", and then your season pass product. 
+
+You should add another condition to prevent the season pass being used by more than one person. 
+Click the :btn-icon:fa3-plus-circle: Add condition: below your season pass condition. 
+You have several options: 
+
+ - Select "Current entry status", then "=", and then "absent". 
+ This means that the season pass can only be used if it is checked out. 
+ The prerequisite for this is that you check season pass users out as they leave the event, which may require additional personnel. 
+ - Select "Number of previous entries since midnight", "=", and "0". 
+ This means that the season pass can only be used once per day. 
+ - Select "Minutes since last entry" "≤", and "15". 
+ This means that the season pass can only be used once every fifteen minutes. 
 
 ![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
 
