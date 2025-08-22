@@ -26,7 +26,7 @@ Once you have decided on the mode of operation, the `Configuration file <config>
 Example:
 
 ``` ini
-[presale-saml]
+[presal_saml]
 level=global
 ```
 

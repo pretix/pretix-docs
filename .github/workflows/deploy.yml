@@ -16,6 +16,7 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         ssh-host: arthur.rami.io
+        ssh-port: 1337
     - name: Write version file
       run: git describe --always > version.txt
     - name: Install dependencies
@@ -23,4 +24,4 @@ jobs:
     - name: Build docs
       run: mkdocs build
     - name: Deployment
-      run: rsync -r --delete site/ pretixdocs2@arthur.rami.io:/var/pretixdocs2/www
+      run: rsync -e 'ssh -p 1337' -r --delete site/ pretixdocs2@arthur.rami.io:/var/pretixdocs2/www

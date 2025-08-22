@@ -186,4 +186,34 @@ In order to use an SSO provider with pretix, it has to fulfill the following req
  - Implementation according to [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html).
  - Published meta-data document at `<issuer>/.well-known/openid-configuration` as specified in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
  - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
- - Support for client authentication using client ID and client secret and without public key cryptography.
+ - Support for client authentication using client ID and client secret and without public key cryptography. 
+
+#### Example: Using Google Accounts as an SSO provider for pretix 
+
+If you want to use Google as an SSO provider for pretix, follow the instructions on [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect) in the Google documentation. 
+Open the [Google Cloud backend](https://console.cloud.google.com/auth/clients) and create a new client. 
+During the creation process, under "Application type", select "Web application". 
+Note down the "Client ID" and "Client secret" so that you can enter them in the pretix backend later. 
+
+Open the pretix backend and navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button. 
+Choose a "Provider name" such as "Google" and a "Login button label" such as "Sign in with Google". 
+Fill in the following details: 
+
+ - **Single-sign-on method**: `OpenID Connect`
+ - **Base URL**: `https://accounts.google.com`
+ - **Client ID**: Insert the ID you noted down during the client creation process in the Google backend. 
+ - **Client secret**: Insert the secret you noted down during the client creation process in the Google backend. 
+
+For the next three fields, consult the documentation linked above under [technical details](customer-accounts.md#technical-details-for-using-pretix-as-an-sso-client). 
+An example configuration might look like this: 
+
+ - **Scope**: `openid email profile`
+ - **Email address claim**: `email`
+ - **Identity claim**: `sub`
+
+Click the :btn:Save: button. 
+You will be taken back to the overview page titled "SSO providers". 
+Click the "Google" entry in the list. 
+Copy the value from the "Redirection URL" field. 
+It will look similar to, but **not exactly** like `https://pretix.eu/tut/account/login/199/return`. 
+Open the Google backend, edit your client, click to add a URL, paste the value into the field, and save the settings. 

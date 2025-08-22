@@ -10,7 +10,7 @@ This depends on your local legislation, the type of your business, and a number 
 The pretix documentation does not contain any information on the appropriate tax rates for your situation. 
 Please speak to a professional tax consultant before setting tax rates in your shop. 
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Taxes are handled on the event level, so you have to create an event first.
 
 pretix allows you to set up a tax rule for each tax rate that is relevant for your situation.
 Then, you assign that tax rule to each individual product. 
-If you are selling products with a 0.00% tax rate (such as [gift cards](../guides/gift-cards.md)), you still need to create a 0% tax rule first. 
+If you are selling products with a 0% tax rate (such as [gift cards](../guides/gift-cards.md)), you still need to create a 0% tax rule first. 
 
 When it comes to tax rules for free products, the only material difference is the tax rate printed on the invoice. 
 Create and assign the tax rule that you want to see on the invoice. 
@@ -179,6 +179,13 @@ This list will use the internal name you specified on the tax rules settings pag
 Once you have made your selection, click the :btn:Save: button. 
 
 ## Troubleshooting 
+
+### Appropriate tax rule does not appear in the drop-down menu
+
+If you are trying to assign a tax rate to a product, but the appropriate tax rate is not displayed in the "Sales tax" drop-down menu, then you have to create that tax rate first. 
+Follow the instructions in the section on [creating tax rules](taxes.md#creating-tax-rules) to create a tax rule with the name and rate that you need. 
+After you have done that, edit your product. 
+The tax rate will now appear in the "Sales tax" drop-down menu and you will be able to assign it. 
 
 ### International business customer places order without VAT ID 
 
