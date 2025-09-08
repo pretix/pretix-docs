@@ -326,8 +326,6 @@ They also ensure that season ticket holders are always admitted.
 
 ### Mixed taxation 
 
-{% include "warning-tax.md" %}
-
 The article on [taxes](../taxes.md) has a section explaining how to set up products with [mixed taxation](../taxes.md#mixed-taxation) using bundles. 
 
 ## Troubleshooting 
