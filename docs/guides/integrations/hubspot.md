@@ -6,11 +6,11 @@ This article explains how to use it.
 ## Prerequisites
 
 Plugins are handled on the event level, so you have to create an event first. 
-You need to have access to a HubSpot account. 
+You also need to have access to a HubSpot account. 
 
 ## General usage
 
-This section explains how to enable the HubSpot plugin and how to set up the connection between your pretix account and your HubSpot account
+This section explains how to enable the HubSpot plugin and how to set up the connection between your pretix account and your HubSpot account. 
 These steps are necessary before you can export any data from pretix to HubSpot. 
 
 ### Enabling the plugin
@@ -43,7 +43,7 @@ The next page warns you that you are connecting an unverified app.
 ![Page titled 'Connecting pretix to HubSpot', displaying a warning that 'You're connecting an unverified app' and a list of permissions for changes pretix needs to be able to make in HubSpot](../../assets/screens/hubspot/connect-app.png "Connect app")
 
 Scroll to the bottom of the page and click the :btn:Connect app: button. 
-Once you have done that, you will be taken back to the HubSpot Integration settings page in the pretix backend. 
+Once you have done that, the page will redirect you back to the HubSpot Integration settings page in the pretix backend. 
 Instead of the "Request access" button, this page now states that the event is connected to HubSpot and displays settings for object mappings. 
 
 ![Page titled 'HubSpot Integration', displaying a green message box saying 'The HubSpot integration is now active', a box with the status of the HubSpot connection, and settings for object mappings.](../../assets/screens/hubspot/integration-active.png "HubSpot Integration active")
@@ -137,8 +137,8 @@ Under rules, check the box next to "Require unique values for this property".
 
 ![HubSpot page titled 'Select property rules', displaying, among other things, the subheading *Simple validation rules' and the activated checkbox 'Require unique values for this property (0 of 10) . ](../../assets/screens/hubspot/property-rules.png "HubSpot Select property rules")
 
-Some of these settings cannot be changed after the property has been created. 
-Ensure that you have configured the property as described here and then click the :btn:Create: button. 
+Creating the property means that some of the settings here will become fixed and you will not be able to change them anymore. 
+Verify that you have configured the property as described here and then click the :btn:Create: button. 
 
 Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 Under "Object mappings", change the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
@@ -175,7 +175,7 @@ In the box labeled "Data transfer to external systems", click the :btn-icon:fa3-
 
 The box will then display the status ":fa3-hourglass: Pending". 
 The plugin will transfer data to HubSpot the next time the server executes `periodic_task`. 
-If you refresh the page after that, then the box will display links to the records that were created in HubSpot during the export along with timestamps. 
+If you refresh the page after that, then the box will display links to the corresponding records in HubSpot along with timestamps. 
 
 ## Troubleshooting
 
