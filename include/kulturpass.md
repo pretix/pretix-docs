@@ -29,7 +29,9 @@ Um als Unternehmen oder Kultureinrichtung Angebote auf dem KulturPass-Marktplatz
 
  4. Ersteinrichtung in pretix
 
-    Navigieren Sie zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → Kulturpass:. 
+    Navigieren Sie zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → Erweiterungen.
+    Suchen Sie nach der Erweiterung "Kulturpass" und klicken Sie auf :btn:Aktivieren:.
+    Navigieren Sie anschließend zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → Kulturpass:. 
     Hinterlegen Sie hier die ID-Nummer Ihres KulturPass Marktplatz-Shops sowie einen API-Key. 
     Diese Daten müssen Sie nur einmalig für alle Ihre Veranstaltungen angeben.
 
