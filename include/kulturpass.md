@@ -49,8 +49,17 @@ Wiederholen Sie diese Schritte für jede Veranstaltung oder jeden Termin innerha
 Es kann einige Zeit dauern, bis hier vorgenommene Einstellungen im KulturPass-System angezeigt werden. 
 
 !!! Note 
-    Der KulturPass-Marktplatz zeigt nicht die gleiche Fülle von Informationen an, die Ihr pretix-Ticketshop anzeigt. 
-    Schreiben Sie daher in den Feldern "Veranstaltungstitel" und "Veranstaltungsbeschreibung" aussagekräftige Texte, die nicht mit den Veranstaltungen anderer Anbietender verwechselt werden können. 
+    Der KulturPass-Marktplatz zeigt nicht die gleiche Fülle von Informationen an wie Ihr pretix-Ticketshop. 
+
+    Wahrscheinlich nutzen Sie für Ihre Veranstaltung oder insbesondere Ihre Termine recht kurze Titel. 
+    Betreiben Sie zum Beispiel ein Schwimmbad, könnte Ihre Veranstaltungsreihe "Freibad Musterstadt" heißen und die einzelnen Termine schlicht "Schwimmen". 
+    Der pretix-Shop zeigt den Namen des Veranstalters und der Veranstaltung bzw. Veranstaltungsreihe sowie weitere Informationen an. 
+    Daher funktioniert diese Benennung hier. 
+    
+    Der Kulturpass-Marktplatz zeigt diese Informationen jedoch nicht an, sondern nur den Titel. 
+    Ein Veranstaltungs- oder Termintitel wie "Schwimmen" ist also nicht informativ genug für den Kulturpass-Marktplatz. 
+
+    Schreiben Sie daher in pretix in der Kulturpass-Konfiguration in den Feldern "Veranstaltungstitel" und "Veranstaltungsbeschreibung" aussagekräftige Texte, die nicht mit den Veranstaltungen anderer Anbietender verwechselt werden können. 
 
 ### Anbieten von Produkten über den KulturPass-Marktplatz 
 
