@@ -1,5 +1,5 @@
 Der [KulturPass](https://www.kulturpass.de/) ist ein Programm der deutschen Bundesregierung für alle, die im laufenden Jahr ihren 18. Geburtstag feiern. 
-Sie erhalten ab ihrem 18. Geburtstag ein Budget von 200 Euro, das sie für Eintrittskarten, Bücher, CDs, Platten und vieles andere einsetzen können. 
+Sie erhalten ab ihrem 18. Geburtstag ein Budget von 200 €, das sie für Eintrittskarten, Bücher, CDs, Platten und vieles andere einsetzen können. 
 Als Ticketing-System stellt pretix einen automatisierten Prozess für den Verkauf von Eintrittskarten über den KulturPass-Marktplatz bereit. 
 
 Dieser Artikel erklärt die Einrichtung der Schnittstelle zwischen dem KulturPass-Marktplatz und Ihrem pretix-Shop, die Verwaltung von KulturPass-Bestellungen und den Bestellprozess aus Sicht der Kund*innen. 
@@ -17,7 +17,7 @@ Falls Sie das nicht bereits getan haben, registrieren Sie Ihr Unternehmen/Ihre E
 !!! Warning 
     Ein KulturPass-Shop kann nur mit einem einzigen externen System verbunden werden. 
     Wenn der KulturPass-Shop mit mehreren externen Systemen verbunden ist, ist es nicht möglich, Bestellungen zu verarbeiten oder Angebote automatisiert an den KulturPass-Marktplatz zu übermitteln. 
-    Eingehende Bestellungen automatisch abgelehnt, da sie nicht eindeutig zugeordnet werden können. 
+    Eingehende Bestellungen werden automatisch abgelehnt, da sie nicht eindeutig zugeordnet werden können. 
     Das gilt auch, wenn Sie Ihren KulturPass-Shop mit mehreren pretix-Veranstalterkonten verbinden. 
 
     Wenn Sie mehrere Systeme haben, die den KulturPass-Marktplatz bedienen sollen, wenden Sie sich bitte an den KulturPass-Support, um sich einen weiteren Shop einrichten zu lassen.
@@ -25,7 +25,8 @@ Falls Sie das nicht bereits getan haben, registrieren Sie Ihr Unternehmen/Ihre E
 Um Ihr pretix-Veranstalterkonto mit Ihrem KulturPass-Konto zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → KulturPass:. 
 Hinterlegen Sie hier den "API Schlüssel" und die "Shop ID" Ihres KulturPass-Shops. 
 
-Sie finden den API-Schlüssel im [KulturPass-Backend](https://kulturpass-de.mirakl.net/) indem Sie diesen aufrufen und sich einloggen. 
+Sie finden den API-Schlüssel im [KulturPass-Backend](https://kulturpass-de.mirakl.net/). 
+Öffnen Sie den Link und loggen Sie sich ein.  
 Klicken Sie das Benutzer-Symbol in der oberen, rechten Ecke, :btn:Profil: und dann "API Schlüssel".
 Sie finden die Shop-ID, indem Sie in der Navigation links "Einstellungen" und dann "Shop" auswählen.
 
@@ -63,7 +64,7 @@ Sie können beliebig viele Produkte über den KulturPass-Marktplatz anbieten.
     Ihr Angebot wird im KulturPass-Marktplatz immer mit dem höchsten einzelnen Produktpreis gelistet. 
     Wenn Sie ein Produkt für 100 € über den KulturPass-Marktplatz anbieten, wird Ihr Angebot dort mit 100 € gelistet. 
     Das gilt sogar dann, wenn alle anderen Produkte in Ihrem Shop z.B. nur 5 € kosten. 
-    Das KulturPass-Guthaben einer kaufenden Person muss mindestens 100 Euro betragen, damit sie Ihr Angebot in Anspruch nehmen kann. 
+    Das KulturPass-Guthaben einer kaufenden Person muss mindestens 100 € betragen, damit sie Ihr Angebot in Anspruch nehmen kann. 
 
     Die kaufende Person wählt erst mit dem KulturPass-Einlösecode im Wert von 100 € in Ihrem pretix-Shop ein Produkt aus. 
     Das Restguthaben wird nach dem Kauf automatisch zurückerstattet und dem KulturPass-Konto gutgeschrieben.
@@ -73,51 +74,50 @@ Sie können beliebig viele Produkte über den KulturPass-Marktplatz anbieten.
 Sobald Sie mindestens eine Veranstaltung konfiguriert und live geschaltet haben, übermittelt pretix die Daten automatisch in regelmäßigen Abständen an das KulturPass-System (Mirakl). 
 
 Der Export der Produkte und Angebote kann einige Zeit in Anspruch nehmen. 
-Alle neuen Angebote werden händisch von den Betreibenden der KulturPass-Plattform geprüft, bevor sie sie freigeben. 
+Alle neuen Angebote werden händisch von den Betreibenden der KulturPass-Plattform geprüft, bevor diese sie freigeben. 
 Außerdem muss eine Synchronisation zwischen dem Hintergrundsystem und der KulturPass-App erfolgen. 
 pretix hat keinen Einfluss auf die Dauer dieser Prozesse. 
 
-Nachdem pretix erstmalig Angebote an das KulturPass-System übermittelt hat, müssen Sie Ihren Shop KulturPass-Shop einmalig freischalten. 
+Nachdem pretix erstmalig Angebote an das KulturPass-System übermittelt hat, müssen Sie Ihren KulturPass-Shop einmalig freischalten. 
 Loggen Sie sich hierzu in das [KulturPass-Backend](https://kulturpass-de.mirakl.net/) ein. 
-
 
 ## Verwalten von KulturPass-Bestellungen
 
-Sobald Sie Ihr Veranstalterkonto, ihre Veranstaltung/Termine und Produkte für die Integration mit dem KulturPass-System eingerichtet haben, müssen Sie sich um nichts weiteres kümmern. 
+Sobald Sie Ihr Veranstalterkonto, Ihre Veranstaltung bzw. Termine und Produkte für die Integration mit dem KulturPass-System eingerichtet haben, müssen Sie sich um nichts weiteres kümmern. 
 pretix übermittelt automatisch Ihre Veranstaltungen, wickelt die Einlösung der Tickets ab und führt die Abrechnung mit dem Hintergrund-System durch.
 
-Die Gelder für mit dem KulturPass bezahlte Tickets erhalten Sie in Form einer Sammelüberweisung von der Stiftung Digitale Chancen auf das Bankkonto ,das Sie bei der Einrichtung Ihres KulturPass-Kontos angegeben haben. 
+Die Gelder für mit dem KulturPass bezahlten Tickets erhalten Sie in Form einer Sammelüberweisung von der Stiftung Digitale Chancen auf das Bankkonto, das Sie bei der Einrichtung Ihres KulturPass-Kontos angegeben haben. 
 In Ihrem [KulturPass-Backend](https://kulturpass-de.mirakl.net/) können Sie über den Menüpunkt "Buchhaltung" Ihre bereits erfolgten und kommenden Auszahlungen betrachten.
 
 !!! Warning
-    Bearbeiten Sie **niemals** eingehenden Bestellungen, Produkte oder Angebote im KulturPass-Backend. 
+    Bearbeiten Sie **niemals** eingehende Bestellungen, Produkte oder Angebote im KulturPass-Backend. 
     Sie würden damit riskieren, dass die Datenbasis zwischen pretix und dem KulturPass-System divergiert und es zu fehlerhaften Buchungen kommt. 
     Nehmen Sie Korrekturbuchungen und Änderungen ausschließlich über pretix vor. 
     Sollte eine händische Änderung notwendig werden, wenden Sie sich bitte an den pretix-Support. 
 
-Erstattungen für Stornierungen und Absagen können Sie weiterhin über das pretix-Backend vornehmen. 
+Erstattungen für Stornierungen und Absagen können Sie ebenfalls über das pretix-Backend vornehmen. 
 Der zurückzuerstattende Betrag wird dem KulturPass-Konto automatisch gutgeschrieben.
 
 !!! Note 
     Nach Ausgabe eines KulturPass-Einlösecodes kann dieser von der kaufenden Person jederzeit storniert werden. 
     Das System kann ihn ebenfalls stornieren, wenn er nicht binnen 48 Stunden vollständig eingelöst wurde. 
-    Daher kann das zu Fluktuationen im Guthaben kommen, das im KulturPass-Backend angezeigt wird. 
-    Auszahlungen erfolgen frühestens 48 Stunden nach der Aufgabe einer KulturPass-Bestellungen. 
+    Dies kann zu Fluktuationen im Guthaben führen, das im KulturPass-Backend angezeigt wird. 
+    Auszahlungen erfolgen frühestens 48 Stunden nach der Aufgabe einer KulturPass-Bestellung. 
     Ihr Guthaben wird daher in der Regel nicht ins Negative gehen.
 
 ## Ablauf für kaufende Personen
 
 Für Besuchende Ihres pretix-Shops verhält sich der KulturPass wie eine Zahlungsmethode und wird im Bestellprozess neben Ihren anderen Zahlungsmethoden angeboten.
-Wenn sie KulturPass als Zahlungsmethode auswählen, können Sie sich dort anmelden oder registrieren und ihr Guthaben erhalten. 
+Wenn sie KulturPass als Zahlungsmethode auswählen, können sie sich dort anmelden oder registrieren und ihr Guthaben erhalten. 
 
 KulturPass-Nutzende können ein Angebot einer Veranstaltung auswählen, die via pretix vertrieben wird und erhalten dann innerhalb von 20 Minuten einen Einlösecode und einen Link. 
-Der Link bringt die Person direkt auf die Seite der betreffenden pretix-Veranstaltung, wo sie den Code für entsprechend markierte Produkte einlösen kann. 
+Der Link bringt die Person direkt auf die Seite der betreffenden pretix-Veranstaltung. 
 Beim Bezahlen schlägt der Shop der kaufenden Person vor, den KulturPass-Einlösecode zu nutzen. 
 
 Wenn Artikel gewählt werden, die günstiger als der Wert des Einlösecodes sind, dann wird das Restguthaben automatisch auf das KulturPass-Konto erstattet.
 Wenn die Artikel insgesamt teurer sind, dann kann die kaufende Person die Differenz mit einem anderen regulären Zahlungsmittel begleichen. 
 Einlösecodes, die Kunden nicht binnen 48 Stunden eingelöst werden, werden automatisch storniert und dem KulturPass-Konto wieder gutgeschrieben. 
-Dieser Mechanismus greift auch, wenn eine Veranstaltung in der Zwischenzeit ausverkauft wird und daher der Einlösecode nicht mehr nutzbar ist.
+Dieser Mechanismus greift auch, falls eine Veranstaltung in der Zwischenzeit ausverkauft wurde und daher der Einlösecode nicht mehr nutzbar ist.
 
 ## Siehe auch
 
