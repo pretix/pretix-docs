@@ -173,21 +173,22 @@ It does not matter whether that time period spans several years or just a single
 
 The first method, option A, uses memberships. 
 Option B uses a separate event shop that only sells season tickets. 
-Option C, uses a single season ticket. 
+Option C uses a single season ticket and advanced check-in rules. 
 
 With **Option A**, a customer who purchases a season ticket creates an account with their email address and a password. 
-The season ticket will be stored in that account. 
+That account stores a membership, which acts as the season ticket. 
 Whenever the customer wants to use the season ticket, they need to purchase a ticket for that event. 
 Their membership allows them to get that ticket for free. 
-If your venue has limited capacity or reserved seating, use option A. 
 This method allows you to control the total number of people that can be admitted to an event or time slot using quotas. 
 
-With **Option B**, you create a separate event for the entire season and sell season passes in that shop. 
-Direct your customers who are interested in season passes to that shop instead of a regular event shop. 
+With **Option B**, you create a separate event for the entire season and sell season tickets in that shop. 
+Direct customers who are interested in season tickets to that shop instead of a regular event shop. 
+a customer who purchases a season ticket receives a single ticket with a single ticket secret that they can use an unlimited number of times. 
 You then use the expert mode in pretixSCAN to check in attendees for multiple events at the same time: your regular current event and the entire season. 
 
-With **Option C**, a customer who purchases a season ticket receives a single ticket with a single ticket secret that can be used an unlimited number of times. 
-Use option C if you are only hosting a single event or event series, the capacity of your venue is virtually unlimited, and you do not need to know in advance how many season ticket holders will show up.
+With **Option C**, you offer a season ticket in the same shop as your regular tickets. 
+Just like with option B, a customer who purchases a season ticket receives a single ticket with a single ticket secret that they can use an unlimited number of times. 
+You then set up advanced check-in rules to ensure that regular ticket holders can only enter at specified times. 
 
 #### Option A: Memberships and multiple tickets
 
@@ -278,16 +279,18 @@ You should now be able to scan tickets for both events at the same time.
 #### Option C: Season access in a single ticket
 
 Option C is setting up a single ticket that grants access to an event series for an entire season. 
-This option is easier to use for your customers than option A because it does not require them to set up accounts and book a new ticket on every visit.
+This option is easier to use for your customers than option A because it does not require them to set up accounts and book a new ticket on every visit. 
+It also does not require setting up a separate event shop for season tickets like option B does. 
+On the downside, option C requires setting up complex check-in rules. 
 
-In order to set up a season ticket, navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
+In order to create a season ticket for this method, navigate to :navpath:Your event → :fa3-ticket: Products: and click the :btn-icon:fa3-plus: Create a new product: button. 
 Give the new product a name such as "Season ticket". 
 Enable this product for all dates in your event series. 
 
 You have to set up custom check-in rules to allow customers access to all dates with the season pass. 
 Navigate to :navpath:Your event → :fa3-check-square-o: Check-in → Check-in lists: and click the :btn-icon:fa3-plus: Create a new check-in list: button. 
 
-Specify a name, but do **not** choose a specific date. 
+Specify a name, but do not choose a specific date. 
 This check-in list will apply to all dates. 
 Open the :btn:Advanced: tab. 
 
