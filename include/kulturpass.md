@@ -22,7 +22,9 @@ Falls Sie das nicht bereits getan haben, registrieren Sie Ihr Unternehmen/Ihre E
 
     Wenn Sie mehrere Systeme haben, die den KulturPass-Marktplatz bedienen sollen, wenden Sie sich bitte an den KulturPass-Support, um sich einen weiteren Shop einrichten zu lassen.
 
-Um Ihr pretix-Veranstalterkonto mit Ihrem KulturPass-Konto zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → KulturPass:. 
+Um Ihr pretix-Veranstalterkonto mit Ihrem KulturPass-Konto zu verbinden, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Erweiterungen:. 
+Suchen Sie nach der Erweiterung "Kulturpass" und klicken Sie :btn:Aktivieren:.
+Navigieren Sie anschließend zu :navpath:Ihr Veranstalter: → :fa3-wrench: Einstellungen → Kulturpass:. 
 Hinterlegen Sie hier den "API Schlüssel" und die "Shop ID" Ihres KulturPass-Shops. 
 
 Sie finden den API-Schlüssel im [KulturPass-Backend](https://kulturpass-de.mirakl.net/). 
@@ -55,7 +57,7 @@ Es kann einige Zeit dauern, bis hier vorgenommene Einstellungen im KulturPass-Sy
     Betreiben Sie zum Beispiel ein Schwimmbad, könnte Ihre Veranstaltungsreihe "Freibad Musterstadt" heißen und die einzelnen Termine schlicht "Schwimmen". 
     Der pretix-Shop zeigt den Namen des Veranstalters und der Veranstaltung bzw. Veranstaltungsreihe sowie weitere Informationen an. 
     Daher funktioniert diese Benennung hier. 
-    
+
     Der Kulturpass-Marktplatz zeigt diese Informationen jedoch nicht an, sondern nur den Titel. 
     Ein Veranstaltungs- oder Termintitel wie "Schwimmen" ist also nicht informativ genug für den Kulturpass-Marktplatz. 
 
