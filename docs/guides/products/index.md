@@ -177,12 +177,12 @@ Option C uses a single season ticket and advanced check-in rules.
 
 With **Option A**, a customer who purchases a season ticket creates an account with their email address and a password. 
 That account stores a membership, which acts as the season ticket. 
-Whenever the customer wants to use the season ticket, they need to purchase a ticket for that event. 
+Whenever the customer wants to use the season ticket for an event, they need to purchase a ticket for that event. 
 Their membership allows them to get that ticket for free. 
 This method allows you to control the total number of people that can be admitted to an event or time slot using quotas. 
 
-With **Option B**, you create a separate event for the entire season and sell season tickets in that shop. 
-Direct customers who are interested in season tickets to that shop instead of a regular event shop. 
+With **Option B**, you create a separate event or date for the entire season and sell season tickets in that shop. 
+Direct customers who are interested in season tickets to that event shop or date. 
 a customer who purchases a season ticket receives a single ticket with a single ticket secret that they can use an unlimited number of times. 
 You then use the expert mode in pretixSCAN to check in attendees for multiple events at the same time: your regular current event and the entire season. 
 
@@ -203,7 +203,7 @@ Click the :btn-icon:fa3-plus: Create a new membership type: button.
 
 Give the new membership type a distinct and informative name. 
 If you want the membership to allow purchase of tickets for multiple different people, check the box next to "Membership is transferable". 
-If you want the membership to allow purchase for multiple different events or dates with the same start time, check the box next to "Parallel usage is allowed". 
+If you want the membership to allow purchases for multiple different events or dates with the same start time, check the box next to "Parallel usage is allowed". 
 
 If you want to limit the membership to a certain number of purchases, specify that number in the "Maximum usages" field. 
 If you want to allow unlimited purchases within the specified time frame, leave this field empty. 
@@ -239,9 +239,9 @@ If you want season pass holders to be able to attend multiple of your events for
 
 #### Option B: Separate season pass shop 
 
-Option B is setting up a separate event shop for selling season tickets. 
+Option B is setting up a separate event or date for selling season tickets. 
 
-The most efficient way to do this is to finish the configuration for at least one of your individual events. 
+If you want to offer season passes for **multiple events**, then the most efficient way to do this is to finish the configuration for at least one of your individual events. 
 Then, you [create a new event](../../tutorial/event.md). 
 Use the event name, short form and description to make it clear that the shop sells season passes for a specific time span. 
 For example, the name could be "Season passes summer 2027". 
@@ -252,6 +252,14 @@ During step 3 of the event creation process, use the "Copy configuration from" f
 In the newly created event, delete all existing products. 
 Then, create a personalized admission product with a name such as "Season pass summer 2027". 
 Add the product to a quota and edit the quota according to your preferences. 
+
+If you want to offer season passes for an **event series**, create a personalized admission product with a name such as "Season pass". 
+Add the product to a quota and edit the quota according to your preferences. 
+
+Then, create a date within that event series. 
+Use the date's name and frontpage text to make it clear that customers can purchase season passes by selecting that date. 
+For example, the name could be "Season passes". 
+Set the "Event start time" and "Event end time" to the start and end dates of your season. 
 
 You can offer more than one type of season pass. 
 For example, you could offer [different price levels](discounts.md#different-price-levels). 
@@ -300,13 +308,14 @@ You now have an OR-bracket with an AND-bracket inside it.
 
 Click the :btn-icon:fa3-plus-circle: Add condition: button **within the AND-bracket** and select "Product", then "is one of", and then all admission tickets **other than** the season pass. 
 Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is after", then "Event start". 
+You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of, for example, "10" to allow entry for attendees 10 minutes before the corresponding time slot begins. 
 
 Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket again and select "Current date and time", then "is before", then "Event end". 
-You can leave the "Tolerance (minutes)" fields empty or specify a tolerance of a few minutes for some leniency. 
 Click the :btn-icon:fa3-plus-circle: Add condition: button within the AND-bracket a final time and select "Number of previous entries", then "=", then "0". 
 
 Then, click the :btn-icon:fa3-plus-circle: Add condition: button that is located within the OR-bracket, but **not** within the AND-bracket. 
 It should be further down on the page. 
+Hovering your mouse over the brackets highlights AND-brackets in red, OR-brackets in green, and the innermost bracket in purple. 
 Select "Product", then "is one of", and then your season pass product. 
 
 You should add another condition to prevent the season pass being used by more than one person. 
@@ -325,7 +334,7 @@ You have several options:
 
 The logic is depicted in the screenshot above. 
 These rules ensure that regular tickets holders are only admitted to their chosen date and if their ticket has not been used before. 
-They also ensure that season ticket holders are always admitted. 
+They also ensure that season ticket holders are admitted to every date. 
 
 ### Mixed taxation 
 
