@@ -102,9 +102,20 @@ This is suitable for HubSpot variables that allow multiple entries, such as "Mul
 If you use this on a text variable in HubSpot, the plugin will append the text from pretix to the end, separated by semicolon. 
 If you use it on a number variable, then the export will work without issues on an empty field, but will cause an error if the field is already filled. 
 
-For example, your mapping could look like this: 
+For example, your mapping could look like the one portrayed in the following screenshot and table: 
 
 ![Page titled 'HubSpot Integration' with an object mapping from Order to Contacts. The configuration maps order email, as well as invoice name, address, and company name to HubSpot.](../../assets/screens/hubspot/object-mapping-example.png "Object Mapping Example")
+
+| pretix Field                                                | HubSpot Field                                          | Mode       |
+|-------------------------------------------------------------|--------------------------------------------------------|------------|
+| Order email [Text (one line)]                               | Email (email \| string)                                | Identifier |
+| Invoice address: Given name [Text (one line)]               | First name (firstname \| string)                       | Overwrite  |
+| Invoice address: Family name [Text (one line)]              | Last Name (lastname \| string)                         | Overwrite  |
+| Invoice address street [Text (one line)]                    | Street Address (address \| string)                     | Overwrite  |
+| Invoice address ZIP code  [Text (one line)]                 | Postal Code (ZIP \| string)                            | Overwrite  |
+| Invoice address city [Text (one line)]                      | City (city \| string)                                  | Overwrite  |
+| Invoice address country [Country code (ISO 3116-1 alpha-2)] | Country/Region Code (hs_country_region_code \| string) | Overwrite  |
+| Invoice address company [Text (one line)]                   | Company (company \| string)                            | Overwrite  |
 
 This maps the email address used to place an order in pretix to the email property in HubSpot. 
 It also maps  given name, family name, street, post code, city, country code, and company name onto the most closely matching properties in HubSpot. 
@@ -180,8 +191,11 @@ In the box labeled "Data transfer to external systems", click the :btn-icon:fa3-
 The box will then display the status ":fa3-hourglass: Pending". 
 The plugin will transfer data to HubSpot the next time the server executes `periodic_task`. 
 If you refresh the page after that, then the box will display links to the corresponding records in HubSpot along with timestamps. 
+In case a problem with the export occurred, the box will instead display ":fa3-warning Error" and an error message underneath the heading "HubSpot", along with buttons for retrying and canceling the export. 
 
-## Troubleshooting
+For information on handling errors with exports, see [troubleshooting](hubspot.md#troubleshooting). 
+
+### Checking for errors
 
 In order to check for errors that occur during the export to HubSpot, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 If errors have occurred, the page will display a warning box. 
@@ -196,6 +210,8 @@ This takes you to an overview of orders with which problems have occurred during
 You can also check individual orders for errors by navigating to :navpath:Your event → :fa3-shopping-cart: Orders: and selecting the order in question. 
 Take a look at the box labeled "Data transfer to external systems". 
 If this box displays ":fa3-warning Error" underneath the heading "HubSpot", then there is an issue with the export of this order's data to HubSpot. 
+
+## Troubleshooting
 
 ### Handling temporary errors
 
