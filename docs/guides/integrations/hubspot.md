@@ -197,6 +197,9 @@ For information on handling errors with exports, see [troubleshooting](hubspot.m
 
 ### Checking for errors
 
+After setting up exports to HubSpot, you should confirm that the configuration works as intended. 
+You should also do this after making changes to the configuration. 
+
 In order to check for errors that occur during the export to HubSpot, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
 If errors have occurred, the page will display a warning box. 
 
@@ -209,22 +212,28 @@ This takes you to an overview of orders with which problems have occurred during
 
 You can also check individual orders for errors by navigating to :navpath:Your event → :fa3-shopping-cart: Orders: and selecting the order in question. 
 Take a look at the box labeled "Data transfer to external systems". 
-If this box displays ":fa3-warning Error" underneath the heading "HubSpot", then there is an issue with the export of this order's data to HubSpot. 
+If this box displays ":fa3-warning: Error" underneath the heading "HubSpot", then there is an issue with the export of this order's data to HubSpot. 
+
+For information on how to resolve errors, see [Troubleshooting](hubspot.md#troubleshooting). 
 
 ## Troubleshooting
 
-### Handling temporary errors
+There are four different error messages that can be displayed on the "Sync problems" overview page or on the page for an individual order being exported to HubSpot: 
 
-If you have previously made successful exports with the same HubSpot plugin configuration, then the error may be temporary. 
-Check the status of the pretix server, the HubSpot server, and your internet provider. 
-If you are using pretix Hosted, then you can visit [https://pretixstatus.com/](https://pretixstatus.com/) to check the status of the pretix server. 
+ - Temporary error, auto-retry limit exceeded
+ - System error, needs manual intervention
+ - Provider reported a permanent error
+ - Misconfiguration, please check provider settings
 
-Once you have confirmed that all of these services are working as intended, navigate back to the "Sync problems" page. 
-Check the box at the top of the list and click the :btn-icon:fa3-refresh: Retry selected: button. 
-This marks these orders for export to HubSpot upon the next time the server runs the job. 
+If you get the "temporary error" message, then you do not need to intervene. 
+The server running pretix should resolve the issue by itself upon one of the next runs of `periodic_task`. 
 
-Wait ten minutes and then either refresh the page or navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
-If the errors are resolved, then the list on the "Sync problems" page will be empty and the warning box on the "HubSpot" settings page will have disappeared. 
+If you get the "system error" message, then there is an issue with the server running pretix. 
+If you are using pretix Hosted, contact support. 
+If you are hosting pretix (Community or Enterprise), then you need to resolve some issues with the configuration of the server. 
+
+If you get the "permanent error" or "misconfiguration" message, then the issue lies in the mapping of pretix variables to HubSpot variables. 
+See [Handling configuration errors](hubspot.md#handling-configuration-errors) for instructions on resolving these errors. 
 
 ### Handling configuration errors
 
