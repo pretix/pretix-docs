@@ -237,7 +237,7 @@ See [Handling configuration errors](hubspot.md#handling-configuration-errors) fo
 
 ### Handling configuration errors
 
-If errors are occurring after you have made changes to the configuration of the HubSpot plugin, then it is likely that the configuration is faulty and causes the errors. 
+If you see "permanent error" or "misconfiguration" messages after you have made changes to the configuration of the HubSpot plugin, then it is likely that the configuration is faulty and causes the errors. 
 Navigate to navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
 If a warning symbol :fa3-warning: appears in one of the lines, then that line is causing issues due to incompatible data types. 
 
