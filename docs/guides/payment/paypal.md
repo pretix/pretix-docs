@@ -47,7 +47,7 @@ The plugin is enabled, but PayPal has not been set up and enabled as a payment p
 Click on the :btn-icon:fa3-gear:Settings: button next to PayPal. 
 This takes you to the settings page for PayPal. 
 
-From this point on, the process is different depending on whether you are using pretix Hosted or a self-hosted edition of pretix (Community or Enterprise). 
+From this point forward, the process is different depending on whether you are using pretix Hosted or a self-hosted edition of pretix (Community or Enterprise). 
 
 ### Connecting to PayPal with pretix Hosted 
 

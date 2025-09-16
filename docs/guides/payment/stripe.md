@@ -82,10 +82,10 @@ While your event is in test mode, the pretix software will always use Stripe's t
 
 If you are using pretix Community or pretix Enterprise and you have not connected your account to Stripe yet, the settings page for Stripe will display fields for API keys. 
 Go to [https://dashboard.stripe.com/login](https://dashboard.stripe.com/login) and log in to your account. 
-The "API" page in the Stripe backend displays two pairs of keys: a secret key and a publishable key, once for sandbox mode and once for live mode. 
-If you want to test payments via Stripe, copy the sandbox keys form the Stripe API page to the corresponding fields on the settings page for Stripe in pretix. 
+The "API" page in the Stripe backend displays two pairs of keys: a secret key and a publishable key, one pair for sandbox mode and one pair for live mode. 
+If you want to test payments via Stripe, copy the sandbox keys from the Stripe API page to the corresponding fields on the settings page for Stripe in pretix. 
 
-Once you are ready to receive actual payments via Stripe, copy the live keys form the Stripe API page to the corresponding fields on the settings page for Stripe in pretix.
+Once you are ready to receive actual payments via Stripe, copy the live keys from the Stripe API page to the corresponding fields on the settings page for Stripe in pretix.
 For further information, refer to the Stripe documentation pages on [API keys](https://docs.stripe.com/keys#obtain-api-keys).  
 
 You also need to create a webhook so that Stripe can update pretix with information such as payment cancellations. 

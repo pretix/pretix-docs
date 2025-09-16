@@ -37,7 +37,7 @@ If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn
 If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
 Make sure that the plugin is enabled. 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Mollie; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Mollie; gift card is enabled and all other entries are disabled. All entries have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
 You can jump straight to the Mollie settings by clicking the :btn-icon:fa3-gear: Settings 🞃: drop-down menu and then :btn:Payment > Mollie:. 
 
@@ -83,9 +83,9 @@ Once you take your ticket shop live, switch the "endpoint" option on this page f
 
 If you are using pretix Community or pretix Enterprise and you have not connected your account to Mollie yet, the settings page for Mollie will display fields for API keys. 
 Go to [https://www.mollie.com/dashboard/settings/profiles](https://www.mollie.com/dashboard/settings/profiles) and log in to your account. 
-If you want to test payments via Mollie, copy the testing keys form the Mollie API page to the corresponding fields on the settings page for Mollie in pretix. 
+If you want to test payments via Mollie, copy the testing keys from the Mollie API page to the corresponding fields on the settings page for Mollie in pretix. 
 
-Once you are ready to receive actual payments via Mollie, copy the live keys form the Mollie API page to the corresponding fields on the settings page for Mollie in pretix.
+Once you are ready to receive actual payments via Mollie, copy the live keys from the Mollie API page to the corresponding fields on the settings page for Mollie in pretix.
 For further information, refer to the Mollie documentation pages on [API keys]https://docs.mollie.com/reference/authentication#creating-api-keys).  
 
 You also need to create a webhook so that Mollie can update pretix with information such as payment cancellations. 
