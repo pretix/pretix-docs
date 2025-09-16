@@ -8,7 +8,7 @@ pretixSCAN will interpret these custom rules when scanning the ticket and arrive
 
 This article assumes that you have read [check-in lists](check-in-lists.md) and set up one or more basic check-in lists. 
 
-## How To 
+## General usage
 
 In order to add custom rules to a check-in list, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:. 
 Click the change button :btn-icon:fa3-wrench:: next to the check-in list you want to edit. 
@@ -38,3 +38,22 @@ The custom check-in rule feature does not offer an "exclusive or" condition beca
 
 You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition. 
 When hovering the mouse over several nested brackets, AND-brackets will be highlighted in red, OR-brackets in green, and other conditions in purple. 
+
+### Adding a simple condition 
+
+All conditions **except** "All of the conditions below (AND)" and "At least one of the conditions below (OR)" are simple conditions. 
+Your custom check-in rule could consist of only a single of these simple conditions. 
+If you need to set up more than one condition, then you need to organize these conditions using AND- and OR-conditions. 
+
+Select a condition from the dropdown menu, for instance, "Current day of the week (1 = Monday, 7 = Sunday). 
+The page now displays an additional dropdown menu listing mathematical symbols for "equals", "greater than", "smaller than or equal to" and so on. 
+Select a symbol, for example, "<". 
+The page now displays an additional field in which you can enter a number. 
+Enter a number, for example, `6`. 
+Click the :btn:Save: button. 
+
+If you set up a condition as described in the example, then pretixSCAN will only recognize a ticket as valid if the current day of the week is less than 6, or in other words, only Monday through Friday. 
+Tickets will be rejected if scanned on Saturday or Sunday. 
+
+## Applications 
+
