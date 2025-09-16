@@ -20,7 +20,7 @@ If you want to place additional restrictions on a ticket being recognized as val
 In order to do so, under "Custom check-in rule", on the :btn-icon:fa3-edit: Edit: tab, click the :btn-icon:fa3-plus-circle: Add condition: button. 
 A dropdown menu appears, listing types of conditions. 
 
-### AND- and OR-brackets
+### Organizing conditions with AND- and OR-brackets
 
 The most important types of conditions are "All of the conditions below (AND)" and "At least one of the conditions below (OR)". 
 What separates these two from all other conditions is that they allow you to organize conditions into a complex logic for the check-in. 
@@ -35,3 +35,6 @@ This may be counter-intuitive.
 The condition "At least one of the conditions below (OR)" in this feature is an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction). 
 This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or), also known as XOR ("either one or the other"). 
 The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited. 
+
+You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition. 
+When hovering the mouse over several nested brackets, AND-brackets will be highlighted in red, OR-brackets in green, and other conditions in purple. 
