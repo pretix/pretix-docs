@@ -8,6 +8,11 @@ A custom check-in rules are always specific to one check-in list.
 ## Prerequisites
 
 This article assumes that you have read [check-in lists](check-in-lists.md) and set up one or more basic check-in lists. 
+A basic understanding of predicate logic is helpful. 
+If the proposition `∀xP(x)` is meaningless to you, ask a philosopher, a linguist, an electrical engineer, or a programmer.
+Alternatively, contact our support. 
+Do not ask a Sherlock Holmes fan. 
+They do not know the difference between induction and deduction. 
 
 ## General usage
 
@@ -63,13 +68,35 @@ Tickets will be rejected if scanned on Saturday or Sunday.
 You can remove a simple condition by clicking the :btn-icon:fa3-trash:: delete button. 
 You can duplicate it by clicking the :btn-icon:fa3-copy:: clone button. 
 
+### Allowing multiple entries 
+
+By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime. 
+If you set up custom check-in rules that allow tickets to be used used multiple times, then you also need to check the box next to "Allow multiple entries per ticket". 
+
+### Setting conditions specific to products or variations 
+
+Whenever you set up a custom check-in rule using the condition "Product" or "Product variations", then you need to cover all products or product variations on the check-in list in that rule. 
+
+For illustrative purposes, assume you have a check-in list called "Default" containing the products "Standard ticket" and "Discount ticket". 
+You set up a custom check-in rule with the condition `Product` `is one of` `Standard ticket`. 
+The page will now display the following infobox: 
+
+> Your rule always filters by product or variation, but the following products or variations are not contained in any of your rule parts so people with these tickets will not get in: 
+> 
+> - Discount ticket. 
+> 
+> Please double-check if this was intentional. 
+
+
+
 ## Applications 
 
 This section guides you through some useful applications of custom check-in rules. 
 
-### Allowing multiple entries per ticket 
+### Allowing a specific number of entries per ticket 
 
-If you are offering tickets that can be used multiple times, then you need to set up a custom check-in rule that allows multiple entries. 
+This section explains how to set up a custom check-in rule to allow a certain number of entries per ticket. 
+Check the box next to "Allow multiple entries per ticket". 
 
 Create an AND-bracket and add a condition within that bracket. 
 Select `Product`, then `is one of`, and then choose the products in question. 
@@ -91,11 +118,26 @@ Select `Product`, then `is one of`, and then choose those products that the rule
 Add another condition immediately below. 
 Select `Number of previous entries`, then `=`, and then `0`.
 
-![Custom check-in rule allowing entry if 'Product' 'is one of' 'Season ticket' AND 'Number of previous entries' '<' '9', or if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of previous entries' '=' '0'. ](../../assets/screens/check-in/multiple-full.png "Full custom check-in rule for multiple entries")
+![Custom check-in rule allowing entry if 'Product' 'is one of' 'Season ticket' AND 'Number of previous entries' '<' '9', or if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of previous entries' '=' '0'.](../../assets/screens/check-in/multiple-full.png "Full custom check-in rule for multiple entries")
 
-With this setup, pretixSCAN will recognize a product called "Season ticket" as valid as long as it has been used to enter less than ten times. 
+With the setup in the screenshot, pretixSCAN will recognize the product "Season ticket" as valid as long as it has been used to enter less than ten times. 
 This allows up to ten uses of the ticket. 
 pretixSCAN will recognize the products "Standard ticket" and "Discount ticket" if they have been used 0 times, so only once in total. 
 
 ![Visualization of custom check-in rule with two paths. The first path has 'Product: Season ticket' and 'Number of previous entries < 10'. The second path has 'Product: Standard ticket, discount ticket' and 'Number of previous entries = 0'. Both paths end with green checkmarks.](../../assets/screens/check-in/multiple-visualization.png "Visualization of full custom check-in rule for multiple entries")
 
+### Allowing unlimited entries on a single day 
+
+This section explains how to set up a custom check-in rule to allow a certain number of entries per ticket. 
+Check the box next to "Allow multiple entries per ticket". 
+
+Create an AND-bracket and add a condition within that bracket. 
+Select `Product`, then `is one of`, and then choose the products in question. 
+Add an OR-bracket below. 
+Add a condition within the OR-bracket, select `Number of previous entries`, then `=`, and then `0`. 
+Add another condition within the OR-bracket, select `Number of previous entries since midnight`, then `≥`, and then `1`. 
+
+![Custom check-in rule allowing entry if 'Product' 'is one of' 'Fast lane ticket' AND 'Number of previous entries' '=' '0', or 'Number of previous entries since midnight' '≥' '1'.](../../assets/screens/check-in/single-day.png "Custom check-in rule for unlimited entries on a single day")
+
+With the setup in the screenshot, pretixSCAN will recognize a product if it is being used for the first time, or if it has been used previously on the same day. 
+This allows for unlimited entries on a singular calendar day of the ticket holder's choosing. 
