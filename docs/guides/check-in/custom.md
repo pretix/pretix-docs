@@ -1,8 +1,9 @@
 # Custom check-in rules
 
+This article explains how to set up custom check-in rules. 
 You can use custom check-in rules to place restrictions on the validity of tickets based on time, number of previous entries, ticket type, gate, and other conditions. 
-pretixSCAN will interpret these custom rules when scanning the ticket and arrive at the correct result automatically. 
-
+pretixSCAN will interpret these  rules when scanning the ticket and arrive at the correct result automatically. 
+A custom check-in rules are always specific to one check-in list. 
 
 ## Prerequisites
 
@@ -23,7 +24,7 @@ A dropdown menu appears, listing types of conditions.
 ### Organizing conditions with AND- and OR-brackets
 
 The most important types of conditions are `All of the conditions below (AND)` and `At least one of the conditions below (OR)`. 
-What separates these two from all other conditions is that they allow you to organize conditions into a complex logic for the check-in. 
+These conditions are special because they allow you to organize conditions into a complex logic for the check-in. 
 Adding one of these two conditions creates an AND-bracket or an OR-bracket to which you can add more conditions. 
 
 If you select `All of the conditions below (AND)` from the dropdown menu and add conditions to the resulting AND-bracket, then all of those conditions must be fulfilled for pretixSCAN to recognize the ticket recognized as valid. 
@@ -38,6 +39,10 @@ The custom check-in rule feature does not offer an "exclusive or" condition beca
 
 You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition. 
 When hovering the mouse over several nested brackets, AND-brackets will be highlighted in red, OR-brackets in green, and other conditions in purple. 
+
+You can remove an AND- or OR-bracket **without** removing its contents by clicking the :btn-icon:fa3-cut:: cut button next to it. 
+You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: delete button. 
+You can duplicate it along with all rules nested within it by clicking the :btn-icon:fa3-copy:: clone button. 
 
 ### Adding a simple condition 
 
@@ -54,6 +59,9 @@ Click the :btn:Save: button.
 
 If you set up a condition as described in the example, then pretixSCAN will only recognize a ticket as valid if the current day of the week is less than 6, or in other words, only Monday through Friday. 
 Tickets will be rejected if scanned on Saturday or Sunday. 
+
+You can remove a simple condition by clicking the :btn-icon:fa3-trash:: delete button. 
+You can duplicate it by clicking the :btn-icon:fa3-copy:: clone button. 
 
 ## Applications 
 
