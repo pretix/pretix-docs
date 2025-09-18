@@ -67,6 +67,7 @@ If you have enabled or disabled any of the plugins for payment providers, your l
 Every payment provider for which you have enabled the plugin on the "Plugins" page appears in this list. 
 The list will also always contain the entry for gift cards. 
 Gift cards are the only payment method that is not handled by a plugin since gift cards are part of the core functions of pretix. 
+For more information, see [gift cards](../gift-cards.md). 
 
 ![Payment settings page. The 'Payment providers' tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Stripe. Gift card is enabled and all other entries are disabled. All entries have 'Settings' buttons next to them. ](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
@@ -83,9 +84,10 @@ If the payment provider is an external service, the settings page only contains 
 Once you have set up that connection, the settings page for the payment provider will display the usual settings. 
 For detailed information on how to set up and enable specific payment providers, refer to the pages nested below this one: 
 
- -  [Bank transfer](bank-transfer.md) 
- -  [Stripe](stripe.md) 
- -  [PayPal](paypal.md) 
+ - [Bank transfer](bank-transfer.md) 
+ - [Mollie](mollie.md)
+ - [PayPal](paypal.md) 
+ - [Stripe](stripe.md) 
 
 ### Additional fees
 
@@ -236,4 +238,4 @@ Here is the full list of articles on setting up and using specific payment provi
  - [Bank transfer](bank-transfer.md) 
  - [Mollie](mollie.md)
  - [PayPal](paypal.md) 
- - [Stripe](stripe.md) 
+ - [Stripe](stripe.md)
