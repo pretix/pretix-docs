@@ -11,6 +11,8 @@ You have to enable and set up at least one payment provider if you want to recei
 This article shows you how to do that. 
 It also tells you how to take some optional steps such as setting up additional fees or deadlines. 
 
+If you want to sell tickets at the box office, or if you want to sell tickets for cash, you should use the app [pretixPOS](../pretixpos/index.md). 
+
 ## Prerequisites
 
 Setting up payment providers is handled on the event level, so you need to create an event first. 
