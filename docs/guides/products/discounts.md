@@ -57,7 +57,7 @@ For illustrative purposes, assume that your basic admission ticket is priced at 
 Clone that ticket, give it a name such as "Reduced ticket for groups of five or more", and set the price to €15.00. 
 Save the ticket and edit it. 
 Switch to the :btn:Availability: tab and set the "Minimum amount per order" to 5. 
-This way, customers can purchase 5 or more of the tickets at the discounted price. 
+This way, customers will have to purchase at least five of the discounted tickets at the same time. 
 
 #### Bulk discounts
 

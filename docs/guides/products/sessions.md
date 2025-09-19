@@ -100,7 +100,7 @@ Search for the "Agenda constraints" plugin in the list and click the :btn:Enable
 Create a category for session tickets and check the box next to "Products in this category are add-on products". 
 Create a product for each individual session, add it to the sessions category and switch to the :btn:Additional settings: tab. 
 Use the fields "Start date" and "End date" to define the span of time in which the session is taking place. 
-Create a quota for each of the session add-on products, with the total capacity of the quota reflecting the maximum number of attendants for each session. 
+Create a quota for each of the session add-on products, with the total capacity of the quota reflecting the maximum number of attendees for each session. 
 
 Edit the basic admission tickets for your event and open the :btn:Add-ons: tab. 
 Add an add-on from the sessions category with a "Minimum number" of 0 and a "Maximum number" equal to or greater than the largest possible number of workshops a guest can attend. 

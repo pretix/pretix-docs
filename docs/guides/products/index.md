@@ -151,7 +151,7 @@ Open the :btn:Advanced: tab.
 Under "Custom check-in rule", click the :btn-icon:fa3-plus-circle: Add condition: button and select "All of the conditions below (AND)" from the dropdown menu. 
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is after", then "Event start". 
 You can leave the "Tolerance (minutes)" field empty. 
-If you want attendants to be able get in, for example, 10 minutes before the event starts, specify a "Tolerance (minutes)" of `10`. 
+If you want attendees to be able get in, for example, 10 minutes before the event starts, specify a "Tolerance (minutes)" of `10`. 
 Click :btn-icon:fa3-plus-circle: Add condition: again and select "Current date and time", then "is before", then "Event end". 
 
 ![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/time-slot-check-in-rule.png "Custom check-in rule")
