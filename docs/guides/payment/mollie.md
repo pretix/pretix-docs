@@ -3,7 +3,7 @@
 Mollie is one of the many options for handling payments within pretix. 
 Mollie allows handling payments via the following methods: 
 
-Alma, Apple Pay, BANCOMAT Pay, Bancontact, bank transfer, Belfius Pay Button, bitcoin, BLIK, credit card, EPS, Google Pay, iDEAL, ING Home'Pay, Klarna, KBC/CBC Payment Button, MyBank, PayPal, paysafecard, Przelewy24, Satispay, SOFORT, Trustly, and Twint. 
+Alma, Apple Pay, BANCOMAT Pay, Bancontact, bank transfer, Belfius Pay Button, bitcoin, BLIK, credit card, EPS, Google Pay, iDEAL, ING Home'Pay, Klarna, KBC/CBC Payment Button, MyBank, PayPal, paysafecard, Przelewy24, Satispay, Trustly, and Twint. 
 
 This article tells you how to connect to your Mollie account and use it to receive payments via pretix. 
 
@@ -31,11 +31,10 @@ This section will guide you through those steps in detail.
 
 Navigate to :navpath:Your Event → Settings → Plugins:.
 Switch to the :btn:Payment providers: tab. 
-The Mollie plugin is displayed at the top of the page. 
-It should be enabled by default. 
-If it is enabled, it will have a green ":fa3-check: Active" tag and a white :btn:Disable: button. 
-If it isn't enabled, the tag will be missing and it will have a purple :btn:Enable: button. 
-Make sure that the plugin is enabled. 
+This page displays the Mollie plugin at the top.
+If it is active, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
+If it is not active, the tag will be missing and it will have a purple :btn:Enable: button. 
+Verify that the plugin is active. 
 
 ![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Mollie; gift card is enabled and all other entries are disabled. All entries have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
 
@@ -86,7 +85,7 @@ Go to [https://www.mollie.com/dashboard/settings/profiles](https://www.mollie.co
 If you want to test payments via Mollie, copy the testing keys from the Mollie API page to the corresponding fields on the settings page for Mollie in pretix. 
 
 Once you are ready to receive actual payments via Mollie, copy the live keys from the Mollie API page to the corresponding fields on the settings page for Mollie in pretix.
-For further information, refer to the Mollie documentation pages on [API keys]https://docs.mollie.com/reference/authentication#creating-api-keys).  
+For further information, refer to the Mollie documentation pages on [API keys](https://docs.mollie.com/reference/authentication#creating-api-keys).  
 
 You also need to create a webhook so that Mollie can update pretix with information such as payment cancellations. 
 Copy the webhook URL from the infobox near the bottom of the Mollie settings page in pretix and paste it into the corresponding field in the Mollie backend. 
