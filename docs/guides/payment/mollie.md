@@ -85,7 +85,7 @@ Go to [https://www.mollie.com/dashboard/settings/profiles](https://www.mollie.co
 If you want to test payments via Mollie, copy the testing keys from the Mollie API page to the corresponding fields on the settings page for Mollie in pretix. 
 
 Once you are ready to receive actual payments via Mollie, copy the live keys from the Mollie API page to the corresponding fields on the settings page for Mollie in pretix.
-For further information, refer to the Mollie documentation pages on [API keys]https://docs.mollie.com/reference/authentication#creating-api-keys).  
+For further information, refer to the Mollie documentation pages on [API keys](https://docs.mollie.com/reference/authentication#creating-api-keys).  
 
 You also need to create a webhook so that Mollie can update pretix with information such as payment cancellations. 
 Copy the webhook URL from the infobox near the bottom of the Mollie settings page in pretix and paste it into the corresponding field in the Mollie backend. 
