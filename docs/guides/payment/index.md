@@ -195,7 +195,7 @@ This page also lets you make optional adjustments such as a last date of payment
     No payments will be accepted after the date defined under "Last date of payments". 
     
     You cannot manually accept an order as paid after the "Last date of payments". 
-    If you want to avoid a situation in which this would be necessary, leave the "Last date of payments" setting at `Not set`. 
+    If you want to avoid a situation in which this would cause issues, leave the "Last date of payments" setting at `Not set`. 
 
 Deadlines settings apply on the event level, i.e. equally to all payment methods. 
 If you are using payment methods with long processing times such as bank transfers, set the deadlines long enough to incorporate those processing times. 
