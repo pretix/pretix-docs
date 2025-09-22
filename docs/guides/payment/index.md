@@ -188,11 +188,20 @@ Use the method described [above](index.md#passing-payment-provider-fees-on-to-yo
 Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
 The :btn:Deadlines: tab lets you set payment terms measured in either days or minutes. 
 The default value for the payment term for your customers is 14 days. 
-This page also lets you make optional adjustments such as a last day of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
+This page also lets you make optional adjustments such as a last date of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
+
+!!! Note 
+    If you define a "Last date of payment", then that last date of payment overrides both the "Payment term" and the "Accept late payments" settings. 
+    No payments will be accepted after the date defined under "Last date of payments". 
+    
+    You cannot manually accept an order as paid after the "Last date of payments". 
+
+    If you still want to admit attendees to your event even if they have not paid, navigate to :navpath:Your event →  :fa3-check-square-o: Check-in → Check-in lists. 
+    Edit the relevant check-in list and check the box next to "Include pending orders". 
 
 Deadlines settings apply on the event level, i.e. equally to all payment methods. 
 If you are using payment methods with long processing times such as bank transfers, set the deadlines long enough to incorporate those processing times. 
-    
+
 pretix does not support setting different deadlines for different payment methods because this could make ordering and paying very confusing and frustrating for your customers. 
 
 Consider, for example, if pretix allowed different deadlines for each payment method. 
