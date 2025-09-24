@@ -118,6 +118,10 @@ If you want a full-screen view of the visualization, hover the mouse over the fl
 You cannot make any changes to the visualization itself. 
 If you want to make any further changes to your rule, click the btn-icon:fa3-edit: Edit:. 
 
+### Time and date restrictions 
+
+Time and date restrictions and tolerances 
+
 ## Applications 
 
 This section guides you through some useful applications of custom check-in rules. 
@@ -170,3 +174,18 @@ Add another condition within the OR-bracket, select `Number of previous entries 
 
 With the setup in the screenshot, pretixSCAN will recognize a product if it is being used for the first time, or if it has been used previously on the same day. 
 This allows for unlimited entries on a singular calendar day of the ticket holder's choosing. 
+
+### Allowing entries on a specific number of days 
+
+Attendee can use ticket on exactly X days, it doesn't matter which days 
+
+### Setting a minimum time between entries 
+
+Use ticket as often as you want, but only every 120 minutes 
+
+### Allow entries for a specific time span 
+
+Enter as many times as you want, but only for X minutes after checking in for the first time 
+
+### Allow unlimited entries only during setup 
+
