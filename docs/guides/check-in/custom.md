@@ -28,34 +28,11 @@ If you want to place additional restrictions on a ticket being recognized as val
 In order to do so, under "Custom check-in rule", on the :btn-icon:fa3-edit: Edit: tab, click the :btn-icon:fa3-plus-circle: Add condition: button. 
 A dropdown menu appears, listing types of conditions. 
 
-### Organizing conditions with AND- and OR-brackets
-
-The most important types of conditions are `All of the conditions below (AND)` and `At least one of the conditions below (OR)`. 
-These conditions are special because they allow you to organize conditions into a complex logic for the check-in. 
-Adding one of these two conditions creates an AND-bracket or an OR-bracket to which you can add more conditions. 
-
-If you select `All of the conditions below (AND)` from the dropdown menu and add conditions to the resulting AND-bracket, then all of those conditions must be fulfilled for pretixSCAN to recognize the ticket recognized as valid. 
-
-If you select `At least one of the conditions below (OR)` and add conditions to the resulting OR-bracket, then at least one of those conditions must be fulfilled for pretixSCAN to recognize the ticket as valid. 
-If multiple or even all conditions within the OR-bracket are fulfilled, then the ticket will still be recognized as valid. 
-
-This may be counter-intuitive. 
-The condition `At least one of the conditions below (OR)` is an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction). 
-This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or), also known as XOR ("either one or the other"). 
-The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited. 
-
-You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition. 
-When hovering the mouse over several nested brackets, AND-brackets will be highlighted in red, OR-brackets in green, and other conditions in purple. 
-
-You can remove an AND- or OR-bracket **without** removing its contents by clicking the :btn-icon:fa3-cut:: cut button next to it. 
-You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: delete button. 
-You can duplicate it along with all rules nested within it by clicking the :btn-icon:fa3-copy:: clone button. 
-
 ### Adding a simple condition 
 
 All conditions **except** `All of the conditions below (AND)` and `At least one of the conditions below (OR)` are simple conditions. 
-Your custom check-in rule could consist of only a single of these simple conditions. 
-If you need to set up more than one condition, then you need to organize these conditions using AND- and OR-conditions. 
+Depending on your use case, you may only need a single one of these simple conditions for your custom check-in rule. 
+If you need to set up more than one condition, then you need to organize these conditions using [AND- and OR-conditions](custom.md#organizing-conditions-with-and--and-or-brackets). 
 
 Select a condition from the dropdown menu, for instance, `Current day of the week (1 = Monday, 7 = Sunday)`. 
 The page now displays an additional dropdown menu listing mathematical symbols for "equals", "greater than", "smaller than or equal to" and so on. 
@@ -69,6 +46,29 @@ Tickets will be rejected if scanned on Saturday or Sunday.
 
 You can remove a simple condition by clicking the :btn-icon:fa3-trash:: delete button. 
 You can duplicate it by clicking the :btn-icon:fa3-copy:: clone button. 
+
+### Organizing conditions with AND- and OR-brackets
+
+The most important types of conditions are `All of the conditions below (AND)` and `At least one of the conditions below (OR)`. 
+These conditions are special because they allow you to organize conditions into a complex logic for the check-in. 
+Adding one of these two conditions creates an AND-bracket or an OR-bracket to which you can add more conditions. 
+
+If you select `All of the conditions below (AND)` from the dropdown menu and add conditions to the resulting AND-bracket, then all of those conditions must be fulfilled for pretixSCAN to recognize the ticket recognized as valid. 
+
+If you select `At least one of the conditions below (OR)` and add conditions to the resulting OR-bracket, then at least one of those conditions must be fulfilled for pretixSCAN to recognize the ticket as valid. 
+If multiple or even all conditions within the OR-bracket are fulfilled, then the ticket will still be recognized as valid. 
+
+This may be counter-intuitive. 
+The condition `At least one of the conditions below (OR)` represents an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction). 
+This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or), also known as XOR ("either one or the other"). 
+The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited. 
+
+You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition. 
+When hovering the mouse over several nested brackets, AND-brackets will be highlighted in red, OR-brackets in green, and other conditions in purple. 
+
+You can remove an AND- or OR-bracket **without** removing its contents by clicking the :btn-icon:fa3-cut:: cut button next to it. 
+You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: delete button. 
+You can duplicate it along with all rules nested within it by clicking the :btn-icon:fa3-copy:: clone button. 
 
 ### Allowing multiple entries 
 
