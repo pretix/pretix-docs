@@ -100,6 +100,22 @@ Add another simple condition of your choosing to the end-bracket.
 As soon as every product on the check-in list is mentioned in the custom check-in rule at least once, the infobox will disappear. 
 pretixSCAN will not reject products outright anymore, but will recognize them as valid or invalid depending on the rule you set up. 
 
+### Visualizing rules 
+
+Visualizing rules can help you better understand the logic you set up. 
+It aids you in comprehending the possible conditional paths a ticket scan can take. 
+
+After setting up your check-in rule, open the :btn-icon:fa3-eye: Visualize: tab. 
+This tab displays your custom check-in rule as a flowchart. 
+OR-brackets take the shape of branching paths. 
+AND-brackets are listed one after the other on the same path. 
+All paths end in a green :fa3-check-circle: checkmark, representing a successful validation. 
+
+If you want a full-screen view of the visualization, hover the mouse over the flowchart and click the :fa3-window-maximize: maximize button on the right. 
+
+You cannot make any changes to the visualization itself. 
+If you want to make any further changes to your rule, click the btn-icon:fa3-edit: Edit:. 
+
 ## Applications 
 
 This section guides you through some useful applications of custom check-in rules. 
