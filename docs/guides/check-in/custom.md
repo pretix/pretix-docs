@@ -1,9 +1,9 @@
 # Custom check-in rules
 
 This article explains how to set up custom check-in rules. 
+A custom check-in rule is always specific to one check-in list. 
 You can use custom check-in rules to place restrictions on the validity of tickets based on time, number of previous entries, ticket type, gate, and other conditions. 
 pretixSCAN will interpret these  rules when scanning the ticket and arrive at the correct result automatically. 
-A custom check-in rules are always specific to one check-in list. 
 
 ## Prerequisites
 
@@ -20,7 +20,9 @@ In order to add custom rules to a check-in list, navigate to :navpath:Your event
 Click the change button :btn-icon:fa3-wrench:: next to the check-in list you want to edit. 
 
 By default, pretixSCAN will recognize any ticket on the check-in list as valid as long as the ticket has been paid for and either the ticket has not been scanned before, or the ticket has been scanned and then scanned for exit. 
-The exact behavior depends on your settings on the :btn:General: and btn:Advanced: tabs on this page. 
+The exact behavior depends on your settings on the :btn:General: and :btn:Advanced: tabs on this page. 
+
+!['Check-in lists' page on the 'Advanced' tab, displaying an infobox and a warning box. There are checkboxes for optional settings and an empty field labeled 'Automatically check out everyone at'.](../../assets/screens/check-in/advanced.png "Advanced options for check-in list default")
 
 If you want to place additional restrictions on a ticket being recognized as valid by pretixSCAN, set up a custom check-in rule. 
 In order to do so, under "Custom check-in rule", on the :btn-icon:fa3-edit: Edit: tab, click the :btn-icon:fa3-plus-circle: Add condition: button. 
@@ -38,7 +40,7 @@ If you select `At least one of the conditions below (OR)` and add conditions to 
 If multiple or even all conditions within the OR-bracket are fulfilled, then the ticket will still be recognized as valid. 
 
 This may be counter-intuitive. 
-The condition `At least one of the conditions below (OR)` in this feature is an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction). 
+The condition `At least one of the conditions below (OR)` is an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction). 
 This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or), also known as XOR ("either one or the other"). 
 The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited. 
 
@@ -86,8 +88,6 @@ The page will now display the following infobox:
 > - Discount ticket. 
 > 
 > Please double-check if this was intentional. 
-
-
 
 ## Applications 
 
