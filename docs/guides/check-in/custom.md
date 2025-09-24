@@ -73,7 +73,7 @@ You can duplicate it along with all rules nested within it by clicking the :btn-
 ### Allowing multiple entries 
 
 By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime. 
-If you set up custom check-in rules that allow tickets to be used used multiple times, then you also need to check the box next to "Allow multiple entries per ticket". 
+If you set up custom check-in rules that allow tickets to be used used multiple times, then you also need to check the box next to "Allow multiple entries per ticket" further up on the same page. 
 
 ### Setting conditions specific to products or variations 
 
@@ -88,6 +88,17 @@ The page will now display the following infobox:
 > - Discount ticket. 
 > 
 > Please double-check if this was intentional. 
+
+If you want the same conditions to apply to all products, add all remaining products to the condition you have already set up. 
+Click the field that already lists a product and select all products that are on this check-in list from the dropdown menu. 
+
+If you want different conditions to apply to the other products, set up an OR-bracket at the base level. 
+Add an AND-bracket within that OR-bracket. 
+Add the following condition within the AND-bracket: `Product` `is one of` and then select all remaining products on the check-in list. 
+Add another simple condition of your choosing to the end-bracket. 
+
+As soon as every product on the check-in list is mentioned in the custom check-in rule at least once, the infobox will disappear. 
+pretixSCAN will not reject products outright anymore, but will recognize them as valid or invalid depending on the rule you set up. 
 
 ## Applications 
 
