@@ -111,6 +111,8 @@ OR-brackets take the shape of branching paths.
 AND-brackets are listed one after the other on the same path. 
 All paths end in a green :fa3-check-circle: checkmark, representing a successful validation. 
 
+!['Check-in lists' page on the 'Advanced' tab, displaying a visualization of the custom rule. The path starts on the left and branches into two. Both paths contain two boxes and end in green checkmarks. The boxes on the top path read 'Product Season ticket' and 'Number of previous entries < 10'. The boxes on the bottom path read 'Product: Standard ticket, Discount ticket' and 'Number of previous entries = 0'.](../../assets/screens/check-in/visualize.png "Custom check-in rule visualization")
+
 If you want a full-screen view of the visualization, hover the mouse over the flowchart and click the :fa3-window-maximize: maximize button on the right. 
 
 You cannot make any changes to the visualization itself. 
