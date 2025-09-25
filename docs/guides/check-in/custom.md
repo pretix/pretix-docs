@@ -187,6 +187,8 @@ Add a condition within the OR-bracket, select `Number of days with a previous en
 For instance, if you want to allow entry on any two days, select `2`. 
 Add another condition within the OR-bracket, select `Number of previous entries since midnight`, then `≥`, and then `1`. 
 
+![Custom check-in rule allowing entry if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of days with a previous entry' '<' '2', or 'Number of previous entries since midnight' '≥' '1'.](../../assets/screens/check-in/two-days.png "Custom check-in rule for unlimited entries on a specific number of days")
+
 With this setup, the ticket holder can enter as many times as they like, but only on two days of the event. 
 
 ### Setting a minimum time between entries 
@@ -202,6 +204,8 @@ Add another condition within the OR-bracket, select `Minutes since last entry (-
 Enter the number of minutes for the minimum period of time that must pass between entries. 
 For instance, if you want to allow entry after at least 2 hours, select `120`. 
 
+![Custom check-in rule allowing entry if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of previous entries' '=' '0', or 'Minutes since last entry (-1 on first entry)' '>' '120'.](../../assets/screens/check-in/minimum.png "Custom check-in rule for unlimited entries with a time of at least 120 minutes between them")
+
 With this setup, the ticket holder can enter as many times as they like, but only if 120 minutes or more have passed since the previous scan. 
 
 ### Allow entries for a specific time span 
@@ -210,12 +214,27 @@ This section explains how to set up a custom check-in rule to allow entries for 
 
 Create an OR-bracket and add a condition within that bracket. 
 Select `Product`, then `is one of`, and then choose the products in question. 
-Add another condition, select `Minutes since last entry (-1 on first entry)`, and then `≤`
+Add another condition, select `Minutes since last first (-1 on first entry)`, and then `≤`
 
 Enter the number of minutes for which you want to allow entry after the ticket holder has had their ticket validated for the first time. 
 For instance, if you want to allow entry for 2 hours, select `120`. 
 
+![Custom check-in rule allowing entry if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of previous entries' '=' '0', or 'Minutes since last entry (-1 on first entry)' '≤' '120'.](../../assets/screens/check-in/time-span.png "Custom check-in rule for unlimited entries within a time span of 120 minutes")
+
 With this setup, the ticket holder can enter as many times as they like for 120 minutes after the first successful scan. 
 
-### Allow unlimited entries only during setup 
+### Allow unlimited entries only before the actual event 
 
+This section explains how to set up a custom check-in rule to allow unlimited entries **before** the start of the event, but only limited entries during the event itself. 
+This can be useful if you want attendees to be able to access the venue while the event is being set up. 
+
+Create an OR-bracket and add a condition within that bracket. 
+Select `Current date and time`, then `is before`, then `Event start`, and enter a tolerance of `0`. 
+Create an AND-bracket below and add a new condition within that bracket. 
+Select Select `Current date and time`, then `is after`, then `Event start`, and enter a tolerance of `0`. 
+Create another condition within the AND-bracket. 
+Select `Number of previous entries since`, then `Event start`, then `=` and enter a tolerance of `0`. 
+
+![Custom check-in rule allowing entry if 'Current date and time' 'is before' 'Event start' OR 'Current date and time' 'is after' 'Event start' AND 'Number of previous entries since' 'Event start' '=' '0'.](../../assets/screens/check-in/before.png "Custom check-in rule for unlimited entries before the event")
+
+With this setup, ticket holders will be able to enter however often they want before the start of the event, but only once after the event has started. 
