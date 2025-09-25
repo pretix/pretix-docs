@@ -118,9 +118,20 @@ If you want a full-screen view of the visualization, hover the mouse over the fl
 You cannot make any changes to the visualization itself. 
 If you want to make any further changes to your rule, click the btn-icon:fa3-edit: Edit:. 
 
-### Time and date restrictions 
+### Date and time tolerances 
 
-Time and date restrictions and tolerances 
+The condition`Current date and time` allows you to set tolerances. 
+This section explains how those tolerances work. 
+
+A tolerance always extends to the opposite direction of the restriction you set. 
+The deciding factor is the selection you make in the second dropdown menu: `is before` or `is after`. 
+Assume, for example, that you select `Current date and time`, then `is after`, then `Event start` and set a tolerance of `10`. 
+In this case, attendees will be admitted up to ten minutes **before** the event has started. 
+
+Assume, for example, that you select `Current date and time`, then `is before`, then `Event start` and set a tolerance of `10`. 
+In this case, attendees will be admitted up to ten minutes **after** the event has started. 
+
+If you enter a tolerance of `0`, then pretixSCAN will recognize tickets in the exact time frame you define. 
 
 ## Applications 
 
