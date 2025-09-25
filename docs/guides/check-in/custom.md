@@ -177,15 +177,45 @@ This allows for unlimited entries on a singular calendar day of the ticket holde
 
 ### Allowing entries on a specific number of days 
 
-Attendee can use ticket on exactly X days, it doesn't matter which days 
+This section explains how to set up a custom check-in rule to allow entry on any specific number of days. 
+
+Create an AND-bracket and add a condition within that bracket. 
+Select `Product`, then `is one of`, and then choose the products in question. 
+Add an OR-bracket below. 
+
+Add a condition within the OR-bracket, select `Number of days with a previous entry`, then `<`, and select the number of days on which you want to allow entry. 
+For instance, if you want to allow entry on any two days, select `2`. 
+Add another condition within the OR-bracket, select `Number of previous entries since midnight`, then `≥`, and then `1`. 
+
+With this setup, the ticket holder can enter as many times as they like, but only on two days of the event. 
 
 ### Setting a minimum time between entries 
 
-Use ticket as often as you want, but only every 120 minutes 
+This section explains how to set up a custom check-in rule to allow unlimited entries if a certain period of time has passed between entries. 
+
+Create an AND-bracket and add a condition within that bracket. 
+Select `Product`, then `is one of`, and then choose the products in question. 
+Add an OR-bracket below. 
+Add a condition within the OR-bracket, select `Number of previous entries`, then `=`, and then `0`. 
+Add another condition within the OR-bracket, select `Minutes since last entry (-1 on first entry)`, and then `>`
+
+Enter the number of minutes for the minimum period of time that must pass between entries. 
+For instance, if you want to allow entry after at least 2 hours, select `120`. 
+
+With this setup, the ticket holder can enter as many times as they like, but only if 120 minutes or more have passed since the previous scan. 
 
 ### Allow entries for a specific time span 
 
-Enter as many times as you want, but only for X minutes after checking in for the first time 
+This section explains how to set up a custom check-in rule to allow entries for a limited period of time after the first entry. 
+
+Create an OR-bracket and add a condition within that bracket. 
+Select `Product`, then `is one of`, and then choose the products in question. 
+Add another condition, select `Minutes since last entry (-1 on first entry)`, and then `≤`
+
+Enter the number of minutes for which you want to allow entry after the ticket holder has had their ticket validated for the first time. 
+For instance, if you want to allow entry for 2 hours, select `120`. 
+
+With this setup, the ticket holder can enter as many times as they like for 120 minutes after the first successful scan. 
 
 ### Allow unlimited entries only during setup 
 
