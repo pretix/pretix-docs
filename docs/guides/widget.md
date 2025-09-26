@@ -51,6 +51,7 @@ The code snippet will look similar to this:
 <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css">
 <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
 ```
+
 Add the second code snippet at the position where you want the widget to appear on your website. 
 It will look similar to this: 
 
@@ -66,11 +67,19 @@ It will look similar to this:
 </noscript>
 ```
 
-!!! Note 
-    The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
-    If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-    The most straightforward way to obtain the right code is using the code generator. 
-    Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
+!!! Note
+
+    Some website builders such as Jimdo have trouble with our custom HTML tag. 
+    If that is the case, edit the opening and closing tags in the first line of the second code snippet:  
+    Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`. 
+    Replace `</pretix-widget>` with `</div>`. 
+
+
+The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
+If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
+
+The most straightforward way to obtain the right code is using the code generator. 
+Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
 ### Embedding multiple widgets on your website
 
@@ -80,13 +89,6 @@ It will look similar to this:
 
 If you want to embed multiple widgets for different events on your website, add the first snippet only **once**. 
 Generate the second snippet for every event and add each one to your website's HTML. 
-
-!!! Note
-
-    Some website builders such as Jimdo have trouble with our custom HTML tag. 
-    If that is the case, edit the opening and closing tags in the first line of the second code snippet:  
-    Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`. 
-    Replace `</pretix-widget>` with `</div>`. 
 
 ### Using the widget for multiple events
 
