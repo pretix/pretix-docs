@@ -74,7 +74,6 @@ It will look similar to this:
     Replace `<pretix-widget …>` with `<div class="pretix-widget-compat" …>`. 
     Replace `</pretix-widget>` with `</div>`. 
 
-
 The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon`.
 If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
 
@@ -243,17 +242,6 @@ If you link the button to an event series, use the `subevent` attribute to speci
 The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
 You can style the button using the `pretix-button` CSS class.
 
-### Styling
-
-You can use CSS to customize the appearance of the widget or button to match your website. 
-You can use your browser's developer tools to inspect the rendered HTML of the widget.
-Almost every element has a custom class and all classes have the prefix `pretix-widget`. 
-You can override the styles or use your own custom stylesheet. 
-
-!!! Note 
-    We designed the widget to conform with European Union accessibility standards. 
-    Do **not** break accessibility with your customizations to the widget, for instance by choosing colors with too little contrast. 
-
 ## Applications
 
 This section covers all applications that go beyond the basic usage of the widget on your website: 
@@ -383,7 +371,18 @@ If you want to disable voucher input in the widget, you can pass the `disable-vo
 
 ### Customizing widget behavior
 
-This section explains how to customize the way in which the widget loads and opens, how it opens the checkout page, and how it displays event info. 
+This section explains how to customize the widget's styling, the way in which the widget loads and opens, how it opens the checkout page, and how it displays event info. 
+
+### Styling
+
+You can use CSS to customize the appearance of the widget or button to match your website. 
+You can use your browser's developer tools to inspect the rendered HTML of the widget.
+Almost every element has a custom class and all classes have the prefix `pretix-widget`. 
+You can override the styles or use your own custom stylesheet. 
+
+!!! Note 
+    We designed the widget to conform with European Union accessibility standards. 
+    Do **not** break accessibility with your customizations to the widget, for instance by choosing colors with too little contrast. 
 
 #### Opening the widget dynamically
 
@@ -712,6 +711,19 @@ If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, 
 But it will **not** be able to open the checkout process in an iframe. 
 If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget will be able to detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
 
+## Troubleshooting 
+
+### The code copied from this page does not work 
+
+If you want to apply code examples from this page to your own event and website, you need to replace the strings with the ones matching your event. 
+The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon` or the event series `series`.
+Your own event will use different organizer and event slugs. 
+If you are using a different domain, then you will also need to use a different base URL. 
+
+If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
+The most straightforward way to obtain the right code is using the code generator. 
+Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
+
 ## Versioning
 
 When making changes to the widget, we try to avoid interfering with the configuration options listen on this page or causing compatibility issues with custom styling of your page as far as possible. 
@@ -743,16 +755,3 @@ Version 2 is available starting with pretix 2025.5.0 (released late May, 2025).
 **Deprecation schedule**:
 Starting with pretix 2025.6.0 (released late June, 2025), all users of version 1 will be automatically upgraded to version 2.
 We are intentionally keeping this time frame short to help users comply with the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act).
-
-## Troubleshooting 
-
-### The code copied from this page does not work 
-
-If you want to apply code examples from this page to your own event and website, you need to replace the strings with the ones matching your event. 
-The examples provided in this article all use the base URL `pretix.eu`, the organizer `demo`, and the event `democon` or the event series `series`.
-Your own event will use different organizer and event slugs. 
-If you are using a different domain, then you will also need to use a different base URL. 
-
-If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
-The most straightforward way to obtain the right code is using the code generator. 
-Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
