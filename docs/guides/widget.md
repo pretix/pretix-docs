@@ -31,8 +31,7 @@ Some basic knowledge of JavaScript is helpful.
 
 ## General usage
 
-This section explains how to [embed the pretix widget](widget.md#embedding-the-widget-on-your-website) or the [pretix button](widget.md#pretix-button) on your website either once or [multiple times](widget.md#embedding-multiple-widgets-on-your-website), as well as how to [style the widget](widget.md#styling). 
-It also explains how to use the widget for [multiple events](widget.md#using-the-widget-for-multiple-events) or for [a selection of dates](widget.md#using-the-widget-for-a-selection-of-dates) within an event series. 
+This section explains how to [embed the pretix widget](widget.md#embedding-the-widget-on-your-website) or the [pretix button](widget.md#pretix-button) on your website either once or [multiple times](widget.md#embedding-multiple-widgets-on-your-website). 
 
 ### Embedding the widget on your website
 
@@ -89,6 +88,61 @@ Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generat
 If you want to embed multiple widgets for different events on your website, add the first snippet only **once**. 
 Generate the second snippet for every event and add each one to your website's HTML. 
 
+### pretix Button
+
+As an alternative to the full widget, you can embed a simple button on your website. 
+Clicking this button adds a predefined selection of products to the cart and proceeds to checkout. 
+You can try out this behavior here:
+
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. 
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+        </div>
+    </div>
+</noscript>
+
+You can embed the pretix Button exactly like the pretix Widget. 
+In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
+Instead of the `pretix-widget` tag, use the `pretix-button` tag:
+
+```
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
+    Buy ticket!
+</pretix-button>
+```
+Use the `items` attribute to specify the items that the button will add to the cart. 
+The syntax of this attribute is: 
+
+```
+item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4
+```
+
+Replace each instance of `ITEMID` with the ID of the item to be added. 
+Replace each instance of `VARID` with the ID of variations of those items. 
+Omit `variation_ITEMID_VARID=4` if the items do **not** have variations. 
+Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
+
+If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
+
+If you link the button to an event series, use the `subevent` attribute to specify the date for which it should add the items to the cart. 
+
+The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
+You can style the button using the `pretix-button` CSS class.
+
+## Applications
+
+This section covers all applications that go beyond the basic usage of the widget on your website: 
+
+ - using the widget for [multiple events](widget.md#using-the-widget-for-multiple-events) or an [event series](widget.md#using-the-widget-for-an-event-series)
+ - influencing [product availability](widget.md#product-availability) 
+ - [customizing the behavior](widget.md#customizing-widget-behavior) of the widget
+ - using your website's [user data](widget.md#using-your-websites-user-data-for-the-widget) for the widget
+ - using [tracking](widget.md#using-tracking-with-the-pretix-widget) with the widget
+ - compatibility with your website's [security](widget.md#security) settings
+
 ### Using the widget for multiple events
 
 You can display multiple event shops in a single widget. 
@@ -121,6 +175,7 @@ To disable the filter form, use:
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-filters></pretix-widget>
 ```
+
 ### Using the widget for an event series 
 
 You can link the widget to an event series. 
@@ -198,62 +253,9 @@ The subevent takes only a single date ID as an argument.
 It is **not** possible to filter for more than one date with this method. 
 If you want to display multiple dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
 
-### pretix Button
+### Product availability
 
-As an alternative to the full widget, you can embed a simple button on your website. 
-Clicking this button adds a predefined selection of products to the cart and proceeds to checkout. 
-You can try out this behavior here:
-
-<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. 
-            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
-        </div>
-    </div>
-</noscript>
-
-You can embed the pretix Button exactly like the pretix Widget. 
-In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
-Instead of the `pretix-widget` tag, use the `pretix-button` tag:
-
-```
-<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">
-    Buy ticket!
-</pretix-button>
-```
-Use the `items` attribute to specify the items that the button will add to the cart. 
-The syntax of this attribute is: 
-
-```
-item_ITEMID=1,item_ITEMID=2,variation_ITEMID_VARID=4
-```
-
-Replace each instance of `ITEMID` with the ID of the item to be added. 
-Replace each instance of `VARID` with the ID of variations of those items. 
-Omit `variation_ITEMID_VARID=4` if the items do **not** have variations. 
-Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
-
-If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
-
-If you link the button to an event series, use the `subevent` attribute to specify the date for which it should add the items to the cart. 
-
-The button supports the optional attributes `voucher`, `disable-iframe`, and `skip-ssl-check`.
-You can style the button using the `pretix-button` CSS class.
-
-## Applications
-
-This section covers all applications that go beyond the basic usage of the widget on your website: 
-
- - influencing [availability and pricing](widget.md#availability-and-pricing) of products
- - [customizing the behavior](widget.md#customizing-widget-behavior) of the widget
- - using your website's [user data](widget.md#using-your-websites-user-data-for-the-widget) for the widget
- - [security](widget.md#security) considerations
-
-### Availability and pricing 
-
-This section explains how to influence product availability and pricing in the widget by using filters or preselecting vouchers. 
+This section explains how to influence product availability in the widget by using filters or preselecting vouchers. 
 
 #### Offering certain products through the widget only 
 
@@ -331,6 +333,11 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
 
+### Pricing and payment 
+
+This section explains how to [offer discounts through the widget](widget.md#offering-discounts-through-the-widget), how to [disable the voucher input](widget.md#disabling-the-voucher-input) and how to use [Apple Pay](widget.md#offering-apple-pay-via-stripe-through-the-widget) with Stripe through the widget. 
+All other payment providers and methods should work with the widget without issues. 
+
 #### Offering discounts through the widget
 
 If you want to offer discounts to customers placing their order through the widget, then you should **preselect a voucher** in the widget. 
@@ -369,11 +376,19 @@ If you want to disable voucher input in the widget, you can pass the `disable-vo
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-vouchers></pretix-widget>
 ```
 
+#### Offering Apple Pay via Stripe through the widget
+
+If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
+pretix will automatically validate the domain you are using for your shop regardless of the edition of pretix and your domain settings. 
+But when embedding the widget on your website, your domain will also need to get validation in order to be able to use it for Apple Pay. 
+
+Refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
+
 ### Customizing widget behavior
 
 This section explains how to customize the widget's styling, the way in which the widget loads and opens, how it opens the checkout page, and how it displays event info. 
 
-### Styling
+#### Styling
 
 You can use CSS to customize the appearance of the widget or button to match your website. 
 You can use your browser's developer tools to inspect the rendered HTML of the widget.
@@ -576,7 +591,7 @@ Any active pretix plugins might understand more data attributes.
 For instance, if you are using the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. 
 This way, the plugin will count all orders made through this widget towards this campaign. 
 
-#### Using tracking with the pretix Widget
+### Using tracking with the pretix Widget
 
 If you use the tracking plugin, you can enable cross-domain tracking. 
 This is only necessary if you host your pretix shop and the website on which you embed the widget on two separate domains. 
@@ -658,7 +673,7 @@ Replace all occurrences of `<MEASUREMENT_ID>` with your Google Analytics MEASURE
 
 ### Security
 
-This section explains aspects of embedding the widget that are relevant for security: SSL/HTTPS, policy settings on your website, and domain verification for certain payment methods. 
+This section explains aspects of embedding the widget that are relevant for security: SSL/HTTPS and policy settings on your website. 
 
 #### SSL
 
@@ -690,25 +705,17 @@ If your pretix shop is running under a custom domain, you need to add the follow
  - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
     For pretix Hosted, also add `https://cdn.pretix.space`. 
 
-#### Offering Apple Pay via Stripe through the widget
+#### Cross Origin Opener Policy
 
-If you are using Stripe as a payment provider and want to offer Apple Pay through the widget, then you have to verify the domain with Apple Pay first. 
-pretix will automatically validate the domain you are using for your shop regardless of the edition of pretix and your domain settings. 
-But when embedding the widget on your website, your domain will also need to get validation in order to be able to use it for Apple Pay. 
-
-Refer to the Stripe documentation page on how to [register domains for payment methods](https://stripe.com/docs/payments/payment-methods/pmd-registration) for further information. 
-
-#### External payment providers and Cross Origin Opener Policy
-
-If you use a payment provider that opens a new window during checkout (such as PayPal), then setting `Cross-Origin-Opener-Policy: same-origin` results in an empty popup window opening in the foreground. 
+If you set `Cross-Origin-Opener-Policy: same-origin` on your site, then using a payment provider that opens a new window during checkout (such as PayPal) results in an empty popup window opening in the foreground. 
 This is due to JavaScript not having access to the opened window. 
 To mitigate this, you need to either [always open the widget's checkout in a new tab](widget.md#always-open-a-new-tab) or set `Cross-Origin-Opener-Policy: same-origin-allow-popups`. 
 
-#### Working with Cross Origin Embedder Policy
+#### Cross Origin Embedder Policy
 
-The pretix Widget is **not** compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
+The pretix Widget is not compatible with `Cross-Origin-Embedder-Policy: require-corp`. 
 If you include the `crossorigin` attributes on the `<script>` and `<link>` tag, then the widget can display a calendar or product list. 
-But it will **not** be able to open the checkout process in an iframe. 
+But it will not be able to open the checkout process in an iframe. 
 If you also set `Cross-Origin-Opener-Policy: same-origin`, then the widget will be able to detect that it is running in an isolated environment and will instead open the checkout process in a new tab.
 
 ## Troubleshooting 
