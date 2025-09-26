@@ -11,7 +11,7 @@ This article assumes that you have read [check-in lists](check-in-lists.md) and 
 A basic understanding of predicate logic is helpful. 
 If the proposition `∀xP(x)` is meaningless to you, ask a philosopher, a linguist, an electrical engineer, or a programmer.
 Alternatively, contact our support. 
-Do not ask a Sherlock Holmes fan. 
+Do **not** ask a Sherlock Holmes fan. 
 They do not know the difference between induction and deduction. 
 
 ## General usage
@@ -19,12 +19,13 @@ They do not know the difference between induction and deduction.
 In order to add custom rules to a check-in list, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:. 
 Click the change button :btn-icon:fa3-wrench:: next to the check-in list you want to edit. 
 
-By default, pretixSCAN will recognize any ticket on the check-in list as valid as long as the ticket has been paid for and either the ticket has not been scanned before, or the ticket has been scanned and then scanned for exit. 
+By default, pretixSCAN will recognize any ticket on the check-in list as valid as long as the ticket has been paid for and either the ticket has not been scanned before. 
+The app will also recognize the ticket as valid if it has been scanned and then scanned for exit, meaning the entry status is `absent`. 
 The exact behavior depends on your settings on the :btn:General: and :btn:Advanced: tabs on this page. 
 
 !['Check-in lists' page on the 'Advanced' tab, displaying an infobox and a warning box. There are checkboxes for optional settings and an empty field labeled 'Automatically check out everyone at'.](../../assets/screens/check-in/advanced.png "Advanced options for check-in list default")
 
-If you want to place additional restrictions on a ticket being recognized as valid by pretixSCAN, set up a custom check-in rule. 
+If you want to place additional restrictions on a ticket for pretixSCAN to recognize it as valid, set up a custom check-in rule. 
 In order to do so, under "Custom check-in rule", on the :btn-icon:fa3-edit: Edit: tab, click the :btn-icon:fa3-plus-circle: Add condition: button. 
 A dropdown menu appears, listing types of conditions. 
 
@@ -42,7 +43,7 @@ Enter a number, for example, `6`.
 Click the :btn:Save: button. 
 
 If you set up a condition as described in the example, then pretixSCAN will only recognize a ticket as valid if the current day of the week is less than 6, or in other words, only Monday through Friday. 
-Tickets will be rejected if scanned on Saturday or Sunday. 
+pretixSCAN will reject tickets scanned on Saturday or Sunday. 
 
 You can remove a simple condition by clicking the :btn-icon:fa3-trash:: delete button. 
 You can duplicate it by clicking the :btn-icon:fa3-copy:: clone button. 
@@ -53,10 +54,10 @@ The most important types of conditions are `All of the conditions below (AND)` a
 These conditions are special because they allow you to organize conditions into a complex logic for the check-in. 
 Adding one of these two conditions creates an AND-bracket or an OR-bracket to which you can add more conditions. 
 
-If you select `All of the conditions below (AND)` from the dropdown menu and add conditions to the resulting AND-bracket, then all of those conditions must be fulfilled for pretixSCAN to recognize the ticket recognized as valid. 
+If you select `All of the conditions below (AND)` from the dropdown menu and add conditions to the resulting AND-bracket, then all of those conditions must be fulfilled for pretixSCAN to recognize the ticket as valid. 
 
 If you select `At least one of the conditions below (OR)` and add conditions to the resulting OR-bracket, then at least one of those conditions must be fulfilled for pretixSCAN to recognize the ticket as valid. 
-If multiple or even all conditions within the OR-bracket are fulfilled, then the ticket will still be recognized as valid. 
+If multiple or even all conditions within the OR-bracket are fulfilled, then pretixSCAN will still recognize the ticket as valid. 
 
 This may be counter-intuitive. 
 The condition `At least one of the conditions below (OR)` represents an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction). 
@@ -64,7 +65,7 @@ This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_
 The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited. 
 
 You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition. 
-When hovering the mouse over several nested brackets, AND-brackets will be highlighted in red, OR-brackets in green, and other conditions in purple. 
+When hovering the mouse over nested brackets, the website will highlight AND-brackets in red, OR-brackets in green, and other conditions in purple. 
 
 You can remove an AND- or OR-bracket **without** removing its contents by clicking the :btn-icon:fa3-cut:: cut button next to it. 
 You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: delete button. 
@@ -73,7 +74,7 @@ You can duplicate it along with all rules nested within it by clicking the :btn-
 ### Allowing multiple entries 
 
 By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime. 
-If you set up custom check-in rules that allow tickets to be used used multiple times, then you also need to check the box next to "Allow multiple entries per ticket" further up on the same page. 
+If you set up custom check-in rules that allow tickets to be used multiple times, then you also need to check the box next to "Allow multiple entries per ticket" further up on the same page. 
 
 ### Setting conditions specific to products or variations 
 
@@ -97,7 +98,7 @@ Add an AND-bracket within that OR-bracket.
 Add the following condition within the AND-bracket: `Product` `is one of` and then select all remaining products on the check-in list. 
 Add another simple condition of your choosing to the end-bracket. 
 
-As soon as every product on the check-in list is mentioned in the custom check-in rule at least once, the infobox will disappear. 
+As soon as the custom check-in rule mentions every product on the check-in list at least once, the infobox will disappear. 
 pretixSCAN will not reject products outright anymore, but will recognize them as valid or invalid depending on the rule you set up. 
 
 ### Visualizing rules 
@@ -156,7 +157,7 @@ In order to solve this problem, you need to add conditions that include the othe
 Click the :btn:OR: button in the top right. 
 This creates an OR-bracket around the conditions you previously created. 
 
-Click the :btn-icon:fa3-plus-circle: Add condition: button that is located within the OR-bracket, but not within the AND-bracket. 
+Click the :btn-icon:fa3-plus-circle: Add condition: button located within the OR-bracket, but not within the AND-bracket. 
 Select `All of the conditions below (AND)` and add another condition directly below. 
 Select `Product`, then `is one of`, and then choose those products that the rule above does not cover. 
 Add another condition immediately below. 
@@ -189,6 +190,7 @@ This allows for unlimited entries on a singular calendar day of the ticket holde
 ### Allowing entries on a specific number of days 
 
 This section explains how to set up a custom check-in rule to allow entry on any specific number of days. 
+Check the box next to "Allow multiple entries per ticket". 
 
 Create an AND-bracket and add a condition within that bracket. 
 Select `Product`, then `is one of`, and then choose the products in question. 
@@ -205,6 +207,7 @@ With this setup, the ticket holder can enter as many times as they like, but onl
 ### Setting a minimum time between entries 
 
 This section explains how to set up a custom check-in rule to allow unlimited entries if a certain period of time has passed between entries. 
+Check the box next to "Allow multiple entries per ticket". 
 
 Create an AND-bracket and add a condition within that bracket. 
 Select `Product`, then `is one of`, and then choose the products in question. 
@@ -222,6 +225,7 @@ With this setup, the ticket holder can enter as many times as they like, but onl
 ### Allow entries for a specific time span 
 
 This section explains how to set up a custom check-in rule to allow entries for a limited period of time after the first entry. 
+Check the box next to "Allow multiple entries per ticket". 
 
 Create an OR-bracket and add a condition within that bracket. 
 Select `Product`, then `is one of`, and then choose the products in question. 
@@ -238,11 +242,12 @@ With this setup, the ticket holder can enter as many times as they like for 120 
 
 This section explains how to set up a custom check-in rule to allow unlimited entries **before** the start of the event, but only limited entries during the event itself. 
 This can be useful if you want attendees to be able to access the venue while the event is being set up. 
+Check the box next to "Allow multiple entries per ticket". 
 
 Create an OR-bracket and add a condition within that bracket. 
 Select `Current date and time`, then `is before`, then `Event start`, and enter a tolerance of `0`. 
 Create an AND-bracket below and add a new condition within that bracket. 
-Select Select `Current date and time`, then `is after`, then `Event start`, and enter a tolerance of `0`. 
+Select `Current date and time`, then `is after`, then `Event start`, and enter a tolerance of `0`. 
 Create another condition within the AND-bracket. 
 Select `Number of previous entries since`, then `Event start`, then `=` and enter a tolerance of `0`. 
 
