@@ -31,8 +31,8 @@ Some basic knowledge of JavaScript is helpful.
 
 ## General usage
 
-This section explains how to embed the pretix widget or the pretix button on your website either once or multiple times, as well as how to style the widget. 
-It also explains how to use the widget for more than just a singular event or a single date within an event series. 
+This section explains how to [embed the pretix widget](widget.md#embedding-the-widget-on-your-website) or the [pretix button](widget.md#pretix-button) on your website either once or [multiple times](widget.md#embedding-multiple-widgets-on-your-website), as well as how to [style the widget](widget.md#styling). 
+It also explains how to use the widget for [multiple events](widget.md#using-the-widget-for-multiple-events) or for [a selection of dates](widget.md#using-the-widget-for-a-selection-of-dates) within an event series. 
 
 ### Embedding the widget on your website
 
@@ -74,6 +74,10 @@ It will look similar to this:
 
 ### Embedding multiple widgets on your website
 
+!!! Note 
+    If you want to use the widget for multiple events, then you do not have to embed multiple widgets. 
+    See [Using the widget for multiple events](widget.md#using-the-widget-for-multiple-events). 
+
 If you want to embed multiple widgets for different events on your website, add the first snippet only **once**. 
 Generate the second snippet for every event and add each one to your website's HTML. 
 
@@ -103,7 +107,6 @@ For example, you could set up a metadata property called "Promoted" with the val
 
 In order to assign the metadata property to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
 On the :btn:Basics: tab, edit the relevant property under "Meta data". 
-For example, change the value of the attribute "Promoted" to `True`. 
 
 For example, if you set up a metadata property called "Promoted" with values `True` and `False` that you set to `True` on some events, you can pass a filter like this:
 
