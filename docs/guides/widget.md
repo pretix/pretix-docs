@@ -255,36 +255,6 @@ This section covers all applications that go beyond the basic usage of the widge
 
 This section explains how to influence product availability and pricing in the widget by using filters or preselecting vouchers. 
 
-#### Offering discounts through the widget
-
-If you want to offer discounts to customers placing their order through the widget, then you should **preselect a voucher** in the widget. 
-Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
-This section tells you how to preselect a voucher using the `voucher` attribute in the widget code in order to offer a widget-exclusive discount. 
-
-Create a voucher as explained under [offering a limited discount](vouchers.md#offering-a-limited-discount) in the article on vouchers. 
-Do **not** share the voucher code publicly or directly to your customers. 
-Instead, pass the voucher code (for example, `ABCDE123456`) to the `voucher` attribute: 
-
-```
-<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
-```
-
-This way, the widget will only display products that customers can buy with the voucher and prices will change as defined by the voucher. 
-You do **not** need to copy and edit the code example above. 
-It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
-
-Here is an example of a widget with a voucher preselected: 
-
-<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. 
-            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
-        </div>
-    </div>
-</noscript>
-
 #### Offering certain products through the widget only 
 
 If you want to offer certain products through the widget only and not in your shop, then you should **preselect a voucher** in the widget. 
@@ -360,6 +330,36 @@ In order to display only variations `#437143`, `#437154`, and `#437155` in the w
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" variations="437143,437154,437155"></pretix-widget>
 ```
+
+#### Offering discounts through the widget
+
+If you want to offer discounts to customers placing their order through the widget, then you should **preselect a voucher** in the widget. 
+Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
+This section tells you how to preselect a voucher using the `voucher` attribute in the widget code in order to offer a widget-exclusive discount. 
+
+Create a voucher as explained under [offering a limited discount](vouchers.md#offering-a-limited-discount) in the article on vouchers. 
+Do **not** share the voucher code publicly or directly to your customers. 
+Instead, pass the voucher code (for example, `ABCDE123456`) to the `voucher` attribute: 
+
+```
+<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+```
+
+This way, the widget will only display products that customers can buy with the voucher and prices will change as defined by the voucher. 
+You do **not** need to copy and edit the code example above. 
+It may be easier to generate a code snippet that includes a voucher by using the "Pre-selected voucher" field on the widget settings page. 
+
+Here is an example of a widget with a voucher preselected: 
+
+<pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. 
+            To access our ticket shop without JavaScript, please <a target="_blank" href="https://pretix.eu/demo/democon/">click here</a>.
+        </div>
+    </div>
+</noscript>
 
 #### Disabling the voucher input
 
