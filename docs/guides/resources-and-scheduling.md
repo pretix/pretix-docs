@@ -10,13 +10,17 @@ What conditions have to be met for this information to be applicable? Which sett
 
 Enabling the plugin 
 
-Navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins. 
+In order to enable the plugin for your organizer, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins:. 
 Search the "Resources and Scheduling" plugin in the list and click the :btn:Enable: button. 
 If the "Resources and Scheduling" plugin is already active, then it will have a green ":fa3-check: Active" tag next to it. 
 In that case, click the :btn:Manage events: button. 
 
 Both buttons take you to a page listing the organizer's events. 
 Check the events with which you want to use the plugin and click the :btn:Save: button. 
+
+Alternatively, in order to enable the plugin for an individual event, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
+Search the "Resources and Scheduling" plugin in the list and click the :btn:Enable: button. 
+If the plugin is already active, then it will have a green ":fa3-check: Active" tag next to it. 
 
 ## Troubleshooting 
 
