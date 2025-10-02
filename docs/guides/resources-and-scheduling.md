@@ -96,3 +96,17 @@ If you are using the properties feature to keep track of guides, you could creat
 Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a personalized admission product. 
 Do **not** add the product to any quotas. 
 Open the :btn:Requirements: tab. 
+
+In the "Default duration (minutes)" field, enter the time resources will typically be booked for. 
+For instance, if a tour usually takes 45 minutes, enter `45`. 
+In the "Default quota size" field, enter the maximum number of people that can use the resource at the same time. 
+For instance, if a tour guide can accommodate no more than 30 people at a time, enter `30`. 
+
+Click the :btn-icon:fa3-plus: Add a new requirement: button. 
+Select the "Resource type" that this necessary for this date. 
+Under "Property values", check all values that are required for this type of date. 
+
+For instance, assume you are offering a tour of the Ancient Egypt for English-speaking children. 
+In this case, you select the "Resource type" `Guide` and the "Property values" `Children`, `Egypt`, and `English`. 
+
+Click the :btn:Save: button. 
