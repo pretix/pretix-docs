@@ -1,18 +1,21 @@
 # Resources and scheduling
 
-The resources and scheduling feature allows you to manage resources such as guides, rooms, or equipment, and schedule events accordingly. 
-This article tells you how to do that.  
+Your event schedule may not be based on time alone. 
+It may also depend on the availability of guides, rooms, equipment, or other resources. 
+The "Resources and scheduling" plugin allows you to manage those resources and schedule dates in your [event series](event-series.md) accordingly. 
+This article tells you how to use it. 
 
 ## Prerequisites
 
-You need to have at least one event or event series with which you want to use resources and scheduling. 
+You need to have at least one event series with which you want to use resources and scheduling. 
+The plugin offers no useful features for singular events. 
 
 ## How To 
 
 Using resources and scheduling involves the following steps: 
 
  1. Enabling the plugin on the organizer level
- 2. Enabling the plugin on the event level
+ 2. Enabling the plugin on the event series level
  3. Creating resource types
  4. Creating properties for resource types
  5. ????
@@ -26,9 +29,9 @@ If the "Resources and Scheduling" plugin is already active, then it will have a 
 In that case, click the :btn:Manage events: button. 
 
 Both buttons take you to a page listing the organizer's events. 
-Check the events with which you want to use the plugin and click the :btn:Save: button. 
+Check the event series with which you want to use the plugin and click the :btn:Save: button. 
 
-Alternatively, in order to enable the plugin for an individual event, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
+Alternatively, in order to enable the plugin for an individual event series, navigate to :navpath:Your event series → :fa3-wrench: Settings → Plugins:. 
 Search the "Resources and Scheduling" plugin in the list and click the :btn:Enable: button. 
 If the plugin is already active, then it will have a green ":fa3-check: Active" tag next to it. 
 
@@ -87,15 +90,3 @@ Click the same button again and enter `None` in the new field.
 Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`. 
 
 If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
-
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
-## Further Information
-
-What other media do we have on the subject? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See Also 
-
-Link to other relevant guides, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
