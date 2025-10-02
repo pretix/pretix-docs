@@ -67,7 +67,7 @@ They usually have one or multiple properties that vary from one to the next and 
 You can use the properties feature to keep track of these properties within pretix. 
 
 In order to edit properties on a resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:. 
-Click the :btn-icon:fa3-edit: edit button next to the resource type in the list. 
+Click the :btn-icon:fa3-edit:: edit button next to the resource type in the list. 
 Under the headline "Properties", you can manage properties. 
 Alternatively, you can add properties while creating a new resource type. 
 
@@ -90,3 +90,9 @@ Click the same button again and enter `None` in the new field.
 Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`. 
 
 If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
+
+### Creating a product for scheduling 
+
+Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a personalized admission product. 
+Do **not** add the product to any quotas. 
+Open the :btn:Requirements: tab. 
