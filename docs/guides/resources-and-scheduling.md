@@ -55,14 +55,22 @@ pretix will send the email under "Booking pending confirmation" to you if a cust
 pretix will send the email under "Booking confirmed" to a customer after you have confirmed a booking through the previous email. 
 Adapt the subject and message text of both emails to your liking. 
 
+Click the :btn:Save: button. 
+
 ### Managing properties 
 
-On the page "Create a new resource type", under the headline "Properties", you can manage properties. 
-A property is any property that varies between individual resources and which may be relevant for booking your resource. 
+Most resources are not interchangeable. 
+They usually have one or multiple properties that vary from one to the next and which are relevant for booking. 
+You can use the properties feature to keep track of these properties within pretix. 
+
+In order to edit properties on a resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:. 
+Click the :btn-icon:fa3-edit: edit button next to the resource type in the list. 
+Under the headline "Properties", you can manage properties. 
+Alternatively, you can add properties while creating a new resource type. 
 
 Assume, for example, you are creating a property type for conference rooms. 
 These conference rooms differ as to how many people they seat and whether or not they have a projector for presentations. 
-The projectors also vary in terms of display resolution. 
+The projectors also vary in terms of display resolution (either 1080p or 720p). 
 
 In this case, you click the :btn-icon:fa3-plus: Add property: button. 
 Under "Name", enter `Seats`. 
@@ -78,6 +86,7 @@ Click the :btn-icon:fa3-plus: Add new value: button and enter `720p` in the new 
 Click the same button again and enter `None` in the new field. 
 Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`. 
 
+If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
 
 ## Troubleshooting 
 
