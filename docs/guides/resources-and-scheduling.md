@@ -23,10 +23,14 @@ Using resources and scheduling involves the following steps:
 
 ### Enabling the plugin 
 
+![Plugins page, displaying the list of plugins including 'Resources and Scheduling' with a hint saying 'Parts of this plugin can be enabled or disabled for events individually' and a purple 'Enable' button.](../assets/screens/resources-scheduling/organizer-plugin.png "Organizer plugin Resources and Scheduling")
+
 In order to enable the plugin for your organizer, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins:. 
 Search the "Resources and Scheduling" plugin in the list and click the :btn:Enable: button. 
 If the "Resources and Scheduling" plugin is already active, then it will have a green ":fa3-check: Active" tag next to it. 
 In that case, click the :btn:Manage events: button. 
+
+![Page titled 'Events with plugin Resources and Scheduling', displaying a green infobox saying 'The plugin Resources and Scheduling is now active' as well as a list of events for which the plugin can be enabled or disabled.](../assets/screens/resources-scheduling/plugin-events.png "Events with plugin Resources and Scheduling")
 
 Both buttons take you to a page listing the organizer's events. 
 Check the event series with which you want to use the plugin and click the :btn:Save: button. 
@@ -46,6 +50,8 @@ A resource type may, for example, represent the following:
 
 You can use pretix to manage any kind of resource and create a resource type for it. 
 You should create **exactly one** resource type for every type of resource that you want to manage. 
+
+![Page titled 'Create a new resource type', displaying inputs for name and plural name, as well as email settings.](../assets/screens/resources-scheduling/resource-type.png "Create a new resource type")
 
 In order to create a new resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:. 
 Enter a "Name" for the resource. 
@@ -75,6 +81,8 @@ Assume, for example, you are creating a property type for conference rooms.
 These conference rooms differ as to how many people they seat and whether or not they have a projector for presentations. 
 The projectors also vary in terms of display resolution (either 1080p or 720p). 
 
+![Page titled 'Create a new resource type', scrolled down to display the properties 'Seats' with the options 8, 10, 12, or 20; and 'Projector' with the options 1080p, 720p, or none. ](../assets/screens/resources-scheduling/properties-rooms.png "Resource type conference room")
+
 In this case, you click the :btn-icon:fa3-plus: Add property: button. 
 Under "Name", enter `Seats`. 
 Under "value", enter `8`. 
@@ -88,6 +96,8 @@ Under "value", enter `1080p`.
 Click the :btn-icon:fa3-plus: Add new value: button and enter `720p` in the new field. 
 Click the same button again and enter `None` in the new field. 
 Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`. 
+
+![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
 
 If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
 
@@ -105,6 +115,8 @@ If the resource you are creating represents a person, enter their name under "Na
 Under "Locale", select the language spoken by the person. 
 Under "Notification email address", enter their email address. 
 Check the "Require confirmation" field. 
+
+![Page titled 'Add a Guide', displaying input fields for name 'Jaiden Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
 If the resource represents an inanimate object, enter the room number, inventory number, or another unique identifier. 
 Select the "Locale" and Notification email address corresponding to the person or team in charge of the resource. 
