@@ -91,6 +91,26 @@ Your resource type "conference room" now has the "Projector" property which can 
 
 If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
 
+### Managing individual resources 
+
+After you have created a resource type and added properties to it, you can create individual resources. 
+Every resource type you create adds a new submenu under :navpath:Your organizer → :fa3-briefcase: Resources:. 
+Navigate to the submenu for the resource type you created in the previous step. 
+For instance, if you created a resource type named "Guide", navigate to  :navpath:Your organizer → :fa3-briefcase: Resources → Guide:. 
+
+Click the :btn-icon:fa3-plus: Add a Guide: button. 
+If your resource has a different name, then the button will have a different label, too. 
+
+If the resource you are creating represents a person, enter their name under "Name". 
+Under "Locale", select the language spoken by the person. 
+Under "Notification email address", enter their email address. 
+Check the "Require confirmation" field. 
+
+If the resource represents an inanimate object, enter the room number, inventory number, or another unique identifier. 
+Select the "Locale" and Notification email address corresponding to the person or team in charge of the resource. 
+
+Once you are happy with your choices, click :btn:Save and continue with more settings:. 
+
 ### Creating a product for scheduling 
 
 Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a personalized admission product. 
@@ -110,3 +130,12 @@ For instance, assume you are offering a tour of the Ancient Egypt for English-sp
 In this case, you select the "Resource type" `Guide` and the "Property values" `Children`, `Egypt`, and `English`. 
 
 Click the :btn:Save: button. 
+
+### Creating dates for scheduling 
+
+Navigate to :Navpath:Your event series → :fa3-calendar:Products: and click the :btn-icon:fa3-plus: Create many new dates: button. 
+Set up the dates according to your preferences. 
+For general information on creating dates, see [Creating and editing dates in the event series](event-series.md#creating-and-editing-dates-in-the-event-series). 
+
+Under the heading "Quotas", in the field labeled "Products", select the product you created in the [previous step](resources-and-scheduling.md#creating-a-product-for-scheduling). 
+Do **not** select any other products. 
