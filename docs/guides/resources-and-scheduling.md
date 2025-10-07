@@ -150,4 +150,10 @@ Set up the dates according to your preferences.
 For general information on creating dates, see [Creating and editing dates in the event series](event-series.md#creating-and-editing-dates-in-the-event-series). 
 
 Under the heading "Quotas", in the field labeled "Products", select the product you created in the [previous step](resources-and-scheduling.md#creating-a-product-for-scheduling). 
-Do **not** select any other products. 
+
+We recommend only selecting one product with resource requirements. 
+pretix applies resource requirements once for every product that has them. 
+This means that if your date has two products that both require a guide, then your date will require two guides for scheduling. 
+
+If you want to sell tours and tickets as individual products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements. 
+
