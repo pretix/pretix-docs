@@ -18,8 +18,10 @@ Using resources and scheduling involves the following steps:
  2. Enabling the plugin on the event series level
  3. Creating resource types
  4. Creating properties for resource types
- 5. ????
- 6. Profit
+ 5. Managing resources
+ 6. 
+ - ????
+ - Profit
 
 ### Enabling the plugin 
 
@@ -104,9 +106,15 @@ If you are using the properties feature to keep track of guides, you could creat
 ### Managing individual resources 
 
 After you have created a resource type and added properties to it, you can create individual resources. 
-Every resource type you create adds a new submenu under :navpath:Your organizer → :fa3-briefcase: Resources:. 
+An individual resource may, for example, represent the following: 
+
+ - a person who works at your venue as a guide
+ - a room 
+ - a piece of equipment 
+
+Every resource type you created in the previous step has added a new submenu under :navpath:Your organizer → :fa3-briefcase: Resources:. 
 Navigate to the submenu for the resource type you created in the previous step. 
-For instance, if you created a resource type named "Guide", navigate to  :navpath:Your organizer → :fa3-briefcase: Resources → Guide:. 
+For instance, if you created a resource type named "Guide", navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Guide:. 
 
 Click the :btn-icon:fa3-plus: Add a Guide: button. 
 If your resource has a different name, then the button will have a different label, too. 
@@ -122,6 +130,30 @@ If the resource represents an inanimate object, enter the room number, inventory
 Select the "Locale" and Notification email address corresponding to the person or team in charge of the resource. 
 
 Once you are happy with your choices, click :btn:Save and continue with more settings:. 
+
+Under "Properties", assign properties to the resource. 
+For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`. 
+
+Under "Availability timetable", define when the resource is available. 
+Click the :btn-icon:fa3-plus: Add rule: button. 
+Assume, for instance, your guide's availability is expected to stay the same July through September 2027. 
+They will work Monday through Friday from 8 AM to 4 PM. 
+They will not be available on Tuesday at 12 AM to 2 PM because of a weekly team meeting. 
+
+In that case, you enter a "Start" date of `2027-07-01` and an "End" of `2027-09-30`. 
+Select all days from Monday through Friday. 
+Select a "Start time" of `09:00:00` and an end time of `17:00:00`. 
+Click the :btn:Save: button. 
+
+Click the :btn-icon:fa3-plus: Add rule: button again. 
+Enter the same "Start" and "End" times as above. 
+Check "Tuesday". 
+Enter a "Start time" of `12:00:00` and an "End time" of `14:00:00`. 
+Under "Available", select "Resource is unavailable". 
+Click the :btn:Save: button. 
+
+The calendar view under "Resulting availability" will now display the available times for this resource. 
+Once you are happy with your configuration of the resource, click the :btn:Save: button. 
 
 ### Creating a product for scheduling 
 
