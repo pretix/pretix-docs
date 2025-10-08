@@ -83,14 +83,14 @@ Assume, for example, you are creating a property type for conference rooms.
 These conference rooms differ as to how many people they seat and whether or not they have a projector for presentations. 
 The projectors also vary in terms of display resolution (either 1080p or 720p). 
 
-![Page titled 'Create a new resource type', scrolled down to display the properties 'Seats' with the options 8, 10, 12, or 20; and 'Projector' with the options 1080p, 720p, or none. ](../assets/screens/resources-scheduling/properties-rooms.png "Resource type conference room")
-
 In this case, you click the :btn-icon:fa3-plus: Add property: button. 
 Under "Name", enter `Seats`. 
 Under "value", enter `8`. 
 Click the :btn-icon:fa3-plus: Add new value: button and enter `12` in the new field. 
 Click the same button again and enter `20` in the new field. 
 Your resource type "conference room" now has the "Seats" property which can be `8`, `12`, or `20`. 
+
+![Page titled 'Create a new resource type', scrolled down to display the properties 'Seats' with the options 8, 10, 12, or 20; and 'Projector' with the options 1080p, 720p, or none. ](../assets/screens/resources-scheduling/properties-rooms.png "Resource type conference room")
 
 Click the :btn-icon:fa3-plus: Add property: button. 
 Under "Name", enter `Projector`. 
@@ -99,9 +99,9 @@ Click the :btn-icon:fa3-plus: Add new value: button and enter `720p` in the new 
 Click the same button again and enter `None` in the new field. 
 Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`. 
 
-![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
-
 If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
+
+![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
 
 ### Managing individual resources 
 
