@@ -200,8 +200,13 @@ For information on handling errors with exports, see [troubleshooting](hubspot.m
 After setting up exports to HubSpot, you should confirm that the configuration works as intended. 
 You should also do this after making changes to the configuration. 
 
-In order to check for errors that occur during the export to HubSpot, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
-If errors have occurred, the page will display a warning box. 
+In order to check for errors that may have occured during the export to HubSpot, navigate to :navpath:Your Event:. 
+If errors have occurred, the dashboard will display a yellow warning box at the top. 
+
+![Event dashboard displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error-dashboard.png "Dashboard Error")
+
+Alternatively, you can navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+This page will also display a warning box if errors have occurred. 
 
 ![Page titled 'HubSpot Integration', displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error.png "HubSpot Integration Error")
 
@@ -210,9 +215,18 @@ This takes you to an overview of orders with which problems have occurred during
 
 ![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/sync-problems.png "Sync problems")
 
+You can also check for sync problems on the organizer level. 
+This is useful if you are using the HubSpot integration plugin for multiple events. 
+Navigate to :navpath:Your organizer → :fa3-download: Export → Data sync problems:. 
+The page displays a list of sync problems across all events that use the HubSpot plugin. 
+
+![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/sync-problems.png "Organizer sync problems")
+
 You can also check individual orders for errors by navigating to :navpath:Your event → :fa3-shopping-cart: Orders: and selecting the order in question. 
 Take a look at the box labeled "Data transfer to external systems". 
 If this box displays ":fa3-warning: Error" underneath the heading "HubSpot", then there is an issue with the export of this order's data to HubSpot. 
+
+![Page for an individual order, displaying, among other things, a box titled 'Data transfer to external systems'. The box displays the headline'HubSpot', the message 'Error: Provider reported a permanent error', the time the synchronization was triggered, the faulty entries in the HubSpot database, and buttons for retrying and canceling the data transfer.](../../assets/screens/hubspot/order-error.png "Data transfer error on an order")
 
 For information on how to resolve errors, see [Troubleshooting](hubspot.md#troubleshooting). 
 
