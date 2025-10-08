@@ -189,8 +189,9 @@ In order to do so, navigate to :navpath:Your event → :fa3-shopping-cart: Order
 In the box labeled "Data transfer to external systems", click the :btn-icon:fa3-refresh: Sync now: button. 
 
 The box will then display the status ":fa3-hourglass: Pending". 
-The plugin will transfer data to HubSpot the next time the server executes `periodic_task`. 
-If you refresh the page after that, then the box will display links to the corresponding records in HubSpot along with timestamps. 
+The plugin will transfer data to HubSpot within seconds. 
+Refresh the page. 
+The box will now display links to the corresponding records in HubSpot along with timestamps. 
 In case a problem with the export occurred, the box will instead display ":fa3-warning Error" and an error message underneath the heading "HubSpot", along with buttons for retrying and canceling the export. 
 
 For information on handling errors with exports, see [troubleshooting](hubspot.md#troubleshooting). 
