@@ -1,7 +1,7 @@
 # Resources and scheduling
 
 Your event schedule may not be based on time alone. 
-It may also depend on the availability of guides, rooms, equipment, or other resources. 
+It may also depend on the availability of personnel, spaces, equipment, or other resources. 
 The "Resources and scheduling" plugin allows you to manage those resources and schedule dates in your [event series](event-series.md) accordingly. 
 This article tells you how to use it. 
 
