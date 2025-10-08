@@ -81,7 +81,7 @@ Click the :btn-icon:fa3-plus: Add property: button to add a new property to expo
 Map invoice address fields from pretix to corresponding fields in HubSpot. 
 
 Pair pretix fields of the type `Text (one line)` with HubSpot fields of the type `string`. 
-Pair pretix fields of the type `Number` with HubSpot fields of the type `number`. 
+Pair pretix fields of the type `Number` with HubSpot fields of the type `number` or `string`. 
 Pair pretix fields of the type `Choose one from a list` with HubSpot fields of the type `enumeration`. 
 Pair pretix fields of the type `Date and Time` with HubSpot fields of the type `datetime`. 
 If a warning symbol :fa3-warning: appears in one of the lines, that means that line may cause issues due to incompatible data types. 
@@ -255,12 +255,20 @@ If you see "permanent error" or "misconfiguration" messages after you have made 
 Navigate to navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
 If a warning symbol :fa3-warning: appears in one of the lines, then that line is causing issues due to incompatible data types. 
 
+Check the corresponding entry in the HubSpot backend for mistakes. 
+It is possible that pretix exported the data successfully despite the warning displayed here. 
+
 Change the "pretix Field" and "HubSpot Field" to a compatible pair of entries. 
 Pair pretix fields of the type `Text (one line)` with HubSpot fields of the type `string`. 
-Pair pretix fields of the type `Number` with HubSpot fields of the type `number`. 
+Pair pretix fields of the type `Number` with HubSpot fields of the type `number` or `string`. 
 Pair pretix fields of the type `Choose one from a list` with HubSpot fields of the type `enumeration`. 
 Pair pretix fields of the type `Date and Time` with HubSpot fields of the type `datetime`. 
 Click the :btn:Save: button to confirm. 
 
 Repeat this process for every mapping in your configuration. 
 Confirm that no warnings pop up in any of the mappings. 
+
+If you experience errors, but no warning symbols appear on the mappings pages, check the order logs. 
+Navigate to one of the "Sync problems" pages as described in [Checking for errors](hubspot.md#checking-for-errors). 
+Click one of the orders causing an error. 
+The "Order history" box on the right side will display "Error while transferring data to HubSpot" and an error message which may be helpful for identifying the problem. 
