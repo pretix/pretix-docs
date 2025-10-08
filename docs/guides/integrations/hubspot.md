@@ -220,7 +220,7 @@ This is useful if you are using the HubSpot integration plugin for multiple even
 Navigate to :navpath:Your organizer → :fa3-download: Export → Data sync problems:. 
 The page displays a list of sync problems across all events that use the HubSpot plugin. 
 
-![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/sync-problems.png "Organizer sync problems")
+![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/organizer-sync-problems.png "Organizer sync problems")
 
 You can also check individual orders for errors by navigating to :navpath:Your event → :fa3-shopping-cart: Orders: and selecting the order in question. 
 Take a look at the box labeled "Data transfer to external systems". 
