@@ -192,7 +192,7 @@ The box will then display the status ":fa3-hourglass: Pending".
 The plugin will transfer data to HubSpot within seconds. 
 Refresh the page. 
 The box will now display links to the corresponding records in HubSpot along with timestamps. 
-In case a problem with the export occurred, the box will instead display ":fa3-warning Error" and an error message underneath the heading "HubSpot", along with buttons for retrying and canceling the export. 
+In case a problem with the export occurred, the box will instead display ":fa3-warning: Error" and an error message underneath the heading "HubSpot", along with buttons for retrying and canceling the export. 
 
 For information on handling errors with exports, see [troubleshooting](hubspot.md#troubleshooting). 
 
