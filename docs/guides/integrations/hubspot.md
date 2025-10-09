@@ -55,8 +55,9 @@ Click the :btn:Save: button.
 
 This section explains some useful applications for the HubSpot integration plugin: 
 
- - [Adding customers and attendees to your HubSpot contacts database](hubspot.md#adding-customers-and-attendees-to-your-hubspot-contacts-database)
- - [Adding payments to your HubSpot deals database](hubspot.md#adding-payments-to-your-hubspot-deals-database)
+ - [Adding customers to your HubSpot contacts database](hubspot.md#adding-customers-to-your-hubspot-contacts-database)
+ - [Adding attendees to your HubSpot contacts database](hubspot.md#adding-attendees-to-your-hubspot-contacts-database) 
+ - [Adding orders to your HubSpot deals database](hubspot.md#adding-orders-to-your-hubspot-deals-database)
 
 Before you can do any of these things, you have to set up the plugin as described in [General usage](hubspot.md#general-usage). 
 
@@ -130,9 +131,9 @@ Add an object mapping with the "pretix object type" set to `Order position` and 
 
 Edit the mapping and set it up analogously to the customer mapping [described above](hubspot.md#adding-customers-to-your-hubspot-contacts-database), replacing invoice data with attendee data, but still mapping to the same HubSpot fields. 
 
-### Adding payments to your HubSpot deals database
+### Adding orders to your HubSpot deals database
 
-This section explains how to add payments from pretix to your deals database in HubSpot. 
+This section explains how to add orders from pretix to your deals database in HubSpot. 
 
 Before you can export any information from pretix to the deals database in HubSpot, you need to create a custom property in HubSpot. 
 The integration will use this property during export. 
