@@ -166,6 +166,9 @@ For instance, if a tour usually takes 45 minutes, enter `45`.
 In the "Default quota size" field, enter the maximum number of people that can use the resource at the same time. 
 For instance, if a tour guide can accommodate no more than 30 people at a time, enter `30`. 
 
+If you want to assign resources to dates based on customer demand, you should check the box next to "Allow customers to book before resources are scheduled". 
+If you want to assign resources to dates before selling any tickets for those dates, then you should leave it unchecked. 
+
 Click the :btn-icon:fa3-plus: Add a new requirement: button. 
 Select the "Resource type" that this necessary for this date. 
 Under "Property values", check all values that are required for this type of date. 
@@ -185,7 +188,7 @@ Under the heading "Quotas", in the field labeled "Products", select the product 
 
 We recommend only selecting one product with resource requirements. 
 pretix applies resource requirements once for every product that has them. 
-This means that if your date has two products that both require a guide, then your date will require two guides for scheduling. 
+If your date has two products that both require a guide, then your date will require two guides for scheduling. 
 
 If you want to sell tours and tickets as individual products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements. 
 
