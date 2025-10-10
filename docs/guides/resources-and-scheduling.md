@@ -212,4 +212,16 @@ Click the field and select a guide that fulfills those requirements.
 Click the :btn:Save: button. 
 As soon as you do this, your event's contact mail address will send an email to the resource's notification email address. 
 
-### 
+### Confirming or denying a scheduling
+
+Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's notification email address. 
+
+In order to confirm scheduling, click the link that ends with `confirm`. 
+This takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
+The pretix server will also send an email to the resource's notification email address confirming the scheduling. 
+Both the scheduling dashboard and the page for the individual date will note that the requirement for the date has been fulfilled. 
+
+In order to decline the scheduling, click the link that ends with `deny`. 
+This also takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
+The pretix server will not send a confirmation email. 
+The requirement for the date will remain open. 
