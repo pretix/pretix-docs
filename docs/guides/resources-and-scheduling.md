@@ -192,3 +192,24 @@ If your date has two products that both require a guide, then your date will req
 
 If you want to sell tours and tickets as individual products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements. 
 
+### Assigning resources to dates 
+
+In order to assign resources to dates, navigate to :navpath:Your organizer: → :fa3-calendar: Scheduling → Dashboard:. 
+Click :btn:Dates with not all resources scheduled:. 
+This takes you to a page titled "Dates missing resources" which lists all dates with unfulfilled resource requirements. 
+It should list all dates you created in the previous step. 
+
+Click one of the dates. 
+Under "Additional settings", you can find the "Schedule" settings. 
+There is a field for every resource type that is required by one of the products assigned to this date. 
+The required properties of the resource are listed below that field. 
+Click the field and select the individual resource you want to assign. 
+
+Assume, for instance, your date requires a resource of the type "Guide". 
+The required properties are "Children", "Egypt", and "English". 
+Click the field and select a guide that fulfills those requirements. 
+
+Click the :btn:Save: button. 
+As soon as you do this, your event's contact mail address will send an email to the resource's notification email address. 
+
+### 
