@@ -18,6 +18,9 @@
     --md-accent-fg-color: #da7df8;
     --md-accent-fg-color--transparent: #da7df81a;
 }
+.md-source__facts {
+	display: none;
+}
 
 /* Typo */
 h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summary {
