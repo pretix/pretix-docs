@@ -37,7 +37,7 @@ In that case, click the :btn:Manage events: button.
 ![Page titled 'Events with plugin Resources and Scheduling', displaying a green infobox saying 'The plugin Resources and Scheduling is now active' as well as a list of events for which the plugin can be enabled or disabled.](../assets/screens/resources-scheduling/plugin-events.png "Events with plugin Resources and Scheduling")
 
 Both buttons take you to a page listing the organizer's events. 
-Check the event series with which you want to use the plugin and click the :btn:Save: button. 
+Check every event series with which you want to use the plugin and click the :btn:Save: button. 
 
 Alternatively, in order to enable the plugin for an individual event series, navigate to :navpath:Your event series → :fa3-wrench: Settings → Plugins:. 
 Search the "Resources and Scheduling" plugin in the list and click the :btn:Enable: button. 
@@ -53,7 +53,7 @@ A resource type may, for example, represent the following:
  - equipment such as audio guides, film screening equipment, pedal boats, etc. 
 
 You can use pretix to manage any kind of resource and create a resource type for it. 
-You should create **exactly one** resource type for every type of resource that you want to manage. 
+You should create exactly one resource type for every type of resource that you want to manage. 
 
 ![Page titled 'Create a new resource type', displaying inputs for name and plural name, as well as email settings.](../assets/screens/resources-scheduling/resource-type.png "Create a new resource type")
 
@@ -64,9 +64,15 @@ If you do not enter a "Plural name", then pretix will append an `s` to the "Name
 If the plural of your resource type's name is not formed by appending an `s` to the end, specify a "Plural name". 
 For instance, if your resource type is named `person`, enter `people` in the "Plural name" field. 
 
-pretix will send the email under "Booking pending confirmation" to you if a customer books a resource of the type. 
-pretix will send the email under "Booking confirmed" to a customer after you have confirmed a booking through the previous email. 
+pretix will send the email under "Booking pending confirmation" to the email address associated with the individual resource whenever you assign the resource to a date. 
+pretix will send the email under "Booking confirmed" to the email address associated with the individual resource whenever the recipient confirms a booking through the previous email. 
+You set the email address for each resource individually. 
+See [managing individual resources](resources-and-scheduling.md#managing-individual-resources) for more information. 
+
 Adapt the subject and message text of both emails to your liking. 
+You should always include the placeholders `{url_available}` and `{url_unavailable}` in the "Booking pending confirmation" email message. 
+You cannot confirm or decline a booking without these links. 
+We also recommend using the other placeholders in your email message because they communicate relevant information. 
 
 Click the :btn:Save: button. 
 
