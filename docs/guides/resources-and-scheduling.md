@@ -14,14 +14,16 @@ The plugin offers no useful features for singular events.
 
 Using resources and scheduling involves the following steps: 
 
- 1. Enabling the plugin on the organizer level
- 2. Enabling the plugin on the event series level
- 3. Creating resource types
- 4. Creating properties for resource types
- 5. Managing resources
- 6. 
- - ????
- - Profit
+ 1. [Enabling the plugin](resources-and-scheduling.md#enabling-the-plugin) on the organizer level and event series level
+ 3. [Creating resource types](resources-and-scheduling.md#creating-resource-types) such as a type for all guides or and one for all rooms 
+ 4. [Managing properties](resources-and-scheduling.md#managing-properties) for resource types
+ 5. [Creating resources](resources-and-scheduling.md#creating-resource-types), for instance, individual guides or rooms 
+ 6. [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling), for instance, a guided tour ticket
+ 7. [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling), for instance, guides tours 
+ 8. [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates), for instance, assigning a guide to a tour
+ 9. [Confirming or denying a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on whether the resource is actually available at the planned time
+
+The following sections will guide you through those steps in detail. 
 
 ### Enabling the plugin 
 
