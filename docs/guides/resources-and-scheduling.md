@@ -79,8 +79,8 @@ Click the :btn:Save: button.
 ### Managing properties 
 
 Most resources are not interchangeable. 
-They usually have one or multiple properties that vary from one to the next and which are relevant for booking. 
-You can use the properties feature to keep track of these properties within pretix. 
+They usually have one or multiple properties which vary from one to the next and which are relevant for booking. 
+You can use pretix to keep track of these properties while scheduling dates. 
 
 In order to edit properties on a resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:. 
 Click the :btn-icon:fa3-edit:: edit button next to the resource type in the list. 
