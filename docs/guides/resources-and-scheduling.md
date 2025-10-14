@@ -174,8 +174,10 @@ Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or e
 Do **not** add the product to any quotas. 
 Open the :btn:Requirements: tab. 
 
+![Page titled 'Modify product: Tour ticket' with the 'Requirements' tab open. The 'Default duration (minutes)' is '90'. The 'Default quota size' is '30'. The box 'Allow customers to book before resources are scheduled' is checked. Under 'Requirements', the resource type 'Guide' is selected with an 'Amount' of '1'.](../assets/screens/resources-scheduling/product-requirements.png "Modify product—Requirements")
+
 In the "Default duration (minutes)" field, enter the time resources will typically be booked for. 
-For instance, if a tour usually takes 45 minutes, enter `45`. 
+For instance, if a tour usually takes 90 minutes, enter `90`. 
 In the "Default quota size" field, enter the maximum number of people that can use the resource at the same time. 
 For instance, if a tour guide can accommodate no more than 30 people at a time, enter `30`. 
 
@@ -183,9 +185,15 @@ If you want to assign resources to dates based on customer demand, you should ch
 If you want to assign resources to dates before selling any tickets for those dates, then you should leave it unchecked. 
 
 Click the :btn-icon:fa3-plus: Add a new requirement: button. 
-Select the "Resource type" that this necessary for this date. 
-Under "Property values", check all values that are required for this type of date. 
+Select the "Resource type" that is necessary for this date. 
+Under "Amount", specify the amount of resources that are needed, usually `1`. 
 
+You can use the "Cost per unit" field to specify an expected cost per individual resource. 
+For instance, the value in this field might represent the fee paid to the guide for each completed tour. 
+pretix uses this field for data exports. 
+It does not affect the price of the product. 
+
+Under "Property values", check all values that are required for this type of date. 
 For instance, assume you are offering a tour of the Ancient Egypt for English-speaking children. 
 In this case, you select the "Resource type" `Guide` and the "Property values" `Children`, `Egypt`, and `English`. 
 
@@ -203,7 +211,7 @@ We recommend only selecting one product with resource requirements.
 pretix applies resource requirements once for every product that has them. 
 If your date has two products that both require a guide, then your date will require two guides for scheduling. 
 
-If you want to sell tours and tickets as individual products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements. 
+If you want to sell tours and tickets as separate products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements. 
 
 ### Assigning resources to dates 
 
