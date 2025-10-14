@@ -144,6 +144,9 @@ For instance, if you are adding a guide and they speak English and Toki Pona, cl
 
 Under "Availability timetable", define when the resource is available. 
 Click the :btn-icon:fa3-plus: Add rule: button. 
+
+![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a toggle labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'. ](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
+
 Assume, for instance, your guide's availability is expected to stay the same July through September 2027. 
 They will work Monday through Friday from 8 AM to 4 PM. 
 They will not be available on Tuesday at 12 AM to 2 PM because of a weekly team meeting. 
