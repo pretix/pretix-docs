@@ -139,13 +139,15 @@ Select the "Locale" and Notification email address corresponding to the person o
 
 Once you are happy with your choices, click :btn:Save and continue with more settings:. 
 
+![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. Available timeslots are displayed in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
+
 Under "Properties", assign properties to the resource. 
 For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`. 
 
 Under "Availability timetable", define when the resource is available. 
 Click the :btn-icon:fa3-plus: Add rule: button. 
 
-![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a toggle labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'. ](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
+![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a toggle labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
 
 Assume, for instance, your guide's availability is expected to stay the same July through September 2027. 
 They will work Monday through Friday from 8 AM to 4 PM. 
