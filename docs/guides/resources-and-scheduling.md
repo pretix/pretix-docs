@@ -215,16 +215,20 @@ If you want to sell tours and tickets as separate products, then you should add 
 
 ### Assigning resources to dates 
 
-In order to assign resources to dates, navigate to :navpath:Your organizer: → :fa3-calendar: Scheduling → Dashboard:. 
+In order to assign resources to dates, navigate to :navpath:Your event → :fa3-calendar: Scheduling → Dashboard:. 
 Click :btn:Dates with not all resources scheduled:. 
 This takes you to a page titled "Dates missing resources" which lists all dates with unfulfilled resource requirements. 
 It should list all dates you created in the previous step. 
+
+![Page titled 'Dates missing resources' listing several dates called 'Kids guided tour on Ancient Egypt (eng)' along with start and end times, requirements, customer orders, and buttons for viewing orders for the date or editing the date. The first entry has a check under 'Requirements', the others have an X.](../assets/screens/resources-scheduling/dates-missing-resources.png "Dates missing resources")
 
 Click one of the dates. 
 Under "Additional settings", you can find the "Schedule" settings. 
 There is a field for every resource type that is required by one of the products assigned to this date. 
 The required properties of the resource are listed below that field. 
 Click the field and select the individual resource you want to assign. 
+
+![Date settings page, scrolled to the bottom. The section 'Additional settings' has the subheading 'Schedule' with a dropdown menu for 'Guide'. The dropdown is opened, showing the result 'Jamie Doe' with properties 'English, Toki Pona, Adults, Teenagers, Children, egypt, Sumer · requires confirmation](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
 
 Assume, for instance, your date requires a resource of the type "Guide". 
 The required properties are "Children", "Egypt", and "English". 
@@ -237,10 +241,14 @@ As soon as you do this, your event's contact mail address will send an email to 
 
 Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's notification email address. 
 
+![Email from pretix with the standard content defined in the resource type settings: info about the date and links for confirming or denying the scheduling](../assets/screens/resources-scheduling/confirm-scheduling.png "Request confirmation email")
+
 In order to confirm scheduling, click the link that ends with `confirm`. 
 This takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
 The pretix server will also send an email to the resource's notification email address confirming the scheduling. 
 Both the scheduling dashboard and the page for the individual date will note that the requirement for the date has been fulfilled. 
+
+![Email from pretix with the standard content defined in the resource type settings proclaiming that Jamie Doe has been scheduled.](../assets/screens/resources-scheduling/scheduled.png "Confirmation email message")
 
 In order to decline the scheduling, click the link that ends with `deny`. 
 This also takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
