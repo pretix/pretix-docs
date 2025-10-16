@@ -2,40 +2,18 @@
 
 Your event may be made up of several smaller events ("sessions") with more limited capacities, with attendees being able to pick and choose which of these sessions they want to attend. 
 If you are planning a conference with multiple workshops, a celebration with a variety of activities, or a similar event, you may need a way to control access to those sessions. 
-pretix offers you several methods to do this: simply adding a mandatory question to be asked with every order, add-on products with fixed time slots, or a plugin with advanced functions for variable time slots. 
-This article will guide you through all three of them. 
 
-If your event's schedule is small and straightforward, all sessions are included in the basic admission price, and you do not need to keep track of who attends which session, you should use [questions](sessions.md#option-a-questions). 
+pretix offers you two methods to do this. 
+You can either use add-on products with fixed time slots, or a plugin with advanced functions for variable time slots. 
+This article will guide you through both of them. 
 
-If your event's schedule is large, you have deviating prices for some of the sessions, or each session can only be attended by a limited number of people, you should use [add-on products](sessions.md#option-b-add-on-products-with-fixed-time-slots). 
+If you have deviating prices for some of the sessions, or each session can only be attended by a limited number of people, you should use [add-on products](sessions.md#option-a-add-on-products-with-fixed-time-slots). 
 
-If you have a large schedule with deviating prices and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-c-add-on-products-with-variable-time-slots). 
+If you have deviating prices and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-b-add-on-products-with-variable-time-slots). 
 
 If you are not planning sessions that all take place within the scope of one big main event, but a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
 
-## Option A: Questions
-
-If you are only offering a limited number of sessions and are not faced with a realistic risk of overcrowding in any of them, you can create a multiple-choice question. 
-Customers will be prompted to answer this question while placing their order. 
-This has the upside of making it easy for users to change their mind later on. 
-It can also be set up fairly quickly. 
-However, this method will not allow you to restrict the number of attendees signing up for a given session. 
-It will also not allow you to charge extra for any of the sessions. 
-
-![Question set up according to the instructions below, with answer options for "Workshop A" and "Workshop B"](../../assets/screens/products/question-sessions.png "Question for sessions")
-
-In order to set up a question, navigate to :navpath:Your Event → :fa3-ticket: Products → Questions: and click the :btn-icon:fa3-plus:Create a new question: button. 
-Under "Question", add text for each language that your shop uses. 
-This text will be displayed to the customer while they are making their purchase. 
-The "Question" could read something like: "Which workshop do you want to attend in the 10 AM time slot?" 
-
-For "Question type", select "Choose one from a list". 
-For "Products", select every product during the purchase of which the question should be asked—typically, this wil apply to any basic admission product for your event. 
-If you check the box next to "Required question", then your customers will be forced to make a choice here.
-Your ticket shop will not allow them to proceed without making a selection. 
-Click :btn-icon:fa3-plus:Add a new option: and add an answer option for each session that is going to be offered at your event. 
-
-## Option B: Add-on products with fixed time slots
+## Option A: Add-on products with fixed time slots
 
 If you are offering a large number of sessions, are working with space constraints at your venue, or want to charge extra for at least one of the sessions, then you should use add-on products with fixed time slots. 
 This section tells you how to do that. 
@@ -73,7 +51,7 @@ Add an add-on from the "Workshops" category with "Minimum number" of 0 and a "Ma
 This enables your customers to choose which of the workshops they want to attend. 
 It also allows you to track planned attendance numbers through the quotas for each workshop. 
 
-## Option C: Add-on products with variable time slots
+## Option B: Add-on products with variable time slots
 
 <!-- md:hosted -->
 <!-- md:enterprise -->
@@ -94,7 +72,7 @@ One example for a schedule which would necessitate the use of the agenda constra
 | 16:00-18:00 | Workshop 2 (second half) | Talk 4                   |
 
 In this example, Workshops 1 and 2 are twice as long as the talks. 
-Thus, it makes no sense to implement this schedule with add-on products as described under [option B](sessions.md#option-b-add-on-products-with-fixed-time-slots). 
+Thus, it makes no sense to implement this schedule with add-on products as described under [option A](sessions.md#option-a-add-on-products-with-fixed-time-slots). 
 This would either result in customers having to book each half of the workshops individually, or in allowing them to book combinations of overlapping sessions which they cannot attend. 
 You can handle more complicated schedules like this one with the agenda constraints plugin. 
 
