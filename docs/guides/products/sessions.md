@@ -24,7 +24,7 @@ It will also not allow you to charge extra for any of the sessions.
 
 ![Question set up according to the instructions below, with answer options for "Workshop A" and "Workshop B"](../../assets/screens/products/question-sessions.png "Question for sessions")
 
-In order to set up a question, navigate to :navpath:Event → :fa3-ticket: Products → Questions: and click the :btn-icon:fa3-plus:Create a new question: button. 
+In order to set up a question, navigate to :navpath:Your Event → :fa3-ticket: Products → Questions: and click the :btn-icon:fa3-plus:Create a new question: button. 
 Under "Question", add text for each language that your shop uses. 
 This text will be displayed to the customer while they are making their purchase. 
 The "Question" could read something like: "Which workshop do you want to attend in the 10 AM time slot?" 
@@ -76,16 +76,22 @@ It also allows you to track planned attendance numbers through the quotas for ea
 ## Option C: Add-on products with variable time slots
 
 <!-- md:hosted -->
+<!-- md:enterprise -->
+
+!!! Note
+    You can use the agenda constraints plugin on pretix Hosted with no extra charge. 
+    If you are interested in using it with pretix Enterprise, please contact sales@pretix.eu.
+    You cannot use the agenda constraints plugin on pretix Community. 
 
 If the sessions at your event have overlapping start and end times and cannot be neatly organized into time slots, you can solve this issue with the "Agenda constraints" plugin. 
 One example for a schedule which would necessitate the use of the agenda constraints plugin is the following: 
 
-| Time        | Room A                  | Room B                   |
-|-------------|-------------------------|--------------------------|
-| 09:00-11:00 | Talk 1                  | Workshop 1 (first half)  |
-| 11:00-13:00 | Talk 2                  | Workshop 1 (second half) |
-| 14:00-16:00 | Workshop 2 (first half) | Talk 3                   |
-| 16:00-18:00 | Workshop 2 (second half | Talk 4                   |
+| Time        | Room A                   | Room B                   |
+|-------------|--------------------------|--------------------------|
+| 09:00-11:00 | Talk 1                   | Workshop 1 (first half)  |
+| 11:00-13:00 | Talk 2                   | Workshop 1 (second half) |
+| 14:00-16:00 | Workshop 2 (first half)  | Talk 3                   |
+| 16:00-18:00 | Workshop 2 (second half) | Talk 4                   |
 
 In this example, Workshops 1 and 2 are twice as long as the talks. 
 Thus, it makes no sense to implement this schedule with add-on products as described under [option B](sessions.md#option-b-add-on-products-with-fixed-time-slots). 
@@ -102,6 +108,10 @@ Create a product for each individual session, add it to the sessions category an
 Use the fields "Start date" and "End date" to define the span of time in which the session is taking place. 
 Create a quota for each of the session add-on products, with the total capacity of the quota reflecting the maximum number of attendees for each session. 
 
+!!! Note 
+    The "Agenda constraints" plugin only checks for scheduling conflicts between products of the same category. 
+    Put all products for sessions that may overlap with each other in the same category. 
+
 Edit the basic admission tickets for your event and open the :btn:Add-ons: tab. 
 Add an add-on from the sessions category with a "Minimum number" of 0 and a "Maximum number" equal to or greater than the largest possible number of workshops a guest can attend. 
 Click the :btn:Save: button. 
@@ -109,8 +119,3 @@ Click the :btn:Save: button.
 This enables your customers to choose which of the workshops they want to attend. 
 The "Start date" and "End date" you defined for each add-on product will restrict which combinations of sessions your customers can book. 
 You can limit planned attendance numbers through the quotas for each workshop. 
-
-!!! Note
-
-    The agenda constraints plugin is currently only available on pretix Hosted. 
-    If you are interested in using it with pretix Enterprise, please contact sales@pretix.eu.
