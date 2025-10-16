@@ -183,19 +183,25 @@ Once you have made your selection, click the :btn:Save: button.
 {% include "warning-tax.md" %}
 
 This section explains how to implement a mixed tax situation for a single product. 
-pretix allows you to do this by combining several products, each with their own tax rate, into a single bundle. 
+pretix allows you to do this by creating a product with the full price and one tax rate, and then bundling products with different tax rates into that product. 
 
-Create one product for each relevant tax rate. 
-Assign each product a different tax rate. 
-For all products except one, switch to the :btn:Availability: tab, check the box next to "Only sell this product as part of a bundle" and click the :btn:Save: button. 
-Skip this step for the last of the products you created. 
-
-Assign this last product the total price of the combination of differently taxed products. 
+Create a new product. 
+Give it a descriptive name and assign one of the relevant tax rates. 
+Which of the tax rates you assign is irrelevant. 
+Assign this product the total price of the combination of differently taxed products. 
 This price represents the full price of the bundle. 
 Neither the prices of the other bundled products nor the "Designated price part" setting have an influence on the total price of the combination. 
 
+Create another new product. 
+Assign it a different tax rate. 
+The price you assign to this product is irrelevant. 
+Switch to the :btn:Availability: tab, check the box next to "Only sell this product as part of a bundle" and click the :btn:Save: button. 
+If you need more than two different tax rates in a single bundle, repeat this step for every additional tax rate. 
+
 Edit the ticket with the full price, switch to the :btn:Bundled products: tab and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
 Choose one of the other products you created under "Bundled product" and set the "Designated price part". 
+The "Designated price part" determines how much of the bundle's full price is taxed at the rate assigned to the product. 
+
 Repeat this step for each product with a diverging tax rate that you want to include in this bundle. 
 Then, click the :btn:Save: button. 
 
@@ -205,8 +211,8 @@ The tax situation may look something like this:
 
  - event ticket price: €450 (including €150 for food)
 
-   - including €19.63 VAT at 7.00%
-   - incl. €23.95 VAT at 19.00%
+    - including €19.63 VAT at 7.00%
+    - including €23.95 VAT at 19.00%
 
 If you want to depict this tax situation using the method described above, create the following two products:
 
@@ -219,7 +225,7 @@ Add the "Catering" product and enter a "Designated price part" of €150.
 
 When a customer purchases the event ticket, the catering will be added as a bundled product automatically.
 The product price of €450 will be split into the two components. 
-€300 will be taxed at 7.00% and €150 will be taxed at 19.00%, just as intended. 
+€300 will be taxed at 7.00% and €150 will be taxed at 19.00%.  
 
 ## Troubleshooting 
 
