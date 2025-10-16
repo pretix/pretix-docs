@@ -12,16 +12,26 @@ Refer to [Vouchers: Exclusive product availability](../vouchers.md#exclusive-pro
 
 ## Option B: Order approvals
 
-If you do not know individual members of your audience already, but still want to restrict it to a certain group, edit your admission products and check the box next to "Buying this product requires approval". 
+If you do not know individual members of your audience already, but still want to restrict it to a certain group, you can require approval for orders. 
+In order to do so, edit your admission products.
+On the :btn:General: tab, scroll to the bottom of the page and check the box next to "Buying this product requires approval". 
 Customers will be able to place an order for such a product, but cannot proceed to payment without you having approved the order. 
-This can be useful if, for instance, you are offering special tickets for journalists. 
+
+Orders waiting for approval behave like orders waiting for payment. 
+Once a customer orders them, they are reserved in the quota and, if a seating plan exists, in the seating plan. 
+
+!!! Note 
+    The setting "Buying this product requires approval" affects the whole order. 
+    If a customer orders several products and one or more of them require approval, then the whole order will require approval. 
+    If you have to deny approval, then you may also have to split the order. 
 
 In order to review incoming orders, navigate to :navpath:Your event → :fa3-shopping-cart: Orders → All orders:. 
 Manually approve or decline each order that contains a product that requires approval. 
 Once you have done that, the customer will receive an email notifying them that their order has been approved and they can proceed to payment. 
 
 The main downside of this approach is that your customers will have to interact with the ticket shop twice: once for placing the order, and once for paying. 
-On the other hand, it gives you control over who attends the event for each individual order. 
+This downside does not affect entirely free orders because the payment step is not necessary for those. 
+The main advantage of this method is that it gives you control over who attends the event for each individual order. 
 
 ## Option C: Registered customers & memberships
 
