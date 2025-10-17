@@ -16,7 +16,7 @@ If you do not know individual members of your audience already, but still want t
 This is useful if you are offering discounts or free products for certain groups such as press or students. 
 Requiring approval allows you to check your customers' status as members of that group before confirming the order. 
 
-In order to require approval for a product, edit your admission products.
+In order to require approval for a product, navigate to :navpath:Event → :fa3-ticket: Products → Products: and edit your admission products.
 On the :btn:General: tab, scroll to the bottom of the page and check the box next to "Buying this product requires approval". 
 Customers will be able to place an order for such a product, but cannot proceed to payment without you having approved the order. 
 
