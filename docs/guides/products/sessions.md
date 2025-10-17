@@ -5,7 +5,7 @@ If you are planning a conference with multiple workshops, a celebration with a v
 
 pretix offers you two methods to do this. 
 You can either use add-on products with fixed time slots, or a plugin with advanced functions for variable time slots. 
-This article will guide you through both of them. 
+This article will guide you through both methods. 
 
 If you have deviating prices for some of the sessions, or each session can only be attended by a limited number of people, you should use [add-on products](sessions.md#option-a-add-on-products-with-fixed-time-slots). 
 
