@@ -206,6 +206,7 @@ If you need more than two different tax rates in a single bundle, repeat this st
 Edit the ticket with the full price, switch to the :btn:Bundled products: tab and click the :btn-icon:fa3-plus: Add a new bundled product: button. 
 Choose one of the other products you created under "Bundled product" and set the "Designated price part". 
 The "Designated price part" determines how much of the bundle's full price is taxed at the rate assigned to the product. 
+pretix assumes that the "Designated price part" for bundled products already includes tax.
 
 Repeat this step for each product with a diverging tax rate that you want to include in this bundle. 
 Then, click the :btn:Save: button. 
@@ -214,7 +215,7 @@ For illustrative purposes, assume you are organizing an educational event for a 
 However, the admission ticket price also automatically includes catering, which is still taxed at a rate of 19.00%. 
 The tax situation may look something like this: 
 
- - event ticket price: €450 (including €150 for food)
+ - event ticket price: €450 gross total (including €150 for food)
     - including €19.63 VAT at 7.00%
     - including €23.95 VAT at 19.00%
 
@@ -232,7 +233,7 @@ The product price of €450 will be split into the two components.
 
 #### Mixed taxation (tax added on top of price)
 
-This section explains how to implement mixed taxation if your pretix shop uses tax rules that add on top of the price of the products. 
+This section explains how to implement mixed taxation if your pretix shop uses tax rules that add tax on top of the displayed price of the products. 
 Follow the instructions under [Mixed taxation (tax included in price)](taxes.md#mixed-taxation-tax-included-in-price) in everything except pricing. 
 If the boxes next to "The configured product prices include the tax amount" are unchecked on all of your tax rules, then configuring prices for mixed taxation is more complex. 
 
