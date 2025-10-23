@@ -180,7 +180,7 @@ Once you have made your selection, click the :btn:Save: button.
 
 #### Mixed taxation (tax included in price)
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 This section explains how to implement a mixed tax situation for a single product. 
 pretix allows you to do this by creating a product with the full price and one tax rate, and then bundling products with different tax rates into that first product. 
