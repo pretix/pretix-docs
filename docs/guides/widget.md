@@ -102,7 +102,7 @@ Instead of the full widget, you can also display a simple button.
 Clicking this button adds a predefined set of to the cart and proceeds to checkout. 
 You can try out this behavior here:
 
-<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424">Buy ticket!</pretix-button>
+<pretix-button event="https://pretix.eu/demo/democon/" items="item_6424=1">Buy ticket!</pretix-button>
 <noscript>
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
