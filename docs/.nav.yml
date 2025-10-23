@@ -1,0 +1,15 @@
+sort: 
+  by: title
+  sections: mixed
+  ignore_case: true
+  type: natural
+
+ignore: old-link.md
+
+nav:
+ - index*.md
+ - tutorial
+ - guides
+ - self-hosting
+ - Developer and API Docs: https://docs.pretix.eu/dev/
+ - trust

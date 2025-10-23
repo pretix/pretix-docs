@@ -16,15 +16,17 @@ We are going to start by [creating categories](products.md#creating-and-editing-
 ![Page titled 'Product categories', showing a list of categories only containing 'Tickets' and a button for creating a new category.](../assets/screens/products/categories.png "Product categories screenshot") 
 
 Categories can help us group products into sensible categories both in the backend and in our shop. 
-They also separate standalone products from additional products. 
+They also separate standalone products from add-on products. 
 We are not only going to sell admission tickets in our shop, but also extras such as stickers. 
 That means our next step is to create a category for those extras. 
 
 For that, we will navigate to our personal dashboard by clicking :btn-icon:i-pretix: pretix.eu: in the top left corner of the website. 
 We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-ticket: Products: in the sidebar and click the :btn:Categories: subentry. 
-This page shows the list of all product categories, which at the moment should only include a single category named "Tickets". 
+This page shows the list of all product categories, which at the moment should only include a single category named "Tickets" of the type "Normal category". 
 
 We will click the :btn-icon:fa3-plus: Create a new category: button and give the category a name such as "Extras". 
+Under "Category type", we will select "Add-on product category". 
+We are not planning to use the cross-selling feature for this event, so the cross-selling categories are not relevant for us. 
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page, which now lists two entries: "Tickets" and our newly created category named "Extras". 
 
 ## Creating and editing products
@@ -43,6 +45,12 @@ We are going to add the following description:
 "Regular ticket granting access to the entire conference." 
 Next, we will click on the :btn:Price: tab and change the "Default price" to €250.00. 
 We will also select the appropriate tax rate of 19% from the "Sales tax" dropdown. 
+
+!!! Note 
+    Every tax rate you assign to a product, you have to create first. 
+    If there are multiple different tax rates that apply to your products, create one tax rate for each of them. 
+    If you are selling products with a 0% tax rate (such as [gift cards](../guides/gift-cards.md)), you still need to create a 0% tax rule first. 
+    For more information, see our guide on [creating tax rules](../guides/taxes.md#creating-tax-rules). 
 
 Once we have done that, we are going to click the :btn:Save: button. 
 
@@ -148,6 +156,7 @@ Our speaker ticket needs to be assigned to a quota, too.
 We will now navigate to the quotas page again and click the :btn-icon:fa3-plus: Create a new quota: button. 
 We will name the new quota "Speaker ticket" and set its number to 100 because that is the expected number of speakers at our event. 
 In the list of products, we will check the box next to "Speaker ticket". 
+Then, we will click the :btn:Save: button. 
 
 ### Quotas for variants 
 
