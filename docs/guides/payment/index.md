@@ -99,6 +99,8 @@ This can be useful if, for example, your audience mostly consists of individual 
 In order to hide a payment provider, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment: and click the :btn-icon:fa3-gear: Settings: button next to the payment provider which you want to hide. 
 Check the box next to "Hide payment method". 
 
+![Settings page for a payment provider. The box 'Hide payment method' is checked and the page displays a field labeled 'Link to enable payment method' containing a lengthy URL.](../../assets/screens/payment/hide-payment-method.png "Hide payment method")
+
 The page will now display a new field labeled "Link to enable payment method". 
 Copy the link displayed in that field and send it to those customers you want to be able to access the payment provider. 
 
