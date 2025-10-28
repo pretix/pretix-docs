@@ -4,8 +4,8 @@
     Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.md#kontierungsmodus).
 
 ePayBL ist eine von vielen Methoden für die Abwicklung von Zahlungen in pretix. 
-ePayBL (kurz für ePayment des Bundes und der Länder), ist ein Zahlungssystem für Aufgabenträger des Bundes, der Länder und der Kommunen in Deutschland. 
-Es in der Anwendung besondere Vorteile wie etwa die automatische Erfassung von Zahlungsbelegen, Kontierungen und Steuermerkmalen, sowie das Übertragen von Buchungen in Haushaltskassen und Buchhaltungssysteme. 
+ePayBL (kurz für ePayment des Bundes und der Länder) ist ein Zahlungssystem für Aufgabenträger des Bundes, der Länder und der Kommunen in Deutschland. 
+Es bietet in der Anwendung besondere Vorteile wie etwa die automatische Erfassung von Zahlungsbelegen, Kontierungen und Steuermerkmalen, sowie das Übertragen von Buchungen in Haushaltskassen und Buchhaltungssysteme. 
 Obwohl ePayBL nur eine Komponente im komplexen Systems der Zahlungsabwicklung für Behörden und Kommunen ist, kann es in pretix genau so verwaltet werden, wie jeder andere Zahlungsdienstleister. 
 ePayBL unterstützt folgende Zahlungsmethoden: Kreditkarte, PayPal, Rechnung, SEPA-Lastschrift und Vorkasse. 
 Dieser Artikel erklärt, wie Sie sich mit Ihrem ePayBL-System verbinden können, um es für Zahlungen über pretix zu verwenden. 
@@ -19,11 +19,11 @@ Wenn Sie die Anbindung an Ihre Haushaltssysteme nicht benötigen, dann können S
 
 Nicht jeder IT-Dienstleister bietet seinen Nutzenden immer sofort die neueste Version von ePayBL an. 
 Das kann z.B. an Updatezyklen oder speziellen Anpassungen liegen. 
-Deswegen sind trotz Standardisierung nicht alle ePayBL-Systeme  exakt gleich ansprechbar. 
+Deswegen sind trotz Standardisierung nicht alle ePayBL-Systeme exakt gleich ansprechbar. 
 
 Die Erweiterung "ePayBL" für pretix bindet an den ePayBL-Konnektor an. 
 Der ePayBL-Konnektor steht optional zwischen den Fachverfahren und dem ePayBL-Server. 
-Er bietet den Fachverfahren eine dauerhaft gleich bleibende Schnittstelle an. 
+Er bietet den Fachverfahren eine dauerhaft gleichbleibende Schnittstelle an. 
 Gleichzeitig kann er mit jeder Version des ePayBL-Servers kommunizieren, unabhängig von Version und individuellen Anpassungen. 
 
 Die Tatsache, dass pretix an den ePayBL-Konnektor anbindet, kann für die Ersteinrichtung und Anforderung von Zugangsdaten relevant sein. 
@@ -50,7 +50,7 @@ Die Einrichtung von ePayBL zur Abwicklung von Zahlungen in pretix besteht aus de
  6. Testen Sie sie 
  7. Schalten Sie das System ggf. von "Test" auf "Produktion". 
 
-Dieser Abschnitt wird Sie in allen Einzelheiten durch diese Schritte führen. 
+Dieser Abschnitt wird Sie in allen Einzelheiten durch die genannten Schritte führen. 
 
 ### Aktivierung der Erweiterung
 
