@@ -1,7 +1,7 @@
 ## Einführung
 
 !!! Note 
-    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen des pretix ePayBL-plugins gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.md#kontierungsmodus).
+    Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen der pretix ePayBL-Erweiterung gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.md#kontierungsmodus).
 
 ePayBL ist eine von vielen Methoden für die Abwicklung von Zahlungen in pretix. 
 ePayBL (kurz für ePayment des Bundes und der Länder) ist ein Zahlungssystem für Aufgabenträger des Bundes, der Länder und der Kommunen in Deutschland. 
@@ -57,28 +57,28 @@ Dieser Abschnitt wird Sie in allen Einzelheiten durch die genannten Schritte fü
 
 ### Aktivierung der Erweiterung
 
-![Ausschnitt der Liste der Erweiterungen für Zahlungsdienstleister. Unter anderem zeigt die Liste ePayBL an. Dieser Eintrag ist als aktiv markiert und hat einen Button mit der Aufschrift 'Deaktivieren'.](../../assets/screens/payment-providers/plugins-list-de.png "Liste der Erweiterungen" )
+![Ausschnitt der Liste der Erweiterungen für Zahlungsdienstleister. Unter anderem zeigt die Liste ePayBL an. Dieser Eintrag ist als aktiv markiert und hat einen Button mit der Aufschrift 'Deaktivieren'.](../../assets/screens/payment-providers/plugins-list-de.png "Liste der Erweiterungen")
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung: → :fa3-wrench: Einstellungen → Erweiterungen. 
 Öffnen Sie den Reiter :btn:Zahlungsmethoden:. 
 Die Erweiterung ePayBL wird in der Liste auf dieser Seite angezeigt.  
-Wenn sie aktiviert ist, dann ist sie mit der grünen Markierung ":fa3-check: aktiv" und einem weißen Knopf "Deaktivieren" versehen. 
-Wenn sie nicht aktiviert ist, dann fehlt die Markierung und es wird ein lila Knopf :btn:Aktivieren: angezeigt. 
-Aktivieren Sie das Plugin gegebenenfalls. 
+Wenn sie aktiviert ist, dann ist sie mit der grünen Markierung ":fa3-check: aktiv" und einem weißen Button "Deaktivieren" versehen. 
+Wenn sie nicht aktiviert ist, dann fehlt die Markierung und es wird ein lila Button :btn:Aktivieren: angezeigt. 
+Aktivieren Sie die Erweiterung gegebenenfalls. 
 
 ### Eingabe der Anmeldedaten 
 
-![Zahlungseinstellungen. Der Tab "Zahlungsmethoden" ist offen und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, PayPal, SEPA-Lastschrift, Stripe, Wertgutschein / Geschenkgutschein und ePayBL. Banküberweisung und Gutschein sind aktiviert, alle anderen sind deaktiviert. Alle Einträge haben einen Button für Einstellungen.](../../assets/screens/payment-providers/payment-settings-de.png "Zahlungseinstellungen" )
+![Zahlungseinstellungen. Der Tab "Zahlungsmethoden" ist offen und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, PayPal, SEPA-Lastschrift, Stripe, Wertgutschein / Geschenkgutschein und ePayBL. Banküberweisung und Gutschein sind aktiviert, alle anderen sind deaktiviert. Alle Einträge haben einen Button für Einstellungen.](../../assets/screens/payment-providers/payment-settings-de.png "Zahlungseinstellungen")
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung:. 
 Der Reiter :btn:Zahlungsmethoden: auf dieser Seite zeigt die Liste aktiver Zahlungsdienstleister an. 
 Diese Liste sollte nun einen Eintrag für ePayBL mit einer roten Markierung ":fa3-times: Deaktiviert" beinhalten. 
 Die Erweiterung ist aktiviert, aber ePayBL wurde noch nicht als Zahlungsdienstleister eingerichtet und aktiviert. 
 
-Klicken Sie neben ePayBL den Knopf :btn-icon:fa3-cog:Einstellungen:. 
+Klicken Sie neben ePayBL den Button :btn-icon:fa3-cog:Einstellungen:. 
 Wählen Sie unter "System" zunächst ein Testsystem aus. 
 Geben Sie Mandantennummer, Bewirtschafternummer, SSL-Client-Zertifikatspasswort und Kennzeichen Mahnverfahren ein. 
-Laden Sie Ihr SSL-Client-Zertifikat hoch, indem Sie den Knopf :btn:Durchsuchen...: klicken und die Zertifikatsdatei auf Ihrem Computer auswählen. 
+Laden Sie Ihr SSL-Client-Zertifikat hoch, indem Sie den Button :btn:Durchsuchen...: klicken und die Zertifikatsdatei auf Ihrem Computer auswählen. 
 Wählen Sie dann den Kontierungsmodus.
 
 ### Kontierungsmodus
@@ -89,18 +89,32 @@ Diese Annahmen lassen sich in einem Ticketshop wie pretix nur zum Teil abbilden.
 
 Die ePayBL-Integration für pretix bietet daher zwei unterschiedliche Kontierungsmodi an. 
 Diese Modi unterscheiden sich dahingehend, wie Buchungen erfasst und an den ePayBL-Konnektor und die dahinterliegenden Haushaltssysteme gemeldet werden. 
-Die nächsten beiden Unterabschnitte stellen Ihnen die beiden Optionen vor und helfen Ihnen bei der Entscheidung. 
+
+Im Modus "pro Zahlvorgang" überträgt die Erweiterung pro Bestellung nur den Gesamtbetrag aus Produktpreisen, Gebühren und Steuern an den ePayBL-Konnektor und nicht die einzelnen Beträge. 
+Nachträgliche Änderungen der Bestellung sind möglich. 
+Dieser Modus erfordert zusätzliche Informationen in den ePayBL-Einstellungen in pretix. 
+
+Im Modus "pro Position/Artikel" überträgt die Erweiterung jede einzelne Bestellposition.
+Kund\*innen können nur einmalig erfolgreich bezahlen. 
+Es ist nicht möglich, die übertragenen Daten nachträglich zu ändern. 
+Gebühren (für Zahlung, Versand, Storno oder Service) können nicht übertragen werden. 
+Dieser Modus erfordert zusätzliche Einstellungen bei allen Produkten in pretix.  
+
+Die nächsten beiden Unterabschnitte stellen Ihnen die beiden Optionen im Detail vor. 
 
 #### Kontierung pro Zahlvorgang
 
 Der Modus "pro Zahlvorgang" fasst alle Positionen einer Bestellung zu einer einzelnen zusammen und übermittelt diese an den ePayBL-Konnektor. 
-In diesem Modus werden die Preise der einzelnen Produkte sowie die Anteile an Steuern nicht unterschieden. 
-Der Steueranteil wird immer als 0 übertragen. 
+In diesem Modus schlüsselt die Erweiterung die Preise der einzelnen Produkte sowie die Steueranteile nicht auf. 
+Der Steueranteil wird immer als 0 % übertragen. 
+Die Erweiterung überträgt also pro Bestellung nur einen Gesamtbetrag an den ePayBL-Konnektor. 
 
-Wenn Sie den Modus "pro Zahlvorgang" auswählen, dann geben Sie auf derselben Seite Kennzeichen für Haushaltsstelle und Objektnummer sowie optional ein Kontierungsobjekt `HREF` ein. 
+Wählen Sie unter "Kontierung" die Option "pro Zahlungsvorgang". 
+Daraufhin zeigt die Seite weitere Eingabefelder an. 
+Geben Sie Kennzeichen für Haushaltsstelle und Objektnummer sowie optional ein Kontierungsobjekt `HREF` in die entsprechenden Felder ein. 
 pretix nutzt diese Daten für jede Übertragung einer Bestellung an den ePayBL-Konnektor. 
 
-Der Vorteil dieser Option ist, dass Bestellungen verändert werden können und dass pro Bestellung mehr als eine Zahlung geleistet werden kann. 
+Der Vorteil dieser Option ist, dass Bestellungen verändert werden können und dass pro Bestellung mehr als eine erfolgreiche Zahlung geleistet werden kann. 
 Diese Daten können ohne Probleme an den ePayBL-Konnektor übertragen werden. 
 
 Der Nachteil dieser Option ist, dass ein angeschlossenes Haushaltssystem nicht nachvollziehen kann, welche Positionen konkret erworben und bezahlt wurden. 
@@ -119,21 +133,20 @@ Navigieren Sie dazu zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: un
 Öffnen Sie den Tab :btn:Zusätzliche Einstellungen: und geben Sie Kennzeichen für Haushaltsstelle und Objektnummer sowie optional ein Kontierungsobjekt `HREF` ein. 
 Wiederholen Sie diese Schritte für jedes Produkt, dessen Kauf an den ePayBL-Konnektor übermittelt werden soll. 
 
-Die Vorteile dieser Option sind, dass die größtmögliche Menge an Kontierungsdaten an den ePayBL-Konnektor übertragen wird und dass ein separates Verbuchen von Leistungen auf unterschiedliche Haushaltsstellen möglicht ist. 
+Die Vorteile dieser Option sind, dass die größtmögliche Menge an Kontierungsdaten an den ePayBL-Konnektor übertragen wird und dass ein separates Verbuchen von Leistungen auf unterschiedliche Haushaltsstellen möglich ist. 
 Ein Nachteil der Kontierung pro Position/Artikel ist, dass keine Gebühren-Positionen (Versandkosten, Zahlungs-, Storno- oder Servicegebühren) übertragen werden können. 
 
-Ein weiterer Nachteil ist, dass Kund*innen pro Bestellung nur eine einzige Zahlung leisten können. 
+Ein weiterer Nachteil ist, dass Kund*innen pro Bestellung nur eine einzige erfolgreiche Zahlung leisten können. 
 Die Schnittstelle zum ePayBL-Konnektor unterstützt in diesem Modus nur die erstmalige Übermittlung einer Bestellung, nicht aber die Aktualisierung der Daten der Bestellung. 
 Bestellungen können zwar in pretix nachträglich verändert werden, aber das führt nicht zu einer Aktualisierung der Informationen auf Seiten von ePayBL. 
 
 ### Weitere Einstellungen 
 
-Auf dieser Seite gibt es Kontrollkästchen für die weiteren Zahlungsmethoden PayPal und Kreditkarte. 
-Aktivieren Sie diese, falls Sie Zahlungen per PayPal oder Kreditkarte via ePayBL empfangen möchten. 
-
 Alle weiteren Einstellungen auf dieser Seite sind optional. 
-Werfen Sie einen genauen Blick auf die Seite und aktivieren Sie alle Einstellungen, die Sie für Ihre Veranstaltung bei ePayBL verwenden wollen. 
-Sobald Sie zufrieden sind, aktivieren Sie das Kontrollkästchen neben "Aktiviere Zahlungsmethode" und klicken Sie den Knopf :btn:Speichern:. 
+Aktivieren Sie alle Einstellungen, die Sie für Ihre Veranstaltung bei ePayBL verwenden wollen. 
+Wenn Sie Zahlungen per Kreditkarte oder PayPal über ePayBL anbieten wollen, dann aktivieren Sie die entsprechenden Kontrollkästchen. 
+
+Sobald Sie zufrieden sind, haken Sie das Kontrollkästchen neben "Aktiviere Zahlungsmethode" an und klicken Sie den Button :btn:Speichern:. 
 ePayBL und die weiteren Zahlungsmethoden, die Sie hier aktiviert haben, werden nun als Optionen für kaufende Personen in Ihrem Ticketshop angezeigt. 
 
-Sobald Sie Ihren Ticketshop live schalten, wählen Sie unter "System" eine Option, die **nicht** mit dem Hinweis "test" endet. 
+Sobald Sie Ihren Ticketshop live schalten, wählen Sie unter "System" eine Option, die mit "integration" oder "prod" endet (also **nicht** mit "test") und klicken den Button :btn:Speichern:. 
