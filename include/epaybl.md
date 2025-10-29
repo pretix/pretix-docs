@@ -57,18 +57,18 @@ Dieser Abschnitt wird Sie in allen Einzelheiten durch die genannten Schritte fü
 
 ### Aktivierung der Erweiterung
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Mollie; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Ausschnitt der Liste der Erweiterungen für Zahlungsdienstleister. Unter anderem zeigt die Liste ePayBL an. Dieser Eintrag ist als aktiv markiert und hat einen Button mit der Aufschrift 'Deaktivieren'.](../../assets/screens/payment-providers/plugins-list.de.png "Liste der Erweiterungen" )
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung: → :fa3-wrench: Einstellungen → Erweiterungen. 
 Öffnen Sie den Reiter :btn:Zahlungsmethoden:. 
 Die Erweiterung ePayBL wird in der Liste auf dieser Seite angezeigt.  
 Wenn sie aktiviert ist, dann ist sie mit der grünen Markierung ":fa3-check: aktiv" und einem weißen Knopf "Deaktivieren" versehen. 
-Wenn sie nicht aktiviert ist, dann fehlt die Markierung und es wird ein lila Knopf :Aktivieren: angezeigt. 
+Wenn sie nicht aktiviert ist, dann fehlt die Markierung und es wird ein lila Knopf :btn:Aktivieren: angezeigt. 
 Aktivieren Sie das Plugin gegebenenfalls. 
 
 ### Eingabe der Anmeldedaten 
 
-![Payment settings page. The "payment providers" tab is open, showing a list with the following entries: bank transfer, gift card, PayPal, SEPA debit and Mollie; gift card is enabled and all other entries are disabled. All entires have 'settings' buttons next to them.](../../assets/screens/payment-providers/payment-settings.png "Payment settings" )
+![Zahlungseinstellungen. Der Tab "Zahlungsmethoden" ist offen und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, PayPal, SEPA-Lastschrift, Stripe, Wertgutschein / Geschenkgutschein und ePayBL. Banküberweisung und Gutschein sind aktiviert, alle anderen sind deaktiviert. Alle Einträge haben einen Button für Einstellungen.](../../assets/screens/payment-providers/payment-settings.de.png "Zahlungseinstellungen" )
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung:. 
 Der Reiter :btn:Zahlungsmethoden: auf dieser Seite zeigt die Liste aktiver Zahlungsdienstleister an. 
