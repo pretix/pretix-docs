@@ -62,8 +62,8 @@ Dieser Abschnitt wird Sie in allen Einzelheiten durch die genannten Schritte fü
 Navigieren Sie zu :navpath:Ihre Veranstaltung: → :fa3-wrench: Einstellungen → Erweiterungen. 
 Öffnen Sie den Reiter :btn:Zahlungsmethoden:. 
 Die Erweiterung ePayBL wird in der Liste auf dieser Seite angezeigt.  
-Wenn sie aktiviert ist, dann ist sie mit der grünen Markierung ":fa3-check: aktiv" und einem weißen Button "Deaktivieren" versehen. 
-Wenn sie nicht aktiviert ist, dann fehlt die Markierung und es wird ein lila Button :btn:Aktivieren: angezeigt. 
+Wenn sie aktiv ist, dann ist sie mit der grünen Markierung ":fa3-check: aktiv" und einem weißen Button "Deaktivieren" versehen. 
+Wenn sie nicht aktiv ist, dann fehlt die Markierung und es wird ein lila Button :btn:Aktivieren: angezeigt. 
 Aktivieren Sie die Erweiterung gegebenenfalls. 
 
 ### Eingabe der Anmeldedaten 
@@ -73,7 +73,9 @@ Aktivieren Sie die Erweiterung gegebenenfalls.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung:. 
 Der Reiter :btn:Zahlungsmethoden: auf dieser Seite zeigt die Liste aktiver Zahlungsdienstleister an. 
 Diese Liste sollte nun einen Eintrag für ePayBL mit einer roten Markierung ":fa3-times: Deaktiviert" beinhalten. 
-Die Erweiterung ist aktiviert, aber ePayBL wurde noch nicht als Zahlungsdienstleister eingerichtet und aktiviert. 
+Die Erweiterung ist aktiv. 
+Dadurch taucht ePayBL in dieser Liste auf und Sie haben Zugriff auf die Einstellungen. 
+Sie haben ePayBL aber noch nicht als Zahlungsdienstleister eingerichtet und für Ihren Shop aktiviert. 
 
 Klicken Sie neben ePayBL den Button :btn-icon:fa3-cog:Einstellungen:. 
 Wählen Sie unter "System" zunächst ein Testsystem aus. 
