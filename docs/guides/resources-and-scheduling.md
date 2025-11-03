@@ -113,15 +113,21 @@ Click the same button again and enter `None` in the new field.
 Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`. 
 
 If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences. 
+Once you are happy with your choices, click the :btn:Save: button. 
 
 ![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
+
+In order to remove a property, click the :btn-icon:fa3-minus-circle: Remove: button next to it. 
+This will display a box listing the resources that will be affected by this change. 
+Removing the property will also remove that property from all affected resources, along with all defined values. 
+If you are sure that you want to do this, confirm the removal by clicking :btn:Yes, remove this property:. 
 
 ### Managing individual resources 
 
 After you have created a resource type and added properties to it, you can create individual resources. 
 An individual resource may, for example, represent the following: 
 
- - a person who works at your venue as a guide
+ - a person who works at your venue as a guide 
  - a room 
  - a piece of equipment 
 
@@ -133,11 +139,11 @@ Click the :btn-icon:fa3-plus: Add a Guide: button.
 If your resource has a different name, then the button will have a different label, too. 
 
 If the resource you are creating represents a person, enter their name under "Name". 
-Under "Locale", select the language spoken by the person. 
+Under "Locale", select the language you want to use to communicate with the person through pretix. 
 Under "Notification email address", enter their email address. 
 Check the "Require confirmation" field. 
 
-![Page titled 'Add a Guide', displaying input fields for name 'Jaiden Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
+![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
 If the resource represents an inanimate object, enter the room number, inventory number, or another unique identifier. 
 Select the "Locale" and Notification email address corresponding to the person or team in charge of the resource. 
@@ -173,9 +179,17 @@ Click the :btn:Save: button.
 The calendar view under "Resulting availability" will now display the available times for this resource. 
 Once you are happy with your configuration of the resource, click the :btn:Save: button. 
 
+If you want to delete a resource, navigate to the submenu for the corresponding resource type. 
+Click the :btn-icon:fa3-trash:: button next to the resource you want to delete. 
+Alternatively, click the name of the resource and then click the :btn-icon:fa3-trash:: button in the top right corner. 
+
+Both buttons take you to a page asking you to confirm the deletion. 
+pretix will deactivate the resource, but keep records of its past usages. 
+
 ### Creating a product for scheduling 
 
 Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a personalized admission product. 
+For general information on creating products, see our guide on [products](products.md). 
 Do **not** add the product to any quotas. 
 Open the :btn:Requirements: tab. 
 
