@@ -45,6 +45,11 @@ If the plugin is already active, then it will have a green ":fa3-check: Active" 
 
 ### Creating resource types
 
+!!! Note 
+    Once you have created a resource type, it is not possible to delete it. 
+    You can still edit and rename the resource in order to repurpose it. 
+    But deleting it from the organizer account entirely is not possible. 
+
 Before you can create and manage individual resources, you have to create resource types. 
 A resource type may, for example, represent the following: 
 
