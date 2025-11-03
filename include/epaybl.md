@@ -5,10 +5,11 @@
 
 ePayBL ist eine von vielen Methoden für die Abwicklung von Zahlungen in pretix. 
 ePayBL (kurz für ePayment des Bundes und der Länder) ist ein Zahlungssystem für Aufgabenträger des Bundes, der Länder und der Kommunen in Deutschland. 
-Es bietet in der Anwendung besondere Vorteile wie etwa die automatische Erfassung von Zahlungsbelegen, Kontierungen und Steuermerkmalen, sowie das Übertragen von Buchungen in Haushaltskassen und Buchhaltungssysteme. 
+Es bietet in der Anwendung besondere Vorteile wie etwa die automatische Erfassung von Zahlungsbelegen, Kontierungen und Steuermerkmalen. 
+Außerdem kann die ePayBL-Integration Buchungen direkt in Haushaltskassen und Buchhaltungssysteme übertragen. 
 
 ePayBL ist kein eigenständiger Zahlungsdienstleister, sondern nur eine Komponente im komplexen System der Zahlungsabwicklung für Behörden und Kommunen. 
-Trotzdem können Sie ePayBL genau so in pretix verwalten wie jeden andere Zahlungsdienstleister. 
+Trotzdem können Sie ePayBL genau so in pretix verwalten wie jeden anderen Zahlungsdienstleister. 
 ePayBL unterstützt folgende Zahlungsmethoden: Kreditkarte, PayPal, Rechnung, SEPA-Lastschrift und Vorkasse. 
 Dieser Artikel erklärt, wie Sie Ihr pretix-Konto mit Ihrem ePayBL-System verbinden können, um es für Zahlungen über pretix zu verwenden. 
 
@@ -28,18 +29,16 @@ Der ePayBL-Konnektor steht optional zwischen den Fachverfahren und dem ePayBL-Se
 Er bietet den Fachverfahren eine dauerhaft gleichbleibende Schnittstelle an. 
 Gleichzeitig kann er mit jeder Version des ePayBL-Servers kommunizieren, unabhängig von Updatezyklen und individuellen Anpassungen. 
 
-Die Tatsache, dass pretix an den ePayBL-Konnektor anbindet, kann für die Ersteinrichtung der Verbindung durch die Erweiterung und Anforderung von ePayBL-Zugangsdaten relevant sein. 
-
 !!! Note 
     pretix erlaubt keine Erstattungen von bereits geleisteten Zahlungen über ePayBL. 
-    Der Prozess hierfür unterscheidet sich von Behörde zu Behörde und muss daher händisch durchgeführt werden.
+    Der Prozess hierfür unterscheidet sich von Behörde zu Behörde und muss daher manuell durchgeführt werden.
 
 ## Voraussetzungen
 
 Zahlungsdienstleister werden auf der Veranstaltungsebene eingerichtet. 
 Daher müssen Sie zuerst eine Veranstaltung erstellen. 
 Stellen Sie sicher, dass Ihr ePayBL-System eingerichtet und einsatzbereit ist. 
-Für die Einrichtung der Verbindung zwischen pretix und ePayBL brauchen Sie Zugriff auf die Anmeldedaten einschließlich SSL-Client-Zertifikat und SSL-Client-Zertifikatspasswort. 
+Für die Einrichtung der Verbindung zwischen pretix und ePayBL brauchen Sie Zugriff auf die jeweiligen Anmeldedaten einschließlich SSL-Client-Zertifikat und SSL-Client-Zertifikatspasswort. 
 
 ## Anleitung 
 
@@ -48,12 +47,10 @@ Die Einrichtung von ePayBL zur Abwicklung von Zahlungen in pretix besteht aus de
  1. Aktivieren Sie die Erweiterung ePayBL
  2. Geben Sie Ihre ePayBL-Anmeldedaten in pretix ein 
  3. Wählen Sie den Kontierungsmodus
- 4. Nehmen Sie optionale Einstellungen vor
- 5. Aktivieren Sie die Zahlungsmethode 
- 6. Testen Sie sie 
- 7. Schalten Sie das System ggf. von "test" auf "prod". 
+ 4. Aktivieren Sie die Zahlungsmethode 
+ 5. Schalten Sie das System ggf. von "test" auf "prod" 
 
-Dieser Abschnitt wird Sie in allen Einzelheiten durch die genannten Schritte führen. 
+Dieser Abschnitt wird Sie durch diese Schritte führen. 
 
 ### Aktivierung der Erweiterung
 
