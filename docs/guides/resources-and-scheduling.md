@@ -189,7 +189,7 @@ pretix will deactivate the resource, but keep records of its past usages.
 ### Creating a product for scheduling 
 
 Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a personalized admission product. 
-For general information on creating products, see our guide on [products](products.md). 
+For general information on creating products, see our guide on [products](products/index.md). 
 Do **not** add the product to any quotas. 
 Open the :btn:Requirements: tab. 
 
