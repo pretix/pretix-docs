@@ -61,6 +61,13 @@ A product with a price of €10.00 and a 19% tax rule will have €1.90 worth of
 This setting applies to all products that use this specific tax rule. 
 It does **not** apply to all products in your shop. 
 
+!!! Note 
+    The setting "The configured product prices include the tax amount" affects the way you configure product prices within pretix. 
+    It does not affect the way prices are displayed to customers in your shop. 
+    If you want to display prices without tax in your shop, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax:. 
+    Change the setting "Prices shown to customer" to "Prices excluding tax". 
+    This setting affects all products regardless of tax rule. 
+
 Click the :btn:Save: button to confirm your choices. 
 
 ### Custom tax rules
