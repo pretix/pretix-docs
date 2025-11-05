@@ -306,6 +306,8 @@ The disadvantage of this method is that it can introduce miniscule variations in
 Thus, you may end up selling the same product at different net prices. 
 The gross prices and tax rates will always remain the same. 
 
+For more information on tax computation algorithms, see our developer documentation's section on [Rounding of taxes](https://docs.pretix.eu/dev/development/algorithms/pricing.html#rounding-of-taxes). 
+
 ## Troubleshooting 
 
 ### Appropriate tax rule does not appear in the drop-down menu
