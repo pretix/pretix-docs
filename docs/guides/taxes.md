@@ -279,6 +279,8 @@ Your choice of algorithm depends on several factors:
 In order to select the tax rounding algorithm you want pretix to use, navigate to :navpath:Your event → :fa3-wrench: Settings → Taxes:. 
 Under "Tax settings", this page displays a setting called "Rounding of taxes". 
 
+![Page titled 'Taxes', displaying the subheading 'Tax settings'. The setting 'Rounding of taxes' has three options: 'Compute taxes for every line individually', 'Compute taxes based on net total', and 'Compute taxes based on net total with stable gross prices'. The option 'Prices shown to customer' has the options 'Prices including tax' and 'Prices excluding tax'. ](../assets/screens/tax/tax-settings.png "Tax settings" )
+
 The default selection is "Compute taxes for every line individually". 
 Use this option if you want pretix to compute taxes for each position individually. 
 pretix will sell each product with the exact net and gross price configured by you. 
