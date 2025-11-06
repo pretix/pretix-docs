@@ -313,6 +313,9 @@ The disadvantage of this method is that it can introduce miniscule variations in
 Thus, you may end up selling the same product at different net prices. 
 The gross prices and tax rates will always remain the same. 
 
+If you use an external system for tax reporting, you should choose the method that matches the one used by that system. 
+This prevents inconsistencies in rounding between pretix and the external system. 
+
 For more information on tax computation algorithms, see our developer documentation's section on [Rounding of taxes](https://docs.pretix.eu/dev/development/algorithms/pricing.html#rounding-of-taxes). 
 
 ## Troubleshooting 
