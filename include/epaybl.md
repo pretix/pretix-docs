@@ -29,6 +29,8 @@ Der ePayBL-Konnektor steht optional zwischen den Fachverfahren und dem ePayBL-Se
 Er bietet den Fachverfahren eine dauerhaft gleichbleibende Schnittstelle an. 
 Gleichzeitig kann er mit jeder Version des ePayBL-Servers kommunizieren, unabhängig von Updatezyklen und individuellen Anpassungen. 
 
+Der ePayBL-Konnektor benutzt möglicherweise andere Anmeldedaten als der Server selbst. 
+
 !!! Note 
     pretix erlaubt keine Erstattungen von bereits geleisteten Zahlungen über ePayBL. 
     Der Prozess hierfür unterscheidet sich von Behörde zu Behörde und muss daher manuell durchgeführt werden.
@@ -50,7 +52,7 @@ Die Einrichtung von ePayBL zur Abwicklung von Zahlungen in pretix besteht aus de
  4. Aktivieren Sie die Zahlungsmethode 
  5. Schalten Sie das System ggf. von "test" auf "prod" 
 
-Dieser Abschnitt wird Sie durch diese Schritte führen. 
+Dieser Abschnitt wird Sie durch die genannten Schritte führen. 
 
 ### Aktivierung der Erweiterung
 
