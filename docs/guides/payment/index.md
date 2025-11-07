@@ -94,7 +94,7 @@ For detailed information on how to set up and enable specific payment providers,
 ### Hiding payment providers
 
 pretix allows you to hide a payment provider in your shop and only display it to users who followed a certain link. 
-This can be useful if, for example, your audience mostly consists of individual customers, but also includes some businesses clients. 
+This can be useful if, for example, your audience mostly consists of private individuals, but also includes some business clients. 
 
 In order to hide a payment provider, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment: and click the :btn-icon:fa3-gear: Settings: button next to the payment provider which you want to hide. 
 Check the box next to "Hide payment method". 
@@ -105,13 +105,14 @@ The page will now display a new field labeled "Link to enable payment method".
 Copy the link displayed in that field and send it to those customers you want to be able to access the payment provider. 
 
 You can also preselect a voucher code for those costumers. 
-In order to do that, append `?voucher=123456` to the end of the URL, where `123456` is the voucher code. 
+In order to do that, append `?voucher=` followed by the voucher code to the end of the URL. 
 The link could, for example, look like this: 
 
 ```
 https://pretix.eu/tut/tutcon27/unlock/9f8d374cf050d22e3fed41e66baead6e17e7057f62ecfb683d673515afce1761/?voucher=speaker8ZLLVR5MYXT2KWZG
 ``` 
 
+In this example, the voucher code is `speaker8ZLLVR5MYXT2KWZG`. 
 If a customer clicks that link, they will be taken to your shop with the voucher preselected **and** the hidden payment method enabled. 
 
 To learn more about vouchers, see the guide on [vouchers](../vouchers.md). 
