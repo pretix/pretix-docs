@@ -61,14 +61,13 @@ A product with a price of €10.00 and a 19% tax rule will have €1.90 worth of
 This setting applies to all products that use this specific tax rule. 
 It does **not** apply to all products in your shop. 
 
-!!! Note 
-    The setting "The configured product prices include the tax amount" affects the way you configure product prices within pretix. 
-    It does not affect the way prices are displayed to customers in your shop. 
-    If you want to display prices without tax in your shop, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax:. 
-    Change the setting "Prices shown to customer" to "Prices excluding tax". 
-    This setting affects all products regardless of tax rule. 
-
 Click the :btn:Save: button to confirm your choices. 
+
+The setting "The configured product prices include the tax amount" affects the way you configure product prices within pretix. 
+It does not affect the way prices are displayed to customers in your shop. 
+If you want to display prices without tax in your shop, navigate to :navpath:Your event → :fa3-wrench: Settings → Tax:. 
+Change the setting "Prices shown to customer" to "Prices excluding tax" and click the :btn:Save: button. 
+This setting affects all products regardless of tax rule. 
 
 ### Custom tax rules
 
@@ -274,13 +273,13 @@ Repeat these steps for every product you are adding to the bundle.
 Add all amounts you entered in the "Designated price part" fields to the price before tax of the base ticket. 
 Then, switch to the :btn:Price: tab and enter the sum of those amounts in the "Default price" field. 
 
-### Select tax computation algorithm
+### Selecting the tax computation algorithm
 
 pretix offers three different algorithms for calculating taxes. 
 Your choice of algorithm depends on several factors: 
 
  - whether you are using e-invoicing compliant with EN 16931
- - whether you are primarily selling to business costumers or private persons 
+ - whether you are primarily selling to business costumers or private individuals 
  - the rounding method used by any external system you may be using for tax reporting
 
 In order to select the tax rounding algorithm you want pretix to use, navigate to :navpath:Your event → :fa3-wrench: Settings → Taxes:. 
@@ -288,32 +287,32 @@ Under "Tax settings", this page displays a setting called "Rounding of taxes".
 
 ![Page titled 'Taxes', displaying the subheading 'Tax settings'. The setting 'Rounding of taxes' has three options: 'Compute taxes for every line individually', 'Compute taxes based on net total', and 'Compute taxes based on net total with stable gross prices'. The option 'Prices shown to customer' has the options 'Prices including tax' and 'Prices excluding tax'. ](../assets/screens/tax/tax-settings.png "Tax settings" )
 
-The default selection is "Compute taxes for every line individually". 
+The default selection is **"Compute taxes for every line individually"**. 
 Use this option if you want pretix to compute taxes for each position individually. 
 pretix will sell each product with the exact net and gross price configured by you. 
 The net total of an order including several positions will have no impact on the tax computation. 
-You can use this option if you are not using e-invoicing of any kind. 
+We recommend using this option if you are not using e-invoicing of any kind. 
 
-The second option is "Compute taxes based on net total". 
+The second option is **"Compute taxes based on net total"**. 
 Use this option if you want pretix to compute taxes using the net total of an order. 
 pretix will add the net prices of all positions of an order together and use the resulting net total to compute the amount of tax. 
 
 This algorithm is our implementation of [EN 16931](https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108971/Obtaining+a+copy+of+the+European+standard+on+eInvoicing). 
-You can use this option if you are using e-invoicing and most of your customers are businesses. 
+We recommend using this option if you are using e-invoicing and most of your customers are businesses. 
 The disadvantage of this method is that customers may encounter unexpected changes in the gross total price of an order while they are using your shop. 
 
-The third option is "Compute taxes based on net total with stable gross prices". 
+The third option is **"Compute taxes based on net total with stable gross prices"**. 
 Use this option if you want pretix to calculate taxes by making minimal changes to net prices of individual positions in order to arrive at the expected gross total. 
 
 This algorithm is also compatible with EN 16931. 
-You can use this option if you are using e-invoicing and most of your customers are private individuals. 
+We recommend using this option if you are using e-invoicing and most of your customers are private individuals. 
 The advantage is that customers do not encounter unexpected changes to the gross total price of an order while they are using your shop. 
 
 The disadvantage of this method is that it can introduce miniscule variations in the net prices paid on individual order positions. 
 Thus, you may end up selling the same product at different net prices. 
 The gross prices and tax rates will always remain the same. 
 
-If you use an external system for tax reporting, you should choose the method that matches the one used by that system. 
+If you use an external system for tax reporting, you should select the method that matches the one used by that external system. 
 This prevents inconsistencies in rounding between pretix and the external system. 
 
 For more information on tax computation algorithms, see our developer documentation's section on [Rounding of taxes](https://docs.pretix.eu/dev/development/algorithms/pricing.html#rounding-of-taxes). 
