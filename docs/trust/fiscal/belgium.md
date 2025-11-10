@@ -12,9 +12,9 @@ You can configure all Belgian VAT rates in pretix using [tax rules](../../guides
 ### E-invoicing
 
 Belgium is introducing mandatory electronic invoicing for B2B transaction in 2026.
-All invoices must be transmitted through the [PEPPOL](https://en.wikipedia.org/wiki/PEPPOL) network.
+All invoices must be transmitted through the [Peppol](https://en.wikipedia.org/wiki/PEPPOL) network.
 
-pretix is planning to provide a PEPPOL integration by the end of 2025.
+A native integration of pretix with Peppol is available as a plugin as part of our pretix Hosted product.
 
 More information is available on the website of the European Commission: [eInvoicing in Belgium](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Belgium).
 

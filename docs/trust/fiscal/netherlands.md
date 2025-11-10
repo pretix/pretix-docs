@@ -13,8 +13,8 @@ You can configure all Dutch VAT rates in pretix using [tax rules](../../guides/t
 
 The Netherlands currently do not require sending electronic invoices in a structured format for transactions between businesses (B2B) or businesses and consumers (B2C).
 
-The Netherlands only mandate e-invoices for transactions between businesses and the central government (B2G) using the PEPPOL network.
-pretix is planning to provide a PEPPOL integration.
+The Netherlands only mandate e-invoices for transactions between businesses and the central government (B2G) using the Peppol network.
+A native integration of pretix with Peppol is available as a plugin as part of our pretix Hosted product.
 
 More information is available on the website of the European Commission: [eInvoicing in The Netherlands](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+The+Netherlands).
 
