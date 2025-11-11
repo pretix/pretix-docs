@@ -12,7 +12,7 @@ You can configure all Swedish VAT rates in pretix using [tax rules](../../guides
 ### E-invoicing
 
 Sweden currently does not require sending electronic invoices in a structured format for transactions between businesses (B2B) or businesses and consumers (B2C).
-Widespread formats for B2B e-invoicing include EDIFACT, Svefaktura, and withppol.
+Widespread formats for B2B e-invoicing include EDIFACT, Svefaktura, and with Peppol.
 A native integration of pretix with Peppol is available as a plugin as part of our pretix Hosted product.
 
 Sweden mandates e-invoices for transactions between businesses and the government (B2G) using the Peppol network.
