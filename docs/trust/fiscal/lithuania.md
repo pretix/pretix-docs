@@ -13,8 +13,8 @@ You can configure all Lithuanian VAT rates in pretix using [tax rules](../../gui
 
 Lithuania currently does not require sending electronic invoices in a structured format for transactions between businesses (B2B) or businesses and consumers (B2C).
 
-Lithuania only mandates e-invoices for transactions between businesses and the government (B2G) in a way compatible with the PEPPOL network.
-pretix is planning to provide a PEPPOL integration.
+Lithuania only mandates e-invoices for transactions between businesses and the government (B2G) in a way compatible with the Peppol network.
+A native integration of pretix with Peppol is available as a plugin as part of our pretix Hosted product.
 
 Lithuania requires monthly reporting of all invoices through the "i.SAF" system.
 pretix does not support this but you can implement this outside of pretix, e.g. through an accounting system that imports the pretix data.

@@ -13,7 +13,8 @@ You can configure all Slovakian VAT rates in pretix using [tax rules](../../guid
 
 Slovakia is planning to introduce mandatory e-invoicing for transactions between businesses (B2B) in 2027.
 The [proposed law](https://www.slov-lex.sk/elegislativa/legislativne-procesy/SK/PI/2024/334) is not yet passed and therefore the exact technical details and timelines are not clear.
-Most likely, the system will be based on PEPPOL, which pretix is planning to provide an integration for in the future. 
+Most likely, the system will be based on Peppol.
+A native integration of pretix with Peppol is available as a plugin as part of our pretix Hosted product.
 But the system will probably also require real-time reporting to the fiscal authority, which pretix does not support.
 
 More information is available on the website of the European Commission: [eInvoicing in Slovakia](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Slovakia).

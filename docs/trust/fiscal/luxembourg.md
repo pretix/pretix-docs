@@ -13,8 +13,8 @@ You can configure all Luxembourgish VAT rates in pretix using [tax rules](../../
 
 Luxembourg currently does not require sending electronic invoices in a structured format for transactions between businesses (B2B) or businesses and consumers (B2C).
 
-Luxembourg only mandates e-invoices for transactions between businesses and the government (B2G) using the PEPPOL network.
-pretix is planning to provide a PEPPOL integration.
+Luxembourg only mandates e-invoices for transactions between businesses and the government (B2G) using the Peppol network.
+A native integration of pretix with Peppol is available as a plugin as part of our pretix Hosted product.
 
 More information is available on the website of the European Commission: [eInvoicing in Luxembourg](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Luxembourg).
 
