@@ -1,9 +1,9 @@
 # GetYourGuide
 
 You can use third-party aggregators such as GetYourGuide to sell tickets not only through your own ticket shop, but also through the aggregator's website. 
-Using GetYourGuide entails costs, but it allows you to reach a larger audience that would otherwise not have found their way to your shop. 
+Using GetYourGuide entails additional cost, but it allows you to reach a larger audience that would otherwise not have found their way to your shop. 
 
-pretix offers an integration with GetYourGuide that allows you to profit from an additional sales and revenue channel, while keeping the effort for setting up and maintaining multiple ticket shops at a minimum. 
+pretix offers an integration with GetYourGuide that allows you to benefit from an additional sales and revenue channel, while keeping the effort for setting up and maintaining multiple ticket shops at a minimum. 
 This article is going to tell you how to do that. 
 
 ## Prerequisites
@@ -15,7 +15,7 @@ The GetYourGuide integration is handled on the event level, so you have to creat
 
 Setting up the GetYourGuide integration involves the following steps: 
 
- 1. Ask pretix support to [unlock the GetYourGuide plugin](getyourguide.md#setting-up-your-organizer-account-for-getyourguide) on your account. 
+ 1. Ask pretix support to [make the GetYourGuide plugin available](getyourguide.md#setting-up-your-organizer-account-for-getyourguide) for your account. 
  2. Create a [sales channel]((getyourguide.md#setting-up-your-organizer-account-for-getyourguide))
  3. Enable the [plugin](getyourguide.md#setting-up-your-event-for-getyourguide)
  4. Configure [products](getyourguide.md#setting-up-products-for-getyourguide)
@@ -26,8 +26,8 @@ This article will guide you through those steps in detail.
 ### Setting up your organizer account for GetYourGuide
 
 The pretix integration with GetYourGuide is currently in beta. 
-The pretix team has to unlock it once for your organizer account before you can use it. 
-Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to unlock the GetYourGuide plugin. 
+The pretix team has to make it available for your organizer account before you can use it. 
+Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to make the GetYourGuide plugin available for you. 
 
 Before you can use GetYourGuide for any of your events, you need to create a corresponding sales channel on your organizer account. 
 pretix will use the sales channel to properly attribute sales via GetYourGuide. 
@@ -104,7 +104,9 @@ It is displayed in the infobox at the bottom of the page as soon as you have ent
 
 ![Page titled 'GetYourGuide', on the 'Analyzer' tab, listing the fulfilled prerequisites 'Shop is not in testmode', 'Shop is live', and 'Shop is available on GetYourGuide Sales Channel'. The page also lists configured products and an Outlook.](../../assets/screens/getyourguide/analyzer.png)
 
-From this point on, GetYourGuide will automatically import products along with their availability status and offer them for sale. 
-Once your shop is live and connected to GetYourGuide, you can use the analyzer feature. 
 Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
-This page displays the availability information that pretix has communicated to GetYourGuide for each product. 
+This page tells you whether your shop and the products in the shop are set up properly for the integration with GetYourGuide. 
+You should only see green :fa3-check-circle: and no red :fa3-times-circle: on this page. 
+
+Once your shop is live and the integration with GetYourGuide is working, the analyzer tab displays the availability information that pretix has communicated to GetYourGuide for each product. 
+From this point on, GetYourGuide will automatically import products along with their availability status and offer them for sale. 
