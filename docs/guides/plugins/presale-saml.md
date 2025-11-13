@@ -16,7 +16,7 @@ Before you can use the SAML integration, you need to have access to a SAML ident
 
 Setting up the SAML integration involves the following steps: 
 
- 1. If you are using pretix Hosted, ask pretix support to unlock the GetYourGuide plugin on your account. 
+ 1. If you are using pretix Hosted, ask pretix support to unlock the  "Presale SAML Authentication" plugin on your account. 
  If you are using pretix Enterprise, install the plugin and set it up. 
  2. Set up the Service Provider (SP) on the global or organizer level. 
  3. Activate the plugin for the event. 
@@ -29,7 +29,7 @@ Setting up the SAML integration involves the following steps:
 If you are using pretix Enterprise, then you first have to install the plugin "Presale SAML Authentication" and do some setup on your pretix instance. 
 These steps are **not** necessary if you are using pretix Hosted. 
 
-Follow the instructions on [how to install pretix Enterprise plugins](../../self-hosting/installation/enterprise.md) in the self-hosting documentation. 
+Follow the instructions on how to [install pretix Enterprise plugins](../../self-hosting/installation/enterprise.md) in the self-hosting documentation. 
 
 You have to decide if you want your pretix instance to be a single service provider (SP) for all organizers, or if every organizer has to provide their own SP.
 A single unified SP makes sense if all organizers hosted on the pretix instance are part of the same organization. 
@@ -61,17 +61,17 @@ If you do not define `level`, then it will default to `organizer`.
 
 <!-- md:hosted --> 
 
-If you are using pretix Hosted, the pretix team has to activate the "Presale SAML Authentication" plugin once for your organizer account before you can use it. 
+If you are using pretix Hosted, the pretix team has to make the "Presale SAML Authentication" plugin available for your organizer account before you can use it. 
 Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to activate the SAML plugin. 
-Once the plugin has been activated for the organizer account, a button ":fa3-key: SAML" will appear under the organizer settings in the sidebar menu. 
+Once the plugin has been made available for the organizer account, the button ":fa3-key: SAML" will appear under the organizer settings in the sidebar menu. 
 
 <!-- md:enterprise --> 
 
-If you are using pretix Enterprise and have access to an admin account, you have to activate the "Presale SAML Authentication" plugin once for your organizer account. 
+If you are using pretix Enterprise and have access to an admin account, you have to make the "Presale SAML Authentication" plugin available for your organizer account. 
 Click the :btn-icon:fa3-id-card: Admin mode: button. 
 Navigate to :navpath:Your organizer: → :fa3-wrench: Settings: and open the :btn:General: tab. 
 Under "Allow usage of restricted plugins", check the box next to "Presale SAML Authentication" and click the :btn:Save: button. 
-A button ":fa3-key: SAML" will now appear under the organizer settings in the sidebar menu. 
+The button ":fa3-key: SAML" will now appear under the organizer settings in the sidebar menu. 
 
 Repeat these steps for every organizer account with which you want to use SAML authentication. 
 
@@ -79,7 +79,7 @@ If you are using pretix Enterprise but do not have access to an admin account, a
 
 ### Setting up the SP 
 
-If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: in the sidebar menu. 
+If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: button in the sidebar menu. 
 If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML: instead. 
 The process is the same from here on out. 
 
@@ -89,24 +89,24 @@ Setting up the connection between SP and IdP requires a lot of information.
 If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
 They should know exactly what information the IdP expects and supports. 
 
-![Page titled "SAML Settings", showing settings for IdP Metadata URL, SP Entity Id, NameID format, SP Name and SP Description.](../../assets/screens/saml/saml-global.png "SAML global settings screenshot")
+![Page titled "SAML Settings", showing settings for IdP Metadata URL, SP Entity ID, NameID format, SP Name and SP Description.](../../assets/screens/saml/saml-global.png "SAML global settings screenshot")
 
 Provide the URL where your IdP outputs its metadata under "IdP Metadata URL". 
 For most IdPs, this URL is static and the same for all SPs. 
-If you are a member of the DFN-AAI, you can find the metadata for the [Test-, Basic- and Advanced-Federation](https://doku.tid.dfn.de/en:metadata) on their website. 
+If you are a member of DFN-AAI, you can find the metadata for the [Test-, Basic- and Advanced-Federation](https://doku.tid.dfn.de/en:metadata) on their website. 
 
-Contact your IdP operator and ask them whether or not you need to go through the DFN-AAI
+Contact your IdP operator and ask them whether or not you need to go through the DFN-AAI. 
 It is also possible that you can just use your institution's local IdP, which will also host their metadata on a different URL.
 
 The URL needs to be publicly accessible.
 Saving the settings will fail if the IdP metadata cannot be retrieved. 
 pretix will automatically refresh the IdP metadata on a regular basis.
 
-Use the system-proposed metadata URL as the "SP Entity Id". 
-You can also set any URL as the SP Entity Id if required by your IdP. 
+Use the system-proposed metadata URL as the "SP Entity ID". 
+You can also set any URL as the SP Entity ID if required by your IdP. 
 
-Most IdPs will display the name and description of your SP to the users during authentication. 
-The "SP Name" and "SP Description" fields can be used to explain to the users how their data is being used.
+Most IdPs will display the name and description of your SP to your customers during authentication. 
+You can use the "SP Name" and "SP Description" fields to explain to your customers how their data is being used.
 
 Your SP needs an "SP X.509 Certificate" and an "SP X.509 Private Key". 
 Ask your IdP if they can provide you with a certificate and key. 
@@ -115,6 +115,7 @@ If not, you need to generate these yourself.
 Certificates have an expiry date and need to be renewed on a regular basis. 
 In order to facilitate the rollover from the expiring to the new certificate, you can provide an "SP X.509 New Certificate" before the expiration of the existing one. 
 pretix will automatically use the correct one. 
+
 Once the old certificate has expired and is not in use anymore, you can move the new certificate to the "SP X.509 Certificate" field and keep the new slot empty for your next renewal process.
 
 #### Choosing which attributes to request
@@ -122,11 +123,11 @@ Once the old certificate has expired and is not in use anymore, you can move the
 Not all IdPs use the same attributes to authenticate a user. 
 Your IdP will dictate which of the available attributes your SP can receive. 
 
-pretix will use most attributes only to authenticate the user and not process the received data any further. 
-There are two special cases in which pretix will automatically populate the corresponding fields during the checkout process and lock them so that they **cannot be edited** by the user:  
+pretix will use most attributes only to authenticate your customer and not process the received data any further. 
+There are two special cases in which pretix will automatically populate the corresponding fields during the checkout process and lock them so that they **cannot be edited** by the customer:  
 
  - If both `givenName` and `sn` are present and pretix is configured to collect the customer's name, then pretix will use `givenName` for the given name and `sn` for the family name. 
- - If the attribute `email`is present, pretix will use it for the email address of the user. 
+ - If the attribute `email`is present, pretix will use it for the email address of the customer. 
 
 This latter case can cause problems if the IdP is transmitting an `email` attribute which does contain a system-level mail address which is only used as an internal identifier but not as a real mailbox. 
 You can fix this by setting the `friendlyName` property to any value other than `email` or by removing the attribute from the list entirely. 
@@ -177,12 +178,12 @@ This section explains how to set up SAML authentication on the event level.
 In order to activate the plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "Presale SAML Authentication" plugin. 
 
-A button :btn-icon:fa3-key: SAML: will now appear under in the sidebar menu. 
+The :btn-icon:fa3-key: SAML: button will now appear in the sidebar menu. 
 Click that button in order to access the event-level SAML settings. 
 
 ![Page titled SAML settings, displaying information on which attributes are requested from the IdP and settings such as Login button label, skip button label and checkboxes for allowing name changes and skipping the login .](../../assets/screens/saml/saml-settings.png "SAML settings screenshot" )
 
-Many users will not know the reason why they have to authenticate in order to make a purchase in your shop. 
+Many customers will not know the reason why they have to authenticate in order to make a purchase in your shop. 
 Use the "Checkout Explanation" field to provide an explanation for the process and the reasoning behind it to be displayed in the shop. 
 
 #### Using "Attribute RegEx" to further restrict possible attendees
@@ -212,7 +213,7 @@ A customer's `cardid` attribute has the value `01189998819991197253`.
 With nothing specified under "Ticket Secret SAML attribute", the random ticket secret is `yczygpw9877akz2xwdhtdyvdqwkv7npj`. 
 If you specify an attribute under "Ticket Secret SAML attribute", the full random ticket secret is `01189998819991197253_yczygpw9877akz2xwdhtdyvdqwkv7npj`.
 
-This way, the ticket secret is still unique, but when checking into an event, the user can easily be searched and found using their identifier.
+This way, the ticket secret is still unique, but when checking into an event, the customer can easily be searched and found using their identifier.
 
 ### Saving attributes to questions
 
