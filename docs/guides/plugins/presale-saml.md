@@ -16,7 +16,7 @@ Before you can use the SAML integration, you need to have access to a SAML ident
 
 Setting up the SAML integration involves the following steps: 
 
- 1. If you are using pretix Hosted, ask pretix support to unlock the  "Presale SAML Authentication" plugin on your account. 
+ 1. If you are using pretix Hosted, ask pretix support to make the "Presale SAML Authentication" plugin available on your account. 
  If you are using pretix Enterprise, install the plugin and set it up. 
  2. Set up the Service Provider (SP) on the global or organizer level. 
  3. Activate the plugin for the event. 
@@ -31,13 +31,13 @@ These steps are **not** necessary if you are using pretix Hosted.
 
 Follow the instructions on how to [install pretix Enterprise plugins](../../self-hosting/installation/enterprise.md) in the self-hosting documentation. 
 
-You have to decide if you want your pretix instance to be a single service provider (SP) for all organizers, or if every organizer has to provide their own SP.
+You have to decide if you want your pretix instance to be a single service provider (SP) for all organizers, or if every organizer acts as their own SP.
 A single unified SP makes sense if all organizers hosted on the pretix instance are part of the same organization. 
 For example, if your company controls the SP, the pretix instance, and all organizers hosted on it, then a single SP is enough. 
 
-If every organizer is a separate legal entity, then you have to set up the pretix instance so that every organizer has to provide their own SP. 
+If every organizer is a separate legal entity, then you have to set up the pretix instance so that every organizer acts as their own SP. 
 For example, pretix Hosted as provided on [pretix.eu](https://pretix.eu) serves a multitude of clients. 
-Every organizer is a separate legal entity and as such will have to provide their own SP if they need to use the SAML integration. 
+Every organizer is a separate legal entity and as such will have to act as their own SP if they need to use the SAML integration. 
 
 If you want to use a single SP for the entire instance, extend the configuration file `<config>` with the following lines: 
 
@@ -46,7 +46,7 @@ If you want to use a single SP for the entire instance, extend the configuration
 level=global
 ```
 
-If you want every organizer to provide their own SP, extend the configuration file `<config>` with the following lines instead: 
+If you want every organizer to act as their own SP, extend the configuration file `<config>` with the following lines instead: 
 
 ``` ini
 [presale-saml]
@@ -67,15 +67,19 @@ Once the plugin has been made available for the organizer account, the button ":
 
 <!-- md:enterprise --> 
 
-If you are using pretix Enterprise and have access to an admin account, you have to make the "Presale SAML Authentication" plugin available for your organizer account. 
-Click the :btn-icon:fa3-id-card: Admin mode: button. 
-Navigate to :navpath:Your organizer: → :fa3-wrench: Settings: and open the :btn:General: tab. 
-Under "Allow usage of restricted plugins", check the box next to "Presale SAML Authentication" and click the :btn:Save: button. 
-The button ":fa3-key: SAML" will now appear under the organizer settings in the sidebar menu. 
+If you are using pretix Enterprise, then there is no restriction on the plugin. 
+You can enable "Presale SAML Authentication" like any other plugin. 
+
+Navigate to :navpath:Your organizer: → :fa3-wrench: Settings → Plugins:. 
+Open the :btn:Integrations: tab. 
+Look for the "Presale SAML Authentication" plugin in the list. 
+If it is active, it will have a green "Active" tag and a white "Disable" button. 
+If it is not active, the tag will be missing and it will have a purple Enable button. 
+
+Verify that the plugin is active. 
+If the plugin is active, then, in the sidebar menu, under the organizer settings, there will be an entry labeled ":fa3-key: SAML". 
 
 Repeat these steps for every organizer account with which you want to use SAML authentication. 
-
-If you are using pretix Enterprise but do not have access to an admin account, ask someone with access to an admin account to perform these steps for you. 
 
 ### Setting up the SP 
 
@@ -225,7 +229,7 @@ The answer will then be fixed and cannot be edited by the customer anymore.
 In order to set up a question this way, navigate to :navpath:Your event: → :fa3-ticket: Products → Questions. 
 Click the :btn-icon:fa3-plus: Create a new question: button or click the edit button :btn-icon:fa3-wrench: next to an existing question. 
 Switch to the :btn:Advanced: tab. 
-Set the "Internal identifier" field to the same as the `name` of one of the SAML attributes that you defined under "Requested Attributes" in the global or organizer-level SAML settings. 
+Set the "Internal identifier" field to the same as the `friendlyName` of one of the SAML attributes that you defined under "Requested Attributes" in the global or organizer-level SAML settings. 
 
 Some more complex question types may not be compatible with SAML attributes due to format requirements. 
 If you are unsure whether your question type is supported, or if you are encountering an error, switch to the :btn:General: tab and under "Question type", select "Text (one line)". 
