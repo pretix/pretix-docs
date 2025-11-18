@@ -223,7 +223,8 @@ This way, the ticket secret is still unique, but when checking into an event, th
 
 ### Saving attributes to questions
 
-You can save the value of a SAML attribute into the answer to a user-defined question. 
+You can save the value of a SAML attribute in the answer to a user-defined question. 
+This can be useful if, for instance, you want to record the institutional affiliation of your customers to print it onto a badge. 
 The answer will then be fixed and cannot be edited by the customer anymore. 
 
 ![Page titled Question. The "Advanced" tab is open, showing input fields for Help text in two languages and for Internal identifier.](../../assets/screens/saml/question-advanced.png "Question advanced screenshot" )
