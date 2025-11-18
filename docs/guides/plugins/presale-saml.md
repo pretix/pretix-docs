@@ -83,6 +83,8 @@ Repeat these steps for every organizer account with which you want to use SAML a
 
 ### Setting up the SP 
 
+<!-- md:enterprise -->
+
 If you are using pretix Enterprise and want to configure the service provider (SP) for the entire pretix instance, navigate to :navpath::i-pretix: Dashboard:, click the :btn-icon:fa3-id-card: Admin mode: button and then the :btn-icon:fa3-key: SAML: button in the sidebar menu. 
 If you want to configure the SP for the organizer account, navigate to :navpath:Your organizer → :fa3-key: SAML: instead. 
 The process is the same from here on out. 
@@ -90,7 +92,7 @@ The process is the same from here on out.
 #### Setting up the connection 
 
 Setting up the connection between SP and IdP requires a lot of information. 
-If you are not sure what which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
+If you are not sure which setting you should choose or what information you should provide in any of the fields, contact your IdP operator. 
 They should know exactly what information the IdP expects and supports. 
 
 ![Page titled "SAML Settings", showing settings for IdP Metadata URL, SP Entity ID, NameID format, SP Name and SP Description.](../../assets/screens/saml/saml-global.png "SAML global settings screenshot")
@@ -190,7 +192,7 @@ Click that button in order to access the event-level SAML settings.
 Many customers will not know the reason why they have to authenticate in order to make a purchase in your shop. 
 Use the "Checkout Explanation" field to provide an explanation for the process and the reasoning behind it to be displayed in the shop. 
 
-#### Using "Attribute RegEx" to further restrict possible attendees
+#### Using "Attribute RegEx" to further restrict attendance
 
 By default, any successful authentication with the IdP will allow the customer to proceed with their purchase. 
 If you need to restrict the intended audience further, you can use the "Attribute RegEx" field to define a set of regular expressions to do this.
