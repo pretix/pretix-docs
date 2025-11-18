@@ -29,8 +29,9 @@ The pretix integration with GetYourGuide is currently in beta.
 The pretix team has to make it available for your organizer account before you can use it. 
 Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to make the GetYourGuide plugin available for you. 
 
-Before you can use GetYourGuide for any of your events, you need to create a corresponding sales channel on your organizer account. 
+The second action you need to take on your organizer account before you can use GetYourGuide is creating a corresponding sales channel on your organizer account. 
 pretix will use the sales channel to properly attribute sales via GetYourGuide. 
+This means that pretix will register all orders placed through GetYourGuide to the "GetYourGuide" sales channel. 
 
 ![Page titled 'Sales channels', listing the existing sales channels 'Online shop', 'Box office (pretixPOS)' and 'Resellers'. A button labeled 'Add a new channel' is highlighted.](../../assets/screens/getyourguide/sales-channels.png)
 
@@ -43,7 +44,7 @@ Repeat these steps for every additional organizer account that you want to integ
 
 ### Setting up your event for GetYourGuide
 
-In order to enable the GetYourGuide plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Integrations: tab. 
+In order to enable the GetYourGuide plugin for your event, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Integrations: tab. 
 Seek out the plugin labeled "GetYourGuide" in the list and click the :btn:Enable: button next to it. 
 Now that you have enabled the GetYourGuide plugin, the pretix integration with GetYourGuide and all settings associated with it are available for your event. 
 
@@ -61,7 +62,7 @@ For each of your events, you can only offer either individual tickets or group t
 For more information on individual vs. group tickets, see the [next section](getyourguide.md#setting-up-products-for-getyourguide). 
 Once you are happy with your choices, click the :btn:Save: button. 
 
-Repeat these steps for every additional event for which you want to make sales via GetYourGuide. 
+Repeat these steps for every additional event for which you want to sell products via GetYourGuide. 
 
 ### Setting up products for GetYourGuide 
 
@@ -78,7 +79,7 @@ It is completely separate from the "Categories" settings within pretix.
 There can only be one product per GetYourGuide ticket category for each one of your events. 
 For each one of your pretix events, you can only either sell individual tickets or group tickets via GetYourGuide—not both. 
 
-If you selected the booking mode or **"Group tickets"**, then you need to select the "Ticket Category" "Group". 
+If you selected the booking mode **"Group tickets"**, then, under "Ticket Category", you need to select "Group". 
 You can only offer one product through GetYourGuide for this event. 
 You can use the fields "Minimal group size" and "Maximal group size" to place restrictions on the number of people for whom each ticket is valid. 
 
@@ -106,7 +107,7 @@ It is displayed in the infobox at the bottom of the page as soon as you have ent
 
 Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
 This page tells you whether your shop and the products in the shop are set up properly for the integration with GetYourGuide. 
-You should only see green :fa3-check-circle: and no red :fa3-times-circle: on this page. 
+If you have a working setup, then you will only see green :fa3-check-circle: and no red :fa3-times-circle: on this page. 
 
 Once your shop is live and the integration with GetYourGuide is working, the analyzer tab displays the availability information that pretix has communicated to GetYourGuide for each product. 
 From this point on, GetYourGuide will automatically import products along with their availability status and offer them for sale. 
