@@ -41,6 +41,8 @@ First of all, you need to create a directory on your server that pretix can use 
 # chown -R 15371:15371 /var/pretix-data
 ```
 
+The directory must also be readable for your webserver. Depending on your security requirements, you can set chmod `0755` on the folder or use an ACL for more fine-grained control.
+
 ## Database
 
 Next, we need a database and a database user. We can create these with any kind of database managing tool or directly on our database's shell. Please make sure that UTF8 is used as encoding for the best compatibility. You can check this with the following command:

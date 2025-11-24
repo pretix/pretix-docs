@@ -25,7 +25,7 @@ instance_name=pretix.de
 url=http://localhost
 currency=EUR
 datadir=/data
-plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics
+plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins.checkinlists
 ```
 
 `instance_name`
@@ -54,7 +54,11 @@ plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics
 
 `plugins_default`
 
-:   A comma-separated list of plugins that are enabled by default for all new events. Defaults to `pretix.plugins.sendmail,pretix.plugins.statistics`.
+:   A comma-separated list of plugins that are enabled by default for all new events. Defaults to `pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins.checkinlists`.
+
+`plugins_organizer_default`
+
+:   A comma-separated list of plugins that are enabled by default for all new organizers. Defaults to none.
 
 `plugins_exclude`
 

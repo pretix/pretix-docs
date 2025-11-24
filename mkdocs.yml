@@ -4,12 +4,12 @@ site_url: https://docs.pretix.eu
 site_author: pretix
 site_description: "Documentation on pretix, the all-in-one ticketing system."
 copyright: |
-  © rami.io GmbH ·
+  © pretix GmbH ·
   <a href="https://pretix.eu/about/en/imprint" target="_blank">Legal notice</a> ·
   <a href="https://pretix.eu/about/en/privacy" target="_blank">Privacy policy</a> ·
   Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
 validation:
-  omitted_files: warn
+  omitted_files: info
   absolute_links: warn
   unrecognized_links: warn
 extra_css:
@@ -28,6 +28,7 @@ theme:
     - toc.follow
     - search.highlight
     - content.tooltips
+    - content.code.copy
   font:
     text: Open Sans
   palette:
@@ -75,10 +76,7 @@ markdown_extensions:
 plugins:
   - search
   - privacy
-  - awesome-pages:
-      order: asc
-      sort_type: natural
-      order_by: title
+  - awesome-nav
   - glightbox
   - macros:
       include_dir: include
@@ -92,18 +90,23 @@ plugins:
           site_name: "pretix Dokumentation"
           site_description: "Dokumentation von pretix: Ticketing von Anfang bis Ende gedacht."
           copyright: |
-            © rami.io GmbH ·
+            © pretix GmbH ·
             <a href="https://pretix.eu/about/de/imprint" target="_blank">Impressum</a> ·
             <a href="https://pretix.eu/about/de/privacy" target="_blank">Datenschutz</a> ·
             Lizensiert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>
           nav_translations:
-            User guide: Handbuch
             Organizers: Veranstalter
             Events: Veranstaltungen
+            Pretixpos: pretixPOS
             Payment: Zahlung
             Developer and API Docs: Entwickler- und API-Dokumentation
             Trust: Trust und Compliance
             Self hosting: Self-Hosting
+            Fiscal: Steuerrecht
+            Licensing: Lizensierung
+            Lifecycle: Lebenszyklus
+            Privacy: Datenschutz
+            Security: Sicherheit
           admonition_translations:
             note: Hinweis
             Note: Hinweis
@@ -140,6 +143,8 @@ plugins:
             Developer and API Docs: Developer and API docs
             Trust: Trust and Compliance
             Self hosting: Self-hosting
+            Pretixpos: pretixPOS
+            Fiscal: Fiscal requirements
   - social:
       cards_layout_options:
         background_color: "#3B1C4A"

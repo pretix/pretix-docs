@@ -70,9 +70,15 @@ Taxation rules can also be changed after event creation is finished.
 We are holding our event in Germany and a single percentage rule applies to all of our products. 
 Thus, we are going to add a 19% tax rule here. 
 
+!!! Note 
+    Every tax rate you assign to a product, you have to create first. 
+    If there are multiple different tax rates that apply to your products, create one tax rate for each of them. 
+    If you are selling products with a 0% tax rate (such as [gift cards](../guides/gift-cards.md)), you still need to create a 0% tax rule first. 
+    For more information, see our guide on [creating tax rules](../guides/taxes.md#creating-tax-rules). 
+
 Once we are happy with our choices, we are going to click the :btn:Continue: button. 
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 <br>
 
@@ -130,7 +136,7 @@ Our explanation reads as follows:
 "We will use the name, title and company you submit for your badge."
 
 Under "Form settings", we can choose the format in which pretix will ask attendees for names and titles. 
-We are going to select "Ask for title + given name + family name, display like John Doe" for names and "Free text input" for titles. 
+We are going to select "Ask for Title + Given name + Family name, display like Dr John Doe" for names and "Free text input" for titles. 
 We will finalize our choice here before taking the ticket shop live.
 This is important because changing these settings after already having received orders can lead to issues when sorting or changing names.
 
