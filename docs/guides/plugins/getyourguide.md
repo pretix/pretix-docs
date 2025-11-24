@@ -29,7 +29,7 @@ The pretix integration with GetYourGuide is currently in beta.
 The pretix team has to make it available for your organizer account before you can use it. 
 Contact support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750) and ask them to make the GetYourGuide plugin available for you. 
 
-The second action you need to take on your organizer account before you can use GetYourGuide is creating a corresponding sales channel on your organizer account. 
+The second action you need to take on your organizer account before you can use GetYourGuide is to create a corresponding sales channel on your organizer account. 
 pretix will use the sales channel to properly attribute sales via GetYourGuide. 
 This means that pretix will register all orders placed through GetYourGuide to the "GetYourGuide" sales channel. 
 
