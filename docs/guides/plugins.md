@@ -3,20 +3,20 @@
 Plugins are optional pieces of software that can be enabled or disabled for every event. 
 Plugins handle functions including, but not limited to: 
 
- - native features such as participant badges, [emails](../email.md), and seating plans
- - integrations with [payment providers](../payment/index.md) such as Mollie or [PayPal](../payment/paypal.md)
+ - native features such as participant badges, [emails](email.md), and seating plans
+ - integrations with [payment providers](payment/index.md) such as Mollie or [PayPal](payment/paypal.md)
  - integrations with external services such as Google Analytics or Venueless 
  - output formats such as PDF tickets or sales reports 
 
 Some plugins are active by default while others have to be enabled first. 
 The availability of plugins depends on the edition of pretix you are using. 
 You may have to install plugins before you can enable them. 
-If you are using pretix Enterprise, refer to the guide on [installing pretix Enterprise plugins](../../self-hosting/installation/enterprise.md). 
+If you are using pretix Enterprise, refer to the guide on [installing pretix Enterprise plugins](../self-hosting/installation/enterprise.md). 
 
 This article explains how to manage pretix plugins that are already available. 
 If you want to create a plugin yourself, refer to the [developer documentation](https://docs.pretix.eu/dev/).
 
-If you want to learn how to activate payment providers for your events, refer to the guide on [payment providers](../payment/index.md). 
+If you want to learn how to activate payment providers for your events, refer to the guide on [payment providers](payment/index.md). 
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ In order to enable or disable plugins, navigate to :navpath:Your Event → :fa3-
 This lands you on the :btn:Features: tab which lists plugins for optional features. 
 More plugins for functions such as integrations with payment providers or other external services can be found on the other tabs at the top of the page. 
 
-![Available plugins page, the 'features' tab is open. Top recommendations Badges, Digital Content, Exhibitors and Pages are displayed. Badges is active and has buttons for settings and disabling the plugin.](../../assets/screens/plugins/available.png "Plugins Features top recommendations")
+![Available plugins page, the 'features' tab is open. Top recommendations Badges, Digital Content, Exhibitors and Pages are displayed. Badges is active and has buttons for settings and disabling the plugin.](../assets/screens/plugins/available.png "Plugins Features top recommendations")
 
 On each tab, choose the plugins that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
 You can also use the search function to find the plugin you need. 
