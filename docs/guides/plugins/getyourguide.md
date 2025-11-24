@@ -16,7 +16,7 @@ The GetYourGuide integration is handled on the event level, so you have to creat
 Setting up the GetYourGuide integration involves the following steps: 
 
  1. Ask pretix support to [make the GetYourGuide plugin available](getyourguide.md#setting-up-your-organizer-account-for-getyourguide) for your account. 
- 2. Create a [sales channel]((getyourguide.md#setting-up-your-organizer-account-for-getyourguide))
+ 2. Create a [sales channel](getyourguide.md#setting-up-your-organizer-account-for-getyourguide))
  3. Enable the [plugin](getyourguide.md#setting-up-your-event-for-getyourguide)
  4. Configure [products](getyourguide.md#setting-up-products-for-getyourguide)
  5. [Connect](getyourguide.md#connecting-to-getyourguide) to GetYourGuide
