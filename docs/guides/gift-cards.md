@@ -27,7 +27,7 @@ This is the procedure prescribed by tax law in Germany and in some other countri
 You have to create a tax rule with a rate of 0% before you can create a gift card.
 You can do so by navigating to :navpath:Your event → :fa3-wrench: Settings → Tax rules:, clicking the :btn-icon:fa3-plus:Create a new tax rule: button, setting the "tax rate" field to 0.00%, and saving the rule under a distinct internal name.
 
-{% include "warning-tax.md" %}
+{% include "warning-tax-rules.md" %}
 
 ## General usage
 
@@ -70,7 +70,7 @@ In your customers' view of your shops, the option for paying via gift card is hi
 
 ![Page titled Payment settings: Payment provider: Gift card, the box next to Enable payment method is checked.](../assets/screens/payment/gift-cards.png)
 
-You can find the settings for gift cards as a payment method by navigating to :navpath:Your event → :icon:fa3-wrench: Settings → Payment: and clicking the :btn-icon:fa3-gear:Settings: button next to "Gift cards". 
+You can find the settings for gift cards as a payment method by navigating to :navpath:Your event → :fa3-wrench: Settings → Payment: and clicking the :btn-icon:fa3-gear:Settings: button next to "Gift cards". 
 Here, you can restrict the availability of the payment method by date, time period relative to the event, sales channel, and region, just like you can with any other payment method. 
 
 If you do not want to accept gift cards as payment for a certain event at all, you have to uncheck the box next to "Enable payment method" at the top of the page.
