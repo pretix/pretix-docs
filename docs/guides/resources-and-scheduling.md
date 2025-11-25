@@ -220,7 +220,7 @@ Click the :btn:Save: button.
 
 ### Creating dates for scheduling 
 
-Navigate to :Navpath:Your event series → :fa3-calendar:Products: and click the :btn-icon:fa3-plus: Create many new dates: button. 
+Navigate to :Navpath:Your event series → :fa3-calendar:Dates: and click the :btn-icon:fa3-plus: Create many new dates: button. 
 Set up the dates according to your preferences. 
 For general information on creating dates, see [Creating and editing dates in the event series](event-series.md#creating-and-editing-dates-in-the-event-series). 
 
@@ -273,3 +273,19 @@ In order to decline the scheduling, click the link that ends with `deny`.
 This also takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
 The pretix server will not send a confirmation email. 
 The requirement for the date will remain open. 
+
+### Quick entry 
+
+The "Quick entry" feature allows you to find out when required resources for a product are available on a given date. 
+This is useful if you are making an appointment with a group of customers, for instance when a scheduling a tour. 
+It is also useful if you want to create dates based on when the required resources are available. 
+
+Navigate to :navpath:Your event → :fa3-calendar: Scheduling → Quick entry:. 
+Under "Date", enter the date on which you want to search availabilities. 
+Under "Products", select "All" or at least one product. 
+This field only displays products with resource requirements. 
+See [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling) for information on how to add resource requirements for a product. 
+
+Use the field "Search raster" to define the degree of precision for the search. 
+Then, click the :btn:Continue: button. 
+
