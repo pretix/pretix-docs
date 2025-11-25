@@ -197,6 +197,8 @@ Open the :btn:Requirements: tab.
 
 In the "Default duration (minutes)" field, enter the time resources will typically be booked for. 
 For instance, if a tour usually takes 90 minutes, enter `90`. 
+This field is optional, but if you want to use the [Quick entry](resources-and-scheduling.md#quick-entry) feature, then you need to enter a number here. 
+
 In the "Default quota size" field, enter the maximum number of people that can use the resource at the same time. 
 For instance, if a tour guide can accommodate no more than 30 people at a time, enter `30`. 
 
@@ -277,15 +279,24 @@ The requirement for the date will remain open.
 ### Quick entry 
 
 The "Quick entry" feature allows you to find out when required resources for a product are available on a given date. 
-This is useful if you are making an appointment with a group of customers, for instance when a scheduling a tour. 
+This is useful if you are making an appointment with a group of customers, for instance when scheduling a tour. 
 It is also useful if you want to create dates based on when the required resources are available. 
 
 Navigate to :navpath:Your event → :fa3-calendar: Scheduling → Quick entry:. 
 Under "Date", enter the date on which you want to search availabilities. 
 Under "Products", select "All" or at least one product. 
-This field only displays products with resource requirements. 
+
+This field only displays products with a "Default duration" as defined in the product settings, on the "Resource requirements" tab. 
 See [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling) for information on how to add resource requirements for a product. 
 
 Use the field "Search raster" to define the degree of precision for the search. 
 Then, click the :btn:Continue: button. 
 
+Choose a starting time for your date by selecting it under "Available times" or entering it under "Start time". 
+If you selected multiple products on the previous page, use "Product" to choose a specific product. 
+
+If check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers. 
+Uncheck this box if you don't want the date to be visible to all visitors of your online shop. 
+
+If you want to create an order for the date right away, check the box next to "Create order". 
+Click the :btn:Continue: button. 
