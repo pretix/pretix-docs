@@ -300,3 +300,16 @@ Uncheck this box if you don't want the date to be visible to all visitors of you
 
 If you want to create an order for the date right away, check the box next to "Create order". 
 Click the :btn:Continue: button. 
+
+If you checked the box next to "Create order", then the next page allows you to enter details for that order. 
+If you unchecked the box next to "Create order", then pretix will skip this page. 
+
+Enter the "Amounts" of products to sell through that order and a price for each of the products. 
+You may also enter an "Email address" to be associated with the order. 
+Then, click the :btn:Continue: button. 
+
+On the last step of the quick entry, select the resources necessary for the date. 
+The required properties are listed below the field. 
+Then, click the :btn:Save: button. 
+If you created an order, then you will land on the page for that order. 
+If you did not create an order, then you will land on the scheduling dashboard. 
