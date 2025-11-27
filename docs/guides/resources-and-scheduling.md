@@ -282,6 +282,8 @@ The "Quick entry" feature allows you to find out when required resources for a p
 This is useful if you are making an appointment with a group of customers, for instance when scheduling a tour. 
 It is also useful if you want to create dates based on when the required resources are available. 
 
+![Page titled 'Quick entry 1/4', displaying fields labeled 'Date', 'Products', and 'Search raster'.](../assets/screens/resources-scheduling/quick-entry1.png "Quick entry 1/4")
+
 Navigate to :navpath:Your event → :fa3-calendar: Scheduling → Quick entry:. 
 Under "Date", enter the date on which you want to search availabilities. 
 Under "Products", select "All" or at least one product. 
@@ -291,6 +293,8 @@ See [Creating a product for scheduling](resources-and-scheduling.md#creating-a-p
 
 Use the field "Search raster" to define the degree of precision for the search. 
 Then, click the :btn:Continue: button. 
+
+![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
 
 Choose a starting time for your date by selecting it under "Available times" or entering it under "Start time". 
 If you selected multiple products on the previous page, use "Product" to choose a specific product. 
@@ -304,9 +308,13 @@ Click the :btn:Continue: button.
 If you checked the box next to "Create order", then the next page allows you to enter details for that order. 
 If you unchecked the box next to "Create order", then pretix will skip this page. 
 
+![Page titled 'Quick entry 3/4', displaying options for 'Email address', 'Internal comment', 'Amounts' and product price.](../assets/screens/resources-scheduling/quick-entry3.png "Quick entry 3/4")
+
 Enter the "Amounts" of products to sell through that order and a price for each of the products. 
 You may also enter an "Email address" to be associated with the order. 
 Then, click the :btn:Continue: button. 
+
+![Page titled 'Quick entry 4/4', displaying the option for assigning a resource labeled 'Guide' and listing 'Requirements: Children, Egypt, English.](../assets/screens/resources-scheduling/quick-entry4.png "Quick entry 4/4")
 
 On the last step of the quick entry, select the resources necessary for the date. 
 The required properties are listed below the field. 
