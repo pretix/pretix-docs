@@ -36,7 +36,7 @@ This section explains how to [embed the pretix widget](widget.md#embedding-the-w
 ### Embedding the widget on your website
 
 You can embed the pretix widget on your website by copying two code snippets from the pretix backend and pasting them into your website's HTML. 
-In order to obtain these snippets, navigate to :navpath:Your Event → Settings → Widget:. 
+In order to obtain these snippets, navigate to :navpath:Your event → Settings → Widget:. 
 Choose the "Language" for the widget and click the :btn:Generate widget code: button. 
 
 The website will produce two code snippets. 
@@ -77,7 +77,7 @@ The examples provided in this article all use the base URL `pretix.eu`, the orga
 If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
 
 The most straightforward way to obtain the right code is using the code generator. 
-Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
+Navigate to :navpath:Your event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
 ### Embedding multiple widgets on your website
 
@@ -257,13 +257,13 @@ If you want to display multiple dates from your event series, but not all of the
 
 This section explains how to influence product availability in the widget by using filters or preselecting vouchers. 
 
-#### Offering certain products through the widget only 
+#### Offering certain products exclusively through the widget
 
-If you want to offer certain products through the widget only and not in your shop, then you should **preselect a voucher** in the widget. 
+If you want to offer certain products exclusively through the widget and not in your shop, then you should **preselect a voucher** in the widget. 
 Preselecting a voucher means that the widget will behave as if the customer entered the voucher code. 
 This section tells you how to make a product only available with a voucher and how to preselect that voucher using the `voucher` attribute in the widget code. 
 
-Navigate to :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
+Navigate to :navpath:Your event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
 Set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fa3-eye-slash::). 
@@ -273,7 +273,7 @@ It will only be displayed for voucher holders.
 If you want to restrict availability for multiple products, take the steps described above for each product.
 Create a quota that includes all products that you want to make available only through the widget. 
 
-Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
+Navigate to :navpath:Your event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 Set the "Maximum usages" field to a high number such as 999999. 
 
@@ -291,12 +291,12 @@ Instead, click the :btn:Save: button, copy the voucher code, and pass it (for ex
 This way, the widget will only display products that customers can buy with the voucher and prices will change as defined by the voucher. 
 For an example of a widget with a preselected voucher, see [Offering discounts through the widget](widget.md#offering-discounts-through-the-widget). 
 
-#### Offering only certain products through the widget
+#### Offering only a selection of products through the widget
 
 This section explains how to display only some of your products in the widget. 
 
 You can filter the products displayed in the widget by passing a list of product IDs separated by commas. 
-In order to find a product's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+In order to find a product's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
 The page displays the product ID as a number preceded by a hashtag below the product's name in the list. 
 You need the number **without** the hashtag. 
 Alternatively, edit the product. 
@@ -308,21 +308,22 @@ In order to display only products `#562195` and `#562202` in the widget, pass th
 <pretix-widget event="https://pretix.eu/demo/democon/" items="562195,562202"></pretix-widget>
 ```
 
-#### Offering only certain categories of products through the widget
+#### Offering only a selection of categories through the widget
 
 You can filter the products you offer through the widget by category. 
 In order to find a category's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:. 
 Edit the category in question. 
 The number before the last slash in the URL is the category ID.
+
 In order to display only products from the categories `#162620` and `#162647` in the widget, pass them like this: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" categories="162620,162647"></pretix-widget>
 ```
-#### Offering only certain product variations through the widget
+#### Offering only a selection of product variations through the widget
 
 You can also filter the products you offer through the widget by product variation. 
-In order to find a product variation's ID, navigate to :navpath:Event → :fa3-ticket: Products → Products:. 
+In order to find a product variation's ID, navigate to :navpath:Your event → :fa3-ticket: Products → Products:. 
 Edit the product in question and open the :btn:Variations: tab. 
 The page displays the product ID as a number preceded by a hashtag below the variation's name in the list. 
 You need the number **without** the hashtag. 
@@ -729,7 +730,7 @@ If you are using a different domain, then you will also need to use a different 
 
 If you want to apply these examples to your own event and website, you need to replace these strings with the ones matching your event. 
 The most straightforward way to obtain the right code is using the code generator. 
-Navigate to :navpath:Your Event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
+Navigate to :navpath:Your event → Settings → Widget:, click the :btn:Generate widget code: button, and copy the code snippets from there. 
 
 ## Versioning
 
