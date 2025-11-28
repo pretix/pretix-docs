@@ -21,7 +21,8 @@ Using resources and scheduling involves the following steps:
  6. [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling), for instance, a guided tour ticket
  7. [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling), for instance, guides tours 
  8. [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates), for instance, assigning a guide to a tour
- 9. [Confirming or denying a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on whether the resource is actually available at the planned time
+ 9. Alternatively, using the [Quick entry](resources-and-scheduling.md#quick-entry) feature for planning dates
+ 10. [Confirming or denying a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on whether the resource is actually available at the planned time
 
 The following sections will guide you through those steps in detail. 
 
@@ -222,6 +223,10 @@ Click the :btn:Save: button.
 
 ### Creating dates for scheduling 
 
+!!! Note 
+    Creating dates for scheduling makes sense if you are hosting recurring dates that are open to your entire customer base. 
+    If you are instead making appointments with groups or individuals, then using the [Quick entry](resources-and-scheduling.md#quick-entry) feature may be more convenient. 
+
 Navigate to :Navpath:Your event series → :fa3-calendar:Dates: and click the :btn-icon:fa3-plus: Create many new dates: button. 
 Set up the dates according to your preferences. 
 For general information on creating dates, see [Creating and editing dates in the event series](event-series.md#creating-and-editing-dates-in-the-event-series). 
@@ -258,29 +263,15 @@ Click the field and select a guide that fulfills those requirements.
 Click the :btn:Save: button. 
 As soon as you do this, your event's contact mail address will send an email to the resource's notification email address. 
 
-### Confirming or denying a scheduling
-
-Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's notification email address. 
-
-![Email from pretix with the standard content defined in the resource type settings: info about the date and links for confirming or denying the scheduling](../assets/screens/resources-scheduling/confirm-scheduling.png "Request confirmation email")
-
-In order to confirm scheduling, click the link that ends with `confirm`. 
-This takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
-The pretix server will also send an email to the resource's notification email address confirming the scheduling. 
-Both the scheduling dashboard and the page for the individual date will note that the requirement for the date has been fulfilled. 
-
-![Email from pretix with the standard content defined in the resource type settings proclaiming that Jamie Doe has been scheduled.](../assets/screens/resources-scheduling/scheduled.png "Confirmation email message")
-
-In order to decline the scheduling, click the link that ends with `deny`. 
-This also takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
-The pretix server will not send a confirmation email. 
-The requirement for the date will remain open. 
-
 ### Quick entry 
 
 The "Quick entry" feature allows you to find out when required resources for a product are available on a given date. 
 This is useful if you are making an appointment with a group of customers, for instance when scheduling a tour. 
 It is also useful if you want to create dates based on when the required resources are available. 
+
+!!! Note 
+    The quick entry feature is useful if you are making appointments with groups or individuals. 
+    If you are hosting recurring dates that are open to your entire customer base, then [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling) and [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates) may be more convenient. 
 
 ![Page titled 'Quick entry 1/4', displaying fields labeled 'Date', 'Products', and 'Search raster'.](../assets/screens/resources-scheduling/quick-entry1.png "Quick entry 1/4")
 
@@ -321,3 +312,21 @@ The required properties are listed below the field.
 Then, click the :btn:Save: button. 
 If you created an order, then you will land on the page for that order. 
 If you did not create an order, then you will land on the scheduling dashboard. 
+
+### Confirming or denying a scheduling
+
+Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's notification email address. 
+
+![Email from pretix with the standard content defined in the resource type settings: info about the date and links for confirming or denying the scheduling](../assets/screens/resources-scheduling/confirm-scheduling.png "Request confirmation email")
+
+In order to confirm scheduling, click the link that ends with `confirm`. 
+This takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
+The pretix server will also send an email to the resource's notification email address confirming the scheduling. 
+Both the scheduling dashboard and the page for the individual date will note that the requirement for the date has been fulfilled. 
+
+![Email from pretix with the standard content defined in the resource type settings proclaiming that Jamie Doe has been scheduled.](../assets/screens/resources-scheduling/scheduled.png "Confirmation email message")
+
+In order to decline the scheduling, click the link that ends with `deny`. 
+This also takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
+The pretix server will not send a confirmation email. 
+The requirement for the date will remain open. 
