@@ -4,7 +4,7 @@ Plugins are optional pieces of software that can be enabled or disabled for ever
 Plugins handle functions including, but not limited to: 
 
  - native features such as participant badges, [emails](email.md), and seating plans
- - integrations with [payment providers](payment/index.md) such as Mollie or [PayPal](payment/paypal.md)
+ - integrations with [payment providers](payment/index.md) such as [Mollie](payment/mollie.md) or [PayPal](payment/paypal.md)
  - integrations with external services such as Google Analytics or Venueless 
  - output formats such as PDF tickets or sales reports 
 
@@ -53,3 +53,20 @@ The "Bank transfer" plugin will require handling of bank data imports and refund
 In order to control such plugin functions, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
 Search the plugin and click the :btn-icon:fa3-compass: Go to: drop-down menu next to it. 
 The drop-down menu displays links to pages that are relevant for the plugin. 
+
+## Further Information
+
+For more information on plugins for handling [payments](payment/index.md), refer to the following articles: 
+
+ - [Bank transfer](payment/bank-transfer.md) 
+ - [ePayBL](payment/epaybl.md)
+ - [Mollie](payment/mollie.md)
+ - [PayPal](payment/paypal.md) 
+ - [Stripe](payment/stripe.md)
+
+For more information on plugins for [integrations](integrations/index.md) with external services, refer to the following articles: 
+
+ - [GetYourGuide](integrations/getyourguide.md)
+ - [HubSpot](integrations/hubspot.md)
+ - [Kulturpass](integrations/kulturpass.md)
+ - [Presale SAML authentication](integrations/presale-saml.md)
