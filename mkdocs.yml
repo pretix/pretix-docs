@@ -149,7 +149,7 @@ plugins:
       cards_layout_options:
         background_color: "#3B1C4A"
         font_family: "Titillium Web"
-        logo: assets/logo-light-angled-icon.svg
+        logo: docs/assets/logo-light-angled-icon.svg
   - git-revision-date-localized
 extra:
   generator: false
