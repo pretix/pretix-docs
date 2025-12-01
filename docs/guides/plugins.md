@@ -24,7 +24,7 @@ Plugins are handled on the event level, so you have to create an event first.
 
 ## How To
 
-In order to enable or disable plugins, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+In order to enable or disable plugins, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 This lands you on the :btn:Features: tab which lists plugins for optional features. 
 More plugins for functions such as integrations with payment providers or other external services can be found on the other tabs at the top of the page. 
 
@@ -33,7 +33,7 @@ More plugins for functions such as integrations with payment providers or other 
 On each tab, choose the plugins that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
 You can also use the search function to find the plugin you need. 
 
-A plugin that has been enabled will have a green "✓ Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
+A plugin that has been enabled will have a green ":btn-icon:fa3-check: Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
 If you want to filter for active plugins only, click :btn:Active: in the "All|Active" toggle next to the search field. 
 Disable any active plugins that you do not want to use for your event. 
 
@@ -41,7 +41,7 @@ Disable any active plugins that you do not want to use for your event.
 
 Some enabled plugins will add a corresponding entry to the sidebar menu which grants access to its settings. 
 If there are settings pages associated with an active plugin, then extra buttons will be displayed next to the "Available plugins" page. 
-In order to configure a plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+In order to configure a plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 Search the plugin and click the :btn-icon:fa3-gear: Settings: drop-down menu next to it. 
 The drop-down menu displays links to the settings pages for the plugin. 
 
@@ -50,7 +50,7 @@ The drop-down menu displays links to the settings pages for the plugin.
 Some enabled plugins will add a corresponding entry to the sidebar menu which allow you to control their functionality. 
 For instance, the "Statistics" plugin will gather statistics on orders placed on your shop and display them in the pretix backend. 
 The "Bank transfer" plugin will require handling of bank data imports and refunds. 
-In order to control such plugin functions, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+In order to control such plugin functions, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 Search the plugin and click the :btn-icon:fa3-compass: Go to: drop-down menu next to it. 
 The drop-down menu displays links to pages that are relevant for the plugin. 
 
