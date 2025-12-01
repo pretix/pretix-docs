@@ -77,7 +77,7 @@ See [managing individual resources](resources-and-scheduling.md#managing-individ
 
 Adapt the subject and message text of both emails to your liking. 
 You should always include the placeholders `{url_available}` and `{url_unavailable}` in the "Booking pending confirmation" email message. 
-You cannot confirm or decline a booking without these links. 
+You need these links to confirm or decline a booking. 
 We also recommend using the other placeholders in your email message because they communicate relevant information. 
 
 Click the :btn:Save: button. 
@@ -254,7 +254,7 @@ There is a field for every resource type that is required by one of the products
 The required properties of the resource are listed below that field. 
 Click the field and select the individual resource you want to assign. 
 
-![Date settings page, scrolled to the bottom. The section 'Additional settings' has the subheading 'Schedule' with a dropdown menu for 'Guide'. The dropdown is opened, showing the result 'Jamie Doe' with properties 'English, Toki Pona, Adults, Teenagers, Children, egypt, Sumer · requires confirmation](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
+![Date settings page, scrolled to the bottom. The section 'Additional settings' has the subheading 'Schedule' with a dropdown menu for 'Guide'. The dropdown is opened, showing the result 'Jamie Doe' with properties 'English, Toki Pona, Adults, Teenagers, Children, Egypt, Sumer · requires confirmation](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
 
 Assume, for instance, your date requires a resource of the type "Guide". 
 The required properties are "Children", "Egypt", and "English". 
@@ -291,7 +291,7 @@ Choose a starting time for your date by selecting it under "Available times" or 
 If you selected multiple products on the previous page, use "Product" to choose a specific product. 
 
 If check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers. 
-Uncheck this box if you don't want the date to be visible to all visitors of your online shop. 
+Uncheck this box if you do not want the date to be visible to all visitors of your online shop. 
 
 If you want to create an order for the date right away, check the box next to "Create order". 
 Click the :btn:Continue: button. 
@@ -322,7 +322,7 @@ Whenever a user assigns a resource to a date in pretix, the server sends an emai
 In order to confirm scheduling, click the link that ends with `confirm`. 
 This takes you to a webpage saying "Thank you for your response, the event organizer has been notified". 
 The pretix server will also send an email to the resource's notification email address confirming the scheduling. 
-Both the scheduling dashboard and the page for the individual date will note that the requirement for the date has been fulfilled. 
+Both the scheduling dashboard and the page for the individual date will display a note saying that the requirement for the date has been fulfilled. 
 
 ![Email from pretix with the standard content defined in the resource type settings proclaiming that Jamie Doe has been scheduled.](../assets/screens/resources-scheduling/scheduled.png "Confirmation email message")
 
