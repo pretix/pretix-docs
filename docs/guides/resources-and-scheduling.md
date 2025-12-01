@@ -151,7 +151,7 @@ Select the "Locale" and Notification email address corresponding to the person o
 
 Once you are happy with your choices, click :btn:Save and continue with more settings:. 
 
-![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. Available timeslots are displayed in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
+![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. Available time slots are displayed in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
 
 Under "Properties", assign properties to the resource. 
 For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`. 
