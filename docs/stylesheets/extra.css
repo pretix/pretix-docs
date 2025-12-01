@@ -1,22 +1,27 @@
 :root {
     --md-text-font: "Open Sans";
     --md-code-font: "Roboto Mono";
-    --md-primary-fg-color: #3B1C4A;
-    --md-primary-fg-color--light: #7F4A91;
-    --md-primary-fg-color--dark: #3B1C4A;
-    --md-accent-fg-color: #50A167;
-    --md-accent-fg-color--light: #6ddf8e;
-    --md-accent-fg-color--dark: #3b774c;
+    --md-primary-fg-color: #5A2A7E;
+    --md-primary-fg-color--light: #7537A4;
+    --md-primary-fg-color--dark: #391b50;
+    --md-accent-fg-color: #00C2A2;
+    --md-accent-fg-color--light: #0ff1c9;
+    --md-accent-fg-color--dark: #1B937C;
 }
 [data-md-color-scheme="default"] {
-    --md-typeset-a-color: #7F5A91;
-    --md-accent-fg-color: #563D62;
-    --md-accent-fg-color--transparent: #563D621A;
+    --md-typeset-a-color: #7537A4;
+    --md-accent-fg-color: #8541B9;
+    --md-accent-fg-color--transparent: #8541B91A;
 }
 [data-md-color-scheme="slate"] {
-    --md-typeset-a-color: #B568CF;
-    --md-accent-fg-color: #da7df8;
-    --md-accent-fg-color--transparent: #da7df81a;
+    /* Dark mode */
+    --md-hue: 280;
+    --md-primary-fg-color: #7537A4;
+    --md-primary-fg-color--light: #B272E3;
+    --md-primary-fg-color--dark: #492267;
+    --md-typeset-a-color: #B272E3;
+    --md-accent-fg-color: #CB92F7;
+    --md-accent-fg-color--transparent: #BE84EB1a;
 }
 .md-source__facts {
 	display: none;
@@ -42,99 +47,89 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 .md-typeset .admonition.abstract, .md-typeset details.abstract,
 .md-typeset .admonition.example, .md-typeset details.example,
 .md-typeset .admonition.info, .md-typeset details.info {
-    border-color: #5f9cd4;
+    border-color: #0496FF;
 }
 
 .md-typeset .note > .admonition-title::before, .md-typeset .note > summary::before,
 .md-typeset .abstract > .admonition-title::before, .md-typeset .abstract > summary::before,
 .md-typeset .example > .admonition-title::before, .md-typeset .example > summary::before,
 .md-typeset .info > .admonition-title::before, .md-typeset .info > summary::before {
-    background-color: #5f9cd4;
+    background-color: #0496FF;
 }
 
 .md-typeset .note > .admonition-title, .md-typeset .note > summary,
 .md-typeset .abstract > .admonition-title, .md-typeset .abstract > summary,
 .md-typeset .example > .admonition-title, .md-typeset .example > summary,
 .md-typeset .info > .admonition-title, .md-typeset .info > summary {
-    background-color: #e4eef8;
+    background-color: #0496FF1a;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .note > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .note > summary,
 [data-md-color-scheme="slate"] .md-typeset .abstract > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .abstract > summary,
 [data-md-color-scheme="slate"] .md-typeset .example > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .example > summary,
 [data-md-color-scheme="slate"] .md-typeset .info > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .info > summary {
-    background-color: #2e6591;
+    background-color: #0496FF1a;
 }
 
 .md-typeset .admonition.tip, .md-typeset details.tip,
 .md-typeset .admonition.success, .md-typeset details.success {
-    border-color: #50a167;
+    border-color: #00C2A2;
 }
 
 .md-typeset .tip > .admonition-title::before, .md-typeset .tip > summary::before,
 .md-typeset .success > .admonition-title::before, .md-typeset .success > summary::before {
-    background-color: #50a167;
+    background-color: #1B937C;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .tip > summary,
 [data-md-color-scheme="slate"] .md-typeset .success > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .success > summary {
-    background-color: #2a773e;
+    background-color: #00C2A21a;
 }
 
 .md-typeset .tip > .admonition-title, .md-typeset .tip > summary,
 .md-typeset .success > .admonition-title, .md-typeset .success > summary {
-    background-color: #eff7f1;
+    background-color: #00C2A21a;
 }
 
 .md-typeset .admonition.question, .md-typeset details.question,
 .md-typeset .admonition.warning, .md-typeset details.warning {
-    border-color: #ffb419;
+    border-color: #FF8852;
 }
 
 .md-typeset .question > .admonition-title::before, .md-typeset .question > summary::before,
 .md-typeset .warning > .admonition-title::before, .md-typeset .warning > summary::before {
-    background-color: #ffb419;
+    background-color: #FF8852;
 }
 
 .md-typeset .question > .admonition-title, .md-typeset .question > summary,
 .md-typeset .warning > .admonition-title, .md-typeset .warning > summary {
-    background-color: #fff8ea;
+    background-color: #FF88521a;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .question > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .question > summary,
 [data-md-color-scheme="slate"] .md-typeset .warning > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .warning > summary {
-    background-color: #93712e;
+    background-color: #FF88521a;
 }
 
 .md-typeset .admonition.danger, .md-typeset details.danger,
 .md-typeset .admonition.bug, .md-typeset details.bug {
-    border-color: #c44f4f;
+    border-color: #FF3698;
 }
 
 .md-typeset .danger > .admonition-title::before, .md-typeset .danger > summary::before,
 .md-typeset .bug > .admonition-title::before, .md-typeset .bug > summary::before {
-    background-color: #c44f4f;
+    background-color: #FF3698;
 }
 
 .md-typeset .danger > .admonition-title, .md-typeset .danger > summary,
 .md-typeset .bug > .admonition-title, .md-typeset .bug > summary {
-    background-color: #fbf3f3;
+    background-color: #FF36981a;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .danger > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .danger > summary,
 [data-md-color-scheme="slate"] .md-typeset .bug > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .bug > summary {
-    background-color: #803030;
+    background-color: #FF36981a;
 }
-
-
-[data-md-color-scheme="slate"] {
-    /* Dark mode */
-    --md-hue: 280;
-    --md-primary-fg-color: #7F4A91;
-    --md-primary-fg-color--light: #7F4A91;
-    --md-primary-fg-color--dark: #3B1C4A;
-}
-
 
 /* Badges */
 .md-typeset .mdx-badge {

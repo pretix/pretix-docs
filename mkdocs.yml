@@ -17,8 +17,8 @@ extra_css:
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logo-light-angled-icon.svg
-  favicon: assets/favicon.png
+  logo: assets/logo-light-angled-mini-icon.svg
+  favicon: assets/favicon.ico
   features:
     - navigation.tabs
     - navigation.prune
@@ -149,6 +149,7 @@ plugins:
       cards_layout_options:
         background_color: "#3B1C4A"
         font_family: "Titillium Web"
+        logo: assets/logo-light-angled-icon.svg
   - git-revision-date-localized
 extra:
   generator: false
