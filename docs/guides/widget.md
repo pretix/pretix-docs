@@ -105,7 +105,7 @@ You can try out this behavior here:
 </noscript>
 
 You can embed the pretix Button exactly like the pretix Widget. 
-In order to do that, add the CSS and JavaScript resources as described under ["Embedding the widget on your website"](widget.md#embedding-the-widget-on-your-website). 
+In order to do that, add the CSS and JavaScript resources as described under [Embedding the widget on your website](widget.md#embedding-the-widget-on-your-website). 
 Instead of the `pretix-widget` tag, use the `pretix-button` tag:
 
 ```

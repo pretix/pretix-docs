@@ -19,7 +19,7 @@ This ticket secret is a code that can be represented as a sequence of characters
 By default, this code is randomly generated and consists of 32 lower case letters and numbers. 
 To avoid confusion, the characters `o`, `O`, `1`, `i`, and `l` are **not** used. 
 
-If you want to change the length of the ticket secret code, navigate to :navpath:Your event: → :fa3-wrench: Settings → Tickets:.
+If you want to change the length of the ticket secret code, navigate to :navpath:Your event → :fa3-wrench: Settings → Tickets:.
 Under "Length of ticket codes", choose a length between 12 and 64 characters. 
 
 The approach with random ticket secrets has several advantages: 
