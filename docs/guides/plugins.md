@@ -33,7 +33,7 @@ More plugins for functions such as integrations with payment providers or other 
 On each tab, choose the plugins that you want to use from the top recommendations and the list and click the :btn:Enable: button next to them. 
 You can also use the search function to find the plugin you need. 
 
-A plugin that has been enabled will have a green ":btn-icon:fa3-check: Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
+A plugin that has been enabled will have a green ":fa3-check: Active" tag next to it and the purple "Enable" button will be replaced by a white "Disable" button. 
 If you want to filter for active plugins only, click :btn:Active: in the "All|Active" toggle next to the search field. 
 Disable any active plugins that you do not want to use for your event. 
 
