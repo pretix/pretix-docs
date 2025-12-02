@@ -15,7 +15,7 @@ These steps are necessary before you can export any data from pretix to HubSpot.
 
 ### Enabling the plugin
 
-In order to activate the HubSpot plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
+In order to activate the HubSpot plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "HubSpot" plugin. 
 
 ### Setting up the connection to HubSpot
@@ -64,7 +64,7 @@ Before you can do any of these things, you have to set up the plugin as describe
 ### Adding customers to your HubSpot contacts database
 
 This section explains how to add customers in pretix to your contacts database in HubSpot. 
-Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Open the pretix backend and navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 Under "Object mappings", click the :btn-icon:fa3-plus: Add mapping: button. 
 
 Under "pretix object type", choose "Order position". 
@@ -126,7 +126,7 @@ Once you are satisfied with your mapping, click the :btn:Save: button.
 
 ### Adding attendees to your HubSpot contacts database
 
-If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 Add an object mapping with the "pretix object type" set to `Order position` and the "HubSpot object type" set to `Contacts`. 
 
 Edit the mapping and set it up analogously to the customer mapping [described above](hubspot.md#adding-customers-to-your-hubspot-contacts-database), replacing invoice data with attendee data, but still mapping to the same HubSpot fields. 
@@ -155,7 +155,7 @@ Under rules, check the box next to "Require unique values for this property".
 Creating the property means that some of the settings here will become fixed and you will not be able to change them anymore. 
 Verify that you have configured the property as described here and then click the :btn:Create: button. 
 
-Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Open the pretix backend and navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 Under "Object mappings", change the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
 
 Under "pretix object type", choose "Order". 
@@ -202,12 +202,12 @@ For information on handling errors with exports, see [troubleshooting](hubspot.m
 After setting up exports to HubSpot, you should confirm that the configuration works as intended. 
 You should also do this after making changes to the configuration. 
 
-In order to check for errors that may have occured during the export to HubSpot, navigate to :navpath:Your Event:. 
+In order to check for errors that may have occured during the export to HubSpot, navigate to :navpath:Your event:. 
 If errors have occurred, the dashboard will display a yellow warning box at the top. 
 
 ![Event dashboard displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error-dashboard.png "Dashboard Error")
 
-Alternatively, you can navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Alternatively, you can navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 This page will also display a warning box if errors have occurred. 
 
 ![Page titled 'HubSpot Integration', displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error.png "HubSpot Integration Error")
@@ -254,7 +254,7 @@ See [Handling configuration errors](hubspot.md#handling-configuration-errors) fo
 ### Handling configuration errors
 
 If you see "permanent error" or "misconfiguration" messages after you have made changes to the configuration of the HubSpot plugin, then it is likely that the configuration is faulty and causes the errors. 
-Navigate to navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
+Navigate to navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
 If a warning symbol :fa3-warning: appears in one of the lines, then that line is causing issues due to incompatible data types. 
 
 Check the corresponding entry in the HubSpot backend for mistakes. 

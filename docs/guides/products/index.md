@@ -131,7 +131,7 @@ Once you are happy with your choices, click the :btn:Save: button.
 #### Enabling the week calendar view
 
 For an event series or time slot booking, it makes sense to enable the "Week calendar" overview style for the shop page. 
-In order to do so, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
+In order to do so, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
 Open the :btn:Display: tab and set "Default overview style" to "Week calendar":
 
 ![Page displaying the headline 'Calendar list and views'. Under 'Default overview style', the option 'Week calendar' has been selected.](../../assets/screens/event-series/calendar-views.png "Display–Calendar list and views")

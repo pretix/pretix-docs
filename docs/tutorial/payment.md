@@ -33,7 +33,7 @@ By default, all payment providers in this list except gift card will be disabled
 
 !!! Note 
     If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled. 
-    In order to activate such a plugin, you have to navigate to :navpath:Your Event → Settings → Plugins: and open the :btn:Payment providers: tab. 
+    In order to activate such a plugin, you have to navigate to :navpath:Your event → Settings → Plugins: and open the :btn:Payment providers: tab. 
     Click the :btn:Enable: button next to the plugin you want to use. 
     You can tell that a plugin has been activated by green ":fa3-check: Active" tag. 
 

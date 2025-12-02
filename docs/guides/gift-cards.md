@@ -204,11 +204,11 @@ This will add a new entry to the list of transactions and change the "Current va
 The same process can be used for increasing or decreasing the value of a gift card if it has been created with the wrong value, or if it has been created in error, in which case you simply subtract the entire value from the gift card. 
 If you do so, attempting to use the gift card in your shop will yield a message stating that all credit on the card has been used up. 
 
-## Further Information
+## Further information
 
  - [pretix Tutorial: Geschenkgutscheine (German) on YouTube](https://www.youtube.com/watch?v=ZEnXy2SXNsc)
 
-## See Also
+## See also
 
  - [Payment](payment/index.md) 
  - [Vouchers](vouchers.md)

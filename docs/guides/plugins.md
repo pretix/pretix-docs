@@ -22,7 +22,7 @@ If you want to learn how to activate payment providers for your events, refer to
 
 Plugins are handled on the event level, so you have to create an event first. 
 
-## How To
+## How to
 
 In order to enable or disable plugins, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 This lands you on the :btn:Features: tab which lists plugins for optional features. 
@@ -54,7 +54,7 @@ In order to control such plugin functions, navigate to :navpath:Your event → :
 Search the plugin and click the :btn-icon:fa3-compass: Go to: drop-down menu next to it. 
 The drop-down menu displays links to pages that are relevant for the plugin. 
 
-## Further Information
+## Further information
 
 For more information on plugins for handling [payments](payment/index.md), refer to the following articles: 
 

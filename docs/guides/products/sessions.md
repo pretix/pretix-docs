@@ -76,7 +76,7 @@ Thus, it makes no sense to implement this schedule with add-on products as descr
 This would either result in customers having to book each half of the workshops individually, or in allowing them to book combinations of overlapping sessions which they cannot attend. 
 You can handle more complicated schedules like this one with the agenda constraints plugin. 
 
-In order to activate that plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
+In order to activate that plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
 Search for the "Agenda constraints" plugin in the list and click the :btn:Enable: button next to it. 
 
 !["Edit product" page, on the "Additional settings" tab. Options for "Start date" and "End date" are displayed, and a date and time has been entered for each.](../../assets/screens/products/agenda-constraints.png "Agenda constraints on product")

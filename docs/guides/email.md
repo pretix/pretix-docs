@@ -10,7 +10,7 @@ This article tells you how to set up your desired email server solution within p
 Your account needs to be activated before you can use pretix to send out emails. 
 See the tutorial's section on [account activation](../tutorial/organizer-account.md#activation) for further information. 
 
-## How To 
+## How to 
 
 ### General e-mail settings 
 
