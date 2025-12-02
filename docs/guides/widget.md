@@ -577,7 +577,7 @@ pretix understands the following data attributes:
    This is useful if you already asked the user for consent and do **not** want the widget to ask them again. 
    Example: `data-consent="facebook,google_analytics"`
    If the user has refused consent for all cookie providers, use `data-consent="none"` to disable all providers.
-   The pretix "Tracking codes" plugin supports the following values: 
+   The pretix "Tracking codes" integration supports the following values: 
      - `adform`
      - `facebook`
      - `gosquared`
@@ -588,16 +588,16 @@ pretix understands the following data attributes:
      - `matomo`
      - `twitter`
 
-Any active pretix plugins might understand more data attributes. 
-For instance, if you are using the campaigns plugin, you can pass a campaign ID as a value to `data-campaign`. 
-This way, the plugin will count all orders made through this widget towards this campaign. 
+Any active pretix plugins may add to the data attributes that pretix understands. 
+For instance, if you have activated the "Campaign tracking" plugin, you can pass a campaign ID as a value to `data-campaign`. 
+This way, pretix will count all orders made through this widget towards this campaign. 
 
 ### Using tracking with the pretix Widget
 
-If you use the tracking plugin, you can enable cross-domain tracking. 
+If you have activated the "Tracking codes" plugin, then you can enable cross-domain tracking. 
 This is only necessary if you host your pretix shop and the website on which you embed the widget on two separate domains. 
 If you run your pretix shop on a subdomain of your main tracking domain, then you do **not** need cross-domain tracking. 
-The tracking plugin supports tracking across subdomains, so a cross-domain tracking setup is **not** needed in that case. 
+The tracking codes integration supports tracking across subdomains, so a cross-domain tracking setup is **not** needed in that case. 
 Refer to the article on [custom domains](custom-domain.md) for further information. 
 
 Add the embedding website to your [referral exclusions](https://support.google.com/analytics/answer/2795830) in your Google Analytics settings.
