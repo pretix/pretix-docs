@@ -33,9 +33,12 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 }
 .md-typeset h1 {
 	color: var(--md-typeset-color);
+    font-family: "Titillium Web", "Open Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;```
+
 }
 .md-typeset h2 {
 	color: var(--md-typeset-color);
+    font-family: "Titillium Web", "Open Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;```
 	font-weight: normal;
 }
 .md-typeset h3 {
@@ -93,22 +96,22 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 
 .md-typeset .admonition.question, .md-typeset details.question,
 .md-typeset .admonition.warning, .md-typeset details.warning {
-    border-color: #FF8852;
+    border-color: #FFD100;
 }
 
 .md-typeset .question > .admonition-title::before, .md-typeset .question > summary::before,
 .md-typeset .warning > .admonition-title::before, .md-typeset .warning > summary::before {
-    background-color: #FF8852;
+    background-color: #FFD100;
 }
 
 .md-typeset .question > .admonition-title, .md-typeset .question > summary,
 .md-typeset .warning > .admonition-title, .md-typeset .warning > summary {
-    background-color: #FF88521a;
+    background-color: #FFD1001a;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .question > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .question > summary,
 [data-md-color-scheme="slate"] .md-typeset .warning > .admonition-title, [data-md-color-scheme="slate"] .md-typeset .warning > summary {
-    background-color: #FF88521a;
+    background-color: #FFD1001a;
 }
 
 .md-typeset .admonition.danger, .md-typeset details.danger,
