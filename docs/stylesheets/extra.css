@@ -33,9 +33,12 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
 }
 .md-typeset h1 {
 	color: var(--md-typeset-color);
+  font-family: "Titillium Web";
+
 }
 .md-typeset h2 {
 	color: var(--md-typeset-color);
+  font-family: "Titillium Web";
 	font-weight: normal;
 }
 .md-typeset h3 {
