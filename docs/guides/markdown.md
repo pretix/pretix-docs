@@ -64,8 +64,7 @@ will become:
 
 > Check this on <https://en.wikipedia.org>
 
-Any word with a single dot in at least one place will be recognized as an URL and rendered accordingly. 
-If you want to prevent this, you can escape the dot with a backslash. 
+If you want to prevent a word from being recognized as an URL and rendered accordingly, you can escape the dot with a backslash. 
 
 ``` markdown
 Check this on en\.wikipedia\.org
