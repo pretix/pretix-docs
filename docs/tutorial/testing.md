@@ -1,4 +1,4 @@
-# Testing and Going Live
+# Testing and going live
 
 In this final part of the tutorial, we will test our shop, make sure that everything works as intended, and finally take it live. 
 Here is a brief overview of the steps we are going to take in this section: 
