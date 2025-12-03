@@ -1,4 +1,4 @@
-# Backups and Monitoring
+# Backups and monitoring
 
 If you host your own pretix instance, you also need to care about the availability of your service and the safety of your data yourself. This page gives you some information that you might need to do so properly.
 
