@@ -1,7 +1,5 @@
 # Markdown 
 
-## What is markdown?
-
 In many places of your shop, like frontpage texts, product descriptions and email texts, you can use [Markdown](https://en.wikipedia.org/wiki/Markdown) to create links, bold text, and other formatted content. 
 Markdown is a good middle-ground since it is way easier to learn than languages like HTML but allows all basic formatting options required for text in those places.
 
@@ -44,6 +42,16 @@ You will get:
 
 > Input this `exactly like this`.
 
+In order to prevent a character from being interpreted as markdown formatting, precede it with the backslash `\` escape character. 
+
+``` markdown
+This is \*\*important\*\*.
+```
+
+will become:
+
+> This is \*\*important\*\*.
+
 ### Links
 
 You can create a link by just pasting it in, e.g.
@@ -56,7 +64,19 @@ will become:
 
 > Check this on <https://en.wikipedia.org>
 
-However, if you want to control the text of the link, you can put the text of the link in `[]` brackets and the link target in `()` parentheses, like this:
+Any word with a single dot in at least one place will be recognized as an URL and rendered accordingly. 
+If you want to prevent this, you can escape the dot with a backslash. 
+
+``` markdown
+Check this on en\.wikipedia\.org
+```
+
+This will yield:
+
+> Check this on en\.wikipedia\.org
+
+
+If you want to control the text of the link, you can put the text of the link in `[]` brackets and the link target in `()` parentheses, like this:
 
 ``` markdown
 Check this on [Wikipedia](https://en.wikipedia.org).
