@@ -251,7 +251,7 @@ In order to display only the date `#4387749` in the widget, pass them to the `su
 
 The subevent takes only a single date ID as an argument. 
 It is **not** possible to filter for more than one date with this method. 
-If you want to display multiple dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#filtering-dates-by-metadata-attribute). 
+If you want to display multiple dates from your event series, but not all of them, [filter them by metadata attribute](widget.md#using-the-widget-for-a-selection-of-dates). 
 
 ### Product availability
 

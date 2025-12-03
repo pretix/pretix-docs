@@ -338,7 +338,8 @@ They also ensure that season ticket holders are admitted to every date.
 
 ### Mixed taxation 
 
-The article on [taxes](../taxes.md) has a section explaining how to set up products with [mixed taxation](../taxes.md#mixed-taxation) using bundles. 
+The article on [taxes](../taxes.md) has sections explaining how to set up products with mixed taxation using bundles. 
+The exact method differs depending on whether [tax is included in the price)](../taxes.md#mixed-taxation-tax-included-in-price) or [tax is added on top of the price)](../taxes.md#mixed-taxation-tax-added-on-top-of-price). 
 
 ## Troubleshooting 
 
