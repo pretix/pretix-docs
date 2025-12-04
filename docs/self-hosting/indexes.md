@@ -66,7 +66,7 @@ CREATE INDEX CONCURRENTLY pretix_addidx_logentry_event_cid_date_id
     ON public.pretixbase_logentry (event_id, content_type_id, datetime, id);
 ```
 
-Also, if you use our `pretix-shipping` plugin:
+Also, if you use our `pretix-shipping` feature:
 
 ``` sql
 CREATE INDEX CONCURRENTLY pretix_addidx_sa_name

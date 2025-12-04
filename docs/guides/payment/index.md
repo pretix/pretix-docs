@@ -20,7 +20,7 @@ Setting up payment providers is handled on the event level, so you need to creat
 Make sure you have an active account with each external payment provider you intend to use with pretix. 
 For example, if you want to receive payments via Mollie, you need to have a Mollie account. 
 
-## How To
+## How to
 
 Setting up payment providers in pretix involves the following steps: 
 
@@ -43,7 +43,7 @@ This section tells you how to do that.
 
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 The :btn:Payment providers: tab displays our top recommendations for payment provider plugins: bank transfer, Mollie, PayPal and Stripe at the top of the page. 
 Below that, you can find the list of plugins for all other payment providers available in pretix. 
 By default, the plugins for bank transfer, PayPal, Stripe and SEPA Direct debit will be active. 
@@ -60,7 +60,7 @@ Enabling a plugin does not automatically make the payment method available in yo
 You also need to provide some data for each payment provider you want to use on the settings page. 
 This section tells you how to do that. 
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 By default, this list includes bank transfer, gift card, PayPal, SEPA debit and Stripe. 
 Gift card is enabled and all other entries are disabled. 
@@ -96,7 +96,7 @@ For detailed information on how to set up and enable specific payment providers,
 pretix allows you to hide a payment provider in your shop and only display it to users who followed a certain link. 
 This can be useful if, for example, your audience mostly consists of private individuals, but also includes some business clients. 
 
-In order to hide a payment provider, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment: and click the :btn-icon:fa3-gear: Settings: button next to the payment provider which you want to hide. 
+In order to hide a payment provider, navigate to :navpath:Your event → :fa3-wrench: Settings → Payment: and click the :btn-icon:fa3-gear: Settings: button next to the payment provider which you want to hide. 
 Check the box next to "Hide payment method". 
 
 ![Settings page for a payment provider. The box 'Hide payment method' is checked and the page displays a field labeled 'Link to enable payment method' containing a lengthy URL.](../../assets/screens/payment/hide-payment-method.png "Hide payment method")
@@ -127,7 +127,7 @@ Most payment providers charge a fee on every transaction they process.
 If you are planning to pay this fee yourself, you do not need to change any settings. 
 If you want to add the fee to your customer's total, consult an expert to confirm it is legal for you to do so. 
 
-Once you have done that, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:, and open the :btn:Advanced: tab. 
+Once you have done that, navigate to :navpath:Your event → :fa3-wrench: Settings → Payment:, and open the :btn:Advanced: tab. 
 In the dropdown menu labeled "Tax rule for payment fees", select the appropriate tax rule. 
 
 If you want to learn more on how to handle taxes in pretix, refer to our guide on [taxes](../taxes.md). 
@@ -211,7 +211,7 @@ Use the method described [above](index.md#passing-payment-provider-fees-on-to-yo
 
 ![Payment settings page. The 'Deadlines' tab is open, showing various options for settings deadlines.](../../assets/screens/payment-providers/payment-deadlines.png "Payment deadlines settings")
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Payment:. 
 The :btn:Deadlines: tab lets you set payment terms measured in either days or minutes. 
 The default value for the payment term for your customers is 14 days. 
 This page also lets you make optional adjustments such as a last date of payment, an additional expiration delay beyond the time communicated to your customer, and the option to only end payment terms on weekdays. 
@@ -244,9 +244,9 @@ It is for these reasons that pretix only lets you set unified payment deadlines 
 
 ### A payment provider does not show up in the payment settings
 
-If a payment provider does not show up in :navpath:Your Event → :fa3-wrench: Settings → Payment:, then the plugin is not active. 
+If a payment provider does not show up in :navpath:Your event → :fa3-wrench: Settings → Payment:, then the plugin is not active. 
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the "Payment providers" tab. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the "Payment providers" tab. 
 Enable the corresponding plugin. 
 Verify that it has the green ":fa3-check: Active" tag next to it. 
 
@@ -254,7 +254,7 @@ Verify that it has the green ":fa3-check: Active" tag next to it.
 
 If a payment provider does not appear in your test shop or customers cannot select a payment method during their purchase, you should verify that the provider and the method are active. 
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Payment:. 
 This lands you on the "Payment" tab. 
 Click the :btn-icon:fa3-gear:Settings: button next to the payment provider that is not showing up in the shop. 
 Ensure that all necessary information is filled in. 
@@ -266,7 +266,7 @@ If any mandatory information is still missing, the page will notify you.
 Fill out all the mandatory information and click :btn:Save: again. 
 The corresponding payment method should now show up in your online shop. 
 
-## Further Information
+## Further information
 
 Here is the full list of articles on setting up and using specific payment providers: 
 

@@ -11,7 +11,7 @@ In all other cases, creating singular events should suffice.
 
 This article assumes that you have access to an organizer account, either because you created it yourself when you signed up on pretix.eu, or because you were invited and granted access by a co-organizer. 
 
-## How To 
+## How to 
 
 The question whether you are hosting one single event, multiple events, or an event series does not always have a clear-cut answer. 
 It is possible that there is more than one sensible solution for your use case. 

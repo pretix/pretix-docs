@@ -1,6 +1,6 @@
 # HubSpot
 
-The HubSpot integration plugin allows you to export data such as customer contact data or transactions to HubSpot. 
+The HubSpot integration allows you to export data such as customer contact data or transactions to HubSpot. 
 This article explains how to use it. 
 
 ## Prerequisites
@@ -15,7 +15,7 @@ These steps are necessary before you can export any data from pretix to HubSpot.
 
 ### Enabling the plugin
 
-In order to activate the HubSpot plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
+In order to activate the HubSpot plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "HubSpot" plugin. 
 
 ### Setting up the connection to HubSpot
@@ -53,18 +53,18 @@ Click the :btn:Save: button.
 
 ## Applications
 
-This section explains some useful applications for the HubSpot integration plugin: 
+This section explains some useful applications for the HubSpot integration: 
 
  - [Adding customers to your HubSpot contacts database](hubspot.md#adding-customers-to-your-hubspot-contacts-database)
  - [Adding attendees to your HubSpot contacts database](hubspot.md#adding-attendees-to-your-hubspot-contacts-database) 
  - [Adding orders to your HubSpot deals database](hubspot.md#adding-orders-to-your-hubspot-deals-database)
 
-Before you can do any of these things, you have to set up the plugin as described in [General usage](hubspot.md#general-usage). 
+Before you can do any of these things, you have to enable the plugin and set up the connection as described in [General usage](hubspot.md#general-usage). 
 
 ### Adding customers to your HubSpot contacts database
 
 This section explains how to add customers in pretix to your contacts database in HubSpot. 
-Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Open the pretix backend and navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 Under "Object mappings", click the :btn-icon:fa3-plus: Add mapping: button. 
 
 Under "pretix object type", choose "Order position". 
@@ -87,20 +87,20 @@ Pair pretix fields of the type `Choose one from a list` with HubSpot fields of t
 Pair pretix fields of the type `Date and Time` with HubSpot fields of the type `datetime`. 
 If a warning symbol :fa3-warning: appears in one of the lines, that means that line may cause issues due to incompatible data types. 
 
-If you set "Mode" to `Overwrite`, then the plugin will overwrite any fields in your HubSpot database. 
+If you set "Mode" to `Overwrite`, then the integration will overwrite any fields in your HubSpot database. 
 
 If you set it to `Fill if new`, then it will only fill the field on an entirely new entry. 
-The plugin will not make any changes if an entry with the same unique identifier already exists. 
+The integration will not make any changes if an entry with the same unique identifier already exists. 
 This avoids overwriting existing entries and filling them with mismatching data. 
 
-If you set "Mode" to `Fill if empty`, then the plugin will only fill empty fields. 
+If you set "Mode" to `Fill if empty`, then the integration will only fill empty fields. 
 This can complete an entry with missing information, but it may sometimes complete it with mismatching information. 
 The difference between `Fill if new` and `Fill if empty` is that `Fill if new` only writes completely new entries whose unique identifier does not yet exist in the HubSpot database. 
 `Fill if empty` also adds information to already existing entries. 
 
-If you set it to `Add to list`, then the plugin will add the content from pretix as an item in a list-type HubSpot field. 
+If you set it to `Add to list`, then the integration will add the content from pretix as an item in a list-type HubSpot field. 
 This is suitable for HubSpot variables that allow multiple entries, such as "Multiple checkboxes", "Radio select", and "Dropdown select". 
-If you use this on a text variable in HubSpot, the plugin will append the text from pretix to the end, separated by semicolon. 
+If you use this on a text variable in HubSpot, the integration will append the text from pretix to the end, separated by semicolon. 
 If you use it on a number variable, then the export will work without issues on an empty field, but will cause an error if the field is already filled. 
 
 For example, your mapping could look like the one portrayed in the following screenshot and table: 
@@ -120,13 +120,13 @@ For example, your mapping could look like the one portrayed in the following scr
 
 This maps the email address used to place an order in pretix to the email property in HubSpot. 
 It also maps  given name, family name, street, post code, city, country code, and company name onto the most closely matching properties in HubSpot. 
-According to the configuration in the screenshot, the plugin overwrites all those properties. 
+According to the configuration in the screenshot, the integration overwrites all those properties. 
 
 Once you are satisfied with your mapping, click the :btn:Save: button. 
 
 ### Adding attendees to your HubSpot contacts database
 
-If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+If you want to fill your HubSpot contacts database with attendee data in addition to customer data, navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 Add an object mapping with the "pretix object type" set to `Order position` and the "HubSpot object type" set to `Contacts`. 
 
 Edit the mapping and set it up analogously to the customer mapping [described above](hubspot.md#adding-customers-to-your-hubspot-contacts-database), replacing invoice data with attendee data, but still mapping to the same HubSpot fields. 
@@ -155,7 +155,7 @@ Under rules, check the box next to "Require unique values for this property".
 Creating the property means that some of the settings here will become fixed and you will not be able to change them anymore. 
 Verify that you have configured the property as described here and then click the :btn:Create: button. 
 
-Open the pretix backend and navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Open the pretix backend and navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 Under "Object mappings", change the first entry or, if you are already using it for a different purpose, click the :btn-icon:fa3-plus: Add mapping: button. 
 
 Under "pretix object type", choose "Order". 
@@ -176,12 +176,12 @@ Click the :btn:Save: button to confirm.
 
 ### Managing data transfers 
 
-Once you have set up exports from pretix to HubSpot, the plugin will transfer data every time the server executes `periodic_task`. 
+Once you have set up exports from pretix to HubSpot, the integration will transfer data every time the server executes `periodic_task`. 
 The frequency depends on the configuration of the server. 
 The pretix Hosted server runs the `periodic_task` every ten minutes, starting five minutes after the full hour. 
-Thus, the plugin exports every incoming order to HubSpot within ten minutes or less. 
+Thus, the integration exports every incoming order to HubSpot within ten minutes or less. 
 
-The plugin only exports data from new incoming orders. 
+The integration only exports data from new incoming orders. 
 It does not export any orders your customers placed before you set up the connection to HubSpot. 
 It also does not automatically export any data a second time, even if you make changes to the configuration. 
 If you want to export data from older orders, or export again following a change in the configuration, then you have to trigger a data transfer on those orders manually. 
@@ -190,7 +190,7 @@ In order to do so, navigate to :navpath:Your event → :fa3-shopping-cart: Order
 In the box labeled "Data transfer to external systems", click the :btn-icon:fa3-refresh: Sync now: button. 
 
 The box will then display the status ":fa3-hourglass: Pending". 
-The plugin will transfer data to HubSpot within seconds. 
+The integration will transfer data to HubSpot within seconds. 
 Refresh the page. 
 The box will now display links to the corresponding records in HubSpot along with timestamps. 
 In case a problem with the export occurred, the box will instead display ":fa3-warning: Error" and an error message underneath the heading "HubSpot", along with buttons for retrying and canceling the export. 
@@ -202,12 +202,12 @@ For information on handling errors with exports, see [troubleshooting](hubspot.m
 After setting up exports to HubSpot, you should confirm that the configuration works as intended. 
 You should also do this after making changes to the configuration. 
 
-In order to check for errors that may have occured during the export to HubSpot, navigate to :navpath:Your Event:. 
+In order to check for errors that may have occured during the export to HubSpot, navigate to :navpath:Your event:. 
 If errors have occurred, the dashboard will display a yellow warning box at the top. 
 
 ![Event dashboard displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error-dashboard.png "Dashboard Error")
 
-Alternatively, you can navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot:. 
+Alternatively, you can navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot:. 
 This page will also display a warning box if errors have occurred. 
 
 ![Page titled 'HubSpot Integration', displaying, among other things, a yellow warning box with the text 'Orders in this event could not be synced to an external system as configured' and a purple button labeled 'Show sync problems'. ](../../assets/screens/hubspot/integration-error.png "HubSpot Integration Error")
@@ -218,9 +218,9 @@ This takes you to an overview of orders with which problems have occurred during
 ![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/sync-problems.png "Sync problems")
 
 You can also check for sync problems on the organizer level. 
-This is useful if you are using the HubSpot integration plugin for multiple events. 
+This is useful if you are using the HubSpot integration for multiple events. 
 Navigate to :navpath:Your organizer → :fa3-download: Export → Data sync problems:. 
-The page displays a list of sync problems across all events that use the HubSpot plugin. 
+The page displays a list of sync problems across all events for which the HubSpot plugin is active. 
 
 ![Page titled 'Sync problems', displaying a list of orders with columns for order code, sync provider, date, and failure mode. The sync provider is 'HubSpot' and the failure mode is 'Provider reported a permanent error' for every entry.](../../assets/screens/hubspot/organizer-sync-problems.png "Organizer sync problems")
 
@@ -253,8 +253,8 @@ See [Handling configuration errors](hubspot.md#handling-configuration-errors) fo
 
 ### Handling configuration errors
 
-If you see "permanent error" or "misconfiguration" messages after you have made changes to the configuration of the HubSpot plugin, then it is likely that the configuration is faulty and causes the errors. 
-Navigate to navigate to :navpath:Your Event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
+If you see "permanent error" or "misconfiguration" messages after you have made changes to the configuration of the HubSpot integration, then it is likely that the configuration is faulty and causes the errors. 
+Navigate to navigate to :navpath:Your event → :fa3-wrench: Settings → HubSpot: and edit one of your mappings. 
 If a warning symbol :fa3-warning: appears in one of the lines, then that line is causing issues due to incompatible data types. 
 
 Check the corresponding entry in the HubSpot backend for mistakes. 

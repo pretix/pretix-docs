@@ -19,7 +19,7 @@ It also tells you how to notify pretix of incoming payments.
 Setting up payment providers is handled on the event level, so you need to create an event first. 
 You need to have access to the bank account that you want to use with pretix. 
 
-## How To
+## How to
 
 Using bank transfer as a payment method in pretix requires the following steps: 
 
@@ -33,7 +33,7 @@ This section will guide you through these steps in detail.
 ### Setting up bank transfers
 
 If you want to use bank transfers to receive payments in pretix, the "Bank transfer" plugin needs to be active. 
-In order to verify that the plugin is active, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:. 
+In order to verify that the plugin is active, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 Switch to the :btn:Payment providers: tab. 
 
 This page displays the bank transfer plugin at the top. 
@@ -46,7 +46,7 @@ Verify that the plugin is active.
 
 You can jump straight to the bank transfer settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > Bank transfer:. 
 
-Alternatively, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
+Alternatively, navigate to :navpath:Your event → :fa3-wrench: Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for bank transfer with a red ":fa3-remove: Disabled" tag. 
 
@@ -157,7 +157,7 @@ Refer to the section below for a more detailed explanation on [how to handle unr
 ![Page titled 'Orders', showing a list currently containing one order with status pending, €0.00 out of €250.00 paid.](../../assets/screens/payment/orders.png "Orders" )
 
 In addition to the [automated option A](bank-transfer.md#option-a-automatic-transaction-import-using-gocardless) and the [semi-automated option B](bank-transfer.md#option-b-importing-bank-data) described above, pretix also allows you to approve payments manually. 
-In order to do so, navigate to :navpath:Your Event → :fa3-shopping-cart: Orders:. 
+In order to do so, navigate to :navpath:Your event → :fa3-shopping-cart: Orders:. 
 This page displays a list of all orders that customers have placed in your shop. 
 If a customer has placed an order and you have not yet received a payment for it, this page will display the order with the yellow ":fa3-money: Pending" status tag. 
 This is expected for orders paid via bank transfer. 

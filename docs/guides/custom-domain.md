@@ -15,7 +15,7 @@ Custom domains are set up on the organizer level.
 You need access to an organizer account if you want to enable customer accounts. 
 You also need access to each event shop for which you want to use the custom domain. 
 
-## How To 
+## How to 
 
 The setup of custom domains depends on whether you are using pretix Hosted and your shops are hosted at pretix.eu; or you have installed pretix on your own server (pretix Enterprise or pretix Community). 
 Please refer to the subsection appropriate to your use case below. 

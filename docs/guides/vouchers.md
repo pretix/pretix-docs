@@ -23,7 +23,7 @@ If you are using pretix Hosted, your account needs to be activated before you ca
 
 ## General usage
 
-The settings page for vouchers is located at :navpath:Your Event → :fa3-tags: Vouchers:. 
+The settings page for vouchers is located at :navpath:Your event → :fa3-tags: Vouchers:. 
 It gives you an overview of all vouchers that have already been created as well as options for searching and filtering vouchers. 
 
 
@@ -149,7 +149,7 @@ You can create a voucher code for a limited discount to attract more customers t
 The validity of the voucher can be restricted to a limited timeframe, a certain number of uses, or a maximum discount budget. 
 It is also possible to use a combination of these restrictions. 
 
-Navigate to :navpath:Your Event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
+Navigate to :navpath:Your event → :fa3-tags: Vouchers: and click the :btn-icon:fa3-plus: Create a new voucher: button. 
 Leave the automatically generated suggestion in the "Voucher code" field or provide your own. 
 
 If you want the voucher to apply only to one specific product, select that product in the "Product" field. 
@@ -178,7 +178,7 @@ You can copy the code from the overview of vouchers and include it in, e.g., a n
 You can use vouchers to make a product (or multiple products) only available to a select group of invited guests. 
 This option is appropriate for cases in which you know the group of recipients beforehand and have a full list of their email addresses, e.g., members of a club, speakers at a conference, or VIPs who get an invitation. 
 
-If you want to restrict availability for a **single product**, navigate to :navpath:Your Event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
+If you want to restrict availability for a **single product**, navigate to :navpath:Your event → :fa3-ticket: Products → Products: and create or edit the admission product in question. 
 Open the :btn:Availability: tab and check the box next to "This product can only be bought using a voucher".
 
 If you set the visibility toggle next to this option to "Hide product if unavailable" (:btn-icon:fa3-eye-slash::), then the product will be hidden in your shop. 
@@ -192,7 +192,7 @@ A voucher can be set to affect the availability of a single product or of all pr
 Thus, it is necessary to create a quota, add only the products in question to it, and set the "Total capacity" so that it covers the number of emails you are planning to send out. 
 
 Regardless of whether you have set restricted availability for only one or for multiple products, it makes sense to send the voucher codes to your recipients via email. 
-Navigate to :navpath:Your Event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. 
+Navigate to :navpath:Your event → Vouchers: and click the :btn-icon:fa3-plus: Create multiple new vouchers: button. 
 This process is described in detail in the section [Sending out vouchers via email](vouchers.md#sending-out-vouchers-via-email)
 Generate the same number of voucher codes as people you are planning to invite. 
 You can send multiple vouchers to the same email address using the "number" column in the list of "Recipients". 
@@ -213,7 +213,7 @@ Emails will be sent out as soon as you click the :btn:Save: button.
 
 You can use vouchers to reserve products from a quota. 
 This is useful if you need to ensure that a certain group of people gains access to your event, for example, guests invited to a concert by the performing artists. 
-Navigate to :navpath:Your Event → :fa3-tags: Vouchers:, click the :btn-icon:fa3-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
+Navigate to :navpath:Your event → :fa3-tags: Vouchers:, click the :btn-icon:fa3-plus: Create multiple new vouchers: button, and set the number of codes to generate one voucher per member of the group in question. 
 
 Optionally, you may choose a descriptive prefix such as "GUEST-LIST-". 
 

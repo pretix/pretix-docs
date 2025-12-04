@@ -102,5 +102,5 @@ pretix includes native functionality to provide a unified cookie consent managem
 You can enable this functionality at :navpath:Your organizer → :fa3-wrench: Settings → General → Privacy:.
 Custom plugins need to be integrated with this functionality as described in our [developer documentation](https://docs.pretix.eu/dev/development/api/cookieconsent.html).
 
-When using the widget, you can [pass cookie consent information](../../guides/widget.md#passing-user-data-to-the-widget) from your embedding website to the pretix shop to avoid repeated consent dialogs.
+When using the widget, you can [pass cookie consent information](../../guides/widget.md#using-your-websites-user-data-for-the-widget) from your embedding website to the pretix shop to avoid repeated consent dialogs.
 

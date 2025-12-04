@@ -14,7 +14,7 @@ Most of the methods described here are handled on the event level, so you have t
 This article assumes some general knowledge on how to create and edit products, so it makes sense to take a look at the guide on [products](index.md) first. 
 The implementation of [discount packages](discounts.md#discount-packages) requires some knowledge of check-in lists. 
 
-## How To 
+## How to 
 
 pretix allows you to create as many different products with different price levels as you need. 
 This approach is explained under the section [different price levels](discounts.md#different-price-levels). 
@@ -91,7 +91,7 @@ This quota can have an unlimited capacity.
 
 This configuration means that whenever one of the bundles is purchased, pretix creates eight individual tickets. 
 This results in the proper number being subtracted from the basic product quota and eight new entries for attendees on your check-in list. 
-If you need each individual attendee's personal data, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
+If you need each individual attendee's personal data, navigate to :navpath:Your event → :fa3-wrench: Settings → General:, open the :btn:Customer and attendee data: tab and edit the settings under "Attendee data (once per personalized ticket)". 
 
 ### Early bird tickets
 

@@ -181,7 +181,7 @@ Once you are happy with your settings, click the :btn:Save: button.
 ### Event-level configuration 
 
 This section explains how to set up SAML authentication on the event level. 
-In order to activate the plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
+In order to activate the plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and switch to the :btn:Integrations: tab. 
 Click the :btn:Enable: button next to the "Presale SAML Authentication" plugin. 
 
 The :btn-icon:fa3-key: SAML: button will now appear in the sidebar menu. 

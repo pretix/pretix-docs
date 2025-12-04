@@ -12,7 +12,7 @@ You need to have an active Stripe merchant account.
 A regular Stripe account is **not** enough for integration with pretix. 
 You can find [instructions on how to sign up for a Stripe merchant account](https://stripe.com/resources/more/how-to-get-a-merchant-account) on the Stripe website. 
 
-## How To
+## How to
 
 Setting up Stripe as a payment provider in pretix involves the following steps: 
 
@@ -28,7 +28,7 @@ This section guides you through those steps in detail.
 
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins:.
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:.
 Switch to the :btn:Payment providers: tab. 
 This page displays the Stripe plugin at the top. 
 It should be active by default. 
@@ -40,7 +40,7 @@ Verify that the plugin is active. .
 
 You can jump straight to the Stripe settings by clicking the :btn-icon:fa3-gear: Settings: drop-down menu and then :btn:Payment > Stripe:. 
 
-Alternatively, navigate to :navpath:Your Event → :fa3-wrench: Settings → Payment:. 
+Alternatively, navigate to :navpath:Your event → :fa3-wrench: Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for Stripe with a red ":fa3-remove: Disabled" tag. 
 

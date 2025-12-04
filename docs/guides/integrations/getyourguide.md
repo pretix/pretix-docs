@@ -48,12 +48,12 @@ In order to enable the GetYourGuide plugin for your event, navigate to :navpath:
 Seek out the plugin labeled "GetYourGuide" in the list and click the :btn:Enable: button next to it. 
 Now that you have enabled the GetYourGuide plugin, the pretix integration with GetYourGuide and all settings associated with it are available for your event. 
 
-In order to sell tickets for your event via the GetYourGuide sales channel, navigate to :navpath:Your Event → :fa3-wrench: Settings → General:. 
+In order to sell tickets for your event via the GetYourGuide sales channel, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
 Under "Sales channels", check the box next to "GetYourGuide" or the box next to "Sell on all sales channels". 
 
 ![General settings page for an event, displaying the setting 'Restrict to specific sales channels'. The box 'Sell on all sales channels' is checked. The options below include GetYourGuide.](../../assets/screens/getyourguide/event-settings-general.png)
 
-In order to set up your offer for the GetYourGuide website, navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
+In order to set up your offer for the GetYourGuide website, navigate to :navpath:Your event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Configuration: tab. 
 Supply the required information and select the "Event time mode" as well as the "Booking mode". 
 
 ![Page titled 'GetYourGuide', on the 'Configuration' tab. Fields labeled 'event name', 'Event description', 'Country' and 'City' are filled out. Under 'Event time mode', the option 'Time point' is active. Under 'Booking mode', the option 'Individual tickets' is active.](../../assets/screens/getyourguide/getyourguide-configuration.png)
@@ -67,7 +67,7 @@ Repeat these steps for every additional event for which you want to sell product
 ### Setting up products for GetYourGuide 
 
 Configure at least one product to be sold via GetYourGuide. 
-In order to do so, navigate to :navpath:Your Event → :fa3-ticket: Products: and create or edit a product. 
+In order to do so, navigate to :navpath:Your event → :fa3-ticket: Products: and create or edit a product. 
 Switch to the :btn:Availability: tab and under "Sales channels", check the box next to "GetYourGuide" or the box next to "Sell on all sales channels". 
 
 ![Page titled 'Modify product: Standard ticket', on the 'GetYourGuide' tab, displaying options for 'Ticket Category', 'Minimal group size', 'Maximal group size', 'Minimum participant age', and 'Maximum participant age'](../../assets/screens/getyourguide/getyourguide-configuration.png)
@@ -100,12 +100,12 @@ The GetYourGuide backend refers to your pretix event as a "product".
 Open the GetYourGuide [Supplier Portal](https://suppliers.getyourguide.com/) and connect it with your pretix shop. 
 In order to do so, follow the instructions for [Connecting a new product to your Reservation System](https://supply.getyourguide.support/hc/en-us/articles/18008029689373-Connecting-a-new-product-to-your-Reservation-system) in the GetYourGuide Supply Partner Help Center.
 Select "pretix.eu" as your "reservation system". 
-You can find the required "product ID" by navigating to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and opening the :btn:Configuration: tab. 
+You can find the required "product ID" by navigating to :navpath:Your event → :fa3-wrench: Settings → GetYourGuide: and opening the :btn:Configuration: tab. 
 It is displayed in the infobox at the bottom of the page as soon as you have entered and saved all mandatory information. 
 
 ![Page titled 'GetYourGuide', on the 'Analyzer' tab, listing the fulfilled prerequisites 'Shop is not in testmode', 'Shop is live', and 'Shop is available on GetYourGuide Sales Channel'. The page also lists configured products and an Outlook.](../../assets/screens/getyourguide/analyzer.png)
 
-Navigate to :navpath:Your Event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
+Navigate to :navpath:Your event → :fa3-wrench: Settings → GetYourGuide: and open the :btn:Analyzer: tab. 
 This page tells you whether your shop and the products in the shop are set up properly for the integration with GetYourGuide. 
 If you have a working setup, then you will only see green :fa3-check-circle: and no red :fa3-times-circle: on this page. 
 
