@@ -12,7 +12,7 @@ See the tutorial's section on [account activation](../tutorial/organizer-account
 
 ## How to 
 
-### General e-mail settings 
+### General email settings 
 
 By default, the general email settings are handled on the organizer level. 
 Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:. 
@@ -93,7 +93,7 @@ The available placeholders are listed underneath the fields for the email's subj
 | `{name_for_salutation}`            | preferred address, title and name                                                                                | Dr. John Doe |
 | `{name_given_name}`                | given name of recipient                                                                                          | John |
 | `{order_modification_deadline_date_and_time}` | time and date of the deadline for making modifications to the order                                   | June 4, 2027, 6:00 AM    
-| `{orders}`                         | list of orders including links to their status pages, specific to the “resend link (requested by user)” e-mail   |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
+| `{orders}`                         | list of orders including links to their status pages, specific to the “resend link (requested by user)” email   |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
 | `{organizer}`                      | name of the organizer                                                                                            | Tutorial Ltd. | 
 | `{payment_info}`                   | information about the payment method (e.g. banking details)                                                      | The amount has been charged to your card. |
 | `{product}`                        | the product that has become available on the waiting list                                                        | Discount ticket |
