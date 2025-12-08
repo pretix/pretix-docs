@@ -12,25 +12,45 @@ Many aspects of seating are handled on the event level, so you need to create an
 
 ## How to
 
+The central component of any seating plan is the JSON file defining the layout. 
+These JSON files can be created or edited with our [seating plan editor](https://seats.pretix.eu/). 
+Anyone can use this editor. 
+You do not need to be logged in to a pretix account in order to use it. 
+
+Once you have created a layout, you create a corresponding entry in your organizer account, give it a name, and save it. 
+This allows you to use the seating plan for any event connected to the organizer account. 
+
  - Enabling the plugin 
- - Creating a seating plan 
+ - Using the seating plan editor to create a JSON file for the layout
+ - Saving the seating plan in your 
  - Creating products for seating
 
 ### Enabling the plugin
 
-In order to enable the "Seating" plugin for your event, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
+In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
 The Seating plugin is included as a "Top recommendation" at the top of the page. 
 Click the :btn:Enable: button next to it. 
-Now that you have enabled the seating plugin, all settings associated with seating are available for your event. 
+Check the events for which you want to use seating plans in the list labeled "Events with active plugin". 
+Now that you have enabled the seating plugin, all settings associated with seating are available for your organizer. 
+
+### Creating a new layout 
+
+In order to create a new layout, open the editor at https://seats.pretix.eu/. 
+
+Alternatively, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
+On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
+This also takes you to https://seats.pretix.eu/. 
 
 ### Creating a seating plan
 
 Seating plans are handled on the organizer level. 
-This allows you to create a seating plan and use it for multiple events hosted by the same organizer. 
+This allows you to use seating plans for multiple events hosted by the same organizer. 
 
 In order to create a new seating plan, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
+
 On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
 This takes you to the seating plan editor at https://seats.pretix.eu/. 
+
 
 ## Troubleshooting 
 
