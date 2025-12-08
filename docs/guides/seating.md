@@ -8,11 +8,29 @@ This article tells you how to do that.
 
 ## Prerequisites
 
-What conditions have to be met for this information to be applicable? Which settings have to be adjusted, which plugins have to be activated, which previous knowledge is assumed by the article? 
+Many aspects of seating are handled on the event level, so you need to create an event first. 
 
 ## How to
 
-What does the feature do? How do you use it? How do you apply it to your individual use case? This is the main body of the article. 
+ - Enabling the plugin 
+ - Creating a seating plan 
+ - Creating products for seating
+
+### Enabling the plugin
+
+In order to enable the "Seating" plugin for your event, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
+The Seating plugin is included as a "Top recommendation" at the top of the page. 
+Click the :btn:Enable: button next to it. 
+Now that you have enabled the seating plugin, all settings associated with seating are available for your event. 
+
+### Creating a seating plan
+
+Seating plans are handled on the organizer level. 
+This allows you to create a seating plan and use it for multiple events hosted by the same organizer. 
+
+In order to create a new seating plan, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
+On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
+This takes you to the seating plan editor at https://seats.pretix.eu/. 
 
 ## Troubleshooting 
 
