@@ -283,3 +283,8 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
     border-color: #000;
     background: #ccc;
 }
+
+/* Images */ 
+.glightbox img {
+  box-shadow: var(--md-shadow-z2);
+}
