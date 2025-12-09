@@ -13,7 +13,7 @@ Many aspects of seating are handled on the event level, so you need to create an
 ## How to
 
 The central component of any seating plan is the JSON file defining the layout. 
-These JSON files can be created or edited with our [seating plan editor](https://seats.pretix.eu/). 
+These JSON files can be created and edited with our [seating plan editor](https://seats.pretix.eu/). 
 Anyone can use this editor. 
 You do not need to be logged in to a pretix account in order to use it. 
 
@@ -22,7 +22,7 @@ This allows you to use the seating plan for any event connected to the organizer
 
  - Enabling the plugin 
  - Using the seating plan editor to create a JSON file for the layout
- - Saving the seating plan in your 
+ - Saving the seating plan in your organizer account 
  - Creating products for seating
 
 ### Enabling the plugin
@@ -41,6 +41,16 @@ Alternatively, navigate to :navpath:Your organizer → :i-seat: Seating plans: a
 On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
 This also takes you to https://seats.pretix.eu/. 
 
+If you have an image file depicting a plan of your venue, that image can be helpful for creating the layout. 
+If you want to do so, set the "Width" and "Height" to the resolution of the image. 
+Then, click the :btn:UPLOAD IMAGE: button and select the file. 
+
+The editor will validate your layout. 
+It will warn you if there are duplicate seat numbers or row numbers. 
+
+In order to save the layout, click the :btn-icon:fa3-save:: button in the top left. 
+This opens a dialog allowing you to save the resulting JSON file on your computer. 
+
 ### Creating a seating plan
 
 Seating plans are handled on the organizer level. 
@@ -48,9 +58,12 @@ This allows you to use seating plans for multiple events hosted by the same orga
 
 In order to create a new seating plan, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
 
-On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
-This takes you to the seating plan editor at https://seats.pretix.eu/. 
+On the next page, click the :btn-icon:fa3-upload: Upload layout: button. 
+Select the JSON file you created and downloaded in the previous step. 
+This fills the "Layout" field with the contents of the file. 
 
+Enter a name for the seating plan in the "Name" field and click the :btn:Save: button. 
+You will land on a page titled "Seating plans", displaying a button for creating another new seating plan, and a list including the plan you just created. 
 
 ## Troubleshooting 
 
