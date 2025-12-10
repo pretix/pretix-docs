@@ -35,11 +35,11 @@ Now that you have enabled the seating plugin, all settings associated with seati
 
 ### Creating a new layout 
 
-In order to create a new layout, open the editor at https://seats.pretix.eu/. 
+In order to create a new layout, open the editor at [https://seats.pretix.eu/](https://seats.pretix.eu/). 
 
 Alternatively, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
 On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
-This also takes you to https://seats.pretix.eu/. 
+This also takes you to [https://seats.pretix.eu/](https://seats.pretix.eu/). 
 
 If you have an image file depicting a plan of your venue, that image can be helpful for creating the layout. 
 If you want to do so, set the "Width" and "Height" to the resolution of the image. 
@@ -50,7 +50,7 @@ Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-ico
 
 In order to move the view around, hold the Ctrl key, click the layout, and move your mouse. 
 
-In order to edit an element, click "Select rows or shapes" in the top bar. 
+In order to edit an existing element, click "Select rows or shapes" in the top bar. 
 If you want to select individual seats, click "Select seats" instead. 
 Click the element. 
 If you want to select multiple elements, hold the Shift key while clicking them. 
