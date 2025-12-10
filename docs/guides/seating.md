@@ -45,8 +45,28 @@ If you have an image file depicting a plan of your venue, that image can be help
 If you want to do so, set the "Width" and "Height" to the resolution of the image. 
 Then, click the :btn:UPLOAD IMAGE: button and select the file. 
 
+In order to zoom in and out of the layout, hold the Ctrl key and move your mouse wheel. 
+Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-icon:fa3-search-plus:: in the top bar. 
+
+In order to move the view around, hold the Ctrl key, click the layout, and move your mouse. 
+
+In order to edit an element, click "Select rows or shapes" in the top bar. 
+If you want to select individual seats, click "Select seats" instead. 
+Click the element. 
+If you want to select multiple elements, hold the Shift key while clicking them. 
+Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
+
+In order to move selected elements, drag and drop them with the mouse or use the arrow keys. 
+Use the Shift key for bigger movements and the Alt key for smaller movements. 
+If you want to align elements to the grid, hold the Ctrl key while moving them. 
+
 The editor will validate your layout. 
 It will warn you if there are duplicate seat numbers or row numbers. 
+
+Copying rows may create duplicate seat numbers. 
+Change the row number of the row you copied. 
+Then, activate the "Reversed" toggle and deactivate it again. 
+This refreshes seat numbers so that there will be no more duplicates in that row. 
 
 In order to save the layout, click the :btn-icon:fa3-save:: button in the top left. 
 This opens a dialog allowing you to save the resulting JSON file on your computer. 
