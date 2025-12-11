@@ -1,6 +1,6 @@
 # Two-factor authentication 
 
-Two-factor authentication (2FA) is using two factors to authenticate your identity. 
+The term "Two-factor authentication" or "2FA" refers to using two factors to authenticate your identity. 
 This provides more security than authenticating with a single factor such as a password. 
 pretix supports (2FA) for your user account. 
 
@@ -21,6 +21,7 @@ Take a look at the "Two-factor authentication" setting.
 If 2FA is disabled, then there is a gray "Disabled" tag next to it. 
 In order to enable 2FA, click :btn:Enable:. 
 
+On the next page, click the :btn-icon:fa3-plus: Add a new device:. 
 
 
 ## Troubleshooting 
