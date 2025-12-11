@@ -15,7 +15,7 @@ Custom domains are set up on the organizer level.
 You need access to an organizer account if you want to enable customer accounts. 
 You also need access to each event shop for which you want to use the custom domain. 
 
-## How To 
+## How to 
 
 The setup of custom domains depends on whether you are using pretix Hosted and your shops are hosted at pretix.eu; or you have installed pretix on your own server (pretix Enterprise or pretix Community). 
 Please refer to the subsection appropriate to your use case below. 
@@ -76,7 +76,7 @@ Instead, users will be redirected to the organizer main domain listing all event
 
 If you have set up a domain in "Alternative domain" mode (pretix Hosted) or in "Alternative organizer domain for a set of events" mode (pretix Enterprise and pretix Community), you will have to then move those events to the alternative domain. 
 
-In order to do so, navigate to :navpath:Your event: → :fa3-wrench: Settings → General:. 
+In order to do so, navigate to :navpath:Your event → :fa3-wrench: Settings → General:. 
 On the :btn:Basics: tab, click the "Domain" drop-down menu. 
 The default setting is "Same as organizer account". 
 Select your alternative domain from the list and click the :btn:Save: button. 

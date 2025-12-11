@@ -13,7 +13,7 @@ Setting up payment providers is handled on the event level, so you need to creat
 Make sure you have an active Mollie account. 
 You can find [instructions on how to sign up for a Mollie account](https://docs.mollie.com/docs/create-an-account) on the Mollie website. 
 
-## How To 
+## How to 
 
 Setting up Mollie as a payment provider in pretix involves the following steps: 
 
@@ -29,7 +29,7 @@ This section will guide you through those steps in detail.
 
 ![Plugins settings page. The "Payment providers" tab is open, displaying the plugins for bank transfer, Mollie, PayPal, and Stripe, all of which are active.](../../assets/screens/payment-providers/plugins-top.png "Available plugins")
 
-Navigate to :navpath:Your Event → Settings → Plugins:.
+Navigate to :navpath:Your event → Settings → Plugins:.
 Switch to the :btn:Payment providers: tab. 
 This page displays the Mollie plugin at the top.
 If it is active, it will have a green ":fa3-check: Active" tag, a white "Disable" button, and two drop-down menus. 
@@ -40,7 +40,7 @@ Verify that the plugin is active.
 
 You can jump straight to the Mollie settings by clicking the :btn-icon:fa3-gear: Settings 🞃: drop-down menu and then :btn:Payment > Mollie:. 
 
-Alternatively, navigate to :navpath:Your Event → Settings → Payment:. 
+Alternatively, navigate to :navpath:Your event → Settings → Payment:. 
 The :btn:Payment providers: tab on this page displays the list of active payment providers. 
 The list should now include an entry for Mollie with a red ":fa3-times: Disabled" tag. 
 The plugin is enabled, but Mollie has not been set up and enabled as a payment provider for the event yet. 

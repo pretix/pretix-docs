@@ -22,7 +22,7 @@ If you want to learn how to activate payment providers for your events, refer to
 
 Plugins are handled on the event level, so you have to create an event first. 
 
-## How To
+## How to
 
 In order to enable or disable plugins, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 This lands you on the :btn:Features: tab which lists plugins for optional features. 
@@ -48,13 +48,13 @@ The drop-down menu displays links to the settings pages for the plugin.
 ### Controlling plugins
 
 Some enabled plugins will add a corresponding entry to the sidebar menu which allow you to control their functionality. 
-For instance, the "Statistics" plugin will gather statistics on orders placed on your shop and display them in the pretix backend. 
-The "Bank transfer" plugin will require handling of bank data imports and refunds. 
-In order to control such plugin functions, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
+For instance, the "Statistics" feature will gather statistics on orders placed on your shop and display them in the pretix backend. 
+The "Bank transfer" payment provider will require handling of bank data imports and refunds. 
+In order to control such functions associated with a plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins:. 
 Search the plugin and click the :btn-icon:fa3-compass: Go to: drop-down menu next to it. 
 The drop-down menu displays links to pages that are relevant for the plugin. 
 
-## Further Information
+## Further information
 
 For more information on plugins for handling [payments](payment/index.md), refer to the following articles: 
 

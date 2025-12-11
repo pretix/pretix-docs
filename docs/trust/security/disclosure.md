@@ -68,4 +68,4 @@ If you follow the rules below, we will not be threatening you with legal action.
 * **Do not** modify or delete any data not owned by you.
 * **Do not** impact the availability of any of our internal or external services (e.g. through DDoS or similar attacks).
 * **Do not** implement backdoors or use similar methods to obtain persistent access.
-* **Do not** send phishing e-mails or use any other social engineering techniques. 
+* **Do not** send phishing emails or use any other social engineering techniques. 

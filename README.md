@@ -27,7 +27,7 @@ so view those pages for in-depth details. A number of plugins are installed that
 - ``:btn:Click me:`` Typographically indicate a clickable UI element
 - ``:btn-icon:fa3-eye:Click me:`` Typographically indicate a clickable UI element with an icon and text
 - ``:btn-icon:fa3-eye::`` Typographically indicate a clickable UI element with only an icon
-- ``:navpath:A:B:C:D:`` Typographically indicate a navigation path where the first element starts on a dynamic spot like "Your Event"
+- ``:navpath:A:B:C:D:`` Typographically indicate a navigation path where the first element starts on a dynamic spot like "Your event"
 - ``:rootnavpath:A:B:C:D`` Typographically indicate a navigation path where the first element is the pretix logo that refers to the backend start page
 - ``<!-- md:community -->`` Feature only on pretix Community
 - ``<!-- md:hosted -->`` Feature only on pretix Hosted

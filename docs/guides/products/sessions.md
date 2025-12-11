@@ -9,7 +9,7 @@ This article will guide you through both methods.
 
 If you have deviating prices for some of the sessions, or each session can only be attended by a limited number of people, you should use [add-on products](sessions.md#option-a-add-on-products-with-fixed-time-slots). 
 
-If you have deviating prices and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints plugin](sessions.md#option-b-add-on-products-with-variable-time-slots). 
+If you have deviating prices and you also have sessions with varying start and end times that cannot be neatly organized into time slots because of overlap, you should use the [agenda constraints feature](sessions.md#option-b-add-on-products-with-variable-time-slots). 
 
 If you are not planning sessions that all take place within the scope of one big main event, but a series of events that can be attended individually, refer to our article on [event series](../event-series.md) instead. 
 
@@ -61,8 +61,8 @@ It also allows you to track planned attendance numbers through the quotas for ea
     If you are interested in using it with pretix Enterprise, please contact sales@pretix.eu.
     You cannot use the agenda constraints plugin on pretix Community. 
 
-If the sessions at your event have overlapping start and end times and cannot be neatly organized into time slots, you can solve this issue with the "Agenda constraints" plugin. 
-One example for a schedule which would necessitate the use of the agenda constraints plugin is the following: 
+If the sessions at your event have overlapping start and end times and cannot be neatly organized into time slots, you can solve this issue with the "Agenda constraints" feature. 
+One example for a schedule which would necessitate the use of the agenda constraints feature is the following: 
 
 | Time        | Room A                   | Room B                   |
 |-------------|--------------------------|--------------------------|
@@ -74,9 +74,9 @@ One example for a schedule which would necessitate the use of the agenda constra
 In this example, Workshops 1 and 2 are twice as long as the talks. 
 Thus, it makes no sense to implement this schedule with add-on products as described under [option A](sessions.md#option-a-add-on-products-with-fixed-time-slots). 
 This would either result in customers having to book each half of the workshops individually, or in allowing them to book combinations of overlapping sessions which they cannot attend. 
-You can handle more complicated schedules like this one with the agenda constraints plugin. 
+You can handle more complicated schedules like this one with the agenda constraints feature. 
 
-In order to activate that plugin, navigate to :navpath:Your Event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
+In order to activate the corresponding plugin, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
 Search for the "Agenda constraints" plugin in the list and click the :btn:Enable: button next to it. 
 
 !["Edit product" page, on the "Additional settings" tab. Options for "Start date" and "End date" are displayed, and a date and time has been entered for each.](../../assets/screens/products/agenda-constraints.png "Agenda constraints on product")
@@ -87,7 +87,7 @@ Use the fields "Start date" and "End date" to define the span of time in which t
 Create a quota for each of the session add-on products, with the total capacity of the quota reflecting the maximum number of attendees for each session. 
 
 !!! Note 
-    The "Agenda constraints" plugin only checks for scheduling conflicts between products of the same category. 
+    The "Agenda constraints" feature only checks for scheduling conflicts between products of the same category. 
     Put all products for sessions that may overlap with each other in the same category. 
 
 Edit the basic admission tickets for your event and open the :btn:Add-ons: tab. 

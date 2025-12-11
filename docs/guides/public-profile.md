@@ -15,13 +15,13 @@ If you want to use a header image on your public profile, please prepare a .png 
 
 We recommend that you make a final choice as to which languages the public profile will be made available in. Go to the :btn:Localization: tab and choose your languages from the list before adding text or links on the :btn:Organizer page: tab. 
 
-## How To
+## How to
 
 This section tells you how to define the contents of your public profile via the "organizer page" tab, and how to customize your color and font preferences via the "shop design" tab. It does not matter which tab you visit first. 
 
 ### Organizer page
 
-Browse to :btn:Organizers:, then open :navpath:Your Organizer → Settings: and click on the :btn:Organizer page: tab. This page lets you define the contents of your public profile. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top. 
+Browse to :btn:Organizers:, then open :navpath:Your organizer → Settings: and click on the :btn:Organizer page: tab. This page lets you define the contents of your public profile. The organizer page is the public profile of your organizer. You can take a look at it by clicking the :btn-icon:fontawesome-regular-eye:Public profile: button in the bar at the top. 
 
 ![Organizer settings page, on the organizer page tab, showing the following options: Header image, Use header image in its full size, Use header image also for events without an individually uploaded logo, Homepage text (in multiple languages). The "Public profile" button in the top bar is highlighted.](../assets/screens/organizer/organizer-page-public-profile.png) 
 
@@ -35,7 +35,7 @@ You can choose the "Default overview style" for events on your public profile fr
 
 ### Shop design
 
-Browse to :btn:Organizers:, then :navpath:Your Organizer → Settings: and click on the :btn:Shop design: tab. All the settings on this page are purely optional as the default design is already perfectly serviceable and in line with the overall design of the pretix website. However, this page offers you the possibility to bring your pretix-powered online shop more in line with your own website's design. 
+Browse to :btn:Organizers:, then :navpath:Your organizer → Settings: and click on the :btn:Shop design: tab. All the settings on this page are purely optional as the default design is already perfectly serviceable and in line with the overall design of the pretix website. However, this page offers you the possibility to bring your pretix-powered online shop more in line with your own website's design. 
 
 You can freely choose four different colors for your shop design. The notification underneath the input field display one of three possible messages, depending on the contrast of the color you choose compared to the white page background: 
 
