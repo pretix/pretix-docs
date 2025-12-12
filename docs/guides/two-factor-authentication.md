@@ -27,15 +27,24 @@ In order to enable 2FA, click :btn:Enable:.
 !["Page titled 'Two-factor authentication', displaying the 'Two factor status' as 'currently' disabled, a button for adding a new registered device, and emergency tokens."](../assets/screens/account/two-factor-authentication.png "Two-factor authentication")
 
 On the next page, click the :btn-icon:fa3-plus: Add a new device:. 
-Enter a name and choose the "Device type". 
-Then, click :btn:Continue:. 
+Enter a name. 
+The next steps are different depending on whether you want to use [a TOTP app](#using-a-totp-app) or a [hardware token](#using-a-hardware-token). 
+
+!!! Note 
+    In order to maximize security, only add a single device for 2FA. 
+    **Do not** add both a TOTP app and a hardware token. 
+    **Do not** add multiple TOTP apps 
+    **Do not** add multiple hardware tokens. 
+    Every additional method for logging in to your account offers potential attackers an additional point of entry. 
 
 ### Using a TOTP app 
 
+Under "Device type", select `Smartphone with the Authenticator application`. 
+Then, click :btn:Continue:. 
 Open your TOTP app. 
-Create a new entry for your pretix account. 
+Create a new entry for the TOTP secret. 
 Scan the QR code being displayed in the pretix backend. 
-Alternatively, click :btn:Can't scan the barcode?: and enter the code displayed in step 3. 
+Alternatively, click :btn:Can't scan the barcode?: and enter the code displayed under `3.`. 
 
 !!! Note 
     **Do not** store your password and your TOTP secret in the same password manager. 
@@ -48,7 +57,7 @@ It should now display a six-digit code that changes every 30 seconds.
 Enter this code in the pretix backend in the field labeled "Enter the displayed code here". 
 Click :btn:Continue:. 
 
-This takes you to the page titled "Two-factor authentication". 
+This takes you back to the page titled "Two-factor authentication". 
 The page will now state that 2FA is enabled and under "Registered devices", it will list the device running the TOTP app. 
 
 From now on, you will need both your password and the TOTP from your app to log in to your pretix user account. 
@@ -56,10 +65,13 @@ From now on, you will need both your password and the TOTP from your app to log 
 ### Using a hardware token 
 
 Connect the hardware token to your computer. 
-Activate the token. 
+Under "Device type", select `WebAuthn-compatible hardware token (e.g. Yubikey)`. 
+Then, click :btn:Continue:. 
+A new page will open and your browser will prompt you to activate your hardware token. 
+Activate it. 
 For instance, if you are using a Yubikey, touch the blinking capacitive button. 
 
-This takes you to the page titled "Two-factor authentication". 
+This takes you back to the page titled "Two-factor authentication". 
 The page will now state that 2FA is enabled and under "Registered devices", it will list the hardware token. 
 
 From now on, you will need both your password and the hardware token to log in to your pretix user account. 
