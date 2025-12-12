@@ -27,6 +27,11 @@ In order to enable 2FA, click :btn:Enable:.
 !["Page titled 'Two-factor authentication', displaying the 'Two factor status' as 'currently' disabled, a button for adding a new registered device, and emergency tokens."](../assets/screens/account/two-factor-authentication.png "Two-factor authentication")
 
 On the next page, click the :btn-icon:fa3-plus: Add a new device:. 
+Enter a name and choose the "Device type". 
+Then, click :btn:Continue:. 
+
+### Using a smartphone with an authenticator application 
+
 
 
 ## Troubleshooting 
