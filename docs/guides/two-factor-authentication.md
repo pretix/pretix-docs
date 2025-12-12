@@ -17,9 +17,14 @@ Depending on the authentication method you intend to use, you need to have eithe
 Log in to your pretix user account. 
 Click the :btn-icon:fa3-user: [Your name]: button in the top right corner. 
 This takes you to your user account settings. 
+
+!["Page titled 'Account settings', displaying settings for 'Full name', 'Language', 'Default timezone', 'Notifications', 'Email', 'Password', 'Two-factor authentication', 'Authorized applications', and 'Account history'."](../assets/screens/account/account-settings.png "Account settings")
+
 Take a look at the "Two-factor authentication" setting. 
 If 2FA is disabled, then there is a gray "Disabled" tag next to it. 
 In order to enable 2FA, click :btn:Enable:. 
+
+!["Page titled 'Two-factor authentication', displaying the 'Two factor status' as 'currently' disabled, a button for adding a new registered device, and emergency tokens."](../assets/screens/account/two-factor-authentication.png "Two-factor authentication")
 
 On the next page, click the :btn-icon:fa3-plus: Add a new device:. 
 
