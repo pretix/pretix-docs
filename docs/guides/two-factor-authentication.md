@@ -33,7 +33,7 @@ The next steps are different depending on whether you want to use [a TOTP app](#
 !!! Note 
     In order to maximize security, only add a single device for 2FA. 
     **Do not** add both a TOTP app and a hardware token. 
-    **Do not** add multiple TOTP apps 
+    **Do not** add multiple TOTP apps. 
     **Do not** add multiple hardware tokens. 
     Every additional method for logging in to your account offers potential attackers an additional point of entry. 
 
