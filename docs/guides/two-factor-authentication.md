@@ -31,20 +31,22 @@ Enter a name.
 The next steps are different depending on whether you want to use [a TOTP app](#using-a-totp-app) or a [hardware token](#using-a-hardware-token). 
 
 !!! Note 
+    Once you have set up 2FA, losing access to the device for 2FA means also losing access to your pretix user account. 
+    In order to prevent such a situation, you can add multiple devices.
+    However, every additional method for logging in to your account offers potential attackers an additional point of entry. 
     In order to maximize security, only add a single device for 2FA. 
-    **Do not** add both a TOTP app and a hardware token. 
-    **Do not** add multiple TOTP apps. 
-    **Do not** add multiple hardware tokens. 
-    Every additional method for logging in to your account offers potential attackers an additional point of entry. 
 
 ### Using a TOTP app 
 
 Under "Device type", select `Smartphone with the Authenticator application`. 
 Then, click :btn:Continue:. 
+
+!["Page titled 'Add a two-factor authentication device', instructing you to download an authenticator app, scan a QR code, alternatively enter a code in the app, and then enter the code from the app in the pretix backend."](../assets/screens/account/add-device.png "Add a two-factor authentication device—App")
+
 Open your TOTP app. 
 Create a new entry for the TOTP secret. 
 Scan the QR code being displayed in the pretix backend. 
-Alternatively, click :btn:Can't scan the barcode?: and enter the code displayed under `3.`. 
+Alternatively, click :btn:Can't scan the barcode?: and enter the code displayed under `3`. 
 
 !!! Note 
     **Do not** store your password and your TOTP secret in the same password manager. 
@@ -67,6 +69,9 @@ From now on, you will need both your password and the TOTP from your app to log 
 Connect the hardware token to your computer. 
 Under "Device type", select `WebAuthn-compatible hardware token (e.g. Yubikey)`. 
 Then, click :btn:Continue:. 
+
+!["Page titled 'Add a two-factor authentication device', instructing you to connect a WebAuthn device."](../assets/screens/account/add-device-webauthn.png "Add a two-factor authentication device—Hardware")
+
 A new page will open and your browser will prompt you to activate your hardware token. 
 Activate it. 
 For instance, if you are using a Yubikey, touch the blinking capacitive button. 
@@ -76,17 +81,6 @@ The page will now state that 2FA is enabled and under "Registered devices", it w
 
 From now on, you will need both your password and the hardware token to log in to your pretix user account. 
 
-## Troubleshooting 
-
-What are common problems that could be encountered here? 
-How do you solve them? 
-
-## Further information
-
-What other media do we have on the subject? 
-Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? 
-Link it here and explain what it does. 
-
 ## See also 
 
-Link to other relevant guides, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. 
+If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#two-factor-authentication-2fa). 
