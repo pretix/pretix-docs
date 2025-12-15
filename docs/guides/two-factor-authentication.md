@@ -24,6 +24,14 @@ This takes you to your user account settings.
 
 !["Page titled 'Account settings', displaying settings for 'Full name', 'Language', 'Default timezone', 'Notifications', 'Email', 'Password', 'Two-factor authentication', 'Authorized applications', and 'Account history'."](../assets/screens/account/account-settings.png "Account settings")
 
+Before you set up 2FA, you should store your **emergency tokens** outside of pretix. 
+You can use these codes in place of your 2FA device in case you lose access to it. 
+Copy the codes and print them or write them down on paper. 
+Store that paper in a safe place such as a locked drawer. 
+
+Alternatively, you can store the emergency tokens digitally in an encrypted file or in a password manager. 
+**Do not** store them in the same password manager or database that also contains your account password. 
+
 Take a look at the "Two-factor authentication" setting. 
 If 2FA is disabled, then there is a gray "Disabled" tag next to it. 
 In order to enable 2FA, click the :btn:Enable: button. 
@@ -40,6 +48,12 @@ The next steps are different depending on whether you want to use [a TOTP app](#
 
     However, every additional method for logging in to your account offers potential attackers an additional point of entry. 
     In order to maximize security, only add a single device for 2FA. 
+
+A hardware token is typically smaller than a phone and only used for authentication purposes, so it can potentially be easier to lose. 
+A hardware token costs money. 
+You must remove your hardware token from the computer and keep it on your person whenever your computer is not locked in your personal office or in your home. 
+
+If you use separate applications for password storage and TOTP generation, then the TOTP method offers good security. 
 
 ### Using a TOTP app 
 
