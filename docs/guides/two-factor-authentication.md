@@ -9,6 +9,21 @@ The second factor can be a WebAuthn-compatible hardware token or an authenticato
 
 This article explains the advantages of 2FA and how to set it up for your pretix user account. 
 
+## Background information 
+
+Depending on your usage of pretix and permission settings, your user account can grant access to a lot of sensitive information. 
+This sensitive information can include, for example, company secrets, payment history, and your customer's contact data. 
+
+A strong password offers a good baseline level of security. 
+But potential malicious actors can breach passwords through malware, social engineering, and other methods. 
+
+A second factor for authentication makes such an attack significantly more difficult. 
+An attacker would have to gain access to both your 2FA device and your account credentials. 
+Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
+
+We recommend setting up 2FA for all user account at your organization. 
+Once you have done so, a malicious attack is almost impossible to succeed. 
+
 ## Prerequisites
 
 Depending on the authentication method you intend to use, you need to have: 
