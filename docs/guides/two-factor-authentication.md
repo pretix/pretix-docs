@@ -32,6 +32,10 @@ Store that paper in a safe place such as a locked drawer.
 Alternatively, you can store the emergency tokens digitally in an encrypted file or in a password manager. 
 **Do not** store them in the same password manager or database that also contains your account password. 
 
+!!! Note 
+    Ensure that you have stored your emergency tokens outside of pretix and that you know where to find them. 
+    You need these tokens in case you lose access to your 2FA device. 
+
 Take a look at the "Two-factor authentication" setting. 
 If 2FA is disabled, then there is a gray "Disabled" tag next to it. 
 In order to enable 2FA, click the :btn:Enable: button. 
@@ -101,6 +105,38 @@ This takes you back to the page titled "Two-factor authentication".
 The page will now state that 2FA is enabled and under "Registered devices", it will list the hardware token. 
 
 From now on, you will need both your password and the hardware token to log in to your pretix user account. 
+
+## Troubleshooting 
+
+### You have lost access to your 2FA device
+
+If you have lost access to your 2FA device because it is broken, stolen, or lost, then you should take the following steps: 
+
+ - use one of your emergency tokens to log in 
+ - remove the 2FA device from your user account 
+ - acquire a replacement for the lost 2FA device 
+ - add that device to your account 
+
+In order to do so, open the [login page](https://pretix.eu/control/login). 
+Enter your email address and password. 
+When the page prompts you to touch your hardware key or enter the TOTP, enter one of the emergency tokens instead. 
+Then, click the :btn:Continue: button. 
+
+You can only use each emergency token once. 
+Delete it from the list or cross it out after you have used it. 
+
+Click the :btn-icon:fa3-user: [Your name]: button in the top right corner. 
+This takes you to your user account settings. 
+Click :btn:Change two-factor settings:. 
+Seek out the lost device in the list and click the :btn:Remove: button next to it. 
+If this is the only connected 2FA device, then this action will disable 2FA for your account. 
+
+Acquire a replacement for the lost 2FA device. 
+Add that device to your account as described under [How to](#how-to). 
+
+### You have lost access to your 2FA device and to the emergency tokens 
+
+If you have lost access to your 2FA device and to the emergency tokens, you should contact our support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750). 
 
 ## See also 
 
