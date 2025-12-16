@@ -22,7 +22,8 @@ An attacker would have to gain access to both your 2FA device and your account c
 Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
 
 We recommend setting up 2FA for all user account at your organization. 
-Once you have done so, a malicious attack is almost impossible to succeed. 
+If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 
+Once everyone on your team has done so, a malicious attack is almost impossible to succeed. 
 
 ## Prerequisites
 
@@ -68,11 +69,20 @@ The next steps are different depending on whether you want to use [a TOTP app](#
     However, every additional method for logging in to your account offers potential attackers an additional point of entry. 
     In order to maximize security, only add a single device for 2FA. 
 
-A hardware token is typically smaller than a phone and only used for authentication purposes, so it can potentially be easier to lose. 
-A hardware token costs money. 
-You must remove your hardware token from the computer and keep it on your person whenever your computer is not locked in your personal office or in your home. 
+The advantage of a TOTP app is that you probably already have a device on hand which you can use for TOTP. 
+This can be your work phone, your personal phone, another mobile device, or a separate computer. 
+If this is the case, then you can use the device you already have on hand for 2FA. 
 
 If you use separate applications for password storage and TOTP generation, then the TOTP method offers good security. 
+However, like all software run on a device connected to the internet, a TOTP app is vulnerable to malware. 
+
+A hardware token is that it is much cheaper to acquire than a smartphone. 
+If you need to buy a new device for 2FA, then this can be an advantage. 
+Even a set of two or three hardware tokens for redundancy is still cheaper. 
+
+Hardware tokens are less susceptible to software attacks. 
+You must remove your hardware token from the computer and keep it on your person whenever your computer is not locked in your personal office or in your home. 
+A hardware token is typically smaller than a phone and only used for authentication purposes, so it can potentially be easier to lose. 
 
 ### Using a TOTP app 
 
@@ -155,4 +165,4 @@ If you have lost access to your 2FA device and to the emergency tokens, you shou
 
 ## See also 
 
-If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#two-factor-authentication-2fa). 
+If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 

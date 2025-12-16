@@ -78,7 +78,7 @@ You will now have access to the organizer account and associated events as speci
 If you have been invited to a team and you already have a personal pretix account, you can log in to pretix. 
 You will now have access to the organizer account and associated events as specified by the person who invited you. 
 
-### Two-factor authentication (2FA) 
+### Requiring two-factor authentication (2FA) 
 
 You can require all members of a team to use two-factor authentication (2FA). 
 In order to do so, create or edit the team. 
