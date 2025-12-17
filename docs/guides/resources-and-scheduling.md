@@ -156,6 +156,8 @@ Once you are happy with your choices, click :btn:Save and continue with more set
 Under "Properties", assign properties to the resource. 
 For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`. 
 
+#### Setting availability for a resource
+
 Under "Availability timetable", define when the resource is available. 
 Click the :btn-icon:fa3-plus: Add rule: button. 
 
@@ -180,12 +182,23 @@ Click the :btn:Save: button.
 The calendar view under "Resulting availability" will now display the available times for this resource. 
 Once you are happy with your configuration of the resource, click the :btn:Save: button. 
 
+#### Deleting and reactivating resources
+
 If you want to delete a resource, navigate to the submenu for the corresponding resource type. 
 Click the :btn-icon:fa3-trash:: button next to the resource you want to delete. 
 Alternatively, click the name of the resource and then click the :btn-icon:fa3-trash:: button in the top right corner. 
-
 Both buttons take you to a page asking you to confirm the deletion. 
-pretix will deactivate the resource, but keep records of its past usages. 
+
+If you never scheduled the resource for any events, then pretix will delete the resource completely. 
+If you did schedule the resource for events, then pretix will keep a record of that resource. 
+You can view that record by navigating to the submenu for the corresponding resource type. 
+Under "Resource status", select `Deleted resources` or `All resources` and click the :btn-icon:fa3-filter: Filter: button. 
+The page displays deleted resources with their names crossed out. 
+
+If you want to reactivate the resource, click its name. 
+On the page for the individual resource, click the :btn-icon:fa3-rotate-right: Undelete: button. 
+Confirm by clicking the :btn:Reactivate: button. 
+You are now able to schedule the resource for dates again. 
 
 ### Creating a product for scheduling 
 
