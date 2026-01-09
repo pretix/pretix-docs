@@ -12,7 +12,7 @@ We tested this guide on the Linux distribution **Debian 12** but it should work 
 
 Please set up the following systems beforehand, we'll not explain them here in detail (but see these links for external installation guides):
 
--   A python 3.9+ installation
+-   A python 3.10+ installation
 -   A SMTP server to send out mails, e.g. [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-22-04) on your machine or some third-party server you have credentials for
 -   A HTTP reverse proxy, e.g. [nginx](https://botleg.com/stories/https-with-lets-encrypt-and-nginx/) or Apache to allow HTTPS connections
 -   A [PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-22-04) 12+ database server
@@ -126,7 +126,7 @@ We now install pretix, its direct dependencies and gunicorn:
 (venv)$ pip3 install pretix gunicorn
 ```
 
-Note that you need Python 3.9 or newer. You can find out your Python version using `python -V`.
+Note that you need Python 3.10 or newer. You can find out your Python version using `python -V`.
 
 We also need to create a data directory and allow your webserver to traverse to the root directory:
 
