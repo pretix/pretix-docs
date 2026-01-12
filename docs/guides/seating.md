@@ -1,10 +1,10 @@
 # Seating
 
-If you are selling tickets for a stadium, a theater, or a similar venue, then you probably want to sell tickets for individual seats. 
-The seating feature of pretix allows you to do just that. 
+The seating feature of pretix allows you to sell tickets for individual seats. 
+This is useful if, for example. you are selling tickets for a theater, a stadium, or a dining hall. 
 You can design a seating plan of your venue and use it for your events. 
 Customers will be able to look at the seating plan and choose their preferred seat. 
-This article tells you how to do that. 
+This article tells you how to create seating plans and how to 
 
 ## Prerequisites
 
@@ -12,18 +12,14 @@ Many aspects of seating are handled on the event level, so you need to create an
 
 ## How to
 
-The central component of any seating plan is the JSON file defining the layout. 
-These JSON files can be created and edited with our [seating plan editor](https://seats.pretix.eu/). 
-Anyone can use this editor. 
-You do not need to be logged in to a pretix account in order to use it. 
+If you want to sell tickets based on individual seats for your event, you need to take the following steps: 
 
-Once you have created a layout, you create a corresponding entry in your organizer account, give it a name, and save it. 
-This allows you to use the seating plan for any event connected to the organizer account. 
+ - [Enabling the plugin](#enabling-the-plugin) 
+ - Using the seating plan editor to [create a layout](#creating-a-layout)
+ - [Creating an entry for the seating plan](#creating-an-entry-for-a-seating-plan) in your organizer account
+ - [Creating products for seating](#creating-products-for-seating)
 
- - Enabling the plugin 
- - Using the seating plan editor to create a JSON file for the layout
- - Saving the seating plan in your organizer account 
- - Creating products for seating
+The following sections will guide you through those steps in detail. 
 
 ### Enabling the plugin
 
@@ -33,9 +29,11 @@ Click the :btn:Enable: button next to it.
 Check the events for which you want to use seating plans in the list labeled "Events with active plugin". 
 Now that you have enabled the seating plugin, all settings associated with seating are available for your organizer. 
 
-### Creating a new layout 
+### Creating a layout 
 
+The central component of any seating plan is the JSON file defining the layout. 
 In order to create a new layout, open the editor at [https://seats.pretix.eu/](https://seats.pretix.eu/). 
+You can use this editor without being logged in to a pretix account. 
 
 Alternatively, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
 On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
@@ -71,12 +69,13 @@ This refreshes seat numbers so that there will be no more duplicates in that row
 In order to save the layout, click the :btn-icon:fa3-save:: button in the top left. 
 This opens a dialog allowing you to save the resulting JSON file on your computer. 
 
-### Creating a seating plan
+### Creating an entry for a seating plan
 
 Seating plans are handled on the organizer level. 
 This allows you to use seating plans for multiple events hosted by the same organizer. 
 
-In order to create a new seating plan, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
+After you have [created a layout](#creating-a-layout) in the form of a JSON file, you create a corresponding entry for a seating plan in your organizer account. 
+In order to do so, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
 
 On the next page, click the :btn-icon:fa3-upload: Upload layout: button. 
 Select the JSON file you created and downloaded in the previous step. 
@@ -84,6 +83,10 @@ This fills the "Layout" field with the contents of the file.
 
 Enter a name for the seating plan in the "Name" field and click the :btn:Save: button. 
 You will land on a page titled "Seating plans", displaying a button for creating another new seating plan, and a list including the plan you just created. 
+
+### Creating products for seating 
+
+
 
 ## Troubleshooting 
 
