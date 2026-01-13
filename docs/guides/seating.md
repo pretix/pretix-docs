@@ -26,6 +26,9 @@ The following sections will guide you through those steps in detail.
 In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
 The Seating plugin is included as a "Top recommendation" at the top of the page. 
 Click the :btn:Enable: button next to it. 
+
+![Plugins settings page. The 'Features' tab is open, displaying the plugins for exhibitors, pages, seating, and sending out emails.](../assets/screens/seating/plugins-seating.png "Available plugins")
+
 Check the events for which you want to use seating plans in the list labeled "Events with active plugin". 
 Now that you have enabled the seating plugin, all settings associated with seating are available for your organizer. 
 
@@ -39,24 +42,26 @@ Alternatively, navigate to :navpath:Your organizer → :i-seat: Seating plans: a
 On the next page, click the :btn-icon:fa3-external-link: Go to editor: button. 
 This also takes you to [https://seats.pretix.eu/](https://seats.pretix.eu/). 
 
+![Seating plan editor, displaying a toolbar with icons for different actions at the top; a sidebar with settings for the zones, the plan itself, categories, and the background image; as well as a blank background with a grid in the center.](../assets/screens/seating/editor.png "Seating plan layout editor")
+
 If you have an image file depicting a plan of your venue, that image can be helpful for creating the layout. 
-If you want to do so, set the "Width" and "Height" to the resolution of the image. 
+If you want to use such an image as the background for your layout, set the "Width" and "Height" of the layout to the resolution of the image. 
 Then, click the :btn:UPLOAD IMAGE: button and select the file. 
 
-In order to zoom in and out of the layout, hold the Ctrl key and move your mouse wheel. 
+In order to zoom in and out of the layout, hold the `Ctrl` key and move your mouse wheel. 
 Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-icon:fa3-search-plus:: in the top bar. 
 
-In order to move the view around, hold the Ctrl key, click the layout, and move your mouse. 
+In order to move the view around, hold the `Ctrl` key, click the layout, and move your mouse. 
 
 In order to edit an existing element, click "Select rows or shapes" in the top bar. 
 If you want to select individual seats, click "Select seats" instead. 
 Click the element. 
-If you want to select multiple elements, hold the Shift key while clicking them. 
+If you want to select multiple elements, hold the `Shift` key while clicking them. 
 Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
 
 In order to move selected elements, drag and drop them with the mouse or use the arrow keys. 
-Use the Shift key for bigger movements and the Alt key for smaller movements. 
-If you want to align elements to the grid, hold the Ctrl key while moving them. 
+Use the `Shift` key for bigger movements and the `Alt` key for smaller movements. 
+If you want to align elements to the grid, hold the `Ctrl` key while moving them. 
 
 The editor will validate your layout. 
 It will warn you if there are duplicate seat numbers or row numbers. 
@@ -77,12 +82,16 @@ This allows you to use seating plans for multiple events hosted by the same orga
 After you have [created a layout](#creating-a-layout) in the form of a JSON file, you create a corresponding entry for a seating plan in your organizer account. 
 In order to do so, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button. 
 
+![Page titled 'Create a new seating plan', displaying a field for entering the name, buttons for downloading or uploading the layout, and one for opening the editor. There is a large field titled 'Layout', which is empty.](../assets/screens/seating/create-new.png "Create a new seating plan")
+
 On the next page, click the :btn-icon:fa3-upload: Upload layout: button. 
 Select the JSON file you created and downloaded in the previous step. 
 This fills the "Layout" field with the contents of the file. 
 
 Enter a name for the seating plan in the "Name" field and click the :btn:Save: button. 
 You will land on a page titled "Seating plans", displaying a button for creating another new seating plan, and a list including the plan you just created. 
+
+![Page titled 'Seating plans', displaying a button labeled 'Create a new seating plan', a list containing one entry named 'Test Plan', and a green infobox saying, 'The seating plan has been created. You can now use it for your events.](../assets/screens/seating/seating-plans-created.png "Create a new seating plan")
 
 ### Creating products for seating 
 
