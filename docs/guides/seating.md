@@ -1,10 +1,10 @@
 # Seating
 
 The seating feature of pretix allows you to sell tickets for individual seats. 
-This is useful if, for example. you are selling tickets for a theater, a stadium, or a dining hall. 
-You can design a seating plan of your venue and use it for your events. 
+This is useful if, for example. your event is taking place at a theater, a stadium, or a dining hall. 
+This article tells you how to create seating plans and how to implement them for your event. 
+
 Customers will be able to look at the seating plan and choose their preferred seat. 
-This article tells you how to create seating plans and how to 
 
 ## Prerequisites
 
