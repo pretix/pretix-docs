@@ -95,7 +95,24 @@ You will land on a page titled "Seating plans", displaying a button for creating
 
 ### Creating products for seating 
 
+Selling products via a seating plan has implications for the configuration of products in your shop. 
 
+If you want to offer more than one type of ticket per seat, then you have to create a product with multiple variations. 
+Assign that product to the corresponding seat category. 
+
+You can offer both seating tickets and other products in your shop. 
+Your shop will display the seating plan at the top, and the list of other products available for purchase below. 
+This is useful if, for instance, you are offering tickets for a standing area at your venue. 
+It is also useful if you are offering any type of non-admission product such as catering or merchandise. 
+
+Tickets that you assigned to a seating category do not appear in the list. 
+They can only be selected through the seating plan. 
+
+If you want your customers to be able to select their own seats, check the box next to "Customers can choose their own seats". 
+
+If you want to assign seats to customers, uncheck the box next to "Customers can choose their own seats". 
+You will need to manually assign seats to customers before the event. 
+Customers will not know their seat after their purchase and it might not be written on their ticket? 
 
 ## Troubleshooting 
 
