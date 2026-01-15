@@ -21,6 +21,7 @@ If you want to sell tickets based on individual seats for your event, you need t
 
 The following sections will guide you through those steps in detail. 
 
+
 ### Enabling the plugin
 
 In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
@@ -97,6 +98,8 @@ You will land on a page titled "Seating plans", displaying a button for creating
 
 Selling products via a seating plan has implications for the configuration of products in your shop. 
 
+It is not possible to offer multiple different products to a single seat category. 
+But it is possible to offer multiple product variations. 
 If you want to offer more than one type of ticket per seat, then you have to create a product with multiple variations. 
 Assign that product to the corresponding seat category. 
 
@@ -105,14 +108,30 @@ Your shop will display the seating plan at the top, and the list of other produc
 This is useful if, for instance, you are offering tickets for a standing area at your venue. 
 It is also useful if you are offering any type of non-admission product such as catering or merchandise. 
 
-Tickets that you assigned to a seating category do not appear in the list. 
-They can only be selected through the seating plan. 
+
+## Assigning a seating plan to an event
+
+In order to assign a seating plan to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans. 
+Click the field labeled "Seating plan". 
+Select the seating plan from the list. 
+
+Assign products to the seating categories. 
+All products that you assign to seating categories are available through the seating plan displayed at the top of your shop page. 
+They do not appear in the list below and can only be selected through the seating plan. 
+Products that you do not assign to seating categories will be listed below the seating plan. 
 
 If you want your customers to be able to select their own seats, check the box next to "Customers can choose their own seats". 
 
 If you want to assign seats to customers, uncheck the box next to "Customers can choose their own seats". 
 You will need to manually assign seats to customers before the event. 
 Customers will not know their seat after their purchase and it might not be written on their ticket? 
+
+Click the :btn:Save: button. 
+As soon as you have assigned a seating plan to an event, it is not possible to change that seating plan under that name. 
+You can still edit the plan and create a new entry for the updated version. 
+
+Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
+This makes it possible to edit the seating plan and assign it to this event afterwards. 
 
 ## Troubleshooting 
 
