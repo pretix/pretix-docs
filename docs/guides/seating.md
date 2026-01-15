@@ -53,8 +53,8 @@ Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-ico
 
 In order to move the view around, hold the `Ctrl` key, click the layout, and move your mouse. 
 
-In order to edit an existing element, click "Select rows or shapes" in the top bar. 
-If you want to select individual seats, click "Select seats" instead. 
+In order to edit an existing element, click the :btn-icon:fa3-mouse-pointer:: select rows or shapes button in the top bar. 
+If you want to select individual seats, click the :btn-icon:i-tool-seatselect:: select seats button instead. 
 Click the element. 
 If you want to select multiple elements, hold the `Shift` key while clicking them. 
 Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
@@ -71,7 +71,7 @@ Change the row number of the row you copied.
 Then, activate the "Reversed" toggle and deactivate it again. 
 This refreshes seat numbers so that there will be no more duplicates in that row. 
 
-In order to save the layout, click the :btn-icon:fa3-save:: button in the top left. 
+In order to save the layout, click the :btn-icon:fa3-save:: save button in the top left. 
 This opens a dialog allowing you to save the resulting JSON file on your computer. 
 
 ### Creating an entry for a seating plan
