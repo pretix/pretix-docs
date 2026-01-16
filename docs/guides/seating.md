@@ -65,9 +65,12 @@ If you want to align elements to the grid, hold the `Ctrl` key while moving them
 
 The editor will validate your layout. 
 It will warn you if there are duplicate seat numbers or row numbers. 
+Numbers are counted for each zone independently. 
+This means that the same row and seat number can occur once on each zone. 
+You can still assign different row and seat numbers to minimize confusion. 
 
 Copying rows may create duplicate seat numbers. 
-Change the row number of the row you copied. 
+Change the row number of the row you copied to an number that is not yet in use on the plan. 
 Then, activate the "Reversed" toggle and deactivate it again. 
 This refreshes seat numbers so that there will be no more duplicates in that row. 
 
