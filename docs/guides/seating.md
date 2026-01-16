@@ -21,7 +21,6 @@ If you want to sell tickets based on individual seats for your event, you need t
 
 The following sections will guide you through those steps in detail. 
 
-
 ### Enabling the plugin
 
 In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
@@ -100,14 +99,13 @@ Selling products via a seating plan has implications for the configuration of pr
 
 It is not possible to offer multiple different products to a single seat category. 
 But it is possible to offer multiple product variations. 
-If you want to offer more than one type of ticket per seat, then you have to create a product with multiple variations. 
+If you want to offer more than one type of product per seat, then you have to create a product with multiple variations. 
 Assign that product to the corresponding seat category. 
 
-You can offer both seating tickets and other products in your shop. 
+You can offer both seating products and other products in your shop. 
 Your shop will display the seating plan at the top, and the list of other products available for purchase below. 
 This is useful if, for instance, you are offering tickets for a standing area at your venue. 
 It is also useful if you are offering any type of non-admission product such as catering or merchandise. 
-
 
 ## Assigning a seating plan to an event
 
@@ -133,14 +131,6 @@ You can still edit the plan and create a new entry for the updated version.
 Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
 This makes it possible to edit the seating plan and assign it to this event afterwards. 
 
-## Troubleshooting 
-
-What are common problems that could be encountered here? How do you solve them? 
-
 ## Further information
 
-What other media do we have on the subject? Youtube videos, PDF handouts, vendor documentation (for plugins etc.) etc.? Link it here and explain what it does
-
-## See also 
-
-Link to other relevant guides, for example, in the case of Payment Providers, link to the articles on payment settings and plugins. Do not link to pages already linked underneath the title heading, prerequisites, or further information. 
+Video: [pretix-Tutorial: Saalplan-Editor](https://www.youtube.com/watch?v=3KRhHa58tBo) (German)
