@@ -85,8 +85,7 @@ hopper7Threshold=4
 hopper8Threshold=4
 
 paymentTerminalType=zvt
-zvtTest=4
-zvtHost=192.168.3.231
+zvtHost=192.168.1.123
 zvtPassword=000000
 zvtPort=22000
 zvtTraceLogging=True
