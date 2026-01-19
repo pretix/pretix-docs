@@ -136,4 +136,4 @@ This makes it possible to edit the seating plan and assign it to this event afte
 
 ## Further information
 
-Video: [pretix-Tutorial: Saalplan-Editor](https://www.youtube.com/watch?v=3KRhHa58tBo) (German)
+[pretix-Tutorial: Saalplan-Editor](https://www.youtube.com/watch?v=3KRhHa58tBo) on YouTube (German)
