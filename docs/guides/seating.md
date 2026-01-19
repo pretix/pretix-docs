@@ -112,7 +112,7 @@ It is also useful if you are offering any type of non-admission product such as 
 
 ## Assigning a seating plan to an event
 
-In order to assign a seating plan to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans. 
+In order to assign a seating plan to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
 Click the field labeled "Seating plan". 
 Select the seating plan from the list. 
 
