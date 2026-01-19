@@ -98,6 +98,7 @@ plugins:
             Organizers: Veranstalter
             Events: Veranstaltungen
             Pretixpos: pretixPOS
+            Pretixkiosk: pretixKIOSK
             Payment: Zahlung
             Developer and API Docs: Entwickler- und API-Dokumentation
             Trust: Trust und Compliance
@@ -144,6 +145,7 @@ plugins:
             Trust: Trust and Compliance
             Self hosting: Self-hosting
             Pretixpos: pretixPOS
+            Pretixkiosk: pretixKIOSK
             Fiscal: Fiscal requirements
   - social:
       cards_layout_options:
