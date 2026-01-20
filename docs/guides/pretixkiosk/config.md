@@ -1,9 +1,9 @@
 # Configuration file
 
 pretixKIOSK reads its configuration from a configuration file.
-It tries to find this file with the name ``config.properties`` in the current working directory of the execution process.
+It tries to find this file with the name `config.properties` in the current working directory of the execution process.
 
-The file is expected to be in the `.properties` format as specified in the [Java documentation](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Properties.html#load(java.io.Reader)).
+pretixKIOSK expects the file to be in the `.properties` format as specified in the [Java documentation](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Properties.html#load(java.io.Reader)).
 pretixKIOSK will refuse to start if the config file is invalid.
 
 ## Configuration parameters
@@ -31,10 +31,10 @@ pretixKIOSK will refuse to start if the config file is invalid.
 | `zvtPort`                      | Required | ZVT port of the payment terminal                                                                                                     |
 | `zvtPassword`                  | Required | ZVT password of the payment terminal (always 6 digits, often "000000")                                                               |
 | `zvtTraceLogging`              | Optional | Set to `true` to enable extended logging of ZVT events (for debugging)                                                               |
-| `zvtAbortEnabled`              | Optional | Set to `true` if the payment terminal allows external interruption of payments (needs to be testet per terminal type)                |
+| `zvtAbortEnabled`              | Optional | Set to `true` if the payment terminal allows external interruption of payments (needs to be tested per terminal type)                |
 | `zvtPrinterCharsPerLine`       | Required | Set to the number of characters that fit in one line of the payment terminal's printer. Set to 0 if unknown or no printer            |
 | `zvtEcrReceiptPrinting`        | Optional | Set to `true` if card payment receipts should be printed by the kiosk instead of the terminal                                        |
-| `zvtEcrReceiptPrintingTimeout` | Required | Set to the number of seconds to wait for the card terminal to send a recept                                                          |
+| `zvtEcrReceiptPrintingTimeout` | Required | Set to the number of seconds to wait for the card terminal to send a receipt                                                          |
 | `zvtMerchantReceiptString`     | Required | Set to a string contained in all merchant receipts to avoid printing them                                                            |
 
 ### Printing
@@ -52,9 +52,9 @@ pretixKIOSK will refuse to start if the config file is invalid.
 | `receiptPrintUseAwtMode`          | Optional | For internal use, set to `true` if printer does not work otherwise.                                                              |
 | `receiptFontSize`                 | Required | Font size for regular text on receipts                                                                                           |
 | `receiptPageWidth`                | Required | Width of receipts in millimeters                                                                                                 |
-| `receiptMarginLeft`               | Required | Left margin before recept content in millimeters                                                                                 |
-| `receiptMarginTop`                | Required | Top margin before recept content in millimeters                                                                                  |
-| `receiptMarginBottom`             | Required | Bottom margin ater recept content in millimeters                                                                                 |
+| `receiptMarginLeft`               | Required | Left margin before receipt content in millimeters                                                                                 |
+| `receiptMarginTop`                | Required | Top margin before receipt content in millimeters                                                                                  |
+| `receiptMarginBottom`             | Required | Bottom margin after receipt content in millimeters                                                                                 |
 | `printTraceLogging`               | Optional | Set to `true` to enable extended logging of print events (for debugging)                                                         |
 
 ### Closings
@@ -63,7 +63,7 @@ pretixKIOSK will refuse to start if the config file is invalid.
 |---------------------------|----------|-----------------------------------------------------------------------------|
 | `scheduledClosingEnabled` | Optional | Set to `true` if a cash session should be automatically closed once per day |
 | `scheduledClosingHour`    | Required | Set to the hour of the day the scheduled closing should be performed        |
-| `scheduledClosingMinute`  | Required | Set to the minute of the hourthe scheduled closing should be performed      |
+| `scheduledClosingMinute`  | Required | Set to the minute of the hour the scheduled closing should be performed      |
 
 ## Example file
 
