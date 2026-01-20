@@ -1,7 +1,7 @@
 # Seating
 
 The seating feature of pretix allows you to sell tickets for individual seats. 
-This is useful if, for example. your event is taking place at a theater, a stadium, or a dining hall. 
+This is useful if, for example, your event is taking place at a theater, a stadium, or a dining hall. 
 This article tells you how to create seating plans and how to implement them for your event. 
 
 Customers will be able to look at the seating plan and choose their preferred seat. 
@@ -32,7 +32,7 @@ Click the :btn:Enable: button next to it.
 Check the events for which you want to use seating plans in the list labeled "Events with active plugin". 
 Now that you have enabled the seating plugin, all settings associated with seating are available for your organizer. 
 
-### Creating a layout 
+### Creating a layout
 
 The central component of any seating plan is the JSON file defining the layout. 
 In order to create a new layout, open the editor at [https://seats.pretix.eu/](https://seats.pretix.eu/). 
@@ -96,7 +96,7 @@ You will land on a page titled "Seating plans", displaying a button for creating
 
 ![Page titled 'Seating plans', displaying a button labeled 'Create a new seating plan', a list containing one entry named 'Test Plan', and a green infobox saying, 'The seating plan has been created. You can now use it for your events.](../assets/screens/seating/seating-plans-created.png "Create a new seating plan")
 
-### Creating products for seating 
+### Creating products for seating
 
 Selling products via a seating plan has implications for the configuration of products in your shop. 
 
