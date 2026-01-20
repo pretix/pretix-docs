@@ -1,6 +1,11 @@
 # Error codes
 
-When pretixKIOSK is out of service, it shows one of the following error codes on screen:
+When pretixKIOSK is out of service, it shows an error screen like this:
+
+![Screenshot of an error message titled "Out of Order" with two more text lines containing "PK_PU" and "ID 218".](../../assets/screens/kiosk/error.png "Out of Order screen")
+
+The first line, `PK_PU` is an error code that you can find in the table below.
+The second line, `ID 218` is the ID of the device within your organizer account.
 
 | Error code | Meaning                                   | Recommendation                                                                        |
 |------------|-------------------------------------------|---------------------------------------------------------------------------------------|
