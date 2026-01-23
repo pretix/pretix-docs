@@ -1,10 +1,10 @@
 # Seating
 
-The seating feature of pretix allows you to sell tickets for individual seats. 
+This article tells you how to use the seating feature of pretix. 
+This feature allows you to create seating plans. 
+You can then use those seating plans to sell tickets for individual seats. 
 This is useful if, for example, your event is taking place at a theater, a stadium, or a dining hall. 
-This article tells you how to create seating plans and how to implement them for your event. 
-
-Customers will be able to look at the seating plan and choose their preferred seat. 
+Your customers will be able to look at the seating plan and choose their preferred seat. 
 
 ## Prerequisites
 
@@ -18,6 +18,7 @@ If you want to sell tickets based on individual seats for your event, you need t
  - Using the seating plan editor to [create a layout](#creating-a-layout)
  - [Creating an entry for the seating plan](#creating-an-entry-for-a-seating-plan) in your organizer account
  - [Creating products for seating](#creating-products-for-seating)
+ - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-an-event)
 
 The following sections will guide you through those steps in detail. 
 
@@ -44,37 +45,44 @@ This also takes you to [https://seats.pretix.eu/](https://seats.pretix.eu/).
 
 ![Seating plan editor, displaying a toolbar with icons for different actions at the top; a sidebar with settings for the zones, the plan itself, categories, and the background image; as well as a blank background with a grid in the center.](../assets/screens/seating/editor.png "Seating plan layout editor")
 
-If you have an image file depicting a plan of your venue, that image can be helpful for creating the layout. 
+If you have an **image** file containing a plan of your venue, that image can be helpful for creating the layout. 
 If you want to use such an image as the background for your layout, set the "Width" and "Height" of the layout to the resolution of the image. 
 Then, click the :btn:UPLOAD IMAGE: button and select the file. 
 
-In order to zoom in and out of the layout, hold the `Ctrl` key and move your mouse wheel. 
+If your venue has more than one floor or seating block, then you should create a corresponding number of **zones** in the layout. 
+If your venue has seat and row numbers that occur more than once, and you want to depict those numbers in the layout, then you have place the seats in separate zones. 
+In order to create a new zone, click the :fa3-plus:: button next to "Zones" in the sidebar and enter a name. 
+
+Select the correct zone before creating any seats, rows, or other elements. 
+Once you have created an element in one zone, you cannot move it to a different zone. 
+
+In order to **zoom** in and out of the layout, hold the `Ctrl` key and move your mouse wheel. 
 Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-icon:fa3-search-plus:: in the top bar. 
 
-In order to move the view around, hold the `Ctrl` key, click the layout, and move your mouse. 
+In order to **move the view** around, hold the `Ctrl` key, click the layout, and move your mouse. 
 
-In order to edit an existing element, click the :btn-icon:fa3-mouse-pointer:: select rows or shapes button in the top bar. 
-If you want to select individual seats, click the :btn-icon:i-tool-seatselect:: select seats button instead. 
+In order to **edit** an existing element, click the :btn-icon:fa3-mouse-pointer:: "select rows or shapes button" in the top bar. 
+If you want to select individual seats, click the :btn-icon:i-tool-seatselect:: "select seats" button instead. 
 Click the element. 
 If you want to select multiple elements, hold the `Shift` key while clicking them. 
 Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
 
-In order to move selected elements, drag and drop them with the mouse or use the arrow keys. 
-Use the `Shift` key for bigger movements and the `Alt` key for smaller movements. 
+In order to **move** selected elements, drag and drop them with the mouse or use the arrow keys. 
+Use the `Shift` key for larger movements and the `Alt` key for smaller movements. 
 If you want to align elements to the grid, hold the `Ctrl` key while moving them. 
 
-The editor will validate your layout. 
+The editor will **validate** your layout. 
 It will warn you if there are duplicate seat numbers or row numbers. 
 Numbers are counted for each zone independently. 
 This means that the same row and seat number can occur once on each zone. 
 You can still assign different row and seat numbers to minimize confusion. 
 
-Copying rows may create duplicate seat numbers. 
+**Copying rows** may create duplicate seat numbers. 
 Change the row number of the row you copied to an number that is not yet in use on the plan. 
 Then, activate the "Reversed" toggle and deactivate it again. 
 This refreshes seat numbers so that there will be no more duplicates in that row. 
 
-In order to save the layout, click the :btn-icon:fa3-save:: save button in the top left. 
+In order to **save** the layout, click the :btn-icon:fa3-save:: save button in the top left. 
 This opens a dialog allowing you to save the resulting JSON file on your computer. 
 
 ### Creating an entry for a seating plan
@@ -110,7 +118,7 @@ Your shop will display the seating plan at the top, and the list of other produc
 This is useful if, for instance, you are offering tickets for a standing area at your venue. 
 It is also useful if you are offering any type of non-admission product such as catering or merchandise. 
 
-## Assigning a seating plan to an event
+### Assigning a seating plan to an event
 
 In order to assign a seating plan to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
 Click the field labeled "Seating plan". 
