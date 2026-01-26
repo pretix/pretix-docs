@@ -6,6 +6,10 @@ You can then use those seating plans to sell tickets for individual seats.
 This is useful if, for example, your event is taking place at a theater, a stadium, or a dining hall. 
 Your customers will be able to look at the seating plan and choose their preferred seat. 
 
+The usefulness of the seating feature is not limited to seats. 
+You can also use it to sell or assign booths at a trade fair, tables in a reading room, or spots in a parking lot. 
+Seating plans can represent any space with a fixed layout and a limited number of usable spots. 
+
 ## Prerequisites
 
 Many aspects of seating are handled on the event level, so you need to create an event first. 
@@ -51,7 +55,7 @@ Then, click the :btn:UPLOAD IMAGE: button and select the file.
 
 If your venue has more than one floor or seating block, then you should create a corresponding number of **zones** in the layout. 
 If your venue has seat and row numbers that occur more than once, and you want to depict those numbers in the layout, then you have place the seats in separate zones. 
-In order to create a new zone, click the :fa3-plus:: button next to "Zones" in the sidebar and enter a name. 
+In order to create a new zone, click the :fa3-plus: button next to "Zones" in the sidebar and enter a name. 
 
 Select the correct zone before creating any seats, rows, or other elements. 
 Once you have created an element in one zone, you cannot move it to a different zone. 
@@ -96,7 +100,7 @@ In order to do so, navigate to :navpath:Your organizer â†’ :i-seat: Seating plan
 ![Page titled 'Create a new seating plan', displaying a field for entering the name, buttons for downloading or uploading the layout, and one for opening the editor. There is a large field titled 'Layout', which is empty.](../assets/screens/seating/create-new.png "Create a new seating plan")
 
 On the next page, click the :btn-icon:fa3-upload: Upload layout: button. 
-Select the JSON file you created and downloaded in the previous step. 
+Select the JSON file you created and downloaded in the [previous step](#creating-a-layout). 
 This fills the "Layout" field with the contents of the file. 
 
 Enter a name for the seating plan in the "Name" field and click the :btn:Save: button. 
@@ -124,6 +128,8 @@ In order to assign a seating plan to an event, navigate to :navpath:Your event â
 Click the field labeled "Seating plan". 
 Select the seating plan from the list. 
 
+![Page titled 'Seating plan settings', viewing the subheading 'Seating plan selection'. In the 'Seating plan' menu, the plan 'Arena' is selected. The categories 'Floor front', 'Floor back', 'Wheelchair' and 'Box seats' are all mapped to similarly named products. ](../assets/screens/seating/seating-plan-selection.png "Seating plan selection")
+
 Assign products to the seating categories. 
 All products that you assign to seating categories are available through the seating plan displayed at the top of your shop page. 
 They do not appear in the list below and can only be selected through the seating plan. 
@@ -136,7 +142,7 @@ You will need to manually assign seats to customers before the event.
 Customers will not know their seat after their purchase and it might not be written on their ticket? 
 
 Click the :btn:Save: button. 
-As soon as you have assigned a seating plan to an event, it is not possible to change that seating plan under that name. 
+As soon as you have assigned a seating plan to an event, it becomes impossible to change that seating plan under that name. 
 You can still edit the plan and create a new entry for the updated version. 
 
 Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
