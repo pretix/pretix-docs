@@ -57,8 +57,9 @@ If your venue has more than one floor or seating block, then you should create a
 If your venue has seat and row numbers that occur more than once, and you want to depict those numbers in the layout, then you have place the seats in separate zones. 
 In order to create a new zone, click the :fa3-plus: button next to "Zones" in the sidebar and enter a name. 
 
-Select the correct zone before creating any seats, rows, or other elements. 
-Once you have created an element in one zone, you cannot move it to a different zone. 
+!!! Note
+    Select your preferred zone before creating any seats, rows, or other elements. 
+    Once you have created an element in one zone, you cannot move it to a different zone. 
 
 In order to **zoom** in and out of the layout, hold the `Ctrl` key and move your mouse wheel. 
 Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-icon:fa3-search-plus:: in the top bar. 
@@ -111,6 +112,7 @@ You will land on a page titled "Seating plans", displaying a button for creating
 ### Creating products for seating
 
 Selling products via a seating plan has implications for the configuration of products in your shop. 
+For general information on creating products, refer to our guide on [products](products/index.md). 
 
 It is not possible to offer multiple different products to a single seat category. 
 But it is possible to offer multiple product variations. 
