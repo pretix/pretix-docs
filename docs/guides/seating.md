@@ -56,10 +56,15 @@ This also takes you to [https://seats.pretix.eu/](https://seats.pretix.eu/).
 
 ![Seating plan editor, displaying a toolbar with icons for different actions at the top; a sidebar with settings for the zones, the plan itself, categories, and the background image; as well as a blank background with a grid in the center.](../assets/screens/seating/editor.png "Seating plan layout editor")
 
+The **width** and **height** you should use for your plan depends on the physical dimensions of your venue. 
+Ideally, a seat with the default radius of 10 in your layout should correspond to the size of that seat in your venue. 
+Creating much smaller seats may result in them being difficult to select. 
+Creating much larger seats may result in text labels being too difficult to read. 
+
 If you have an **image** file containing a plan of your venue, that image can be helpful while creating the layout. 
-If you want to use such an image during layout creation, click the :btn:UPLOAD IMAGE: button and select the file. 
-The layout editor will not save the image you upload here as part of your plan
-It merely serves as a useful template for placing seats and other objects on the plan.
+If you want to use such an image as guidance during layout creation, click the :btn:UPLOAD IMAGE: button and select the file. 
+The layout editor will not save the image you upload here as part of your layout. 
+It merely serves as a useful template for placing seats and other objects on the layout. 
 
 If your venue has more than one floor or seating block, then you should create a corresponding number of **zones** in the layout. 
 If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have place the seats in separate zones. 
@@ -70,11 +75,14 @@ Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-ico
 
 In order to **move the view** around, hold the `Ctrl` key, click the layout, and move your mouse. 
 
-In order to **edit** an existing element, click the :btn-icon:fa3-mouse-pointer:: "select rows or shapes button" in the top bar. 
-If you want to select individual seats, click the :btn-icon:i-tool-seatselect:: "select seats" button instead. 
+In order to **select** existing elements, click the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button in the top bar. 
+If you want to select only a single seat, click the :btn-icon:i-tool-seatselect:: "select seats" button instead. 
 Click the element. 
+You can also select a single seat by clicking the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button and then double-clicking the seat. 
+
 If you want to select multiple elements, hold the `Shift` key while clicking them. 
 Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
+Use the sidebar on the right to edit the properties of all elements in your selection. 
 
 In order to **move** selected elements, drag and drop them with the mouse or use the arrow keys. 
 Use the `Shift` key for larger movements and the `Alt` key for smaller movements. 
@@ -87,7 +95,12 @@ Click the :btn:fa3-paste: "paste" button.
 Alternatively, press `Ctrl`+`V`. 
 
 The editor will **validate** your layout. 
-It will warn you if there are duplicate seat numbers or row numbers. 
+If the validation succeeds, then the "Validation" symbol in the top bar will be a green checkmark :btn-icon:fa3-check-circle-o::. 
+If validation fails, then the symbol will be a red exclamation mark :btn-icon:fa3-exclamation-circle:: instead. 
+Clicking the :btn-icon:fa3-save:: "Save" button while validation is failing results in your browser displaying a warning popup. 
+You can still download the faulty plan by clicking the :btn:OK: button in that warning popup. 
+
+One possible cause for a failed validation are **duplicate** seat numbers or row numbers. 
 Numbers are counted for each zone independently. 
 This means that the same row and seat number can occur once on each zone. 
 You can still assign different row and seat numbers to minimize confusion. 
@@ -125,7 +138,7 @@ Selling products via a seating plan has implications for the configuration of pr
 For general information on creating products, refer to our guide on [products](products/index.md). 
 
 It is not possible to offer multiple different products to a single seat category. 
-But it is possible to offer multiple product variations. 
+You can use a product with multiple product variations instead. 
 If you want to offer more than one type of product per seat, then you have to create a product with multiple variations. 
 Assign that product to the corresponding seat category. 
 
@@ -151,7 +164,8 @@ If you want your customers to be able to select their own seats, check the box n
 
 If you want to assign seats to customers, uncheck the box next to "Customers can choose their own seats". 
 You will need to manually assign seats to customers before the event. 
-Customers will not know their seat after their purchase and it might not be written on their ticket? 
+You should take care of this manual assignment before issuing tickets to your customers. 
+Otherwise, pretix cannot include the seat information on the ticket. 
 
 Click the :btn:Save: button. 
 As soon as you have assigned a seating plan to an event, it becomes impossible to change that seating plan under that name. 
