@@ -88,10 +88,10 @@ In order to **move** selected elements, drag and drop them with the mouse or use
 Use the `Shift` key for larger movements and the `Alt` key for smaller movements. 
 If you want to align elements to the grid, hold the `Ctrl` key while moving them. 
 
-If you want to move selected elements to a **different zone**, click the :btn:fa3-cut: "cut" button. 
+If you want to move selected elements to a **different zone**, click the :btn-icon:fa3-cut:: "cut" button. 
 Alternatively, press `Ctrl`+`X`. 
 Select the zone to which you want to move the elements. 
-Click the :btn:fa3-paste: "paste" button. 
+Click the :btn-icon:fa3-paste:: "paste" button. 
 Alternatively, press `Ctrl`+`V`. 
 
 The editor will **validate** your layout. 
