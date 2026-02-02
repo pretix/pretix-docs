@@ -70,6 +70,10 @@ If your venue has more than one floor or seating block, then you should create a
 If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have place the seats in separate zones. 
 In order to create a new zone, click the :fa3-plus: button next to "Zones" in the sidebar and enter a name. 
 
+!!! Note 
+    If you are using a Mac computer, you can use the `⌘`key aka `Command` key in place of the `Ctrl` key. 
+    The `Ctrl` key also works. 
+
 In order to **zoom** in and out of the layout, hold the `Ctrl` key and move your mouse wheel. 
 Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-icon:fa3-search-plus:: in the top bar. 
 
