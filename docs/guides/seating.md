@@ -84,9 +84,10 @@ If you want to select multiple elements, hold the `Shift` key while clicking the
 Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
 Use the sidebar on the right to edit the properties of all elements in your selection. 
 
-In order to **move** selected elements, drag and drop them with the mouse or use the arrow keys. 
-Use the `Shift` key for larger movements and the `Alt` key for smaller movements. 
-If you want to align elements to the grid, hold the `Ctrl` key while moving them. 
+In order to **move** selected elements, drag and drop them with your mouse. 
+If you want to keep the movement aligned to the grid, hold the `Shift` button while you are moving them. 
+Alternatively, you can use the arrow keys. 
+Hold the `Shift` key for larger movements and the `Alt` key for smaller movements. 
 
 If you want to move selected elements to a **different zone**, click the :btn-icon:fa3-cut:: "cut" button. 
 Alternatively, press `Ctrl`+`X`. 
