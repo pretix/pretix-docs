@@ -112,12 +112,27 @@ Clicking the :btn-icon:fa3-save:: "Save" button while validation is failing resu
 You can still download the faulty plan by clicking the :btn:OK: button in that warning popup. 
 
 One possible cause for a failed validation are **duplicate** combinations of zone, row number, and seat numbers. 
-Each unique combination of zone, row number, and seat number may only occur once. 
+Each unique combination may only occur once. 
+Another possible cause are duplicate seat IDs. 
 
-**Copying rows** may create duplicate seat numbers. 
+Seat IDs can be one of three things: 
+
+ 1. a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) consisting of letters, numbers, and dashes
+ 2. a string containing the zone, row number, and seat number, joined with dashes. 
+ 3. a custom string defined by you
+
+The editor will assign seats the first option (UUID) during creation if you do not change any of the defaults (row or seat number). 
+If you change seat or row number, or if you use the "Reversed" toggle, the editor will assign the second option (zone, row number, and seat number, joined with dashes) as the seat ID. 
+You can edit the seat ID by selecting a single seat and editing the string in the "Seat ID" field. 
+
+**Copying rows** creates duplicate seat IDs as well as combination of zone, row number, and seat number. 
 Change the row number of the row you copied to an number that is not yet in use on the plan. 
 Then, activate the "Reversed" toggle and deactivate it again. 
-This refreshes seat numbers so that there will be no more duplicates in that row. 
+This refreshes seat IDs so that there will be no more duplicates in that row. 
+
+!!! Note 
+    Activating or deactivating the "Reversed" toggle on a row replaces all seat IDs in that row with a string containing the zone, row number, and seat number, joined with dashes. 
+    This is also true for any custom seat IDs that you entered manually. 
 
 In order to **save** the layout, click the :btn-icon:fa3-save:: save button in the top left. 
 This opens a dialog allowing you to save the resulting JSON file on your computer. 
