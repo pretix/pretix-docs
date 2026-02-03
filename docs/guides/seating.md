@@ -99,16 +99,20 @@ Select the zone to which you want to move the elements.
 Click the :btn-icon:fa3-paste:: "paste" button. 
 Alternatively, press `Ctrl`+`V`. 
 
+In order to **save** the layout, click the :btn-icon:fa3-save:: "save" button in the top left. 
+This opens a dialog allowing you to save the resulting JSON file on your computer. 
+If clicking the :btn-icon:fa3-save:: "save" button instead opens a notification stating that your plan contains validation errors, see [Validating the layout](#validating-the-layout). 
+
+### Validating the layout
+
 The editor will **validate** your layout. 
 If the validation succeeds, then the "Validation" symbol in the top bar will be a green checkmark :btn-icon:fa3-check-circle-o::. 
 If validation fails, then the symbol will be a red exclamation mark :btn-icon:fa3-exclamation-circle:: instead. 
 Clicking the :btn-icon:fa3-save:: "Save" button while validation is failing results in your browser displaying a warning popup. 
 You can still download the faulty plan by clicking the :btn:OK: button in that warning popup. 
 
-One possible cause for a failed validation are **duplicate** seat numbers or row numbers. 
-Numbers are counted for each zone independently. 
-This means that the same row and seat number can occur once on each zone. 
-You can still assign different row and seat numbers to minimize confusion. 
+One possible cause for a failed validation are **duplicate** combinations of zone, row number, and seat numbers. 
+Each unique combination of zone, row number, and seat number may only occur once. 
 
 **Copying rows** may create duplicate seat numbers. 
 Change the row number of the row you copied to an number that is not yet in use on the plan. 
