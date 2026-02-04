@@ -227,6 +227,14 @@ If you want blocked seats to be available again, click them again.
 If you want to make multiple seats available again, hold the `Ctrl` and `Alt` keys and the left mouse button to draw a rectangle around those seats. 
 Once you are happy with your choices, click the :btn:Save: button. 
 
+### Making some seats available only via a certain sales channel
+
+If you want to make some seats available only on a certain sales channel, block those seats as described under [Blocking seats](#blocking-seats). 
+Then, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
+Under "Allow to buy blocked seats on these channels", select the sales channel for through you want those blocked seats to still be available. 
+
+For instance, if you want to reserve some seats for the box office on the day of the event, select `Box office (pretixPOS)`. 
+
 ## Further information
 
 [pretix-Tutorial: Saalplan-Editor](https://www.youtube.com/watch?v=3KRhHa58tBo) on YouTube (German)
