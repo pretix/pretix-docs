@@ -71,13 +71,13 @@ If your venue has seat and row numbers that occur more than once, and you want t
 In order to create a new zone, click the :fa3-plus: button next to "Zones" in the sidebar and enter a name. 
 
 !!! Note 
-    If you are using a Mac computer, you can use the `⌘`key aka `Command` key in place of the `Ctrl` key. 
+    If you are using a Mac computer, you can use the `⌘` key aka `Command` key in place of the `Ctrl` key. 
     The `Ctrl` key also works. 
 
 In order to **zoom** in and out of the layout, hold the `Ctrl` key and move your mouse wheel. 
 Alternatively, you can use the buttons :btn-icon:fa3-search-minus:: and :btn-icon:fa3-search-plus:: in the top bar. 
 
-In order to **move the view** around, hold the `Ctrl` key, click the layout, and move your mouse. 
+In order to **move the view** around, hold the `Ctrl` key, click the layout, hold the mouse key, and move your mouse. 
 
 In order to **select** existing elements, click the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button in the top bar. 
 If you want to select only a single seat, click the :btn-icon:i-tool-seatselect:: "select seats" button instead. 
@@ -165,6 +165,17 @@ It is not possible to offer multiple different products to a single seat categor
 You can use a product with multiple product variations instead. 
 If you want to offer more than one type of product per seat, then you have to create a product with multiple variations. 
 Assign that product to the corresponding seat category. 
+
+Create one quota for each seat category you offer in your seating plan. 
+Set the "total capacity" of the quota to the number of seats in the seat category. 
+For instance, if your seating plan has 48 seats in the seat category "Box seats", create a quota with a total capacity of 48. 
+Add the product that you assigned to the "Box seats" seat category to that quota. 
+
+Both the number of seats on the plan and the total capacity of the quota limit the number of purchases possible. 
+If the quota runs out, then customers will not be able to select a seat in the corresponding seat category. 
+If you sell all seats in the seat category, then customers will also not be able to buy a ticket for that seat category. 
+
+The "waiting list" feature only works as expected if the total capacity of the quota and the number of seats in the corresponding seat category are equal. 
 
 You can offer both seating products and other products in your shop. 
 Your shop will display the seating plan at the top, and the list of other products available for purchase below. 
