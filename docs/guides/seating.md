@@ -209,6 +209,24 @@ You can still edit the plan and create a new entry for the updated version.
 Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
 This makes it possible to edit the seating plan and assign it to this event afterwards. 
 
+### Blocking seats 
+
+If you want to disable sales for a certain selection of seats, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
+Click the :btn:Change blocked seats: button. 
+This takes you to a page titled "Blocked seats". 
+
+![Page titled 'Blocked seats', displaying a seating plan. Three of the seats are selected for blocking. These seats are also displayed in a list on the right side of the screen. ](../assets/screens/seating/blocked.png "Blocked seats")
+
+!!! Note 
+    If you are using a Mac computer, use the `⌘` key aka `Command` key in place of the `Ctrl` key. 
+
+Click the seats on your seating plan that you want to block from sale. 
+If you want to select multiple seats, hold the `Ctrl` key and the left mouse button to draw a rectangle around those seats. 
+
+If you want blocked seats to be available again, click them again. 
+If you want to make multiple seats available again, hold the `Ctrl` and `Alt` keys and the left mouse button to draw a rectangle around those seats. 
+Once you are happy with your choices, click the :btn:Save: button. 
+
 ## Further information
 
 [pretix-Tutorial: Saalplan-Editor](https://www.youtube.com/watch?v=3KRhHa58tBo) on YouTube (German)
