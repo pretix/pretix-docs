@@ -247,7 +247,8 @@ Click the :btn:Save: button.
 
 You can only migrate your seating plan to a new one if it fulfills the following conditions: 
 
- - contains all seats with the same seat IDs as the ones that are already sold in your old plan
+ - contains all seats with the same seat IDs as the ones that are already sold 
+ - contains all seats with the same seat IDs as the ones that are already used in a voucher 
 
 ## Further information
 
