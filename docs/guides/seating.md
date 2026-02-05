@@ -235,6 +235,20 @@ Under "Allow to buy blocked seats on these channels", select the sales channel f
 
 For instance, if you want to reserve some seats for the box office on the day of the event, select `Box office (pretixPOS)`. 
 
+### Migrating to a new seating plan
+
+In order to migrate your events from one seating plan to another, navigate to :navpath:Your organizer → :i-seat: Seating plans:. 
+Search for the seating plan from which you want to migrate in the list. 
+Click the :btn-icon:fa3-share:: "Migrate to new plan" button next to it. 
+
+On the next page, select all events or dates for which you want to migrate the seating plan. 
+Under "New seating plan", select the plan to which you want to migrate. 
+Click the :btn:Save: button. 
+
+You can only migrate your seating plan to a new one if it fulfills the following conditions: 
+
+ - contains all seats with the same seat IDs as the ones that are already sold in your old plan
+
 ## Further information
 
 [pretix-Tutorial: Saalplan-Editor](https://www.youtube.com/watch?v=3KRhHa58tBo) on YouTube (German)
