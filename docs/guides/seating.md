@@ -245,10 +245,13 @@ On the next page, select all events or dates for which you want to migrate the s
 Under "New seating plan", select the plan to which you want to migrate. 
 Click the :btn:Save: button. 
 
-You can only migrate your seating plan to a new one if it fulfills the following conditions: 
+pretix will check whether all seats that you already sold are present in the new plan. 
+It will also check whether all seats that are in use in a voucher are present. 
+The identifying factor is the seat ID. 
+If the new plan fails to fulfill these two requirements, then the migration will fail. 
+The page will display an error message. 
 
- - contains all seats with the same seat IDs as the ones that are already sold 
- - contains all seats with the same seat IDs as the ones that are already used in a voucher 
+If the new plan fulfills both requirements, then the migration will be successful. 
 
 ## Further information
 
