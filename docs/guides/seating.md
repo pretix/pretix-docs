@@ -21,15 +21,16 @@ Seating plans can represent any space with a fixed layout and a limited number o
 
 Many aspects of seating are handled on the event level, so you need to create an event first. 
 
-## How to
+## General usage
 
 If you want to sell tickets based on individual seats for your event, you need to take the following steps: 
 
  - [Enabling the plugin](#enabling-the-plugin) 
- - Using the seating plan editor to [create a layout](#creating-a-layout)
+ - Using the seating plan editor to [create a layout](#creating-a-layout) which the editor will then [validate](#validating-the-layout)
  - [Creating an entry for the seating plan](#creating-an-entry-for-a-seating-plan) in your organizer account
  - [Creating products for seating](#creating-products-for-seating)
- - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-an-event)
+ - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-a-single-event) or your [event series](#assigning-a-seating-plan-to-a-date-in-an-event-series)
+ - [Configuring seating plan behavior](#configuring-seating-plan-behavior)
 
 The following sections will guide you through those steps in detail. 
 
@@ -195,6 +196,8 @@ All products that you assign to seating categories are available through the sea
 They do not appear in the list below and can only be selected through the seating plan. 
 Products that you do not assign to seating categories will be listed below the seating plan. 
 
+Once you are happy with your choices, click the :btn:Save: button. 
+
 ### Assigning a seating plan to a date in an event series 
 
 If you are using seating plans for your [event series](event-series.md), you do not have to use the same seating plan for the entire series. 
@@ -217,6 +220,8 @@ All products that you assign to seating categories are available through the sea
 They do not appear in the list below and can only be selected through the seating plan. 
 Products that you do not assign to seating categories will be listed below the seating plan. 
 
+Once you are happy with your choices, click the :btn:Save: button. 
+
 ### Configuring seating plan behavior
 
 In order to configure seating plan behavior for your singular event or event series, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
@@ -234,6 +239,10 @@ If you want to migrate your existing event to a new seating plan, see [Migrating
 
 Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
 This makes it possible to edit the seating plan and assign it to this event afterwards. 
+
+## Advanced usage 
+
+The following sections describe use cases that go beyond the basic setup process for seating plans. 
 
 ### Blocking seats 
 
