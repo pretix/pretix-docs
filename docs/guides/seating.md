@@ -182,7 +182,7 @@ Your shop will display the seating plan at the top, and the list of other produc
 This is useful if, for instance, you are offering tickets for a standing area at your venue. 
 It is also useful if you are offering any type of non-admission product such as catering or merchandise. 
 
-### Assigning a seating plan to an event
+### Assigning a seating plan to a single event
 
 In order to assign a seating plan to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
 Click the field labeled "Seating plan". 
@@ -195,6 +195,31 @@ All products that you assign to seating categories are available through the sea
 They do not appear in the list below and can only be selected through the seating plan. 
 Products that you do not assign to seating categories will be listed below the seating plan. 
 
+### Assigning a seating plan to a date in an event series 
+
+If you are using seating plans for your [event series](event-series.md), you do not have to use the same seating plan for the entire series. 
+You can assign seating plans for each date individually. 
+In order to do so, navigate to :navpath:Your event → :fa3-calendar: Dates:. 
+Create or edit the dates to which you want to assign your seating plan. 
+
+![Page titled 'Date', viewing the subheading 'Additional settings' near the bottom of the page. The plan 'Arena' is selected. The categories 'Floor front', 'Floor back', 'Wheelchair' and 'Box seats' are all mapped to similarly named products. ](../assets/screens/seating/date.png "Seating plan selection")
+
+Scroll to the "Additional settings" subheading. 
+Click the field labeled "Seating plan". 
+Select the seating plan from the list. 
+
+Assign products to the seating categories. 
+
+Customers visiting your online shop will first select their preferred date from the calendar or list. 
+Once they have selected a date, they will then select their preferred products from the seating plan and list. 
+
+All products that you assign to seating categories are available through the seating plan displayed at the top of your shop page. 
+They do not appear in the list below and can only be selected through the seating plan. 
+Products that you do not assign to seating categories will be listed below the seating plan. 
+
+### Configuring seating plan behavior
+
+In order to configure seating plan behavior for your singular event or event series, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
 If you want your customers to be able to select their own seats, check the box next to "Customers can choose their own seats". 
 
 If you want to assign seats to customers, uncheck the box next to "Customers can choose their own seats". 
@@ -205,6 +230,7 @@ Otherwise, pretix cannot include the seat information on the ticket.
 Click the :btn:Save: button. 
 As soon as you have assigned a seating plan to an event, it becomes impossible to change that seating plan under that name. 
 You can still edit the plan and create a new entry for the updated version. 
+If you want to migrate your existing event to a new seating plan, see [Migrating to a new seating plan](#migrating-to-a-new-seating-plan). 
 
 Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
 This makes it possible to edit the seating plan and assign it to this event afterwards. 
