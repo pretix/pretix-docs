@@ -37,7 +37,7 @@ The following sections will guide you through those steps in detail.
 ### Enabling the plugin
 
 In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab. 
-The Seating plugin is included as a "Top recommendation" at the top of the page. 
+This page includes the Seating plugin as a "Top recommendation" at the top. 
 Click the :btn:Enable: button next to it. 
 
 ![Plugins settings page. The 'Features' tab is open, displaying the plugins for exhibitors, pages, seating, and sending out emails.](../assets/screens/seating/plugins-seating.png "Available plugins")
@@ -153,7 +153,7 @@ Select the JSON file you created and downloaded in the [previous step](#creating
 This fills the "Layout" field with the contents of the file. 
 
 Enter a name for the seating plan in the "Name" field and click the :btn:Save: button. 
-You will land on a page titled "Seating plans", displaying a button for creating another new seating plan, and a list including the plan you just created. 
+You will land on a page titled "Seating plans", displaying a button for creating another new seating plan, and a list including the plan you created. 
 
 ![Page titled 'Seating plans', displaying a button labeled 'Create a new seating plan', a list containing one entry named 'Test Plan', and a green infobox saying, 'The seating plan has been created. You can now use it for your events.](../assets/screens/seating/seating-plans-created.png "Create a new seating plan")
 
@@ -193,8 +193,9 @@ Select the seating plan from the list.
 
 Assign products to the seating categories. 
 All products that you assign to seating categories are available through the seating plan displayed at the top of your shop page. 
-They do not appear in the list below and can only be selected through the seating plan. 
-Products that you do not assign to seating categories will be listed below the seating plan. 
+They do not appear in the list below. 
+Customers will only be able to select them through the seating plan. 
+The shop will list products that you do not assign to seating categories below the seating plan. 
 
 Once you are happy with your choices, click the :btn:Save: button. 
 
@@ -217,8 +218,9 @@ Customers visiting your online shop will first select their preferred date from 
 Once they have selected a date, they will then select their preferred products from the seating plan and list. 
 
 All products that you assign to seating categories are available through the seating plan displayed at the top of your shop page. 
-They do not appear in the list below and can only be selected through the seating plan. 
-Products that you do not assign to seating categories will be listed below the seating plan. 
+They do not appear in the list below. 
+Customers will only be able to select them through the seating plan. 
+The shop will list products that you do not assign to seating categories below the seating plan. 
 
 Once you are happy with your choices, click the :btn:Save: button. 
 
