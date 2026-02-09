@@ -27,7 +27,7 @@ $ pacman -S python python-virtualenvwrapper git openssh
 
 Setting up the development environment for the pretix documentation involves three steps: setting an environment variable, cloning the Git repository, and preparing a Python environment. 
 
-### Environment variable 
+### Setting the environment variable 
 
 Set your `WORKON_HOME` environment variable to `~/.virtualenvs`. 
 There is more than one way to do this. 
@@ -94,7 +94,7 @@ $ workon pretix-docs
 Launch the MkDocs server:
 
 ``` 
-$ mkdocs serve
+$ mkdocs serve --livereload
 ```
 
 Open the URL [https://127.0.0.1:8000/](https://127.0.0.1:8000/) in your browser. 

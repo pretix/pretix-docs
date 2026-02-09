@@ -11,7 +11,7 @@ Adhere to this code of conduct while making contributions.
 
 ## Our four maxims of documentation
 
-When writing documentation for pretix, to stick to the [maxims of conversation](https://en.wikipedia.org/wiki/Cooperative_principle#Grice's_maxims) as postulated by linguist Paul Grice. 
+When writing documentation for pretix, try to stick to the [maxims of conversation](https://en.wikipedia.org/wiki/Cooperative_principle#Grice's_maxims) as postulated by linguist Paul Grice. 
 These maxims, when applied to the task of documenting pretix, entail the following: 
 
  1. Maxim of quantity: be informative. 
