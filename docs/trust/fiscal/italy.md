@@ -15,7 +15,7 @@ Italy requires all domestic invoices to be issued using an [electronic standard]
 
 On pretix Hosted, sending invoices through SdI is supported.
 To get started, go to :navpath:Your event → Settings → Plugins: and enable the plugin "E-invoicing for Italy (via Invopop)".
-Then, go to :navpath:Your event → Settings → E-invoicing", fill out the settings and follow all recommendations.
+Then, go to :navpath:Your event → :fa3-wrench: Settings → E-invoicing: fill out the settings and follow all recommendations.
 Invoices will be transmitted to SdI automatically through our partner Invopop S.L. and their subprocessor A-Cube srl.
 An additional price per invoice is charged according to our [price list](https://pretix.eu/about/en/pricing).
 
