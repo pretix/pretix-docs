@@ -55,3 +55,7 @@ This release includes a migration that changes retroactively fills an `organizer
 ### Upgrade to 2024.7.0 or newer
 
 This release includes a migration that changes how sales channels are referred on orders. If you have a large database, the migration step of the upgrade might take significantly longer than usual, so plan the update accordingly.
+
+### Upgrade to 2026.1.0 or newer
+
+Python 3.10 – 3.13 is now required. Python 3.9 is no longer supported and Python 3.14 is not yet supported.
