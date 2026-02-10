@@ -13,9 +13,8 @@ The usefulness of the seating feature is not limited to seats.
 You can also use it to sell or assign, for instance, tables in a reading room or spots in a parking lot. 
 Seating plans can represent any space with a fixed layout and a limited number of usable spots. 
 
-!!! Note 
-    The seating feature is available on pretix Hosted and on pretix Enterprise. 
-    It is not available on pretix Community. 
+The seating feature is available on pretix Hosted and on pretix Enterprise. 
+It is not available on pretix Community. 
 
 ## Prerequisites
 
@@ -248,7 +247,11 @@ The following sections describe use cases that go beyond the basic setup process
 
 ### Blocking seats 
 
-If you want to disable sales for a certain selection of seats, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
+You can disable sales for a certain selection of seats. 
+In order to do so for a single event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
+In order to do the same for a date in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates: and select the date in question. 
+The process is the same from here on out. 
+
 Click the :btn:Change blocked seats: button. 
 This takes you to a page titled "Blocked seats". 
 
@@ -264,7 +267,18 @@ If you want blocked seats to be available again, click them again.
 If you want to make multiple seats available again, hold the `Ctrl` and `Alt` keys and the left mouse button to draw a rectangle around those seats. 
 Once you are happy with your choices, click the :btn:Save: button. 
 
-### Making some seats available only via a certain sales channel
+### Restricting availability
+
+If you want to make a selection of seats only available to a specific group of people, then you can use one of two methods: 
+
+ 1. Configuring a product for restricted audience and assigning the seats to a corresponding category
+ 2. Blocking seats and allowing a certain sales channel to bypass the block
+
+For the first method, create a seat category. 
+Assign the seats you want to reserve for the restricted audience to it. 
+Create a product that you set up for a restricted audience with one of the methods described in [Products/Restricted audience](products/restricted-audience.md). 
+
+Assign that product to the seat category as described in [Assigning a seating plan to a single event](#assigning-a-seating-plan-to-a-single-event) or [Assigning a seating plan to a date in an event series](#assigning-a-seating-plan-to-a-date-in-an-event-series). 
 
 If you want to make some seats available only on a certain sales channel, block those seats as described under [Blocking seats](#blocking-seats). 
 Then, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
