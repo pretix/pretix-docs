@@ -1,3 +1,3 @@
 # ePayBL
 
-{% include "epaybl.md" %}
+{% include "epaybl.de.md" %}
