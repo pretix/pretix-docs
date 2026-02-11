@@ -122,7 +122,7 @@ pretix zeigt auf der Seite mit dem Titel "Kassenanmeldung (DE)" einen entspreche
 
 ### Datenexport planen
 
-!!! Warning
+!!! Warning "Warnung"
     Falls Sie einen regelmäßigen Export planen, müssen Sie jede der exportierten Dateien auf etwaige Änderungen überprüfen und bei ELSTER hochladen. 
     Wenn Sie das nicht tun, dann riskieren Sie, Ihrer gesetzlichen Meldepflicht nicht nachzukommen. 
 

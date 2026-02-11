@@ -1,4 +1,4 @@
-!!! Warning 
+!!! Warning "Warnung"
 
     Die pretix-Dokumentation ist weder Rechtsberatung noch Finanzberatung. 
     Konsultieren Sie eine*n Steuerberater*in, bevor Sie für Ihren Shop Steuerregeln einrichten. 

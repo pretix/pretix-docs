@@ -14,7 +14,7 @@ Falls Sie das nicht bereits getan haben, registrieren Sie Ihr Unternehmen/Ihre E
 
 ### Verbindung der Konten
 
-!!! Warning 
+!!! Warning "Warnung"
     Ein KulturPass-Shop kann nur mit einem einzigen externen System verbunden werden. 
     Wenn der KulturPass-Shop mit mehreren externen Systemen verbunden ist, ist es nicht möglich, Bestellungen zu verarbeiten oder Angebote automatisiert an den KulturPass-Marktplatz zu übermitteln. 
     Eingehende Bestellungen werden automatisch abgelehnt, da sie nicht eindeutig zugeordnet werden können. 
@@ -50,7 +50,7 @@ Klicken Sie dann den :btn:Speichern:-Knopf.
 Wiederholen Sie diese Schritte für jede Veranstaltung oder jeden Termin innerhalb einer Veranstaltungsreihe, für die Sie den KulturPass nutzen möchten. 
 Es kann einige Zeit dauern, bis hier vorgenommene Einstellungen im KulturPass-System angezeigt werden. 
 
-!!! Note 
+!!! Note "Hinweis"
     Der KulturPass-Marktplatz zeigt nicht die gleiche Fülle von Informationen an wie Ihr pretix-Ticketshop. 
 
     Wahrscheinlich nutzen Sie für Ihre Veranstaltung oder insbesondere Ihre Termine recht kurze Titel. 
@@ -71,7 +71,7 @@ Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und bea
 Wiederholen Sie diese Schritte für jedes Produkt, dass Sie über den KulturPass-Marktplatz anbieten möchten. 
 Sie können beliebig viele Produkte über den KulturPass-Marktplatz anbieten. 
 
-!!! Note 
+!!! Note "Hinweis"
     Ihr Angebot wird im KulturPass-Marktplatz immer mit dem höchsten einzelnen Produktpreis gelistet. 
     Wenn Sie ein Produkt für 100 € über den KulturPass-Marktplatz anbieten, wird Ihr Angebot dort mit 100 € gelistet. 
     Das gilt sogar dann, wenn alle anderen Produkte in Ihrem Shop z.B. nur 5 € kosten. 
@@ -100,7 +100,7 @@ pretix übermittelt automatisch Ihre Veranstaltungen, wickelt die Einlösung der
 Die Gelder für mit dem KulturPass bezahlten Tickets erhalten Sie in Form einer Sammelüberweisung von der Stiftung Digitale Chancen auf das Bankkonto, das Sie bei der Einrichtung Ihres KulturPass-Kontos angegeben haben. 
 In Ihrem [KulturPass-Backend](https://kulturpass-de.mirakl.net/) können Sie über den Menüpunkt "Buchhaltung" Ihre bereits erfolgten und kommenden Auszahlungen betrachten.
 
-!!! Warning
+!!! Warning "Warnung"
     Bearbeiten Sie **niemals** eingehende Bestellungen, Produkte oder Angebote im KulturPass-Backend. 
     Sie würden damit riskieren, dass die Datenbasis zwischen pretix und dem KulturPass-System divergiert und es zu fehlerhaften Buchungen kommt. 
     Nehmen Sie Korrekturbuchungen und Änderungen ausschließlich über pretix vor. 
@@ -109,7 +109,7 @@ In Ihrem [KulturPass-Backend](https://kulturpass-de.mirakl.net/) können Sie üb
 Erstattungen für Stornierungen und Absagen können Sie ebenfalls über das pretix-Backend vornehmen. 
 Der zurückzuerstattende Betrag wird dem KulturPass-Konto automatisch gutgeschrieben.
 
-!!! Note 
+!!! Note "Hinweis"
     Nach Ausgabe eines KulturPass-Einlösecodes kann dieser von der kaufenden Person jederzeit storniert werden. 
     Das System kann ihn ebenfalls stornieren, wenn er nicht binnen 48 Stunden vollständig eingelöst wurde. 
     Dies kann zu Fluktuationen im Guthaben führen, das im KulturPass-Backend angezeigt wird. 

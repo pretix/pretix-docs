@@ -31,7 +31,7 @@ Nähere Informationen zu den Zugangsdaten nach Hersteller und Modell der TSE fin
 Notieren Sie diese Daten unbedingt und verwahren Sie sie an einem sicheren Ort. 
 Sollten die Zugangsdaten zu einer TSE verloren gehen, dann kann sie nicht mehr benutzt werden. 
 
-!!! Note 
+!!! Note "Hinweis"
     Verwahren Sie die Zugangsdaten so, dass sie nicht in die Hände von Unbefugten gelangen können. 
     Sorgen Sie aber auch dafür, dass die Daten bei Bedarf (z.B. Steuerprüfung oder Tausch der TSE) auffindbar sind, wenn Sie nicht persönlich anwesend sind. 
     Treffen Sie Vorkehrungen für den Fall, dass sich Ihre Zuständigkeit ändert (z.B. wenn Sie Ihren Job wechseln). 
@@ -41,7 +41,7 @@ Falls Ihre TSE bereits eingerichtet wurde, dann geben Sie die bereits in der TSE
 In beiden Fällen stellen Sie sicher, dass die eingegebenen Daten mit den notierten Daten übereinstimmen und tippen dann :btn:OK:. 
 Es dauert einen Moment, die TSE einzurichten. 
 
-!!! Warning 
+!!! Warning "Warnung"
     Während pretixPOS die TSE einrichtet, dürfen Sie sie **auf keinen Fall** entfernen, die App beenden, oder die Kasse ausschalten. 
     Dies kann dazu führen, dass die TSE unbrauchbar wird. 
 

@@ -1,6 +1,6 @@
 ## Einführung
 
-!!! Note 
+!!! Note "Hinweis"
     Sollten Sie lediglich schnell entscheiden wollen, welcher Kontierungsmodus in den Einstellungen der pretix ePayBL-Erweiterung gewählt werden soll, so springen Sie direkt zur Sektion [Kontierungsmodus](epaybl.md#kontierungsmodus).
 
 ePayBL ist eine von vielen Methoden für die Abwicklung von Zahlungen in pretix. 
@@ -31,7 +31,7 @@ Gleichzeitig kann er mit jeder Version des ePayBL-Servers kommunizieren, unabhä
 
 Der ePayBL-Konnektor benutzt möglicherweise andere Anmeldedaten als der Server selbst. 
 
-!!! Note 
+!!! Note "Hinweis"
     pretix erlaubt keine Erstattungen von bereits geleisteten Zahlungen über ePayBL. 
     Der Prozess hierfür unterscheidet sich von Behörde zu Behörde und muss daher manuell durchgeführt werden.
 
