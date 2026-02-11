@@ -70,6 +70,15 @@ If your venue has more than one floor or seating block, then you should create a
 If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have place the seats in separate zones. 
 In order to create a new zone, click the :fa3-plus: button next to "Zones" in the sidebar and enter a name. 
 
+pretix maps products to seats depending on the **seat category**. 
+If you want to sell only one product for all seats on your plan, then you only need one seat category. 
+If you want to sell different products for different seats, then you need one seat category per product. 
+
+Create a seat category by clicking the :btn-icon:fa3-plus:: button next to the headline "Categories" in the sidebar. 
+Enter a name and select a color for the seat category. 
+You can remove a seat category by clicking the :btn-icon:fa3-trash:: button next to it. 
+Change the name and color by clicking the :fa3-pencil:: button. 
+
 !!! Note 
     If you are using a Mac computer, you can use the `⌘` key aka `Command` key in place of the `Ctrl` key. 
     The `Ctrl` key also works. 
@@ -234,12 +243,6 @@ You should take care of this manual assignment before issuing tickets to your cu
 Otherwise, pretix cannot include the seat information on the ticket. 
 
 Click the :btn:Save: button. 
-As soon as you have assigned a seating plan to an event, it becomes impossible to change that seating plan under that name. 
-You can still edit the plan and create a new entry for the updated version. 
-If you want to migrate your existing event to a new seating plan, see [Migrating to a new seating plan](#migrating-to-a-new-seating-plan). 
-
-Alternatively, if your seating plan is only assigned to this event, you can delete your selection from the field labeled "Seating plan" and click the :btn:Save: button again. 
-This makes it possible to edit the seating plan and assign it to this event afterwards. 
 
 ## Advanced usage 
 
@@ -286,9 +289,32 @@ Under "Allow to buy blocked seats on these channels", select the sales channel f
 
 For instance, if you want to reserve some seats for the box office on the day of the event, select `Box office (pretixPOS)`. 
 
-### Migrating to a new seating plan
+### Making changes to a seating plan that is already in use 
 
-In order to migrate your events from one seating plan to another, navigate to :navpath:Your organizer → :i-seat: Seating plans:. 
+As soon as you have assigned a seating plan to an event or date, it becomes impossible to change that seating plan under the same name. 
+But there are two methods for still making changes to the plan. 
+
+ 1. Removing the selection of the plan, editing it, and selecting it for the event or date again
+ 2. Migrating your existing plan to a new plan
+
+The **first method** only works if your seating plan is only assigned to a single event or date, and if you have not sold any products for the seats on it yet. 
+In order to remove the selection of your seating plan for a single event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
+In order to do the same for a date in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates: and select the date in question. 
+The process is the same from here on out. 
+
+Delete your selection from the field labeled "Seating plan" and save your changes. 
+This makes it possible to edit the seating plan and assign it to this event or date once more. 
+You will have to map categories to products again. 
+
+The **second method** uses the migration feature. 
+You should use this if your seating plan is assigned to multiple events or dates, or if you have already sold products for the seats on it. 
+Even if you are just making a small change, it is still necessary to migrate to a new plan. 
+
+Edit the layout as needed. 
+For every seat in your previous layout that you have already sold or created a voucher for, your new layout must contain a seat with the same seat ID. 
+Save the layout and create a new entry for the seating plan in your organizer account. 
+
+In order to migrate from the previous seating plan to the new, navigate to :navpath:Your organizer → :i-seat: Seating plans:. 
 Search for the seating plan from which you want to migrate in the list. 
 Click the :btn-icon:fa3-share:: "Migrate to new plan" button next to it. 
 
