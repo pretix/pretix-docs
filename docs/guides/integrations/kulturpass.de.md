@@ -1,3 +1,3 @@
 # KulturPass
 
-{% include "kulturpass.md" %}
+{% include "kulturpass.de.md" %}
