@@ -277,20 +277,21 @@ Once you are happy with your choices, click the :btn:Save: button.
 
 If you want to make a selection of seats only available to a specific group of people, then you can use one of two methods: 
 
- 1. Configuring a product for restricted audience and assigning the seats to a corresponding category
- 2. Blocking seats and allowing a certain sales channel to bypass the block
+ 1. Configuring a product for restricted audience and assigning the seats to a corresponding category. 
+ You should generally use this method because it is more flexible. 
+ 2. Blocking seats and allowing a certain sales channel to bypass the block. 
+ This method is useful if you want to be able to still sell blocked seats manually. 
+ It is also useful if you want to entrust this decision to the personell operating a specific sales channel, for example the POS at your event, or a reseller. 
 
-For the first method, create a seat category. 
+For the **first method**, create a seat category. 
 Assign the seats you want to reserve for the restricted audience to it. 
 Create a product that you set up for a restricted audience with one of the methods described in [Products/Restricted audience](products/restricted-audience.md). 
 
 Assign that product to the seat category as described in [Assigning a seating plan to a single event](#assigning-a-seating-plan-to-a-single-event) or [Assigning a seating plan to a date in an event series](#assigning-a-seating-plan-to-a-date-in-an-event-series). 
 
-If you want to make some seats available only on a certain sales channel, block those seats as described under [Blocking seats](#blocking-seats). 
+For the **second method**, block the seats for which you want to restrict availability as described under [Blocking seats](#blocking-seats). 
 Then, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:. 
 Under "Allow to buy blocked seats on these channels", select the sales channel for through you want those blocked seats to still be available. 
-
-For instance, if you want to reserve some seats for the box office on the day of the event, select `Box office (pretixPOS)`. 
 
 ### Making changes to a seating plan that is already in use 
 
