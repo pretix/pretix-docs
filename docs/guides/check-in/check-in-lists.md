@@ -55,7 +55,7 @@ The box next to  "All products (including newly created ones)" is checked by def
 If all your products are admission products and there are no separate areas with their own entrances at your event, then you do not need to change that. 
 In any other case, uncheck the box and check the products you want to include on the list under "Limit to products". 
 
-If you want to implement a use case similar to the example provided above, check the boxes next to your basic access tickets and leave all other boxes unchecked. 
+If you want to implement a use case like the one described under [General usage](#general-usage), check the boxes next to your basic access tickets and leave all other boxes unchecked. 
 You would then use this list at the main entrance to your event. 
 
 !['Check-in lists' page on the 'General' tab, displaying 'Default' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The standard ticket and discount ticket are checked and everything else is unchecked.](../../assets/screens/check-in/default.png "Edit check-in list default")
@@ -68,7 +68,7 @@ In order to create a new check-in list, navigate back to :navpath:Your event →
 Click the :btn-icon:fa3-plus: Create a new check-in list: button. 
 Enter a name for the new check-in list and check the boxes next to any tickets you want to include on it. 
 
-If you want to implement a use case similar to the example provided above, name the check-in list "Fast lane". 
+If you want to implement a use case like the one described under [General usage](#general-usage), name the check-in list "Fast lane". 
 Uncheck the box next to  "All products (including newly created ones)" and under "Limit to products", check the boxes next to your fast lane tickets. 
 You would then use this list at the fast lane entrance at your event. 
 
