@@ -11,10 +11,17 @@ You can configure all Italian VAT rates in pretix using [tax rules](../../guides
 
 ### E-invoicing
 
-Italy requires all domestic invoices to be issued using an [electronic standard](https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica) and sent through the national invoicing system.
+Italy requires all domestic invoices to be issued using an [electronic standard](https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica) and sent through the national invoicing system ("Sistema di Interscambio", "SdI").
 
-pretix currently does **not** support this process, but we are working on a solution to this.
-In the meantime, it is possible to sell tickets through pretix and send invoices outside of pretix.
+<!-- md:hosted -->
+
+On pretix Hosted, sending invoices through SdI is supported.
+To get started, go to :navpath:Your event → :fa3-wrench: Settings → Plugins: and enable the plugin "E-invoicing for Italy (via Invopop)".
+Then, go to :navpath:Your event → :fa3-wrench: Settings → E-invoicing: fill out the settings and follow all recommendations.
+Invoices will be transmitted to SdI automatically through our partner Invopop S.L. and their subprocessor A-Cube srl.
+An additional price per invoice is charged according to our [price list](https://pretix.eu/about/en/pricing).
+
+pretix Enterprise and pretix Community currently do not support the Italian invoicing process.
 
 More information is available on the website of the European Commission: [eInvoicing in Italy](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Italy).
 
