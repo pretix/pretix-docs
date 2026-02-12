@@ -56,15 +56,13 @@ This also takes you to [https://seats.pretix.eu/](https://seats.pretix.eu/).
 
 ![Seating plan editor, displaying a toolbar with icons for different actions at the top; a sidebar with settings for the zones, the plan itself, categories, and the background image; as well as a blank background with a grid in the center.](../assets/screens/seating/editor.png "Seating plan layout editor")
 
-The **width** and **height** you should use for your plan depends on the physical dimensions of your venue. 
-Ideally, a seat with the default radius of 10 in your layout should correspond to the size of that seat in your venue. 
-Creating much smaller seats may result in them being difficult to select. 
-Creating much larger seats may result in text labels being too difficult to read. 
-
 If you have an **image** file containing a plan of your venue, that image can be helpful while creating the layout. 
 If you want to use such an image as guidance during layout creation, click the :btn:UPLOAD IMAGE: button and select the file. 
 The layout editor will not save the image you upload here as part of your layout. 
 It merely serves as a useful template for placing seats and other objects on the layout. 
+
+If you have uploaded an image, then it makes sense to adapt the **width** and **height** to the dimensions of that image. 
+If not, you can create seats and other objects first, and adapt width and height of the layout to fit those elements comfortably. 
 
 If your venue has more than one floor or seating block, then you should create a corresponding number of **zones** in the layout. 
 If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have place the seats in separate zones. 
@@ -92,6 +90,11 @@ In order to **select** existing elements, click the :btn-icon:fa3-mouse-pointer:
 If you want to select only a single seat, click the :btn-icon:i-tool-seatselect:: "select seats" button instead. 
 Click the element. 
 You can also select a single seat by clicking the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button and then double-clicking the seat. 
+
+!!! Note 
+    Ideally, the radius of seats in your plan should not deviate too far from the default value of 10. 
+    Creating much smaller seats may result in them being difficult to select. 
+    Creating much larger seats may result in text labels being too difficult to read. 
 
 If you want to select multiple elements, hold the `Shift` key while clicking them. 
 Alternatively, hold the left mouse button and move the mouse to draw a selection rectangle around them. 
