@@ -20,11 +20,13 @@ Falls Sie die Netzwerkkonfiguration des Druckers ändern, benötigen Sie für da
 ## Anleitung
 
 Mit dem Bixolon XD5-40d können Sie Badges in Form von Klebeetiketten drucken. 
-Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
-Dann testen Sie die Konfiguration. 
+Um einen dieser Drucker in Betrieb zu nehmen, sind folgende Schritte notwendig: 
 
-Falls die Hardware nicht vorkonfiguriert wurde, drucken Sie eine Konfigurationsseite. 
-Danach verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+ - [Versorgen Sie Ihren Drucker](#drucker-anschließen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
+ - [Testen Sie die Konfiguration](#konfiguration-testen)
+ - Falls die Hardware nicht vorkonfiguriert wurde, [drucken Sie eine Konfigurationsseite](#konfigurationsseite-drucken)
+ - [Verbinden Sie den Drucker](#drucker-mit-scan-smartphone-oder-kasse-verbinden) über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+
 Diese Schritte werden im Folgenden genauer erklärt. 
 
 ### Drucker anschließen
@@ -84,7 +86,7 @@ Falls ein Drucker für eine dieser Rollen eingerichtet ist, wird er unter der en
 
 Tippen Sie neben der Anzeige des Druckers in pretixPRINT das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v:: und dann :btn:Testseite drucken:. 
 Beobachten Sie, ob der Drucker wie erwartet eine Testseite produziert. 
-Falls Sie mehrere Drucker von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
+Falls Sie mehrere Drucker für je Badge-, Ticket- oder Belegdruck von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
 
 Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](bixolon.de.md#problemlosung). 
 Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](bixolon.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
@@ -103,7 +105,10 @@ Wenn Sie den Drucker stattdessen über **WLAN** verbinden wollen, dann brauchen 
 Für eine Verbindung über USB brauchen Sie keine Informationen von der Konfigurationsseite. 
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
-Sie ist **nicht** zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird. 
+Im Beispielfoto oben lautet die IP-Adresse für die Kabelverbindung `192.168.1.8`. 
+Die IP-Adresse für die WLAN-Verbindung lautet `192.168.214.9`. 
+Bei Ihrem Drucker wird sie wahrscheinlich anders lauten. 
+Die IP-Adresse ist nicht zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
@@ -198,9 +203,9 @@ Passen Sie Ihren Hardware-Aufbau entsprechend an.
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-### Druckauftrag enthält Unsinn 
+### Druckauftrag enthält fehlerhafte Zeichen 
 
-**Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
+**Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber fehlerhafte Zeichen (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
 Das deutet darauf hin, dass in pretixPRINT das falsche Protokoll für den Drucker konfiguriert ist. 
 
 **Lösung:** Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 

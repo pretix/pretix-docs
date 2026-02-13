@@ -25,11 +25,13 @@ Als Material benötigen Sie bedruckbares Thermopapier, z.B. in Form von Tickets 
 ## Anleitung
 
 Mit dem Boca Lemur oder Lemur C können Sie entweder Tickets oder Butterfly-Badges bedrucken. 
-Sie müssen Ihren Drucker mit Strom, einer Netzwerkverbindung und bedruckbarem Material versorgen. 
-Dann testen Sie die Konfiguration. 
+Um einen dieser Drucker in Betrieb zu nehmen, sind folgende Schritte notwendig: 
 
-Falls die Hardware nicht vorkonfiguriert wurde, drucken Sie eine Konfigurationsseite. 
-Danach verbinden Sie den Drucker über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+ - [Versorgen Sie Ihren Drucker](#drucker-anschließen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
+ - [Testen Sie die Konfiguration](#konfiguration-testen)
+ - Falls die Hardware nicht vorkonfiguriert wurde, [drucken Sie eine Konfigurationsseite](#konfigurationsseite-drucken)
+ - [Verbinden Sie den Drucker](#drucker-mit-scan-smartphone-oder-kasse-verbinden) über unsere App pretixPRINT mit der Kasse oder den Scannern. 
+
 Diese Schritte werden im Folgenden genauer erklärt. 
 
 ### Drucker anschließen
@@ -83,7 +85,7 @@ Falls ein Drucker für eine dieser Rollen eingerichtet ist, wird er unter der en
 
 Tippen Sie neben der Anzeige des Druckers in pretixPRINT das Drei-Punkte-Menü :btn-icon:fa3-ellipsis-v:: und dann :btn:Testseite drucken:. 
 Beobachten Sie, ob der Drucker wie erwartet eine Testseite produziert. 
-Falls Sie mehrere Drucker von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
+Falls Sie mehrere Drucker für je Badge-, Ticket- oder Belegdruck von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch. 
 
 Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](boca.de.md#problemlosung). 
 Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](boca.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](boca.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden). 
@@ -96,6 +98,8 @@ Die Konfigurationsseite könnte z.B. so aussehen:
 !["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftarten sowie Barcodes. Die IP-Adresse lautet 192.168.214.142"](../../assets/screens/hardware-setup/boca-test.jpg "Boca Konfigurationsseite des Druckers")
 
 Die IP-Adresse befindet sich im oberen linken Viertel des Ausdrucks in der Zeile, die mit `IP ADD=` beginnt. 
+Im Beispielfoto oben lautet Sie `192.168.214.142`. 
+Bei Ihrem Drucker wird sie wahrscheinlich anders lauten. 
 Diese IP-Adresse benötigen Sie, um Scan-Smartphones und Kassen mit den Druckern zu verbinden. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
@@ -210,9 +214,9 @@ Passen Sie Ihren Hardware-Aufbau entsprechend an.
 Alternativ können Sie die IP-Adresse auf die des gewünschten Druckers ändern. 
 Speichern Sie die Einstellungen und testen Sie erneut. 
 
-### Druckauftrag enthält Unsinn 
+### Druckauftrag enthält fehlerhafte Zeichen 
 
-**Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber Unsinn (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
+**Problem:** Die pretixPRINT-Testseite oder Ihre anderen Druckaufträge werden zwar ausgedruckt, enthalten aber fehlerhafte Zeichen (z.B. Sonderzeichen oder zufällige Zeichenfolgen). 
 Das deutet darauf hin, dass in pretixPRINT das falsche Protokoll für den Drucker konfiguriert ist. 
 
 **Lösung:** Ändern Sie in pretixPRINT Protokoll und gegebenenfalls Dialekt, mit dem das Gerät den Drucker anspricht. 
