@@ -2,12 +2,12 @@
 
 Dieser Artikel behandelt die Einrichtung von Hardware für Ihre Veranstaltung. 
 Wir bieten [professionelle Hardware](https://pretix.eu/about/de/hardware) zur Miete und zum Kauf an. 
-Mit diesen Geräten können Sie Produkte verkaufen, am Einlass Tickets kontrollieren, sowie Belege, Tickets und Badges drucken. 
+Mit diesen Geräten können Sie Produkte verkaufen, am Einlass Tickets kontrollieren sowie Belege, Tickets und Badges drucken. 
 Dazu nutzen Sie unsere Apps pretixPOS, pretixPRINT und pretixSCAN. 
 
 Diese Funktionen können Sie auch mit Ihrer eigenen Hardware abdecken, solange Sie ein funktionierendes Netzwerk haben und Ihre Geräte kompatibel mit unseren Apps sind. 
 
-Bei Mietaufträgen richtet unser Team die Geräte üblicherweise vor dem Versand an Sie so ein, dass Sie sie nur noch anschließen und testen müssen. 
+Bei Mietaufträgen richtet unser Team die Geräte üblicherweise vor dem Versand an Sie so ein, dass Sie die Geräte nur noch anschließen und testen müssen. 
 Je nach Auftragslage und Verfügbarkeit der Hardware ist dies jedoch nicht immer möglich. 
 
 Falls Sie Hardware von uns kaufen, gibt es eine größere Vielfalt an Geräten und Konfigurationsmöglichkeiten. 
@@ -48,7 +48,8 @@ Sobald die LEDs nicht mehr abwechselnd blinken, sondern eine der LEDs durchgäng
 Alternativ zur mobilen Datenverbindung können Sie den Router über die WAN-Buchse an einen kabelgebundenen Internetanschluss am Einsatzort anschließen. 
 
 Wenn die LEDs "2.4" und "5" unterhalb von "WiFi" durchgängig leuchten, dann stellt der Router ein Netz mit 2,4 GHz und ein Netz mit 5 GHz zur Verfügung. 
-Bei den von uns vermieteten Routern lauten die Namen dieser Netze `pretix_onsite` und `pretix_onsite_5ghz`. 
+Auf vielen Routern befindet sich ein Etikett mit dem jeweiligen Netzwerknamen und -passwort. 
+Bei den von uns vermieteten Routern lauten die Namen dieser Netzwerke `pretix_onsite` und `pretix_onsite_5ghz`. 
 Falls Sie mehrere Router von uns gemietet haben, werden an die Namen ein Unterstrich und eine Zahl angehängt, z.B. `pretix_onsite_1` und `pretix_onsite_5ghz_1`. 
 
 Verbinden Sie die anderen Geräte über LAN-Kabel oder über WLAN mit dem Router. 
@@ -97,7 +98,7 @@ Das genaue Verhalten hängt von den Einstellungen des jeweiligen Scan-Smartphone
     Versuchen Sie **nicht**, ein Gerät mit Gewalt in den Steckplatz zu stecken. 
     Sie können Ihre privaten Smartphones **nicht** über die Ladestation laden. 
 
-Nachdem die Scan-Smartphones ausreichend geladen sind, schalten Sie sie ein und verbinden sie mit dem WLAN des Routers. 
+Nachdem die Scan-Smartphones ausreichend geladen sind, schalten Sie diese ein und verbinden sie mit dem WLAN des Routers. 
 
 ### Kasse in Betrieb nehmen 
 
@@ -108,7 +109,7 @@ Andere ähneln einfachen Tablets.
 Die Bildschirme der Kassen sind deutlich größer als die der Scan-Smartphones. 
 
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
-Schalten Sie sie ein und verbinden Sie mit dem Netzwerk. 
+Schalten Sie die Kasse ein und verbinden Sie mit dem Netzwerk. 
 
 Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
 
