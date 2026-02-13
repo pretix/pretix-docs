@@ -103,7 +103,7 @@ Nachdem die Scan-Smartphones ausreichend geladen sind, schalten Sie diese ein un
 ### Kasse in Betrieb nehmen 
 
 Die von uns vermieteten und verkauften Kassen haben unterschiedliche Bauformen. 
-Manche von ihnen haben einen eingebaute Belegdrucker. 
+Manche von ihnen haben einen eingebauten Belegdrucker. 
 Manche haben einen Standfuß. 
 Andere ähneln einfachen Tablets. 
 Die Bildschirme der Kassen sind deutlich größer als die der Scan-Smartphones. 
@@ -111,10 +111,10 @@ Die Bildschirme der Kassen sind deutlich größer als die der Scan-Smartphones.
 Schließen Sie die Kasse an das Netzteil und an eine Steckdose an. 
 Schalten Sie die Kasse ein und verbinden Sie mit dem Netzwerk. 
 
-Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über den dafür vorgesehenen Anschluss (RJ11) mit der Kasse. 
+Falls Sie eine Kassenschublade verwenden, verbinden Sie diese über das dafür vorgesehene Kabel mit dem RJ11-Anschluss an der Kasse. 
 
 Wenn Sie eine Kasse in der Bundesrepublik Deutschland verwenden, dann müssen Sie eine technische Sicherheitseinrichtung (TSE) benutzen und die Kasse dem Finanzamt melden. 
-Wenn Sie die Hardware gemietet haben, dann ist die TSE bereits eingebaut und eingerichtet. 
+Wenn Sie die Hardware gemietet haben und uns rechtzeitig vor dem Versand alle notwendigen Informationen geschickt haben, dann ist die TSE bereits eingebaut und eingerichtet. 
 Falls Sie die Hardware gekauft haben, folgen Sie den Anweisungen im Artikel [Technische Sicherheitseinrichtung (TSE)](../pretixpos/tse.de.md). 
 
 Sie müssen jede Kasse in Ihrem Besitz dem Finanzamt melden. 
@@ -125,7 +125,9 @@ Folgen Sie dazu den Anweisungen im Artikel [Kassenanmeldung in Deutschland](../p
 
 Wir bieten Drucker für drei verschiedene Anwendungen an: Belege, Tickets und Badges (Namensschilder). 
 Die von uns angebotenen Ticketdrucker wie z.B. der Boca Lemur können auch Butterfly-Badges bedrucken. 
+Diese Butterfly-Badges können Sie direkt an einem Lanyard befestigen. 
 Für Badges in Form von Klebeetiketten verwenden Sie hingegen einen Etikettendrucker wie z.B. den Bixolon XD5-40d. 
+Diese Etiketten kleben Sie dann auf vorbedruckte Trägerkartons. 
 
 Unabhängig von der genauen Anwendung müssen Sie Ihren Drucker mit Strom, einer Verbindung (LAN, WLAN oder USB) und bedruckbarem Material versorgen. 
 Falls Sie die Hardware von uns gemietet haben, testen Sie, ob die Konfiguration wie gewünscht funktioniert. 
