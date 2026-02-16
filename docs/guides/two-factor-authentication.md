@@ -10,7 +10,7 @@ This article explains the advantages of 2FA and how to set it up for your pretix
 ## Background information 
 
 Depending on your usage of pretix and permission settings, your user account can grant access to a lot of sensitive information. 
-This sensitive information can include, for example, company secrets, payment history, and your customer's contact data. 
+This sensitive information can include, for example, company secrets, payment history, and your customers' contact data. 
 
 A strong password offers a good baseline level of security. 
 But potential malicious actors can breach passwords through malware, social engineering, and other methods. 
@@ -19,9 +19,9 @@ A second factor for authentication makes such an attack significantly more diffi
 An attacker would have to gain access to both your 2FA device and your account credentials. 
 Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
 
-We recommend setting up 2FA for all user account at your organization. 
+We recommend setting up 2FA for all user accounts at your organization. 
 If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 
-Once everyone on your team has done so, a malicious attack is almost impossible to succeed. 
+Once everyone on your team has done so, a malicious attack is very unlikely to succeed. 
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Depending on the authentication method you intend to use, you need to have:
 ## How to
 
 Log in to your pretix user account. 
-Click the :btn-icon:fa3-user: [Your name]: button in the top right corner. 
+Click the :btn-icon:fa3-user:[Your name]: button in the top right corner. 
 This takes you to your user account settings. 
 
 !["Page titled 'Account settings', displaying settings for 'Full name', 'Language', 'Default timezone', 'Notifications', 'Email', 'Password', 'Two-factor authentication', 'Authorized applications', and 'Account history'."](../assets/screens/account/account-settings.png "Account settings")
@@ -54,9 +54,9 @@ Take a look at the "Two-factor authentication" setting.
 If 2FA is disabled, then there is a gray "Disabled" tag next to it. 
 In order to enable 2FA, click the :btn:Enable: button. 
 
-!["Page titled 'Two-factor authentication', displaying the 'Two factor status' as 'currently' disabled, a button for adding a new registered device, and emergency tokens."](../assets/screens/account/two-factor-authentication.png "Two-factor authentication")
+!["Page titled 'Two-factor authentication', displaying the 'Two factor status' as 'currently disabled', a button for adding a new registered device, and emergency tokens."](../assets/screens/account/two-factor-authentication.png "Two-factor authentication")
 
-On the next page, click the :btn-icon:fa3-plus: Add a new device: button. 
+On the next page, click the :btn-icon:fa3-plus:Add a new device: button. 
 Enter a name. 
 The next steps are different depending on whether you want to use [a TOTP app](#using-a-totp-app) or a [hardware token](#using-a-hardware-token). 
 
@@ -74,13 +74,13 @@ If this is the case, then you can use the device you already have on hand for 2F
 If you use separate applications for password storage and TOTP generation, then the TOTP method offers good security. 
 However, like all software run on a device connected to the internet, a TOTP app is vulnerable to malware. 
 
-A hardware token is that it is much cheaper to acquire than a smartphone. 
+A hardware token is much cheaper than a smartphone. 
 If you need to buy a new device for 2FA, then this can be an advantage. 
-Even a set of two or three hardware tokens for redundancy is still cheaper. 
+Another advantage is that hardware tokens are less susceptible to software attacks. 
 
-Hardware tokens are less susceptible to software attacks. 
-You must remove your hardware token from the computer and keep it on your person whenever your computer is not locked in your personal office or in your home. 
-A hardware token is typically smaller than a phone and only used for authentication purposes, so it can potentially be easier to lose. 
+You must remove your hardware token from the computer and keep it on your person whenever you are not actively using it. 
+One downside of the hardware token is that it is typically smaller than a phone and only used for authentication purposes. 
+Thus, it can potentially be easier to lose. 
 
 ### Using a TOTP app 
 
@@ -103,7 +103,7 @@ Alternatively, click :btn:Can't scan the barcode?: and enter the code displayed 
 
 Save the entry in your TOTP app. 
 It should now display a six-digit code that changes every 30 seconds. 
-This code is the time-based one time password. 
+This code is the time-based one-time password. 
 Enter it in the pretix backend in the field labeled "Enter the displayed code here". 
 Then, click the :btn:Continue: button. 
 
@@ -148,7 +148,7 @@ Then, click the :btn:Continue: button.
 You can only use each emergency token once. 
 Delete it from the list or cross it out after you have used it. 
 
-Click the :btn-icon:fa3-user: [Your name]: button in the top right corner. 
+Click the :btn-icon:fa3-user:[Your name]: button in the top right corner. 
 This takes you to your user account settings. 
 Click :btn:Change two-factor settings:. 
 Seek out the lost device in the list and click the :btn:Remove: button next to it. 
