@@ -1,12 +1,10 @@
 # Two-factor authentication 
 
-The term "Two-factor authentication" or **2FA** refers to using two factors to authenticate your identity. 
-This provides more security than authenticating with a single factor such as a password. 
+By default, your pretix account is secured with a single factor: your password. 
+You can add a second factor to improve security. 
+This is called "two-factor authentication" or **2FA**. 
 
-You can secure your pretix user account with 2FA. 
-The first factor is always your password. 
-The second factor can be a WebAuthn-compatible hardware token or an authenticator application. 
-
+The second security factor can be a WebAuthn-compatible hardware token or an authenticator application. 
 This article explains the advantages of 2FA and how to set it up for your pretix user account. 
 
 ## Background information 
