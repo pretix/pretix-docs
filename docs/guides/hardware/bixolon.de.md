@@ -13,7 +13,7 @@ Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung über LAN brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
 Bei manchen Exemplaren erfordert die Verbindung über WLAN einen WLAN-Dongle. 
-Als Material benötigen Sie aufgerollte bedruckbare Thermoetiketten mit einer Breite von bis zu 127mm. 
+Als Material benötigen Sie kompatible aufgerollte bedruckbare Thermoetiketten mit einer Breite von bis zu 127mm. 
 
 Falls Sie die Netzwerkkonfiguration des Druckers ändern, benötigen Sie für das Drucken der Konfigurationsseite einen dünnen, stabilen Gegenstand wie z.B. eine geradegebogene Büroklammer. 
 
@@ -56,9 +56,9 @@ Alle Anschlüsse befinden sich hinten und unten am Gerät.
 Um den Drucker über **LAN** mit dem Netzwerk zu verbinden, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers. 
 Stecken Sie das andere Ende des LAN-Kabels in einen freien LAN-Anschluss an Ihrem Router. 
 
-Um den Drucker über **WLAN** mit dem Netzwerk zu verbinden, stecken Sie den einen WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
+Um den Drucker über **WLAN** mit dem Netzwerk zu verbinden, stecken Sie den mitgelieferten WLAN-Dongle in die USB-A-Buchse an der Rückseite des Routers. 
 Falls der Drucker über ein eingebautes WLAN-Modul verfügt, ist dieser Schritt nicht notwendig. 
-Wir schicken Ihnen nur dann einen WLAN-Dongle, wenn einer Ihrer Drucker ihn benötigt. 
+Wir schicken Ihnen nur dann einen WLAN-Dongle, wenn einer der gelieferten Drucker ihn benötigt. 
 
 Alternativ zur Netzwerkverbindung können Sie den Drucker auch über **USB** direkt an eine Kasse anschließen. 
 Um das zu tun, stecken Sie ein USB-Typ-B-Kabel in die entsprechende Buchse an der Rückseite des Druckers. 
@@ -230,9 +230,22 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 **Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
 Das bedeutet, dass der Druckkopf verschmutzt ist. 
 
-**Lösung:** 
-Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
+**Lösung:** Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers nach Vorgabe des Herstellers. 
 Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Printer Maintenance](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A130%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D). 
+
+### Druck ist blass oder streifig
+
+**Problem:** Der Druck ist zwar sinnvoll, ist aber zu blass oder hat hellere und dunklere Streifen. 
+Das bedeutet, dass die Etiketten zu sehr gealtert sind. 
+
+**Lösung:** Betätigen Sie den Feed-Button an der Oberseite des Geräts. 
+Er ist mit einem geschwungenen Pfeil gekennzeichnet. 
+Entfernen Sie die ersten zehn Etiketten und versuchen Sie dann einen weiteren Druck auf dem folgenden Etikett. 
+Falls Sie weitere Rollen mit Etiketten haben, können Sie alternativ eine der anderen Rollen einlegen und testen. 
+
+Thermopapier altert und ist empfindlich gegenüber Licht und Wärme. 
+Das kann in manchen Fällen den Druck unbrauchbar machen.  
+Davon ist in erster Linie die äußere Lage der Rolle betroffen. 
 
 ### Druck ist leer oder enthält nur Teile des Layouts 
 

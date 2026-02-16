@@ -20,7 +20,7 @@ Die Geräte Boca Lemur und Boca Lemur C unterscheiden sich in ihrem Aufbau nur i
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung über LAN brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
-Als Material benötigen Sie bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite. 
+Als Material benötigen Sie kompatibles bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite. 
 
 ## Anleitung
 
@@ -63,7 +63,9 @@ Daraufhin sollten der Bildschirm (nur Lemur) und mindestens eine LED an der Seit
     Die Anweisungen zum Druckmaterial gelten für die Konfiguration unserer Mietgeräte. 
     Falls Sie Ihre Drucker bei einem Dritthändler gekauft haben oder ihn in einer abweichenden Konfiguration bei uns geordert haben, müssen Sie das Druckmaterial möglicherweise anders einlegen. 
 
-Legen Sie Ihr Druckmaterial so bereit, dass die bedruckbare Seite nach oben zeigt und die schwarzen quadratischen Markierungen an dem Ende liegen, das weiter vom Drucker entfernt ist. 
+Legen Sie Ihr Druckmaterial passend bereit. 
+Die bedruckbare Seite muss nach oben zeigen.
+Die schwarzen quadratischen Markierungen müssen sich auf der Unterseite befinden und an dem Ende liegen, das weiter vom Drucker entfernt ist. 
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht. 
 Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur C: alle), schneidet er das erste Ticket bzw. das erste Badge ab. 
 
@@ -241,8 +243,22 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 **Problem:** Der Druck ist zwar sinnvoll, enthält aber schwarze Flecken, weiße Stellen, oder ist verschmutzt. 
 Das bedeutet, dass der Druckkopf verschmutzt ist. 
 
-**Lösung:** Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers. 
+**Lösung:** Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers nach Vorgabe des Herstellers. 
 Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D). 
+
+### Druck ist blass oder streifig
+
+**Problem:** Der Druck ist zwar sinnvoll, ist aber zu blass oder hat hellere und dunklere Streifen. 
+Das bedeutet, dass das Druckmaterial zu sehr gealtert sind. 
+
+**Lösung:** Entfernen Sie das Druckmaterial aus dem Drucker. 
+Trennen Sie die ersten zehn Tickets oder Badges ab. 
+Legen Sie den Stapel dann erneut in den Drucker ein. 
+Falls Sie weitere Stapel mit Tickets oder Badges haben, können Sie alternativ einen der anderen Stapel einlegen und testen. 
+
+Thermopapier altert und ist empfindlich gegenüber Licht und Wärme. 
+Das kann in manchen Fällen den Druck unbrauchbar machen.  
+Je nach Lagerung sind davon in erster Linie die obersten Tickets oder Badges betroffen. 
 
 ### Druck ist leer oder enthält nur Teile des Layouts 
 

@@ -19,7 +19,7 @@ Die Geräte Epson TM-m30iii und TM-T88vii unterscheiden sich in der Bedienung nu
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe. 
 Für die Netzwerkverbindung brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung. 
-Als Material benötigen Sie aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm. 
+Als Material benötigen Sie kompatibles aufgerolltes bedruckbares Thermopapier mit einer Breite von 80mm. 
 
 ## Anleitung
 

@@ -16,7 +16,7 @@ Dieser Artikel behandelt in erster Linie die Einrichtung unserer Miethardware.
 ## Voraussetzungen
 
 Die Voraussetzungen hängen von Ihrem individuellen Anwendungsfall ab. 
-In jedem Fall brauchen Sie ausreichend Steckdosen und entweder mobilen Datenempfang oder einen Kabelanschluss für die Internetverbindung. 
+In jedem Fall brauchen Sie ausreichend Steckdosen und entweder mobilen Datenempfang oder einen lokalen Anschluss für die Internetverbindung. 
 
 ## Anleitung
 
