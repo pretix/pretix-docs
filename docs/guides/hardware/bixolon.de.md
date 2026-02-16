@@ -106,8 +106,8 @@ Für eine Verbindung über USB brauchen Sie keine Informationen von der Konfigur
 
 Die IP-Adresse des Druckers befindet sich in der Zeile, die mit `IP ADDR` beginnt. 
 Im Beispielfoto oben lautet die IP-Adresse für die Kabelverbindung `192.168.1.8`. 
-Die IP-Adresse für die WLAN-Verbindung lautet `192.168.214.9`. 
-Bei Ihrem Drucker wird sie wahrscheinlich anders lauten. 
+In dem gleichen Beispiel lautet die IP-Adresse für die WLAN-Verbindung `192.168.214.9`. 
+Bei Ihrem Drucker werden diese Adressen wahrscheinlich anders lauten. 
 Die IP-Adresse ist nicht zu verwechseln mit der Gateway-Adresse, die in die Zeile mit `GATEWAY` gedruckt wird. 
 Das wird im nächsten Abschnitt näher erklärt. 
 
