@@ -89,3 +89,8 @@ The next time a member of that team who has not enabled 2FA logs in, they will b
 They cannot leave that page until they enable 2FA (and add a device if necessary), or leave the team in question. 
 
 In order to learn more about the advantages of 2FA and how to set it up for in your pretix user account, read our article on [Two-factor authentication](two-factor-authentication.md). 
+
+### Setting up 2FA as required
+
+If pretix takes you directly to the page titled "Two-factor authentication" and you open any other page in pretix, then the person managing your team has [required 2FA](#requiring-two-factor-authentication-2fa) for your team. 
+In order to set up 2FA for your account, read our article on [Two-factor authentication](two-factor-authentication.md). 
