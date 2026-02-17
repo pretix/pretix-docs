@@ -78,6 +78,16 @@ Die Konfiguration unserer Router erfüllt all die oben genannten Voraussetzungen
 Die von uns vermieteten oder verkauften Scan-Smartphones sind robuste Geräte mit eingebautem Scanner. 
 Vor dem Einsatz sollten Sie bei allen Scan-Smartphones rechtzeitig den Akkustand prüfen und Sie gegebenenfalls laden. 
 
+!!! Note
+    Unsere Scan-Smartphones verfügen über eine Kamera und einen Scanner. 
+    Der Scanner arbeitet wesentlich schneller und zuverlässiger als die Kamera. 
+    Daher sollten Sie für die Einlasskontrolle immer den Scanner benutzen. 
+
+    Wenn Sie sicherstellen wollen, dass der Scanner in Verwendung ist, dann öffnen Sie die App pretixSCAN. 
+    Tippen Sie :btn-icon:fa3-ellipsis-v: und dann :btn:Einstellungen:. 
+    Scrollen Sie zum Abschnitt "Benutzeroberfläche". 
+    Das Kontrollkästchen neben "Geräte-Kamera benutzen" sollte **nicht** angehakt sein. 
+
 Dafür nutzen Sie die **Ladegeräte**, die im Lieferumfang enthalten sind. 
 Stecken Sie das mitgelieferte USB-C-Ladekabel in die Buchse unten am Scan-Smartphone und verbinden Sie das andere Ende des Kabels mit dem Ladeadapter. 
 Stecken Sie den Ladeadapter in eine Steckdose. 
