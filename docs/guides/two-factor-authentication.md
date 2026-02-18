@@ -10,7 +10,7 @@ This article explains the advantages of 2FA and how to set it up for your pretix
 ## Background information 
 
 Depending on your usage of pretix and permission settings, your user account can grant access to a lot of sensitive information. 
-This sensitive information can include, for example, company secrets, payment history, and your customers' contact data. 
+This sensitive information can include, for example, company secrets, payment history, and your customers' data. 
 
 A strong password offers a good baseline level of security. 
 But potential malicious actors can breach passwords through malware, social engineering, and other methods. 
@@ -19,7 +19,7 @@ A second factor for authentication makes such an attack significantly more diffi
 An attacker would have to gain access to both your 2FA device and your account credentials. 
 Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
 
-We recommend setting up 2FA for all user accounts at your organization. 
+We recommend setting up 2FA for all user accounts within your organization. 
 If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 
 Once everyone on your team has done so, a malicious attack is very unlikely to succeed. 
 
@@ -38,7 +38,7 @@ This takes you to your user account settings.
 
 !["Page titled 'Account settings', displaying settings for 'Full name', 'Language', 'Default timezone', 'Notifications', 'Email', 'Password', 'Two-factor authentication', 'Authorized applications', and 'Account history'."](../assets/screens/account/account-settings.png "Account settings")
 
-Before you set up 2FA, you should store your **emergency tokens** outside of pretix. 
+You should store your **emergency tokens** securely outside of pretix before setting up 2FA. 
 You can use these codes in place of your 2FA device in case you lose access to it. 
 Copy the codes and print them or write them down on paper. 
 Store that paper in a safe place such as a locked drawer. 
@@ -72,15 +72,16 @@ This can be your work phone, your personal phone, another mobile device, or a se
 If this is the case, then you can use the device you already have on hand for 2FA. 
 
 If you use separate applications for password storage and TOTP generation, then the TOTP method offers good security. 
-However, like all software run on a device connected to the internet, a TOTP app is vulnerable to malware. 
+However, like any software run on a device connected to the internet, a TOTP app is vulnerable to malware. 
 
 A hardware token is much cheaper than a smartphone. 
 If you need to buy a new device for 2FA, then this can be an advantage. 
 Another advantage is that hardware tokens are less susceptible to software attacks. 
 
-You must remove your hardware token from the computer and keep it on your person whenever you are not actively using it. 
-One downside of the hardware token is that it is typically smaller than a phone and only used for authentication purposes. 
-Thus, it can potentially be easier to lose. 
+You must remove your hardware token from the computer and store it in a safe place or keep it on your person whenever you are not actively using it. 
+Treat it like your personal keychain. 
+One downside of hardware tokens is that they are typically smaller than a phone and only used for authentication purposes. 
+Thus, they can be easier to lose. 
 
 ### Using a TOTP app 
 
@@ -96,7 +97,7 @@ Alternatively, click :btn:Can't scan the barcode?: and enter the code displayed 
 
 !!! Note 
     **Do not** store your password and your TOTP secret in the same password manager. 
-    If it is possible to access both factors through the same primary password, then the second factor only offers very little increased security compared to single-factor authentication. 
+    If it is possible to access both factors through the same primary password, then the second factor only offers very little additional security compared to single-factor authentication. 
     
     For instance, **do not** add the TOTP secret to the same password manager entry as your pretix user account data. 
     Use separate apps for TOTP generation and password storage, or at least separate databases. 
