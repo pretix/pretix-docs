@@ -20,7 +20,7 @@ An attacker would have to gain access to both your 2FA device and your account c
 Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
 
 We recommend setting up 2FA for all user accounts within your organization. 
-The IT security standard ISO27001 requires secure authentication and recommends 2FA. 
+The information security standard ISO27001 requires secure authentication and recommends 2FA. 
 If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 
 Once everyone on your team has done so, a malicious attack is very unlikely to succeed. 
 
