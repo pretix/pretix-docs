@@ -230,7 +230,7 @@ The answer will then be fixed and cannot be edited by the customer anymore.
 ![Page titled Question. The "Advanced" tab is open, showing input fields for Help text in two languages and for Internal identifier.](../../assets/screens/saml/question-advanced.png "Question advanced screenshot" )
 
 In order to set up a question this way, navigate to :navpath:Your event: → :fa3-ticket: Products → Questions. 
-Click the :btn-icon:fa3-plus: Create a new question: button or click the edit button :btn-icon:fa3-wrench: next to an existing question. 
+Click the :btn-icon:fa3-plus: Create a new question: button or click the edit button :btn-icon:fa3-wrench:: next to an existing question. 
 Switch to the :btn:Advanced: tab. 
 Set the "Internal identifier" field to the same as the `friendlyName` of one of the SAML attributes that you defined under "Requested Attributes" in the global or organizer-level SAML settings. 
 
