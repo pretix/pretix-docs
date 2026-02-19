@@ -104,6 +104,13 @@ Strip all unnecessary data (such as tracking) from a link before inserting it.
 You can identify the start of the unnecessary data by the `#` or the `?` symbol in the URL. 
 Check any links to external websites frequently to confirm that they still point to the desired website. 
 
+### Stick to our grammar guidelines
+
+Our main source for guidelines on spelling, punctuation and grammar is [Merriam-Webster](https://www.merriam-webster.com/). 
+Use the spellings listed on that website. 
+If Merriam-Webster does not list a word, try to find it on [Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page)
+Avoid spellings marked as "alternative" or "variant" on either of those websites. 
+
 ### Use Vale to improve your text 
 
 The linter Vale can help improve your writing. 
