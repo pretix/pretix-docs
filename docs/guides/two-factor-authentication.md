@@ -20,15 +20,22 @@ An attacker would have to gain access to both your 2FA device and your account c
 Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
 
 We recommend setting up 2FA for all user accounts within your organization. 
+The IT security standard ISO27001 requires secure authentication and recommends 2FA. 
 If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 
 Once everyone on your team has done so, a malicious attack is very unlikely to succeed. 
 
 ## Prerequisites
 
+!!! Note 
+    The applications and devices listed here are **examples**. 
+    They are not recommendations. 
+    We recommend doing some research into trustworthy hardware tokens or authenticator apps. 
+    Do this before deciding on a 2FA solution for your team. 
+
 Depending on the authentication method you intend to use, you need to have: 
 
  - a WebAuthn-compatible hardware token such as a Yubikey **or** 
- - an authenticator app capable of generating time-based one-time passwords (TOTP), such as Microsoft Authenticator, Google Authenticator, or Bitwarden. 
+ - an authenticator app capable of generating time-based one-time passwords (TOTP), such as Microsoft Authenticator, Google Authenticator, Bitwarden, or FreeOTP. 
 
 ## How to
 

@@ -85,7 +85,7 @@ In order to do so, create or edit the team.
 Check the box next to "Require all members of this team to use two-factor authentication". 
 This setting may take a few minutes to take effect. 
 
-The next time a member of that team who has not enabled 2FA logs in, they will be taken to the page titled "Two-factor authentication". 
+When a member of that team who has not enabled 2FA next logs in, they will be redirected to the page titled "Two-factor authentication". 
 They cannot leave that page until they enable 2FA (and add a device if necessary), or leave the team in question. 
 
 In order to learn more about the advantages of 2FA and how to set it up for in your pretix user account, read our article on [Two-factor authentication](two-factor-authentication.md). 
