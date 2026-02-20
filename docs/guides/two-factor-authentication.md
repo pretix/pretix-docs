@@ -19,6 +19,14 @@ A second factor for authentication makes such an attack significantly more diffi
 An attacker would have to gain access to both your 2FA device and your account credentials. 
 Detecting a breach of one security factor can give you enough time to change it before the attacker can also breach the other factor. 
 
+You should establish a policy regarding the use of 2FA in your organization. 
+This policy should include a list of approved hardware tokens and apps for 2FA. 
+It should contain a protocol on how to store emergency tokens. 
+This policy should be documented and communicated to all staff members. 
+
+Put such a policy into place or review your existing policy for the points mentioned above. 
+This is a prerequisite for using 2FA with pretix. 
+
 We recommend setting up 2FA for all user accounts within your organization. 
 The information security standard ISO27001 requires secure authentication and recommends 2FA. 
 If you want to require your coworkers to use 2FA for their pretix accounts, refer to the article on [Teams](teams.md#requiring-two-factor-authentication-2fa). 
