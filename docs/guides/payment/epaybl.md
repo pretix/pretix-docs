@@ -1,7 +1,8 @@
 # ePayBL
 
 !!! Note 
-    Since ePayBL is only available to German federal, provincial and communal entities, the following page is also only provided in German. 
-    Should you require assistance with ePayBL and do not speak this language, please feel free reach out to <support@pretix.eu>.
+    ePayBL is only available to German federal, provincial and communal entities. 
+    Thus, we are only providing this article in German. 
+    If you require assistance with ePayBL and do not speak this language, reach out to our support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750). 
 
-{% include "epaybl.md" %}
+German article: [ePayBL](epaybl.de.md)
