@@ -6,4 +6,4 @@
     Thus, we only provide the following page in German. 
     If you require assistance with the usage of such a device with pretixPOS in Germany and do not speak German, feel free reach out to to support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750). 
 
-German article: [Kassenanmeldung in Deutschland](/de/guides/pretixpos/tse)
+German article: [Technische Sicherheitseinrichtung](/de/guides/pretixpos/tse)
