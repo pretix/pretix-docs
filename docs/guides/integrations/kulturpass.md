@@ -1,7 +1,8 @@
 # KulturPass
 
 !!! Note 
-    Since the KulturPass is specific to event organizers within Germany, the following page is also only provided in German. 
-    Should you require assistance with the KulturPass and do not speak this language, please feel free reach out to <support@pretix.eu>.
-
-{% include "kulturpass.md" %}
+    KulturPass is specific to event organizers within Germany. 
+    Thus, we are only providing this article in German. 
+    If you require assistance with KulturPass and do not speak this language, reach out to our support via [email](mailto:support@pretix.eu) or [phone](tel:+4962213217750). 
+    
+    German article: [KulturPass](kulturpass.de.md)
