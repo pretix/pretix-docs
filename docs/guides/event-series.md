@@ -7,6 +7,16 @@ An event series allows you to create multiple dates that are all part of the eve
 You should create an event series if you want your customers to book time slots, or if you want them to be able to buy tickets for multiple different dates by placing a single order. 
 In all other cases, creating singular events should suffice. 
 
+!!! Note 
+    You do **not** need to create an event series for the following use cases: 
+
+     - events that last more than one day, such as conferences or festivals
+     - events with large gaps of time between the individual dates, such as annual conferences 
+     - events with very little overlap in terms of name, schedule, and venue
+     - events with smaller-scale events taking place within them (such as workshops at a conference)
+
+    We recommend creating singular events in these cases because they are less complex to set up. 
+
 ## Prerequisites 
 
 This article assumes that you have access to an organizer account, either because you created it yourself when you signed up on pretix.eu, or because you were invited and granted access by a co-organizer. 
@@ -56,6 +66,7 @@ We recommend creating **singular events** for the following use cases:
  This can be solved more easily using different products and check-in rules.
  - events with large gaps of time between the individual dates, such as annual conferences 
  - events with very little overlap in terms of organizational parameters 
+ - small-scale events taking place in the context of a larger event (such as workshops at a conference)
 
 ### How to create an event series 
 
