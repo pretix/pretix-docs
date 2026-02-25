@@ -38,7 +38,7 @@ This section will guide you through those steps in detail.
     Thus, you will not have to install pretixSCAN on a scan-smartphone that you rented from us. 
     For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
 
-![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot") 
+![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot") 
 
 You can install pretixSCAN on your Android device [through the Google Play Store](https://play.google.com/store/apps/details?id=eu.pretix.pretixscan.droid) like any other app. 
 If your device does not have access to the Google Play Store, you can download the latest version from our [pretix Marketplace](https://marketplace.pretix.eu/products/pretixscan-android/versions). 
@@ -53,14 +53,14 @@ The next section is going to tell you how to do that.
 
 ### Connecting the device to the pretix backend 
 
-!["Connect a new device" page, showing options for the name of the device, the events it should have access to, its security profile, and gate.](../assets/screens/scan/connect-new-device.png "Connect new device screenshot") 
+!["Connect a new device" page, showing options for the name of the device, the events it should have access to, its security profile, and gate.](../../assets/screens/scan/connect-new-device.png "Connect new device screenshot") 
 
 Open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
 Give the device a unique and recognizable name such as "Entrance B phone 1". 
 You can authorize the device for all events or limit its access to certain events only. 
-Select "pretixSCAN" from the "Security profile" dropdown menu. 
+Select "pretixSCAN" from the "Security profile" drop-down menu. 
 
-!["Connect to device" page, displaying instructions for installing pretixSCAN, a QR and a token.](../assets/screens/scan/connect-device.png "Connect to device screenshot") 
+!["Connect to device" page, displaying instructions for installing pretixSCAN, a QR and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot") 
 
 Once you click :btn:Save:, you will be taken to a page displaying a QR code. 
 Scan the QR code with the camera or hardware scanner while on the setup screen of pretixSCAN. 
@@ -69,7 +69,7 @@ If you cannot scan the QR code, there is an alternative solution:
 Tap the three button menu in the top right corner of the pretixSCAN app and then tap "Manual setup". 
 Enter the system URL and token displayed in the pretix backend below the QR code. 
 
-![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../assets/screens/scan/select-event.png "Select event screenshot") 
+![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../../assets/screens/scan/select-event.png "Select event screenshot") 
 
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets. 
 Select the event in the list or in the calendar and tap :btn:OK:. 
@@ -98,7 +98,7 @@ There are three possible results:
  3. In all other cases, pretixSCAN displays a red box with a title explaining the problem. 
  Explanations can include, among others, "Invalid ticket", "Order canceled", or "Entry not allowed". 
 
-![Scanning a ticket in pretixSCAN. A green box appears at the top of the screen, displaying a checkmark, the text: "Valid ticket (Speaker ticket)" and the order code suffixed with "-1".](../assets/screens/scan/valid.png "Valid ticket screenshot") 
+![Scanning a ticket in pretixSCAN. A green box appears at the top of the screen, displaying a checkmark, the text: "Valid ticket (Speaker ticket)" and the order code suffixed with "-1".](../../assets/screens/scan/valid.png "Valid ticket screenshot") 
 
 If none of these things happen, then the code has not been scanned. 
 Try adjusting the angle and distance between scanner and ticket or improving ambient lighting. 
