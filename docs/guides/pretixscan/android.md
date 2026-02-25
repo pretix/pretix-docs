@@ -34,7 +34,7 @@ This section will guide you through those steps in detail.
 ### Installation and setup 
 
 !!! Note 
-    pretixSCAN comes preinstalled on the scan-smartphones that are available for rent and on our website. 
+    pretixSCAN comes preinstalled on the scan-smartphones that are available for rent on our website. 
     Thus, you will not have to install pretixSCAN on a scan-smartphone that you rented from us. 
     For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
 
