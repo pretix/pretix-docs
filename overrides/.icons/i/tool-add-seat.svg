@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   id="svg935"
+   sodipodi:docname="tool-add-seat.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata941">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs939" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
+     id="namedview937"
+     showgrid="false"
+     inkscape:zoom="15.379573"
+     inkscape:cx="7.9000893"
+     inkscape:cy="8.9079196"
+     inkscape:window-x="0"
+     inkscape:window-y="2160"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg935"
+     inkscape:pagecheckerboard="0"
+     showguides="false" />
+  <path
+     id="ellipse2231"
+     style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:3.07058;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 12 4.78125 A 7.219101 7.2191038 0 0 0 4.78125 12 A 7.219101 7.2191038 0 0 0 12 19.21875 A 7.219101 7.2191038 0 0 0 19.21875 12 A 7.219101 7.2191038 0 0 0 19.21875 11.962891 L 12.029297 11.962891 L 12.029297 4.78125 A 7.219101 7.2191038 0 0 0 12 4.78125 z " />
+  <path
+     d="m 19,5 h 3 v 2 h -3 v 3 H 17 V 7 H 14 V 5 h 3 V 2 h 2 z"
+     id="path933"
+     sodipodi:nodetypes="ccccccccccccc" />
+</svg>
