@@ -42,7 +42,7 @@ Once everyone on your team has done so, a malicious attack is very unlikely to s
 
 Depending on the authentication method you intend to use, you need to have: 
 
- - a WebAuthn-compatible hardware token such as a Yubikey **or** 
+ - a WebAuthn-compatible hardware token such as a YubiKey **or** 
  - an authenticator app capable of generating time-based one-time passwords (TOTP), such as Microsoft Authenticator, Google Authenticator, Bitwarden, or FreeOTP. 
 
 ## How to
@@ -138,7 +138,7 @@ Then, click the :btn:Continue: button.
 
 A new page will open and your browser will prompt you to activate your hardware token. 
 Activate it. 
-For instance, if you are using a Yubikey, touch the blinking capacitive button. 
+For instance, if you are using a YubiKey, touch the blinking capacitive button. 
 
 This takes you back to the page titled "Two-factor authentication". 
 The page will now state that 2FA is enabled and under "Registered devices", it will list the hardware token. 
