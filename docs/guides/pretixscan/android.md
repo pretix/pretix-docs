@@ -1,6 +1,6 @@
 # pretixSCAN (Android)
 
-The Android version of pretixSCAN is an application that helps you handle the check-in at your events. 
+The Android version of [pretixSCAN](https://pretix.eu/about/en/scan) is an application that helps you handle the check-in at your events. 
 The primary function of pretixSCAN is to validate tickets, but it also offers many other features, such as: 
 
  - searching for participants manually if they do not have their ticket on hand 
@@ -38,14 +38,23 @@ This section will guide you through those steps in detail.
     Thus, you will not have to install pretixSCAN on a scan-smartphone that you rented from us. 
     For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
 
-![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot") 
-
 You can install pretixSCAN on your Android device [through the Google Play Store](https://play.google.com/store/apps/details?id=eu.pretix.pretixscan.droid) like any other app. 
 If your device does not have access to the Google Play Store, you can download the latest version from our [pretix Marketplace](https://marketplace.pretix.eu/products/pretixscan-android/versions). 
 On devices manufactured by Sunmi, you can also find the app in the Sunmi App Store. 
 
+![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot") 
+
 When you launch pretixSCAN for the first time, confirm that you understand the privacy and security implications of storing attendee data on your device. 
 You have to grant pretixSCAN access to the device's camera in order to use the core functionality of validating tickets. 
+
+!!! Note
+    Our scan-smartphones have both a camera and a scanner. 
+    The scanner works much more quickly and reliably than the camera. 
+    Thus, you should always use the scanner at your check-in. 
+
+    In order to make sure that you are using the scanner, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
+    Scroll to the section titled "User interface". 
+    Ensure that the box next to "Use device camera" is **unchecked**. 
 
 pretixSCAN will start accessing the scanner or camera instantly once you have granted permission. 
 It will also display a text box telling you to create a new device in our organizer account in the pretix backend. 
@@ -60,7 +69,7 @@ Give the device a unique and recognizable name such as "Entrance B phone 1".
 You can authorize the device for all events or limit its access to certain events only. 
 Select "pretixSCAN" from the "Security profile" drop-down menu. 
 
-!["Connect to device" page, displaying instructions for installing pretixSCAN, a QR and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot") 
+!["Connect to device" page, displaying instructions for installing pretixSCAN, a QR code, and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot") 
 
 Once you click :btn:Save:, you will be taken to a page displaying a QR code. 
 Scan the QR code with the camera or hardware scanner while on the setup screen of pretixSCAN. 
