@@ -13,6 +13,7 @@ In all other cases, creating singular events should suffice.
      - events that last more than one day, such as conferences or festivals
      - events with large gaps of time between the individual dates, such as annual conferences 
      - events with very little overlap in terms of name, schedule, and venue
+     - events with smaller-scale events taking place within them (such as workshops at a conference)
 
     We recommend creating singular events in these cases because they are less complex to set up. 
 
@@ -65,6 +66,7 @@ We recommend creating **singular events** for the following use cases:
  This can be solved more easily using different products and check-in rules.
  - events with large gaps of time between the individual dates, such as annual conferences 
  - events with very little overlap in terms of organizational parameters 
+ - small-scale events taking place in the context of a larger event (such as workshops at a conference)
 
 ### How to create an event series 
 
