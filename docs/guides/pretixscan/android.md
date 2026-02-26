@@ -34,8 +34,8 @@ This section will guide you through those steps in detail.
 ### Installation and setup 
 
 !!! Note 
-    pretixSCAN comes preinstalled on the scan-smartphones that are available for rent on our website. 
-    Thus, you will not have to install pretixSCAN on a scan-smartphone that you rented from us. 
+    pretixSCAN comes preinstalled on the scan smartphones that are available for rent on our website. 
+    Thus, you will not have to install pretixSCAN on a scan smartphone that you rented from us. 
     For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan). 
 
 You can install pretixSCAN on your Android device [through the Google Play Store](https://play.google.com/store/apps/details?id=eu.pretix.pretixscan.droid) like any other app. 
@@ -48,7 +48,7 @@ When you launch pretixSCAN for the first time, confirm that you understand the p
 You have to grant pretixSCAN access to the device's camera in order to use the core functionality of validating tickets. 
 
 !!! Note
-    Our scan-smartphones have both a camera and a scanner. 
+    Our scan smartphones have both a camera and a scanner. 
     The scanner works much more quickly and reliably than the camera. 
     Thus, you should always use the scanner at your check-in. 
 
@@ -65,6 +65,7 @@ The next section is going to tell you how to do that.
 !["Connect a new device" page, showing options for the name of the device, the events it should have access to, its security profile, and gate.](../../assets/screens/scan/connect-new-device.png "Connect new device screenshot") 
 
 Open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
+Click the :btn-icon:fa3-plus: Connect a device: button. 
 Give the device a unique and recognizable name such as "Entrance B phone 1". 
 You can authorize the device for all events or limit its access to certain events only. 
 Select "pretixSCAN" from the "Security profile" drop-down menu. 
@@ -132,8 +133,8 @@ Badge printing only works if you have enabled the "Badges" plugin for the curren
 In order to enable badge printing in pretixSCAN, you have to first install our additional app pretixPRINT on the same device and configure a connection to a printer. 
 
 !!! Note 
-    pretixPRINT comes preinstalled and configured on the scan-smartphones that are available for rent on our website. 
-    Thus, you will not have to install and configure pretixPRINT on a scan-smartphone that you rented from us. 
+    pretixPRINT comes preinstalled and configured on the scan smartphones that are available for rent on our website. 
+    Thus, you will not have to install and configure pretixPRINT on a scan smartphone that you rented from us. 
 
 Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
@@ -167,6 +168,24 @@ As soon as you check the box next to "Enable PIN protection", pretixSCAN will lo
 
 This means that the next time you return to the home screen and attempt to open the settings, the app will require you to enter the PIN. 
 You also have the option to protect other functions with the same PIN: statistics, switching between events, as well as switching between entrance and exit scanning mode. 
+
+### Letting attendees scan their own tickets
+
+If you want to let your attendees scan their own tickets, you should use **kiosk mode**. 
+Kiosk mode hides the top bar on pretixSCAN's main screen. 
+This makes it impossible for users to access the settings, change the event, search for user data, or trigger a synchronization with the server. 
+
+In order to enable kiosk mode, lock the settings behind a PIN as described under [Locking the settings](#locking-the-settings). 
+While you are in the "PIN protection" submenu, check the box next to "Kiosk mode". 
+Once you return to the main screen, pretixSCAN will not display the menu bar at the top anymore. 
+
+Use the [App pinning](https://support.google.com/android/answer/9455138?hl=en) feature of Android or your preferred solution to prevent users from leaving the app. 
+
+In order to leave kiosk mode and display the menu bar again, you need a QR code of your PIN
+Open [our QR code generator](https://qr.pretix.dev/) and enter your PIN.
+Alternatively, you can use any QR code generator of your choice. 
+Use pretixSCAN to scan the resulting QR code. 
+The app will now display the top bar once again, allowing you to access the settings. 
 
 ### Offline scanning 
 
@@ -203,16 +222,25 @@ If you select "Only errors or connection loss", then pretixSCAN will enable offl
     
     While you are using pretixSCAN in offline mode, tickets ordered while your shop is in test mode will not be recognized as valid and will also not show up in the search. 
 
-### Letting attendees scan their own tickets
+## Troubleshooting
 
-If you want to let your attendees scan their own tickets, you should use **kiosk mode**. 
+### You do not have access to the PIN
 
-Kiosk mode fundamentally limits the functionality of the app. 
-There are only two ways to leave kiosk mode: scanning a QR code of the PIN, or performing a hard reset of the pretixSCAN app. 
+**Problem:** The pretixSCAN settings are locked behind a PIN or kiosk mode is enabled. 
+You do not have access to the PIN, but you need to unlock the settings. 
 
-Do not turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
-Do not turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
+**Solution:** Reset app data. 
+Open the settings on your Android device and delete the storage for the pretixSCAN app. 
+This resets the app to a state  as if freshly installed. 
 
+Alternatively, you can uninstall the app and install it again. 
+
+This also severs the connection to the pretix backend. 
+Open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
+Look for the device you disconnected in the list. 
+Click the :btn:Revoke access: button next to it. 
+
+Then, connect the device once again as described under [Connecting the device to the pretix backend](#connecting-the-device-to-the-pretix-backend). 
 
 ## Further Information
 
