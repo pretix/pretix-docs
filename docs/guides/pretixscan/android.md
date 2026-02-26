@@ -71,11 +71,12 @@ Select "pretixSCAN" from the "Security profile" drop-down menu.
 
 !["Connect to device" page, displaying instructions for installing pretixSCAN, a QR code, and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot") 
 
-Once you click :btn:Save:, you will be taken to a page displaying a QR code. 
+Once you click :btn:Save:, pretix redirects you to a page displaying a QR code. 
 Scan the QR code with the camera or hardware scanner while on the setup screen of pretixSCAN. 
 
-If you cannot scan the QR code, there is an alternative solution: 
-Tap the three button menu in the top right corner of the pretixSCAN app and then tap "Manual setup". 
+If you cannot scan the QR code, then you can connect the device manually instead. 
+In order to do so, tap the three button menu in the top right corner of the pretixSCAN app. 
+Then, tap "Manual setup". 
 Enter the system URL and token displayed in the pretix backend below the QR code. 
 
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../../assets/screens/scan/select-event.png "Select event screenshot") 
@@ -84,14 +85,15 @@ Once you scanned the QR code or entered the token successfully, the app will ask
 Select the event in the list or in the calendar and tap :btn:OK:. 
 
 If you want to scan tickets for multiple events at the same time, check the box next to "Expert mode". 
-In most cases, scanning tickets for one event at a time is enough. 
-Do not enable expert mode if you do not want to scan tickets for multiple events simultaneously. 
+Scanning tickets for one event at a time is enough for most use cases. 
+You should only enable expert mode if you want to scan tickets for multiple events simultaneously. 
 Then, select a check-in list and tap :btn:OK: again. 
-The app will now land you on the main screen and start downloading event data from the server in the background. 
+The app will now land you on the main screen and 7start downloading event data from the server in the background. 
 
 ### Entry scanning
 
-The app should now be in entry scanning mode, which is recognizable by the pictogram of a gray box with an arrow pointing to the right :fa3-sign-in: in the top right corner. 
+The app should now be in entry scanning mode. 
+If it is, then it displays a pictogram of a gray box with an arrow pointing to the right :fa3-sign-in: in the top right corner. 
 If the pictogram is yellow and the arrow points to the left :fa3-sign-out:, that means that the app is in "exit scanning" mode. 
 Switch to entry scanning by tapping the :btn-icon:fa3-ellipsis-v:: button and :btn:Switch to entry scanning: in the popup menu. 
 
@@ -112,7 +114,7 @@ There are three possible results:
 If none of these things happen, then the code has not been scanned. 
 Try adjusting the angle and distance between scanner and ticket or improving ambient lighting. 
 You can turn the device's flashlight and automatic focus on or off with the buttons at the bottom of the screen. 
-If you have trouble scanning a code from a mobile phone screen, ask the customer to increase screen brightness to maximum. 
+If you have trouble scanning a code from a phone screen, ask the customer to increase screen brightness to maximum. 
 
 ### Searching for attendee data 
 
@@ -122,12 +124,16 @@ Tap the :btn-icon::fa3-search:: button at the top of the screen.
 In the search field, enter the attendee's name, order code, ticket secret, or email address. 
 Tap the matching result in the list. 
 
-The app will now check the validity of the ticket and return the same results as if the ticket was being scanned. 
+The app will now check the validity of the ticket and return the same results as if it was scanning the ticket. 
 
 ### Enabling badge printing 
 
-Badge printing only works if the "Badges" plugin has been enabled for the current event and the ticket you are scanning has a badge layout selected. 
+Badge printing only works if you have enabled the "Badges" plugin for the current event and the ticket you are scanning has a badge layout selected. 
 In order to enable badge printing in pretixSCAN, you have to first install our additional app pretixPRINT on the same device and configure a connection to a printer. 
+
+!!! Note 
+    pretixPRINT comes preinstalled and configured on the scan-smartphones that are available for rent on our website. 
+    Thus, you will not have to install and configure pretixPRINT on a scan-smartphone that you rented from us. 
 
 Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
@@ -137,9 +143,9 @@ You can manually print a badge for the ticket holder by tapping the :btn-icon:fa
 A push notification will pop up while the print job is being sent. 
 
 If you want to automatically print a badge for every ticket you scan, go back to the settings page, tap "Print badges automatically" and select "Always". 
-The :btn-icon:fa3-print:: button will still be displayed, allowing you to manually print an extra badge. 
+The app will still display the :btn-icon:fa3-print:: button, allowing you to manually print an extra badge. 
 
-If you want all badges to be printed twice, go to the settings page and check the box next to "Print every badge twice". 
+If you want to print out all badges twice after a scan, go to the settings page and check the box next to "Print every badge twice". 
 
 ## Advanced usage 
 
