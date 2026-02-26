@@ -153,6 +153,7 @@ This section covers the following advanced use cases of pretixSCAN on Android:
 
  - [locking the settings](#locking-the-settings)
  - [offline scanning](#offline-scanning)
+ - Letting attendees [scan their own tickets](#letting-attendees-scan-their-own-tickets) using kiosk mode
 
 ### Locking the settings 
 
@@ -162,18 +163,10 @@ This can be useful if you want to prevent the people operating the check-in from
 Open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
 Scroll to the "User interface" subheading and tap "PIN protection". 
 Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
-As soon as you check the box next to "Enable PIN protection", the settings will be locked by PIN. 
+As soon as you check the box next to "Enable PIN protection", pretixSCAN will lock the settings behind the PIN. 
 
-This means that the next time you return to the home screen and attempt to open the settings, you will be prompted to enter the PIN. 
-You also have the option to protect the other functions of the app with the same PIN: statistics, switching between events, as well as switching between entrance and exit scanning mode. 
-
-!!! Warning
-    The PIN settings page also has the option to turn on kiosk mode. 
-    Kiosk mode fundamentally limits the functionality of the app. 
-    There are only two ways to leave kiosk mode: scanning a QR code of the PIN, or performing a hard reset of the pretixSCAN app. 
-
-    Do not turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
-    Do not turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
+This means that the next time you return to the home screen and attempt to open the settings, the app will require you to enter the PIN. 
+You also have the option to protect other functions with the same PIN: statistics, switching between events, as well as switching between entrance and exit scanning mode. 
 
 ### Offline scanning 
 
@@ -190,22 +183,36 @@ Installing the app, connecting it to the backend and synchronizing data between 
 Do these steps ahead of time in a setting where you do have a reliable connection if you are planning to use pretixSCAN in offline mode. 
 
 !!! Warning 
-    If you are using offline scanning with more than one device, then a single ticket can potentially be used for entry more than once. 
-    As soon as the device that has scanned the ticket performs a successful synchronization, and then the other devices also perform a successful synchronization, the ticket will be recognized as "Ticket already used". 
+    If you are using offline scanning with more than one device, then attendees can potentially use a single ticket for entry more than once. 
+    However, this is only possible for a limited period of time. 
+    As soon as the device that has scanned the ticket performs a successful synchronization, and then the other devices also perform a successful synchronization. 
+    After that, pretixSCAN will correctly identify the ticket as "Ticket already used". 
 
 If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
-Then check the box next to "Offline scanning". 
-Make sure that the settings "Automatic Synchronization" and "Download orders" are also both checked. 
+Then check the boxes next to "Offline scanning", "Automatic Synchronization", and "Download orders". 
 
 If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap the setting "Automatically turn offline mode on and off". 
-By default, "Manual mode (off)" is selected, which means that offline scanning will not be enabled or disabled automatically. 
+The default selection is "Manual mode (off)". 
+This means that pretixSCAN will not enable or disable offline scanning automatically. 
 
 If you select, for example, "3 seconds or errors", pretixSCAN will enable offline scanning after unsuccessfully attempting to verify a code for 3 seconds; after encountering 3 errors while attempting to verify a code; or after detecting a loss of connection while attempting to verify a code. 
 
 If you select "Only errors or connection loss", then pretixSCAN will enable offline scanning after encountering an error or detecting a loss of connection while attempting to verify a code. 
 
 !!! Note 
+    
     While you are using pretixSCAN in offline mode, tickets ordered while your shop is in test mode will not be recognized as valid and will also not show up in the search. 
+
+### Letting attendees scan their own tickets
+
+If you want to let your attendees scan their own tickets, you should use **kiosk mode**. 
+
+Kiosk mode fundamentally limits the functionality of the app. 
+There are only two ways to leave kiosk mode: scanning a QR code of the PIN, or performing a hard reset of the pretixSCAN app. 
+
+Do not turn on kiosk mode unless you are planning to use the device in a self-serve setup with customers scanning their own tickets. 
+Do not turn on kiosk mode before you have decided on a PIN, generated a QR code for it and stored it in a safe place. 
+
 
 ## Further Information
 
