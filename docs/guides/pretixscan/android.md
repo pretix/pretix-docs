@@ -175,7 +175,20 @@ If you want to let your attendees scan their own tickets, you should use **kiosk
 Kiosk mode hides the top bar on pretixSCAN's main screen. 
 This makes it impossible for users to access the settings, change the event, search for user data, or trigger a synchronization with the server. 
 
-In order to enable kiosk mode, lock the settings behind a PIN as described under [Locking the settings](#locking-the-settings). 
+pretix offers a security profile specifically for using pretixSCAN in kiosk mode. 
+In order to enable that, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
+
+Search for the device for which you want to enable the kiosk mode security profile in the list. 
+Click the :btn-icon:fa3-edit:: "edit" button next to it. 
+On the next page, under "Security profile", select `pretixSCAN (kiosk mode, no order sync, no search)`. 
+Click the :btn:Save: button. 
+
+!!! Note 
+    The kiosk mode security profile disables order search. 
+    If you want the possibility to use the order search on this device, select the security profile `pretixSCAN` instead. 
+    If you folllow the rest of the instructions in this section, then order search will still be locked behind a PIN. 
+
+In order to enable kiosk mode on your device, lock the settings behind a PIN as described under [Locking the settings](#locking-the-settings). 
 While you are in the "PIN protection" submenu, check the box next to "Kiosk mode". 
 Once you return to the main screen, pretixSCAN will not display the menu bar at the top anymore. 
 
@@ -190,7 +203,7 @@ The app will now display the top bar once again, allowing you to access the sett
 ### Offline scanning 
 
 The default scanning behavior of pretixSCAN requires a reliable network connection. 
-Every code scanned is compared against the selected check-in list that is stored on the pretix server. 
+The app compares every code that it scans against the selected check-in list stored on the pretix server. 
 If you are using pretixSCAN in an environment with an unreliable network connection or no connection at all, you may run into error messages while attempting to scan a code or search for attendee data. 
 The solution for this problem is pretixSCAN's offline mode. 
 
@@ -214,13 +227,17 @@ If the network connection at your check-in is present, but unstable, you can lea
 The default selection is "Manual mode (off)". 
 This means that pretixSCAN will not enable or disable offline scanning automatically. 
 
-If you select, for example, "3 seconds or errors", pretixSCAN will enable offline scanning after unsuccessfully attempting to verify a code for 3 seconds; after encountering 3 errors while attempting to verify a code; or after detecting a loss of connection while attempting to verify a code. 
+If you select, for example, "3 seconds or errors", pretixSCAN will enable offline scanning if at least one of the following three conditions is met: 
+
+ - pretixSCAN has been attempting to verify a code for three seconds without success
+ - pretixSCAN has encountered three errors while attempting to verify a code
+ - pretixSCAN has detected a loss of connection while attempting to verify a code
 
 If you select "Only errors or connection loss", then pretixSCAN will enable offline scanning after encountering an error or detecting a loss of connection while attempting to verify a code. 
 
 !!! Note 
-    
-    While you are using pretixSCAN in offline mode, tickets ordered while your shop is in test mode will not be recognized as valid and will also not show up in the search. 
+    In offline mode, pretixSCAN will not recognize any tickets ordered while your shop is in test mode as valid. 
+    Also, tickets ordered in test mode will not appear in the search. 
 
 ## Troubleshooting
 
@@ -231,7 +248,7 @@ You do not have access to the PIN, but you need to unlock the settings.
 
 **Solution:** Reset app data. 
 Open the settings on your Android device and delete the storage for the pretixSCAN app. 
-This resets the app to a state  as if freshly installed. 
+This resets the app to a state as if freshly installed. 
 
 Alternatively, you can uninstall the app and install it again. 
 
