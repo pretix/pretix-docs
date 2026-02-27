@@ -52,11 +52,11 @@ You have to grant pretixSCAN access to the device's camera in order to use the c
     The scanner works much more quickly and reliably than the camera. 
     Thus, you should always use the scanner at your check-in. 
 
-    In order to make sure that you are using the scanner, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
+    In order to ensure that you are using the scanner, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
     Scroll to the section titled "User interface". 
     Ensure that the box next to "Use device camera" is **unchecked**. 
 
-pretixSCAN will start accessing the scanner or camera instantly once you have granted permission. 
+Once you have granted permission, pretixSCAN will start accessing the scanner or camera instantly. 
 It will also display a text box telling you to create a new device in our organizer account in the pretix backend. 
 The next section is going to tell you how to do that. 
 
@@ -68,12 +68,12 @@ Open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Y
 Click the :btn-icon:fa3-plus: Connect a device: button. 
 Give the device a unique and recognizable name such as "Entrance B phone 1". 
 You can authorize the device for all events or limit its access to certain events only. 
-Select "pretixSCAN" from the "Security profile" drop-down menu. 
+Open the "Security profile" drop-down menu and select `pretixSCAN`.
 
 !["Connect to device" page, displaying instructions for installing pretixSCAN, a QR code, and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot") 
 
-Once you click :btn:Save:, pretix redirects you to a page displaying a QR code. 
-Scan the QR code with the camera or hardware scanner while on the setup screen of pretixSCAN. 
+Once you click the :btn:Save: button, pretix redirects you to a page displaying a QR code. 
+Open pretixSCAN and scan the QR code with the camera or hardware scanner. 
 
 If you cannot scan the QR code, then you can connect the device manually instead. 
 In order to do so, tap the three button menu in the top right corner of the pretixSCAN app. 
@@ -139,14 +139,15 @@ In order to enable badge printing in pretixSCAN, you have to first install our a
 Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
 
-From now on, a :btn-icon:fa3-print:: button will be displayed in the top right corner of the box that pops up whenever you scan a ticket. 
+From now on, the box that pops up whenever you scan a ticket will also include a :btn-icon:fa3-print:: button. 
 You can manually print a badge for the ticket holder by tapping the :btn-icon:fa3-print:: button. 
-A push notification will pop up while the print job is being sent. 
+A push notification will pop up while the device is sending the print job. 
 
 If you want to automatically print a badge for every ticket you scan, go back to the settings page, tap "Print badges automatically" and select "Always". 
 The app will still display the :btn-icon:fa3-print:: button, allowing you to manually print an extra badge. 
 
-If you want to print out all badges twice after a scan, go to the settings page and check the box next to "Print every badge twice". 
+If you want to print out all badges twice after a scan, open the settings in pretixSCAN. 
+Scroll down to the section titled "Badges" and check the box next to "Print every badge twice". 
 
 ## Advanced usage 
 
@@ -186,7 +187,7 @@ Click the :btn:Save: button.
 !!! Note 
     The kiosk mode security profile disables order search. 
     If you want the possibility to use the order search on this device, select the security profile `pretixSCAN` instead. 
-    If you folllow the rest of the instructions in this section, then order search will still be locked behind a PIN. 
+    If you follow the rest of the instructions in this section, then order search will still be locked behind a PIN. 
 
 In order to enable kiosk mode on your device, lock the settings behind a PIN as described under [Locking the settings](#locking-the-settings). 
 While you are in the "PIN protection" submenu, check the box next to "Kiosk mode". 
