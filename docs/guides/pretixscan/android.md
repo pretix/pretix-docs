@@ -52,7 +52,7 @@ You have to grant pretixSCAN access to the device's camera in order to use the c
     The scanner works much more quickly and reliably than the camera. 
     Thus, you should always use the scanner at your check-in. 
 
-    In order to ensure that you are using the scanner, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
+    In order to ensure that you are using the scanner, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-h:: in the top right corner, and then tap :btn:Settings:. 
     Scroll to the section titled "User interface". 
     Ensure that the box next to "Use device camera" is **unchecked**. 
 
@@ -76,19 +76,19 @@ Once you click the :btn:Save: button, pretix redirects you to a page displaying 
 Open pretixSCAN and scan the QR code with the camera or hardware scanner. 
 
 If you cannot scan the QR code, then you can connect the device manually instead. 
-In order to do so, tap the three button menu in the top right corner of the pretixSCAN app. 
-Then, tap "Manual setup". 
+In order to do so, tap the :btn-icon:fa3-ellipsis-v:: three-dot button in the top right corner of the pretixSCAN app. 
+Then, tap :btn:Manual setup:. 
 Enter the system URL and token displayed in the pretix backend below the QR code. 
 
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../../assets/screens/scan/select-event.png "Select event screenshot") 
 
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets. 
-Select the event in the list or in the calendar and tap :btn:OK:. 
+Select the event in the list or in the calendar and tap the :btn:OK: button. 
 
 If you want to scan tickets for multiple events at the same time, check the box next to "Expert mode". 
 Scanning tickets for one event at a time is enough for most use cases. 
 You should only enable expert mode if you want to scan tickets for multiple events simultaneously. 
-Then, select a check-in list and tap :btn:OK: again. 
+Then, select a check-in list and tap the :btn:OK: button again. 
 The app will now land you on the main screen and 7start downloading event data from the server in the background. 
 
 ### Entry scanning
@@ -96,7 +96,7 @@ The app will now land you on the main screen and 7start downloading event data f
 The app should now be in entry scanning mode. 
 If it is, then it displays a pictogram of a gray box with an arrow pointing to the right :fa3-sign-in: in the top right corner. 
 If the pictogram is yellow and the arrow points to the left :fa3-sign-out:, that means that the app is in "exit scanning" mode. 
-Switch to entry scanning by tapping the :btn-icon:fa3-ellipsis-v:: button and :btn:Switch to entry scanning: in the popup menu. 
+Switch to entry scanning by tapping the three-dot button :btn-icon:fa3-ellipsis-v:: and :btn:Switch to entry scanning: in the popup menu. 
 
 pretixSCAN will scan any QR code or barcode it can detect via the device's camera or scanner. 
 Point the device at the code you want to scan. 
@@ -136,14 +136,14 @@ In order to enable badge printing in pretixSCAN, you have to first install our a
     pretixPRINT comes preinstalled and configured on the scan smartphones that are available for rent on our website. 
     Thus, you will not have to install and configure pretixPRINT on a scan smartphone that you rented from us. 
 
-Once you have done that, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner, and then tap :btn:Settings:. 
+Once you have done that, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-h:: in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
 
 From now on, the box that pops up whenever you scan a ticket will also include a :btn-icon:fa3-print:: button. 
 You can manually print a badge for the ticket holder by tapping the :btn-icon:fa3-print:: button. 
 A push notification will pop up while the device is sending the print job. 
 
-If you want to automatically print a badge for every ticket you scan, go back to the settings page, tap "Print badges automatically" and select "Always". 
+If you want to automatically print a badge for every ticket you scan, go back to the settings page, open the menu labeled "Print badges automatically" and select `Always`. 
 The app will still display the :btn-icon:fa3-print:: button, allowing you to manually print an extra badge. 
 
 If you want to print out all badges twice after a scan, open the settings in pretixSCAN. 
@@ -163,8 +163,8 @@ pretixSCAN offers you the option to lock settings behind a PIN.
 This can be useful if you want to prevent the people operating the check-in from changing any of the settings. 
 
 Open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
-Scroll to the "User interface" subheading and tap "PIN protection". 
-Then, tap on "Set PIN", enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
+Scroll to the "User interface" subheading and tap :btn:PIN protection:. 
+Then, tap :btn:Set PIN:, enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
 As soon as you check the box next to "Enable PIN protection", pretixSCAN will lock the settings behind the PIN. 
 
 This means that the next time you return to the home screen and attempt to open the settings, the app will require you to enter the PIN. 
@@ -221,14 +221,14 @@ Do these steps ahead of time in a setting where you do have a reliable connectio
     As soon as the device that has scanned the ticket performs a successful synchronization, and then the other devices also perform a successful synchronization. 
     After that, pretixSCAN will correctly identify the ticket as "Ticket already used". 
 
-If you want to enable offline mode, open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
+If you want to enable offline mode, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-h:: in the top right corner and then tap :btn:Settings:. 
 Then check the boxes next to "Offline scanning", "Automatic Synchronization", and "Download orders". 
 
-If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap the setting "Automatically turn offline mode on and off". 
-The default selection is "Manual mode (off)". 
+If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap :btn:Automatically turn offline mode on and off:. 
+The default selection is `Manual mode (off)`. 
 This means that pretixSCAN will not enable or disable offline scanning automatically. 
 
-If you select, for example, "3 seconds or errors", pretixSCAN will enable offline scanning if at least one of the following three conditions is met: 
+If you select, for instance, "3 seconds or errors", pretixSCAN will enable offline scanning if at least one of the following three conditions is met: 
 
  - pretixSCAN has been attempting to verify a code for three seconds without success
  - pretixSCAN has encountered three errors while attempting to verify a code
@@ -239,6 +239,42 @@ If you select "Only errors or connection loss", then pretixSCAN will enable offl
 !!! Note 
     In offline mode, pretixSCAN will not recognize any tickets ordered while your shop is in test mode as valid. 
     Also, tickets ordered in test mode will not appear in the search. 
+
+### Scanning tickets for multiple events 
+
+By default, pretixSCAN scans tickets for one event (or date within an event series) at a time. 
+If you want to scan tickets for more than one event, you can use **expert mode**. 
+
+Using expert mode only makes sense if you give your device clearance for more than one event. 
+In order to do so, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
+
+Search for the device to which you want to give clearance. 
+Click the :btn-icon:fa3-edit:: "edit" button next to it. 
+On the next page, under "Limit to events", select the events for which you want to scan tickets. 
+If you want to give the device clearance for all events, check the box next to "All events (including newly created ones)". 
+Click the :btn:Save: button. 
+
+In order to activate expert mode in pretixSCAN, tap the name of your event in the bar at the top. 
+Select one of the events for which you want to scan tickets. 
+Then, tap the :btn:OK: button. 
+Select your check-in list. 
+Check the box next to "Expert mode (select multiple events)" and tap the :btn:OK: button. 
+
+Tap the :btn-icon:fa3-plus:: button. 
+Select another event and check-in list for which you want to scan tickets. 
+Repeat this step for every event for which you want to scan tickets. 
+You can add as many events as you like. 
+But you can only add one check-in list per event
+
+You can change the check-in list by tapping the :btn-icon:fa3-pencil:: button next to it. 
+You can remove the event by tapping the :btn-icon:fa3-trash: button. 
+
+Once you are happy with your choices, tap the :btn-icon:fa3-check:: button at the top of the screen. 
+This takes you back to the home screen of pretixSCAN. 
+
+If you want to **disable** expert mode, tap the name of your event at the top of the screen. 
+Remove all events for which you do not want to scan tickets. 
+Then, tap the three-dot menu :btn-icon:fa3-ellipsis-v:: and tap :btn:Disable expert mode:. 
 
 ## Troubleshooting
 
