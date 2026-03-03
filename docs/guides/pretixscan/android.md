@@ -52,7 +52,7 @@ You have to grant pretixSCAN access to the device's camera in order to use the c
     The scanner works much more quickly and reliably than the camera. 
     Thus, you should always use the scanner at your check-in. 
 
-    In order to ensure that you are using the scanner, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-h:: in the top right corner, and then tap :btn:Settings:. 
+    In order to ensure that you are using the scanner, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:. 
     Scroll to the section titled "User interface". 
     Ensure that the box next to "Use device camera" is **unchecked**. 
 
@@ -121,7 +121,7 @@ If you have trouble scanning a code from a phone screen, ask the customer to inc
 
 An alternative to scanning a ticket code is searching for an attendee in pretixSCAN. 
 If an attendee arrives at the check-in without a ticket, but claiming that they have bought one, you can search for their data. 
-Tap the :btn-icon::fa3-search:: button at the top of the screen. 
+Tap the :btn-icon:fa3-search:: button at the top of the screen. 
 In the search field, enter the attendee's name, order code, ticket secret, or email address. 
 Tap the matching result in the list. 
 
@@ -136,7 +136,7 @@ In order to enable badge printing in pretixSCAN, you have to first install our a
     pretixPRINT comes preinstalled and configured on the scan smartphones that are available for rent on our website. 
     Thus, you will not have to install and configure pretixPRINT on a scan smartphone that you rented from us. 
 
-Once you have done that, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-h:: in the top right corner, and then tap :btn:Settings:. 
+Once you have done that, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:. 
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing". 
 
 From now on, the box that pops up whenever you scan a ticket will also include a :btn-icon:fa3-print:: button. 
@@ -162,7 +162,7 @@ This section covers the following advanced use cases of pretixSCAN on Android:
 pretixSCAN offers you the option to lock settings behind a PIN. 
 This can be useful if you want to prevent the people operating the check-in from changing any of the settings. 
 
-Open pretixSCAN, tap the :btn-icon:fa3-ellipsis-h:: button in the top right corner and then tap :btn:Settings:. 
+Open pretixSCAN, tap the :btn-icon:fa3-ellipsis-v:: button in the top right corner and then tap :btn:Settings:. 
 Scroll to the "User interface" subheading and tap :btn:PIN protection:. 
 Then, tap :btn:Set PIN:, enter a PIN, and note the PIN down in a safe place or save it in a password manager. 
 As soon as you check the box next to "Enable PIN protection", pretixSCAN will lock the settings behind the PIN. 
@@ -221,7 +221,7 @@ Do these steps ahead of time in a setting where you do have a reliable connectio
     As soon as the device that has scanned the ticket performs a successful synchronization, and then the other devices also perform a successful synchronization. 
     After that, pretixSCAN will correctly identify the ticket as "Ticket already used". 
 
-If you want to enable offline mode, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-h:: in the top right corner and then tap :btn:Settings:. 
+If you want to enable offline mode, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner and then tap :btn:Settings:. 
 Then check the boxes next to "Offline scanning", "Automatic Synchronization", and "Download orders". 
 
 If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap :btn:Automatically turn offline mode on and off:. 
@@ -267,7 +267,7 @@ You can add as many events as you like.
 But you can only add one check-in list per event
 
 You can change the check-in list by tapping the :btn-icon:fa3-pencil:: button next to it. 
-You can remove the event by tapping the :btn-icon:fa3-trash: button. 
+You can remove the event by tapping the :btn-icon:fa3-trash:: button. 
 
 Once you are happy with your choices, tap the :btn-icon:fa3-check:: button at the top of the screen. 
 This takes you back to the home screen of pretixSCAN. 
