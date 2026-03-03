@@ -245,13 +245,17 @@ If you select "Only errors or connection loss", then pretixSCAN will enable offl
 By default, pretixSCAN scans tickets for one event (or date within an event series) at a time. 
 If you want to scan tickets for more than one event, you can use **expert mode**. 
 
+This is useful if you are operating a single check-in for multiple events that are taking place at the same time. 
+It is also useful if you are hosting an event series with many events in quick succession. 
+Instead of changing the date and check-in list in pretixSCAN before each date, you can add several dates all at once. 
+
 Using expert mode only makes sense if you give your device clearance for more than one event. 
 In order to do so, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:. 
 
 Search for the device to which you want to give clearance. 
 Click the :btn-icon:fa3-edit:: "edit" button next to it. 
-On the next page, under "Limit to events", select the events for which you want to scan tickets. 
-If you want to give the device clearance for all events, check the box next to "All events (including newly created ones)". 
+On the next page, if you want to give the device clearance for all events, check the box next to "All events (including newly created ones)". 
+If you want to give clearance for a limited selection of events, under "Limit to events", select the events for which you want to scan tickets. 
 Click the :btn:Save: button. 
 
 In order to activate expert mode in pretixSCAN, tap the name of your event in the bar at the top. 
