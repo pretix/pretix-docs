@@ -51,10 +51,12 @@ You have to grant pretixSCAN access to the device's camera in order to use the c
     Our scan smartphones have both a camera and a scanner. 
     The scanner works much more quickly and reliably than the camera. 
     Thus, you should always use the scanner at your check-in. 
+    If you are using a device without a scanner, then you should use the camera instead. 
 
-    In order to ensure that you are using the scanner, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:. 
+    In order to confirm that the device uses the right setting, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:. 
     Scroll to the section titled "User interface". 
-    Ensure that the box next to "Use device camera" is **unchecked**. 
+    If your device has a scanner, uncheck the box next to "Use device camera". 
+    If your device does have a scanner, check that box. 
 
 Once you have granted permission, pretixSCAN will start accessing the scanner or camera instantly. 
 It will also display a text box telling you to create a new device in our organizer account in the pretix backend. 
