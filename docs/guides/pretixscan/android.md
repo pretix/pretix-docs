@@ -264,6 +264,8 @@ Then, tap the :btn:OK: button.
 Select your check-in list. 
 Check the box next to "Expert mode (select multiple events)" and tap the :btn:OK: button. 
 
+![Page titled 'Select Check-in list' in pretixSCAN. The box next to 'Expert mode (select multiple events)' is checked.](../../assets/screens/scan/expert-mode.png "Expert mode") 
+
 Tap the :btn-icon:fa3-plus:: button. 
 Select another event and check-in list for which you want to scan tickets. 
 Repeat this step for every event for which you want to scan tickets. 
@@ -279,6 +281,8 @@ This takes you back to the home screen of pretixSCAN.
 If you want to **disable** expert mode, tap the name of your event at the top of the screen. 
 Remove all events for which you do not want to scan tickets. 
 Then, tap the three-dot menu :btn-icon:fa3-ellipsis-v:: and tap :btn:Disable expert mode:. 
+
+![Page titled 'Select Events' in pretixSCAN. The only entry in the list is 'Tutorial Conference'. There is a button labeled 'Disable expert mode' in the top right corner of the screen.](../../assets/screens/scan/expert-mode-disable.png "Disable expert mode") 
 
 ## Troubleshooting
 
