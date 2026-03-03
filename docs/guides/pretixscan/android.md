@@ -159,6 +159,30 @@ This section covers the following advanced use cases of pretixSCAN on Android:
  - [offline scanning](#offline-scanning)
  - Letting attendees [scan their own tickets](#letting-attendees-scan-their-own-tickets) using kiosk mode
 
+### Exit scanning 
+
+If you want to keep track of ticket holders leaving your event, you can use pretixSCAN's exit mode. 
+This is useful if you want to allow ticket holders to enter your event multiple times, but only if the same ticket is not currently checked in to the event. 
+
+Your check-in list must allow re-entering after an exit scan. 
+In order to enable that, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your event → :fa3-check-square-o: Check-in:. 
+Search for the check-in list and click the :btn-icon:fa3-wrench:: "change" button next to it. 
+Switch to the :btn:Advanced: tab. 
+Check the box next to "Allow re-entering after an exit scan". 
+
+If your event has closing times, that is, times when no attendees are realistically present at the event anymore, then it makes sense to implement an automatic check-out. 
+In order to do so, enter a time in the field labeled "Automatically check out everyone at". 
+For instance, if you are operating a public swimming pool that closes at 10 PM and opens at 6 AM, you could enter `02:00:00` in that field. 
+This automatically checks out every ticket at 2 AM. 
+
+In order to enable exit scanning mode in pretixSCAN, tap the :btn-icon:fa3-ellipsis-v:: button in the top right corner and then tap :btn:Switch to exit scanning:. 
+The home screen will now display a pictogram of a yellow box with an arrow pointing to the left :fa3-sign-out:. 
+This confirms that the app is in exit scanning mode. 
+
+In order to leave exit scanning mode, tap the :btn-icon:fa3-ellipsis-v:: button in the top right corner and then tap :btn:Switch to entry scanning:. 
+The home screen will now display a pictogram of a gray box with an arrow pointing to the right :fa3-sign-in: in the top right corner. 
+The app is now in entry scanning mode. 
+
 ### Locking the settings 
 
 pretixSCAN offers you the option to lock settings behind a PIN. 
