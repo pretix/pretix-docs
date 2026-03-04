@@ -181,6 +181,12 @@ This confirms that the app is in exit scanning mode.
 
 ![Home screen of pretixSCAN displaying a yellow pictogram with an arrow leaving a box to the left side in the top right corner.](../../assets/screens/scan/exit-scan.png "Exit scan")
 
+Scanning a valid ticket for the event in exit mode always results in a green box with the message "Exit recorded".
+This happens regardless of whether the ticket is checked in or not.
+Scanning the same ticket multiple times in exit mode always results in the "Exit recorded" message.
+
+![Home screen of pretixSCAN displaying a green box saying 'Exit recorded' and listing the name and ticket code.](../../assets/screens/scan/exit-recorded.png "Exit recorded")
+
 In order to leave exit scanning mode, tap the :btn-icon:fa3-ellipsis-v:: button in the top right corner and then tap :btn:Switch to entry scanning:.
 The home screen will now display a pictogram of a gray box with an arrow pointing to the right :fa3-sign-in: in the top right corner.
 The app is now in entry scanning mode.
