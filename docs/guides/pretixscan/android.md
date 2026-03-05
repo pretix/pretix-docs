@@ -87,24 +87,22 @@ Enter the system URL and token displayed in the pretix backend below the QR code
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets.
 Your next step depends on the type of event for which you want to scan tickets.
 
-If you want to scan tickets for a **single event**, select the event in the list or in the calendar and tap the :btn:OK: button.
-Then, select a check-in list and tap the :btn:OK: button again.
+ - **Single event:** Select the event in the list or in the calendar and tap the :btn:OK: button.
+   Then, select a check-in list and tap the :btn:OK: button again.
 
-If you want to scan tickets for **multiple events**, you need to enable expert mode.
-See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
+ - **Multiple events:** Enable expert mode.
+   See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
 
-For a **single date** within an **event series**, select the date in the list or in the calendar and tap the :btn:OK: button.
-Then, select a check-in list and tap the :btn:OK: button again.
+ - **Single date within an event series:** Select the date in the list or in the calendar and tap the :btn:OK: button.
+   Then, select a check-in list and tap the :btn:OK: button again.
 
-For an **event series** with a check-in list that applies to **all dates**, select any of the dates from that event series.
-Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
-The app will now land you on the main screen and start downloading event data from the server in the background.
+ - **Event series with a check-in list that applies to all dates:** Select any of the dates from that event series.
+   Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
+   On the home screen, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
+   Under "Synchronization", check the box next to "Automatic event selection".
 
-On the home screen, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
-Under "Synchronization", check the box next to "Automatic event selection".
-
-If you want to scan tickets for **multiple dates** in an **event series** in which each date has its own check-in lists, you need to enable expert mode.
-See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
+ - **Multiple dates in an event series in which each date has its own check-in lists:** Enable expert mode.
+   See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
 
 The app will now land you on the main screen and start downloading event data from the server in the background.
 
@@ -165,6 +163,16 @@ The app will still display the :btn-icon:fa3-print:: button, allowing you to man
 
 If you want to print out all badges twice after a scan, open the settings in pretixSCAN.
 Scroll down to the section titled "Badges" and check the box next to "Print every badge twice".
+
+### Switching to a different event or check-in list
+
+If you want to switch to a different event or to a different check-in list for entry scanning, tap the name of your event at the top of the screen.
+Select the event from the calendar or list and tap the :btn:OK: button.
+Select the check-in list and tap the :btn:OK: button again.
+
+If you want to scan tickets for multiple events at the same time, you should enable **expert mode**.
+The same applies if you want to scan tickets for multiple dates in an event series which all have their own check-in lists.
+See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events) for more information.
 
 ## Advanced usage
 
