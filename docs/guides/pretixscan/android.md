@@ -359,6 +359,34 @@ Click the :btn:Revoke access: button next to it.
 
 Then, connect the device once again as described under [Connecting the device to the pretix backend](#connecting-the-device-to-the-pretix-backend).
 
+### pretixSCAN scans every ticket twice
+
+**Problem:** A scan smartphone with pretixSCAN scans every ticket twice.
+Depending on the check-in settings, the app may falsely display the yellow box saying "Ticket already used"
+
+**Solution:** Fix the scan smartphone's scanner settings so that the app only receives one type of scanner output.
+
+If you are using a **Sunmi** device, close pretixSCAN and open the Settings app.
+Tap :btn:System (Languages, gestures, time, backup):.
+Then, tap :btn:Scanner Setting:.
+Open the :btn:App Settings: tab.
+
+Tap :btn:Output method setting:.
+On the page titled "Output method setting", activate "No direct output" and "Broadcast".
+Tap the :btn:Save: button in the top right corner.
+The Sunmi device should now scan each ticket once instead of twice.
+
+If you are using a **Zebra** device, close pretixSCAN and open the DataWedge app.
+Under "DataWedge-Profile", select `pretix`.
+Under "Barcode input", check the box next to "Enabled".
+Under "Keystroke output", uncheck the box next to "Enabled".
+Under "Intent output", check the box next to "Enabled".
+
+To summarize, "Barcode input" and "Intent output" should be active, whereas "Keystroke output" should be inactive.
+The Zebra device should now scan each ticket once instead of twice.
+
+If you are using scan smartphones from another manufacturer, set the scanner up in such a way that it only sends one type of output.
+
 ## Further Information
 
  - [pretixSCAN repository on GitHub](https://github.com/pretix/pretixscan-android)
