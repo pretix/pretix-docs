@@ -85,13 +85,32 @@ Enter the system URL and token displayed in the pretix backend below the QR code
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../../assets/screens/scan/select-event.png "Select event screenshot")
 
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets.
-Select the event in the list or in the calendar and tap the :btn:OK: button.
+Your next step depends on the type of event for which you want to scan tickets.
+
+If you want to scan tickets for a **single event**, select the event in the list or in the calendar and tap the :btn:OK: button.
+Then, select a check-in list and tap the :btn:OK: button again.
+
+If you want to scan tickets for **multiple events**, you need to enable expert mode.
+See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
+
+For a **single date** within an **event series**, select the date in the list or in the calendar and tap the :btn:OK: button.
+Then, select a check-in list and tap the :btn:OK: button again.
+
+For an **event series** with a check-in list that applies to **all dates**, select any of the dates from that event series.
+Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
+On the home screen, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
+Under "Synchronization", check the box next to "Automatic event selection".
+
+For an **event series** with
+
+If you want to scan tickets for an **event series** in which each date has its own check-in lists,
+with check-in lists applying to all dates, select any of the dates.
+Tap the :btn:OK: button.
 
 If you want to scan tickets for multiple events at the same time, check the box next to "Expert mode".
 Scanning tickets for one event at a time is enough for most use cases.
 You should only enable expert mode if you want to scan tickets for multiple events simultaneously.
-Then, select a check-in list and tap the :btn:OK: button again.
-The app will now land you on the main screen and 7start downloading event data from the server in the background.
+The app will now land you on the main screen and start downloading event data from the server in the background.
 
 ### Entry scanning
 
