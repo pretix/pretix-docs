@@ -98,18 +98,14 @@ Then, select a check-in list and tap the :btn:OK: button again.
 
 For an **event series** with a check-in list that applies to **all dates**, select any of the dates from that event series.
 Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
+The app will now land you on the main screen and start downloading event data from the server in the background.
+
 On the home screen, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
 Under "Synchronization", check the box next to "Automatic event selection".
 
-For an **event series** with
+If you want to scan tickets for **multiple dates** in an **event series** in which each date has its own check-in lists, you need to enable expert mode.
+See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
 
-If you want to scan tickets for an **event series** in which each date has its own check-in lists,
-with check-in lists applying to all dates, select any of the dates.
-Tap the :btn:OK: button.
-
-If you want to scan tickets for multiple events at the same time, check the box next to "Expert mode".
-Scanning tickets for one event at a time is enough for most use cases.
-You should only enable expert mode if you want to scan tickets for multiple events simultaneously.
 The app will now land you on the main screen and start downloading event data from the server in the background.
 
 ### Entry scanning
@@ -299,10 +295,16 @@ By default, pretixSCAN scans tickets for one event (or date within an event seri
 If you want to scan tickets for more than one event, you can use **expert mode**.
 
 This is useful if you are operating a single check-in for multiple events that are taking place at the same time.
-It is also useful if you are hosting an event series with many events in quick succession.
-Instead of changing the date and check-in list in pretixSCAN before each date, you can add several dates all at once.
+It is also useful if you want to scan tickets for multiple dates in an event series in which each date has its own check-in lists.
 
-Using expert mode only makes sense if you give your device clearance for more than one event.
+!!! Note
+    You do not need to enable expert mode if you are scanning tickets for any of the following:
+
+     - a single event
+     - a single date in an event series
+     - an event series in which all events use the same check-in lists
+
+If you want to scan tickets for multiple events or event series, then you need to give your device clearance for all of those.
 In order to do so, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:.
 
 Search for the device to which you want to give clearance.
