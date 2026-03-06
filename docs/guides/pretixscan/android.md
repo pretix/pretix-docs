@@ -90,18 +90,10 @@ Your next step depends on the type of event for which you want to scan tickets.
  - **Single event:** Select the event in the list or in the calendar and tap the :btn:OK: button.
    Then, select a check-in list and tap the :btn:OK: button again.
 
- - **Multiple events:** Enable expert mode.
-   See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
-
- - **Single date within an event series:** Select the date in the list or in the calendar and tap the :btn:OK: button.
-   Then, select a check-in list and tap the :btn:OK: button again.
-
- - **Event series with a check-in list that applies to all dates:** Select any of the dates from that event series.
+ - **Event series:** Select any of the dates from that event series.
    Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
-   On the home screen, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
-   Under "Synchronization", check the box next to "Automatic event selection".
 
- - **Multiple dates in an event series in which each date has its own check-in lists:** Enable expert mode.
+ - **Multiple events or series:** Enable expert mode.
    See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
 
 The app will now land you on the main screen and start downloading event data from the server in the background.
@@ -178,9 +170,11 @@ See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events
 
 This section covers the following advanced use cases of pretixSCAN on Android:
 
+ - [exit scanning](#exit-scanning)
  - [locking the settings](#locking-the-settings)
- - [offline scanning](#offline-scanning)
  - Letting attendees [scan their own tickets](#letting-attendees-scan-their-own-tickets) using kiosk mode
+ - [offline scanning](#offline-scanning)
+ - scanning tickets for [multiple events](#scanning-tickets-for-multiple-events)
 
 ### Exit scanning
 
@@ -250,6 +244,9 @@ In order to enable kiosk mode on your device, lock the settings behind a PIN as 
 While you are in the "PIN protection" submenu, check the box next to "Kiosk mode".
 Once you return to the main screen, pretixSCAN will not display the menu bar at the top anymore.
 
+![Home screen of pretixSCAN in kiosk mode displaying the pictogram for entry scanning, the last synchronization, and the buttons for flashlight and autofocus. The top bar is missing.](../../assets/screens/scan/kiosk.png "Kiosk mode")
+
+
 Use the [App pinning](https://support.google.com/android/answer/9455138?hl=en) feature of Android or your preferred solution to prevent users from leaving the app.
 
 In order to leave kiosk mode and display the menu bar again, you need a QR code of your PIN
@@ -299,26 +296,18 @@ If you select "Only errors or connection loss", then pretixSCAN will enable offl
 
 ### Scanning tickets for multiple events
 
-By default, pretixSCAN scans tickets for one event (or date within an event series) at a time.
+By default, pretixSCAN scans tickets for one event at a time.
 If you want to scan tickets for more than one event, you can use **expert mode**.
 
 This is useful if you are operating a single check-in for multiple events that are taking place at the same time.
-It is also useful if you want to scan tickets for multiple dates in an event series in which each date has its own check-in lists.
 
-!!! Note
-    You do not need to enable expert mode if you are scanning tickets for any of the following:
-
-     - a single event
-     - a single date in an event series
-     - an event series in which all events use the same check-in lists
-
-If you want to scan tickets for multiple events or event series, then you need to give your device clearance for all of those.
+If you want to scan tickets for multiple events or event series, then you need to give your device permission for all of those.
 In order to do so, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:.
 
-Search for the device to which you want to give clearance.
+Search for the device to which you want to give permission.
 Click the :btn-icon:fa3-edit:: "edit" button next to it.
-On the next page, if you want to give the device clearance for all events, check the box next to "All events (including newly created ones)".
-If you want to give clearance for a limited selection of events, under "Limit to events", select the events for which you want to scan tickets.
+On the next page, if you want to give the device permission for all events, check the box next to "All events (including newly created ones)".
+If you want to give permission for a limited selection of events, under "Limit to events", select the events for which you want to scan tickets.
 Click the :btn:Save: button.
 
 In order to activate expert mode in pretixSCAN, tap the name of your event in the bar at the top.
