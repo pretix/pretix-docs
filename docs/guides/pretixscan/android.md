@@ -282,6 +282,8 @@ If the network connection at your check-in is present, but unstable, you can lea
 The default selection is `Manual mode (off)`.
 This means that pretixSCAN will not enable or disable offline scanning automatically.
 
+![Settings page in pretixSCAN. 'Offline scanning' is disabled. 'Automatically turn offline mode on and off' is set to '3 seconds or errors'.](../../assets/screens/scan/offline.png "Automatically turn offline mode on and off")
+
 If you select, for instance, "3 seconds or errors", pretixSCAN will enable offline scanning if at least one of the following three conditions is met:
 
  - pretixSCAN has been attempting to verify a code for three seconds without success
