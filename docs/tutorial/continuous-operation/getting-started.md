@@ -7,7 +7,7 @@ We will use specific examples for our organizer, event, products, as well as the
 Feel free to replace these examples with your own as you create your event according to your needs.
 
 !!! Note
-    This tutorial explains setting up a ticket shop for a venue with continuous operation, such as a public swimming pool, an amusement park, or a museum.
+    This tutorial explains setting up a ticket shop for a venue with continuous operation such as a public swimming pool, an amusement park, or a museum.
     If you want to create a shop for **single events** such as conferences, conventions, trade fairs, concerts, or festivals, you should take a look at the tutorial for [Single events](../single-events/getting-started.md) instead.
 
 pretix is open source software.
@@ -33,10 +33,9 @@ We are free to play around with the pretix software to our heart's content befor
 Costs will only occur when selling actual tickets.
 
 !!! Note
-
-    If your company, association or institution already has an organizer account, it is not necessary to create a new account.
+    If your company, association or institution already has an organizer account, then it is not necessary to create a new account.
     Instead, you can ask your co-organizers to send you an invitation and add you to the team.
-    Instructions on inviting someone to a team can be found in our [guide on teams](../../guides/teams.md#inviting-someone-to-your-team).
+    You can find instructions on inviting someone to a team in our [guide on teams](../../guides/teams.md#inviting-someone-to-your-team).
 
 ![pretix.eu, a website introducing pretix and its main features. There is a green button labeled 'Create your first ticket shop' on the right.](../../assets/screens/account/pretix-eu.png "pretix.eu screenshot" )
 
@@ -55,18 +54,17 @@ For this tutorial, our name is going to be Jordan Doe.
 Everyone should have their own personal login.
 If other members of our team should have access to the system as well, we will be able to [invite](../../guides/teams.md#inviting-someone-to-your-team) them later in the process.
 
-
 !!! Warning
+    The **short form** is the unique identifier for your company in our website's backend.
+    pretix will also use it in the shop URL.
+    Put careful consideration into the short form.
+    Only submit it when you are happy with your choice.
 
-    The **short form** is the unique identifier for your company in our website's backend and will also be used in the shop URL.
-    Please put careful consideration into the short form and make sure you are happy with it.
-
-    The short form **cannot be changed** without you contacting customer support.
-    It might no longer be possible to change it at all if you have already set up some parts of the system.
+    If you want to use a different short form, then you will have to create a new organizer account.
 
 The "Full name" field is meant for the name of the company, association, or institution for which we want to organize events.
 The "Address short form" field is for a short form of the organization's name.
-This short form will be used for the URL under which our events can be found.
+pretix will use this short form for the URL under which customers can find our events.
 
 For this tutorial, we are going to create an account for our Tutorial Ltd.
 So we will enter "Tutorial Ltd." into the full name field, and "tut" into the address short form field.
@@ -77,7 +75,7 @@ pretix offers a test mode that allows our organizer and events to remain invisib
 
 By using the official name of our organization for the account right away, we can ensure that we get to use our preferred URL.
 We can also avoid having to make the same adjustments to two different accounts.
-Our events will not be visible to the public, nor will we be charged, until we decide to take them live.
+Our events will not be visible to the public, nor will pretix GmbH charge us, until we decide to take them live.
 
 {% include "note-short-form.md" %}
 
