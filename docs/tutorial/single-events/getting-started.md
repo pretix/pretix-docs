@@ -6,10 +6,15 @@ For illustrative purposes, we will create a straightforward conference.
 We will use specific examples for our organizer, event, products, as well as the names and prices thereof.
 Feel free to replace these examples with your own as you create your event according to your needs.
 
-pretix is open source software and can be used either in the cloud or on your own server.
-Running pretix on your own server requires in-depth technical knowledge and is described on our [Administrator documentation](https://docs.pretix.eu/en/latest/admin/index.html).
-This page focuses on the easier way to use our cloud-based pretix Hosted offering.
-If you have pretix installed on your server, you can directly skip to the next chapter.
+!!! Note
+    This tutorial explains setting up a shop for **single events** such as conferences, conventions, trade fairs, concerts, or festivals.
+    If you want to create a ticket shop for a venue with continuous operation, such as a public swimming pool, an amusement park, or a museum, you should take a look at the tutorial for [Continuous operation](../continuous-operation/getting-started.md) instead.
+
+pretix is open source software.
+You can use it either in the cloud or on your own server.
+Running pretix on your own server requires some technical knowledge.
+If you want to self-host pretix, refer to our [Self-hosting documentation](https://docs.pretix.eu/self-hosting/).
+This tutorial focuses on the easier method: using our cloud-based pretix Hosted offer.
 
 Here is a brief overview of the steps we are going to take in this tutorial:
 
