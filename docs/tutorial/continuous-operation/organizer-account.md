@@ -151,8 +151,8 @@ We need to fill out our credit card info, check the box to authorize payments, a
 The page will notify us if any required information is still missing.
 If we have provided all required information, a green checkmark will appear at the top of the page with the message "Your changes have been saved."
 This means that we have submitted our organizer account to the pretix team for review.
-It will be activated shortly.
+They will activate it shortly.
 
 ## Conclusion
 
-Now that our account's basic setup is complete and it is awaiting activation, we can move on to [creating our first event](event.md).
+Now that our account's basic setup is complete and it is awaiting activation, we can move on to [creating our event series](event.md).
