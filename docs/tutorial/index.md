@@ -38,7 +38,7 @@ We offer you two different tutorials:
      - an amusement park
      - a museum
 
-    or any other venue with regular opening hours, then you should read the tutorial for
+    then you should read the tutorial for
 
     :fa3-arrow-right: [Continuous operation](continuous-operation/getting-started.md)
 
