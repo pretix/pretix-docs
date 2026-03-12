@@ -20,7 +20,7 @@ We will now click the :btn-icon:fa3-plus:Create a new event: button.
 
 <br>
 
-![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages.](../../assets/screens/event/create-event1.png "Create new event step 1 screenshot" )
+![Screenshot of page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages.](../../assets/screens/event-series/create-event-series1.png "Create new event step 1 screenshot" )
 
 An event in pretix is always associated with an organizer account, so we have to choose one here.
 We will choose the organizer that is hosting this event—that is, the one we set up in the previous step of this tutorial.
@@ -29,8 +29,8 @@ Thus, we have to ensure we are picking the correct organizer account here.
 
 Next, we have to choose the event type.
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking".
-For this tutorial, we want to create a straightforward conference that takes place on a weekend.
-Thus, we are going to choose the option "Singular event or non-event shop".
+For this tutorial, we want to create a shop for a museum that operates most days of the week for an entire season.
+Thus, we are going to choose the option "Event series or time slot booking".
 
 We are going to choose which languages to use for the event.
 By default, the languages we chose while setting up the organizer account should be active.
@@ -43,19 +43,19 @@ Once we are happy with our choices, we are going to click the :btn:Continue: but
 ![Screenshot of page titled "Create new Event—Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../../assets/screens/event/create-event2.png "Create new event step 2 screenshot" )
 
 We are now asked to provide a name and a short form for the event.
-For this tutorial, we are going to create a straightforward conference that takes place in 2027.
-Therefore, we will choose "Tutorial Conference" for the "Event name" field.
-For the "Short form" field, we will come up with an abbreviation for "Tutorial Conference" and include the last two digits of the year.
+For this tutorial, we are going to create a shop for the 2027 season.
+Therefore, in the "Event name" field, we will enter `Tutorial Museum`.
+For the "Short form" field, we will come up with an abbreviation for "Tutorial Museum" and include the last two digits of the year.
 
-We will enter `tutcon27` into the field.
+We will enter `tutmus27` into the field.
 pretix appends the short form to the organizer's URL.
 In our case, this results in the following URL:
-https://pretix.eu/tut/tutcon27
+https://pretix.eu/tut/tutmus27
 
 {% include "note-short-form.md" %}
 
 Like the name and short form, the start time for our event is mandatory information.
-We are going to enter the fourth of June, 2027, into the start time field.
+We are going to enter the first of January, 2027, into the start time field.
 
 Since we already know the location for our event, we are going to put that location into pretix now.
 This information is optional.
@@ -95,7 +95,7 @@ But since this is the first event we are organizing with this organizer account,
 
 <br>
 
-![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../../assets/screens/event/create-event4.png "Create new event step 4 screenshot" )
+![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../../assets/screens/event/create-event-series4.png "Create new event step 4 screenshot" )
 
 The next page congratulates us on creating our event and gives us an opportunity to make quick changes to the products and basic settings for the event.
 We do not need to touch these quick settings at the moment.
@@ -117,7 +117,7 @@ We can visit the event-level dashboard by clicking the :btn:pretix.eu: button in
 The event-level dashboard gives us an overview of the event's basic information and status.
 It allows us to leave internal comments for ourselves or our team and it logs recent changes.
 
-![Screenshot of dashboard for a demo event titled Tutorial Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../../assets/screens/event/event-dashboard.png "Event dashboard screenshot")
+![Screenshot of dashboard for a demo event titled Tutorial Conference, showing the title, buttons for sharing the event, the timeline, an overview of orders, payments and tickets left, as well as a field for internal comments. Not pictured: event logs for recent changes.](../../assets/screens/event-series/event-dashboard.png "Event dashboard screenshot")
 
 At this point, the overview will probably display a warning that our organizer account is not active yet.
 The first time we see this warning, we are going to click the link and fill out the necessary information in the form.
