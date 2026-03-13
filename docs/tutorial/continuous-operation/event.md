@@ -171,4 +171,4 @@ Any changes we make on this page will only become visible in the event shop afte
 ## Conclusion
 
 We have gone through the four-step event creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop.
-We can now move on to [creating products](products.md) to sell in our shop.
+We can now move on to [creating dates](dates.md) to our event series.
