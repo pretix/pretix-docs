@@ -1,4 +1,4 @@
-# Event
+# Event series
 
 After setting up an organizer account, the next step is creating an event series.
 This article describes the creation and basic setup of an event series.
@@ -54,10 +54,10 @@ https://pretix.eu/tut/tutmus27
 
 {% include "note-short-form.md" %}
 
-Like the name and short form, the start time for our event is mandatory information.
+Like the name and short form, the start time for our event series is mandatory information.
 We are going to enter the first of January, 2027, into the start time field.
 
-Since we already know the location for our event, we are going to put that location into pretix now.
+Since we already know our venue, we are going to put that location into pretix now.
 This information is optional.
 We can still change it later.
 pretix will use our input into the "Location" field to search OpenStreetMap for that location.
@@ -95,12 +95,9 @@ But since this is the first event we are organizing with this organizer account,
 
 <br>
 
-![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../../assets/screens/event-series/create-event-series4.png "Create new event step 4 screenshot" )
+![Screenshot of page titled "Congratulations! You just created an event!", showing a button for creating a first product, and ten tabs for switching to different settings.](../../assets/screens/event-series/create-event-series4.png "Create new event step 4 screenshot" )
 
-The next page congratulates us on creating our event and gives us an opportunity to make quick changes to the products and basic settings for the event.
-We do not need to touch these quick settings at the moment.
-We will take a closer look at products (tickets, gift cards, etc.) in the [next section](products.md) of this tutorial.
-
+pretix will now land us on the "General settings" page for the event series.
 We will provide a general email address at which our customers can contact us in the "Contact address" field.
 Our shop page footer will display this email address with the label "Contact event organizer".
 We will also provide a URL to legal imprint information for our organization's online presence in the "Imprint URL" field.
