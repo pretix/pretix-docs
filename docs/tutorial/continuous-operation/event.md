@@ -95,7 +95,7 @@ But since this is the first event we are organizing with this organizer account,
 
 <br>
 
-![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../../assets/screens/event/create-event-series4.png "Create new event step 4 screenshot" )
+![Screenshot of page titled "Congratulations! You just created an event!", showing options for creating ticket types and enabling a few basic features for the event. Not pictured: setting up payment options and providing contact information.](../../assets/screens/event-series/create-event-series4.png "Create new event step 4 screenshot" )
 
 The next page congratulates us on creating our event and gives us an opportunity to make quick changes to the products and basic settings for the event.
 We do not need to touch these quick settings at the moment.
