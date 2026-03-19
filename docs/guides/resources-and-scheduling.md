@@ -71,7 +71,7 @@ If the plural of your resource type's name is not formed by appending an `s` to 
 For instance, if the name of your resource type is `person`, enter `people` in the "Plural name" field.
 
 Select the "Mode" for your resource type.
-You can assign one user account to resources in :fa3-user: Human" mode.
+You can assign one user account to resources in ":fa3-user: Human" mode.
 You can assign multiple user accounts to a resource in ":fa3-cube: Thing or place" mode.
 It is not possible to change the mode after you have created the resource type.
 
@@ -146,17 +146,23 @@ If your resource has a different name, then the button will have a different lab
 
 If the resource you are creating represents a person, enter their name under "Name".
 Under "Locale", select the language you want to use to communicate with the person through pretix.
-Under "Notification email address", enter their email address.
 Check the "Require confirmation" field.
 
 ![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
 If the resource represents an inanimate object, enter the room number, inventory number, or another unique identifier.
-Select the "Locale" and Notification email address corresponding to the person or team in charge of the resource.
+Select the "Locale" corresponding to the person or team in charge of the resource.
 
 Once you are happy with your choices, click :btn:Save and continue with more settings:.
 
-![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. Available time slots are displayed in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
+![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. The page displays available time slots in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
+
+Under "Managed by", enter the email address of the associated pretix user account.
+If the resource is a human, enter the email address of the pretix user account of the person.
+If the resource is a thing or place, enter the email address of the pretix user account that belongs to the person managing the resource.
+
+If the email address you enter is not associated with a pretix user account yet, then pretix will send an invitation email to them.
+This is similar to the way pretix sends out an invitation if you [invite someone to your team](teams.md#inviting-someone-to-your-team).
 
 Under "Properties", assign properties to the resource.
 For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`.
@@ -334,6 +340,7 @@ If you did not create an order, then you will land on the scheduling dashboard.
 ### Confirming or denying a scheduling
 
 Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's notification email address.
+This email also includes a calendar invitation.
 
 ![Email from pretix with the standard content defined in the resource type settings: info about the date and links for confirming or denying the scheduling](../assets/screens/resources-scheduling/confirm-scheduling.png "Request confirmation email")
 
