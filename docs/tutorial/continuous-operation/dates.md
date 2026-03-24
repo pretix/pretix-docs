@@ -30,7 +30,7 @@ We will then click the :btn:Save: button.
 
 Next, we want to offer recurring guided tours for our museum.
 Our guided tour takes place every Monday and Wednesday at 10 AM in the first half of 2027.
-For that, we are going to create several new dates for this event series.
+For that, we are going to create multiple new dates for this event series.
 We will click the :btn-icon:fa3-plus: Create many new dates: button.
 
 In the box titled "Repetition rule", we will choose the following:
@@ -38,7 +38,9 @@ In the box titled "Repetition rule", we will choose the following:
 We will then check the boxes next to "Monday" and "Wednesday".
 We will select the radio button next to "Repeat until" and choose the date `2027-06-30`.
 
-The "Preview" on the right side of the page is useful for double-checking the repetition rule.
+![Page titled "Create multiple dates", displaying options for a repetition rule and times, as well as a preview of dates about to be created.](../assets/screens/event-series/create-multiple-example3.png "Create multiple dates example" )
+
+The "Preview" on the right side of the page is useful for double-checking our repetition rule.
 It will display the first ten and last ten dates we are about to create.
 
 Under "Times", we will click the :btn-icon:fa3-plus: Add a single time slot: button.
