@@ -1,8 +1,7 @@
 # Resources and scheduling
 
-Your event schedule may not be based on time alone.
-It may also depend on the availability of personnel, spaces, equipment, or other resources.
-The "Resources and scheduling" plugin allows you to manage those resources and schedule dates in your [event series](event-series.md) accordingly.
+If your event schedule depends on the availability of personnel, spaces, equipment, or other resources, then you should use the "Resources and scheduling" plugin.
+This plugin allows you to manage those resources and schedule dates in your [event series](event-series.md) accordingly.
 This article tells you how to use it.
 
 ## Prerequisites
@@ -10,7 +9,7 @@ This article tells you how to use it.
 You need to have at least one event series with which you want to use resources and scheduling.
 The plugin offers no useful features for singular events.
 
-## How To
+## How to
 
 Using resources and scheduling involves the following steps:
 
@@ -19,12 +18,13 @@ Using resources and scheduling involves the following steps:
  4. [Managing properties](resources-and-scheduling.md#managing-properties) for resource types
  5. [Creating resources](resources-and-scheduling.md#creating-resource-types), for instance, individual guides or rooms
  6. [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling), for instance, a guided tour ticket
- 7. [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling), for instance, guides tours
+ 7. [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling), for instance, guided tours
  8. [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates), for instance, assigning a guide to a tour
  9. Alternatively, using the [Quick entry](resources-and-scheduling.md#quick-entry) feature for planning dates
- 10. [Confirming or denying a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on whether the resource is actually available at the planned time
 
 The following sections will guide you through those steps in detail.
+In addition to that, this article explains how to [confirm or deny a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on the resource's availability at the scheduled time.
+This information is useful for the person or team managing the resource.
 
 ### Enabling the plugin
 
@@ -47,9 +47,8 @@ If the plugin is already active, then it will have a green ":fa3-check: Active" 
 ### Creating resource types
 
 !!! Note
-    Once you have created a resource type, it is not possible to delete it.
-    You can still edit and rename the resource in order to repurpose it.
-    But deleting it from the organizer account entirely is not possible.
+    Once you have created a resource type, it is not possible to delete it from the organizer account entirely.
+    You can still edit and rename the resource type in order to repurpose it.
 
 Before you can create and manage individual resources, you have to create resource types.
 A resource type may, for example, represent the following:
@@ -60,6 +59,11 @@ A resource type may, for example, represent the following:
 
 You can use pretix to manage any kind of resource and create a resource type for it.
 You should create exactly one resource type for every type of resource that you want to manage.
+
+!!! Note
+    We recommend creating **as few resource types** as possible.
+    For instance, if you employ tour guides and workshop instructors, then you should create only one resource type named "Staff member".
+    This makes it easier to manage staff who work both as tour guides and workshop instructors.
 
 ![Page titled 'Create a new resource type', displaying inputs for name and plural name, as well as email settings.](../assets/screens/resources-scheduling/resource-type.png "Create a new resource type")
 
