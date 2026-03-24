@@ -68,33 +68,36 @@ You should create exactly one resource type for every type of resource that you 
 ![Page titled 'Create a new resource type', displaying inputs for name and plural name, as well as email settings.](../assets/screens/resources-scheduling/resource-type.png "Create a new resource type")
 
 In order to create a new resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:.
-Enter a "Name" for the resource.
+Enter a "Name" for the resource type.
 
 If you do not enter a "Plural name", then pretix will append an `s` to the "Name" for the plural.
 If the plural of your resource type's name is not formed by appending an `s` to the end, specify a "Plural name".
-For instance, if the name of your resource type is `person`, enter `people` in the "Plural name" field.
+For instance, if the name of your resource type is `Person`, enter `People` in the "Plural name" field.
 
 Select the "Mode" for your resource type.
 You can assign one user account to resources in ":fa3-user: Human" mode.
 You can assign multiple user accounts to a resource in ":fa3-cube: Thing or place" mode.
 It is not possible to change the mode after you have created the resource type.
 
-pretix will send the email under "Booking pending confirmation" to the email address associated with the individual resource whenever you assign the resource to a date.
-pretix will send the email under "Booking confirmed" to the email address associated with the individual resource whenever the recipient confirms a booking through the previous email.
-You set the email address for each resource individually.
+You can configure emails for "Booking pending confirmation" and for "Booking confirmed" on this page.
+pretix will send these emails to the email address of the account that manages these resources.
 See [managing individual resources](resources-and-scheduling.md#managing-individual-resources) for more information.
+
+Whenever you assign a resource that requires confirmation to a date, pretix will send out the "Booking pending confirmation" email.
+If the recipient confirms the booking through the previous email, then pretix will send the "Booking confirmed" email.
+pretix will also send the "Booking confirmed" email if you assign a resource that does not require confirmation to a date.
 
 Adapt the subject and message text of both emails to your liking.
 You should always include the placeholders `{url_available}` and `{url_unavailable}` in the "Booking pending confirmation" email message.
-You need these links to confirm or decline a booking.
+The person managing the resource needs these links to confirm or decline a booking.
 We also recommend using the other placeholders in your email message because they communicate relevant information.
 
 Click the :btn:Save: button.
 
 ### Managing properties
 
-Most resources are not interchangeable.
-They usually have one or multiple properties which vary from one to the next and which are relevant for booking.
+Most resources have one or multiple properties that vary from one to the next and that are relevant for booking.
+For instance, guides at a museum may speak different languages, be familiar with different exhibitions, or be proficient with different kinds of audiences.
 You can use pretix to keep track of these properties while scheduling dates.
 
 In order to edit properties on a resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:.
@@ -102,33 +105,35 @@ Click the :btn-icon:fa3-edit:: edit button next to the resource type in the list
 Under the headline "Properties", you can manage properties.
 Alternatively, you can add properties while creating a new resource type.
 
-Assume, for example, you are creating a property type for conference rooms.
+Assume, for example, you are creating a property type for museum guides.
 These conference rooms differ as to how many people they seat and whether or not they have a projector for presentations.
 The projectors also vary in terms of display resolution (either 1080p or 720p).
 
 In this case, you click the :btn-icon:fa3-plus: Add property: button.
-Under "Name", enter `Seats`.
-Under "value", enter `8`.
-Click the :btn-icon:fa3-plus: Add new value: button and enter `12` in the new field.
-Click the same button again and enter `20` in the new field.
-Your resource type "conference room" now has the "Seats" property which can be `8`, `12`, or `20`.
+Under "Name", enter `Languages`.
+Under "value", enter `English`.
+Click the :btn-icon:fa3-plus: Add new value: button and enter `German` in the new field.
+Click the same button again and enter `Toki Pona` in the new field.
+Your resource type "Guide" now has the "Languages" property which can be `English`, `German`, or `Toki Pona`.
+
+These property values are not mutually exclusive.
+A guide can speak any combination of these three languages.
 
 ![Page titled 'Create a new resource type', scrolled down to display the properties 'Seats' with the options 8, 10, 12, or 20; and 'Projector' with the options 1080p, 720p, or none. ](../assets/screens/resources-scheduling/properties-rooms.png "Resource type conference room")
 
 Click the :btn-icon:fa3-plus: Add property: button.
-Under "Name", enter `Projector`.
-Under "value", enter `1080p`.
-Click the :btn-icon:fa3-plus: Add new value: button and enter `720p` in the new field.
-Click the same button again and enter `None` in the new field.
-Your resource type "conference room" now has the "Projector" property which can be `1080p`, `720p`, or `None`.
+Under "Name", enter `Knowledge`.
+Under "value", enter `Greece`.
+Click the :btn-icon:fa3-plus: Add new value: button and enter `Egypt` in the new field.
+Click the same button again and enter `Sumer` in the new field.
+Your resource type "Guide" now has the "Knowledge" property which can be `Greece`, `Egypt`, or `Sumer`.
 
-If you are using the properties feature to keep track of guides, you could create properties such as language skills, expertise, or target audiences.
 Once you are happy with your choices, click the :btn:Save: button.
 
 ![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
 
 In order to remove a property, click the :btn-icon:fa3-minus-circle: Remove: button next to it.
-This will display a box listing the resources that will be affected by this change.
+This will display a box listing the resources that this change will affect.
 Removing the property will also remove that property from all affected resources, along with all defined values.
 If you are sure that you want to do this, confirm the removal by clicking :btn:Yes, remove this property:.
 
@@ -150,7 +155,7 @@ If your resource has a different name, then the button will have a different lab
 
 If the resource you are creating represents a person, enter their name under "Name".
 Under "Locale", select the language you want to use to communicate with the person through pretix.
-Check the "Require confirmation" field.
+Check the box next to "Require confirmation".
 
 ![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
