@@ -65,6 +65,9 @@ You should create exactly one resource type for every type of resource that you 
     For instance, if you employ tour guides and workshop instructors, then you should create only one resource type named "Staff member".
     This makes it easier to manage staff who work both as tour guides and workshop instructors.
 
+    pretix only checks for conflicts of availability within the same resource type.
+    Thus, it does not make sense to add the same individual resource to two different resource types in pretix.
+
 ![Page titled 'Create a new resource type', displaying inputs for name and plural name, as well as email settings.](../assets/screens/resources-scheduling/resource-type.png "Create a new resource type")
 
 In order to create a new resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:.
@@ -119,7 +122,7 @@ Your resource type "Guide" now has the "Languages" property which can be `Englis
 These property values are not mutually exclusive.
 A guide can speak any combination of these three languages.
 
-![Page titled 'Create a new resource type', scrolled down to display the properties 'Seats' with the options 8, 10, 12, or 20; and 'Projector' with the options 1080p, 720p, or none. ](../assets/screens/resources-scheduling/properties-rooms.png "Resource type conference room")
+![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
 
 Click the :btn-icon:fa3-plus: Add property: button.
 Under "Name", enter `Knowledge`.
@@ -129,8 +132,6 @@ Click the same button again and enter `Sumer` in the new field.
 Your resource type "Guide" now has the "Knowledge" property which can be `Greece`, `Egypt`, or `Sumer`.
 
 Once you are happy with your choices, click the :btn:Save: button.
-
-![Page titled 'Create a new resource type', scrolled down to display the properties 'Languages' with the options English, German, Basque, or Toki Pona; 'Audiences' with the options adults, teenagers, or children; and 'Knowledge' with the options Greece, Egypt, or Sumer. ](../assets/screens/resources-scheduling/properties-guides.png "Resource type guide")
 
 In order to remove a property, click the :btn-icon:fa3-minus-circle: Remove: button next to it.
 This will display a box listing the resources that this change will affect.
@@ -159,19 +160,29 @@ Check the box next to "Require confirmation".
 
 ![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
-If the resource represents an inanimate object, enter the room number, inventory number, or another unique identifier.
+If the resource represents an inanimate object, enter a unique identifier such as the room number or an inventory number.
 Select the "Locale" corresponding to the person or team in charge of the resource.
 
 Once you are happy with your choices, click :btn:Save and continue with more settings:.
 
 ![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. The page displays available time slots in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
 
-Under "Managed by", enter the email address of the associated pretix user account.
-If the resource is a human, enter the email address of the pretix user account of the person.
-If the resource is a thing or place, enter the email address of the pretix user account that belongs to the person managing the resource.
+If you are creating a **human** resource, then the page has a field labeled "Managed by".
+Enter the email address of the associated pretix user account in that field.
 
 If the email address you enter is not associated with a pretix user account yet, then pretix will send an invitation email to them.
 This is similar to the way pretix sends out an invitation if you [invite someone to your team](teams.md#inviting-someone-to-your-team).
+
+If the resource is a **thing** or **place**, then the page will have a :btn-icon:fa3-users: Managers: button at the top.
+Click that button.
+This takes you to a page listing managers for the resource.
+Enter the email address of the pretix user account that belongs to one of the people managing the resource.
+Click the :btn-icon:fa3-plus: Add: button.
+
+Repeat this step for every person that manages the resource.
+Take a step back in your browser or navigate to :navpath:Your organizer → :fa3-briefcase: Resources:.
+Click your resource type and then your resource.
+
 
 Under "Properties", assign properties to the resource.
 For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`.
