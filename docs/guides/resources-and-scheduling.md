@@ -167,6 +167,8 @@ Once you are happy with your choices, click :btn:Save and continue with more set
 
 ![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. The page displays available time slots in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
 
+The process of adding managers to the resource is different depending on whether the resource is in "human" mode or in "thing or place" mode.
+
 If you are creating a **human** resource, then the page has a field labeled "Managed by".
 Enter the email address of the associated pretix user account in that field.
 
@@ -183,14 +185,18 @@ Repeat this step for every person that manages the resource.
 Take a step back in your browser or navigate to :navpath:Your organizer → :fa3-briefcase: Resources:.
 Click your resource type and then your resource.
 
-
 Under "Properties", assign properties to the resource.
 For instance, if you are adding a guide and they speak English and Toki Pona, click the "Languages" field and select `English` and `Toki Pona`.
+
+Once you are happy with your configuration of the resource, click the :btn:Save: button.
+The :btn:Save: button does not affect the availability settings in the right half of the page.
+The next section explains how to use them.
 
 #### Setting availability for a resource
 
 Under "Availability timetable", define when the resource is available.
 Click the :btn-icon:fa3-plus: Add rule: button.
+This opens a popup window titled "Add a new availability rule".
 
 ![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a toggle labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
 
@@ -201,17 +207,16 @@ They will not be available on Tuesday at 12 AM to 2 PM because of a weekly team 
 In that case, you enter a "Start" date of `2027-07-01` and an "End" of `2027-09-30`.
 Select all days from Monday through Friday.
 Select a "Start time" of `09:00:00` and an end time of `17:00:00`.
-Click the :btn:Save: button.
+Click the :btn:Save: button in the popup.
 
 Click the :btn-icon:fa3-plus: Add rule: button again.
 Enter the same "Start" and "End" times as above.
 Check "Tuesday".
 Enter a "Start time" of `12:00:00` and an "End time" of `14:00:00`.
 Under "Available", select "Resource is unavailable".
-Click the :btn:Save: button.
+Click the :btn:Save: button in the popup.
 
 The calendar view under "Resulting availability" will now display the available times for this resource.
-Once you are happy with your configuration of the resource, click the :btn:Save: button.
 
 #### Deleting and reactivating resources
 
@@ -248,11 +253,19 @@ In the "Default quota size" field, enter the maximum number of people that can u
 For instance, if a tour guide can accommodate no more than 30 people at a time, enter `30`.
 
 If you want to assign resources to dates based on customer demand, you should check the box next to "Allow customers to book before resources are scheduled".
+
+!!! Note
+    Activating the setting "Allow customers to book before resources are scheduled" may cause situations in which you have sold tickets for a date, but no resources available for that date.
+    Thus, this use case requires you to monitor bookings closely.
+
 If you want to assign resources to dates before selling any tickets for those dates, then you should leave it unchecked.
+This way, you need to assign all required resources for a date first.
+The date will only become available for booking in your shop after you have done so.
 
 Click the :btn-icon:fa3-plus: Add a new requirement: button.
 Select the "Resource type" that is necessary for this date.
-Under "Amount", specify the amount of resources that are needed, usually `1`.
+Under "Amount", specify the amount of resources of this type that are necessary, usually `1`.
+If you need more personell, rooms, or pieces of equipment, enter the number you need.
 
 You can use the "Cost per unit" field to specify an expected cost per individual resource.
 For instance, the value in this field might represent the fee paid to the guide for each completed tour.
@@ -260,7 +273,7 @@ pretix uses this field for data exports.
 It does not affect the price of the product.
 
 Under "Property values", check all values that are required for this type of date.
-For instance, assume you are offering a tour of the Ancient Egypt for English-speaking children.
+For instance, assume you are offering a tour of the Ancient Egypt exhibition for English-speaking children.
 In this case, you select the "Resource type" `Guide` and the "Property values" `Children`, `Egypt`, and `English`.
 
 Click the :btn:Save: button.
@@ -268,7 +281,7 @@ Click the :btn:Save: button.
 ### Creating dates for scheduling
 
 !!! Note
-    Creating dates for scheduling makes sense if you are hosting recurring dates that are open to your entire customer base.
+    Creating dates for scheduling makes sense if you are hosting recurring dates that are open to the public.
     If you are instead making appointments with groups or individuals, then using the [Quick entry](resources-and-scheduling.md#quick-entry) feature may be more convenient.
 
 Navigate to :Navpath:Your event series → :fa3-calendar:Dates: and click the :btn-icon:fa3-plus: Create many new dates: button.
@@ -277,11 +290,13 @@ For general information on creating dates, see [Creating and editing dates in th
 
 Under the heading "Quotas", in the field labeled "Products", select the product you created in the [previous step](resources-and-scheduling.md#creating-a-product-for-scheduling).
 
-We recommend only selecting one product with resource requirements.
+We recommend selecting only one product with resource requirements.
 pretix applies resource requirements once for every product that has them.
 If your date has two products that both require a guide, then your date will require two guides for scheduling.
+If you want to offer multiple tours at the same time, create one date for each of them.
 
 If you want to sell tours and tickets as separate products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements.
+We recommend configuring tickets for the tour as add-on products to the tour product.
 
 ### Assigning resources to dates
 
@@ -315,6 +330,8 @@ It is also useful if you want to create dates based on when the required resourc
 
 !!! Note
     The quick entry feature is useful if you are making appointments with groups or individuals.
+    It is also useful
+        The quick entry feature is useful if you are making appointments with groups or individuals or want to create scheduled tours individually one by one.
     If you are hosting recurring dates that are open to your entire customer base, then [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling) and [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates) may be more convenient.
 
 ![Page titled 'Quick entry 1/4', displaying fields labeled 'Date', 'Products', and 'Search raster'.](../assets/screens/resources-scheduling/quick-entry1.png "Quick entry 1/4")
@@ -332,6 +349,8 @@ Then, click the :btn:Continue: button.
 ![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
 
 Choose a starting time for your date by selecting it under "Available times" or entering it under "Start time".
+pretix will only suggest times for which it has stored information that sufficient resources are available.
+You can still enter any other time manually, even if pretix has no record of available resources at that time.
 If you selected multiple products on the previous page, use "Product" to choose a specific product.
 
 If check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers.
@@ -341,6 +360,8 @@ If you want to create an order for the date right away, check the box next to "C
 Click the :btn:Continue: button.
 
 If you checked the box next to "Create order", then the next page allows you to enter details for that order.
+This is a simplified form.
+If you want to add further information to the order that pretix does not display on this page, use the "Orders" menu.
 If you unchecked the box next to "Create order", then pretix will skip this page.
 
 ![Page titled 'Quick entry 3/4', displaying options for 'Email address', 'Internal comment', 'Amounts' and product price.](../assets/screens/resources-scheduling/quick-entry3.png "Quick entry 3/4")
