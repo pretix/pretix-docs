@@ -158,7 +158,7 @@ If the resource you are creating represents a person, enter their name under "Na
 Under "Locale", select the language you want to use to communicate with the person through pretix.
 Check the box next to "Require confirmation".
 
-![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English' notification email address 'jdoe@example.com and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
+![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English', and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
 If the resource represents an inanimate object, enter a unique identifier such as the room number or an inventory number.
 Select the "Locale" corresponding to the person or team in charge of the resource.
@@ -320,7 +320,7 @@ The required properties are "Children", "Egypt", and "English".
 Click the field and select a guide that fulfills those requirements.
 
 Click the :btn:Save: button.
-As soon as you do this, your event's contact mail address will send an email to the resource's notification email address.
+As soon as you do this, your event's contact mail address will send an email to the resource's managers.
 
 ### Quick entry
 
@@ -380,14 +380,14 @@ If you did not create an order, then you will land on the scheduling dashboard.
 
 ### Confirming or denying a scheduling
 
-Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's notification email address.
+Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's managers.
 This email also includes a calendar invitation.
 
 ![Email from pretix with the standard content defined in the resource type settings: info about the date and links for confirming or denying the scheduling](../assets/screens/resources-scheduling/confirm-scheduling.png "Request confirmation email")
 
 In order to confirm scheduling, click the link that ends with `confirm`.
 This takes you to a webpage saying "Thank you for your response, the event organizer has been notified".
-The pretix server will also send an email to the resource's notification email address confirming the scheduling.
+The pretix server will also send an email to the resource's managers confirming the scheduling.
 Both the scheduling dashboard and the page for the individual date will display a note saying that the requirement for the date has been fulfilled.
 
 ![Email from pretix with the standard content defined in the resource type settings proclaiming that Jamie Doe has been scheduled.](../assets/screens/resources-scheduling/scheduled.png "Confirmation email message")
