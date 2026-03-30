@@ -250,6 +250,8 @@ server {
 
 We recommend reading about setting [strong encryption settings](https://mozilla.github.io/server-side-tls/ssl-config-generator/) for your web server.
 
+{% include "warning-ssrf.md" %}
+
 ## Next steps
 
 Yay, you are done! You should now be able to reach pretix at <https://pretix.yourdomain.com/control/> and log in as *admin@localhost* with a password of *admin*. Don't forget to change that password! Create an organizer first, then create an event and start selling tickets!
