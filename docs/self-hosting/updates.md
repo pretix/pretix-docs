@@ -59,3 +59,7 @@ This release includes a migration that changes how sales channels are referred o
 ### Upgrade to 2026.1.0 or newer
 
 Python 3.10 – 3.13 is now required. Python 3.9 is no longer supported and Python 3.14 is not yet supported.
+
+### Upgrade to 2026.3.0 or newer
+
+Python 3.11 is now required and Python 3.14 is now supported. PostgreSQL 14 is now required. PostgreSQL 12 and 13 are no longer supported.
