@@ -150,7 +150,7 @@ Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren 
 Für mehr Informationen zum Testen der Konfiguration und zum Verbinden von Druckern mit Android-Geräten mit pretixPRINT lesen Sie folgende Seiten:
 
  - Belegdrucker [Epson TM-m30iii und Epson TM-T88vii](epson.de.md)
- - Ticket- oder Butterfly-Badgedrucker [Boca Lemur und Boca Lemur C](boca.de.md)
+ - Ticket- oder Butterfly-Badgedrucker [Boca Lemur und Boca Lemur-C](boca.de.md)
  - Badgedrucker für Klebeetiketten [Bixolon XD5-40d](bixolon.de.md)
 
 Falls Sie den **integrierten** Drucker der Kasse als Belegdrucker verwenden wollen, legen Sie geeignetes bedruckbares Material ein.
@@ -191,5 +191,5 @@ Falls beim **integrierten** Drucker einer Kasse Probleme auftreten, wiederholen 
 Falls bei einem der anderen Drucker Probleme auftreten, lesen Sie den Abschnitt zur Problemlösung im jeweiligen Artikel:
 
  - [Epson TM-m30iii und Epson TM-T88vii](epson.de.md#problemlosung)
- - [Boca Lemur und Boca Lemur C](boca.de.md#problemlosung)
+ - [Boca Lemur und Boca Lemur-C](boca.de.md#problemlosung)
  - [Bixolon XD5-40d](bixolon.de.md#problemlosung)

@@ -1,4 +1,4 @@
-# Drucker einrichten: Boca Lemur und Boca Lemur C
+# Drucker einrichten: Boca Lemur und Boca Lemur-C
 
 Bei diesem Artikel handelt es sich um eine Schnellstart-Anleitung für die Verwendung von Druckern der Marke Boca zusammen mit pretix.
 Er erklärt, wie Sie den Drucker aufbauen und über die App pretixPRINT mit Kassen oder Scan-Smartphones verbinden.
@@ -6,25 +6,25 @@ Falls Sie den Drucker mit einem Desktop-Computer verbinden wollen, konsultieren 
 
 !!! Note
     Diese Seite ersetzt nicht die Dokumentation für die Geräte selbst.
-    Informieren Sie sich auf der Webseite des Herstellers über die Modelle [Boca Lemur](https://tls-bocasystems.com/de/225/lemur/) und [Boca Lemur C](https://tls-bocasystems.com/de/232/lemur-c/).
+    Informieren Sie sich auf der Webseite des Herstellers über die Modelle [Boca Lemur](https://tls-bocasystems.com/de/225/lemur/) und [Boca Lemur-C](https://tls-bocasystems.com/de/232/lemur-c/).
 
-Die Geräte Boca Lemur und Boca Lemur C unterscheiden sich in ihrem Aufbau nur in folgenden Punkten voneinander:
+Die Geräte Boca Lemur und Boca Lemur-C unterscheiden sich in ihrem Aufbau nur in folgenden Punkten voneinander:
 
- - Stromversorgung (Lemur: integriertes Netzteil und Kaltgeräteanschluss. Lemur C: externes Netzteil)
- - Position der Buttons und LEDs (Lemur: linke Seite bei Blick auf die Papierausgabe. Lemur C: rechte Seite).
+ - Stromversorgung (Lemur: integriertes Netzteil und Kaltgeräteanschluss. Lemur-C: externes Netzteil)
+ - Position der Buttons und LEDs (Lemur: linke Seite bei Blick auf die Papierausgabe. Lemur-C: rechte Seite).
    Der Netzschalter befindet sich bei beiden Geräten rechts.
- - Anzeige (der Lemur besitzt eine einzeilige Monochrom-Anzeige, der Lemur C nicht)
- - maximale Druckbreite (Lemur: 101mm. Lemur C: 82mm)
+ - Anzeige (der Lemur besitzt eine einzeilige Monochrom-Anzeige, der Lemur-C nicht)
+ - maximale Druckbreite (Lemur: 101mm. Lemur-C: 82mm)
 
 ## Voraussetzungen
 
 Für die Stromversorgung des Geräts benötigen Sie eine Steckdose in der Nähe.
 Für die Netzwerkverbindung über LAN brauchen Sie einen Router mit einem freien LAN-Anschluss oder eine alternative Lösung.
-Als Material benötigen Sie kompatibles bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite.
+Als Material benötigen Sie kompatibles bedruckbares Thermopapier, z.B. in Form von Tickets oder Butterfly-Badges, mit einer Breite von 50mm bis 82mm (Lemur-C) oder 50mm bis 101mm (Lemur) und einer schwarzen Steuermarke auf der Rückseite.
 
 ## Anleitung
 
-Mit dem Boca Lemur oder Lemur C können Sie entweder Tickets oder Butterfly-Badges bedrucken.
+Mit dem Boca Lemur oder Lemur-C können Sie entweder Tickets oder Butterfly-Badges bedrucken.
 Um einen dieser Drucker in Betrieb zu nehmen, sind folgende Schritte notwendig:
 
  - [Versorgen Sie Ihren Drucker](#drucker-anschließen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
@@ -40,7 +40,7 @@ Diese Schritte werden im Folgenden genauer erklärt.
 Verbinden oder entfernen Sie **keine** Kabel, während der Drucker eingeschaltet ist.
 
 **Lemur:** Schließen Sie das Kaltgerätekabel zuerst an den Drucker und danach an eine Steckdose an.
-**Lemur C:** Schließen Sie das Netzteil zuerst an den Drucker und danach an eine Steckdose an.
+**Lemur-C:** Schließen Sie das Netzteil zuerst an den Drucker und danach an eine Steckdose an.
 Lassen Sie den Drucker weiterhin ausgeschaltet.
 
 Um den Drucker über **LAN** mit dem Netzwerk zu verbinden, stecken Sie ein LAN-Kabel in die Buchse mit der Aufschrift "ETHERNET" an der Rückseite des Druckers.
@@ -67,7 +67,7 @@ Legen Sie Ihr Druckmaterial passend bereit.
 Die bedruckbare Seite muss nach oben zeigen.
 Die schwarzen quadratischen Markierungen müssen sich auf der Unterseite befinden und an dem Ende liegen, das weiter vom Drucker entfernt ist.
 Schieben Sie das Papier in den Drucker, bis dieser das Papier automatisch einzieht.
-Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur C: alle), schneidet er das erste Ticket bzw. das erste Badge ab.
+Falls der Drucker mit einer Schneideeinrichtung ausgestattet ist (Lemur: manche, Lemur-C: alle), schneidet er das erste Ticket bzw. das erste Badge ab.
 
 ### Konfiguration testen
 
@@ -108,7 +108,7 @@ Das wird im nächsten Abschnitt näher erklärt.
 ### Drucker mit Scan-Smartphone oder Kasse verbinden
 
 Auf Android-Geräten (Scan-Smartphone und Kasse) können Sie unsere App pretixPRINT benutzen, um Drucker anzusteuern.
-Dieser Abschnitt erklärt, wie Sie die Drucker Lemur und Lemur C über die App verbinden und die Funktion testen.
+Dieser Abschnitt erklärt, wie Sie die Drucker Lemur und Lemur-C über die App verbinden und die Funktion testen.
 
 pretixPRINT erlaubt die Einrichtung von Druckern für drei verschiedene Verwendungszwecke: Belegdrucker, Ticketdrucker und Badgedrucker.
 Daher zeigt die App drei verschiedene Schaltflächen mit der Beschriftung "Drucker einrichten" an.
@@ -118,7 +118,7 @@ Drucker für Belege und Tickets richten Sie üblicherweise an einer Kasse ein.
 Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbenen Tickets auszudrucken.
 Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person ein passendes Badge zu drucken.
 
-Die Drucker Lemur und Lemur C sind sowohl für die Verwendung als Ticketdrucker als auch als Badgedrucker geeignet.
+Die Drucker Lemur und Lemur-C sind sowohl für die Verwendung als Ticketdrucker als auch als Badgedrucker geeignet.
 Um den Drucker als Ticketdrucker mit einer Kasse zu verbinden, öffnen Sie pretixPRINT auf der Kasse und tippen dann unter "Ticketdrucker" auf :btn:Drucker einrichten.
 Um den Drucker als Badgedrucker mit einem Scan-Smartphone zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten.
 Unabhängig von Ihrer Auswahl ist der Prozess danach immer der gleiche.
@@ -149,7 +149,7 @@ Tippen Sie :btn:Einstellungen speichern:.
     Die Testseite von pretixPRINT bestätigt, dass die Verbindung zwischen dem Gerät (Kasse oder Scan-Smartphone) und dem Drucker besteht und dass die beiden Geräte mit dem richtigen Protokoll kommunizieren.
 
 Wiederholen Sie diese Schritte an allen Geräten, mit denen Sie drucken möchten.
-Die pretixPRINT-Testseite könnte beim Lemur und Lemur C z.B. so aussehen:
+Die pretixPRINT-Testseite könnte beim Lemur und Lemur-C z.B. so aussehen:
 
 !["Ein weißes Ticket mit lila Randstreifen, glänzendem pretix-Logo und schwarzem Aufdruck. Der Testdruck enthält Text in verschiedenen Schriftgrößen, Muster, Streifen und pretix-Logos."](../../assets/screens/hardware-setup/boca-pretixprint.jpg "pretixPRINT-Testseite aus Boca-Drucker")
 
@@ -244,7 +244,7 @@ Falls nicht, tippen Sie :btn:Zurück: und ändern die Einstellung "Drehung" auf 
 Das bedeutet, dass der Druckkopf verschmutzt ist.
 
 **Lösung:** Reinigen Sie den Druckkopf und gegebenenfalls andere Teile im Inneren des Druckers nach Vorgabe des Herstellers.
-Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D).
+Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur-C: Thermal Print Head](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A57%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D).
 
 ### Druck ist blass oder streifig
 
@@ -283,10 +283,10 @@ Alternativ wählen Sie die Papiergröße so, dass sie Ihrem Druckmaterial entspr
    Die bedruckbare Seite muss nach oben zeigen.
    Die Steuermarken (schwarze quadratische Markierungen) müssen an dem Ende liegen, das weiter vom Drucker entfernt ist.
  - der Sensor an der richtigen Position ist.
-   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Cut or Tear Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur C: Cut or Tear SQ Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D).
+   Ziehen Sie dazu die Dokumentation des Herstellers zu Rate: [Lemur: Cut or Tear Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-l-series.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D) oder [Lemur-C: Cut or Tear SQ Opto](https://tls-bocasystems.com/pdf/tls-boca-systems-uk-manual-lemur-c.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C33%2C774%2C0%5D).
 
 ## Weitere Informationen
 
  - [Boca Lemur: Inbetriebname](https://www.youtube.com/watch?v=w5n8h9GMDyg) auf YouTube (deutsch)
  - [Boca Lemur: Öffnen des Druckkopfs](https://www.youtube.com/watch?v=xmT-tPVkHhs) auf YouTube (deutsch)
- - [Boca Lemur C: Öffnen des Druckkopfs]( https://www.youtube.com/watch?v=zjdRD_SUmhA) auf YouTube (deutsch)
+ - [Boca Lemur-C: Öffnen des Druckkopfs]( https://www.youtube.com/watch?v=zjdRD_SUmhA) auf YouTube (deutsch)
