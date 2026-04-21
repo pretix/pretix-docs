@@ -59,7 +59,11 @@ The next section is going to tell you how to do that.
 Open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:.
 Click the :btn-icon:fa3-plus: Connect a device: button.
 Give the device a unique and recognizable name such as "Entrance B phone 1".
-You can authorize the device for all events or limit its access to certain events only.
+
+If you want to use the device for all your events, check the box next to "All events (including newly created ones)".
+If you want to use the device for a limited selection of events, do not check that box.
+Instead, select those events under "Limit to events".
+
 Open the "Security profile" drop-down menu and select `pretixSCAN`.
 
 !["Connect to device" page, displaying instructions for installing pretixSCAN, a QR code, and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot")
@@ -404,7 +408,8 @@ If you are using scan smartphones from another manufacturer, set the scanner up 
 In order to do so, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:.
 Select your device in the list.
 Under "Limit to events", check the box next to the event for which you want to scan tickets.
-Alternatively, check the box "All events (including newly created ones)" above.
+Alternatively, check the box next to "All events (including newly created ones)" above.
+If you do so, then you will not run into the same problem with future events.
 
 ## Further Information
 
