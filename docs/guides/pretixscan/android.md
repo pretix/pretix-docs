@@ -76,6 +76,9 @@ In order to do so, tap the :btn-icon:fa3-ellipsis-v:: three-dot button in the to
 Then, tap :btn:Manual setup:.
 Enter the system URL and token displayed in the pretix backend below the QR code.
 
+If you want to grant authorization to a device belonging to a person who does not have access to the pretix backend, send them the QR code.
+Alternatively, send them the system URL and token.
+
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../../assets/screens/scan/select-event.png "Select event screenshot")
 
 Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets.
@@ -123,7 +126,7 @@ In order to scan a QR code or barcode with the scanner, point the camera at the 
 Regardless of which method you use, the app will check the scanned code against the selected check-in list on the server.
 There are three possible results:
 
- 1. If the ticket is valid and allows entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket".
+ 1. If the ticket is valid and the check-in rules allow entry under the current conditions, pretixSCAN displays a green box titled "Valid ticket".
  Underneath the green box, it lists the ticket type, order number, and position number.
  2. If the ticket is valid but has already been checked in and not checked out again, pretixSCAN displays a yellow box titled "Ticket already used".
  Underneath the yellow box, it lists the ticket type, order number, and position number, and also the date and time when the ticket was first scanned.
@@ -132,10 +135,11 @@ There are three possible results:
 
 ![Scanning a ticket in pretixSCAN. A green box appears at the top of the screen, displaying a checkmark, the text: "Valid ticket (Speaker ticket)" and the order code suffixed with "-1".](../../assets/screens/scan/valid.png "Valid ticket screenshot")
 
-If none of these things happen, then the code has not been scanned.
+If none of these things happen, then your device has not scanned the code.
 Try adjusting the angle and distance between scanner and ticket or improving ambient lighting.
 You can turn the device's flashlight and automatic focus on or off with the buttons at the bottom of the screen.
 If you have trouble scanning a code from a phone screen, ask the customer to increase screen brightness to maximum.
+You can also try tilting the scanning device by 90 degrees in any direction.
 
 ### Searching for attendee data
 
@@ -154,7 +158,7 @@ In order to enable badge printing in pretixSCAN, you have to first install our a
 
 !!! Note
     pretixPRINT comes preinstalled and configured on the scan smartphones that are available for rent on our website.
-    Thus, you will not have to install and configure pretixPRINT on a scan smartphone that you rented from us.
+    Thus, you will normally not have to install and configure pretixPRINT on a scan smartphone that you rented from us.
 
 Once you have done that, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
 Scroll down to the section titled "Badges" and check the box next to "Enable badge printing".
@@ -191,8 +195,9 @@ This section covers the following advanced use cases of pretixSCAN on Android:
 
 ### Exit scanning
 
-If you want to keep track of ticket holders leaving your event, you can use pretixSCAN's exit mode.
+If you want to record ticket holders leaving your event, you can use pretixSCAN's exit mode.
 This is useful if you want to allow ticket holders to enter your event multiple times, but only if the same ticket is not currently checked in to the event.
+It is also useful if you want to add tickets that have attended the event and then left back to the quota, thus allowing you to sell more tickets.
 
 Your check-in list must allow re-entering after an exit scan.
 In order to enable that, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your event → :fa3-check-square-o: Check-in:.
