@@ -199,7 +199,7 @@ If you want to record ticket holders leaving your event, you can use pretixSCAN'
 This is useful if you want to allow ticket holders to enter your event multiple times, but only if the same ticket is not currently checked in to the event.
 It is also useful if you want to add tickets that have attended the event and then left back to the quota, thus allowing you to sell more tickets.
 
-Your check-in list must allow re-entering after an exit scan.
+If you want to allow **multiple entries** per ticket, then your check-in list must allow re-entering after an exit scan.
 In order to enable that, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your event → :fa3-check-square-o: Check-in:.
 Search for the check-in list and click the :btn-icon:fa3-wrench:: "change" button next to it.
 Switch to the :btn:Advanced: tab.
@@ -209,6 +209,12 @@ If your event has closing times, that is, times when no attendees are realistica
 In order to do so, enter a time in the field labeled "Automatically check out everyone at".
 For instance, if you are operating a public swimming pool that closes at 10 PM and opens at 6 AM, you could enter `02:00:00` in that field.
 This automatically checks out every ticket at 2 AM.
+
+If you want to allow the sale of more products after an exit scan, navigate to :navpath:Your event: → :fa3-ticket: Tickets → Quotas:.
+Edit the quota containing your product.
+Under "Advanced options", check the box next to "Allow to sell more tickets once people have checked out".
+Click the :btn:Save: button.
+Repeat these steps for every quota containing a product for which you want to allow the sale of additional tickets after an exit scan.
 
 In order to enable exit scanning mode in pretixSCAN, tap the :btn-icon:fa3-ellipsis-v:: button in the top right corner and then tap :btn:Switch to exit scanning:.
 The home screen will now display a pictogram of a yellow box with an arrow pointing to the left :fa3-sign-out:.
