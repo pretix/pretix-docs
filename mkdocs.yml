@@ -99,6 +99,8 @@ plugins:
             Events: Veranstaltungen
             Pretixpos: pretixPOS
             Pretixkiosk: pretixKIOSK
+            Pretixscan: pretixSCAN
+            Pretixprint: pretixPRINT
             Payment: Zahlung
             Developer and API Docs: Entwickler- und API-Dokumentation
             Trust: Trust und Compliance
