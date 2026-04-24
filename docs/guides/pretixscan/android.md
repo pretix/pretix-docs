@@ -210,7 +210,7 @@ In order to do so, enter a time in the field labeled "Automatically check out ev
 For instance, if you are operating a public swimming pool that closes at 10 PM and opens at 6 AM, you could enter `02:00:00` in that field.
 This automatically checks out every ticket at 2 AM.
 
-If you want to allow the sale of more products after an exit scan, navigate to :navpath:Your event: → :fa3-ticket: Tickets → Quotas:.
+If you want to allow the sale of more products after an exit scan, navigate to :navpath:Your event → :fa3-ticket: Tickets → Quotas:.
 Edit the quota containing your product.
 Under "Advanced options", check the box next to "Allow to sell more tickets once people have checked out".
 Click the :btn:Save: button.
