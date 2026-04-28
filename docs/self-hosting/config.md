@@ -124,6 +124,15 @@ plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins
 
 :   Specifies the name of a header that should be used for logging request IDs. Off by default.
 
+`allow_http_to_private_networks`
+
+:   If this is off, pretix connections to private networks, for instance, IP addresses such as `127.0.0.1` or `10.0.0.0` for all outgoing HTTP connections, such as webhooks and payment gateways. 
+If you are using a local `http_proxy`/`https_proxy` for outgoing requests, set this to `off`. 
+In that case, the proxy is responsible for filtering valid destinations. 
+
+Only set this to `on` if you trust all your admin users, or if you have absolutely no unprotected services on your network. 
+Defaults to `off`. 
+
 ## Locale settings
 
 Example:
