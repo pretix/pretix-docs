@@ -126,7 +126,12 @@ plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins
 
 `allow_http_to_private_networks`
 
-:   If this is off (the default), the system prevents any HTTP connections to private networks (e.g. 127.0.0.1, 10.0.0.0) for all features in including webhooks or payment gateways. We do not recommend enabling this unless you have no untrusted admin users or you are sure to have no unprotected services on your network. Note that you need to set this to `off` if you are using a local `http_proxy`/`https_proxy` for outgoing requests. In that case, the proxy is reponsible for filtering valid destinations.
+:   If this is off, pretix connections to private networks, for instance, IP addresses such as `127.0.0.1` or `10.0.0.0` for all outgoing HTTP connections, such as webhooks and payment gateways. 
+If you are using a local `http_proxy`/`https_proxy` for outgoing requests, set this to `off`. 
+In that case, the proxy is responsible for filtering valid destinations. 
+
+Only set this to `on` if you trust all your admin users, or if you have absolutely no unprotected services on your network. 
+Defaults to `off`. 
 
 ## Locale settings
 
