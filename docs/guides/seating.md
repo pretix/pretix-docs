@@ -300,6 +300,35 @@ For the **second method**, block the seats for which you want to restrict availa
 Then, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
 Under "Allow to buy blocked seats on these channels", select the sales channel for through you want those blocked seats to still be available.
 
+### Optimizing seat selection by customers
+
+If customers are completely free in selecting their seat while placing an order, then this may have undesirable outcomes.
+For instance, customer orders may leave single seats empty, which are difficult to sell to other customers.
+This section tells you how to prevent that.
+
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
+Under "Selection restrictions", check the box next to "Do not allow to leave single seats empty".
+Click the :btn:Save: button.
+
+You can **predetermine the order** in which customers can book seats in a row.
+In order to do so, edit your seating plan.
+If you want customers to be able to book seats starting at one end of the row, select the seat on that end of the row.
+Click the "Optimizer hint" drop-down menu.
+The appropriate selection depends on the seat number and on whether or not the row is reversed.
+
+ - If the seat has the lowest number in the row and the row is **not** reversed, select `>`.
+ - If the seat has the highest number in the row and the row is **not** reversed, select `<`.
+ - If the seat has the lowest number in the row and the row is reversed, select `>`.
+ - If the seat has the highest number in the row and the row is reversed, select `<`.
+
+If you want customers to be able to book seats starting in the middle of the row, select the seat in the middle of the row.
+Click the "Optimizer hint" drop-down menu and select `<>`.
+
+Save your plan and add it to your event as described above.
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
+Under "Selection restrictions", check the box next to "Do not allow to buy seats if there is a better choice of seats in the same row".
+Click the :btn:Save: button.
+
 ### Making changes to a seating plan that is already in use
 
 As soon as you have assigned a seating plan to an event or date, it becomes impossible to change that seating plan under the same name.
