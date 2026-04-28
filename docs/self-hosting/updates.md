@@ -66,5 +66,6 @@ Python 3.11 is now required and Python 3.14 is now supported. PostgreSQL 14 is n
 
 ### Upgrade to 2026.4.0 or newer
 
-HTTP connections to local networks (like 127.0.0.1 or 10.0.0.0) are now blocked by default to prevent unauthorized access to internal services by backend users.
+By default, pretix now blocks HTTP connections to local networks (like `127.0.0.1` or `10.0.0.0`). 
+This prevents backend users from accessing internal services without authorization. 
 If you need them and trust your setup, set `allow_http_to_private_networks = on` in your `pretix.cfg`.
