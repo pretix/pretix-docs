@@ -304,14 +304,14 @@ Under "Allow to buy blocked seats on these channels", select the sales channel f
 
 If customers are completely free in selecting their seat while placing an order, then this may have undesirable outcomes.
 For instance, customer orders may leave single seats empty, which are difficult to sell to other customers.
-This section tells you how to prevent that.
+This section tells you how to prevent bookings from leaving single seats empty, and how to enforce starting sales from a certain seat in a row.
 
-Navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
+If you want to **prevent** bookings from leaving **single seats empty**, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
 Under "Selection restrictions", check the box next to "Do not allow to leave single seats empty".
 Click the :btn:Save: button.
 
 You can **predetermine the order** in which customers can book seats in a row.
-In order to do so, edit your seating plan.
+In order to do so, [edit your layout](#creating-a-layout).
 If you want customers to be able to book seats starting at one end of the row, select the seat on that end of the row.
 Click the "Optimizer hint" drop-down menu.
 The appropriate selection depends on the seat number and on whether or not the row is reversed.
@@ -324,9 +324,43 @@ The appropriate selection depends on the seat number and on whether or not the r
 If you want customers to be able to book seats starting in the middle of the row, select the seat in the middle of the row.
 Click the "Optimizer hint" drop-down menu and select `<>`.
 
-Save your plan and add it to your event as described above.
+Save your plan and assign it to your event as described [above](#assigning-a-seating-plan-to-a-single-event).
 Navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
 Under "Selection restrictions", check the box next to "Do not allow to buy seats if there is a better choice of seats in the same row".
+Click the :btn:Save: button.
+
+### Requiring distance between bookings
+
+You can require a certain spatial distance between separate bookings.
+This can be useful if, for instance, you want to lower the risk of infection for your event's attendees during a pandemic.
+
+This feature relies on the distance between from one seat's center point to the next seat's center point in your layout.
+It does not use the physical distance between seats at your venue.
+A pretix seating plan cannot be a guarantee that you are complying with regulation.
+
+We recommend taking measurements at your venue to determine the distance between seats.
+Then, [edit your layout](#creating-a-layout) in such a way that the distance between seats in the plan reflects the distance between seats at your venue.
+In other words, your plan needs to be true to scale.
+
+Assume, for example, that you want to leave one seat free between distinct bookings.
+In order to determine the distance between seats in your layout, [edit it](#creating-a-layout).
+Select one of your rows and read the "Seat spacing" field.
+This number represents the average distance from one seat in that row to the next.
+
+You can also take a look at the background grid.
+If the grid is not visible, click the :btn-icon:fa3-table:: "Toggle grid" button in the top bar.
+One square on the grid corresponds to a distance of `10` in the layout's scale.
+
+Navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
+In the field labeled "Required distance between distinct bookings", enter a number that is larger than the distance between two adjacent seats, but smaller than the distance between one seat and the seat after the next one.
+For instance, if the seats on your layout have a distance of `25`, you could enter the number `30`.
+
+If you want to enforce more than one empty seat between bookings, enter a larger number.
+If you want to enforce an exact spatial distance, the number depends on the physical measurements at your venue and your layout's scale.
+
+If you want to enforce this distance only within the same row, check the box next to "Only respect distance within the same row".
+If you leave that box unchecked, the restriction will also apply to seats between different rows.
+
 Click the :btn:Save: button.
 
 ### Making changes to a seating plan that is already in use
