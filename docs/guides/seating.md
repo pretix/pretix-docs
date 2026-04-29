@@ -36,7 +36,7 @@ If you want to sell tickets based on individual seats for your event, you need t
  - [Creating an entry for the seating plan](#creating-an-entry-for-a-seating-plan) in your organizer account
  - [Creating products for seating](#creating-products-for-seating)
  - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-a-single-event) or your [event series](#assigning-a-seating-plan-to-a-date-in-an-event-series)
- - [Configuring seating plan behavior](#configuring-seating-plan-behavior)
+ - [Configuring the behavior of the seating plan](#configuring-the-behavior-of-the-seating-plan)
 
 The following sections will guide you through those steps in detail.
 
@@ -242,9 +242,9 @@ The shop will list products that you do not assign to seating categories below t
 
 Once you are happy with your choices, click the :btn:Save: button.
 
-### Configuring seating plan behavior
+### Configuring the behavior of the seating plan
 
-In order to configure seating plan behavior for your singular event or event series, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
+In order to configure the behavior of the seating plan for your singular event or event series, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
 If you want your customers to be able to select their own seats, check the box next to "Customers can choose their own seats".
 
 If you want to assign seats to customers, uncheck the box next to "Customers can choose their own seats".
