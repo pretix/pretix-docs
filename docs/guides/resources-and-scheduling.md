@@ -400,7 +400,7 @@ The requirement for the date will remain open.
 
 ## Troubleshooting
 
-### The shop does not display some dates
+### Some dates do not appear in your shop
 
 **Problem:** You are using the "Resources and scheduling" plugin and your shop does not display all of your dates.
 
