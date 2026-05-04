@@ -253,6 +253,7 @@ In the "Default quota size" field, enter the maximum number of people that can u
 For instance, if a tour guide can accommodate no more than 30 people at a time, enter `30`.
 
 If you want to assign resources to dates based on customer demand, you should check the box next to "Allow customers to book before resources are scheduled".
+If you check this box, your shop will display all dates to which this product grants access, even if you have not scheduled any resources for them.
 
 !!! Note
     Activating the setting "Allow customers to book before resources are scheduled" may cause situations in which you have sold tickets for a date, but no resources available for that date.
@@ -396,3 +397,22 @@ In order to decline the scheduling, click the link that ends with `deny`.
 This also takes you to a webpage saying "Thank you for your response, the event organizer has been notified".
 The pretix server will not send a confirmation email.
 The requirement for the date will remain open.
+
+## Troubleshooting
+
+### The shop does not display some dates
+
+**Problem:** You are using the "Resources and scheduling" plugin and your shop does not display all of your dates.
+
+**Solution:** You either need to schedule resources for those dates, or you need to allow customers to book before you have scheduled any resources.
+
+For the first option, see [Assigning resources to dates](#assigning-resources-to-dates)
+
+For the second option, navigate to :Navpath:Your event series → :fa3-ticket:Products:.
+Edit the product that grants access to the dates that the shop is not displaying.
+Open the :btn:Requirements: tab.
+Check the box next to "Allow customers to book before resources are scheduled".
+If you check this box, your shop will display all dates to which this product grants access, even if you have not scheduled any resources for them.
+
+Click the :btn:Save: button.
+For every product that grants access to a date that is not appearing in the calendar, repeat these steps.
