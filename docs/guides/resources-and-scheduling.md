@@ -1,6 +1,6 @@
 # Resources and scheduling
 
-If your event schedule depends on the availability of personnel, spaces, equipment, or other resources, then you should use the "Resources and scheduling" plugin.
+If your event schedule depends on the availability of staff, spaces, equipment, or other resources, then you should use the "Resources and scheduling" plugin.
 This plugin allows you to manage those resources and schedule dates in your [event series](event-series.md) accordingly.
 This article tells you how to use it.
 
@@ -53,7 +53,7 @@ If the plugin is already active, then it will have a green ":fa3-check: Active" 
 Before you can create and manage individual resources, you have to create resource types.
 A resource type may, for example, represent the following:
 
- - personnel such as guides, instructors, supervisors, etc.
+ - staff such as guides, instructors, supervisors, etc.
  - facilities such as specialized rooms, sports courts, theater halls, etc.
  - equipment such as audio guides, film screening equipment, pedal boats, etc.
 
@@ -301,8 +301,9 @@ We recommend configuring tickets for the tour as add-on products to the tour pro
 
 ### Assigning resources to dates
 
-In order to assign resources to dates, navigate to :navpath:Your event → :fa3-calendar: Scheduling → Dashboard:.
-Click :btn:Dates with not all resources scheduled:.
+In order to get an overview over the scheduling for your event series, navigate to :navpath:Your event → :fa3-calendar: Scheduling → Dashboard:.
+
+In order to assign required resources to dates, click :btn:Dates with not all resources scheduled:.
 This takes you to a page titled "Dates missing resources" which lists all dates with unfulfilled resource requirements.
 It should list all dates you created in the previous step.
 
