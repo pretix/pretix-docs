@@ -238,7 +238,7 @@ You are now able to schedule the resource for dates again.
 
 ### Creating a product for scheduling
 
-Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a personalized admission product.
+Navigate to :Navpath:Your event series → :fa3-ticket:Products: and create or edit a product.
 For general information on creating products, see our guide on [products](products/index.md).
 Do **not** add the product to any quotas.
 Open the :btn:Requirements: tab.
@@ -311,14 +311,20 @@ It should list all dates you created in the previous step.
 Click one of the dates.
 Under "Additional settings", you can find the "Schedule" settings.
 There is a field for every resource type that is required by one of the products assigned to this date.
-The required properties of the resource are listed below that field.
+The text below that field lists the required properties of the resource.
 Click the field and select the individual resource you want to assign.
 
 ![Date settings page, scrolled to the bottom. The section 'Additional settings' has the subheading 'Schedule' with a dropdown menu for 'Guide'. The dropdown is opened, showing the result 'Jamie Doe' with properties 'English, Toki Pona, Adults, Teenagers, Children, Egypt, Sumer · requires confirmation](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
 
 Assume, for instance, your date requires a resource of the type "Guide".
 The required properties are "Children", "Egypt", and "English".
-Click the field and select a guide that fulfills those requirements.
+Click the field.
+
+A drop-down menu opens, listing all resources of the type "Guide".
+The menu helps you select an appropriate resource by displaying tags next to each entry:
+`conflicting booking`, `availability unknown`, `unavailable`, or `does not match requirements`.
+If an entry does not have any of those issues, then it will have none of those tags.
+Select an entry with no issue tags next to it.
 
 Click the :btn:Save: button.
 As soon as you do this, your event's contact mail address will send an email to the resource's managers.
@@ -343,16 +349,15 @@ Under "Products", select "All" or at least one product.
 
 This field only displays products with a "Default duration" as defined in the product settings, on the "Resource requirements" tab.
 See [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling) for information on how to add resource requirements for a product.
-
-Use the field "Search raster" to define the degree of precision for the search.
-Then, click the :btn:Continue: button.
+Click the :btn:Continue: button.
 
 ![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
 
 Choose a starting time for your date by selecting it under "Available times" or entering it under "Start time".
 pretix will only suggest times for which it has stored information that sufficient resources are available.
 You can still enter any other time manually, even if pretix has no record of available resources at that time.
-If you selected multiple products on the previous page, use "Product" to choose a specific product.
+If you selected multiple products on the previous page, use the "Product" drop-down menu to choose a specific product.
+If you selected only a single product, then pretix will carry that selection over to the drop-down menu.
 
 If check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers.
 Uncheck this box if you do not want the date to be visible to all visitors of your online shop.
@@ -375,6 +380,13 @@ Then, click the :btn:Continue: button.
 
 On the last step of the quick entry, select the resources necessary for the date.
 The required properties are listed below the field.
+Click it.
+This opens a drop-down menu, listing all resources of the type "Guide".
+The menu helps you select an appropriate resource by displaying tags next to each entry:
+`conflicting booking`, `availability unknown`, `unavailable`, or `does not match requirements`.
+If an entry does not have any of those issues, then it will have none of those tags.
+Select an entry with no issue tags next to it.
+
 Then, click the :btn:Save: button.
 If you created an order, then you will land on the page for that order.
 If you did not create an order, then you will land on the scheduling dashboard.
