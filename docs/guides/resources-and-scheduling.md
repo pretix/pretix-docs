@@ -47,11 +47,20 @@ If the plugin is already active, then it will have a green ":fa3-check: Active" 
 ### Creating resource types
 
 Before you can create and manage individual resources, you have to create resource types.
-A resource type may, for example, represent the following:
+Assume, for instance, that you want to manage an individual resource such as a person named "Robin Doe".
+This person works as a guide for your museum.
+In that case, you create a resource type named "Guides".
 
- - staff such as guides, instructors, supervisors, etc.
- - facilities such as specialized rooms, sports courts, theater halls, etc.
- - equipment such as audio guides, film screening equipment, pedal boats, etc.
+This is a prerequisite for later creating the individual resource named "Robin Doe".
+The section [Managing individual resources](#managing-individual-resources) covers that later step.
+
+If you want to manage staff such as guides, instructors, supervisors, etc., create a resource type for staff.
+If you want to manage facilities such as specialized rooms, sports courts, theater halls, etc., create a resource type for facilities.
+If you want to manage equipment such as audio guides, film screening equipment, pedal boats, etc., create a resource type for equipment.
+
+Creating these types is a prerequisite for creating individual resources
+The section [Managing individual resources](#managing-individual-resources) covers that.
+
 
 You can use pretix to manage any kind of resource and create a resource type for it.
 You should create exactly one resource type for every type of resource that you want to manage.
@@ -301,7 +310,7 @@ pretix applies resource requirements once for every product that has them.
 If your date has two products that both require a guide, then your date will require two guides for scheduling.
 If you want to offer multiple tours at the same time, create one date for each of them.
 
-If you want to sell tours and tickets as separate products, then you should add a tour product with requirements and any number of regular tickets that do not have requirements.
+If you want to sell tickets for each individual attending a tour, then you should add a tour product with requirements and any number of regular tickets that do not have requirements.
 We recommend configuring tickets for the tour as add-on products to the tour product.
 
 ### Assigning resources to dates
