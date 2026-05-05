@@ -12,6 +12,7 @@ This article tells you how to install pretixSCAN for **Android** and how to make
 ## Prerequisites
 
 pretixSCAN is intended for use with an event hosted with pretix.
+That event must not be offline.
 
 You need to have access to a device running Android version 7 or newer.
 See our [Android version support policy](https://docs.pretix.eu/en/latest/user/android-version-support.html#pretixscan) for more information.
@@ -37,6 +38,7 @@ This section describes those steps in detail.
 !!! Note
     pretixSCAN comes preinstalled on the scan smartphones that are available for rent on our website.
     Thus, you will not have to install pretixSCAN on a scan smartphone that you rented from us.
+    The same is true for the app pretixPRINT.
     For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan).
 
 You can install pretixSCAN on your Android device [through the Google Play Store](https://play.google.com/store/apps/details?id=eu.pretix.pretixscan.droid) like any other app.
@@ -46,10 +48,12 @@ On devices manufactured by Sunmi, you can also find the app in the Sunmi App Sto
 ![Screen titled "Welcome to pretixSCAN", asking you to connect the device to the backend.](../../assets/screens/scan/welcome.png "Welcome to pretixSCAN screenshot")
 
 When you launch pretixSCAN for the first time, confirm that you understand the privacy and security implications of storing attendee data on your device.
-You have to grant pretixSCAN access to the device's camera in order to use the core functionality of validating tickets.
+If you want to use the device's integrated camera for validating tickets, then you have to grant pretixSCAN access to the camera.
+If you have a smartphone with a dedicated scanner, such as one of our rental scan smartphones, then you do not have to grant pretixSCAN access to the camera.
+We recommend using the scanner.
 
 Once you have granted permission, pretixSCAN will start accessing the scanner or camera instantly.
-It will also display a text box telling you to create a new device in our organizer account in the pretix backend.
+It will also display a text box telling you to create a new device in your organizer account in the pretix backend.
 The next section is going to tell you how to do that.
 
 ### Connecting the device to the pretix backend
@@ -77,17 +81,20 @@ Then, tap :btn:Manual setup:.
 Enter the system URL and token displayed in the pretix backend below the QR code.
 
 If you want to grant authorization to a device belonging to a person who does not have access to the pretix backend, send them the QR code.
-Alternatively, send them the system URL and token.
+You can print the code and hand it to them, or send it to a separate device.
+It makes no sense to send the QR code to the device running pretixSCAN.
+As an alternative to the QR code, you can send them the system URL and token.
 
 ![Screen in pretixSCAN, asking you to choose the event for which you want to scan tickets.](../../assets/screens/scan/select-event.png "Select event screenshot")
 
-Once you scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets.
+Once you have scanned the QR code or entered the token successfully, the app will ask you to select the event for which you want to scan tickets.
+It is not possible to select an event that is currently offline.
 Your next step depends on the type of event for which you want to scan tickets.
 
  - **Single event:** Select the event in the list or in the calendar and tap the :btn:OK: button.
    Then, select a check-in list and tap the :btn:OK: button again.
 
- - **Event series:** Select any of the dates from that event series.
+ - **Event series:** Select one of the dates from that event series.
    Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
 
  - **Multiple events or series:** Enable expert mode.
@@ -104,10 +111,9 @@ Switch to entry scanning by tapping the three-dot button :btn-icon:fa3-ellipsis-
 
 Our scan smartphones have both a camera and a scanner.
 The scanner works much more quickly and reliably than the camera.
-Thus, you should always use the scanner at your check-in.
-If you are using a device without a scanner, then you should use the camera instead.
+Thus, if you have a scanner, then you should always use the scanner at your check-in.
 
-In order to confirm that the device uses the right setting, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
+In order to confirm that the device is using the right setting, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
 Scroll to the section titled "User interface".
 If your device has a scanner, uncheck the box next to "Use device camera".
 If your device does have a scanner, check that box.
@@ -189,7 +195,7 @@ This section covers the following advanced use cases of pretixSCAN on Android:
 
  - [exit scanning](#exit-scanning)
  - [locking the settings](#locking-the-settings)
- - Letting attendees [scan their own tickets](#letting-attendees-scan-their-own-tickets) using kiosk mode
+ - letting attendees [scan their own tickets](#letting-attendees-scan-their-own-tickets) using kiosk mode
  - [offline scanning](#offline-scanning)
  - scanning tickets for [multiple events](#scanning-tickets-for-multiple-events)
 
@@ -197,7 +203,7 @@ This section covers the following advanced use cases of pretixSCAN on Android:
 
 If you want to record ticket holders leaving your event, you can use pretixSCAN's exit mode.
 This is useful if you want to allow ticket holders to enter your event multiple times, but only if the same ticket is not currently checked in to the event.
-It is also useful if you want to add tickets that have attended the event and then left back to the quota, thus allowing you to sell more tickets.
+It is also useful if you want to add tickets whose holders have attended the event and then left back to the quota, thus allowing you to sell more tickets.
 
 If you want to allow **multiple entries** per ticket, then your check-in list must allow re-entering after an exit scan.
 In order to enable that, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your event → :fa3-check-square-o: Check-in:.
@@ -271,7 +277,7 @@ Once you return to the main screen, pretixSCAN will not display the menu bar at 
 ![Home screen of pretixSCAN in kiosk mode displaying the pictogram for entry scanning, the last synchronization, and the buttons for flashlight and autofocus. The top bar is missing.](../../assets/screens/scan/kiosk.png "Kiosk mode")
 
 
-Use the [App pinning](https://support.google.com/android/answer/9455138?hl=en) feature of Android or your preferred solution to prevent users from leaving the app.
+Use the [app pinning](https://support.google.com/android/answer/9455138?hl=en) feature of Android or your preferred solution to prevent users from leaving the app.
 
 In order to leave kiosk mode and display the menu bar again, you need a QR code of your PIN
 Open [our QR code generator](https://qr.pretix.dev/) and enter your PIN.
@@ -300,7 +306,10 @@ Do these steps ahead of time in a setting where you do have a reliable connectio
     After that, pretixSCAN will correctly identify the ticket as "Ticket already used".
 
 If you want to enable offline mode, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner and then tap :btn:Settings:.
-Then check the boxes next to "Offline scanning", "Automatic Synchronization", and "Download orders".
+Then check the box next to "Offline scanning" and "Download orders".
+You should also check the box next to "Automatic Synchronization".
+With this option active, the app will attempt to synchronize event data whenever a connection is available.
+Thus, you will not have to initiate synchronization manually every couple of minutes.
 
 If the network connection at your check-in is present, but unstable, you can leave "Offline scanning" unchecked and instead tap :btn:Automatically turn offline mode on and off:.
 The default selection is `Manual mode (off)`.
@@ -327,8 +336,8 @@ If you want to scan tickets for more than one event, you can use **expert mode**
 
 This is useful if you are operating a single check-in for multiple events that are taking place at the same time.
 
-If you want to scan tickets for multiple events or event series, then you need to give your device permission for all of those.
-In order to do so, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:.
+If you want to scan tickets for multiple events or event series, then you need to give your device permission for all of them.
+If you have not already done so during your initial setup, open the [pretix backend](https://pretix.eu/control/) and navigate to :navpath:Your organizer → :fa3-mobile-phone: Devices:.
 
 Search for the device to which you want to give permission.
 Click the :btn-icon:fa3-edit:: "edit" button next to it.
@@ -347,8 +356,7 @@ Check the box next to "Expert mode (select multiple events)" and tap the :btn:OK
 Tap the :btn-icon:fa3-plus:: button.
 Select another event and check-in list for which you want to scan tickets.
 Repeat this step for every event for which you want to scan tickets.
-You can add as many events as you like.
-But you can only add one check-in list per event
+You can add as many events as you like, but you can only add one check-in list per event.
 
 You can change the check-in list by tapping the :btn-icon:fa3-pencil:: button next to it.
 You can remove the event by tapping the :btn-icon:fa3-trash:: button.
