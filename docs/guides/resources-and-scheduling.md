@@ -16,14 +16,14 @@ Using resources and scheduling involves the following steps:
  1. [Enabling the plugin](resources-and-scheduling.md#enabling-the-plugin) on the organizer level and event series level
  3. [Creating resource types](resources-and-scheduling.md#creating-resource-types) such as a type for all guides or and one for all rooms
  4. [Managing properties](resources-and-scheduling.md#managing-properties) for resource types
- 5. [Creating resources](resources-and-scheduling.md#creating-resource-types), for instance, individual guides or rooms
+ 5. [Creating individual resources](resources-and-scheduling.md#managing-individual-resources), for instance, individual guides or rooms
  6. [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling), for instance, a guided tour ticket
  7. [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling), for instance, guided tours
  8. [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates), for instance, assigning a guide to a tour
  9. Alternatively, using the [Quick entry](resources-and-scheduling.md#quick-entry) feature for planning dates
 
 The following sections will guide you through those steps in detail.
-In addition to that, this article explains how to [confirm or deny a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on the resource's availability at the scheduled time.
+In addition, this article explains how to [confirm or deny a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on the resource's availability at the scheduled time.
 This information is useful for the person or team managing the resource.
 
 ### Enabling the plugin
@@ -46,10 +46,6 @@ If the plugin is already active, then it will have a green ":fa3-check: Active" 
 
 ### Creating resource types
 
-!!! Note
-    Once you have created a resource type, it is not possible to delete it from the organizer account entirely.
-    You can still edit and rename the resource type in order to repurpose it.
-
 Before you can create and manage individual resources, you have to create resource types.
 A resource type may, for example, represent the following:
 
@@ -63,10 +59,11 @@ You should create exactly one resource type for every type of resource that you 
 !!! Note
     We recommend creating **as few resource types** as possible.
     For instance, if you employ tour guides and workshop instructors, then you should create only one resource type named "Staff member".
-    This makes it easier to manage staff who work both as tour guides and workshop instructors.
+    This allows you to manage staff who work both as tour guides and workshop instructors.
 
     pretix only checks for conflicts of availability within the same resource type.
-    Thus, it does not make sense to add the same individual resource to two different resource types in pretix.
+    Do **not** add the same real-world resource to two different resource types in pretix.
+    Doing so would make it impossible for pretix to keep track of the resource's availability.
 
 ![Page titled 'Create a new resource type', displaying inputs for name and plural name, as well as email settings.](../assets/screens/resources-scheduling/resource-type.png "Create a new resource type")
 
@@ -78,11 +75,18 @@ If the plural of your resource type's name is not formed by appending an `s` to 
 For instance, if the name of your resource type is `Person`, enter `People` in the "Plural name" field.
 
 Select the "Mode" for your resource type.
-You can assign one user account to resources in ":fa3-user: Human" mode.
-You can assign multiple user accounts to a resource in ":fa3-cube: Thing or place" mode.
+
+In ":fa3-user: Human" mode, you can specify exactly one pretix user account to manage that individual resource.
+You can also add a phone number and address to each individual resource.
+You cannot specify a separate notification email address.
+
+In ":fa3-cube: Thing or place" mode, you can specify multiple pretix user accounts as managers for each individual resource.
+You can also specify a notification email address.
+You cannot add a phone number or address.
+
 It is not possible to change the mode after you have created the resource type.
 
-You can configure emails for "Booking pending confirmation" and for "Booking confirmed" on this page.
+You can configure the text of emails for "Booking pending confirmation" and for "Booking confirmed" on this page.
 pretix will send these emails to the email address of the account that manages these resources.
 See [managing individual resources](resources-and-scheduling.md#managing-individual-resources) for more information.
 
@@ -90,17 +94,20 @@ Whenever you assign a resource that requires confirmation to a date, pretix will
 If the recipient confirms the booking through the previous email, then pretix will send the "Booking confirmed" email.
 pretix will also send the "Booking confirmed" email if you assign a resource that does not require confirmation to a date.
 
-Adapt the subject and message text of both emails to your liking.
+Adjust the subject and message text of both emails to your liking.
 You should always include the placeholders `{url_available}` and `{url_unavailable}` in the "Booking pending confirmation" email message.
 The person managing the resource needs these links to confirm or decline a booking.
 We also recommend using the other placeholders in your email message because they communicate relevant information.
+The page lists available placeholders underneath the subject and email fields.
 
 Click the :btn:Save: button.
 
 ### Managing properties
 
-Most resources have one or multiple properties that vary from one to the next and that are relevant for booking.
+Resources are usually not interchangeable.
+One or multiple properties that are relevant for booking may vary across resources.
 For instance, guides at a museum may speak different languages, be familiar with different exhibitions, or be proficient with different kinds of audiences.
+Conference rooms may not all meet space or seating requirement, or may come with different equipment.
 You can use pretix to keep track of these properties while scheduling dates.
 
 In order to edit properties on a resource type, navigate to :navpath:Your organizer → :fa3-briefcase: Resources → Types:.
@@ -109,8 +116,7 @@ Under the headline "Properties", you can manage properties.
 Alternatively, you can add properties while creating a new resource type.
 
 Assume, for example, you are creating a property type for museum guides.
-These conference rooms differ as to how many people they seat and whether or not they have a projector for presentations.
-The projectors also vary in terms of display resolution (either 1080p or 720p).
+These museum guides differ as to which languages they speak, and which exhibitions they are familiar with.
 
 In this case, you click the :btn-icon:fa3-plus: Add property: button.
 Under "Name", enter `Languages`.
@@ -160,10 +166,9 @@ Check the box next to "Require confirmation".
 
 ![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English', and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
-If the resource represents an inanimate object, enter a unique identifier such as the room number or an inventory number.
-Select the "Locale" corresponding to the person or team in charge of the resource.
-
-Once you are happy with your choices, click :btn:Save and continue with more settings:.
+If the resource represents an inanimate object or location, enter a unique identifier such as a room number or an inventory number.
+Select the "Language" appropriate for the person or team in charge of the resource.
+Once you are happy with your choices, click the :btn:Save and continue with more settings: button.
 
 ![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. The page displays available time slots in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
 
@@ -177,11 +182,11 @@ This is similar to the way pretix sends out an invitation if you [invite someone
 
 If the resource is a **thing** or **place**, then the page will have a :btn-icon:fa3-users: Managers: button at the top.
 Click that button.
-This takes you to a page listing managers for the resource.
+This takes you to a page listing all managers for the resource.
 Enter the email address of the pretix user account that belongs to one of the people managing the resource.
 Click the :btn-icon:fa3-plus: Add: button.
 
-Repeat this step for every person that manages the resource.
+Repeat this step for every person who manages the resource.
 Take a step back in your browser or navigate to :navpath:Your organizer → :fa3-briefcase: Resources:.
 Click your resource type and then your resource.
 
@@ -201,8 +206,8 @@ This opens a popup window titled "Add a new availability rule".
 ![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a toggle labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
 
 Assume, for instance, your guide's availability is expected to stay the same July through September 2027.
-They will work Monday through Friday from 8 AM to 4 PM.
-They will not be available on Tuesday at 12 AM to 2 PM because of a weekly team meeting.
+They will work Monday through Friday from 9 AM to 5 PM.
+They will not be available on Tuesday from 12 AM to 2 PM because of a weekly team meeting.
 
 In that case, you enter a "Start" date of `2027-07-01` and an "End" of `2027-09-30`.
 Select all days from Monday through Friday.
@@ -226,7 +231,7 @@ Alternatively, click the name of the resource and then click the :btn-icon:fa3-t
 Both buttons take you to a page asking you to confirm the deletion.
 
 If you never scheduled the resource for any events, then pretix will delete the resource completely.
-If you did schedule the resource for events, then pretix will keep a record of that resource.
+If you did schedule the resource for events, then pretix will keep a record of the resource.
 You can view that record by navigating to the submenu for the corresponding resource type.
 Under "Resource status", select `Deleted resources` or `All resources` and click the :btn-icon:fa3-filter: Filter: button.
 The page displays deleted resources with their names crossed out.
@@ -245,7 +250,7 @@ Open the :btn:Requirements: tab.
 
 ![Page titled 'Modify product: Tour ticket' with the 'Requirements' tab open. The 'Default duration (minutes)' is '90'. The 'Default quota size' is '30'. The box 'Allow customers to book before resources are scheduled' is checked. Under 'Requirements', the resource type 'Guide' is selected with an 'Amount' of '1'.](../assets/screens/resources-scheduling/product-requirements.png "Modify product—Requirements")
 
-In the "Default duration (minutes)" field, enter the time resources will typically be booked for.
+In the "Default duration (minutes)" field, enter the time for which resources will typically be booked.
 For instance, if a tour usually takes 90 minutes, enter `90`.
 This field is optional, but if you want to use the [Quick entry](resources-and-scheduling.md#quick-entry) feature, then you need to enter a number here.
 
@@ -266,7 +271,7 @@ The date will only become available for booking in your shop after you have done
 Click the :btn-icon:fa3-plus: Add a new requirement: button.
 Select the "Resource type" that is necessary for this date.
 Under "Amount", specify the amount of resources of this type that are necessary, usually `1`.
-If you need more personell, rooms, or pieces of equipment, enter the number you need.
+If you need more staff, rooms, or pieces of equipment, enter the number you need.
 
 You can use the "Cost per unit" field to specify an expected cost per individual resource.
 For instance, the value in this field might represent the fee paid to the guide for each completed tour.
@@ -338,8 +343,7 @@ It is also useful if you want to create dates based on when the required resourc
 
 !!! Note
     The quick entry feature is useful if you are making appointments with groups or individuals.
-    It is also useful
-        The quick entry feature is useful if you are making appointments with groups or individuals or want to create scheduled tours individually one by one.
+    It is also useful if you want to create scheduled tours one by one.
     If you are hosting recurring dates that are open to your entire customer base, then [Creating dates for scheduling](resources-and-scheduling.md#creating-dates-for-scheduling) and [Assigning resources to dates](resources-and-scheduling.md#assigning-resources-to-dates) may be more convenient.
 
 ![Page titled 'Quick entry 1/4', displaying fields labeled 'Date', 'Products', and 'Search raster'.](../assets/screens/resources-scheduling/quick-entry1.png "Quick entry 1/4")
@@ -368,7 +372,7 @@ Click the :btn:Continue: button.
 
 If you checked the box next to "Create order", then the next page allows you to enter details for that order.
 This is a simplified form.
-If you want to add further information to the order that pretix does not display on this page, use the "Orders" menu.
+If you want to add further details to the order that pretix does not display on this page (such as invoice information), use the "Orders" menu.
 If you unchecked the box next to "Create order", then pretix will skip this page.
 
 ![Page titled 'Quick entry 3/4', displaying options for 'Email address', 'Internal comment', 'Amounts' and product price.](../assets/screens/resources-scheduling/quick-entry3.png "Quick entry 3/4")
