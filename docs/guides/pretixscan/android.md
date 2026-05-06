@@ -36,10 +36,11 @@ This section describes those steps in detail.
 ### Installation and setup
 
 !!! Note
-    pretixSCAN comes preinstalled on the scan smartphones that are available for rent on our website.
-    Thus, you will not have to install pretixSCAN on a scan smartphone that you rented from us.
-    The same is true for the app pretixPRINT.
-    For more information on our hardware offers, visit [our website](https://pretix.eu/about/en/hardware/scan).
+    If you have finished setting up your event and then rented scan smartphones from us, then we have already installed and configured pretixSCAN and pretixPRINT for you on those devices.
+    The same is true if you have bought the devices from us and ordered a finished configuration.
+
+    In either of these cases, you do not have to do any installation, setup, or connecting to the backend.
+    Skip to the section on [Entry scanning](#entry-scanning).
 
 You can install pretixSCAN on your Android device [through the Google Play Store](https://play.google.com/store/apps/details?id=eu.pretix.pretixscan.droid) like any other app.
 If your device does not have access to the Google Play Store, you can download the latest version from our [pretix Marketplace](https://marketplace.pretix.eu/products/pretixscan-android/versions).
@@ -49,10 +50,10 @@ On devices manufactured by Sunmi, you can also find the app in the Sunmi App Sto
 
 When you launch pretixSCAN for the first time, confirm that you understand the privacy and security implications of storing attendee data on your device.
 If you want to use the device's integrated camera for validating tickets, then you have to grant pretixSCAN access to the camera.
-If you have a smartphone with a dedicated scanner, such as one of our rental scan smartphones, then you do not have to grant pretixSCAN access to the camera.
-We recommend using the scanner.
+If you have a smartphone with a dedicated scan engine, such as one of our rental scan smartphones, then you do not have to grant pretixSCAN access to the camera.
+We recommend using the scan engine.
 
-Once you have granted permission, pretixSCAN will start accessing the scanner or camera instantly.
+Once you have granted permission, pretixSCAN will start accessing the scan engine or camera instantly.
 It will also display a text box telling you to create a new device in your organizer account in the pretix backend.
 The next section is going to tell you how to do that.
 
@@ -73,7 +74,7 @@ Open the "Security profile" drop-down menu and select `pretixSCAN`.
 !["Connect to device" page, displaying instructions for installing pretixSCAN, a QR code, and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot")
 
 Once you click the :btn:Save: button, pretix redirects you to a page displaying a QR code.
-Open pretixSCAN and scan the QR code with the camera or hardware scanner.
+Open pretixSCAN and scan the QR code with the camera or scan engine.
 
 If you cannot scan the QR code, then you can connect the device manually instead.
 In order to do so, tap the :btn-icon:fa3-ellipsis-v:: three-dot button in the top right corner of the pretixSCAN app.
@@ -97,10 +98,11 @@ Your next step depends on the type of event for which you want to scan tickets.
  - **Event series:** Select one of the dates from that event series.
    Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
 
- - **Multiple events or series:** Enable expert mode.
+ - **Multiple events or series:** This requires expert mode.
    See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events).
 
-The app will now land you on the main screen and start downloading event data from the server in the background.
+The app will now land you on the main screen.
+If you have selected the security profile pretixSCAN, then it will start downloading event data from the server in the background.
 
 ### Entry scanning
 
@@ -109,25 +111,26 @@ If it is, then it displays a pictogram of a gray box with an arrow pointing to t
 If the pictogram is yellow and the arrow points to the left :fa3-sign-out:, that means that the app is in "exit scanning" mode.
 Switch to entry scanning by tapping the three-dot button :btn-icon:fa3-ellipsis-v:: and :btn:Switch to entry scanning: in the popup menu.
 
-Our scan smartphones have both a camera and a scanner.
-The scanner works much more quickly and reliably than the camera.
-Thus, if you have a scanner, then you should always use the scanner at your check-in.
+Our scan smartphones have both a camera and a scan engine.
+The scan engine works much more quickly and reliably than the camera.
+Thus, if you have a scan engine, then you should always use the scan engine at your check-in.
 
 In order to confirm that the device is using the right setting, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
 Scroll to the section titled "User interface".
-If your device has a scanner, uncheck the box next to "Use device camera".
-If your device does have a scanner, check that box.
+If your device has a scan engine, uncheck the box next to "Use device camera".
+If your device does have a scan engine, check that box.
 
-The scanner is located on the top edge of the device.
-The buttons for activating the scanner are on the left and right edges.
-In order to scan a QR code or barcode with the scanner, point the scanner at the code and press one of the buttons.
+The scan engine is located on the top edge of the device.
+The buttons for activating the scan engine are on the left and right edges.
+In order to scan a QR code with the scan engine, point the scan engine at the code and press one of the buttons.
+Scanning works best at a distance of about 30 to 50 cm.
 
 The camera is located on the back of the device.
-In order to scan a QR code or barcode with the scanner, point the camera at the code so that the code is visible on the screen in pretixSCAN.
+In order to scan a QR code with the scan engine, point the camera at the code so that the code is visible on the screen in pretixSCAN.
 
 !!! Note
-    Scanning codes with a scanner works more quickly and reliably than using a camera.
-    Unless you are using a conventional smartphone with no dedicated scanner, you should always use the scanner.
+    Scanning codes with a scan engine works more quickly and reliably than using a camera.
+    Unless you are using a conventional smartphone with no dedicated scan engine, you should always use the scan engine.
 
 Regardless of which method you use, the app will check the scanned code against the selected check-in list on the server.
 There are three possible results:
@@ -142,7 +145,7 @@ There are three possible results:
 ![Scanning a ticket in pretixSCAN. A green box appears at the top of the screen, displaying a checkmark, the text: "Valid ticket (Speaker ticket)" and the order code suffixed with "-1".](../../assets/screens/scan/valid.png "Valid ticket screenshot")
 
 If none of these things happen, then your device has not scanned the code.
-Try adjusting the angle and distance between scanner and ticket or improving ambient lighting.
+Try adjusting the angle and distance between scan engine and ticket or improving ambient lighting.
 You can turn the device's flashlight and automatic focus on or off with the buttons at the bottom of the screen.
 If you have trouble scanning a code from a phone screen, ask the customer to increase screen brightness to maximum.
 You can also try tilting the scanning device by 90 degrees in any direction.
@@ -345,7 +348,11 @@ On the next page, if you want to give the device permission for all events, chec
 If you want to give permission for a limited selection of events, under "Limit to events", select the events for which you want to scan tickets.
 Click the :btn:Save: button.
 
-In order to activate expert mode in pretixSCAN, tap the name of your event in the bar at the top.
+If you are doing a fresh setup of pretixSCAN, scan the QR code or enter the token as described under [Connecting the device to the pretix backend](#connecting-the-device-to-the-pretix-backend).
+If you have already set up pretixSCAN for one event, tap the name of your event in the bar at the top.
+Both of these options take you to the event selection screen in pretixSCAN.
+The process is the same from here on out.
+
 Select one of the events for which you want to scan tickets.
 Then, tap the :btn:OK: button.
 Select your check-in list.
@@ -395,7 +402,7 @@ Then, connect the device once again as described under [Connecting the device to
 **Problem:** A scan smartphone with pretixSCAN scans every ticket twice.
 Depending on the check-in settings, the app may falsely display the yellow box saying "Ticket already used"
 
-**Solution:** Fix the scan smartphone's scanner settings so that the app only receives one type of scanner output.
+**Solution:** Fix the scan smartphone's scan engine settings so that the app only receives one type of scan engine output.
 
 If you are using a **Sunmi** device, close pretixSCAN and open the Settings app.
 Tap :btn:System (Languages, gestures, time, backup):.
@@ -416,7 +423,7 @@ Under "Intent output", check the box next to "Enabled".
 To summarize, "Barcode input" and "Intent output" should be active, whereas "Keystroke output" should be inactive.
 The Zebra device should now scan each ticket once instead of twice.
 
-If you are using scan smartphones from another manufacturer, set the scanner up in such a way that it only sends one type of output.
+If you are using scan smartphones from another manufacturer, set the scan engine up in such a way that it only sends one type of output.
 
 ### Scanning does not work for a new event
 
