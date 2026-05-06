@@ -99,6 +99,10 @@ Click the element.
 You can also select a single seat by clicking the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button and then double-clicking the seat.
 
 !!! Note
+    The "Optimizer hint" setting is only relevant for advanced use cases.
+    See [Optimizing seat selection by customers](#optimizing-seat-selection-by-customers) for more information.
+
+!!! Note
     Ideally, the radius of seats in your plan should not deviate too far from the default value of 10.
     Creating much smaller seats may result in them being difficult to select.
     Creating much larger seats may result in text labels being too difficult to read.
