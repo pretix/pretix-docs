@@ -1,8 +1,7 @@
 # Contributing to the docs
 
-This section of the documentation explains how the documentation itself works, how it was written, and how to contribute to it.
-This is directed at both coworkers and at external contributors.
-It also serves as a reminder for the people writing the docs themselves how we do certain things, and why we decided to do them that way.
+This section of the documentation explains how the documentation itself works, how we wrote it, and how to contribute to it.
+This is directed at coworkers and at external contributors.
 
 ## Code of Conduct
 
@@ -36,7 +35,7 @@ These maxims, when applied to the task of documenting pretix, entail the followi
 
  4. Maximum of manner: be clear.
 
-    Write as clearly, simply, and straightforwardly as possible.
+    Write as clearly, simply, and directly as possible.
     Keep sentences short.
     Avoid obscure and complex expressions.
     Provide the steps in the exact order that the user needs to follow.
