@@ -271,7 +271,8 @@ This takes you to a page titled "Blocked seats".
 ![Page titled 'Blocked seats', displaying a seating plan. Three of the seats are selected for blocking. These seats are also displayed in a list on the right side of the screen. ](../assets/screens/seating/blocked.png "Blocked seats")
 
 !!! Note
-    If you are using a Mac computer, use the `⌘` key aka `Command` key in place of the `Ctrl` key.
+    If you are using a Mac computer, you can use the `⌘` key aka `Command` key in place of the `Ctrl` key.
+    The `Ctrl` key also works.
 
 Click the seats on your seating plan that you want to block from sale.
 If you want to select multiple seats, hold the `Ctrl` key and the left mouse button to draw a rectangle around those seats.
