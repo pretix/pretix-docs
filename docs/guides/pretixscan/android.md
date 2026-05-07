@@ -73,7 +73,7 @@ Open the "Security profile" drop-down menu and select one of the options startin
 There are three such options:
 
  - `pretixSCAN`: Use this option if you want to use all functions of pretixSCAN.
- - `pretixSCAN (offline only, no order sync)`: Use this option if you do not want to store order data on the device.
+ - `pretixSCAN (online only, no order sync)`: Use this option if you do not want to store order data on the device.
  [Offline scanning](#offline-scanning) does not work with this security profile.
  - `pretixSCAN (kiosk mode, no order sync, no search)`: Use this option if you want to use [Kiosk mode](#letting-attendees-scan-their-own-tickets).
  [Offline scanning](#offline-scanning) does not work with this security profile.
