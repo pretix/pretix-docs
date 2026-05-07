@@ -69,7 +69,16 @@ If you want to use the device for all your events, check the box next to "All ev
 If you want to use the device for a limited selection of events, do not check that box.
 Instead, select those events under "Limit to events".
 
-Open the "Security profile" drop-down menu and select `pretixSCAN`.
+Open the "Security profile" drop-down menu and select one of the options starting with `pretixSCAN`.
+There are three such options:
+
+ - `pretixSCAN`: Use this option if you want to use all functions of pretixSCAN.
+ - `pretixSCAN (offline only, no order sync)`: Use this option if you do not want to store order data on the device.
+ [Offline scanning](#offline-scanning) does not work with this security profile.
+ - `pretixSCAN (kiosk mode, no order sync, no search)`: Use this option if you want to use [Kiosk mode](#letting-attendees-scan-their-own-tickets).
+ [Offline scanning](#offline-scanning) does not work with this security profile.
+ If you select this security profile before connecting the device, it will enable kiosk mode and disable search.
+ If you switch to this security profile after connecting the device, then you will have to change those settings manually.
 
 !["Connect to device" page, displaying instructions for installing pretixSCAN, a QR code, and a token.](../../assets/screens/scan/connect-device.png "Connect to device screenshot")
 
@@ -274,11 +283,10 @@ Click the :btn:Save: button.
     If you follow the rest of the instructions in this section, then order search will still be locked behind a PIN.
 
 In order to enable kiosk mode on your device, lock the settings behind a PIN as described under [Locking the settings](#locking-the-settings).
-While you are in the "PIN protection" submenu, check the box next to "Kiosk mode".
+While you are in the "PIN protection" submenu, check the boxes next to "Kiosk mode" and "Disable search".
 Once you return to the main screen, pretixSCAN will not display the menu bar at the top anymore.
 
 ![Home screen of pretixSCAN in kiosk mode displaying the pictogram for entry scanning, the last synchronization, and the buttons for flashlight and autofocus. The top bar is missing.](../../assets/screens/scan/kiosk.png "Kiosk mode")
-
 
 Use the [app pinning](https://support.google.com/android/answer/9455138?hl=en) feature of Android or your preferred solution to prevent users from leaving the app.
 
