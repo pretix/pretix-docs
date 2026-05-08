@@ -179,17 +179,18 @@ In order to enable badge printing in pretixSCAN, you have to first install our a
     Thus, you will normally not have to install and configure pretixPRINT on a scan smartphone that you rented from us.
 
 Once you have done that, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner, and then tap :btn:Settings:.
-Scroll down to the section titled "Badges" and check the box next to "Enable badge printing".
+Scroll to the section titled "Badges" and check the box next to "Enable badge printing".
 
 From now on, the box that pops up whenever you scan a ticket will also include a :btn-icon:fa3-print:: button.
 You can manually print a badge for the ticket holder by tapping the :btn-icon:fa3-print:: button.
 A push notification will pop up while the device is sending the print job.
 
-If you want to automatically print a badge for every ticket you scan, go back to the settings page, open the menu labeled "Print badges automatically" and select `Always`.
+If you want to automatically print a badge for every ticket you scan, open the settings page and scroll to the section titled "Badges".
+Open the menu labeled "Print badges automatically" and select `Always`.
 The app will still display the :btn-icon:fa3-print:: button, allowing you to manually print an extra badge.
 
-If you want to print out all badges twice after a scan, open the settings in pretixSCAN.
-Scroll down to the section titled "Badges" and check the box next to "Print every badge twice".
+If you want to print out all badges twice after a scan, open the settings page.
+Scroll to the section titled "Badges" and check the box next to "Print every badge twice".
 
 ### Switching to a different event or check-in list
 
