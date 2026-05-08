@@ -36,9 +36,9 @@ This section describes those steps in detail.
 ### Installation and setup
 
 !!! Note
-    If you have finished setting up your event and then rented scan smartphones from us, then we have already installed and configured pretixSCAN and pretixPRINT for you on those devices.
+    If you are renting scan smartphones from us, then we have already installed pretixSCAN and pretixPRINT for you on those devices.
+    We have also configured all relevant apps for you unless communicated otherwise.
     The same is true if you have bought the devices from us and ordered a finished configuration.
-
     In either of these cases, you do not have to do any installation, setup, or connecting to the backend.
     Skip to the section on [Entry scanning](#entry-scanning).
 
