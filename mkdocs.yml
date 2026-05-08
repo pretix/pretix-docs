@@ -148,6 +148,8 @@ plugins:
             Self hosting: Self-hosting
             Pretixpos: pretixPOS
             Pretixkiosk: pretixKIOSK
+            Pretixscan: pretixSCAN
+            Pretixprint: pretixPRINT
             Fiscal: Fiscal requirements
   - social:
       cards_layout_options:
