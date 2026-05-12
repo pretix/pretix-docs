@@ -82,7 +82,7 @@ Der Scanner arbeitet wesentlich schneller und zuverlässiger als die Kamera.
 Daher sollten Sie für die Einlasskontrolle immer den Scanner benutzen.
 
 Wenn Sie sicherstellen wollen, dass der Scanner in Verwendung ist, dann öffnen Sie die App pretixSCAN.
-Tippen Sie :btn-icon:fa3-ellipsis-v: und dann :btn:Einstellungen:.
+Tippen Sie :btn-icon:fa3-ellipsis-v:: und dann :btn:Einstellungen:.
 Scrollen Sie zum Abschnitt "Benutzeroberfläche".
 Das Kontrollkästchen neben "Geräte-Kamera benutzen" sollte **nicht** angehakt sein.
 
