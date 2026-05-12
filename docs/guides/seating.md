@@ -42,7 +42,8 @@ The following sections will guide you through those steps in detail.
 
 ### Enabling the plugin
 
-In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and open the :btn:Features: tab.
+In order to enable the "Seating" plugin for your event, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins:.
+Open the :btn:Features: tab.
 This page includes the Seating plugin as a "Top recommendation" at the top.
 Click the :btn:Enable: button next to it.
 
