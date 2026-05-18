@@ -38,9 +38,9 @@ In the box titled "Repetition rule", we will choose the following:
 We will then check the boxes next to "Monday" and "Wednesday".
 We will select the radio button next to "Repeat until" and choose the date `2027-06-30`.
 
-![Page titled "Create multiple dates", displaying options for a repetition rule and times, as well as a preview of dates about to be created.](../assets/screens/event-series/create-multiple-example3.png "Create multiple dates example" )
+![Page titled "Create multiple dates", displaying options for a repetition rule and times, as well as a preview of dates about to be created.](../../assets/screens/event-series/create-multiple-example3.png "Create multiple dates example" )
 
-The "Preview" on the right side of the page is useful for double-checking our repetition rule.
+The "Preview" on the right side of the page is useful for checking whether our repetition rule results targets the right dates.
 It will display the first ten and last ten dates we are about to create.
 
 Under "Times", we will click the :btn-icon:fa3-plus: Add a single time slot: button.
