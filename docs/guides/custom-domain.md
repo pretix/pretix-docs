@@ -30,9 +30,12 @@ This page displays a DNS record similar to the following:
 **CNAME tut.cname.pretix.eu.**
 
 This DNS record will be different for you.
-Create a new subdomain with your domain registrar or DNS provider using the DNS record displayed here.
+Create a new **subdomain** with your domain registrar or DNS provider using the DNS record displayed here.
 The exact process depends on your domain registrar or DNS provider.
 Typically, the user interface will have a menu called "DNS entries", "DNS settings" or something similar.
+
+As an alternative to the subdomain, you can also use your main domain for your pretix shop.
+We recommend creating a `www.` subdomain and setting up a redirect from your main domain to that subdomain.
 
 Wait for the changes to take place.
 This may take a few minutes or a few hours.
