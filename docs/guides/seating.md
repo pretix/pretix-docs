@@ -4,17 +4,15 @@
 <!-- md:enterprise -->
 
 This article tells you how to use the seating feature of pretix.
-This feature allows you to create seating plans.
-You can then use those seating plans to sell tickets for individual seats.
+This feature allows you to create seating plans in order to then sell tickets for individual seats.
 This is useful if, for example, your event is taking place at a theater, a stadium, or a dining hall.
-Your customers will be able to look at the seating plan and choose their preferred seat.
+When a customer visits your shop, they will be able to look at the seating plan and select their preferred seat.
 
-The seating plan feature allows you to create seats and organize them in numbered rows and different zones.
+You can create seats and organize them into numbered rows and separate zones.
 You can use zones to represent a complex venue layout, for instance, one including orchestra, mezzanine, box seats, and a floor.
 A clean organization of those different spaces into zones on your seating plan can help your customers find their preferred seat while placing an order.
 
-You can then include zone, row, and seat number on the ticket and thus help your customers find their seat after they have arrived at the venue.
-You can introduce seat categories to your plan and then assign different products with different prices.
+You can include zone, row, and seat number on the ticket and thus help your customers find their seat at the venue.
 
 The usefulness of the seating feature is not limited to seats.
 You can also use it to sell or assign, for instance, tables in a reading room or spots in a parking lot.
@@ -185,9 +183,8 @@ You will land on a page titled "Seating plans", displaying a button for creating
 Selling products via a seating plan has implications for the configuration of products in your shop.
 For general information on creating products, refer to our guide on [products](products/index.md).
 
-It is not possible to offer multiple different products to a single seat category.
-You can use a product with multiple product variations instead.
-If you want to offer more than one type of product per seat, then you have to create a product with multiple variations.
+You can only assign a single product to a seat category.
+If you want to offer more than one type of product per seat, create a product with multiple variations.
 Assign that product to the corresponding seat category.
 
 Create one quota for each seat category you offer in your seating plan.
@@ -387,8 +384,8 @@ This makes it possible to edit the seating plan and assign it to this event or d
 You will have to map categories to products again.
 
 The **second method** uses the migration feature.
-You should use this if your seating plan is assigned to multiple events or dates, or if you have already sold products for the seats on it.
-Even if you are just making a small change, it is still necessary to migrate to a new plan.
+You should use this if you have assigned your seating plan to multiple events or dates, or if you have already sold products for the seats on it.
+Even if you are only making a small change, you still need to migrate to a new plan.
 
 Edit the layout as needed.
 For every seat in your previous layout that you have already sold or created a voucher for, your new layout must contain a seat with the same seat ID.
