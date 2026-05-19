@@ -1,12 +1,12 @@
 # Products
 
-A product is anything sold via pretix: tickets, gift cards, conference t-shirts and so on.
+A product is anything sold via pretix: tickets, gift cards, conference t-shirts, and so on.
 We will be selling a variety of products in our shop.
 In this article, we will cover the process of creating the following products and making them available in our shop:
 
  - a basic [admission ticket](#creating-and-editing-products)
  - a [discount ticket](#discount-ticket) for students and members
- - [stickers](#product-with-variants) that come in three variants with different prices
+ - a ticket for our [guided tour]
 
 We are going to start by [creating categories](#creating-and-editing-categories) to sort our products into.
 Then, we will create the products themselves.
@@ -170,4 +170,4 @@ There should be no more yellow boxes warning us that we need to add the product 
 ## Conclusion
 
 We have created all the tickets and other products that we are planning to sell in our shop, sorted them into categories, and added them to quotas.
-We can now move on to [setting up payment methods](payment.md) that our customers can use to purchase these products.
+We can now move on to [creating dates](dates.md) which we will host in the context of our event series.
