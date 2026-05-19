@@ -4,14 +4,13 @@ A product is anything sold via pretix: tickets, gift cards, conference t-shirts 
 We will be selling a variety of products in our shop.
 In this article, we will cover the process of creating the following products and making them available in our shop:
 
- - a basic [admission ticket](products.md#creating-and-editing-products)
- - a [discount ticket](products.md#discount-ticket) for students and members
- - a free [speaker ticket](products.md#speaker-ticket) that is only available through a voucher
- - [stickers](products.md#product-with-variants) that come in three variants with different prices
+ - a basic [admission ticket](#creating-and-editing-products)
+ - a [discount ticket](#discount-ticket) for students and members
+ - [stickers](#product-with-variants) that come in three variants with different prices
 
-We are going to start by [creating categories](products.md#creating-and-editing-categories) to sort our products into.
+We are going to start by [creating categories](#creating-and-editing-categories) to sort our products into.
 Then, we will create the products themselves.
-Lastly, we are going to [create quotas](products.md#creating-and-editing-quotas) to determine and keep track of availability numbers for each product.
+Lastly, we are going to [create quotas](#creating-and-editing-quotas) to determine and keep track of availability numbers for each product.
 
 ## Creating and editing categories
 
@@ -88,22 +87,6 @@ Then, we will navigate to the :btn:Check-in and validity: tab and check the box 
 We have to provide instructions for the person operating the check-in at our event in the "Check-in text" field.
 Our instructions say: `Check for student ID/member ID`.
 We will then click the :btn:Save: button.
-
-### Speaker ticket
-
-Next, we are going to create a speaker ticket that is free, but which is only available through a voucher.
-In order to do so, we will navigate back to the products page :navpath:Event → Products → Products:.
-We will then click the :btn-icon:fa3-copy:: clone button next to the standard ticket in order to clone it.
-We will name the new ticket `Speaker ticket`, provide a translation, and change the "Default price" to €0.00, leave the other options on this page unchanged and click the :btn:Save and continue with more settings: button.
-
-We will switch to the :btn:Availability: tab and check the box next to the option "This product can only be bought using a voucher" about halfway down the page.
-There is a toggle next to that option with an eye and an information symbol: :btn-icon:fa3-eye-slash:: :btn-icon:fa3-info::.
-We are going to set that toggle to :btn-icon:fa3-eye-slash:: with the tooltip "Hide product if unavailable".
-This means that the shop will only display the ticket to people who hold a corresponding voucher.
-Once we have set the checkbox and toggle, we will click the :btn:Save: button.
-
-Our plan is to send voucher codes to our invited speakers which will grant them access to this specialized type of ticket.
-For more information on vouchers, see [vouchers](../../guides/vouchers.md).
 
 ### Product with variants
 

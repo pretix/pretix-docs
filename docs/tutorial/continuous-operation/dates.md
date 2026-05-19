@@ -6,6 +6,9 @@ This article explains how to add dates to an event series.
 
 We will navigate to our personal dashboard by clicking :btn-icon:i-pretix: pretix.eu: in the top left corner of the website.
 We will then select our event in the list of "Your upcoming events" and click :btn-icon:fa3-calendar: Dates: in the sidebar.
+
+![Page titled "Dates", displaying buttons for creating a single or multiple new dates. ](../../assets/screens/event-series/dates.png "Dates screenshot" )
+
 There are no dates in our event series yet.
 Thus, this page displays the text "You haven't created any dates for this event series yet".
 It also displays two buttons: one for creating a single new date, and one for creating many new dates.
@@ -51,7 +54,7 @@ Finally, we will click the :btn: Save: button, which takes us back to the dates 
 
 ## Conclusion
 
-We have added dates to our event series: a single date for regular admission and several dates for a repeating event.
+We have added dates to our event series: a single date for regular admission and many dates for a repeating special event.
 We can add further dates as needed during the season.
 For repeating dates, it makes sense to use the "Create many new dates" function.
 For one-off dates, we can use "Create a new date" instead.
