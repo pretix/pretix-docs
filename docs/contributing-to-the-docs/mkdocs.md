@@ -265,7 +265,7 @@ Insert `<br>` between the image and the topically **separate** paragraph.
 English and German have different punctuation rules.
 This is an overview over commonly used special characters.
 
-For money, put the currency symbol at the beginning.
+For amounts of money, put the currency symbol at the beginning.
 Do **not** separate it with a space.
 Use the comma for thousands
 Use the period for decimals.

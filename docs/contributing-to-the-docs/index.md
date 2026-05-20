@@ -43,7 +43,7 @@ These maxims, when applied to the task of documenting pretix, entail the followi
 
 ## Best Practices: What to do when writing documentation for pretix
 
-What follows is an incomplete list of Best Practices, that is, things you **should** do when contributing to this documentation.
+What follows is an incomplete list of best practices, that is, things you **should** do when contributing to this documentation.
 
 ### Read the documentation
 
@@ -59,7 +59,6 @@ You can also use the file `template-guides.md` in the root directory of this rep
 
 Talk to the docs team.
 Create an issue on the GitHub page for [pretix-docs](https://github.com/pretix/pretix-docs/issues) or send an email to [pretix support](mailto:support@pretix.eu).
-The support team will forward your mail to the docs team.
 
 The docs team will answer any questions you might have regarding your contribution.
 They will be able to tell you whether it is relevant; where it fits into the established structure of the documentation; whether there are any internal resources on the subject; and so on.
@@ -76,7 +75,7 @@ The linked article explains how to use Markdown and MkDocs to format each type o
 ### Try it yourself
 
 The best way to understand how to use a feature of pretix is trying to use that feature yourself.
-If you want to document, for instance, how to use the seating plan editor, log into your pretix account and use the feature editor yourself.
+If you want to document, for instance, how to use vouchers, log into your pretix account and use the vouchers feature yourself.
 Note every step you have to take and every issue you encounter along the way.
 This brings you close to a complete step-by-step guide for the feature.
 
@@ -97,7 +96,8 @@ If you are contributing a new article, check the existing documentation for ment
 
 Insert links to pretix blog posts, Wikipedia, third-party software documentation, legal texts, or high-quality how-to guides on other websites.
 The readers of this documentation benefit from curated links to relevant information.
-That way, they do not have to search for the missing information themselves and there is a reduced risk of them encountering bad information.
+That way, they do not have to search for the missing information themselves.
+This also reduces the risk of them encountering bad information.
 
 Strip all unnecessary data (such as tracking) from a link before inserting it.
 You can identify the start of the unnecessary data by the `#` or the `?` symbol in the URL.
