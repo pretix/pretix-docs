@@ -12,7 +12,7 @@ This article tells you how to set up a custom domain and how to enable it for yo
 You need to own the domain which you want to use as your custom domain.
 
 Custom domains are set up on the organizer level.
-You need access to an organizer account if you want to enable customer accounts.
+You need access to an organizer account if you want to enable a custom domain.
 You also need access to each event shop for which you want to use the custom domain.
 
 ## How to
@@ -38,7 +38,7 @@ As an alternative to the subdomain, you can also use your main domain for your p
 We recommend creating a `www.` subdomain and setting up a redirect from your main domain to that subdomain.
 
 Wait for the changes to take place.
-This may take a few minutes or a few hours.
+This may take a few minutes to a few hours.
 
 Open the pretix backend and navigate to :navpath:Your organizer → :fa3-wrench: Settings → Custom domain:
 In the "Domain name" field, enter the subdomain you just created.
