@@ -8,7 +8,7 @@ pretixSCAN will interpret these  rules when scanning the ticket and arrive at th
 ## Prerequisites
 
 This article assumes that you have read [check-in lists](check-in-lists.md) and set up one or more basic check-in lists.
-Using the logical operators such AND and OR can be counterintuitive.
+Using the logical operators such as AND and OR can be counterintuitive.
 A basic understanding of predicate logic can be helpful, but it is not required for using this feature.
 
 ## General usage
@@ -68,11 +68,6 @@ You can remove an AND- or OR-bracket **without** removing its contents by clicki
 You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: delete button.
 You can duplicate it along with all rules nested within it by clicking the :btn-icon:fa3-copy:: clone button.
 
-### Allowing multiple entries
-
-By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime.
-If you set up custom check-in rules that allow tickets to be used multiple times, then you also need to check the box next to "Allow multiple entries per ticket" further up on the same page.
-
 ### Setting conditions specific to products or variations
 
 Whenever you set up a custom check-in rule using the condition "Product" or "Product variations", then you need to cover all products or product variations on the check-in list in that rule.
@@ -97,6 +92,30 @@ Add another simple condition of your choosing to the end-bracket.
 
 As soon as the custom check-in rule mentions every product on the check-in list at least once, the infobox will disappear.
 pretixSCAN will not reject products outright anymore, but will recognize them as valid or invalid depending on the rule you set up.
+
+### Allowing multiple entries
+
+By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime.
+If you set up custom check-in rules that allow tickets to be used multiple times, then you also need to check the box next to "Allow multiple entries per ticket" further up on the same page.
+
+!!! Note
+    The setting "Allow multiple entries per ticket" applies to all admission products on your check-in list.
+    If you activate this setting, but want to limit entries for some of your tickets, then you need to create rules for every ticket on the list.
+
+Assume, for example, that you want to allow unlimited entries for your "Season pass" product, but only one entry for every other type of ticket.
+
+Create an OR-bracket.
+Create an AND-bracket within that OR-bracket.
+Add a condition within the AND-bracket.
+Select `Product`, then `is one of`, and then `Season pass`.
+
+Create another AND-bracket within the OR-bracket.
+Add a condition within the new AND-bracket.
+Select `Product`, then `is one of`, and then all products other than the season pass.
+Add another condition, select `Number of previous entries`, then `=`, and then enter `0`.
+
+With this rule in place, attendees who hold a season pass may enter.
+Attendees who hold any other ticket may only enter if they have not entere before.
 
 ### Visualizing rules
 
