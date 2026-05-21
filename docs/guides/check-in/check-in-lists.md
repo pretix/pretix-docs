@@ -7,7 +7,7 @@ If there is one venue with multiple entrances, then one shared check-in list for
 If you have separate entrances for separate products, such as fast lane access or VIP tickets, then you will need one check-in list for every entrance.
 
 Check-in lists operate independently from one another.
-A ticket is valid once on every check-in list that includes it.
+By default, a ticket is valid once on every check-in list that includes it.
 If you are hosting subevents with more exclusive attendance, then each of those subevents will need its own check-in list.
 
 We recommend using the [pretixSCAN](https://pretix.eu/about/en/scan) app running on dedicated devices for your check-in.
@@ -50,8 +50,9 @@ The following sections explain how to set up check-in lists to support all of th
 In order to configure a check-in list, click the :btn-icon:fa3-wrench:: button next to it.
 
 If you also want attendees who have not yet completed the payment for their order to be able to check in at your event, check the box next to "Include pending orders".
+Checking in an attendee who has not paid their order does not affect the order's payment status.
 
-The box next to  "All products (including newly created ones)" is checked by default.
+The box next to "All products (including newly created ones)" is checked by default.
 If all your products are admission products and there are no separate areas with their own entrances at your event, then you do not need to change that.
 In any other case, uncheck the box and check the products you want to include on the list under "Limit to products".
 
@@ -69,7 +70,7 @@ Click the :btn-icon:fa3-plus: Create a new check-in list: button.
 Enter a name for the new check-in list and check the boxes next to any tickets you want to include on it.
 
 For instance, if you want to implement a use case like the one described under [General usage](#general-usage), name the check-in list "Fast lane".
-Uncheck the box next to  "All products (including newly created ones)" and under "Limit to products", check the boxes next to your fast lane tickets.
+Uncheck the box next to "All products (including newly created ones)" and under "Limit to products", check the boxes next to your fast lane tickets.
 You would then use this list at the fast lane entrance at your event.
 
 !['Check-in list' page on the 'General' tab, displaying 'Fast lane' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The fast lane ticket is checked and everything else is unchecked.](../../assets/screens/check-in/fast-lane.png "Edit check-in list fast lane")
