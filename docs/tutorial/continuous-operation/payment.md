@@ -6,12 +6,12 @@ We are going to take the following steps:
 
  - enabling payment via credit card using [Stripe](payment.md#stripe)
  - enabling payment via [bank transfer](payment.md#bank-transfers)
- - setting up [invoices](payment.md#setting-up-invoices) to be sent automatically with every order
+ - setting up [invoices](payment.md#setting-up-invoices) to send out automatically with every order
 
 ## Setting up payment providers
 
 pretix takes care of payment via a wide selection of payment providers.
-For our conference, we are planning to receive payments by credit card through the payment provider Stripe and by bank transfer.
+For our museum, we are planning to receive payments by credit card through the payment provider Stripe and by bank transfer.
 The prerequisites for this are an active Stripe merchant account and a bank account.
 
 pretix will automatically log payments coming in through most payment providers, including Stripe.
@@ -32,7 +32,7 @@ The list should include bank transfer and Stripe.
 By default, all payment providers in this list except gift card will be disabled.
 
 !!! Note
-    If the payment providers you want to use are not being displayed in this list, that means the corresponding plugin is not enabled.
+    If this list does not display the payment providers you want to use, that means the corresponding plugin is not enabled.
     In order to activate such a plugin, you have to navigate to :navpath:Your event → Settings → Plugins: and open the :btn:Payment providers: tab.
     Click the :btn:Enable: button next to the plugin you want to use.
     You can tell that a plugin has is active by green ":fa3-check: Active" tag.

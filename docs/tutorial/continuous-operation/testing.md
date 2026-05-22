@@ -12,7 +12,7 @@ Here is a brief overview of the steps we are going to take in this section:
 
 ## Testing and confirming orders
 
-![Our shop page, titled 'Tutorial conference', listing date and location for our event and a selection of products. There is a box warning that the shop is currently in test mode.](../../assets/screens/testing/shop.png "Shop screenshot")
+![Our shop page, titled 'Tutorial Museum', displaying a calendar view of upcoming dates titled either 'Regular admission' or 'Guided tour'. There is a box warning that the shop is currently in test mode.](../../assets/screens/testing/shop-museum.png "Shop screenshot")
 
 We will now place an order in our shop.
 In order to do so, we are going to click the :btn-icon:fa3-eye:Go to shop: button in the bar at the top.
