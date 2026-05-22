@@ -266,3 +266,19 @@ Klicken Sie :btn-icon:fa3-paint-brush: Layout-Editor öffnen: oder :btn:Erweiter
 
 Laden Sie ein PDF als Hintergrund in der Größe Ihres Druckmaterials hoch.
 Alternativ wählen Sie die Papiergröße so, dass sie Ihrem Druckmaterial entspricht oder etwas kleiner ist.
+
+### Das Display zeigt nach nur einem Druck "Waiting" an
+
+**Problem:** Der Drucker druckt nur ein einziges Etikett.
+Danach zeigt das Display den Text "Waiting" an.
+Das deutet darauf hin, dass der Peeler aktiviert ist.
+
+**Lösung:** Schalten Sie den Peeler aus.
+
+Ziehen Sie hierzu die beiden Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben.
+Öffnen Sie dann die Peeler-Abdeckung an der Vorderseite des Geräts.
+Schalten Sie den Peeler-Umschalter auf "OFF".
+Die LED neben dem Schalter sollte daraufhin nicht mehr leuchten.
+
+Ziehen Sie die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Media Installation Method of Peeler (Option) Model](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A119%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D).
+Anders als dort beschrieben schalten Sie den Peeler-Umschalter auf "OFF", sodass die LED nicht mehr leuchtet.
