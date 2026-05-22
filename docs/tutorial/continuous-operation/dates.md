@@ -25,7 +25,8 @@ Under "Event end time", we will enter `2027-12-31`, `18:00:00`.
 In the first field under "Quotas", we will enter "Regular admission".
 We will leave the "Total capacity" field empty because we do not need to limit the sale of tickets that attendees will use throughout our entire season.
 
-Under "Products", we will not make a selection yet because we have not yet created any products.
+Under "Products", we will select the two products we want to grant admission to our regular opening hours.
+Those tickets are "Regular admission" and "Discount admission".
 We will then click the :btn:Save: button.
 
 ## Creating dates for special events
@@ -49,6 +50,11 @@ Under "Times", we will click the :btn-icon:fa3-plus: Add a single time slot: but
 We will choose the start time `10:00:00`, the end time `12:00:00` and the admission time `09:30:00`.
 
 Under "General information", we will enter `Guided tour` as the name for these dates.
+We are also going to add a description under "Frontpage text".
+
+Under "Quotas", we are going to enter "Tour tickets".
+We will enter a total capacity of "30".
+Under "Products", we will select the "Guided tour" product.
 
 Finally, we will click the :btn: Save: button, which takes us back to the dates overview page.
 
@@ -59,4 +65,4 @@ We can add further dates as needed during the season.
 For repeating dates, it makes sense to use the "Create many new dates" function.
 For one-off dates, we can use "Create a new date" instead.
 
-We can now move on to [creating products](products.md) to sell in our shop.
+We can now move on to [setting up payment methods](payment.md) that our customers can use to purchase these tickets for these dates.

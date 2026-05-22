@@ -179,4 +179,4 @@ There should be no more yellow boxes warning us that we need to add the product 
 ## Conclusion
 
 We have created all the tickets and other products that we are planning to sell in our shop, sorted them into categories, and added them to quotas.
-We can now move on to [setting up payment methods](payment.md) that our customers can use to purchase these products.
+In the next step, we are going to create dates for which our customers can buy those products.
