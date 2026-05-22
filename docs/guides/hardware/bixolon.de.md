@@ -276,9 +276,14 @@ Das deutet darauf hin, dass der Peeler aktiviert ist.
 **Lösung:** Schalten Sie den Peeler aus.
 
 Ziehen Sie hierzu die beiden Hebel an den Seiten des Geräts nach vorne und klappen Sie den oberen Teil des Gehäuses nach oben.
+Entnehmen Sie die Etikettenrolle.
 Öffnen Sie dann die Peeler-Abdeckung an der Vorderseite des Geräts.
+Hierzu drücken Sie auf die beiden Knöpfe an den Seiten der Abdeckung und klappen die Abdeckung nach vorn.
+
+![Nahaufnahme des Peeler-Controllers, einer kleinen Platine, von der vier Kabel ins Innere des Geräts laufen. Ein Etikett oberhalb der Platine zeigt den Text "PEELER OFF ON". Ein orangefarbenes Oval markiert den Umschalter auf der Platine](../../assets/screens/hardware-setup/peeler.png "Peeler-Umschalter")
+
 Schalten Sie den Peeler-Umschalter auf "OFF".
 Die LED neben dem Schalter sollte daraufhin nicht mehr leuchten.
 
-Ziehen Sie die Dokumentation des Herstellers zu Rate: [XD5-40d Series: Media Installation Method of Peeler (Option) Model](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A119%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D).
+Die Zeichnungen in der Dokumentation des Herstellers können dabei helfen, den Umschalter zu finden: [XD5-40d Series: Media Installation Method of Peeler (Option) Model](https://bixolon.com/_upload/manual/Manual_user_XD5-40d_%EC%8B%9C%EB%A6%AC%EC%A6%88_ENG_V1.02.pdf#%5B%7B%22num%22%3A119%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C45%2C777%2C0%5D).
 Anders als dort beschrieben schalten Sie den Peeler-Umschalter auf "OFF", sodass die LED nicht mehr leuchtet.
