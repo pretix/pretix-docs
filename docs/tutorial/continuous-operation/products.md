@@ -1,16 +1,17 @@
 # Products
 
-A product is anything sold via pretix: tickets, gift cards, conference t-shirts, and so on.
+A product is anything sold via pretix: tickets, gift cards, t-shirts and so on.
 We will be selling a variety of products in our shop.
 In this article, we will cover the process of creating the following products and making them available in our shop:
 
- - a basic [admission ticket](#creating-and-editing-products)
- - a [discount ticket](#discount-ticket) for students and members
- - a ticket for our [guided tour]
+ - a basic [admission ticket](products.md#creating-and-editing-products)
+ - a [discount ticket](products.md#discount-ticket) for students and members
+ - a ticket for our [guided tour](#guided-tour-ticket)
+ - [stickers](products.md#product-with-variants) that come in three variants with different prices
 
-We are going to start by [creating categories](#creating-and-editing-categories) to sort our products into.
+We are going to start by [creating categories](products.md#creating-and-editing-categories) to sort our products into.
 Then, we will create the products themselves.
-Lastly, we are going to [create quotas](#creating-and-editing-quotas) to determine and keep track of availability numbers for each product.
+Lastly, we are going to [create quotas](products.md#creating-and-editing-quotas) to determine and keep track of availability numbers for each product.
 
 ## Creating and editing categories
 
@@ -42,10 +43,10 @@ In order to do so, we will navigate to :navpath:Event → :fa3-ticket: Products 
 The website should display two tickets that pretix created automatically along with the event: "Regular ticket" and "Reduced ticket".
 We will click "Regular ticket", which takes us to the "Modify product" dialog.
 
-We will change the English item name to `Standard Ticket` and provide a German translation.
+We will change the English item name to `Regular admission` and provide a German translation.
 We are going to add the following description:
-`Regular ticket granting access to the entire conference.`
-Next, we will click the :btn:Price: tab and change the "Default price" to €250.00.
+`Regular ticket granting access to the museum.`
+Next, we will click the :btn:Price: tab and change the "Default price" to €10.00.
 We will also select the appropriate tax rate of 19% from the "Sales tax" dropdown.
 
 !!! Note
@@ -54,7 +55,7 @@ We will also select the appropriate tax rate of 19% from the "Sales tax" dropdow
     If you are selling products with a 0% tax rate (such as [gift cards](../../guides/gift-cards.md)), you still need to create a 0% tax rule first.
     For more information, see our guide on [creating tax rules](../../guides/taxes.md#creating-tax-rules).
 
-Once we have done that, we are going to click the :btn:Save: button.
+Once we have done so, we are going to click the :btn:Save: button.
 
 ### Discount ticket
 
@@ -66,7 +67,7 @@ We do not need the "Reduced ticket" anymore.
 We will navigate to the products page, click the red :btn-icon:fa3-trash:: delete button next to the reduced ticket, and confirm that we want to delete it.
 
 Back on the product overview, we will click the :btn-icon:fa3-copy:: clone button next to the standard ticket in order to clone it.
-We will name the new ticket "Discount ticket", provide a translation, change the "Default price" to €120.00, and click the :btn:Save: button.
+We will name the new ticket "Discounted admission", provide a translation, change the "Default price" to €8.00, and click the :btn:Save: button.
 
 !!! Note
     A warning is now displayed in a yellow box at the top of the page, saying:
@@ -77,16 +78,24 @@ We will name the new ticket "Discount ticket", provide a translation, change the
 
 On the next page, we have to adjust the "Description" field to inform our customers of the prerequisites for access to the discounted ticket.
 Our description reads:
-"This ticket is only valid if you provide a student ID or member ID at check-in."
+"This ticket is only valid if you provide a student ID at check-in."
 
 We will then switch to the :btn:Price: tab.
-We will change the "Default price" to €120.00 and the original price to the price of the standard ticket, that is, €250.00.
+We will change the "Default price" to €8.00 and the original price to the price of the regular admission ticket, that is, €10.00.
 Our shop will display the original price struck-through and the new default price in bold green, highlighting the price discount.
 
 Then, we will navigate to the :btn:Check-in and validity: tab and check the box next to "Requires special attention".
 We have to provide instructions for the person operating the check-in at our event in the "Check-in text" field.
-Our instructions say: `Check for student ID/member ID`.
+Our instructions say: `Check for student ID`.
 We will then click the :btn:Save: button.
+
+### Guided tour ticket
+
+We are going to create another ticket for our guided tour.
+In order to do so, we will navigate to the products page and click the :btn-icon:fa3-plus: Create a new product: button.
+We will name our new ticket "Guided tour" and provide a German translation.
+Then, will change the "Default price" to €15.00 and select the appropriate tax rate of 19% from the "Sales tax" dropdown.
+We can leave all other settings on this page unchanged and click the :btn:Save and continue with more settings: button.
 
 ### Product with variants
 
@@ -170,4 +179,4 @@ There should be no more yellow boxes warning us that we need to add the product 
 ## Conclusion
 
 We have created all the tickets and other products that we are planning to sell in our shop, sorted them into categories, and added them to quotas.
-We can now move on to [creating dates](dates.md) which we will host in the context of our event series.
+We can now move on to [setting up payment methods](payment.md) that our customers can use to purchase these products.
