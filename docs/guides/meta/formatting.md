@@ -18,7 +18,7 @@ If you are adding the screenshot to help the user with navigating the website, t
 If you want to tell the user to interact with one specific element on the page, highlight that element.
 Use the color OrangeRed #FF4500 (255, 69, 0) for highlighting.
 Use the Fontawesome-3 arrow symbols and boxes with a width of [0.5em](https://en.wikipedia.org/wiki/Em_(typography)).
-Take a look at the screenshots in the [tutorial](../tutorial/getting-started.md) to get an idea what it should look like.
+Take a look at the screenshots in the [tutorial](../../tutorial/getting-started.md) to get an idea what it should look like.
 
 Save screenshots in one of the directories in `/pretix-docs/site/assets/screens/`.
 If there is no directory corresponding to your subject, create a new one.
@@ -191,7 +191,7 @@ The formatting for both types of links is "link text in square brackets, URL/pat
 Insert cross references to a subheading within another (or the same) article work as follows:
 
 ```
-[monitoring incoming payments](../topics/payment/bank-transfer.md#monitoring-incoming-payments)
+[monitoring incoming payments](/payment/bank-transfer.md#monitoring-incoming-payments)
 ```
 
 If you want to link to the entire article, omit the # symbol and the parts after it.
