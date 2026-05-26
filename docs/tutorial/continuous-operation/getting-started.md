@@ -3,17 +3,19 @@
 Welcome to the pretix tutorial!
 In this tutorial, we will go through all the necessary steps for setting up your very first ticket shop using pretix.
 For illustrative purposes, we will set up a shop for a museum.
+We are going to sell tickets for the regular opening hours of that museum and for guided tours.
+
 We will use specific examples for our organizer, event, products, as well as the names and prices thereof.
 Feel free to replace these examples with your own as you create your event according to your needs.
 
 !!! Note
-    This tutorial explains setting up a ticket shop for a venue with continuous operation such as a public swimming pool, an amusement park, or a museum.
+    This tutorial explains setting up a ticket shop for a venue with **continuous operation** such as a public swimming pool, an amusement park, or a museum.
     If you want to create a shop for **single events** such as conferences, conventions, trade fairs, concerts, or festivals, you should take a look at the tutorial for [Single events](../single-events/getting-started.md) instead.
 
 pretix is open source software.
 You can use it either in the cloud or on your own server.
 Running pretix on your own server requires some technical knowledge.
-If you want to self-host pretix, refer to our [Self-hosting documentation](https://docs.pretix.eu/self-hosting/).
+If you want to self-host pretix, refer to our [self-hosting documentation](https://docs.pretix.eu/self-hosting/).
 This tutorial focuses on the easier method: using our cloud-based pretix Hosted offer.
 
 Here is a brief overview of the steps we are going to take in this tutorial:
@@ -22,6 +24,7 @@ Here is a brief overview of the steps we are going to take in this tutorial:
  - setting up our [organizer account](organizer-account.md)
  - creating an [event series](event.md)
  - creating [products](products.md) (tickets and merchandise) for our event
+ - creating [dates](dates.md) within our event series (regular opening hours and guided tours)
  - setting up [payment](payment.md) methods
  - [testing](testing.md) our shop and making final adjustments
 

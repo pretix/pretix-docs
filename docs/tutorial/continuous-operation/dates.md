@@ -54,7 +54,7 @@ We are also going to add a description under "Frontpage text".
 
 Under "Quotas", we are going to enter "Tour tickets".
 We will enter a total capacity of "30".
-Under "Products", we will select the "Guided tour" product.
+Under "Products", we will select the `Guided tour` product.
 
 Finally, we will click the :btn: Save: button, which takes us back to the dates overview page.
 

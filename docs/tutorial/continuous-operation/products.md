@@ -27,7 +27,7 @@ We will then select our event in the list of "Your upcoming events", open :btn-i
 This page shows the list of all product categories, which at the moment should only include a single category named "Tickets" of the type "Normal category".
 
 We will click the :btn-icon:fa3-plus: Create a new category: button and give the category a name such as "Extras".
-Under "Category type", we will select "Add-on product category".
+Under "Category type", we will select `Add-on product category`.
 We are not planning to use the cross-selling feature for this event, so the cross-selling categories are not relevant for us.
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page.
 This page now lists two entries: "Tickets" and our newly created category named "Extras".
@@ -47,7 +47,7 @@ We will change the English item name to `Regular admission` and provide a German
 We are going to add the following description:
 `Regular ticket granting access to the museum.`
 Next, we will click the :btn:Price: tab and change the "Default price" to €10.00.
-We will also select the appropriate tax rate of 19% from the "Sales tax" dropdown.
+We will also select the appropriate tax rate of 19% from the "Sales tax" drop-down menu.
 
 !!! Note
     Every tax rate you assign to a product, you have to create first.
@@ -94,7 +94,7 @@ We will then click the :btn:Save: button.
 We are going to create another ticket for our guided tour.
 In order to do so, we will navigate to the products page and click the :btn-icon:fa3-plus: Create a new product: button.
 We will name our new ticket "Guided tour" and provide a German translation.
-Then, will change the "Default price" to €15.00 and select the appropriate tax rate of 19% from the "Sales tax" dropdown.
+Then, will change the "Default price" to €15.00 and select the appropriate tax rate of 19% from the "Sales tax" drop-down menu.
 We can leave all other settings on this page unchanged and click the :btn:Save and continue with more settings: button.
 
 ### Product with variants
@@ -106,12 +106,12 @@ It is not possible to edit a product without variations into a product with mult
 Therefore, we will navigate to the products page and click the :btn-icon:fa3-plus: Create a new product: button.
 
 We will name the product "Sticker", set it to "Non-admission product" and put it in the "Extras" category.
-Under "Product variations", we will select "Product with multiple variations".
+Under "Product variations", we will select `Product with multiple variations`.
 We will set the default price to €5.00.
 Then, we will click the :btn:Save and continue with more settings: button.
 
 Next, we will open the :btn:Variations: tab.
-pretix will only display this tab if we selected "Product with multiple variations" during the creation of the product.
+pretix will only display this tab if we selected `Product with multiple variations` during the creation of the product.
 There should be one variant called `Standard` here.
 We will click the name to expand the settings for that variant and change the name to `Purple`.
 It is not necessary to change any other settings here.
@@ -161,7 +161,7 @@ Then, we will click the :btn:Save: button.
 
 Our sticker product needs three different quotas: one for each product variant.
 We will navigate back to the quotas page and click the :btn-icon:fa3-plus: Create a new quota: button.
-We will call the new quota "Sticker purple" and set the total capacity to 100.
+We will call the new quota `Sticker purple` and set the total capacity to 100.
 That is the number of stickers in that color that we are going to sell.
 
 Then, we will select "Sticker - Purple" in the list of products.
@@ -173,10 +173,10 @@ Since we still need quotas for the other variants of the product, we will naviga
 We will name the new quota `Sticker Black`, unselect "Sticker - Purple" from the list of products and select "Sticker - Black" instead.
 Finally, we will click :btn:Save: and repeat the same process for the glitter color, adjusting the total capacity as needed.
 
-We will now navigate back to the "Products" page, open the "Sticker" product and click on the :btn:Variations: tab.
+We will now navigate back to the "Products" page, open the "Sticker" product and click the :btn:Variations: tab.
 There should be no more yellow boxes warning us that we need to add the product and variants to a quota before we can sell them.
 
 ## Conclusion
 
 We have created all the tickets and other products that we are planning to sell in our shop, sorted them into categories, and added them to quotas.
-In the next step, we are going to create dates for which our customers can buy those products.
+In the next step, we are going to create [dates](dates.md) for which our customers can buy those products.
