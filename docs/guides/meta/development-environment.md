@@ -21,10 +21,12 @@ The following links will explain the necessary steps:
 
 Setting up the development environment for the pretix documentation involves the following steps:
 
- - installing dependencies
- - setting an environment variable
- - cloning the Git repository
- - preparing a virtual environment in Python
+ - installing [dependencies](#installing-dependencies)
+ - setting the [environment variable](#setting-the-environment-variable)
+ - cloning the [Git repository](#cloning-the-git-repository)
+ - preparing a [virtual environment ](#preparing-a-python-environment-for-mkdocs) in Python
+ - [using the development environment](#using-the-development-environment) for contributions
+ - checking for [issues](#checking-for-issues)
 
 This section will guide you through those steps in detail.
 
@@ -90,14 +92,6 @@ Install the Python requirements:
 ```
 $ pip install -Ur requirements.txt
 ```
-
-## Applications
-
-Once you have completed the setup, you can use it for contributing the docs.
-The following sections will explain:
-
- - using the development environment
- - checking for issues
 
 ## Using the development environment
 
