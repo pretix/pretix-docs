@@ -10,7 +10,12 @@ Since this documentation uses the docs-as-code approach, the setup is similar to
 
 ## Prerequisites
 
-In order to contribute to this documentation, you need an SSH key and a GitHub account.
+In order to contribute to this documentation, you need an SSH key and a GitHub account that includes your SSH key.
+The following links will explain the necessary steps:
+
+ - [ssh.com: How to Use ssh-keygen to Generate a New SSH Key?](https://www.ssh.com/academy/ssh/keygen)
+
+ - [docs.github.com: Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## How to
 
@@ -28,14 +33,13 @@ This section will guide you through those steps in detail.
 Install the following packages:
 
  - Git
- - OpenSSH
  - Python
  - virtualenvwrapper
 
 For instance, if you want to install these packages on Arch Linux or a distribution based on Arch Linux, run the following command:
 
 ```
-$ pacman -S python python-virtualenvwrapper git openssh
+$ pacman -S python python-virtualenvwrapper git
 ```
 
 ### Setting the environment variable
@@ -97,7 +101,7 @@ The following sections will explain:
 
 ## Using the development environment
 
-In order to use development environment for contributing to the pretix documentation, take the following steps.
+In order to use development environment for contributing to the pretix documentation, open a terminal on your computer.
 Navigate to the directory to which you cloned the Git repository:
 
 ```
