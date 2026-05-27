@@ -260,33 +260,6 @@ You can insert additional empty lines using `<br>`.
 If you are inserting an image between two paragraphs, but the image concerns the content of only one of the paragraphs, insert additional empty lines.
 Insert `<br>` between the image and the topically **separate** paragraph.
 
-## English punctuation
-
-English and German have different punctuation rules.
-This is an overview over commonly used special characters.
-
-For amounts of money, put the currency symbol at the beginning.
-Do **not** separate it with a space.
-Use the comma for thousands
-Use the period for decimals.
-
-`€1,899.99`
-
-For percentages, do not use a space between the number and the symbol.
-
-`19%`
-
-For quotation marks, use `"` (U+0022 QUOTATION MARK).
-Double-check that you have the correct quotation mark when copying text from Confluence, word editors, or other websites.
-They will sometimes replace the quotation mark above with a different symbol such as `”`.
-Do not use this symbol anywhere in our documentation.
-It only occurs here as a deterrent example.
-
-The hyphen and minus are the same symbol: `-`.
-The en-dash is a separate symbol: `–`
-The em-dash is yet another separate symbol: `—` (U+2014 EM DASH).
-Use the em-dash without spaces before or after it.
-
 ## Articles specific to Germany
 
 Some articles in our documentary are only relevant for the German-speaking world, for instance because they concern organizations that only exist in Germany.
