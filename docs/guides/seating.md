@@ -47,7 +47,7 @@ Click the :btn:Enable: button next to it.
 
 ![Plugins settings page. The 'Features' tab is open, displaying the plugins for exhibitors, pages, seating, and sending out emails.](../assets/screens/seating/plugins-seating.png "Available plugins")
 
-Check the events for which you want to use seating plans in the list labeled "Events with active plugin".
+In the list labeled "Events with active plugin", check the events for which you want to use seating plans.
 Now that you have enabled the seating plugin, all settings associated with seating are available for your organizer.
 
 ### Creating a layout
@@ -72,16 +72,16 @@ If not, you can create seats and other objects first, and adapt width and height
 
 If your venue has more than one floor or seating block, then you should create a corresponding number of **zones** in the layout.
 If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have place the seats in separate zones.
-In order to create a new zone, click the :fa3-plus: button next to "Zones" in the sidebar and enter a name.
+In order to create a new zone, click the :btn-icon:fa3-plus:: button next to "Zones" in the sidebar and enter a name.
 
 pretix maps products to seats depending on the **seat category**.
+You need one seat category for every product you want to sell.
 If you want to sell only one product for all seats on your plan, then you only need one seat category.
-If you want to sell different products for different seats, then you need one seat category per product.
 
 Create a seat category by clicking the :btn-icon:fa3-plus:: button next to the headline "Categories" in the sidebar.
 Enter a name and select a color for the seat category.
 You can remove a seat category by clicking the :btn-icon:fa3-trash:: button next to it.
-Change the name and color by clicking the :fa3-pencil:: button.
+Change the name and color by clicking the :btn-icon:fa3-pencil:: button.
 
 !!! Note
     If you are using a Mac computer, you can use the `⌘` key aka `Command` key in place of the `Ctrl` key.
@@ -123,7 +123,8 @@ Alternatively, press `Ctrl`+`V`.
 
 In order to **save** the layout, click the :btn-icon:fa3-save:: "save" button in the top left.
 This opens a dialog allowing you to save the resulting JSON file on your computer.
-If clicking the :btn-icon:fa3-save:: "save" button instead opens a notification stating that your plan contains validation errors, see [Validating the layout](#validating-the-layout).
+If your plan contains validation errors, then clicking it will not save the file, but open an error notification instead.
+See [Validating the layout](#validating-the-layout) for information on how to handle those errors.
 
 ### Validating the layout
 
