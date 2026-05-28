@@ -115,7 +115,7 @@ Select `Product`, then `is one of`, and then all products other than the season 
 Add another condition, select `Number of previous entries`, then `=`, and then enter `0`.
 
 With this rule in place, attendees who hold a season pass may enter.
-Attendees who hold any other ticket may only enter if they have not entere before.
+Attendees who hold any other ticket may only enter if they have not entered before.
 
 ### Visualizing rules
 
