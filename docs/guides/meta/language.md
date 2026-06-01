@@ -28,9 +28,57 @@ Some of them are complex enough to include several subsections.
 There is a central challenge you will encounter again and again while writing documentation for pretix.
 That challenge is to understand a complex issue, to break that issue down into its semantic components, and to communicate those components as straightforwardly as possible.
 
+Consider the following example:
+
+```
+*You can filter events by meta data attributes.
+*You can create those attributes in your order profile and set their values in both event and series date settings.
+*For example, if you set up a meta data property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this: [...]
+```
+
+There are a few issues with this example.
+It does not demonstrate the assumed use case.
+Thus, it does not make clear enough to the reader why they would want to filter events by metadata attributes.
+The example also does offer a sufficiently detailed explanation of how to set up a metadata attribute.
+
+```
+#### Using the widget for a selection of events
+
+If you are hosting multiple events, but only want to display some of them in the widget, then you should use **metadata attributes**.
+This section explains how to create metadata attributes, assign them to events, and set a filter in the widget.
+
+You can create metadata attributes by navigating to :navpath:Your organizer → :fa3-wrench: Settings → Event metadata: and clicking the :btn-icon:fa3-plus: Create a new property: button.
+For example, you could set up a metadata property called "Promoted" with the values `True` and `False`, the default value being `False`.
+
+In order to assign the metadata property to an event, navigate to :navpath:Your event → :fa3-wrench: Settings → General:.
+On the :btn:Basics: tab, edit the relevant property under "Meta data".
+
+For example, if you set up a metadata property called "Promoted" with values `True` and `False` that you set to `True` on some events, you can pass a filter like this: [...]
+```
+
+The above example has fixed the issues of the previous one.
+It includes an informative subheading and introductory sentence.
+Thus, it tells the reader the assumed use case.
+It also expands upon the explanation on how to set up a metadata attribute.
+If a sufficient explanation of that process already existed elsewhere, then cross-referencing it here would achieve the same effect.
+
+Make it easy for the reader to understand under which circumstances a given article or section is relevant to them.
+Give the user complete and clear instructions.
+If the documentation already includes such instructions elsewhere, tell the user where to find the instructions and provide them with a link.
+
+#### Sentence length
+
 Keep sentences short.
 Separate complex sentences including subordinate clauses into two sentences wherever possible.
 Do **not** include any sentences with more than one subordinate clause.
+
+#### Paragraph length
+
+Do not write paragraphs longer than five to six lines.
+Preview your article in a 1920 pixels wide browser window.
+If one of the paragraphs in that article is longer than six lines, split it up.
+
+If you are starting a new topic, start a new paragraph.
 
 #### Passive voice
 
