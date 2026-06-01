@@ -10,6 +10,19 @@ A solid grasp of the English language is helpful.
 
 ## How to
 
+Using proper language is not a linear process.
+Rather, it requires attention to many factors at the same time.
+Thus, unlike most other guides, this article will not give you step-by-step instructions.
+Instead, it will introduce and explain the factors that are relevant for proper language within the context of the pretix documentation:
+
+ - [writing style](#writing-style)
+ - [terminology](#terminology)
+ - [orthography](#orthography)
+ - [punctuation](#punctuation)
+
+This article will cover these factors in detail.
+Some of them are complex enough to include several subsections.
+
 ### Writing style
 
 There is a central challenge you will encounter again and again while writing documentation for pretix.
@@ -21,15 +34,16 @@ Do **not** include any sentences with more than one subordinate clause.
 
 #### Passive voice
 
-Use the active voice wherever possible.
-When passing instructions to the reader, use the imperative mood.
-The passive voice obfuscates who is taking an action.
+Use the [active voice](https://en.wikipedia.org/wiki/Active_voice) wherever possible.
+When passing instructions to the reader, use the [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood).
+The [passive voice](https://en.wikipedia.org/wiki/Passive_voice) obfuscates who is taking an action.
 
 ```
 The first code snippet should be added into the <head> part of your website.
 ```
 
-In the above example, it is unclear who is supposed to add the code snippet.
+It is unclear whether the above example is trying to instruct the user to add the code snippet, or if it describes the behavior of the software.
+Thus, the reader has to use context to infer if they need to take action, or if the software takes care of it for them.
 You can remedy this lack of clarity by using the imperative instead:
 
 ```
@@ -55,15 +69,14 @@ The relative clause is at the end of the sentence.
 This makes it easier to parse.
 
 The passive voice is still appropriate in a few special circumstances.
-Use the passive voice in the following cases:
-
- 1. when describing a general state of things
+Use the passive voice when describing a general state of things, and when the person taking an action is unknown.
 
 ```
 Customer accounts are handled on the organizer level.
 ```
 
- 2. when the person taking an action is unknown
+This sentence describes a general state of things.
+The imperative would be inappropriate here
 
 ```
 By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime.
@@ -72,6 +85,7 @@ By default, pretixSCAN will only recognize a ticket as valid **once** if it has 
 In this example, the author cannot know who checked out the ticket.
 It could have been the reader, another team member, or a customer using a checkout kiosk.
 The only relevant factor is whether the ticket is checked out or not.
+Thus, the passive voice is appropriate.
 
 ### Terminology
 
@@ -83,7 +97,7 @@ For instance, if you want to instruct the user to click a button in the pretix b
 Do **not** use "click on", "tap", "hit", "use", "interact with", or any other terminology.
 
 Always use a word for the same concept.
-For instance, do not use the word "category" to refer to product categories, seat categories, and GetYourGuide categories.
+For instance, do **not** use the word "category" to refer to product categories, seat categories, and GetYourGuide categories.
 Specify which type of category you are writing about, even if it should be clear from context.
 
 There is a [terminology database](https://www.terminologue.org/pretix-docs/) for the pretix documentation.
@@ -109,8 +123,7 @@ Consistent spelling is helpful for replacing the word with the proper spelling l
 
 ### Punctuation
 
-English and German have different punctuation rules.
-This is an overview over commonly used special characters.
+This section gives an overview on how to use proper punctuation while contributing to the pretix documentation.
 
 #### Numbers
 
@@ -195,11 +208,20 @@ If your sentence starts with an **adverbial phrase**, separate that phrase from 
 Under the "Other operations" heading, select one of the options next to "Recalculate taxes".
 ```
 
+If the adverbial phrase is in the middle or at the end of the sentence, do **not** use a comma.
+
 If your sentence starts with a **subordinate clause**, separate that clause from the main clause with a comma.
 
 ```
 While your event is in test mode, pretix will always use Stripe's testing endpoint regardless of the setting here.
 ```
+
+If the subordinate clause is in the middle or at the end of the sentence, do **not** use a comma.
+
+!!! Note
+    In English, subordinating conjunctions such as "because", "while", "that", or "if" do **not** require a comma.
+    If your first language is German, then you may feel tempted to use a comma before such a word.
+    Only use a comma before these words if other factors require it.
 
 English punctuation rules differentiate between restrictive and non-restrictive **relative clauses**.
 Restrictive relative clauses are essential to the meaning of the sentence.
@@ -232,3 +254,6 @@ Separating the restrictive relative clause from the main clause changes the mean
 *They will also be able to view and edit any orders.
 *Orders have been placed with the same email address.
 ```
+
+Always separate **main clauses** with full stops.
+Do **not** separate them with a comma.
