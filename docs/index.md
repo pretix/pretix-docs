@@ -14,7 +14,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    If you are using pretix for the first time, our tutorial will guide you through the basics. 
+    If you are using pretix for the first time, our tutorial will guide you through the basics.
 
     :fa3-arrow-right: [Getting Started](tutorial/getting-started.md)
 
@@ -22,7 +22,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    If you are looking for in-depth information on the features of pretix and how to use them, refer to the guides. 
+    If you are looking for in-depth information on the features of pretix and how to use them, refer to the guides.
 
     :fa3-arrow-right: [Guides](guides/index.md)
 
@@ -56,7 +56,7 @@ Welcome to the pretix documentation!
     ---
 
     Looking for anything specific?
-    You can also enter a keyword in the search field at the top of the page. 
+    You can also enter a keyword in the search field at the top of the page.
 
 </div>
 
@@ -76,8 +76,8 @@ Welcome to the pretix documentation!
 
     ---
 
-    We're open source! 
-    On GitHub, you can find the source both code for pretix and many plugins, as well as for this documentation.
+    We are open source!
+    On GitHub, you can find the source code for pretix and many plugins, as well as for this documentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
 
@@ -85,7 +85,7 @@ Welcome to the pretix documentation!
 
     ---
 
-    Want to stay up-to-date with new features in pretix? 
+    Want to stay up-to-date with new features in pretix?
     Follow our blog or subscribe to our newsletter.
 
     :fa3-arrow-right: [Blog and newsletter](https://pretix.eu/about/en/blog/)
