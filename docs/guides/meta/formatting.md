@@ -227,9 +227,10 @@ MkDocs also supports other types of admonitions.
 The pretix documentation currently only uses notes and warnings.
 If you think it is necessary to use any other type of admonition, talk to the team before you do so.
 
-### Links and cross references
+### Links and cross-references
 
-Do **not** insert external or internal links without context.
+Insert external or internal links wherever they are relevant.
+Provide context for those links.
 Make them as informative as possible in their descriptive text (the part that is visible to readers in the text and looks like a hyperlink).
 Make them large enough so that the reader can click them without great effort.
 Single words such as "here" and "next" are **not** suitable as link text.
