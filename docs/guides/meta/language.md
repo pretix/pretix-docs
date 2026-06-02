@@ -305,3 +305,6 @@ Separating the restrictive relative clause from the main clause changes the mean
 
 Always separate **main clauses** with full stops.
 Do **not** separate them with a comma.
+
+If you are listing two elements, do **not** use a comma before "and" or "or".
+If you are listing more than two elements, use a comma before "and" or "or" (Oxford comma).
