@@ -1,46 +1,57 @@
 # Formatting
 
-This article describes the more technical side of writing documentation for pretix.
-It explains how to structure certain types of information, and what syntax to use to do it.
+This article describes how to format certain types of information, and what syntax to use to do it.
 
-## Screenshots
+## Prerequisites
 
-Take screenshots of the pretix backend in a resolution of 1200 × 800 pixels.
-Resize your browser window or use the "Responsive Design View" in Firefox by pressing Ctrl + Shift + M.
-Log in as "Jordan Doe".
-Manage the "Tutorial Ltd." organizer account.
-Edit the "Tutorial Conference" event.
-If the page in question is specific to event series, edit "Tutorial series" instead.
+Proper formatting requires a working [development environment](development-environment.md).
 
-If you do **not** have access to these accounts or events, edit your screenshots with the top and sidebar of already existing screenshots.
+## How to
 
-If you are adding the screenshot to help the user with navigating the website, that is, you want them to know they are on the right page, do **not** use highlighting.
-If you want to tell the user to interact with one specific element on the page, highlight that element.
-Use the color OrangeRed #FF4500 (255, 69, 0) for highlighting.
-Use the Fontawesome-3 arrow symbols and boxes with a width of [0.5em](https://en.wikipedia.org/wiki/Em_(typography)).
-Take a look at the screenshots in the [tutorial](../../tutorial/getting-started.md) to get an idea what it should look like.
+The pretix documentation uses a custom flavor of [Markdown](https://en.wikipedia.org/wiki/Markdown).
+If you are familiar with Markdown, then you already know how to format most of the text.
 
-Save screenshots in one of the directories in `/pretix-docs/site/assets/screens/`.
-If there is no directory corresponding to your subject, create a new one.
-Choose a straightforward and descriptive name for the screenshot.
-Use a hyphen-minus `-` to separate two words in the filename.
+Using the proper formatting is not a linear process.
+Thus, unlike most other guides, this article will not give you step-by-step instructions.
+Instead, it will explain the types of formatting for different purposes in a rough order of relevance.
 
-## Image descriptions
+### Line breaks
 
-You can find basic information on how to write a good image description at [Axess Lab](https://axesslab.com/alt-texts/).
-This is how you include an image description in markdown:
+Put a line break after each single sentence.
+If each sentence is not in a single line in the .md file, then reviewing the article through GitHub becomes unnecessarily messy and difficult.
+
+You can use the following command to automatically move every sentence in a text file (Markdown) to a separate line:
 
 ```
-![Media description for visually impaired users or users with an unreliable internet connection](../path/to/file.png "Image Title")
+sed 's|\. |. \n|g' < input.md > output.md
 ```
 
-Example:
+!!! Warning
+    The name of the output file must be different from the name of the input file, otherwise the command will create an empty file.
 
-```
-![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot")
-```
+This command searches for occurrences of ". " (that is a dot followed by a space) and replaces them with dot followed by space followed by newline.
+This also adds line breaks after dotted abbreviations.
+It can also create double empty lines.
+Edit the output file and remove unnecessary line breaks manually.
 
-## Buttons
+Markdown renders single line breaks as spaces.
+You can remove the trailing space at the end of the sentence.
+Markdown renders empty lines as line breaks.
+Place an empty line between every pair of paragraphs.
+
+If want to add additional line breaks to the output text on the website, put at least two spaces at the end of the line of markdown code.
+You can insert additional empty lines using `<br>`.
+If you are inserting an image between two paragraphs, but the image concerns the content of only one of the paragraphs, insert additional empty lines.
+Insert `<br>` between the image and the topically **separate** paragraph.
+
+### Icons
+
+As of 05/2026, pretix uses Font Awesome 3 icons and some custom icons.
+You can find these icons in the repo at `/overrides/.icons/`.
+In order to insert an icon into the text, use `:fa3-iconname:`, where `iconname` is the filename of the icon minus the file type extension.
+For example, use `:fa3-transgender-alt:` for the icon :fa3-transgender-alt: and use `:i-seat:` for :i-seat:.
+
+### Buttons
 
 Mark all buttons that you want the user to click the following way:
 
@@ -82,7 +93,7 @@ In order to **select** existing elements, click the :btn-icon:fa3-mouse-pointer:
 Do **not** mark buttons this way if you are not telling the user to click them.
 Put them in quotation marks instead.
 
-## Navigation paths
+### Navigation paths
 
 Navigation paths start either from a placeholder ("Your Event") or from the dashboard.
 For consistency and accessibility reasons, use this formatting for all navigation paths.
@@ -104,7 +115,19 @@ Examples:
 >:rootnavpath:Layer1 → Layer2:
 >:navpath:Your Event → :fa3-ticket:Products → Quotas:
 
-## Input fields
+### Placeholders
+
+Use `:placeholder: ... :` to mark placeholders outside of navigation paths.
+MkDocs will display these the same way as placeholders *within* navigation paths.
+This does **not** work in combination with button or icons formatting
+Example:
+
+```
+A shop created with pretix Hosted will by default be located at https://pretix.eu/:placeholder:OrganizerShortForm:/:placeholder:EventShortForm:/.
+```
+>A shop created with pretix Hosted will by default be located at https://pretix.eu/:placeholder:OrganizerShortForm:/:placeholder:EventShortForm:/.
+
+### Input fields
 
 Use quotation marks and the label in the exact spelling as it occurs in the UI for interactive elements such as text input fields and drop-down menus.
 Refer to them explicitly as a "field" or as a "menu".
@@ -133,7 +156,44 @@ If the seats on your layout have a distance of `25`, you could enter the number 
 
 >If the seats on your layout have a distance of `25`, you could enter the number `30`.
 
-## Admonitions
+### Screenshots
+
+Take screenshots of the pretix backend in a resolution of 1200 × 800 pixels.
+Resize your browser window or use the "Responsive Design View" in Firefox by pressing Ctrl + Shift + M.
+Log in as "Jordan Doe".
+Manage the "Tutorial Ltd." organizer account.
+Edit the "Tutorial Conference" event.
+If the page in question is specific to event series, edit "Tutorial series" instead.
+
+If you do **not** have access to these accounts or events, edit your screenshots with the top and sidebar of already existing screenshots.
+
+If you are adding the screenshot to help the user with navigating the website, that is, you want them to know they are on the right page, do **not** use highlighting.
+If you want to tell the user to interact with one specific element on the page, highlight that element.
+Use the color OrangeRed #FF4500 (255, 69, 0) for highlighting.
+Use the Fontawesome-3 arrow symbols and boxes with a width of [0.5em](https://en.wikipedia.org/wiki/Em_(typography)).
+Take a look at the screenshots in the [tutorial](../../tutorial/getting-started.md) to get an idea what it should look like.
+
+Save screenshots in one of the directories in `/pretix-docs/site/assets/screens/`.
+If there is no directory corresponding to your subject, create a new one.
+Choose a straightforward and descriptive name for the screenshot.
+Use a hyphen-minus `-` to separate two words in the filename.
+
+### Image descriptions
+
+You can find basic information on how to write a good image description at [Axess Lab](https://axesslab.com/alt-texts/).
+This is how you include an image description in markdown:
+
+```
+![Media description for visually impaired users or users with an unreliable internet connection](../path/to/file.png "Image Title")
+```
+
+Example:
+
+```
+![Screenshot of page titled "Create new Event–Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../assets/screens/event/create-event2.png "Create new event step 2 screenshot")
+```
+
+### Admonitions
 
 If you want to tell the reader about legal, technical, or irreversible actions, use colored text boxes.
 The color is based on ISO standards:
@@ -142,7 +202,7 @@ The color is based on ISO standards:
  - **Yellow** for warnings
 
 Use three exclamation marks and a space `!!! ` followed by the box type.
-If you do **not** specify a title, the title of the box will default to the type ("Note" or "Warning").
+If you do specify a title, the title of the box will default to the type ("Note" or "Warning").
 Indent the text of the warning with four spaces.
 To continue with normal text, insert an empty line and remove the indentation.
 
@@ -167,14 +227,7 @@ MkDocs also supports other types of admonitions.
 The pretix documentation currently only uses notes and warnings.
 If you think it is necessary to use any other type of admonition, talk to the team before you do so.
 
-## Icons
-
-As of 05/2026, pretix uses Font Awesome 3 icons and some custom icons.
-You can find these icons in the repo at `/overrides/.icons/`.
-In order to insert an icon into the text, use `:fa3-iconname:`, where `iconname` is the filename of the icon minus the file type extension.
-For example, use `:fa3-transgender-alt:` for the icon :fa3-transgender-alt: and use `:i-seat:` for :i-seat:.
-
-## Links and cross references
+### Links and cross references
 
 Do **not** insert external or internal links without context.
 Make them as informative as possible in their descriptive text (the part that is visible to readers in the text and looks like a hyperlink).
@@ -218,49 +271,7 @@ To avoid this, put a space between square and round brackets and leave a corresp
 TK fix link after merge
 ```
 
-## Placeholders
-
-Use `:placeholder: ... :` to mark placeholders outside of navigation paths.
-MkDocs will display these the same way as placeholders *within* navigation paths.
-This does **not** work in combination with button or icons formatting
-Example:
-
-```
-A shop created with pretix Hosted will by default be located at https://pretix.eu/:placeholder:OrganizerShortForm:/:placeholder:EventShortForm:/.
-```
->A shop created with pretix Hosted will by default be located at https://pretix.eu/:placeholder:OrganizerShortForm:/:placeholder:EventShortForm:/.
-
-
-## Line breaks
-
-Put a line break after each single sentence.
-If each sentence is not in a single line in the .md file, then reviewing the article through GitHub becomes unnecessarily messy and difficult.
-
-You can use the following command to automatically move every sentence in a text file (Markdown) to a separate line:
-
-```
-sed 's|\. |. \n|g' < input.md > output.md
-```
-
-!!! Warning
-    The name of the output file must be different from the name of the input file, otherwise the command will create an empty file.
-
-This command searches for occurrences of ". " (that is a dot followed by a space) and replaces them with dot followed by space followed by newline.
-This also adds line breaks after dotted abbreviations.
-It can also create double empty lines.
-Edit the output file and remove unnecessary line breaks manually.
-
-Markdown renders single line breaks as spaces.
-You can remove the trailing space at the end of the sentence.
-Markdown renders empty lines as line breaks.
-Place an empty line between every pair of paragraphs.
-
-If want to add additional line breaks to the output text on the website, put at least two spaces at the end of the line of markdown code.
-You can insert additional empty lines using `<br>`.
-If you are inserting an image between two paragraphs, but the image concerns the content of only one of the paragraphs, insert additional empty lines.
-Insert `<br>` between the image and the topically **separate** paragraph.
-
-## Articles specific to Germany
+### Articles specific to Germany
 
 Some articles in our documentary are only relevant for the German-speaking world, for instance because they concern organizations that only exist in Germany.
 Although we are publishing the rest of our documentation in English first, it makes sense to write these articles in German.
@@ -284,7 +295,7 @@ Example:
 Then, create a file with the extension .de.md in the same directory, which only contains the title and the include command.
 Do **not** put the hint regarding the language into the German docs file.
 
-## Indicating pretix editions
+### Indicating pretix editions
 
 Mark sections that are specific to certain pretix editions the following way:
 

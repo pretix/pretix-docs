@@ -135,6 +135,12 @@ It could have been the reader, another team member, or a customer using a checko
 The only relevant factor is whether the ticket is checked out or not.
 Thus, the passive voice is appropriate.
 
+#### Image descriptions
+
+Whenever you add an image to the pretix documentation, add an image description along with it.
+Do not include an image without an image description in your article.
+You can find basic information on how to write a good image description at [Axess Lab](https://axesslab.com/alt-texts/).
+
 ### Terminology
 
 The pretix documentation benefits from consistent and clear terminology.
