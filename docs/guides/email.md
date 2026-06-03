@@ -19,13 +19,13 @@ Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:.
 Click the :btn-icon:fa3-edit: Edit: button next to "Sending method" and choose one of the three options:
 
  1. **Use system default:** system-provided email server.
- Emails will be sent from `support@pretix.eu`.
+ pretix will send emails from `noreply@pretixmail.com`.
  Emails for customer account registration, email change, and password reset will have your organizer account's name in the name field.
  All other emails will have the event name in the name field.
  Your organizer's contact address will be used as the reply-to address.
  If you want to change the reply-to address, navigate to :navpath: Your organizer → :fa3-wrench: Settings → General:, change "Contact address" and click the :btn:Save: button.
  2. **Use system email server with a custom sender address:** system-provided email server.
- Emails will be sent from a custom email address.
+ pretix will send emails from a custom email address.
  This requires adding the pretix application server to your mail server's SPF record (see [Using system email server with a custom sender address](email.md#using-system-email-server-with-a-custom-sender-address) below).
  3. **Use a custom SMTP server:** Use your organization's own SMTP server and fully customize mailing.
 
@@ -37,7 +37,7 @@ Navigate to :navpath:Your event → :fa3-wrench: Settings → E-Mail: and click 
 ### Using system email server with a custom sender address
 
 If you use an email address with your own domain as the sender address and do not use a custom SMTP server, you have to add the pretix application server to your SPF record.
-This is necessary to prevent your emails being misidentified as spam.
+This is necessary to prevent other email providers from misidentifying your emails as spam.
 
 You can add an SPF record in the administrative console of the provider with whom you registered your domain.
 The exact process varies from provider to provider.
