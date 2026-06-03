@@ -42,6 +42,11 @@ The best practices are the following:
  - link to [external documentation](#link-to-external-documentation)
  - use [Vale](#use-vale-to-improve-your-text) to improve your text
 
+#### Adhere to our Code of Conduct
+
+Before you contribute to pretix itself or its documentation, read our [code of conduct](https://docs.pretix.eu/dev/development/contribution/codeofconduct.html).
+Adhere to this code of conduct while making contributions.
+
 #### Follow our four maxims of documentation
 
 When writing documentation for pretix, try to stick to the [maxims of conversation](https://en.wikipedia.org/wiki/Cooperative_principle#Grice's_maxims) as postulated by linguist Paul Grice.

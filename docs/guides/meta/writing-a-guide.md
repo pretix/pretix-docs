@@ -4,8 +4,7 @@ This article explains how to add a guide to the pretix documentation.
 
 ## Prerequisites
 
-Before you contribute to pretix itself or its documentation, read our [code of conduct](https://docs.pretix.eu/dev/development/contribution/codeofconduct.html).
-Adhere to this code of conduct while making contributions.
+
 
 ## General usage
 
@@ -18,3 +17,4 @@ This involves the following steps:
  - writing the guide
 
 This section guides you through those steps in detail.
+
