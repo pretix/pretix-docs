@@ -29,6 +29,12 @@ Under "Products", we will select the two products we want to grant admission to 
 Those tickets are "Regular admission" and "Discount admission".
 We will then click the :btn:Save: button.
 
+!!! Note
+    If all dates in an event series have the same name, then the shop's calendar view will not display that name.
+    Thus, the setup described in this section results in a calendar view full of nondescript date entries.
+    This situation will remedy itself once you have created another date with a different name.
+    Once you have followed along with the [next section](#creating-dates-for-special-events), the calendar view will display all date names again.
+
 ## Creating dates for special events
 
 Next, we want to offer recurring guided tours for our museum.
