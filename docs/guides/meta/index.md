@@ -230,13 +230,16 @@ This makes it easier to parse.
 
 The passive voice is still appropriate in a few special circumstances.
 Use the passive voice when describing a general state of things, and when the person taking an action is unknown.
+The following example describes a general state of things:
 
 ```
 Customer accounts are handled on the organizer level.
 ```
 
-This sentence describes a general state of things.
-The imperative would be inappropriate here
+This is not an instruction.
+Thus, the imperative would be inappropriate here.
+
+In the next example, it is unclear who is taking an action:
 
 ```
 By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime.
