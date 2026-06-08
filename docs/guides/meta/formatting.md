@@ -213,19 +213,26 @@ Example:
     Reading note boxes is useful.
 ```
 
+This raw text results in the following warning:
+
+!!! Note
+    Reading note boxes is useful.
+
 If you use a note or warning box in multiple articles, place it in the `include` directory.
 If you use it in only one article, you do not have to do that.
 In that case, include the warning in the article.
 
 To include a reusable text block, use the following formatting:
 
+{% raw %}
 ```
-{% include "note-translations.md" %}
+`{% include "note-translations.md" %}`
 ```
+{% endraw %}
 
 MkDocs also supports other types of admonitions.
 The pretix documentation currently only uses notes and warnings.
-If you think it is necessary to use any other type of admonition, talk to the team before you do so.
+If you think it is necessary to use any other type of admonition, talk to the team.
 
 ### Links and cross-references
 
@@ -289,8 +296,9 @@ Example:
 !!! Note
     Since the KulturPass is specific to event organizers within Germany, the following page is also only provided in German.
     Should you require assistance with the KulturPass and do not speak this language, please feel free to reach out to <support@pretix.eu>.
-
+{% raw %}
 {% include "kulturpass.md" %}
+{% endraw %}
 ```
 
 Then, create a file with the extension .de.md in the same directory, which only contains the title and the include command.

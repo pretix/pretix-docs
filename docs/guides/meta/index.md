@@ -22,7 +22,7 @@ There are no further prerequisites.
 
 ## How to
 
-This article describes [best practices](#best-practices-what-to-do-when-writing-documentation-for-pretix) as well as [what not to do] when contributing to the docs.
+This article describes [best practices](#best-practices-what-to-do-when-writing-documentation-for-pretix) as well as [what not to do](#what-not-to-do-when-writing-documentation-for-pretix) when contributing to the docs.
 
 ### Best Practices: What to do when writing documentation for pretix
 
@@ -44,6 +44,8 @@ The best practices are the following:
  - link to [external documentation](#link-to-external-documentation)
  - use [Vale](#use-vale-to-improve-your-text) to improve your text
 
+The following sections explain those best practices in detail.
+
 #### Adhere to our Code of Conduct
 
 Before you contribute to pretix itself or its documentation, read our [code of conduct](https://docs.pretix.eu/dev/development/contribution/codeofconduct.html).
@@ -59,7 +61,7 @@ These maxims, when applied to the task of documenting pretix, entail the followi
     Give complete instructions.
     Do **not** skip any necessary steps.
     For instance, if it is necessary to save the settings before they can take effect, then clicking the "Save" button is an essential step.
-    Omit any information that is **not** needed for the task at hand.
+    Omit any information that is not needed for the task at hand.
 
  2. Maxim of quality: be truthful.
 
@@ -297,10 +299,12 @@ This section will explain why the following things are not a good idea:
 
  - do not use [artificial intelligence](#do-not-use-artificial-intelligence-ai)
  - do not contribute [machine-translated](#do-not-contribute-machine-translated-text) text without intensive editing
+ - do not re-narrate the [user interface](#do-not-re-narrate-the-user-interface)
  - do not use [empty phrases](#do-not-use-empty-phrases)
  - do not overuse [notes and warnings](#do-not-overuse-notes-and-warnings)
  - do not document [third-party software](#do-not-attempt-to-replace-the-documentation-for-third-party-software)
- -
+
+The following sections explain these things to avoid in detail.
 
 #### Do not use Artificial Intelligence (AI)
 
