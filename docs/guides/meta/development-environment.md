@@ -54,7 +54,7 @@ For instance, if you want to do this using Linux, Bash and nano, run the followi
 $ nano /.bashrc
 ```
 
-Append the following to the file:
+Add the following lines to the file:
 
 ```
 export WORKON_HOME=~/.virtualenvs

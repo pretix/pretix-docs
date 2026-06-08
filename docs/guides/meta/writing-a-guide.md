@@ -22,29 +22,31 @@ This section guides you through those steps in detail.
 ### Creating a new branch
 
 Before you make any edits to the pretix documentation, you need to create a new branch.
-In order to do so, open a terminal on your computer.
+There is more than one way to do this.
+
+If you want to use the Git CLI to create a new branch, open a terminal on your computer.
+Check out the branch from which you want to create a new branch.
+In all but a few exceptions, that is going to be the main branch.
+
 Run the following command to check out the main branch:
 
 ```
 git checkout main
 ```
 
-To create a new branch named `badge-layout-editor`, run the following command:
+In order to create a new branch named `badge-layout-editor` and check it out, run the following command:
 
 ```
 git checkout -b badge-layout-editor
 ```
 
-!!! Note
-    The above instructions apply if you want to base your new branch on the main branch of the pretix-docs repository.
-    This is appropriate for all but a few exceptions.
-    Check out the branch from which you want to create a new branch.
+Alternatively, use your IDE or your preferred Git client to create a new branch.
 
 ### Finding the appropriate directory
 
 All guides are in the directory `docs/guides`.
 Try to find the appropriate subdirectory for your new guide.
-For instance, if your guide describes a plugin that integrates with an external service, place it in `docs/guides/integrations`
+For instance, if your guide describes a plugin that integrates with an external service, place it in `docs/guides/integrations`.
 If your guide does not fit into any of the subdirectories, place it in `docs/guides`.
 
 Create a new file with the `.md` file extension.
@@ -64,3 +66,15 @@ Use the markdown title formatting and sentence-style capitalization, for instanc
 # Badge layout editor
 ```
 
+The template contains questions and instructions as placeholder text under each headline.
+Answer those questions in the respective section in your text.
+
+If you do not have any content for the sections "Troubleshooting", "Further information", and "See also", remove those sections.
+Do **not** remove the sections "Prerequisites" or "How to".
+Do **not** remove the title section either.
+
+If the "How to" section becomes very long, separate it into "General usage" and "Advanced usage".
+For an example of this article structure, see [pretixSCAN (Android)](../pretixscan/android.md).
+
+If you are describing the setup of a feature and then its applications, separate the "How to" section into "General usage" and "Applications".
+For an example of this article structure, see [Vouchers](../vouchers.md).
