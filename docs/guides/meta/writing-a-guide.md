@@ -1,6 +1,7 @@
-# Writing a guide
+# Adding a guide
 
 This article explains how to add a guide to the pretix documentation.
+
 
 ## Prerequisites
 
@@ -14,7 +15,7 @@ This involves the following steps:
 
  - creating a new branch
  - finding the appropriate directory
- - copying the template
+ - using the template
  - writing the guide
 
 This section guides you through those steps in detail.
@@ -54,7 +55,7 @@ Name it in lower case.
 Use a hyphen-minus `-` to separate words.
 For instance, if you are writing a guide on the badge layout editor, name the file `badge-layout-editor.md`.
 
-### Copying the template
+### Using the template
 
 Copy the contents of the guide template into your new file.
 You can find the template in the root directory of this repository at `template-guides.md`.
@@ -78,3 +79,27 @@ For an example of this article structure, see [pretixSCAN (Android)](../pretixsc
 
 If you are describing the setup of a feature and then its applications, separate the "How to" section into "General usage" and "Applications".
 For an example of this article structure, see [Vouchers](../vouchers.md).
+
+### Writing the guide
+
+Research the subject that you want to cover and write your guide.
+For guidance on how to collect and record the relevant information, refer to the article on [best practices](index.md).
+For instructions on how to format your text, see [formatting](formatting.md).
+For information on terminology, orthography, and punctuation, see [language](language.md).
+
+### Creating a pull request for review
+
+Once you have finished writing the guide, submit a pull request.
+There is more than once way to do this.
+In order to submit a pull request using the GitHub web interface, open your browser.
+Log into your GitHub account.
+Navigate to the `pretix-docs repository.
+Open the [Pull requests]([pretix-docs](https://github.com/pretix/pretix-docs/pulls)) tab.
+
+Create a new pull request.
+Select the branch you created under [Creating a new branch](#creating-a-new-branch).
+Provide an informative description.
+
+It is not necessary to submit a draft pull request.
+You can submit a pull request right away.
+Once you have done so, the pretix documentation team will notice your contribution, review it, and eventually merge it into the main branch.
