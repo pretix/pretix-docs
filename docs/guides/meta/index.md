@@ -116,9 +116,9 @@ That challenge is to understand a complex issue, to break that issue down into i
 Consider the following example:
 
 ```
-\*You can filter events by meta data attributes.
-\*You can create those attributes in your order profile and set their values in both event and series date settings.
-\*For example, if you set up a meta data property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this: [...]
+*You can filter events by meta data attributes.
+*You can create those attributes in your order profile and set their values in both event and series date settings.
+*For example, if you set up a meta data property called "Promoted" that you set to "Yes" on some events, you can pass a filter like this: [...]
 ```
 
 This example also does offer a sufficiently detailed explanation of how to set up a metadata attribute.
@@ -158,8 +158,8 @@ Instead, include the real-world use case.
 Consider the beginning of the example from the section about [breaking down complex issues](#break-down-complex-issues):
 
 ```
-\*You can filter events by meta data attributes.
-\*You can create those attributes in your order profile and set their values in both event and series date settings. [...]
+*You can filter events by meta data attributes.
+*You can create those attributes in your order profile and set their values in both event and series date settings. [...]
 ```
 
 This example does not lead with the assumed use case.
@@ -211,7 +211,7 @@ Add the code snippet to the <head> of your website.
 The active voice also helps make the docs shorter and clearer.
 
 ```
-\*A list of all tax rules that you have created for the event is displayed on this page.
+*A list of all tax rules that you have created for the event is displayed on this page.
 ```
 
 This sentence contains 18 words.
