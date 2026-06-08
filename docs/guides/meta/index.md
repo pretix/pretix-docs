@@ -322,6 +322,28 @@ Change all texts, labels, buttons and other UI elements mentioned in the transla
 Edit the terminology in the target language to be accurate, consistent, and distinct.
 Correct grammar, spelling and punctuation in the target language so that they follow established standards.
 
+### Do not re-narrate the user interface
+
+There is no value in recounting the entire user interface.
+Work on the assumption that the reader can see UI elements and read descriptions.
+Your job is to provide the reader with a sequence of actions to take.
+It is **not** to describe every element on the screen and explain what it does.
+
+Such descriptions can be helpful in some circumstances.
+One such case is if you are telling your reader to navigate to a page which they likely have not visited before:
+
+```
+This will land you on a page titled "Issued gift cards" displaying a search dialog, a button for manually issuing a gift card, and a list of gift card codes that have been issued already.
+```
+
+Such a description reassures the reader that they have taken the right actions to arrive on that page.
+But a brief overview is enough to accomplish that.
+
+Do not think in terms of UI elements.
+Think in terms of use cases.
+You do not need to tell the reader what they are seeing.
+You need to tell the reader what to do.
+
 #### Do not use empty phrases
 
 Avoid unnecessary fluff such as:
