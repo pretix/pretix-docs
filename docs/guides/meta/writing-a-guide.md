@@ -1,22 +1,25 @@
 # Adding a guide
 
 This article explains how to add a guide to the pretix documentation.
-
+Most of the steps described here also apply to other types of contributions.
+If you want to make a contribution other than a guide or a translation, contact the team first.
+It is also a good idea to contact the team if you want to contribute a guide.
 
 ## Prerequisites
 
 Writing a guide requires a working [development environment](development-environment.md).
 A general overview of the proper [formatting](formatting.md), [language](language.md) and [best practices](index.md) is helpful.
 
-## General usage
+## How to
 
 This section describes how to make a basic contribution to the pretix documentation.
 This involves the following steps:
 
- - creating a new branch
- - finding the appropriate directory
- - using the template
- - writing the guide
+ - [creating a new branch](#creating-a-new-branch)
+ - [finding the appropriate directory](#finding-the-appropriate-directory)
+ - [using the template](#using-the-template)
+ - [writing the guide](#writing-the-guide)
+ - [creating a pull request](#creating-a-pull-request-for-review)
 
 This section guides you through those steps in detail.
 
@@ -98,8 +101,9 @@ Open the [Pull requests]([pretix-docs](https://github.com/pretix/pretix-docs/pul
 
 Create a new pull request.
 Select the branch you created under [Creating a new branch](#creating-a-new-branch).
-Provide an informative description.
+In the example above, the name of that branch is `branch-layout-editor`.
+Provide an informative title and description.
 
-It is not necessary to submit a draft pull request.
+You do not have to submit a draft pull request.
 You can submit a pull request right away.
 Once you have done so, the pretix documentation team will notice your contribution, review it, and eventually merge it into the main branch.
