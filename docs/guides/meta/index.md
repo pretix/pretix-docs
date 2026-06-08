@@ -3,13 +3,15 @@
 This section of the documentation explains how the documentation itself works, how we wrote it, and how to contribute to it.
 But that does not cover all relevant aspects.
 
-You can find information on how to set up your development environment under [Development environment](development-environment.md)
+You can find information on how to set up your development environment under [Development environment](development-environment.md).
 
-You can find information on how to write a guide under [Writing a guide](writing-a-guide.md)
+You can find information on how to write a guide under [Writing a guide](writing-a-guide.md).
 
-You can find information on terminology, orthography, and punctuation under [Language](language.md)
+You can find information on terminology, orthography, and punctuation under [Language](language.md).
 
-You can find information on how to format your text using Markdown, MkDocs, and our customizations under [Formatting](formatting.md)
+You can find information on how to format your text using Markdown, MkDocs, and our customizations under [Formatting](formatting.md).
+
+You
 
 This article contains general information on how to contribute to the documentation, and what to avoid in the process.
 
