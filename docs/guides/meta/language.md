@@ -186,8 +186,8 @@ They will also be able to view and edit any orders that have been placed with th
 Separating the restrictive relative clause from the main clause changes the meaning.
 
 ```
-*They will also be able to view and edit any orders.
-*Orders have been placed with the same email address.
+\*They will also be able to view and edit any orders.
+\*Orders have been placed with the same email address.
 ```
 
 Always separate **main clauses** with full stops.
