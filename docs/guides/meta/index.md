@@ -11,7 +11,7 @@ You can find information on terminology, orthography, and punctuation under [Lan
 
 You can find information on how to format your text using Markdown, MkDocs, and our customizations under [Formatting](formatting.md).
 
-You
+You can find information on how to add a guide to the pretix docs under [Adding a guide](adding-a-guide.md).
 
 This article contains general information on how to contribute to the documentation, and what to avoid in the process.
 
