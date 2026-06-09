@@ -188,6 +188,14 @@ In order to use an SSO provider with pretix, it has to fulfill the following req
  - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
  - Support for client authentication using client ID and client secret and without public key cryptography. 
 
+!!! Warning
+
+    pretix, by default, will give customers access to past orders made with the smae email address.
+    This is only safe if your SSO provider verifies email addresses, for example by sending a verification email.
+    pretix will reject accounts with `email_verified=false` set on the user profile.
+    However, pretix will accept all accounts when the SSO provider does not send the `email_verified` claim at all.
+    Therefore, please make sure our SSO provider either sends `email_verified` or allows login only for verified accounts.
+
 #### Example: Using Google Accounts as an SSO provider for pretix 
 
 If you want to use Google as an SSO provider for pretix, follow the instructions on [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect) in the Google documentation. 
