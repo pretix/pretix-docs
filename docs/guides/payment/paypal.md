@@ -16,7 +16,7 @@ A regular PayPal account is **not** enough for integration with pretix.
 
 Setting up PayPal as a payment provider in pretix involves the following steps:
 
- 1. Enable the PayPal plugin.
+ 1. Enable the PayPal plugin
  2. Connect to your PayPal business account
  3. Enter mandatory info on the settings page for PayPal
  4. Make optional adjustments
