@@ -1,6 +1,6 @@
-# Markdown 
+# Markdown
 
-In many places of your shop, like frontpage texts, product descriptions and email texts, you can use [Markdown](https://en.wikipedia.org/wiki/Markdown) to create links, bold text, and other formatted content. 
+In many places of your shop, like frontpage texts, product descriptions and email texts, you can use [Markdown](https://en.wikipedia.org/wiki/Markdown) to create links, bold text, and other formatted content.
 Markdown is a good middle-ground since it is way easier to learn than languages like HTML but allows all basic formatting options required for text in those places.
 
 !!! Note
@@ -10,7 +10,7 @@ Markdown is a good middle-ground since it is way easier to learn than languages 
 
 ### Simple text formatting
 
-To set a text in italics, you can put it in asterisks or underscores. 
+To set a text in italics, you can put it in asterisks or underscores.
 For example,
 
 ``` markdown
@@ -21,7 +21,7 @@ will become:
 
 > Please *really* pay your *ticket*.
 
-If you set double asterisks or underscores, the text will be printed in bold. 
+If you set double asterisks or underscores, the text will be printed in bold.
 For example,
 
 ``` markdown
@@ -42,7 +42,7 @@ You will get:
 
 > Input this `exactly like this`.
 
-In order to prevent a character from being interpreted as markdown formatting, precede it with the backslash `\` escape character. 
+In order to prevent a character from being interpreted as markdown formatting, precede it with the backslash `\` escape character.
 
 ``` markdown
 This is \*\*important\*\*.
@@ -64,7 +64,7 @@ will become:
 
 > Check this on <https://en.wikipedia.org>
 
-If you want to prevent a word from being recognized as an URL and rendered accordingly, you can escape the dot with a backslash. 
+If you want to prevent a word from being recognized as an URL and rendered accordingly, you can escape the dot with a backslash.
 
 ``` markdown
 Check this on en\.wikipedia\.org
@@ -92,35 +92,35 @@ All links created with pretix Markdown syntax will open in a new tab.
 You can create un-numbered lists by prepending the lines with asterisks.
 
 ``` markdown
-* First item
-* Second item with a text that is too long to
+ * First item
+ * Second item with a text that is too long to
   fit in a line
-* Third item
+ * Third item
 ```
 
 will become:
 
-> -   First item
-> -   Second item with a text that is too long to fit in a line
-> -   Third item
+> - First item
+> - Second item with a text that is too long to fit in a line
+> - Third item
 
 You can also use numbers as list items
 
 ``` markdown
-1.  Red
-2.  Green
-3.  Blue
+ 1. First list item
+ 2. Second list item
+ 3. Third list item
 ```
 
 to get
 
-> 1.  Red
-> 2.  Green
-> 3.  Blue
+> 1. First list item
+> 2. Second list item
+> 3. Third list item
 
 ### Headlines
 
-To create a headline, prepend it with `#` for the main headline, `##` for a headline of the second level, and so on. 
+To create a headline, prepend it with `#` for the main headline, `##` for a headline of the second level, and so on.
 For example:
 
 ``` markdown
@@ -147,7 +147,7 @@ to create a horizontal line, like the following:
 ```
 ## Using HTML
 
-You can also directly embed HTML code, if you want, although we recommend using Markdown, as it enables e.g. people using text-based email clients to get a better plain text representation of your text. 
+You can also directly embed HTML code, if you want, although we recommend using Markdown, as it enables e.g. people using text-based email clients to get a better plain text representation of your text.
 Note however, that for security reasons you can only use the following HTML elements:
 
     a, abbr, acronym, b, br, code, div, em, h1, h2,
