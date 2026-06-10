@@ -17,7 +17,7 @@ Eine [Anleitung zur Registrierung eines PayPal-Geschäftskontos](https://www.pay
 
 Die Einrichtung von PayPal als Zahlungsanbieter in pretix umfasst folgende Schritte:
 
- 1. PayPal-Plugin aktivieren.
+ 1. PayPal-Plugin aktivieren
  2. Mit Ihrem PayPal-Geschäftskonto verbinden
  3. Notwendige Informationen auf der PayPal-Einstellungsseite eintragen
  4. Optionale Anpassungen vornehmen.
