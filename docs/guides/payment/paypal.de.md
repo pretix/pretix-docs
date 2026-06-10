@@ -36,7 +36,7 @@ Wenn es aktiv ist, hat es einen grünen „:fa3-check: Aktiv"-Badge, einen weiß
 Wenn es nicht aktiv ist, fehlt der Badge und es erscheint ein lila :btn:Aktivieren:-Button.
 Stellen Sie sicher, dass die Erweiterung aktiv ist.
 
-![Zahlungseinstellungsseite. Der Tab „Zahlungsanbieter" ist geöffnet und zeigt eine Liste mit folgenden Einträgen: Banküberweisung, Gutschein, PayPal, SEPA-Lastschrift und Stripe. Gutschein ist aktiviert, alle anderen Einträge sind deaktiviert. Alle Einträge haben „Einstellungen"-Buttons daneben. Der Einstellungs-Button für PayPal ist hervorgehoben.](../../assets/screens/payment-providers/payment-settings-paypal.png "Zahlungseinstellungen PayPal")
+![Seite mit dem Titel "Zahlungseinstellungen". Der Tab „Zahlungsmethoden" ist offen und zeigt eine Liste mit folgenden Einträgen: Banküberweisung, Gutschein, PayPal, SEPA-Lastschrift und Stripe. "Gutschein" ist aktiviert und alle anderen Einträge sind deaktiviert. Alle Einträge haben "Einstellungen"-Buttons. Der Einstellungs-Button für PayPal ist hervorgehoben.](../../assets/screens/payment-providers/payment-settings-paypal.png "Zahlungseinstellungen PayPal")
 
 Sie können direkt zu den PayPal-Einstellungen springen, indem Sie auf das Dropdown-Menü :btn-icon:fa3-gear: Einstellungen: und dann auf :btn:Zahlung → PayPal: klicken.
 
