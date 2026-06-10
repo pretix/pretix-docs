@@ -4,7 +4,7 @@ PayPal ist eine von vielen Möglichkeiten, Zahlungen in pretix abzuwickeln.
 PayPal ermöglicht die Zahlungsabwicklung über folgende Methoden:
 Echtzeitzahlung per PayPal-Konto, „Jetzt kaufen, später bezahlen" per PayPal-Konto, SEPA-Lastschrift sowie alternative Zahlungsmethoden wie EPS, iDEAL und weitere.
 
-Dieser Artikel erklärt, wie du dein PayPal-Konto verbindest und damit Zahlungen über pretix empfängst.
+Dieser Artikel erklärt, wie Sie Ihr PayPal-Konto verbinden und es verwenden, um damit Zahlungen über pretix zu empfangen.
 
 ## Voraussetzungen
 
