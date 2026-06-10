@@ -13,7 +13,7 @@ Stellen Sie sicher, dass Sie ein aktives PayPal-Geschäftskonto haben.
 Ein reguläres PayPal-Konto ist **nicht** ausreichend für die Integration mit pretix.
 Eine [Anleitung zur Registrierung eines PayPal-Geschäftskontos](https://www.paypal.com/c2/webapps/mpp/how-to-guides/sign-up-business-account) finden Sie auf der PayPal-Website.
 
-## Vorgehensweise
+## Anleitung
 
 Die Einrichtung von PayPal als Zahlungsanbieter in pretix umfasst folgende Schritte:
 
