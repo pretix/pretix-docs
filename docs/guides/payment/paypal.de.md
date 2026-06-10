@@ -70,7 +70,7 @@ Die Seite zeigt oben Ihre PayPal-Merchant-ID an.
 Alle Einstellungen hier sind optional.
 Sehen Sie sich die Seite genau an und aktivieren Sie alle Einstellungen, die Sie für diesen Zahlungsanbieter bei Ihrem Event nutzen möchten.
 Wenn Sie zufrieden sind, scrollen Sie zum Seitenanfang und setzen Sie das Häkchen bei „Zahlungsmethode aktivieren".
-PayPal und die anderen auf dieser Seite aktivierten Zahlungsmethoden erscheinen nun als Zahlungsoption für Kunden in Ihrem Shop.
+PayPal und die anderen auf dieser Seite aktivierten Zahlungsmethoden erscheinen nun als Zahlungsoption für Kund*innen in Ihrem Shop.
 
 ### Verbindung mit PayPal über eine selbst gehostete Edition von pretix
 
