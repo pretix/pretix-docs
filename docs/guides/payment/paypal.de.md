@@ -41,7 +41,7 @@ Stellen Sie sicher, dass die Erweiterung aktiv ist.
 Sie können direkt zu den PayPal-Einstellungen springen, indem Sie auf das Dropdown-Menü :btn-icon:fa3-gear: Einstellungen: und dann auf :btn:Zahlung → PayPal: klicken.
 
 Alternativ navigieren Sie :navpath:Dein Event → :fa3-wrench: Einstellungen → Zahlung:.
-Der Tab :btn:Zahlungsanbieter: auf dieser Seite zeigt die Liste der aktiven Zahlungsanbieter.
+Der Tab :btn:Zahlungsmethoden: auf dieser Seite zeigt die Liste der aktiven Zahlungsanbieter.
 Die Liste sollte nun einen Eintrag für PayPal mit einem roten „:fa3-remove: Deaktiviert"-Badge enthalten.
 Das Plugin ist aktiviert, aber PayPal wurde noch nicht als Zahlungsanbieter für das Event eingerichtet und freigeschaltet.
 Klicken Sie auf den :btn-icon:fa3-gear:Einstellungen:-Button neben PayPal.
