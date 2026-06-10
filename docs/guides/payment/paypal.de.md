@@ -65,7 +65,7 @@ Klicken Sie auf den Button und schließen Sie den Anmelde- und Autorisierungspro
 
 Nachdem Sie den Autorisierungsprozess bei PayPal abgeschlossen haben, sieht die PayPal-Einstellungsseite im pretix-Backend anders aus.
 Anstelle des einzelnen Buttons bietet sie nun  zahlreiche Einstellungen an.
-Die Seite zeigt oben deine PayPal-Merchant-ID an.
+Die Seite zeigt oben Ihre PayPal-Merchant-ID an.
 
 Alle Einstellungen hier sind optional.
 Sehen Sie sich die Seite genau an und aktivieren Sie alle Einstellungen, die Sie für diesen Zahlungsanbieter bei Ihrem Event nutzen möchten.
