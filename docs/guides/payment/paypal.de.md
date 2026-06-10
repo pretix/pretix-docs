@@ -26,7 +26,7 @@ Die Einrichtung von PayPal als Zahlungsanbieter in pretix umfasst folgende Schri
 
 Dieser Abschnitt führt Sie im Detail durch diese Schritte.
 
-![Plugin-Einstellungsseite. Der Tab „Zahlungsanbieter" ist geöffnet und zeigt die Plugins für Banküberweisung, Mollie, PayPal und Stripe, die alle aktiv sind.](../../assets/screens/payment-providers/plugins-top.png "Verfügbare Plugins")
+![Seite mit dem Titel "Verfügbare Erweiterungen". Der Tab "Zahlungsmethoden" ist offen und zeigt die Erweiterungen für Banküberweisung, Mollie, PayPal und Stripe, die alle aktiv sind.](../../assets/screens/payment-providers/plugins-top.png "Verfügbare Erweiterungen")
 
 Navigieren Sie zu :navpath:Dein Event → :fa3-wrench: Einstellungen → Plugins:.
 Wechseln Sie zum Tab :btn:Zahlungsanbieter:.
