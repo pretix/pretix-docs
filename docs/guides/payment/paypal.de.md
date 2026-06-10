@@ -61,7 +61,7 @@ Klicken Sie auf den :btn-icon:fa3-gear:Einstellungen:-Button neben PayPal.
 Dies führt Sie zur Einstellungsseite für PayPal, die aktuell nur den Button :btn:Mit PayPal verbinden: enthält.
 Klicken Sie auf den Button und schließen Sie den Anmelde- und Autorisierungsprozess bei PayPal ab.
 
-![PayPal-Website mit dem pretix-Logo oben rechts und einem Dialog in der Mitte mit dem Hinweis „Verbinde ein PayPal-Konto, um mit der Annahme von Zahlungen auf pretix GmbH zu beginnen". Darunter kannst du deine E-Mail-Adresse sowie dein Land oder deine Region eingeben.](../../assets/screens/payment-providers/paypal-connect-account.png "Verbindung mit PayPal herstellen")
+![PayPal-Website mit dem pretix-Logo oben rechts und einem Dialog in der Mitte mit dem Hinweis "Connect a PayPal account to start accepting payments on pretix GmbH". Darunter können Sie Ihre E-Mail-Adresse sowie Ihr Land oder Ihre Region eingeben.](../../assets/screens/payment-providers/paypal-connect-account.png "Mit PayPal verbinden")
 
 Nachdem Sie den Autorisierungsprozess bei PayPal abgeschlossen haben, sieht die PayPal-Einstellungsseite im pretix-Backend anders aus.
 Anstelle des einzelnen Buttons bietet sie nun  zahlreiche Einstellungen an.
