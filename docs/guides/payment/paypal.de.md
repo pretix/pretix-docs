@@ -54,7 +54,7 @@ Ab diesem Punkt unterscheidet sich das Vorgehen je nachdem, ob Sie pretix Hosted
 <!-- md:hosted -->
 
 Wenn Sie pretix Hosted verwenden und Ihr Konto noch nicht mit PayPal verbunden ist, enthält die Einstellungsseite für PayPal nur den Button :btn:Mit PayPal verbinden:.
-Klicke auf den Button und schließe den Anmelde- und Autorisierungsprozess bei PayPal ab.
+Klicken Sie den Button und schließen Sie den Anmelde- und Autorisierungsprozess bei PayPal ab.
 
 Das Plugin ist aktiv, aber PayPal wurde noch nicht als Zahlungsanbieter für das Event eingerichtet.
 Klicken Sie auf den :btn-icon:fa3-gear:Einstellungen:-Button neben PayPal.
