@@ -59,7 +59,7 @@ Klicke auf den Button und schließe den Anmelde- und Autorisierungsprozess bei P
 Das Plugin ist aktiv, aber PayPal wurde noch nicht als Zahlungsanbieter für das Event eingerichtet.
 Klicken Sie auf den :btn-icon:fa3-gear:Einstellungen:-Button neben PayPal.
 Dies führt Sie zur Einstellungsseite für PayPal, die aktuell nur den Button :btn:Mit PayPal verbinden: enthält.
-Klicken Sie auf den Button und schließen Sie den Anmelde- und Autorisierungsprozess bei PayPal ab.
+Klicken Sie den Button und schließen Sie den Anmelde- und Autorisierungsprozess bei PayPal ab.
 
 ![PayPal-Website mit dem pretix-Logo oben rechts und einem Dialog in der Mitte mit dem Hinweis "Connect a PayPal account to start accepting payments on pretix GmbH". Darunter können Sie Ihre E-Mail-Adresse sowie Ihr Land oder Ihre Region eingeben.](../../assets/screens/payment-providers/paypal-connect-account.png "Mit PayPal verbinden")
 
