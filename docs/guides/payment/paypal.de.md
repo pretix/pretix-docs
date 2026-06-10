@@ -22,7 +22,7 @@ Die Einrichtung von PayPal als Zahlungsanbieter in pretix umfasst folgende Schri
  3. Notwendige Informationen auf der PayPal-Einstellungsseite eintragen
  4. Optionale Anpassungen vornehmen
  5. Zahlung per PayPal aktivieren
- 6. Testen.
+ 6. Testen
 
 Dieser Abschnitt führt Sie im Detail durch diese Schritte.
 
