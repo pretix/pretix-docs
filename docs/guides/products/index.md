@@ -366,7 +366,7 @@ If that box is unchecked, verify that the box next to "Online shop" is checked.
  If any of the fields contain dates and times, verify that you are within the specified time frame.
  If you want your shop to display the product even outside the specified time frame, set the toggles to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
- 3. Verify that the box next to "This product can only be bought using a voucher." is **not** checked.
+ 3. Verify that the box next to "This product can only be bought using a voucher" is **not** checked.
  If that box is active, then your shop will only show the product to customers who have entered a matching voucher code.
  If the voucher is configured to match a quota that contains the product, then the shop will not display it.
  If you still want your shop to display the product to all customers, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
@@ -401,4 +401,4 @@ If that box is unchecked, verify that the box next to "Online shop" is checked.
  Check if the settings "Start of presale" and "End of presale" restrict sales to a certain time frame.
  If the fields are empty, then there is no such restriction.
  If any of the fields contain dates and times, verify that you are within the specified time frame.
- If you want your shop to display products even outside the specified time frame, verify that the box next to "Show items outside of presale period" is checked.
+ If you want your shop to display products even outside the specified time frame, check the box next to "Show items outside of presale period".
