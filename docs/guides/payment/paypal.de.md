@@ -34,7 +34,7 @@ Diese Seite zeigt oben die PayPal-Erweiterung an.
 Es sollte standardmäßig aktiv sein.
 Wenn es aktiv ist, hat es einen grünen „:fa3-check: Aktiv"-Badge, einen weißen „Deaktivieren"-Button sowie zwei Dropdown-Menüs.
 Wenn es nicht aktiv ist, fehlt der Badge und es erscheint ein lila :btn:Aktivieren:-Button.
-Überprüfen Sie, ob das Plugin aktiv ist.
+Stellen Sie sicher, dass die Erweiterung aktiv ist.
 
 ![Zahlungseinstellungsseite. Der Tab „Zahlungsanbieter" ist geöffnet und zeigt eine Liste mit folgenden Einträgen: Banküberweisung, Gutschein, PayPal, SEPA-Lastschrift und Stripe. Gutschein ist aktiviert, alle anderen Einträge sind deaktiviert. Alle Einträge haben „Einstellungen"-Buttons daneben. Der Einstellungs-Button für PayPal ist hervorgehoben.](../../assets/screens/payment-providers/payment-settings-paypal.png "Zahlungseinstellungen PayPal")
 
