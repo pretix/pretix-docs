@@ -30,7 +30,7 @@ Dieser Abschnitt führt Sie im Detail durch diese Schritte.
 
 Navigieren Sie zu :navpath:Ihr Event → :fa3-wrench: Einstellungen → Erweiterungen:.
 Wechseln Sie zum Tab :btn:Zahlungsanbieter:.
-Auf dieser Seite wird das PayPal-Plugin oben angezeigt.
+Diese Seite zeigt oben die PayPal-Erweiterung an.
 Es sollte standardmäßig aktiv sein.
 Wenn es aktiv ist, hat es einen grünen „:fa3-check: Aktiv"-Badge, einen weißen „Deaktivieren"-Button sowie zwei Dropdown-Menüs.
 Wenn es nicht aktiv ist, fehlt der Badge und es erscheint ein lila :btn:Aktivieren:-Button.
