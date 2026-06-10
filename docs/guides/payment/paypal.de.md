@@ -64,7 +64,7 @@ Klicken Sie auf den Button und schließen Sie den Anmelde- und Autorisierungspro
 ![PayPal-Website mit dem pretix-Logo oben rechts und einem Dialog in der Mitte mit dem Hinweis „Verbinde ein PayPal-Konto, um mit der Annahme von Zahlungen auf pretix GmbH zu beginnen". Darunter kannst du deine E-Mail-Adresse sowie dein Land oder deine Region eingeben.](../../assets/screens/payment-providers/paypal-connect-account.png "Verbindung mit PayPal herstellen")
 
 Nachdem Sie den Autorisierungsprozess bei PayPal abgeschlossen haben, sieht die PayPal-Einstellungsseite im pretix-Backend anders aus.
-Anstelle des einzelnen Buttons werden nun zahlreiche Einstellungen angeboten.
+Anstelle des einzelnen Buttons bietet sie nun  zahlreiche Einstellungen an.
 Die Seite zeigt oben deine PayPal-Merchant-ID an.
 
 Alle Einstellungen hier sind optional.
