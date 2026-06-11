@@ -345,60 +345,63 @@ The exact method differs depending on whether [tax is included in the price)](..
 
 ### A product does not appear in the ticket shop
 
-**Problem:** You have created a product, but your shop is not displaying it
+**Problem:** You have created a product, but your shop is not displaying it.
 
 **Solution:** This can have a variety of reasons.
 Perform the following checks:
 
- 1. Navigate to :navpath:Your event → :fa3-ticket: Products → Products:.
+ 1. The product may be inactive.
+ In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Products:.
  Edit the product that is not appearing in your shop.
  On the :btn:General: tab, verify that the box next to "Active" is checked.
 
 !!! Note
     Any change you make to the product's configuration only takes effect after you click the :btn:Save: button.
 
- 2. Open the :btn:Availability: tab.
+ 2. Your product may be restricted to sales channels other than your shop.
+ In order to resolve this, open the :btn:Availability: tab.
 Under "Restrict to specific sales channels", verify that the box next to "Sell on all sales channels" is checked.
 If that box is unchecked, verify that the box next to "Online shop" is checked.
 
- 3. Check if the product's "Available from" or "Available until" settings restrict it to a certain time frame.
+ 3. Your product's availability may be restricted to a certain time frame.
+ In order to resolve this, check the "Available from" or "Available until" fields.
  If the fields are empty, then there is no such restriction.
  If any of the fields contain dates and times, verify that you are within the specified time frame.
  If you want your shop to display the product even outside the specified time frame, set the toggles to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
- 3. Verify that the box next to "This product can only be bought using a voucher" is **not** checked.
+ 3. Your product may only be available through a voucher.
+ In order to resolve this, verify that the box next to "This product can only be bought using a voucher" is **not** checked.
  If that box is active, then your shop will only show the product to customers who have entered a matching voucher code.
  If the voucher is configured to match a quota that contains the product, then the shop will not display it.
  If you still want your shop to display the product to all customers, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
- 4. Verify that the box next to "Only sell this product as part of a bundle" is **not** checked.
+ 4. Your product may only be available as part of a bundle.
+ In order to resolve this, verify that the box next to "Only sell this product as part of a bundle" is **not** checked.
  If that box is active, then your shop will not display it as a standalone product.
  It will only display it as part of another product to which you added this product as a bundled product.
 
- 5. Verify that the box next to "Require a valid membership" is **not** checked.
+ 5. Your product may only be available through a membership.
+ In order to resolve this, verify that the box next to "Require a valid membership" is **not** checked.
  If that box is active, then your shop will only display the product to customers who are logged in to their account and who have a valid membership.
 
- 6. Verify that the field next to "Only show after sellout of" is empty.
+ 6. Your product may only be available after another product has been sold out.
+ In order to resolve this, verify that the field next to "Only show after sellout of" is empty.
  If you specify another product in that field, then your shop will only display this product if the other product is sold out.
  If you still want your shop to display the product regardless of the availability of the other product, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
- 7. Navigate to :navpath:Your event → :fa3-ticket: Products → Categories:.
+ 7. Your product may be in the wrong type of category.
+ In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:.
  Edit the category to which your product belongs.
  Verify that the selection under "Category type" is either `Normal category` or `Normal + cross-selling category`.
  If the selection is `Add-on product category`, then your product is only available as an add-on.
  If the selection is `Cross-selling category`, then your product is only available during the cross-selling step of the purchase.
 
- 8. Navigate to :navpath:Your event → :fa3-ticket: Products → Quotas:.
+ 8. Your product may not be part of a quota.
+ In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Quotas:.
  Verify that one of the quotas contains this product.
- If your product has variations, verify that at at least one variation is part of a quota.
+ If your product has variations, verify that at least one variation is part of a quota.
  If you are hosting an event series, verify that the quota is assigned to the date which you are accessing in your shop.
 
- 9. Verify that none of the quotas that contain your product are empty.
+ 9. Your product may be part of an empty quota.
+ In order to resolve this, verify that none of the quotas that contain your product are empty.
  If any of the quotas have ever been sold out, verify that the box next to "Close this quota permanently once it is sold out" is **not** checked.
-
- 10. Navigate to :navpath:Your event → :fa3-wrench: Settings → General:.
- Open the :btn:Timeline: tab.
- Check if the settings "Start of presale" and "End of presale" restrict sales to a certain time frame.
- If the fields are empty, then there is no such restriction.
- If any of the fields contain dates and times, verify that you are within the specified time frame.
- If you want your shop to display products even outside the specified time frame, check the box next to "Show items outside of presale period".
