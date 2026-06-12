@@ -254,6 +254,28 @@ It could have been the reader, another team member, or a customer using a checko
 The only relevant factor is whether the ticket is checked out or not.
 Thus, the passive voice is appropriate.
 
+There is another phenomenon which looks like passive, but describes a state instead of a process.
+For example:
+
+```
+Checking that box makes another box appear that is checked by default.
+```
+
+```
+The scan engine is located on the top edge of the device.
+```
+
+Vale will misidentify these examples as passives.
+That is inaccurate.
+Since these cases do not represent a genuine use of the passive voice, they are okay to use in the context of the pretix documentation.
+
+!!! Note
+   If you speak German, you can determine these cases by attempting to translate them into German.
+   If you translate the sentence with the word "sein" as opposed to the verb "werden", then it is not a genuine passive.
+   For instance, you would translate the first example as:
+   `ein Kontrollkästchen, das standardmäßig angehakt ist`
+
+
 #### Add image descriptions
 
 Whenever you add an image to the pretix documentation, add an image description along with it.
