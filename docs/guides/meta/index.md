@@ -5,7 +5,7 @@ But that does not cover all relevant aspects.
 
 You can find information on how to set up your development environment under [Development environment](development-environment.md).
 
-You can find information on how to write a guide under [Writing a guide](writing-a-guide.md).
+You can find information on how to contribute an article under [Adding a guide](adding-a-guide.md).
 
 You can find information on terminology, orthography, and punctuation under [Language](language.md).
 
@@ -274,7 +274,6 @@ Since these cases do not represent a genuine use of the passive voice, they are 
    If you translate the sentence with the word "sein" as opposed to the verb "werden", then it is not a genuine passive.
    For instance, you would translate the first example as:
    `ein Kontrollkästchen, das standardmäßig angehakt ist`
-
 
 #### Add image descriptions
 

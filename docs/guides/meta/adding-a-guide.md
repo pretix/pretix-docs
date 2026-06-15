@@ -96,8 +96,8 @@ Once you have finished writing the guide, submit a pull request.
 There is more than once way to do this.
 In order to submit a pull request using the GitHub web interface, open your browser.
 Log into your GitHub account.
-Navigate to the `pretix-docs repository.
-Open the [Pull requests]([pretix-docs](https://github.com/pretix/pretix-docs/pulls)) tab.
+Navigate to the `pretix-docs` repository.
+Open the [Pull requests](https://github.com/pretix/pretix-docs/pulls) tab.
 
 Create a new pull request.
 Select the branch you created under [Creating a new branch](#creating-a-new-branch).
