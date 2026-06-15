@@ -19,7 +19,7 @@ You also need access to each event shop for which you want to use the custom dom
 
 The setup of custom domains depends on where your shops are hosted.
 If you are using [pretix Hosted](#pretix-hosted), then we are hosting your shops for you at `pretix.eu`.
-If you are using [pretix Enterprise or pretix Community]](#pretix-enterprise-and-pretix-community), then pretix is running  on your own server.
+If you are using [pretix Enterprise or pretix Community](#pretix-enterprise-and-pretix-community), then pretix is running  on your own server.
 Refer to the subsection appropriate to your use case below.
 
 ### pretix Hosted
