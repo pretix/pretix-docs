@@ -119,8 +119,8 @@ Das ermöglicht es, für jede Transaktion am POS einen Kaufbeleg und die erworbe
 Badgedrucker richten Sie dagegen normalerweise am Scanner ein, um am Einlass für jede teilnehmende Person ein passendes Badge zu drucken.
 
 Die Drucker Lemur und Lemur-C sind sowohl für die Verwendung als Ticketdrucker als auch als Badgedrucker geeignet.
-Um den Drucker als Ticketdrucker mit einer Kasse zu verbinden, öffnen Sie pretixPRINT auf der Kasse und tippen dann unter "Ticketdrucker" auf :btn:Drucker einrichten.
-Um den Drucker als Badgedrucker mit einem Scan-Smartphone zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten.
+Um den Drucker als Ticketdrucker mit einer Kasse zu verbinden, öffnen Sie pretixPRINT auf der Kasse und tippen dann unter "Ticketdrucker" auf :btn:Drucker einrichten:.
+Um den Drucker als Badgedrucker mit einem Scan-Smartphone zu verbinden, öffnen Sie pretixPRINT auf dem Scan-Smartphone und tippen dann unter "Badgedrucker" auf :btn:Drucker einrichten:.
 Unabhängig von Ihrer Auswahl ist der Prozess danach immer der gleiche.
 
 Falls der Drucker über das **Netzwerk** verbunden ist, wählen Sie auf der Seite "Wie ist Ihr Drucker verbunden?" die Option "Netzwerk (LAN/WLAN)" und tippen :btn:Weiter:.
