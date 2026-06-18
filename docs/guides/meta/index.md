@@ -1,19 +1,17 @@
 # Contributing to the docs
 
 This section of the documentation explains how the documentation itself works, how we wrote it, and how to contribute to it.
-But that does not cover all relevant aspects.
+If you want to contribute to the pretix documentation, then you should read this article and the following articles:
 
-You can find information on how to set up your development environment under [Development environment](development-environment.md).
+ - You can find information on how to set up your development environment under [Development environment](development-environment.md).
 
-You can find information on how to contribute an article under [Adding a guide](adding-a-guide.md).
+ - You can find information on how to contribute an article to the pretix docs under [Adding a guide](adding-a-guide.md).
 
-You can find information on terminology, orthography, and punctuation under [Language](language.md).
+ - You can find information on terminology, orthography, and punctuation under [Language](language.md).
 
-You can find information on how to format your text using Markdown, MkDocs, and our customizations under [Formatting](formatting.md).
+ - You can find information on how to format your text using Markdown, MkDocs, and our customizations under [Formatting](formatting.md).
 
-You can find information on how to add a guide to the pretix docs under [Adding a guide](adding-a-guide.md).
-
-This article contains general information on how to contribute to the documentation, and what to avoid in the process.
+This article contains general information on how to contribute to the documentation and what to avoid in the process.
 
 ## Prerequisites
 
