@@ -347,7 +347,7 @@ Change all texts, labels, buttons and other UI elements mentioned in the transla
 Edit the terminology in the target language to be accurate, consistent, and distinct.
 Correct grammar, spelling and punctuation in the target language so that they follow established standards.
 
-### Do not re-narrate the user interface
+#### Do not re-narrate the user interface
 
 There is no value in recounting the entire user interface.
 Work on the assumption that the reader can see UI elements and read descriptions.
@@ -382,7 +382,7 @@ Avoid unnecessary fluff such as:
  - "just"
  - "simply"
 
-The linter [Vale](https://github.com/mschrumpf/vale-pretix) will help you avoid some of these expressions, but it will not catch all of them.
+The linter [Vale](#use-vale-to-improve-your-text) will help you avoid some of these expressions, but it will not catch all of them.
 
 It is okay to use "just" for a temporal relation, for example:
 
