@@ -55,7 +55,9 @@ We consider an issue to have critical severity only if it allows the extraction,
 
 We **never** pay bounties for the following types of reports:
 
-- Denial of service or brute force attack vectors / rate-limiting issues
+ - Denial-of-service attack vectors
+ - Brute-force attack vectors
+ - Rate-limiting issues
 - Issues that can only be exploited in combination with significant other security flaws that have not been found (e.g. [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting) without [CSP](https://en.wikipedia.org/wiki/Content_Security_Policy) bypass)
 - Logic bugs in our business logic
 - [HTTP](https://en.wikipedia.org/wiki/HTTP) or email header best practices
