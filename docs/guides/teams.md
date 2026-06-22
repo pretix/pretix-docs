@@ -47,6 +47,10 @@ Again, the name and exact permissions you grant depend on your individual use ca
 You can always change these settings later, but you can prevent future problems and confusion by finalizing these choices before inviting anyone to the team.
 Clicking the :btn:Save: button creates the team and takes you to an overview of its members.
 
+!!! Note
+    If a user does not have permission for one area of the system, they can still view some of the data of that area if it connects to other areas.
+    For example, a user with access to orders can see the gift card created or used in a specific order. 
+    This is still true if that user does not have permission for gift cards. 
 ### Inviting someone to your team
 
 ![Page titled 'Team: Staff', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Staff screenshot")
