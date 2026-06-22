@@ -63,7 +63,7 @@ We **never** pay bounties for the following types of reports:
 - [HTTP](https://en.wikipedia.org/wiki/HTTP) or email header best practices
 - [SPF/DKIM/DMARC](https://en.wikipedia.org/wiki/Email_authentication) best practices
 - [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) cipher best practices
-- **Any reports generated primarily by AI**
+- **Any reports generated primarily by LLMs**
 
 ## Rules
 
