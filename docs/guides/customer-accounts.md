@@ -187,7 +187,14 @@ In order to use an SSO provider with pretix, it has to fulfill the following req
  - Published meta-data document at `<issuer>/.well-known/openid-configuration` as specified in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
  - Support for Authorization code flow (`response_type=code`) with `response_mode=query`.
  - Support for client authentication using client ID and client secret and without public key cryptography.
+ - The SSO provider only allows verified accounts to log in **or** the SSO provider sends the claim `email_verified`. 
 
+!!! Warning
+    By default, pretix will grant customers access to past orders placed with the same email address.
+    This is only safe if your SSO provider verifies email addresses, for example, by sending a verification email.
+    If the SSO provider does not send the `email_verified` claim, then pretix will accept all accounts. 
+    If the SSO provider sends the `email_verified` claim, then pretix will reject accounts with `email_verified=false` set on the user profile.
+    
 #### Example: Using Google Accounts as an SSO provider for pretix
 
 If you want to use Google as an SSO provider for pretix, follow the instructions on [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect) in the Google documentation.
