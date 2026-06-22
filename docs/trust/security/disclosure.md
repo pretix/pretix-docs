@@ -47,15 +47,23 @@ Security incidents concerning products under the pretix brand are announced on t
 
 ## Bug Bounties
 
-pretix GmbH is not a large enough company to run a formal bug bounty program.
-If you find a serious vulnerability in our service, we will find a way to show our gratitude.
-We have, on occasion, issued monetary bug bounties for issues of high severity in our core services.
+**We do not run a formal bug bounty program and do not regularly pay monetary bounties.**
 
-We consider an issue to have a high or critical severity if it allows the extraction of non-trivial confidential data, privilege escalation, authentication bypass, account takeover, or cross-site scripting in combination with a possibility of bypassing our content security policy.
+If you find a critical vulnerability in our service, we will try to find a way to show our gratitude.
+We only consider paying a monetary bounty for vulnerabilities of critical severity.
+We consider an issue to have critical severity only if it allows the extraction, modification or destruction of non-trivial confidential data through privilege escalation (excluding within the same organizer account), authentication bypass, or account takeover.
 
-We do not consider issues to have a high or critical severity that provide DoS or brute force attack vectors, can only be exploited in combination with significant other security flaws that have not been found, or issues that are mere logic bugs.
+We **never** pay bounties for the following types of reports:
 
-We do not issue bounties for any reports referring to best practices around [HTTP](https://en.wikipedia.org/wiki/HTTP) or email headers, [SPF/DKIM/DMARC](https://en.wikipedia.org/wiki/Email_authentication) records, [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) ciphers, etc.
+ - Denial-of-service attack vectors
+ - Brute-force attack vectors
+ - Rate-limiting issues
+- Issues that can only be exploited in combination with significant other security flaws that have not been found (e.g. [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting) without [CSP](https://en.wikipedia.org/wiki/Content_Security_Policy) bypass)
+- Logic bugs in our business logic
+- [HTTP](https://en.wikipedia.org/wiki/HTTP) or email header best practices
+- [SPF/DKIM/DMARC](https://en.wikipedia.org/wiki/Email_authentication) best practices
+- [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) cipher best practices
+- **Any reports generated primarily by LLMs**
 
 ## Rules
 
