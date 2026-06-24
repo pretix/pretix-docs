@@ -32,8 +32,8 @@ We will then click the :btn:Save: button.
 !!! Note
     If all dates in an event series have the same name, then the shop's calendar view will not display that name.
     Thus, the setup described in this section results in a calendar view full of nondescript date entries.
-    This situation will remedy itself once you have created another date with a different name.
-    Once you have followed along with the [next section](#creating-dates-for-special-events), the calendar view will display all date names again.
+    Once there is at least one other date with a different name, the calendar view will display all date names again.
+    Follow along with the [next section](#creating-dates-for-special-events) and the situation will remedy itself.
 
 ## Creating dates for special events
 
