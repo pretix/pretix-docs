@@ -343,16 +343,16 @@ The exact method differs depending on whether [tax is included in the price)](..
 
 ## Troubleshooting
 
-### A product does not appear in the ticket shop
+### A product does not show up in the ticket shop
 
-**Problem:** You have created a product, but your shop is not displaying it.
+**Problem:** You have created a product, but it does not show up in your shop.
 
 **Solution:** This can have a variety of reasons.
 Perform the following checks:
 
  1. The product may be inactive.
  In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Products:.
- Edit the product that is not appearing in your shop.
+ Edit the product that is not showing up in your shop.
  On the :btn:General: tab, verify that the box next to "Active" is checked.
 
 !!! Note
@@ -367,27 +367,27 @@ If that box is unchecked, verify that the box next to "Online shop" is checked.
  In order to resolve this, check the "Available from" or "Available until" fields.
  If the fields are empty, then there is no such restriction.
  If any of the fields contain dates and times, verify that you are within the specified time frame.
- If you want your shop to display the product even outside the specified time frame, set the toggles to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
+ If you want the product to show up in your shop even outside the specified time frame, set the toggles to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
  3. Your product may only be available through a voucher.
  In order to resolve this, verify that the box next to "This product can only be bought using a voucher" is **not** checked.
  If that box is active, then your shop will only show the product to customers who have entered a matching voucher code.
- If the voucher is configured to match a quota that contains the product, then the shop will not display it.
- If you still want your shop to display the product to all customers, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
+ If the voucher is configured to match a quota that contains the product, then it will not show up in the shop.
+ If you still want your shop to show the product to all customers, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
  4. Your product may only be available as part of a bundle.
  In order to resolve this, verify that the box next to "Only sell this product as part of a bundle" is **not** checked.
- If that box is active, then your shop will not display it as a standalone product.
- It will only display it as part of another product to which you added this product as a bundled product.
+ If that box is active, then it will not show up as a standalone product in your shop.
+ It will only show up as part of another product to which you added this product as a bundled product.
 
  5. Your product may only be available through a membership.
  In order to resolve this, verify that the box next to "Require a valid membership" is **not** checked.
- If that box is active, then your shop will only display the product to customers who are logged in to their account and who have a valid membership.
+ If that box is active, then your shop will only show the product to customers who are logged in to their account and who have a valid membership.
 
  6. Your product may only be available after another product has been sold out.
  In order to resolve this, verify that the field next to "Only show after sellout of" is empty.
- If you specify another product in that field, then your shop will only display this product if the other product is sold out.
- If you still want your shop to display the product regardless of the availability of the other product, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
+ If you specify another product in that field, then your shop will only show this product if the other product is sold out.
+ If you still want your shop to show the product regardless of the availability of the other product, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
  7. Your product may be in the wrong type of category.
  In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:.
