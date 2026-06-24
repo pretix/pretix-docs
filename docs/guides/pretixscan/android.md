@@ -106,7 +106,7 @@ Your next step depends on the type of event for which you want to scan tickets.
 
  - **Event series:** Select one of the dates from that event series.
    It does not matter which date you select.
-   Only the event series, the check-in list, and the check-in rules are relevant.
+   Only the event series itself, the check-in list, and the check-in rules are relevant.
    Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
 
  - **Multiple events or series:** This requires expert mode.
