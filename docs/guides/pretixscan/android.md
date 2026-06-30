@@ -105,6 +105,8 @@ Your next step depends on the type of event for which you want to scan tickets.
    Then, select a check-in list and tap the :btn:OK: button again.
 
  - **Event series:** Select one of the dates from that event series.
+   It does not matter which date you select.
+   Only the event series itself, the check-in list, and the check-in rules are relevant.
    Tap the :btn:OK: button, select the check-in list, and tap the :btn:OK: button again.
 
  - **Multiple events or series:** This requires expert mode.
@@ -199,7 +201,6 @@ Select the event from the calendar or list and tap the :btn:OK: button.
 Select the check-in list and tap the :btn:OK: button again.
 
 If you want to scan tickets for multiple events at the same time, you should enable **expert mode**.
-The same applies if you want to scan tickets for multiple dates in an event series which all have their own check-in lists.
 See [Scanning tickets for multiple events](#scanning-tickets-for-multiple-events) for more information.
 
 ## Advanced usage
@@ -345,6 +346,10 @@ If you select "Only errors or connection loss", then pretixSCAN will enable offl
 
 By default, pretixSCAN scans tickets for one event at a time.
 If you want to scan tickets for more than one event, you can use **expert mode**.
+
+!!! Note
+    If you want to scan tickets for multiple dates within the same event series, then you do **not** need to use expert mode.
+    You only need to use expert mode if you want to scan tickets for multiple events or multiple event series at the same time.
 
 This is useful if you are operating a single check-in for multiple events that are taking place at the same time.
 
