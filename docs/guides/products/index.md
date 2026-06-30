@@ -360,8 +360,8 @@ Perform the following checks:
 
  2. Your product may be restricted to sales channels other than your shop.
  In order to resolve this, open the :btn:Availability: tab.
-Under "Restrict to specific sales channels", verify that the box next to "Sell on all sales channels" is checked.
-If that box is unchecked, verify that the box next to "Online shop" is checked.
+ Verify that the box next to "Sell on all sales channels" is checked.
+ If that box is unchecked, verify that the box next to "Online shop" is checked.
 
  3. Your product's availability may be restricted to a certain time frame.
  In order to resolve this, check the "Available from" or "Available until" fields.
@@ -372,7 +372,6 @@ If that box is unchecked, verify that the box next to "Online shop" is checked.
  3. Your product may only be available through a voucher.
  In order to resolve this, verify that the box next to "This product can only be bought using a voucher" is **not** checked.
  If that box is active, then your shop will only show the product to customers who have entered a matching voucher code.
- If the voucher is configured to match a quota that contains the product, then it will not show up in the shop.
  If you still want your shop to show the product to all customers, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
  4. Your product may only be available as part of a bundle.
