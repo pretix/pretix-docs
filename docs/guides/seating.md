@@ -259,7 +259,15 @@ Click the :btn:Save: button.
 
 ## Advanced usage
 
-The following sections describe use cases that go beyond the basic setup process for seating plans.
+The following sections describe use cases that go beyond the basic setup process for seating plans:
+
+ - [changing a seating plan that is already in use](#making-changes-to-a-seating-plan-that-is-already-in-use)
+ - [blocking seats](#blocking-seats)
+ - [restricting availability](#restricting-availability)
+ - [optimizing seat selection](#optimizing-seat-selection-by-customers)
+ - [requiring a certain distance](#requiring-distance-between-bookings) between two separate bookings
+
+The following sections will explain those use cases in detail.
 
 ### Making changes to a seating plan that is already in use
 
@@ -333,7 +341,7 @@ If you want to make a selection of seats only available to a specific group of p
  You should generally use this method because it is more flexible.
  2. Blocking seats and allowing a certain sales channel to bypass the block.
  This method is useful if you want to be able to still sell blocked seats manually.
- It is also useful if you want to entrust this decision to the personell operating a specific sales channel, for example the POS at your event, or a reseller.
+ It is also useful if you want to entrust this decision to the personell operating a specific sales channel, for example, the POS at your event or a reseller.
 
 For the **first method**, create a seat category.
 Assign the seats you want to reserve for the restricted audience to it.
