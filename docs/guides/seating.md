@@ -33,7 +33,7 @@ If you want to sell tickets based on individual seats for your event, you need t
  - Using the seating plan editor to [create a layout](#creating-a-layout) which the editor will then [validate](#validating-the-layout)
  - [Creating an entry for the seating plan](#creating-an-entry-for-a-seating-plan) in your organizer account
  - [Creating products for seating](#creating-products-for-seating)
- - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-a-single-event) or your [event series](#assigning-a-seating-plan-to-a-date-in-an-event-series)
+ - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-a-single-event) or a date in your [event series](#assigning-a-seating-plan-to-a-date-in-an-event-series)
  - [Configuring the behavior of the seating plan](#configuring-the-behavior-of-the-seating-plan)
 
 The following sections will guide you through those steps in detail.
@@ -71,7 +71,7 @@ If you have uploaded an image, then it makes sense to adapt the **width** and **
 If not, you can create seats and other objects first, and adapt width and height of the layout to fit those elements comfortably.
 
 If your venue has more than one floor or seating block, then you should create a corresponding number of **zones** in the layout.
-If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have place the seats in separate zones.
+If your venue has seat and row numbers that occur more than once, and you want the layout to reflect those exact numbers, then you have to place the seats in separate zones.
 In order to create a new zone, click the :btn-icon:fa3-plus:: button next to "Zones" in the sidebar and enter a name.
 
 pretix maps products to seats depending on the **seat category**.
@@ -94,7 +94,7 @@ In order to **move the view** around, hold the `Ctrl` key, click the layout, hol
 
 In order to **select** existing elements, click the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button in the top bar.
 If you want to select only a single seat, click the :btn-icon:i-tool-seatselect:: "select seats" button instead.
-Click the element.
+Click the element you want to select.
 You can also select a single seat by clicking the :btn-icon:fa3-mouse-pointer:: "select rows or shapes" button and then double-clicking the seat.
 
 !!! Note
@@ -111,9 +111,9 @@ Alternatively, hold the left mouse button and move the mouse to draw a selection
 Use the sidebar on the right to edit the properties of all elements in your selection.
 
 In order to **move** selected elements, drag and drop them with your mouse.
-If you want to keep the movement aligned to the grid, hold the `Shift` button while you are moving them.
+If you want to keep the movement aligned to the grid, hold the `Shift` button while you are moving them with your mouse.
 Alternatively, you can use the arrow keys.
-Hold the `Shift` key for larger movements and the `Alt` key for smaller movements.
+Hold the `Shift` key for larger movements and the `Alt` key for smaller movements while moving elements with the arrow keys.
 
 If you want to move selected elements to a **different zone**, click the :btn-icon:fa3-cut:: "cut" button.
 Alternatively, press `Ctrl`+`X`.
@@ -131,17 +131,17 @@ See [Validating the layout](#validating-the-layout) for information on how to ha
 The editor will **validate** your layout.
 If the validation succeeds, then the "Validation" symbol in the top bar will be a green checkmark :btn-icon:fa3-check-circle-o::.
 If validation fails, then the symbol will be a red exclamation mark :btn-icon:fa3-exclamation-circle:: instead.
-Clicking the :btn-icon:fa3-save:: "Save" button while validation is failing results in your browser displaying a warning popup.
+If you click the :btn-icon:fa3-save:: "Save" button while validation is failing, then your browser will display a warning popup.
 You can still download the faulty plan by clicking the :btn:OK: button in that warning popup.
 
-One possible cause for a failed validation are **duplicate** combinations of zone, row number, and seat numbers.
+One possible cause for a failed validation is the occurrence of **duplicate** combinations of zone, row number, and seat numbers.
 Each unique combination may only occur once.
 Another possible cause are duplicate seat IDs.
 
 Seat IDs can be one of three things:
 
  1. a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) consisting of letters, numbers, and dashes
- 2. a string containing the zone, row number, and seat number, joined with dashes.
+ 2. a string containing the zone, row number, and seat number, joined with dashes
  3. a custom string defined by you
 
 The editor will assign seats the first option (UUID) during creation if you do not change any of the defaults (row or seat number).
@@ -149,7 +149,7 @@ If you change seat or row number, or if you use the "Reversed" toggle, the edito
 You can edit the seat ID by selecting a single seat and editing the string in the "Seat ID" field.
 
 **Copying rows** creates duplicate seat IDs as well as combination of zone, row number, and seat number.
-Change the row number of the row you copied to an number that is not yet in use on the plan.
+Change the row number of the row you copied to a number that is not yet in use on the plan.
 Then, activate the "Reversed" toggle and deactivate it again.
 This refreshes seat IDs so that there will be no more duplicates in that row.
 
@@ -157,7 +157,7 @@ This refreshes seat IDs so that there will be no more duplicates in that row.
     Activating or deactivating the "Reversed" toggle on a row replaces all seat IDs in that row with a string containing the zone, row number, and seat number, joined with dashes.
     This is also true for any custom seat IDs that you entered manually.
 
-In order to **save** the layout, click the :btn-icon:fa3-save:: save button in the top left.
+In order to **save** the layout, click the :btn-icon:fa3-save:: "Save plan" button in the top left.
 This opens a dialog allowing you to save the resulting JSON file on your computer.
 
 ### Creating an entry for a seating plan
@@ -193,7 +193,7 @@ Set the "total capacity" of the quota to the number of seats in the seat categor
 For instance, if your seating plan has 48 seats in the seat category "Box seats", create a quota with a total capacity of 48.
 Add the product that you assigned to the "Box seats" seat category to that quota.
 
-Both the number of seats on the plan and the total capacity of the quota limit the number of purchases possible.
+Both the number of seats on the plan and the total capacity of the quota limit the number of possible purchases.
 If the quota runs out, then customers will not be able to select a seat in the corresponding seat category.
 If you sell all seats in the seat category, then customers will also not be able to buy a ticket for that seat category.
 
@@ -253,7 +253,7 @@ If you want your customers to be able to select their own seats, check the box n
 If you want to assign seats to customers, uncheck the box next to "Customers can choose their own seats".
 You will need to manually assign seats to customers before the event.
 You should take care of this manual assignment before issuing tickets to your customers.
-Otherwise, pretix cannot include the seat information on the ticket.
+Otherwise, pretix will not be able to include the seat information on the ticket.
 
 Click the :btn:Save: button.
 
@@ -302,13 +302,13 @@ Assign that product to the seat category as described in [Assigning a seating pl
 
 For the **second method**, block the seats for which you want to restrict availability as described under [Blocking seats](#blocking-seats).
 Then, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
-Under "Allow to buy blocked seats on these channels", select the sales channel for through you want those blocked seats to still be available.
+Under "Allow to buy blocked seats on these channels", select the sales channel through which you want those blocked seats to still be available.
 
 ### Optimizing seat selection by customers
 
 If customers are completely free in selecting their seat while placing an order, then this may have undesirable outcomes.
 For instance, customer orders may leave single seats empty, which are difficult to sell to other customers.
-This section tells you how to prevent bookings from leaving single seats empty, and how to enforce starting sales from a certain seat in a row.
+This section tells you how to prevent bookings from leaving single seats empty and how to enforce starting sales from a certain seat in a row.
 
 If you want to **prevent** bookings from leaving **single seats empty**, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
 Under "Selection restrictions", check the box next to "Do not allow to leave single seats empty".
@@ -322,8 +322,8 @@ The appropriate selection depends on the seat number and on whether or not the r
 
  - If the seat has the lowest number in the row and the row is **not** reversed, select `>`.
  - If the seat has the highest number in the row and the row is **not** reversed, select `<`.
- - If the seat has the lowest number in the row and the row is reversed, select `>`.
- - If the seat has the highest number in the row and the row is reversed, select `<`.
+ - If the seat has the lowest number in the row and the row is reversed, select `<`.
+ - If the seat has the highest number in the row and the row is reversed, select `>`.
 
 If you want customers to be able to book seats starting in the middle of the row, select the seat in the middle of the row.
 Click the "Optimizer hint" drop-down menu and select `<>`.
@@ -338,9 +338,9 @@ Click the :btn:Save: button.
 You can require a certain spatial distance between separate bookings.
 This can be useful if, for instance, you want to lower the risk of infection for your event's attendees during a pandemic.
 
-This feature relies on the distance between from one seat's center point to the next seat's center point in your layout.
+This feature relies on the distance from one seat's center point to the next seat's center point in your layout.
 It does not use the physical distance between seats at your venue.
-A pretix seating plan cannot be a guarantee that you are complying with regulation.
+Implementing a distance requirement in your pretix seating plan cannot be a guarantee that you are complying with regulation.
 
 We recommend taking measurements at your venue to determine the distance between seats.
 Then, [edit your layout](#creating-a-layout) in such a way that the distance between seats in the plan reflects the distance between seats at your venue.
