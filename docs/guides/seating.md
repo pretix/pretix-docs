@@ -261,6 +261,47 @@ Click the :btn:Save: button.
 
 The following sections describe use cases that go beyond the basic setup process for seating plans.
 
+### Making changes to a seating plan that is already in use
+
+As soon as you have assigned a seating plan to an event or date, it becomes impossible to change that seating plan under the same name.
+But there are two methods for still making changes to the plan.
+
+ 1. Removing the selection of the plan, editing it, and selecting it for the event or date again
+ 2. Migrating your existing plan to a new plan
+
+The **first method** only works if your seating plan is only assigned to a single event or date, and if you have not sold any products for the seats on it yet.
+In order to remove the selection of your seating plan for a single event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
+In order to do the same for a date in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates: and select the date in question.
+The process is the same from here on out.
+
+Delete your selection from the field labeled "Seating plan" and save your changes.
+This makes it possible to edit the seating plan and assign it to this event or date once more.
+You will have to map categories to products again.
+
+The **second method** uses the migration feature.
+You should use this if you have assigned your seating plan to multiple events or dates, or if you have already sold products for the seats on it.
+Even if you are only making a small change, you still need to migrate to a new plan.
+
+Edit the layout as needed.
+For every seat in your previous layout that you have already sold or created a voucher for, your new layout must contain a seat with the same seat ID.
+Save the layout and create a new entry for the seating plan in your organizer account.
+
+In order to migrate from the previous seating plan to the new, navigate to :navpath:Your organizer → :i-seat: Seating plans:.
+Search for the seating plan from which you want to migrate in the list.
+Click the :btn-icon:fa3-share:: "Migrate to new plan" button next to it.
+
+On the next page, select all events or dates for which you want to migrate the seating plan.
+Under "New seating plan", select the plan to which you want to migrate.
+Click the :btn:Save: button.
+
+pretix will check whether all seats that you already sold are present in the new plan.
+It will also check whether all seats that are in use in a voucher are present.
+The identifying factor is the seat ID.
+If the new plan fails to fulfill these two requirements, then the migration will fail.
+The page will display an error message.
+
+If the new plan fulfills both requirements, then the migration will be successful.
+
 ### Blocking seats
 
 You can disable sales for a certain selection of seats.
@@ -366,47 +407,6 @@ If you want to enforce this distance only within the same row, check the box nex
 If you leave that box unchecked, the restriction will also apply to seats between different rows.
 
 Click the :btn:Save: button.
-
-### Making changes to a seating plan that is already in use
-
-As soon as you have assigned a seating plan to an event or date, it becomes impossible to change that seating plan under the same name.
-But there are two methods for still making changes to the plan.
-
- 1. Removing the selection of the plan, editing it, and selecting it for the event or date again
- 2. Migrating your existing plan to a new plan
-
-The **first method** only works if your seating plan is only assigned to a single event or date, and if you have not sold any products for the seats on it yet.
-In order to remove the selection of your seating plan for a single event, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
-In order to do the same for a date in an event series, navigate to :navpath:Your event → :fa3-calendar: Dates: and select the date in question.
-The process is the same from here on out.
-
-Delete your selection from the field labeled "Seating plan" and save your changes.
-This makes it possible to edit the seating plan and assign it to this event or date once more.
-You will have to map categories to products again.
-
-The **second method** uses the migration feature.
-You should use this if you have assigned your seating plan to multiple events or dates, or if you have already sold products for the seats on it.
-Even if you are only making a small change, you still need to migrate to a new plan.
-
-Edit the layout as needed.
-For every seat in your previous layout that you have already sold or created a voucher for, your new layout must contain a seat with the same seat ID.
-Save the layout and create a new entry for the seating plan in your organizer account.
-
-In order to migrate from the previous seating plan to the new, navigate to :navpath:Your organizer → :i-seat: Seating plans:.
-Search for the seating plan from which you want to migrate in the list.
-Click the :btn-icon:fa3-share:: "Migrate to new plan" button next to it.
-
-On the next page, select all events or dates for which you want to migrate the seating plan.
-Under "New seating plan", select the plan to which you want to migrate.
-Click the :btn:Save: button.
-
-pretix will check whether all seats that you already sold are present in the new plan.
-It will also check whether all seats that are in use in a voucher are present.
-The identifying factor is the seat ID.
-If the new plan fails to fulfill these two requirements, then the migration will fail.
-The page will display an error message.
-
-If the new plan fulfills both requirements, then the migration will be successful.
 
 ## Further information
 
