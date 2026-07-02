@@ -706,7 +706,7 @@ If your pretix shop is running under a custom domain, you need to add the follow
  - `connect-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
  - `frame-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
  - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
-    For pretix Hosted, also add `https://cdn.pretix.space`. 
+    For pretix Hosted, also add `https://cdn.pretix.cloud`. 
 
 #### Cross Origin Opener Policy
 
