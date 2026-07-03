@@ -38,6 +38,8 @@ The process of creating a custom check-in rule may involve the following steps:
  - [date and time tolerances](#date-and-time-tolerances)
 
 The following sections will guide you through those steps in detail.
+If you have already understood the basic operation of the custom check-in rule editor, refer to the [Applications](#applications) section.
+That section covers examples for many common use cases.
 
 ### Adding a simple condition
 
@@ -174,10 +176,10 @@ This section guides you through some useful applications of custom check-in rule
 ### Allowing a specific number of entries per ticket
 
 This section explains how to set up a custom check-in rule to allow a certain number of entries per ticket.
-Check the box next to "Allow multiple entries per ticket".
+In order to do so, check the box next to "Allow multiple entries per ticket".
 
 Create an AND-bracket and add a condition within that bracket.
-Select `Product`, then `is one of`, and then choose the products in question.
+Select `Product`, then `is one of`, and then select the products in question.
 Add another condition, select `Number of previous entries` and then `<`.
 Enter the number of total entries you want to allow, for instance, `10`.
 
@@ -190,9 +192,9 @@ In order to solve this problem, you need to add conditions that include the othe
 Click the :btn:OR: button in the top right.
 This creates an OR-bracket around the conditions you previously created.
 
-Click the :btn-icon:fa3-plus-circle: Add condition: button located within the OR-bracket, but not within the AND-bracket.
+Click the :btn-icon:fa3-plus-circle: Add condition: button located within the OR-bracket, but **not** within the AND-bracket.
 Select `All of the conditions below (AND)` and add another condition directly below.
-Select `Product`, then `is one of`, and then choose those products that the rule above does not cover.
+Select `Product`, then `is one of`, and then select those products that the rule above does not cover.
 Add another condition immediately below.
 Select `Number of previous entries`, then `=`, and then `0`.
 
@@ -200,33 +202,33 @@ Select `Number of previous entries`, then `=`, and then `0`.
 
 With the setup in the screenshot, pretixSCAN will recognize the product "Season ticket" as valid as long as it has been used to enter less than ten times.
 This allows up to ten uses of the ticket.
-pretixSCAN will recognize the products "Standard ticket" and "Discount ticket" if they have been used 0 times, so only once in total.
+pretixSCAN will recognize the products "Standard ticket" and "Discount ticket" as valid if they have been used 0 times before, so only once in total.
 
 ![Visualization of custom check-in rule with two paths. The first path has 'Product: Season ticket' and 'Number of previous entries < 10'. The second path has 'Product: Standard ticket, discount ticket' and 'Number of previous entries = 0'. Both paths end with green checkmarks.](../../assets/screens/check-in/multiple-visualization.png "Visualization of full custom check-in rule for multiple entries")
 
 ### Allowing unlimited entries on a single day
 
 This section explains how to set up a custom check-in rule to allow a certain number of entries per ticket.
-Check the box next to "Allow multiple entries per ticket".
+In order to do so, check the box next to "Allow multiple entries per ticket".
 
 Create an AND-bracket and add a condition within that bracket.
-Select `Product`, then `is one of`, and then choose the products in question.
+Select `Product`, then `is one of`, and then select the products in question.
 Add an OR-bracket below.
 Add a condition within the OR-bracket, select `Number of previous entries`, then `=`, and then `0`.
 Add another condition within the OR-bracket, select `Number of previous entries since midnight`, then `≥`, and then `1`.
 
 ![Custom check-in rule allowing entry if 'Product' 'is one of' 'Fast lane ticket' AND 'Number of previous entries' '=' '0', or 'Number of previous entries since midnight' '≥' '1'.](../../assets/screens/check-in/single-day.png "Custom check-in rule for unlimited entries on a single day")
 
-With the setup in the screenshot, pretixSCAN will recognize a product if it is being used for the first time, or if it has been used previously on the same day.
+With the setup in the screenshot, pretixSCAN will recognize a product as valid if it is being used for the first time, or if it has been used previously on the same day.
 This allows for unlimited entries on a singular calendar day of the ticket holder's choosing.
 
 ### Allowing entries on a specific number of days
 
 This section explains how to set up a custom check-in rule to allow entry on any specific number of days.
-Check the box next to "Allow multiple entries per ticket".
+In order to do so, check the box next to "Allow multiple entries per ticket".
 
 Create an AND-bracket and add a condition within that bracket.
-Select `Product`, then `is one of`, and then choose the products in question.
+Select `Product`, then `is one of`, and then select the products in question.
 Add an OR-bracket below.
 
 Add a condition within the OR-bracket, select `Number of days with a previous entry`, then `<`, and select the number of days on which you want to allow entry.
@@ -240,16 +242,16 @@ With this setup, the ticket holder can enter as many times as they like, but onl
 ### Setting a minimum time between entries
 
 This section explains how to set up a custom check-in rule to allow unlimited entries if a certain period of time has passed between entries.
-Check the box next to "Allow multiple entries per ticket".
+In order to do so, check the box next to "Allow multiple entries per ticket".
 
 Create an AND-bracket and add a condition within that bracket.
-Select `Product`, then `is one of`, and then choose the products in question.
+Select `Product`, then `is one of`, and then select the products in question.
 Add an OR-bracket below.
 Add a condition within the OR-bracket, select `Number of previous entries`, then `=`, and then `0`.
 Add another condition within the OR-bracket, select `Minutes since last entry (-1 on first entry)`, and then `>`
 
 Enter the number of minutes for the minimum period of time that must pass between entries.
-For instance, if you want to allow entry after at least 2 hours, select `120`.
+For instance, if you want to allow entry only after at least 2 hours have passed, enter `120`.
 
 ![Custom check-in rule allowing entry if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of previous entries' '=' '0', or 'Minutes since last entry (-1 on first entry)' '>' '120'.](../../assets/screens/check-in/minimum.png "Custom check-in rule for unlimited entries with a time of at least 120 minutes between them")
 
@@ -258,14 +260,14 @@ With this setup, the ticket holder can enter as many times as they like, but onl
 ### Allow entries for a specific time span
 
 This section explains how to set up a custom check-in rule to allow entries for a limited period of time after the first entry.
-Check the box next to "Allow multiple entries per ticket".
+In order to do so, check the box next to "Allow multiple entries per ticket".
 
 Create an OR-bracket and add a condition within that bracket.
-Select `Product`, then `is one of`, and then choose the products in question.
-Add another condition, select `Minutes since last first (-1 on first entry)`, and then `≤`
+Select `Product`, then `is one of`, and then select the products in question.
+Add another condition, select `Minutes since first entry (-1 on first entry)`, and then `≤`
 
 Enter the number of minutes for which you want to allow entry after the ticket holder has had their ticket validated for the first time.
-For instance, if you want to allow entry for 2 hours, select `120`.
+For instance, if you want to allow entry for 2 hours, enter `120`.
 
 ![Custom check-in rule allowing entry if 'Product' 'is one of' 'Standard ticket' or 'Discount ticket' AND 'Number of previous entries' '=' '0', or 'Minutes since last entry (-1 on first entry)' '≤' '120'.](../../assets/screens/check-in/time-span.png "Custom check-in rule for unlimited entries within a time span of 120 minutes")
 
@@ -275,7 +277,7 @@ With this setup, the ticket holder can enter as many times as they like for 120 
 
 This section explains how to set up a custom check-in rule to allow unlimited entries **before** the start of the event, but only limited entries during the event itself.
 This can be useful if you want attendees to be able to access the venue while the event is being set up.
-Check the box next to "Allow multiple entries per ticket".
+In order to do so, check the box next to "Allow multiple entries per ticket".
 
 Create an OR-bracket and add a condition within that bracket.
 Select `Current date and time`, then `is before`, then `Event start`, and enter a tolerance of `0`.
@@ -286,4 +288,4 @@ Select `Number of previous entries since`, then `Event start`, then `=` and ente
 
 ![Custom check-in rule allowing entry if 'Current date and time' 'is before' 'Event start' OR 'Current date and time' 'is after' 'Event start' AND 'Number of previous entries since' 'Event start' '=' '0'.](../../assets/screens/check-in/before.png "Custom check-in rule for unlimited entries before the event")
 
-With this setup, ticket holders will be able to enter however often they want before the start of the event, but only once after the event has started.
+With this setup, ticket holders will be able to enter however often they want before the start of the event, but as soon as the event starts, they can only enter one more time.
