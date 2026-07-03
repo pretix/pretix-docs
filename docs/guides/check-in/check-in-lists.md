@@ -1,4 +1,4 @@
-# Check-In Lists
+# Check-in lists
 
 This article tells you how to create, configure, and use check-in lists.
 Check-in lists keep track of who attends your event.
