@@ -11,9 +11,20 @@ You can configure all Portuguese VAT rates in pretix using [tax rules](../../gui
 
 ### E-invoicing
 
-All invoices in Portugal must be created by [certified invoicing software](https://vat-one-stop-shop.ec.europa.eu/national-vat-rules/portugal-vat-rules_en).
-Starting in 2026, they must also be [signed](https://diariodarepublica.pt/dr/en/detail/decree-law/28-2019-119622094) using a [qualified electronic signature](https://en.wikipedia.org/wiki/Qualified_electronic_signature).
-pretix does **not** support this, but it is possible to sell tickets through pretix and issue invoices outside of pretix.
+All invoices in Portugal must be created by [certified invoicing software](https://vat-one-stop-shop.ec.europa.eu/national-vat-rules/portugal-vat-rules_en) and submitted electronically to the tax authority (Autoridade Tributária e Aduaneira, AT).
+
+<!-- md:hosted -->
+
+On pretix Hosted, sending invoices to AT is supported through a partner.
+To get started, go to :navpath:Your organizer → :fa3-wrench: Settings → Plugins: and enable the plugin "E-invoicing for Portugal (via Invopop)".
+Then, go to :navpath:Your organizer → :fa3-wrench: Settings → E-invoicing (PT):, fill out details about your company and follow the displayed steps for obtaining AT credentials.
+
+Once you have completed this setup, you can go to :navpath:Your event → :fa3-wrench: Settings → Plugins: and enable the plugin "E-invoicing for Portugal (via Invopop)" for your event.
+Then, to :navpath:Your event → :fa3-wrench: Settings → E-invoicing: fill out the settings and follow all recommendations.
+Invoices will be transmitted to SdI automatically through our partner Invopop S.L. and their subprocessor RUPEAL.
+An additional price per invoice is charged according to our [price list](https://pretix.eu/about/en/pricing).
+
+pretix Enterprise and pretix Community currently do not support the Portuguese invoicing process.
 
 More information is available on the website of the European Commission: [eInvoicing in Portugal](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Portugal).
 
