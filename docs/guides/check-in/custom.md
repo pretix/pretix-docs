@@ -1,32 +1,48 @@
 # Custom check-in rules
 
 This article explains how to set up custom check-in rules.
-A custom check-in rule is always specific to one check-in list.
 You can use custom check-in rules to place restrictions on the validity of tickets based on time, number of previous entries, ticket type, gate, and other conditions.
 pretixSCAN will interpret these  rules when scanning the ticket and arrive at the correct result automatically.
+A custom check-in rule is always specific to one check-in list.
 
 ## Prerequisites
 
 This article assumes that you have read [check-in lists](check-in-lists.md) and set up one or more basic check-in lists.
-Using the logical operators such as AND and OR can be counterintuitive.
-A basic understanding of predicate logic can be helpful, but it is not required for using this feature.
+
+The way the logical operators AND and OR work may run counter to your intuition.
+Combinations of these operators may have results that you do not expect.
+Thus, a basic understanding of predicate logic can be helpful, but it is not required for using this feature.
 
 ## General usage
 
 In order to add custom rules to a check-in list, navigate to :navpath:Your event → :fa3-check-square-o: Check-in:.
 Click the change button :btn-icon:fa3-wrench:: next to the check-in list you want to edit.
 
-By default, pretixSCAN will recognize any ticket on the check-in list as valid as long as the ticket has been paid for and either the ticket has not been scanned before.
+By default, pretixSCAN will recognize any ticket on the check-in list as valid as long as the ticket has been paid for and the ticket has not been scanned before.
 The app will also recognize the ticket as valid if it has been scanned and then scanned for exit, meaning the entry status is `absent`.
 The exact behavior depends on your settings on the :btn:General: and :btn:Advanced: tabs on this page.
 
 !['Check-in lists' page on the 'Advanced' tab, displaying an infobox and a warning box. There are checkboxes for optional settings and an empty field labeled 'Automatically check out everyone at'.](../../assets/screens/check-in/advanced.png "Advanced options for check-in list default")
 
 If you want to place additional restrictions on a ticket for pretixSCAN to recognize it as valid, set up a custom check-in rule.
-In order to do so, under "Custom check-in rule", on the :btn-icon:fa3-edit: Edit: tab, click the :btn-icon:fa3-plus-circle: Add condition: button.
-A dropdown menu appears, listing types of conditions.
+In order to do so, open the :btn:Advanced: tab and scroll down to the "Custom check-in rule" subheading.
+The :btn-icon:fa3-edit: Edit: tab allows you to add and edit conditions.
+
+The process of creating a custom check-in rule may involve the following steps:
+
+ - [simple conditions](#adding-a-simple-condition)
+ - [AND- and OR-brackets](#organizing-conditions-with-and--and-or-brackets)
+ - [product-specific conditions](#setting-conditions-specific-to-products-or-variations)
+ - allowing [multiple entries](#allowing-multiple-entries)
+ - [visualizing rules](#visualizing-rules)
+ - [date and time tolerances](#date-and-time-tolerances)
+
+The following sections will guide you through those steps in detail.
 
 ### Adding a simple condition
+
+Click the :btn-icon:fa3-plus-circle: Add condition: button.
+A dropdown menu appears, listing types of conditions.
 
 All conditions **except** `All of the conditions below (AND)` and `At least one of the conditions below (OR)` are simple conditions.
 Depending on your use case, you may only need a single one of these simple conditions for your custom check-in rule.
@@ -34,12 +50,12 @@ If you need to set up more than one condition, then you need to organize these c
 
 Select a condition from the dropdown menu, for instance, `Current day of the week (1 = Monday, 7 = Sunday)`.
 The page now displays an additional dropdown menu listing mathematical symbols for "equals", "greater than", "smaller than or equal to" and so on.
-Select a symbol, for example, `<`.
+Select a symbol, for example, `<` (smaller than).
 The page now displays an additional field in which you can enter a number.
 Enter a number, for example, `6`.
 Click the :btn:Save: button.
 
-If you set up a condition as described in the example, then pretixSCAN will only recognize a ticket as valid if the current day of the week is less than 6, or in other words, only Monday through Friday.
+If you set up a condition as described in this example, then pretixSCAN will only recognize a ticket as valid if the current day of the week is less than 6, or in other words, only Monday through Friday.
 pretixSCAN will reject tickets scanned on Saturday or Sunday.
 
 You can remove a simple condition by clicking the :btn-icon:fa3-trash:: delete button.
@@ -47,7 +63,7 @@ You can duplicate it by clicking the :btn-icon:fa3-copy:: clone button.
 
 ### Organizing conditions with AND- and OR-brackets
 
-The most important types of conditions are `All of the conditions below (AND)` and `At least one of the conditions below (OR)`.
+The most useful types of conditions are `All of the conditions below (AND)` and `At least one of the conditions below (OR)`.
 These conditions are special because they allow you to organize conditions into a complex logic for the check-in.
 Adding one of these two conditions creates an AND-bracket or an OR-bracket to which you can add more conditions.
 
@@ -56,21 +72,23 @@ If you select `All of the conditions below (AND)` from the dropdown menu and add
 If you select `At least one of the conditions below (OR)` and add conditions to the resulting OR-bracket, then at least one of those conditions must be fulfilled for pretixSCAN to recognize the ticket as valid.
 If multiple or even all conditions within the OR-bracket are fulfilled, then pretixSCAN will still recognize the ticket as valid.
 
-This may be counter-intuitive.
-The condition `At least one of the conditions below (OR)` represents an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction).
-This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or), also known as XOR ("either one or the other").
-The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited.
+!!! Note
+    The behavior of the OR-bracket may be counter-intuitive.
+    The condition `At least one of the conditions below (OR)` represents an [inclusive or](https://en.wikipedia.org/wiki/Logical_disjunction).
+    This is distinct from an [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or), also known as XOR ("either one or the other").
+    The custom check-in rule feature does not offer an "exclusive or" condition because its use would be very limited.
 
 You can create an AND- or an OR-bracket around an existing condition by clicking :btn:OR: or :btn:AND: next to the condition.
 When hovering the mouse over nested brackets, the website will highlight AND-brackets in red, OR-brackets in green, and other conditions in purple.
 
-You can remove an AND- or OR-bracket **without** removing its contents by clicking the :btn-icon:fa3-cut:: cut button next to it.
-You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: delete button.
-You can duplicate it along with all rules nested within it by clicking the :btn-icon:fa3-copy:: clone button.
+You can remove an AND- or OR-bracket **without** removing its contents by clicking the :btn-icon:fa3-cut:: "Cut" button next to it.
+You can remove it **along with all rules nested within it** by clicking the :btn-icon:fa3-trash:: "Delete" button.
+You can duplicate it along with all rules nested within it by clicking the :btn-icon:fa3-copy:: "Duplicate" button.
 
 ### Setting conditions specific to products or variations
 
-Whenever you set up a custom check-in rule using the condition "Product" or "Product variations", then you need to cover all products or product variations on the check-in list in that rule.
+If you set up a custom check-in rule using the condition `Product` or `Product variations`, then you need to cover all products or product variants on the check-in list in that rule.
+Your check-in list must either include conditions covering **all** products and variations, or **not** use the conditions `Product` and `Product variations` at all.
 
 For illustrative purposes, assume you have a check-in list called "Default" containing the products "Standard ticket" and "Discount ticket".
 You set up a custom check-in rule with the condition `Product` `is one of` `Standard ticket`.
@@ -91,7 +109,6 @@ Add the following condition within the AND-bracket: `Product` `is one of` and th
 Add another simple condition of your choosing to the end-bracket.
 
 As soon as the custom check-in rule mentions every product on the check-in list at least once, the infobox will disappear.
-pretixSCAN will not reject products outright anymore, but will recognize them as valid or invalid depending on the rule you set up.
 
 ### Allowing multiple entries
 
@@ -117,24 +134,6 @@ Add another condition, select `Number of previous entries`, then `=`, and then e
 With this rule in place, attendees who hold a season pass may enter.
 Attendees who hold any other ticket may only enter if they have not entered before.
 
-### Visualizing rules
-
-Visualizing rules can help you better understand the logic you set up.
-It aids you in comprehending the possible conditional paths a ticket scan can take.
-
-After setting up your check-in rule, open the :btn-icon:fa3-eye: Visualize: tab.
-This tab displays your custom check-in rule as a flowchart.
-OR-brackets take the shape of branching paths.
-AND-brackets are listed one after the other on the same path.
-All paths end in a green :fa3-check-circle: checkmark, representing a successful validation.
-
-!['Check-in lists' page on the 'Advanced' tab, displaying a visualization of the custom rule. The path starts on the left and branches into two. Both paths contain two boxes and end in green checkmarks. The boxes on the top path read 'Product Season ticket' and 'Number of previous entries < 10'. The boxes on the bottom path read 'Product: Standard ticket, Discount ticket' and 'Number of previous entries = 0'.](../../assets/screens/check-in/visualize.png "Custom check-in rule visualization")
-
-If you want a full-screen view of the visualization, hover the mouse over the flowchart and click the :fa3-window-maximize: maximize button on the right.
-
-You cannot make any changes to the visualization itself.
-If you want to make any further changes to your rule, click the btn-icon:fa3-edit: Edit:.
-
 ### Date and time tolerances
 
 The condition`Current date and time` allows you to set tolerances.
@@ -148,7 +147,25 @@ In this case, attendees will be admitted up to ten minutes **before** the event 
 Assume, for example, that you select `Current date and time`, then `is before`, then `Event start` and set a tolerance of `10`.
 In this case, attendees will be admitted up to ten minutes **after** the event has started.
 
-If you enter a tolerance of `0`, then pretixSCAN will recognize tickets in the exact time frame you define.
+If you enter a tolerance of `0`, then pretixSCAN will only recognize tickets as valid in the exact time frame you define.
+
+### Visualizing rules
+
+Visualizing rules can help you better understand the logic you set up.
+It aids you in comprehending the possible conditional paths a ticket scan can take.
+
+After setting up your check-in rule, open the :btn-icon:fa3-eye: Visualize: tab.
+This tab displays your custom check-in rule as a flowchart.
+OR-brackets take the shape of branching paths.
+AND-brackets are listed one after the other on the same path.
+All paths end in a green :fa3-check-circle: checkmark, representing a successful validation.
+
+!['Check-in lists' page on the 'Advanced' tab, displaying a visualization of the custom rule. The path starts on the left and branches into two. Both paths contain two boxes and end in green checkmarks. The boxes on the top path read 'Product Season ticket' and 'Number of previous entries < 10'. The boxes on the bottom path read 'Product: Standard ticket, Discount ticket' and 'Number of previous entries = 0'.](../../assets/screens/check-in/visualize.png "Custom check-in rule visualization")
+
+If you want a full-screen view of the visualization, hover the mouse over the flowchart and click the :fa3-window-maximize: "Maximize" button in the top right corner.
+
+You cannot make any changes to the visualization itself.
+If you want to make any further changes to your rule, click the :btn-icon:fa3-edit: Edit:.
 
 ## Applications
 
