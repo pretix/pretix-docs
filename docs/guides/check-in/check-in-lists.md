@@ -49,7 +49,7 @@ The following sections explain how to set up check-in lists to support all of th
 
 In order to configure a check-in list, click the :btn-icon:fa3-wrench:: button next to it.
 
-If you also want attendees who have not yet completed the payment for their order to be able to check in at your event, check the box next to "Include pending orders".
+If you want attendees who have not yet completed the payment for their order to still be able to check in at your event, check the box next to "Include pending orders".
 Checking in an attendee who has not paid their order does not affect the order's payment status.
 
 The box next to "All products (including newly created ones)" is checked by default.
@@ -70,7 +70,8 @@ Click the :btn-icon:fa3-plus: Create a new check-in list: button.
 Enter a name for the new check-in list and check the boxes next to any tickets you want to include on it.
 
 For instance, if you want to implement a use case like the one described under [General usage](#general-usage), name the check-in list "Fast lane".
-Uncheck the box next to "All products (including newly created ones)" and under "Limit to products", check the boxes next to your fast lane tickets.
+Uncheck the box next to "All products (including newly created ones)".
+Under "Limit to products", check the boxes next to your fast lane tickets.
 You would then use this list at the fast lane entrance at your event.
 
 !['Check-in list' page on the 'General' tab, displaying 'Fast lane' in the name field and checkboxes for including pending orders, all products, or limiting the list to certain products. The fast lane ticket is checked and everything else is unchecked.](../../assets/screens/check-in/fast-lane.png "Edit check-in list fast lane")
@@ -96,9 +97,10 @@ This section explains how you can use check-in lists to manage the check-in at y
 
 ### Check-in via pretixSCAN
 
-The most convenient and powerful method for checking in customers is using the pretixSCAN app.
+The most convenient and powerful method for checking in customers is using the [pretixSCAN](../pretixscan/index.md) app.
 Acquire a device with a scanner or camera, install pretixSCAN on it, connect it to your organizer account, and place it at the entrance to your event.
-We will cover the specifics of using pretixSCAN in a dedicated article.
+
+You can find more information on pretixSCAN and how to use it under [pretixSCAN](../pretixscan/index.md).
 
 ### Manual check-in via backend
 
@@ -117,7 +119,7 @@ The next page displays a list with all issued tickets.
 Ask attendees their name, email address, ticket code, or order code.
 Use the "Search attendee" function or browse the list to locate the corresponding entry.
 Check the box next to that entry and click the :btn-icon:fa3-sign-in: Check-In selected attendees (#): button.
-It is possible to select multiple attendees and check them all in at once.
+You can select multiple attendees and check them all in at once.
 
 ### Paper check-in
 
@@ -135,11 +137,11 @@ Regardless of which path you take, you will land on a page titled "Data export â
 Under "Check-in list", select the list you want to export.
 You can use the settings on this page to filter and sort the file export by certain parameters.
 If you want to use the export for manual check-in, then you probably want an alphabetical list of all ticket holders.
-Under "Check-in status", select "All attendees".
+Under "Check-in status", select `All attendees`.
 "Sort by" one of the attendee name options.
 
-Under "Include questions", select any questions that are relevant for check-in.
-Once you are satisfied with your settings, click the :btn-icon:fa3-download: Start export: button.
+Under "Include questions", select any questions that are relevant for the check-in.
+Once you are happy with your choices, click the :btn-icon:fa3-download: Start export: button.
 Your browser will now download a PDF of the list or open it in a new tab.
 The list includes the following columns:
 
