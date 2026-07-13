@@ -72,7 +72,8 @@ So we will enter "Tutorial Ltd." into the full name field, and "tut" into the ad
 This means that our organizer's profile and all the events we are going to create will be found at [https://pretix.eu/tut/](https://pretix.eu/tut/) from now on.
 
 There is no need to create a dedicated test account or use the word "test" anywhere in the short form or name.
-pretix offers a test mode that allows our organizer and events to remain invisible to the public, but still gives us access to all functions and settings.
+Our shops will remain invisible to the public until we manually take them live.
+But even before that, we will still have access to all functions and settings.
 
 By using the official name of our organization for the account right away, we can ensure that we get to use our preferred URL.
 We can also avoid having to make the same adjustments to two different accounts.
