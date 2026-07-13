@@ -32,7 +32,7 @@ We offer you two different tutorials:
 
     ---
 
-    If you are operating a venue with regular opening hours, such as a
+    If you are operating a venue with regular opening hours, such as
 
      - a public swimming pool
      - an amusement park
