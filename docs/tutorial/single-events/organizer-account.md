@@ -140,7 +140,8 @@ This information is mandatory.
 Merely providing a company name is not enough to get our account activated.
 
 We are going to enter the full contact details of our company further down on the page.
-The "VAT ID" is only mandatory if we are in an EU country other than Germany and want to use the reverse charge policy for our fees.
+If we are in an EU country other than Germany and want to use the reverse charge policy, then we will also add a "VAT ID".
+Without that VAT ID, pretix GmbH would be forced to invoice us with German tax rates.
 
 The pretix team offers service in English and German.
 We are going to choose English as our preferred language of correspondence.
