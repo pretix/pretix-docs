@@ -27,6 +27,8 @@ We will choose the organizer that is hosting this event—that is, the one we se
 We cannot change this selection after we have created the event.
 Thus, we have to ensure we are picking the correct organizer account here.
 
+If our account only has access to a single organizer account, then pretix will preselect that organizer account in this field.
+
 Next, we have to choose the event type.
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking".
 For this tutorial, we want to create a straightforward conference that takes place on a weekend.
@@ -57,7 +59,7 @@ https://pretix.eu/tut/tutcon27
 Like the name and short form, the start time for our event is mandatory information.
 We are going to enter the fourth of June, 2027, into the start time field.
 
-Since we already know the location for our event, we are going to put that location into pretix now.
+Since we already know our venue, we are going to enter that location into pretix now.
 This information is optional.
 We can still change it later.
 pretix will use our input into the "Location" field to search OpenStreetMap for that location.
@@ -101,8 +103,8 @@ The next page congratulates us on creating our event and gives us an opportunity
 We do not need to touch these quick settings at the moment.
 We will take a closer look at products (tickets, gift cards, etc.) in the [next section](products.md) of this tutorial.
 
-We will provide a general email address at which our customers can contact us in the "Contact address" field.
-Our shop page footer will display this email address with the label "Contact event organizer".
+In the "Contact address" field, we will provide a general email address at which our customers can reach us.
+Our shop page footer will display this email address with the label "Contact".
 We will also provide a URL to legal imprint information for our organization's online presence in the "Imprint URL" field.
 These two pieces of information are mandatory for our ticket shop to go live.
 
@@ -133,7 +135,7 @@ That means we have to record their name and affiliation during purchase.
 
 On the event-level dashboard, we will click :btn-icon:fa3-wrench: Settings: in the sidebar, which lands us on the general settings page for the event.
 We will open the :btn:Customer and attendee data: tab at the top.
-The options on this tab allow us to set questions for certain information for every ticket purchased.
+The options on this tab allow us to set up questions for certain information for every ticket purchased.
 We will scroll down to the subheading "Attendee data (once per personalized ticket)".
 
 We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input".
