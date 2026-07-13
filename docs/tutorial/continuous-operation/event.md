@@ -38,6 +38,9 @@ We are going to choose which languages to use for the event.
 By default, the languages we chose while setting up the organizer account should be active.
 We will activate or deactivate languages as needed.
 
+While it is possible to add or remove languages later, we will finalize our decision now.
+This helps us keep track of what translations we still need to add, for instance, for the description of our event.
+
 Once we are happy with our choices, we are going to click the :btn:Continue: button.
 
 {% include "note-translations.md" %}
