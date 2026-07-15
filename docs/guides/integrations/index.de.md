@@ -6,8 +6,6 @@ Sie finden Informationen zum Verkauf von pretix-Produkten über GetYourGuide unt
 
 Sie finden Informationen zum Einrichten des automatischen Datenexports zu HubSpot unter [HubSpot](hubspot.md). 
 
-Sie finden Informationen zum Verkauf von pretix-Produkten über Kulturpass unter [Kulturpass](kulturpass.de.md). 
-
 Sie finden Informationen zum Einrichten der Authentifizierung über SAML unter [Presale SAML authentication](presale-saml.md). 
 
 Für Integrationen mit Zahlungsdienstleistern sehen Sie unter [Zahlung](../payment/index.md) nach. 

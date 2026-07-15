@@ -1,3 +1,0 @@
-# KulturPass
-
-{% include "kulturpass.md" %}
