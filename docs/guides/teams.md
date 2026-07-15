@@ -26,19 +26,18 @@ You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: b
 Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :btn-icon:fa3-plus: Create a new team: button in order to create a new team.
 
 What you name your new team and which permissions you grant it is up to you.
-For example, you could name your team "Staff" to distinguish it from the administrators and give it the following organizer permissions:
-"Can create events", "Can manage gift cards", and "Can manage customer accounts".
+For example, you could name your team "Staff" to distinguish it from the administrators. Under the "Organizer permissions" section you can either select the check box "All organizer permissions" and give it all permissions or grant the following individual organizer permissions: Set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
 
-You could give the team access to "All events (including newly created ones)" and grant it the following event permissions:
-"Can change event settings", "Can change product settings", "Can view orders", "Can change orders", "Can view vouchers", and "Can change vouchers".
-
-The option "Can change organizer settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
+The option "Settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/organizer/`, then it is controlled by this option.
 Again, this only applies to settings which are not controlled by any of the other checkboxes under "Organizer permissions".
 
-The option "Can change event settings" applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page.
+Under the "Event permissions" section you could give the team access to "All events (including newly created ones)" and either grant all event permissions or grant it the following permissions:
+"General settings" to "View and change", "Products quotas and questions" to "View and change", "Orders" to "View all", "Vouchers" to "View and change".
+
+The option "General settings" under event permissions applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/event/`, then it is controlled by this option.
-Again, this only applies to settings which are not controlled by any of the other checkboxes under "Event permissions".
+Again, this only applies to settings which are not controlled by any of the other checkboxes under "Event permissions" including plugin settings.
 It also applies only to events you checked under "Limit to events", or to all events if you checked "All events (including newly created ones)".
 
 If you need to grant different permissions for other events, you need to create an additional team and use it to grant permissions for the other event.
