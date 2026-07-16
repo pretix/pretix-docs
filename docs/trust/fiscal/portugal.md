@@ -11,9 +11,25 @@ You can configure all Portuguese VAT rates in pretix using [tax rules](../../gui
 
 ### E-invoicing
 
-All invoices in Portugal must be created by [certified invoicing software](https://vat-one-stop-shop.ec.europa.eu/national-vat-rules/portugal-vat-rules_en).
-Starting in 2026, they must also be [signed](https://diariodarepublica.pt/dr/en/detail/decree-law/28-2019-119622094) using a [qualified electronic signature](https://en.wikipedia.org/wiki/Qualified_electronic_signature).
-pretix does **not** support this, but it is possible to sell tickets through pretix and issue invoices outside of pretix.
+All invoices in Portugal must be created by [certified invoicing software](https://vat-one-stop-shop.ec.europa.eu/national-vat-rules/portugal-vat-rules_en) and submitted electronically to the tax authority (Autoridade Tributária e Aduaneira, AT).
+
+<!-- md:hosted -->
+
+pretix Hosted supports sending invoices to AT through our partner Invopop S.L. and their subprocessor RUPEAL.
+This feature is not available on pretix Enterprise and pretix Community.
+In order to set up the transmission of invoices to the Portuguese tax authority, navigate to :navpath:Your organizer → :fa3-wrench: Settings → Plugins:. 
+Open the :btn:Integrations: tab. 
+The list on this page includes the  "E-invoicing for Portugal (via Invopop)" plugin. 
+Click the :btn:Enable: button next to it.
+
+In the list labeled "Events with active plugin", check the events for which you want to submit invoices to AT.
+Alternatively, navigate to :navpath:Your event → :fa3-wrench: Settings → Plugins: and enable the plugin "E-invoicing for Portugal (via Invopop)" for your event.
+Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-invoicing (PT):, fill out details about your company and follow the displayed steps for obtaining AT credentials.
+
+Navigate to :navpath:Your event → :fa3-wrench: Settings → E-invoicing:, fill out the mandatory information and follow the recommendations on this page. 
+pretix will automatically transmit invoices to AT through our partner Invopop S.L. and their subprocessor RUPEAL.
+We will charge an additional fee per invoice according to our [price list](https://pretix.eu/about/en/pricing).
+
 
 More information is available on the website of the European Commission: [eInvoicing in Portugal](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Portugal).
 
