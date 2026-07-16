@@ -68,5 +68,4 @@ For more information on plugins for [integrations](integrations/index.md) with e
 
  - [GetYourGuide](integrations/getyourguide.md)
  - [HubSpot](integrations/hubspot.md)
- - [Kulturpass](integrations/kulturpass.md)
  - [Presale SAML authentication](integrations/presale-saml.md)
