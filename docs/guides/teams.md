@@ -26,7 +26,9 @@ You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: b
 Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :btn-icon:fa3-plus: Create a new team: button in order to create a new team.
 
 What you name your new team and which permissions you grant it is up to you.
-For example, you could name your team "Staff" to distinguish it from the administrators. Under the "Organizer permissions" section you can either select the check box "All organizer permissions" and give it all permissions or grant the following individual organizer permissions: Set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
+For example, you could name your team "Staff" to distinguish it from the administrators.
+Under the "Organizer permissions" section you can either select the check box "All organizer permissions" and give it all permissions or grant the following individual organizer permissions:
+Set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
 
 The option "Settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/organizer/`, then it is controlled by this option.
@@ -48,8 +50,8 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 !!! Note
     If a user does not have permission for one area of the system, they can still view some of the data of that area if it connects to other areas.
-    For example, a user with access to orders can see the gift card created or used in a specific order. 
-    This is still true if that user does not have permission for gift cards. 
+    For example, a user with access to orders can see the gift card created or used in a specific order.
+    This is still true if that user does not have permission for gift cards.
 ### Inviting someone to your team
 
 ![Page titled 'Team: Staff', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Staff screenshot")
