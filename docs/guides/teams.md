@@ -31,7 +31,7 @@ If you want to give your team access to all organizer-level permissions, then, u
 If you want to give your team only some of those permissions, uncheck that box. 
 
 A box will appear that allows you to set granular permissions for various aspects of the organizer account. 
-Set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
+For instance, you could set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
 
 The option "Settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/organizer/`, then it is controlled by this option.
