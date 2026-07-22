@@ -6,7 +6,7 @@ Dieser Artikel erklärt, wie Sie die "Teams"-Einstellungen nutzen, Teams anlegen
 
 ## Voraussetzungen
 
-Um Teams anzulegen und die Berechtigungen zu verwalten, benötigen Sie selbst Administrator*innen-Rechte für das Veranstalterkonto.
+Um Teams anzulegen und die Berechtigungen zu verwalten, benötigen Sie in Ihrem Veranstalterkonto für "Teams" die Berechtigung "Lesen und ändern".
 Wenn Sie keinen Zugriff auf ein Veranstalterkonto haben, suchen Sie wahrscheinlich den Abschnitt, in dem erklärt wird, wie Sie eine Team-Einladung annehmen (LINK).
 
 ## How-To
