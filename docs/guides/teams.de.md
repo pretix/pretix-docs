@@ -81,7 +81,7 @@ Es kann ein paar Minuten dauern, bis dieses Setting für alle Mitglieder des Tea
 Wenn ein Team-Mitglied, das noch keine Zwei-Faktor-Authentifizierung verwendet, sich das nächste Mal in pretix einloggt, wird es auf die Seite "Zwei-Faktor-Authentifizierung" weitergeleitet.
 Es ist nicht möglich, diese Seite zu überspringen, bis die Zwei-Faktor-Authentifizierung aktiviert wurde.
 
-Wenn Sie mehr über die erhöhte Sicherheit erfahren möchten, welche die Zwei-Faktor-Authentifizierung mit sich bringt und wie Sie diese für Ihr Benutzerkonto einschalten, lesen Sie unseren Artikel zur Zwei-Faktor-Authentifizierung (LINK).
+Wenn Sie mehr über die erhöhte Sicherheit erfahren möchten, welche die Zwei-Faktor-Authentifizierung mit sich bringt, und wie Sie diese für Ihr Benutzerkonto einschalten, lesen Sie unseren Artikel zur Zwei-Faktor-Authentifizierung (LINK).
 
 ## Zwei-Faktor-Authentifizierung einrichten
 
