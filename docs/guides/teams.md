@@ -27,7 +27,10 @@ Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :b
 
 What you name your new team and which permissions you grant it is up to you.
 For example, you could name your team "Staff" to distinguish it from the administrators.
-Under the "Organizer permissions" section you can either select the check box "All organizer permissions" and give it all permissions or grant the following individual organizer permissions:
+If you want to give your team access to all organizer-level permissions, then, under the "Organizer permissions" heading, check the box next to "All organizer permissions". 
+If you want to give your team only some of those permissions, uncheck that box. 
+
+A box will appear that allows you to set granular permissions for various aspects of the organizer account. 
 Set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
 
 The option "Settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
