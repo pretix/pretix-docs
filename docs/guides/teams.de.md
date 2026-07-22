@@ -11,7 +11,7 @@ Wenn Sie keinen Zugriff auf ein Veranstalterkonto haben, suchen Sie wahrscheinli
 
 ## Anleitung
 
-Navigieren Sie zu Ihrem :navpath:Veranstalterkonto →  :fa3-users: Teams:.
+Navigieren Sie zu :navpath:Ihr Veranstalter →  :fa3-users: Teams:.
 Diese Seite zeigt Ihnen sämtliche Teams Ihres Veranstalterkontos.
 Wenn Sie an dieser Stelle in Ihrem Veranstalterkonto noch keine Änderungen vorgenommen haben, wird hier nur ein Team mit dem Namen "Administratoren" gelistet.
 Dieses Team hat sämtliche Berechtigungen und enthält nur Ihr Benutzer*innenkonto.
