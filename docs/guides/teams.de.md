@@ -40,7 +40,7 @@ Wenn Sie unterschiedliche Berechtigungen für andere Veranstaltungen vergeben m�
 Wählen Sie die passenden Berechtigungen aus und schränken Sie das Team auf die gewünschten Veranstaltungen ein. 
 
 Der Namen und die genauen Berechtigungen, die Sie vergeben, hängen von Ihren individuellen Anforderungen ab.
-Die Namen und Berechtigungen können auch später noch jederzeit verändert werden.
+Sie können diese auch später noch jederzeit verändern.
 Sie können aber zukünftige Probleme und Verwirrung vermeiden, indem Sie Ihre Auswahl hier festlegen, bevor Sie Kolleg*innen in das Team einladen.
 Klicken Sie den Button :btn:Speichern:, um das neu angelegte Team zu speichern.
 Das leitet Sie auf eine Seite mit einer Übersicht der Team-Mitglieder weiter. 
