@@ -51,7 +51,7 @@ Das leitet Sie auf eine Seite mit einer Übersicht der Team-Mitglieder weiter.
 
 ## Eine Person ins Team einladen
 
-Navigieren Sie zu :navpath:Veranstalterkonto → :fa3-users: Teams: und wählen Sie das Team aus, für das Sie eine Einladung verschicken möchten.
+Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-users: Teams: und wählen Sie das Team aus, für das Sie eine Einladung verschicken möchten.
 Sie können eine Person einladen, indem Sie die E-Mail-Adresse der Person in das Eingabefeld unterhalb der Mitgliederliste des Teams eingeben und rechts neben dem Eingabefeld den Button "Hinzufügen" klicken.
 Wenn die eingeladene Person bereits über ein pretix-Benutzerkonto verfügt und dieser die gleiche E-Mail-Adresse verwendet, wird die Person sofort dem Team hinzugefügt.
 In diesem Fall wird die Person nicht vom System benachrichtigt, weshalb Sie die Person darüber informieren sollten.
@@ -61,7 +61,9 @@ Wenn die eingeladene Person noch kein pretix-Benutzerkonto hat, erhält sie eine
 In diesem Fall erscheint rechts in der Mitglieder-Liste neben der E-Mail-Adresse ein :fa3-envelope-o: Symbol mit dem Status "eingeladen, Antwort ausstehend" und ein :btn-icon:fa3-rotate-right::-Button, um die Einladung erneut per E-Mail zu verschicken.
 
 !!! Note
-  Auf dieser Seite können Sie auch einen API-Token anlegen, der Zugriff auf die pretix API erlaubt. Der API-Token erhält die gleichen Berechtigungen, die für die Mitglieder des Teams gelten. Weitere Informationen zu API-Tokens finden Sie in unserer [API Dokumentation](https://docs.pretix.eu/en/latest/api/tokenauth.html).
+  Auf dieser Seite können Sie auch einen API-Token anlegen, der Zugriff auf die pretix-API erlaubt. 
+  Der API-Token erhält die gleichen Berechtigungen, die für die Mitglieder des Teams gelten. 
+  Weitere Informationen zu API-Tokens finden Sie in unserer [API-Dokumentation](https://docs.pretix.eu/en/latest/api/tokenauth.html).
 
 ## Eine Einladung annehmen
 
