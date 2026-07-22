@@ -85,5 +85,5 @@ Wenn Sie mehr über die erhöhte Sicherheit erfahren möchten, welche die Zwei-F
 
 ## Zwei-Faktor-Authentifizierung gemäß der Anforderung einrichten
 
-Wenn pretix Sie direkt nach dem Login zur Seite "Zwei-Faktor-Authentifizierung" weiterleitet, hat die Person, welche die Teams in Ihrem Veranstalterkonto verwaltet, die Option zur Verwendung der Zwei-Faktor-Authentifizierung verpflichtend für Ihr Benutzerkonto eingeschaltet.
+Wenn pretix Sie direkt nach dem Login zur Seite "Zwei-Faktor-Authentifizierung" weiterleitet und Sie keine andere Seite in pretix öffnen können, hat die Person, welche die Teams in Ihrem Veranstalterkonto verwaltet, die Option zur Verwendung der Zwei-Faktor-Authentifizierung verpflichtend für Ihr Benutzerkonto eingeschaltet.
 Um zu erfahren, wie Sie die Zwei-Faktor-Authentifizierung richtig einrichten, lesen Sie unseren Artikel zur Zwei-Faktor-Authentifizierung (LINK).
