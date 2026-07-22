@@ -41,6 +41,7 @@ Under the "Event permissions" section you could give the team access to "All eve
 "General settings" to "View and change", "Products quotas and questions" to "View and change", "Orders" to "View all", "Vouchers" to "View and change".
 
 The option "General settings" under event permissions applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page.
+Among other things, it applies to plugin settings.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/event/`, then it is controlled by this option.
 Again, this only applies to settings which are not controlled by any of the other checkboxes under "Event permissions" including plugin settings.
 It also applies only to events you checked under "Limit to events", or to all events if you checked "All events (including newly created ones)".
