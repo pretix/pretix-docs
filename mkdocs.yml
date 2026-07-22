@@ -167,7 +167,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/pretix/
     - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCG1Og1YUpgIJD4geAZLAp5g
+      link: https://www.youtube.com/@pretix
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/pretix.eu/
 hooks:
