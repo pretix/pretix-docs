@@ -30,7 +30,7 @@ There is more than one way to do this.
 
 If you want to use the Git CLI to create a new branch, open a terminal on your computer.
 Check out the branch from which you want to create a new branch.
-In all but a few exceptions, that is going to be the main branch.
+In all but a few cases, that is going to be the main branch.
 
 Run the following command to check out the main branch:
 
@@ -63,15 +63,15 @@ For instance, if you are writing a guide on the badge layout editor, name the fi
 Copy the contents of the guide template into your new file.
 You can find the template in the root directory of this repository at `template-guides.md`.
 
-Replace the first line of the file in sentence with the title of your article.
-Use the markdown title formatting and sentence-style capitalization, for instance:
+Replace the first line of the file with the title of your article.
+Use the Markdown title formatting and sentence-style capitalization, for instance:
 
 ```
 # Badge layout editor
 ```
 
 The template contains questions and instructions as placeholder text under each headline.
-Answer those questions in the respective section in your text.
+Answer those questions in the respective sections in your text.
 
 If you do not have any content for the sections "Troubleshooting", "Further information", and "See also", remove those sections.
 Do **not** remove the sections "Prerequisites" or "How to".
@@ -93,7 +93,7 @@ For information on terminology, orthography, and punctuation, see [language](lan
 ### Creating a pull request for review
 
 Once you have finished writing the guide, submit a pull request.
-There is more than once way to do this.
+There is more than one way to do this.
 In order to submit a pull request using the GitHub web interface, open your browser.
 Log into your GitHub account.
 Navigate to the `pretix-docs` repository.

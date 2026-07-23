@@ -95,7 +95,7 @@ $ pip install -Ur requirements.txt
 
 ### Using the development environment
 
-In order to use development environment for contributing to the pretix documentation, open a terminal on your computer.
+In order to use the development environment for contributing to the pretix documentation, open a terminal on your computer.
 Navigate to the directory to which you cloned the Git repository:
 
 ```

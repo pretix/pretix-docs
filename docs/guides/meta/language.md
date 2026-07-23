@@ -31,7 +31,7 @@ Always communicate a concept with the same word.
 For instance, if you want to instruct the user to click a button in the pretix backend, use the word "click".
 Do **not** use "click on", "tap", "hit", "use", "interact with", or any other terminology.
 
-Always use a word for the same concept.
+Do **not** use the same term for more than one concept.
 For instance, do **not** use the word "category" to refer to product categories, seat categories, and GetYourGuide categories.
 Specify which type of category you are writing about, even if it should be clear from context.
 
@@ -53,7 +53,7 @@ If our terminology database does not have an entry on a word, consult Merriam-We
 Ignore spellings marked as "variant".
 If neither our terminology database nor Merriam-Webster have an entry on a word, use Wiktionary.
 
-If you or the team have not yet made a decision which spelling option to use, pick on variant and stick with it.
+If you or the team have not yet made a decision which spelling option to use, pick one variant and stick with it.
 Consistent spelling is helpful for replacing the word with the proper spelling later.
 
 ### Punctuation

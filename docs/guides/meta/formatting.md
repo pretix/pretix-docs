@@ -39,7 +39,7 @@ You can remove the trailing space at the end of the sentence.
 Markdown renders empty lines as line breaks.
 Place an empty line between every pair of paragraphs.
 
-If want to add additional line breaks to the output text on the website, put at least two spaces at the end of the line of markdown code.
+If want to add additional line breaks to the output text on the website, put at least two spaces at the end of the line of Markdown code.
 You can insert additional empty lines using `<br>`.
 If you are inserting an image between two paragraphs, but the image concerns the content of only one of the paragraphs, insert additional empty lines.
 Insert `<br>` between the image and the topically **separate** paragraph.
@@ -73,7 +73,7 @@ The :btn-icon:fa3-upload: Import vouchers: button lets you upload such a list af
 
 >The :btn-icon:fa3-upload: Import vouchers: button lets you upload such a list after saving it from a different event.
 
-If the button only contains an icon, use the button format on that label:
+If the button contains only an icon and no text, use the button format on that label:
 
 ```
 Change the name and color by clicking the :fa3-pencil:: button.
@@ -171,7 +171,7 @@ If you are adding the screenshot to help the user with navigating the website, t
 If you want to tell the user to interact with one specific element on the page, highlight that element.
 Use the color OrangeRed #FF4500 (255, 69, 0) for highlighting.
 Use the Fontawesome-3 arrow symbols and boxes with a width of [0.5em](https://en.wikipedia.org/wiki/Em_(typography)).
-Take a look at the screenshots in the [tutorial](../../tutorial/getting-started.md) to get an idea what it should look like.
+Take a look at the screenshots in the [tutorial](../../tutorial/getting-started.md) to get an idea of what it should look like.
 
 Save screenshots in one of the directories in `/pretix-docs/site/assets/screens/`.
 If there is no directory corresponding to your subject, create a new one.
@@ -181,7 +181,7 @@ Use a hyphen-minus `-` to separate two words in the filename.
 ### Image descriptions
 
 You can find basic information on how to write a good image description at [Axess Lab](https://axesslab.com/alt-texts/).
-This is how you include an image description in markdown:
+This is how you include an image description in Markdown:
 
 ```
 ![Media description for visually impaired users or users with an unreliable internet connection](../path/to/file.png "Image Title")
@@ -244,7 +244,7 @@ Single words such as "here" and "next" are **not** suitable as link text.
 
 Screen readers sometimes read out contextless lists of links.
 Hearing the link text "here" five times in a row is **not** very informative.
-Even without a screen reader, it helpful for the reader if they have a general idea what is behind the link.
+Even without a screen reader, it is helpful for the reader to get a general idea of what is behind the link.
 
 MkDocs uses different symbols to precede internal and external links in the documentation visible to readers to make it easier to distinguish between them.
 You do not have to specify this because it works automatically.
@@ -272,7 +272,7 @@ Our organizer's profile and all the events we are going to create will be found 
 Remove any umlaut from the part of the link after the `#`.
 For example, replace `ö` with `o`.
 
-If you link an article that is not yet available (for example due to an open pull request), GitHub will throw a warning.
+If you link to an article that is not yet available (for example due to an open pull request), GitHub will throw a warning.
 To avoid this, put a space between square and round brackets and leave a corresponding comment starting with "TK":
 
 ```
@@ -281,7 +281,7 @@ TK fix link after merge
 
 ### Articles specific to Germany
 
-Some articles in our documentary are only relevant for the German-speaking world, for instance because they concern organizations that only exist in Germany.
+Some articles in our documentation are only relevant for the German-speaking world, for instance because they concern organizations that only exist in Germany.
 Although we are publishing the rest of our documentation in English first, it makes sense to write these articles in German.
 
 Because of the way MkDocs organizes the navigation on the website, you have to handle these articles in a special way.
