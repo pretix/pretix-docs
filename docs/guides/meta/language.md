@@ -120,7 +120,7 @@ You may use the en-dash for ranges of values in tables and formulas:
 In the text, use the word "to" for ranges of values instead:
 
 ```
-30–50 feral hogs
+30 to 50 feral hogs
 ```
 
 The em-dash is yet another separate symbol: `—` (U+2014 EM DASH).

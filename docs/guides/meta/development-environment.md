@@ -10,7 +10,8 @@ Since this documentation uses the docs-as-code approach, the setup is similar to
 
 ## Prerequisites
 
-In order to contribute to this documentation, you need an SSH key and a GitHub account that includes your SSH key.
+If you want to contribute content such as articles or translations to this documentation, then you need access to the git repository.
+In order to get access to the git repository, you need an SSH key and a GitHub account that includes your SSH key.
 For more information on the necessary steps, see:
 
  - [ssh.com: How to Use ssh-keygen to Generate a New SSH Key?](https://www.ssh.com/academy/ssh/keygen)
@@ -24,7 +25,7 @@ Setting up the development environment for the pretix documentation involves the
  - installing [dependencies](#installing-dependencies)
  - setting the [environment variable](#setting-the-environment-variable)
  - cloning the [Git repository](#cloning-the-git-repository)
- - preparing a [virtual environment ](#preparing-a-python-environment-for-mkdocs) in Python
+ - preparing a [virtual environment](#preparing-a-python-environment-for-mkdocs) in Python
  - [using the development environment](#using-the-development-environment) for contributions
  - checking for [issues](#checking-for-issues)
 
@@ -116,11 +117,11 @@ $ mkdocs serve --livereload
 
 Open the URL [https://127.0.0.1:8000/](https://127.0.0.1:8000/) in your browser.
 Use your preferred IDE or text editor to work on the docs.
-Saving, creating or moving a file makes the MkDocs server do an update within a few seconds.
+Saving, creating or moving a file causes the MkDocs server to refresh within a few seconds.
 
 ### Checking for issues
 
-In order to detect issues in the changes you have made, do a strict build:
+In order to detect issues in the changes you have made, run a strict build:
 
 ```
 $ mkdocs build --strict
@@ -133,7 +134,7 @@ If there are warnings, then the output ends with a line such as the following:
 Aborted with 1 warnings in strict mode!
 ```
 
-If MkDocs does **not** detect any issues, then the output ends with a line such as the following:
+If MkDocs does not detect any issues, then the output ends with a line such as the following:
 
 ```
 INFO    -  Documentation built in 4.03 seconds

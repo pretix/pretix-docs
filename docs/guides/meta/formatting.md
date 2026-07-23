@@ -203,7 +203,7 @@ The color is based on ISO standards:
 
 Use three exclamation marks and a space `!!! ` followed by the box type.
 If you do specify a title, the title of the box will default to the type ("Note" or "Warning").
-Indent the text of the warning with four spaces.
+Indent the text of the admonition with four spaces.
 To continue with normal text, insert an empty line and remove the indentation.
 
 Example:
@@ -213,7 +213,7 @@ Example:
     Reading note boxes is useful.
 ```
 
-This raw text results in the following warning:
+This raw text results in the following note:
 
 !!! Note
     Reading note boxes is useful.

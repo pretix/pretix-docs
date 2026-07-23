@@ -16,7 +16,7 @@ This article contains general information on how to contribute to the documentat
 ## Prerequisites
 
 This article contains basic information on how to contribute to the docs.
-There are no further prerequisites.
+There are no prerequisites.
 
 ## How to
 
@@ -36,7 +36,7 @@ The best practices are the following:
  - [keep sentences short](#keep-sentences-short)
  - [keep paragraphs short](#keep-paragraphs-short)
  - use the [active voice](#use-the-active-voice) and imperative
- - only use the [passive voice](#only-use-passive-voice-when-appropriate) when appropriate
+ - only use the [passive voice](#only-use-passive-voice-in-a-few-special-cases) in a few special cases
  - include [image descriptions](#add-image-descriptions), also known as alt text
  - add [cross-references](#add-cross-references)
  - link to [external documentation](#link-to-external-documentation)
@@ -228,10 +228,17 @@ This sentence contains 16 words.
 The relative clause is at the end of the sentence.
 This makes it easier to parse.
 
-#### Only use passive voice when appropriate
+#### Only use passive voice in a few special cases
 
 The passive voice is still appropriate in a few special circumstances.
-Use the passive voice when describing a general state of things, and when the person taking an action is unknown.
+Use the passive voice:
+
+ 1. to describe a general state of things
+ 2. if the entity taking an action is unknown
+
+There is another case that looks like passive voice on the surface level, but is actually a separate phenomenon.
+This section covers both legitimate uses of the passive voice, and that phenomenon.
+
 The following example describes a general state of things:
 
 ```

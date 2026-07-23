@@ -8,11 +8,11 @@ It is also a good idea to contact the team if you want to contribute a guide.
 ## Prerequisites
 
 Writing a guide requires a working [development environment](development-environment.md).
-A general overview of the proper [formatting](formatting.md), [language](language.md) and [best practices](index.md) is helpful.
+Some knowledge of the proper [formatting](formatting.md), [language](language.md) and [best practices](index.md) is helpful.
 
 ## How to
 
-This section describes how to make a basic contribution to the pretix documentation.
+This section describes how to contribute to the pretix documentation by adding a guide.
 This involves the following steps:
 
  - [creating a new branch](#creating-a-new-branch)
@@ -61,7 +61,7 @@ For instance, if you are writing a guide on the badge layout editor, name the fi
 ### Using the template
 
 Copy the contents of the guide template into your new file.
-You can find the template in the root directory of this repository at `template-guides.md`.
+You can find the template in the root directory of this repository at [template-guides.md](https://github.com/pretix/pretix-docs/blob/main/template-guides.md).
 
 Replace the first line of the file with the title of your article.
 Use the Markdown title formatting and sentence-style capitalization, for instance:
@@ -106,4 +106,16 @@ Provide an informative title and description.
 
 You do not have to submit a draft pull request.
 You can submit a pull request right away.
-Once you have done so, the pretix documentation team will notice your contribution, review it, and eventually merge it into the main branch.
+Once you have done so, the pretix documentation team will notice your contribution and review it.
+There are three possible outcomes:
+
+ 1. the pretix documentation team accepts your contribution and merges it.
+ 2. the team comments suggestions for improvement.
+ 3. the team rejects your contribution.
+
+If you receive improvement suggestions, implement them.
+Alternatively, tell the team that you would like to forward that task to them.
+
+In order to avoid having your contribution rejected, familiarize yourself with the standards and practices explained in this article and the other articles on how to contribute.
+If you are in doubt, [create an issue on GitHub](https://github.com/pretix/pretix-docs/issues) or send an email to [support@pretix.eu].
+We recommend reaching out before doing a large amount of work.
