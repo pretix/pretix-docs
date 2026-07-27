@@ -1,14 +1,18 @@
 # Adding a guide
 
 This article explains how to add a guide to the pretix documentation.
-Most of the steps described here also apply to other types of contributions.
-If you want to make a contribution other than a guide or a translation, contact the team first.
-It is also a good idea to contact the team if you want to contribute a guide.
+The steps described here also apply if you want to translate one of the guides.
+
+!!! Note
+    Before you make any contribution to the pretix documentation, contact to the team.
+    [Send us an email](mailto:support@pretix.eu) or, if you have a GitHub account, [open an issue](https://github.com/pretix/pretix-docs/issues) there.
 
 ## Prerequisites
 
-Writing a guide requires a working [development environment](development-environment.md).
-Some knowledge of the proper [formatting](formatting.md), [language](language.md) and [best practices](index.md) is helpful.
+If you want to write a guide, then you should set up a working [development environment](development-environment.md) first.
+Some knowledge of our guidelines for [formatting](formatting.md), [language](language.md) and [best practices](index.md) is helpful.
+You do **not** have to apply every last detail of those guidelines.
+But the pretix documentation team will ask you to incorporate them during review.
 
 ## How to
 
@@ -58,11 +62,18 @@ Name it in lower case.
 Use a hyphen-minus `-` to separate words.
 For instance, if you are writing a guide on the badge layout editor, name the file `badge-layout-editor.md`.
 
-### Using the template
+If you want to contribute a translation from English to German, copy the file and rename it so that the filename ends with `.de.md`.
+Place it in the same directory as the original article.
+For instance, if you want to translate for `paypal.md`, name the new file `paypal.de.md` and place it in `docs/guides/payment`.
+
+If you want to expand an existing guide, edit the file itself.
+
+### Using the template to write the guide
+
+There is a template that specifies the default structure for a guide.
+You can find that template in the root directory of this repository at [template-guides.md](https://github.com/pretix/pretix-docs/blob/main/template-guides.md).
 
 Copy the contents of the guide template into your new file.
-You can find the template in the root directory of this repository at [template-guides.md](https://github.com/pretix/pretix-docs/blob/main/template-guides.md).
-
 Replace the first line of the file with the title of your article.
 Use the Markdown title formatting and sentence-style capitalization, for instance:
 
@@ -83,12 +94,17 @@ For an example of this article structure, see [pretixSCAN (Android)](../pretixsc
 If you are describing the setup of a feature and then its applications, separate the "How to" section into "General usage" and "Applications".
 For an example of this article structure, see [Vouchers](../vouchers.md).
 
-### Writing the guide
+If your article covers a more straightforward topic, then you do not need to separate the "How to" section.
+For an example of this more basic article structure, see [Teams](../teams.md).
+
+You can freely add third-level and fourth-level headings under "How to", "General usage", "Applications" and "Advanced usage".
+The same is true for "Troubleshooting".
+Use sentence-style capitalization for all headings.
+Do **not** add third-level and fourth-level headings to the other sections.
 
 Research the subject that you want to cover and write your guide.
-For guidance on how to collect and record the relevant information, refer to the article on [best practices](index.md).
 For instructions on how to format your text, see [formatting](formatting.md).
-For information on terminology, orthography, and punctuation, see [language](language.md).
+For information on writing style, terminology, orthography, and punctuation, see [language](language.md).
 
 ### Creating a pull request for review
 

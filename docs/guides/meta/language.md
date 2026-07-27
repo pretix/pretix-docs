@@ -5,8 +5,10 @@ This article focuses on the English-language parts of the pretix documentation.
 
 ## Prerequisites
 
-There are no strict prerequisites for using appropriate language while writing pretix documentation.
 A solid grasp of the English language is helpful.
+You need access to our [terminology database](https://www.terminologue.org/pretix-docs/).
+If you cannot access the database, request it from our team.
+In order to do so, you can [send us an email](mailto:support@pretix.eu).
 
 ## How to
 
@@ -52,6 +54,11 @@ Do not use the variants marked as "rejected".
 If our terminology database does not have an entry on a word, consult Merriam-Webster.
 Ignore spellings marked as "variant".
 If neither our terminology database nor Merriam-Webster have an entry on a word, use Wiktionary.
+
+In case of disagreement between the three sources, stick to the hierarchy.
+Merriam–Webster takes precedence over Wiktionary.
+Our internal terminology database takes precedence over Merriam–Webster and Wiktionary.
+For instance, despite broadly using US-American orthography, we prefer the spelling "theatre" over "theater".
 
 If you or the team have not yet made a decision which spelling option to use, pick one variant and stick with it.
 Consistent spelling is helpful for replacing the word with the proper spelling later.

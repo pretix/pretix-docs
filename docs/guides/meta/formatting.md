@@ -1,10 +1,19 @@
 # Formatting
 
-This article describes how to format certain types of information, and what syntax to use to do it.
+This article describes how to format certain types of information for the pretix documentation, and what syntax to use to do it.
+The formatting conventions are implemented with Markdown, MkDocs, and a few customizations.
+
+[Put a line break after each single sentence](#line-breaks).
+This step is absolutely mandatory.
+If your contribution contains more than a single sentence per line, then the review process becomes nearly impossible.
+
+If you are contributing to the pretix docs for the first time and you are unfamiliar with Markdown and MkDocs, then you may ignore the rest of this article.
+The pretix docs team will fix your contribution's formatting during review.
+However, you have to [put a line break after each single sentence](#line-breaks) or your contribution will be impossible to review.
 
 ## Prerequisites
 
-Proper formatting requires a working [development environment](development-environment.md).
+If you want to get a live preview of your contribution's formatting, then you need a working [development environment](development-environment.md).
 
 ## How to
 
