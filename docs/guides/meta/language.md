@@ -17,12 +17,120 @@ Rather, it requires attention to many factors at the same time.
 Thus, unlike most other guides, this article will not give you step-by-step instructions.
 Instead, it will introduce and explain the factors that are relevant for proper language within the context of the pretix documentation:
 
+ - [writing style](#writing-style)
  - [terminology](#terminology)
  - [orthography](#orthography)
  - [punctuation](#punctuation)
 
 This article will cover these factors in detail.
 Some of them are complex enough to include several subsections.
+
+### Writing style
+
+Write text that is easy to understand and unambiguous.
+In order to do so, [keep sentences short](#keep-sentences-short), [keep paragraphs short](#keep-paragraphs-short), [use the active voice](#use-the-active-voice), and [only use the passive voice](#only-use-passive-voice-in-a-few-special-cases) in a few special cases.
+
+#### Keep sentences short
+
+Keep sentences short.
+Separate complex sentences including subordinate clauses into two sentences wherever possible.
+Do **not** include any sentences with more than one subordinate clause.
+
+#### Keep paragraphs short
+
+Do not write paragraphs longer than five to six lines.
+Preview your article in a 1920 pixels wide browser window.
+If one of the paragraphs in that article is longer than six lines, split it up.
+
+If you are starting a new topic, start a new paragraph.
+
+#### Use the active voice
+
+Use the [active voice](https://en.wikipedia.org/wiki/Active_voice) wherever possible.
+When passing instructions to the reader, use the [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood).
+The [passive voice](https://en.wikipedia.org/wiki/Passive_voice) obfuscates who is taking an action.
+
+```
+The first code snippet should be added into the <head> part of your website.
+```
+
+It is unclear whether the above example is trying to instruct the user to add the code snippet, or if it describes the behavior of the software.
+Thus, the reader has to use context to infer if they need to take action, or if the software takes care of it for them.
+You can remedy this lack of clarity by using the imperative instead:
+
+```
+Add the code snippet to the <head> of your website.
+```
+
+The active voice also helps make the docs shorter and clearer.
+
+```
+*A list of all tax rules that you have created for the event is displayed on this page.
+```
+
+This sentence contains 18 words.
+A relative clause is embedded in the middle of the sentence.
+Compare this to the following:
+
+```
+This page displays a list of all tax rules that you have created for the event.
+```
+
+This sentence contains 16 words.
+The relative clause is at the end of the sentence.
+This makes it easier to parse.
+
+#### Only use passive voice in a few special cases
+
+The passive voice is still appropriate in a few special circumstances.
+Use the passive voice:
+
+ 1. to describe a general state of things
+ 2. if the entity taking an action is unknown
+
+There is another case that looks like passive voice on the surface level, but is actually a separate phenomenon.
+This section covers both legitimate uses of the passive voice, and that phenomenon.
+
+The following example describes a general state of things:
+
+```
+Customer accounts are handled on the organizer level.
+```
+
+This is not an instruction.
+Thus, the imperative would be inappropriate here.
+
+In the next example, it is unclear who is taking an action:
+
+```
+By default, pretixSCAN will only recognize a ticket as valid **once** if it has not been checked out in the meantime.
+```
+
+In this example, the author cannot know who checked out the ticket.
+It could have been the reader, another team member, or a customer using a checkout kiosk.
+The only relevant factor is whether the ticket is checked out or not.
+Thus, the passive voice is appropriate.
+
+There is another phenomenon which looks like passive, but describes a state instead of a process.
+For example:
+
+```
+Checking that box makes another box appear that is checked by default.
+```
+
+```
+The scan engine is located on the top edge of the device.
+```
+
+Vale will misidentify these examples as passives.
+That is inaccurate.
+Since these cases do not represent a genuine use of the passive voice, they are okay to use in the context of the pretix documentation.
+
+!!! Note
+   If you speak German, you can determine these cases by attempting to translate them into German.
+   If you translate the sentence with the word "sein" as opposed to the verb "werden", then it is not a genuine passive.
+   For instance, you would translate the first example as:
+   `ein Kontrollkästchen, das standardmäßig angehakt ist`
 
 ### Terminology
 
