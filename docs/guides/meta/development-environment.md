@@ -1,7 +1,10 @@
 # Development environment
 
 This article explains how to set up the development environment for working on the pretix documentation.
-It also explains how to run that development environment on a daily basis.
+It also explains how to run it on a daily basis.
+The development environment allows you to make changes directly on your computer using your preferred tools.
+It also allows you to get a live preview of the changes you are making.
+
 Since this documentation uses the docs-as-code approach, the setup is similar to that of other software development projects.
 
 !!! Note

@@ -40,9 +40,10 @@ The other articles in section of the documentation explain how the documentation
 If you want to make a larger contribution to the pretix documentation, then you should read this article and the following articles:
 
  - You can find information on how to set up your development environment under [Development environment](development-environment.md).
+This allows you to make changes using your preferred tools and to get a live preview.
 
- - You can find information on how to contribute an article to the pretix docs under [Adding a guide](adding-a-guide.md).
+ - You can find information on how to contribute a new article or a translation to the pretix docs under [Adding a guide](adding-a-guide.md).
 
- - You can find information on terminology, orthography, and punctuation under [Language](language.md).
+ - You can find information on writing style, terminology, orthography, and punctuation under [Language](language.md).
 
  - You can find information on how to format your text using Markdown, MkDocs, and our customizations under [Formatting](formatting.md).
