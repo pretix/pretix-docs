@@ -20,6 +20,7 @@ We suggest that you start from the examples given in one of the installation tut
     However, you can also set them through environment variables.
     In this case, the syntax is `PRETIX_SECTION_CONFIG`.
     For example, to configure the setting `password_reset` from the `[pretix]` section, set `PRETIX_PRETIX_PASSWORD_RESET=off` in your environment.
+    To use a file-based configuration approach like docker secrets, prefix the environment variable with `FILE__` and set it to the file name that should be read.
 
 ## pretix settings
 
@@ -284,7 +285,15 @@ ssl=off
 
 `custom_sender_spf_string`
 
-:   If this is set to a valid SPF string, pretix will show a warning if organizers use a sender address from a domain that does not include this value.
+:   If this is set to a valid SPF string, pretix will show a warning if organizers use a sender address from a domain that does not include this value in its SPF record.
+
+`custom_sender_dkim_selector`, `custom_sender_dkim_cname`
+
+:   If these are set, pretix will show a warning if organizers use a sender address from a domain that does not have a `CNAME` record pointing from the given DKIM selector to the given target.
+
+`custom_sender_dmarc_required`
+
+:   If this is set to `True`, pretix will show a warning if organizers use a sender address from a domain that does not have DMARC set up.
 
 `custom_smtp_allow_private_networks`
 
@@ -481,6 +490,10 @@ traces_sample_token=xyz
 `traces_sample_token`
 
 :   If this token is found in a query string, a trace will always be sampled.
+
+`enable_logs`
+
+:   If set to `True`, pretix will also send all logs to Sentry.
 
 ## Caching
 
