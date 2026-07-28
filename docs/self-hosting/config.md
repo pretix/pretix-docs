@@ -1,6 +1,8 @@
 # Configuration file
 
-Pretix reads its configuration from a configuration file. It tries to find this file at the following locations. It will try to read the file from the specified paths in the following order. The file that is found *last* will override the settings from the files found before.
+Pretix reads its configuration from a configuration file. It tries to find this file at the following locations.
+It will try to read the file from the specified paths in the following order.
+The file that is found *last* will override the settings from the files found before.
 
 1.  `PRETIX_CONFIG_FILE` environment variable
 2.  `/etc/pretix/pretix.cfg`
@@ -9,11 +11,15 @@ Pretix reads its configuration from a configuration file. It tries to find this 
 
 The file is expected to be in the INI format as specified in the [Python documentation](https://docs.python.org/3/library/configparser.html?highlight=configparser#supported-ini-file-structure).
 
-The config file may contain the following sections (all settings are optional and have default values). We suggest that you start from the examples given in one of the installation tutorials.
+The config file may contain the following sections (all settings are optional and have default values).
+We suggest that you start from the examples given in one of the installation tutorials.
 
 !!! Note
 
-    The configuration file is the recommended way to configure pretix. However, you can also set them through environment variables. In this case, the syntax is `PRETIX_SECTION_CONFIG`. For example, to configure the setting `password_reset` from the `[pretix]` section, set `PRETIX_PRETIX_PASSWORD_RESET=off` in your environment.
+    The configuration file is the recommended way to configure pretix.
+    However, you can also set them through environment variables.
+    In this case, the syntax is `PRETIX_SECTION_CONFIG`.
+    For example, to configure the setting `password_reset` from the `[pretix]` section, set `PRETIX_PRETIX_PASSWORD_RESET=off` in your environment.
 
 ## pretix settings
 
@@ -201,9 +207,12 @@ sslkey=/etc/pretix/postgresql-client-key.key
 
 ## Database replica settings
 
-If you use a replicated database setup, pretix expects that the default database connection always points to the primary database node. Routing read queries to a replica on database layer is **strongly** discouraged since this can lead to inaccurate such as more tickets being sold than are actually available.
+If you use a replicated database setup, pretix expects that the default database connection always points to the primary database node.
+Routing read queries to a replica on database layer is **strongly** discouraged since this can lead to inaccurate such as more tickets being sold than are actually available.
 
-However, pretix can still make use of a database replica to keep some expensive queries with that can tolerate some latency from your primary database, such as backend search queries. The `replica` configuration section can have the same settings as the `database` section (except for the `backend` setting) and will default back to the `database` settings for all values that are not given. This way, you just need to specify the settings that are different for the replica.
+However, pretix can still make use of a database replica to keep some expensive queries with that can tolerate some latency from your primary database, such as backend search queries.
+The `replica` configuration section can have the same settings as the `database` section (except for the `backend` setting) and will default back to the `database` settings for all values that are not given.
+This way, you just need to specify the settings that are different for the replica.
 
 Example:
 
@@ -433,7 +442,8 @@ For a given language (e.g. `pt-br`), pretix will then look in the specific sub-f
 
 ## Celery task queue
 
-For processing long-running tasks asynchronously, pretix requires the celery task queue. For communication between the web server and the task workers in both direction, a messaging queue and a result backend is needed. You can use a redis database for both directions, or an AMQP server (e.g. RabbitMQ) as a broker and redis or your database as a result backend:
+For processing long-running tasks asynchronously, pretix requires the celery task queue. For communication between the web server and the task workers in both direction, a messaging queue and a result backend is needed.
+You can use a redis database for both directions, or an AMQP server (e.g. RabbitMQ) as a broker and redis or your database as a result backend:
 
 ``` ini
 [celery]
@@ -501,7 +511,9 @@ voucher_code=16
 
 ## External tools
 
-pretix can make use of some external tools if they are installed. Currently, they are all optional. Example:
+pretix can make use of some external tools if they are installed.
+Currently, they are all optional.
+Example:
 
 ``` ini
 [tools]
@@ -529,7 +541,8 @@ max_size_other = 100
 
 ## GeoIP
 
-pretix can optionally make use of a GeoIP database for some features. It needs a file in `mmdb` format, for example [GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) or [GeoAcumen](https://github.com/geoacumen/geoacumen-country):
+pretix can optionally make use of a GeoIP database for some features.
+It needs a file in `mmdb` format, for example [GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) or [GeoAcumen](https://github.com/geoacumen/geoacumen-country):
 
 ``` ini
 [geoip]
