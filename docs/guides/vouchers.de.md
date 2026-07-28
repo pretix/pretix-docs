@@ -5,17 +5,17 @@ Mit pretix können Sie diese Codes und die dazugehörigen URLs automatisch gener
 Gutscheine haben viele nützliche Anwendungsmöglichkeiten.
 Sie können sie dafür benutzen:
 
-- Produkte für Gutscheininhaber zu einem reduzierten Preis anzubieten
-- ein Produkt nur einer [ausgewählten Personengruppe](vouchers.md#exclusive-product-availability) (z.B. Referenten einer Konferenz oder geladenen Gästen) zugänglich oder sichtbar zu machen
-- eine bestimmte Menge an Produktkontingent für Gutscheininhaber zu [reservieren](vouchers.md#reserving-tickets)
-- sicherzustellen, dass Gutscheininhaber [weiterhin Zugang](vouchers.md#bypassing-a-quota) zu einem Produkt haben, auch wenn es ausverkauft ist
+- Produkte für Personen, die einen Gutschein haben, zu einem [ermäßigten Preis](#einen-limitierten-rabatt-anbieten) anzubieten
+- ein Produkt nur einer [ausgewählten Personengruppe](vouchers.de.md#exklusive-produktverfügbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gäst\*innen)
+- eine bestimmte Menge an Produktkontingent für Personen mit  einem Gutschein zu [reservieren](vouchers.de.md#tickets-reservieren)
+- sicherzustellen, dass Personen mit einem Gutschein [weiterhin Zugang](vouchers.de.md#ein-kontingent-umgehen) zu einem Produkt haben, auch wenn es ausverkauft ist
 
 !!! Note
     Gutscheine sind nicht mit [Wertgutscheinen](gift-cards.md) zu verwechseln.
     Wertgutscheine dienen im Wesentlichen als zusätzliche Zahlungsmethode für Ihre Kund*innen.
     Sie entsprechen immer einem festen Geldbetrag, der vom Gesamtbetrag der Bestellung abgezogen wird.
     Wertgutscheine können unabhängig von der Art der Veranstaltung und dem Veranstalter verwendet werden.
-Sie haben keinen Einfluss auf die Verfügbarkeit und Sichtbarkeit bestimmter Produkte.
+    Sie haben keinen Einfluss auf die Verfügbarkeit und Sichtbarkeit bestimmter Produkte.
 
 ## Voraussetzungen
 
