@@ -26,74 +26,75 @@ Wenn Sie pretix Hosted nutzen, müssen Sie erst Ihr Konto aktivieren, bevor Sie 
 ## Allgemeine Nutzung
 
 Die Einstellungsseite für Gutscheine finden Sie unter :navpath:Ihre Veranstaltung → :fa3-tags: Gutscheine:.
-Hier erhalten Sie einen Überblick über alle bereits erstellten Gutscheine.
-Außerdem haben Sie die Möglichkeiten, Gutscheine zu suchen und zu filtern.
+Hier erhalten Sie einen Überblick über alle bereits erstellten Gutscheine sowie Optionen zum Suchen und Filtern dieser Gutscheine.
 
-![Seite mit dem Titel "Gutscheine", die einen Überblick über alle bereits erstellten Gutscheine, Optionen zum Suchen und Filtern von Gutscheinen, sowie Schaltflächen zum Erstellen oder Importieren von Gutscheinen zeigt.](../assets/screens/vouchers/vouchers-all.de.png)
+![Seite mit dem Titel "Gutscheine", die einen Überblick über alle bereits erstellten Gutscheine, Optionen zum Suchen und Filtern von Gutscheinen, sowie Buttons zum Erstellen oder Importieren von Gutscheinen zeigt.](../assets/screens/vouchers/vouchers-all.de.png)
 
 ### Einen einzelnen Gutschein erstellen
 
-Wenn Sie auf den Button :btn-icon:fa3-plus: Einen neuen Gutschein erstellen: klicken, gelangen Sie zu einem Dialogfeld, in dem Sie einen einzelnen neuen Gutschein erstellen können.
+Wenn Sie auf den Button :btn-icon:fa3-plus: Neuen Gutschein erstellen: klicken, gelangen Sie zu einem Dialog, in dem Sie einen einzelnen neuen Gutschein erstellen können.
 Das ist dann nützlich, wenn Sie einen einzelnen Gutscheincode veröffentlichen möchten, der einmal oder mehrmals verwendet werden kann.
 Das Feld "Gutscheincode" enthält bereits einen automatisch generierten Vorschlag.
-Sie haben die Möglichkeit, diesen zu übernehmen oder ihn durch Ihren eigenen Code zu ersetzen.
-Der Code muss 5-255 Zeichen lang sein.
+Sie können ihn übernehmen oder durch einen beliebigen eigenen Code ersetzen.
+Der Code muss zwischen 5 und 255 Zeichen lang sein.
 Alle Kleinbuchstaben werden in Großbuchstaben umgewandelt.
 
 ![Seite mit dem Titel "Gutschein", die Optionen zum Erstellen eines einzelnen Gutscheincodes zeigt.](../assets/screens/vouchers/create-single.de.png)
 
-Wenn Sie einen oder mehrere Gutscheine generieren, sollten Sie diese kopieren oder auf Ihrem Computer abspeichern.
+Wenn Sie einen oder mehrere Gutscheine generieren, sollten Sie diese kopieren oder auf Ihrem Computer speichern.
 Verwenden Sie dafür beispielsweise eine Text- oder Tabellendatei.
 
-Wenn Sie für eine Veranstaltung mehr als eine Art von Gutschein erstellen, ist es sinnvoll im Feld "Tag" eine Beschreibung einzugeben.
+Wenn Sie für eine Veranstaltung mehr als eine Art von Gutschein erstellen, ist es sinnvoll, im Feld "Tag" ein Schlagwort einzugeben.
 Das macht es später einfacher, bestimmte Gutscheine in der Liste zu finden, zu bearbeiten oder zu duplizieren.
 Ein sinnvoller Eintrag im Feld "Tag" könnte etwa der Zweck sein, für den die Gutscheine erstellt wurden, zum Beispiel "Zeitlich begrenztes Angebot".
 
 Sobald Sie auf den Button :btn:Speichern: klicken, wird der Gutschein erstellt.
 Danach gelangen Sie auf eine neue Seite mit dem Titel "Gutscheindetails".
-Auf dieser Seite finden Sie den "Gutscheinlink", den Sie an Ihre Kunden versenden können.
-Wenn Ihre Kunden den Link öffnen, gelangen sie direkt in den Shop, wo alle dem Gutschein zugehörigen Produkte angezeigt werden.
-Der Gutscheincode wird automatisch angewendet.
-Alle Einstellungen, die vor der Erstellung verfügbar sind, können auch geändert werden, nachdem der Gutschein bereits erstellt wurde.
+Auf dieser Seite finden Sie den "Gutschein-Link", den Sie an Ihre Kund\*innen versenden können.
+Wenn Ihre Kund\*innen den Link öffnen, gelangen sie direkt in den Shop in dem der Gutscheincode bereits ausgewählt wurde.
+Dadurch werden alle dem Gutschein zugewiesenen Produkte angezeigt.
+
+Sie können alle Einstellungen, die vor der Erstellung verfügbar sind, auch noch nach der Erstellung des Gutscheins ändern.
 
 ### Mehrere Gutscheine erstellen
 
-Der Button :btn-icon:fa3.plus: Mehrere neue Gutscheine erstellen: öffnet ein Dialogfeld, in dem Sie mehrere neue Gutscheine erstellen können.
+Der Button :btn-icon:fa3-plus: Mehrere Gutscheine erstellen: öffnet einen Dialog, in dem Sie mehrere neue Gutscheine erstellen können.
 Geben Sie im Feld "Anzahl" die Anzahl der Gutscheincodes ein, die Sie erstellen möchten.
-Wenn Sie etwas in das Feld "Präfix" eingeben bevor Sie Codes generieren, beginnt jeder generierte Code mit diesem Präfix.
-Sobald Sie auf :btn:Zufällige Codes generieren: klicken, wird die von Ihnen angegebene Anzahl an Codes im Feld "Codes" angezeigt.
+Wenn Sie etwas in das Feld "Präfix" eingeben bevor Sie Codes generieren, dann beginnt jeder generierte Code mit diesem Präfix.
+Sobald Sie auf :btn:Zufällige Codes generieren: klicken, wird die von Ihnen angegebene Anzahl an Codes im Feld "Gutscheincodes" angezeigt.
 
 Sie können auch eigene Gutscheincodes angeben, indem Sie diese manuell in das Feld "Codes" eingeben.
 Die Codes werden durch Zeilenumbrüche getrennt.
-Jeder Code muss also in einer neuen Zeile eingegeben werden.
+Sie müssen also jeden Code in einer neuen Zeile eingeben.
 
 ![Seite mit dem Titel "Mehrere Gutscheine erstellen", die Optionen zum Erstellen mehrerer Gutscheincodes zeigt.](../assets/screens/vouchers/create-multiple.de.png)
 
-Die Einstellungen in den Abschnitten "Gutscheindetails" und "Erweiterte Einstellungen" entsprechen denen im Dialogfeld "Einen einzelnen Gutschein erstellen".
+Die Einstellungen in den Abschnitten "Gutscheindetails" und "Erweiterte Einstellungen" entsprechen denen im Dialog "Einen einzelnen Gutschein erstellen".
 
-Es wird empfohlen, im Feld "Tag" einen Tag einzugeben.
+Sie sollten im Feld "Tag" einen Tag eingeben, um die Gutscheine später besser zuordnen und wiederfinden zu können.
 Zusätzlich sollten Sie die Codes kopieren und sie in einer Text- oder Tabellendatei speichern.
 Wenn Sie vorhaben, Gutscheine über die E-Mail-Funktion von pretix zu versenden, klicken Sie noch **nicht** auf den Button "Speichern".
 Lesen Sie stattdessen den [Unterabschnitt zum Gutscheine per E-Mail versenden](vouchers.md#sending-out-vouchers-via-email).
 
 Wenn Sie mit den Einstellungen fertig sind, klicken Sie auf den Button :btn:Speichern: und Ihre Gutscheine werden erstellt.
 Dadurch gelangen Sie zur Überblicks-Seite "Gutscheine".
-Sie können die Einstellungen der Gutscheine weiterhin bearbeiten, müssen dies aber für jeden Gutschein einzeln tun.
+Sie können alle Einstellungen, die vor der Erstellung verfügbar sind, auch noch nach der Erstellung der Gutscheine ändern.
 
 ### Gutscheine per E-Mail versenden
 
 Über das Dialogfeld "Mehrere Gutscheine erstellen" haben Sie auch Zugriff auf die E-Mail-Optionen.
-So können Sie mit pretix Gutscheine per E-Mail versenden nachdem Sie sie erstellt haben.
-Aktivieren Sie unten auf der Seite das Kontrollkästchen neben "Gutscheine per E-Mail versenden" um die E-Mail-Optionen anzuzeigen.
+So können Sie mit pretix Gutscheine per E-Mail versenden, nachdem Sie sie erstellt haben.
+Aktivieren Sie unten auf der Seite das Kontrollkästchen neben "Gutscheine per E-Mail versenden", um die E-Mail-Optionen anzuzeigen.
 
 Über die E-Mail-Optionen können Sie den Betreff und den Inhalt Ihrer E-Mails festlegen.
-In jedem Feld werden die entsprechenden verfügbaren Platzhalter aufgelistet.
-Außerdem ist jedes Feld mit voreingestellten Standardtexten versehen.
+Unter jedem Feld werden die entsprechenden verfügbaren Platzhalter aufgelistet.
+Jedes Feld enthält voreingestellte Standardtexte.
 
 ![Seite mit dem Titel "Mehrere Gutscheine erstellen", die Optionen zum Versenden von E-Mails zeigt.](../assets/screens/vouchers/send-emails.de.png)
 
-Es gibt zwei Methoden zur Angabe der Empfänger: Die einfache Methode besteht darin, eine Liste von E-Mail-Adressen in das Feld "Empfänger" einzugeben.
-Die Adressen müssen durch Zeilenumbrüche voneinander getrennt sein.
+Es gibt zwei Methoden zur Angabe der Empfänger.
+Die einfache Methode besteht darin, eine Liste von E-Mail-Adressen in das Feld "Empfänger" einzugeben.
+Trennen Sie dabei die E-Mail-Adressen durch Zeilenumbrüche voneinander.
 Bei dieser Methode muss die Anzahl der E-Mail-Adressen (und somit der Zeilen) mit der Anzahl der generierten Gutscheincodes übereinstimmen.
 Wenn Sie dieselbe E-Mail-Adresse mehr als einmal eingeben, werden mehrere E-Mails an diese Adresse versendet.
 Dabei enthält jede E-Mail einen anderen Gutscheincode.
@@ -101,17 +102,17 @@ Dabei enthält jede E-Mail einen anderen Gutscheincode.
 Die fortgeschrittene Methode besteht darin, eine durch Kommas getrennte Liste in das Feld "Empfänger" einzugeben.
 Die Liste darf bis zu vier Spalten enthalten:
 
-- **E-Mail**, die E-Mail-Adressen der Empfänger
-- **Anzahl**, die Anzahl der Gutscheincodes, die an die jeweilige E-Mail-Adresse versendet werden
-- **Name**, der mit der E-Mail-Adresse verknüpfte Name; dieser Name wird verwendet, um den Platzhalter {name} in den Feldern "Betreff" und "Nachricht" oben auszufüllen
-- **Tag**, der zur Nachverfolgung zusätzlicher Informationen verwendet werden kann
+- **email**, die E-Mail-Adressen der Empfänger\*innen
+- **number**, die Anzahl der Gutscheincodes, die an die jeweilige E-Mail-Adresse versendet werden
+- **name**, der mit der E-Mail-Adresse verknüpfte Name; dieser Name wird verwendet, um den Platzhalter {name} in den Feldern "Betreff" und "Nachricht" oben auszufüllen
+- **tag**, der zur Nachverfolgung zusätzlicher Informationen verwendet werden kann
 
 Geben Sie in der ersten Zeile die Überschriften der Spalten ein, die Sie verwenden möchten.
 Trennen Sie die Überschriften mit Kommas und **ohne** Leerzeichen.
-Es ist immer notwendig die Kopfzeile zu definieren.
+Diese Kopfzeile ist zwingend erforderlich.
 Sie können die Reihenfolge der Spalten frei wählen.
 Geben Sie darunter die Kontaktdaten ein.
-Für jede E-Mail-Adresse wird wieder eine eigene Zeile verwendet.
+Verwenden Sie dabei für jede E-Mail-Adresse wieder eine eigene Zeile.
 Alle zusätzlichen Informationen werden in derselben Zeile durch Kommas getrennt eingegeben.
 Im folgenden Beispiel würde Jordan 3, Morgan 1 und Jamie 10 Gutscheincodes erhalten:
 
@@ -124,17 +125,17 @@ jamie@example.org,10,Jamie Doe
 
 Die Anzahl der Gutscheincodes, die Sie auf diese Weise versenden, muss mit der Anzahl an generierten Gutscheincodes übereinstimmen.
 Die Software zeigt Ihnen eine Fehlermeldung an, wenn die Werte nicht übereinstimmen.
-Die E-Mails werden versendet, sobald Sie auf den Button :btn:Speichern: klicken.
+Die E-Mails werden versendet, sobald Sie den Button :btn:Speichern: klicken.
 
 ### Gutscheine importieren
 
-![Seite mit dem Titel "Gutscheine importieren", die einen Upload für Dateien und eine Einstellung für den Zeichensatz zeigt.
+![Seite mit dem Titel "Gutscheine importieren", die einen Upload für Dateien und ein Dropdown-Menü für den Zeichensatz zeigt.
 ](../assets/screens/vouchers/import.de.png)
 
 Über den Button :btn-icon:fa3-upload:Gutscheine importieren: auf der Seite "Gutscheine" können Sie eine Liste von Gutscheinen aus einer externen Quelle oder einer zuvor exportierten pretix-Veranstaltung hochladen.
-Zuerst klicken Sie auf den Button :btn:Durchsuchen...: und wählen eine CSV-Datei mit einer Kopfzeile aus.
-Klicken Sie dann auf den Button  :btn:Import starten:.
-Wenn die Datei erfolgreich als CSV-Datei importiert und verarbeitet werden kann, gelangen Sie auf eine neue Seite.
+Klicken Sie den Button :btn:Durchsuchen...: und wählen Sie eine CSV-Datei mit einer Kopfzeile aus.
+Klicken Sie dann  den Button  :btn:Import starten:.
+Wenn die Datei erfolgreich importiert und als CSV-Datei verarbeitet werden kann, gelangen Sie auf eine neue Seite.
 Dort finden Sie eine Vorschau der Daten sowie eine umfangreiche Auswahl an Import-Einstellungen.
 
 ![Seite mit dem Titel "Gutscheine importieren", die eine Vorschau der hochgeladenen Daten und die Einstellungen für den Import zeigt.](../assets/screens/vouchers/import-preview.de.png)
@@ -145,7 +146,7 @@ Sie können für jede Einstellung eine Spalte aus der CSV-Datei angeben.
 
 Der Inhalt dieser Spalte wird dann verwendet, um die Optionen für jeden einzelnen Gutschein festzulegen.
 Falls Ihre CSV-Datei keine entsprechende Spalte enthält, können Sie stattdessen einen der Standardwerte verwenden.
-Sobald Sie auf :btn:Import durchführen: klicken, versucht pretix, die Spalten aus der CSV-Datei gemäß den von Ihnen festgelegten Einstellungen zu verarbeiten.
+Sobald Sie den Button :btn:Import durchführen: klicken, versucht pretix, die Spalten aus der CSV-Datei gemäß den von Ihnen festgelegten Einstellungen zu verarbeiten.
 
 Wenn die Daten in den Spalten nicht dem erwarteten Datentypen entsprechen, wird eine Fehlermeldung angezeigt.
 Wenn der Import erfolgreich war, werden die Gutscheine für die aktuelle Veranstaltung den Vorgaben entsprechend erstellt.
@@ -153,8 +154,8 @@ Diese können Sie im Überblick auf der Seite "Gutscheine" einsehen und bearbeit
 
 ### Liste aller Gutscheine herunterladen
 
-Sie können eine Liste aller Gutscheine der aktuellen Veranstaltung herunterladen, indem Sie auf den Button :btn-icon:fa3-download: Liste herunterladen: klicken.
-Nach dem Klick auf den Button, wird automatisch eine Datei mit dem Namen "vouchers.csv" heruntergeladen.
+Sie können eine Liste aller Gutscheine der aktuellen Veranstaltung herunterladen, indem Sie  den Button :btn-icon:fa3-download: Liste herunterladen: klicken.
+Nach dem Klick den Button, wird automatisch eine Datei mit dem Namen "vouchers.csv" heruntergeladen.
 Diese kann anschließend in einem Texteditor oder einem Programm für Tabellenkalkulation bearbeitet werden.
 Die Datei "vouchers.csv" enthält folgende Spalten:
 
@@ -184,7 +185,7 @@ Beispielsweise können Sie unter "Preiseffekt" die Option "Produktpreis um (%) r
 Dadurch gewährt der Gutschein bei Einlösung 10% Rabatt.
 
 Deaktivieren Sie das Kontrollkästchen neben "Ausgeblendete Produkte zu diesem Gutschein anzeigen".
-Wenn Sie diese Option aktiviert lassen und Gutscheine für "Alle Produkte" ausstellen, können Kund*innen, die den Gutschein einlösen, alle ausgeblendeten Produkte sehen.
+Wenn Sie diese Option aktiviert lassen und Gutscheine für "Alle Produkte" ausstellen, können Kund\*innen, die den Gutschein einlösen, alle ausgeblendeten Produkte sehen.
 
 Sie können die Gültigkeit des Gutscheins auf eine bestimmte Anzahl von Einlösungen beschränken.
 Geben Sie dazu im Feld "Maximale Verwendungen" an, wie oft der Gutschein maximal eingelöst werden können soll.
@@ -220,7 +221,7 @@ Daher ist es notwendig, ein Kontingent anzulegen und nur die betreffenden Produk
 Die "Gesamtkapazität" müssen Sie so festlegen, dass sie die Anzahl der E-Mails abdeckt, die Sie versenden möchten.
 
 Unabhängig davon, ob Sie die Verfügbarkeit nur für ein einzelnes oder für mehrere Produkte eingeschränkt haben, empfiehlt es sich, die Gutscheincodes per E-Mail an Ihre Empfänger zu versenden.
-Navigieren Sie zu :navpath:Ihre Veranstaltung" → Gutscheine: und klicken Sie auf den Button :btn-icon:fa3-plus: Mehrere neue Gutscheine erstellen:.
+Navigieren Sie zu :navpath:Ihre Veranstaltung" → Gutscheine: und klicken Sie den Button :btn-icon:fa3-plus: Mehrere neue Gutscheine erstellen:.
 Dieser Vorgang wird im Abschnitt "[Gutscheine per E-Mail versenden](vouchers.md#sending-out-vouchers-via-email)" ausführlich beschrieben.
 Generieren Sie genauso viele Gutscheincodes, wie Personen, die Sie einladen möchten.
 Über die Spalte "Anzahl" in der Liste "Empfänger" können Sie mehrere Gutscheine an dieselbe E-Mail-Adresse versenden.
@@ -234,14 +235,14 @@ Aktivieren Sie dazu das Kontrollkästchen neben "Alle Zusatzprodukte beim Einlö
 
 Um die E-Mail-Optionen anzuzeigen, aktivieren Sie das Kontrollkästchen neben "Gutscheine per E-Mail versenden".
 Geben Sie die E-Mail-Adressen in das Feld "Empfänger" ein oder nutzen Sie die im Abschnitt ["Gutscheine per E-Mail versenden"](vouchers.md#sending-out-vouchers-via-email) beschriebene fortgeschrittene Methode.
-Die E-Mails werden versendet, sobald Sie auf den Button :btn:Speichern: klicken.
+Die E-Mails werden versendet, sobald Sie den Button :btn:Speichern: klicken.
 
 ### Tickets reservieren
 
 Mit Gutscheinen können Sie Produkte aus einem Kontingent reservieren.
 Dies ist nützlich, wenn Sie sicherstellen möchten, dass eine bestimmte Personengruppe Zugang zu Ihrer Veranstaltung erhält.
 Das können beispielsweise Gäste sein, die von den auftretenden Künstlern zu einem Konzert eingeladen wurden.
-Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-tags: Gutscheine: und klicken Sie auf den Button :btn-icon:fa3-plus: Mehrere neue Gutscheine erstellen:.
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-tags: Gutscheine: und klicken Sie den Button :btn-icon:fa3-plus: Mehrere neue Gutscheine erstellen:.
 Anschließend können Sie die Anzahl der Codes so festlegen, dass pro Mitglied der betreffenden Gruppe ein Gutschein generiert wird.
 
 Optional können Sie ein beschreibendes Präfix wie "GÄSTELISTE-" wählen.
