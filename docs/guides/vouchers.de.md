@@ -32,7 +32,7 @@ Hier erhalten Sie einen Überblick über alle bereits erstellten Gutscheine sowi
 
 ### Einen einzelnen Gutschein erstellen
 
-Wenn Sie auf den Button :btn-icon:fa3-plus: Neuen Gutschein erstellen: klicken, gelangen Sie zu einem Dialog, in dem Sie einen einzelnen neuen Gutschein erstellen können.
+Wenn Sie den Button :btn-icon:fa3-plus: Neuen Gutschein erstellen: klicken, gelangen Sie zu einem Dialog, in dem Sie einen einzelnen neuen Gutschein erstellen können.
 Das ist dann nützlich, wenn Sie einen einzelnen Gutscheincode veröffentlichen möchten, der einmal oder mehrmals verwendet werden kann.
 Das Feld "Gutscheincode" enthält bereits einen automatisch generierten Vorschlag.
 Sie können ihn übernehmen oder durch einen beliebigen eigenen Code ersetzen.
@@ -272,5 +272,5 @@ Aktivieren Sie das Kontrollkästchen neben "Kontingent ignorieren".
 Dadurch erhalten Gutscheininhaber\*innen Zugriff auf Produkte, auch wenn alle entsprechenden Kontingente bereits ausverkauft sind.
 
 !!! Note
-    Wenn Sie die Option "Kontingent ignorieren"verwenden, dann entsteht dadurch das Risiko einer Überbuchung.
+    Wenn Sie die Option "Kontingent ignorieren" verwenden, dann entsteht dadurch das Risiko einer Überbuchung.
     Wir empfehlen, diese Funktion nicht zu benutzen, wenn Sie mit strengen räumlichen Einschränkungen rechnen müssen, wie beispielsweise der Anzahl der verfügbaren Sitzplätze, dem Platzangebot am Veranstaltungsort oder der Anzahl der bestellten Mahlzeiten.
