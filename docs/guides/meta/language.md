@@ -38,11 +38,22 @@ Do **not** include any sentences with more than one subordinate clause.
 
 #### Keep paragraphs short
 
-Do not write paragraphs longer than five to six lines.
+Do **not** write paragraphs longer than five to six lines.
 Preview your article in a 1920 pixels wide browser window.
 If one of the paragraphs in that article is longer than six lines, split it up.
 
 If you are starting a new topic, start a new paragraph.
+
+#### Avoid negation or highlight it with bold text
+
+Avoid negation.
+Use positive wording to express a thought whenever possible.
+If you want to instruct the reader not to take a certain action, use bold text to highlight the negation.
+For example:
+
+```
+Do **not** write paragraphs longer than five to six lines.
+```
 
 #### Use the active voice
 
