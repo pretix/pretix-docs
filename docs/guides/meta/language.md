@@ -12,10 +12,10 @@ In order to do so, you can [send us an email](mailto:support@pretix.eu).
 
 ## How to
 
-Using proper language is not a linear process.
+Using the kind of language proposed here is not a linear process.
 Rather, it requires attention to many factors at the same time.
 Thus, unlike most other guides, this article will not give you step-by-step instructions.
-Instead, it will introduce and explain the factors that are relevant for proper language within the context of the pretix documentation:
+Instead, it will introduce and explain the factors that are relevant for the kind of language that is appropriate for the pretix documentation:
 
  - [writing style](#writing-style)
  - [terminology](#terminology)
@@ -162,7 +162,7 @@ If you want to make a new addition or correction to the terminology database, sp
 
 ### Orthography
 
-There are three sources for proper orthography within the context of the pretix documentation:
+Orthography within the pretix documentation is based on three sources:
 
  1. Our internal [terminology database](https://www.terminologue.org/pretix-docs/)
  2. [Merriam-Webster](https://www.merriam-webster.com/)
@@ -180,11 +180,11 @@ Our internal terminology database takes precedence over Merriam–Webster and Wi
 For instance, despite broadly using US-American orthography, we prefer the spelling "theatre" over "theater".
 
 If you or the team have not yet made a decision which spelling option to use, pick one variant and stick with it.
-Consistent spelling is helpful for replacing the word with the proper spelling later.
+Consistent spelling is helpful for replacing the word with the approved spelling later.
 
 ### Punctuation
 
-This section gives an overview on how to use proper punctuation while contributing to the pretix documentation.
+This section gives an overview on how to use punctuation while contributing to the pretix documentation.
 
 #### Numbers
 
