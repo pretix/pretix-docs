@@ -19,7 +19,7 @@ Alternatively, if you have an account on GitHub, you can browse to the repo and 
 Before you contribute to pretix itself or its documentation, read our [code of conduct](https://docs.pretix.eu/dev/development/contribution/codeofconduct.html).
 Adhere to this code of conduct while making contributions.
 
-## Do not use Artificial Intelligence (AI)
+## Adhere to our AI-assisted contribution policy
 
 Before you contribute to pretix itself or its documentation, read our [AI-assisted contribution policy](https://docs.pretix.eu/dev/development/contribution/ai.html).
 
