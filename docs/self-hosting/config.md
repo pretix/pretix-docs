@@ -289,7 +289,7 @@ ssl=off
 
 `custom_sender_dkim_selector`, `custom_sender_dkim_cname`
 
-:   If these are set, pretix will show a warning if organizers use a sender address from a domain that does not have a `CNAME` record pointing from the given DKIM selector to the given target.
+:   If these are set and organizers use a sender address from a domain that does not have a `CNAME` record pointing from the given DKIM selector to the given target, then pretix will show a warning.
 
 `custom_sender_dmarc_required`
 
