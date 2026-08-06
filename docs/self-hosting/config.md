@@ -20,6 +20,7 @@ We suggest that you start from the examples given in one of the installation tut
     However, you can also set them through environment variables.
     In this case, the syntax is `PRETIX_SECTION_CONFIG`.
     For example, to configure the setting `password_reset` from the `[pretix]` section, set `PRETIX_PRETIX_PASSWORD_RESET=off` in your environment.
+    To use a file-based configuration approach like docker secrets, prefix the environment variable with `FILE__` and set it to the file name that should be read.
 
 ## pretix settings
 
@@ -284,7 +285,15 @@ ssl=off
 
 `custom_sender_spf_string`
 
-:   If this is set to a valid SPF string, pretix will show a warning if organizers use a sender address from a domain that does not include this value.
+:   If this is set to a valid SPF string and organizers use a sender address from a domain that does not include this value in its SPF record, then pretix will show a warning.
+
+`custom_sender_dkim_selector`, `custom_sender_dkim_cname`
+
+:   If these are set and organizers use a sender address from a domain that does not have a `CNAME` record pointing from the given DKIM selector to the given target, then pretix will show a warning.
+
+`custom_sender_dmarc_required`
+
+:   If this is set to `True` and organizers use a sender address from a domain that does not have DMARC set up, then pretix will show a warning. 
 
 `custom_smtp_allow_private_networks`
 
@@ -443,19 +452,15 @@ For a given language (e.g. `pt-br`), pretix will then look in the specific sub-f
 ## Celery task queue
 
 For processing long-running tasks asynchronously, pretix requires the celery task queue. For communication between the web server and the task workers in both direction, a messaging queue and a result backend is needed.
-You can use a redis database for both directions, or an AMQP server (e.g. RabbitMQ) as a broker and redis or your database as a result backend:
+You can use a redis database for both directions as a result backend (which is the only officially supported method):
 
 ``` ini
 [celery]
-broker=amqp://guest:guest@localhost:5672//
+broker=redis://localhost:6379/1
 backend=redis://localhost/0
 broker_transport_options="{}"
 backend_transport_options="{}"
 ```
-
-RabbitMQ might be the better choice if you have a complex, multi-server, high-performance setup, but as you already should have a redis instance ready for session and lock storage, we recommend redis for convenience. See the [Celery documentation](http://docs.celeryproject.org/en/latest/userguide/configuration.html) for more details.
-
-The two `transport_options` entries can be omitted in most cases. If they are present they need to be a valid JSON dictionary. For possible entries in that dictionary see the [Celery documentation](http://docs.celeryproject.org/en/latest/userguide/configuration.html).
 
 It is possible the use Redis with TLS/mTLS for the broker or the backend. To do so, it is necessary to specify the TLS identifier `rediss`, the ssl mode `ssl_cert_reqs` and optionally specify the CA (TLS) `ssl_ca_certs`, cert `ssl_certfile` and key `ssl_keyfile` (mTLS) path as encoded string. the following uri describes the format and possible parameters:
 
@@ -485,6 +490,10 @@ traces_sample_token=xyz
 `traces_sample_token`
 
 :   If this token is found in a query string, a trace will always be sampled.
+
+`enable_logs`
+
+:   If set to `True`, pretix will also send all logs to Sentry.
 
 ## Caching
 
