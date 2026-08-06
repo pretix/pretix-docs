@@ -452,7 +452,7 @@ For a given language (e.g. `pt-br`), pretix will then look in the specific sub-f
 ## Celery task queue
 
 For processing long-running tasks asynchronously, pretix requires the celery task queue. For communication between the web server and the task workers in both direction, a messaging queue and a result backend is needed.
-You can use a redis database for both directions as a result backend (which is the only officially supported way):
+You can use a redis database for both directions as a result backend (which is the only officially supported method):
 
 ``` ini
 [celery]
