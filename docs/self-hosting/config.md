@@ -285,7 +285,7 @@ ssl=off
 
 `custom_sender_spf_string`
 
-:   If this is set to a valid SPF string, pretix will show a warning if organizers use a sender address from a domain that does not include this value in its SPF record.
+:   If this is set to a valid SPF string and organizers use a sender address from a domain that does not include this value in its SPF record, then pretix will show a warning.
 
 `custom_sender_dkim_selector`, `custom_sender_dkim_cname`
 
