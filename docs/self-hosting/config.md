@@ -293,7 +293,7 @@ ssl=off
 
 `custom_sender_dmarc_required`
 
-:   If this is set to `True`, pretix will show a warning if organizers use a sender address from a domain that does not have DMARC set up.
+:   If this is set to `True` and organizers use a sender address from a domain that does not have DMARC set up, then pretix will show a warning. 
 
 `custom_smtp_allow_private_networks`
 
