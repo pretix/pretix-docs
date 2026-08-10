@@ -63,7 +63,7 @@ Navigate to the dashboard.
 In the list titled "Your upcoming events", click the :btn-icon:fa3-plus:Create a new event: button.
 Under "Event type", select "Event series or time slot booking".
 The rest of the process is the same as the creation of a singular event.
-For more information on creating an event, see the tutorial page on [event creation](../tutorial/single-events/event.md).
+For more information on creating an event series, see the tutorial page on [event series creation](../tutorial/continuous-operation/event.md).
 
 ![Page titled "Create new Event—Step 1", showing options for choosing an organizer account, the event type, and languages to be used.](../assets/screens/event/create-event1.png "Create new event step 1 screenshot" )
 
@@ -82,7 +82,7 @@ The date you just created is now displayed in the list on this page.
 
 In order to create several new dates for this event series, click :btn-icon:fa3-plus: Create many new dates:.
 The process is very similar to creating a single date.
-It is illustrated in the example below.
+It is illustrated in the following example.
 
 ![Page titled "Create multiple dates", displaying options for a repetition rule and times, as well as a preview of dates about to be created. ](../assets/screens/event-series/create-multiple-example.png "Create multiple dates example" )
 
@@ -99,7 +99,7 @@ Under "Times", click the :btn-icon:fa3-plus: Add a single time slot: button.
 Choose the start time for your event, for example, 10:00:00.
 Optionally, you may choose an event end time such as 12:00:00 and an admission time such as 09:30:00.
 
-Under "General information", enter a name descriptive name for these dates in the "Name" field, "Sales workshop" for example.
+Under "General information", enter a descriptive name for these dates in the "Name" field, for example: `Sales workshop`.
 Under "Quotas", choose the product that shall grant admission to these dates in the "Products" field.
 
 Once you have taken these steps and made your optional choices, click the :btn:Save: button.
