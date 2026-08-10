@@ -130,18 +130,18 @@ During this time, the warning will persist even if we have already provided all 
 
 ## Customer and attendee data
 
-We are planning to print badges for our attendees during the conference.
-That means we have to record their name and affiliation during purchase.
+If a customer requests an invoice with their full name on it, then we want to be able to issue it.
+That means we have to record their name during purchase.
 
 On the event-level dashboard, we will click :btn-icon:fa3-wrench: Settings: in the sidebar, which lands us on the general settings page for the event.
 We will open the :btn:Customer and attendee data: tab at the top.
 The options on this tab allow us to set up questions for certain information for every ticket purchased.
 We will scroll down to the subheading "Attendee data (once per personalized ticket)".
 
-We will set the attendee name to "Ask and require input" and the company option to "Ask, but do not require input".
+We will set the attendee name to "Ask and require input".
 In the text field labeled "Attendee data explanation", we will add an explanation as to why we are collecting the data in question.
 Our explanation reads as follows:
-"We will use the name, title and company you submit for your badge."
+"We will use your name to issue an invoice upon request.
 
 Under "Form settings", we can choose the format in which pretix will ask attendees for names and titles.
 We are going to select `Ask for Title + Given name + Family name, display like Dr John Doe` for names and `Free text input` for titles.
@@ -160,7 +160,7 @@ A shop created with pretix Hosted will by default be located at https://pretix.e
 The shop we are creating for this tutorial is located at [https://pretix.eu/tut/tutmus27/](https://pretix.eu/tut/tutmus27/).
 
 By default, the page header of our shop will display the name of the event.
-The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design).
+The shop design settings allow us to replace the name with a header image that tells our customers about our museum (e.g., by means of the museum's name, logo, or recognizable design).
 
 We are going to add a header image by clicking the :btn:Browse...: button next to the "Header image" option and choosing a .png file with a resolution of 1140 × 120 pixels to upload from our computer.
 By default, the header image will replace the name of the event at the top of the page.

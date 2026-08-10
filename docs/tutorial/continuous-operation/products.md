@@ -5,7 +5,7 @@ We will be selling a variety of products in our shop.
 In this article, we will cover the process of creating the following products and making them available in our shop:
 
  - a basic [admission ticket](products.md#creating-and-editing-products)
- - a [discount ticket](products.md#discount-ticket) for students and members
+ - a [discount ticket](products.md#discount-ticket) for students
  - a ticket for our [guided tour](#guided-tour-ticket)
  - [stickers](products.md#product-with-variants) that come in three variants with different prices
 
@@ -94,6 +94,12 @@ We will then click the :btn:Save: button.
 We are going to create another ticket for our guided tour.
 In order to do so, we will navigate to the products page and click the :btn-icon:fa3-plus: Create a new product: button.
 We will name our new ticket "Guided tour" and provide a German translation.
+We will add a description such as the following:
+
+"Ticket for a guided tour.
+Guided tours start every Monday and Wednesday at 10 AM.
+The guided tour ticket also grants you access to the museum."
+
 Then, will change the "Default price" to €15.00 and select the appropriate tax rate of 19% from the "Sales tax" drop-down menu.
 We can leave all other settings on this page unchanged and click the :btn:Save and continue with more settings: button.
 

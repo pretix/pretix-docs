@@ -141,7 +141,7 @@ Merely providing a company name is not enough to get our account activated.
 
 We are going to enter the full contact details of our company further down on the page.
 If we are in an EU country other than Germany and want to use the reverse charge policy, then we will also add a "VAT ID".
-If we do not provide that VAT ID, then pretix GmbH will be forced to invoice us with German tax rates.
+If we do not provide that VAT ID, then pretix GmbH will be forced to invoice us with the tax rate of the country we entered above.
 
 The pretix team offers service in English and German.
 We are going to choose English as our preferred language of correspondence.
