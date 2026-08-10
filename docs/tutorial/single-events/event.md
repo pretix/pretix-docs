@@ -6,7 +6,7 @@ Here is a quick summary of the steps we are going to take in this section:
 
  - [create an event](event.md#event-creation)
  - [get an overview](event.md#event-level-dashboard) of the event's status on the dashboard
- - [enable the collection](event.md#customer-and-attendee-data) of customer and attendee data
+ - enable the collection of [customer and attendee data](event.md#customer-and-attendee-data)
  - [add images](event.md#shop-design) to the ticket shop
 
 This covers all the necessary steps for creating an event.
@@ -14,7 +14,7 @@ We will then move on to modify our products according to our needs in the next a
 
 ## Event creation
 
-In order to create an event, we must first log in to our [pretix](https://pretix.eu/control/) account.
+In order to create an event, we must first log in to our [pretix account](https://pretix.eu/control/).
 After that, clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events.
 We will now click the :btn-icon:fa3-plus:Create a new event: button.
 
@@ -31,7 +31,7 @@ If our account only has access to a single organizer account, then pretix will p
 
 Next, we have to choose the event type.
 There are two options: "Singular event or non-event shop" and "Event series or time slot booking".
-For this tutorial, we want to create a straightforward conference that takes place on a weekend.
+For this tutorial, we want to create a straightforward conference that takes place on a single weekend.
 Thus, we are going to choose the option "Singular event or non-event shop".
 
 We are going to choose which languages to use for the event.

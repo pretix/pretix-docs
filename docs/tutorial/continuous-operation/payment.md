@@ -15,7 +15,7 @@ For our museum, we are planning to receive payments by credit card through the p
 The prerequisites for this are an active Stripe merchant account and a bank account.
 
 pretix will automatically log payments coming in through most payment providers, including Stripe.
-As soon as Stripe records a payment, pretix marks the corresponding order in our shop as paid.
+As soon as Stripe or another payment provider records a payment, pretix marks the corresponding order in our shop as paid.
 Bank transfers are the exception to that rule because pretix would need to monitor payments arriving at our bank account.
 
 On pretix Hosted, it is possible to set up a connection to our bank account.
@@ -35,7 +35,7 @@ By default, all payment providers in this list except gift card will be disabled
     If this list does not display the payment providers you want to use, that means the corresponding plugin is not enabled.
     In order to activate such a plugin, navigate to :navpath:Your event → Settings → Plugins: and open the :btn:Payment providers: tab.
     Click the :btn:Enable: button next to the plugin you want to use.
-    You can tell that a plugin has is active by green ":fa3-check: Active" tag.
+    You can tell that a plugin is active by the green ":fa3-check: Active" tag.
 
 ### Stripe
 

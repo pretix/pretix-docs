@@ -6,7 +6,7 @@ Here is a quick summary of the steps we are going to take in this section:
 
  - [create an event series](event.md#event-creation)
  - [get an overview](event.md#event-level-dashboard) of the event's status on the dashboard
- - [enable the collection](event.md#customer-and-attendee-data) of customer and attendee data
+ - enable the collection of [customer and attendee data](event.md#customer-and-attendee-data)
  - [add images](event.md#shop-design) to the ticket shop
 
 This covers all the necessary steps for creating an event.
@@ -157,7 +157,7 @@ We will click the :btn:Save: button to save these settings.
 Switching to the "Shop design" tab at the top allows us to add images to our event shop and customize its colors.
 Clicking the :btn-icon:fa3-eye:Go to shop: button in the bar at the top takes us to a preview of the shop from the customers' perspective.
 A shop created with pretix Hosted will by default be located at https://pretix.eu/:placeholder:OrganizerShortForm:/:placeholder:EventShortForm:/.
-The shop we are creating for this tutorial is located at [https://pretix.eu/tut/tutcon27/](https://pretix.eu/tut/tutcon27/).
+The shop we are creating for this tutorial is located at [https://pretix.eu/tut/tutmus27/](https://pretix.eu/tut/tutmus27/).
 
 By default, the page header of our shop will display the name of the event.
 The shop design settings allow us to replace the name with a header image that tells our customers about the event (e.g., by means of the event name, logo, or recognizable design).

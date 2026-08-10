@@ -3,14 +3,14 @@
 Welcome to the pretix tutorial!
 In this tutorial, we will go through all the necessary steps for hosting our very first event using pretix.
 For illustrative purposes, we will create a straightforward conference.
-We will use specific examples for our organizer, event, products, as well as the names and prices thereof.
+We will use specific examples for our organizer, event, and products, as well as the names and prices thereof.
 Feel free to replace these examples with your own as you create your event according to your needs.
 
 !!! Note
     This tutorial explains setting up a shop for **single events** such as conferences, conventions, trade fairs, concerts, or festivals.
-    If you want to create a ticket shop for a venue with continuous operation, such as a public swimming pool, an amusement park, or a museum, then you should take a look at the tutorial for [Continuous operation](../continuous-operation/getting-started.md) instead.
+    If you want to create a ticket shop for a venue with continuous operation, such as a public swimming pool, an amusement park, or a museum, then you should take a look at the tutorial for [continuous operation](../continuous-operation/getting-started.md) instead.
 
-pretix is open source software.
+pretix is open-source software.
 You can use it either in the cloud or on your own server.
 Running pretix on your own server requires some technical knowledge.
 If you want to self-host pretix, refer to our [Self-hosting documentation](https://docs.pretix.eu/self-hosting/).
@@ -18,7 +18,7 @@ This tutorial focuses on the easier method: using our cloud-based pretix Hosted 
 
 Here is a brief overview of the steps we are going to take in this tutorial:
 
- - creating a personal and [organizer account](getting-started.md#creating-an-account)
+ - creating a [personal account](getting-started.md#creating-an-account) and organizer account
  - setting up our [organizer account](organizer-account.md)
  - creating our [event](event.md)
  - creating [products](products.md) (tickets and merchandise) for our event
@@ -44,11 +44,11 @@ This takes us to a site on which we will enter the info for our personal pretix 
 
 <br>
 
-![a website with input fields for account information as well as the name and short form of the organizer](../../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup" )
+![pretix.eu, 'Get started' page with input fields for account information as well as the name and short form of the organizer](../../assets/screens/account/pretix-create-account.png "pretix.eu/about/en/setup" )
 
 For our personal account, we are going to provide our name, email address, and a secure password.
 The field on the top left is meant for the name of the person to whom the account belongs, **not** for a company name.
-We are going to choose a name by which our co-organizers will recognize us and which our support team can use to address us.
+We are going to choose a name by which our co-organizers will recognize us and which the pretix support team can use to address us.
 For this tutorial, our name is going to be Jordan Doe.
 
 Everyone should have their own personal login.
@@ -56,7 +56,7 @@ If other members of our team should have access to the system as well, we will b
 
 
 !!! Warning
-    The **short form** is the unique identifier for your company in our website's backend.
+    The **short form** is the unique identifier for your company in the pretix backend.
     pretix will also use it in the shop URL.
     Put careful consideration into the short form.
     Only submit it when you are happy with your choice.

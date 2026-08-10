@@ -70,7 +70,7 @@ Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 After saving the general settings, we are going to switch to the :btn:Localization: tab.
 
 Under "Available languages", we can choose the languages in which we will publish our ticket shop.
-The options officially maintained by the pretix team are "English", "German", and "German (informal)".
+The options officially maintained by the pretix team are "English", "German", and "German".
 "German" uses "Sie" to address the user whereas "German (informal)" uses "du".
 
 We can also choose one of the community translations for our organizer page.
@@ -119,7 +119,7 @@ On the :btn:Privacy: tab, we can provide a URL pointing to our privacy policy fo
 
 !!! Warning
     It is your responsibility to ensure compliance with applicable legislation.
-    We are helping you by suggesting these settings.
+    We are trying to help you by suggesting these settings.
     But we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
 ## Activation
@@ -141,7 +141,7 @@ Merely providing a company name is not enough to get our account activated.
 
 We are going to enter the full contact details of our company further down on the page.
 If we are in an EU country other than Germany and want to use the reverse charge policy, then we will also add a "VAT ID".
-Without that VAT ID, pretix GmbH would be forced to invoice us with German tax rates.
+If we do not provide that VAT ID, then pretix GmbH will be forced to invoice us with German tax rates.
 
 The pretix team offers service in English and German.
 We are going to choose English as our preferred language of correspondence.

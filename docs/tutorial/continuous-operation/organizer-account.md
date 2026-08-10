@@ -78,7 +78,7 @@ The list below displays the community translations along with a percentage indic
 pretix will use English as the fallback language for missing translations.
 
 These settings also determine the default languages when creating new events, though we can activate or deactivate languages for each event individually.
-We are going to activate "English" and "German (informal)" for our example conference.
+We are going to activate "English" and "German" for our example museum.
 
 {% include "note-translations.md" %}
 
@@ -119,7 +119,7 @@ On the :btn:Privacy: tab, we can provide a URL pointing to our privacy policy fo
 
 !!! Warning
     It is your responsibility to ensure compliance with applicable legislation.
-    We are helping you by suggesting these settings.
+    We are trying to help you by suggesting these settings.
     But we cannot assume liability since we do not know the exact configuration of your pretix usage, the legal details in your specific jurisdiction, or the agreements you have with third parties such as payment or tracking providers.
 
 ## Activation
