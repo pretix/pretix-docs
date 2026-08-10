@@ -61,12 +61,12 @@ Once we have done so, we are going to click the :btn:Save: button.
 
 ![Page titled 'Create product', showing options such as item name, copy product information, product type and personalization.](../../assets/screens/products/create.png "Create product screenshot")
 
-We will now create the discount ticket based on the "Standard ticket" we edited in the previous step.
+We will now create the discount ticket based on the "Regular admission" ticket we edited in the previous step.
 There are two advantages to this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them.
 We do not need the "Reduced ticket" anymore.
 We will navigate to the products page, click the red :btn-icon:fa3-trash:: delete button next to the reduced ticket, and confirm that we want to delete it.
 
-Back on the product overview, we will click the :btn-icon:fa3-copy:: clone button next to the standard ticket in order to clone it.
+Back on the product overview, we will click the :btn-icon:fa3-copy:: clone button next to the regular admission ticket in order to clone it.
 We will name the new ticket "Discounted admission", provide a translation, change the "Default price" to €8.00, and click the :btn:Save: button.
 
 !!! Note
@@ -129,7 +129,7 @@ In this section, we are going to create quotas and add our products to them.
 
 We will navigate to :navpath:Event → :fa3-ticket: Products → Quotas:.
 This page shows the list of all quotas for the event.
-At the moment, this includes the "Regular ticket" quota, containing the standard ticket as a product, and the "Reduced ticket" quota, not containing any ticket.
+At the moment, this includes the "Regular ticket" quota, containing the regular admission ticket as a product, and the "Reduced ticket" quota, not containing any ticket.
 The list also displays the total capacity and how many items remain for each quota.
 
 ### Quotas for tickets
@@ -148,7 +148,7 @@ Our venue has room for 2000 people, 100 of which are going to be speakers.
 We will leave the rest of the settings unchanged and click the :btn:Save: button.
 This takes us to a detailed overview of the status of the "Standard ticket" quota.
 
-Since this quota now includes both the standard and discount tickets, we do not need the "Reduced ticket" quota anymore.
+Since this quota now includes both the standard and discount admission tickets, we do not need the "Reduced ticket" quota anymore.
 We will navigate back to the quotas page and click the :btn-icon:fa3-trash:: delete button next to the "Reduced ticket" quota.
 
 We need to assign our speaker ticket to a quota, too.

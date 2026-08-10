@@ -48,7 +48,7 @@ This means that all of our customers will have a unified and flawless experience
 
 ![Page titled 'Shop status', displaying a box warning about which conditions are not met yet for the shop to go live and options to disable test mode and delete all test mode orders.](../../assets/screens/testing/shop-status.png "Shop status screenshot")
 
-We want only real orders from actual customers to appear in our shop from this point onwards
+We want only real orders from actual customers to appear in our shop from this point onwards.
 Thus, we have to delete the orders we placed in test mode.
 In order to do so, we will navigate to our event and click the :btn-icon:fa3-exclamation-triangle: TEST MODE: entry in the sidebar which is highlighted in orange.
 We will check the box labeled "Permanently delete all orders created in test mode" and click the :btn:Disable test mode: button.
