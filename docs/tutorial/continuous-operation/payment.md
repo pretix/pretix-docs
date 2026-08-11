@@ -26,7 +26,7 @@ On all versions of pretix, we can monitor payments via bank transfer either by m
 ![Page titled 'Payment settings', on the 'Payment providers' tab. There is a list of payment providers: Bank transfer, Gift card, PayPal, SEPA debit and Stripe.](../../assets/screens/payment/settings.png "Payment settings screenshot")
 
 In order to set up payment providers, we will navigate to our personal dashboard by clicking :btn-icon:i-pretix:pretix.eu: in the top left corner of the website.
-We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-wrench: Settings: in the sidebar and click the :btn:Payment: subentry.
+We will then select our event series in the list of "Your upcoming events", open :btn-icon:fa3-wrench: Settings: in the sidebar and click the :btn:Payment: subentry.
 This page displays a list of payment providers.
 The list should include bank transfer and Stripe.
 By default, all payment providers in this list except gift card will be disabled.
@@ -47,7 +47,7 @@ This takes us to the payment settings page for Stripe, which currently only cont
 Clicking that button takes us to a dialog on stripe.com.
 On that website, we will input our email address and go through the process of connecting our Stripe merchant account to our pretix account.
 
-We will then return to pretix.eu, navigate to our event, open :btn-icon:fa3-wrench: Settings: in the sidebar, click the :btn:Payment: subentry and open the Stripe settings.
+We will then return to pretix.eu, navigate to our event series, open :btn-icon:fa3-wrench: Settings: in the sidebar, click the :btn:Payment: subentry and open the Stripe settings.
 Instead of the single button, the page will now display a multitude of settings.
 
 We will check the boxes next to "Credit card payments" and "Enable payment method", then scroll to the bottom and click the :btn:Save: button.
@@ -78,7 +78,7 @@ For more information on using bank transfers, see [bank transfers](../../guides/
 
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../../assets/screens/payment/invoice.png "Invoice settings screenshot")
 
-We will navigate to the invoicing settings by going to our event, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry.
+We will navigate to the invoicing settings by going to our event series, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry.
 On the :btn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
 
 We will then switch to the :btn:Issuer details: tab and provide the name and full address of our organization.
