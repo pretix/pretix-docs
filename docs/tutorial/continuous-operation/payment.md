@@ -85,7 +85,7 @@ We will then switch to the :btn:Issuer details: tab and provide the name and ful
 pretix will use the data we enter here for all invoices we generate from this point on.
 
 If we now click the :btn:Save and show preview: button, our browser is going to download a PDF preview of the invoice.
-This invoice will include our organization's address, the invoice number TUTCON27-PREVIEW and an example listing of purchases with a partial payment.
+This invoice will include our organization's address, the invoice number TUTMUS27-PREVIEW and an example listing of purchases with a partial payment.
 
 ## Conclusion
 

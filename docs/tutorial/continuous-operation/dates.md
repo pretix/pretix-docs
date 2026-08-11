@@ -5,7 +5,7 @@ Dates behave similar to individual events, but they are all part of an overarchi
 This article explains how to add dates to an event series.
 
 We will navigate to our personal dashboard by clicking :btn-icon:i-pretix: pretix.eu: in the top left corner of the website.
-We will then select our event in the list of "Your upcoming events" and click :btn-icon:fa3-calendar: Dates: in the sidebar.
+We will then select our event series in the list of "Your upcoming events" and click :btn-icon:fa3-calendar: Dates: in the sidebar.
 
 ![Page titled "Dates", displaying buttons for creating a single or multiple new dates. ](../../assets/screens/event-series/dates.png "Dates screenshot" )
 
@@ -25,7 +25,7 @@ Under "Event end time", we will enter `2027-12-31`, `18:00:00`.
 In the first field under "Quotas", we will enter "Regular admission".
 We will leave the "Total capacity" field empty because we do not need to limit the sale of tickets that attendees will use throughout our entire season.
 
-Under "Products", we will select the two products we want to grant admission to our regular opening hours.
+Under "Products", we will select the two products we want to grant admission during our regular opening hours.
 Those tickets are "Regular admission" and "Discount admission".
 We will then click the :btn:Save: button.
 
