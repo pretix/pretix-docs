@@ -2,6 +2,8 @@
 
 A product is anything sold via pretix: tickets, gift cards, t-shirts and so on.
 We will be selling a variety of products in our shop.
+It is not possible to create dates without preparing the products that we will sell for those dates first.
+
 In this article, we will cover the process of creating the following products and making them available in our shop:
 
  - a basic [admission ticket](products.md#creating-and-editing-products)

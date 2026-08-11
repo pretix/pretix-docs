@@ -5,16 +5,16 @@ This article describes the creation and basic setup of an event series.
 Here is a quick summary of the steps we are going to take in this section:
 
  - [create an event series](event.md#event-creation)
- - [get an overview](event.md#event-level-dashboard) of the event's status on the dashboard
+ - [get an overview](event.md#event-level-dashboard) of the event series's status on the dashboard
  - enable the collection of [customer and attendee data](event.md#customer-and-attendee-data)
  - [add images](event.md#shop-design) to the ticket shop
 
-This covers all the necessary steps for creating an event.
+This covers all the necessary steps for creating an event series.
 We will then move on to modify our products according to our needs in the next article of this tutorial.
 
 ## Event creation
 
-In order to create an event, we must first log in to our [pretix](https://pretix.eu/control/) account.
+In order to create an event series, we must first log in to our [pretix](https://pretix.eu/control/) account.
 After that, clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events.
 We will now click the :btn-icon:fa3-plus:Create a new event: button.
 
@@ -34,7 +34,7 @@ There are two options: "Singular event or non-event shop" and "Event series or t
 For this tutorial, we want to create a shop for a museum that operates most days of the week for an entire season.
 Thus, we are going to choose the option "Event series or time slot booking".
 
-We are going to choose which languages to use for the event.
+We are going to choose which languages to use for the event series.
 By default, the languages we chose while setting up the organizer account should be active.
 We will activate or deactivate languages as needed.
 
@@ -47,7 +47,7 @@ Once we are happy with our choices, we are going to click the :btn:Continue: but
 
 ![Screenshot of page titled "Create new Event—Step 2", showing options for choosing name, short form, date, location, and geo coordinates for the event. Not pictured: currency, sales tax rate, time zone, start and end date of presale.](../../assets/screens/event/create-event2.png "Create new event step 2 screenshot" )
 
-We are now asked to provide a name and a short form for the event.
+We are now asked to provide a name and a short form for the event series.
 For this tutorial, we are going to create a shop for the 2027 season.
 Therefore, in the "Event name" field, we will enter `Tutorial Museum`.
 For the "Short form" field, we will come up with an abbreviation for "Tutorial Museum" and include the last two digits of the year.
@@ -72,12 +72,12 @@ If it cannot find any results for the input, we can manually drag the marker on 
 This will automatically update the "Geo coordinates" fields.
 Alternatively, we can use the more advanced search function on [OpenStreetMap.org](https://www.openstreetmap.org) and copy the coordinates over to the "Geo coordinates" fields.
 
-We have to choose a currency for our event.
+We have to choose a currency for our event series.
 We are going to click the "Currency" drop-down menu and select the `Euro`.
 
-This page also allows us to set a sales tax rate for our event.
-It is possible to change taxation rules after we have finished creating the event.
-We are holding our event in Germany and a single percentage rule applies to all of our products.
+This page also allows us to set a sales tax rate for our event series.
+It is possible to change taxation rules after we have finished creating the event series.
+Our museum is located in Germany and a single percentage rule applies to all of our products.
 Thus, we are going to add a 19% tax rule here.
 
 {% include "note-tax-rules.md" %}
@@ -92,7 +92,7 @@ Once we are happy with our choices, we are going to click the :btn:Continue: but
 
 We are then asked if we want to copy information from a previously created event.
 This option can save us a lot of work from our second event onwards.
-But since this is the first event we are organizing with this organizer account, we will leave the default (_"Do not copy"_) and click :btn:Continue:.
+But since this is the first event we are setting up with this organizer account, we will leave the default (_"Do not copy"_) and click :btn:Continue:.
 
 <br>
 
@@ -171,5 +171,7 @@ Any changes we make on this page will only become visible in the event shop afte
 
 ## Conclusion
 
-We have gone through the four-step event creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop.
-We can now move on to [creating products](products.md) to sell in our shop.
+We have gone through the four-step event series creation process, gotten an overview of the event's status on the event dashboard, enabled the collection of customer and attendee data, and added images to the ticket shop.
+The event series encompasses our museum's entire 2027 season.
+It does not contain any individual dates yet.
+But before we can create those individual dates, we first have to prepare [products](products.md).

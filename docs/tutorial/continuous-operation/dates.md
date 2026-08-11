@@ -1,7 +1,7 @@
 # Dates
 
 An event series contains dates.
-Dates behave similar to individual events, but they are all part of an overarching event series.
+Dates are all part of an overarching event series, but each date can have its own start and end time, name, description, products (and thus prices), and so on.
 This article explains how to add dates to an event series.
 
 We will navigate to our personal dashboard by clicking :btn-icon:i-pretix: pretix.eu: in the top left corner of the website.

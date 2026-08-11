@@ -6,7 +6,7 @@ We are going to take the following steps:
 
  - enabling payment via credit card using [Stripe](payment.md#stripe)
  - enabling payment via [bank transfer](payment.md#bank-transfers)
- - setting up [invoices](payment.md#setting-up-invoices) to send out automatically with every order
+ - setting up [invoices](payment.md#setting-up-invoices) to be sent out automatically with every order
 
 ## Setting up payment providers
 
@@ -78,7 +78,8 @@ For more information on using bank transfers, see [bank transfers](../../guides/
 
 ![Page titled 'Invoice settings', displaying options for generating invoices, which sales channels to generate them for, and attaching them to emails.](../../assets/screens/payment/invoice.png "Invoice settings screenshot")
 
-We will navigate to the invoicing settings by going to our event series, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry.
+We want to set up the automatic generation of invoices.
+In order to do so, we will navigate to the invoicing settings by going to our event series, opening :btn-icon:fa3-wrench: Settings: in the sidebar and clicking the :btn:Invoicing: subentry.
 On the :btn:Invoice generation: tab, we will set the "Generate invoices" option to "Automatically after payment or when required by payment method."
 
 We will then switch to the :btn:Issuer details: tab and provide the name and full address of our organization.
