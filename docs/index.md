@@ -76,8 +76,8 @@ Welcome to the pretix documentation!
 
     ---
 
-    We're open source!
-    On GitHub, you can find the source both code for pretix and many plugins, as well as for this documentation.
+    We are open source!
+    On GitHub, you can find the source code for pretix and many plugins, as well as for this documentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
 

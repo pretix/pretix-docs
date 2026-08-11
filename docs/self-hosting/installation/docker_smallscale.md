@@ -15,7 +15,7 @@ Please set up the following systems beforehand, we'll not explain them here (but
 -   [Docker](https://docs.docker.com/engine/installation/linux/debian/)
 -   A SMTP server to send out mails, e.g. [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-22-04) on your machine or some third-party server you have credentials for
 -   A HTTP reverse proxy, e.g. [nginx](https://botleg.com/stories/https-with-lets-encrypt-and-nginx/) or Apache to allow HTTPS connections
--   A [PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-22-04) 12+ database server
+-   A [PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-22-04) 14+ database server
 -   A [redis](https://blog.programster.org/debian-8-install-redis-server/) server
 
 We also recommend that you use a firewall, although this is not a pretix-specific recommendation. If you're new to Linux and firewalls, we recommend that you start with [ufw](https://en.wikipedia.org/wiki/Uncomplicated_Firewall).

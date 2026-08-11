@@ -339,27 +339,68 @@ They also ensure that season ticket holders are admitted to every date.
 ### Mixed taxation
 
 The article on [taxes](../taxes.md) has sections explaining how to set up products with mixed taxation using bundles.
-The exact method differs depending on whether [tax is included in the price)](../taxes.md#mixed-taxation-tax-included-in-price) or [tax is added on top of the price)](../taxes.md#mixed-taxation-tax-added-on-top-of-price).
+The exact method differs depending on whether [tax is included in the price](../taxes.md#mixed-taxation-tax-included-in-price) or [tax is added on top of the price](../taxes.md#mixed-taxation-tax-added-on-top-of-price).
 
 ## Troubleshooting
 
-### A product does not appear in the ticket shop
+### A product does not show up in the ticket shop
 
-If you have created a product and it is not displayed in your ticket shop, perform the following checks:
+**Problem:** You have created a product, but it does not show up in your shop.
 
- 1. Check if the product's "active" checkbox is enabled.
+**Solution:** This can have a variety of reasons.
+Perform the following checks:
 
- 2. Check if the product's "Available from" or "Available until" settings restrict it to a date range.
+ 1. The product may be inactive.
+ In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Products:.
+ Edit the product that is not showing up in your shop.
+ On the :btn:General: tab, verify that the box next to "Active" is checked.
 
- 3. Check if the product's checkbox "This product will only be shown if a voucher matching the product is redeemed." is enabled.
- If this is the case, the product will  only be shown if the customer redeems a voucher that directly matches to this product.
- It will not be shown if the voucher only is configured to match a quota that contains the product.
+!!! Note
+    Any change you make to the product's configuration only takes effect after you click the :btn:Save: button.
 
- 4. Check if the product is in a category that has the "Products in this category are add-on products" checkbox enabled.
- If this is the case, the product won't show up on the shop front page, but only in the first step of checkout when a product in the cart allows to add add-on products from this category.
+ 2. Your product may be restricted to sales channels other than your shop.
+ In order to resolve this, open the :btn:Availability: tab.
+ Verify that the box next to "Sell on all sales channels" is checked.
+ If that box is unchecked, verify that the box next to "Online shop" is checked.
 
- 5. Check that a quota exists that contains this product.
- If your product has variations, check that at least one variation is contained in a quota.
- If your event is an event series, make sure that the product is contained in a quota that is assigned to the series date that you access the shop for.
+ 3. Your product's availability may be restricted to a certain time frame.
+ In order to resolve this, check the "Available from" or "Available until" fields.
+ If the fields are empty, then there is no such restriction.
+ If any of the fields contain dates and times, verify that you are within the specified time frame.
+ If you want the product to show up in your shop even outside the specified time frame, set the toggles to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
 
- 6. If the sale period has not started yet or is already over, check the "Show items outside presale period" setting of your event.
+ 3. Your product may only be available through a voucher.
+ In order to resolve this, verify that the box next to "This product can only be bought using a voucher" is **not** checked.
+ If that box is active, then your shop will only show the product to customers who have entered a matching voucher code.
+ If you still want your shop to show the product to all customers, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
+
+ 4. Your product may only be available as part of a bundle.
+ In order to resolve this, verify that the box next to "Only sell this product as part of a bundle" is **not** checked.
+ If that box is active, then it will not show up as a standalone product in your shop.
+ It will only show up as part of another product to which you added this product as a bundled product.
+
+ 5. Your product may only be available through a membership.
+ In order to resolve this, verify that the box next to "Require a valid membership" is **not** checked.
+ If that box is active, then your shop will only show the product to customers who are logged in to their account and who have a valid membership.
+
+ 6. Your product may only be available after another product has been sold out.
+ In order to resolve this, verify that the field next to "Only show after sellout of" is empty.
+ If you specify another product in that field, then your shop will only show this product if the other product is sold out.
+ If you still want your shop to show the product regardless of the availability of the other product, set the toggle to :btn-icon:fa3-info:: "Show product with info on why it's unavailable".
+
+ 7. Your product may be in the wrong type of category.
+ In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Categories:.
+ Edit the category to which your product belongs.
+ Verify that the selection under "Category type" is either `Normal category` or `Normal + cross-selling category`.
+ If the selection is `Add-on product category`, then your product is only available as an add-on.
+ If the selection is `Cross-selling category`, then your product is only available during the cross-selling step of the purchase.
+
+ 8. Your product may not be part of a quota.
+ In order to resolve this, navigate to :navpath:Your event → :fa3-ticket: Products → Quotas:.
+ Verify that one of the quotas contains this product.
+ If your product has variations, verify that at least one variation is part of a quota.
+ If you are hosting an event series, verify that the quota is assigned to the date which you are accessing in your shop.
+
+ 9. Your product may be part of an empty quota.
+ In order to resolve this, verify that none of the quotas that contain your product are empty.
+ If any of the quotas have ever been sold out, verify that the box next to "Close this quota permanently once it is sold out" is **not** checked.

@@ -54,8 +54,9 @@ We recommend creating **singular events** for the following use cases:
 
  - events that take place over the course of several days, such as conferences or festivals, if customers typically attend more than one day of the event.
  This can be solved more easily using different products and check-in rules.
- - events with large gaps of time between the individual dates, such as annual conferences
- - events with very little overlap in terms of organizational parameters
+ - events with large gaps of time between the individual dates, such as annual conferences 
+ - events with very little overlap in terms of organizational parameters 
+ - small-scale events taking place in the context of a larger event (such as workshops at a conference)
 
 ### How to create an event series
 

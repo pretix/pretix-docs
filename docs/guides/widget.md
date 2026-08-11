@@ -126,6 +126,8 @@ Omit `variation_ITEMID_VARID=4` if the items do **not** have variations.
 Use the number behind the `=` symbol to specify the number of this item or variation to be added to the cart. 
 
 If you do **not** include the `items` attribute or do **not** pass a valid product or variation ID, clicking the button will open your ticket shop in a new browser tab without adding any items to the cart. 
+By default this page will **not** include cart items that were added previously (either via the button or the widget) and the cart created on this page will be gone if the page containing the button is reloaded.
+To store the cart created in this view and to use the cart that was created by other buttons and widgets on the same page, add the `keep-cart` attribute.
 
 If you link the button to an event series, use the `subevent` attribute to specify the date for which it should add the items to the cart. 
 
@@ -704,7 +706,7 @@ If your pretix shop is running under a custom domain, you need to add the follow
  - `connect-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
  - `frame-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted)
  - `img-src`: `https://pretix.eu` (adjust to your domain for self-hosted pretix **and** for custom domain on pretix Hosted). 
-    For pretix Hosted, also add `https://cdn.pretix.space`. 
+    For pretix Hosted, also add `https://cdn.pretix.cloud`. 
 
 #### Cross Origin Opener Policy
 

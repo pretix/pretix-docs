@@ -99,6 +99,8 @@ plugins:
             Events: Veranstaltungen
             Pretixpos: pretixPOS
             Pretixkiosk: pretixKIOSK
+            Pretixscan: pretixSCAN
+            Pretixprint: pretixPRINT
             Payment: Zahlung
             Developer and API Docs: Entwickler- und API-Dokumentation
             Trust: Trust und Compliance
@@ -146,6 +148,8 @@ plugins:
             Self hosting: Self-hosting
             Pretixpos: pretixPOS
             Pretixkiosk: pretixKIOSK
+            Pretixscan: pretixSCAN
+            Pretixprint: pretixPRINT
             Fiscal: Fiscal requirements
   - social:
       cards_layout_options:
@@ -163,7 +167,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/pretix/
     - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCG1Og1YUpgIJD4geAZLAp5g
+      link: https://www.youtube.com/@pretix
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/pretix.eu/
 hooks:
