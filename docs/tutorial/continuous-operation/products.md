@@ -23,7 +23,7 @@ We are not only going to sell admission tickets in our shop, but also extras suc
 That means our next step is to create a category for those extras.
 
 For that, we will navigate to our personal dashboard by clicking :btn-icon:i-pretix: pretix.eu: in the top left corner of the website.
-We will then select our event in the list of "Your upcoming events", open :btn-icon:fa3-ticket: Products: in the sidebar and click the :btn:Categories: subentry.
+We will then select our event series in the list of "Your upcoming events", open :btn-icon:fa3-ticket: Products: in the sidebar and click the :btn:Categories: subentry.
 This page shows the list of all product categories, which at the moment should only include a single category named "Tickets" of the type "Normal category".
 
 We will click the :btn-icon:fa3-plus: Create a new category: button and give the category a name such as "Extras".
@@ -49,11 +49,7 @@ We are going to add the following description:
 Next, we will click the :btn:Price: tab and change the "Default price" to €10.00.
 We will also select the appropriate tax rate of 19% from the "Sales tax" drop-down menu.
 
-!!! Note
-    Every tax rate you assign to a product, you have to create first.
-    If there are multiple different tax rates that apply to your products, create one tax rate for each of them.
-    If you are selling products with a 0% tax rate (such as [gift cards](../../guides/gift-cards.md)), you still need to create a 0% tax rule first.
-    For more information, see our guide on [creating tax rules](../../guides/taxes.md#creating-tax-rules).
+{% include "note-tax-rules.md" %}
 
 Once we have done so, we are going to click the :btn:Save: button.
 
