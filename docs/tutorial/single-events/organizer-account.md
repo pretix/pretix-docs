@@ -70,7 +70,7 @@ Clicking the :btn:Save: button at the bottom of the page confirms our changes.
 After saving the general settings, we are going to switch to the :btn:Localization: tab.
 
 Under "Available languages", we can choose the languages in which we will publish our ticket shop.
-The options officially maintained by the pretix team are "English", "German", and "German".
+The options officially maintained by the pretix team are "English", "German", and "German (informal)".
 "German" uses "Sie" to address the user whereas "German (informal)" uses "du".
 
 We can also choose one of the community translations for our organizer page.

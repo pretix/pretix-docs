@@ -65,7 +65,7 @@ Once we have done so, we are going to click the :btn:Save: button.
 
 We will now create the discount ticket based on the "Regular admission" ticket we edited in the previous step.
 There are two advantages to this approach: First, we do not have to repeat all the same steps, and second, we are reducing our risk of forgetting any of them.
-We do not need the "Reduced ticket" anymore.
+We will not be needing the "Reduced ticket" anymore.
 We will navigate to the products page, click the red :btn-icon:fa3-trash:: delete button next to the reduced ticket, and confirm that we want to delete it.
 
 Back on the product overview, we will click the :btn-icon:fa3-copy:: clone button next to the regular admission ticket in order to clone it.

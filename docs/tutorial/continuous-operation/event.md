@@ -14,7 +14,7 @@ We will then move on to modify our products according to our needs in the next a
 
 ## Event creation
 
-In order to create an event series, we must first log in to our [pretix](https://pretix.eu/control/) account.
+In order to create an event series, we must first log in to our [pretix account](https://pretix.eu/control/).
 After that, clicking the :btn:pretix.eu: button in the top left corner of the website takes us to the dashboard and an overview of our upcoming events.
 We will now click the :btn-icon:fa3-plus:Create a new event: button.
 

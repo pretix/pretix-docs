@@ -104,7 +104,7 @@ Under "Quotas", choose the product that shall grant admission to these dates in 
 
 Once you have taken these steps and made your optional choices, click the :btn:Save: button.
 You will be taken back to the dates overview page titled "Dates".
-If your venue has to close for a few of those dates (due to maintenance, team building, or any other reason), check the boxes next to those dates, scroll to the bottom of the page and click the :btn-icon:fa3-trash: Delete selected (2): button.
+If your venue has to close for a few of those dates (due to maintenance, internal team events, or any other reason), check the boxes next to those dates, scroll to the bottom of the page and click the :btn-icon:fa3-trash: Delete selected (2): button.
 
 ## Troubleshooting
 
