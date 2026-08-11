@@ -16,7 +16,7 @@ Welcome to the pretix documentation!
 
     If you are using pretix for the first time, our tutorial will guide you through the basics.
 
-    :fa3-arrow-right: [Getting Started](tutorial/getting-started.md)
+    :fa3-arrow-right: [Getting Started](tutorial/index.md)
 
 -   :fa3-book:{ .lg .middle } __Guides__
 

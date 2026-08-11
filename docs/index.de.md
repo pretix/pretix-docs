@@ -6,7 +6,7 @@ hide:
 
 # Willkommen
 
-Willkommen in unserer neuen Dokumentation! 
+Willkommen in unserer neuen Dokumentation!
 
 <div class="grid cards" markdown>
 
@@ -14,15 +14,15 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wenn Sie pretix zum ersten Mal nutzen, dann kann unser Tutorial Ihnen die Grundlagen zeigen. 
+    Wenn Sie pretix zum ersten Mal nutzen, dann kann unser Tutorial Ihnen die Grundlagen zeigen.
 
-    :fa3-arrow-right: [Erste Schritte](tutorial/getting-started.md)
+    :fa3-arrow-right: [Erste Schritte](tutorial/index.de.md)
 
 -   :fa3-book:{ .lg .middle } __Guides__
 
     ---
 
-    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Guides richtig. 
+    Wenn Sie nach detaillierteren Informationen zu den Funktionen von pretix und deren Verwendung suchen, dann sind Sie bei den Guides richtig.
 
     :fa3-arrow-right: [Guides](guides/index.md)
 
@@ -46,7 +46,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten. 
+    Beim Verkauf von Tickets sind viele rechtliche und technische Rahmenbedingungen zu beachten.
     Bei manchen davon kann pretix helfen, mehr Informationen finden Sie im entsprechenden Bereich dieser Seite.
 
     :fa3-arrow-right: [Trust und Compliance](trust/index.md)
@@ -76,7 +76,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wir sind open source! 
+    Wir sind open source!
     Auf GitHub finden Sie den Quellcode sowohl für pretix und viele Erweiterungen, als auch für diese Dokumentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
@@ -85,7 +85,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Möchten Sie immer auf dem neusten Stand bleiben? 
+    Möchten Sie immer auf dem neusten Stand bleiben?
     Folgen Sie unserem Blog oder melden Sie sich zu unserem Newsletter an.
 
     :fa3-arrow-right: [Blog und Newsletter](https://pretix.eu/about/de/blog/)

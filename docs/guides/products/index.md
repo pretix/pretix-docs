@@ -1,6 +1,6 @@
 # Products
 
-A product is anything sold via pretix: tickets, gift cards, conference t-shirts and so on.
+A product is anything sold via pretix: tickets, gift cards, conference t-shirts, and so on.
 pretix offers you almost unlimited possibilities for configuring and structuring products.
 This article guides you through the basic process of creating a product and explains several practical applications for some of the more advanced features of pretix.
 
@@ -242,7 +242,7 @@ If you want season pass holders to be able to attend multiple of your events for
 Option B is setting up a separate event or date for selling season tickets.
 
 If you want to offer season passes for **multiple events**, then the most efficient way to do this is to finish the configuration for at least one of your individual events.
-Then, you [create a new event](../../tutorial/event.md).
+Then, you [create a new event](../../tutorial/single-events/event.md).
 Use the event name, short form and description to make it clear that the shop sells season passes for a specific time span.
 For example, the name could be "Season passes summer 2027".
 Set the "Event start time" and "Event end time" to the start and end dates of your season.
