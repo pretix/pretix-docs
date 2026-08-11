@@ -104,13 +104,13 @@ Under "Quotas", choose the product that shall grant admission to these dates in 
 
 Once you have taken these steps and made your optional choices, click the :btn:Save: button.
 You will be taken back to the dates overview page titled "Dates".
-If your venue closes on Christmas Eve and New Year's Eve, check the boxes next to those dates, scroll to the bottom of the page and click the :btn-icon:fa3-trash: Delete selected (2): button.
+If your venue has to close for a few of those dates (due to maintenance, team building, or any other reason), check the boxes next to those dates, scroll to the bottom of the page and click the :btn-icon:fa3-trash: Delete selected (2): button.
 
 ## Troubleshooting
 
-### The button :fa3-calendar: Dates: does not appear in the sidebar on the left
+### The button :fa3-calendar: Dates: does not appear in the sidebar menu
 
-If the button :btn-icon:fa3-calendar: Dates: does not appear in the sidebar on the left, there are three possible explanations for this:
+If the button :btn-icon:fa3-calendar: Dates: does not appear in the sidebar menu on the left, there are three possible explanations for this:
 
  - you have selected the wrong event (a singular event instead of an event series)
  - the event is set up as a singular event instead of an event series

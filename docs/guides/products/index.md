@@ -1,6 +1,6 @@
 # Products
 
-A product is anything sold via pretix: tickets, gift cards, conference t-shirts and so on.
+A product is anything sold via pretix: tickets, gift cards, conference t-shirts, and so on.
 pretix offers you almost unlimited possibilities for configuring and structuring products.
 This article guides you through the basic process of creating a product and explains several practical applications for some of the more advanced features of pretix.
 
