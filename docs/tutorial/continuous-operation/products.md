@@ -138,26 +138,25 @@ The list also displays the total capacity and how many items remain for each quo
 
 ![Page titled 'Quotas', displaying a list of quotas including the reduced ticket quota with a capacity of 50 and the regular ticket quota with a capacity of 100.](../../assets/screens/products/quotas.png "Quotas screenshot")
 
-First, we will edit a quota for our standard and discount tickets.
+First, we will edit a quota for our regular and discount admission tickets.
 It makes sense to include both tickets in a single quota because we cannot plan ahead how many of the tickets we sell are going to be discount tickets.
 We will click the :btn-icon:fa3-edit:: change button next to the "Regular ticket" quota in the list.
-We are also going to rename this quota to `Standard and discount ticket` to avoid confusion.
-The "Standard ticket" should already be checked in the list of products.
+We are also going to rename this quota to `Standard and discount admission` to avoid confusion.
+The "Regular admission ticket" should already be checked in the list of products.
 
-We will also check the "Discount ticket" in the list and change the capacity to 1900.
-That is the maximum amount of tickets of these types that we want to sell.
-Our venue has room for 2000 people, 100 of which are going to be speakers.
+We will also check the "Discounted admission ticket" in the list and remove the entry in the "Total capacity" field.
+This means that there will not be a limit on how many of these tickets we can sell.
+We are planning to sell these tickets for the entire 2027 season, not for a single date.
+Thus, it makes no sense to limit the total number.
+
 We will leave the rest of the settings unchanged and click the :btn:Save: button.
 This takes us to a detailed overview of the status of the "Standard ticket" quota.
 
 Since this quota now includes both the standard and discount admission tickets, we do not need the "Reduced ticket" quota anymore.
 We will navigate back to the quotas page and click the :btn-icon:fa3-trash:: delete button next to the "Reduced ticket" quota.
 
-We need to assign our speaker ticket to a quota, too.
-In order to do so, we will navigate to the quotas page again and click the :btn-icon:fa3-plus: Create a new quota: button.
-We will name the new quota `Speaker ticket` and set its number to 100 because that is the expected number of speakers at our event.
-In the list of products, we will check the box next to "Speaker ticket".
-Then, we will click the :btn:Save: button.
+Our "Guided tour" product will be part of one quota per date.
+We will create those quotas along with the dates later.
 
 ### Quotas for variants
 
