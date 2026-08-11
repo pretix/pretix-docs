@@ -8,11 +8,11 @@ In this article, we will cover the process of creating the following products an
 
  - a basic [admission ticket](products.md#creating-and-editing-products)
  - a [discount ticket](products.md#discount-ticket) for students
- - a ticket for our [guided tour](#guided-tour-tickets)
+ - a ticket for our [guided tour](#guided-tour-tickets) (as well as a discount version)
 
 We are going to start by [creating categories](products.md#creating-and-editing-categories) to sort our products into.
 Then, we will create the products themselves.
-Lastly, we are going to [create quotas](products.md#creating-and-editing-quotas) to determine and keep track of availability numbers for each product.
+Lastly, we are going to [create quotas](products.md#creating-and-editing-quotas) with unlimited capacity for our admission tickets.
 
 ## Creating and editing categories
 
