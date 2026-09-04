@@ -58,7 +58,7 @@ Dazu klicken Sie auf ihren Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:
 
 Wenn Sie Produkte erstellen oder bearbeiten möchten, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte:.
 Die angezeigte Seite zeigt eine Liste aller Produkte zu dieser Veranstaltung.
-Klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:. 
+Klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
 Wählen Sie einen Namen, eine Beschreibung, einen Standardpreis und den [Umsatzsteuer](../taxes.md)-Satz und klicken Sie den Button :btn:Speichern:.
 
 Sie können auch ein vorhandenes Produkt bearbeiten, indem Sie seinen Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Listeneintrag klicken.
@@ -68,10 +68,10 @@ Sie können auch ein vorhandenes Produkt bearbeiten, indem Sie seinen Namen oder
 Ein Kontingent legt fest, wie viele Einheiten Ihres Produkts verkauft werden können.
 Jedes Produkt muss Teil mindestens eines Kontingents sein, damit es im Shop verfügbar ist.
 
-Wenn Sie Kontingente erstellen oder bearbeiten möchten, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente:. 
+Wenn Sie Kontingente erstellen oder bearbeiten möchten, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
 Die Seite zeigt eine Liste aller Kontingente für die Veranstaltung sowie die Gesamtanzahl der Einheiten und die für jedes Kontingent verbleibende Kapazität.
 
-Klicken Sie den Button :btn:Kontingent erstellen:. 
+Klicken Sie den Button :btn:Kontingent erstellen:.
 Wählen Sie einen Namen und eine Kapazität, markieren Sie die Produkte, die in diesem Kontingent enthalten sein sollen, sowie bei Bedarf erweiterte Optionen und klicken Sie dann den Button :btn:Speichern.
 
 Sie können auch ein vorhandenes Kontingent bearbeiten, indem Sie seinen Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Listeneintrag klicken.
@@ -143,7 +143,7 @@ In Ihrem Shop wird jetzt ein Wochenüberblick aller Zeitfenster und ihrer jeweil
 
 Wenn Sie Tickets für bestimmte Zeitfenster verkaufen, soll auch sichergestellt sein, dass Kund/*innen nur eingelassen werden, wenn ihr Ticket für das betreffende Zeitfenster gilt.
 Dieser Abschnitt erläutert, wie Sie hierfür eigene Check-in-Regeln einrichten.
-Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in → Check-in-Listen: und klicken Sie den Button :btn-icon:fa3-plus: Neue Check-in-Liste erstellen:.  
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in → Check-in-Listen: und klicken Sie den Button :btn-icon:fa3-plus: Neue Check-in-Liste erstellen:.
 
 Geben Sie einen Namen an, aber wählen Sie **keinen** bestimmten Termin.
 Diese Check-in-Liste gilt für alle Termine.
@@ -200,7 +200,7 @@ Siehe auch: [Kund/*innenkonten](../customer-accounts.md)
 ![Seite mit Veranstalter-Einstellungen, Reiter 'Kundenkonten'. Die Kontrollkästchen 'Erlaube Kunden, Kundenkonten zu registrieren', 'Erlaube den Login mit E-Mail-Adresse und Passwort' und 'Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen' sind gewählt.](../../assets/screens/organizer/customer-accounts.png "Veranstalter-Einstellungen – Kundenkonten")
 
 Navigieren Sie anschließend zu :navpath:Ihr Veranstalter → :fa3-user: Kundenkonten → Mitgliedschafts-Typen:.
-Klicken Sie den Button :btn-icon:fa3-plus: Neuen Mitgliedschafts-Typ erstellen:. 
+Klicken Sie den Button :btn-icon:fa3-plus: Neuen Mitgliedschafts-Typ erstellen:.
 
 Geben Sie dem neuen Mitgliedschafts-Typ einen eindeutigen und aussagekräftigen Namen.
 Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Personen zu kaufen, markieren Sie die Option „Mitgliedschaft ist übertragbar“.
@@ -225,7 +225,7 @@ Falls Sie mehrere Zeitkarten für unterschiedliche Zeiträume verkaufen, die nic
 ![Seite mit dem Titel 'Produkt bearbeiten': Saisonkarte auf dem Reiter 'Zusätzliche Einstellungen'. Unter 'Dieses Produkt erstellt eine Mitgliedschaft vom Typ' ist die Mitgliedschaft 'Saisonkarte 2027-01' gewählt. Das Kontrollkästchen neben 'Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins' ist markiert.](../../assets/screens/products/product-creates-membership.png "Produkt bearbeiten: Saisonkarte")
 
 Damit Kund/*innen die Dauerkarte nicht mit dem Ticket verwechseln, empfiehlt es sich, die Möglichkeit zum Herunterladen des Tickets zu deaktivieren.
-Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben „Ticket-Download anschalten“. 
+Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben „Ticket-Download anschalten“.
 
 Nachdem Sie den Shop mit der Dauerkarte eingerichtet haben, müssen Sie kostenlose Produkte erstellen, die für jede in Frage kommende Veranstaltung nur mit der Dauerkarte erworben werden können.
 Klonen Sie ein bestehendes Zutrittsticket, fügen Sie dem Namen eine Beschreibung wie etwa „für Personen mit Saisonkarte“ hinzu und setzen Sie den Preis auf null.
@@ -243,7 +243,7 @@ Wenn Inhaber/*innen von Dauerkarten die Möglichkeit haben sollen, mehrere Ihrer
 Option B besteht darin, für den Verkauf von Dauerkarten eine separate Veranstaltung bzw. einen separaten Termin zu erstellen.
 
 Wenn Sie Dauerkarten für **mehrere Veranstaltungen** anbieten möchten, besteht die effizienteste Vorgehensweise darin, die Konfiguration für mindestens eine Einzelveranstaltung abzuschließen.
-Anschließend [erstellen Sie eine neue Veranstaltung](../../tutorial/event.md).
+Anschließend [erstellen Sie eine neue Veranstaltung](../../tutorial/single-events/event.md).
 Wählen Sie den Namen, die Kurzform und die Beschreibung der Veranstaltung so, dass klar wird, dass die im Shop erhältlichen Dauerkarten für einen bestimmten Zeitraum gelten.
 So ein Name könnte beispielsweise lauten „Saisonkarten Sommer 2027“.
 Geben Sie bei „Veranstaltungsbeginn“ und „Veranstaltungsende“ das Start- und Enddatum der Saison an.
@@ -387,7 +387,7 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
  6. Ist das Produkt nur erhältlich, wenn ein anderes Produkt ausverkauft ist?
  Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben „Nicht anzeigen, wenn Kontingent verfügbar“ leer ist.
  Wenn Sie in diesem Feld ein anderes Produkt angeben, wird der Shop dieses Produkt nur anzeigen, wenn das andere Produkt ausverkauft ist.
- Wenn der Shop das Produkt unabhängig von der Verfügbarkeit des anderen Produkts anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: „Zeige das Produkt mit einer Information, warum es nicht verfügbar ist“. 
+ Wenn der Shop das Produkt unabhängig von der Verfügbarkeit des anderen Produkts anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: „Zeige das Produkt mit einer Information, warum es nicht verfügbar ist“.
 
  7. Hat das Produkt den falschen Kategorietyp?
  Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kategorien:.
@@ -397,7 +397,7 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
  Falls `Cross-Selling-Kategorie` gewählt ist, ist das Produkt nur während des Cross-Selling-Schritts bei einem Kauf erhältlich.
 
  8. Ist das Produkt nicht Teil eines Kontingents?
- Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kontingente:. 
+ Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
  Vergewissern Sie sich, dass das Produkt in einem der Kontingente enthalten ist.
  Falls das Produkt Varianten hat, vergewissern Sie sich, dass mindestens eine Variante Teil eines Kontingents ist.
  Falls Sie eine Veranstaltungsreihe veranstalten, vergewissern Sie sich, dass das Kontingent dem Termin zugewiesen ist, der über den Shop gebucht werden soll.
