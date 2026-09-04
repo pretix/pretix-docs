@@ -43,11 +43,11 @@ Art und Anzahl der Produkte im Warenkorb bestimmen, welche Zusatzprodukte der/*d
 
 Cross-Selling-Produkte werden nicht im Shop, sondern erst an der Kasse angeboten.
 Anders als bei Zusatzprodukten hängt es nicht vom Inhalt des Warenkorbs ab, welche Cross-Selling-Produkte der/*die Kund/*in kaufen kann.
-Und Produkte des Typs „normal + Cross-Selling“ werden sowohl als Einzelprodukte als auch im Cross-Selling-Schritt angeboten.
-Die unten aufgeführte Einstellung „Cross-Selling-Bedingung“ legt fest, wie Produkte der Kategorien „Cross-Selling“ und „normal + Cross-Selling“ in Ihrem Shop angeboten werden.
+Und Produkte des Typs "normal + Cross-Selling" werden sowohl als Einzelprodukte als auch im Cross-Selling-Schritt angeboten.
+Die unten aufgeführte Einstellung "Cross-Selling-Bedingung" legt fest, wie Produkte der Kategorien "Cross-Selling" und "normal + Cross-Selling" in Ihrem Shop angeboten werden.
 
 Klicken Sie unten auf der Seite den Button :btn:Speichern:.
-Damit gelangen Sie zurück zur Seite „Produktkategorien“, auf der nun auch die neue Kategorie aufgeführt wird.
+Damit gelangen Sie zurück zur Seite "Produktkategorien", auf der nun auch die neue Kategorie aufgeführt wird.
 
 Sie können auch eine bereits vorhandene Kategorie bearbeiten und dabei ihren Namen, ihre Beschreibung und ihren Typ ändern.
 Dazu klicken Sie auf ihren Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Listeneintrag.
@@ -86,7 +86,7 @@ In pretix können Sie den Zutritt zu einem Veranstaltungsort mit einer begrenzte
 Dieser Guide erläutert Ihnen, wie Sie eine Veranstaltung mit Zeitfenstern erstellen.
 
 Erstellen Sie eine neue Veranstaltung.
-Wählen Sie bei „Veranstaltungsart“ die Option „Veranstaltungsreihe oder Zeitslotbuchung“.
+Wählen Sie bei "Veranstaltungsart" die Option "Veranstaltungsreihe oder Zeitslotbuchung".
 
 ![Seite mit dem Titel 'Neue Veranstaltung erstellen (Schritt 1)'. Bei 'Veranstaltungsart' ist die Option 'Veranstaltungsreihe oder Zeitslotbuchung' gewählt.'  ](../../assets/screens/event/create-series.png "Neue Veranstaltung erstellen")
 
@@ -94,13 +94,13 @@ Wie Sie grundsätzlich in pretix eine Veranstaltungsreihe erstellen, erfahren Si
 
 #### Zeitfenster erstellen
 
-Um Zeitfenster zu erstellen, müssen Sie in der Veranstaltungsreihe eine Reihe von „Terminen“ anlegen.
+Um Zeitfenster zu erstellen, müssen Sie in der Veranstaltungsreihe eine Reihe von "Terminen" anlegen.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine: und klicken Sie den Button :btn-icon:fa3-plus:Mehrere neue Termine erstellen:.
 Geben Sie ein Muster für die Veranstaltungstage ein.
 Wenn Ihr Veranstaltungsort im Januar 2027 beispielsweise jede Woche von Dienstag bis Samstag geöffnet ist, geben Sie folgendes Muster ein:
-„Wiederhole alle `1` `Woche(n)` mit Beginn am `01.01.2027`“
+"Wiederhole alle `1` `Woche(n)` mit Beginn am `01.01.2027`"
 Markieren Sie die Felder für Dienstag, Mittwoch, Donnerstag, Freitag und Samstag.
-Markieren Sie die Option „Wiederhole bis zum“ und geben Sie in das Feld `31.01.2027` ein.
+Markieren Sie die Option "Wiederhole bis zum" und geben Sie in das Feld `31.01.2027` ein.
 
 Es ist sinnvoll, für mehrere Wochen Zeitfenster zu erstellen.
 Erstellen Sie keine Zeitfenster für ein ganzes Jahr oder einen noch längeren Zeitraum:
@@ -108,9 +108,9 @@ Das macht es unnötig kompliziert, falls Sie später Änderungen daran vornehmen
 
 ![Seite mit dem Titel 'Mehrere Termine erstellen', auf der die oben beschriebenen Optionen gewählt sind. Am rechten Rand wird eine Vorschau mit allen Terminen, die angelegt werden sollen, angezeigt.](../../assets/screens/event-series/create-multiple-example2.png "Mehrere Termine erstellen")
 
-Geben Sie unter „Uhrzeiten“ die Zeitfenster für jeden Veranstaltungstag ein.
+Geben Sie unter "Uhrzeiten" die Zeitfenster für jeden Veranstaltungstag ein.
 Wenn Ihr Veranstaltungsort jeden Tag von 10 bis 18 Uhr geöffnet ist und jedes Zeitfenster eine volle Stunde beträgt, können Sie den Button :btn-icon:fa3-calendar: Viele Zeitfenster hinzufügen: klicken.
-Geben Sie für „Beginn des ersten Zeitfensters“ „10:00:00“ ein, für „Ende der Zeitfenster“ „18:00:00“, für „Länge der Zeitfenster“ „60“ und für „Pause zwischen Zeitfenstern“ „0“.
+Geben Sie für "Beginn des ersten Zeitfensters" "10:00:00" ein, für "Ende der Zeitfenster" "18:00:00", für "Länge der Zeitfenster" "60" und für "Pause zwischen Zeitfenstern" "0".
 Klicken Sie dann den Button :btn-icon:fa3-check: Erstellen:.
 Falls Ihr Zeitfenster-Muster unregelmäßig oder komplexer ist, verwenden Sie den Button :btn-icon:fa3-plus: Einzelnes Zeitfenster hinzufügen: und bearbeiten Sie jede Zeile einzeln.
 
@@ -118,9 +118,9 @@ Wenn Sie an verschiedenen Wochentagen unterschiedliche Öffnungszeiten haben, m�
 
 ![Seite mit dem Titel 'Uhrzeiten' und acht Zeitfenstern von 10 bis 18 Uhr; jedes Zeitfenster dauert eine Stunde und es sind keine Einlasszeiten angegeben.](../../assets/screens/event-series/create-times.png "Mehrere Terminen erstellen – Termine")
 
-Erstellen Sie bei „Kontingente“ ein oder mehrere Kontingente.
+Erstellen Sie bei "Kontingente" ein oder mehrere Kontingente.
 Diese Kontingente bestimmen, wie viele Personen ein Ticket für ein Zeitfenster buchen können.
-Wenn Sie möchten, dass pro Zeitfenster nur jeweils 50 Personen Einlass erhalten, setzen Sie die „Gesamtanzahl“ auf `50`.
+Wenn Sie möchten, dass pro Zeitfenster nur jeweils 50 Personen Einlass erhalten, setzen Sie die "Gesamtanzahl" auf `50`.
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
 
 !!! Hinweis
@@ -129,11 +129,11 @@ Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speich
     Versuchen Sie es **nicht** sofort noch einmal.
     In den meisten Fällen werden die Termine korrekt angelegt, auch wenn eine Fehlermeldung angezeigt wird.
 
-#### Die Kalenderansicht „Wochenkalender“ aktivieren
+#### Die Kalenderansicht "Wochenkalender" aktivieren
 
 Für eine Veranstaltungsreihe oder das Buchen von Zeitfenstern ist es sinnvoll, auf der Shop-Seite den Überblick als Wochenkalender zu aktivieren.
 Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:.
-Rufen Sie den Reiter :btn:Anzeige: auf und wählen Sie bei „Standard-Anzeige“ die Option „Wochenkalender“.
+Rufen Sie den Reiter :btn:Anzeige: auf und wählen Sie bei "Standard-Anzeige" die Option "Wochenkalender".
 
 ![Seite mit der Überschrift 'Kalender- und Listenansichten'. Unter 'Standard-Anzeige' ist die Option 'Wochenkalender' ausgewählt.](../../assets/screens/event-series/calendar-views.png "Anzeige – Kalender- und Listenansichten")
 
@@ -149,11 +149,11 @@ Geben Sie einen Namen an, aber wählen Sie **keinen** bestimmten Termin.
 Diese Check-in-Liste gilt für alle Termine.
 Wechseln Sie zum Reiter :btn:Erweitert:.
 
-Klicken Sie unter „Eigene Check-In-Regeln“ den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: und wählen Sie im Dropdown-Menü „Alle der folgenden Bedingungen (UND)“.
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst „Aktueller Zeitpunkt“, dann „ist nach“ und dann „Veranstaltungsbeginn“.
-Das Feld „Toleranz (Minuten)“ können Sie leer lassen.
-Wenn Sie den Teilnehmer/*innen die Möglichkeit geben möchten, beispielsweise 10 Minuten vor Veranstaltungsbeginn eingelassen zu werden, geben Sie bei „Toleranz (Minuten)“ `10` an.
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst „Aktueller Zeitpunkt“, dann „ist vor“ und dann „Veranstaltungsende“.
+Klicken Sie unter "Eigene Check-In-Regeln" den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: und wählen Sie im Dropdown-Menü "Alle der folgenden Bedingungen (UND)".
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist nach" und dann "Veranstaltungsbeginn".
+Das Feld "Toleranz (Minuten)" können Sie leer lassen.
+Wenn Sie den Teilnehmer/*innen die Möglichkeit geben möchten, beispielsweise 10 Minuten vor Veranstaltungsbeginn eingelassen zu werden, geben Sie bei "Toleranz (Minuten)" `10` an.
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist vor" und dann "Veranstaltungsende".
 
 ![Seite für eigene Check-in-Regel, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/time-slot-check-in-rule.png "Eigene Check-In-Regeln")
 
@@ -194,7 +194,7 @@ Sie richten erweiterte Check-in-Regeln ein, die gewährleisten, dass Inhaber/*in
 #### Option A: Mitgliedschaften und mehrere Tickets
 
 Option A erfordert, dass Kund/*innen über ein Kund/*innenkonto identifiziert werden.
-Sie müssen daher zuerst in den Veranstalter-Einstellungen auf dem Reiter „Kundenkonten“ die Funktion für Kund/*innenkonten aktivieren.
+Sie müssen daher zuerst in den Veranstalter-Einstellungen auf dem Reiter "Kundenkonten" die Funktion für Kund/*innenkonten aktivieren.
 Siehe auch: [Kund/*innenkonten](../customer-accounts.md)
 
 ![Seite mit Veranstalter-Einstellungen, Reiter 'Kundenkonten'. Die Kontrollkästchen 'Erlaube Kunden, Kundenkonten zu registrieren', 'Erlaube den Login mit E-Mail-Adresse und Passwort' und 'Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen' sind gewählt.](../../assets/screens/organizer/customer-accounts.png "Veranstalter-Einstellungen – Kundenkonten")
@@ -203,10 +203,10 @@ Navigieren Sie anschließend zu :navpath:Ihr Veranstalter → :fa3-user: Kundenk
 Klicken Sie den Button :btn-icon:fa3-plus: Neuen Mitgliedschafts-Typ erstellen:.
 
 Geben Sie dem neuen Mitgliedschafts-Typ einen eindeutigen und aussagekräftigen Namen.
-Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Personen zu kaufen, markieren Sie die Option „Mitgliedschaft ist übertragbar“.
-Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Veranstaltungen oder Termine mit demselben Startzeitpunkt zu kaufen, markieren Sie die Option „Parallele Nutzung ist möglich“.
+Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Personen zu kaufen, markieren Sie die Option "Mitgliedschaft ist übertragbar".
+Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Veranstaltungen oder Termine mit demselben Startzeitpunkt zu kaufen, markieren Sie die Option "Parallele Nutzung ist möglich".
 
-Um einzustellen, dass im Rahmen der Mitgliedschaft nur eine begrenzte Anzahl Käufe getätigt werden kann, geben Sie diese Anzahl in das Feld „Maximale Nutzungen“ ein.
+Um einzustellen, dass im Rahmen der Mitgliedschaft nur eine begrenzte Anzahl Käufe getätigt werden kann, geben Sie diese Anzahl in das Feld "Maximale Nutzungen" ein.
 Wenn im festgelegten Zeitraum eine unbegrenzte Zahl Käufe möglich ist, lassen Sie das Feld leer.
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
 
@@ -215,23 +215,23 @@ Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speich
 Wenn Sie den Mitgliedschafts-Typ erstellt haben, brauchen Sie eine Möglichkeit, diese Mitgliedschaften zu verkaufen.
 Erstellen Sie eine neue Veranstaltung, deren Start- und Endtermine der Dauer der Saison entsprechen, für die Sie Dauerkarten verkaufen möchten.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
-Wählen Sie einen Namen wie „Saisonkarte“ und einen Preis und klicken Sie dann den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
+Wählen Sie einen Namen wie "Saisonkarte" und einen Preis und klicken Sie dann den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
 Wechseln Sie dann zum Reiter :btn:Zusätzliche Einstellungen:.
-Wählen Sie unter „Dieses Produkt erstellt eine Mitgliedschaft vom Typ“ die Mitgliedschaft, die Sie eben erstellt haben.
-Standardmäßig ist das Kontrollkästchen neben „Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins“ angekreuzt.
+Wählen Sie unter "Dieses Produkt erstellt eine Mitgliedschaft vom Typ" die Mitgliedschaft, die Sie eben erstellt haben.
+Standardmäßig ist das Kontrollkästchen neben "Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins" angekreuzt.
 Falls Sie mehrere Zeitkarten für unterschiedliche Zeiträume verkaufen, die nicht mit der Veranstaltungsdauer übereinstimmen, entfernen Sie die Markierung aus diesem Kontrollkästchen.
 
 ![Seite mit dem Titel 'Produkt bearbeiten': Saisonkarte auf dem Reiter 'Zusätzliche Einstellungen'. Unter 'Dieses Produkt erstellt eine Mitgliedschaft vom Typ' ist die Mitgliedschaft 'Saisonkarte 2027-01' gewählt. Das Kontrollkästchen neben 'Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins' ist markiert.](../../assets/screens/products/product-creates-membership.png "Produkt bearbeiten: Saisonkarte")
 
 Damit Kund/*innen die Dauerkarte nicht mit dem Ticket verwechseln, empfiehlt es sich, die Möglichkeit zum Herunterladen des Tickets zu deaktivieren.
-Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben „Ticket-Download anschalten“.
+Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben "Ticket-Download anschalten".
 
 Nachdem Sie den Shop mit der Dauerkarte eingerichtet haben, müssen Sie kostenlose Produkte erstellen, die für jede in Frage kommende Veranstaltung nur mit der Dauerkarte erworben werden können.
-Klonen Sie ein bestehendes Zutrittsticket, fügen Sie dem Namen eine Beschreibung wie etwa „für Personen mit Saisonkarte“ hinzu und setzen Sie den Preis auf null.
+Klonen Sie ein bestehendes Zutrittsticket, fügen Sie dem Namen eine Beschreibung wie etwa "für Personen mit Saisonkarte" hinzu und setzen Sie den Preis auf null.
 Klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren: und wechseln Sie dann zum Reiter :btn:Verfügbarkeit:.
-Markieren Sie das Kontrollkästchen bei „Erfordere eine aktive Mitgliedschaft“ und wählen Sie den Mitgliedschafts-Typ, den Sie erstellt haben.
-Wenn Sie dieses Produkt nur Kund/*innen anzeigen möchten, die bereits eine aktive Mitgliedschaft in Ihrem Shop besitzen, markieren Sie das Kontrollkästchen neben „Ohne gültige Mitgliedschaft verstecken“.
+Markieren Sie das Kontrollkästchen bei "Erfordere eine aktive Mitgliedschaft" und wählen Sie den Mitgliedschafts-Typ, den Sie erstellt haben.
+Wenn Sie dieses Produkt nur Kund/*innen anzeigen möchten, die bereits eine aktive Mitgliedschaft in Ihrem Shop besitzen, markieren Sie das Kontrollkästchen neben "Ohne gültige Mitgliedschaft verstecken".
 
 Wiederholen Sie diese Schritte für jedes Produkt, das Inhaber/*innen von Dauerkarten kostenlos verfügbar sein soll.
 Wenn Inhaber/*innen von Dauerkarten die Möglichkeit haben sollen, mehrere Ihrer Veranstaltung kostenlos zu besuchen, wiederholen Sie diese Schritte für jede in Frage kommende Veranstaltung.
@@ -245,22 +245,22 @@ Option B besteht darin, für den Verkauf von Dauerkarten eine separate Veransta
 Wenn Sie Dauerkarten für **mehrere Veranstaltungen** anbieten möchten, besteht die effizienteste Vorgehensweise darin, die Konfiguration für mindestens eine Einzelveranstaltung abzuschließen.
 Anschließend [erstellen Sie eine neue Veranstaltung](../../tutorial/single-events/event.md).
 Wählen Sie den Namen, die Kurzform und die Beschreibung der Veranstaltung so, dass klar wird, dass die im Shop erhältlichen Dauerkarten für einen bestimmten Zeitraum gelten.
-So ein Name könnte beispielsweise lauten „Saisonkarten Sommer 2027“.
-Geben Sie bei „Veranstaltungsbeginn“ und „Veranstaltungsende“ das Start- und Enddatum der Saison an.
+So ein Name könnte beispielsweise lauten "Saisonkarten Sommer 2027".
+Geben Sie bei "Veranstaltungsbeginn" und "Veranstaltungsende" das Start- und Enddatum der Saison an.
 
-Aktivieren Sie bei der Erstellung einer Veranstaltung in Schritt 3 das Feld „Konfiguration übernehmen“, um die Angaben aus einer der einzelnen Veranstaltungen im Laufe der Saison zu kopieren.
+Aktivieren Sie bei der Erstellung einer Veranstaltung in Schritt 3 das Feld "Konfiguration übernehmen", um die Angaben aus einer der einzelnen Veranstaltungen im Laufe der Saison zu kopieren.
 
 Löschen Sie aus der eben erstellten Veranstaltung alle vorhandenen Produkte.
-Erstellen Sie dann ein personalisiertes Zutrittsprodukt mit einem Namen wie etwa „Saisonkarte Sommer 2027“.
+Erstellen Sie dann ein personalisiertes Zutrittsprodukt mit einem Namen wie etwa "Saisonkarte Sommer 2027".
 Fügen Sie das Produkt einem Kontingent hinzu und bearbeiten Sie das Kontingent nach Bedarf.
 
-Wenn Sie Dauerkarten für eine **Veranstaltungsreihe** erstellen möchten, erstellen Sie ein personalisiertes Zutrittsprodukt mit einem Namen wie etwa „Saisonkarte“.
+Wenn Sie Dauerkarten für eine **Veranstaltungsreihe** erstellen möchten, erstellen Sie ein personalisiertes Zutrittsprodukt mit einem Namen wie etwa "Saisonkarte".
 Fügen Sie das Produkt einem Kontingent hinzu und bearbeiten Sie das Kontingent nach Bedarf.
 
 Erstellen Sie dann einen Termin als Teil der Veranstaltungsreihe.
 Machen Sie über den Namen und den Beschreibungstext für diesen Termin klar, dass Kund/*innen Dauerkarten erwerben können, indem sie diesen Termin wählen.
-So ein Name könnte beispielsweise lauten „Saisonkarten“.
-Geben Sie bei „Veranstaltungsbeginn“ und „Veranstaltungsende“ das Start- und Enddatum der Saison an.
+So ein Name könnte beispielsweise lauten "Saisonkarten".
+Geben Sie bei "Veranstaltungsbeginn" und "Veranstaltungsende" das Start- und Enddatum der Saison an.
 
 Sie können mehr als einen Typ Dauerkarten anbieten.
 Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.md#different-price-levels) anbieten.
@@ -274,7 +274,7 @@ Wenn Sie pretixSCAN verwenden, können Sie dazu den Experten-Modus nutzen.
 Öffnen Sie pretixSCAN.
 Geben Sie oben im Bildschirm den Namen der Veranstaltung ein.
 Wählen Sie die aktive Einzelveranstaltung aus der Liste und tippen Sie :btn:OK:.
-Markieren Sie das Kontrollkästchen neben „Experten-Modus“.
+Markieren Sie das Kontrollkästchen neben "Experten-Modus".
 Wählen Sie die Check-in-Liste für die Veranstaltung und tippen Sie :btn:OK:.
 
 Tippen Sie den Button :btn-icon:fa3-plus::.
@@ -293,7 +293,7 @@ Außerdem ist es – anders als bei Option B – nicht erforderlich, einen eige
 Der Nachteil bei Option C ist, dass Sie komplexe Check-in-Regeln einrichten müssen.
 
 Um auf diese Weise eine Dauerkarte zu erstellen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
-Geben Sie dem neuen Produkt einen Namen, etwa „Saisonkarte“.
+Geben Sie dem neuen Produkt einen Namen, etwa "Saisonkarte".
 Aktiveren Sie dieses Produkt für alle Termine in Ihrer Veranstaltungsreihe.
 
 Sie müssen eigene Check-in-Regeln einrichten, damit Kund/*innen mit der Dauerkarte Zutritt zu allen Terminen erhalten.
@@ -303,32 +303,32 @@ Geben Sie einen Namen an, aber keinen bestimmten Termin.
 Diese Check-in-Liste gilt für alle Termine.
 Wechseln Sie zum Reiter :btn:Erweitert:.
 
-Klicken Sie unter „Eigene Check-In-Regeln“ den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: und wählen Sie aus dem Dropdown-Menü „Mindestens eine der folgenden Bedingungen (ODER)“.
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie „Alle der folgenden Bedingungen (UND)" aus dem Dropdown-Menü.
+Klicken Sie unter "Eigene Check-In-Regeln" den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: und wählen Sie aus dem Dropdown-Menü "Mindestens eine der folgenden Bedingungen (ODER)".
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie "Alle der folgenden Bedingungen (UND)" aus dem Dropdown-Menü.
 Jetzt haben Sie eine ODER-Klammer mit einer UND-Klammer darin.
 
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: **innerhalb der UND-Klammer** und wählen Sie „Produkt", dann „ist eines von“ und dann alle Zutrittstickets **außer** der Dauerkarte.
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst „Aktueller Zeitpunkt“, dann „ist nach“ und dann „Veranstaltungsbeginn“.
-Sie können die Felder „Toleranz (Minuten)“ leer lassen oder eine Toleranzzeit von beispielsweise „10“ Minuten angeben, damit Teilnehmer/*innen bereits zehn Minuten vor Beginn des jeweiligen Zeitfensters Einlass erhalten.
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: **innerhalb der UND-Klammer** und wählen Sie "Produkt", dann "ist eines von" und dann alle Zutrittstickets **außer** der Dauerkarte.
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist nach" und dann "Veranstaltungsbeginn".
+Sie können die Felder "Toleranz (Minuten)" leer lassen oder eine Toleranzzeit von beispielsweise "10" Minuten angeben, damit Teilnehmer/*innen bereits zehn Minuten vor Beginn des jeweiligen Zeitfensters Einlass erhalten.
 
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst „Aktueller Zeitpunkt“, dann „ist vor“ und dann „Veranstaltungsende“.
-Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer ein letztes Mal und wählen Sie „Anzahl bisheriger Eintritte“, dann „=“ und dann „0“.
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist vor" und dann "Veranstaltungsende".
+Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer ein letztes Mal und wählen Sie "Anzahl bisheriger Eintritte", dann "=" und dann "0".
 
 Klicken Sie dann den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der ODER-Klammer, aber **nicht** innerhalb der UND-Klammer.
 Sie finden diesen Button weiter unten auf der Seite.
 Wenn Sie mit dem Mauszeiger auf die Klammern zeigen, werden UND-Klammern rot, ODER-Klammern grün und die innerste Klammer violett angezeigt.
-Wählen Sie „Produkt“, dann „ist eines von“ und dann Ihr Dauerkarten-Produkt.
+Wählen Sie "Produkt", dann "ist eines von" und dann Ihr Dauerkarten-Produkt.
 
 Damit die Dauerkarte nicht von mehr als einer Person genutzt werden kann, sollten Sie noch eine weitere Bedingung hinzufügen.
 Klicken Sie dazu unterhalb der Bedingung für die Dauerkarte den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen:.
 Sie haben nun mehrere Optionen:
 
- - Wählen Sie „Aktueller Zutrittsstatus“, dann „=“ und dann „abwesend“.
+ - Wählen Sie "Aktueller Zutrittsstatus", dann "=" und dann "abwesend".
  Das bewirkt, dass die Dauerkarte nur genutzt werden kann, wenn niemand gerade darüber eingecheckt ist.
  Das setzt allerdings voraus, dass Sie Inhaber/*innen von Dauerkarten beim Verlassen der Veranstaltung auschecken, wofür möglicherweise zusätzliches Personal nötig ist.
- - Wählen Sie „Anzahl bisheriger Eintritte seit Mitternacht“, „=“ und „0“.
+ - Wählen Sie "Anzahl bisheriger Eintritte seit Mitternacht", "=" und "0".
  Das bewirkt, dass die Dauerkarte nur einmal pro Tag genutzt werden kann.
- - Wählen Sie „Minuten seit vorherigem Eintritt“, „≤“ und „15“.
+ - Wählen Sie "Minuten seit vorherigem Eintritt", "≤" und "15".
  Das bewirkt, dass die Dauerkarte höchstens einmal alle fünfzehn Minuten genutzt werden kann.
 
 ![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets_rules1.png "Regel-Set 1 für Dauerkarten")
@@ -354,45 +354,45 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
  1. Ist das Produkt inaktiv?
  Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
  Bearbeiten Sie das Produkt, das im Shop nicht angezeigt wird.
- Vergewissern Sie sich auf dem Reiter :btn:Allgemein:, dass das Kontrollkästchen neben „Aktiv“ markiert ist.
+ Vergewissern Sie sich auf dem Reiter :btn:Allgemein:, dass das Kontrollkästchen neben "Aktiv" markiert ist.
 
 !!! Hinweis
     Alle Änderungen an der Produktkonfiguration treten erst in Kraft, nachdem Sie den Button :btn:Speichern: klicken.
 
  2. Ist die Verfügbarkeit Ihres Produkts auf andere Verkaufskanäle als Ihren Shop beschränkt?
  Um diese Ursache zu beheben, wechseln Sie zum Reiter :btn:Verfügbarkeit:.
- Vergewissern Sie sich, dass das Kontrollkästchen neben „Auf allen Verkaufskanälen verkaufen“ markiert ist.
- Ist dieses Kontrollkästchen nicht markiert, vergewissern Sie sich, dass das Kontrollkästchen neben „Online-Shop“ markiert ist.
+ Vergewissern Sie sich, dass das Kontrollkästchen neben "Auf allen Verkaufskanälen verkaufen" markiert ist.
+ Ist dieses Kontrollkästchen nicht markiert, vergewissern Sie sich, dass das Kontrollkästchen neben "Online-Shop" markiert ist.
 
  3. Ist die Verfügbarkeit Ihres Produkts auf einen bestimmten Zeitraum beschränkt?
- Um diese Ursache zu beheben, prüfen Sie zunächst die Einträge in den Feldern „Verfügbar ab“ und „Verfügbar bis“.
+ Um diese Ursache zu beheben, prüfen Sie zunächst die Einträge in den Feldern "Verfügbar ab" und "Verfügbar bis".
  Wenn die Felder leer sind, gibt es keine solche Einschränkung.
  Falls eines der Felder Daten und Uhrzeiten enthält, überprüfen Sie, dass das aktuelle Datum im angegebenen Zeitraum liegt.
- Wenn Sie möchten, dass das Produkt auch außerhalb des festgelegten Zeitraums im Shop angezeigt wird, aktivieren Sie die Option :btn-icon:fa3-info:: „Zeige das Produkt mit einer Information, warum es nicht verfügbar ist“.
+ Wenn Sie möchten, dass das Produkt auch außerhalb des festgelegten Zeitraums im Shop angezeigt wird, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
  3. Ist das Produkt nur über einen Gutschein erhältlich?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben „Dieses Produkt kann nur mit einem Gutschein gekauft werden“ **nicht** markiert ist.
+ Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt kann nur mit einem Gutschein gekauft werden" **nicht** markiert ist.
  Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund/*innen an, die einen passenden Gutscheincode eingegeben haben.
- Wenn der Shop das Produkt dennoch allen Kund/*innen anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: „Zeige das Produkt mit einer Information, warum es nicht verfügbar ist“.
+ Wenn der Shop das Produkt dennoch allen Kund/*innen anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
  4. Ist das Produkt nur als Teil eines Produktpakets erhältlich?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben „Dieses Produkt nicht einzeln verkaufen, sondern nur als Teil eines festen Produktpakets“ **nicht** markiert ist.
+ Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt nicht einzeln verkaufen, sondern nur als Teil eines festen Produktpakets" **nicht** markiert ist.
  Ist es markiert, wird das Produkt nicht als eigenständiges Produkt im Shop angezeigt.
  Es wird nur als Teil eines anderen Produkts angezeigt, dem Sie es als Teil eines Produktpakets hinzugefügt haben.
 
  5. Ist das Produkt nur über eine Mitgliedschaft erhältlich?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben „Erfordere eine aktive Mitgliedschaft“ **nicht** markiert ist.
+ Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Erfordere eine aktive Mitgliedschaft" **nicht** markiert ist.
  Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund/*innen an, die in ihrem Konto angemeldet sind und eine gültige Mitgliedschaft besitzen.
 
  6. Ist das Produkt nur erhältlich, wenn ein anderes Produkt ausverkauft ist?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben „Nicht anzeigen, wenn Kontingent verfügbar“ leer ist.
+ Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Nicht anzeigen, wenn Kontingent verfügbar" leer ist.
  Wenn Sie in diesem Feld ein anderes Produkt angeben, wird der Shop dieses Produkt nur anzeigen, wenn das andere Produkt ausverkauft ist.
- Wenn der Shop das Produkt unabhängig von der Verfügbarkeit des anderen Produkts anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: „Zeige das Produkt mit einer Information, warum es nicht verfügbar ist“.
+ Wenn der Shop das Produkt unabhängig von der Verfügbarkeit des anderen Produkts anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
  7. Hat das Produkt den falschen Kategorietyp?
  Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kategorien:.
  Bearbeiten Sie die Kategorie, zu der das Produkt gehört.
- Vergewissern Sie sich, dass unter „Art der Kategorie“ entweder `Normale Kategorie` oder `Normale und Cross-Selling-Kategorie` gewählt ist.
+ Vergewissern Sie sich, dass unter "Art der Kategorie" entweder `Normale Kategorie` oder `Normale und Cross-Selling-Kategorie` gewählt ist.
  Falls `Zusatzprodukt-Kategorie` gewählt ist, ist das Produkt nur als Zusatzprodukt erhältlich.
  Falls `Cross-Selling-Kategorie` gewählt ist, ist das Produkt nur während des Cross-Selling-Schritts bei einem Kauf erhältlich.
 
@@ -404,4 +404,4 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
 
  9. Ist das Produkt Teil eines leeren Kontingents?
  Um diese Ursache zu beheben, vergewissern Sie sich, dass keines der Kontingente, in denen das Produkt enthalten ist, leer ist.
- Falls eines der Kontingente bereits ausverkauft war, vergewissern Sie sich, dass das Kontrollkästchen neben „Dieses Kontingent schließen, sobald es einmal ausverkauft war“ **nicht** markiert ist.
+ Falls eines der Kontingente bereits ausverkauft war, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Kontingent schließen, sobald es einmal ausverkauft war" **nicht** markiert ist.
