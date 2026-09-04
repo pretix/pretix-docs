@@ -1,0 +1,5 @@
+Title: Produkte
+
+nav:
+ - index*.md
+ - "*"
