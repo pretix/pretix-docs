@@ -70,7 +70,7 @@ Configure at least one product to be sold via GetYourGuide.
 In order to do so, navigate to :navpath:Your event → :fa3-ticket: Products: and create or edit a product.
 Switch to the :btn:Availability: tab and under "Sales channels", check the box next to "GetYourGuide" or the box next to "Sell on all sales channels".
 
-![Page titled 'Modify product: Standard ticket', on the 'GetYourGuide' tab, displaying options for 'Ticket Category', 'Minimal group size', 'Maximal group size', 'Minimum participant age', and 'Maximum participant age'](../../assets/screens/getyourguide/getyourguide-configuration.png)
+![Page titled 'Modify product: Standard ticket', on the 'GetYourGuide' tab, displaying options for 'Ticket Category', 'Minimal group size', 'Maximal group size', 'Minimum participant age', and 'Maximum participant age'](../../assets/screens/getyourguide/modify-product.png)
 
 Then, switch to the :btn:GetYourGuide: tab and set the GetYourGuide equivalent ticket category.
 This "Ticket Category" setting is only relevant for the sale through GetYourGuide.
