@@ -192,7 +192,7 @@ sslkey=/etc/pretix/postgresql-client-key.key
 
 `advisory_lock_index`
 
-:   On PostgreSQL, pretix uses the "advisory lock" feature. However, advisory locks use a server-wide name space and and are not scoped to a specific database. If you run multiple pretix applications with the same PostgreSQL server, you should set separate values for this setting (integers up to 256).
+:   On PostgreSQL, pretix uses the "advisory lock" feature. However, advisory locks use a server-wide name space and are not scoped to a specific database. If you run multiple pretix applications with the same PostgreSQL server, you should set separate values for this setting (integers up to 256).
 
 `disable_server_side_cursors`
 
@@ -433,7 +433,7 @@ pretix comes with a number of translations. All languages are enabled by default
 enabled=en,de
 ```
 
-Some of the languages them are marked as "incubating", which means they can usually only be selected in development mode. If you want to use them nevertheless, you can activate them like this:
+Some of the languages are marked as "incubating", which means they can usually only be selected in development mode. If you want to use them nevertheless, you can activate them like this:
 
 ``` ini
 [languages]
