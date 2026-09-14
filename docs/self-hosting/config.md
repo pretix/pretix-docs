@@ -133,7 +133,7 @@ plugins_default=pretix.plugins.sendmail,pretix.plugins.statistics,pretix.plugins
 
 `allow_http_to_private_networks`
 
-:   If this is off, pretix connections to private networks, for instance, IP addresses such as `127.0.0.1` or `10.0.0.0` for all outgoing HTTP connections, such as webhooks and payment gateways. 
+:   If this is off, pretix blocks connections to private networks, for instance, IP addresses such as `127.0.0.1` or `10.0.0.0`, for all outgoing HTTP connections, such as webhooks and payment gateways. 
 If you are using a local `http_proxy`/`https_proxy` for outgoing requests, set this to `off`. 
 In that case, the proxy is responsible for filtering valid destinations. 
 
@@ -209,7 +209,7 @@ sslkey=/etc/pretix/postgresql-client-key.key
 ## Database replica settings
 
 If you use a replicated database setup, pretix expects that the default database connection always points to the primary database node.
-Routing read queries to a replica on database layer is **strongly** discouraged since this can lead to inaccurate such as more tickets being sold than are actually available.
+Routing read queries to a replica on database layer is **strongly** discouraged since this can lead to inaccurate results, such as more tickets being sold than are actually available.
 
 However, pretix can still make use of a database replica to keep some expensive queries with that can tolerate some latency from your primary database, such as backend search queries.
 The `replica` configuration section can have the same settings as the `database` section (except for the `backend` setting) and will default back to the `database` settings for all values that are not given.
@@ -330,7 +330,7 @@ passwords_argon2=on
 
         Never set this to `True` in production!
 
-`passwords_argon`
+`passwords_argon2`
 
 :   Use the `argon2` algorithm for password hashing. Disable on systems with a small number of CPU cores (currently less than 8).
 
