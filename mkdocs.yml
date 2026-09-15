@@ -158,6 +158,10 @@ plugins:
         logo: docs/assets/logo-light-angled-icon.svg
   - git-revision-date-localized
 extra:
+  analytics:
+    provider: matomo
+    domain: matomo.rami.io
+    siteid: 17
   generator: false
   social:
     - icon: fontawesome/brands/mastodon
