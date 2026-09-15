@@ -1,0 +1,137 @@
+# Adding a guide
+
+This article explains how to add a guide to the pretix documentation.
+The steps described here also apply if you want to translate one of the guides.
+
+!!! Note
+    Before you make any contribution to the pretix documentation, contact to the team.
+    [Send us an email](mailto:support@pretix.eu) or, if you have a GitHub account, [open an issue](https://github.com/pretix/pretix-docs/issues) there.
+
+## Prerequisites
+
+If you want to write a guide, then you should set up a working [development environment](development-environment.md) first.
+Some knowledge of our guidelines for [formatting](formatting.md), [language](language.md) and [best practices](index.md) is helpful.
+You do **not** have to apply every last detail of those guidelines.
+But the pretix documentation team will ask you to incorporate them during review.
+
+## How to
+
+This section describes how to contribute to the pretix documentation by adding a guide.
+This involves the following steps:
+
+ - [creating a new branch](#creating-a-new-branch)
+ - [finding the appropriate directory](#finding-the-appropriate-directory)
+ - [using the template](#using-the-template)
+ - [writing the guide](#writing-the-guide)
+ - [creating a pull request](#creating-a-pull-request-for-review)
+
+This section guides you through those steps in detail.
+
+### Creating a new branch
+
+Before you make any edits to the pretix documentation, you need to create a new branch.
+There is more than one way to do this.
+
+If you want to use the Git CLI to create a new branch, open a terminal on your computer.
+Check out the branch from which you want to create a new branch.
+In all but a few cases, that is going to be the main branch.
+
+Run the following command to check out the main branch:
+
+```
+git checkout main
+```
+
+In order to create a new branch named `badge-layout-editor` and check it out, run the following command:
+
+```
+git checkout -b badge-layout-editor
+```
+
+Alternatively, use your IDE or your preferred Git client to create a new branch.
+
+### Finding the appropriate directory
+
+All guides are in the directory `docs/guides`.
+Try to find the appropriate subdirectory for your new guide.
+For instance, if your guide describes a plugin that integrates with an external service, place it in `docs/guides/integrations`.
+If your guide does not fit into any of the subdirectories, place it in `docs/guides`.
+
+Create a new file with the `.md` file extension.
+Name it in lower case.
+Use a hyphen-minus `-` to separate words.
+For instance, if you are writing a guide on the badge layout editor, name the file `badge-layout-editor.md`.
+
+If you want to contribute a translation from English to German, copy the file and rename it so that the filename ends with `.de.md`.
+Place it in the same directory as the original article.
+For instance, if you want to translate for `paypal.md`, name the new file `paypal.de.md` and place it in `docs/guides/payment`.
+
+If you want to expand an existing guide, edit the file itself.
+
+### Using the template to write the guide
+
+There is a template that specifies the default structure for a guide.
+You can find that template in the root directory of this repository at [template-guides.md](https://github.com/pretix/pretix-docs/blob/main/template-guides.md).
+
+Copy the contents of the guide template into your new file.
+Replace the first line of the file with the title of your article.
+Use the Markdown title formatting and sentence-style capitalization, for instance:
+
+```
+# Badge layout editor
+```
+
+The template contains questions and instructions as placeholder text under each headline.
+Answer those questions in the respective sections in your text.
+
+If you do not have any content for the sections "Troubleshooting", "Further information", and "See also", remove those sections.
+Do **not** remove the sections "Prerequisites" or "How to".
+Do **not** remove the title section either.
+
+If the "How to" section becomes very long, separate it into "General usage" and "Advanced usage".
+For an example of this article structure, see [pretixSCAN (Android)](../pretixscan/android.md).
+
+If you are describing the setup of a feature and then its applications, separate the "How to" section into "General usage" and "Applications".
+For an example of this article structure, see [Vouchers](../vouchers.md).
+
+If your article covers a more straightforward topic, then you do not need to separate the "How to" section.
+For an example of this more basic article structure, see [Teams](../teams.md).
+
+You can freely add third-level and fourth-level headings under "How to", "General usage", "Applications" and "Advanced usage".
+The same is true for "Troubleshooting".
+Use sentence-style capitalization for all headings.
+Do **not** add third-level and fourth-level headings to the other sections.
+
+Research the subject that you want to cover and write your guide.
+For instructions on how to format your text, see [formatting](formatting.md).
+For information on writing style, terminology, orthography, and punctuation, see [language](language.md).
+
+### Creating a pull request for review
+
+Once you have finished writing the guide, submit a pull request.
+There is more than one way to do this.
+In order to submit a pull request using the GitHub web interface, open your browser.
+Log into your GitHub account.
+Navigate to the `pretix-docs` repository.
+Open the [Pull requests](https://github.com/pretix/pretix-docs/pulls) tab.
+
+Create a new pull request.
+Select the branch you created under [Creating a new branch](#creating-a-new-branch).
+In the example above, the name of that branch is `branch-layout-editor`.
+Provide an informative title and description.
+
+You do not have to submit a draft pull request.
+You can submit a pull request right away.
+Once you have done so, the pretix documentation team will notice your contribution and review it.
+There are three possible outcomes:
+
+ 1. the pretix documentation team accepts your contribution and merges it.
+ 2. the team comments suggestions for improvement.
+ 3. the team rejects your contribution.
+
+If you receive improvement suggestions, implement them.
+Alternatively, tell the team that you would like to forward that task to them.
+
+In order to avoid having your contribution rejected, familiarize yourself with the standards and practices explained in this article and the other articles on how to contribute.
+If you are in doubt, [create an issue on GitHub](https://github.com/pretix/pretix-docs/issues) or send an email to [support@pretix.eu].
+We recommend reaching out before doing a large amount of work.
