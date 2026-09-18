@@ -170,8 +170,20 @@ Click the :btn-icon:fa3-plus: Add a Guide: button.
 If your resource has a different name, then the button will have a different label, too.
 
 If the resource you are creating represents a person, enter their name under "Name".
-Under "Locale", select the language you want to use to communicate with the person through pretix.
-Check the box next to "Require confirmation".
+Under "Language", select the language you want to use to communicate with the person through pretix.
+You may enter additional details: phone number, address, and external identifier.
+
+Your selection under "Booking mode" depends on the way you and your organization manage resources.
+If you manage resources with pretix and no other method, select `Confirm immediately`.
+With this option active, pretix will consider any booking of this individual resource as valid instantly.
+
+If the availability of your resources depends on factors outside of pretix, select `Manual confirmation required`.
+Relevant factors may include availability of personnel due to holiday or sick leave, or the management of resources via an external software or offline system.
+With this option active, there is an extra step to the booking process.
+Whenever you create a booking, pretix will send an email and a notification to the resource managers.
+The managers can then either confirm or deny the booking.
+
+Once you have made your choices, click the :btn:Save and continue with more settings: button.
 
 ![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English', and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
