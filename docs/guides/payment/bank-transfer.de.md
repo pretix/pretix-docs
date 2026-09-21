@@ -72,7 +72,8 @@ Ihren Kund\*innen stehen in Ihrem Shop nun Banküberweisungen als Zahlungsoption
 
 ### Zahlungseingänge automatisch überwachen
 
-Für pretix Hosted arbeiten wir mit [GoCardless](https://gocardless.com) zusammen, um eine nahtlose Integration zu gewährleisten. Dadurch können Sie von [mehreren Tausend Banken in über 30 Ländern](https://gocardless.com/bank-account-data/coverage/) Transaktionen automatisch nach pretix importieren.
+Für pretix Hosted arbeiten wir mit [GoCardless](https://gocardless.com) zusammen, um eine nahtlose Integration zu gewährleisten.
+Dadurch können Sie von [mehreren Tausend Banken in über 30 Ländern](https://gocardless.com/bank-account-data/coverage/) Transaktionen automatisch nach pretix importieren.
 
 Alternativ können Sie regelmäßig digitale Kontoauszüge importieren, um pretix über Zahlungseingänge zu informieren.
 
