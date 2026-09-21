@@ -1,7 +1,8 @@
 ﻿# Banküberweisung
 
 Banküberweisungen sind eine der zahlreichen Möglichkeiten, in pretix Zahlungen abzuwickeln.
-Zahlungen per Banküberweisung gehen ohne einen zwischengeschalteten Zahlungsdienstleister auf Ihrem Bankkonto ein.
+Zahlungen per Banküberweisung gehen ohne einen zwischengeschalteten Zahlungsdienstleister auf Ihrem Bankkonto ein.
+
 Standardmäßig überwacht pretix nicht, welche Zahlungen auf Ihrem Bankkonto eingehen.
 Wenn Sie pretix Hosted nutzen, können Sie über unsere Integration mit GoCardless Ihr Bankkonto verbinden, damit Bankdaten automatisch importiert werden.
 
@@ -28,22 +29,26 @@ Folgende Schritte sind erforderlich, um in pretix Banküberweisungen als Zahlung
  3. Transaktionen manuell freigeben
  4. Transaktionen manuell bearbeiten
 
-Die folgenden Abschnitte erklären diese Schritte ausführlich.
+Die folgenden Abschnitte erklären diese Schritte ausführlich.
+
 
 ### Banküberweisungen einrichten
 
 Wenn Sie in pretix Zahlungen per Banküberweisung erhalten möchten, muss die Erweiterung "Banküberweisung" aktiviert sein.
-Um zu prüfen, ob die Erweiterung aktiv ist, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen:.
-
+Um zu prüfen, ob die Erweiterung aktiv ist, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen:.
+
+
+
 Wechseln Sie zum Reiter :btn:Zahlungsmethoden:.
 
 Auf dieser Seite wird die Erweiterung "Banküberweisung" oben angezeigt.
 Sie sollte standardmäßig aktiv sein.
 Wenn sie aktiv ist, hat sie ein grünes Tag ":fa3-check: Aktiv", einen weißen Button "Deaktivieren" und zwei Dropdown-Menüs.
-Wenn sie inaktiv ist, fehlt das Tag und es gibt einen lila Button :btn:Aktivieren:.
+Wenn sie inaktiv ist, fehlt das Tag und es gibt einen lila Button :btn:Aktivieren:.
+
 Vergewissern Sie sich, dass die Erweiterung aktiv ist.
 
-![Seite 'Zahlungseinstellungen'. Der Reiter 'Zahlungsmethoden' ist geöffnet und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, Wertgutschein, Mollie, PayPal, SEPA-Lastschrift und Stripe. Die Option 'Wertgutschein' ist aktiv, alle anderen Einträge sind inaktiv. Neben jedem der Einträge ist ein Button 'Einstellungen'.](../../assets/screens/payment-providers/payment-settings.png "Zahlungseinstellungen" )
+![Seite 'Zahlungseinstellungen'. Der Reiter 'Zahlungsmethoden' ist geöffnet und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, Wertgutschein, Mollie, PayPal, SEPA-Lastschrift und Stripe. Die Option 'Wertgutschein' ist aktiv, alle anderen Einträge sind inaktiv. Neben jedem der Einträge ist ein Button 'Einstellungen'.](../../assets/screens/payment/payment-settings.de.png "Zahlungseinstellungen" )
 
 Sie können direkt zu den Einstellungen für Banküberweisungen springen, indem Sie das Dropdown-Menü :btn-icon:fa3-gear:Einstellungen: und anschließend :btn:Zahlung > Banküberweisung: klicken.
 
@@ -61,7 +66,7 @@ Wenn Sie "Anderes Bankkonto" wählen, müssen Sie in den Feldern bei "Angaben zu
 
 Alle Einstellungen weiter unten auf der Seite sind optional.
 Sehen Sie sich die Seite genau an und aktivieren Sie alle Einstellungen, die Sie für Ihre Veranstaltung für diesen Zahlungsdienstleister wünschen.
-Sobald Sie alles wie gewünscht eingerichtet haben, scrollen Sie zum Seitenanfang. 
+Sobald Sie alles wie gewünscht eingerichtet haben, scrollen Sie zum Seitenanfang.
 Dort kreuzen Sie das Kontrollkästchen an, mit dem Sie bestätigen, dass Sie verstanden haben, wie Banküberweisungen in pretix funktionieren, und auch das Kontrollkästchen neben "Aktiviere Zahlungsmethode".
 Ihren Kund\*innen stehen in Ihrem Shop nun Banküberweisungen als Zahlungsoption zur Verfügung.
 
@@ -69,7 +74,8 @@ Ihren Kund\*innen stehen in Ihrem Shop nun Banküberweisungen als Zahlungsoption
 
 Für pretix Hosted arbeiten wir mit [GoCardless](https://gocardless.com) zusammen, um eine nahtlose Integration zu gewährleisten. Dadurch können Sie von [mehreren Tausend Banken in über 30 Ländern](https://gocardless.com/bank-account-data/coverage/) Transaktionen automatisch nach pretix importieren.
 
-Alternativ können Sie regelmäßig digitale Kontoauszüge importieren, um pretix über Zahlungseingänge zu informieren.
+Alternativ können Sie regelmäßig digitale Kontoauszüge importieren, um pretix über Zahlungseingänge zu informieren.
+
 Dieser Abschnitt erläutert die Vorgehensweise bei beiden Optionen.
 
 #### Option A: Transaktionen mit GoCardless automatisch importieren
@@ -77,11 +83,11 @@ Dieser Abschnitt erläutert die Vorgehensweise bei beiden Optionen.
 <!-- md:hosted -->
 
 Wenn Sie pretix Hosted nutzen, können Sie den automatischen Import von Transaktionen über die pretix-Integration mit GoCardless aktivieren.
-Diese Funktion gilt auf Veranstalterebene. 
+Diese Funktion gilt auf Veranstalterebene.
 Das bedeutet, dass die über dieses Verfahren importierten Bankdaten für alle Veranstaltungen des Veranstalters verfügbar sind.
 Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-bank: Banküberweisung → Automatischer Import:.
 
-![Seite mit dem Titel 'Automatischer Import von Transaktionen'. Die Seite enthält Text mit den Unterüberschriften 'Warum Transaktionen automatisch importieren?', 'Nicht zugeordnete Zahlungen' und 'Sicherheit und Datenschutz', außerdem einen Button, um nicht zugeordnete Zahlungen zur Prüfung hochzuladen.](../../assets/screens/payment/automatic-transaction-import.png "Automatischer Import von Transaktionen" )
+![Seite mit dem Titel 'Automatischer Import von Transaktionen'. Die Seite enthält Text mit den Unterüberschriften 'Warum Transaktionen automatisch importieren?', 'Nicht zugeordnete Zahlungen' und 'Sicherheit und Datenschutz', außerdem einen Button, um nicht zugeordnete Zahlungen zur Prüfung hochzuladen.](../../assets/screens/payment/automatic-transaction-import.de.png "Automatischer Import von Transaktionen" )
 
 Wählen Sie Ihr Land, Ihre Bank und das Datum, ab dem Sie Transaktionen importieren möchten.
 Wenn Sie das Feld "Transaktionen ab diesem Datum importieren" leer lassen, importiert pretix so viele Transaktionen wie möglich.
@@ -122,7 +128,7 @@ Sie muss folgende Angaben enthalten:
  - IBAN
  - BIC
 
-Die Zeile "Zahlender" sollte den namen der Person enthalten, von der die Zahlung stammt. 
+Die Zeile "Zahlender" sollte den namen der Person enthalten, von der die Zahlung stammt.
 IBAN und BIC sind IBAN und BIC des Bankkontos, von dem die Zahlung stammt.
 IBAN und BIC sind optional, aber wenn Sie sie angeben, können Sie mehr Funktionen in pretix nutzen, etwa die automatische Erstellung von Erstattungsdateien.
 
@@ -134,7 +140,8 @@ Sie gelangen zu einer Seite mit dem Titel "Bankdaten importieren".
 
 Wenn Sie die Daten für eine **Einzelveranstaltung** importieren möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-bank: Banküberweisung:.
 Auch hier gelangen Sie zu einer Seite mit dem Titel "Bankdaten importieren".
-Die beiden Seiten sind sehr ähnlich, aber eine gilt für die einzelne Veranstaltung, die andere für das ganze Veranstalterkonto.
+Die beiden Seiten sind sehr ähnlich, aber eine gilt für die einzelne Veranstaltung, die andere für das ganze Veranstalterkonto.
+
 Unabhängig von der gewählten Option ist die Vorgehensweise ab hier dieselbe.
 
 Klicken Sie den Button :btn:Durchsuchen…: und wählen Sie die Exportdatei, die Sie hochladen möchten.
@@ -143,7 +150,7 @@ Klicken Sie den Button :btn:Hochladen:.
 pretix fordert Sie jetzt auf anzugeben, welche Spalte Ihrer Datei welche Daten enthält.
 Der folgende Screenshot zeigt am Beispiel einer kleinen CSV-Datei, wie eine solche Zuordnung aussehen kann.
 
-![Seite 'Bankdaten importieren' mit einem Dialogfeld, das auffordert, Spalten einer CSV-Datei den Datenkategorien Datum, Betrag, Verwendungszweck, Zahler\*in, IBAN und BIC zuzuordnen. Radiobuttons und Kontrollkästchen ordnen die einzelnen Datenkategorien der Spalte der CSV-Datei zu, die die entsprechenden Angaben enthält. ](../../assets/screens/payment-providers/import-bank-data.png "Bankdaten importieren" )
+![Seite 'Bankdaten importieren' mit einem Dialogfeld, das auffordert, Spalten einer CSV-Datei den Datenkategorien Datum, Betrag, Verwendungszweck, Zahler\*in, IBAN und BIC zuzuordnen. Radiobuttons und Kontrollkästchen ordnen die einzelnen Datenkategorien der Spalte der CSV-Datei zu, die die entsprechenden Angaben enthält. ](../../assets/screens/payment-providers/import-bank-data.de.png "Bankdaten importieren" )
 
 Klicken Sie :btn:Fortfahren:.
 Während Ihre Daten verarbeitet werden, zeigt pretix einen Ladebildschirm und anschließend einen Überblick, wie viele Bestellungen als bezahlt oder ungültig erkannt oder ignoriert wurden.
@@ -158,7 +165,7 @@ Eine ausführlichere Anleitung, wie Sie [ungeklärte Transaktionen manuell verar
 
 ### Transaktionen manuell freigeben
 
-![Eine Seite mit dem Titel 'Bestellungen' zeigt eine Liste mit einer Bestellung. Deren Status ist 'ausstehend', 0,00 € von 250,00 € bezahlt.](../../assets/screens/payment/orders.png "Bestellungen" )
+![Eine Seite mit dem Titel 'Bestellungen' zeigt eine Liste mit einer Bestellung. Deren Status ist 'ausstehend', 0,00 € von 250,00 € bezahlt.](../../assets/screens/payment/orders.de.png "Bestellungen" )
 
 Ergänzend zur [automatischen Option A](#option-a-transaktionen-mitgocardless-automatisch-importieren) und zur [halbautomatischen Option B](bank-transfer.md#option-b-bankdaten-importieren), die beide oben beschrieben sind, haben Sie in pretix auch die Möglichkeit, Transaktionen manuell freizugeben.
 Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-shopping-cart: Bestellungen:.
@@ -172,7 +179,7 @@ Dadurch gelangen Sie zu einer Seite mit Details über diese Bestellung.
 Prüfen Sie die Transaktionsdaten Ihres Bankkontos.
 Wenn die Transaktionsdaten Ihres Bankkontos einen Eintrag enthalten, der zu der fraglichen Bestellung passt, klicken Sie oben auf der Seite mit den Bestellungsdetails den Button :btn-icon:fa3-check:Als bezahlt markieren:.
 
-![Seite mit dem Titel 'Als bezahlt markieren'. Sie zeigt Optionen zum Ändern des Zahlungsbetrags von 250,00 € und des Zahlungsdatums sowie die Option, den\*die Kund\*in per E-Mail zu informieren.](../../assets/screens/payment/order-mark-as-paid.png "Bestellungen" )
+![Seite mit dem Titel 'Als bezahlt markieren'. Sie zeigt Optionen zum Ändern des Zahlungsbetrags von 250,00 € und des Zahlungsdatums sowie die Option, den\*die Kund\*in per E-Mail zu informieren.](../../assets/screens/payment/order-mark-as-paid.de.png "Bestellungen" )
 
 !!! Warnung
     Bevor Sie die Bestellung als bezahlt markieren, sollten Sie sich vergewissern, dass Bestellung, Preis und Datum korrekt sind.
@@ -190,9 +197,9 @@ Wiederholen Sie dieses Vorgehen für jede auf der Seite "Bestellungen" aufgefüh
 
 Sie können ungeklärte Transaktionen auf Veranstalter- oder auf Veranstaltungsebene verarbeiten.
 
-Wenn Sie den automatischen Import über **GoCardless** nutzen oder Bankdaten auf **Veranstalterebene** importiert haben, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-bank: Banküberweisung:. 
+Wenn Sie den automatischen Import über **GoCardless** nutzen oder Bankdaten auf **Veranstalterebene** importiert haben, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-bank: Banküberweisung:.
 Sie gelangen zu einer Seite mit dem Titel "Bankdaten importieren".
-Wenn Sie Bankdaten auf **Veranstaltungsebene** importiert haben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-bank: Banküberweisung:. 
+Wenn Sie Bankdaten auf **Veranstaltungsebene** importiert haben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-bank: Banküberweisung:.
 Sie gelangen zu einer Seite mit dem Titel "Bankdaten importieren".
 Ab hier ist die Vorgehensweise dieselbe.
 
