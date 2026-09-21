@@ -42,7 +42,7 @@ Die Einstellungen auf der Veranstalter-Ebene gelten nur für Wertgutscheine, die
 Sie gelten **nicht** rückwirkend für bereits erstellte Wertgutscheine.
 Es ist deshalb empfehlenswert, dass Sie diesen Unterabschnitt zunächst lesen und Ihre Entscheidungen zu diesen Einstellungen zu treffen, bevor Sie Wertgutscheine verkaufen oder manuell ausstellen.
 
-![Auf der Seite "Veranstalter-Einstellungen" werden auf dem Reiter "Wertgutscheine" Optionen angezeigt, die festlegen, wie viele Jahre Wertgutscheine gültig sind und aus wie vielen Ziffern die Codes der Wertgutscheine bestehen.](../assets/screens/organizer/gift-cards.png)
+![Auf der Seite "Veranstalter-Einstellungen" werden auf dem Reiter "Wertgutscheine" Optionen angezeigt, die festlegen, wie viele Jahre Wertgutscheine gültig sind und aus wie vielen Ziffern die Codes der Wertgutscheine bestehen.](../assets/screens/organizer/gift-cards.de.png)
 
 Navigieren Sie zu: :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Allgemein: und wechseln Sie zum Reiter "Wertgutscheine".
 Auf dieser Seite können Sie die Einstellungen für Wertgutscheine auf Versanstalter-Ebene anpassen.
@@ -71,7 +71,7 @@ Wertgutscheine, die über Ihr Veranstalterkonto ausgestellt wurden, gelten für 
 Bei neu erstellten Events sind Wertgutscheine standardmäßig als Zahlungsmethode aktiviert.
 In der Kund\*innenansicht Ihrer Shops ist die Option für die Zahlung mit Wertgutschein ausgeblendet, bis Sie über Ihr Veranstalterkonto den ersten Wertgutschein ausgestellt haben.
 
-![Auf der Seite mit dem Titel Zahlungs-Einstellungen: Zahlungsdienstleister: Wertgutschein ist das Kästchen bei Zahlungsmethode aktivieren angekreuzt.](../assets/screens/payment/gift-cards.png)
+![Auf der Seite mit dem Titel Zahlungs-Einstellungen: Zahlungsdienstleister: Wertgutschein ist das Kästchen bei Zahlungsmethode aktivieren angekreuzt.](../assets/screens/payment/gift-cards.de.png)
 
 Zu den Einstellungen für Wertgutscheine als Zahlungsmethode gelangen Sie, indem Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung: navigieren und auf den Button :btn-icon:fa3-gear:Einstellungen: neben "Wertgutscheine" klicken.
 Hier können Sie die Verfügbarkeit der Zahlungsmethode nach Datum, Zeitraum in Bezug auf die Veranstaltung, Verkaufskanal und Region einschränken, ebenso wie dies auch bei anderen Zahlungsmethoden möglich ist.
@@ -86,7 +86,7 @@ Diese Wege werden in den folgenden Abschnitten beschrieben.
 
 ### So erstellen Sie einen Wertgutschein für Ihren Shop
 
-![Auf der Seite "Produkt bearbeiten: Wertgutschein" ist auf dem Reiter "Zusätzliche Einstellungen" das Kontrollkästchen neben "Dieses Produkt ist ein Wertgutschein" aktiviert.](../assets/screens/products/gift-card.png)
+![Auf der Seite "Produkt bearbeiten: Wertgutschein" ist auf dem Reiter "Zusätzliche Einstellungen" das Kontrollkästchen neben "Dieses Produkt ist ein Wertgutschein" aktiviert.](../assets/screens/products/gift-card.de.png)
 
 Wenn Sie in Ihrem Shop Wertgutscheine verkaufen möchten, erstellen Sie diese wie jedes andere Produkt.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und klicken Sie auf den Button :btn-icon:fa3-plus:Neues Produkt erstellen:.
@@ -97,7 +97,7 @@ Aktivieren Sie das Kontrollkästchen neben "Das Produkt ist ein Wertgutschein" u
 Wenn Sie das Kontrollkästchen neben "Freie Preiseingabe" aktivieren, kann Ihr\*e Kund\*in den Wert des Wertgutscheins frei wählen.
 
 Nachdem Sie den Wertgutschein erstellt haben, erstellen Sie ein neues Kontingent und fügen Sie dort den Wertgutschein hinzu.
-Wertgutscheine unterliegen in der Regel keinerlei physischen Beschränkungen. 
+Wertgutscheine unterliegen in der Regel keinerlei physischen Beschränkungen.
 Daher ist es sinnvoll, diesem Kontingent eine unbegrenzte Kapazität zuzuweisen, indem Sie das Feld "Gesamtkapazität" leer lassen.
 
 Es empfiehlt sich, das Kontrollkästchen neben "Ignoriere dieses Kontingent für die Gesamt-Verfügbarkeit der Veranstaltung" zu aktivieren, da Wertgutscheine keine Zutrittsprodukte sind.
@@ -105,11 +105,11 @@ Die Anzahl der von Ihnen verkauften Wertgutscheine hat nichts mit der Gesamtzahl
 
 ### Verwendung von Wertgutscheinen für Selbstbedienungs-Erstattungen
 
-![Die Seite "Stornierungseinstellungen" auf dem Reiter "Bezahlte Bestellungen" die Einstellungen für die Erstattungsmethode hervorgehoben, wobei vier Optionen zur Auswahl stehen, von denen zwei Wertgutscheine betreffen.](../assets/screens/gift-cards/refund.png)
+![Die Seite "Stornierungseinstellungen" auf dem Reiter "Bezahlte Bestellungen" die Einstellungen für die Erstattungsmethode hervorgehoben, wobei vier Optionen zur Auswahl stehen, von denen zwei Wertgutscheine betreffen.](../assets/screens/gift-cards/refund.de.png)
 
 pretix kann Erstattungen automatisch in Form von Wertgutscheinen ausstellen.
 Um diese Funktion einzurichten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Stornierung: und öffnen Sie den Reiter :btn:Bezahlte Bestellungen:.
-Wählen Sie unter "Erstattungsmethode" entweder `Kunden können zwischen einem Wertgutschein und einer Erstattung auf die ursprüngliche Zahlungsmethode wählen`  oder `Alle Erstattungen werden als Wertgutscheine ausgegeben`. 
+Wählen Sie unter "Erstattungsmethode" entweder `Kunden können zwischen einem Wertgutschein und einer Erstattung auf die ursprüngliche Zahlungsmethode wählen`  oder `Alle Erstattungen werden als Wertgutscheine ausgegeben`.
 Klicken Sie auf den Button :btn:Speichern:, um Ihre Einstellungen zu bestätigen.
 
 Aktivieren Sie Wertgutscheine als Zahlungsmethode für dieselbe Veranstaltung oder für andere aktuelle oder zukünftige Veranstaltungen, für die Kund\*innen ihre Wertgutscheine realistischerweise einlösen möchten.
@@ -164,7 +164,7 @@ Der Wertgutschein wird erstellt, sobald Sie auf :btn:Speichern: klicken.
 Ein einmal erstellter Wertgutschein kann nicht gelöscht werden.
 Sie können lediglich die folgenden Eigenschaften bearbeiten: Ablaufdatum und -zeit, Inhaber sowie besondere Gutscheinbedingungen.
 Navigieren Sie dafür zu :navpath:Ihr Veranstalter → :fa3-credit-card: Wertgutscheine:, klicken Sie auf den Wertgutschein und anschließend auf den Button :btn-icon:fa3-edit: Bearbeiten:.
-Wie Sie den Wert eines Wertgutscheins durch manuelle Transaktionen ändern, lesen Sie im Abschnitt [Das Guthaben eines Wertgutscheins manuell ändern](#das-guthaben-eines-gutscheins-manuell-ändern).
+Wie Sie den Wert eines Wertgutscheins durch manuelle Transaktionen ändern, lesen Sie im Abschnitt [Das Guthaben eines Wertgutscheins manuell ändern](#das-guthaben-eines-wertgutscheins-manuell-ändern).
 
 ## Fortgeschrittene Nutzung
 
@@ -179,7 +179,7 @@ Andere Veranstalterkonten können von Ihnen ausgestellte Wertgutscheine akzeptie
 Standardmäßig werden von Ihrem Veranstalterkonto ausgestellte Wertgutscheine nur von Ihrem eigenen Veranstalterkonto akzeptiert.
 Sie können jedoch einen anderen Veranstalter einladen, Ihre Wertgutscheine zu akzeptieren.
 
-![Seite mit dem Titel "Veranstalter einladen", auf der ein Texteingabefeld für den Kurznamen des Veranstalters und ein Kontrollkästchen zur Freigabe des Zugriffs auf wiederverwendbare Medien angezeigt werden, die beide leer sind.](../assets/screens/gift-cards/invite-organizer.png)
+![Seite mit dem Titel "Veranstalter einladen", auf der ein Texteingabefeld für den Kurznamen des Veranstalters und ein Kontrollkästchen zur Freigabe des Zugriffs auf wiederverwendbare Medien angezeigt werden, die beide leer sind.](../assets/screens/gift-cards/invite-organizer.de.png)
 
 Navigieren Sie dafür zu: :navpath:Ihr Veranstalter → :fa3-credit-card: Wertgutscheine → Akzeptanz: und klicken Sie auf den Button :btn:Neuen Veranstalter einladen:.
 Geben Sie die Kurzform des Veranstalters in das Feld ein und klicken Sie auf :btn:Speichern:.
@@ -201,7 +201,7 @@ Wenn Sie beispielsweise ein separates Kassensystem für den Verkauf von Speisen 
 
 Navigieren Sie dafür zu: :navpath:Ihr Veranstalter → :fa3-credit-card: Wertgutsscheine: und klicken Sie in der Liste auf den betreffenden Wertgutschein.
 
-![Seite mit dem Titel "Wertgutschein: Wertgutschein-Code", auf der ein Wertgutschein angezeigt wird, der im Rahmen einer Bestellung mit einem Wert von 92,00 € erstellt wurde und für den eine manuelle Transaktion in Höhe von minus 92,00 € vorgenommen wurde, sodass der Wert des Wertguscheins nun bei 0,00 € liegt.](../assets/screens/gift-cards/devalue.png)
+![Seite mit dem Titel "Wertgutschein: Wertgutschein-Code", auf der ein Wertgutschein angezeigt wird, der im Rahmen einer Bestellung mit einem Wert von 92,00 € erstellt wurde und für den eine manuelle Transaktion in Höhe von minus 92,00 € vorgenommen wurde, sodass der Wert des Wertguscheins nun bei 0,00 € liegt.](../assets/screens/gift-cards/devalue.de.png)
 
 Tragen Sie den Grund für die Änderung in das Textfeld in der Spalte "Informationen" ein.
 Der "Aktuelle Wert" des Wertgutscheins wird im Feld "Details" angezeigt.
