@@ -8,31 +8,34 @@ Der Unterschied zu anderen Zahlungsdienstleistern besteht lediglich darin, dass 
 Wertgutscheine sind nicht zu verwechseln mit [Gutscheinen](vouchers.md).
 Im Gegensatz zu Gutscheinen entsprechen Wertgutscheine immer einem festen Geldbetrag, der von der Gesamtsumme einer Bestellung abgezogen wird.
 Wertgutscheine können nicht für einen Rabatt vom Wert gekaufter Produkte eingesetzt werden und eigenen sich deshalb nicht für Promotionaktionen.
-Außerdem können Sie Wertgutscheine – anders als Gutscheine – bei verschiedenen Veranstaltungen und Veranstaltern eingesetzt werden und wirken sich nicht auf die Verfügbarkeit und die Sichtbarkeit bestimmter Produkte aus.
+Außerdem können Sie Wertgutscheine – anders als Gutscheine – bei verschiedenen Veranstaltungen und Veranstaltern einsetzen. 
+Wertgutscheine wirken sich nicht auf die Verfügbarkeit und die Sichtbarkeit bestimmter Produkte aus.
 
 !!! Hinweis
     pretix behandelt Wertgutscheine als "Mehrzweckgutscheine" entsprechend der EU-Richtline 2016/1065 vom 27. Juni 2016.
-    Das Erheben von Steuern auf den Verkauf von Wertgutscheinen wird von pretix nicht unterstützt.
-    Stattdessen werden Steuern immer bei dem Kauf berechnet, für den der jeweilige Wertgutschein verwendet wird.
+    pretix unterstützt das Erheben von Steuern auf den Verkauf von Wertgutscheinen nicht. 
+    Stattdessen werden Steuern immer bei dem Kauf abgerechnet, für den der jeweilige Wertgutschein verwendet wird.
 
 ## Voraussetzungen
 
-Damit Sie Wertgutscheine bei einer Veranstaltung als Zahlungsmethode einesetzen können, müssen Sie diese für die Veranstaltung aktivieren.
+Damit Sie Wertgutscheine bei einer Veranstaltung als Zahlungsmethode einsetzen können, müssen Sie diese für die Veranstaltung aktivieren.
 Wertgutscheine sind standardmäßig aktiviert.
-Sollten sie nicht aktiviert sein, können Sie sie aktivieren, indem Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung: navigieren, auf den Button :btn-icon:fa3-gear:Einstellungen: neben "Wertgutscheine" klicken und das Kontrollkästchen neben "Zahlungsmethode aktivieren" oben auf der Seite aktivieren.
+Falls sie nicht aktiviert sind, dann können Sie sie aktivieren, indem Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung: navigieren. 
+Klicken Sie dann auf den Button :btn-icon:fa3-gear:Einstellungen: neben "Wertgutscheine" und aktivieren das Kontrollkästchen neben "Zahlungsmethode aktivieren" oben auf der Seite.
 
 Der Verkauf von Wertgutscheinen erfolgt bei pretix ausschließlich mit einem Steuersatz von 0 %.
 Die Umsatzsteuer wird auf den Einkauf erhoben, der mit dem Wertgutschein getätigt wird – nicht auf den Kauf des Wertgutscheins selbst.
 Dies entspricht der steuerrechtlichen Regelung für Mehrzweckgutscheine in Deutschland und weiteren Ländern.
 
 Bevor Sie einen Wertgutschein erstellen, müssen Sie eine Steuer-Regel mit einem Satz von 0 % anlegen.
-Gehen Sie dazu wie folgt vor: Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuer-Regeln:, klicken Sie auf den Button :btn-icon:fa3-plus:Neue Steuerregel erstellen:, setzen Sie das Feld "Steuersatz" auf 0,00 % und speichern Sie diese Regel unter einem eindeutigen Namen für Ihren internen Gebrauch.
+Gehen Sie dazu wie folgt vor: 
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:, klicken Sie auf den Button :btn-icon:fa3-plus:Neue Steuer-Regel erstellen:, setzen Sie das Feld "Steuersatz" auf 0,00 % und speichern Sie diese Regel unter einem eindeutigen internen Namen.
 
 {% include "warning-tax-rules.md" %}
 
 ## Allgemeine Verwendung
 
-Standardmäßig sind Wertgutscheine unbefristet gültig; sie verfügen über 12-stellige Codes und werden ohne Einschränkungen als Zahlungsmethode für alle neu erstellten Veranstaltungen akzeptiert.
+Standardmäßig sind Wertgutscheine unbefristet gültig, verfügen über 12-stellige Codes und werden ohne Einschränkungen als Zahlungsmethode für alle neu erstellten Veranstaltungen akzeptiert.
 In den nächsten beiden Abschnitten erfahren Sie, wie Sie diese Einstellungen ändern können.
 
 ### Gültigkeitsdauer von Wertgutscheinen und Länge des Codes
@@ -40,25 +43,24 @@ In den nächsten beiden Abschnitten erfahren Sie, wie Sie diese Einstellungen ä
 Die allgemeinen Einstellungen für Wertgutscheine finden Sie auf Ihrer Verantalter-Seite.
 Die Einstellungen auf der Veranstalter-Ebene gelten nur für Wertgutscheine, die Sie **nach** dem Speichern dieser Einstellungen ausstellen.
 Sie gelten **nicht** rückwirkend für bereits erstellte Wertgutscheine.
-Es ist deshalb empfehlenswert, dass Sie diesen Unterabschnitt zunächst lesen und Ihre Entscheidungen zu diesen Einstellungen zu treffen, bevor Sie Wertgutscheine verkaufen oder manuell ausstellen.
+Es ist deshalb empfehlenswert, dass Sie zuerst diesen Unterabschnitt lesen und finale Entscheidungen zu diesen Einstellungen zu treffen, bevor Sie Wertgutscheine verkaufen oder manuell ausstellen.
 
 ![Auf der Seite "Veranstalter-Einstellungen" werden auf dem Reiter "Wertgutscheine" Optionen angezeigt, die festlegen, wie viele Jahre Wertgutscheine gültig sind und aus wie vielen Ziffern die Codes der Wertgutscheine bestehen.](../assets/screens/organizer/gift-cards.de.png)
 
 Navigieren Sie zu: :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Allgemein: und wechseln Sie zum Reiter "Wertgutscheine".
-Auf dieser Seite können Sie die Einstellungen für Wertgutscheine auf Versanstalter-Ebene anpassen.
-Im Feld "Gültigkeitsdauer von Wertgutschein-Codes in Jahren" können Sie festlegen, wie viele Jahre Ihre Wertgustscheine gültig sein sollen.
-In dieses Feld können nur ganze Zahlen eingegeben werden.
+Auf dieser Seite können Sie die Einstellungen für Wertgutscheine auf Veranstalter-Ebene anpassen.
+Im Feld "Gültigkeit von Wertgutscheinen in Jahren" können Sie festlegen, wie viele Jahre Ihre Wertgustscheine gültig sein sollen.
+Sie können nur ganze Zahlen in dieses Feld eingeben. 
 
-Das genaue Ablaufdatum ist immer das Ende des Kalenderjahres, in dem die angegebene Laufzeit abläuft.
-Wenn Sie beispielsweise die Zahl 1 in das Feld eingeben und dann im Jahr 2025 einen Wertgutschein erstellen, ist dieser bis zum 31.
-Dezember 2026 um Mitternacht gültig.
+Das genaue Ablaufdatum ist immer das Ende des Kalenderjahres, in dem die angegebene Zeit endet. 
+Wenn Sie beispielsweise die Zahl 1 in das Feld eingeben und dann im Jahr 2025 einen Wertgutschein erstellen, dann ist dieser bis zum 31. Dezember 2026 um Mitternacht gültig.
 Dieses Feld ist standardmäßig leer.
 Mit dieser Einstellung sind Wertgutscheine unbegrenzt gültig.
 Beim manuellen Ausstellen von Wertgutscheinen können Sie ein individuelles Ablaufdatum festlegen, das vor oder nach dem Ende des hier eingetragenen Zeitraums liegt.
 
 !!! Warnung
     In vielen Rechtssystemen ist für Wertgutscheine eine Mindestgültigkeitsdauer von drei Jahren vorgeschrieben.
-    Wir empfehlen Ihnen, sich juristisch beraten zu lassen, bevor Sie eine Gültigkeitsdauer für Wertgutscheine festlegen.
+    Wir empfehlen Ihnen, sich juristisch beraten zu lassen, bevor Sie die Gültigkeitsdauer für Wertgutscheine beschränken.
 
 Auf dieser Seite können Sie außerdem die Länge der in Ihrem Shop erstellten Wertgutschein-Codes festlegen.
 Die Standardlänge beträgt 12 Ziffern, das Minimum sind 6 Ziffern und das Maximum 64 Ziffern.
@@ -74,23 +76,24 @@ In der Kund\*innenansicht Ihrer Shops ist die Option für die Zahlung mit Wertgu
 ![Auf der Seite mit dem Titel Zahlungs-Einstellungen: Zahlungsdienstleister: Wertgutschein ist das Kästchen bei Zahlungsmethode aktivieren angekreuzt.](../assets/screens/payment/gift-cards.de.png)
 
 Zu den Einstellungen für Wertgutscheine als Zahlungsmethode gelangen Sie, indem Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung: navigieren und auf den Button :btn-icon:fa3-gear:Einstellungen: neben "Wertgutscheine" klicken.
-Hier können Sie die Verfügbarkeit der Zahlungsmethode nach Datum, Zeitraum in Bezug auf die Veranstaltung, Verkaufskanal und Region einschränken, ebenso wie dies auch bei anderen Zahlungsmethoden möglich ist.
+Hier können Sie die Verfügbarkeit der Zahlungsmethode nach Datum, Zeitraum in Bezug auf die Veranstaltung, Verkaufskanal und Region einschränken, so wie dies auch bei anderen Zahlungsmethoden möglich ist.
 
-Wenn Sie für eine Veranstaltung Wertgutscheine als Zahlungsmittel nicht akzeptieren möchten, deaktivieren Sie bitte das Kontrollkästchen neben "Zahlungsmethode aktivieren" oben auf der Seite.
-Beachten Sie bitte, dass diese Einstellungen auf Veranstaltungsebene gelten und Sie sie daher für jede Veranstaltung einzeln ändern müssen.
+Wenn Sie für eine Veranstaltung Wertgutscheine als Zahlungsmittel nicht akzeptieren möchten, dann deaktivieren Sie das Kontrollkästchen neben "Aktiviere Zahlungsmethode" oben auf der Seite.
+Diese Einstellungen gelten auf Veranstaltungsebene.
+Daher müssen Sie sie für jede Veranstaltung einzeln ändern. 
 
 ## Wege für das Ausstellen von Wertgutscheinen
 
-Es gibt drei Wege, auf denen Sie Wertgutscheine für Ihre Kund\*innen ausstellen können: durch den Verkauf in Ihrem Shop  oder über pretixPOS, als Erstattung eines Kaufbetrags in Form eines Wertgutscheins sowie durch manuelles Ausstellen.
+Es gibt drei Wege, auf denen Sie Wertgutscheine für Ihre Kund\*innen ausstellen können: den Verkauf in Ihrem Shop oder über pretixPOS, die Erstattung eines Kaufbetrags in Form eines Wertgutscheins und manuelles Ausstellen.
 Diese Wege werden in den folgenden Abschnitten beschrieben.
 
-### So erstellen Sie einen Wertgutschein für Ihren Shop
+### Einen Wertgutschein als Angebot in Ihrem Shop erstellen
 
 ![Auf der Seite "Produkt bearbeiten: Wertgutschein" ist auf dem Reiter "Zusätzliche Einstellungen" das Kontrollkästchen neben "Dieses Produkt ist ein Wertgutschein" aktiviert.](../assets/screens/products/gift-card.de.png)
 
 Wenn Sie in Ihrem Shop Wertgutscheine verkaufen möchten, erstellen Sie diese wie jedes andere Produkt.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und klicken Sie auf den Button :btn-icon:fa3-plus:Neues Produkt erstellen:.
-Wählen Sie als "Produktart" "Produkt ohne Eintrittsberechtigung" und als "Umsatzsteuer" eine Steuer-Regel von 0,00 % aus.
+Wählen Sie als "Produkttyp" `Kein Zutrittsprodukt` und als "Umsatzsteuer" eine Steuer-Regel von 0,00 %.
 
 Klicken Sie auf den Button :btn:Speichern und mit mehr Einstellungen fortfahren: und wechseln Sie dann zum Reiter :btn:Zusätzliche Einstellungen:.
 Aktivieren Sie das Kontrollkästchen neben "Das Produkt ist ein Wertgutschein" und klicken Sie auf den Button :btn:Speichern:.
