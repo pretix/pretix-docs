@@ -384,7 +384,7 @@ You can still enter any other time manually, even if pretix has no record of ava
 If you selected multiple products on the previous page, use the "Product" drop-down menu to choose a specific product.
 If you selected only a single product, then pretix will carry that selection over to the drop-down menu.
 
-If check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers.
+If you check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers.
 Uncheck this box if you do not want the date to be visible to all visitors of your online shop.
 
 If you want to create an order for the date right away, check the box next to "Create order".
@@ -397,6 +397,7 @@ If you unchecked the box next to "Create order", then pretix will skip this page
 
 ![Page titled 'Quick entry 3/4', displaying options for 'Email address', 'Internal comment', 'Amounts' and product price.](../assets/screens/resources-scheduling/quick-entry3.png "Quick entry 3/4")
 
+Select the sales channel for the order.
 Enter the "Amounts" of products to sell through that order and a price for each of the products.
 You may also enter an "Email address" to be associated with the order.
 Then, click the :btn:Continue: button.
