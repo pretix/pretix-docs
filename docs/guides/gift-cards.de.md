@@ -8,19 +8,19 @@ Der Unterschied zu anderen Zahlungsdienstleistern besteht lediglich darin, dass 
 Wertgutscheine sind nicht zu verwechseln mit [Gutscheinen](vouchers.md).
 Im Gegensatz zu Gutscheinen entsprechen Wertgutscheine immer einem festen Geldbetrag, der von der Gesamtsumme einer Bestellung abgezogen wird.
 Wertgutscheine können nicht für einen Rabatt vom Wert gekaufter Produkte eingesetzt werden und eigenen sich deshalb nicht für Promotionaktionen.
-Außerdem können Sie Wertgutscheine – anders als Gutscheine – bei verschiedenen Veranstaltungen und Veranstaltern einsetzen. 
+Außerdem können Sie Wertgutscheine – anders als Gutscheine – bei verschiedenen Veranstaltungen und Veranstaltern einsetzen.
 Wertgutscheine wirken sich nicht auf die Verfügbarkeit und die Sichtbarkeit bestimmter Produkte aus.
 
 !!! Hinweis
     pretix behandelt Wertgutscheine als "Mehrzweckgutscheine" entsprechend der EU-Richtline 2016/1065 vom 27. Juni 2016.
-    pretix unterstützt das Erheben von Steuern auf den Verkauf von Wertgutscheinen nicht. 
+    pretix unterstützt das Erheben von Steuern auf den Verkauf von Wertgutscheinen nicht.
     Stattdessen werden Steuern immer bei dem Kauf abgerechnet, für den der jeweilige Wertgutschein verwendet wird.
 
 ## Voraussetzungen
 
 Damit Sie Wertgutscheine bei einer Veranstaltung als Zahlungsmethode einsetzen können, müssen Sie diese für die Veranstaltung aktivieren.
 Wertgutscheine sind standardmäßig aktiviert.
-Falls sie nicht aktiviert sind, dann können Sie sie aktivieren, indem Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung: navigieren. 
+Falls sie nicht aktiviert sind, dann können Sie sie aktivieren, indem Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Zahlung: navigieren.
 Klicken Sie dann auf den Button :btn-icon:fa3-gear:Einstellungen: neben "Wertgutscheine" und aktivieren das Kontrollkästchen neben "Zahlungsmethode aktivieren" oben auf der Seite.
 
 Der Verkauf von Wertgutscheinen erfolgt bei pretix ausschließlich mit einem Steuersatz von 0 %.
@@ -28,7 +28,7 @@ Die Umsatzsteuer wird auf den Einkauf erhoben, der mit dem Wertgutschein getäti
 Dies entspricht der steuerrechtlichen Regelung für Mehrzweckgutscheine in Deutschland und weiteren Ländern.
 
 Bevor Sie einen Wertgutschein erstellen, müssen Sie eine Steuer-Regel mit einem Satz von 0 % anlegen.
-Gehen Sie dazu wie folgt vor: 
+Gehen Sie dazu wie folgt vor:
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:, klicken Sie auf den Button :btn-icon:fa3-plus:Neue Steuer-Regel erstellen:, setzen Sie das Feld "Steuersatz" auf 0,00 % und speichern Sie diese Regel unter einem eindeutigen internen Namen.
 
 {% include "warning-tax-rules.md" %}
@@ -50,9 +50,9 @@ Es ist deshalb empfehlenswert, dass Sie zuerst diesen Unterabschnitt lesen und f
 Navigieren Sie zu: :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Allgemein: und wechseln Sie zum Reiter "Wertgutscheine".
 Auf dieser Seite können Sie die Einstellungen für Wertgutscheine auf Veranstalter-Ebene anpassen.
 Im Feld "Gültigkeit von Wertgutscheinen in Jahren" können Sie festlegen, wie viele Jahre Ihre Wertgustscheine gültig sein sollen.
-Sie können nur ganze Zahlen in dieses Feld eingeben. 
+Sie können nur ganze Zahlen in dieses Feld eingeben.
 
-Das genaue Ablaufdatum ist immer das Ende des Kalenderjahres, in dem die angegebene Zeit endet. 
+Das genaue Ablaufdatum ist immer das Ende des Kalenderjahres, in dem die angegebene Zeit endet.
 Wenn Sie beispielsweise die Zahl 1 in das Feld eingeben und dann im Jahr 2025 einen Wertgutschein erstellen, dann ist dieser bis zum 31. Dezember 2026 um Mitternacht gültig.
 Dieses Feld ist standardmäßig leer.
 Mit dieser Einstellung sind Wertgutscheine unbegrenzt gültig.
@@ -80,7 +80,7 @@ Hier können Sie die Verfügbarkeit der Zahlungsmethode nach Datum, Zeitraum in 
 
 Wenn Sie für eine Veranstaltung Wertgutscheine als Zahlungsmittel nicht akzeptieren möchten, dann deaktivieren Sie das Kontrollkästchen neben "Aktiviere Zahlungsmethode" oben auf der Seite.
 Diese Einstellungen gelten auf Veranstaltungsebene.
-Daher müssen Sie sie für jede Veranstaltung einzeln ändern. 
+Daher müssen Sie sie für jede Veranstaltung einzeln ändern.
 
 ## Wege für das Ausstellen von Wertgutscheinen
 
