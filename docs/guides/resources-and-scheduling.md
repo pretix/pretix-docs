@@ -61,7 +61,6 @@ If you want to manage equipment such as audio guides, film screening equipment, 
 Creating these types is a prerequisite for creating individual resources
 The section [Managing individual resources](#managing-individual-resources) covers that.
 
-
 You can use pretix to manage any kind of resource and create a resource type for it.
 You should create exactly one resource type for every type of resource that you want to manage.
 
@@ -169,6 +168,8 @@ For instance, if you created a resource type named "Guide", navigate to :navpath
 Click the :btn-icon:fa3-plus: Add a Guide: button.
 If your resource has a different name, then the button will have a different label, too.
 
+![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English', and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
+
 If the resource you are creating represents a person, enter their name under "Name".
 Under "Language", select the language you want to use to communicate with the person through pretix.
 You may enter additional details: phone number, address, and external identifier.
@@ -184,8 +185,6 @@ Whenever you create a booking, pretix will send an email and a notification to t
 The managers can then either confirm or deny the booking.
 
 Once you have made your choices, click the :btn:Save and continue with more settings: button.
-
-![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English', and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
 If the resource represents an inanimate object or location, enter a unique identifier such as a room number or an inventory number.
 Select the "Language" appropriate for the person or team in charge of the resource.
