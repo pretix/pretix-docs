@@ -150,7 +150,7 @@ Klicken Sie den Button :btn:Hochladen:.
 pretix fordert Sie jetzt auf anzugeben, welche Spalte Ihrer Datei welche Daten enthält.
 Der folgende Screenshot zeigt am Beispiel einer kleinen CSV-Datei, wie eine solche Zuordnung aussehen kann.
 
-![Seite 'Bankdaten importieren' mit einem Dialogfeld, das auffordert, Spalten einer CSV-Datei den Datenkategorien Datum, Betrag, Verwendungszweck, Zahler\*in, IBAN und BIC zuzuordnen. Radiobuttons und Kontrollkästchen ordnen die einzelnen Datenkategorien der Spalte der CSV-Datei zu, die die entsprechenden Angaben enthält. ](../../assets/screens/payment-providers/import-bank-data.de.png "Bankdaten importieren" )
+![Seite 'Bankdaten importieren' mit einem Dialogfeld, das auffordert, Spalten einer CSV-Datei den Datenkategorien Datum, Betrag, Verwendungszweck, Zahler\*in, IBAN und BIC zuzuordnen. Radiobuttons und Kontrollkästchen ordnen die einzelnen Datenkategorien der Spalte der CSV-Datei zu, die die entsprechenden Angaben enthält. ](../../assets/screens/payment/import-bank-data.de.png "Bankdaten importieren" )
 
 Klicken Sie :btn:Fortfahren:.
 Während Ihre Daten verarbeitet werden, zeigt pretix einen Ladebildschirm und anschließend einen Überblick, wie viele Bestellungen als bezahlt oder ungültig erkannt oder ignoriert wurden.
