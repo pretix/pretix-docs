@@ -6,7 +6,7 @@ Gutscheine haben viele nützliche Anwendungsmöglichkeiten.
 Sie können sie dafür benutzen:
 
 - Produkte für Personen, die einen Gutschein haben, zu einem [ermäßigten Preis](#einen-limitierten-rabatt-anbieten) anzubieten
-- ein Produkt nur einer [ausgewählten Personengruppe](#exklusive-produktverfügbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gästen)
+- ein Produkt nur einer [ausgewählten Personengruppe](#exklusive-produktverfugbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gästen)
 - eine bestimmten Anteil des Produktkontingents für Personen mit einem Gutschein zu [reservieren](#tickets-reservieren)
 - sicherzustellen, dass Personen mit einem Gutschein [weiterhin Zugang](#ein-kontingent-umgehen) zu einem Produkt haben, auch wenn es ausverkauft ist
 
