@@ -68,7 +68,7 @@ If you intend to use pretix to send out vouchers via the pretix-native mail func
 
 Once you have made your choices, click the :btn:Save: button and the vouchers will be created.
 This will take you to the "Vouchers" overview page.
-You can still edit the settings for the vouchers, but you need to do so for each voucher individually.
+All settings that are available prior to creation can also be changed after the vouchers have already been created.
 
 ### Sending out vouchers via email
 

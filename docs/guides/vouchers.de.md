@@ -6,22 +6,22 @@ Gutscheine haben viele nützliche Anwendungsmöglichkeiten.
 Sie können sie dafür benutzen:
 
 - Produkte für Personen, die einen Gutschein haben, zu einem [ermäßigten Preis](#einen-limitierten-rabatt-anbieten) anzubieten
-- ein Produkt nur einer [ausgewählten Personengruppe](vouchers.de.md#exklusive-produktverfügbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gäst\*innen)
-- eine bestimmte Menge an Produktkontingent für Personen mit  einem Gutschein zu [reservieren](vouchers.de.md#tickets-reservieren)
+- ein Produkt nur einer [ausgewählten Personengruppe](vouchers.de.md#exklusive-produktverfügbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gästen)
+- eine bestimmten Anteil des Produktkontingents für Personen mit einem Gutschein zu [reservieren](vouchers.de.md#tickets-reservieren)
 - sicherzustellen, dass Personen mit einem Gutschein [weiterhin Zugang](vouchers.de.md#ein-kontingent-umgehen) zu einem Produkt haben, auch wenn es ausverkauft ist
 
 !!! Note
     Gutscheine sind nicht mit [Wertgutscheinen](gift-cards.md) zu verwechseln.
     Wertgutscheine dienen im Wesentlichen als zusätzliche Zahlungsmethode für Ihre Kund*innen.
     Sie entsprechen immer einem festen Geldbetrag, der vom Gesamtbetrag der Bestellung abgezogen wird.
-    Wertgutscheine können unabhängig von der Art der Veranstaltung und dem Veranstalter verwendet werden.
+    Wertgutscheine können veranstaltungsübergreifend und veranstalterübergreifend verwendet werden.
     Sie haben keinen Einfluss auf die Verfügbarkeit und Sichtbarkeit bestimmter Produkte.
 
 ## Voraussetzungen
 
 Gutscheine werden auf Veranstaltungsebene verwaltet.
 Daher müssen Sie erst die Veranstaltung anlegen, für die Sie Gutscheine erstellen möchten.
-Wenn Sie pretix Hosted nutzen, müssen Sie erst Ihr Konto aktivieren, bevor Sie Gutscheine per E-Mail versenden können.
+Wenn Sie pretix Hosted nutzen, muss Ihr Konto aktiviert sein, damit Sie Gutscheine per E-Mail versenden können.
 
 ## Allgemeine Nutzung
 
@@ -42,7 +42,6 @@ Etwaige Kleinbuchstaben werden in Großbuchstaben umgewandelt.
 ![Seite mit dem Titel "Gutschein", die Optionen zum Erstellen eines einzelnen Gutscheincodes zeigt.](../assets/screens/vouchers/create-single.de.png)
 
 Wenn Sie einen oder mehrere Gutscheine generieren, sollten Sie diese kopieren und beispielsweise in einer Text- oder Tabellendatei auf Ihrem Computer speichern.
-Verwenden Sie dafür beispielsweise eine Text- oder Tabellendatei.
 
 Wenn Sie für eine Veranstaltung mehr als eine Art von Gutschein erstellen, ist es sinnvoll, im Feld "Tag" ein Schlagwort einzugeben.
 Das macht es später einfacher, bestimmte Gutscheine in der Liste zu finden, zu bearbeiten oder zu duplizieren.
@@ -72,9 +71,9 @@ Sie müssen also jeden Code in einer neuen Zeile eingeben.
 Die Einstellungen in den Abschnitten "Gutscheindetails" und "Erweiterte Einstellungen" entsprechen denen im Dialog "Einen einzelnen Gutschein erstellen".
 
 Sie sollten im Feld "Tag" einen Tag eingeben, um die Gutscheine später besser zuordnen und wiederfinden zu können.
-Zusätzlich sollten Sie die Codes kopieren und sie in einer Text- oder Tabellendatei speichern.
+Aus dem gleichen Grund sollten Sie die Codes kopieren und sie in einer Text- oder Tabellendatei speichern.
 Wenn Sie vorhaben, Gutscheine über die E-Mail-Funktion von pretix zu versenden, klicken Sie noch **nicht** auf den Button "Speichern".
-Lesen Sie stattdessen den [Unterabschnitt zum Gutscheine per E-Mail versenden](vouchers.md#sending-out-vouchers-via-email).
+Lesen Sie stattdessen den Unterabschnitt zum [Versenden von Gutscheinen per E-Mail](#gutscheine-per-e-mail-versenden).
 
 Wenn Sie mit den Einstellungen fertig sind, klicken Sie auf den Button :btn:Speichern: und Ihre Gutscheine werden erstellt.
 Dadurch gelangen Sie zur Überblicks-Seite "Gutscheine".
@@ -83,7 +82,7 @@ Sie können alle Einstellungen, die vor der Erstellung verfügbar sind, auch noc
 ### Gutscheine per E-Mail versenden
 
 Über das Dialogfeld "Mehrere Gutscheine erstellen" haben Sie auch Zugriff auf die E-Mail-Optionen.
-So können Sie mit pretix Gutscheine per E-Mail versenden, nachdem Sie sie erstellt haben.
+So können Sie mit pretix Gutscheine per E-Mail sofort versenden, nachdem Sie sie erstellt haben.
 Aktivieren Sie unten auf der Seite das Kontrollkästchen neben "Gutscheine per E-Mail versenden", um die E-Mail-Optionen anzuzeigen.
 
 Über die E-Mail-Optionen können Sie den Betreff und den Inhalt Ihrer E-Mails festlegen.
@@ -93,13 +92,13 @@ Jedes Feld enthält voreingestellte Standardtexte.
 ![Seite mit dem Titel "Mehrere Gutscheine erstellen", die Optionen zum Versenden von E-Mails zeigt.](../assets/screens/vouchers/send-emails.de.png)
 
 Es gibt zwei Methoden zur Angabe der Empfänger.
-Die einfache Methode besteht darin, eine Liste von E-Mail-Adressen in das Feld "Empfänger" einzugeben.
+Die einfachere Methode besteht darin, eine Liste von E-Mail-Adressen in das Feld "Empfänger" einzugeben.
 Trennen Sie dabei die E-Mail-Adressen durch Zeilenumbrüche voneinander.
 Bei dieser Methode muss die Anzahl der E-Mail-Adressen (und somit der Zeilen) mit der Anzahl der generierten Gutscheincodes übereinstimmen.
 Wenn Sie dieselbe E-Mail-Adresse mehr als einmal eingeben, werden mehrere E-Mails an diese Adresse versendet.
 Dabei enthält jede E-Mail einen anderen Gutscheincode.
 
-Die fortgeschrittene Methode besteht darin, eine durch Kommas getrennte Liste in das Feld "Empfänger" einzugeben.
+Die fortgeschrittenere Methode besteht darin, eine durch Kommas getrennte Liste in das Feld "Empfänger" einzugeben.
 Die Liste darf bis zu vier Spalten enthalten:
 
 - **email**, die E-Mail-Adressen der Empfänger\*innen
@@ -154,7 +153,7 @@ Diese können Sie im Überblick auf der Seite "Gutscheine" einsehen und bearbeit
 
 ### Liste aller Gutscheine herunterladen
 
-Sie können eine Liste aller Gutscheine der aktuellen Veranstaltung herunterladen, indem Sie  den Button :btn-icon:fa3-download: Liste herunterladen: klicken.
+Sie können eine Liste aller Gutscheine der aktuellen Veranstaltung herunterladen, indem Sie den Button :btn-icon:fa3-download: Liste herunterladen: klicken.
 Wenn Sie den Button klicken, startet der Download einer Datei mit dem Namen "vouchers.csv".
 Diese Datei können Sie anschließend mit einem Texteditor oder einem Programm für Tabellenkalkulation bearbeiten.
 Die Datei "vouchers.csv" enthält folgende Spalten:
@@ -201,7 +200,7 @@ Sie können den Code von der Übersichtsseite der Gutscheine kopieren und ihn be
 
 ### Exklusive Produktverfügbarkeit
 
-Mit Gutscheinen können Sie ein Produkt (oder mehrere Produkte) für eine ausgewählte Gruppe von geladenen Gäst\*innen reservieren.
+Mit Gutscheinen können Sie ein Produkt (oder mehrere Produkte) für eine ausgewählte Gruppe von geladenen Gästen reservieren.
 Diese Möglichkeit eignet sich für Fälle, in denen Sie die Empfänger\*innen im Voraus kennen und über eine vollständige Liste ihrer E-Mail-Adressen verfügen, beispielsweise bei Vereinsmitgliedern, Referent\*innen einer Konferenz oder VIPs, die eine Einladung erhalten.
 
 Wenn Sie die Verfügbarkeit für ein **einzelnes Produkt** einschränken möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
