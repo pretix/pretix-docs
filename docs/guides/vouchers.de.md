@@ -36,19 +36,19 @@ Wenn Sie den Button :btn-icon:fa3-plus: Neuen Gutschein erstellen: klicken, gela
 Das ist dann nützlich, wenn Sie einen einzelnen Gutscheincode veröffentlichen möchten, der einmal oder mehrmals verwendet werden kann.
 Das Feld "Gutscheincode" enthält bereits einen automatisch generierten Vorschlag.
 Sie können ihn übernehmen oder durch einen beliebigen eigenen Code ersetzen.
-Der Code muss zwischen 5 und 255 Zeichen lang sein.
-Alle Kleinbuchstaben werden in Großbuchstaben umgewandelt.
+Der Code muss mindestens 5 und maximal 255 Zeichen lang sein.
+Etwaige Kleinbuchstaben werden in Großbuchstaben umgewandelt.
 
 ![Seite mit dem Titel "Gutschein", die Optionen zum Erstellen eines einzelnen Gutscheincodes zeigt.](../assets/screens/vouchers/create-single.de.png)
 
-Wenn Sie einen oder mehrere Gutscheine generieren, sollten Sie diese kopieren oder auf Ihrem Computer speichern.
+Wenn Sie einen oder mehrere Gutscheine generieren, sollten Sie diese kopieren und beispielsweise in einer Text- oder Tabellendatei auf Ihrem Computer speichern.
 Verwenden Sie dafür beispielsweise eine Text- oder Tabellendatei.
 
 Wenn Sie für eine Veranstaltung mehr als eine Art von Gutschein erstellen, ist es sinnvoll, im Feld "Tag" ein Schlagwort einzugeben.
 Das macht es später einfacher, bestimmte Gutscheine in der Liste zu finden, zu bearbeiten oder zu duplizieren.
 Ein sinnvoller Eintrag im Feld "Tag" könnte etwa der Zweck sein, für den die Gutscheine erstellt wurden, zum Beispiel "Zeitlich begrenztes Angebot".
 
-Sobald Sie auf den Button :btn:Speichern: klicken, wird der Gutschein erstellt.
+Sobald Sie den Button :btn:Speichern: klicken, wird der Gutschein erstellt.
 Danach gelangen Sie auf eine neue Seite mit dem Titel "Gutscheindetails".
 Auf dieser Seite finden Sie den "Gutschein-Link", den Sie an Ihre Kund\*innen versenden können.
 Wenn Ihre Kund\*innen den Link öffnen, gelangen sie direkt in den Shop in dem der Gutscheincode bereits ausgewählt wurde.
@@ -108,22 +108,22 @@ Die Liste darf bis zu vier Spalten enthalten:
 - **tag**, der zur Nachverfolgung zusätzlicher Informationen verwendet werden kann
 
 Geben Sie in der ersten Zeile die Überschriften der Spalten ein, die Sie verwenden möchten.
-Trennen Sie die Überschriften mit Kommas und **ohne** Leerzeichen.
+Trennen Sie die Überschriften mit Kommata und **ohne** Leerzeichen.
 Diese Kopfzeile ist zwingend erforderlich.
-Sie können die Reihenfolge der Spalten frei wählen.
+Die Reihenfolge der Spalten können Sie frei wählen.
 Geben Sie darunter die Kontaktdaten ein.
 Verwenden Sie dabei für jede E-Mail-Adresse wieder eine eigene Zeile.
-Alle zusätzlichen Informationen werden in derselben Zeile durch Kommas getrennt eingegeben.
-Im folgenden Beispiel würde Jordan 3, Morgan 1 und Jamie 10 Gutscheincodes erhalten:
+Alle zusätzlichen Informationen werden in derselben Zeile durch Kommata getrennt eingegeben.
+Im folgenden Beispiel würde Maxi 3, Alexis 1 und Kim 10 Gutscheincodes erhalten:
 
 ```
 email,number,name
-jordan@example.org,3,Jordan Doe
-morgan@example.org,1,Morgan Doe
-jamie@example.org,10,Jamie Doe
+maxi@example.org,3,Maxi Mustermensch
+alexis@example.org,1,Alexis Mustermensch
+kim@example.org,10,Kim Mustermensch
 ```
 
-Die Anzahl der Gutscheincodes, die Sie auf diese Weise versenden, muss mit der Anzahl an generierten Gutscheincodes übereinstimmen.
+Die Gesamtzahl der Gutscheincodes, die Sie auf diese Weise versenden, muss mit der Anzahl an generierten Gutscheincodes übereinstimmen.
 Die Software zeigt Ihnen eine Fehlermeldung an, wenn die Werte nicht übereinstimmen.
 Die E-Mails werden versendet, sobald Sie den Button :btn:Speichern: klicken.
 
@@ -132,9 +132,9 @@ Die E-Mails werden versendet, sobald Sie den Button :btn:Speichern: klicken.
 ![Seite mit dem Titel "Gutscheine importieren", die einen Upload für Dateien und ein Dropdown-Menü für den Zeichensatz zeigt.
 ](../assets/screens/vouchers/import.de.png)
 
-Über den Button :btn-icon:fa3-upload:Gutscheine importieren: auf der Seite "Gutscheine" können Sie eine Liste von Gutscheinen aus einer externen Quelle oder einer zuvor exportierten pretix-Veranstaltung hochladen.
+Über den Button :btn-icon:fa3-upload:Gutscheine importieren: auf der Seite "Gutscheine" können Sie eine Liste von Gutscheinen aus einer externen Quelle oder eine zuvor aus einer pretix-Veranstaltung exportierte Liste hochladen.
 Klicken Sie den Button :btn:Durchsuchen...: und wählen Sie eine CSV-Datei mit einer Kopfzeile aus.
-Klicken Sie dann  den Button  :btn:Import starten:.
+Klicken Sie dann den Button :btn:Import starten:.
 Wenn die Datei erfolgreich importiert und als CSV-Datei verarbeitet werden kann, gelangen Sie auf eine neue Seite.
 Dort finden Sie eine Vorschau der Daten sowie eine umfangreiche Auswahl an Import-Einstellungen.
 
@@ -163,7 +163,7 @@ Gutscheincode, Gültig bis, Produkt, Im Kontingent reservieren, Verfügbarkeit i
 
 ## Anwendungsmöglichkeiten
 
-Wie in der Einleitung beschrieben gibt es zahlreiche Anwendungsmöglichkeiten für  Gutscheine.
+Wie in der Einleitung beschrieben gibt es zahlreiche Anwendungsmöglichkeiten für Gutscheine.
 Die folgenden Abschnitte erklären diese Anwendungsmöglichkeiten.
 
 ### Einen limitierten Rabatt anbieten
@@ -184,8 +184,8 @@ Die Option "Preisart" bietet Ihnen verschiedene Möglichkeiten, wie sich der Gut
 Beispielsweise können Sie unter "Preisart" die Option "Produktpreis reduzieren um (%)" auswählen und im folgenden Feld den Wert "10" festlegen.
 Dadurch gewährt der Gutschein bei Einlösung 10% Rabatt.
 
-Deaktivieren Sie das Kontrollkästchen neben " Zeigt versteckte Produkte an, die zu diesem Gutschein passen".
-Wenn Sie diese Option aktiviert lassen und Gutscheine für "Alle Produkte" veröffentlichen, können Kund\*innen, die den Gutschein einlösen, alle ausgeblendeten Produkte sehen.
+Deaktivieren Sie das Kontrollkästchen neben "Zeigt versteckte Produkte an, die zu diesem Gutschein passen".
+Wenn Sie diese Option aktiviert lassen und Gutscheine für "Alle Produkte" veröffentlichen, können Kund\*innen, die den Gutscheincode im Shop eingeben, alle versteckten Produkte sehen.
 
 Sie können die Gültigkeit des Gutscheins auf eine bestimmte Anzahl von Einlösungen beschränken.
 Geben Sie dazu im Feld "Maximale Nutzungen" an, wie oft der Gutschein maximal eingelöst werden können soll.
@@ -202,7 +202,7 @@ Sie können den Code von der Übersichtsseite der Gutscheine kopieren und ihn be
 ### Exklusive Produktverfügbarkeit
 
 Mit Gutscheinen können Sie ein Produkt (oder mehrere Produkte) für eine ausgewählte Gruppe von geladenen Gäst\*innen reservieren.
-Diese Möglichkeit eignet sich für Fälle, in denen Sie die Empfänger im Voraus kennen und über eine vollständige Liste ihrer E-Mail-Adressen verfügen, beispielsweise bei Vereinsmitgliedern, Referent\*innen einer Konferenz oder VIPs, die eine Einladung erhalten.
+Diese Möglichkeit eignet sich für Fälle, in denen Sie die Empfänger\*innen im Voraus kennen und über eine vollständige Liste ihrer E-Mail-Adressen verfügen, beispielsweise bei Vereinsmitgliedern, Referent\*innen einer Konferenz oder VIPs, die eine Einladung erhalten.
 
 Wenn Sie die Verfügbarkeit für ein **einzelnes Produkt** einschränken möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
 Erstellen oder bearbeiten Sie dort das betreffende Produkt.
@@ -218,11 +218,11 @@ Bei Produktvarianten ist es nicht möglich, diese ausschließlich über einen Gu
 Wenn Sie die Verfügbarkeit für **mehrere Produkte** einschränken möchten, führen Sie die oben beschriebenen Schritte für jedes Produkt einzeln durch.
 Ein Gutschein kann so eingestellt werden, dass er die Verfügbarkeit eines einzelnen Produkts oder aber die aller Produkte innerhalb eines Kontingents beeinflusst.
 Daher müssen Sie ein Kontingent anlegen und nur die betreffenden Produkte hinzufügen.
-Die "Gesamtkapazität" müssen Sie so festlegen, dass sie die Anzahl der E-Mails abdeckt, die Sie versenden möchten.
+Die "Gesamtanzahl" müssen Sie so festlegen, dass sie die Anzahl der E-Mails abdeckt, die Sie versenden möchten.
 
 Unabhängig davon, ob Sie die Verfügbarkeit nur für ein einzelnes oder für mehrere Produkte eingeschränkt haben, empfiehlt es sich, die Gutscheincodes per E-Mail an Ihre Empfänger zu versenden.
 Navigieren Sie zu :navpath:Ihre Veranstaltung" → Gutscheine: und klicken Sie den Button :btn-icon:fa3-plus: Mehrere neue Gutscheine erstellen:.
-Dieser Vorgang wird im Abschnitt "[Gutscheine per E-Mail versenden](vouchers.md#sending-out-vouchers-via-email)" ausführlich beschrieben.
+Dieser Vorgang wird im Abschnitt "[Gutscheine per E-Mail versenden](vouchers.de.md#gutscheine-per-e-mail-versenden)" ausführlich beschrieben.
 Generieren Sie genauso viele Gutscheincodes, wie Personen, die Sie einladen möchten.
 Über die Spalte "number" in der Liste der "Empfänger" können Sie mehrere Gutscheine an dieselbe E-Mail-Adresse versenden.
 
@@ -230,7 +230,7 @@ Wählen Sie unter "Produkt" das Produkt aus (oder das Kontingent, falls es mehr 
 Aktivieren Sie am Ende der Seite das Kontrollkästchen neben "Zeigt versteckte Produkte an, die zu diesem Gutschein passen".
 Diese Option ist nur relevant, wenn der Sichtbarkeits-Umschalter des Produkts auf "ausgeblendet" gesetzt ist.
 
-Wenn Sie Mitarbeiter oder VIPs einladen, möchten Sie möglicherweise die Kosten für alle Zusatzprodukte erlassen, die Gutscheininhaber zusätzlich zu ihrem Ticket auswählen.
+Wenn Sie Mitarbeitende oder VIPs einladen, möchten Sie möglicherweise die Kosten für alle Zusatzprodukte erlassen, die Gutscheininhaber\*innen zusätzlich zu ihrem Ticket auswählen.
 Aktivieren Sie dazu das Kontrollkästchen neben "Alle Zusatzprodukte kostenlos anbieten, wenn dieser Gutschein eingelöst wird".
 
 Um die E-Mail-Optionen anzuzeigen, aktivieren Sie das Kontrollkästchen neben "Gutscheine per E-Mail verschicken".
@@ -241,7 +241,7 @@ Die E-Mails werden versendet, sobald Sie den Button :btn:Speichern: klicken.
 
 Mit Gutscheinen können Sie Produkte aus einem Kontingent reservieren.
 Dies ist nützlich, wenn Sie sicherstellen möchten, dass eine bestimmte Personengruppe Zugang zu Ihrer Veranstaltung erhält.
-Das können beispielsweise Gäst\*innen sein, die von den auftretenden Künstler\*innen zu einem Konzert eingeladen wurden.
+Das können beispielsweise Gäste sein, die von den auftretenden Künstler\*innen zu einem Konzert eingeladen wurden.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-tags: Gutscheine: und klicken Sie den Button :btn-icon:fa3-plus: Mehrere Gutscheine erstellen:.
 Legen Sie die Anzahl der Codes so fest, dass pro Mitglied der betreffenden Gruppe ein Gutschein generiert wird.
 
@@ -259,7 +259,7 @@ Diese Menge ist gleich der Summe der maximalen Anzahl von Nutzungen aller von Ih
 Die so reservierten Produkte können ohne einen Gutschein nicht erworben werden.
 Wenn Sie beispielsweise 5 Gutscheine erstellen, die jeweils maximal 3 Mal verwendet werden können, werden 15 Produkte aus dem Kontingent reserviert.
 
-Bitte beachten Sie, dass dies den Gutscheininhabern keinen verlässlichen Zugang zu Produkten garantiert, wenn Sie unter "Produkt" eine der Optionen von "Beliebiges Produkt aus Kontingent" ausgewählt haben **und** die Produkte Teil von mehr als einem Kontingent mit begrenzter Kapazität sind.
+Bitte beachten Sie, dass dies den Gutscheininhaber\*innen keinen verlässlichen Zugang zu Produkten garantiert, wenn Sie unter "Produkt" eine der Optionen von "Beliebiges Produkt des Kontingents" ausgewählt haben **und** die Produkte Teil von mehr als einem Kontingent mit begrenzter Kapazität sind.
 Sie können diese Methode jedoch weiterhin nutzen, wenn Sie unter "Produkt" ein bestimmtes Produkt auswählen oder wenn die betreffenden Produkte nur Teil eines einzigen Kontingents sind.
 
 ### Ein Kontingent umgehen
@@ -273,4 +273,4 @@ Dadurch erhalten Gutscheininhaber\*innen Zugriff auf Produkte, auch wenn alle en
 
 !!! Note
     Wenn Sie die Option "Kontingent ignorieren" verwenden, dann entsteht dadurch das Risiko einer Überbuchung.
-    Wir empfehlen, diese Funktion nicht zu benutzen, wenn Sie mit strengen räumlichen Einschränkungen rechnen müssen, wie beispielsweise der Anzahl der verfügbaren Sitzplätze, dem Platzangebot am Veranstaltungsort oder der Anzahl der bestellten Mahlzeiten.
+    Wir empfehlen, diese Funktion nicht zu benutzen, wenn Sie mit strikten Beschränkungen wie beispielsweise der Anzahl der verfügbaren Sitzplätze, der Raumgröße am Veranstaltungsort oder der Anzahl der bestellten Mahlzeiten kalkulieren müssen.
