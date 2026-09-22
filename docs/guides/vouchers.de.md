@@ -6,9 +6,9 @@ Gutscheine haben viele nützliche Anwendungsmöglichkeiten.
 Sie können sie dafür benutzen:
 
 - Produkte für Personen, die einen Gutschein haben, zu einem [ermäßigten Preis](#einen-limitierten-rabatt-anbieten) anzubieten
-- ein Produkt nur einer [ausgewählten Personengruppe](vouchers.de.md#exklusive-produktverfügbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gästen)
-- eine bestimmten Anteil des Produktkontingents für Personen mit einem Gutschein zu [reservieren](vouchers.de.md#tickets-reservieren)
-- sicherzustellen, dass Personen mit einem Gutschein [weiterhin Zugang](vouchers.de.md#ein-kontingent-umgehen) zu einem Produkt haben, auch wenn es ausverkauft ist
+- ein Produkt nur einer [ausgewählten Personengruppe](#exklusive-produktverfügbarkeit) zugänglich oder sichtbar zu machen (z.B. Vortragenden auf einer Konferenz oder geladenen Gästen)
+- eine bestimmten Anteil des Produktkontingents für Personen mit einem Gutschein zu [reservieren](#tickets-reservieren)
+- sicherzustellen, dass Personen mit einem Gutschein [weiterhin Zugang](#ein-kontingent-umgehen) zu einem Produkt haben, auch wenn es ausverkauft ist
 
 !!! Note
     Gutscheine sind nicht mit [Wertgutscheinen](gift-cards.md) zu verwechseln.
@@ -221,7 +221,7 @@ Die "Gesamtanzahl" müssen Sie so festlegen, dass sie die Anzahl der E-Mails abd
 
 Unabhängig davon, ob Sie die Verfügbarkeit nur für ein einzelnes oder für mehrere Produkte eingeschränkt haben, empfiehlt es sich, die Gutscheincodes per E-Mail an Ihre Empfänger zu versenden.
 Navigieren Sie zu :navpath:Ihre Veranstaltung" → Gutscheine: und klicken Sie den Button :btn-icon:fa3-plus: Mehrere neue Gutscheine erstellen:.
-Dieser Vorgang wird im Abschnitt "[Gutscheine per E-Mail versenden](vouchers.de.md#gutscheine-per-e-mail-versenden)" ausführlich beschrieben.
+Dieser Vorgang wird im Abschnitt "[Gutscheine per E-Mail versenden](#gutscheine-per-e-mail-versenden)" ausführlich beschrieben.
 Generieren Sie genauso viele Gutscheincodes, wie Personen, die Sie einladen möchten.
 Über die Spalte "number" in der Liste der "Empfänger" können Sie mehrere Gutscheine an dieselbe E-Mail-Adresse versenden.
 
@@ -233,7 +233,7 @@ Wenn Sie Mitarbeitende oder VIPs einladen, möchten Sie möglicherweise die Kost
 Aktivieren Sie dazu das Kontrollkästchen neben "Alle Zusatzprodukte kostenlos anbieten, wenn dieser Gutschein eingelöst wird".
 
 Um die E-Mail-Optionen anzuzeigen, aktivieren Sie das Kontrollkästchen neben "Gutscheine per E-Mail verschicken".
-Geben Sie die E-Mail-Adressen in das Feld "Empfänger" ein oder nutzen Sie die fortgeschrittene Methode, die im Abschnitt ["Gutscheine per E-Mail versenden"](vouchers.de.md#gutscheine-per-e-mail-versenden) beschrieben wird.
+Geben Sie die E-Mail-Adressen in das Feld "Empfänger" ein oder nutzen Sie die fortgeschrittene Methode, die im Abschnitt ["Gutscheine per E-Mail versenden"](#gutscheine-per-e-mail-versenden) beschrieben wird.
 Die E-Mails werden versendet, sobald Sie den Button :btn:Speichern: klicken.
 
 ### Tickets reservieren
