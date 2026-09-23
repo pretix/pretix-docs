@@ -102,7 +102,7 @@ This means that customers will be able to log into your pretix shop and make pur
 
 All SSO support for customer accounts in pretix is currently built on the OpenID Connect standard, a modern and widely accepted standard for SSO in all industries.
 
-#### Using pretix as an SSO provider
+#### Using pretix as an SSO provider   <!-- permalink:custssoprovider -->
 
 If you want to use pretix as an SSO provider, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO clients: and click the :btn-icon:fa3-plus: Create a new SSO client: button.
 
@@ -167,7 +167,7 @@ The various endpoints are located relative to the issuer URI as described above:
 They follow the OpenID Connect and OAuth specifications without any special behavior.
 Please refer to those specifications for further information.
 
-#### Using pretix as an SSO client
+#### Using pretix as an SSO client  <!-- permalink:custssoclient -->
 
 If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button.
 
