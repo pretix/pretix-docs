@@ -31,7 +31,7 @@ Grundkenntnisse über JavaScript sind hilfreich.
 
 ## Allgemeine Verwendung
 
-Dieser Abschnitt erläutert, wie Sie das [pretix-Widget](#das-widget-auf-der-webseite-einbinden) oder den [pretix-Button](#pretix-button) auf Ihrer Website einbinden, entweder einmal oder [mehrfach](#mehrere-widgets-auf-der-webseite-einbinden).
+Dieser Abschnitt erläutert, wie Sie das [pretix-Widget](#das-widget-auf-der-website-einbinden) oder den [pretix-Button](#pretix-button) auf Ihrer Website einbinden, entweder einmal oder [mehrfach](#mehrere-widgets-auf-der-website-einbinden).
 
 ### Das Widget auf der Website einbinden
 
@@ -138,10 +138,10 @@ Für den Button-Stil können Sie die CSS-Klasse `pretix-button` verwenden.
 
 Dieser Abschnitt behandelt alle Anwendungsfälle über die einfache Einbindung des Widgets auf Ihrer Website hinaus:
 
- - das Widget für [mehrere Veranstaltungen](#das-widget-für-mehrere-veranstaltungen-nutzen) oder eine [Veranstaltungsreihe](#das-widget-für-eine-veranstaltungsreihe-nutzen) nutzen
- - die [Produktverfügbarkeit](#Produktverfügbarkeit) beeinflussen
+ - das Widget für [mehrere Veranstaltungen](#das-widget-fur-mehrere-veranstaltungen-nutzen) oder eine [Veranstaltungsreihe](#das-widget-fur-eine-veranstaltungsreihe-nutzen) nutzen
+ - die [Produktverfügbarkeit](#Produktverfugbarkeit) beeinflussen
  - das [Verhalten des Widgets](#verhalten-des-widgets-anpassen) anpassen
- - die [Benutzer\*innen-Daten](#benutzerinnendaten-der-website-für-das-widget-nutzen) der Website für das Widget nutzen
+ - die [Benutzer\*innen-Daten](#benutzerinnendaten-der-website-fur-das-widget-nutzen) der Website für das Widget nutzen
  - [Tracking](#tracking-mit-dem-pretix-widget-verwenden) mit dem Widget nutzen
  - Kompatibilität mit den [Sicherheitseinstellungen](#sicherheit) Ihrer Website
 
@@ -182,8 +182,8 @@ Mit folgendem Code deaktivieren Sie das Filterformular:
 
 Sie können das Widget mit einer Veranstaltungsreihe verknüpfen.
 Standardmäßig zeigt das Widget **alle Termine** der Veranstaltungsreihe an.
-Wenn Sie im Widget nur [bestimmte Termine anzeigen](#das-widget-für-ausgewählte-termine-nutzen) möchten, können Sie diese über das Metadaten-Attribut filtern.
-Wenn Sie im Widget nur [einen einzigen Termin anzeigen](#das-widget-für-einen-einzigen-termin-nutzen) möchten, verwenden Sie die Termin-ID.
+Wenn Sie im Widget nur [bestimmte Termine anzeigen](#das-widget-fur-ausgewählte-termine-nutzen) möchten, können Sie diese über das Metadaten-Attribut filtern.
+Wenn Sie im Widget nur [einen einzigen Termin anzeigen](#das-widget-fur-einen-einzigen-termin-nutzen) möchten, verwenden Sie die Termin-ID.
 
 Anhand des Attributs `list-type` legen Sie fest, ob das Widget die Termine in einem Monatskalender, einem Wochenkalender oder als Liste anzeigt.
 Falls Sie dieses Attribut **nicht** angeben, wird die Standardeinstellung verwendet, die Sie unter :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Allgemein: festgelegt haben.
@@ -253,7 +253,7 @@ Wenn das Widget nur den Termin `#4387749` anzeigen soll, übergeben Sie die Term
 
 Das Attribut `subevent` kann nur eine einzige Termin-ID als Argument haben.
 Mit dieser Vorgehensweise ist es **nicht** möglich, nach mehr als einem Termin zu filtern.
-Wenn Sie mehrere, aber nicht alle Termine einer Veranstaltungsreihe anzeigen möchten, [filtern Sie nach dem Metadaten-Attribut](#das-widget-für-ausgewählte-termine-nutzen).
+Wenn Sie mehrere, aber nicht alle Termine einer Veranstaltungsreihe anzeigen möchten, [filtern Sie nach dem Metadaten-Attribut](#das-widget-fur-ausgewählte-termine-nutzen).
 
 ### Produktverfügbarkeit
 
@@ -291,7 +291,7 @@ Klicken Sie stattdessen den Button :btn:Speichern:, kopieren Sie den Gutscheinco
 ```
 
 So zeigt das Widget nur Produkte an, die Kund\*innen mit dem Gutschein kaufen können, und es werden die im Gutschein hinterlegten Preise angezeigt.
-Ein Beispiel für ein Widget mit vorausgewähltem Gutschein können Sie unter [Rabatte über das Widget anbieten](#rabatte-über-das-widget-anbieten) ansehen.
+Ein Beispiel für ein Widget mit vorausgewähltem Gutschein können Sie unter [Rabatte über das Widget anbieten](#rabatte-uber-das-widget-anbieten) ansehen.
 
 #### Nur bestimmte Produkte über das Widget anbieten
 
@@ -338,7 +338,7 @@ Wenn das Widget nur die Varianten `#437143`, `#437154` und `#437155` anzeigen so
 
 ### Preise und Zahlung
 
-Dieser Abschnitt erläutert, wie Sie [Rabatte über das Widget anbieten](#rabatte-über-das-widget-anbieten), [die Eingabe von Gutscheinen deaktivieren](#eingabe-von-gutscheinen-deaktivieren) und wie Sie über das Widget [Apple Pay](#apple-pay-über-stripe-im-widget-anbieten) mit Stripe verwenden.
+Dieser Abschnitt erläutert, wie Sie [Rabatte über das Widget anbieten](#rabatte-uber-das-widget-anbieten), [die Eingabe von Gutscheinen deaktivieren](#eingabe-von-gutscheinen-deaktivieren) und wie Sie über das Widget [Apple Pay](#apple-pay-uber-stripe-im-widget-anbieten) mit Stripe verwenden.
 Alle übrigen Zahlungsdienstleister und -methoden sollten problemlos mit dem Widget funktionieren.
 
 #### Rabatte über das Widget anbieten
@@ -431,7 +431,7 @@ Parameter:
 
 #### Das Widget dynamisch laden
 
-Es kann notwendig sein zu steuern, wann und wie das Widget geladen wird, etwa weil Sie mit JavaScript [Benutzer\*innendaten dynamisch verändern](#benutzerinnendaten-der-website-für-das-widget-nutzen) möchten.
+Es kann notwendig sein zu steuern, wann und wie das Widget geladen wird, etwa weil Sie mit JavaScript [Benutzer\*innendaten dynamisch verändern](#benutzerinnendaten-der-website-fur-das-widget-nutzen) möchten.
 Sie können einen Listener registrieren, der vor der Erstellung des Widgets ausgeführt wird:
 
 ```
