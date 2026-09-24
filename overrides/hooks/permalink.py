@@ -45,6 +45,33 @@ def on_page_content(
 ):
     language = config.theme["language"]
 
+    def make_permalink(linkid, anchor):
+        # prevent duplicate link ids
+        if linkid in files._permalink_used_link_ids:
+            raise ValueError(f'Duplicate permalink id {linkid}')
+        files._permalink_used_link_ids.add(linkid)
+
+        # get current language via mkdocs-static-i18n I18nFiles object
+        current_lang = files.plugin.current_language
+
+        # build target url and store per-language
+        target_url = config.site_url + page.url + anchor
+        if linkid not in config._permalink_multilang:
+            config._permalink_multilang[linkid] = dict()
+        config._permalink_multilang[linkid][current_lang] = target_url
+
+        # generate redirect page from template
+        files.append(File.generated(
+            config,
+            src_uri=SHORTLINK_PREFIX + linkid + '/index.html',
+            content=generate_html_redirect(config._permalink_multilang[linkid])
+        ))
+
+        print('Generated short link: ' + config.site_url + SHORTLINK_PREFIX + linkid + '/  -->  ', config._permalink_multilang[linkid])
+
+    if 'permalink' in page.meta:
+        make_permalink(page.meta['permalink'], '')
+
     # Replace callback
     def replace(match: Match):
         if not hasattr(files, '_permalink_used_link_ids'):
@@ -62,28 +89,7 @@ def on_page_content(
         content = re.sub(r'(<a class="headerlink" href="#)([^"]+)("[^>]+>[^<]+</a>)', replace_headerlink, content, flags=re.I)
 
         for linkid in linkids:
-            # prevent duplicate link ids
-            if linkid in files._permalink_used_link_ids:
-                raise ValueError(f'Duplicate permalink id {linkid}')
-            files._permalink_used_link_ids.add(linkid)
-
-            # get current language via mkdocs-static-i18n I18nFiles object
-            current_lang = files.plugin.current_language
-
-            # build target url and store per-language
-            target_url = config.site_url + page.url + '#' + linkid
-            if linkid not in config._permalink_multilang:
-                config._permalink_multilang[linkid] = dict()
-            config._permalink_multilang[linkid][current_lang] = target_url
-
-            # generate redirect page from template
-            files.append(File.generated(
-                config,
-                src_uri=SHORTLINK_PREFIX + linkid + '/index.html',
-                content=generate_html_redirect(config._permalink_multilang[linkid])
-            ))
-
-            print('Generated short link: ' + config.site_url + SHORTLINK_PREFIX + linkid + '/  -->  ', config._permalink_multilang[linkid])
+            make_permalink(linkid, '#' + linkid)
 
         alternate_ids = [headid] + linkids[1:]
         alt_targets = ''.join(f'<span id="{n}">' for n in alternate_ids)
