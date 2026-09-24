@@ -1,3 +1,7 @@
+---
+permalink: accessibility
+---
+
 # Accessibility
 
 The accessibility of your pretix ticket shop is not only important from ethics and business standpoints, but also a legal obligation.

@@ -1,3 +1,7 @@
+---
+permalink: widget
+---
+
 # Widget
 
 Mit dem pretix-Widget können Sie Ihren Shop auf Ihrer Website einbinden.

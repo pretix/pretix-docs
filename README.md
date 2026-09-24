@@ -10,7 +10,7 @@ Using a recent Python environment, install dependencies with:
 
 Then, you can build the project with:
 
-    mkdocs serve
+    mkdocs serve --livereload
 
 And view the local preview at https://127.0.0.1:8000/
 
@@ -34,6 +34,22 @@ so view those pages for in-depth details. A number of plugins are installed that
 - ``<!-- md:enterprise -->`` Feature requires pretix Enterprise
 - ``<!-- md:plugin XY -->`` Feature requires plugin XY
 - ``<!-- md:experimental -->`` Feature is experimental
+- ``### ... <!-- permalink:mylinkname -->`` Set a permalink name for a section
+
+### Permalinks
+
+For referencing documentation from other places, e.g. within the pretix application, we use permalinks. They are of the form
+`https://docs.pretix.eu/link/<mylinkname>/`. To mark a section as a permalink target, use the `<!-- permalink:mylinkname -->`
+in its heading. To define a whole page as a permalink target, add a `permalink` key to its frontmatter:
+
+```yaml
+---
+permalink: mylinkname
+---
+```
+
+If you want to remove a permalink, make sure to check that it is not in use anywhere. Otherwise, move it to an appropriate place (a section can have
+multiple `<!-- permalink:mylinkname -->` tags).
 
 ## License
 
