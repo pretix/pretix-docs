@@ -1,4 +1,4 @@
-# Barrierefreiheit
+# Barrierefreiheit  <!-- permalink:accessibility -->
 
 Die Barrierefreiheit Ihres pretix-Ticketshops ist nicht nur aus ethischen und unternehmerischen Gründen von Bedeutung, sondern auch eine rechtliche Verpflichtung.
 Ab 2025 legen der [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act) und seine nationalen Ausführungsgesetze (in Deutschland das [Barrierefreiheitsstärkungsgesetz](https://www.bmas.de/SharedDocs/Downloads/DE/Gesetze/barrierefreiheitsstaerkungsgesetz) und in Österreich das [Barrierefreiheitsgesetz](https://www.ris.bka.gv.at/eli/bgbl/i/2023/76/P0/NOR40254410)) fest, dass alle Websites, über die Verträge mit Verbraucher\*innen geschlossen werden, bestimmten Barrierefreiheitsstandards entsprechen müssen.

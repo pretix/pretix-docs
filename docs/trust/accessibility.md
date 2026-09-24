@@ -1,4 +1,4 @@
-# Accessibility
+# Accessibility  <!-- permalink:accessibility -->
 
 The accessibility of your pretix ticket shop is not only important from ethics and business standpoints, but also a legal obligation.
 As of 2025, the [European Accessibility Act](https://en.wikipedia.org/wiki/European_Accessibility_Act) and its national implementation laws mandate that all websites that are used to close contracts with consumers need to be in compliance with accessibility standards.

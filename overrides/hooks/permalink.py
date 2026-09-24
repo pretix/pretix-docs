@@ -23,6 +23,7 @@
 
 from __future__ import annotations
 
+import json
 import posixpath
 import re
 
@@ -33,12 +34,12 @@ from re import Match
 
 
 SHORTLINK_PREFIX = 'link/'
+DEFAULT_LANGUAGE = 'en'
 
 # -----------------------------------------------------------------------------
 # Hooks
 # -----------------------------------------------------------------------------
 
-# @todo
 def on_page_content(
         markdown: str, *, page: Page, config: MkDocsConfig, files: Files
 ):
@@ -48,15 +49,33 @@ def on_page_content(
     def replace(match: Match):
         if not hasattr(files, '_permalink_used_link_ids'):
             files._permalink_used_link_ids = set()
+        if not hasattr(config, '_permalink_multilang'):
+            config._permalink_multilang = dict()
 
         (headid, linkid,) = match.groups()
+
+        # prevent duplicate link ids
         if linkid in files._permalink_used_link_ids:
             raise ValueError(f'Duplicate permalink id {linkid}')
         files._permalink_used_link_ids.add(linkid)
 
+        # get current language via mkdocs-static-i18n I18nFiles object
+        current_lang = files.plugin.current_language
+
+        # build target url and store per-language
         target_url = config.site_url + page.url + '#' + headid
-        files.append(File.generated(config, src_uri=SHORTLINK_PREFIX + linkid + '/index.html', content=generate_html_redirect(target_url)))
-        print('Generated short link: ' + config.site_url + SHORTLINK_PREFIX + linkid + '/  -->  ' + target_url)
+        if linkid not in config._permalink_multilang:
+            config._permalink_multilang[linkid] = dict()
+        config._permalink_multilang[linkid][current_lang] = target_url
+
+        # generate redirect page from template
+        files.append(File.generated(
+            config,
+            src_uri=SHORTLINK_PREFIX + linkid + '/index.html',
+            content=generate_html_redirect(config._permalink_multilang[linkid])
+        ))
+
+        print('Generated short link: ' + config.site_url + SHORTLINK_PREFIX + linkid + '/  -->  ', config._permalink_multilang[linkid])
         return match.group(0)
 
     # Handle forwarding link targets
@@ -66,18 +85,28 @@ def on_page_content(
     )
 
 
-def generate_html_redirect(target_url):
+def generate_html_redirect(target_urls):
   return f"""
   <!doctype html>
   <html lang="en">
   <head>
       <meta charset="utf-8">
       <title>Redirecting...</title>
-      <link rel="canonical" href="{target_url}">
-      <meta http-equiv="refresh" content="0; url={target_url}">
+      <link rel="canonical" href="{target_urls.get(DEFAULT_LANGUAGE)}">
+      <script>
+      var target_urls = {json.dumps(target_urls)};
+      function get_url() {{
+        for (var key in target_urls)
+          if (navigator.language.startsWith(key))
+            return target_urls[key];
+        return target_urls.en;
+      }}
+      location.href = get_url();
+      </script>
+      <meta http-equiv="refresh" content="0; url={target_urls.get(DEFAULT_LANGUAGE)}">
   </head>
   <body>
-  <font face=sans-serif>You're being redirected to the pretix documentation. <a href="{target_url}">Click here if the redirect doesn't work.</a>.</font>
+  <font face=sans-serif>You're being redirected to the pretix documentation. <a href="{target_urls.get(DEFAULT_LANGUAGE)}">Click here if the redirect doesn't work.</a>.</font>
   </body>
   </html>
   """
