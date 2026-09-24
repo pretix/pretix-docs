@@ -139,7 +139,7 @@ Für den Button-Stil können Sie die CSS-Klasse `pretix-button` verwenden.
 Dieser Abschnitt behandelt alle Anwendungsfälle über die einfache Einbindung des Widgets auf Ihrer Website hinaus:
 
  - das Widget für [mehrere Veranstaltungen](#das-widget-fur-mehrere-veranstaltungen-nutzen) oder eine [Veranstaltungsreihe](#das-widget-fur-eine-veranstaltungsreihe-nutzen) nutzen
- - die [Produktverfügbarkeit](#Produktverfugbarkeit) beeinflussen
+ - die [Produktverfügbarkeit](#produktverfugbarkeit) beeinflussen
  - das [Verhalten des Widgets](#verhalten-des-widgets-anpassen) anpassen
  - die [Benutzer\*innen-Daten](#benutzerinnendaten-der-website-fur-das-widget-nutzen) der Website für das Widget nutzen
  - [Tracking](#tracking-mit-dem-pretix-widget-verwenden) mit dem Widget nutzen
@@ -182,7 +182,7 @@ Mit folgendem Code deaktivieren Sie das Filterformular:
 
 Sie können das Widget mit einer Veranstaltungsreihe verknüpfen.
 Standardmäßig zeigt das Widget **alle Termine** der Veranstaltungsreihe an.
-Wenn Sie im Widget nur [bestimmte Termine anzeigen](#das-widget-fur-ausgewählte-termine-nutzen) möchten, können Sie diese über das Metadaten-Attribut filtern.
+Wenn Sie im Widget nur [bestimmte Termine anzeigen](#das-widget-fur-ausgewahlte-termine-nutzen) möchten, können Sie diese über das Metadaten-Attribut filtern.
 Wenn Sie im Widget nur [einen einzigen Termin anzeigen](#das-widget-fur-einen-einzigen-termin-nutzen) möchten, verwenden Sie die Termin-ID.
 
 Anhand des Attributs `list-type` legen Sie fest, ob das Widget die Termine in einem Monatskalender, einem Wochenkalender oder als Liste anzeigt.
@@ -253,7 +253,7 @@ Wenn das Widget nur den Termin `#4387749` anzeigen soll, übergeben Sie die Term
 
 Das Attribut `subevent` kann nur eine einzige Termin-ID als Argument haben.
 Mit dieser Vorgehensweise ist es **nicht** möglich, nach mehr als einem Termin zu filtern.
-Wenn Sie mehrere, aber nicht alle Termine einer Veranstaltungsreihe anzeigen möchten, [filtern Sie nach dem Metadaten-Attribut](#das-widget-fur-ausgewählte-termine-nutzen).
+Wenn Sie mehrere, aber nicht alle Termine einer Veranstaltungsreihe anzeigen möchten, [filtern Sie nach dem Metadaten-Attribut](#das-widget-fur-ausgewahlte-termine-nutzen).
 
 ### Produktverfügbarkeit
 
@@ -539,7 +539,7 @@ pretix kann die folgenden Datenattribute verarbeiten:
  Um einen interne Referenz festzulegen, bearbeiten oder erstellen Sie eine Frage, wechseln Sie zum Reiter :btn:Erweitert: und nutzen Sie das Feld "Interne Referenz".
 
  - `data-attendee-name` trägt vorab den letzten Teil des Namens ein.
-   Das genaue Verhalten hängt davon ab, welche Konfiguration Sie unter :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein auf dem Reiter :btn:Kunden- und Teilnehmerdaten: vorgenommen haben.
+   Das genaue Verhalten hängt davon ab, welche Konfiguration Sie unter :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein: auf dem Reiter :btn:Kunden- und Teilnehmerdaten: vorgenommen haben.
    Den vorab eingetragenen Namen können Sie anhand der folgenden Attribute genauer steuern.
    Welche Auswahl sich für Ihre Zwecke am besten eignet, hängt davon ab, wie Sie das Namensformat in den Veranstaltungseinstellungen konfiguriert haben.
     - `data-attendee-name-full-name`
@@ -712,7 +712,7 @@ Wenn Ihr pretix-Shop auf einer eigenen Domain läuft, müssen Sie die folgenden 
 
 Falls Sie auf Ihrer Website `Cross-Origin-Opener-Policy: same-origin` setzen und einen Zahlungsdienstleister verwenden, der für den Gang zur Kasse ein neues Fenster öffnet (PayPal zum Beispiel), wird im Vordergrund ein leeres Fenster geöffnet.
 Das liegt daran, dass JavaScript keinen Zugriff auf dieses Fenster hat.
-Dieses Problem lösen Sie, indem Sie entweder [für das Widget beim Gang zur Kasse immer einen neuen Reiter öffnen](#immer-einen-neuen-reiter-öffnen) oder `Cross-Origin-Opener-Policy: same-origin-allow-popups` setzen.
+Dieses Problem lösen Sie, indem Sie entweder [für das Widget beim Gang zur Kasse immer einen neuen Reiter öffnen](#immer-einen-neuen-reiter-offnen) oder `Cross-Origin-Opener-Policy: same-origin-allow-popups` setzen.
 
 #### "Cross Origin Embedder Policy"
 
