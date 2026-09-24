@@ -110,6 +110,7 @@ plugins:
             Lifecycle: Lebenszyklus
             Privacy: Datenschutz
             Security: Sicherheit
+            Products: Produkte
           admonition_translations:
             note: Hinweis
             Note: Hinweis
