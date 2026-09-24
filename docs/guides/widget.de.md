@@ -19,7 +19,7 @@ Das eingebettete Widget kann zum Beispiel so aussehen:
     </div>
 </noscript>
 
-Dieser Artikel erläutert die grundlegende Einrichtung des Widgets und einige der weiterführenden Konfigurationsoptionen. 
+Dieser Artikel erläutert die grundlegende Einrichtung des Widgets und einige der fortgeschrittenen Möglichkeiten der Konfiguration.
 
 ## Voraussetzungen 
 
@@ -31,7 +31,7 @@ Grundkenntnisse über JavaScript sind hilfreich.
 
 ## Allgemeine Verwendung
 
-Dieser Abschnitt erläutert, wie Sie das [pretix-Widget](widget.md#embedding-the-widget-on-your-website) oder den [pretix-Button](widget.md#pretix-button) auf Ihrer Website einbinden, entweder einmal oder [mehrfach](widget.md#embedding-multiple-widgets-on-your-website). 
+Dieser Abschnitt erläutert, wie Sie das [pretix-Widget](#das-widget-auf-der-webseite-einbinden) oder den [pretix-Button](#pretix-button) auf Ihrer Website einbinden, entweder einmal oder [mehrfach](#mehrere-widgets-auf-der-webseite-einbinden). 
 
 ### Das Widget auf der Website einbinden
 
@@ -138,17 +138,17 @@ Für den Button-Stil können Sie die CSS-Klasse `pretix-button` verwenden.
 
 Dieser Abschnitt behandelt alle Anwendungsfälle über die einfache Einbindung des Widgets auf Ihrer Website hinaus: 
 
- - das Widget für [mehrere Veranstaltungen](widget.md#using-the-widget-for-multiple-events) oder eine [Veranstaltungsreihe](widget.md#using-the-widget-for-an-event-series) nutzen
- - die [Produktverfügbarkeit](widget.md#product-availability) beeinflussen 
- - das Widget-[Verhalten anpassen](widget.md#customizing-widget-behavior)
- - die [Benutzer\*innen-Daten](widget.md#using-your-websites-user-data-for-the-widget) der Website für das Widget nutzen
- - [Tracking](widget.md#using-tracking-with-the-pretix-widget) mit dem Widget nutzen
- - Kompatibilität mit den [Sicherheit](widget.md#security)seinstellungen Ihrer Website
+ - das Widget für [mehrere Veranstaltungen](#das-widget-für-mehrere-veranstaltungen-nutzen) oder eine [Veranstaltungsreihe](#das-widget-für-eine-veranstaltungsreihe-nutzen) nutzen
+ - die [Produktverfügbarkeit](#Produktverfügbarkeit) beeinflussen 
+ - das [Verhalten des Widgets](#verhalten-des-widgets-anpassen) anpassen
+ - die [Benutzer\*innen-Daten](#benutzerinnendaten-der-website-für-das-widget-nutzen) der Website für das Widget nutzen
+ - [Tracking](#tracking-mit-dem-pretix-widget-verwenden) mit dem Widget nutzen
+ - Kompatibilität mit den [Sicherheitseinstellungen](#sicherheit) Ihrer Website
 
 ### Das Widget für mehrere Veranstaltungen nutzen
 
 Sie können mehrere Veranstaltungs-Shops in einem einzigen Widget anzeigen. 
-Wenn Sie **alle** öffentlichen Veranstaltungen in Ihrem Veranstalterkonto aufführen möchten, entfernen Sie den Veranstaltungs-Slug aus der URL im Attribut `event`, aber behalten Sie den Slug für Sie als Veranstalter: 
+Wenn Sie **alle** öffentlichen Veranstaltungen in Ihrem Veranstalterkonto aufführen möchten, entfernen Sie den Veranstaltungs-Slug aus der URL im Attribut `event`, aber behalten Sie den Slug für Ihren Veranstalter: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/"></pretix-widget>
@@ -156,16 +156,16 @@ Wenn Sie **alle** öffentlichen Veranstaltungen in Ihrem Veranstalterkonto auff�
 
 #### Das Widget für ausgewählte Veranstaltungen nutzen
 
-Wenn Sie mehrere Veranstaltungen planen, aber nur einige davon im Widget aufführen möchten, sollten Sie **Metadaten-Attribute** verwenden. 
-Dieser Abschnitt erläutert, wie Sie Metadaten-Attribute erstellen, Veranstaltungen zuweisen und einen Filter im Widget einrichten. 
+Wenn Sie mehrere Veranstaltungen planen, aber nur einige davon im Widget aufführen möchten, sollten Sie **Metadaten-Eigenschaften** verwenden. 
+Dieser Abschnitt erläutert, wie Sie Metadaten-Eigenschaften erstellen, sie Veranstaltungen zuweisen und einen Filter im Widget einrichten. 
 
-Sie erstellen Metadaten-Attribute folgendermaßen: Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Veranstaltungs-Metadaten: und klicken Sie den Button :btn-icon:fa3-plus: Neue Eigenschaft erstellen:. 
-Sie können beispielsweise eine Metadaten-Eigenschaft namens "Werbung" mit den Werten `True` und `False` erstellen, wobei `False` der Standardwert ist. 
+Sie erstellen Metadaten-Eigenschaften folgendermaßen: Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Veranstaltungs-Metadaten: und klicken Sie den Button :btn-icon:fa3-plus: Neue Eigenschaft erstellen:. 
+Sie können beispielsweise eine Metadaten-Eigenschaft namens "Sonderaktion" mit den Werten `True` und `False` erstellen, wobei `False` der Standardwert ist. 
 
 Um einer Veranstaltung die Metadaten-Eigenschaft zuzuweisen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:. 
 Bearbeiten Sie auf dem Reiter :btn:Eckdaten: unter "Metadaten" die entsprechende Eigenschaft. 
 
-Wenn Sie beispielsweise eine Metadaten-Eigenschaft namens "Werbung" mit den Werten `True` und `False` erstellen, die für einige Veranstaltungen `True` ist, können Sie folgenden Filter einrichten.
+Wenn Sie beispielsweise eine Metadaten-Eigenschaft namens "Sonderaktion" mit den Werten `True` und `False` erstellen, die für einige Veranstaltungen `True` ist, können Sie folgenden Filter einrichten:
 
 ```
 <pretix-widget event="https://pretix.eu/demo/" list-type="list" filter="attr[Werbung]=True"></pretix-widget>
@@ -209,27 +209,27 @@ Dieser sieht beispielsweise so aus:
 
 #### Das Widget für ausgewählte Termine nutzen 
 
-Wenn Sie im Widget nur bestimmte Termine anzeigen möchten, können Sie diese über das **Metadaten-Attribut** filtern. 
-Dieser Abschnitt erläutert, wie Sie Metadaten-Attribute erstellen, Terminen zuweisen und einen Filter im Widget einrichten. 
+Wenn Sie im Widget nur bestimmte Termine anzeigen möchten, können Sie diese über eine **Metadaten-Eigenschaft** filtern. 
+Dieser Abschnitt erläutert, wie Sie Metadaten-Eigenschaften erstellen, Terminen zuweisen und einen Filter im Widget einrichten. 
 
-Sie erstellen Metadaten-Attribute folgendermaßen: Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Veranstaltungs-Metadaten: und klicken Sie den Button :btn-icon:fa3-plus: Neue Eigenschaft erstellen:. 
+Sie erstellen Metadaten-Eigenschaften folgendermaßen: Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Veranstaltungs-Metadaten: und klicken Sie den Button :btn-icon:fa3-plus: Neue Eigenschaft erstellen:. 
 Sie können beispielsweise eine Metadaten-Eigenschaft namens "Werbung" mit den Werten `True` und `False` erstellen, wobei `False` der Standardwert ist. 
 
 Um die Metadaten-Eigenschaft ausgewählten Terminen zuzuweisen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine:. 
 Wählen Sie die Termine, die Sie im Widget anzeigen möchten, und klicken Sie den Button :btn-icon:fa3-edit: Ausgewählte bearbeiten (#):. 
-Markieren Sie unter "Metadaten" das Kontrollkästchen "ändern" neben dem Attribut und wählen Sie den gewünschten Wert. 
-So können Sie beispielsweise den Wert des Attributs "Werbung" zu `True` ändern. 
+Markieren Sie unter "Metadaten" das Kontrollkästchen "ändern" neben der Eigenschaft und wählen Sie den gewünschten Wert. 
+So können Sie beispielsweise den Wert der Eigenschaft "Sonderaktion" zu `True` ändern. 
 
-Sie können auch einen oder mehrere neue Termine erstellen und das Attribut "Metadaten" auf den gewünschten Wert setzen. 
+Sie können auch einen oder mehrere neue Termine erstellen und die Metadaten-Eigenschaft auf den gewünschten Wert setzen. 
 
 Anschließend fügen Sie dem Widget-Code einen Filter-Parameter hinzu. 
-Verwenden Sie folgenden Code, um nur Termine anzuzeigen, deren Metadaten-Attribut "Werbung" `True` ist. 
+Verwenden Sie folgenden Code, um nur Termine anzuzeigen, deren Metadaten-Eigenschaft "Sonderaktion" `True` ist:
 
 ```
 <pretix-widget event="https://pretix.eu/demo/series/" list-type="list" filter="attr[Werbung]=True"></pretix-widget>
 ```
 
-Wenn Sie in der Konfiguration der Metadaten-Attribute öffentliche Filter aktiviert haben, zeigt das Widget ein Filterformular an. 
+Wenn Sie in der Konfiguration der Metadaten-Eigenschaften öffentliche Filter aktiviert haben, zeigt das Widget ein Filterformular an. 
 Mit folgendem Code deaktivieren Sie das Filterformular:
 
 ```
@@ -243,7 +243,7 @@ So ermitteln Sie die Termin-ID: Navigieren Sie zu :navpath:Ihre Veranstaltung �
 Die Seite zeigt in der Liste unter dem Namen des Termins ein Raute-Zeichen gefolgt von einer Zahl – der Termin-ID. 
 Sie brauchen nur die Zahl, **ohne** das Raute-Zeichen. 
 Sie können den Termin auch direkt bearbeiten. 
-Die Zahl vor dem letzten Schrägstrich in der URL ist die Produkt-ID, hier also die ID des Termins.
+Die Zahl vor dem letzten Schrägstrich in der URL ist die Termin-ID.
 
 Wenn das Widget nur den Termin `#4387749` anzeigen soll, übergeben Sie die Termin-ID dem Attribut `subevent` folgendermaßen : 
 
@@ -344,7 +344,7 @@ Alle übrigen Zahlungsdienstleister und -methoden sollten problemlos mit dem Wid
 #### Rabatte über das Widget anbieten
 
 Wenn Sie Kund\*innen, die über das Widget bestellen, Rabatte gewähren möchten, sollten Sie im Widget **einen Gutschein vorauswählen**. 
-Einen Gutschein vorauswählen bedeutet, dass sich das Widget so verhält, als habe der\*die Kund\*in den Gutscheincode eingegeben. 
+Einen Gutschein vorauswählen bedeutet, dass sich das Widget so verhält, als hätte der\*die Kund\*in den Gutscheincode eingegeben. 
 Dieser Abschnitt erläutert, wie Sie im Widget-Code einen Gutschein anhand des Attributs `voucher` vorauswählen, um exklusiv über das Widget einen Rabatt anzubieten. 
 
 Erstellen Sie einen Gutschein, wie im Artikel über Gutscheine unter [Begrenzte Rabatte anbieten](vouchers.md#offering-a-limited-discount) beschrieben. 
@@ -355,7 +355,7 @@ Geben Sie den Gutscheincode **nicht** öffentlich und **nicht** Kund\*innen dire
 <pretix-widget event="https://pretix.eu/demo/democon/" voucher="ABCDE123456"></pretix-widget>
 ```
 
-So zeigt das Widget nur Produkte an, die Kund\*innen mit dem Gutschein kaufen können, und es werden die im Gutschein hinterlegten Preise angezeigt. 
+So zeigt das Widget nur Produkte an, die Kund\*innen mit dem Gutschein kaufen können, und es werden die durch den Gutschein veränderten Preise angezeigt. 
 Sie müssen das Code-Beispiel von oben **nicht** kopieren und bearbeiten. 
 Manchmal ist es einfacher, einen Code-Abschnitt mit dem Gutschein zu generieren, indem Sie das Feld "Vorausgewählter Gutschein" auf der Seite mit den Widget-Einstellungen aktivieren. 
 
@@ -383,24 +383,24 @@ Wenn Sie die Möglichkeit deaktivieren möchten, im Widget einen Gutschein einzu
 
 Wenn Sie Stripe als Zahlungsdienstleister nutzen und im Widget auch Zahlungen über Apple Pay anbieten möchten, müssen Sie die Domain zuerst bei Apple Pay registrieren. 
 pretix validiert die Domain, die Sie für Ihren Shop nutzen, automatisch und unabhängig von der pretix-Edition und Ihren Domain-Einstellungen. 
-Aber wenn Sie das Widget auf Ihrer Website einbinden, muss Ihre Domain auch validiert werden, damit sie mit Apple Pay verwendet werden kann. 
+Aber wenn Sie das Widget auf Ihrer Website einbinden, müssen Sie Ihre Domain auch validieren lassen, bevor Sie sie mit Apple Pay verwenden können. 
 
 Weitere Informationen, wie Sie [Domains für Zahlungsmethoden registrieren](https://stripe.com/docs/payments/payment-methods/pmd-registration), finden Sie in der Dokumentation von Stripe. 
 
-### Das Widget-Verhalten anpassen
+### Verhalten des Widgets anpassen
 
 Dieser Abschnitt erläutert, wie Sie verschiedene Aspekte des Widgets anpassen: sein Aussehen, wie es geladen wird und sich öffnet, wie die Seite mit der Kasse geöffnet wird und wie Informationen zur Veranstaltung angezeigt werden. 
 
 #### Aussehen
 
-Sie können das Aussehen des Widgets oder des Buttons über ein CSS an die Gestaltung Ihrer Website anpassen. 
+Sie können das Aussehen des Widgets oder des Buttons über CSS an die Gestaltung Ihrer Website anpassen. 
 Mit den Entwicklerwerkzeugen des Browsers können Sie die HTML-Darstellung des Widgets überprüfen.
 Fast jedes Element hat eine eigene Klasse und alle Klassen haben das Präfix `pretix-widget`. 
 Sie können die Stile überschreiben oder ein eigenes Stylesheet verwenden. 
 
 !!! Hinweis 
     Wir haben das Widget so entwickelt, dass es die Vorgaben der Europäischen Union zur Barrierefreiheit erfüllt. 
-    Achten Sie darauf, diese Barrierefreiheit durch Ihre Anpassungen am Widget **nicht** zu beschädigen, etwa indem Sie Farben mit zu geringen Kontrasten wählen. 
+    Sie sollten diese Barrierefreiheit durch Ihre Anpassungen am Widget **nicht** beeinträchtigen, etwa indem Sie Farben mit zu geringen Kontrasten wählen. 
 
 #### Das Widget dynamisch öffnen
 
@@ -448,7 +448,7 @@ Sie können das Laden des Widgets unterdrücken oder die Benutzer\*innendaten, d
 <script type="text/javascript">
 window.pretixWidgetCallback = function () {
     window.PretixWidget.build_widgets = false;
-    window.PretixWidget.widget_data["email"] = "test@beispiel.org";
+    window.PretixWidget.widget_data["email"] = "test@example.org";
 }
 </script>
 ```
@@ -476,8 +476,8 @@ Sie können diese Funktionen mehrmals ausführen, etwa einmal für jedes Widget 
 
 #### Immer einen neuen Reiter öffnen
 
-Auf Geräten mit kleinerem Bildschirm öffnet sich die Kasse standardmäßig in einem neuen Reiter. 
-Wenn die Kasse unabhängig von der Bildschirmgröße immer in einem neuen Reiter geöffnet werden soll, können Sie das Attribut `disable-iframe` übergeben: 
+Auf Geräten mit kleinerem Bildschirm öffnet sich die Kassenansicht des Shops standardmäßig in einem neuen Reiter. 
+Wenn die Kassenansicht unabhängig von der Bildschirmgröße immer in einem neuen Reiter geöffnet werden soll, können Sie das Attribut `disable-iframe` übergeben: 
 
 ```
 <pretix-widget event="https://pretix.eu/demo/democon/" disable-iframe></pretix-widget>
@@ -502,7 +502,7 @@ Das Widget behandelt alle Werte, die nicht `"false"` oder `"auto"` sind, als `"t
 
 Dieser Abschnitt erläutert, wie Sie Daten von Benutzer\*innen mit dem Widget verarbeiten. 
 
-Wenn Sie das Widget auf einer Seite anzeigen, für die sich Benutzer\*innen anmelden müssen, können Sie deren bekannte Daten auf der Seite mit der  Kasse bereits in die Felder eintragen. 
+Wenn Sie das Widget auf einer Seite anzeigen, für die sich Benutzer\*innen anmelden müssen, können Sie im Shop-Prozess Felder mit den bekannten Benutzer\*innendaten befüllen.
 Das kann Ihren Benutzer\*innen Tipparbeit ersparen und zu mehr Kaufabschlüssen führen. 
 Sie können zusammen mit diesen Angaben auch weitere Datenattribute übergeben: 
 
@@ -512,7 +512,7 @@ Sie können zusammen mit diesen Angaben auch weitere Datenattribute übergeben:
     data-attendee-name-family-name="Musterperson"
     data-invoice-address-name-given-name="Maxi"
     data-invoice-address-name-family-name="Musterperson"
-    data-email="test@beispiel.org"
+    data-email="test@example.org"
     data-question-L9G8NG9M="Foobar">
 </pretix-widget>
 ```
@@ -534,9 +534,9 @@ pretix kann die folgenden Datenattribute verarbeiten:
 
  - `data-email` füllt vorab die Felder für die E-Mail zur Bestellungsabwicklung und die E-Mail des\*der Teilnehmer\*in aus (sofern aktiviert).
 
- - `data-question-IDENTIFIER` trägt vorab die Antwort auf die Frage mit dem angegebenen Identifikator (IDENTIFIER) ein. 
- Um Identifikatoren anzuzeigen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Fragen:. 
- Um einen internen Identifikator festzulegen, bearbeiten oder erstellen Sie eine Frage, wechseln Sie zum Reiter :btn:Erweitert: und nutzen Sie das Feld "Interne Referenz". 
+ - `data-question-IDENTIFIER` trägt vorab die Antwort auf die Frage mit der angegebenen Referenz (IDENTIFIER) ein. 
+ Um Referenzen anzuzeigen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Fragen:. 
+ Um einen interne Referenz festzulegen, bearbeiten oder erstellen Sie eine Frage, wechseln Sie zum Reiter :btn:Erweitert: und nutzen Sie das Feld "Interne Referenz". 
 
  - `data-attendee-name` trägt vorab den letzten Teil des Namens ein. 
    Das genaue Verhalten hängt davon ab, welche Konfiguration Sie unter :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein auf dem Reiter :btn:Kunden- und Teilnehmerdaten: vorgenommen haben. 
@@ -569,7 +569,7 @@ pretix kann die folgenden Datenattribute verarbeiten:
 
 !!! Hinweis
     Das Attribut `data-fix="true"` ist **keine** Sicherheitsfunktion. 
-    Die Benutzer\*innen Ihrer Website können es übersteuern. 
+    Die Benutzer\*innen Ihrer Website können es umgehen. 
     Verwenden Sie es **nicht** zur Authentifizierung.
 
  - Wenn Sie `data-consent="…"` setzen, übernimmt die Funktion zur Cookie-Zustimmung die Zustimmung für die angegebenen Cookie-Anbieter. 
@@ -682,12 +682,12 @@ Dieser Abschnitt erläutert sicherheitsrelevante Aspekte bei der Einbindung des 
 
 Der Kauf eines Tickets erfordert in der Regel die Eingabe vertraulicher Daten. 
 Wir empfehlen daher dringend, auf der Seite mit dem Widget SSL/HTTPS zu verwenden. 
-Über Initiativen wie [Let’s Encrypt](https://letsencrypt.org/) können Sie ein kostenloses SSL-Zertifikat erhalten.
+Über Initiativen wie [Let's Encrypt](https://letsencrypt.org/) können Sie ein kostenloses SSL-Zertifikat erhalten.
 
 pretix nutzt für alle vom Widget übertragenen Daten SSL, selbst wenn Sie das Widget auf einer nicht durch SSL geschützten Website verwenden. 
 Wenn Sie **kein** SSL für Ihre Website verwenden, ist es allerdings möglich, durch Man-in-the-Middle-Angriffe schädliche Änderungen an Widget vorzunehmen. 
 Heutzutage ist es Standard, für alle Datenübertragungen SSL zu verwenden. 
-Manche Kund\*innen vertrauen Ihrer Website eventuell nur, wenn sie beim Zugriff auf die Website im Browser das Schlosssymbol :fa3-lock: sehen. 
+Ihre Kund\*innen vertrauen Ihrer Website eventuell nur, wenn sie beim Zugriff auf die Website im Browser das Sicherheits-Schlosssymbol :fa3-lock: sehen. 
 
 Verwendet Ihre Website **kein** SSL, ruft der Gang zur Kasse einen neuen Reiter im Browser auf. 
 Wenn Sie einen wirklich guten Grund dafür haben, **kein** SSL zu verwenden, können Sie dieses Verhalten mit dem Attribut `skip-ssl-check` übersteuern.
@@ -701,11 +701,11 @@ Wenn Sie einen wirklich guten Grund dafür haben, **kein** SSL zu verwenden, kö
 Wenn Sie auf Ihrer Website eine Content Security Policy (CSP) verwenden, müssen Sie unter Umständen einige Anpassungen vornehmen. 
 Wenn Ihr pretix-Shop auf einer eigenen Domain läuft, müssen Sie die folgenden Regeln hinzufügen:
 
- - `script-src`: `'unsafe-eval' https://pretix.eu` (Tragen Sie hier Ihre Domain mit dem selbst gehosteten pretix ein.)
- - `style-src`: `https://pretix.eu` (Tragen Sie hier Ihre Domain mit dem selbst gehosteten pretix **und** die eigene Domain bei pretix Hosted ein.)
- - `connect-src`: `https://pretix.eu` (Tragen Sie hier Ihre Domain mit dem selbst gehosteten pretix **und** die eigene Domain bei pretix Hosted ein.)
- - `frame-src`: `https://pretix.eu` (Tragen Sie hier Ihre Domain mit dem selbst gehosteten pretix **und** die eigene Domain bei pretix Hosted ein.)
- - img-src`: `https://pretix.eu` (Tragen Sie hier Ihre Domain mit dem selbst gehosteten pretix **und** die eigene Domain bei pretix Hosted ein.) 
+ - `script-src`: `'unsafe-eval' https://pretix.eu` (Wenn Sie pretix selbst hosten, tragen Sie hier Ihre Domain ein.)
+ - `style-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
+ - `connect-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
+ - `frame-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
+ - img-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
     Fügen Sie für pretix Hosted auch `https://cdn.pretix.cloud` hinzu. 
 
 #### "Cross Origin Opener Policy"
@@ -721,7 +721,7 @@ Wenn Sie in den Tags `<script>` und `<link>` die Attribute `crossorigin` verwend
 Es wird aber nicht in der Lage sein, die Kasse in einem iframe zu öffnen. 
 Wenn Sie auch `Cross-Origin-Opener-Policy: same-origin` setzen, kann das Widget erkennen, dass es in einer isolierten Umgebung läuft, und öffnet für die Kasse dann einen neuen Reiter.
 
-## Fehlerbehebung 
+## Problemlösung 
 
 ### Der von dieser Seite kopierte Code funktioniert nicht 
 
