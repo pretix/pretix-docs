@@ -19,14 +19,14 @@ working with the pretix server.
 |-----------------|-----------------------------------------------------------------------|
 | Android 15      | Support planned until at least 12/2031.                               |
 | Android 14      | Support planned until at least 12/2030.                               |
-| Android 13      | Support planned until at least 12/2029 (likely phase-out until 2030). |
-| Android 12      | Support planned until at least 12/2028 (likely phase-out until 2030). |
+| Android 13      | Support planned until at least 12/2029 (likely phaseout until 2030). |
+| Android 12      | Support planned until at least 12/2028 (likely phaseout until 2030). |
 | Android 11      | Support planned until at least 12/2027.                               |
 | Android 10      | Support planned until at least 12/2026.                               |
 | Android 9       | Support planned until at least 12/2026.                               |
 | Android 8       | Support planned until at least 12/2026.                               |
 | Android 7       | Support planned until at least 12/2026.                               |
-| Android 6       | Phase-out (still works, but no longer officially supported).          |
+| Android 6       | Phaseout (still works as of September 2026, but no longer officially supported).          |
 | Android 5       | Support dropped.                                                      |
 | Android 4       | Support dropped.                                                      |
 
@@ -36,8 +36,8 @@ working with the pretix server.
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android 15      | Support planned until at least 12/2031.<br>Limited support for Swissbit microSD TSE (only tested devices).                                                   |
 | Android 14      | Support planned until at least 12/2030.<br>Limited support for Swissbit microSD TSE (only tested devices).                                                   |
-| Android 13      | Support planned until at least 12/2029 (likely phase-out until 2030).<br>Limited support for Swissbit microSD TSE (only tested devices).                     |
-| Android 12      | Support planned until at least 12/2028 (likely phase-out until 2030).<br>Limited support for Swissbit microSD TSE (only tested devices).                     |
+| Android 13      | Support planned until at least 12/2029 (likely phaseout until 2030).<br>Limited support for Swissbit microSD TSE (only tested devices).                     |
+| Android 12      | Support planned until at least 12/2028 (likely phaseout until 2030).<br>Limited support for Swissbit microSD TSE (only tested devices).                     |
 | Android 11      | Support planned until at least 12/2027.<br>No support for Swissbit microSD TSE.                                                                              |
 | Android 10      | Support planned until at least 12/2026.                                                                                                                      |
 | Android 9       | Support planned until at least 12/2026.                                                                                                                      |
@@ -53,14 +53,14 @@ working with the pretix server.
 |-----------------|-----------------------------------------------------------------------|
 | Android 15      | Support planned until at least 12/2031.                               |
 | Android 14      | Support planned until at least 12/2030.                               |
-| Android 13      | Support planned until at least 12/2029 (likely phase-out until 2030). |
-| Android 12      | Support planned until at least 12/2028 (likely phase-out until 2030). |
+| Android 13      | Support planned until at least 12/2029 (likely phaseout until 2030). |
+| Android 12      | Support planned until at least 12/2028 (likely phaseout until 2030). |
 | Android 11      | Support planned until at least 12/2027.                               |
 | Android 10      | Support planned until at least 12/2026.                               |
 | Android 9       | Support planned until at least 12/2026.                               |
 | Android 8       | Support planned until at least 12/2026.                               |
 | Android 7       | Support planned until at least 12/2026.                               |
-| Android 6       | Phase-out (still works, but no longer officially supported).          |
+| Android 6       | Phaseout (still works as of September 2026, but no longer officially supported).          |
 | Android 5       | Support dropped.                                                      |
 | Android 4       | Support dropped.                                                      |
 
@@ -76,7 +76,7 @@ working with the pretix server.
 | Android 10      | Support planned until at least 12/2026.                       |
 | Android 9       | Support planned until at least 12/2026.                       |
 | Android 8       | Support planned until at least 12/2026.                       |
-| Android 7       | Phase-out (still works, but no longer officially supported).  |
-| Android 6       | Phase-out (still works, but no longer officially supported).  |
-| Android 5       | Phase-out (still works, but no longer officially supported).  |
+| Android 7       | Phaseout (still works as of September 2026, but no longer officially supported).  |
+| Android 6       | Phaseout (still works as of September 2026, but no longer officially supported).  |
+| Android 5       | Phaseout (still works as of September 2026, but no longer officially supported).  |
 | Android 4       | Support dropped.                                              |
