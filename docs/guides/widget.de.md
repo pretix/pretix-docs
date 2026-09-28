@@ -701,7 +701,7 @@ Wenn Sie einen wirklich guten Grund dafür haben, **kein** SSL zu verwenden, kö
 Wenn Sie auf Ihrer Website eine Content Security Policy (CSP) verwenden, müssen Sie unter Umständen einige Anpassungen vornehmen.
 Wenn Ihr pretix-Shop auf einer eigenen Domain läuft, müssen Sie die folgenden Regeln hinzufügen:
 
- - `script-src`: `'unsafe-eval' https://pretix.eu` (Wenn Sie pretix selbst hosten, tragen Sie hier Ihre Domain ein.)
+ - `script-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten, tragen Sie hier Ihre Domain ein.)
  - `style-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
  - `connect-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
  - `frame-src`: `https://pretix.eu` (Wenn Sie pretix selbst hosten oder pretix Hosted mit eigener Domain verwenden, tragen Sie hier Ihre Domain ein.)
