@@ -1,3 +1,7 @@
+---
+permalink: widget
+---
+
 # Widget
 
 You can include your ticket shop on your website by embedding the pretix widget.
