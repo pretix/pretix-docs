@@ -42,7 +42,7 @@ Every organizer is a separate legal entity and as such will have to act as their
 If you want to use a single SP for the entire instance, extend the configuration file `<config>` with the following lines:
 
 ``` ini
-[presal_saml]
+[presale_saml]
 level=global
 ```
 
