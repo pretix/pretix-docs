@@ -49,7 +49,7 @@ level=global
 If you want every organizer to act as their own SP, extend the configuration file `<config>` with the following lines instead:
 
 ``` ini
-[presale-saml]
+[presale_saml]
 level=organizer
 ```
 
