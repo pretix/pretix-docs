@@ -26,17 +26,22 @@ You can view the settings and permissions by clicking the :btn-icon:fa3-edit:: b
 Having navigated to :navpath:Your organizer → :fa3-users: Teams:, click the :btn-icon:fa3-plus: Create a new team: button in order to create a new team.
 
 What you name your new team and which permissions you grant it is up to you.
-For example, you could name your team "Staff" to distinguish it from the administrators and give it the following organizer permissions:
-"Can create events", "Can manage gift cards", and "Can manage customer accounts".
+For example, you could name your team "Staff" to distinguish it from the administrators.
+If you want to give your team access to all organizer-level permissions, then, under the "Organizer permissions" heading, check the box next to "All organizer permissions". 
+If you want to give your team only some of those permissions, uncheck that box. 
 
-You could give the team access to "All events (including newly created ones)" and grant it the following event permissions:
-"Can change event settings", "Can change product settings", "Can view orders", "Can change orders", "Can view vouchers", and "Can change vouchers".
+A box will appear that allows you to set granular permissions for various aspects of the organizer account. 
+For instance, you could set "Events" to "Access existing and create new events", "Gift cards" to "View and change", and "Customers" to "View and change".
 
-The option "Can change organizer settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
+The option "Settings" applies to all settings which are nested under :navpath:Your organizer: and which are not controlled by any of the other options on this page.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/organizer/`, then it is controlled by this option.
 Again, this only applies to settings which are not controlled by any of the other checkboxes under "Organizer permissions".
 
-The option "Can change event settings" applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page.
+Under the "Event permissions" section you could give the team access to "All events (including newly created ones)" and either grant all event permissions or grant it the following permissions:
+"General settings" to "View and change", "Products quotas and questions" to "View and change", "Orders" to "View all", "Vouchers" to "View and change".
+
+The option "General settings" under event permissions applies to all settings which are nested under :navpath:Your event: and which are not controlled by any of the other options on this page.
+Among other things, it applies to plugin settings.
 If the URL of the settings page for which you want to grant or revoke permissions includes `/control/event/`, then it is controlled by this option.
 Again, this only applies to settings which are not controlled by any of the other checkboxes under "Event permissions".
 It also applies only to events you checked under "Limit to events", or to all events if you checked "All events (including newly created ones)".
@@ -49,8 +54,8 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 !!! Note
     If a user does not have permission for one area of the system, they can still view some of the data of that area if it connects to other areas.
-    For example, a user with access to orders can see the gift card created or used in a specific order. 
-    This is still true if that user does not have permission for gift cards. 
+    For example, a user with access to orders can see the gift card created or used in a specific order.
+    This is still true if that user does not have permission for gift cards.
 ### Inviting someone to your team
 
 ![Page titled 'Team: Staff', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Staff screenshot")
