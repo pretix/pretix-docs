@@ -1,3 +1,7 @@
+---
+permalink: accessibility
+---
+
 # Barrierefreiheit
 
 Die Barrierefreiheit Ihres pretix-Ticketshops ist nicht nur aus ethischen und unternehmerischen Gründen von Bedeutung, sondern auch eine rechtliche Verpflichtung.

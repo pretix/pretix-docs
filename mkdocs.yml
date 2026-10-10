@@ -177,3 +177,4 @@ extra:
 hooks:
 - overrides/hooks/shortcodes.py
 - overrides/hooks/custommarkup.py
+- overrides/hooks/permalink.py

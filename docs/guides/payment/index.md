@@ -117,7 +117,7 @@ If a customer clicks that link, they will be taken to your shop with the voucher
 
 To learn more about vouchers, see the guide on [vouchers](../vouchers.md).
 
-### Additional fees
+### Additional fees  <!-- permalink:paymentfees -->
 
 !!! Warning
     EU Directive 2015/2366 bans surcharging payment fees for most common payment methods within the European Union.
