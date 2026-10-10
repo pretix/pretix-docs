@@ -104,7 +104,7 @@ All SSO support for customer accounts in pretix is currently built on the OpenID
 
 #### Using pretix as an SSO provider
 
-If you want to use pretix as an SSO provider, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO clients: and click the :btn-icon:fa3-plus: Create a new SSO client: button.
+If you want to use pretix as an SSO provider, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO clients: and click the :btn-icon:fa3-plus: Create credentials for a new SSO client: button.
 
 The checkbox next to "Active" is enabled by default.
 Disable it if you want to disable SSO integration with the client in question.
@@ -120,16 +120,17 @@ Enter one or multiple URIs that the user might be redirected to after the succes
 
 Under "Allowed access scopes", check the boxes for which you want to grant access to the application.
 
-Once you click the :btn:Save: button, the client secret will be displayed at the top of the page.
+Once you click the :btn:Save: button, the information for configuring your client will be displayed at the top of the page: base URL, client ID, and client secret.
 The client secret will only be displayed once.
 Copy and paste it to your application.
-You will also need the "Client ID" which will be displayed in a new field underneath "Application name".
+"Base URL" and "Client ID" will also be displayed in the fields underneath "Application name".
 
 If you need a new client secret, check the box next to "Invalidate old client secret and generate a new one" and click the :btn:Save: button.
 The old client secret will not be usable anymore.
 The new client secret will be displayed in a green box at the top of the page.
 
 Beyond the client ID and secret, the service you are connecting is also going to need your issuer URI.
+You find it in the field "Base URL / issuer".
 If you are using pretix Hosted without a custom domain, your issuer URI will be the address of your organizer's public profile **without** the final slash.
 For instance, the issuer URI of our Tutorial Ltd. with the organizer short form "tut" will be [https://pretix.eu/tut](https://pretix.eu/tut).
 
@@ -169,7 +170,7 @@ Please refer to those specifications for further information.
 
 #### Using pretix as an SSO client
 
-If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Create a new SSO provider: button.
+If you want to use pretix as an SSO client, navigate to :navpath:Your organizer → :fa3-user: Customer accounts → SSO providers: and click the :btn-icon:fa3-plus: Connect to an external SSO provider: button.
 
 Choose a "Provider name" and "Login button label".
 The "Provider name" is used to refer to the provider internally in the pretix backend.
@@ -219,8 +220,5 @@ An example configuration might look like this:
  - **Identity claim**: `sub`
 
 Click the :btn:Save: button.
-You will be taken back to the overview page titled "SSO providers".
-Click the "Google" entry in the list.
-Copy the value from the "Redirection URL" field.
-It will look similar to, but **not exactly** like `https://pretix.eu/tut/account/login/199/return`.
+The "Redirection URL" field will now contain a URL, which will look similar to, but **not exactly** like `https://pretix.eu/tut/account/login/199/return`.
 Open the Google backend, edit your client, click to add a URL, paste the value into the field, and save the settings.
