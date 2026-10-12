@@ -4,7 +4,7 @@ pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund\*innen Rabatte an
 Dieser Artikel erklärt die verschiedenen Arten von Rabatten für bestimmte Anwendungsfälle:
 
  - [Unterschiedliche Preisniveaus](#unterschiedliche-preisniveaus)
- - [Gruppentarife](#gruppentarife-und-rabatte-für-großbestellungen)
+ - [Gruppentarife](#gruppentarife-und-rabatte-fur-grobestellungen)
  - [Frühbucherpreise](#fruhbuchertickets)
  - [Rabattpakete](#rabattpakete)
 
@@ -19,7 +19,7 @@ Die Implementierung von [Rabattpaketen](#rabattpakete) setzt Kenntnisse über Ch
 
 In pretix können Sie so viele verschiedene Produkte mit unterschiedlichen Preisniveaus anlegen, wie Sie benötigen.
 Wie Sie dazu vorgehen, ist im Abschnitt [Unterschiedliche Preisniveaus](#unterschiedliche-preisniveaus) erklärt.
-Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um abhängig von bestimmten Bedingungen Rabatte anzubieten, nämlich [Frühbucherpreise](#fruhbuchertickets), [Rabattpakete](#rabattpakete) und [Gruppentarife](#gruppentarife-und-rabatte-für-großbestellungen).
+Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um abhängig von bestimmten Bedingungen Rabatte anzubieten, nämlich [Frühbucherpreise](#fruhbuchertickets), [Rabattpakete](#rabattpakete) und [Gruppentarife](#gruppentarife-und-rabatte-fur-grobestellungen).
 
 ### Unterschiedliche Preisniveaus
 
@@ -191,7 +191,7 @@ Generell ist die erste Möglichkeit besser geeignet, wenn Sie nur wenige Grundpr
 Die zweite Möglichkeit ist ab einer Anzahl von vier oder fünf Grundprodukten sinnvoller.
 Die folgenden Abschnitte erläutern beide Möglichkeiten.
 
-Wenn Sie unabhängig von den gekauften Produkten einen Rabatt für größere Bestellungen gewähren möchten, lesen Sie stattdessen den Abschnitt über [Gruppentarife und Rabatte für Großbestellungen](#gruppentarife-und-rabatte-für-großbestellungen).
+Wenn Sie unabhängig von den gekauften Produkten einen Rabatt für größere Bestellungen gewähren möchten, lesen Sie stattdessen den Abschnitt über [Gruppentarife und Rabatte für Großbestellungen](#gruppentarife-und-rabatte-fur-grobestellungen).
 
 #### Option A: Produktkombinationen
 
