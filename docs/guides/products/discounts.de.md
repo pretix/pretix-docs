@@ -1,6 +1,6 @@
 # Rabatte
 
-pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund/*innen unter bestimmten Voraussetzungen Rabatte anbieten können.
+pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund/*innen Rabatte anbieten können, die an bestimmte Bedingungen geknüpft sind.
 Dieser Artikel erklärt die verschiedenen Arten von Rabatten für bestimmte Anwendungsfälle:
 
  - [Unterschiedliche Preisniveaus](discounts.md#different-price-levels)
@@ -11,7 +11,8 @@ Dieser Artikel erklärt die verschiedenen Arten von Rabatten für bestimmte Anwe
 ## Voraussetzungen
 
 Die meisten hier beschriebenen Verfahren greifen auf Veranstaltungsebene, Sie müssen also zuerst eine Veranstaltung anlegen.
-Da dieser Artikel voraussetzt, dass Sie in Grundzügen mit dem Erstellen und Bearbeiten von Produkten vertraut sind, sollten Sie sich zuerst den Guide über [Produkte](index.md) ansehen.
+Dieser Artikel setzt voraus dass Sie in Grundzügen mit dem Erstellen und Bearbeiten von Produkten vertraut sind.
+Daher sollten Sie sich zuerst den Guide über [Produkte](index.md) ansehen.
 Die Implementierung von [Rabattpaketen](discounts.md#discount-packages) setzt Kenntnisse über Check-in-Listen voraus.
 
 ## Anleitung
@@ -23,7 +24,7 @@ Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um ab
 ### Unterschiedliche Preisniveaus
 
 Am einfachsten können Sie einen Rabatt gewähren, indem Sie zwei oder mehr Zutrittsprodukte mit unterschiedlichen Preisniveaus erstellen.
-Das bietet sich beispielsweise an, wenn Sie Tickets für Menschen mit Altersrente oder für Studierende rabattieren.
+Das ergibt zum Beispiel dann Sinn, wenn Sie ermäßigte Tickets für Rentner\*innen oder Studierende anbieten.
 Dazu legen Sie zuerst das Standard-Zutrittsticket an und konfigurieren es wie gewünscht.
 
 Anschließend klonen Sie das Ticket einmal für jedes weitere Preisniveau.
@@ -33,7 +34,7 @@ Geben Sie in das Feld "Beschreibung" einen erläuternden Text ein, etwa folgende
 Wechseln Sie zum Reiter :btn:Check-in & Gültigkeit: und geben Sie einen "Check-in-Hinweis" mit Anweisungen für die Person ein, die das Ticket scannt, zum Beispiel:
 "Studierendenausweis prüfen".
 
-Fügen Sie alle Produkte einem allgemeinen Kontingent hinzu.
+Fügen Sie alle Produkte einem gemeinsamen Kontingent hinzu.
 Legen Sie die Kapazität des Kontingents auf die Höchstzahl der Tickets fest, die Sie verkaufen möchten.
 
 Wenn Sie die Anzahl der verfügbaren ermäßigten Tickets weiter begrenzen möchten, erstellen Sie ein weiteres Kontingent und legen Sie dessen Kapazität auf die Höchstzahl der Tickets fest, die Sie mit Rabatt verkaufen möchten.
@@ -44,12 +45,12 @@ pretix rechnet jedes mit Rabatt verkaufte Ticket auf beide Kontingente an, jedes
 
 pretix bietet Ihnen unabhängig vom gekauften Produkt verschiedene Verfahren, um Rabatte für Großbestellungen einzurichten.
 Dies kann auch praktisch sein, um Gruppentarife anzubieten.
-Sie können Ermäßigungen mit einer Mindestbestellmenge verknüpfen, eine Regel für Rabatte erstellen, die unter bestimmten Bedingungen beim Kauf automatisch angewendet wird, oder feste Gruppenpakete zu ermäßigten Preisen anbieten.
+Sie können vergünstigte Tickets anbieten, die mit einer bestimmten Mindestbestellmenge verbunden sind; eine Regel für Rabatte erstellen, die unter bestimmten Bedingungen beim Kauf automatisch angewendet wird; oder feste Gruppenpakete zu ermäßigten Preisen anbieten.
 Die folgenden Unterabschnitte erläutern die jeweiligen Verfahren.
 
 #### Mindestbestellmenge
 
-Sie können die Funktion für Mindestbestellmengen nutzen, um Werbung für ermäßigte Gruppentickets zu machen.
+Sie können die Funktion für Mindestbestellmengen nutzen, um ermäßigte Gruppentickets zu bewerben.
 Dazu erstellen Sie ein Ticket für eine Person zu einem reduzierten Preis.
 Über die Option "Minimale Anzahl pro Bestellung" definieren Sie die Mindestgröße der Gruppe, ab der Sie den Rabatt gewähren möchten.
 
@@ -69,9 +70,9 @@ Füllen Sie für den Rabatt das Feld "Interner Name" aus.
 Wenn der Rabatt nur für ausgewählte Produkte gelten soll, entfernen Sie den Haken aus dem Kontrollkästchen neben "Anwendbar für alle Produkte (inkl. neu erstellter Produkte)" und kreuzen Sie unter "Auf bestimmte Produkte anwenden" die betreffenden Tickets an.
 Das ist nützlich, wenn der Rabatt beispielsweise nur für Zutrittstickets gelten soll.
 
-Um einen Rabatt-Prozentsatz festzulegen, etwa "25 Prozent Rabatt beim Kauf von mindestens 5", legen Sie für "Minimale Anzahl passender Produkte" 5 und für "Prozentualer Rabatt auf passende Produkte" 25,00 fest.
+Um einen Rabatt-Prozentsatz festzulegen, etwa "25 Prozent Rabatt beim Kauf von mindestens 5", legen Sie für "Minimale Anzahl passender Produkte" `5` und für "Prozentualer Rabatt auf passende Produkte" `25,00` fest.
 
-Um einen Rabatt in der Art "6 zum Preis von 5" festzulegen, legen Sie für "Minimale Anzahl passender Produkte" 5 fest, für "Prozentualer Rabatt auf passende Produkte" 100,00 und für "Gewähre Rabatt nur für diese Anzahl passender Produkte" 1.
+Um einen Rabatt in der Art "6 zum Preis von 5" festzulegen, legen Sie für "Minimale Anzahl passender Produkte" `5` fest, für "Prozentualer Rabatt auf passende Produkte" `100,00` und für "Gewähre Rabatt nur für diese Anzahl passender Produkte" `1`.
 
 Wenn für den Rabatt der Bruttowert und nicht die Anzahl gekaufter Produkte maßgeblich sein soll, lassen Sie das Feld "Minimale Anzahl passender Produkte" leer und setzen Sie "Minimaler Brutto-Gesamtbetrag passender Produkte" auf den gewünschten Wert.
 
@@ -108,8 +109,8 @@ Wenn Sie abhängig vom Zeitpunkt Frühbuchertickets für eine Einzelveranstaltun
 Definieren Sie dort anhand der Felder "Verfügbar ab" und "Verfügbar bis" den Zeitraum, in dem das Produkt gekauft werden kann.
 Wiederholen Sie diesen Schritt für jedes Produkt.
 
-Vergewissern Sie sich, dass das Feld "Verfügbar bis" für das erste Ticket denselben Zeitpunkt mit Datum und Uhrzeit angibt wie das Feld "Verfügbar ab" des folgenden Tickets.
-Damit verhindern Sie Überlappungen, in denen phasenweise mehr als eine Preisgruppe verfügbar ist, und ebenso Lücken, in denen gar keine Tickets verfügbar sind.
+Legen Sie im Feld "Verfügbar bis" für das erste Ticket denselben Zeitpunkt mit Datum und Uhrzeit fest wie in dem Feld "Verfügbar ab" des folgenden Tickets.
+Damit verhindern Sie Überschneidungen, in denen phasenweise mehr als eine Preisgruppe verfügbar ist, und ebenso Lücken, in denen gar keine Tickets verfügbar sind.
 
 #### Zeitabhängige Frühbuchertickets für Termine in einer Veranstaltungsreihe
 
@@ -119,24 +120,23 @@ Definieren Sie unter "Produkteinstellungen" anhand der Felder "Verfügbar ab" un
 
 Wenn Sie für mehrere Termine dieselbe Verfügbarkeit festlegen möchten, navigieren Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-calendar: Termine:, markieren Sie das Kontrollkästchen neben den betreffenden Terminen und klicken Sie den Button :btn-icon:fa3-edit: Ausgewählte bearbeiten:.
 Definieren Sie unter "Produktpreise" anhand der Felder "Verfügbar ab" und "Verfügbar bis" den Zeitraum, in dem das Produkt für die gewählten Termine gekauft werden kann.
-Markieren Sie die Felder "ändern" neben "Verfügbar ab" und "Verfügbar bis", damit die Produkteinstellungen auch sicher überschrieben werden.
+Markieren Sie die Felder "ändern" neben "Verfügbar ab" und "Verfügbar bis", damit die Produkteinstellungen überschrieben werden.
 
-#### Frühbuchertickets anhand der Ticketmenge
+#### Frühbuchertickets auf Basis der Ticketmenge
 
-Wenn Sie abhängig von der Anzahl der bereits verkauften Tickets für eine Einzelveranstaltung Frühbuchertickets anbieten möchten, erstellen Sie für jedes Preisniveau ein Kontingent.
+Wenn Sie für eine Einzelveranstaltung Frühbuchertickets in ABhängigkeit von der Anzahl der bereits verkauften Tickets anbieten möchten, erstellen Sie für jedes Preisniveau ein Kontingent.
 Geben Sie für alle Preisklassen außer der letzten eine feste Anzahl in das Feld "Gesamtanzahl" ein und markieren Sie das Kontrollkästchen neben "Dieses Kontingent schließen, sobald es einmal ausverkauft war".
 Das hat folgende Wirkung: Sobald eine Preisklasse ausverkauft ist, bietet der Shop **keine** frühere Preisklasse mehr an, selbst wenn Bestellungen storniert werden und wieder im Kontingent vorhanden sind.
-Bei dieser Vorgehensweise müssen Sie für das letzte Kontingent **nicht** die Option "Dieses Kontingent schließen, sobald es einmal ausverkauft war" aktivieren.
+Bei dieser Vorgehensweise ist es **nicht** notwendig, dass Sie für das letzte Kontingent die Option "Dieses Kontingent schließen, sobald es einmal ausverkauft war" aktivieren.
 
 Wenn Sie vorhaben, nur eine begrenzte Anzahl Tickets zu verkaufen, etwa weil der Veranstaltungsort nur begrenzten Platz bietet, legen Sie für die "Gesamtanzahl" des letzten Kontingents einen Wert fest.
-Die Summe der "Gesamtanzahl"-Werte aller Kontingente darf nicht höher sein als die Gesamtzahl der Tickets, die Sie verkaufen möchten.
 
 Fügen Sie dem ersten Kontingent nur das erste Produkt hinzu.
 Fügen Sie das erste **und** das zweite Produkt dem zweiten Kontingent hinzu und legen Sie dessen Gesamtanzahl so fest, dass sie gleich der Summe des ersten Kontingents und der zu verkaufenden Anzahl der zweiten Tickets ist.
 Gehen Sie in dieser Weise vor bis zum letzten Kontingent, das alle relevanten Produkte enthalten sollte.
 Diese Kontingent-Konstruktion bewirkt, dass Sie auch dann die maximale Anzahl Tickets für Ihre Veranstaltung verkaufen können, wenn Ticket-Bestellungen aus früheren Kontingenten storniert werden.
 
-Navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte: und bearbeiten Sie das zweite Produkt in der Sequenz.
+Navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte: und bearbeiten Sie das zweite Produkt in der Reihenfolge.
 Wechseln Sie zum Reiter :btn:Verfügbarkeit:.
 Wählen Sie unter "Nicht anzeigen, wenn Kontingent verfügbar" das erste Kontingent.
 Wiederholen Sie dieses Vorgehen für jedes weitere Produkt und wählen Sie jedes Mal das vorherige Kontingent.
@@ -150,7 +150,7 @@ Markieren Sie bei "Produktliste" das Kontrollkästchen bei "Verstecke alle ausve
     Wenn ein/*e Kund/*in die letzten Produkte einer Preisklasse in den Warenkorb legt, aber noch nicht kauft, werden diese Tickets als "Reserviert" gekennzeichnet und die nächste Preisklasse wird angezeigt.
     Schließt der/*die Kund/*in den Kauf dann aber nicht ab, werden die zuvor reservierten Tickets wieder im Shop angezeigt und die Tickets der nächsten Preisklasse werden nicht mehr angezeigt.
 
-    Dieses Verhalten ist einer Situation vorzuziehen, in der ein/*e Benutzer/*in mit bösen Absichten alle Tickets einer günstigeren Preisklasse reservieren kann, ohne sie zu kaufen.
+    Dieses Verhalten ist einer Situation vorzuziehen, in der ein/*e Benutzer/*in mit schädlichen Absichten alle Tickets einer günstigeren Preisklasse reservieren kann, ohne sie zu kaufen.
 
 Ein Beispiel: Angenommen, Sie möchten 400 Tickets in drei Preisklassen verkaufen.
 Zuerst erstellen Sie drei Produkte mit unterschiedlichen Preisen:
@@ -181,13 +181,14 @@ Das kann zum Beispiel in den folgenden Szenarios der Fall sein:
 
 Sie können dies in pretix auf zwei Weisen umsetzen:
 Eine Möglichkeit sind [Produktkombinationen](discounts.md#option-a-combination-products).
-Sie haben den Vorteil, dass Ihre Produkte und Bestellmöglichkeiten einigermaßen überschaubar bleiben.
+Diese haben den Vorteil, dass Ihre Produkte und Bestellmöglichkeiten einigermaßen überschaubar bleiben.
 Diese Möglichkeit kommt allerdings nur in Frage, wenn es maximal drei oder vier Grundprodukte gibt.
 
 Die andere Möglichkeit sind [Zusatzprodukte und Produktpakete](discounts.md#option-b-add-ons-and-bundles).
 Diese Option ist zunächst deutlich komplexer, aber mit einer steigenden Anzahl von Grundprodukten wächst diese Komplexität nicht exponentiell, wie es bei der ersten Möglichkeit der Fall ist.
 
-Generell ist die erste Möglichkeit besser geeignet, wenn Sie nur wenige Grundprodukte haben, und die zweite Möglichkeit ist ab einer Anzahl von vier oder fünf Grundprodukten sinnvoller.
+Generell ist die erste Möglichkeit besser geeignet, wenn Sie nur wenige Grundprodukte haben.
+Die zweite Möglichkeit ist ab einer Anzahl von vier oder fünf Grundprodukten sinnvoller.
 Die folgenden Abschnitte erläutern beide Möglichkeiten.
 
 Wenn Sie unabhängig von den gekauften Produkten einen Rabatt für größere Bestellungen gewähren möchten, lesen Sie stattdessen den Abschnitt über [Gruppentarife und Rabatte für Großbestellungen](discounts.md#group-discounts-and-discounts-for-large-orders).
@@ -303,7 +304,7 @@ Mindestens eine der folgenden Bedingungen (ODER)
     - Produkt ist eines von "Ticket Tag 2" oder "Ticket für alle drei Tage"
     - Aktueller Tag der Woche = 2 (Dienstag)
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 3"
+    - Produkt ist eines von "Ticket Tag 3" oder "Ticket für alle drei Tage"
     - Aktueller Tag der Woche = 3 (Mittwoch)
 
 !!! Hinweis

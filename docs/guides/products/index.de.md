@@ -267,22 +267,22 @@ Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.md#different-
 
 Um es für Kund/*innen attraktiver zu machen, auch später in der Saison noch eine Dauerkarte zu kaufen, können Sie den Preis senken.
 Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.md#early-bird-tickets-based-on-time-for-singular-events), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
-Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen mehrmals im Saisonverlauf.
+Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen manuell. 
 
 Bei dieser Vorgehensweise müssen Sie darauf vorbereitet sein, Teilnehmer/*innen bei zwei Veranstaltungen gleichzeitig einzuchecken.
 Wenn Sie pretixSCAN verwenden, können Sie dazu den Experten-Modus nutzen.
 Öffnen Sie pretixSCAN.
-Geben Sie oben im Bildschirm den Namen der Veranstaltung ein.
+Tippen Sie oben auf dem Bildschirm auf den Namen der Veranstaltung.
 Wählen Sie die aktive Einzelveranstaltung aus der Liste und tippen Sie :btn:OK:.
 Markieren Sie das Kontrollkästchen neben "Experten-Modus".
 Wählen Sie die Check-in-Liste für die Veranstaltung und tippen Sie :btn:OK:.
 
 Tippen Sie den Button :btn-icon:fa3-plus::.
-Wählen Sie die Veranstaltung im Rahmen der Dauerkarte und tippen Sie :btn:OK:.
+Wählen Sie unter Veranstaltung den Dauerkarten-Shop und tippen Sie :btn:OK:.
 Wählen Sie die Check-in-Liste und tippen Sie erneut :btn:OK:.
-Auf dem Bildschirm werden nun die Einzelveranstaltung und die Veranstaltung im Rahmen der Dauerkarte angezeigt, außerdem das Datum des Veranstaltungsbeginns, die Kurzform, die Check-in-Liste sowie Buttons zum Bearbeiten und Löschen des Eintrags.
+Die App zeigt nun die Einzelveranstaltung und die Veranstaltung im Rahmen der Dauerkarte an, außerdem das Datum des Veranstaltungsbeginns, die Kurzform, die Check-in-Liste sowie Buttons zum Bearbeiten und Löschen des Eintrags.
 
-Tippen Sie oben im Bildschirm :btn-icon:fa3-check::.
+Tippen Sie oben auf dem Bildschirm :btn-icon:fa3-check::.
 Jetzt sollte es möglich sein, Tickets für beide Veranstaltungen gleichzeitig zu scannen.
 
 #### Option C: ein Ticket für den Zutritt während der gesamten Saisondauer
@@ -299,8 +299,8 @@ Aktiveren Sie dieses Produkt für alle Termine in Ihrer Veranstaltungsreihe.
 Sie müssen eigene Check-in-Regeln einrichten, damit Kund/*innen mit der Dauerkarte Zutritt zu allen Terminen erhalten.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in → Check-in-Listen: und klicken Sie den Button :btn-icon:fa3-plus: Neue Check-in-Liste erstellen:.
 
-Geben Sie einen Namen an, aber keinen bestimmten Termin.
-Diese Check-in-Liste gilt für alle Termine.
+Geben Sie einen Namen ein, aber wählen Sie **keinen** bestimmten Termin.
+Diese Check-in-Liste soll für alle Termine gelten.
 Wechseln Sie zum Reiter :btn:Erweitert:.
 
 Klicken Sie unter "Eigene Check-In-Regeln" den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: und wählen Sie aus dem Dropdown-Menü "Mindestens eine der folgenden Bedingungen (ODER)".
@@ -309,7 +309,7 @@ Jetzt haben Sie eine ODER-Klammer mit einer UND-Klammer darin.
 
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: **innerhalb der UND-Klammer** und wählen Sie "Produkt", dann "ist eines von" und dann alle Zutrittstickets **außer** der Dauerkarte.
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist nach" und dann "Veranstaltungsbeginn".
-Sie können die Felder "Toleranz (Minuten)" leer lassen oder eine Toleranzzeit von beispielsweise "10" Minuten angeben, damit Teilnehmer/*innen bereits zehn Minuten vor Beginn des jeweiligen Zeitfensters Einlass erhalten.
+Sie können die Felder "Toleranz (Minuten)" leer lassen oder eine Toleranzzeit von beispielsweise `10` Minuten angeben, damit Teilnehmer/*innen bereits zehn Minuten vor Beginn des jeweiligen Zeitfensters Einlass erhalten.
 
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist vor" und dann "Veranstaltungsende".
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer ein letztes Mal und wählen Sie "Anzahl bisheriger Eintritte", dann "=" und dann "0".
@@ -348,16 +348,16 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
 
 **Problem:** Sie haben ein Produkt erstellt, aber es wird nicht in Ihrem Shop angezeigt.
 
-**Lösung:** Hier sind verschiedene Ursachen denkbar.
+**Lösung:** Es kann verschiedene Gründe geben.
 Überprüfen Sie Folgendes:
 
- 1. Ist das Produkt inaktiv?
- Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
+ 1. Das Produkt könnte inaktiv sein.
+ Um dies zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
  Bearbeiten Sie das Produkt, das im Shop nicht angezeigt wird.
  Vergewissern Sie sich auf dem Reiter :btn:Allgemein:, dass das Kontrollkästchen neben "Aktiv" markiert ist.
 
 !!! Hinweis
-    Alle Änderungen an der Produktkonfiguration treten erst in Kraft, nachdem Sie den Button :btn:Speichern: klicken.
+    Alle Änderungen an der Konfiguration des Produkts treten erst in Kraft, nachdem Sie den Button :btn:Speichern: klicken.
 
  2. Ist die Verfügbarkeit Ihres Produkts auf andere Verkaufskanäle als Ihren Shop beschränkt?
  Um diese Ursache zu beheben, wechseln Sie zum Reiter :btn:Verfügbarkeit:.

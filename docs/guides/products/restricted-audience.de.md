@@ -14,7 +14,7 @@ Eine ausführliche Anleitung finden Sie unter [Gutscheine: Verfügbarkeit exklus
 
 Wenn Sie noch nicht genau wissen, wer an einer Veranstaltung teilnehmen wird, den Zutritt aber dennoch auf einen bestimmten Personenkreis beschränken möchten, können Sie einstellen, dass Bestellungen freigegeben werden müssen.
 Dies ist nützlich, wenn Sie bestimmten Gruppen, etwa der Presse oder Studierenden, Rabatte oder kostenlose Produkte anbieten.
-Eine verpflichtende Freigabe gibt Ihnen die Möglichkeit, vor der Bestätigung der Bestellung zu prüfen, ob die Kund/*innen wirklich Mitglieder der betreffenden Gruppe sind.
+Die Voraussetzung einer manuellen Freigabe gibt Ihnen die Möglichkeit, vor der Bestätigung der Bestellung zu prüfen, ob die Kund/*innen wirklich Mitglieder der betreffenden Gruppe sind.
 
 Um die Freigabe für ein Produkt verpflichtend zu machen, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte: und bearbeiten Sie die Zutrittsprodukte.
 Scrollen Sie auf dem Reiter :btn:Allgemein: an das Seitenende und markieren Sie dort das Kontrollkästchen "Die Bestellung dieses Produktes erfordert eine manuelle Freigabe".
@@ -40,4 +40,4 @@ Der wesentliche Vorteil dieser Vorgehensweise liegt darin, dass Sie bei jeder ei
 
 Sie können Ihre Veranstaltung auf einen bestimmten Personenkreis beschränken, indem Sie eine Mitgliedschaft als Voraussetzung für den Kauf eines Tickets definieren.
 Wie Sie dies einrichten, erläutert der Artikel über [Kund/*innenkonten](../customer-accounts.md).
-Weitere Informationen über das Gewähren und Fordern von Mitgliedschaften finden Sie unter [Dauerkarten](index.md#option-a-memberships-and-multiple-tickets).
+Weitere Informationen über das Vergeben und Voraussetzen von Mitgliedschaften finden Sie unter [Dauerkarten](index.md#option-a-memberships-and-multiple-tickets).
