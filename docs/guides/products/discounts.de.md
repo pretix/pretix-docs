@@ -180,11 +180,11 @@ Das kann zum Beispiel in den folgenden Szenarios der Fall sein:
  - Verschiedene Angebote, etwa Präsenz-Workshops, Online-Inhalte und eine Netzwerkveranstaltung, sind günstiger, wenn sie in Kombination gekauft werden.
 
 Sie können dies in pretix auf zwei Weisen umsetzen:
-Eine Möglichkeit sind [Produktkombinationen](#optiona-produktkombinationen).
+Eine Möglichkeit sind [Produktkombinationen](#option-a-produktkombinationen).
 Diese haben den Vorteil, dass Ihre Produkte und Bestellmöglichkeiten einigermaßen überschaubar bleiben.
 Diese Möglichkeit kommt allerdings nur in Frage, wenn es maximal drei oder vier Grundprodukte gibt.
 
-Die andere Möglichkeit sind [Zusatzprodukte und Produktpakete](#optionb-zusatzprodukte-und-produktpakete).
+Die andere Möglichkeit sind [Zusatzprodukte und Produktpakete](#option-b-zusatzprodukte-und-produktpakete).
 Diese Option ist zunächst deutlich komplexer, aber mit einer steigenden Anzahl von Grundprodukten wächst diese Komplexität nicht exponentiell, wie es bei der ersten Möglichkeit der Fall ist.
 
 Generell ist die erste Möglichkeit besser geeignet, wenn Sie nur wenige Grundprodukte haben.
@@ -204,7 +204,7 @@ Die Anzahl der Produkte, die Sie in Ihrem Shop anbieten müssen, ist `2ⁿ-1`, w
 Mit jedem weiteren Grundprodukt steigt diese Anzahl exponentiell:
 Wenn Sie drei Grundprodukte haben, müssen Sie auf diese Weise sieben Produkte im Shop anbieten.
 Wenn Sie vier Grundprodukte haben, sind es schon fünfzehn Produkte.
-Ab einem solchen Komplexitätsgrad sind vermutlich die unten beschriebenen [Produktpakete](#optionb-zusatzprodukte-und-produktpakete) eine besser geeignete Möglichkeit.
+Ab einem solchen Komplexitätsgrad sind vermutlich die unten beschriebenen [Produktpakete](#option-b-zusatzprodukte-und-produktpakete) eine besser geeignete Möglichkeit.
 
 Ein Beispiel: Sie veranstalten eine dreitägige Messe.
 Legen Sie für jeden Messetag ein Grundticket an, drei Kombinationstickets für je zwei Tage und ein Kombinationsticket für alle drei Tage:
@@ -250,7 +250,7 @@ Mindestens eine der folgenden Bedingungen (ODER)
 
 Eine andere Möglichkeit besteht darin, Grundprodukte und Kontingente zu erstellen und anschließend für alle möglichen Kombinationen Produkte mit obligatorischen Zusatzprodukten anzulegen.
 Eine Ausnahme bildet die Produktkombination mit **allen** Grundprodukten.
-Die komplette Produktkombination können Sie entweder einrichten wie oben im Abschnitt [Option A: Produktkombinationen](#optiona-produktkombinationen) beschrieben oder als Produktpaket.
+Die komplette Produktkombination können Sie entweder einrichten wie oben im Abschnitt [Option A: Produktkombinationen](#option-a-produktkombinationen) beschrieben oder als Produktpaket.
 Die Einrichtung als Produktpaket wird auch in diesem Abschnitt erläutert.
 
 Diese Option hat den Vorteil, dass die Anzahl der benötigten Produkte nicht exponentiell zur Anzahl der Grundprodukte wächst.
@@ -308,5 +308,5 @@ Mindestens eine der folgenden Bedingungen (ODER)
     - Aktueller Tag der Woche = 3 (Mittwoch)
 
 !!! Hinweis
-    Sie können das "Ticket für alle drei Tage" auch wie im Abschnitt [Option A: Produktkombinationen](#optiona-produktkombinationen) beschrieben einrichten.
+    Sie können das "Ticket für alle drei Tage" auch wie im Abschnitt [Option A: Produktkombinationen](#option-a-produktkombinationen) beschrieben einrichten.
     Führen Sie dieses Ticket in dem Fall bei jeder Bedingung auf, die mit "Produkt ist eines von" beginnt.
