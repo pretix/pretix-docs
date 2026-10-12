@@ -359,49 +359,49 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
 !!! Hinweis
     Alle Änderungen an der Konfiguration des Produkts treten erst in Kraft, nachdem Sie den Button :btn:Speichern: klicken.
 
- 2. Ist die Verfügbarkeit Ihres Produkts auf andere Verkaufskanäle als Ihren Shop beschränkt?
- Um diese Ursache zu beheben, wechseln Sie zum Reiter :btn:Verfügbarkeit:.
+ 2. Die Verfügbarkeit Ihres Produkts könnte auf andere Verkaufskanäle als Ihren Shop beschränkt sein.
+ Um dies zu beheben, wechseln Sie zum Reiter :btn:Verfügbarkeit:.
  Vergewissern Sie sich, dass das Kontrollkästchen neben "Auf allen Verkaufskanälen verkaufen" markiert ist.
  Ist dieses Kontrollkästchen nicht markiert, vergewissern Sie sich, dass das Kontrollkästchen neben "Online-Shop" markiert ist.
 
- 3. Ist die Verfügbarkeit Ihres Produkts auf einen bestimmten Zeitraum beschränkt?
- Um diese Ursache zu beheben, prüfen Sie zunächst die Einträge in den Feldern "Verfügbar ab" und "Verfügbar bis".
+ 3. Die Verfügbarkeit Ihres Produkts könnte auf einen bestimmten Zeitraum beschränkt sein.
+ Um dies zu beheben, prüfen Sie zunächst die Einträge in den Feldern "Verfügbar ab" und "Verfügbar bis".
  Wenn die Felder leer sind, gibt es keine solche Einschränkung.
  Falls eines der Felder Daten und Uhrzeiten enthält, überprüfen Sie, dass das aktuelle Datum im angegebenen Zeitraum liegt.
  Wenn Sie möchten, dass das Produkt auch außerhalb des festgelegten Zeitraums im Shop angezeigt wird, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
- 3. Ist das Produkt nur über einen Gutschein erhältlich?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt kann nur mit einem Gutschein gekauft werden" **nicht** markiert ist.
+ 3. Das Produkt könnte nur über einen Gutschein erhältlich sein.
+ Um dies zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt kann nur mit einem Gutschein gekauft werden" **nicht** markiert ist.
  Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund\*innen an, die einen passenden Gutscheincode eingegeben haben.
  Wenn der Shop das Produkt dennoch allen Kund\*innen anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
- 4. Ist das Produkt nur als Teil eines Produktpakets erhältlich?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt nicht einzeln verkaufen, sondern nur als Teil eines festen Produktpakets" **nicht** markiert ist.
+ 4. Das Produkt könnte nur als Teil eines Produktpakets erhältlich sein.
+ Um dies zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt nicht einzeln verkaufen, sondern nur als Teil eines festen Produktpakets" **nicht** markiert ist.
  Ist es markiert, wird das Produkt nicht als eigenständiges Produkt im Shop angezeigt.
  Es wird nur als Teil eines anderen Produkts angezeigt, dem Sie es als Teil eines Produktpakets hinzugefügt haben.
 
- 5. Ist das Produkt nur über eine Mitgliedschaft erhältlich?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Erfordere eine aktive Mitgliedschaft" **nicht** markiert ist.
+ 5. Das Produkt könnte nur über eine Mitgliedschaft erhältlich sein.
+ Um dies zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Erfordere eine aktive Mitgliedschaft" **nicht** markiert ist.
  Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund\*innen an, die in ihrem Konto angemeldet sind und eine gültige Mitgliedschaft besitzen.
 
- 6. Ist das Produkt nur erhältlich, wenn ein anderes Produkt ausverkauft ist?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Nicht anzeigen, wenn Kontingent verfügbar" leer ist.
+ 6. Das Produkt könnte nur erhältlich sein, wenn ein anderes Produkt ausverkauft ist.
+ Um dies zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Nicht anzeigen, wenn Kontingent verfügbar" leer ist.
  Wenn Sie in diesem Feld ein anderes Produkt angeben, wird der Shop dieses Produkt nur anzeigen, wenn das andere Produkt ausverkauft ist.
  Wenn der Shop das Produkt unabhängig von der Verfügbarkeit des anderen Produkts anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
- 7. Hat das Produkt den falschen Kategorietyp?
- Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kategorien:.
+ 7. Das Produkt könnte den falschen Kategorietyp haben.
+ Um dies zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kategorien:.
  Bearbeiten Sie die Kategorie, zu der das Produkt gehört.
  Vergewissern Sie sich, dass unter "Art der Kategorie" entweder `Normale Kategorie` oder `Normale und Cross-Selling-Kategorie` gewählt ist.
  Falls `Zusatzprodukt-Kategorie` gewählt ist, ist das Produkt nur als Zusatzprodukt erhältlich.
  Falls `Cross-Selling-Kategorie` gewählt ist, ist das Produkt nur während des Cross-Selling-Schritts bei einem Kauf erhältlich.
 
- 8. Ist das Produkt nicht Teil eines Kontingents?
- Um diese Ursache zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
+ 8. Das Produkt könnte nicht Teil eines Kontingents sein.
+ Um dies zu beheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
  Vergewissern Sie sich, dass das Produkt in einem der Kontingente enthalten ist.
  Falls das Produkt Varianten hat, vergewissern Sie sich, dass mindestens eine Variante Teil eines Kontingents ist.
  Falls Sie eine Veranstaltungsreihe veranstalten, vergewissern Sie sich, dass das Kontingent dem Termin zugewiesen ist, der über den Shop gebucht werden soll.
 
- 9. Ist das Produkt Teil eines leeren Kontingents?
- Um diese Ursache zu beheben, vergewissern Sie sich, dass keines der Kontingente, in denen das Produkt enthalten ist, leer ist.
+ 9. Das Produkt könnte Teil eines leeren Kontingents sein.
+ Um dies zu beheben, vergewissern Sie sich, dass keines der Kontingente, in denen das Produkt enthalten ist, leer ist.
  Falls eines der Kontingente bereits ausverkauft war, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Kontingent schließen, sobald es einmal ausverkauft war" **nicht** markiert ist.
