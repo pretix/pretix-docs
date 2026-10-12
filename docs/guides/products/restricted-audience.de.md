@@ -40,4 +40,4 @@ Der wesentliche Vorteil dieser Vorgehensweise liegt darin, dass Sie bei jeder ei
 
 Sie können Ihre Veranstaltung auf einen bestimmten Personenkreis beschränken, indem Sie eine Mitgliedschaft als Voraussetzung für den Kauf eines Tickets definieren.
 Wie Sie dies einrichten, erläutert der Artikel über [Kund\*innenkonten](../customer-accounts.md).
-Weitere Informationen über das Vergeben und Voraussetzen von Mitgliedschaften finden Sie unter [Dauerkarten](index.de.md#optiona-mitgliedschaften-und-mehrere-tickets).
+Weitere Informationen über das Vergeben und Voraussetzen von Mitgliedschaften finden Sie unter [Dauerkarten](index.de.md#option-a-mitgliedschaften-und-mehrere-tickets).
