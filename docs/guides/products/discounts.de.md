@@ -19,7 +19,7 @@ Die Implementierung von [Rabattpaketen](#rabattpakete) setzt Kenntnisse über Ch
 
 In pretix können Sie so viele verschiedene Produkte mit unterschiedlichen Preisniveaus anlegen, wie Sie benötigen.
 Wie Sie dazu vorgehen, ist im Abschnitt [Unterschiedliche Preisniveaus](#unterschiedliche-preisniveaus) erklärt.
-Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um abhängig von bestimmten Bedingungen Rabatte anzubieten, nämlich [Frühbucherpreise](discounts.md#early-bird-tickets), [Rabattpakete](#rabattpakete) und [Gruppentarife](#gruppentarife-und-rabatte-für-großbestellungen).
+Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um abhängig von bestimmten Bedingungen Rabatte anzubieten, nämlich [Frühbucherpreise](#fruhbuchertickets), [Rabattpakete](#rabattpakete) und [Gruppentarife](#gruppentarife-und-rabatte-für-großbestellungen).
 
 ### Unterschiedliche Preisniveaus
 

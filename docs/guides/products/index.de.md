@@ -72,7 +72,7 @@ Wenn Sie Kontingente erstellen oder bearbeiten möchten, navigieren Sie zu :navp
 Die Seite zeigt eine Liste aller Kontingente für die Veranstaltung sowie die Gesamtanzahl der Einheiten und die für jedes Kontingent verbleibende Kapazität.
 
 Klicken Sie den Button :btn:Kontingent erstellen:.
-Wählen Sie einen Namen und eine Kapazität, markieren Sie die Produkte, die in diesem Kontingent enthalten sein sollen, sowie bei Bedarf erweiterte Optionen und klicken Sie dann den Button :btn:Speichern.
+Wählen Sie einen Namen und eine Kapazität, markieren Sie die Produkte, die in diesem Kontingent enthalten sein sollen, sowie bei Bedarf erweiterte Optionen und klicken Sie dann den Button :btn:Speichern:.
 
 Sie können auch ein vorhandenes Kontingent bearbeiten, indem Sie seinen Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Listeneintrag klicken.
 
@@ -266,7 +266,7 @@ Sie können mehr als einen Typ Dauerkarten anbieten.
 Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.de.md#unterschiedliche-preisniveaus) anbieten.
 
 Um es für Kund\*innen attraktiver zu machen, auch später in der Saison noch eine Dauerkarte zu kaufen, können Sie den Preis senken.
-Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.de.md#zeitabhängige-frühbuchertickets-für-einzelveranstaltungen), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
+Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.de.md#zeitabhängige-fruhbuchertickets-für-einzelveranstaltungen), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
 Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen manuell.
 
 Bei dieser Vorgehensweise müssen Sie darauf vorbereitet sein, Teilnehmer\*innen bei zwei Veranstaltungen gleichzeitig einzuchecken.
@@ -323,12 +323,12 @@ Damit die Dauerkarte nicht von mehr als einer Person genutzt werden kann, sollte
 Klicken Sie dazu unterhalb der Bedingung für die Dauerkarte den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen:.
 Sie haben nun mehrere Optionen:
 
- - Wählen Sie "Aktueller Zutrittsstatus", dann "=" und dann "abwesend".
+ - Wählen Sie `Aktueller Zutrittsstatus`, dann `=` und dann `abwesend`.
  Das bewirkt, dass die Dauerkarte nur genutzt werden kann, wenn niemand gerade darüber eingecheckt ist.
  Das setzt allerdings voraus, dass Sie Inhaber\*innen von Dauerkarten beim Verlassen der Veranstaltung auschecken, wofür möglicherweise zusätzliches Personal nötig ist.
- - Wählen Sie "Anzahl bisheriger Eintritte seit Mitternacht", "=" und "0".
+ - Wählen Sie `Anzahl bisheriger Eintritte seit Mitternacht`, `=` und `0`.
  Das bewirkt, dass die Dauerkarte nur einmal pro Tag genutzt werden kann.
- - Wählen Sie "Minuten seit vorherigem Eintritt", "≤" und "15".
+ - Wählen Sie `Minuten seit vorherigem Eintritt`, `≤` und `15`.
  Das bewirkt, dass die Dauerkarte höchstens einmal alle fünfzehn Minuten genutzt werden kann.
 
 ![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets_rules1.png "Regel-Set 1 für Dauerkarten")
