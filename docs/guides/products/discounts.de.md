@@ -219,29 +219,29 @@ Legen Sie für jeden Messetag ein Grundticket an, drei Kombinationstickets für 
 
 Erstellen Sie dann drei Kontingente, jedes mit der maximalen Kapazität des Veranstaltungsorts an jedem einzelnen Tag als Gesamtanzahl:
 
- - Kontingent Tag 1, verknüpft mit "Ticket Tag 1", "Ticket Tag 1 + Tag 2", "Ticket Tag 1 + Tag 3" und "Ticket für alle drei Tage"
- - Kontingent Tag 2, verknüpft mit "Ticket Tag 2", "Ticket Tag 1 + Tag 2", "Ticket Tag 2 + Tag 3" und "Ticket für alle drei Tage"
- - Kontingent Tag 3, verknüpft mit "Ticket Tag 3", "Ticket Tag 1 + Tag 3", "Ticket Tag 2 + Tag 3" und "Ticket für alle drei Tage"
+ - Kontingent Tag 1, verknüpft mit `Ticket Tag 1`, `Ticket Tag 1 + Tag 2`, `Ticket Tag 1 + Tag 3` und `Ticket für alle drei Tage`
+ - Kontingent Tag 2, verknüpft mit `Ticket Tag 2`, `Ticket Tag 1 + Tag 2`, `Ticket Tag 2 + Tag 3` und `Ticket für alle drei Tage`
+ - Kontingent Tag 3, verknüpft mit `Ticket Tag 3`, `Ticket Tag 1 + Tag 3`, `Ticket Tag 2 + Tag 3` und `Ticket für alle drei Tage`
 
 So können alle Teilnehmer\*innen genau ein Ticket bestellen, mit dem sie an allen gewünschten Tagen Zutritt haben.
 Zum Schluss navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-check-square-o: Check-in:.
 Hier bearbeiten oder erstellen Sie eine Check-in-Liste mit den von Ihnen angelegten Tickets und wechseln zum Reiter :btn:Erweitert:.
 Definieren Sie eigene Check-in-Regeln, sodass die Tickets aus dem ersten Kontingent am ersten Tag der Veranstaltung gültig sind, die Tickets aus dem zweiten Kontingent am zweiten Tag und die Tickets aus dem dritten Kontingent am dritten Tag.
 
-Dazu verwenden Sie die Bedingung "Aktueller Tag der Woche" oder die Bedingung "Aktueller Zeitpunkt".
+Dazu verwenden Sie die Bedingung `Aktueller Tag der Woche` oder die Bedingung `Aktueller Zeitpunkt`.
 Die Check-in-Regel sollte ungefähr so aussehen wie auf dem unten gezeigten Screenshot.
 Die Logik ist wie folgt:
 
 Mindestens eine der folgenden Bedingungen (ODER)
 
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 1", "Ticket Tag 1 + Tag 2", "Ticket Tag 1 + Tag 3" oder "Ticket für alle drei Tage"
+    - Produkt ist eines von `Ticket Tag 1`, `Ticket Tag 1 + Tag 2`, `Ticket Tag 1 + Tag 3` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 1 (Montag)
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 2", "Ticket Tag 1 + Tag 2", "Ticket Tag 2 + Tag 3" oder "Ticket für alle drei Tage"
+    - Produkt ist eines von `Ticket Tag 2`, `Ticket Tag 1 + Tag 2`, `Ticket Tag 2 + Tag 3` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 2 (Dienstag)
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 3", "Ticket Tag 1 + Tag 3", "Ticket Tag 2 + Tag 3" oder "Ticket für alle drei Tage"
+    - Produkt ist eines von `Ticket Tag 3`, `Ticket Tag 1 + Tag 3`, `Ticket Tag 2 + Tag 3` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 3 (Mittwoch)
 
 ![Eigene Check-in-Regel mit drei Blöcken von UND-Bedingungen. Der erste verlangt, dass das Produkt eines der Produkte für Tag 1 ist UND dass der aktuelle Wochentag Montag ist. Der zweite und der dritte Block verlangen dasselbe für Tag 2 und Dienstag beziehungsweise für Tag 3 und Mittwoch. Die drei Blöcke von UND-Bedingungen sind Teil einer ODER-Bedingung.](../../assets/screens/products/check-in-rules-combination-products.png "Eigene Check-in-Regel")
@@ -292,19 +292,19 @@ Zum Schluss navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-check-square
 Hier bearbeiten oder erstellen Sie eine Check-in-Liste mit den von Ihnen angelegten Tickets und wechseln zum Reiter :btn:Erweitert:.
 Definieren Sie eigene Check-in-Regeln, sodass das "Ticket Tag 1" nur am ersten Tag der Veranstaltung gültig ist, das "Ticket Tag 2" nur am zweiten Tag und das "Ticket Tag 3" nur am dritten Tag.
 Falls Sie das "Ticket für alle drei Tage" als Produktkombination gestaltet haben, definieren Sie die Regel so, dass es auch an jedem Tag gültig ist.
-Dazu verwenden Sie die Bedingung "Aktueller Tag der Woche" oder die Bedingung "Aktueller Zeitpunkt".
+Dazu verwenden Sie die Bedingung `Aktueller Tag der Woche` oder die Bedingung `Aktueller Zeitpunkt`.
 Die Logik ist wie folgt:
 
 Mindestens eine der folgenden Bedingungen (ODER)
 
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 1" oder "Ticket für alle drei Tage"
+    - Produkt ist eines von `Ticket Tag 1` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 1 (Montag)
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 2" oder "Ticket für alle drei Tage"
+    - Produkt ist eines von `Ticket Tag 2` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 2 (Dienstag)
  - Alle der folgenden Bedingungen (UND)
-    - Produkt ist eines von "Ticket Tag 3" oder "Ticket für alle drei Tage"
+    - Produkt ist eines von `Ticket Tag 3` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 3 (Mittwoch)
 
 !!! Hinweis
