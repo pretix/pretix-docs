@@ -3,23 +3,23 @@
 pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund\*innen Rabatte anbieten können, die an bestimmte Bedingungen geknüpft sind.
 Dieser Artikel erklärt die verschiedenen Arten von Rabatten für bestimmte Anwendungsfälle:
 
- - [Unterschiedliche Preisniveaus](discounts.md#different-price-levels)
- - [Gruppentarife](discounts.md#group-discounts-and-discounts-for-large-orders)
- - [Frühbucherpreise](discounts.md#early-bird-tickets)
- - [Rabattpakete](discounts.md#discount-packages)
+ - [Unterschiedliche Preisniveaus](#unterschiedliche-preisniveaus)
+ - [Gruppentarife](#gruppentarife-und-rabatte-für-großbestellungen)
+ - [Frühbucherpreise](#fruhbuchertickets)
+ - [Rabattpakete](#rabattpakete)
 
 ## Voraussetzungen
 
 Die meisten hier beschriebenen Verfahren greifen auf Veranstaltungsebene, Sie müssen also zuerst eine Veranstaltung anlegen.
 Dieser Artikel setzt voraus dass Sie in Grundzügen mit dem Erstellen und Bearbeiten von Produkten vertraut sind.
 Daher sollten Sie sich zuerst den Guide über [Produkte](index.md) ansehen.
-Die Implementierung von [Rabattpaketen](discounts.md#discount-packages) setzt Kenntnisse über Check-in-Listen voraus.
+Die Implementierung von [Rabattpaketen](#rabattpakete) setzt Kenntnisse über Check-in-Listen voraus.
 
 ## Anleitung
 
 In pretix können Sie so viele verschiedene Produkte mit unterschiedlichen Preisniveaus anlegen, wie Sie benötigen.
-Wie Sie dazu vorgehen, ist im Abschnitt [Unterschiedliche Preisniveaus](discounts.md#different-price-levels) erklärt.
-Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um abhängig von bestimmten Bedingungen Rabatte anzubieten, nämlich [Frühbucherpreise](discounts.md#early-bird-tickets), [Rabattpakete](discounts.md#discount-packages) und [Gruppentarife](discounts.md#group-discounts-and-discounts-for-large-orders).
+Wie Sie dazu vorgehen, ist im Abschnitt [Unterschiedliche Preisniveaus](#unterschiedliche-preisniveaus) erklärt.
+Die anschließenden Abschnitte erläutern die anspruchsvolleren Verfahren, um abhängig von bestimmten Bedingungen Rabatte anzubieten, nämlich [Frühbucherpreise](discounts.md#early-bird-tickets), [Rabattpakete](#rabattpakete) und [Gruppentarife](#gruppentarife-und-rabatte-für-großbestellungen).
 
 ### Unterschiedliche Preisniveaus
 
@@ -180,18 +180,18 @@ Das kann zum Beispiel in den folgenden Szenarios der Fall sein:
  - Verschiedene Angebote, etwa Präsenz-Workshops, Online-Inhalte und eine Netzwerkveranstaltung, sind günstiger, wenn sie in Kombination gekauft werden.
 
 Sie können dies in pretix auf zwei Weisen umsetzen:
-Eine Möglichkeit sind [Produktkombinationen](discounts.md#option-a-combination-products).
+Eine Möglichkeit sind [Produktkombinationen](#optiona-produktkombinationen).
 Diese haben den Vorteil, dass Ihre Produkte und Bestellmöglichkeiten einigermaßen überschaubar bleiben.
 Diese Möglichkeit kommt allerdings nur in Frage, wenn es maximal drei oder vier Grundprodukte gibt.
 
-Die andere Möglichkeit sind [Zusatzprodukte und Produktpakete](discounts.md#option-b-add-ons-and-bundles).
+Die andere Möglichkeit sind [Zusatzprodukte und Produktpakete](#optionb-zusatzprodukte-und-produktpakete).
 Diese Option ist zunächst deutlich komplexer, aber mit einer steigenden Anzahl von Grundprodukten wächst diese Komplexität nicht exponentiell, wie es bei der ersten Möglichkeit der Fall ist.
 
 Generell ist die erste Möglichkeit besser geeignet, wenn Sie nur wenige Grundprodukte haben.
 Die zweite Möglichkeit ist ab einer Anzahl von vier oder fünf Grundprodukten sinnvoller.
 Die folgenden Abschnitte erläutern beide Möglichkeiten.
 
-Wenn Sie unabhängig von den gekauften Produkten einen Rabatt für größere Bestellungen gewähren möchten, lesen Sie stattdessen den Abschnitt über [Gruppentarife und Rabatte für Großbestellungen](discounts.md#group-discounts-and-discounts-for-large-orders).
+Wenn Sie unabhängig von den gekauften Produkten einen Rabatt für größere Bestellungen gewähren möchten, lesen Sie stattdessen den Abschnitt über [Gruppentarife und Rabatte für Großbestellungen](#gruppentarife-und-rabatte-für-großbestellungen).
 
 #### Option A: Produktkombinationen
 
@@ -204,7 +204,7 @@ Die Anzahl der Produkte, die Sie in Ihrem Shop anbieten müssen, ist `2ⁿ-1`, w
 Mit jedem weiteren Grundprodukt steigt diese Anzahl exponentiell:
 Wenn Sie drei Grundprodukte haben, müssen Sie auf diese Weise sieben Produkte im Shop anbieten.
 Wenn Sie vier Grundprodukte haben, sind es schon fünfzehn Produkte.
-Ab einem solchen Komplexitätsgrad sind vermutlich die unten beschriebenen [Produktpakete](discounts.md#option-b-add-ons-and-bundles) eine besser geeignete Möglichkeit.
+Ab einem solchen Komplexitätsgrad sind vermutlich die unten beschriebenen [Produktpakete](#optionb-zusatzprodukte-und-produktpakete) eine besser geeignete Möglichkeit.
 
 Ein Beispiel: Sie veranstalten eine dreitägige Messe.
 Legen Sie für jeden Messetag ein Grundticket an, drei Kombinationstickets für je zwei Tage und ein Kombinationsticket für alle drei Tage:
@@ -250,7 +250,7 @@ Mindestens eine der folgenden Bedingungen (ODER)
 
 Eine andere Möglichkeit besteht darin, Grundprodukte und Kontingente zu erstellen und anschließend für alle möglichen Kombinationen Produkte mit obligatorischen Zusatzprodukten anzulegen.
 Eine Ausnahme bildet die Produktkombination mit **allen** Grundprodukten.
-Die komplette Produktkombination können Sie entweder einrichten wie oben im Abschnitt [Option A: Produktkombinationen](discounts.md#option-a-combination-products) beschrieben oder als Produktpaket.
+Die komplette Produktkombination können Sie entweder einrichten wie oben im Abschnitt [Option A: Produktkombinationen](#optiona-produktkombinationen) beschrieben oder als Produktpaket.
 Die Einrichtung als Produktpaket wird auch in diesem Abschnitt erläutert.
 
 Diese Option hat den Vorteil, dass die Anzahl der benötigten Produkte nicht exponentiell zur Anzahl der Grundprodukte wächst.
@@ -308,5 +308,5 @@ Mindestens eine der folgenden Bedingungen (ODER)
     - Aktueller Tag der Woche = 3 (Mittwoch)
 
 !!! Hinweis
-    Sie können das "Ticket für alle drei Tage" auch wie im Abschnitt [Option A: Produktkombinationen](discounts.md#option-a-combination-products) beschrieben einrichten.
+    Sie können das "Ticket für alle drei Tage" auch wie im Abschnitt [Option A: Produktkombinationen](#optiona-produktkombinationen) beschrieben einrichten.
     Führen Sie dieses Ticket in dem Fall bei jeder Bedingung auf, die mit "Produkt ist eines von" beginnt.

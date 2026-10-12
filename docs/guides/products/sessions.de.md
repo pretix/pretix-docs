@@ -7,9 +7,9 @@ pretix bietet Ihnen dazu zwei Optionen.
 Sie können entweder Zusatzprodukte mit festen Zeitfenstern verwenden oder eine Erweiterung mit speziellen Funktionen für variable Zeitfenster.
 Dieser Artikel erläutert beide Optionen.
 
-Wenn für einige der Sitzungen abweichende Preise gelten oder an jeder Sitzung nur eine begrenzte Anzahl Personen teilnehmen kann, sollten Sie mit [Zusatzprodukten](sessions.md#option-a-add-on-products-with-fixed-time-slots) arbeiten.
+Wenn für einige der Sitzungen abweichende Preise gelten oder an jeder Sitzung nur eine begrenzte Anzahl Personen teilnehmen kann, sollten Sie mit [Zusatzprodukten](#optiona-zusatzprodukte-mit-festen-zeitfenstern) arbeiten.
 
-Wenn Sie abweichende Preise haben sowie Sitzungen mit unterschiedlichen Anfangs- und Endzeiten, die einander überlappen und sich deshalb nicht ohne Weiteres in Zeitfenster einteilen lassen, sollten Sie mit [Agenda-Beschränkungen](sessions.md#option-b-add-on-products-with-variable-time-slots) arbeiten.
+Wenn Sie abweichende Preise haben sowie Sitzungen mit unterschiedlichen Anfangs- und Endzeiten, die einander überlappen und sich deshalb nicht ohne Weiteres in Zeitfenster einteilen lassen, sollten Sie mit [Agenda-Beschränkungen](#optionb-zusatzprodukte-mit-variablen-zeitfenstern) arbeiten.
 
 Wenn das, was Sie planen, keine Sitzungen als Teil einer größeren Hauptveranstaltung sind, sondern eine Reihe von Veranstaltungen, die man einzeln besuchen kann, lesen Sie stattdessen unseren Artikel über [Veranstaltungsreihen](../event-series.md).
 
@@ -73,7 +73,7 @@ Im folgenden Beispiel lassen sich die Agenda-Beschränkungen einsetzen:
 | 16:00–18:00 | Workshop 2 (zweite Hälfte)| Diskussion 4             |
 
 In diesem Beispiel sind die Workshops 1 und 2 doppelt so lang wie die Diskussionen.
-Daher ist es nicht sinnvoll, dieses Programm mit Zusatzprodukten umzusetzen, wie für [Option A](sessions.md#option-a-add-on-products-with-fixed-time-slots) beschrieben.
+Daher ist es nicht sinnvoll, dieses Programm mit Zusatzprodukten umzusetzen, wie für [Option A](#optiona-zusatzprodukte-mit-festen-zeitfenstern) beschrieben.
 Das könnte nämlich folgende unerwünschte Konsequenzen haben:
 Entweder müssten Kund\*innen beide Hälften der Workshops einzeln buchen oder es wäre für sie möglich, Kombinationen von überlappenden Sitzungen buchen, an denen sie nicht teilnehmen können.
 Solche komplexeren Zeitpläne können Sie mit der Funktion Agenda-Beschränkungen umsetzen.

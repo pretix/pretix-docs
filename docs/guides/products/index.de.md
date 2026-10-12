@@ -263,10 +263,10 @@ So ein Name könnte beispielsweise lauten "Saisonkarten".
 Geben Sie bei "Veranstaltungsbeginn" und "Veranstaltungsende" das Start- und Enddatum der Saison an.
 
 Sie können mehr als einen Typ Dauerkarten anbieten.
-Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.md#different-price-levels) anbieten.
+Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.de.md#unterschiedliche-preisniveaus) anbieten.
 
 Um es für Kund\*innen attraktiver zu machen, auch später in der Saison noch eine Dauerkarte zu kaufen, können Sie den Preis senken.
-Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.md#early-bird-tickets-based-on-time-for-singular-events), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
+Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.de.md#zeitabhängige-frühbuchertickets-für-einzelveranstaltungen), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
 Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen manuell.
 
 Bei dieser Vorgehensweise müssen Sie darauf vorbereitet sein, Teilnehmer\*innen bei zwei Veranstaltungen gleichzeitig einzuchecken.
