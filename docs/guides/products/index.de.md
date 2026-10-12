@@ -72,7 +72,7 @@ Wenn Sie Kontingente erstellen oder bearbeiten möchten, navigieren Sie zu :navp
 Die Seite zeigt eine Liste aller Kontingente für die Veranstaltung sowie für jedes Kontingent Gesamtanzahl und verbleibende Kapazität.
 
 Klicken Sie den Button :btn:Kontingent erstellen:.
-Wählen Sie einen Namen und eine Kapazität, markieren Sie die Produkte, die in diesem Kontingent enthalten sein sollen, sowie bei Bedarf erweiterte Optionen und klicken Sie dann den Button :btn:Speichern:.
+Wählen Sie einen Namen und eine Kapazität (Gesamtzahl), markieren Sie die Produkte, die in diesem Kontingent enthalten sein sollen, sowie bei Bedarf erweiterte Optionen und klicken Sie dann den Button :btn:Speichern:.
 
 Sie können auch ein vorhandenes Kontingent bearbeiten, indem Sie seinen Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Listeneintrag klicken.
 
@@ -141,7 +141,7 @@ In Ihrem Shop wird jetzt ein Wochenüberblick aller Zeitfenster und ihrer jeweil
 
 #### Check-in
 
-Wenn Sie Tickets für bestimmte Zeitfenster verkaufen, soll auch sichergestellt sein, dass Kund\*innen nur eingelassen werden, wenn ihr Ticket für das betreffende Zeitfenster gilt.
+Wenn Sie Tickets für bestimmte Zeitfenster verkaufen, dann sollten Sie auch dafür sorgen, dass Kund/*innen nur eingelassen werden, wenn ihr Ticket für das betreffende Zeitfenster gilt.
 Dieser Abschnitt erläutert, wie Sie hierfür eigene Check-in-Regeln einrichten.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in → Check-in-Listen: und klicken Sie den Button :btn-icon:fa3-plus: Neue Check-in-Liste erstellen:.
 
@@ -233,7 +233,7 @@ Klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren: und
 Markieren Sie das Kontrollkästchen bei "Erfordere eine aktive Mitgliedschaft" und wählen Sie den Mitgliedschafts-Typ, den Sie erstellt haben.
 Wenn Sie dieses Produkt nur Kund\*innen anzeigen möchten, die bereits eine aktive Mitgliedschaft in Ihrem Shop besitzen, markieren Sie das Kontrollkästchen neben "Ohne gültige Mitgliedschaft verstecken".
 
-Wiederholen Sie diese Schritte für jedes Produkt, das Inhaber\*innen von Dauerkarten kostenlos verfügbar sein soll.
+Wiederholen Sie diese Schritte für jedes Produkt, das für Inhaber\*innen von Dauerkarten kostenlos verfügbar sein soll.
 Wenn Inhaber\*innen von Dauerkarten die Möglichkeit haben sollen, mehrere Ihrer Veranstaltung kostenlos zu besuchen, wiederholen Sie diese Schritte für jede in Frage kommende Veranstaltung.
 
 ![Seite mit der gewählten Option 'Erfordere eine aktive Mitgliedschaft' und der Option 'Erlaubte Mitgliedschafts-Typen', unter der 'Saisonkarte2027-1' markiert ist. Das Kontrollkästchen neben 'Ohne gültige Mitgliedschaft verstecken' ist markiert.](../../assets/screens/products/require.png "Erfordere eine aktive Mitgliedschaft")
