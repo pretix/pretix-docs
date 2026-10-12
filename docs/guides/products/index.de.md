@@ -88,7 +88,7 @@ Dieser Guide erläutert Ihnen, wie Sie eine Veranstaltung mit Zeitfenstern erste
 Erstellen Sie eine neue Veranstaltung.
 Wählen Sie bei "Veranstaltungsart" die Option "Veranstaltungsreihe oder Zeitslotbuchung".
 
-![Seite mit dem Titel 'Neue Veranstaltung erstellen (Schritt 1)'. Bei 'Veranstaltungsart' ist die Option 'Veranstaltungsreihe oder Zeitslotbuchung' gewählt.'  ](../../assets/screens/event/create-series.de.png "Neue Veranstaltung erstellen")
+![Seite mit dem Titel 'Neue Veranstaltung erstellen (Schritt 1)'. Bei 'Veranstaltungsart' ist die Option 'Veranstaltungsreihe oder Zeitslotbuchung' gewählt.'  ](../../assets/screens/event-series/create-event-series1.de.png "Neue Veranstaltung erstellen")
 
 Grundlegende Informationen, wie Sie in pretix eine Veranstaltungsreihe erstellen, erhalten Sie in unserem Guide zu [Veranstaltungsreihen](../event-series.md).
 
