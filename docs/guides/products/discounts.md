@@ -302,7 +302,7 @@ At least one of the conditions below (OR)
     - Product is one of "Day 2 ticket" or "Ticket for all three days"
     - Current day of the week = 2 (Tuesday)
  - All of the conditions below (AND)
-    - Product is one of "Day 3 ticket"
+    - Product is one of "Day 3 ticket" or "Ticket for all three days"
     - Current day of the week = 3 (Wednesday)
 
 !!! Note
