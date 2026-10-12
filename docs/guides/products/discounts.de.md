@@ -244,7 +244,7 @@ Mindestens eine der folgenden Bedingungen (ODER)
     - Produkt ist eines von `Ticket Tag 3`, `Ticket Tag 1 + Tag 3`, `Ticket Tag 2 + Tag 3` oder `Ticket für alle drei Tage`
     - Aktueller Tag der Woche = 3 (Mittwoch)
 
-![Eigene Check-in-Regel mit drei Blöcken von UND-Bedingungen. Der erste verlangt, dass das Produkt eines der Produkte für Tag 1 ist UND dass der aktuelle Wochentag Montag ist. Der zweite und der dritte Block verlangen dasselbe für Tag 2 und Dienstag beziehungsweise für Tag 3 und Mittwoch. Die drei Blöcke von UND-Bedingungen sind Teil einer ODER-Bedingung.](../../assets/screens/products/check-in-rules-combination-products.png "Eigene Check-in-Regel")
+![Eigene Check-in-Regel mit drei Blöcken von UND-Bedingungen. Der erste verlangt, dass das Produkt eines der Produkte für Tag 1 ist UND dass der aktuelle Wochentag Montag ist. Der zweite und der dritte Block verlangen dasselbe für Tag 2 und Dienstag beziehungsweise für Tag 3 und Mittwoch. Die drei Blöcke von UND-Bedingungen sind Teil einer ODER-Bedingung.](../../assets/screens/products/check-in-rules-combination-products.de.png "Eigene Check-in-Regel")
 
 #### Option B: Zusatzprodukte und Produktpakete
 

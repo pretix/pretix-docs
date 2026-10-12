@@ -18,7 +18,7 @@ Diese Anleitung erläutert die notwendigen Schritte daher in genau dieser Reihen
 
 ### Kategorien erstellen und bearbeiten
 
-![Eine Seite mit dem Titel 'Produktkategorien' zeigt eine Liste mit Kategorien, die nur den Eintrag 'Tickets' enthält, sowie einen Button zum Erstellen einer neuen Kategorie.](../../assets/screens/products/categories.png "Screenshot 'Produktkategorien'")
+![Eine Seite mit dem Titel 'Produktkategorien' zeigt eine Liste mit Kategorien, die nur den Eintrag 'Tickets' enthält, sowie einen Button zum Erstellen einer neuen Kategorie.](../../assets/screens/products/categories.de.png "Screenshot 'Produktkategorien'")
 
 Kategorien erfüllen mehrere Zwecke.
 Sie helfen Ihnen, Produkte sinnvoll zu gruppieren, sowohl im Backend als auch in Ihrem Shop.
@@ -54,7 +54,7 @@ Dazu klicken Sie auf ihren Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:
 
 ### Produkte erstellen und bearbeiten
 
-![Eine Seite mit dem Titel 'Produkte' zeigt eine Produktliste mit zwei Einträgen sowie einer Schaltfläche zum Erstellen eines neuen Produkts.](../../assets/screens/products/products.png "Screenshot 'Produkte'")
+![Eine Seite mit dem Titel 'Produkte' zeigt eine Produktliste mit zwei Einträgen sowie einer Schaltfläche zum Erstellen eines neuen Produkts.](../../assets/screens/products/products.de.png "Screenshot 'Produkte'")
 
 Wenn Sie Produkte erstellen oder bearbeiten möchten, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte:.
 Die angezeigte Seite zeigt eine Liste aller Produkte zu dieser Veranstaltung.
@@ -88,7 +88,7 @@ Dieser Guide erläutert Ihnen, wie Sie eine Veranstaltung mit Zeitfenstern erste
 Erstellen Sie eine neue Veranstaltung.
 Wählen Sie bei "Veranstaltungsart" die Option "Veranstaltungsreihe oder Zeitslotbuchung".
 
-![Seite mit dem Titel 'Neue Veranstaltung erstellen (Schritt 1)'. Bei 'Veranstaltungsart' ist die Option 'Veranstaltungsreihe oder Zeitslotbuchung' gewählt.'  ](../../assets/screens/event/create-series.png "Neue Veranstaltung erstellen")
+![Seite mit dem Titel 'Neue Veranstaltung erstellen (Schritt 1)'. Bei 'Veranstaltungsart' ist die Option 'Veranstaltungsreihe oder Zeitslotbuchung' gewählt.'  ](../../assets/screens/event/create-series.de.png "Neue Veranstaltung erstellen")
 
 Grundlegende Informationen, wie Sie in pretix eine Veranstaltungsreihe erstellen, erhalten Sie in unserem Guide zu [Veranstaltungsreihen](../event-series.md).
 
@@ -106,7 +106,7 @@ Es ist sinnvoll, Zeitfenster für mehrere Wochen zu erstellen.
 Erstellen Sie keine Zeitfenster für ein ganzes Jahr oder einen noch längeren Zeitraum:
 Das macht es unnötig kompliziert, falls Sie später Änderungen daran vornehmen müssen.
 
-![Seite mit dem Titel 'Mehrere Termine erstellen', auf der die oben beschriebenen Optionen gewählt sind. Am rechten Rand wird eine Vorschau mit allen Terminen, die angelegt werden sollen, angezeigt.](../../assets/screens/event-series/create-multiple-example2.png "Mehrere Termine erstellen")
+![Seite mit dem Titel 'Mehrere Termine erstellen', auf der die oben beschriebenen Optionen gewählt sind. Am rechten Rand wird eine Vorschau mit allen Terminen, die angelegt werden sollen, angezeigt.](../../assets/screens/event-series/create-multiple-example2.de.png "Mehrere Termine erstellen")
 
 Geben Sie unter "Uhrzeiten" die Zeitfenster für jeden Veranstaltungstag ein.
 Wenn Ihr Veranstaltungsort jeden Tag von 10 bis 18 Uhr geöffnet ist und jedes Zeitfenster eine volle Stunde beträgt, können Sie den Button :btn-icon:fa3-calendar: Viele Zeitfenster hinzufügen: klicken.
@@ -116,7 +116,7 @@ Falls Ihr Zeitfenster-Muster unregelmäßig oder komplexer ist, verwenden Sie de
 
 Wenn Sie an verschiedenen Wochentagen unterschiedliche Öffnungszeiten haben, müssen Sie diesen Vorgang jede Variante der Öffnungszeiten einzeln erstellen.
 
-![Seite mit dem Titel 'Uhrzeiten' und acht Zeitfenstern von 10 bis 18 Uhr; jedes Zeitfenster dauert eine Stunde und es sind keine Einlasszeiten angegeben.](../../assets/screens/event-series/create-times.png "Mehrere Terminen erstellen – Termine")
+![Seite mit dem Titel 'Uhrzeiten' und acht Zeitfenstern von 10 bis 18 Uhr; jedes Zeitfenster dauert eine Stunde und es sind keine Einlasszeiten angegeben.](../../assets/screens/event-series/create-times.de.png "Mehrere Terminen erstellen – Termine")
 
 Erstellen Sie bei "Kontingente" ein oder mehrere Kontingente.
 Diese Kontingente bestimmen, wie viele Personen ein Ticket für ein Zeitfenster buchen können.
@@ -135,7 +135,7 @@ Für eine Veranstaltungsreihe oder das Buchen von Zeitfenstern ist es sinnvoll, 
 Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:.
 Rufen Sie den Reiter :btn:Anzeige: auf und wählen Sie bei "Standard-Anzeige" die Option "Wochenkalender".
 
-![Seite mit der Überschrift 'Kalender- und Listenansichten'. Unter 'Standard-Anzeige' ist die Option 'Wochenkalender' ausgewählt.](../../assets/screens/event-series/calendar-views.png "Anzeige – Kalender- und Listenansichten")
+![Seite mit der Überschrift 'Kalender- und Listenansichten'. Unter 'Standard-Anzeige' ist die Option 'Wochenkalender' ausgewählt.](../../assets/screens/event-series/calendar-views.de.png "Anzeige – Kalender- und Listenansichten")
 
 In Ihrem Shop wird jetzt ein Wochenüberblick aller Zeitfenster und ihrer jeweiligen Verfügbarkeit angezeigt.
 
@@ -155,7 +155,7 @@ Das Feld "Toleranz (Minuten)" können Sie leer lassen.
 Wenn Sie den Teilnehmer\*innen die Möglichkeit geben möchten, beispielsweise 10 Minuten vor Veranstaltungsbeginn eingelassen zu werden, geben Sie bei "Toleranz (Minuten)" `10` an.
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist vor" und dann "Veranstaltungsende".
 
-![Seite für eigene Check-in-Regel, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/time-slot-check-in-rule.png "Eigene Check-In-Regeln")
+![Seite für eigene Check-in-Regel, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/time-slot-check-in-rule.de.png "Eigene Check-In-Regeln")
 
 Mit diesen beiden Einschränkungen können Kund\*innen Ihre Veranstaltung nur in dem Zeitfenster besuchen, für das sie ein Ticket gekauft haben.
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
@@ -197,7 +197,7 @@ Option A erfordert, dass Kund\*innen über ein Kund\*innenkonto identifiziert w
 Sie müssen daher zuerst in den Veranstalter-Einstellungen auf dem Reiter "Kundenkonten" die Funktion für Kund\*innenkonten aktivieren.
 Siehe auch: [Kund\*innenkonten](../customer-accounts.md)
 
-![Seite mit Veranstalter-Einstellungen, Reiter 'Kundenkonten'. Die Kontrollkästchen 'Erlaube Kunden, Kundenkonten zu registrieren', 'Erlaube den Login mit E-Mail-Adresse und Passwort' und 'Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen' sind gewählt.](../../assets/screens/organizer/customer-accounts.png "Veranstalter-Einstellungen – Kundenkonten")
+![Seite mit Veranstalter-Einstellungen, Reiter 'Kundenkonten'. Die Kontrollkästchen 'Erlaube Kunden, Kundenkonten zu registrieren', 'Erlaube den Login mit E-Mail-Adresse und Passwort' und 'Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen' sind gewählt.](../../assets/screens/organizer/customer-accounts.de.png "Veranstalter-Einstellungen – Kundenkonten")
 
 Navigieren Sie anschließend zu :navpath:Ihr Veranstalter → :fa3-user: Kundenkonten → Mitgliedschafts-Typen:.
 Klicken Sie den Button :btn-icon:fa3-plus: Neuen Mitgliedschafts-Typ erstellen:.
@@ -210,7 +210,7 @@ Um einzustellen, dass im Rahmen der Mitgliedschaft nur eine begrenzte Anzahl Kä
 Wenn im festgelegten Zeitraum eine unbegrenzte Zahl Käufe möglich ist, lassen Sie das Feld leer.
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
 
-![Seite mit dem Titel 'Neuen Mitgliedschafts-Typ erstellen'. Der angegebene Name ist 'Saisonkarte 2027-1'. Die Felder neben 'Mitgliedschaft ist übertragbar' und 'Parallele Nutzung ist möglich' sind angekreuzt. Das Feld 'Maximale Nutzungen' ist leer.](../../assets/screens/products/membership-type.png "Neuen Mitgliedschafts-Typ erstellen")
+![Seite mit dem Titel 'Neuen Mitgliedschafts-Typ erstellen'. Der angegebene Name ist 'Saisonkarte 2027-1'. Die Felder neben 'Mitgliedschaft ist übertragbar' und 'Parallele Nutzung ist möglich' sind angekreuzt. Das Feld 'Maximale Nutzungen' ist leer.](../../assets/screens/products/membership-type.de.png "Neuen Mitgliedschafts-Typ erstellen")
 
 Wenn Sie den Mitgliedschafts-Typ erstellt haben, brauchen Sie eine Möglichkeit, diese Mitgliedschaften zu verkaufen.
 Erstellen Sie eine neue Veranstaltung, deren Beginn und Ende denen des Zeitraums der Saison entsprechen, für die Sie Dauerkarten verkaufen möchten.
@@ -222,7 +222,7 @@ Wählen Sie unter "Dieses Produkt erstellt eine Mitgliedschaft vom Typ" die Mitg
 Standardmäßig ist das Kontrollkästchen neben "Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins" angekreuzt.
 Falls Sie mehrere Zeitkarten für unterschiedliche Zeiträume verkaufen, die nicht mit der Veranstaltungsdauer übereinstimmen, entfernen Sie die Markierung aus diesem Kontrollkästchen.
 
-![Seite mit dem Titel 'Produkt bearbeiten': Saisonkarte auf dem Reiter 'Zusätzliche Einstellungen'. Unter 'Dieses Produkt erstellt eine Mitgliedschaft vom Typ' ist die Mitgliedschaft 'Saisonkarte 2027-01' gewählt. Das Kontrollkästchen neben 'Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins' ist markiert.](../../assets/screens/products/product-creates-membership.png "Produkt bearbeiten: Saisonkarte")
+![Seite mit dem Titel 'Produkt bearbeiten': Saisonkarte auf dem Reiter 'Zusätzliche Einstellungen'. Unter 'Dieses Produkt erstellt eine Mitgliedschaft vom Typ' ist die Mitgliedschaft 'Saisonkarte 2027-01' gewählt. Das Kontrollkästchen neben 'Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins' ist markiert.](../../assets/screens/products/product-creates-membership.de.png "Produkt bearbeiten: Saisonkarte")
 
 Damit Kund\*innen die Dauerkarte nicht mit dem Ticket verwechseln, empfiehlt es sich, die Möglichkeit zum Herunterladen des Tickets zu deaktivieren.
 Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben "Ticket-Download anschalten".
@@ -236,7 +236,7 @@ Wenn Sie dieses Produkt nur Kund\*innen anzeigen möchten, die bereits eine akti
 Wiederholen Sie diese Schritte für jedes Produkt, das für Inhaber\*innen von Dauerkarten kostenlos verfügbar sein soll.
 Wenn Inhaber\*innen von Dauerkarten die Möglichkeit haben sollen, mehrere Ihrer Veranstaltung kostenlos zu besuchen, wiederholen Sie diese Schritte für jede in Frage kommende Veranstaltung.
 
-![Seite mit der gewählten Option 'Erfordere eine aktive Mitgliedschaft' und der Option 'Erlaubte Mitgliedschafts-Typen', unter der 'Saisonkarte2027-1' markiert ist. Das Kontrollkästchen neben 'Ohne gültige Mitgliedschaft verstecken' ist markiert.](../../assets/screens/products/require.png "Erfordere eine aktive Mitgliedschaft")
+![Seite mit der gewählten Option 'Erfordere eine aktive Mitgliedschaft' und der Option 'Erlaubte Mitgliedschafts-Typen', unter der 'Saisonkarte2027-1' markiert ist. Das Kontrollkästchen neben 'Ohne gültige Mitgliedschaft verstecken' ist markiert.](../../assets/screens/products/require.de.png "Erfordere eine aktive Mitgliedschaft")
 
 #### Option B: Separater Shop für Dauerkarten
 
@@ -331,7 +331,7 @@ Sie haben nun mehrere Optionen:
  - Wählen Sie `Minuten seit vorherigem Eintritt`, `≤` und `15`.
  Das bewirkt, dass die Dauerkarte höchstens einmal alle fünfzehn Minuten genutzt werden kann.
 
-![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets_rules1.png "Regel-Set 1 für Dauerkarten")
+![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets_rules1.de.png "Regel-Set 1 für Dauerkarten")
 
 Der Screenshot oben stellt diese Logik dar.
 Diese Regeln sorgen dafür, dass Inhaber\*innen von Standardtickets am gewählten Termin nur eingelassen werden, wenn ihr Ticket bisher noch nicht genutzt wurde.
