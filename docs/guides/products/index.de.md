@@ -2,7 +2,7 @@
 
 Ein Produkt ist alles, was Sie über pretix verkaufen: Tickets, Wertgutscheine, Konferenz-T-Shirts und so weiter.
 pretix bietet Ihnen nahezu unbegrenzte Möglichkeiten, Produkte zu konfigurieren und zu strukturieren.
-Dieser Artikel erläutert die grundlegende Vorgehensweise zum Erstellen eines Produkts und stellt einige praktische Anwendungsfälle für einige der weitergehenden pretix-Funktionen vor.
+Dieser Artikel erläutert die grundlegende Vorgehensweise zum Erstellen eines Produkts und stellt einige praktische Anwendungsfälle für einige der fortgeschrittenen Funktionen vor.
 
 ## Voraussetzungen
 
@@ -20,12 +20,12 @@ Diese Anleitung erläutert die notwendigen Schritte daher in genau dieser Reihen
 
 ![Eine Seite mit dem Titel 'Produktkategorien' zeigt eine Liste mit Kategorien, die nur den Eintrag 'Tickets' enthält, sowie einen Button zum Erstellen einer neuen Kategorie.](../../assets/screens/products/categories.png "Screenshot 'Produktkategorien'")
 
-Kategorien haben verschiedene Zwecke.
+Kategorien erfüllen mehrere Zwecke.
 Sie helfen Ihnen, Produkte sinnvoll zu gruppieren, sowohl im Backend als auch in Ihrem Shop.
 Ihre Shop-Seite zeigt Produkte nach Kategorien geordnet an, damit Kund\*innen den gesuchten Artikel einfacher finden.
 Produkte nach Kategorien zu ordnen, kann Ihnen helfen, im Backend den Überblick zu behalten.
 
-Kategorien sorgen auch für die Trennung zwischen normalen Produkten, die direkt zu kaufen sind, und ergänzenden Produkten, die nur als Zusatzprodukte zu normalen Produkten angeboten werden.
+Kategorien sorgen auch für die Trennung zwischen normalen Produkten, die direkt angeboten werden, und Zusatzprodukten, die nur zusammen mit normalen Produkten käuflich sind.
 Wenn Sie nicht nur Zutrittstickets verkaufen möchten, sondern auch Extras wie Merchandise, müssen Sie eine Kategorie für Zusatzprodukte erstellen.
 Auch wenn Sie die Cross-Selling-Funktion nutzen möchten, benötigen Sie eine weitere Kategorie.
 
@@ -35,15 +35,15 @@ Um Kategorien zu bearbeiten oder zu erstellen, navigieren Sie zu :navpath:Ihre V
 Die angezeigte Seite listet alle zuvor erstellten Produktkategorien auf.
 
 Klicken Sie den Button :btn-icon:fa3-plus: Kategorie erstellen: und geben Sie einen Namen für die neue Kategorie ein.
-Wählen Sie den zum Produkttyp in dieser Kategorie passenden Kategorietyp: normal, Zusatzprodukt, Cross-Selling oder normal + Cross-Selling.
+Wählen Sie den zum Produkttyp in dieser Kategorie passenden Kategorietyp: normal, Zusatzprodukt, Cross-Selling oder normal und Cross-Selling.
 
 Normale Produkte sind Einzelprodukte, die direkt gekauft werden können.
-Zusatzprodukte sind Produkte, die **nicht** direkt gekauft, sondern beim Kauf nur anderen Produkten hinzugefügt werden können.
+Zusatzprodukte sind Produkte, die **nicht** direkt gekauft, sondern nur als Zusatz zu anderen Produkten, die sich bereits im Warenkorb befinden.
 Art und Anzahl der Produkte im Warenkorb bestimmen, welche Zusatzprodukte der\*die Kund\*in wählen kann.
 
 Cross-Selling-Produkte werden nicht im Shop, sondern erst an der Kasse angeboten.
 Anders als bei Zusatzprodukten hängt es nicht vom Inhalt des Warenkorbs ab, welche Cross-Selling-Produkte der\*die Kund\*in kaufen kann.
-Und Produkte des Typs "normal + Cross-Selling" werden sowohl als Einzelprodukte als auch im Cross-Selling-Schritt angeboten.
+Produkte des Typs "normal + Cross-Selling" werden sowohl als Einzelprodukte als auch im Cross-Selling-Schritt angeboten.
 Die unten aufgeführte Einstellung "Cross-Selling-Bedingung" legt fest, wie Produkte der Kategorien "Cross-Selling" und "normal + Cross-Selling" in Ihrem Shop angeboten werden.
 
 Klicken Sie unten auf der Seite den Button :btn:Speichern:.
@@ -69,7 +69,7 @@ Ein Kontingent legt fest, wie viele Einheiten Ihres Produkts verkauft werden kö
 Jedes Produkt muss Teil mindestens eines Kontingents sein, damit es im Shop verfügbar ist.
 
 Wenn Sie Kontingente erstellen oder bearbeiten möchten, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
-Die Seite zeigt eine Liste aller Kontingente für die Veranstaltung sowie die Gesamtanzahl der Einheiten und die für jedes Kontingent verbleibende Kapazität.
+Die Seite zeigt eine Liste aller Kontingente für die Veranstaltung sowie für jedes Kontingent Gesamtanzahl und verbleibende Kapazität.
 
 Klicken Sie den Button :btn:Kontingent erstellen:.
 Wählen Sie einen Namen und eine Kapazität, markieren Sie die Produkte, die in diesem Kontingent enthalten sein sollen, sowie bei Bedarf erweiterte Optionen und klicken Sie dann den Button :btn:Speichern:.
@@ -82,7 +82,7 @@ Dieser Abschnitt behandelt sechs aufwändigere Anwendungsfälle und erläutert, 
 
 ### Zeitfenster
 
-In pretix können Sie den Zutritt zu einem Veranstaltungsort mit einer begrenzten Besucherkapazität, ein Museum etwa, über Zeitfenster definieren.
+In pretix können Sie den Zutritt zu einem Veranstaltungsort mit einer begrenzten Besucherkapazität, z.B. einem Museum, über Zeitfenster definieren.
 Dieser Guide erläutert Ihnen, wie Sie eine Veranstaltung mit Zeitfenstern erstellen.
 
 Erstellen Sie eine neue Veranstaltung.
@@ -90,7 +90,7 @@ Wählen Sie bei "Veranstaltungsart" die Option "Veranstaltungsreihe oder Zeitslo
 
 ![Seite mit dem Titel 'Neue Veranstaltung erstellen (Schritt 1)'. Bei 'Veranstaltungsart' ist die Option 'Veranstaltungsreihe oder Zeitslotbuchung' gewählt.'  ](../../assets/screens/event/create-series.png "Neue Veranstaltung erstellen")
 
-Wie Sie grundsätzlich in pretix eine Veranstaltungsreihe erstellen, erfahren Sie in unserem Guide zu [Veranstaltungsreihen](../event-series.md).
+Grundlegende Informationen, wie Sie in pretix eine Veranstaltungsreihe erstellen, erhalten Sie in unserem Guide zu [Veranstaltungsreihen](../event-series.md).
 
 #### Zeitfenster erstellen
 
@@ -99,10 +99,10 @@ Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine: und kl
 Geben Sie ein Muster für die Veranstaltungstage ein.
 Wenn Ihr Veranstaltungsort im Januar 2027 beispielsweise jede Woche von Dienstag bis Samstag geöffnet ist, geben Sie folgendes Muster ein:
 "Wiederhole alle `1` `Woche(n)` mit Beginn am `01.01.2027`"
-Markieren Sie die Felder für Dienstag, Mittwoch, Donnerstag, Freitag und Samstag.
-Markieren Sie die Option "Wiederhole bis zum" und geben Sie in das Feld `31.01.2027` ein.
+Aktivieren Sie die Kontrollkästchen für Dienstag, Mittwoch, Donnerstag, Freitag und Samstag.
+Wählen Sie die Option "Wiederhole bis zum" und geben Sie in das Feld `31.01.2027` ein.
 
-Es ist sinnvoll, für mehrere Wochen Zeitfenster zu erstellen.
+Es ist sinnvoll, Zeitfenster für mehrere Wochen zu erstellen.
 Erstellen Sie keine Zeitfenster für ein ganzes Jahr oder einen noch längeren Zeitraum:
 Das macht es unnötig kompliziert, falls Sie später Änderungen daran vornehmen müssen.
 
@@ -114,17 +114,17 @@ Geben Sie für "Beginn des ersten Zeitfensters" "10:00:00" ein, für "Ende der Z
 Klicken Sie dann den Button :btn-icon:fa3-check: Erstellen:.
 Falls Ihr Zeitfenster-Muster unregelmäßig oder komplexer ist, verwenden Sie den Button :btn-icon:fa3-plus: Einzelnes Zeitfenster hinzufügen: und bearbeiten Sie jede Zeile einzeln.
 
-Wenn Sie an verschiedenen Wochentagen unterschiedliche Öffnungszeiten haben, müssen Sie diesen Vorgang jede Variante der Öffnungszeiten einzeln erstellen wie beschrieben.
+Wenn Sie an verschiedenen Wochentagen unterschiedliche Öffnungszeiten haben, müssen Sie diesen Vorgang jede Variante der Öffnungszeiten einzeln erstellen.
 
 ![Seite mit dem Titel 'Uhrzeiten' und acht Zeitfenstern von 10 bis 18 Uhr; jedes Zeitfenster dauert eine Stunde und es sind keine Einlasszeiten angegeben.](../../assets/screens/event-series/create-times.png "Mehrere Terminen erstellen – Termine")
 
 Erstellen Sie bei "Kontingente" ein oder mehrere Kontingente.
 Diese Kontingente bestimmen, wie viele Personen ein Ticket für ein Zeitfenster buchen können.
 Wenn Sie möchten, dass pro Zeitfenster nur jeweils 50 Personen Einlass erhalten, setzen Sie die "Gesamtanzahl" auf `50`.
-Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
+Sobald Sie mit Ihrer Auswahl zufrieden sind, klicken Sie den Button :btn:Speichern:.
 
 !!! Hinweis
-    Wenn Sie in einer Aktion eine größere Anzahl Zeitfenster erstellen, kann es eine kurze Zeit dauern, bis alle angezeigt werden.
+    Wenn Sie viele Zeitfenster auf einmal erstellen, kann es eine kurze Zeit dauern, bis alle angezeigt werden.
     Wenn Sie in dieser Phase eine Fehlermeldung erhalten, warten Sie einige Minuten, bis der Server die Aufgabe abgeschlossen hat.
     Versuchen Sie es **nicht** sofort noch einmal.
     In den meisten Fällen werden die Termine korrekt angelegt, auch wenn eine Fehlermeldung angezeigt wird.
@@ -160,14 +160,14 @@ Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut 
 Mit diesen beiden Einschränkungen können Kund\*innen Ihre Veranstaltung nur in dem Zeitfenster besuchen, für das sie ein Ticket gekauft haben.
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
 
-Wenn Sie pretixSCAN mit dieser Konfiguration verwenden, fordert die App Sie auf, eines der Zeitfenster zu wählen.
-Es kommt nicht darauf an, welches Sie wählen.
+Wenn Sie pretixSCAN mit dieser Konfiguration verwenden, fordert die App Sie auf, einen der Termine zu wählen.
+Es macht keinen Unterschied, welchen Sie wählen.
 Wichtig ist nur, dass Sie die Check-in-Liste wählen, die Sie eben konfiguriert haben.
-Wählen Sie jedes Zeitfenster, das Teil der Veranstaltungsreihe ist, und anschließend die oben beschriebene Check-in-Liste.
+Wählen Sie einen beliebigen Termin, der Teil der Veranstaltungsreihe ist, und anschließend die oben beschriebene Check-in-Liste.
 
 ### Dauerkarten
 
-Dauerkarten sind oft für öffentliche Schwimmbäder, Sportvereine, Theater und andere Veranstaltungsorte erhältlich.
+Dauerkarten weden oft von öffentlichen Schwimmbädern, Sportvereinen, Theatern und anderen Veranstaltern angeboten.
 Dieser Abschnitt erläutert drei Verfahren, in pretix Dauerkarten einzurichten.
 Diese Verfahren eignen sich für alle Tickets, die während eines bestimmten Zeitraums Zutritt zu allen Veranstaltungen ermöglichen.
 Dabei ist es unerheblich, ob sich dieser Zeitraum über mehrere Jahre oder nur über einen einzigen Tag erstreckt.
@@ -203,8 +203,8 @@ Navigieren Sie anschließend zu :navpath:Ihr Veranstalter → :fa3-user: Kundenk
 Klicken Sie den Button :btn-icon:fa3-plus: Neuen Mitgliedschafts-Typ erstellen:.
 
 Geben Sie dem neuen Mitgliedschafts-Typ einen eindeutigen und aussagekräftigen Namen.
-Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Personen zu kaufen, markieren Sie die Option "Mitgliedschaft ist übertragbar".
-Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Veranstaltungen oder Termine mit demselben Startzeitpunkt zu kaufen, markieren Sie die Option "Parallele Nutzung ist möglich".
+Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Personen zu kaufen, aktivieren Sie das Kontrollkästchen "Mitgliedschaft ist übertragbar".
+Wenn es möglich sein soll, im Rahmen der Mitgliedschaft Tickets für unterschiedliche Veranstaltungen oder Termine mit demselben Startzeitpunkt zu kaufen, aktivieren Sie das Kontrollkästchen "Parallele Nutzung ist möglich".
 
 Um einzustellen, dass im Rahmen der Mitgliedschaft nur eine begrenzte Anzahl Käufe getätigt werden kann, geben Sie diese Anzahl in das Feld "Maximale Nutzungen" ein.
 Wenn im festgelegten Zeitraum eine unbegrenzte Zahl Käufe möglich ist, lassen Sie das Feld leer.
@@ -213,7 +213,7 @@ Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speich
 ![Seite mit dem Titel 'Neuen Mitgliedschafts-Typ erstellen'. Der angegebene Name ist 'Saisonkarte 2027-1'. Die Felder neben 'Mitgliedschaft ist übertragbar' und 'Parallele Nutzung ist möglich' sind angekreuzt. Das Feld 'Maximale Nutzungen' ist leer.](../../assets/screens/products/membership-type.png "Neuen Mitgliedschafts-Typ erstellen")
 
 Wenn Sie den Mitgliedschafts-Typ erstellt haben, brauchen Sie eine Möglichkeit, diese Mitgliedschaften zu verkaufen.
-Erstellen Sie eine neue Veranstaltung, deren Start- und Endtermine der Dauer der Saison entsprechen, für die Sie Dauerkarten verkaufen möchten.
+Erstellen Sie eine neue Veranstaltung, deren Beginn und Ende denen des Zeitraums der Saison entsprechen, für die Sie Dauerkarten verkaufen möchten.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
 Wählen Sie einen Namen wie "Saisonkarte" und einen Preis und klicken Sie dann den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
@@ -227,7 +227,7 @@ Falls Sie mehrere Zeitkarten für unterschiedliche Zeiträume verkaufen, die nic
 Damit Kund\*innen die Dauerkarte nicht mit dem Ticket verwechseln, empfiehlt es sich, die Möglichkeit zum Herunterladen des Tickets zu deaktivieren.
 Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben "Ticket-Download anschalten".
 
-Nachdem Sie den Shop mit der Dauerkarte eingerichtet haben, müssen Sie kostenlose Produkte erstellen, die für jede in Frage kommende Veranstaltung nur mit der Dauerkarte erworben werden können.
+Nachdem Sie den Shop mit der Dauerkarte eingerichtet haben, müssen Sie für jede betroffene Veranstaltung kostenlose Produkte erstellen, die nur mit der Dauerkarte erworben werden können.
 Klonen Sie ein bestehendes Zutrittsticket, fügen Sie dem Namen eine Beschreibung wie etwa "für Personen mit Saisonkarte" hinzu und setzen Sie den Preis auf null.
 Klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren: und wechseln Sie dann zum Reiter :btn:Verfügbarkeit:.
 Markieren Sie das Kontrollkästchen bei "Erfordere eine aktive Mitgliedschaft" und wählen Sie den Mitgliedschafts-Typ, den Sie erstellt haben.
@@ -248,7 +248,7 @@ Wählen Sie den Namen, die Kurzform und die Beschreibung der Veranstaltung so, d
 So ein Name könnte beispielsweise lauten "Saisonkarten Sommer 2027".
 Geben Sie bei "Veranstaltungsbeginn" und "Veranstaltungsende" das Start- und Enddatum der Saison an.
 
-Aktivieren Sie bei der Erstellung einer Veranstaltung in Schritt 3 das Feld "Konfiguration übernehmen", um die Angaben aus einer der einzelnen Veranstaltungen im Laufe der Saison zu kopieren.
+Aktivieren Sie bei der Erstellung einer Veranstaltung in Schritt 3 das Feld "Konfiguration übernehmen", um die Angaben aus einer der einzelnen Veranstaltungen der Saison zu kopieren.
 
 Löschen Sie aus der eben erstellten Veranstaltung alle vorhandenen Produkte.
 Erstellen Sie dann ein personalisiertes Zutrittsprodukt mit einem Namen wie etwa "Saisonkarte Sommer 2027".
