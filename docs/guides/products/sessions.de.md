@@ -1,6 +1,6 @@
 # Sitzungen
 
-Manche Veranstaltungen bestehen aus mehreren kleineren Veranstaltungen ("Sitzungen") mit eingeschränkter Kapazität, und Teilnehmer/*innen können auswählen, an welchen dieser Sitzungen sie teilnehmen möchten.
+Manche Veranstaltungen bestehen aus mehreren kleineren Veranstaltungen ("Sitzungen") mit eingeschränkter Kapazität, und Teilnehmer\*innen können auswählen, an welchen dieser Sitzungen sie teilnehmen möchten.
 Wenn Sie etwa eine Konferenz mit mehreren Workshops planen, eine Feier mit verschiedenen Aktivitäten oder eine ähnliche Veranstaltung, brauchen Sie unter Umständen eine Möglichkeit, den Zutritt zu diesen Sitzungen zu kontrollieren.
 
 pretix bietet Ihnen dazu zwei Optionen.
@@ -47,10 +47,10 @@ Ergänzend zu den Standard-Zutrittsprodukten für diese Konferenz müssen Sie au
 ![Seite "Produkt bearbeiten", Reiter "Zusatzprodukte". Die Kategorie "Workshops" ist gewählt. Der Mindestwert ist 0, der Höchstwert ist 2](../../assets/screens/products/add-on.png "Einem Produkt Zusatzprodukte hinzufügen")
 
 Wenn Sie diese Kategorien, Produkte und Kontingente erstellt haben, bearbeiten Sie die Standard-Zutrittstickets und wechseln Sie zum Reiter :btn:Zusatzprodukte:.
-Fügen Sie ein Zusatzprodukt aus der Kategorie "Workshops" hinzu mit "Minimale Anzahl" auf `0` und "Maximale Anzahl" auf `2`. 
+Fügen Sie ein Zusatzprodukt aus der Kategorie "Workshops" hinzu mit "Minimale Anzahl" auf `0` und "Maximale Anzahl" auf `2`.
 Klicken Sie den Button :btn:Speichern:.
-So können Ihre Kund/*innen wählen, an welchen Workshops sie teilnehmen möchten.
-Dies gibt Ihnen auch die Möglichkeit, über die Kontingente für die einzelnen Workshops die geplante Anzahl der Teilnehmer/*innen im Blick zu behalten.
+So können Ihre Kund\*innen wählen, an welchen Workshops sie teilnehmen möchten.
+Dies gibt Ihnen auch die Möglichkeit, über die Kontingente für die einzelnen Workshops die geplante Anzahl der Teilnehmer\*innen im Blick zu behalten.
 
 ## Option B: Zusatzprodukte mit variablen Zeitfenstern
 
@@ -74,8 +74,8 @@ Im folgenden Beispiel lassen sich die Agenda-Beschränkungen einsetzen:
 
 In diesem Beispiel sind die Workshops 1 und 2 doppelt so lang wie die Diskussionen.
 Daher ist es nicht sinnvoll, dieses Programm mit Zusatzprodukten umzusetzen, wie für [Option A](sessions.md#option-a-add-on-products-with-fixed-time-slots) beschrieben.
-Das könnte nämlich folgende unerwünschte Konsequenzen haben: 
-Entweder müssten Kund/*innen beide Hälften der Workshops einzeln buchen oder es wäre für sie möglich, Kombinationen von überlappenden Sitzungen buchen, an denen sie nicht teilnehmen können.
+Das könnte nämlich folgende unerwünschte Konsequenzen haben:
+Entweder müssten Kund\*innen beide Hälften der Workshops einzeln buchen oder es wäre für sie möglich, Kombinationen von überlappenden Sitzungen buchen, an denen sie nicht teilnehmen können.
 Solche komplexeren Zeitpläne können Sie mit der Funktion Agenda-Beschränkungen umsetzen.
 
 Um die entsprechende Erweiterung zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen: und rufen den Reiter :btn:Funktionen: auf.
@@ -86,7 +86,7 @@ Suchen Sie in der Liste nach der Erweiterung "Agenda-Beschränkungen" und klicke
 Erstellen Sie eine Kategorie für Sitzungstickets und markieren Sie das Kontrollkästchen "Produkte in dieser Kategorie sind Zusatzprodukte".
 Erstellen Sie für jede einzelne Sitzung ein Produkt, fügen Sie es der Kategorie der Sitzungstickets hinzu und wechseln Sie zum Reiter :btn:Zusätzliche Einstellungen:.
 Legen Sie anhand der Felder "Beginn" und "Ende" den Zeitraum der Sitzung fest.
-Erstellen Sie ein Kontingent für jedes der Zusatzprodukte für die Sitzungen, wobei die Gesamtkapazität des Kontingents die maximal mögliche Zahl von Teilnehmer/*innen an jeder Sitzung ist.
+Erstellen Sie ein Kontingent für jedes der Zusatzprodukte für die Sitzungen, wobei die Gesamtkapazität des Kontingents die maximal mögliche Zahl von Teilnehmer\*innen an jeder Sitzung ist.
 
 !!! Hinweis
     Die Funktion "Agenda-Beschränkungen" prüft nur auf zeitliche Konflikte zwischen Produkten derselben Kategorie.
@@ -96,6 +96,6 @@ Bearbeiten Sie die Standard-Zutrittstickets für Ihre Veranstaltung und wechseln
 Fügen Sie ein Zusatzprodukt aus der Kategorie mit Sitzungstickets hinzu, setzen Sie die "Minimale Anzahl" auf 0 und die "Maximale Anzahl" auf einen Wert, der größer oder gleich der größtmöglichen Zahl von Sitzungen ist, an der jemand teilnehmen kann.
 Klicken Sie den Button :btn:Speichern:.
 
-So können Ihre Kund/*innen wählen, an welchen Workshops sie teilnehmen möchten.
-"Beginn" und "Ende" jedes Zusatzprodukts beschränken, welche Sitzungskombinationen Ihre Kund/*innen buchen können.
-Über die Kontingente für die einzelnen Workshops können Sie die geplante Anzahl der Teilnehmer/*innen begrenzen.
+So können Ihre Kund\*innen wählen, an welchen Workshops sie teilnehmen möchten.
+"Beginn" und "Ende" jedes Zusatzprodukts beschränken, welche Sitzungskombinationen Ihre Kund\*innen buchen können.
+Über die Kontingente für die einzelnen Workshops können Sie die geplante Anzahl der Teilnehmer\*innen begrenzen.

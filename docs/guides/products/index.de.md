@@ -22,7 +22,7 @@ Diese Anleitung erläutert die notwendigen Schritte daher in genau dieser Reihen
 
 Kategorien haben verschiedene Zwecke.
 Sie helfen Ihnen, Produkte sinnvoll zu gruppieren, sowohl im Backend als auch in Ihrem Shop.
-Ihre Shop-Seite zeigt Produkte nach Kategorien geordnet an, damit Kund/*innen den gesuchten Artikel einfacher finden.
+Ihre Shop-Seite zeigt Produkte nach Kategorien geordnet an, damit Kund\*innen den gesuchten Artikel einfacher finden.
 Produkte nach Kategorien zu ordnen, kann Ihnen helfen, im Backend den Überblick zu behalten.
 
 Kategorien sorgen auch für die Trennung zwischen normalen Produkten, die direkt zu kaufen sind, und ergänzenden Produkten, die nur als Zusatzprodukte zu normalen Produkten angeboten werden.
@@ -39,10 +39,10 @@ Wählen Sie den zum Produkttyp in dieser Kategorie passenden Kategorietyp: norma
 
 Normale Produkte sind Einzelprodukte, die direkt gekauft werden können.
 Zusatzprodukte sind Produkte, die **nicht** direkt gekauft, sondern beim Kauf nur anderen Produkten hinzugefügt werden können.
-Art und Anzahl der Produkte im Warenkorb bestimmen, welche Zusatzprodukte der/*die Kund/*in wählen kann.
+Art und Anzahl der Produkte im Warenkorb bestimmen, welche Zusatzprodukte der\*die Kund\*in wählen kann.
 
 Cross-Selling-Produkte werden nicht im Shop, sondern erst an der Kasse angeboten.
-Anders als bei Zusatzprodukten hängt es nicht vom Inhalt des Warenkorbs ab, welche Cross-Selling-Produkte der/*die Kund/*in kaufen kann.
+Anders als bei Zusatzprodukten hängt es nicht vom Inhalt des Warenkorbs ab, welche Cross-Selling-Produkte der\*die Kund\*in kaufen kann.
 Und Produkte des Typs "normal + Cross-Selling" werden sowohl als Einzelprodukte als auch im Cross-Selling-Schritt angeboten.
 Die unten aufgeführte Einstellung "Cross-Selling-Bedingung" legt fest, wie Produkte der Kategorien "Cross-Selling" und "normal + Cross-Selling" in Ihrem Shop angeboten werden.
 
@@ -141,7 +141,7 @@ In Ihrem Shop wird jetzt ein Wochenüberblick aller Zeitfenster und ihrer jeweil
 
 #### Check-in
 
-Wenn Sie Tickets für bestimmte Zeitfenster verkaufen, soll auch sichergestellt sein, dass Kund/*innen nur eingelassen werden, wenn ihr Ticket für das betreffende Zeitfenster gilt.
+Wenn Sie Tickets für bestimmte Zeitfenster verkaufen, soll auch sichergestellt sein, dass Kund\*innen nur eingelassen werden, wenn ihr Ticket für das betreffende Zeitfenster gilt.
 Dieser Abschnitt erläutert, wie Sie hierfür eigene Check-in-Regeln einrichten.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in → Check-in-Listen: und klicken Sie den Button :btn-icon:fa3-plus: Neue Check-in-Liste erstellen:.
 
@@ -152,12 +152,12 @@ Wechseln Sie zum Reiter :btn:Erweitert:.
 Klicken Sie unter "Eigene Check-In-Regeln" den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: und wählen Sie im Dropdown-Menü "Alle der folgenden Bedingungen (UND)".
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist nach" und dann "Veranstaltungsbeginn".
 Das Feld "Toleranz (Minuten)" können Sie leer lassen.
-Wenn Sie den Teilnehmer/*innen die Möglichkeit geben möchten, beispielsweise 10 Minuten vor Veranstaltungsbeginn eingelassen zu werden, geben Sie bei "Toleranz (Minuten)" `10` an.
+Wenn Sie den Teilnehmer\*innen die Möglichkeit geben möchten, beispielsweise 10 Minuten vor Veranstaltungsbeginn eingelassen zu werden, geben Sie bei "Toleranz (Minuten)" `10` an.
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist vor" und dann "Veranstaltungsende".
 
 ![Seite für eigene Check-in-Regel, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/time-slot-check-in-rule.png "Eigene Check-In-Regeln")
 
-Mit diesen beiden Einschränkungen können Kund/*innen Ihre Veranstaltung nur in dem Zeitfenster besuchen, für das sie ein Ticket gekauft haben.
+Mit diesen beiden Einschränkungen können Kund\*innen Ihre Veranstaltung nur in dem Zeitfenster besuchen, für das sie ein Ticket gekauft haben.
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
 
 Wenn Sie pretixSCAN mit dieser Konfiguration verwenden, fordert die App Sie auf, eines der Zeitfenster zu wählen.
@@ -176,26 +176,26 @@ Das erste Verfahren, Option A, verwendet Mitgliedschaften.
 Option B arbeitet mit einem separaten Veranstaltungs-Shop, der nur Dauerkarten verkauft.
 Option C verwendet eine Dauerkarte für eine Saison und aufwändigere Check-in-Regeln.
 
-Mit **Option A** legt ein/*e Kund/*in beim Kauf einer Dauerkarte mit E-Mail-Adresse und Passwort ein Konto an.
+Mit **Option A** legt ein\*e Kund\*in beim Kauf einer Dauerkarte mit E-Mail-Adresse und Passwort ein Konto an.
 In diesem Konto ist eine Mitgliedschaft gespeichert, die als Dauerkarte fungiert.
-Kund/*innen, die diese Dauerkarte für eine Veranstaltung nutzen möchten, müssen ein Ticket für diese Veranstaltung kaufen.
+Kund\*innen, die diese Dauerkarte für eine Veranstaltung nutzen möchten, müssen ein Ticket für diese Veranstaltung kaufen.
 Aufgrund der Mitgliedschaft ist das Ticket kostenlos.
 Mit diesem Verfahren können Sie die Gesamtzahl Personen, die zu einer Veranstaltung oder einem Zeitfenster eingelassen werden, über Kontingente steuern.
 
 Bei **Option B** erstellen Sie eine separate Veranstaltung bzw. einen separaten Termin für die gesamte Saison und verkaufen Dauerkarten in dem eigenen Shop für die Veranstaltung.
-Leiten Sie Kund/*innen, die sich für Dauerkarten interessieren, zu dem Veranstaltungs-Shop bzw. Termin.
-Die Kund/*innen erhalten beim Kauf einer Dauerkarte ein Einzelticket mit einem einzelnen Ticket-Code, den sie unbegrenzt häufig verwenden können.
-Mit dem Experten-Modus in pretixSCAN können Sie Teilnehmer/*innen in einem Durchgang gleich für mehrere Veranstaltungen einchecken: für die aktuelle Standard-Veranstaltung und für die gesamte Saison.
+Leiten Sie Kund\*innen, die sich für Dauerkarten interessieren, zu dem Veranstaltungs-Shop bzw. Termin.
+Die Kund\*innen erhalten beim Kauf einer Dauerkarte ein Einzelticket mit einem einzelnen Ticket-Code, den sie unbegrenzt häufig verwenden können.
+Mit dem Experten-Modus in pretixSCAN können Sie Teilnehmer\*innen in einem Durchgang gleich für mehrere Veranstaltungen einchecken: für die aktuelle Standard-Veranstaltung und für die gesamte Saison.
 
 Mit **Option C** bieten Sie Dauerkarten im selben Shop an wie reguläre Tickets.
-Ebenso wie bei Option B erhalten die Kund/*innen beim Kauf einer Dauerkarte ein Einzelticket mit einem einzelnen Ticket-Code, den sie unbegrenzt häufig verwenden können.
-Sie richten erweiterte Check-in-Regeln ein, die gewährleisten, dass Inhaber/*innen von Standard-Tickets nur zu bestimmten Zeitpunkten eingelassen werden.
+Ebenso wie bei Option B erhalten die Kund\*innen beim Kauf einer Dauerkarte ein Einzelticket mit einem einzelnen Ticket-Code, den sie unbegrenzt häufig verwenden können.
+Sie richten erweiterte Check-in-Regeln ein, die gewährleisten, dass Inhaber\*innen von Standard-Tickets nur zu bestimmten Zeitpunkten eingelassen werden.
 
 #### Option A: Mitgliedschaften und mehrere Tickets
 
-Option A erfordert, dass Kund/*innen über ein Kund/*innenkonto identifiziert werden.
-Sie müssen daher zuerst in den Veranstalter-Einstellungen auf dem Reiter "Kundenkonten" die Funktion für Kund/*innenkonten aktivieren.
-Siehe auch: [Kund/*innenkonten](../customer-accounts.md)
+Option A erfordert, dass Kund\*innen über ein Kund\*innenkonto identifiziert werden.
+Sie müssen daher zuerst in den Veranstalter-Einstellungen auf dem Reiter "Kundenkonten" die Funktion für Kund\*innenkonten aktivieren.
+Siehe auch: [Kund\*innenkonten](../customer-accounts.md)
 
 ![Seite mit Veranstalter-Einstellungen, Reiter 'Kundenkonten'. Die Kontrollkästchen 'Erlaube Kunden, Kundenkonten zu registrieren', 'Erlaube den Login mit E-Mail-Adresse und Passwort' und 'Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen' sind gewählt.](../../assets/screens/organizer/customer-accounts.png "Veranstalter-Einstellungen – Kundenkonten")
 
@@ -224,17 +224,17 @@ Falls Sie mehrere Zeitkarten für unterschiedliche Zeiträume verkaufen, die nic
 
 ![Seite mit dem Titel 'Produkt bearbeiten': Saisonkarte auf dem Reiter 'Zusätzliche Einstellungen'. Unter 'Dieses Produkt erstellt eine Mitgliedschaft vom Typ' ist die Mitgliedschaft 'Saisonkarte 2027-01' gewählt. Das Kontrollkästchen neben 'Die Dauer der Mitgliedschaft entspricht der Dauer der Veranstaltung bzw. in Veranstaltungsreihen des gebuchten Termins' ist markiert.](../../assets/screens/products/product-creates-membership.png "Produkt bearbeiten: Saisonkarte")
 
-Damit Kund/*innen die Dauerkarte nicht mit dem Ticket verwechseln, empfiehlt es sich, die Möglichkeit zum Herunterladen des Tickets zu deaktivieren.
+Damit Kund\*innen die Dauerkarte nicht mit dem Ticket verwechseln, empfiehlt es sich, die Möglichkeit zum Herunterladen des Tickets zu deaktivieren.
 Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen: und entfernen Sie die Markierung aus dem Kästchen neben "Ticket-Download anschalten".
 
 Nachdem Sie den Shop mit der Dauerkarte eingerichtet haben, müssen Sie kostenlose Produkte erstellen, die für jede in Frage kommende Veranstaltung nur mit der Dauerkarte erworben werden können.
 Klonen Sie ein bestehendes Zutrittsticket, fügen Sie dem Namen eine Beschreibung wie etwa "für Personen mit Saisonkarte" hinzu und setzen Sie den Preis auf null.
 Klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren: und wechseln Sie dann zum Reiter :btn:Verfügbarkeit:.
 Markieren Sie das Kontrollkästchen bei "Erfordere eine aktive Mitgliedschaft" und wählen Sie den Mitgliedschafts-Typ, den Sie erstellt haben.
-Wenn Sie dieses Produkt nur Kund/*innen anzeigen möchten, die bereits eine aktive Mitgliedschaft in Ihrem Shop besitzen, markieren Sie das Kontrollkästchen neben "Ohne gültige Mitgliedschaft verstecken".
+Wenn Sie dieses Produkt nur Kund\*innen anzeigen möchten, die bereits eine aktive Mitgliedschaft in Ihrem Shop besitzen, markieren Sie das Kontrollkästchen neben "Ohne gültige Mitgliedschaft verstecken".
 
-Wiederholen Sie diese Schritte für jedes Produkt, das Inhaber/*innen von Dauerkarten kostenlos verfügbar sein soll.
-Wenn Inhaber/*innen von Dauerkarten die Möglichkeit haben sollen, mehrere Ihrer Veranstaltung kostenlos zu besuchen, wiederholen Sie diese Schritte für jede in Frage kommende Veranstaltung.
+Wiederholen Sie diese Schritte für jedes Produkt, das Inhaber\*innen von Dauerkarten kostenlos verfügbar sein soll.
+Wenn Inhaber\*innen von Dauerkarten die Möglichkeit haben sollen, mehrere Ihrer Veranstaltung kostenlos zu besuchen, wiederholen Sie diese Schritte für jede in Frage kommende Veranstaltung.
 
 ![Seite mit der gewählten Option 'Erfordere eine aktive Mitgliedschaft' und der Option 'Erlaubte Mitgliedschafts-Typen', unter der 'Saisonkarte2027-1' markiert ist. Das Kontrollkästchen neben 'Ohne gültige Mitgliedschaft verstecken' ist markiert.](../../assets/screens/products/require.png "Erfordere eine aktive Mitgliedschaft")
 
@@ -258,18 +258,18 @@ Wenn Sie Dauerkarten für eine **Veranstaltungsreihe** erstellen möchten, erste
 Fügen Sie das Produkt einem Kontingent hinzu und bearbeiten Sie das Kontingent nach Bedarf.
 
 Erstellen Sie dann einen Termin als Teil der Veranstaltungsreihe.
-Machen Sie über den Namen und den Beschreibungstext für diesen Termin klar, dass Kund/*innen Dauerkarten erwerben können, indem sie diesen Termin wählen.
+Machen Sie über den Namen und den Beschreibungstext für diesen Termin klar, dass Kund\*innen Dauerkarten erwerben können, indem sie diesen Termin wählen.
 So ein Name könnte beispielsweise lauten "Saisonkarten".
 Geben Sie bei "Veranstaltungsbeginn" und "Veranstaltungsende" das Start- und Enddatum der Saison an.
 
 Sie können mehr als einen Typ Dauerkarten anbieten.
 Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.md#different-price-levels) anbieten.
 
-Um es für Kund/*innen attraktiver zu machen, auch später in der Saison noch eine Dauerkarte zu kaufen, können Sie den Preis senken.
+Um es für Kund\*innen attraktiver zu machen, auch später in der Saison noch eine Dauerkarte zu kaufen, können Sie den Preis senken.
 Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.md#early-bird-tickets-based-on-time-for-singular-events), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
-Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen manuell. 
+Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen manuell.
 
-Bei dieser Vorgehensweise müssen Sie darauf vorbereitet sein, Teilnehmer/*innen bei zwei Veranstaltungen gleichzeitig einzuchecken.
+Bei dieser Vorgehensweise müssen Sie darauf vorbereitet sein, Teilnehmer\*innen bei zwei Veranstaltungen gleichzeitig einzuchecken.
 Wenn Sie pretixSCAN verwenden, können Sie dazu den Experten-Modus nutzen.
 Öffnen Sie pretixSCAN.
 Tippen Sie oben auf dem Bildschirm auf den Namen der Veranstaltung.
@@ -288,7 +288,7 @@ Jetzt sollte es möglich sein, Tickets für beide Veranstaltungen gleichzeitig z
 #### Option C: ein Ticket für den Zutritt während der gesamten Saisondauer
 
 Bei Option C erstellen Sie ein einzelnes Ticket, das über die gesamte Saisondauer den Zutritt zu einer Veranstaltungsreihe gewährt.
-Diese Option ist für Ihre Kund/*innen einfacher zu nutzen als Option A, denn sie müssen dabei weder Konten eröffnen noch für jeden Besuch ein neues Ticket buchen.
+Diese Option ist für Ihre Kund\*innen einfacher zu nutzen als Option A, denn sie müssen dabei weder Konten eröffnen noch für jeden Besuch ein neues Ticket buchen.
 Außerdem ist es – anders als bei Option B – nicht erforderlich, einen eigenen Veranstaltungs-Shop für Dauerkarten einzurichten.
 Der Nachteil bei Option C ist, dass Sie komplexe Check-in-Regeln einrichten müssen.
 
@@ -296,7 +296,7 @@ Um auf diese Weise eine Dauerkarte zu erstellen, navigieren Sie zu :navpath:Ihre
 Geben Sie dem neuen Produkt einen Namen, etwa "Saisonkarte".
 Aktiveren Sie dieses Produkt für alle Termine in Ihrer Veranstaltungsreihe.
 
-Sie müssen eigene Check-in-Regeln einrichten, damit Kund/*innen mit der Dauerkarte Zutritt zu allen Terminen erhalten.
+Sie müssen eigene Check-in-Regeln einrichten, damit Kund\*innen mit der Dauerkarte Zutritt zu allen Terminen erhalten.
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in → Check-in-Listen: und klicken Sie den Button :btn-icon:fa3-plus: Neue Check-in-Liste erstellen:.
 
 Geben Sie einen Namen ein, aber wählen Sie **keinen** bestimmten Termin.
@@ -309,7 +309,7 @@ Jetzt haben Sie eine ODER-Klammer mit einer UND-Klammer darin.
 
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: **innerhalb der UND-Klammer** und wählen Sie "Produkt", dann "ist eines von" und dann alle Zutrittstickets **außer** der Dauerkarte.
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist nach" und dann "Veranstaltungsbeginn".
-Sie können die Felder "Toleranz (Minuten)" leer lassen oder eine Toleranzzeit von beispielsweise `10` Minuten angeben, damit Teilnehmer/*innen bereits zehn Minuten vor Beginn des jeweiligen Zeitfensters Einlass erhalten.
+Sie können die Felder "Toleranz (Minuten)" leer lassen oder eine Toleranzzeit von beispielsweise `10` Minuten angeben, damit Teilnehmer\*innen bereits zehn Minuten vor Beginn des jeweiligen Zeitfensters Einlass erhalten.
 
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer erneut und wählen Sie erst "Aktueller Zeitpunkt", dann "ist vor" und dann "Veranstaltungsende".
 Klicken Sie den Button :btn-icon:fa3-plus-circle: Bedingung hinzufügen: innerhalb der UND-Klammer ein letztes Mal und wählen Sie "Anzahl bisheriger Eintritte", dann "=" und dann "0".
@@ -325,7 +325,7 @@ Sie haben nun mehrere Optionen:
 
  - Wählen Sie "Aktueller Zutrittsstatus", dann "=" und dann "abwesend".
  Das bewirkt, dass die Dauerkarte nur genutzt werden kann, wenn niemand gerade darüber eingecheckt ist.
- Das setzt allerdings voraus, dass Sie Inhaber/*innen von Dauerkarten beim Verlassen der Veranstaltung auschecken, wofür möglicherweise zusätzliches Personal nötig ist.
+ Das setzt allerdings voraus, dass Sie Inhaber\*innen von Dauerkarten beim Verlassen der Veranstaltung auschecken, wofür möglicherweise zusätzliches Personal nötig ist.
  - Wählen Sie "Anzahl bisheriger Eintritte seit Mitternacht", "=" und "0".
  Das bewirkt, dass die Dauerkarte nur einmal pro Tag genutzt werden kann.
  - Wählen Sie "Minuten seit vorherigem Eintritt", "≤" und "15".
@@ -334,8 +334,8 @@ Sie haben nun mehrere Optionen:
 ![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets_rules1.png "Regel-Set 1 für Dauerkarten")
 
 Der Screenshot oben stellt diese Logik dar.
-Diese Regeln sorgen dafür, dass Inhaber/*innen von Standardtickets am gewählten Termin nur eingelassen werden, wenn ihr Ticket bisher noch nicht genutzt wurde.
-Sie sorgen auch dafür, dass Inhaber/*innen von Dauerkarten bei jedem Termin eingelassen werden.
+Diese Regeln sorgen dafür, dass Inhaber\*innen von Standardtickets am gewählten Termin nur eingelassen werden, wenn ihr Ticket bisher noch nicht genutzt wurde.
+Sie sorgen auch dafür, dass Inhaber\*innen von Dauerkarten bei jedem Termin eingelassen werden.
 
 ### Gemischte Steuersätze
 
@@ -372,8 +372,8 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
 
  3. Ist das Produkt nur über einen Gutschein erhältlich?
  Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt kann nur mit einem Gutschein gekauft werden" **nicht** markiert ist.
- Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund/*innen an, die einen passenden Gutscheincode eingegeben haben.
- Wenn der Shop das Produkt dennoch allen Kund/*innen anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
+ Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund\*innen an, die einen passenden Gutscheincode eingegeben haben.
+ Wenn der Shop das Produkt dennoch allen Kund\*innen anzeigen soll, aktivieren Sie die Option :btn-icon:fa3-info:: "Zeige das Produkt mit einer Information, warum es nicht verfügbar ist".
 
  4. Ist das Produkt nur als Teil eines Produktpakets erhältlich?
  Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Dieses Produkt nicht einzeln verkaufen, sondern nur als Teil eines festen Produktpakets" **nicht** markiert ist.
@@ -382,7 +382,7 @@ Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](..
 
  5. Ist das Produkt nur über eine Mitgliedschaft erhältlich?
  Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Erfordere eine aktive Mitgliedschaft" **nicht** markiert ist.
- Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund/*innen an, die in ihrem Konto angemeldet sind und eine gültige Mitgliedschaft besitzen.
+ Ist es markiert, zeigt der Shop dieses Produkt nur solchen Kund\*innen an, die in ihrem Konto angemeldet sind und eine gültige Mitgliedschaft besitzen.
 
  6. Ist das Produkt nur erhältlich, wenn ein anderes Produkt ausverkauft ist?
  Um diese Ursache zu beheben, vergewissern Sie sich, dass das Kontrollkästchen neben "Nicht anzeigen, wenn Kontingent verfügbar" leer ist.

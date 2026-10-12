@@ -1,6 +1,6 @@
 # Rabatte
 
-pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund/*innen Rabatte anbieten können, die an bestimmte Bedingungen geknüpft sind.
+pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund\*innen Rabatte anbieten können, die an bestimmte Bedingungen geknüpft sind.
 Dieser Artikel erklärt die verschiedenen Arten von Rabatten für bestimmte Anwendungsfälle:
 
  - [Unterschiedliche Preisniveaus](discounts.md#different-price-levels)
@@ -58,7 +58,7 @@ Ein Beispiel: Ihr Standard-Zutrittsticket kostet 20,00 €.
 Klonen Sie dieses Ticket, nennen Sie es beispielsweise "Ermäßigtes Ticket für Gruppen ab fünf Personen" und legen Sie den Preis auf 15,00 € fest.
 Speichern Sie das Ticket und bearbeiten Sie es.
 Wechseln Sie zum Reiter :btn:Verfügbarkeit: und legen Sie die "Minimale Anzahl pro Bestellung" auf 5 fest.
-So müssen Kund/*innen mindestens fünf der ermäßigten Tickets gleichzeitig kaufen.
+So müssen Kund\*innen mindestens fünf der ermäßigten Tickets gleichzeitig kaufen.
 
 #### Mengenrabatte
 
@@ -91,8 +91,8 @@ Erstellen Sie ein Kontingent, das nur das Paket für acht Personen enthält.
 Dieses Kontingent kann eine unbegrenzte Kapazität haben.
 
 Diese Konfiguration bewirkt, dass pretix bei jedem Kauf eines dieser Produktpakete acht Einzeltickets anlegt.
-So wird die korrekte Anzahl vom Kontingent für das Grundprodukt abgezogen und auf der Check-in-Liste werden acht neue Einträge für Teilnehmer/*innen angelegt.
-Wenn Sie die persönlichen Daten der einzelnen Teilnehmer/*innen benötigen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:, wechseln Sie zum Reiter :btn:Kunden- und Teilnehmerdaten: und bearbeiten Sie die Einstellungen unter "Teilnehmerdaten (einmal pro personalisiertem Ticket)".
+So wird die korrekte Anzahl vom Kontingent für das Grundprodukt abgezogen und auf der Check-in-Liste werden acht neue Einträge für Teilnehmer\*innen angelegt.
+Wenn Sie die persönlichen Daten der einzelnen Teilnehmer\*innen benötigen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:, wechseln Sie zum Reiter :btn:Kunden- und Teilnehmerdaten: und bearbeiten Sie die Einstellungen unter "Teilnehmerdaten (einmal pro personalisiertem Ticket)".
 
 ### Frühbuchertickets
 
@@ -147,10 +147,10 @@ Markieren Sie bei "Produktliste" das Kontrollkästchen bei "Verstecke alle ausve
 
 !!! Hinweis
     In seltenen Fällen kann es vorkommen, dass die Preise in Ihrem Shop zwischen Preisklassen hin- und herspringen.
-    Wenn ein/*e Kund/*in die letzten Produkte einer Preisklasse in den Warenkorb legt, aber noch nicht kauft, werden diese Tickets als "Reserviert" gekennzeichnet und die nächste Preisklasse wird angezeigt.
-    Schließt der/*die Kund/*in den Kauf dann aber nicht ab, werden die zuvor reservierten Tickets wieder im Shop angezeigt und die Tickets der nächsten Preisklasse werden nicht mehr angezeigt.
+    Wenn ein\*e Kund\*in die letzten Produkte einer Preisklasse in den Warenkorb legt, aber noch nicht kauft, werden diese Tickets als "Reserviert" gekennzeichnet und die nächste Preisklasse wird angezeigt.
+    Schließt der\*die Kund\*in den Kauf dann aber nicht ab, werden die zuvor reservierten Tickets wieder im Shop angezeigt und die Tickets der nächsten Preisklasse werden nicht mehr angezeigt.
 
-    Dieses Verhalten ist einer Situation vorzuziehen, in der ein/*e Benutzer/*in mit schädlichen Absichten alle Tickets einer günstigeren Preisklasse reservieren kann, ohne sie zu kaufen.
+    Dieses Verhalten ist einer Situation vorzuziehen, in der ein\*e Benutzer\*in mit schädlichen Absichten alle Tickets einer günstigeren Preisklasse reservieren kann, ohne sie zu kaufen.
 
 Ein Beispiel: Angenommen, Sie möchten 400 Tickets in drei Preisklassen verkaufen.
 Zuerst erstellen Sie drei Produkte mit unterschiedlichen Preisen:
@@ -172,7 +172,7 @@ Gehen Sie ebenso vor für das "Frühbucherticket" mit dem Kontingent "Extrem-Fr�
 ### Rabattpakete
 
 Dieser Abschnitt erläutert, wie Sie mehrere kombinierte Produkte zu einem geringeren Preis anbieten, als sie einzeln kosten würden.
-Das ist nützlich, wenn Sie mehrere Produkte anbieten, Ihre Kund/*innen voraussichtlich unterschiedliche Kombinationen dieser Produkte kaufen werden und Sie für umfangreichere Kombinationen günstigere Preise anbieten möchten.
+Das ist nützlich, wenn Sie mehrere Produkte anbieten, Ihre Kund\*innen voraussichtlich unterschiedliche Kombinationen dieser Produkte kaufen werden und Sie für umfangreichere Kombinationen günstigere Preise anbieten möchten.
 Das kann zum Beispiel in den folgenden Szenarios der Fall sein:
 
  - Eine Messe oder ein Festival läuft über drei aufeinanderfolgende Tage und die Karten für einen, zwei oder drei Tage haben unterschiedliche Preise.
@@ -223,7 +223,7 @@ Erstellen Sie dann drei Kontingente, jedes mit der maximalen Kapazität des Vera
  - Kontingent Tag 2, verknüpft mit "Ticket Tag 2", "Ticket Tag 1 + Tag 2", "Ticket Tag 2 + Tag 3" und "Ticket für alle drei Tage"
  - Kontingent Tag 3, verknüpft mit "Ticket Tag 3", "Ticket Tag 1 + Tag 3", "Ticket Tag 2 + Tag 3" und "Ticket für alle drei Tage"
 
-So können alle Teilnehmer/*innen genau ein Ticket bestellen, mit dem sie an allen gewünschten Tagen Zutritt haben.
+So können alle Teilnehmer\*innen genau ein Ticket bestellen, mit dem sie an allen gewünschten Tagen Zutritt haben.
 Zum Schluss navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-check-square-o: Check-in:.
 Hier bearbeiten oder erstellen Sie eine Check-in-Liste mit den von Ihnen angelegten Tickets und wechseln zum Reiter :btn:Erweitert:.
 Definieren Sie eigene Check-in-Regeln, sodass die Tickets aus dem ersten Kontingent am ersten Tag der Veranstaltung gültig sind, die Tickets aus dem zweiten Kontingent am zweiten Tag und die Tickets aus dem dritten Kontingent am dritten Tag.
@@ -275,10 +275,10 @@ Die Kontingente für die Tickets für zwei und drei Tage können unbegrenzt sein
 Bearbeiten Sie das "Ticket für zwei Tage", wechseln Sie zum Reiter :btn:Zusatzprodukte: und klicken Sie den Button :btn-icon:fa3-plus: Weitere Kategorie hinzufügen:.
 Wählen Sie die Kategorie "Tagestickets", legen Sie die minimale und die maximale Anzahl auf 2 fest und markieren Sie das Kontrollkästchen "Zusatzprodukte sind im Preis enthalten".
 Klicken Sie den Button :btn:Speichern:.
-Mit dieser Konfiguration wird ein/*e Kund/*in beim Kauf eines "Tickets für zwei Tage" aufgefordert, dem Warenkorb zwei Tickets aus der Kategorie "Tagesticket" als Zusatzprodukte hinzuzufügen.
-Der/*die Kund/*in erhält zwei Tickets: eines für jeden gewählten Tag der Veranstaltung.
+Mit dieser Konfiguration wird ein\*e Kund\*in beim Kauf eines "Tickets für zwei Tage" aufgefordert, dem Warenkorb zwei Tickets aus der Kategorie "Tagesticket" als Zusatzprodukte hinzuzufügen.
+Der\*die Kund\*in erhält zwei Tickets: eines für jeden gewählten Tag der Veranstaltung.
 
-Es ist nicht sinnvoll, das "Ticket für alle drei Tage" ebenso einzurichten, weil der/*die Kund/*in dann alle drei Tagestickets von Hand wählen müsste.
+Es ist nicht sinnvoll, das "Ticket für alle drei Tage" ebenso einzurichten, weil der\*die Kund\*in dann alle drei Tagestickets von Hand wählen müsste.
 Wenn Sie das "Ticket für alle drei Tage" als Produktpaket einrichten möchten, bearbeiten Sie es und wechseln Sie zum Reiter :btn:Enthaltene Produkte:.
 Klicken Sie den Button :btn-icon:fa3-plus: Neues enthaltenes Produkt hinzufügen:.
 Wählen Sie als "Enthaltenes Produkt" das "Ticket Tag 1".
@@ -286,7 +286,7 @@ Lassen Sie die "Menge" bei 1 und "Ausgewiesener Preisanteil" bei 0,00.
 Wiederholen Sie dies für das "Ticket Tag 2" und das "Ticket Tag 3".
 
 Diese Konfiguration bewirkt, dass beim Kauf eines "Tickets für alle drei Tage" die drei Tagestickets automatisch kostenlos dem Warenkorb hinzugefügt werden.
-Der/*die Kund/*in erhält drei Tickets: eines für jeden Tag der Veranstaltung.
+Der\*die Kund\*in erhält drei Tickets: eines für jeden Tag der Veranstaltung.
 
 Zum Schluss navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-check-square-o: Check-in:.
 Hier bearbeiten oder erstellen Sie eine Check-in-Liste mit den von Ihnen angelegten Tickets und wechseln zum Reiter :btn:Erweitert:.
