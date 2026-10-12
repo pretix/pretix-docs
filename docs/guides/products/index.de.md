@@ -331,7 +331,7 @@ Sie haben nun mehrere Optionen:
  - Wählen Sie `Minuten seit vorherigem Eintritt`, `≤` und `15`.
  Das bewirkt, dass die Dauerkarte höchstens einmal alle fünfzehn Minuten genutzt werden kann.
 
-![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets_rules1.de.png "Regel-Set 1 für Dauerkarten")
+![Seite für eigene Check-in-Regeln, die entsprechend der Anleitung oben eingerichtet wurde.](../../assets/screens/products/seasontickets-rules1.de.png "Regel-Set 1 für Dauerkarten")
 
 Der Screenshot oben stellt diese Logik dar.
 Diese Regeln sorgen dafür, dass Inhaber\*innen von Standardtickets am gewählten Termin nur eingelassen werden, wenn ihr Ticket bisher noch nicht genutzt wurde.

@@ -330,7 +330,7 @@ You have several options:
  - Select "Minutes since last entry" "≤", and "15".
  This means that the season pass can only be used once every fifteen minutes.
 
-![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/seasontickets_rules1.png "Season tickets rules 1")
+![Custom check-in rule page set up according to the instructions above.](../../assets/screens/products/seasontickets-rules1.png "Season tickets rules 1")
 
 The logic is depicted in the screenshot above.
 These rules ensure that regular tickets holders are only admitted to their chosen date and if their ticket has not been used before.
