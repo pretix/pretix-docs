@@ -1,6 +1,6 @@
 # pretixSCAN (Android)
 
-Die Android-Version von [pretixSCAN](https://pretix.eu/about/en/scan) ist eine App, die Sie beim Check-in zu Ihren Veranstaltungen unterstützt.
+Die Android-Version von [pretixSCAN](https://pretix.eu/about/de/scan) ist eine App, die Sie beim Check-in Ihrer Veranstaltungen unterstützt.
 Die wesentliche Funktion von pretixSCAN ist die Validierung von Tickets, aber darüber hinaus bietet die App noch weitere Funktionen:
 
  - manuell nach Teilnehmenden suchen, die ihr Ticket nicht zur Hand haben
@@ -26,7 +26,7 @@ Dieser Abschnitt erläutert die grundlegende Nutzung von pretixSCAN auf Android-
 Dazu gehören die folgenden Schritte:
 
  - [App installieren](#installieren-und-einrichten) und einrichten
- - [mit dem Backend verbinden](#das-gerät-mit-dem-pretix-backend-verbinden)
+ - [mit dem Backend verbinden](#das-gerat-mit-dem-pretix-backend-verbinden)
  - einfaches [Scannen beim Einlass](#scannen-beim-einlass)
  - nach [Daten von Teilnehmenden](#nach-daten-von-teilnehmenden-suchen) suchen
  - den [Badge-Druck](#den-badge-druck-aktivieren) aktivieren
@@ -38,7 +38,7 @@ Dieser Abschnitt erklärt diese Schritte ausführlich.
 !!! Hinweis
     Wenn Sie Scan-Smartphones von uns mieten, haben wir für Sie bereits pretixSCAN und pretixPRINT auf den Geräten installiert.
     Wir haben auch alle benötigten Apps für Sie konfiguriert, sofern nichts anderes vereinbart war.
-    Das gilt auch, wenn Sie die Geräte von uns gekauft und die fertig konfigurierte Variante bestellt haben.
+    Das gilt auch, wenn Sie die Geräte von uns gekauft und die fertige Konfiguration in Auftrag gegeben haben.
     In beiden Fällen müssen Sie nichts mehr installieren, einrichten oder mit dem Backend verbinden.
     Machen Sie weiter beim Abschnitt über das [Scannen beim Einlass](#scannen-beim-einlass).
 
@@ -50,7 +50,8 @@ Bei Geräten des Herstellers Sunmi finden Sie die App auch im App-Store von Sunm
 
 Wenn Sie pretixSCAN zum ersten Mal starten, müssen Sie bestätigen, dass Sie die Konsequenzen für Datenschutz und Sicherheit verstehen, die sich durch das Speichern der Daten von Teilnehmenden auf dem Gerät ergeben.
 Wenn Sie die Gerätekamera zum Validieren von Tickets nutzen möchten, müssen Sie pretixSCAN den Zugriff auf die Kamera erlauben.
-Wenn Sie ein Smartphone mit speziellem Scanmodul nutzen, beispielsweise eines der Scan-Smartphones, die wir vermieten, müssen Sie pretixSCAN keinen Kamerazugriff erlauben.
+Wenn Sie ein Smartphone mit speziellem Scanmodul nutzen, dann ist es nicht nötig, pretixSCAN den Kamerazugriff zu gewähren. 
+Dies ist beispielsweise bei den den Scan-Smartphones der Fall, die wir vermieten und verkaufen.
 Wir empfehlen die Nutzung des Scanmoduls.
 
 Nachdem Sie die Berechtigung erteilt haben, kann pretixSCAN sofort auf das Scanmodul bzw. die Kamera zugreifen.
@@ -97,7 +98,7 @@ Als Alternative zum QR-Code können Sie auch die System-URL und das Token versch
 
 ![Bildschirm in pretixSCAN mit der Aufforderung, die Veranstaltung zu wählen, für die Sie Tickets scannen möchten.](../../assets/screens/scan/select-event.png "Screenshot Veranstaltung auswählen")
 
-Wenn Sie mit Erfolg den QR-Code gescannt bzw. das Token eingegeben haben, fordert die App Sie auf, die Veranstaltung auszuwählen, für die Sie Tickets scannen möchten.
+Wenn Sie erfolgreich den QR-Code gescannt bzw. das Token eingegeben haben, fordert die App Sie auf, die Veranstaltung auszuwählen, für die Sie Tickets scannen möchten.
 Sie können keine Veranstaltung wählen, die gerade offline ist.
 Der nächste Schritt hängt von der Art der Veranstaltung ab, für die Sie Tickets scannen möchten.
 
@@ -113,7 +114,7 @@ Der nächste Schritt hängt von der Art der Veranstaltung ab, für die Sie Ticke
    Informationen dazu finden Sie unter [Tickets für mehrere Veranstaltungen scannen](#tickets-für-mehrere-veranstaltungen-scannen).
 
 Die App zeigt nun den Hauptbildschirm an.
-Wenn Sie das Sicherheitsprofil pretixSCAN gewählt haben, werden nun im Hintergrund die Veranstaltungsdaten vom Server heruntergeladen.
+Wenn Sie das Sicherheitsprofil pretixSCAN gewählt haben, lädt die App jetzt im Hintergrund die Veranstaltungsdaten vom Server herunter.
 
 ### Scannen beim Einlass
 
@@ -131,8 +132,8 @@ Scrollen Sie zum Abschnitt "Benutzeroberfläche".
 Wenn Ihr Gerät über ein Scanmodul verfügt, entfernen Sie die Markierung bei der Option "Geräte-Kamera benutzen".
 Wenn Ihr Gerät kein Scanmodul hat, markieren Sie diese Option.
 
-Das Scanmodul befindet sich am oberen Rand des Geräts.
-Die Tasten zum Aktivieren des Scanmoduls sind am linken und rechten Rand.
+Das Scanmodul befindet sich an der oberen Kante des Geräts.
+Die Tasten zum Aktivieren des Scanmoduls sind an der linken und der rechten Kante.
 Um einen QR-Code mit dem Scanmodul zu scannen, richten Sie das Scanmodul auf den Code und drücken eine der Tasten.
 Das Scannen funktioniert am besten aus einer Entfernung von ca. 30 bis 50 cm.
 
@@ -167,9 +168,9 @@ Anstatt den Ticket-Code zu scannen können Sie in pretixSCAN auch nach Teilnehme
 Falls ein\*e Teilnehmer\*in ohne Ticket beim Check-in erscheint, aber versichert, eines gekauft zu haben, können Sie nach den Daten dieser Person suchen.
 Tippen Sie oben im Bildschirm den Button :btn-icon:fa3-search::.
 Geben Sie in das Suchfeld den Namen der teilnehmenden Person ein, die Bestellnummer, den Ticket-Code oder die E-Mail-Adresse.
-Tippen Sie das zutreffende Ergebnis in der Liste.
+Tippen Sie in der Liste das passende Ergebnis.
 
-Die App überprüft daraufhin die Gültigkeit des Tickets und gibt dasselbe Ergebnis zurück, das ein Ticket-Scan erbracht hätte.
+Die App überprüft daraufhin die Gültigkeit des Tickets und gibt ein Ergebnis aus, genau so, als wenn Sie das Ticket gescannt hätten.
 
 ### Den Badge-Druck aktivieren
 
@@ -185,7 +186,7 @@ Scrollen Sie zum Abschnitt "Badges" und markieren Sie das Kontrollkästchen nebe
 
 Von nun an enthält das Feld, das beim Scannen eines Tickets angezeigt wird, auch einen Button :btn-icon:fa3-print::.
 Sie können für die Person mit dem Ticket manuell ein Badge ausdrucken, indem Sie den Button :btn-icon:fa3-print:: tippen.
-Während das Gerät den Druckauftrag verschickt, wird eine Benachrichtigung angezeigt.
+Während das Gerät den Druckauftrag verschickt, erscheint eine Benachrichtigung.
 
 Wenn Sie für jedes gescannte Ticket automatisch ein Badge drucken möchten, rufen Sie die Seite mit den Einstellungen auf und scrollen Sie zum Abschnitt "Badges".
 Öffnen Sie das Menü "Badges automatisch drucken" und wählen Sie `Immer`.
@@ -203,9 +204,9 @@ Wählen Sie die Check-in-Liste und tippen Sie wieder auf den Button :btn:OK:.
 Wenn Sie in einem Durchgang Tickets für mehrere Veranstaltungen scannen möchten, sollten Sie den **Experten-Modus** aktivieren.
 Weitere Informationen dazu finden Sie unter [Tickets für mehrere Veranstaltungen scannen](#tickets-für-mehrere-veranstaltungen-scannen).
 
-## Weitergehende Einsatzmöglichkeiten
+## Fortgeschrittene Nutzung
 
-Dieser Abschnitt erläutert die folgenden weitergehenden Einsatzmöglichkeiten von pretixSCAN unter Android:
+Dieser Abschnitt erläutert die folgenden fortgeschrittenen Einsatzmöglichkeiten von pretixSCAN unter Android:
 
  - [Scannen am Ausgang](#scannen-am-ausgang)
  - [Einstellungen sperren](#einstellungen-sperren)
@@ -217,7 +218,8 @@ Dieser Abschnitt erläutert die folgenden weitergehenden Einsatzmöglichkeiten v
 
 Wenn Sie Inhaber\*innen von Tickets beim Verlassen der Veranstaltung erfassen möchten, können Sie den Ausgangs-Modus von pretixSCAN verwenden.
 Diese Vorgehensweise ist sinnvoll, wenn Sie möchten, dass Inhaber\*innen von Tickets die Veranstaltung mehrmals betreten können, sofern das betreffende Ticket nicht gerade bei dieser Veranstaltung eingecheckt ist.
-Sie ist außerdem sinnvoll, wenn Sie Tickets, deren Inhaber\*innen an der Veranstaltung teilgenommen und sie bereits wieder verlassen haben, zurück ins Kontingent geben möchten, sodass Sie mehr Tickets verkaufen können.
+Sie ist außerdem sinnvoll, wenn Sie Tickets wieder zurück ins Kontingent geben möchten, sobald deren Inhaber\*innen an der Veranstaltung teilgenommen und sie wieder verlassen haben.
+Dadurch können Sie danach mehr Tickets verkaufen.
 
 Wenn pro Ticket **mehrere Einlässe** möglich sein sollen, muss die Check-in-Liste den erneuten Einlass nach dem Ausgangsscan zulassen.
 Um dies zu aktivieren, öffnen Sie das [pretix-Backend](https://pretix.eu/control/) und navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-check-square-o: Check-in:.
@@ -225,9 +227,9 @@ Suchen Sie nach der Check-in-Liste und klicken Sie den Button :btn-icon:fa3-wren
 Wechseln Sie zum Reiter :btn:Erweitert:.
 Markieren Sie das Kontrollkästchen neben "Erneuten Eintritt erlauben, wenn Ausgang gescannt wurde".
 
-Wenn es für die Veranstaltung Schließzeiten gibt, also Zeiten, in denen realistischerweise keine Teilnehmenden mehr vor Ort sind, ist es sinnvoll, ein automatisches Auschecken zu implementieren.
+Wenn es für die Veranstaltung Schließzeiten gibt, also Zeiten, in denen realistischerweise keine Teilnehmenden mehr vor Ort sind, ist es sinnvoll, ein automatisches Auschecken einzurichten.
 Dazu geben Sie in das Feld "Automatisch alle auschecken um" eine Uhrzeit ein.
-Wenn Sie beispielsweise ein öffentliches Schwimmbad betreiben, das um 22 Uhr schließt und um 6 Uhr öffnet, könnten Sie in dieses Feld `02:00:00` eingeben.
+Wenn Sie beispielsweise ein Schwimmbad betreiben, das um 22 Uhr schließt und um 6 Uhr öffnet, könnten Sie in dieses Feld `02:00:00` eingeben.
 Dadurch werden alle Tickets automatisch um 2 Uhr nachts ausgecheckt.
 
 Wenn Sie möchten, dass nach dem Ausgangsscan weitere Produkte verkauft werden können, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Tickets → Kontingente:.
@@ -254,7 +256,7 @@ Die App ist jetzt im Modus für Einlass-Scans.
 
 ### Einstellungen sperren
 
-In pretixSCAN haben Sie die Möglichkeit, für Einstellungen eine PIN-Sperre einzurichten.
+pretixSCAN bietet die Möglichkeit, die Einstellungen mit einer PIN zu schützen.
 Das ist sinnvoll, wenn die Personen, die den Check-in durchführen, keine Einstellungen ändern sollen.
 
 Öffnen Sie pretixSCAN, tippen Sie oben rechts den Button :btn-icon:fa3-ellipsis-v:: und dann :btn:Einstellungen:.
@@ -262,10 +264,10 @@ Scrollen Sie zur Überschrift "Benutzeroberfläche" und tippen Sie :btn:PIN-Sper
 Tippen Sie nun :btn:PIN setzen:, geben Sie eine PIN ein und notieren Sie sie an einem sicheren Ort oder speichern Sie sie in einem Passwortmanager.
 Sobald Sie das Kontrollkästchen bei "PIN-Sperre aktivieren" markieren, aktiviert pretixSCAN die PIN-Sperre für das Ändern von Einstellungen.
 
-Das bedeutet, dass die App Sie bei Ihrem nächsten Versuch, vom Startbildschirm aus die Einstellungen aufzurufen, zum Eingeben der PIN auffordert.
-Sie haben auch die Möglichkeit, weitere Funktionen mit derselben PIN zu schützen: statistische Auswertungen, den Wechsel zwischen Veranstaltungen und das Umschalten zwischen Einlass- und Ausgangsscans.
+Das bedeutet, dass die App Sie zum Eingeben der PIN auffordert, wenn Sie das nächste Mal versuchen, vom Startbildschirm aus die Einstellungen aufzurufen. 
+Sie haben auch die Möglichkeit, andere Funktionen mit derselben PIN zu schützen: statistische Auswertungen, den Wechsel zwischen Veranstaltungen und das Umschalten zwischen Einlass- und Ausgangsmodus.
 
-### Teilnehmende scannen ihre Tickets selbst
+### Teilnehmende ihre Tickets selbst scannen lassen
 
 Wenn Sie möchten, dass die Teilnehmenden ihre Tickets selbst scannen, sollten Sie den **Kiosk-Modus** verwenden.
 Im Kiosk-Modus ist die oberste Leiste des Hauptbildschirms von pretixSCAN ausgeblendet.
@@ -282,7 +284,7 @@ Klicken Sie den Button :btn:Speichern:.
 !!! Hinweis
     Beim Sicherheitsprofil für den Kiosk-Modus ist die Suche nach Bestellungen deaktiviert.
     Wenn es möglich sein soll, auf dem Gerät nach Bestellungen zu suchen, wählen Sie stattdessen das Sicherheitsprofil `pretixSCAN`.
-    Wenn Sie die weiteren Anweisungen in diesem Artikel befolgen, ist die Suche nach Bestellungen dennoch hinter der PIN-Sperre.
+    Wenn Sie den weiteren Anweisungen in diesem Abschnitt folgen, dann ist die Suche nach Bestellungen dennoch durch die PIN-Sperre geschützt.
 
 Um den Kiosk-Modus auf Ihrem Gerät zu aktivieren, schützen Sie die Einstellungen durch eine PIN-Sperre wie unter [Einstellungen sperren](#einstellungen-sperren) beschrieben.
 Wenn Sie im Untermenü "PIN-Sperre" sind, markieren Sie die Optionen "Kiosk-Modus" und "Suche deaktivieren".
@@ -290,15 +292,15 @@ Wenn Sie zum Hauptbildschirm zurückkehren, zeigt pretixSCAN oben im Bildschirm 
 
 ![Startbildschirm von pretixSCAN im Kiosk-Modus mit dem Piktogramm für Einlass-Scans, der letzten Synchronisation sowie Buttons für Blitz und Autofokus. Die obere Menüleiste fehlt.](../../assets/screens/scan/kiosk.png "Kiosk-Modus")
 
-Damit die Benutzer\*innen die App nicht verlassen können, verwenden Sie die Funktion zum [Anpinnen von Bildschirmen](https://support.google.com/android/answer/9455138?hl=de) von Android oder der von Ihnen verwendeten Lösung.
+Damit die Benutzer\*innen die App nicht verlassen können, verwenden Sie die Funktion zum [Fixieren von Bildschirmen](https://support.google.com/android/answer/9455138?hl=de) von Android oder Ihre bevorzugte Lösung.
 
 Um den Kiosk-Modus zu verlassen und die Menüleiste wieder anzuzeigen, benötigen Sie einen QR-Code Ihrer PIN.
 Öffnen Sie [unseren QR-Code-Generator](https://qr.pretix.dev/) und geben Sie Ihre PIN ein.
-Sie können alternativ auch einen QR-Code-Generator Ihrer Wahl verwenden.
+Sie können auch einen anderen QR-Code-Generator Ihrer Wahl verwenden.
 Scannen Sie den generierten QR-Code mit pretixSCAN.
 Nun zeigt die App die obere Leiste wieder an und Sie können darüber auf die Einstellungen zugreifen.
 
-### Offline-Scannen
+### Offline-Scan
 
 Standardmäßig erfordert das Scannen mit pretixSCAN eine zuverlässige Netzwerkverbindung.
 Die App vergleicht jeden gescannten Code mit der gewählten Check-in-Liste auf dem pretix-Server.
@@ -315,14 +317,14 @@ Erledigen Sie diese Schritte vorab in einer Umgebung mit zuverlässiger Internet
 !!! Warnung
     Wenn Sie Offline-Scanning mit mehr als einem Gerät nutzen, besteht die Möglichkeit, dass Teilnehmende ein und dasselbe Ticket mehrmals für den Einlass nutzen.
     Dies ist allerdings nur in einem begrenzten Zeitraum möglich.
-    Das Gerät, das dieses Ticket gescannt hat, wird in absehbarer Zeit eine erfolgreiche Synchronisierung durchführen und die anderen Geräte ebenso.
-    Anschließend wird pretixSCAN dieses Ticket korrekt als "Ticket bereits eingelöst" erkennen.
+    Die Geräte mit pretixSCAN versuchen regelmäßig, Daten mit dem Server zu synchronisieren. 
+    Sobald alle Geräten dies erfolgreich durchgeführt haben, wird pretixSCAN dieses Ticket korrekt als "Ticket bereits eingelöst" erkennen.
 
 Wenn Sie den Offline-Modus aktivieren möchten, öffnen Sie pretixSCAN, tippen Sie den Drei-Punkte-Button :btn-icon:fa3-ellipsis-v:: oben rechts und dann :btn:Einstellungen:.
 Markieren Sie das Kontrollkästchen neben "Offline scannen" und "Bestellungen herunterladen".
 Sie sollten auch das das Kontrollkästchen neben "Automatische Synchronisierung" markieren.
 Wenn diese Option aktiv ist, versucht die App, Veranstaltungsdaten zu synchronisieren, sobald eine Verbindung verfügbar ist.
-Sie müssen also nicht alle paar Minuten versuchen, von Hand eine Synchronisierung anzustoßen.
+Sie müssen also nicht alle paar Minuten versuchen, von Hand eine Synchronisierung auszulösen.
 
 Wenn Sie am Einlass zwar eine Netzwerkverbindung haben, diese aber instabil ist, können Sie die Option "Offline scannen" deaktiviert lassen und stattdessen :btn:Offline-Modus automatisch steuern: tippen.
 Standardmäßig ist `Manuelle Steuerung (aus)` gewählt.
@@ -349,7 +351,7 @@ Wenn Sie Tickets für mehrere Veranstaltungen scannen möchten, können Sie den 
 
 !!! Hinweis
     Wenn Sie Tickets für mehrere Termine derselben Veranstaltungsreihe scannen möchten, müssen Sie **nicht** den Experten-Modus verwenden.
-    Sie benötigen den Experten-Modus nur, wenn Sie in einem Durchgang Tickets für mehrere Veranstaltungen oder mehrere Veranstaltungsreihen scannen möchten.
+    Sie benötigen den Experten-Modus nur, wenn Sie gleichzeitig Tickets für mehrere Veranstaltungen oder mehrere Veranstaltungsreihen scannen möchten.
 
 Das ist praktisch, wenn Sie einen gemeinsamen Check-in für mehrere parallele Veranstaltungen betreiben.
 
@@ -362,7 +364,7 @@ Falls Sie dem Gerät die Berechtigung für alle Veranstaltungen erteilen möchte
 Wenn die Berechtigung nur für ausgewählte Veranstaltungen gelten soll, wählen Sie unter "Auf Veranstaltungen einschränken" die Veranstaltungen, für die Sie Tickets scannen möchten.
 Klicken Sie den Button :btn:Speichern:.
 
-Wenn Sie pretixSCAN frisch einrichten, scannen Sie den QR-Code oder geben Sie das Token ein, wie unter [Das Gerät mit dem pretix-Backend verbinden](#das-gerät-mit-dem-pretix-backend-verbinden) beschrieben.
+Wenn Sie pretixSCAN frisch einrichten, scannen Sie den QR-Code oder geben Sie das Token ein, wie unter [Das Gerät mit dem pretix-Backend verbinden](#das-gerat-mit-dem-pretix-backend-verbinden) beschrieben.
 Falls Sie pretixSCAN bereits für eine Veranstaltung eingerichtet haben, tippen Sie in der Leiste oben auf den Namen dieser Veranstaltung.
 Auf beiden Wegen kommen Sie zum pretixSCAN-Bildschirm, auf dem Sie Veranstaltungen wählen können.
 Ab hier ist die Vorgehensweise dieselbe.
@@ -382,7 +384,7 @@ Sie können beliebig viele Veranstaltungen hinzufügen, aber nur eine Check-in-L
 Sie können die Check-in-Liste ändern, indem Sie den Button :btn-icon:fa3-pencil:: daneben tippen.
 Sie entfernen eine Veranstaltung, indem Sie den Button :btn-icon:fa3-trash:: tippen.
 
-Wenn Sie alles wie gewünscht gewählt haben, tippen Sie oben im Bildschirm den Button :btn-icon:fa3-check::.
+Wenn Sie mit Ihrer Auswahl zufrieden sind, tippen Sie oben im Bildschirm den Button :btn-icon:fa3-check::.
 Damit gelangen Sie zurück zum Startbildschirm von pretixSCAN.
 
 Wenn Sie den Experten-Modus **deaktivieren** möchten, tippen Sie oben im Bildschirm den Namen der Veranstaltung.
@@ -409,7 +411,7 @@ Dadurch wird auch die Verbindung zum pretix-Backend getrennt.
 Suchen Sie das getrennte Gerät in der Liste.
 Klicken Sie den Button :btn:Zugriff entfernen: daneben.
 
-Verbinden Sie das Gerät anschließend erneut, wie unter [Das Gerät mit dem pretix-Backend verbinden](#das-gerät-mit-dem-pretix-backend-verbinden) beschrieben.
+Verbinden Sie das Gerät anschließend erneut, wie beschrieben unter [Das Gerät mit dem pretix-Backend verbinden](#das-gerat-mit-dem-pretix-backend-verbinden).
 
 ### pretixSCAN scannt jedes Ticket zweimal
 
