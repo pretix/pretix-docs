@@ -315,8 +315,8 @@ Do these steps ahead of time in a setting where you do have a reliable connectio
 !!! Warning
     If you are using offline scanning with more than one device, then attendees can potentially use a single ticket for entry more than once.
     However, this is only possible for a limited period of time.
-    As soon as the device that has scanned the ticket performs a successful synchronization, and then the other devices also perform a successful synchronization.
-    After that, pretixSCAN will correctly identify the ticket as "Ticket already used".
+    The devices running pretixSCAN will regularly attempt synchronization.
+    As soon as synchronization has been successful on all devices, pretixSCAN will correctly identify the ticket as "Ticket already used".
 
 If you want to enable offline mode, open pretixSCAN, tap the three-dot button :btn-icon:fa3-ellipsis-v:: in the top right corner and then tap :btn:Settings:.
 Then check the box next to "Offline scanning" and "Download orders".
