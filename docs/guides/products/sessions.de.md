@@ -44,7 +44,7 @@ Ergänzend zu den Standard-Zutrittsprodukten für diese Konferenz müssen Sie au
      - Workshop D (20 €)
  - ein Kontingent für jedes Zusatzprodukt (Workshop), jeweils mit der Gesamtkapazität 20
 
-![Seite "Produkt bearbeiten", Reiter "Zusatzprodukte". Die Kategorie "Workshops" ist gewählt. Der Mindestwert ist 0, der Höchstwert ist 2](../../assets/screens/products/add-on.png "Einem Produkt Zusatzprodukte hinzufügen")
+![Seite "Produkt bearbeiten", Reiter "Zusatzprodukte". Die Kategorie "Workshops" ist gewählt. Der Mindestwert ist 0, der Höchstwert ist 2](../../assets/screens/products/add-on.de.png "Einem Produkt Zusatzprodukte hinzufügen")
 
 Wenn Sie diese Kategorien, Produkte und Kontingente erstellt haben, bearbeiten Sie die Standard-Zutrittstickets und wechseln Sie zum Reiter :btn:Zusatzprodukte:.
 Fügen Sie ein Zusatzprodukt aus der Kategorie "Workshops" hinzu mit "Minimale Anzahl" auf `0` und "Maximale Anzahl" auf `2`.
@@ -81,7 +81,7 @@ Solche komplexeren Zeitpläne können Sie mit der Funktion Agenda-Beschränkunge
 Um die entsprechende Erweiterung zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen: und rufen den Reiter :btn:Funktionen: auf.
 Suchen Sie in der Liste nach der Erweiterung "Agenda-Beschränkungen" und klicken Sie den Button :btn:Aktivieren: daneben.
 
-![Seite "Produkt bearbeiten", Reiter "Zusätzliche Einstellungen". Es werden Optionen für "Beginn" und "Ende" angezeigt, Datum und Uhrzeit sind jeweils eingetragen.](../../assets/screens/products/agenda-constraints.png "Agenda-Beschränkungen für ein Produkt")
+![Seite "Produkt bearbeiten", Reiter "Zusätzliche Einstellungen". Es werden Optionen für "Beginn" und "Ende" angezeigt, Datum und Uhrzeit sind jeweils eingetragen.](../../assets/screens/products/agenda-constraints.de.png "Agenda-Beschränkungen für ein Produkt")
 
 Erstellen Sie eine Kategorie für Sitzungstickets und markieren Sie das Kontrollkästchen "Produkte in dieser Kategorie sind Zusatzprodukte".
 Erstellen Sie für jede einzelne Sitzung ein Produkt, fügen Sie es der Kategorie der Sitzungstickets hinzu und wechseln Sie zum Reiter :btn:Zusätzliche Einstellungen:.
