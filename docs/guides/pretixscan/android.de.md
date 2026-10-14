@@ -75,9 +75,9 @@ Es gibt drei dieser Optionen:
 
  - `pretixSCAN`: Wählen Sie diese Option, wenn Sie alle Funktionen von pretixSCAN nutzen möchten.
  - `pretixSCAN (nur online, keine Bestellungs-Synchronisation)`: Wählen Sie diese Option, wenn Sie keine Daten von Bestellungen auf dem Gerät speichern möchten.
- Das [Offline-Scanning](#offline-scanning) funktioniert mit diesem Sicherheitsprofil nicht.
- - `pretixSCAN (Kiosk-Modus, keine Bestellungs-Synchronisation, keine Suche)`: Wählen Sie diese Option, wenn Sie den [Kiosk-Modus](#teilnehmende-scannen-ihre-tickets-selbst) nutzen möchten.
- Das [Offline-Scanning](#offline-scanning) funktioniert mit diesem Sicherheitsprofil nicht.
+ Das [Offline-Scanning](#offline-scan) funktioniert mit diesem Sicherheitsprofil nicht.
+ - `pretixSCAN (Kiosk-Modus, keine Bestellungs-Synchronisation, keine Suche)`: Wählen Sie diese Option, wenn Sie den [Kiosk-Modus](#teilnehmende-ihre-tickets-selbst-scannen-lassen) nutzen möchten.
+ Das [Offline-Scanning](#offline-scan) funktioniert mit diesem Sicherheitsprofil nicht.
  Wenn Sie dieses Sicherheitsprofil wählen, bevor Sie das Gerät verbinden, wird der Kiosk-Modus aktiviert und die Suche deaktiviert.
  Wenn Sie erst nach dem Verbinden des Geräts dieses Sicherheitsprofil einstellen, müssen Sie diese Einstellungen manuell ändern.
 
@@ -111,7 +111,7 @@ Der nächste Schritt hängt von der Art der Veranstaltung ab, für die Sie Ticke
    Tippen Sie erneut den Button :btn:OK:, wählen Sie die Check-in-Liste und tippen Sie wieder auf den Button :btn:OK:.
 
  - **Mehrere Veranstaltungen oder Veranstaltungsreihen:** Hierfür benötigen Sie den Experten-Modus.
-   Informationen dazu finden Sie unter [Tickets für mehrere Veranstaltungen scannen](#tickets-für-mehrere-veranstaltungen-scannen).
+   Informationen dazu finden Sie unter [Tickets für mehrere Veranstaltungen scannen](#tickets-fur-mehrere-veranstaltungen-scannen).
 
 Die App zeigt nun den Hauptbildschirm an.
 Wenn Sie das Sicherheitsprofil pretixSCAN gewählt haben, lädt die App jetzt im Hintergrund die Veranstaltungsdaten vom Server herunter.
@@ -202,7 +202,7 @@ Wählen Sie aus dem Kalender oder der Liste die Veranstaltung und tippen Sie den
 Wählen Sie die Check-in-Liste und tippen Sie wieder auf den Button :btn:OK:.
 
 Wenn Sie in einem Durchgang Tickets für mehrere Veranstaltungen scannen möchten, sollten Sie den **Experten-Modus** aktivieren.
-Weitere Informationen dazu finden Sie unter [Tickets für mehrere Veranstaltungen scannen](#tickets-für-mehrere-veranstaltungen-scannen).
+Weitere Informationen dazu finden Sie unter [Tickets für mehrere Veranstaltungen scannen](#tickets-fur-mehrere-veranstaltungen-scannen).
 
 ## Fortgeschrittene Nutzung
 
@@ -210,9 +210,9 @@ Dieser Abschnitt erläutert die folgenden fortgeschrittenen Einsatzmöglichkeite
 
  - [Scannen am Ausgang](#scannen-am-ausgang)
  - [Einstellungen sperren](#einstellungen-sperren)
- - Mit dem Kiosk-Modus [Teilnehmende ihre Tickets selbst scannen](#teilnehmende-scannen-ihre-tickets-selbst) lassen
- - [Offline-Scannen](#offline-scannen)
- - Tickets für [mehrere Veranstaltungen](#tickets-für-mehrere-veranstaltungen-scannen) scannen
+ - Mit dem Kiosk-Modus [Teilnehmende ihre Tickets selbst scannen](#teilnehmende-ihre-tickets-selbst-scannen-lassen) lassen
+ - [Offline-Scannen](#offline-scan)
+ - Tickets für [mehrere Veranstaltungen](#tickets-fur-mehrere-veranstaltungen-scannen) scannen
 
 ### Scannen am Ausgang
 
