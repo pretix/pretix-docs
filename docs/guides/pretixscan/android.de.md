@@ -46,11 +46,11 @@ Sie können pretixSCAN auf Ihrem Android-Gerät [über den Google Play Store](ht
 Wenn Ihr Gerät keinen Zugriff auf den Google Play Store hat, können Sie die aktuelle Version von unserem [pretix-Marketplace](https://marketplace.pretix.eu/products/pretixscan-android/versions) herunterladen.
 Bei Geräten des Herstellers Sunmi finden Sie die App auch im App-Store von Sunmi.
 
-![Bildschirm mit dem Titel "Willkommen zu pretixSCAN!", der Sie auffordert, das Gerät mit dem Backend zu verbinden.](../../assets/screens/scan/welcome.png "Screenshot Willkommen zu pretixSCAN!")
+![Bildschirm mit dem Titel "Willkommen zu pretixSCAN!", der Sie auffordert, das Gerät mit dem Backend zu verbinden.](../../assets/screens/scan/welcome.de.png "Screenshot Willkommen zu pretixSCAN!")
 
 Wenn Sie pretixSCAN zum ersten Mal starten, müssen Sie bestätigen, dass Sie die Konsequenzen für Datenschutz und Sicherheit verstehen, die sich durch das Speichern der Daten von Teilnehmenden auf dem Gerät ergeben.
 Wenn Sie die Gerätekamera zum Validieren von Tickets nutzen möchten, müssen Sie pretixSCAN den Zugriff auf die Kamera erlauben.
-Wenn Sie ein Smartphone mit speziellem Scanmodul nutzen, dann ist es nicht nötig, pretixSCAN den Kamerazugriff zu gewähren. 
+Wenn Sie ein Smartphone mit speziellem Scanmodul nutzen, dann ist es nicht nötig, pretixSCAN den Kamerazugriff zu gewähren.
 Dies ist beispielsweise bei den den Scan-Smartphones der Fall, die wir vermieten und verkaufen.
 Wir empfehlen die Nutzung des Scanmoduls.
 
@@ -60,7 +60,7 @@ Der nächste Abschnitt erläutert, wie Sie das tun.
 
 ### Das Gerät mit dem pretix-Backend verbinden
 
-![Seite "Neues Gerät verbinden" mit Optionen für den Gerätenamen, den Zugriff auf Veranstaltungen, das Sicherheitsprofil und die Station.](../../assets/screens/scan/connect-new-device.png "Screenshot Neues Gerät verbinden")
+![Seite "Neues Gerät verbinden" mit Optionen für den Gerätenamen, den Zugriff auf Veranstaltungen, das Sicherheitsprofil und die Station.](../../assets/screens/scan/connect-new-device.de.png "Screenshot Neues Gerät verbinden")
 
 Öffnen Sie das [pretix-Backend](https://pretix.eu/control/) und navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-mobile-phone: Geräte:.
 Klicken Sie den Button :btn-icon:fa3-plus: Neues Gerät verbinden:.
@@ -81,7 +81,7 @@ Es gibt drei dieser Optionen:
  Wenn Sie dieses Sicherheitsprofil wählen, bevor Sie das Gerät verbinden, wird der Kiosk-Modus aktiviert und die Suche deaktiviert.
  Wenn Sie erst nach dem Verbinden des Geräts dieses Sicherheitsprofil einstellen, müssen Sie diese Einstellungen manuell ändern.
 
-![Seite "Gerät verbinden" mit Anleitungen zum Installieren von pretixSCAN, einem QR-Code und einem Token.](../../assets/screens/scan/connect-device.png "Screenshot Gerät verbinden")
+![Seite "Gerät verbinden" mit Anleitungen zum Installieren von pretixSCAN, einem QR-Code und einem Token.](../../assets/screens/scan/connect-device.de.png "Screenshot Gerät verbinden")
 
 Wenn Sie den Button :btn:Speichern: klicken, leitet pretix Sie zu einer Seite mit einem QR-Code.
 Öffnen Sie pretixSCAN und scannen Sie den QR-Code mit der Kamera oder dem Scanmodul.
@@ -96,7 +96,7 @@ Sie können den Code ausdrucken und auf Papier übergeben oder ihn an ein andere
 Es ist nicht sinnvoll, den QR-Code an das Gerät zu schicken, auf dem pretixSCAN läuft.
 Als Alternative zum QR-Code können Sie auch die System-URL und das Token verschicken.
 
-![Bildschirm in pretixSCAN mit der Aufforderung, die Veranstaltung zu wählen, für die Sie Tickets scannen möchten.](../../assets/screens/scan/select-event.png "Screenshot Veranstaltung auswählen")
+![Bildschirm in pretixSCAN mit der Aufforderung, die Veranstaltung zu wählen, für die Sie Tickets scannen möchten.](../../assets/screens/scan/select-event.de.png "Screenshot Veranstaltung auswählen")
 
 Wenn Sie erfolgreich den QR-Code gescannt bzw. das Token eingegeben haben, fordert die App Sie auf, die Veranstaltung auszuwählen, für die Sie Tickets scannen möchten.
 Sie können keine Veranstaltung wählen, die gerade offline ist.
@@ -154,7 +154,7 @@ Es gibt drei mögliche Ergebnisse:
  3. In allen anderen Fällen zeigt pretixSCAN ein rotes Feld an, dessen Überschrift das Problem angibt.
  Mögliche Rückmeldungen sind beispielsweise "Ticket ungültig", "Ticket storniert" oder "Eintritt nicht erlaubt".
 
-![Scannen eines Tickets in pretixSCAN. Oben im Bildschirm ist ein grünes Feld mit einem Haken und dem Text: "Ticket gültig (Standard-Ticket)" und an die Bestellnummer ist "-1" angehängt.](../../assets/screens/scan/valid.png "Screenshot für gültiges Ticket")
+![Scannen eines Tickets in pretixSCAN. Oben im Bildschirm ist ein grünes Feld mit einem Haken und dem Text: "Ticket gültig (Standard-Ticket)" und an die Bestellnummer ist "-1" angehängt.](../../assets/screens/scan/valid.de.png "Screenshot für gültiges Ticket")
 
 Wenn keines dieser Ergebnisse eintritt, hat Ihr Gerät den Code nicht gescannt.
 Versuchen Sie in diesem Fall, den Winkel und den Abstand zwischen Scanmodul und Ticket zu verändern, oder verbessern Sie die Lichtverhältnisse.
@@ -242,13 +242,13 @@ Um den Modus für Ausgangsscans in pretixSCAN zu aktivieren, tippen Sie den Drei
 Auf dem Startbildschirm wird nun ein Piktogramm mit einem gelben Kasten angezeigt, in dem ein Pfeil nach links zeigt :fa3-sign-out:.
 Das zeigt, dass die App im Modus für Ausgangsscans ist.
 
-![Startbildschirm von pretixSCAN mit dem Piktogramm eines gelben Kastens, in dem ein Pfeil nach links zeigt.](../../assets/screens/scan/exit-scan.png "Ausgangsscan")
+![Startbildschirm von pretixSCAN mit dem Piktogramm eines gelben Kastens, in dem ein Pfeil nach links zeigt.](../../assets/screens/scan/exit-scan.de.png "Ausgangsscan")
 
 Wenn Sie im Modus für Ausgangsscans ein gültiges Ticket für die Veranstaltung scannen, wird ein grüner Kasten mit dem Text "Ausgang erfasst" angezeigt.
 Das passiert unabhängig davon, ob das Ticket eingecheckt ist.
 Wenn Sie dasselbe Ticket mehrmals im Modus für Ausgangsscans scannen, wird jedes Mal die Meldung "Ausgang erfasst" angezeigt.
 
-![Startbildschirm von pretixSCAN mit einem grünen Kasten mit dem Text 'Ausgang erfasst', dem Namen und dem Ticket-Code.](../../assets/screens/scan/exit-recorded.png "Ausgang erfasst")
+![Startbildschirm von pretixSCAN mit einem grünen Kasten mit dem Text 'Ausgang erfasst', dem Namen und dem Ticket-Code.](../../assets/screens/scan/exit-recorded.de.png "Ausgang erfasst")
 
 Um den Modus für Ausgangsscans zu verlassen, tippen Sie oben rechts den Button :btn-icon:fa3-ellipsis-v:: und anschließend :btn:Zum Eingangs-Modus wechseln:.
 Daraufhin wird der Startbildschirm angezeigt, oben rechts mit dem Piktogramm eines grauen Kastens, in dem ein Pfeil nach rechts zeigt :fa3-sign-in:.
@@ -264,7 +264,7 @@ Scrollen Sie zur Überschrift "Benutzeroberfläche" und tippen Sie :btn:PIN-Sper
 Tippen Sie nun :btn:PIN setzen:, geben Sie eine PIN ein und notieren Sie sie an einem sicheren Ort oder speichern Sie sie in einem Passwortmanager.
 Sobald Sie das Kontrollkästchen bei "PIN-Sperre aktivieren" markieren, aktiviert pretixSCAN die PIN-Sperre für das Ändern von Einstellungen.
 
-Das bedeutet, dass die App Sie zum Eingeben der PIN auffordert, wenn Sie das nächste Mal versuchen, vom Startbildschirm aus die Einstellungen aufzurufen. 
+Das bedeutet, dass die App Sie zum Eingeben der PIN auffordert, wenn Sie das nächste Mal versuchen, vom Startbildschirm aus die Einstellungen aufzurufen.
 Sie haben auch die Möglichkeit, andere Funktionen mit derselben PIN zu schützen: statistische Auswertungen, den Wechsel zwischen Veranstaltungen und das Umschalten zwischen Einlass- und Ausgangsmodus.
 
 ### Teilnehmende ihre Tickets selbst scannen lassen
@@ -290,7 +290,7 @@ Um den Kiosk-Modus auf Ihrem Gerät zu aktivieren, schützen Sie die Einstellung
 Wenn Sie im Untermenü "PIN-Sperre" sind, markieren Sie die Optionen "Kiosk-Modus" und "Suche deaktivieren".
 Wenn Sie zum Hauptbildschirm zurückkehren, zeigt pretixSCAN oben im Bildschirm keine Menüleiste mehr an.
 
-![Startbildschirm von pretixSCAN im Kiosk-Modus mit dem Piktogramm für Einlass-Scans, der letzten Synchronisation sowie Buttons für Blitz und Autofokus. Die obere Menüleiste fehlt.](../../assets/screens/scan/kiosk.png "Kiosk-Modus")
+![Startbildschirm von pretixSCAN im Kiosk-Modus mit dem Piktogramm für Einlass-Scans, der letzten Synchronisation sowie Buttons für Blitz und Autofokus. Die obere Menüleiste fehlt.](../../assets/screens/scan/kiosk.de.png "Kiosk-Modus")
 
 Damit die Benutzer\*innen die App nicht verlassen können, verwenden Sie die Funktion zum [Fixieren von Bildschirmen](https://support.google.com/android/answer/9455138?hl=de) von Android oder Ihre bevorzugte Lösung.
 
@@ -317,7 +317,7 @@ Erledigen Sie diese Schritte vorab in einer Umgebung mit zuverlässiger Internet
 !!! Warnung
     Wenn Sie Offline-Scanning mit mehr als einem Gerät nutzen, besteht die Möglichkeit, dass Teilnehmende ein und dasselbe Ticket mehrmals für den Einlass nutzen.
     Dies ist allerdings nur in einem begrenzten Zeitraum möglich.
-    Die Geräte mit pretixSCAN versuchen regelmäßig, Daten mit dem Server zu synchronisieren. 
+    Die Geräte mit pretixSCAN versuchen regelmäßig, Daten mit dem Server zu synchronisieren.
     Sobald alle Geräten dies erfolgreich durchgeführt haben, wird pretixSCAN dieses Ticket korrekt als "Ticket bereits eingelöst" erkennen.
 
 Wenn Sie den Offline-Modus aktivieren möchten, öffnen Sie pretixSCAN, tippen Sie den Drei-Punkte-Button :btn-icon:fa3-ellipsis-v:: oben rechts und dann :btn:Einstellungen:.
@@ -330,7 +330,7 @@ Wenn Sie am Einlass zwar eine Netzwerkverbindung haben, diese aber instabil ist,
 Standardmäßig ist `Manuelle Steuerung (aus)` gewählt.
 Das bedeutet, dass pretixSCAN das Offline-Scannen nicht automatisch aktiviert oder deaktiviert.
 
-![Seite mit Einstellungen in pretixSCAN. 'Offline scannen' ist deaktiviert. Für 'Offline-Modus automatisch steuern' ist '3 Sekunden dauern oder Fehler' eingestellt.](../../assets/screens/scan/offline.png "Offline-Modus automatisch steuern")
+![Seite mit Einstellungen in pretixSCAN. 'Offline scannen' ist deaktiviert. Für 'Offline-Modus automatisch steuern' ist '3 Sekunden dauern oder Fehler' eingestellt.](../../assets/screens/scan/offline.de.png "Offline-Modus automatisch steuern")
 
 Wenn Sie beispielsweise "3 Sekunden dauern oder Fehler" wählen, aktiviert pretixSCAN das Offline-Scannen, wenn mindestens eine der folgenden drei Bedingungen erfüllt ist:
 
@@ -374,7 +374,7 @@ Tippen Sie dann auf den Button :btn:OK:.
 Wählen Sie Ihre Check-in-Liste.
 Markieren Sie das Kontrollkästchen neben "Experten-Modus (mehrere Events auswählbar)" und tippen Sie den Button :btn:OK:.
 
-![Eine Seite in pretixSCAN mit dem Titel 'Check-In-Liste auswählen'. Das Kästchen neben 'Experten-Modus (mehrere Events auswählbar)' ist markiert.](../../assets/screens/scan/expert-mode.png "Experten-Modus")
+![Eine Seite in pretixSCAN mit dem Titel 'Check-In-Liste auswählen'. Das Kästchen neben 'Experten-Modus (mehrere Events auswählbar)' ist markiert.](../../assets/screens/scan/expert-mode.de.png "Experten-Modus")
 
 Tippen Sie den Button :btn-icon:fa3-plus::.
 Wählen Sie eine andere Veranstaltung und eine andere Check-in-Liste, für die Sie Tickets scannen möchten.
@@ -391,7 +391,7 @@ Wenn Sie den Experten-Modus **deaktivieren** möchten, tippen Sie oben im Bildsc
 Entfernen Sie alle Veranstaltungen, für die Sie keine Tickets scannen möchten.
 Tippen Sie anschließend den Drei-Punkte-Button :btn-icon:fa3-ellipsis-v:: und dann :btn:Experten-Modus deaktivieren:.
 
-![Eine Seite in pretixSCAN mit dem Titel 'Veranstaltung auswählen'. Einziger Eintrag ist die Veranstaltung 'Tutorial-Konferenz'. Oben rechts im Bildschirm ist der Button 'Experten-Modus deaktivieren'.](../../assets/screens/scan/expert-mode-disable.png "Experten-Modus deaktivieren")
+![Eine Seite in pretixSCAN mit dem Titel 'Veranstaltung auswählen'. Einziger Eintrag ist die Veranstaltung 'Tutorial-Konferenz'. Oben rechts im Bildschirm ist der Button 'Experten-Modus deaktivieren'.](../../assets/screens/scan/expert-mode-disable.de.png "Experten-Modus deaktivieren")
 
 ## Fehlerbehebung
 
@@ -407,7 +407,7 @@ Damit wird die App auf den Anfangszustand wie unmittelbar nach der Installation 
 Stattdessen können Sie auch die App deinstallieren und erneut installieren.
 
 Dadurch wird auch die Verbindung zum pretix-Backend getrennt.
-Öffnen Sie das [pretix-Backend](https://pretix.eu/control/) und navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-mobile-phone: Geräte:. 
+Öffnen Sie das [pretix-Backend](https://pretix.eu/control/) und navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-mobile-phone: Geräte:.
 Suchen Sie das getrennte Gerät in der Liste.
 Klicken Sie den Button :btn:Zugriff entfernen: daneben.
 
