@@ -51,7 +51,7 @@ Für alle anderen Fälle empfehlen wir das Standardverfahren mit der Zufallsgene
     Die signaturbasierte Generierung von Ticket-Codes ist nur für besondere Anwendungsfälle gedacht, vor allem für Veranstaltungen mit über 25.000 Tickets.
     Wenn Sie sich nicht sicher sind, ob Sie diese Funktion benötigen, dann ist das höchstwahrscheinlich nicht der Fall.
 
-pretix bietet eine Alternative zur zufallsgesteuerten Generierung von Ticket-Codes an: ein signaturbasiertes Verfahren namens "pretix Signaturverfahren 1".
+pretix bietet eine Alternative zur Zufallsgenerierung von Ticket-Codes an: ein signaturbasiertes Verfahren namens "pretix Signaturverfahren 1".
 Codes, die damit generiert wurden, enthalten das Produkt, die Produktvariante und bei Veranstaltungsreihen auch den Termin.
 
 Um Fälschungen auszuschließen, wird der Ticket-Code mit einer Ed25519-Signatur signiert.
