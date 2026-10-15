@@ -25,9 +25,9 @@ Folgende Schritte sind erforderlich, um PayPal in pretix als Zahlungsdienstleist
 
 Dieser Abschnitt erklärt diese Schritte ausführlich.
 
-![Seite mit Einstellungen für Erweiterungen. Der Reiter "Zahlungsmethoden" ist geöffnet und zeigt die Erweiterungen für Banküberweisungen, Mollie, PayPal und Stripe, die alle aktiv sind.](../../assets/screens/payment-providers/plugins-top.png "Verfügbare Erweiterungen")
+![Seite mit Einstellungen für Erweiterungen. Der Reiter "Zahlungsmethoden" ist geöffnet und zeigt die Erweiterungen für Banküberweisungen, Mollie, PayPal und Stripe, die alle aktiv sind.](../../assets/screens/payment/plugins-top.de.png "Verfügbare Erweiterungen")
 
-Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Erweiterungen:.  
+Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Erweiterungen:.
 Wechseln Sie zum Reiter :btn:Zahlungsmethoden:.
 Auf dieser Seite wird die Erweiterung für PayPal oben angezeigt.
 Sie sollte standardmäßig aktiv sein.
@@ -35,9 +35,9 @@ Wenn sie aktiv ist, hat sie ein grünes Tag ":fa3-check: Aktiv", einen weißen B
 Wenn sie inaktiv ist, fehlt das Tag und es gibt einen violetten Button :btn:Aktivieren:.
 Vergewissern Sie sich, dass die Erweiterung aktiv ist.
 
-![Seite "Zahlungseinstellungen". Der Reiter 'Zahlungsmethoden' ist geöffnet und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, Wertgutschein/Geschenkgutschein, PayPal, SEPA-Lastschrift und Stripe. Die Option 'Wertgutschein/Geschenkgutschein' ist aktiviert, alle anderen Einträge sind deaktiviert. Neben allen Einträgen ist ein Button 'Einstellungen'. Der Button 'Einstellungen' für PayPal ist hervorgehoben.](../../assets/screens/payment-providers/payment-settings-paypal.png "Zahlungseinstellungen für PayPal" )
+![Seite "Zahlungseinstellungen". Der Reiter "Zahlungsmethoden" ist geöffnet und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, Wertgutschein/Geschenkgutschein, PayPal, SEPA-Lastschrift und Mollie; Wertgutschein/Geschenkgutschein ist aktiviert, alle anderen Einträge sind deaktiviert. Neben jedem der Einträge ist ein Button 'Einstellungen'.](../../assets/screens/payment/payment-settings.de.png "Zahlungseinstellungen" )
 
-Sie können direkt zu den Einstellungen für PayPal springen, indem Sie das Dropdown-Menü :btn-icon:fa3-gear:Einstellungen: und anschließend :btn:Zahlung > PayPal: klicken.   
+Sie können direkt zu den Einstellungen für PayPal springen, indem Sie das Dropdown-Menü :btn-icon:fa3-gear:Einstellungen: und anschließend :btn:Zahlung > PayPal: klicken.
 
 Alternativ navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung:.
 Der Reiter :btn:Zahlungsdienstleister: auf dieser Seite enthält eine Liste aktiver Zahlungsdienstleister.
@@ -56,7 +56,7 @@ Wenn Sie pretix Hosted verwenden und Ihr Konto noch nicht mit PayPal verknüpft 
 Klicken Sie den Button und schließen Sie die Anmeldung und Autorisierung bei PayPal ab.
 
 
-![PayPal-Website mit dem pretix-Logo oben rechts und einer Eingabemaske in der Mitte, in der steht: 'Verknüpfen Sie ein PayPal-Konto, um auf pretix GmbH Geld akzeptieren zu können'. Darunter können Sie Ihre E-Mail-Adresse eingeben und Ihr Land bzw. Ihre Region auswählen.](../../assets/screens/payment-providers/paypal-connect-account.png "Mit PayPal verknüpfen" )
+![PayPal-Website mit dem pretix-Logo oben rechts und einer Eingabemaske in der Mitte, in der steht: 'Verknüpfen Sie ein PayPal-Konto, um auf pretix GmbH Geld akzeptieren zu können'. Darunter können Sie Ihre E-Mail-Adresse eingeben und Ihr Land bzw. Ihre Region auswählen.](../../assets/screens/payment/paypal-connect-account.de.png "Mit PayPal verknüpfen" )
 
 Nachdem Sie sich bei PayPal angemeldet und autorisiert haben, sieht die Seite mit den PayPal-Einstellungen im pretix-Backend anders aus.
 Statt des einen Buttons sehen Sie nun zahlreiche Einstellungsmöglichkeiten.

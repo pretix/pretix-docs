@@ -41,14 +41,14 @@ Für jeden von ihnen gibt es eine Erweiterung.
 Sie müssen die Erweiterungen für jeden Zahlungsdienstleister aktivieren, den Sie für Ihre Veranstaltung nutzen möchten.
 Dieser Abschnitt erläutert die Vorgehensweise dazu.
 
-![Seite mit Einstellungen für Erweiterungen. Der Reiter "Zahlungsmethoden" ist geöffnet und zeigt die Erweiterungen für Banküberweisungen, Mollie, PayPal und Stripe, die alle aktiv sind.](../../assets/screens/payment-providers/plugins-top.png "Verfügbare Erweiterungen")
+![Seite mit Einstellungen für Erweiterungen. Der Reiter "Zahlungsmethoden" ist geöffnet und zeigt die Erweiterungen für Banküberweisungen, Mollie, PayPal und Stripe, die alle aktiv sind.](../../assets/screens/payment/plugins-top.de.png "Verfügbare Erweiterungen")
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Erweiterungen:.
 Der Reiter :btn:Zahlungsmethoden: zeigt Erweiterungen für die wichtigsten Zahlungsdienstleister an: Oben auf der Seite stehen Banküberweisung, Mollie, PayPal und Stripe.
 Darunter finden Sie eine Liste aller Erweiterungen für die übrigen in pretix verfügbaren Zahlungsdienstleister.
 Standardmäßig sind die Erweiterungen für Banküberweisungen, PayPal, Stripe und SEPA-Bankeinzug aktiv.
 
-![Ein Teil der Liste der verfügbaren Erweiterungen für Zahlungsdienstleister. Zu sehen sind Saferpay, secuconnect, SEPA-Bankeinzug, SOFORT und Stadtguthaben. Der SEPA-Bankeinzug ist aktiv. Neben den übrigen Einträgen ist ein violetter Button 'Aktivieren'.](../../assets/screens/payment-providers/plugins-list.png "Liste mit Erweiterungen für Zahlungsdienstleister")
+![Ein Teil der Liste der verfügbaren Erweiterungen für Zahlungsdienstleister. Zu sehen sind Saferpay, secuconnect, SEPA-Bankeinzug, SOFORT und Stadtguthaben. Der SEPA-Bankeinzug ist aktiv. Neben den übrigen Einträgen ist ein violetter Button 'Aktivieren'.](../../assets/screens/payment/plugins-list.de.png "Liste mit Erweiterungen für Zahlungsdienstleister")
 
 Wählen Sie diejenigen der wichtigsten Zahlungsdienstleister, die Sie verwenden möchten, und klicken Sie den Button :btn:Aktivieren: daneben.
 Wenn Sie eine Erweiterung aktiviert haben, wird daneben das grüne Tag ":fa3-check: Aktiv" angezeigt und statt des violetten Buttons "Aktivieren" steht dort ein weißer Button "Deaktivieren".
@@ -71,7 +71,7 @@ Diese Liste enthält außerdem immer einen Eintrag für Wertgutscheine.
 Wertgutscheine sind die einzige Zahlungsmethode, für die keine Erweiterung erforderlich ist, weil Wertgutscheine zu den Kernfunktionen von pretix gehören.
 Weitere Informationen finden Sie unter [Wertgutscheine](../gift-cards.de.md).
 
-![Seite "Zahlungseinstellungen". Der Reiter 'Zahlungsmethoden' ist geöffnet und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, Wertgutschein, PayPal, SEPA-Lastschrift und Stripe. Die Option "Wertgutschein" ist aktiviert, alle anderen Einträge sind deaktiviert. Neben jedem Eintrag ist ein Button 'Einstellungen'.](../../assets/screens/payment-providers/payment-settings.png "Zahlungseinstellungen" )
+![Seite "Zahlungseinstellungen". Der Reiter 'Zahlungsmethoden' ist geöffnet und zeigt eine Liste mit den folgenden Einträgen: Banküberweisung, Wertgutschein, PayPal, SEPA-Lastschrift und Stripe. Die Option "Wertgutschein" ist aktiviert, alle anderen Einträge sind deaktiviert. Neben jedem Eintrag ist ein Button 'Einstellungen'.](../../assets/screens/payment/payment-settings.de.png "Zahlungseinstellungen" )
 
 Sie können Zahlungsdienstleister bearbeiten und aktivieren, indem Sie den Button :btn-icon:fa3-gear:Einstellungen: daneben klicken.
 Für jede Zahlungsmethode müssen Sie bestimmte Pflichtangaben eintragen und Einstellungen vornehmen, bevor Sie die Methode aktivieren können.
@@ -80,7 +80,7 @@ Beispielsweise müssen Sie auf der Seite mit Einstellungen für Banküberweisung
 Für jeden Zahlungsdienstleister können Sie außerdem zahlreiche optionale Einstellungen vornehmen.
 Sie können die Verfügbarkeit einer Zahlungsmethode einschränken: nach Datum ("Verfügbar ab" und "Verfügbar bis"), Land ("Auf Länder einschränken") und Verkaufskanal ("Auf bestimmte Verkaufskanäle einschränken").
 
-![Seite mit Zahlungseinstellungen für Stripe, zu sehen ist ein großer violetter Button mit dem Text 'Mit Stripe verbinden'.](../../assets/screens/payment-providers/payment-external.png "Einstellungen für Stripe")
+![Seite mit Zahlungseinstellungen für Stripe, zu sehen ist ein großer violetter Button mit dem Text 'Mit Stripe verbinden'.](../../assets/screens/payment/payment-external.de.png "Einstellungen für Stripe")
 
 Falls es sich bei dem Zahlungsdienstleister um einen externen Dienst handelt, ist auf der Seite mit Einstellungen zunächst nur ein Button zu sehen, über den Sie Ihr Konto bei diesem Dienst verbinden.
 Wenn Sie die Verbindung hergestellt haben, zeigt die Seite mit den Einstellungen für diesen Zahlungsdienstleister die üblichen Einstellungen an.
@@ -99,7 +99,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Zielgruppe hauptsächlich aus
 Um einen Zahlungsdienstleister zu verbergen, navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung: und klicken Sie den Button :btn-icon:fa3-gear: Einstellungen: neben dem Zahlungsdienstleister, den Sie verbergen möchten.
 Markieren Sie das Kontrollkästchen neben "Zahlungsmethode verstecken".
 
-![Seite mit Einstellungen für einen Zahlungsdienstleister. Die Option 'Zahlungsmethode verstecken' ist markiert und auf der Seite wird das Feld 'Link zur Aktivierung' angezeigt, das eine längere URL enthält.](../../assets/screens/payment/hide-payment-method.png "Zahlungsmethode verstecken")
+![Seite mit Einstellungen für einen Zahlungsdienstleister. Die Option 'Zahlungsmethode verstecken' ist markiert und auf der Seite wird das Feld 'Link zur Aktivierung' angezeigt, das eine längere URL enthält.](../../assets/screens/payment/hide-payment-method.de.png "Zahlungsmethode verstecken")
 
 Auf der Seite wird nun das Feld "Link zur Aktivierung" neu angezeigt.
 Kopieren Sie den Link in diesem Feld und schicken Sie ihn an die Kund\*innen, die die Möglichkeit haben sollen, diesen Zahlungsdienstleister zu nutzen.
@@ -210,7 +210,7 @@ Wenn Sie möchten, dass Ihre Benutzer\*innen die vom Zahlungsdienstleister berec
 
 ### Fristen
 
-![Seite "Zahlungseinstellungen". Der Reiter 'Fristen' wird angezeigt und zeigt verschiedene Optionen für Einstellungen rund um Fristen.](../../assets/screens/payment-providers/payment-deadlines.png "Einstellungen für Zahlungsfristen")
+![Seite "Zahlungseinstellungen". Der Reiter 'Fristen' wird angezeigt und zeigt verschiedene Optionen für Einstellungen rund um Fristen.](../../assets/screens/payment/payment-deadlines.de.png "Einstellungen für Zahlungsfristen")
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung:.
 Auf dem Reiter :btn:Fristen: können Sie Zahlungsfristen in Tagen oder Minuten angeben.
