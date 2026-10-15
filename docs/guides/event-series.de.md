@@ -24,8 +24,8 @@ Eine Veranstaltungsreihe zu erstellen ist sinnvoll, wenn Sie viele Veranstaltung
 Entscheiden Sie sich für eine Veranstaltungsreihe, wenn Ihre Kund\*innen die Möglichkeit haben sollen, mit einer einzigen Bestellung Tickets für mehrere Termine zu kaufen.
 Ebenso ist eine Veranstaltungsreihe sinnvoll, wenn es Ihren Kund\*innen möglich sein soll, Zeitfenster zu buchen.
 
-Wenn Sie eine Veranstaltungsreihe mit mehreren Terminen erstellen, wirken sich alle Änderungen an Einstellungen auf sämtliche Termine in der Reihe aus.
-Alle Termine, die Teil der Veranstaltungsreihe sind, werden Kund\*innen auf einer Shop-Seite angezeigt.
+Wenn Sie eine Veranstaltungsreihe mit mehreren Terminen erstellen, wirken sich Änderungen an den Einstellungen der Veranstaltungsreihe auf sämtliche Termine in der Reihe aus.
+Alle Termine, die Teil der Veranstaltungsreihe sind, werden Kund\*innen auf einer einzigen Shop-Seite angezeigt.
 
 Einstellungen gelten immer für alle Termine innerhalb einer Veranstaltungsreihe, allerdings mit folgenden Ausnahmen:
 
@@ -54,11 +54,11 @@ Wir empfehlen, in Fällen wie den folgenden Beispielen eine **Einzelveranstaltun
 
  - Veranstaltungen, die über mehrere Tage laufen, etwa Kongresse oder Festivals, an denen Kund\*innen in der Regel an mehr als einem Tag teilnehmen.
  Solche Situationen können Sie mit unterschiedlichen Produkten und Check-in-Regeln einfacher abbilden.
- - Veranstaltungen mit großen Abständen zwischen den einzelnen Terminen, beispielsweise Jahreskongresse 
+ - Veranstaltungen mit großen Abständen zwischen den einzelnen Terminen, beispielsweise jährlich stattfindende Kongresse 
  - Veranstaltungen mit minimalen Überschneidungen bei den organisatorischen Parametern 
  - kleine Veranstaltungen, die Teil einer größeren Veranstaltung sind (beispielsweise Workshops bei einem Kongress)
 
-### So erstellen Sie eine Veranstaltungsreihe
+### Eine Veranstaltungsreihe erstellen
 
 Navigieren Sie zur Übersicht.
 Klicken Sie in der Liste "Ihre nächsten Veranstaltungen" den Button :btn-icon:fa3-plus:Neue Veranstaltung erstellen:.
@@ -77,24 +77,24 @@ Auf dieser Seite werden die bereits vorhandenen Termine der Veranstaltung angeze
 
 Um einen einzelnen neuen Termin für diese Veranstaltungsreihe zu erstellen, klicken Sie :btn-icon:fa3-plus: Neuen Termin erstellen:.
 Wählen Sie für den Termin einen Namen, die Uhrzeit des Veranstaltungsbeginns und mindestens ein Produkt.
-Wenn Sie alle Pflichtangaben und die zahlreichen optionalen Einstellungen auf dieser Seite wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
+Sobald Sie mit Ihrer Auswahl bei den notwendigen und optionalen Einstellungen auf dieser Seite zufrieden sind, klicken Sie den Button :btn:Speichern:.
 Sie gelangen zurück zur Termin-Überblickseite namens "Termine".
 Der eben erstellte Termin wird in der Liste auf dieser Seite angezeigt.
 
 Um mehrere neue Termine für diese Veranstaltungsreihe zu erstellen, klicken Sie :btn-icon:fa3-plus: Mehrere neue Termine erstellen:. 
 Die Vorgehensweise ist ganz ähnlich wie beim Erstellen eines einzelnen Termins.
-Wir zeigen sie am folgenden Beispiel.
+Das folgende Beispiel gibt einen Eindruck davon.
 
 ![Seite mit dem Titel "Mehrere Termine erstellen" mit Optionen für Wiederholungsregeln und Zeiten sowie einer Vorschau der Termine, die angelegt werden.](../assets/screens/event-series/create-multiple-example.png "Beispiel für das Erstellen mehrerer Termine" )
 
-In diesem Beispiel möchten Sie eine Veranstaltung namens "Vertriebsworkshop" anbieten, die im zweiten Halbjahr 2027 montags und mittwochs um 10 Uhr stattfindet.
+Nehmen Sie zum Beispiel an, Sie bieten eine Veranstaltung namens "Vertriebsworkshop" an, die im zweiten Halbjahr 2027 montags und mittwochs um 10 Uhr stattfindet.
 Im Feld "Regel zur Wiederholung" legen Sie dafür Folgendes fest:
 "Wiederhole alle 1 Woche(n) mit Beginn am 01.07.2027."
 Markieren Sie die Kästchen für die Wochentage, an denen die Veranstaltung stattfindet; in diesem Beispiel "Montag" und "Mittwoch".
-Wählen Sie den Radiobutton neben "Wiederhole bis zum" und wählen Sie als Datum 31.12.2027.
+Wählen Sie den Radiobutton neben "Wiederhole bis zum" und wählen Sie als Datum den `31.12.2027`.
 
 Mithilfe der Spalte "Vorschau" am rechten Seitenrand können Sie prüfen, welche Termine die Wiederholungsregel generiert.
-Angezeigt werden jeweils die ersten und letzten zehn Termine, die angelegt werden.
+Die Spalte zeigt die jeweils ersten und letzten zehn Termine, die angelegt werden.
 
 Klicken Sie unter "Uhrzeiten" den Button :btn-icon:fa3-plus: Einzelnes Zeitfenster hinzufügen:.
 Wählen Sie eine Uhrzeit für den Veranstaltungsbeginn, in diesem Beispiel 10:00:00.
