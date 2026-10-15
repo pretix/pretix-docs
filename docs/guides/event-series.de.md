@@ -54,8 +54,8 @@ Wir empfehlen, in Fällen wie den folgenden Beispielen eine **Einzelveranstaltun
 
  - Veranstaltungen, die über mehrere Tage laufen, etwa Kongresse oder Festivals, an denen Kund\*innen in der Regel an mehr als einem Tag teilnehmen.
  Solche Situationen können Sie mit unterschiedlichen Produkten und Check-in-Regeln einfacher abbilden.
- - Veranstaltungen mit großen Abständen zwischen den einzelnen Terminen, beispielsweise jährlich stattfindende Kongresse 
- - Veranstaltungen mit minimalen Überschneidungen bei den organisatorischen Parametern 
+ - Veranstaltungen mit großen Abständen zwischen den einzelnen Terminen, beispielsweise jährlich stattfindende Kongresse
+ - Veranstaltungen mit minimalen Überschneidungen bei den organisatorischen Parametern
  - kleine Veranstaltungen, die Teil einer größeren Veranstaltung sind (beispielsweise Workshops bei einem Kongress)
 
 ### Eine Veranstaltungsreihe erstellen
@@ -66,14 +66,14 @@ Wählen Sie bei "Veranstaltungsart" die Option "Veranstaltungsreihe oder Zeitslo
 Die weitere Vorgehensweise ist dieselbe wie beim Erstellen einer Einzelveranstaltung.
 Weitere Informationen zum Erstellen einer Veranstaltungsreihe finden Sie auf der Tutorial-Seite zum [Anlegen einer Veranstaltungsreihe](../tutorial/continuous-operation/event.md).
 
-![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 1" mit Optionen zum Wählen des Veranstalterkontos, der Veranstaltungsart und der verfügbaren Sprachen.](../assets/screens/event/create-event1.png "Screenshot Neue Veranstaltung erstellen – Schritt 1" )
+![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 1" mit Optionen zum Wählen des Veranstalterkontos, der Veranstaltungsart und der verfügbaren Sprachen.](../assets/screens/event/create-event1.de.png "Screenshot Neue Veranstaltung erstellen – Schritt 1" )
 
 ### Termine in der Veranstaltungsreihe erstellen und bearbeiten
 
 Navigieren Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-calendar: Termine:.
 Auf dieser Seite werden die bereits vorhandenen Termine der Veranstaltung angezeigt und hier können Sie Termine erstellen, bearbeiten, klonen und löschen.
 
-![Seite mit dem Titel "Termine", die Buttons zum Erstellen eines oder mehrerer neuer Termine anzeigt. ](../assets/screens/event-series/dates.png "Screenshot Termine" )
+![Seite mit dem Titel "Termine", die Buttons zum Erstellen eines oder mehrerer neuer Termine anzeigt. ](../assets/screens/event-series/dates.de.png "Screenshot Termine" )
 
 Um einen einzelnen neuen Termin für diese Veranstaltungsreihe zu erstellen, klicken Sie :btn-icon:fa3-plus: Neuen Termin erstellen:.
 Wählen Sie für den Termin einen Namen, die Uhrzeit des Veranstaltungsbeginns und mindestens ein Produkt.
@@ -81,11 +81,11 @@ Sobald Sie mit Ihrer Auswahl bei den notwendigen und optionalen Einstellungen au
 Sie gelangen zurück zur Termin-Überblickseite namens "Termine".
 Der eben erstellte Termin wird in der Liste auf dieser Seite angezeigt.
 
-Um mehrere neue Termine für diese Veranstaltungsreihe zu erstellen, klicken Sie :btn-icon:fa3-plus: Mehrere neue Termine erstellen:. 
+Um mehrere neue Termine für diese Veranstaltungsreihe zu erstellen, klicken Sie :btn-icon:fa3-plus: Mehrere neue Termine erstellen:.
 Die Vorgehensweise ist ganz ähnlich wie beim Erstellen eines einzelnen Termins.
 Das folgende Beispiel gibt einen Eindruck davon.
 
-![Seite mit dem Titel "Mehrere Termine erstellen" mit Optionen für Wiederholungsregeln und Zeiten sowie einer Vorschau der Termine, die angelegt werden.](../assets/screens/event-series/create-multiple-example.png "Beispiel für das Erstellen mehrerer Termine" )
+![Seite mit dem Titel "Mehrere Termine erstellen" mit Optionen für Wiederholungsregeln und Zeiten sowie einer Vorschau der Termine, die angelegt werden.](../assets/screens/event-series/create-multiple-example.de.png "Beispiel für das Erstellen mehrerer Termine" )
 
 Nehmen Sie zum Beispiel an, Sie bieten eine Veranstaltung namens "Vertriebsworkshop" an, die im zweiten Halbjahr 2027 montags und mittwochs um 10 Uhr stattfindet.
 Im Feld "Regel zur Wiederholung" legen Sie dafür Folgendes fest:
