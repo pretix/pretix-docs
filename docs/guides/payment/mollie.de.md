@@ -1,7 +1,7 @@
 # Mollie
 
 Mollie ist eine der zahlreichen Möglichkeiten, in pretix Zahlungen abzuwickeln. 
-Mollie können Sie für folgende Zahlungsmethoden einsetzen: 
+Sie können Mollie für folgende Zahlungsmethoden einsetzen: 
 
 Alma, Apple Pay, BANCOMAT Pay, Bancontact, Banküberweisung, Belfius Pay (Button), Bitcoin, BLIK, EPS, Google Pay, iDEAL, ING Home'Pay, KBC/CBC Payment (Button), Klarna, Kreditkarte, MyBank, PayPal, paysafecard, Przelewy24, Satispay, Trustly und Twint. 
 
@@ -19,7 +19,7 @@ Folgende Schritte sind erforderlich, um Mollie in pretix als Zahlungsdienstleist
 
  1. Aktivieren Sie die Mollie-Erweiterung. 
  2. Verknüpfen Sie Ihr Mollie-Konto. 
- 3. Tragen Sie auf der Seite mit Einstellungen die Pflichtangaben für Mollie ein.
+ 3. Tragen Sie auf der Seite mit Einstellungen für Mollie die notwendigen Informationen ein.
  4. Nehmen Sie optionale Anpassungen vor.
  5. Aktivieren Sie Zahlungen über Mollie.
  6. Testen Sie die eingerichtete Zahlungsmethode. 

@@ -1,7 +1,7 @@
 # PayPal
 
 PayPal ist eine der zahlreichen Möglichkeiten, in pretix Zahlungen abzuwickeln.
-PayPal können Sie für folgende Zahlungsmethoden einsetzen:
+Sie können PayPal für folgende Zahlungsmethoden einsetzen:
 Echtzeitzahlung über ein PayPal-Konto, "Jetzt kaufen, später bezahlen" mit PayPal-Konto, SEPA-Bankeinzug und alternative Zahlungsmethoden wie EPS, iDEAL und andere.
 
 Dieser Artikel erklärt, wie Sie Ihr PayPal-Konto verknüpfen, um darauf Zahlungen über pretix zu empfangen.
@@ -18,7 +18,7 @@ Folgende Schritte sind erforderlich, um PayPal in pretix als Zahlungsdienstleist
 
  1. Aktivieren Sie die PayPal-Erweiterung.
  2. Verknüpfen Sie Ihr PayPal-Konto.
- 3. Tragen Sie auf der Seite mit Einstellungen die Pflichtangaben für PayPal ein.
+ 3. Tragen Sie auf der Seite mit Einstellungen für PayPal die notwendigen Informationen ein.
  4. Nehmen Sie optionale Anpassungen vor.
  5. Aktivieren Sie Zahlungen über PayPal.
  6. Testen Sie die eingerichtete Zahlungsmethode.
@@ -55,10 +55,6 @@ Das weitere Vorgehen hängt ab hier davon ab, ob Sie pretix Hosted oder eine sel
 Wenn Sie pretix Hosted verwenden und Ihr Konto noch nicht mit PayPal verknüpft haben, zeigt die Seite mit den Einstellungen für PayPal nur den Button :btn:Mit PayPal verbinden: an.
 Klicken Sie den Button und schließen Sie die Anmeldung und Autorisierung bei PayPal ab.
 
-Die Erweiterung ist zwar aktiv, aber Sie haben PayPal für die Veranstaltung noch nicht als Zahlungsdienstleister eingerichtet.
-Klicken Sie den Button :btn-icon:fa3-gear:Einstellungen: neben PayPal.
-Dadurch gelangen Sie zu der Seite mit den Einstellungen für PayPal, wo derzeit nur der Button :btn:Mit PayPal verbinden: angezeigt wird.
-Klicken Sie den Button und schließen Sie die Anmeldung und Autorisierung bei PayPal ab.
 
 ![PayPal-Website mit dem pretix-Logo oben rechts und einer Eingabemaske in der Mitte, in der steht: 'Verknüpfen Sie ein PayPal-Konto, um auf pretix GmbH Geld akzeptieren zu können'. Darunter können Sie Ihre E-Mail-Adresse eingeben und Ihr Land bzw. Ihre Region auswählen.](../../assets/screens/payment-providers/paypal-connect-account.png "Mit PayPal verknüpfen" )
 

@@ -1,11 +1,11 @@
 # Zahlung
 
-Wenn nicht alle Produkte in Ihrem Shop kostenlos sind, müssen Ihre Kund\*innen eine Möglichkeit haben, Ihnen Geld zu schicken. 
-pretix ermöglicht die Zahlung über eine breite Palette von Zahlungsdienstleistern. 
+Wenn nicht alle Produkte in Ihrem Shop kostenlos sind, dann brauchen Ihre Kund\*innen eine Möglichkeit, Ihnen Zahlungen zukommen zu lassen. 
+pretix ermöglicht Zahlungen über eine breite Palette von Zahlungsdienstleistern. 
 Es gibt zwei Arten von Zahlungsmethoden: 
 
- - Zahlungen, die vollständig innerhalb von pretix ablaufen, etwa Banküberweisungen oder Wertgutscheine. 
- - die Einbindung externer Zahlungsdienstleister wie Mollie, PayPal oder Stripe 
+ - Zahlungen, die vollständig innerhalb von pretix ablaufen, etwa Banküberweisungen oder Wertgutscheine
+ - Integrationen mit externen Zahlungsdienstleistern wie Mollie, PayPal oder Stripe
 
 Wenn Sie von Ihren Kund\*innen Zahlungen über pretix erhalten möchten, müssen Sie mindestens einen Zahlungsdienstleister aktivieren und einrichten. 
 Dieser Artikel erläutert die Vorgehensweise dazu. 
@@ -15,17 +15,17 @@ Wenn Sie Tickets an der Abendkasse oder gegen Bargeld verkaufen möchten, sollte
 
 ## Voraussetzungen
 
-Sie richten Zahlungsdienstleister auf Veranstaltungsebene ein, Sie müssen also zuerst eine Veranstaltung anlegen. 
+Sie richten Zahlungsdienstleister auf Veranstaltungsebene ein, also müssen Sie zuerst eine Veranstaltung anlegen. 
 
 Vergewissern Sie sich, dass Sie bei allen externen Zahlungsdienstleistern, die Sie mit pretix verwenden möchten, ein aktives Konto besitzen. 
-Wenn Sie beispielsweise Zahlungen über Mollie empfangen möchten, müssen Sie ein Mollie-Konto haben. 
+Wenn Sie beispielsweise Zahlungen über Mollie empfangen möchten, dann brauchen Sie ein Mollie-Konto. 
 
 ## Anleitung
 
 Folgende Schritte sind erforderlich, um in pretix Zahlungsdienstleister einzurichten: 
 
  1. [Aktivieren Sie die Erweiterung](index.md#plugins-for-payment-providers) für den Zahlungsdienstleister.
- 2. Verbinden Sie Ihr Konto bei dem Zahlungsdienstleister. 
+ 2. Verbinden Sie Ihr Konto bei dem Zahlungsdienstleister mit pretix.
  3. Tragen Sie auf der [Seite mit Einstellungen](index.md#general-settings-for-payment-providers) die notwendigen Angaben für den Zahlung ein.
  4. Nehmen Sie optionale Anpassungen vor, etwa indem Sie [Zusatzgebühren](index.md#additional-fees) einrichten.
  5. Aktivieren Sie den Zahlungsdienstleister für Ihren Shop.
@@ -52,9 +52,9 @@ Standardmäßig sind die Erweiterungen für Banküberweisungen, PayPal, Stripe u
 
 Wählen Sie diejenigen der wichtigsten Zahlungsdienstleister, die Sie verwenden möchten, und klicken Sie den Button :btn:Aktivieren: daneben. 
 Wenn Sie eine Erweiterung aktiviert haben, wird daneben das grüne Tag ":fa3-check: Aktiv" angezeigt und statt des violetten Buttons "Aktivieren" steht dort ein weißer Button "Deaktivieren". 
-Deaktivieren Sie alle aktiven Erweiterungen, die Sie für Ihre Veranstaltung nicht nutzen möchten. 
+Deaktivieren Sie alle aktiven Erweiterungen, die Sie nicht für Ihre Veranstaltung nutzen möchten. 
 
-### Allgemeine Einstelllungen für Zahlungsdienstleister
+### Allgemeine Einstellungen für Zahlungsdienstleister
 
 Das Aktivieren einer Erweiterung alleine reicht nicht aus, damit die betreffende Zahlungsmethode im Shop zur Verfügung steht. 
 Sie müssen außerdem für alle Zahlungsdienstleister, die Sie verwenden möchten, bestimmte Daten angeben. 
@@ -113,30 +113,31 @@ https://pretix.eu/tut/tutcon27/unlock/9f8d374cf050d22e3fed41e66baead6e17e7057f62
 ``` 
 
 In diesem Beispiel lautet der Gutscheincode `speaker8ZLLVR5MYXT2KWZG`. 
-Kund\*innen, die den Link klicken, gelangen zu Ihrem Shop, wo der Gutschein vorausgewählt **und** die verborgene Zahlungsmethode aktiviert ist. 
+Kund\*innen, die den Link klicken, gelangen zum Shop mit vorausgewähltem Gutschein **und** aktivierter Zahlungsmethode. 
 
 Mehr über Gutscheine erfahren Sie im Artikel über [Gutscheine](../vouchers.md). 
 
 ### Zusatzgebühren
 
 !!! Warnung 
-    Die EU-Richtlinie 2015/2366 verbietet Aufschläge für die Nutzung der häufigsten Zahlungsmethoden in der Europäischen Union. 
-    Holen Sie eine rechtliche Beratung ein oder verzichten Sie auf Zahlungsgebühren für Transaktionen innerhalb der Europäischen Union.
+    Die EU-Richtlinie 2015/2366 verbietet Aufschläge für die Nutzung der meisten verbreiteten Zahlungsmethoden in der Europäischen Union. 
+    Holen Sie rechtliche Beratung ein oder verzichten Sie auf Zahlungsgebühren für Transaktionen innerhalb der Europäischen Union.
 
 Die meisten Zahlungsdienstleister berechnen eine Gebühr für jede verarbeitete Transaktion. 
 Wenn Sie planen, diese Gebühr selbst zu zahlen, müssen Sie keine Einstellungen ändern. 
-Wenn Sie diese Gebühr auf den Zahlbetrag Ihrer Kund\*innen aufschlagen möchten, lassen Sie sich rechtlich beraten, ob diese Vorgehensweise legal ist. 
+Wenn Sie diese Gebühr auf den Zahlbetrag Ihrer Kund\*innen aufschlagen möchten, lassen Sie sich rechtlich dazu beraten, ob diese Vorgehensweise legal ist. 
 
-Wenn das geklärt ist, navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung: und öffnen Sie den Reiter :btn:Erweitert:. 
-Wählen Sie im Dropdown-Menü "Besteuerung für Zahlungsgebühren" die gewünschte Steuer-Regel aus. 
+Standardmäßig verwendet pretix die Standard-Steuer-Regel Ihrer Veranstaltung für Zahlungsgebühren.
+Falls Sie keine Steuern auf Zahlungsgebühren erheben wollen, navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung: und öffnen Sie den Reiter :btn:Erweitert:. 
+Wählen Sie unter "Besteuerung für Zahlungsgebühren" die Option `Keine Steuern erheben`. 
 
 Mehr zum Umgang mit Steuern in pretix erfahren Sie in unserem Artikel über [Steuern](../taxes.md). 
 
 Wechseln Sie anschließend zum Reiter :btn:Zahlungsdienstleister: und rufen Sie die Seite mit Einstellungen für den Zahlungsdienstleister auf, für den Sie Zusatzgebühren aktivieren möchten. 
 
 Für Zusatzgebühren sind auf dieser Seite drei Elemente relevant: zwei Felder namens "Zusätzliche Gebühr" und ein Kontrollkästchen namens "Berechne die Gebühr als Anteil vom Endbetrag". 
-Beim ersten Feld steht die Beschreibung "Fester Betrag", Ihre Eingabe hier wird als Geldbetrag interpretiert. 
-Beim zweiten Feld steht die Beschreibung "Prozentsatz der Bestellsumme", Ihre Eingabe hier wird als Prozentsatz interpretiert. 
+Das erste Feld hat die Beschreibung "Fester Betrag" und interpretiert Ihre Eingabe als Geldbetrag.
+Das zweite Feld hat die Beschreibung "Prozentsatz der Bestellsumme" und interpretiert Ihre Eingabe als Prozentsatz.
 Welche Optionen Sie wie nutzen, hängt vom jeweiligen Anwendungsfall ab. 
 
 Der nächste Abschnitt erläutert Ihre Vorgehensweise, wenn Sie eine Gebühr an Ihre Kund\*innen weitergeben möchten oder wenn Sie der Wahl eines Zahlungsdienstleisters durch eine Zusatzgebühr entgegenwirken möchten. 
@@ -144,7 +145,7 @@ Der nächste Abschnitt erläutert Ihre Vorgehensweise, wenn Sie eine Gebühr an 
 #### Gebühren von Zahlungsdienstleistern an Kund\*innen weitergeben
 
 Ein Beispiel: Ihr Zahlungsdienstleister berechnet Ihnen eine Transaktionsgebühr von 2,99 % plus einen Festbetrag von 0,49 €. 
-Geben Sie in das Feld "Fester Betrag" 0,49 ein und in das Feld "Prozentsatz der Bestellsumme" 2,99. 
+Geben Sie in das Feld "Fester Betrag" `0,49` ein und in das Feld "Prozentsatz der Bestellsumme" `2,99`.
 Keine der beiden Eingaben ist verpflichtend. 
 Sie können daher auch nur einen festen Betrag oder nur einen Prozentwert eingeben. 
 
@@ -176,7 +177,7 @@ Die folgende Tabelle vergleicht die beiden Berechnungsverfahren in pretix:
 | Ticketpreis                             | 250,00 €                                  | 250,00 €                                       |
 | Von pretix berechnete Gebühr            | 7,96 €                                    | 8,21 €                                         | 
 | Gesamt-Zahlbetrag für Kund\*innen        | 257,96 €                                  | 258,21 €                                       |
-| Vom Zahlungsdienstl. berechnete Gebühr  | 8,20 €                                    | 8,21 €                                         |
+| Vom Zahlungsdienstleister berechnete Gebühr  | 8,20 €                                    | 8,21 €                                         |
 | Ihrem Konto gutgeschriebener Betrag     | 249,76 €                                  | 250,00 €                                       |
 
 #### Der Wahl eines Zahlungsdienstleisters durch eine Zusatzgebühr entgegenwirken 
@@ -185,7 +186,7 @@ Zur Berechnung dieser Gebühr können Sie in pretix auch eine einfachere Formel 
 Das ist nützlich, wenn Sie beispielsweise durch eine Zusatzgebühr Ihre Kund\*innen davon abbringen möchten, einen bestimmten Zahlungsdienstleister zu nutzen. 
 
 Ein Beispiel: Ihr Zahlungsdienstleister berechnet Ihnen eine Gebühr von 2,99 % plus einen Festbetrag von 0,49 €. 
-Geben Sie in das Feld "Fester Betrag" 0,49 ein und in das Feld "Prozentsatz der Bestellsumme" 2,99. 
+Geben Sie in das Feld "Fester Betrag" `0,49` ein und in das Feld "Prozentsatz der Bestellsumme" `2,99`. 
 Keine der beiden Eingaben ist verpflichtend. 
 Sie können daher auch nur einen festen Betrag oder nur einen Prozentwert eingeben. 
 
@@ -214,7 +215,7 @@ Wenn Sie möchten, dass Ihre Benutzer\*innen die vom Zahlungsdienstleister berec
 Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung:.    
 Auf dem Reiter :btn:Fristen: können Sie Zahlungsfristen in Tagen oder Minuten angeben. 
 Die Standardfrist, innerhalb derer Ihre Kund\*innen bezahlen müssen, ist 14 Tage. 
-Auf dieser Seite können Sie außerdem bei Bedarf Änderungen vornehmen und so etwa das Datum des letzten möglichen Zahlungseingangs festlegen, eine Zusatzfrist über das mitgeteilte Datum hinaus gewähren oder die Vorgabe setzen, das Zahlungsziel nur auf Werktage zu legen. 
+Auf dieser Seite können Sie außerdem optionale Änderungen vornehmen, wie etwa das Datum des letzten möglichen Zahlungseingangs festlegen, eine Zusatzfrist über das mitgeteilte Datum hinaus gewähren oder vorauszusetzen, dass Fristen immer an einem Werktag enden. 
 
 !!! Hinweis 
     Wenn Sie ein "Datum des letzten möglichen Zahlungseingangs" festlegen, setzt dieses Datum sowohl die festgelegte Zahlungsfrist als auch die Einstellung bei "Späte Zahlungen akzeptieren" außer Kraft. 
@@ -231,7 +232,7 @@ In pretix ist es nicht möglich, für verschiedene Zahlungsmethoden unterschiedl
 Ein Beispiel: Stellen Sie sich vor, in pretix wären für Zahlungsmethoden unterschiedliche Fristen möglich. 
 Ein\*e Kund\*in gibt eine Bestellung mit einer Zahlungsmethode auf, entscheidet sich dann aber doch für eine andere Methode mit kürzerer Frist. 
 Damit würde diese Bestellung ungültig. 
-Der\*die Kund\*in müsste eine neue Bestellung aufgeben, und das aus nicht vollständig nachvollziehbarem Grund. 
+Der\*die Kund\*in müsste aus nicht klar nachvollziehbaren Gründen eine neue Bestellung aufgeben.
 
 Bei einer neuen Bestellung ginge außerdem die Reservierung der Artikel im Warenkorb verloren. 
 Falls das Kontingent in der Zwischenzeit aufgebraucht ist, kann der\*die Kund\*in das gewünschte Produkt nicht mehr kaufen und wird dann möglicherweise überhaupt nichts mehr kaufen. 
@@ -254,8 +255,7 @@ Vergewissern Sie sich, dass daneben das grüne Tag ":fa3-check: Aktiv" angezeigt
 
 Wenn ein Zahlungsdienstleister nicht im Test-Shop angezeigt wird oder Kund\*innen beim Kauf eine Zahlungsmethode nicht wählen können, vergewissern Sie sich, dass Zahlungsdienstleister und Zahlungsmethode aktiv sind. 
 
-Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung:.    
-Sie gelangen zum Reiter "Zahlungseinstellungen". 
+Navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → Zahlung: und öffnen Sie den Reiter "Zahlungseinstellungen".
 Klicken Sie den Button :btn-icon:fa3-gear:Einstellungen: neben dem Zahlungsdienstleister, der nicht im Shop angezeigt wird. 
 Vergewissern Sie sich, dass alle Pflichtangaben eingetragen sind. 
 Markieren Sie das Kontrollkästchen neben "Zahlungsmethode aktivieren". 

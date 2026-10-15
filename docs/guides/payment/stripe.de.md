@@ -1,7 +1,7 @@
 # Stripe
 
 Stripe ist eine der zahlreichen Möglichkeiten, in pretix Zahlungen abzuwickeln. 
-Stripe können Sie für folgende Zahlungsmethoden einsetzen: 
+Sie können Stripe für folgende Zahlungsmethoden einsetzen: 
 Affirm, Alipay, Apple Pay, Bancontact, EPS, Google Pay, iDEAL, Klarna, Kreditkarte, MobilePay, Multibanco, Przelewy24, Revolut Pay, SEPA-Bankeinzug, Swish, TWINT und WeChat Pay. 
 Dieser Artikel erklärt, wie Sie Ihr Stripe-Konto verknüpfen, um darauf Zahlungen über pretix zu empfangen. 
 
@@ -18,7 +18,7 @@ Folgende Schritte sind erforderlich, um Stripe in pretix als Zahlungsdienstleist
 
  1. Aktivieren Sie die Stripe-Erweiterung. 
  2. Verknüpfen Sie Ihr Stripe-Händlerkonto. 
- 3. Tragen Sie auf der Seite mit Einstellungen die Pflichtangaben für Stripe ein.
+ 3. Tragen Sie auf der Seite mit Einstellungen für Stripe die notwendigen Informationen ein.
  4. Nehmen Sie optionale Anpassungen vor.
  5. Aktivieren Sie Zahlungen über Stripe.
  6. Testen Sie die eingerichtete Zahlungsmethode. 
@@ -81,7 +81,7 @@ Solange die Veranstaltung noch im Testmodus ist, verwendet die pretix-Software i
 <!-- md:enterprise -->
 
 Wenn Sie pretix Community oder pretix Enterprise verwenden und Ihr Konto noch nicht mit Stripe verbunden haben, zeigt die Seite mit den Einstellungen für Stripe Felder für API-Schlüssel an. 
-Gehen Sie zu [https://dashboard.stripe.com/login](https://dashboard.stripe.com/login) und melden Sie sich an Ihrem Konto an. 
+Gehen Sie zu [https://dashboard.stripe.com/login](https://dashboard.stripe.com/login) und melden Sie sich mit Ihrem Konto an. 
 Die Seite "API" im Stripe-Backend zeigt zwei Schlüsselpaare mit je einem geheimen und einem öffentlichen Schlüssel an: ein Paar für den Sandbox-Modus und ein Paar für den Live-Modus. 
 Wenn Sie Zahlungen über Stripe testen möchten, kopieren Sie die Sandbox-Schlüssel von der Stripe-Seite für APIs in die entsprechenden Felder auf der pretix-Seite mit Stripe-Einstellungen. 
 
