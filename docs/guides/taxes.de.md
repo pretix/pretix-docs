@@ -1,9 +1,9 @@
 # Umsatzsteuer
 
 In den meisten Ländern müssen Sie Steuern auf alle Umsätze abführen, die Sie mit pretix machen.
-pretix gibt Ihnen die benötigten Werkzeuge an die Hand, um die korrekte Steuer auf jeden Verkauf zu errechnen.
+pretix gibt Ihnen die nötigen Werkzeuge an die Hand, um die korrekte Steuer auf jeden Verkauf zu berechnen.
 
-Sie konfigurieren die Umsatzsteuer auf Veranstaltungsebene.
+Steuern werden auf der Veranstaltungs-Ebene konfiguriert.
 Wenn Sie eine Veranstaltung erstellen, fordert pretix Sie auf, eine einfache Steuer-Regel anzulegen.
 Für die meisten unkomplizierten Fälle sollte das bereits ausreichen.
 Dieser Artikel erklärt, wie Sie zusätzliche Steuer-Regeln erstellen, wie Sie komplexe eigene Steuer-Regeln konfigurieren und wie Sie Steuer-Regeln Produkten zuweisen.
@@ -17,7 +17,7 @@ Holen Sie eine qualifizierte Steuerberatung ein, bevor Sie in Ihrem Shop Steuers
 
 ## Voraussetzungen
 
-Umsatzsteuer gilt auf Veranstaltungsebene, Sie müssen also zuerst eine Veranstaltung anlegen.
+Steuern werden auf der Veranstaltungs-Ebene konfiguriert, daher müssen Sie zuerst eine Veranstaltung anlegen.
 
 ## Allgemeine Verwendung
 
@@ -25,12 +25,12 @@ In pretix können Sie für jeden Steuersatz, der für Ihre Situation relevant is
 Anschließend weisen Sie diese Steuer-Regel jedem einzelnen Produkt zu.
 
 Steuer-Regeln konfigurieren Sie für jede Veranstaltung individuell.
-Es gibt keine Standard-Steuer-Regeln.
+Es gibt keine standardmäßig vorgegebenen Steuer-Regeln.
 Damit Sie einem Produkt eine Steuer-Regel zuweisen können, müssen Sie diese Steuer-Regel zuerst anlegen.
 Das gilt auch für einen Steuersatz von 0 %.
 Auch wenn Sie Produkte mit einem Steuersatz von 0 % verkaufen (beispielsweise [Wertgutscheine](../guides/gift-cards.md)), müssen Sie zuerst eine Steuer-Regel für 0 % erstellen.
 
-Bei Steuer-Regeln für kostenlose Produkte ist der auf der Rechnung gedruckte Steuersatz der einzige sichtbare Unterschied.
+Bei Steuer-Regeln für kostenlose Produkte ist der einzige relevante Unterschied der auf der Rechnung gedruckte Steuersatz.
 Legen Sie die Steuer-Regel an, die auf der Rechnung erscheinen soll, und weisen Sie sie Ihren Produkten zu.
 pretix erstellt keine Rechnungen für Bestellungen, die ausschließlich kostenlose Produkte enthalten.
 
@@ -42,19 +42,20 @@ Um eine neue Steuer-Regel zu erstellen, klicken Sie den Button :btn:Neue Steuer-
 
 ![Dialogfeld 'Steuer-Regel'. Der Reiter 'Allgemein' zeigt Optionen für den offiziellen und den internen Namen, den Steuersatz und die Angabe, ob die Steuer im Produktpreis enthalten sein soll.](../assets/screens/tax/edit-rule.png "Erweiterte Optionen für Steuer-Regeln" )
 
-Sie gelangen zu einem Dialogfeld, in dem Sie eine neue Steuer-Regel erstellen.
-Der "Offizielle Name", den Sie auf dem Reiter "Allgemein" festlegen, ist der Name, der Kund\*innen im Shop angezeigt wird.
+Sie gelangen zu einem Dialog, in dem Sie eine neue Steuer-Regel erstellen.
+Füllen Sie auf dem Reiter "Allgemein" das Feld "Offizieller Name" aus.
+Dieser Name wird den Kund\*innen im Shop angezeigt.
 Hinterlegen Sie für jede verwendete Sprache die passende Übersetzung.
 
-Optional können Sie auch einen "Internen Namen" festlegen, der Ihnen und Ihren Team-Mitgliedern im pretix-Backend angezeigt wird.
+Optional können Sie in dem Feld "Interner Name" eine Bezeichnung festlegen, die Ihnen und Ihren Team-Mitgliedern im pretix-Backend angezeigt wird.
 
 Wählen Sie unter "Steuersatz" den Prozentwert des Steuersatzes.
 Wenn Sie beispielsweise in Deutschland Produkte mit dem regulären Umsatzsteuersatz verkaufen, legen Sie "Steuersatz" auf 19,00 % fest.
 
-Über das Kästchen bei "Der konfigurierte Produktpreis enthält den Steuerbetrag" legen Sie fest, ob der Produktpreis bei dieser Steuer-Regel als Nettopreis (ohne Umsatzsteuer) oder Bruttobetrag (mit Umsatzsteuer) behandelt wird.
+Über das Kästchen bei "Der konfigurierte Produktpreis enthält den Steuerbetrag" legen Sie fest, ob der Preis aller Produkte mit dieser Steuer-Regel als Nettopreis (ohne Umsatzsteuer) oder Bruttobetrag (mit Umsatzsteuer) behandelt wird.
 
 Standardmäßig ist diese Option aktiv, sodass pretix mit dieser Steuer-Regel alle Produktpreise als Bruttopreise behandelt, also inklusive Umsatzsteuer.
-Damit setzt sich für ein Produkt der Listenpreis von 10,00 € bei einem Steuersatz von 19,00 % aus einem Nettopreis von 8,40 € und 1,60 € Umsatzsteuer zusammen, die addiert den Bruttopreis von 10,00 € ergeben.
+Damit setzt sich für ein Produkt der Listenpreis von 10,00 € bei einem Steuersatz von 19,00 % aus einem Nettopreis von 8,40 € und 1,60 € Umsatzsteuer zusammen, die in Summe den Bruttopreis von 10,00 € ergeben.
 
 Wenn Sie das Häkchen aus dem Kontrollkästchen entfernen, behandelt pretix mit dieser Steuer-Regel alle Produktpreise als Nettopreise und schlägt die Umsatzsteuer auf den Listenpreis auf.
 Für ein Produkt mit einem Listenpreis von 10,00 € wird bei einem Steuersatz von 19,00 % Umsatzsteuer in Höhe von 1,90 € dazu addiert, sodass der Bruttopreis 11,90 € beträgt.
@@ -66,7 +67,7 @@ Klicken Sie den Button :btn:Speichern:, um Ihre Einstellungen zu bestätigen.
 Die Einstellung "Der konfigurierte Produktpreis enthält den Steuerbetrag" wirkt sich darauf aus, wie Sie in pretix Produktpreise konfigurieren.
 Sie wirkt sich nicht darauf aus, wie die Preise Ihren Kund\*innen im Shop angezeigt werden.
 Wenn Sie im Shop Preise ohne enthaltene Umsatzsteuer anzeigen möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:.
-Ändern Sie die Einstellung "Preisanzeige für Kunden" zu "Preise exklusive Steuern" und klicken Sie den Button :btn:Speichern:.
+Ändern Sie die Einstellung "Preisanzeige für Kunden" zu `Preise exklusive Steuern` und klicken Sie den Button :btn:Speichern:.
 Diese Einstellung gilt unabhängig von der jeweiligen Steuer-Regel für alle Produkte.
 
 ### Eigene Steuer-Regeln
@@ -77,7 +78,7 @@ Diese Einstellung gilt unabhängig von der jeweiligen Steuer-Regel für alle Pro
     Die Verwendung eigener Steuer-Regeln und die Option zur Steuerpflicht des Leistungsempfängers bei EU-Geschäften ("Reverse Charge") schließen sich gegenseitig aus.
     Wenn Sie mindestens eine eigene Steuer-Regel definiert haben, wird die Reverse-Charge-Option zur Steuerpflicht des Leistungsempfängers **nicht** angewendet, selbst wenn das Kontrollkästchen bei "Nutze EU-Regeln zur Steuerpflicht des Leistungsempfängers (reverse charge)" markiert ist.
 
-In pretix können Sie "eigene Regeln" definieren, wenn bei Ihnen besondere Anforderungen an die Bedingungen gelten, unter denen Umsatzsteuer auf Ihren Verkaufspreis aufgeschlagen wird oder nicht.
+In pretix können Sie "eigene Regeln" definieren, wenn bei Ihnen besondere Anforderungen an die Bedingungen gelten, unter denen Umsatzsteuer auf Ihren Verkaufspreis aufgeschlagen wird.
 Diese "eigenen Regeln" sind den Steuer-Regeln untergeordnet und sind optional.
 
 Wenn Sie eigene Regeln für Unternehmen einrichten möchten, die eine Umsatzsteuer-Identifikationsnummer (USt-ID) haben, müssen Sie Ihre Kund\*innen auffordern, die USt-ID anzugeben.
@@ -92,7 +93,7 @@ Wählen Sie unter "Bedingung" im ersten Dropdown-Menü das Land bzw. die Region,
 Wählen Sie im zweiten Dropdown-Menü die Art des\*der Kund\*in (Privatperson, Unternehmen oder Unternehmen mit gültiger USt-ID-Nr.) oder wählen Sie "Beliebiger Kunde".
 
 Wählen Sie unter "Berechnung", wie pretix unter den angegebenen Bedingungen (also je nach Land und Kund\*in) die Umsatzsteuer berechnet.
-Wenn Sie für die angegebenen Bedingungen einen bestimmten Steuersatz berechnen möchten, wählen Sie "MwSt. berechnen" und geben Sie in das Eingabefeld darunter den Steuersatz ein.
+Wenn Sie für die angegebenen Bedingungen einen bestimmten Steuersatz berechnen möchten, wählen Sie "MwSt. berechnen" und geben Sie in das Feld darunter den Steuersatz ein.
 Wenn für die definierte Bedingung die Steuerschuld des Leistungsempfängers gelten soll, wählen Sie "Reverse Charge" und lassen Sie das Feld darunter leer.
 
 Über die anderen Optionen können Sie festlegen, dass **keine** Steuer berechnet wird, dass eine manuelle Freigabe erforderlich ist oder dass für die definierte Bedingung keine Verkäufe zulässig sind.
@@ -108,7 +109,7 @@ Mit den Pfeil-Buttons :btn-icon:fa3-arrow-up:: und :btn-icon:fa3-arrow-down:: k�
 
 ![Dialogfeld 'Steuer-Regel'. Auf dem Reiter 'Erweitert' sind vier eigene Regeln zu sehen, die im folgenden Absatz beschrieben werden.](../assets/screens/tax/custom-rules.png "Beispiel für eigene Regeln" )
 
-Ein Beispiel: Ein Unternehmen in Deutschland organisiert eine Veranstaltung, bei der die Reverse-Charge-Regel der EU möglich ist.
+Ein Beispiel: Ein Unternehmen in Deutschland organisiert eine Veranstaltung, auf die die Reverse-Charge-Regel der EU anwendbar ist.
 Das Unternehmen legt zuerst die Regel für "Deutschland" an, die für "beliebige Kund\*innen" die Regel "MWSt. berechnen" anwendet.
 Der Steuersatz beträgt 19,00 % und die Begründung ist "Standard-Steuerkodierung".
 Anschließend legt das Unternehmen eine Regel für die "Europäische Union" an, die für "Unternehmen mit gültiger USt-ID-Nr." die "Reverse Charge"-Bestimmung anwendet, wobei das Feld für den Steuersatz leer ist und als Begründung "Steuerschuld des Leistungsempfängers (Reverse Charge)" gewählt ist.
@@ -129,8 +130,8 @@ Die Reihenfolge, in der das Beispielunternehmen die Regeln angeordnet hat, sorgt
 ### Steuerpflicht des Leistungsempfängers bei EU-Geschäften ("reverse charge")
 
 !!! Warnung
-    Die Reverse-Charge-Regeln gelten **nicht** für die meisten mit pretix verwalteten Veranstaltungen.
-    Wir **empfehlen daher dringend**, diese Funktion **nur zu aktivieren**, wenn es dafür einen konkreten Grund gibt.
+    Die Reverse-Charge-Regeln sind auf die meisten mit pretix verwalteten Veranstaltungen **nicht** anwendbar.
+    Wir **empfehlen daher dringend**, diese Funktion **nicht zu aktivieren**, außer wenn Sie einen konkreten Grund dafür haben.
     Laut Artikel 52 der [Richtlinie über das gemeinsame Mehrwertsteuersystem](https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32006L0112&from=DE) (Seite 17) gilt als Ort der Veranstaltung der Ort, an dem die Dienstleistung tatsächlich bewirkt wird.
     Deshalb gilt immer die Steuergesetzgebung des Landes, in dem die Veranstaltung stattfindet, unabhängig vom Wohnort der Kund\*innen.
 
@@ -163,12 +164,12 @@ Wenn Sie die Reverse-Charge-Funktion aktivieren und das Land des Händlers angeb
     Der Shop zeigt den Bruttopreis inklusive Umsatzsteuer an.
  3. Im Schritt "Ihre Informationen" kann der\*die Kund\*in die "Rechnungsinformationen" angeben.
     Wenn die Rechnungsadresse in einem Land außerhalb der EU liegt, rechnet pretix den Umsatzsteueranteil aus dem Preis heraus.
-    Wenn die Rechnungsadresse eine Geschäftsadresse in einem anderem EU-Land als dem des Händlers ist **und** eine gültige USt-ID angegeben wurde, rechnet pretix den Umsatzsteueranteil aus dem Preis heraus und fügt der Rechnung einen Hinweis auf das Reverse-Charge-Verfahren hinzu. 
+    Wenn die Rechnungsadresse eine Geschäftsadresse in einem anderem EU-Land als dem des Händlers ist **und** der\*die Kund\*in eine gültige USt-ID angibt, rechnet pretix den Umsatzsteueranteil aus dem Preis heraus und fügt der Rechnung einen Hinweis auf das Reverse-Charge-Verfahren hinzu. 
 
 Wenn der\*die Kund\*in auf den Button "Fortfahren" klickt, gleicht pretix die angegebene Umsatzsteuer-Identifikationsnummer mit dem Onlinedienst der EU zur USt-ID-Prüfung ab.
-Falls der Dienst gerade nicht verfügbar ist, muss der\*die Kund\*in die Umsatzsteuer zahlen und kann sie sich später vom eigenen Staat erstatten lassen.
+Falls der Dienst zu diesem Zeitpunkt nicht verfügbar ist, muss der\*die Kund\*in die Umsatzsteuer zahlen und kann sie sich später vom eigenen Staat erstatten lassen.
 
-Falls Ihr EU-Land und das des\*der Kund\*in eine andere Währung verwendet, werden auf der Rechnung der Gesamtbetrag sowie der enthaltene Umsatzsteuerbetrag sowohl in der Währung des Veranstaltungslandes angegeben als auch in der Währung im Land des\*der Kund\*in.
+Falls Ihr EU-Land und das des\*der Kund\*in unterschiedliche Währungen verwendet, werden auf der Rechnung der Gesamtbetrag sowie der enthaltene Umsatzsteuerbetrag sowohl in der Währung des Veranstaltungslandes angegeben als auch in der Währung im Land des\*der Kund\*in.
 
 Bei bestehenden Bestellungen führt eine Änderung der Rechnungsadresse **nicht** zu einer automatischen Änderung der Besteuerung.
 Wenn Sie diese Änderung manuell auslösen möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-shopping-cart: Bestellungen: → Alle Bestellungen: und klicken Sie eine der betreffenden Bestellungen.
@@ -189,7 +190,7 @@ Wenn Sie ein **neues Produkt** erstellen und diesem eine Steuer-Regel zuweisen m
 Klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:. 
 Klicken Sie unter "Preis" das Dropdown-Menü "Umsatzsteuer" und wählen Sie die Steuer-Regel, die für das Produkt gelten soll.
 Diese Liste zeigt den internen Namen und den Steuersatz, die Sie auf der Seite mit Einstellungen für die Steuer-Regel festgelegt haben.
-Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
+Sobald Sie die Auswahl getroffen haben, klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
 <br>
 
@@ -199,7 +200,7 @@ Wenn Sie einem **bestehenden Produkt** eine Steuer-Regel zuweisen möchten, navi
 Klicken Sie den Button :btn-icon:fa3-edit:: "Bearbeiten" neben dem betreffenden Produkt und wechseln Sie zum Reiter :btn:Preis:.
 Wählen Sie im Dropdown-Menü "Umsatzsteuer" die Steuer-Regel, die für das Produkt gelten soll.
 Diese Liste zeigt den internen Namen, den Sie auf der Seite mit Einstellungen für die Steuer-Regel festgelegt haben, und den Steuersatz.
-Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Speichern:.
+Sobald Sie die Auswahl getroffen haben, klicken Sie den Button :btn:Speichern:.
 
 #### Gemischte Steuersätze (Preis enthält Umsatzsteuer)
 
@@ -231,7 +232,7 @@ Wählen Sie unter "Enthaltenes Produkt" eines der anderen Produkte, die Sie erst
 "Ausgewiesener Preisanteil" legt fest, welcher Anteil des vollen Preises für das Produktpaket mit dem Steuersatz besteuert wird, der diesem Produkt zugewiesen ist.
 pretix geht davon aus, dass der Wert von "Ausgewiesener Preisanteil" bei Produkten in Produktpaketen bereits die Umsatzsteuer enthält.
 
-Wiederholen Sie diesen Schritt für jedes Produkt mit unterschiedlichem Steuersatz, das Teil des Produktpakets sein soll.
+Wiederholen Sie diesen Schritt für jedes Produkt mit abweichendem Steuersatz, das Teil des Produktpakets sein soll.
 Klicken Sie dann den Button :btn:Speichern:.
 
 Ein Beispiel: Sie organisieren eine Weiterbildungsveranstaltung für eine Wohltätigkeitsorganisation in Deutschland und dürfen für diese Veranstaltung den Umsatzsteuersatz von 7,00 % berechnen.
@@ -257,8 +258,8 @@ Der Produktpreis von 450 € wird in zwei Teile aufgeteilt:
 #### Gemischte Steuersätze (Preis wird ohne Umsatzsteuer angezeigt)
 
 Dieser Abschnitt erklärt, wie Sie gemischte Steuersätze implementieren, wenn Ihr pretix-Shop Steuer-Regeln verwendet, die die Umsatzsteuer auf den angezeigten Produktpreis aufschlagen.
-Gehen Sie dazu  – mit Ausnahme der Preise – vor wie unter [Gemischte Steuersätze (Preis enthält Umsatzsteuer)](taxes.md#gemischte-steuersatze-preis-enthalt-umsatzsteuer) beschrieben.
-Wenn bei allen eigenen Steuer-Regeln das Kontrollkästchen "Der konfigurierte Produktpreis enthält den Steuerbetrag" nicht markiert ist, ist die Konfiguration der Preise für gemischte Steuersätze komplexer.
+Gehen Sie dazu vor wie unter [Gemischte Steuersätze (Preis enthält Umsatzsteuer)](taxes.md#gemischte-steuersatze-preis-enthalt-umsatzsteuer) beschrieben, legen Sie allerdings andere Preise fest.
+Wenn bei allen eigenen Steuer-Regeln das Kontrollkästchen "Der konfigurierte Produktpreis enthält den Steuerbetrag" **nicht** markiert ist, ist die Konfiguration der Preise für gemischte Steuersätze komplexer.
 
 pretix geht davon aus, dass der Wert von "Ausgewiesener Preisanteil" bei Produkten in Produktpaketen bereits die Umsatzsteuer enthält.
 Für Produkte in Produktpaketen müssen Sie den Preis inklusive Umsatzsteuer daher selbst berechnen.
@@ -309,11 +310,11 @@ Wir empfehlen, diese Option zu verwenden, wenn Sie Software für E-Rechnungen nu
 Der Vorteil ist, dass Kund\*innen in Ihrem Shop keine unerwarteten Änderungen beim Brutto-Gesamtpreis ihrer Bestellung sehen.
 
 Der Nachteil dieser Methode ist, dass dadurch winzige Abweichungen in den Nettopreisen für einzelne Bestellpositionen entstehen können.
-Dadurch kann es passieren, dass Sie ein und dasselbe Produkt zu unterschiedlichen Nettopreisen verkaufen.
+Dadurch kann es passieren, dass Sie ein- und dasselbe Produkt zu unterschiedlichen Nettopreisen verkaufen.
 Bruttopreise und Steuersätze bleiben immer dieselben.
 
 Wenn Sie eine externe Steuersoftware verwenden, sollten Sie die Methode wählen, die der Methode entspricht, die auch Ihre Steuersoftware verwendet.
-Damit beugen Sie bei Rundungen Abweichungen zwischen pretix und der externen Software vor.
+Damit beugen Sie rundungsbedingten Abweichungen zwischen pretix und der externen Software vor.
 
 Weitere Informationen über Algorithmen zur Steuerberechnung finden Sie in unserer Dokumentation für Entwickler\*innen zum Thema [Runden bei der Umsatzsteuer](https://docs.pretix.eu/dev/development/algorithms/pricing.html#rounding-of-taxes).
 
