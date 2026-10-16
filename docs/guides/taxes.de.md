@@ -13,7 +13,7 @@ Dies hängt von dem Steuersystem Ihres Landes ab, von der Art Ihres Unternehmens
 Die pretix-Dokumentation enthält **keine** Informationen darüber, welche Steuersätze für Ihre Situation gelten.
 Holen Sie eine qualifizierte Steuerberatung ein, bevor Sie in Ihrem Shop Steuersätze festlegen.
 
-{% include "warning-tax-rules.md" %}
+{% include "warning-tax.de.md" %}
 
 ## Voraussetzungen
 
@@ -204,7 +204,7 @@ Sobald Sie die Auswahl getroffen haben, klicken Sie den Button :btn:Speichern:.
 
 #### Gemischte Steuersätze (Preis enthält Umsatzsteuer)
 
-{% include "warning-tax-rules.md" %}
+{% include "warning-tax.de.md" %}
 
 Dieser Abschnitt erläutert, wie Sie für ein einzelnes Produkt gemischte Steuersätze einrichten.
 Das können Sie in pretix tun, indem Sie ein Produkt mit dem vollen Preis und einem Steuersatz erstellen und dann ein Produktpaket mit diesem Produkt sowie Produkten mit unterschiedlichen Steuersätzen erstellen.
