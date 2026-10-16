@@ -36,11 +36,11 @@ pretix erstellt keine Rechnungen für Bestellungen, die ausschließlich kostenlo
 
 ### Steuer-Regeln erstellen
 
-Um eine neue Steuer-Regel zu erstellen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:. 
+Um eine neue Steuer-Regel zu erstellen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:.
 Diese Seite enthält eine Liste mit allen Steuer-Regeln, die Sie für diese Veranstaltung erstellt haben.
-Um eine neue Steuer-Regel zu erstellen, klicken Sie den Button :btn:Neue Steuer-Regel erstellen:.  
+Um eine neue Steuer-Regel zu erstellen, klicken Sie den Button :btn:Neue Steuer-Regel erstellen:.
 
-![Dialogfeld 'Steuer-Regel'. Der Reiter 'Allgemein' zeigt Optionen für den offiziellen und den internen Namen, den Steuersatz und die Angabe, ob die Steuer im Produktpreis enthalten sein soll.](../assets/screens/tax/edit-rule.png "Erweiterte Optionen für Steuer-Regeln" )
+![Dialogfeld 'Steuer-Regel'. Der Reiter 'Allgemein' zeigt Optionen für den offiziellen und den internen Namen, den Steuersatz und die Angabe, ob die Steuer im Produktpreis enthalten sein soll.](../assets/screens/tax/edit-rule.de.png "Erweiterte Optionen für Steuer-Regeln" )
 
 Sie gelangen zu einem Dialog, in dem Sie eine neue Steuer-Regel erstellen.
 Füllen Sie auf dem Reiter "Allgemein" das Feld "Offizieller Name" aus.
@@ -72,7 +72,7 @@ Diese Einstellung gilt unabhängig von der jeweiligen Steuer-Regel für alle Pro
 
 ### Eigene Steuer-Regeln
 
-![Dialogfeld 'Steuer-Regel'. Der Reiter 'Erweitert' zeigt als Optionen die Steuerpflicht des Leistungsempfängers bei EU-Geschäften, das Land des Händlers und den Abschnitt zum Definieren neuer eigener Regeln.](../assets/screens/tax/advanced.png "Erweiterte Optionen für Steuer-Regeln" )
+![Dialogfeld 'Steuer-Regel'. Der Reiter 'Erweitert' zeigt als Optionen die Steuerpflicht des Leistungsempfängers bei EU-Geschäften, das Land des Händlers und den Abschnitt zum Definieren neuer eigener Regeln.](../assets/screens/tax/advanced.de.png "Erweiterte Optionen für Steuer-Regeln" )
 
 !!! Hinweis
     Die Verwendung eigener Steuer-Regeln und die Option zur Steuerpflicht des Leistungsempfängers bei EU-Geschäften ("Reverse Charge") schließen sich gegenseitig aus.
@@ -82,11 +82,11 @@ In pretix können Sie "eigene Regeln" definieren, wenn bei Ihnen besondere Anfor
 Diese "eigenen Regeln" sind den Steuer-Regeln untergeordnet und sind optional.
 
 Wenn Sie eigene Regeln für Unternehmen einrichten möchten, die eine Umsatzsteuer-Identifikationsnummer (USt-ID) haben, müssen Sie Ihre Kund\*innen auffordern, die USt-ID anzugeben.
-Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Rechnungswesen:. 
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Rechnungswesen:.
 Wechseln Sie zum Reiter :btn:Adresseingabe: und stellen Sie sicher, dass die Kontrollkästchen neben "Rechnungsadresse erfragen" und "Nach USt-ID fragen" markiert sind.
 Klicken Sie zur Bestätigung den Button :btn:Speichern:.
 
-Um eine eigene Steuer-Regel zu erstellen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:.  
+Um eine eigene Steuer-Regel zu erstellen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:.
 Klicken Sie die Steuer-Regel, für die Sie eigene Regeln festlegen möchten, wechseln Sie zum Reiter :btn:Erweitert: und klicken Sie den Button :btn-icon:fa3-plus: Neue Regel hinzufügen:.
 
 Wählen Sie unter "Bedingung" im ersten Dropdown-Menü das Land bzw. die Region, wo die eigene Regel gelten soll, oder wählen Sie "Beliebiges Land".
@@ -107,7 +107,7 @@ Wenn ein\*e Kund\*in eine Bestellung aufgibt, prüft pretix die eigenen Steuer-R
 Die erste Regel, die auf die Bestellung zutrifft, bestimmt dann, ob und wie pretix Umsatzsteuer berechnet.
 Mit den Pfeil-Buttons :btn-icon:fa3-arrow-up:: und :btn-icon:fa3-arrow-down:: können Sie die Regeln je nach Priorität nach oben oder unten verschieben.
 
-![Dialogfeld 'Steuer-Regel'. Auf dem Reiter 'Erweitert' sind vier eigene Regeln zu sehen, die im folgenden Absatz beschrieben werden.](../assets/screens/tax/custom-rules.png "Beispiel für eigene Regeln" )
+![Dialogfeld 'Steuer-Regel'. Auf dem Reiter 'Erweitert' sind vier eigene Regeln zu sehen, die im folgenden Absatz beschrieben werden.](../assets/screens/tax/custom-rules.de.png "Beispiel für eigene Regeln" )
 
 Ein Beispiel: Ein Unternehmen in Deutschland organisiert eine Veranstaltung, auf die die Reverse-Charge-Regel der EU anwendbar ist.
 Das Unternehmen legt zuerst die Regel für "Deutschland" an, die für "beliebige Kund\*innen" die Regel "MWSt. berechnen" anwendet.
@@ -149,7 +149,7 @@ Die Reverse-Charge-Regel ist Teil der Umsatzsteuer-Gesetzgebung der Europäische
 Wenn der\*die Käufer\*in im eigenen Land als umsatzsteuerpflichtiges Unternehmen registriert ist, dürfen Sie als Verkäufer\*in nur den Nettopreis ohne Umsatzsteuer berechnen und müssen darauf hinweisen, dass der\*die Käufer\*in dafür verantwortlich ist, die erforderliche Umsatzsteuer abzuführen.
 
 Wenn Sie die Reverse-Charge-Regel nutzen möchten, müssen Sie die USt-ID Ihrer Kund\*innen erfragen.
-Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Rechnungswesen:. 
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Rechnungswesen:.
 Wechseln Sie zum Reiter :btn:Adresseingabe: und stellen Sie sicher, dass die Kontrollkästchen neben "Rechnungsadresse erfragen" und "Nach USt-ID fragen" markiert sind.
 Klicken Sie zur Bestätigung den Button :btn:Speichern:.
 
@@ -164,7 +164,7 @@ Wenn Sie die Reverse-Charge-Funktion aktivieren und das Land des Händlers angeb
     Der Shop zeigt den Bruttopreis inklusive Umsatzsteuer an.
  3. Im Schritt "Ihre Informationen" kann der\*die Kund\*in die "Rechnungsinformationen" angeben.
     Wenn die Rechnungsadresse in einem Land außerhalb der EU liegt, rechnet pretix den Umsatzsteueranteil aus dem Preis heraus.
-    Wenn die Rechnungsadresse eine Geschäftsadresse in einem anderem EU-Land als dem des Händlers ist **und** der\*die Kund\*in eine gültige USt-ID angibt, rechnet pretix den Umsatzsteueranteil aus dem Preis heraus und fügt der Rechnung einen Hinweis auf das Reverse-Charge-Verfahren hinzu. 
+    Wenn die Rechnungsadresse eine Geschäftsadresse in einem anderem EU-Land als dem des Händlers ist **und** der\*die Kund\*in eine gültige USt-ID angibt, rechnet pretix den Umsatzsteueranteil aus dem Preis heraus und fügt der Rechnung einen Hinweis auf das Reverse-Charge-Verfahren hinzu.
 
 Wenn der\*die Kund\*in auf den Button "Fortfahren" klickt, gleicht pretix die angegebene Umsatzsteuer-Identifikationsnummer mit dem Onlinedienst der EU zur USt-ID-Prüfung ab.
 Falls der Dienst zu diesem Zeitpunkt nicht verfügbar ist, muss der\*die Kund\*in die Umsatzsteuer zahlen und kann sie sich später vom eigenen Staat erstatten lassen.
@@ -184,19 +184,19 @@ Bestätigen Sie Ihre Wahl mit dem Button :btn:Änderungen durchführen:.
 
 ### Steuer-Regeln zuweisen
 
-![Dialogfeld Produkt hinzufügen. Die letzte Option ist das Dropdown-Menü 'Umsatzsteuer'. Ausgewählt ist 'Keine Besteuerung'. Unten auf der Seite ist ein Button mit dem Text 'Speichern und mit mehr Einstellungen fortfahren'.](../assets/screens/tax/create-product.png "Dialogfeld zum Erstellen von Produkten" )
+![Dialogfeld Produkt hinzufügen. Die letzte Option ist das Dropdown-Menü 'Umsatzsteuer'. Ausgewählt ist 'Keine Besteuerung'. Unten auf der Seite ist ein Button mit dem Text 'Speichern und mit mehr Einstellungen fortfahren'.](../assets/screens/tax/create-product.de.png "Dialogfeld zum Erstellen von Produkten" )
 
-Wenn Sie ein **neues Produkt** erstellen und diesem eine Steuer-Regel zuweisen möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:. 
-Klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:. 
+Wenn Sie ein **neues Produkt** erstellen und diesem eine Steuer-Regel zuweisen möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
+Klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
 Klicken Sie unter "Preis" das Dropdown-Menü "Umsatzsteuer" und wählen Sie die Steuer-Regel, die für das Produkt gelten soll.
 Diese Liste zeigt den internen Namen und den Steuersatz, die Sie auf der Seite mit Einstellungen für die Steuer-Regel festgelegt haben.
 Sobald Sie die Auswahl getroffen haben, klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
 <br>
 
-![Dialogfeld 'Produkt bearbeiten'. Der Reiter 'Preis' wird angezeigt. Die zweite Option ist das Dropdown-Menü 'Umsatzsteuer'. Ausgewählt ist 'VAT (inkl. 19% MwSt.)'. Unten auf der Seite ist ein Button mit dem Text 'Speichern'.](../assets/screens/tax/edit-product.png "Dialogfeld zum Bearbeiten von Produkten" )
+![Dialogfeld 'Produkt bearbeiten'. Der Reiter 'Preis' wird angezeigt. Die zweite Option ist das Dropdown-Menü 'Umsatzsteuer'. Ausgewählt ist 'VAT (inkl. 19% MwSt.)'. Unten auf der Seite ist ein Button mit dem Text 'Speichern'.](../assets/screens/tax/edit-product.de.png "Dialogfeld zum Bearbeiten von Produkten" )
 
-Wenn Sie einem **bestehenden Produkt** eine Steuer-Regel zuweisen möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.  
+Wenn Sie einem **bestehenden Produkt** eine Steuer-Regel zuweisen möchten, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte → Produkte:.
 Klicken Sie den Button :btn-icon:fa3-edit:: "Bearbeiten" neben dem betreffenden Produkt und wechseln Sie zum Reiter :btn:Preis:.
 Wählen Sie im Dropdown-Menü "Umsatzsteuer" die Steuer-Regel, die für das Produkt gelten soll.
 Diese Liste zeigt den internen Namen, den Sie auf der Seite mit Einstellungen für die Steuer-Regel festgelegt haben, und den Steuersatz.
@@ -227,7 +227,7 @@ Welchen Preis Sie diesem Produkt geben, ist unerheblich.
 Wechseln Sie zum Reiter :btn:Verfügbarkeit:, markieren Sie das Kontrollkästchen neben "Dieses Produkt nicht einzeln verkaufen, sondern nur als Teil eines festen Produktpakets" und klicken Sie den Button :btn:Speichern:.
 Wenn Sie in einem Produktpaket mehr als zwei unterschiedliche Steuersätze verwenden möchten, wiederholen Sie diesen Schritt für jeden weiteren Steuersatz.
 
-Bearbeiten Sie das Ticket mit dem vollen Preis, wechseln Sie zum Reiter:btn:Enthaltene Produkte: und klicken Sie den Button :btn-icon:fa3-plus: Neues enthaltenes Produkt hinzufügen:. 
+Bearbeiten Sie das Ticket mit dem vollen Preis, wechseln Sie zum Reiter:btn:Enthaltene Produkte: und klicken Sie den Button :btn-icon:fa3-plus: Neues enthaltenes Produkt hinzufügen:.
 Wählen Sie unter "Enthaltenes Produkt" eines der anderen Produkte, die Sie erstellt haben, und legen Sie einen Wert für "Ausgewiesener Preisanteil" fest.
 "Ausgewiesener Preisanteil" legt fest, welcher Anteil des vollen Preises für das Produktpaket mit dem Steuersatz besteuert wird, der diesem Produkt zugewiesen ist.
 pretix geht davon aus, dass der Wert von "Ausgewiesener Preisanteil" bei Produkten in Produktpaketen bereits die Umsatzsteuer enthält.
@@ -283,10 +283,10 @@ Welchen Sie wählen, hängt von mehreren Faktoren ab:
  - Verkaufen Sie hauptsächlich an Unternehmens- oder Privatkund\*innen?
  - Welche Rundungsmethode verwendet Ihre Steuersoftware?
 
-Um den Algorithmus zur Rundung der Steuerbeträge zu wählen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:. 
+Um den Algorithmus zur Rundung der Steuerbeträge zu wählen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Steuern:.
 Unter "Steuereinstellungen" finden Sie die Einstellung "Rundung der Steuern".
 
-![Seite 'Steuern' mit dem Bereich 'Steuereinstellungen'. Für 'Rundung der Steuern' gibt es drei Optionen: 'Berechne Steuern für jede Position einzeln', 'Berechne Steuern auf Basis der Nettosumme' und 'Berechne Steuern auf Basis der Nettosumme mit konstanten Bruttopreisen'. Für die Option 'Preisanzeige für Kunden' gibt es die Optionen 'Preis inklusive Steuern' und 'Preise exklusive Steuern'. ](../assets/screens/tax/tax-settings.png "Steuereinstellungen" )
+![Seite 'Steuern' mit dem Bereich 'Steuereinstellungen'. Für 'Rundung der Steuern' gibt es drei Optionen: 'Berechne Steuern für jede Position einzeln', 'Berechne Steuern auf Basis der Nettosumme' und 'Berechne Steuern auf Basis der Nettosumme mit konstanten Bruttopreisen'. Für die Option 'Preisanzeige für Kunden' gibt es die Optionen 'Preis inklusive Steuern' und 'Preise exklusive Steuern'. ](../assets/screens/tax/tax-settings.de.png "Steuereinstellungen" )
 
 Standardmäßig ist **"Berechne Steuern für jede Position einzeln"** gewählt.
 Verwenden Sie diese Option, wenn pretix die Umsatzsteuer für jede Position einzeln berechnen soll.
