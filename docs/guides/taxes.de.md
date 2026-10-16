@@ -74,7 +74,7 @@ Diese Einstellung gilt unabhängig von der jeweiligen Steuer-Regel für alle Pro
 
 ![Dialogfeld 'Steuer-Regel'. Der Reiter 'Erweitert' zeigt als Optionen die Steuerpflicht des Leistungsempfängers bei EU-Geschäften, das Land des Händlers und den Abschnitt zum Definieren neuer eigener Regeln.](../assets/screens/tax/advanced.de.png "Erweiterte Optionen für Steuer-Regeln" )
 
-!!! Hinweis
+!!! Note
     Die Verwendung eigener Steuer-Regeln und die Option zur Steuerpflicht des Leistungsempfängers bei EU-Geschäften ("Reverse Charge") schließen sich gegenseitig aus.
     Wenn Sie mindestens eine eigene Steuer-Regel definiert haben, wird die Reverse-Charge-Option zur Steuerpflicht des Leistungsempfängers **nicht** angewendet, selbst wenn das Kontrollkästchen bei "Nutze EU-Regeln zur Steuerpflicht des Leistungsempfängers (reverse charge)" markiert ist.
 
@@ -123,25 +123,25 @@ Da pretix eigene Regeln aber immer von oben nach unten prüft und nur die erste 
 
 Die Reihenfolge, in der das Beispielunternehmen die Regeln angeordnet hat, sorgt also dafür, dass keinem Unternehmen aus einem anderen EU-Mitgliedsstaat als Deutschland Umsatzsteuer auf die Transaktion berechnet wird, vorausgesetzt, das Unternehmen gibt bei der Bestellung eine gültige Umsatzsteuer-Identifikationsnummer an.
 
-!!! Hinweis
+!!! Note
     Das obige Beispiel dient nur zur Veranschaulichung, wie sich die Software einsetzen lässt.
     Es ist keine Rechtsberatung.
 
 ### Steuerpflicht des Leistungsempfängers bei EU-Geschäften ("reverse charge")
 
-!!! Warnung
+!!! Warning
     Die Reverse-Charge-Regeln sind auf die meisten mit pretix verwalteten Veranstaltungen **nicht** anwendbar.
     Wir **empfehlen daher dringend**, diese Funktion **nicht zu aktivieren**, außer wenn Sie einen konkreten Grund dafür haben.
     Laut Artikel 52 der [Richtlinie über das gemeinsame Mehrwertsteuersystem](https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32006L0112&from=DE) (Seite 17) gilt als Ort der Veranstaltung der Ort, an dem die Dienstleistung tatsächlich bewirkt wird.
     Deshalb gilt immer die Steuergesetzgebung des Landes, in dem die Veranstaltung stattfindet, unabhängig vom Wohnort der Kund\*innen.
 
-!!! Hinweis
+!!! Note
     Die Reverse-Charge-Funktion ist abgekündigt, läuft also aus.
     Ein zukünftiges Update von pretix wird sie nicht mehr enthalten.
     Vermeiden Sie nach Möglichkeit die Verwendung der Reverse-Charge-Funktion und definieren Sie stattdessen eigene Steuer-Regeln.
     Auf diese Weise können Sie die Steuer-Regeln ganz genau auf Ihre jeweiligen Anforderungen abstimmen und sicherstellen, dass Sie alle relevanten Gesetze einhalten.
 
-!!! Hinweis
+!!! Note
     Die Verwendung eigener Steuer-Regeln und die Option zur Steuerpflicht des Leistungsempfängers bei EU-Geschäften ("Reverse Charge") schließen sich gegenseitig aus.
     Wenn Sie mindestens eine eigene Steuer-Regel definiert haben, wird die Reverse-Charge-Option zur EU-Steuerpflicht nicht angewendet, selbst wenn das Kontrollkästchen bei "Nutze EU-Regeln zur Steuerpflicht des Leistungsempfängers (reverse charge)" markiert ist.
 
@@ -178,7 +178,7 @@ Klicken Sie anschließend den Button :btn-icon:fa3-edit: Produkte bearbeiten:.
 Wählen Sie unter "Andere Aktionen" eine der Optionen bei "Steuern neu berechnen".
 Bestätigen Sie Ihre Wahl mit dem Button :btn:Änderungen durchführen:.
 
-!!! Hinweis
+!!! Note
     Wenn Sie den Steuerstatus mehrmals hin und her ändern, können Rundungsfehler entstehen, die um bis zu einen Cent vom vorgesehenen Preis abweichen.
     Aufgrund der flexiblen Art der Preiskalkulation lässt sich das nicht vermeiden.
 
@@ -209,7 +209,7 @@ Sobald Sie die Auswahl getroffen haben, klicken Sie den Button :btn:Speichern:.
 Dieser Abschnitt erläutert, wie Sie für ein einzelnes Produkt gemischte Steuersätze einrichten.
 Das können Sie in pretix tun, indem Sie ein Produkt mit dem vollen Preis und einem Steuersatz erstellen und dann ein Produktpaket mit diesem Produkt sowie Produkten mit unterschiedlichen Steuersätzen erstellen.
 
-!!! Hinweis
+!!! Note
     Dieser Abschnitt geht davon aus, dass Ihr Shop Preise inklusive Umsatzsteuer anzeigt.
     Markieren Sie bei allen eigenen Steuer-Regeln das Kontrollkästchen "Der konfigurierte Produktpreis enthält den Steuerbetrag".
     Wenn Sie bei allen eigenen Steuer-Regeln die Markierung aus diesem Kontrollkästchen entfernt haben, lesen Sie den Abschnitt [Gemischte Steuersätze (Preis wird ohne Umsatzsteuer angezeigt)](taxes.md#gemischte-steuersatze-preis-wird-ohne-umsatzsteuer-angezeigt)).
