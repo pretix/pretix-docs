@@ -111,6 +111,8 @@ plugins:
             Privacy: Datenschutz
             Security: Sicherheit
             Products: Produkte
+            Gift cards: Wertgutscheine
+            Vouchers: Gutscheine
           admonition_translations:
             note: Hinweis
             Note: Hinweis
