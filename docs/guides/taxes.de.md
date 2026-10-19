@@ -1,4 +1,4 @@
-# Umsatzsteuer
+# Steuern
 
 In den meisten Ländern müssen Sie Steuern auf alle Umsätze abführen, die Sie mit pretix machen.
 pretix gibt Ihnen die nötigen Werkzeuge an die Hand, um die korrekte Steuer auf jeden Verkauf zu berechnen.
