@@ -284,7 +284,11 @@ h1, .md-header__title, .md-typeset .admonition-title, .md-typeset details summar
     background: #ccc;
 }
 
-/* Images */ 
+/* Images */
 .glightbox img {
   box-shadow: var(--md-shadow-z2);
+}
+
+.md-content a {
+    text-decoration:revert;
 }
