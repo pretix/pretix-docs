@@ -1,10 +1,10 @@
 # GetYourGuide
 
-Sie können externe Plattformen wie GetYourGuide nutzen und auf diese Weise Tickets nicht nur über Ihren eigenen Shop, sondern auch über die Website der Plattform verkaufen.
+Sie können externe Aggregatoren wie GetYourGuide nutzen und auf diese Weise Tickets nicht nur über Ihren eigenen Shop, sondern auch über die Webseite des Aggregators verkaufen.
 Die Nutzung von GetYourGuide ist mit zwar Zusatzkosten verbunden, aber darüber können Sie ein größeres Publikum erreichen, das Ihren Shop sonst vielleicht gar nicht finden würde.
 
 pretix ermöglicht die Integration mit GetYourGuide, damit Sie von diesem weiteren Verkaufskanal und den zusätzlichen Umsätzen profitieren, dabei aber den Aufwand zum Einrichten und Pflegen mehrerer Shops auf ein Minimum begrenzen können.
-Der nächste Abschnitt erläutert, wie Sie dazu vorgehen.
+Dieser Artikel erläutert, wie Sie dazu vorgehen.
 
 ## Voraussetzungen
 
@@ -44,16 +44,16 @@ Wiederholen Sie diese Schritte für jedes weitere Veranstalterkonto, für das Si
 
 ### Ihre Veranstaltung für GetYourGuide einrichten
 
-Um die Erweiterung GetYourGuide für Ihre Veranstaltung zu nutzen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen: und wechseln Sie zum Reiter :btn:Integrationen:.
+Um die Erweiterung GetYourGuide für Ihre Veranstaltung zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen: und wechseln Sie zum Reiter :btn:Integrationen:.
 Suchen Sie in der Liste nach der Erweiterung "GetYourGuide" und klicken Sie den Button :btn:Aktivieren: daneben.
-Nun haben Sie die Erweiterung GetYourGuide aktiviert und dadurch stehen die Integration mit GetYourGuide sowie alle dazugehörigen Einstellungen für Ihre Veranstaltung zur Verfügung.
+Da Sie die Erweiterung GetYourGuide aktiviert haben, stehen Ihnen nun die Integration mit GetYourGuide sowie alle dazugehörigen Einstellungen für Ihre Veranstaltung zur Verfügung.
 
 Um Tickets für Ihre Veranstaltung über den Verkaufskanal GetYourGuide zu verkaufen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:.
 Markieren Sie unter "Verkaufskanäle" das Kontrollkästchen neben "GetYourGuide" oder das neben "Auf allen Verkaufskanälen verkaufen".
 
 ![Die Seite mit allgemeinen Einstellungen für eine Veranstaltung zeigt die Einstellungen für 'Auf bestimmte Verkaufskanäle einschränken'. Das Kontrollkästchen 'Auf allen Verkaufskanälen verkaufen' ist markiert. Eine der Optionen darunter ist GetYourGuide.](../../assets/screens/getyourguide/event-settings-general.png)
 
-Um Ihr Angebot für die GetYourGuide-Website zu konfigurieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → GetYourGuide: und wechseln Sie zum Reiter :btn:Configuration:.
+Um Ihr Angebot für die GetYourGuide-Webseite zu konfigurieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → GetYourGuide: und wechseln Sie zum Reiter :btn:Configuration:.
 Tragen Sie die erforderlichen Angaben ein und wählen Sie "Event time mode" und "Buchungsmodus".
 
 ![Die Seite mit dem Titel 'GetYourGuide' ist auf dem Reiter 'Configuration' geöffnet. Die Felder 'Veranstaltungstitel', 'Veranstaltungsbeschreibung', 'Land' und 'Stadt' sind ausgefüllt. Unter 'Event time mode' ist die Option 'Time point' aktiv. Unter 'Buchungsmodus' ist die Option 'Individual tickets' aktiv.](../../assets/screens/getyourguide/getyourguide-configuration.png)
@@ -88,7 +88,7 @@ Sie können noch weitere Produkte in den anderen GetYourGuide-Kategorien ("Child
 Jede GetYourGuide-Kategorie darf nur ein einziges Produkt enthalten.
 
 Die pretix-Integration mit GetYourGuide überschreibt die in GetYourGuide festgelegten Preise.
-Die Preise, die Sie auf der GetYourGuide-Website für die Kategorien einstellen, gelten **nicht**.
+Die Preise, die Sie auf der GetYourGuide-Website für die Kategorien einstellen, gelten also **nicht**.
 Um den Preis für ein Produkt festzulegen, das Sie über GetYourGuide verkaufen möchten, müssen Sie das Produkt in pretix bearbeiten.
 Wechseln Sie zum Reiter :btn:Preis: und geben Sie unter "Standardpreis" den vorgesehenen Preis ein.
 
@@ -96,7 +96,7 @@ Wie bei allen Produkten müssen Sie auch für Tickets, die Sie über GetYourGuid
 
 ### Mit GetYourGuide verbinden
 
-im GetYourGuide-Backend wird Ihre pretix-Veranstaltung als "Produkt" bezeichnet.
+Das GetYourGuide-Backend bezeichnet Ihre pretix-Veranstaltung als "Produkt".
 Rufen Sie das [Anbieterportal](https://supplier.getyourguide.com/) von GetYourGuide auf und verbinden Sie es mit Ihrem pretix-Shop.
 Dazu gehen Sie vor, wie im Hilfe-Center für Anbieter von GetYourGuide unter [So verbinden Sie ein neues Produkt mit Ihrem Reservierungssystem](https://supply.getyourguide.support/hc/de-de/articles/18008029689373-So-verbinden-Sie-ein-neues-Produkt-mit-Ihrem-Reservierungssystem) beschrieben.
 Wählen Sie als "Reservierungssystem" "pretix.eu".

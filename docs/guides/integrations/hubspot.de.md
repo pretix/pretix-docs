@@ -1,7 +1,7 @@
 # HubSpot
 
-Über die HubSpot-Integration können Sie beispielsweise Kontaktdaten von Kund\*innen oder Transaktionen zu HubSpot exportieren. 
-Dieser Artikel erklärt, wie Sie diese Möglichkeit nutzen. 
+Über die HubSpot-Integration können Sie Daten zu HubSpot exportieren, beispielsweise Kontaktdaten von Kund\*innen oder Transaktionen.
+Dieser Artikel erklärt, wie Sie diese Funktion nutzen können
 
 ## Voraussetzungen
 
@@ -22,7 +22,7 @@ Klicken Sie den Button :btn:Aktivieren: neben der HubSpot-Erweiterung.
 
 Klicken Sie das Dropdown-Menü :btn-icon:fa3-gear: Einstellungen: neben der Erweiterung HubSpot und dann :btn:Einstellungen > HubSpot:. 
 Alternativ navigieren Sie zu :navpath:Ihre Veranstaltung →  :fa3-wrench: Einstellungen → HubSpot:. 
-In beiden Fällen gelangen Sie zur Seite „HubSpot-Integration“. 
+In beiden Fällen gelangen Sie zur Seite "HubSpot-Integration". 
 
 Um die Verbindung zu HubSpot einzurichten, klicken Sie den Button :btn:Verbindung anfordern:. 
 
@@ -45,15 +45,16 @@ Die nächste Seite warnt Sie, dass Sie dabei sind, eine ungeprüfte Anwendung zu
 
 Scrollen Sie an das Seitenende und klicken Sie den Button :btn:Connect app:. 
 Anschließend gelangen Sie zurück zum pretix-Backend auf die Seite mit den Einstellungen für die HubSpot-Integration. 
-Statt des Buttons "Verbindung anfordern" teilt die Seite Ihnen nun mit, dass die Veranstaltung mit HubSpot verbunden ist, und zeigt Einstellungen für Objekt-Mappings an. 
+Statt des Buttons "Verbindung anfordern" teilt die Seite Ihnen nun mit, dass die Veranstaltung mit HubSpot verbunden ist.
+Darüber hinaus zeigt sie Einstellungen für Objekt-Mappings an. 
 
 ![Auf der Seite 'HubSpot-Integration' ist ein grünes Mitteilungsfeld mit dem Text 'Die HubSpot-Integration ist jetzt aktiv', weiter unten ein Feld mit dem Status der HubSpot-Verbindung sowie Einstellungen für Objekt-Mappings.](../../assets/screens/hubspot/integration-active.de.png "HubSpot-Integration aktiv")
 
 Klicken Sie den Button :btn:Speichern:. 
 
-## Anwendungsfälle
+## Anwendungsmöglichkeiten
 
-Dieser Abschnitt erläutert einige nützliche Einsatzzwecke für die HubSpot-Integration: 
+Dieser Abschnitt erläutert einige nützliche Einsatzmöglichkeiten für die HubSpot-Integration: 
 
  - [Kund\*innen in Ihre Kontaktdatenbank bei HubSpot aufnehmen](hubspot.md#kundinnen-in-ihre-kontaktdatenbank-bei-hubspot-aufnehmen)
  - [Teilnehmende in Ihre Kontaktdatenbank bei HubSpot aufnehmen](hubspot.md#teilnehmende-in-ihre-kontaktdatenbank-bei-hubspot-aufnehmen) 
@@ -67,8 +68,8 @@ Dieser Abschnitt erläutert, wie Sie in pretix geführte Kund\*innen Ihrer Konta
 Öffnen Sie das pretix-Backend und navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → HubSpot:. 
 Klicken Sie unter "Object mappings" den Button :btn-icon:fa3-plus: Add mapping:. 
 
-Wählen Sie unter "pretix object type" die Option "Order position". 
-Wählen Sie unter "HubSpot order type" die Option "Contacts". 
+Wählen Sie unter "pretix-Objekttyp" die Option `Bestellung`.  
+Wählen Sie unter "HubSpot-Objekttyp" die Option `Contacts`. 
 Klicken Sie den Button :btn:Speichern:. 
 
 Um die Details der Daten zu ändern, die pretix den Einträgen in HubSpot zuordnet, klicken Sie den Button :btn-icon:fa3-edit: Mapping bearbeiten:. 
@@ -131,7 +132,7 @@ Fügen Sie ein Objekt-Mapping hinzu, bei dem Sie unter "pretix-Feld" `Order posi
 
 Bearbeiten Sie das Mapping und richten Sie es analog dem Mapping für Kund\*innendaten ein, wie [oben beschrieben](hubspot.md#kundinnen-in-ihre-kontaktdatenbank-bei-hubspot-aufnehmen), nur dass Sie hier nicht die Rechnungsdaten, sondern die Daten der Teilnehmenden denselben HubSpot-Feldern zuordnen. 
 
-### Bestellungen in Ihre HubSpot-Datenbank mit "Deals" aufnehmen
+### Bestellungen als "Deals" in Ihre HubSpot-Datenbank aufnehmen
 
 Dieser Abschnitt erläutert, wie Sie Bestellungen aus pretix Ihrer "Deals"-Datenbank in HubSpot hinzufügen. 
 
@@ -147,7 +148,7 @@ Geben Sie unter "Allgemeine Informationen" Folgendes ein:
 
 ![Die HubSpot-Seite 'Eigenschaftsdetails hinzufügen' zeigt die oben beschriebenen Eigenschaften sowie die Möglichkeit, an anderer Stelle eine Beschreibung einzugeben. ](../../assets/screens/hubspot/property-details.de.png "HubSpot – Eigenschaftsdetails hinzufügen")
 
-Wählen Sie unter "Feldtyp" die Option `Single-line text`. 
+Wählen Sie unter "Feldtyp" die Option `Einzeiliger Text`. 
 Markieren Sie unter "Regeln" das Kontrollkästchen neben "Eindeutige Werte für diese Eigenschaft verlangen". 
 
 ![Die HubSpot-Seite 'Eigenschaftsregeln' zeigt unter anderem den Bereich 'Sichtbarkeitsoptionen' mit dem aktivierten Kontrollkästchen 'Eindeutige Werte für diese Eigenschaft verlangen (1 von 10).](../../assets/screens/hubspot/property-rules.de.png "Eigenschaftsregeln bei HubSpot")
@@ -174,7 +175,7 @@ Fügen Sie pretix-Felder wie Datum und Uhrzeit oder den Betrag hinzu und ordnen 
 
 Klicken Sie zur Bestätigung den Button :btn:Speichern:. 
 
-### Datenübertragungen steuern 
+### Datenübertragungen verwalten 
 
 Wenn Sie die Exporte von pretix zu HubSpot eingerichtet haben, überträgt die Integration jedes Mal Daten, wenn der Server `periodic_task` ausführt. 
 Die Häufigkeit hängt von der Serverkonfiguration ab. 
@@ -234,7 +235,7 @@ Informationen zur Behebung dieser Fehler finden Sie im Abschnitt [Fehlerbehebung
 
 ## Fehlerbehebung
 
-Auf der Überblicksseite "Synchronisationsprobleme" oder der Seite für eine bestimmte Bestellung, die zu HubSpot exportiert werden soll, können vier verschiedene Fehlermeldungen angezeigt werden: 
+Auf der Übersichtsseite "Synchronisationsprobleme" oder der Seite für eine bestimmte Bestellung, die zu HubSpot exportiert werden soll, können vier verschiedene Fehlermeldungen angezeigt werden: 
 
  - Temporärer Fehler, Anzahl automatischer Versuche überschritten
  - Systemfehler, benötigt manuelle Intervention
@@ -242,18 +243,18 @@ Auf der Überblicksseite "Synchronisationsprobleme" oder der Seite für eine bes
  - Fehlkonfiguration, bitte prüfen Sie die Synchronisations-Einstellungen
 
 Wenn Sie die Fehlermeldung "Temporärer Fehler" erhalten, müssen Sie nichts unternehmen. 
-Der pretix-Server wird das Problem bei einem der nächsten Läufe von `periodic_task` voraussichtlich selbst beheben. 
+Der pretix-Server wird das Problem bei einer der nächsten Ausführungen von `periodic_task` voraussichtlich selbst beheben. 
 
 Wenn Sie die Fehlermeldung "Systemfehler" erhalten, gibt es ein Problem mit dem Server, auf dem pretix läuft. 
 Wenn Sie pretix Hosted nutzen, wenden Sie sich an den Support. 
-Wenn Sie pretix in den Editionen Community oder Enterprise nutzen, müssen Sie einige Fehler mit der Serverkonfiguration beheben. 
+Wenn Sie pretix in den Editionen Community oder Enterprise nutzen, müssen Sie Fehler mit der Serverkonfiguration beheben. 
 
 Wenn Sie die Fehlermeldung "Endgültiger Fehler" oder "Fehlkonfiguration" erhalten, liegt das Problem in der Zuordnung der pretix-Variablen zu den HubSpot-Variablen. 
 Eine Anleitung zur Behebung dieser Fehler finden Sie unter [Konfigurationsfehler beheben](hubspot.md#konfigurationsfehler-beheben). 
 
 ### Konfigurationsfehler beheben
 
-Wenn Sie nach Änderungen an der Konfiguration der HubSpot-Integration die Fehlermeldung "Endgültiger Fehler" oder "Fehlkonfiguration" erhalten, ist wahrscheinlich die Konfiguration fehlerhaft und die Ursache dieser Fehler. 
+Wenn Sie nach Änderungen an der Konfiguration der HubSpot-Integration die Fehlermeldung "Endgültiger Fehler" oder "Fehlkonfiguration" erhalten, dann ist wahrscheinlich eine fehlerhafte Konfiguration die Ursache dieser Fehler. 
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → HubSpot: und bearbeiten Sie eines der Mappings. 
 Falls bei einer der Zeilen ein Warnsymbol :fa3-warning: angezeigt wird, verursacht diese Zeile Probleme aufgrund inkompatibler Datentypen. 
 

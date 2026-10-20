@@ -2,7 +2,7 @@
 
 Dieser Artikel erläutert, wie Sie mithilfe der "Security Assertion Markup Language" (SAML) eine zuverlässige Identifizierung von Kund\*innen einrichten.
 Über die Erweiterung "Presale SAML Authentication" können Sie pretix als Service-Provider (SP) mit einem SAML-Identity-Provider (IdP) verknüpfen.
-Wenn dies eingerichtet ist, müssen sich Ihre Kund\*innen beim Gang zur Kasse bei Ihrem SAML-IdP einloggen.
+Wenn dies eingerichtet ist, müssen sich Ihre Kund\*innen an der Kasse Ihres Onlineshops bei Ihrem SAML-IdP einloggen.
 
 !!! Hinweis
     Die SAML-Authentifizierung ist nur für besondere Anwendungsfälle gedacht.
@@ -22,7 +22,7 @@ Folgende Schritte sind erforderlich, um die SAML-Integration einzurichten:
  3. Sie aktivieren die Erweiterung für die Veranstaltung.
  4. Sie richten die SAML-Authentifizierung auf Veranstaltungsebene ein.
 
-### Installation und Ersteinrichtung der Erweiterung
+### Erweiterung installieren und einrichten
 
 <!-- md:enterprise -->
 
@@ -35,9 +35,9 @@ Sie müssen entscheiden, ob Ihre pretix-Instanz als gemeinsamer Service-Provider
 Ein einziger, gemeinsamer SP ist sinnvoll, wenn alle auf der pretix-Instanz gehosteten Veranstalter derselben Organisation angehören.
 Wenn beispielsweise der SP, die pretix-Instanz und alle darauf gehosteten Veranstalter zu Ihrem Unternehmen gehören, ist ein einziger SP ausreichend.
 
-Wenn aber jeder Veranstalter eine eigenständige juristische Person ist, müssen Sie die pretix-Instanz so einrichten, dass jeder Veranstalter als sein eigener SP fungieren kann.
-Beispielsweise kann pretix Hosted so, wie es unter [pretix.eu](https://pretix.eu) bereitgestellt wird, mehrere Mandanten verwalten.
-Jeder Veranstalter ist eine eigenständige juristische Person und muss deshalb sein eigener SP sein, wenn für diesen Veranstalter die SAML-Integration genutzt werden soll.
+Wenn aber jeder Veranstalter eine eigenständige Körperschaft ist, müssen Sie die pretix-Instanz so einrichten, dass jeder Veranstalter als sein eigener SP fungieren kann.
+Beispielsweise kann pretix Hosted so, wie es unter [pretix.eu](https://pretix.eu) bereitgestellt wird, mehrere Clients verwalten.
+Jeder Veranstalter ist eine eigenständige Körperschaft und muss deshalb sein eigener SP sein, wenn für diesen Veranstalter die SAML-Integration genutzt werden soll.
 
 Wenn Sie einen gemeinsamen SP für die gesamte Instanz nutzen möchten, ergänzen Sie die Konfigurationsdatei `<config>` um folgende Zeilen:
 
@@ -49,7 +49,7 @@ level=global
 Wenn jeder Veranstalter sein eigener SP sein soll, ergänzen Sie die Konfigurationsdatei `<config>` stattdessen um folgende Zeilen:
 
 ``` ini
-[presale-saml]
+[presale_saml]
 level=organizer
 ```
 
@@ -91,9 +91,9 @@ Ab hier ist die Vorgehensweise dieselbe.
 
 #### Die Verbindung einrichten
 
-Um die Verbindung zwischen SP und IdP einzurichten, sind viele Angaben erforderlich.
-Wenn Sie nicht sicher sind, welche Einstellung Sie wählen oder was Sie in eines der Felder eintragen sollen, wenden Sie sich an Ihren IdP-Operator.
-Dort weiß man genau, welche Angaben seitens des IdP erwartet und unterstützt werden.
+Um die Verbindung zwischen SP und IdP einzurichten, sind viele Informationen erforderlich.
+Wenn Sie nicht sicher sind, welche Einstellung Sie wählen oder was Sie in eines der Felder eintragen sollen, wenden Sie sich an Ihren IdP-Betreiber.
+Der sollte genau wissen, welche Angaben seitens des IdP erwartet und unterstützt werden.
 
 ![Die Seite "SAML-Einstellungen" zeigt die Einstellungen für die URL mit den IdP-Metadaten, die SP-Entity-ID, das NameID-Format sowie den Namen und die Beschreibung für den SP.](../../assets/screens/saml/saml-global.de.png "Screenshot mit globalen SAML-Einstellungen")
 
@@ -101,28 +101,28 @@ Geben Sie unter "IdP Metadaten URL" die URL an, an der Ihr IdP seine Metadaten a
 Bei den meisten IdP ist diese URL unveränderlich und für alle SP dieselbe.
 Wenn Sie Mitglied von DFN-AAI sind, finden Sie die Metadaten für die [Test-, Basic- und Advanced-Föderation](https://doku.tid.dfn.de/de:metadata) auf der Website der Organisation.
 
-Erkundigen Sie sich bei Ihrem IdP-Operator, ob Sie DFN-AAI als IdP nutzen müssen.
+Erkundigen Sie sich bei Ihrem IdP-Betreiber, ob Sie sich an den DFN-AAI wenden müssen.
 Es ist auch möglich, dass Sie einfach den lokalen IdP Ihrer Einrichtung nutzen können, der seine Metadaten über eine andere URL bereitstellt.
 
 Die URL muss öffentlich zugänglich sein.
 Es ist nicht möglich, die Einstellungen zu speichern, wenn die IdP-Metadaten nicht abgerufen werden können.
 pretix aktualisiert die IdP-Metadaten regelmäßig automatisch.
 
-Verwenden Sie die vom System vorgeschlagene Metadaten-URL als "SP Entity ID".
-Falls von Ihrem IdP so gefordert, können Sie auch jede beliebige andere URL als "SP Entity ID" angeben.
+Verwenden Sie die vom System vorgeschlagene Metadaten-URL als "SP Entity Id".
+Falls von Ihrem IdP so gefordert, können Sie auch jede beliebige andere URL als "SP Entity Id" angeben.
 
 Die meisten IdP zeigen Ihren Kund\*innen bei der Authentifizierung den Namen und die Beschreibung Ihres SP an.
 Sie können die Felder "SP Name" und "SP Description" nutzen, um Ihren Kund\*innen zu erklären, wie Sie ihre Daten nutzen.
 
-Ihr SP benötigt ein "SP X.509 Certificate" und einen "SP X.509 Private Key".
+Ihr SP benötigt ein "SP X.509 Zertifikat" und einen "SP X.509 Private Key".
 Erkundigen Sie sich bei Ihrem IdP, ob dieser Ihnen dieses Zertifikat und den Schlüssel bereitstellen kann.
 Falls nicht, müssen Sie beides selbst generieren.
 
 Zertifikate haben ein Ablaufdatum und müssen regelmäßig erneuert werden.
-Damit der Umstieg vom auslaufenden zum neuen Zertifikat reibungslos gelingt, können Sie schon vor dem Ablauf des alten Zertifikats unter "SP X.509 New Certificate" ein neues bereitstellen.
+Damit der Umstieg vom auslaufenden zum neuen Zertifikat reibungslos gelingt, können Sie schon vor dem Ablauf des alten Zertifikats unter "SP X.509 Neues Zertifikat" ein neues bereitstellen.
 pretix verwendet automatisch das richtige Zertifikat.
 
-Wenn das alte Zertifikat abgelaufen ist und nicht mehr verwendet wird, können Sie das neue Zertifikat in das Feld "SP X.509 Certificate" verschieben, damit das Feld für neue Zertifikate bereit für die nächste Zertifikatserneuerung ist.
+Wenn das alte Zertifikat abgelaufen ist und nicht mehr verwendet wird, können Sie das neue Zertifikat in das Feld "SP X.509 Zertifikat" verschieben, damit das Feld für neue Zertifikate bereit für die nächste Zertifikatserneuerung ist.
 
 #### Angeforderte Attribute auswählen
 
@@ -144,7 +144,7 @@ Die Daten werden als JSON-Objektliste mit jeweils 5 Eigenschaften bereitgestell
 
  - `attributeValue`: Kann standardmäßig `[]` sein.
  - `friendlyName`: Ein in den Einstellungen auf Veranstaltungsebene verwendeter String zum Abrufen der Attributdaten.
- - `isRequired`: Ein Boolescher Wert, der angibt, ob der IdP die Übertragung dieses Attributs erzwingen muss.
+ - `isRequired`: Ein boolescher Wert, der angibt, ob der IdP die Übertragung dieses Attributs erzwingen muss.
    In den meisten Fällen ist `true` die beste Wahl.
  - `name`: Ein String mit dem internen bzw. technischen Namen des angeforderten Attributs.
    Er beginnt oft mit `urn:mace:dir:attribute-def:`, `urn:oid:` oder `http://`/`https://`.
@@ -170,7 +170,8 @@ Einige IdP-Konfigurationen können Probleme bei einigen dieser Einstellungen ver
 
 Wählen Sie bei "Signature Algorithm" und "Digest algorithm" eine Option, mit der sowohl pretix bzw. Ihr SP als auch der IdP kommunizieren können.
 Eine häufige Ursache von Problemen beim Verbinden mit einem IdP auf Shibboleth-Basis ist der "Digest algorithm".
-pretix unterstützt RSA-OAEP nicht und die Authentifizierung schlägt fehl, falls der IdP dieses Verfahren erzwingt.
+pretix unterstützt RSA-OAEP nicht.
+Falls der IdP dieses Verfahren erzwingt, wird die Authentifizierung fehlschlagen.
 
 Anlaufstellen für technische Fragen und Support sind in den öffentlichen Metadaten des SP hinterlegt.
 Sie werden Kund\*innen unter Umständen angezeigt, falls bei diesen im Zuge der Authentifizierung Probleme auftreten.
@@ -201,7 +202,7 @@ Damit kann jede\*r authentifizierte Benutzer\*in fortfahren.
 
 Wenn Sie in das Feld "Attribute RegEx" beispielsweise eintragen `{ "affiliation": "^(employee@pretix.eu|staff@pretix.eu)$" }`, können nur Kund\*innen fortfahren, die ein Attribut `affiliation` mit dem Wert `employee@pretix.eu` oder `staff@pretix.eu` haben.
 Sie können hier nur Attribute abfragen, die vom IdP angefordert werden.
-Im Abschnitt "Information" oben auf der Seite mit den SAML-Einstellungen sind alle zum jeweiligen Zeitpunkt konfigurierten Attribute aufgeführt.
+Oben auf der Seite mit den SAML-Einstellungen führt der Abschnitt "Information" alle zum jeweiligen Zeitpunkt konfigurierten Attribute auf.
 
 Das Feld "RegEx Fail Explanation" wird nur in Verbindung mit dem oben beschriebenen Feld "Attribute RegEx" genutzt.
 Über dieses Feld können Sie eine Fehlermeldung definieren, die angezeigt wird, wenn ein\*e Kund\*in nicht die Bedingungen erfüllt, die Sie über die regulären Ausdrücke als Beschränkung hinterlegt haben.
@@ -221,10 +222,10 @@ Ist unter "Ticket Secret SAML attribute" ein Attribut angegeben, lautet der voll
 
 Auf diese Weise ist der Ticket-Code weiterhin eindeutig, aber der \*die Kund\*in kann beim Check-in zur Veranstaltung anhand des Identifikators problemlos gesucht und gefunden werden.
 
-### Attribute bei Fragen speichern
+### Attribute in Fragen speichern
 
 Sie können den Wert eines SAML-Attributs in der Antwort auf eine von dem\*der Benutzer\*in definierte Frage speichern.
-Das kann zum Beispiel praktisch sein, wenn Sie die Einrichtung, der ein\*e Kund\*in angehört, auf den Badge drucken wollen und dazu erfassen müssen.
+Das kann praktisch sein, wenn Sie zum Beispiel die Organisationzugehörigkeit, des\*der  Kund\*in erfassen möchten, um sie auf ein Badge zu drucken.
 Die Antwort ist dann festgeschrieben und kann von den Kund\*innen nicht mehr geändert werden.
 
 ![Seite mit dem Titel 'Frage'. Sie zeigt den Reiter "Erweitert" mit Eingabefeldern für Hilfetext in zwei Sprachen und für die interne Referenz.](../../assets/screens/saml/question-advanced.de.png "Screenshot der Seite Frage mit erweiterten Einstellungen" )
@@ -235,7 +236,7 @@ Wechseln Sie zum Reiter :btn:Erweitert:.
 Tragen Sie in das Feld "Interne Referenz" denselben Wert wie bei `friendlyName` eines der SAML-Attribute ein, die Sie in den globalen oder veranstalterbezogenen SAML-Einstellungen unter "Requested Attributes" definiert haben.
 
 Aufgrund von Formatanforderungen sind manche komplexere Fragen möglicherweise nicht kompatibel mit SAML-Attributen.
-Wenn Sie nicht sicher sind, ob Ihr Fragentyp unterstützt wird oder wenn ein Fehler auftritt, wechseln Sie zum Reiter :btn:Allgemein: und wählen Sie unter "Art der Antwort" die Option "Text (einzeilig)".
+Wenn Sie nicht sicher sind, ob Ihr Fragentyp unterstützt wird, oder wenn ein Fehler auftritt, wechseln Sie zum Reiter :btn:Allgemein: und wählen Sie unter "Art der Antwort" die Option "Text (einzeilig)".
 
 ### Konfigurationsbeispiele
 
@@ -307,7 +308,7 @@ Dieser Code fordert `eduPersonPrincipalName` (manchmal kurz als EPPN bezeichnet)
 ]
 ```
 
-#### skIDentity-Attribute für elektronische Identitätsausweise anfordern
+#### skIDentity-Attribute für elektronische Personalausweise anfordern
 
 Dieser Code fordert die Basisattribute `eIdentifier`, `IDType`, `IDIssuer` und `NameID` vom SAML-Dienst [skIDentity](https://www.skidentity.de/) an.
 Diese Attribute sind für elektronische ID-Karten verfügbar, beispielsweise die neuen deutschen Personalausweise mit RFID-Chip.
