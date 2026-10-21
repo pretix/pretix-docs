@@ -26,7 +26,7 @@ Klicken Sie den Button :btn-icon:fa3-edit: Bearbeiten: neben "Versandmethode" un
  Wenn Sie die Antwortadresse ändern möchten, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Allgemein:, ändern Sie den Eintrag bei "Kontakt-E-Mail" und klicken Sie den Button :btn:Speichern:.
  2. **Eigene Absendeadresse mit System-Mailserver benutzen:** der vom System bereitgestellte E-Mail-Server.
  pretix versendet E-Mails von einer individuell festgelegten Adresse.
- Dazu müssen Sie dem SPF-Eintrag Ihres Mailservers den pretix-Anwendungsserver hinzufügen (siehe [Den E-Mail-Server des Systems mit einer individuellen Absendeadresse verwenden](email.md#den-e-mail-server-des-systems-mit-einer-individuellen-absendeadresse-verwenden) unten).
+ Dazu müssen Sie dem SPF-Eintrag Ihres Mailservers den pretix-Anwendungsserver hinzufügen (siehe [Den E-Mail-Server des Systems mit einer individuellen Absendeadresse verwenden](#den-e-mail-server-des-systems-mit-einer-individuellen-absendeadresse-verwenden) unten).
  3. **Eigenen SMTP-Server verwenden:** Sie verwenden den SMTP-Server Ihres Unternehmens und können Ihren E-Mail-Verkehr vollständig selbst verwalten.
 
 Wenn Sie die allgemeinen E-Mail-Einstellungen für eine bestimmte Veranstaltung ändern möchten, können Sie diese Einstellungen für diese Veranstaltung entsperren.
