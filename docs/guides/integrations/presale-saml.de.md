@@ -152,7 +152,7 @@ Die Daten werden als JSON-Objektliste mit jeweils 5 Eigenschaften bereitgestell
    Er beginnt oft mit `urn:mace:shibboleth:1.0:` oder `urn:oasis:names:tc:SAML:2.0:`.
 
 Bitten Sie Ihren IdP um eine Liste verfügbarer Attribute.
-Zwei Beispiele für eine solche Konfiguration finden Sie unten im Abschnitt mit [Konfigurationsbeispielen](presale-saml.md#konfigurationsbeispiele).
+Zwei Beispiele für eine solche Konfiguration finden Sie unten im Abschnitt mit [Konfigurationsbeispielen](#konfigurationsbeispiele).
 
 !!! Hinweis
     Sie können mehrere Attribute mit demselben Werten für `friendlyName`, aber unterschiedlichen Werten für `name` haben.
@@ -182,7 +182,7 @@ Wenn Sie alles wie gewünscht eingerichtet haben, klicken Sie den Button :btn:Sp
 ### Konfiguration auf Veranstaltungsebene
 
 Dieser Abschnitt erläutert, wie Sie die SAML-Authentifizierung auf Veranstaltungsebene einrichten.
-Um die Erweiterung zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen: und rufen den Reiter :btn:Integrationen: auf.  
+Um die Erweiterung zu aktivieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen: und rufen den Reiter :btn:Integrationen: auf.
 Klicken Sie den Button :btn:Aktivieren: neben der Erweiterung "Presale SAML Authentication".
 
 In der Seitenleiste wird der Button :btn-icon:fa3-key: SAML: angezeigt.
@@ -241,7 +241,7 @@ Wenn Sie nicht sicher sind, ob Ihr Fragentyp unterstützt wird, oder wenn ein Fe
 ### Konfigurationsbeispiele
 
 Dieser Abschnitt enthält zwei Beispiele für SAML-Konfigurationen, über die das Feld "Requested Attributes" in den globalen oder veranstalterbezogenen SAML-Einstellungen befüllt werden kann.
-Weitere Informationen zu diesem Feld finden Sie im Abschnitt [Angeforderte Attribute auswählen](presale-saml.md#angeforderte-attribute-auswahlen).
+Weitere Informationen zu diesem Feld finden Sie im Abschnitt [Angeforderte Attribute auswählen](#angeforderte-attribute-auswahlen).
 
 #### Attribute im Format SAML 1.0 und 2.0 von einem akademischen IdP anfordern
 

@@ -15,11 +15,11 @@ Die GetYourGuide-Integration gilt auf Veranstaltungsebene, Sie müssen also zuer
 
 Folgende Schritte sind erforderlich, um die GetYourGuide-Integration einzurichten:
 
- 1. Bitten Sie den pretix-Support, für Ihr Konto die [GetYourGuide-Erweiterung verfügbar zu machen](getyourguide.md#ihr-veranstalterkonto-fur-getyourguide-einrichten).
- 2. Erstellen Sie einen [Verkaufskanal](getyourguide.md#ihr-veranstalterkonto-fur-getyourguide-einrichten).
- 3. Aktivieren Sie die [Erweiterung](getyourguide.md#ihre-veranstaltung-fur-getyourguide-einrichten).
- 4. Konfigurieren Sie [Produkte](getyourguide.md#produkte-fur-getyourguide-einrichten).
- 5. [Verbinden](getyourguide.md#mit-getyourguide-verbinden) Sie Ihr Konto mit GetYourGuide.
+ 1. Bitten Sie den pretix-Support, für Ihr Konto die [GetYourGuide-Erweiterung verfügbar zu machen](#ihr-veranstalterkonto-fur-getyourguide-einrichten).
+ 2. Erstellen Sie einen [Verkaufskanal](#ihr-veranstalterkonto-fur-getyourguide-einrichten).
+ 3. Aktivieren Sie die [Erweiterung](#ihre-veranstaltung-fur-getyourguide-einrichten).
+ 4. Konfigurieren Sie [Produkte](#produkte-fur-getyourguide-einrichten).
+ 5. [Verbinden](#mit-getyourguide-verbinden) Sie Ihr Konto mit GetYourGuide.
 
 Dieser Artikel erklärt diese Schritte ausführlich.
 
@@ -33,10 +33,10 @@ Bevor Sie GetYourGuide nutzen können, müssen Sie außerdem in Ihrem Veranstalt
 pretix nutzt den Verkaufskanal, um Verkäufe korrekt GetYourGuide zuzuordnen.
 Das bedeutet, dass pretix alle Bestellungen, die über GetYourGuide eingehen, für den Verkaufskanal "GetYourGuide" registriert.
 
-![Die Seite 'Verkaufskanäle' mit den bestehenden Verkaufskanälen 'Online-Shop', 'Kassensystem (pretixPOS)' und 'Vorverkaufsstellen'. Der Button 'Neuen Kanal hinzufügen' ist hervorgehoben.](../../assets/screens/getyourguide/sales-channels.png)
+![Die Seite 'Verkaufskanäle' mit den bestehenden Verkaufskanälen 'Online-Shop', 'Kassensystem (pretixPOS)' und 'Vorverkaufsstellen'. Der Button 'Neuen Kanal hinzufügen' ist hervorgehoben.](../../assets/screens/getyourguide/sales-channels.de.png)
 
 Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Verkaufskanäle:.
-Klicken Sie den Button :btn-icon:fa3-plus: Neuen Kanal hinzufügen:. 
+Klicken Sie den Button :btn-icon:fa3-plus: Neuen Kanal hinzufügen:.
 Wählen Sie auf der Seite "Verkaufskanal hinzufügen" die Option :btn:GetYourGuide:.
 Klicken Sie den Button :btn:Speichern:.
 
@@ -51,15 +51,15 @@ Da Sie die Erweiterung GetYourGuide aktiviert haben, stehen Ihnen nun die Integr
 Um Tickets für Ihre Veranstaltung über den Verkaufskanal GetYourGuide zu verkaufen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:.
 Markieren Sie unter "Verkaufskanäle" das Kontrollkästchen neben "GetYourGuide" oder das neben "Auf allen Verkaufskanälen verkaufen".
 
-![Die Seite mit allgemeinen Einstellungen für eine Veranstaltung zeigt die Einstellungen für 'Auf bestimmte Verkaufskanäle einschränken'. Das Kontrollkästchen 'Auf allen Verkaufskanälen verkaufen' ist markiert. Eine der Optionen darunter ist GetYourGuide.](../../assets/screens/getyourguide/event-settings-general.png)
+![Die Seite mit allgemeinen Einstellungen für eine Veranstaltung zeigt die Einstellungen für 'Auf bestimmte Verkaufskanäle einschränken'. Das Kontrollkästchen 'Auf allen Verkaufskanälen verkaufen' ist markiert. Eine der Optionen darunter ist GetYourGuide.](../../assets/screens/getyourguide/event-settings-general.de.png)
 
 Um Ihr Angebot für die GetYourGuide-Webseite zu konfigurieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → GetYourGuide: und wechseln Sie zum Reiter :btn:Configuration:.
 Tragen Sie die erforderlichen Angaben ein und wählen Sie "Event time mode" und "Buchungsmodus".
 
-![Die Seite mit dem Titel 'GetYourGuide' ist auf dem Reiter 'Configuration' geöffnet. Die Felder 'Veranstaltungstitel', 'Veranstaltungsbeschreibung', 'Land' und 'Stadt' sind ausgefüllt. Unter 'Event time mode' ist die Option 'Time point' aktiv. Unter 'Buchungsmodus' ist die Option 'Individual tickets' aktiv.](../../assets/screens/getyourguide/getyourguide-configuration.png)
+![Die Seite mit dem Titel 'GetYourGuide' ist auf dem Reiter 'Configuration' geöffnet. Die Felder 'Veranstaltungstitel', 'Veranstaltungsbeschreibung', 'Land' und 'Stadt' sind ausgefüllt. Unter 'Event time mode' ist die Option 'Time point' aktiv. Unter 'Buchungsmodus' ist die Option 'Individual tickets' aktiv.](../../assets/screens/getyourguide/getyourguide-configuration.de.png)
 
 Sie können über GetYourGuide für jede Ihrer Veranstaltungen entweder Einzel- oder Gruppentickets anbieten.
-Weitere Informationen über den Unterschied zwischen Einzeltickets und Gruppentickets finden Sie im [nächsten Abschnitt](getyourguide.md#produkte-fur-getyourguide-einrichten).
+Weitere Informationen über den Unterschied zwischen Einzeltickets und Gruppentickets finden Sie im [nächsten Abschnitt](#produkte-fur-getyourguide-einrichten).
 Wenn Sie alles wie gewünscht gewählt haben, klicken Sie den Button :btn:Speichern:.
 
 Wiederholen Sie diese Schritte für jede weitere Veranstaltung, für die Sie Produkte über GetYourGuide anbieten möchten.
@@ -70,7 +70,7 @@ Konfigurieren Sie mindestens ein Produkt, das Sie über GetYourGuide verkaufen m
 Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-ticket: Produkte: und erstellen oder bearbeiten ein Produkt.
 Wechseln Sie zum Reiter :btn:Verfügbarkeit: und markieren Sie unter "Verkaufskanäle" das Kontrollkästchen neben "GetYourGuide" oder das neben "Auf allen Verkaufskanälen verkaufen".
 
-![Die Seite mit dem Titel 'Produkt bearbeiten: Standard-Ticket' zeigt den Reiter 'GetYourGuide' mit Optionen für 'Ticket Category', 'Minimal group size', 'Maximal group size', 'Minimum participant age' und 'Maximum participant age'](../../assets/screens/getyourguide/modify-product.png)
+![Die Seite mit dem Titel 'Produkt bearbeiten: Standard-Ticket' zeigt den Reiter 'GetYourGuide' mit Optionen für 'Ticket Category', 'Minimal group size', 'Maximal group size', 'Minimum participant age' und 'Maximum participant age'](../../assets/screens/getyourguide/modify-product.de.png)
 
 Wechseln Sie anschließend zum Reiter :btn:GetYourGuide: und geben Sie die GetYourGuide-Ticketkategorie an.
 Die Einstellung "Ticket Category" ist nur für Tickets relevant, die Sie über GetYourGuide verkaufen.
@@ -103,7 +103,7 @@ Wählen Sie als "Reservierungssystem" "pretix.eu".
 Um die benötigte "Produkt-ID" zu ermitteln, navigieren Sie in pretix zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → GetYourGuide: und wechseln Sie zum Reiter :btn:Configuration:.
 Sie wird im Infofeld unten auf der Seite angezeigt, wenn Sie alle Pflichtangaben eingetragen und gespeichert haben.
 
-![Die Seite 'GetYourGuide' zeigt auf dem Reiter 'Analyzer' die erfüllten Voraussetzungen 'Shop is not in testmode', 'Shop is live' und 'Shop is available on GetYourGuide Sales Channel'. Auf der Seite sind auch die konfigurierten Produkte und der Bereich 'Outlook' zu sehen.](../../assets/screens/getyourguide/analyzer.png)
+![Die Seite 'GetYourGuide' zeigt auf dem Reiter 'Analyzer' die erfüllten Voraussetzungen 'Shop is not in testmode', 'Shop is live' und 'Shop is available on GetYourGuide Sales Channel'. Auf der Seite sind auch die konfigurierten Produkte und der Bereich 'Outlook' zu sehen.](../../assets/screens/getyourguide/analyzer.de.png)
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → GetYourGuide: und wechseln Sie zum Reiter :btn:Analyzer:.
 Auf dieser Seite sehen Sie, ob Ihr Shop und die Produkte im Shop korrekt für die Integration mit GetYourGuide eingerichtet sind.
