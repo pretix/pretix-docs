@@ -9,18 +9,18 @@ Dieser Artikel erläutert, wie Sie eine eigene Domain einrichten und für Ihre V
 
 ## Voraussetzungen
 
-Sie müssen Inhaber\*in der Domain sein, die Sie als eigene Domain verwenden möchten.
+Sie müssen Inhaber\*in der Domain sein, die Sie als eigene Domain für Ihren pretix-Shop verwenden möchten.
 
 Eigene Domains richten Sie auf Veranstalterebene ein.
 Wenn Sie eine eigene Domain aktivieren möchten, benötigen Sie Zugriff auf ein Veranstalterkonto.
-Außerdem benötigen Sie Zugriff auf jeden Veranstaltungsshop, für den Sie die eigene Domain verwenden möchten.
+Außerdem benötigen Sie Zugriff auf jede Veranstaltung, für den Sie die eigene Domain verwenden möchten.
 
 ## Anleitung
 
 Wie Sie zum Einrichten einer eigenen Domain vorgehen, hängt davon ab, wo Ihre Shops gehostet werden.
 Wenn Sie [pretix Hosted](#pretix-hosted) nutzen, hosten wir Ihre Shops für Sie unter `pretix.eu`.
 Wenn Sie [pretix Enterprise oder pretix Community](#pretix-enterprise-und-pretix-community) nutzen, läuft pretix auf Ihrem eigenen Server.
-Lesen Sie weiter bei dem Abschnitt, der auf Sie zutrifft.
+Lesen Sie weiter bei dem Abschnitt, der auf Ihre Situation zutrifft.
 
 ### pretix Hosted
 
@@ -53,7 +53,7 @@ Veranstaltungen, die einer alternativen Domain zugewiesen wurden, werden auf die
 Die Veranstalterseite wird **nicht** auf der alternativen Domain angezeigt.
 Wenn Benutzer\*innen versuchen, auf der alternativen Domain Ihr Veranstalterkonto aufzurufen, leitet der Browser sie zur Hauptdomain des Veranstalters um, auf der alle Veranstaltungen aufgeführt sind.
 
-Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Domain einrichten:.
+Wenn Sie alle notwendigen Optionen gewählt haben, klicken Sie den Button :btn:Domain einrichten:.
 Es kann einige Minuten dauern, bis die Änderungen in Kraft treten.
 
 ### pretix Enterprise und pretix Community
@@ -63,10 +63,10 @@ Wie Sie dazu genau vorgehen müssen, hängt von Ihrer konkreten Konfiguration ab
 
 Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen und wechseln Sie zum Reiter :btn:Domains:.
 Klicken Sie den Button :btn-icon:fa3-plus: Domain hinzufügen:. 
-Auf der Seite wird eine neue, leere Zeile angezeigt.
-Geben Sie in dieser neuen Zeile den Namen der neuen Domain in das Feld "Domainname" ein.
+Auf der Seite wird eine neue leere Zeile angezeigt.
+Geben Sie in dieser neuen Zeile in das Feld "Domainname" den Namen der neuen Domain ein.
 
-Wählen Sie einen Modus für die neue Domain.
+Wählen Sie eine "Art der Domain-Nutzung" für die neue Domain.
 pretix nutzt die "Veranstalterdomain" für Ihre Veranstalterseite und alle Veranstaltungen, für die keine andere Domain angegeben wurde.
 pretix nutzt die "Veranstaltungs-Domain" für eine Einzelveranstaltung.
 Geben Sie im Feld "Veranstaltung" eine Veranstaltung an.
@@ -77,7 +77,7 @@ Veranstaltungen, die einer alternativen Domain zugewiesen wurden, werden auf die
 Die Veranstalterseite wird **nicht** auf der alternativen Domain angezeigt.
 Wenn Benutzer\*innen versuchen, auf der alternativen Domain Ihr Veranstalterkonto aufzurufen, leitet der Browser sie zur Hauptdomain des Veranstalters um, auf der alle Veranstaltungen aufgeführt sind.
 
-Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Domain einrichten:.
+Wenn Sie alle notwendigen Optionen gewählt haben, klicken Sie den Button :btn:Domain einrichten:.
 Es kann einige Minuten dauern, bis die Änderungen in Kraft treten.
 
 ### Eine Veranstaltung zu einer alternativen Domain verschieben
