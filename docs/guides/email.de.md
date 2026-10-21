@@ -3,7 +3,7 @@
 pretix gibt Ihnen viele Optionen, um Kund\*innen und Teilnehmende per E-Mail zu kontaktieren – auf Veranstalter- und Veranstaltungsebene.
 Sie können dazu den vom System bereitgestellten E-Mail-Server oder den Ihres Unternehmens verwenden.
 pretix stellt zahlreiche vorkonfigurierte E-Mail-Nachrichten bereit, die Sie an Ihre Anforderungen anpassen können.
-Dieser Artikel erläutert, wie Sie die für den E-Mail-Server gewünschte Lösung in pretix einrichten und wie Sie E-Mail-Inhalte anpassen.
+Dieser Artikel erläutert, wie Sie Ihre gewünschte Lösung für den E-Mail-Verkehr in pretix einrichten und wie Sie E-Mail-Inhalte anpassen.
 
 ## Voraussetzungen
 
@@ -27,7 +27,7 @@ Klicken Sie den Button :btn-icon:fa3-edit: Bearbeiten: neben "Versandmethode" un
  2. **Eigene Absendeadresse mit System-Mailserver benutzen:** der vom System bereitgestellte E-Mail-Server.
  pretix versendet E-Mails von einer individuell festgelegten Adresse.
  Dazu müssen Sie dem SPF-Eintrag Ihres Mailservers den pretix-Anwendungsserver hinzufügen (siehe [Den E-Mail-Server des Systems mit einer individuellen Absendeadresse verwenden](email.md#den-e-mail-server-des-systems-mit-einer-individuellen-absendeadresse-verwenden) unten).
- 3. **Eigenen SMTP-Server verwenden:** Sie verwenden den SMTP-Server Ihres Unternehmens und können Ihre E-Mails vollständig individuell gestalten.
+ 3. **Eigenen SMTP-Server verwenden:** Sie verwenden den SMTP-Server Ihres Unternehmens und können Ihren E-Mail-Verkehr vollständig selbst verwalten.
 
 Wenn Sie die allgemeinen E-Mail-Einstellungen für eine bestimmte Veranstaltung ändern möchten, können Sie diese Einstellungen für diese Veranstaltung entsperren.
 Das Entsperren der Einstellungen kann nicht rückgängig gemacht werden.
@@ -60,7 +60,7 @@ Wenn Sie Ihre E-Mails mit DKIM authentifizieren möchten, richten Sie für die S
 Um DKIM für Ihre Domain auf unseren Mail-Servern zu aktivieren, wenden Sie sich an unser Support-Team.
 
 Wenn Sie viele E-Mails auf einmal verschicken, verlangen E-Mail-Anbieter wie Google Mail außerdem, dass Sie eine DMARC-Richtlinie haben.
-Eine DMARC-Richtlinie `p=none` genügt.
+Wenn Sie die DMARC-Richtlinie `p=none` festlegen, dann ist das ausreichend.
 
 ### E-Mail-Inhalte anpassen
 
@@ -93,7 +93,7 @@ Die jeweils verfügbaren Platzhalter sind im Backend unterhalb der Felder für B
 | `{name_for_salutation}`            | Wunsch-Anrede, -Titel, -Name                                                                                   | Dr. Jordan Doe |
 | `{name_given_name}`                | Vorname des Empfängers/der Empfängerin                                                                         | Jordan |
 | `{order_modification_deadline_date_and_time}` | Uhrzeit und Datum bis zu denen die Bestellung geändert werden kann                                  | 4. Juni 2027, 18:00 |
-| `{orders}`                         | Liste von Bestellungen einschl. Links zu Statusseiten, individuell für die E-Mail für "Link erneut senden (vom Benutzer beantragt)" |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
+| `{orders}`                         | Liste von Bestellungen einschließlich Links zu Statusseiten, nur für die E-Mail "Link erneut senden (vom Benutzer beantragt)" |  • TUTCON27-F8VVL - https://pretix.eu/tut/tutcon27/order/F8VVL/6zzjnumtsx136ddy/open/abcdefghi/ <br> • TUTCON27-HIDHK - https://pretix.eu/tut/tutcon27/order/HIDHK/98kusd8ofsj8dnkd/open/jklmnopqr/ <br> • TUTCON27-OPKSB - https://pretix.eu/tut/tutcon27/order/OPKSB/09pjdksflosk3njd/open/stuvwxy2z/ |
 | `{organizer}`                      | Name des Veranstalters                                                                                         | Tutorial Ltd. |
 | `{payment_info}`                   | Angaben zur Zahlungsmethode (z. B. Bankverbindung)                                                             | Dieser Betrag wurde Ihrer Karte belastet. |
 | `{product}`                        | Das Produkt, das jetzt auf der Warteliste zur Verfügung steht                                                  | Ermäßigtes Ticket |
