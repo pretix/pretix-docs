@@ -4,9 +4,9 @@ Mit pretix können Ihre Kund\*innen im Shop einkaufen, ohne ein Konto anzulegen.
 pretix gibt Ihnen aber auch die Möglichkeit, Kund\*innenkonten zu aktivieren.
 Kund\*innenkonten haben drei Vorteile:
 
-Erstens können Ihre Kund\*innen auf diese Weise ihre persönlichen Daten hinterlegen, sodass sie nicht mehr bei jedem Kauf Adressen und Daten von Teilnehmenden eingeben müssen.
+Erstens können Ihre Kund\*innen auf diese Weise ihre persönlichen Daten hinterlegen, sodass sie nicht mehr bei jedem Kauf Adressen und Teilnehmendendaten eingeben müssen.
 Zweitens können Sie Ihre Kund\*innen dann auch über ihr persönliches Konto erreichen, nicht nur im Rahmen einzelner Bestellungen.
-Drittens haben Sie mit Kund\*innenkonten die Möglichkeit, Mitgliedschaften zu vergeben, die für Dauerkarten, Exklusivangebote für Mitglieder und wiederverwendbare Medien genutzt werden können.
+Drittens haben Sie mit Kund\*innenkonten die Möglichkeit, Mitgliedschaften zu vergeben, die Sie dann für Dauerkarten, Exklusivangebote für Mitglieder und wiederverwendbare Medien benutzen können.
 
 !!! Hinweis
     Kund\*innenkonten und Mitgliedschaften sind nicht dasselbe.
@@ -42,12 +42,14 @@ Lassen Sie dieses Kontrollkästchen markiert, wenn Ihre Kund\*innen die Möglich
 Entfernen Sie die Markierung, wenn Sie möchten, dass die Anmeldung ausschließlich über einen externen Single-Sign-on-Dienst möglich ist.
 
 Standardmäßig können Kund\*innen alle Bestellungen ansehen und bearbeiten, die über ein bestimmtes Kund\*innenkonto getätigt wurden.
-Wenn Sie das Kontrollkästchen bei "Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen" markieren, können Ihre Kund\*innen auch alle Bestellungen einsehen und bearbeiten, die ohne Konto-Anmeldung über eine bestimmte E-Mail-Adresse getätigt wurden.
+Wenn Sie das Kontrollkästchen bei "Bestellungen auf Basis der E-Mail-Adresse Kundenkonten zuordnen" markieren, können Ihre eingeloggten Kund\*innen auch alle Bestellungen einsehen und bearbeiten, die über die gleiche E-Mail-Adresse getätigt wurden.
+Das trifft auch auf Bestellungen zu, die ohne Login aufgegeben wurden.
 
 ### Kund\*innenkonten aus Kund\*innen-Perspektive
 
 Aus der Perspektive Ihrer Kund\*innen ist ein pretix-Shop auch ohne Kund\*innenkonto gut nutzbar.
-Sie sollten Ihren Kund\*innen aber die Möglichkeit, ein Kund\*innenkonto anzulegen, anbieten, wenn Sie davon ausgehen, dass sie wiederholt etwas bestellen, denn so können sie nach dem Kauf auf ihre Mitgliedschaften, Adressen, Teilnehmendenprofile, Kontodaten und Passwörter zugreifen und diese ändern.
+Sie können Ihren Kund\*innen die Möglichkeit anbieten, ein Konto anzulegen.
+Das ist dann sinnvoll, wenn Sie davon ausgehen, dass Ihre Kund\*innen wiederholt etwas bestellen, oder dass sie auf ihre Mitgliedschaften, Adressen, Teilnehmendenprofile, Kontodaten und Passwörter zugreifen und diese ändern.
 
 ![Die Seite des Veranstalters 'Tutorial Ltd.' zeigt eine Bestellung mit ausstehender Zahlung.](../assets/screens/customer-accounts/order-details.png)
 
@@ -57,8 +59,8 @@ Die URL gilt nur für diese eine Bestellung.
 
 ![Die Seite 'Ihr Konto' des Veranstalters 'Tutorial Ltd.' zeigt Konto-Informationen, Bestellungen, Mitgliedschaften, Adressen, Teilnehmendenprofile und Optionen, um alle diese Daten anzuzeigen oder zu ändern.](../assets/screens/customer-accounts/your-account.png)
 
-Nach dem Anlegen eines Kontos und dem Anmelden bei diesem Konto sehen Kund\*innen einen Überblick über ihre Bestellungen und können diese einzeln anzeigen und bearbeiten, wie oben beschrieben.
-Sie können auch Mitgliedschaften, Adressen, Profile von Teilnehmenden, Kontodaten und das Passwort anzeigen und ändern.
+Kund\*innen, die ein Konto anlegen und sich einloggen, sehen einen Überblick über ihre Bestellungen und können diese einzeln anzeigen und bearbeiten, genau wie oben beschrieben.
+Zusätzlich dazu können sie aber auch Mitgliedschaften, Adressen, Profile von Teilnehmenden, Kontodaten und das Passwort einsehen und ändern.
 
 ### Kund\*innenkonten verwalten
 
@@ -73,11 +75,11 @@ Diese Nummer ist der eindeutige Identifikator für ein Konto und kann nach dem A
 Der Identifikator darf nur Buchstaben, Ziffern, Punkte, Bindestrich und Unterstriche enthalten.
 Er muss mit einem Buchstaben oder einer Ziffer beginnen und enden.
 
-Darüber hinaus ist nur die Angabe einer E-Mail-Adresse verpflichtend für ein Kund\*innenkonto.
+Die einzige zwingend notwendige Angabe für ein Kund\*innenkonto ist die E-Mail-Adresse.
 
-Kund\*innen können sich am Konto anmelden, wenn die Kontrollkästchen neben "Konto aktiv" **und** "Verifizierte E-Mail-Adresse" markiert sind.
+Kund\*innen können sich nur dann in ihr Konto einloggen, wenn die Kontrollkästchen neben "Konto aktiv" **und** "Verifizierte E-Mail-Adresse" markiert sind.
 Das Kontrollkästchen "Verifizierte E-Mail-Adresse" wird automatisch markiert, wenn Kund\*innen den Link in der E-Mail mit der Bestätigung oder zum Zurücksetzen des Passworts klicken.
-Sie können dieses Kontrollkästchen auch manuell markieren oder die Markierung daraus entfernen.
+Sie können dieses Kontrollkästchen auch manuell aktivieren oder deaktivieren.
 Wenn dieses Kontrollkästchen nicht markiert ist und Kund\*innen versuchen, sich am Konto anzumelden, werden sie aufgefordert, entweder den Bestätigungslink zu klicken oder das Passwort zurückzusetzen.
 
 Falls Sie bereits Kund\*innenkonten in einer anderen Software führen und eine eindeutige Verbindung zu pretix-Kund\*innenkonten herstellen möchten, sollten Sie den eindeutigen Identifikator des Kontos aus der anderen Software in das Feld "Externe Referenz" eintragen.
@@ -94,7 +96,8 @@ Das entlastet Ihre Kund\*innen, denn sie müssen nicht mehr auf den Unterschied 
 Wenn Sie SSO verwenden, können ihre Kund\*innen für jede Interaktion mit Ihrem Unternehmen bzw. Ihrer Marke dieselben Anmeldedaten verwenden.
 
 Sie können pretix als SSO-Provider nutzen.
-Dann können Kund\*innen ein pretix-Konto anlegen und es für alle anderen Anwendungen verwenden, die Sie als SSO-Clients verbunden haben; pretix ist dann die "Source of truth".
+Dann können Kund\*innen ein pretix-Konto anlegen und es für alle anderen Anwendungen verwenden, die Sie als SSO-Clients verbunden haben.
+pretix verhält sich dann also als "Source of truth".
 
 Sie können pretix auch als SSO-Client nutzen.
 Wenn Sie bereits einen anderen SSO-Provider als "Source of truth" für Ihre Anwendungen nutzen, können Sie pretix als SSO-Client verbinden.
@@ -111,12 +114,12 @@ Deaktivieren Sie es, wenn Sie die SSO-Integration für den betreffenden Client d
 
 Geben Sie in das Feld "Name der Applikation" einen aussagekräftigen und eindeutigen Namen ein, beispielsweise den Namen der Anwendung oder Website, für die Sie pretix als SSO-Provider nutzen möchten.
 
-Wählen Sie bei "Art des Clients" die Option "Vertraulich", wenn die Server-Anwendung einen geheimen Schlüssel ("Client-Secret") speichern kann, auf den die Endbenutzer\*innen nicht zugreifen können. 
-Wählen Sie für die Client-Anwendung, etwa eine Smartphone-App, die Option "Öffentlich".
+Falls es sich um eine Server-Anwendung handelt, die einen geheimen Schlüssel speichern kann, auf den die Endbenutzer\*innen nicht zugreifen können, dann wählen Sie bei "Art des Clients" die Option `Vertraulich`
+Falls es sich hingegen um eine Client-Anwendung handelt, etwa eine Smartphone-App, dann wählen Sie die Option `Öffentlich`.
 
 Was Sie bei "Art des Grants" wählen, hängt davon ab, wie der Standard OpenID Connect implementiert ist, der von der zu verbindenden Anwendung verwendet wird.
 
-Geben Sie in das Feld "Weiterleitungs-URIs" eine oder mehrere URIs ein, zu denen Benutzer\*innen nach der erfolgreichen oder fehlgeschlagenen Anmeldung weitergeleitet werden.
+Geben Sie in das Feld "Weiterleitungs-URIs" eine oder mehrere URIs ein, zu denen Kund\*innen nach der erfolgreichen oder fehlgeschlagenen Anmeldung weitergeleitet werden.
 
 Markieren Sie unter "Erlaubte Zugriffsbereiche" die Kontrollkästchen für die Bereiche, auf die die Anwendung zugreifen darf.
 
@@ -129,13 +132,13 @@ Wenn Sie ein neues Client-Secret benötigen, markieren Sie das Kontrollkästchen
 Das alte Client-Secret kann danach nicht mehr verwendet werden.
 Das neue Client-Secret wird in einem grünen Feld oben auf der Seite angezeigt.
 
-Der Dienst, mit dem Sie sich verbinden, benötigt neben Client-ID und Client-Secret auch Ihre Aussteller-URI.
+Der Dienst, mit dem Sie sich verbinden, benötigt neben Client-ID und Client-Secret auch Ihre Issuer-URI.
 Diese entnehmen Sie dem Feld "Basis-URL".
-Wenn Sie pretix Hosted ohne eigene Domain nutzen, ist Ihre Aussteller-URI die Adresse des öffentlichen Veranstalterprofils **ohne** den letzten Schrägstrich.
-Zum Beispiel lautet die Aussteller-URI unserer Beispielfirma Tutorial Ltd. mit der Veranstalter-Kurzform "tut" [https://pretix.eu/tut](https://pretix.eu/tut).
+Wenn Sie pretix Hosted ohne eigene Domain nutzen, ist Ihre Issuer-URI die Adresse des öffentlichen Veranstalterprofils **ohne** den letzten Schrägstrich.
+Zum Beispiel lautet die Issuer-URI unserer Beispielfirma Tutorial Ltd. mit der Veranstalter-Kurzform "tut" [https://pretix.eu/tut](https://pretix.eu/tut).
 
-Wenn Sie eine eigene Domain nutzen, ist Ihre Aussteller-URI die Adresse dieser Domain mit vorangestelltem "https://".
-Wenn zum Beispiel Ihre eigene Domain tickets.meinefirma.net heißt, lautet Ihre Aussteller-URI [https://tickets.meinefirma.net](https://tickets.meinefirma.net).
+Wenn Sie eine eigene Domain nutzen, ist Ihre Issuer-URI die Adresse dieser Domain mit vorangestelltem "https://".
+Wenn zum Beispiel Ihre eigene Domain tickets.meinefirma.net heißt, lautet Ihre Issuer-URI [https://tickets.meinefirma.net](https://tickets.meinefirma.net).
 
 #### Technische Details für die Nutzung von pretix als SSO-Provider
 
@@ -144,7 +147,7 @@ Ausgenommen sind einige optionale Komponenten, die bei pretix keinen Nutzen habe
 So werden beispielsweise verschlüsselte Tokens, Offline-Zugriff, Aktualisierungstokens ("refresh tokens") und die Übergabe von Anforderungsparametern als JWTs nicht unterstützt.
 
 pretix implementiert den Abschnitt mit Provider-Metadaten von [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html).
-Den Endpunkt für die Aussteller-URI ermitteln Sie, wie oben beschrieben, beispielsweise unter https://pretix.eu/demo/.well-known/openid-configuration.
+Den Endpunkt für die Aussteller-URI ermitteln Sie, wie oben beschrieben, beispielsweise unter [https://pretix.eu/demo/.well-known/openid-configuration](https://pretix.eu/demo/.well-known/openid-configuration).
 
 Alle drei Flows von OpenID Connect Core sind implementiert:
 
@@ -165,7 +168,7 @@ Die Adressen der verschiedenen Endpunkte sind relativ zur Aussteller-URI, wie ob
  - Benutzer\*innendaten: `<issuer>/oauth2/v1/userinfo`
  - Schlüssel: `<issuer>/oauth2/v1/keys`
 
-Sie setzen die Spezifikationen von OpenID Connect und OAuth ohne besondere Verhaltensweisen um.
+Diese Endpunkte setzen die Spezifikationen von OpenID Connect und OAuth ohne besondere Verhaltensweisen um.
 Weitere Informationen dazu finden Sie in diesen Spezifikationen.
 
 #### pretix als SSO-Client
@@ -175,14 +178,15 @@ Wenn Sie pretix als SSO-Client nutzen möchten, navigieren Sie zu :navpath:Ihr V
 Legen Sie "Provider-Name" und "Login-Button-Beschriftung" fest.
 Der "Provider-Name" dient zur internen Bezeichnung des Providers im pretix-Backend.
 Die "Login-Button-Beschriftung" legt den Text auf dem Button fest, der den Kund\*innen zur Anmeldung in Ihrem Shop angezeigt wird.
-Wählen Sie bei "Single-Sign-On-Methode" die Option "OpenID Connect".
-Tragen Sie in die Felder, die nach Auswahl von "OpenID Connect" angezeigt werden, die Angaben Ihres SSO-Providers ein.
+Wählen Sie bei "Single-Sign-On-Methode" die Option `OpenID Connect`.
+Durch die Auswahl von `OpenID Connect` zeigt die Seite einige neue Felder an. 
+Tragen Sie hier die Angaben Ihres SSO-Providers ein.
 
 Wenn Sie möchten, dass sich Ihre Kund\*innen ausschließlich per SSO anmelden und kein Konto bei pretix direkt anlegen, navigieren Sie zu :navpath:Ihr Veranstalter → Einstellungen → Allgemein:, rufen Sie den Reiter :btn:Kundenkonten: auf und entfernen Sie das Häkchen aus dem Kontrollkästchen "Erlaube den Login mit E-Mail-Adresse und Passwort".
 
 #### Technische Details für die Nutzung von pretix als SSO-Client
 
-Wenn Sie mit pretix einen SSO-Provider verwenden möchten, muss dieser folgende Anforderungen erfüllen:
+Wenn Sie einen SSO-Provider mit pretix verwenden möchten, muss dieser folgende Anforderungen erfüllen:
 
  - Implementierung gemäß der Spezifikation [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html)
  - Metadaten-Dokument veröffentlicht unter `<issuer>/.well-known/openid-configuration`, wie in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html) spezifiziert
@@ -190,7 +194,7 @@ Wenn Sie mit pretix einen SSO-Provider verwenden möchten, muss dieser folgende 
  - Unterstützung für die Client-Authentifizierung mittels Client-ID und Client-Secret sowie ohne Verschlüsselung mit öffentlichem Schlüssel
  - Der SSO-Provider erlaubt nur die Anmeldung geprüfter Konten **oder** sendet den Claim `email_verified`. 
 
-!!! Warnung
+!!! Warning
     Standardmäßig gibt pretix Kund\*innen Zugriff auf frühere Bestellungen, die über dieselbe E-Mail-Adresse getätigt wurden.
     Dies ist nur dann sicher, wenn Ihr SSO-Provider E-Mail-Adressen überprüft, zum Beispiel durch eine Bestätigungs-E-Mail.
     Falls der SSO-Provider den Claim `email_verified` nicht schickt, akzeptiert pretix alle Konten. 
@@ -198,7 +202,7 @@ Wenn Sie mit pretix einen SSO-Provider verwenden möchten, muss dieser folgende 
     
 #### Beispiel: Google Accounts als SSO-Provider für pretix nutzen
 
-Wenn Sie Google als SSO-Provider für pretix nutzen möchten, befolgen Sie die Anweisungen in der Google-Dokumentation zu [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect).
+Wenn Sie Google als SSO-Provider für pretix nutzen möchten, befolgen Sie die Anweisungen in der Google-Dokumentation zu [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect?hl=de).
 Rufen Sie das [Cloud-Backend von Google](https://console.cloud.google.com/auth/clients) auf und erstellen Sie einen neuen Client.
 Wählen Sie beim Anlegen unter "Anwendungstyp" die Option "Webanwendung".
 Notieren Sie sich "Client ID" und "Client secret", damit Sie diese Angaben später in das pretix-Backend eintragen können.
@@ -221,4 +225,4 @@ Eine Beispielkonfiguration könnte so aussehen:
 
 Klicken Sie den Button :btn:Speichern:.
 Das Feld "Weiterleitungs-URL" enthält jetzt eine URL, die ähnlich, aber **nicht genauso** aussieht wie `https://pretix.eu/tut/account/login/199/return`.
-Rufen Sie das Google-Backend auf, bearbeiten Sie Ihren Client, klicken Sie, um eine URL hinzuzufügen, geben Sie diese in das Feld ein und speichern Sie die Einstellungen.
+Rufen Sie das Google-Backend auf, bearbeiten Sie Ihren Client, fügen Sie eine URL hinzu, geben Sie diese in das Feld ein und speichern Sie die Einstellungen.
