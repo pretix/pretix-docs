@@ -24,7 +24,7 @@ Lesen Sie weiter bei dem Abschnitt, der auf Ihre Situation zutrifft.
 
 ### pretix Hosted
 
-Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Eigene Domain:. 
+Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen → Eigene Domain:.
 Diese Seite zeigt einen DNS-Eintrag an, der ungefähr folgendermaßen aussieht:
 
 **CNAME tut.cname.pretix.eu.**
@@ -47,7 +47,7 @@ Weisen Sie der Domain unter "Domain-Nutzung" eine von drei Rollen zu:
 pretix nutzt die "Haupt-Domain des Veranstalters" für Ihre Veranstalterseite und alle Veranstaltungen, für die keine andere Domain angegeben wurde.
 pretix nutzt die "Veranstaltungs-Domain" für eine Einzelveranstaltung.
 Für bestimmte Veranstaltungen können Sie auch eine individuelle "Alternative Domain" wählen.
-Weitere Informationen dazu finden Sie weiter unten im Abschnitt [Eine Veranstaltung zu einer alternativen Domain verschieben](custom-domain.md#eine-veranstaltung-zu-einer-alternativen-domain-verschieben).
+Weitere Informationen dazu finden Sie weiter unten im Abschnitt [Eine Veranstaltung zu einer alternativen Domain verschieben](#eine-veranstaltung-zu-einer-alternativen-domain-verschieben).
 
 Veranstaltungen, die einer alternativen Domain zugewiesen wurden, werden auf dieser alternativen Domain angezeigt.
 Die Veranstalterseite wird **nicht** auf der alternativen Domain angezeigt.
@@ -61,8 +61,8 @@ Es kann einige Minuten dauern, bis die Änderungen in Kraft treten.
 Wenn Sie pretix Enterprise oder pretix Community nutzen, konfigurieren Sie Ihren Webserver oder Reverse Proxy so, dass Anfragen an die neue Domain an pretix übergeben werden.
 Wie Sie dazu genau vorgehen müssen, hängt von Ihrer konkreten Konfiguration ab.
 
-Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen und wechseln Sie zum Reiter :btn:Domains:.
-Klicken Sie den Button :btn-icon:fa3-plus: Domain hinzufügen:. 
+Navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-wrench: Einstellungen: und wechseln Sie zum Reiter :btn:Domains:.
+Klicken Sie den Button :btn-icon:fa3-plus: Domain hinzufügen:.
 Auf der Seite wird eine neue leere Zeile angezeigt.
 Geben Sie in dieser neuen Zeile in das Feld "Domainname" den Namen der neuen Domain ein.
 
@@ -71,7 +71,7 @@ pretix nutzt die "Veranstalterdomain" für Ihre Veranstalterseite und alle Veran
 pretix nutzt die "Veranstaltungs-Domain" für eine Einzelveranstaltung.
 Geben Sie im Feld "Veranstaltung" eine Veranstaltung an.
 Für bestimmte Veranstaltungen können Sie auch eine individuelle "Alternative Veranstalterdomain für einzelne Veranstaltungen" wählen.
-Weitere Informationen dazu finden Sie weiter unten im Abschnitt [Eine Veranstaltung zu einer alternativen Domain verschieben](custom-domain.md#eine-veranstaltung-zu-einer-alternativen-domain-verschieben).
+Weitere Informationen dazu finden Sie weiter unten im Abschnitt [Eine Veranstaltung zu einer alternativen Domain verschieben](#eine-veranstaltung-zu-einer-alternativen-domain-verschieben).
 
 Veranstaltungen, die einer alternativen Domain zugewiesen wurden, werden auf dieser alternativen Domain angezeigt.
 Die Veranstalterseite wird **nicht** auf der alternativen Domain angezeigt.
@@ -84,7 +84,7 @@ Es kann einige Minuten dauern, bis die Änderungen in Kraft treten.
 
 Wenn Sie im Modus "Alternative Domain" (pretix Hosted) oder "Alternative Veranstalterdomain für einzelne Veranstaltungen" (pretix Enterprise und pretix Community) eine Domain eingerichtet haben, müssen Sie die betreffenden Veranstaltungen zur alternativen Domain verschieben.
 
-Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:. 
+Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Allgemein:.
 Klicken Sie auf dem Reiter :btn:Eckdaten: das Dropdown-Menü "Domain".
 Die Standardeinstellung ist `Wie das Veranstalterkonto`.
 Wählen Sie die gewünschte alternative Domain aus der Liste und klicken Sie den Button :btn:Speichern:.
