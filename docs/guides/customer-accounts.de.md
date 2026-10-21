@@ -51,13 +51,13 @@ Aus der Perspektive Ihrer Kund\*innen ist ein pretix-Shop auch ohne Kund\*innenk
 Sie können Ihren Kund\*innen die Möglichkeit anbieten, ein Konto anzulegen.
 Das ist dann sinnvoll, wenn Sie davon ausgehen, dass Ihre Kund\*innen wiederholt etwas bestellen, oder dass sie auf ihre Mitgliedschaften, Adressen, Teilnehmendenprofile, Kontodaten und Passwörter zugreifen und diese ändern.
 
-![Die Seite des Veranstalters 'Tutorial Ltd.' zeigt eine Bestellung mit ausstehender Zahlung.](../assets/screens/customer-accounts/order-details.png)
+![Die Seite des Veranstalters 'Tutorial Ltd.' zeigt eine Bestellung mit ausstehender Zahlung.](../assets/screens/customer-accounts/order-details.de.png)
 
 Kund\*innen, die eine Bestellung aufgeben, ohne sich bei einem Kund\*innenkonto anzumelden oder eines anzulegen, erhalten eine E-Mail mit einer URL.
 Diese URL führt zu einer Seite, auf der sie bezahlen, ihr Ticket herunterladen und Details ihrer Bestellung, den Versand sowie persönliche Angaben ändern können.
 Die URL gilt nur für diese eine Bestellung.
 
-![Die Seite 'Ihr Konto' des Veranstalters 'Tutorial Ltd.' zeigt Konto-Informationen, Bestellungen, Mitgliedschaften, Adressen, Teilnehmendenprofile und Optionen, um alle diese Daten anzuzeigen oder zu ändern.](../assets/screens/customer-accounts/your-account.png)
+![Die Seite 'Ihr Konto' des Veranstalters 'Tutorial Ltd.' zeigt Konto-Informationen, Bestellungen, Mitgliedschaften, Adressen, Teilnehmendenprofile und Optionen, um alle diese Daten anzuzeigen oder zu ändern.](../assets/screens/customer-accounts/your-account.de.png)
 
 Kund\*innen, die ein Konto anlegen und sich einloggen, sehen einen Überblick über ihre Bestellungen und können diese einzeln anzeigen und bearbeiten, genau wie oben beschrieben.
 Zusätzlich dazu können sie aber auch Mitgliedschaften, Adressen, Profile von Teilnehmenden, Kontodaten und das Passwort einsehen und ändern.
@@ -179,7 +179,7 @@ Legen Sie "Provider-Name" und "Login-Button-Beschriftung" fest.
 Der "Provider-Name" dient zur internen Bezeichnung des Providers im pretix-Backend.
 Die "Login-Button-Beschriftung" legt den Text auf dem Button fest, der den Kund\*innen zur Anmeldung in Ihrem Shop angezeigt wird.
 Wählen Sie bei "Single-Sign-On-Methode" die Option `OpenID Connect`.
-Durch die Auswahl von `OpenID Connect` zeigt die Seite einige neue Felder an. 
+Durch die Auswahl von `OpenID Connect` zeigt die Seite einige neue Felder an.
 Tragen Sie hier die Angaben Ihres SSO-Providers ein.
 
 Wenn Sie möchten, dass sich Ihre Kund\*innen ausschließlich per SSO anmelden und kein Konto bei pretix direkt anlegen, navigieren Sie zu :navpath:Ihr Veranstalter → Einstellungen → Allgemein:, rufen Sie den Reiter :btn:Kundenkonten: auf und entfernen Sie das Häkchen aus dem Kontrollkästchen "Erlaube den Login mit E-Mail-Adresse und Passwort".
@@ -192,14 +192,14 @@ Wenn Sie einen SSO-Provider mit pretix verwenden möchten, muss dieser folgende 
  - Metadaten-Dokument veröffentlicht unter `<issuer>/.well-known/openid-configuration`, wie in [OpenID Connect Discovery 1.0](https://openid.net/specs/openid-connect-discovery-1_0.html) spezifiziert
  - Unterstützung für den Autorisierungscode-Flow (`response_type=code`) mit `response_mode=query`
  - Unterstützung für die Client-Authentifizierung mittels Client-ID und Client-Secret sowie ohne Verschlüsselung mit öffentlichem Schlüssel
- - Der SSO-Provider erlaubt nur die Anmeldung geprüfter Konten **oder** sendet den Claim `email_verified`. 
+ - Der SSO-Provider erlaubt nur die Anmeldung geprüfter Konten **oder** sendet den Claim `email_verified`.
 
 !!! Warning
     Standardmäßig gibt pretix Kund\*innen Zugriff auf frühere Bestellungen, die über dieselbe E-Mail-Adresse getätigt wurden.
     Dies ist nur dann sicher, wenn Ihr SSO-Provider E-Mail-Adressen überprüft, zum Beispiel durch eine Bestätigungs-E-Mail.
-    Falls der SSO-Provider den Claim `email_verified` nicht schickt, akzeptiert pretix alle Konten. 
+    Falls der SSO-Provider den Claim `email_verified` nicht schickt, akzeptiert pretix alle Konten.
     Falls der SSO-Provider den Claim `email_verified` schickt, weist pretix Konten zurück, bei deren Benutzer\*innenprofil `email_verified=false` vermerkt ist.
-    
+
 #### Beispiel: Google Accounts als SSO-Provider für pretix nutzen
 
 Wenn Sie Google als SSO-Provider für pretix nutzen möchten, befolgen Sie die Anweisungen in der Google-Dokumentation zu [OpenID Connect](https://developers.google.com/identity/openid-connect/openid-connect?hl=de).
@@ -216,7 +216,7 @@ Tragen Sie Folgendes ein:
  - **Client-ID**: Tragen Sie hier die ID ein, die Sie sich beim Erstellen des Clients im Google-Backend notiert haben.
  - **Client-Secret**: Tragen Sie hier das Client-Secret ein, das Sie sich beim Erstellen des Clients im Google-Backend notiert haben.
 
-Um die nächsten drei Felder auszufüllen, lesen Sie die Dokumentation, die oben bei den [technischen Details](customer-accounts.md#technische-details-fur-die-nutzung-von-pretix-als-sso-client) verlinkt ist.
+Um die nächsten drei Felder auszufüllen, lesen Sie die Dokumentation, die oben bei den [technischen Details](#technische-details-fur-die-nutzung-von-pretix-als-sso-client) verlinkt ist.
 Eine Beispielkonfiguration könnte so aussehen:
 
  - **Scope**: `openid email profile`
