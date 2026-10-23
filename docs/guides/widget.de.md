@@ -8,13 +8,11 @@ Dieser Button fügt dem Warenkorb die gewählten Produkte hinzu und leitet den\*
 Das eingebettete Widget kann zum Beispiel so aussehen:
 
 <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css" crossorigin>
-<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
-<pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
+<script type="text/javascript" src="https://pretix.eu/widget/v2.de.js" async crossorigin></script><pretix-widget event="https://pretix.eu/demo/democon/"></pretix-widget>
 <noscript>
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
-            JavaScript ist in Ihrem Browser deaktiviert.
-            Um unseren Ticketshop ohne JavaScript aufzurufen, klicken Sie bitte <a target="_blank" href="https://pretix.eu/demo/democon/">hier</a>.
+            JavaScript ist in Ihrem Browser deaktiviert. Um unseren Ticketshop ohne JavaScript aufzurufen, klicken Sie bitte <a target="_blank" rel="noopener" href="https://pretix.eu/tut/tutcon27/">hier</a>.
         </div>
     </div>
 </noscript>
@@ -48,7 +46,7 @@ Der Code-Abschnitt sieht ungefähr so aus:
 
 ```
 <link rel="stylesheet" type="text/css" href="https://pretix.eu/demo/democon/widget/v2.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
+<script type="text/javascript" src="https://pretix.eu/widget/v2.de.js" async></script>
 ```
 
 Fügen Sie den zweiten Code-Abschnitt an der Position Ihrer Website ein, an der das Widget angezeigt werden soll.
