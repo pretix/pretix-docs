@@ -96,5 +96,5 @@ Diese Rechnung enthält die Adresse unserer Organisation, die Rechnungsnummer "T
 
 ## Abschluss
 
-Nachdem wir unseren Kund*innen jetzt zwei Zahlungsmöglichkeiten für unseren Shop zur Verfügung gestellt und den automatischen Versand von Rechnungen eingerichtet haben, können wir dazu übergehen, unseren Shop zu testen.
+Nachdem wir unseren Kund*innen jetzt zwei Zahlungsmöglichkeiten für unseren Shop zur Verfügung gestellt und den automatischen Versand von Rechnungen eingerichtet haben, können wir dazu übergehen, [unseren Shop zu testen](testing.de.md).
 Danach können wir unseren Shop endlich veröffentlichen.

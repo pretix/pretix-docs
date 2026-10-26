@@ -5,7 +5,7 @@ Dieser Artikel beschreibt, wie Sie eine Veranstaltung anlegen und grundlegend ei
 Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Abschnitt durchführen werden:
 
 - [eine Veranstaltung erstellen](#eine-veranstaltung-erstellen)
-- uns auf der Übersicht über den Status der Veranstaltung [einen Überblick verschaffen](#veranstaltungs-übersicht)
+- uns auf der Übersicht über den Status der Veranstaltung [einen Überblick verschaffen](#veranstaltungs-ubersicht)
 - die Erfassung von [Daten zu Kund\*innen- und Teilnehmer\*innen](#kunden--und-teilnehmerdaten) aktivieren
 - dem Ticketshop [Bilder hinzufügen](#shop-design)
 
@@ -84,11 +84,11 @@ Es ist möglich, die Steuer-Regeln zu ändern, nachdem wir die Veranstaltung ber
 Wir richten unsere Veranstaltung in Deutschland aus, und für alle unsere Produkte gilt ein einheitlicher Prozentsatz.
 Daher fügen wir hier eine Steuer-Regel von 19 % hinzu.
 
-{% include "note-tax-rules.md" %}
+{% include "note-tax-rules.de.md" %}
 
 Sobald wir mit unserer Auswahl zufrieden sind, klicken wir auf den Button :btn:Weiter:.
 
-{% include "warning-tax-rules.md" %}
+{% include "warning-tax.de.md" %}
 
 <br>
 

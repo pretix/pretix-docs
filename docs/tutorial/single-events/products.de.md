@@ -51,7 +51,7 @@ Wir fügen folgende Beschreibung hinzu: `Regular ticket granting access to the e
 Als Nächstes klicken wir auf den Reiter :btn:Preis: und ändern den "Standardpreis" auf 250,00 €.
 Außerdem wählen wir aus dem Dropdown-Menü "Umsatzsteuer" den entsprechenden Steuersatz von 19 % aus.
 
-{% include "note-tax-rules.md" %}
+{% include "note-tax-rules.de.md" %}
 
 Dann klicken wir auf den Button :btn:Speichern:.
 
@@ -139,7 +139,7 @@ Ein Kontingent legt fest, wie viele Einheiten unseres Produkts wir über unseren
 Jedes Produkt muss Teil mindestens eines Kontingents sein, bevor es im Shop verfügbar wird.
 In diesem Abschnitt werden wir Kontingente anlegen und ihnen unsere Produkte zuordnen.
 
-Wir navigieren zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente.
+Wir navigieren zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
 Diese Seite zeigt die Liste aller Kontingente für die Veranstaltung.
 Derzeit umfasst diese das Kontingent "Standard-Ticket", das das Standard-Ticket als Produkt enthält, sowie das Kontingent "Reduziertes Ticket", das kein Ticket enthält.
 Die Liste zeigt außerdem die Gesamtkapazität und die Anzahl der noch verfügbaren Plätze für jedes Kontingent an.

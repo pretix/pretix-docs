@@ -3,11 +3,11 @@
 Im letzten Teil dieses Tutorials testen wir unseren Shop, prüfen, ob alles wie vorgesehen funktioniert, und veröffentlichen ihn dann endlich.
 Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Abschnitt durchführen werden:
 
-- [eine Bestellung im Testmodus aufgeben](#testen-und-bestellungen-bestätigen)
+- [eine Bestellung im Testmodus aufgeben](#testen-und-bestellungen-bestatigen)
 - die Bestellung im Backend überprüfen und sie als bezahlt markieren
 - den Shop in allen aktivierten Sprachen testen
 - [finale Verbesserungen an unserem Shop vornehmen](#finale-verbesserungen-an-unserem-shop-vornehmen), falls nötig
-- [den Testmodus deaktivieren](#testmodus-deaktivieren-und-testbestellungen-löschen) und die Testbestellungen löschen
+- [den Testmodus deaktivieren](#testmodus-deaktivieren-und-testbestellungen-loschen) und die Testbestellungen löschen
 - [den Shop veröffentlichen](#abschluss)
 
 ## Testen und Bestellungen bestätigen

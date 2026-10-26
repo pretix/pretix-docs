@@ -112,7 +112,7 @@ Das Header-Bild ersetzt den Namen der Veranstaltung oben auf der Seite.
 Wir aktivieren das Kontrollkästchen neben "Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde".
 
 In den Feldern "Text auf der Startseite" können wir Text eingeben, der in unserer öffentlichen Ansicht angezeigt werden soll.
-Für jede Sprache, die wir auf dem Reiter :btn:Lokalisierung: aktiviert haben (siehe Abschnitt "[Lokalisierung](#localization)" in diesem Artikel), gibt es ein Feld – Englisch und Deutsch (Du).
+Für jede Sprache, die wir auf dem Reiter :btn:Lokalisierung: aktiviert haben (siehe Abschnitt "[Lokalisierung](#lokalisierung)" in diesem Artikel), gibt es ein Feld – Englisch und Deutsch (Du).
 In unserer öffentlichen Ansicht können die Nutzer*innen über die Links in der oberen rechten Ecke zwischen diesen Sprachen wechseln.
 
 ## Datenschutz
