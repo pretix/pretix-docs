@@ -1,17 +1,17 @@
 # Veranstalterkonto
 
-Ein Veranstalterkonto steht für eine Entität, die Veranstaltungen durchführt, beispielsweise eine Firma, eine Institution oder eine Person. 
+Ein Veranstalterkonto steht für eine Körperschaft, die Veranstaltungen durchführt, beispielsweise eine Firma, eine Institution oder eine Person. 
 Im vorherigen Schritt haben wir ein Veranstalterkonto und unser persönliches Konto angelegt. 
-Es ist auch möglich, (teilweisen) Zugriff auf ein Veranstalterkonto zu erhalten, indem uns ein Team-Mitglied einlädt und wir [ihre Einladung annehmen](../../guides/teams.md#accepting-an-invitation-to-a-team).
+Es ist auch möglich, (eingeschränkten) Zugriff auf ein Veranstalterkonto zu erhalten, indem wir uns von einem Team-Mitglied einladen lassen und wir seine [Einladung annehmen](../../guides/teams.md#accepting-an-invitation-to-a-team).
 
 In diesem Abschnitt des Tutorials werden wir unser Veranstalterkonto anpassen und die erforderlichen Informationen hinzufügen. 
-Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Tutorial durchführen werden:
+Hier ist ein kurzer Überblick über die Schritte, die wir durchführen werden:
 
 - auf dem Reiter "Allgemein" [Kontaktinformationen hinzufügen](organizer-account.md#general)
 - auf dem Reiter "Lokalisierung" [Sprach- und Lokalisierungsoptionen auswählen](organizer-account.md#localization)
 - auf dem Reiter "Veranstalterseite" und "Shop-Design" [die Veranstalterseite anpassen](organizer-account.md#organizer-page)
 - auf dem Reiter "Datenschutz" die [Informationen zu Cookies und Datenschutz einrichten](organizer-account.md#privacy)
-- unter "Abrechnungs-Einstellungen" die erforderlichen Angaben machen, um [unser pretix-Konto aktivieren](organizer-account.md#activation) zu können
+- unter "Abrechnungs-Einstellungen" die erforderlichen Angaben für die [Aktivierung unseres pretix-Kontos](organizer-account.md#activation) machen
 
 Damit sind alle notwendigen Schritte abgedeckt, um unser Veranstalterkonto für die Durchführung von Veranstaltungen mit pretix vorzubereiten. 
 Einige dieser Schritte sind optional, ersparen uns aber langfristig etwas Arbeit. 
@@ -28,9 +28,7 @@ Ein Klick auf den Button :btn:Veranstalter: in der Seitenleiste bringt uns zur S
 
 <br>
 
-![pretix.eu Veranstalterseite, die eine Liste der verfügbaren Veranstalterkonten zeigt. 
-Die Liste enthält derzeit nur den Eintrag "Tutorial Ltd". 
-Dort finden wir einen Filter für die Liste der verfügbaren Veranstalter sowie den Button "Neuen Veranstalter anlegen"](../../assets/screens/organizer/organizers.png)
+![pretix.eu Veranstalterseite, die eine Liste der verfügbaren Veranstalterkonten zeigt. Die Liste enthält derzeit nur den Eintrag "Tutorial Ltd". Dort finden wir einen Filter für die Liste der verfügbaren Veranstalter sowie den Button "Neuen Veranstalter anlegen"](../../assets/screens/organizer/organizers.png)
 
 Wenn wir in der Liste auf unser Veranstalterkonto klicken, leitet uns pretix zu einer Seite weiter, auf der alle mit diesem Veranstalter verbundenen Veranstaltungen angezeigt werden.
 
@@ -43,19 +41,19 @@ Dadurch gelangen wir zur Seite mit den allgemeinen Einstellungen für das Verans
 
 ## Allgemein
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. 
-Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.png "\"Veranstalter-Einstellungen: Allgemein\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.png "\"Veranstalter-Einstellungen: Allgemein\"")
 
 Die Felder "Name" und "Kurzform" sind bereits ausgefüllt. 
-Weil die Kurzform der eindeutige Identifikator des Veranstalters ist, kann er nicht verändert werden.
+Da die Kurzform der eindeutige Identifikator des Veranstalters ist, können wir sie nicht ändern.
 
 Da wir unseren Sitz in Deutschland haben, sind wir gesetzlich dazu verpflichtet, auf allen unseren Webseiten bestimmte rechtliche Hinweise anzugeben. 
 Deshalb werden wir die URL zum Impressum unserer Webseite in das Feld "Impressum (URL)" eingeben.
 
-!!! Note Auch wenn Sie in einem anderen Land als Deutschland tätig sind, benötigen wir von allen pretix Hosted-Kund*innen die Angabe einer gültigen Impressums-URL, die auf Informationen darüber verweist, wer für den veröffentlichten Ticket-Shop verantwortlich ist.
+!!! Note 
+Auch wenn Sie in einem anderen Land als Deutschland tätig sind, verlanged wir von allen Kund\*innen von pretix Hosted die Angabe einer gültigen Impressums-URL, die auf Informationen darüber verweist, wer für den veröffentlichten Ticket-Shop verantwortlich ist.
 
 Wir geben eine gültige E-Mail-Adresse in das Feld "Kontakt-E-Mail" ein. 
-In unserer öffentlichen Ansicht wird diese E-Mail-Adresse in der Fußzeile unter der Überschrift "Veranstalter kontaktieren" angezeigt. 
+In der öffentlichen Ansicht unseres Veranstalters wird diese E-Mail-Adresse in der Fußzeile unter der Überschrift "Veranstalter kontaktieren" angezeigt. 
 So können Kund*innen Kontakt mit uns aufnehmen.
 
 Es ist nicht notwendig, alle auf dieser Seite angezeigten Einstellungen zu ändern. 

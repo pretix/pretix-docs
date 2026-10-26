@@ -5,11 +5,11 @@ Dieser Artikel beschreibt, wie Sie eine Veranstaltung anlegen und grundlegend ei
 Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Abschnitt durchführen werden:
 
 - [eine Veranstaltung erstellen](event.md#event-creation)
-- sich auf der Übersicht über den Status der Veranstaltung [einen Überblick verschaffen](event.md#event-level-dashboard)
+- uns auf der Übersicht über den Status der Veranstaltung [einen Überblick verschaffen](event.md#event-level-dashboard)
 - die Erfassung von [Daten zu Kund\*innen- und Teilnehmer\*innen](event.md#customer-and-attendee-data) aktivieren
 - dem Ticketshop [Bilder hinzufügen](event.md#shop-design)
 
-Das sind alle notwendigen Schritte, um eine Veranstaltung zu erstellen. 
+Das deckt alle notwendigen Schritte zur Erstellung einer Veranstaltung ab.
 Im nächsten Artikel dieses Tutorials werden wir dann damit fortfahren, unsere Produkte an unsere Bedürfnisse anzupassen.
 
 ## Eine Veranstaltung erstellen
@@ -29,31 +29,31 @@ In diesem Fall ist das der, den wir im vorherigen Schritt dieses Tutorials einge
 Diese Auswahl können wir nicht mehr ändern, sobald wir die Veranstaltung erstellt haben. 
 Daher müssen wir sicherstellen, dass wir hier das richtige Veranstalterkonto auswählen.
 
-Wenn unser Konto nur auf ein einziges Veranstalterkonto Zugriff hat, wählt pretix dieses Veranstalterkonto automatisch für dieses Feld aus.
+Wenn unser Konto nur auf ein einziges Veranstalterkonto Zugriff hat, wählt pretix das Veranstalterkonto automatisch aus.
 
 Als Nächstes müssen wir die Veranstaltungsart auswählen. 
 Es gibt zwei Optionen: "Einzelveranstaltung oder Shop, der keine Veranstaltung ist" und "Veranstaltungsreihe oder Zeitslotbuchung". 
 Für dieses Tutorial möchten wir eine einfache Konferenz erstellen, die an einem einzigen Wochenende stattfindet. 
 Daher wählen wir die Option "Einzelveranstaltung oder Shop, der keine Veranstaltung ist".
 
-Wir legen fest, welche Sprachen für die Veranstaltung verwendet werden sollen. 
+Wir legen fest, welche Sprachen wir für die Veranstaltung verwenden wollen. 
 Standardmäßig sollten die Sprachen aktiv sein, die wir bei der Einrichtung des Veranstalterkontos ausgewählt haben. 
-Wir werden Sprachen nach Bedarf aktivieren oder deaktivieren.
+Wir aktivieren oder deaktivieren die Sprachen nach Bedarf.
 
-Es ist zwar möglich, Sprachen später hinzuzufügen oder zu entfernen, wir werden unsere Entscheidung jedoch jetzt endgültig treffen. 
+Es ist zwar möglich, Sprachen später hinzuzufügen oder zu entfernen.
+Wir werden uns aber dennoch bereits jetzt festlegen.
 So behalten wir den Überblick darüber, welche Übersetzungen wir noch hinzufügen müssen, beispielsweise für die Beschreibung unserer Veranstaltung.
 
 Sobald wir mit unserer Auswahl zufrieden sind, klicken wir auf den Button :btn:Weiter:.
 
 {% include "note-translations.md" %}
 
-![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 2", die Optionen zur Auswahl von Veranstaltungstitel, Kurzform, Datum, Veranstaltungsort und Geo-Koordinaten für die Veranstaltung zeigt. 
-Nicht abgebildet: Veranstaltungswährung, Umsatzsteuersatz, Zeitzone und Start- und Enddatum des Vorverkaufs.](../../assets/screens/event/create-event2.png "\"Neue Veranstaltung erstellen Schritt 2\"")
+![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 2", die Optionen zur Auswahl von Veranstaltungstitel, Kurzform, Datum, Veranstaltungsort und Geo-Koordinaten für die Veranstaltung zeigt. Nicht abgebildet: Veranstaltungswährung, Umsatzsteuersatz, Zeitzone und Start- und Enddatum des Vorverkaufs.](../../assets/screens/event/create-event2.png "\"Neue Veranstaltung erstellen Schritt 2\"")
 
 Wir werden nun aufgefordert, einen Titel und eine Kurzform für die Veranstaltung anzugeben. 
 Für dieses Tutorial erstellen wir eine einfache Konferenz, die im Jahr 2027 stattfindet. 
 Deshalb wählen wir im Feld "Veranstaltungstitel" den Titel "Tutorial-Konferenz". 
-Für das Feld "Kurzform" denken wir uns eine Abkürzung für "Tutorial-Konferenz" aus. 
+Für das Feld "Kurzform" überlegen wir uns eine Abkürzung für "Tutorial-Konferenz" aus. 
 Außerdem fügen wir die letzten beiden Ziffern des Jahres hinzu.
 
 In das Feld geben wir `tutcon27` ein. 
@@ -63,10 +63,9 @@ In unserem Fall ergibt sich daraus die folgende URL: https://pretix.eu/tut/tutco
 {% include "note-short-form.md" %}
 
 Genau wie der Name und die Kurzform ist auch der Veranstaltungsbeginn eine Pflichtangabe. 
-Wir geben den 4. 
-Juni 2027 in das Feld "Veranstaltungsbeginn" ein.
+Wir geben in das Feld "Veranstaltungsbeginn" den 4. Juni 2027 ein.
 
-Da wir unseren Veranstaltungsort bereits kennen, geben wir diesen nun in pretix ein. 
+Da wir unseren Veranstaltungsort bereits kennen, geben wir diesen bereits in diesem Schritt in pretix ein. 
 Diese Angabe ist optional. 
 Wir können sie später noch ändern. 
 pretix verwendet unsere Eingabe im Feld "Veranstaltungsort", um in OpenStreetMap nach diesem Ort zu suchen.
@@ -78,12 +77,12 @@ Dadurch werden die Felder "Geo-Koordinaten" automatisch aktualisiert.
 Alternativ können wir die erweiterte Suchfunktion auf [OpenStreetMap.org](https://www.openstreetmap.org) nutzen und die Koordinaten in die Felder "Geo-Koordinaten" kopieren.
 
 Wir müssen eine Währung für unsere Veranstaltung auswählen. 
-Wir klicken auf das Dropdown-Menü "Veranstaltungswährung" und wählen `Euro`.
+Wir wählen im Dropdown-Menü "Veranstaltungswährung" den `Euro`.
 
 Auf dieser Seite können wir außerdem einen Umsatzsteuersatz für unsere Veranstaltung festlegen. 
 Es ist möglich, die Steuer-Regeln zu ändern, nachdem wir die Veranstaltung bereits angelegt haben. 
 Wir richten unsere Veranstaltung in Deutschland aus, und für alle unsere Produkte gilt ein einheitlicher Prozentsatz. 
-Daher werden wir hier eine Steuer-Regel von 19 % hinzufügen.
+Daher fügen wir hier eine Steuer-Regel von 19 % hinzu.
 
 {% include "note-tax-rules.md" %}
 
@@ -93,8 +92,7 @@ Sobald wir mit unserer Auswahl zufrieden sind, klicken wir auf den Button :btn:W
 
 <br>
 
-![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 3", die eine Infobox zeigt, in der der Benutzer aufgefordert wird, alle Einstellungen sorgfältig zu überprüfen. 
-Außerdem gibt es die Option, Einstellungen aus einer zuvor erstellten Veranstaltung zu importieren.](../../assets/screens/event/create-event3.png "\"Neue Veranstaltung erstellen Schritt 3\"")
+![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 3", die eine Infobox zeigt, in der der Benutzer aufgefordert wird, alle Einstellungen sorgfältig zu überprüfen. Außerdem gibt es die Option, Einstellungen aus einer zuvor erstellten Veranstaltung zu importieren.](../../assets/screens/event/create-event3.png "\"Neue Veranstaltung erstellen Schritt 3\"")
 
 Anschließend werden wir gefragt, ob wir Informationen aus einer zuvor erstellten Veranstaltung kopieren möchten. 
 Diese Option kann uns ab der zweiten Veranstaltung viel Arbeit ersparen. 
@@ -102,20 +100,19 @@ Da dies aber die erste Veranstaltung ist, die wir mit diesem Veranstalterkonto o
 
 <br>
 
-![Seite mit dem Titel "Herzlichen Glückwunsch! Sie haben gerade eine Veranstaltung erstellt!", die Optionen zur Erstellung von Ticketarten und zur Aktivierung einiger grundlegender Funktionen für die Veranstaltung zeigt. 
-Nicht abgebildet: Zahlungsoptionen einrichten und Kontaktdaten angeben.](../../assets/screens/event/create-event4.png "\"Neue Veranstaltung erstellen Schritt 4\"")
+![Seite mit dem Titel "Herzlichen Glückwunsch! Sie haben gerade eine Veranstaltung erstellt!", die Optionen zur Erstellung von Ticketarten und zur Aktivierung einiger grundlegender Funktionen für die Veranstaltung zeigt. Nicht abgebildet: Zahlungsoptionen einrichten und Kontaktdaten angeben.](../../assets/screens/event/create-event4.png "\"Neue Veranstaltung erstellen Schritt 4\"")
 
 Auf der nächsten Seite werden wir zur Erstellung unserer Veranstaltung beglückwünscht. 
 Hier haben wir außerdem die Möglichkeit, schnelle Änderungen an den Produkten und den Grundeinstellungen für die Veranstaltung vorzunehmen. 
 Diese Schnelleinstellungen müssen wir im Moment nicht anpassen. 
 Die Produkte (Tickets, Wertgutscheine, usw.) werden wir im [nächsten Abschnitt](products.md) dieses Tutorials genauer betrachten.
 
-Im Feld "Kontakt-E-Mail" geben wir eine allgemeine E-Mail-Adresse an, unter der unsere Kund*innen uns erreichen können. 
+Im Feld "Kontakt-E-Mail" geben wir eine allgemeine E-Mail-Adresse an, unter der unsere Kund\*innen uns erreichen können. 
 Diese E-Mail-Adresse wird in der Fußzeile unserer Shop-Seite mit der Bezeichnung "Kontakt" angezeigt. 
 Außerdem geben wir im Feld "Impressum (URL)" eine URL zu den rechtlichen Impressumsangaben für den Online-Auftritt unserer Organisation an. 
 Diese beiden Angaben sind zwingend erforderlich, damit unser Ticket-Shop veröffentlicht werden kann.
 
-Sobald wir unten auf der Seite auf :btn:Speichern: klicken, leitet uns pretix zu einem Überblick über die Veranstaltung weiter. 
+Sobald wir unten auf der Seite auf :btn:Speichern: klicken, leitet uns pretix zur Veranstaltungs-Übersicht weiter. 
 Dieser Überblick enthält den Veranstaltungstitel und die Zeitpläne für den Ticket- und den Vorverkauf. 
 Außerdem können wir den Status unseres Ticketshops sehen. 
 Der Ticketshop sollte sich zu diesem Zeitpunkt im Testmodus befinden.
@@ -127,22 +124,21 @@ Wir können die Veranstaltungs-Übersicht aufrufen, indem wir oben links auf den
 Die Veranstaltungs-Übersicht gibt uns einen Überblick über die grundlegenden Informationen und den Status der Veranstaltung. 
 Sie ermöglicht uns, interne Kommentare für uns selbst oder unser Team zu hinterlassen, und protokolliert die letzten Änderungen.
 
-![Screenshot der Übersicht für eine Beispielveranstaltung mit dem Titel "Tutorial-Konferenz", der den Veranstaltungstitel, Buttons zum Teilen der Veranstaltung, den Zeitplan, eine Übersicht über Bestellungen, Zahlungen und verbleibende Tickets sowie ein Feld für interne Kommentare zeigt. 
-Nicht abgebildet: Veranstaltungs-Protokolle zu den letzten Änderungen.](../../assets/screens/event/event-dashboard.png "\"Veranstaltungs-Übersicht\"")
+![Screenshot der Übersicht für eine Beispielveranstaltung mit dem Titel "Tutorial-Konferenz", der den Veranstaltungstitel, Buttons zum Teilen der Veranstaltung, den Zeitplan, eine Übersicht über Bestellungen, Zahlungen und verbleibende Tickets sowie ein Feld für interne Kommentare zeigt. Nicht abgebildet: Veranstaltungs-Protokolle zu den letzten Änderungen.](../../assets/screens/event/event-dashboard.png "Veranstaltungs-Übersicht")
 
 Derzeit wird in der Übersicht wahrscheinlich eine Warnung angezeigt, dass unser Veranstalterkonto noch nicht aktiv ist. 
 Wenn wir diese Warnung zum ersten Mal sehen, klicken wir auf den Link und geben die erforderlichen Informationen in das Formular ein.
 
 Die Aktivierung eines Kontos erfolgt manuell und kann je nach Verfügbarkeit des pretix-Teams einige Zeit in Anspruch nehmen. 
-Das Team wird unser Konto am folgenden Werktag aktivieren. 
+Das Team wird unser Konto im Laufe des folgenden Werktags aktivieren. 
 Bis dahin bleibt die Warnung bestehen, auch wenn wir bereits alle erforderlichen Angaben gemacht haben.
 
 ## Kunden- und Teilnehmerdaten
 
-Wir planen, vor der Konferenz Namensschilder für unsere Teilnehmer*innen zu drucken. 
-Dazu müssen wir beim Kauf die Namen und Zugehörigkeit unserer Teilnehmer*innen erfassen.
+Wir planen, vor der Konferenz Badges (Namensschilder) für unsere Teilnehmenden zu drucken. 
+Dazu müssen wir beim Kauf die Namen und Einrichtungs-Zugehörigkeit unserer Teilnehmenden erfassen.
 
-In der Veranstaltungs-Übersicht klicken wir in der Seitenleiste auf :btn-icon:fa3-wrench: Einstellungen:. 
+Auf der Veranstaltungs-Übersicht klicken wir in der Seitenleiste auf :btn-icon:fa3-wrench: Einstellungen:. 
 Dadurch gelangen wir zur Seite mit den allgemeinen Einstellungen für die Veranstaltung. 
 Wir öffnen oben den Reiter :btn:Kunden- und Teilnehmerdaten:. 
 Mit den Optionen auf diesem Reiter können wir Fragen zu bestimmten Informationen für jedes gekaufte Ticket einrichten. 
