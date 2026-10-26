@@ -84,8 +84,8 @@ pretix GmbH wird uns bis zu diesem Zeitpunkt auch keine Gebühren in Rechnung st
 
 {% include "note-short-form.md" %}
 
-Sowohl die [Datenschutzerklärung](https://pretix.eu/about/en/privacy) als auch die [Nutzungsbedingungen](https://pretix.eu/about/en/terms) sind auf dieser Seite verlinkt.
+Sowohl die [Datenschutzerklärung](https://pretix.eu/about/de/privacy) als auch die [Nutzungsbedingungen](https://pretix.eu/about/de/terms) sind auf dieser Seite verlinkt.
 Es ist eine Voraussetzung für die Nutzung von pretix, diese Texte sorgfältig zu lesen, ihnen zustimmen und die entsprechenden Kontrollkästchen aktivieren.
 
 Wir klicken jetzt auf den Button :btn:Speichern und weiter: und machen damit den ersten Schritt zur Einrichtung unserer ersten Veranstaltung mit pretix.
-Als Nächstes richten wir unser [Veranstalterkonto](organizer-account.md) ein.
+Als Nächstes richten wir unser [Veranstalterkonto](organizer-account.de.md) ein.
