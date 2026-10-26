@@ -105,7 +105,7 @@ For more information on vouchers, see [vouchers](../../guides/vouchers.md).
 
 ### Product with variants
 
-![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Standard' variant: Variation (name), default and original price, description.](../../assets/screens/products/products.png "Product variations screenshot")
+![Page titled 'Modify product: Sticker', the 'Variations' tab is open, showing settings for the 'Purple' variant: Variation (name), default and original price, description.](../../assets/screens/products/variations.png "Product variations screenshot")
 
 After having created all the admission products we need, we will now create a sticker product with multiple variants: purple, black, and glitter.
 It is not possible to edit a product without variations into a product with multiple variations.
