@@ -1,6 +1,6 @@
 # Zahlung
 
-Wir möchten in unserem Shop nicht nur Tickets anbieten, sondern wir möchten auch dafür bezahlt werden. 
+Wir möchten in unserem Shop nicht nur Tickets anbieten, sondern auch dafür bezahlt werden. 
 Darum kümmern wir uns in diesem Teil des Tutorials. 
 Wir werden die folgenden Schritte durchführen:
 
@@ -11,7 +11,7 @@ Wir werden die folgenden Schritte durchführen:
 ## Zahlungsdienstleister einrichten
 
 Pretix wickelt die Zahlungen über eine große Auswahl an Zahlungsdienstleister ab. 
-Für unsere Konferenz planen wir, Zahlungen per Kreditkarte über den Zahlungsanbieter Stripe sowie per Banküberweisung entgegen zu nehmen. 
+Für unsere Konferenz planen wir, Zahlungen per Kreditkarte über den Zahlungsanbieter Stripe sowie per Banküberweisung entgegenzunehmen. 
 Voraussetzungen hierfür sind ein aktives Stripe-Händlerkonto und ein Bankkonto.
 
 pretix erfasst eingehende Zahlungen über die meisten Zahlungsdienstleister automatisch. 
@@ -20,20 +20,21 @@ Sobald Stripe oder ein anderer Zahlungsdienstleister eine Zahlung verbucht, mark
 Banküberweisungen bilden hierbei eine Ausnahme, da pretix dafür die eingehenden Zahlungen auf unserem Bankkonto überwachen müsste.
 
 Bei pretix Hosted ist es möglich, eine Verbindung zu unserem Bankkonto einzurichten. 
-Bei allen Versionen von pretix können wir Zahlungen per Banküberweisung überwachen, indem wir sie entweder manuell bei Eingang freigeben oder regelmäßig digitale Kontoauszüge importieren.
+Bei allen Versionen von pretix können wir Zahlungen per Banküberweisung überwachen, indem wir sie entweder manuell bei Eingang bestätigen oder regelmäßig digitale Kontoauszüge importieren.
 
 <br>
 
-![Seite mit dem Titel "Zahlungseinstellungen" auf dem Reiter "Zahlungsdienstleister" Es gibt eine Liste von Zahlungsdienstleistern: Banküberweisung, Wertgutschein, PayPal, SEPA-Lastschrift und Stripe.](../../assets/screens/payment/settings.png "\"Zahlungseinstellungen\"")
+![Seite mit dem Titel "Zahlungseinstellungen" auf dem Reiter "Zahlungsdienstleister" Es gibt eine Liste von Zahlungsdienstleistern: Banküberweisung, Wertgutschein, PayPal, SEPA-Lastschrift und Stripe.](../../assets/screens/payment/settings.png "Zahlungseinstellungen")
 
 Um Zahlungsdienstleister einzurichten, navigieren wir zu unserer persönlichen Übersicht, indem wir auf :btn-icon:i-pretix:pretix.eu: in der oberen linken Ecke der Webseite klicken. 
-Anschließend wählen wir unsere Veranstaltung in der Liste "Ihre nächsten Veranstaltungen" aus und öffnen :btn-icon:fa3-wrench: Einstellungen: in der Seitenleiste. 
+Anschließend wählen wir in der Liste "Ihre nächsten Veranstaltungen" unsere Veranstaltung und öffnen :btn-icon:fa3-wrench: Einstellungen: in der Seitenleiste. 
 Danach klicken wir auf den Unterpunkt :btn:Zahlung:. 
 Auf dieser Seite wird eine Liste der Zahlungsanbieter angezeigt. 
 Die Liste sollte sowohl Banküberweisungen als auch Stripe enthalten. 
 Standardmäßig sind alle Zahlungsdienstleister mit Ausnahme von Wertgutscheinen deaktiviert.
 
-!!! Note Wenn Ihre gewünschten Zahlungsdienstleister nicht in der Liste angezeigt werden, ist die entsprechende Erweiterung nicht aktiviert. 
+!!! Note 
+Falls die Liste nicht Ihre gewünschten Zahlungsdienstleister anzeigt, dann ist die entsprechende Erweiterung nicht aktiviert. 
 Um eine Erweiterung zu aktivieren, navigieren Sie zu Ihr :navpath:Veranstalter → Einstellungen → Erweiterungen: und öffnen Sie den Reiter :btn:Zahlungsdienstleister:. 
 Klicken Sie auf den Button :btn:Aktivieren: neben der Erweiterung, die Sie verwenden möchten. 
 Eine aktive Erweiterung erkennen Sie an dem grünen Tag ":fa3-check: Aktiv".
@@ -51,11 +52,11 @@ Auf dieser Webseite geben wir unsere E-Mail-Adresse ein und folgen den Anweisung
 
 Anschließend kehren wir zu pretix.eu zurück und navigieren zu unserer Veranstaltung. 
 Dort öffnen wir :btn-icon:fa3-wrench: Einstellungen: in der Seitenleiste, klicken auf den Unterpunkt :btn:Zahlung: und öffnen die Stripe-Einstellungen. 
-Anstelle des einzelnen Buttons werden auf der Seite nun zahlreiche Einstellungsmöglichkeiten angezeigt.
+Anstelle des einzelnen Buttons zeigt diese Seite nun zahlreiche Einstellungsmöglichkeiten an.
 
 Wir aktivieren die Kontrollkästchen neben "Kreditkartenzahlungen" und "Aktiviere Zahlungsmethode". 
 Danach scrollen wir nach unten und klicken auf den Button :btn:Speichern:. 
-Jetzt können Kund*innen in unserem Shop per Kreditkarte über Stripe bezahlen.
+Jetzt können Kund\*innen in unserem Shop per Kreditkarte über Stripe bezahlen.
 
 ### Banküberweisungen
 
@@ -71,7 +72,8 @@ Wir aktivieren außerdem das Kontrollkästchen neben "Aktiviere Zahlungsmethode"
 Dann klicken wir auf den Button :btn:Speichern: und kehren zu den Zahlungseinstellungen zurück. 
 Neben den Optionen "Banküberweisung", "Wertgutschein" und "Stripe" sollte nun jeweils ein grüner ":fa3-check: Aktiviert"-Tag stehen.
 
-!!! Note Standardmäßig kann die pretix-Software eingehende Zahlungen auf Ihrem Bankkonto nicht überwachen. 
+!!! Note 
+Standardmäßig kann die pretix-Software eingehende Zahlungen auf Ihrem Bankkonto nicht überwachen. 
 Bei pretix Hosted können Sie automatische Bankimporte einrichten. 
 Bei pretix Community und pretix Enterprise müssen Sie die pretix-Software über eingehende Zahlungen informieren. 
 Dafür können Sie die Zahlungen entweder manuell als abgeschlossen markieren oder regelmäßig digitale Kontoauszüge importieren. 
@@ -81,13 +83,13 @@ Weitere Informationen zur Nutzung von Banküberweisungen finden Sie unter "[Bank
 
 ## Rechnungen einrichten
 
-![Seite mit dem Titel "Rechnungseinstellungen", die Optionen zur Erstellung von Rechnungen, zur Auswahl der Verkaufskanäle, für die diese Rechnungen erstellt werden sollen, sowie zum Anhängen der Rechnungen an E-Mails zeigt.](../../assets/screens/payment/invoice.png "\"Einstellungen für Rechnungen\"")
+![Seite mit dem Titel "Rechnungseinstellungen", die Optionen zur Erstellung von Rechnungen, zur Auswahl der Verkaufskanäle, für die diese Rechnungen erstellt werden sollen, sowie zum Anhängen der Rechnungen an E-Mails zeigt.](../../assets/screens/payment/invoice.png "Einstellungen für Rechnungen")
 
 Um zu den Rechnungseinstellungen zu gelangen, navigieren wir zu unserer Veranstaltung, öffnen :btn-icon:fa3-wrench: Einstellungen: in der Seitenleiste und klicken auf den Unterpunkt :btn:Rechnungswesen:. 
 Auf dem Reiter :btn:Rechnungserstellung: setzen wir die Option "Rechnungen ausstellen" auf "Automatisch nach Zahlung oder wenn die Zahlungsmethode es erfordert".
 
 Anschließend wechseln wir zum Reiter :btn:Rechnungsaussteller: und geben den Namen und die vollständige Adresse unserer Organisation ein. 
-Pretix verwendet die hier eingegebenen Daten für alle zukünftigen Rechnungen.
+pretix verwendet die hier eingegebenen Daten für alle zukünftigen Rechnungen.
 
 Wenn wir jetzt auf den Button :btn:Speichern und Vorschau anzeigen: klicken, läd unser Browser eine PDF-Vorschau der Rechnung herunter. 
 Diese Rechnung enthält die Adresse unserer Organisation, die Rechnungsnummer "TUTCON27-PREVIEW" sowie eine beispielhafte Auflistung der Einkäufe mit einer Teilzahlung.

@@ -1,19 +1,18 @@
 # Testen und veröffentlichen
 
-Im letzten Teil dieses Tutorials testen wir unseren Shop, prüfen, ob alles wie vorgesehen funktioniert, und veröffentlichen ihn schließlich. 
+Im letzten Teil dieses Tutorials testen wir unseren Shop, prüfen, ob alles wie vorgesehen funktioniert, und veröffentlichen ihn dann endlich. 
 Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Abschnitt durchführen werden:
 
 - [eine Bestellung im Testmodus aufgeben](testing.md#testing-and-confirming-orders)
 - die Bestellung im Backend überprüfen und sie als bezahlt markieren
 - den Shop in allen aktivierten Sprachen testen
-- [finale Verbesserungen an unserem Shop vornehmen](testing.md#making-final-improvements-to-our-shop), wenn nötig
+- [finale Verbesserungen an unserem Shop vornehmen](testing.md#making-final-improvements-to-our-shop), falls nötig
 - [den Testmodus deaktivieren](testing.md#disabling-test-mode-and-deleting-orders) und die Testbestellungen löschen
 - [den Shop veröffentlichen](testing.md#conclusion)
 
 ## Testen und Bestellungen bestätigen
 
-![Seite unseres Shops mit dem Titel "Tutorial-Konferenz", die das Datum und den Ort unserer Veranstaltung, sowie eine Auswahl an Produkten auflistet. 
-Ein Feld weist darauf hin, dass sich der Shop momentan im Testmodus befindet.](../../assets/screens/testing/shop.png "\"Shop\"")
+![Seite unseres Shops mit dem Titel "Tutorial-Konferenz", die das Datum und den Ort unserer Veranstaltung, sowie eine Auswahl an Produkten auflistet. Ein Feld weist darauf hin, dass sich der Shop momentan im Testmodus befindet.](../../assets/screens/testing/shop.png "Shop")
 
 Wir werden jetzt eine Bestellung in unserem Shop aufgeben. 
 Dazu klicken wir oben in der Leiste auf den Button :btn-icon:fa3-eye:Shop aufrufen:.
@@ -25,26 +24,25 @@ Wenn wir dazu aufgefordert werden, geben wir eine E-Mail-Adresse ein, auf die wi
 
 Beim Bezahlvorgang wählen wir als Zahlungsmethode "Kreditkarte" aus. 
 Aktuell sollte hier ein Hinweis angezeigt werden, dass sich die Stripe-Erweiterung im Testmodus befindet. 
-Um eine Testzahlung durchzuführen, verwenden wir die Kreditkartendaten einer der von Stripe aufgelisteten Testkarten.
+Um eine Testzahlung durchzuführen, verwenden wir die Daten [einer der von Stripe aufgelisteten Testkarten](https://docs.stripe.com/testing#cards).
 
 Jetzt öffnen wir pretix.eu, navigieren zu unserer Veranstaltung, und klicken in der Seitenleiste auf :btn-icon:fa3-shopping-cart: Bestellungen:. 
 Auf dieser Seite wird eine Liste der Bestellungen angezeigt. 
 Wenn unser Test erfolgreich war, enthält die Liste jetzt die Testbestellung, die wir im vorherigen Schritt aufgegeben haben. 
 Die Bestellung sollte den Status ":fa3-check: Bezahlt" haben.
 
-Wir werden diesen Vorgang für jede Sprache wiederholen, die wir für den Shop aktiviert haben. 
+Wir wiederholen diesen Vorgang für jede Sprache, die wir für den Shop aktiviert haben. 
 So können wir überprüfen, ob wir alle erforderlichen Übersetzungen bereitgestellt haben und ob unsere Lokalisierungseinstellungen korrekt sind.
 
 ## Finale Verbesserungen an unserem Shop vornehmen
 
-Letzte Verbesserungen an unserem Shop vornehmen  
-Indem wir den Shop testen und ihn aus der Perspektive unserer Kund*innen betrachten, können wir feststellen, ob wir bei der Einrichtung unserer Veranstaltung Fehler gemacht oder etwas vergessen haben. 
+Indem wir den Shop testen und ihn aus der Perspektive unserer Kund\*innen betrachten, können wir feststellen, ob wir bei der Einrichtung unserer Veranstaltung Fehler gemacht oder etwas vergessen haben. 
 Eventuell müssen wir noch Texte, Bilder, neue Produkte, Fragen oder Prüfungen hinzufügen oder das Erscheinungsbild des Shops anpassen.
 
-Diese Anpassungen sind auch dann noch möglich, wenn der Shop bereits veröffentlicht wurde. 
+Diese Anpassungen sind auch dann noch möglich, nachdem wir den Shop bereits veröffentlicht haben. 
 Wir werden unseren Shop jetzt aber so einrichten, dass er genau unseren Vorstellung entspricht. 
 Das machen wir, bevor wir ihn veröffentlichen. 
-So können wir sicherstellen, dass alle unsere Kund*innen ein einheitliches und fehlerfreies Nutzungserlebnis haben.
+So können wir sicherstellen, dass alle unsere Kund\*innen ein einheitliches und fehlerfreies Nutzungserlebnis haben.
 
 ## Testmodus deaktivieren und Testbestellungen löschen
 
