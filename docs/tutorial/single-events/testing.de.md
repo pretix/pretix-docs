@@ -46,10 +46,9 @@ So können wir sicherstellen, dass alle unsere Kund\*innen ein einheitliches und
 
 ## Testmodus deaktivieren und Testbestellungen löschen
 
-![Seite mit dem Titel "Shop-Status", die einen Warnhinweis anzeigt, welche Bedingungen noch erfüllt werden müssen, bevor der Shop veröffentlicht werden kann. 
-Außerdem zeigt die Seite Optionen, um den Testmodus zu deaktivieren und alle im Testmodus erstellten Bestellungen zu löschen.](../../assets/screens/testing/shop-status.png "\"Shops-Status\"")
+![Seite mit dem Titel "Shop-Status", die einen Warnhinweis anzeigt, welche Bedingungen noch erfüllt werden müssen, bevor der Shop veröffentlicht werden kann. Außerdem zeigt die Seite Optionen, um den Testmodus zu deaktivieren und alle im Testmodus erstellten Bestellungen zu löschen.](../../assets/screens/testing/shop-status.png "Shops-Status")
 
-Wir möchten, dass ab sofort in unserem Shop nur noch echte Bestellungen von echten Kund*innen erscheinen. 
+Wir möchten, dass ab sofort in unserem Shop nur noch echte Bestellungen von echten Kund\*innen erscheinen. 
 Daher müssen wir die Bestellungen löschen, die wir im Testmodus aufgegeben haben. 
 Dazu navigieren wir zu unserer Veranstaltung und klicken in der Seitenleiste auf den Eintrag :btn-icon:fa3-exclamation-triangle: TESTMODUS:, der orange hervorgehoben ist. 
 Wir aktivieren das Kontrollkästchen "Alle im Testmodus erstellten Bestellungen unwiederruflich löschen" und klicken anschließend auf den Button :btn:Testmodus: deaktivieren.
@@ -59,6 +58,6 @@ Wir aktivieren das Kontrollkästchen "Alle im Testmodus erstellten Bestellungen 
 Sobald wir mit unserer Shop-Erfahrung zufrieden sind und alle anderen Punkte der obigen Liste abgehakt haben, können wir unseren Shop endlich veröffentlichen. 
 Dazu navigieren wir zu :navpath:Veranstaltung → Übersicht:.
 
-Die Veranstaltungs-Übersicht zeigt folgende Meldung an: "Ihr Ticketshop ist deaktiviert. 
-Hier klicken zum Ändern." Dadurch gelangen wir zur Seite "Shop-Status". 
-Wenn wir auf den Button :btn:Shop veröffentlichen: klicken, wird unser Ticket-Shop endlich veröffentlicht!
+Die Veranstaltungs-Übersicht zeigt folgende Meldung an: "Ihr Ticketshop ist deaktiviert. Hier klicken zum Ändern." 
+Dadurch gelangen wir zur Seite "Shop-Status". 
+Wir klicken auf den Button :btn:Shop veröffentlichen: und veröffentlichen so endlich unseren Ticket-Shop!

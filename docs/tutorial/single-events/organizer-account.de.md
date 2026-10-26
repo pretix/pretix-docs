@@ -54,53 +54,52 @@ Auch wenn Sie in einem anderen Land als Deutschland tätig sind, verlanged wir v
 
 Wir geben eine gültige E-Mail-Adresse in das Feld "Kontakt-E-Mail" ein. 
 In der öffentlichen Ansicht unseres Veranstalters wird diese E-Mail-Adresse in der Fußzeile unter der Überschrift "Veranstalter kontaktieren" angezeigt. 
-So können Kund*innen Kontakt mit uns aufnehmen.
+So können Kund\*innen Kontakt mit uns aufnehmen.
 
 Es ist nicht notwendig, alle auf dieser Seite angezeigten Einstellungen zu ändern. 
-Das gilt auch für die meisten Seiten, die wir im Rahmen dieses Tutorials aufrufen werden.
+Das gilt auch für die meisten Seiten, die wir im weiteren Verlauf dieses Tutorials aufrufen werden.
 
 pretix ist ein leistungsstarkes Tool, das viele detaillierte Anpassungsmöglichkeiten bietet. 
 Dieses Tutorial behandelt alle notwendigen Schritte, um unseren Shop zu erstellen. 
-Wird eine Einstellung in diesem Tutorial nicht erwähnt, ist es nicht erforderlich, diese Einstellung zu ändern.
+Wenn dieses Tutorial eine Einstellung nicht explizit erwähnt, dann müssen Sie diese Einstellung nicht ändern.
 
-Durch einen Klick auf den Button :btn:Speichern: werden unsere Änderungen bestätigt.
+Indem wir auf den Button :btn:Speichern: klicken, bestätigen wir unsere Änderungen.
 
 ## Lokalisierung
 
 ![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Lokalisierung", die die offiziellen Sprachoptionen Englisch, Deutsch und Deutsch (Du) sowie eine Liste der Community-Übersetzungen von Arabisch bis Kroatisch zeigt](../../assets/screens/organizer/localization.png "\"Veranstalter-Einstellungen: Lokalisierung\"")
 
-Nachdem wir die allgemeinen Einstellungen gespeichert haben, wechseln wir jetzt zum Reiter :btn:"Lokalisierung".
+Nachdem wir die allgemeinen Einstellungen gespeichert haben, wechseln wir zum Reiter :btn:"Lokalisierung".
 
-Unter "Verfügbare Sprachen" können wir die Sprachen auswählen, die für unseren Ticket-Shop angeboten werden sollen. 
+Unter "Verfügbare Sprachen" können wir die Sprachen auswählen, in denen wir unseren Ticket-Shop anbieten wollen. 
 Die vom pretix-Team offiziell unterstützten Optionen sind "Englisch", "Deutsch" und "Deutsch (Du)". 
-Bei "Deutsch" wird der Nutzer mit "Sie" angesprochen, während bei "Deutsch (Du)" "du" verwendet wird.
+Bei "Deutsch" wird der\*die Nutzer*\in mit "Sie" angesprochen, während bei "Deutsch (Du)" "du" verwendet wird.
 
 Wir können für unsere Veranstalterseite auch eine der Community-Übersetzungen auswählen. 
 Die Liste darunter zeigt die Community-Übersetzungen zusammen mit einem Prozentsatz, der angibt, zu wie viel Prozent die Software übersetzt wurde. 
 pretix verwendet Englisch als Ausweichsprache für fehlende Übersetzungen.
 
-Diese Einstellungen legen auch die Standardsprachen fest, die beim Anlegen neuer Veranstaltungen verwendet werden. 
+Diese Einstellungen legen auch die Standardsprachen fest, die neu angelegte Veranstaltungen verwenden. 
 Wir können Sprachen jedoch für jede Veranstaltung auch einzeln aktivieren oder deaktivieren. 
 Für unsere Beispielkonferenz werden wir "Englisch" und "Deutsch (Du)" aktivieren.
 
 {% include "note-translations.md" %}
 
-Wir wählen `Germany` aus dem Dropdown-Menü "Region" am unteren Rand der Seite aus. 
+In dem Dropdown-Menü "Region" am unteren Rand der Seite wählen wir `Deutschland`. 
 pretix verwendet diese Auswahl, um die Standardformate für Datumsangaben, Uhrzeiten, Adressen und Telefonnummern festzulegen. 
 Wir wählen `Europe/Berlin` als "Standardzeitzone" aus dem gleichnamigen Dropdown-Menü aus.
 
-Wir klicken auf den Button :btn:Speichern: um unsere Lokalisierungseinstellungen anzuwenden. 
-Es ist sinnvoll, dies zu tun, bevor Sie Einstellungen auf den anderen Reitern ändern. 
+Wir klicken auf den Button :btn:Speichern:, um unsere Lokalisierungseinstellungen anzuwenden. 
+Es ist sinnvoll, dies zu tun, bevor wir die Einstellungen auf den anderen Reitern ändern. 
 Die Lokalisierungseinstellungen legen fest, welche Anpassungsmöglichkeiten dort verfügbar sind.
 
 ## Veranstalterseite
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Veranstalterseite", die die folgenden Optionen zeigt: Header-Bild, Volle Höhe des Header-Bildes verwenden, Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde, Text auf der Statseite in mehreren Sprachen. 
-Der Button "Öffentliche Ansicht" in der Kopfzeile ist hervorgehoben.](../../assets/screens/organizer/organizer-page-public-profile.png "\"Veranstalter-Einstellungen: Veranstalterseite\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Veranstalterseite", die die folgenden Optionen zeigt: Header-Bild, Volle Höhe des Header-Bildes verwenden, Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde, Text auf der Statseite in mehreren Sprachen. Der Button "Öffentliche Ansicht" in der Kopfzeile ist hervorgehoben.](../../assets/screens/organizer/organizer-page-public-profile.png "\"Veranstalter-Einstellungen: Veranstalterseite\"")
 
 Wenn wir oben auf den Reiter :btn:Veranstalterseite: wechseln, können wir unser Logo hinzufügen und die Farben der Benutzeroberfläche unseres Shops anpassen.
 
-Ein Klick auf den Button :btn-icon:fa3-eye:Öffentliche Ansicht: in der Kopfzeile bringt uns zu einer Vorschau der Veranstalterseite aus der Perspektive der Kund*innen. 
+Ein Klick auf den Button :btn-icon:fa3-eye:Öffentliche Ansicht: in der Kopfzeile bringt uns zu einer Vorschau der Veranstalterseite aus der Perspektive der Kund\*innen. 
 Eine mit Pretix Hosted erstellte Veranstalterseite ist standardmäßig unter https://pretix.eu/:placeholder:OrganizerShortForm:/ zu finden. 
 Der Shop, den wir für dieses Tutorial erstellen, befindet sich unter [https://pretix.eu/tut/](https://pretix.eu/tut).
 
@@ -122,7 +121,8 @@ In unserer öffentlichen Ansicht können die Nutzer*innen über die Links in der
 
 Auf dem Reiter :btn:Datenschutz: können wir für jede von uns aktivierte Sprache eine URL angeben, die auf unsere Datenschutzerklärung verweist.
 
-!!! Warnung Es liegt in Ihrer Verantwortung, die Einhaltung der geltenden Rechtsvorschriften sicherzustellen. 
+!!! Warnung 
+Es liegt in Ihrer Verantwortung, geltendes Recht einzuhalten. 
 Wir versuchen mit diesen Vorschlägen für Einstellungen zu helfen. 
 Wir können jedoch keine Haftung übernehmen, da wir die genaue Konfiguration Ihrer pretix-Nutzung, die rechtlichen Details in Ihrer spezifischen Jurisdiktion sowie die Vereinbarungen, die Sie mit Dritten wie Zahlungs- oder Trackingdienstleistern getroffen haben, nicht kennen.
 
@@ -138,8 +138,8 @@ Um die erforderlichen Informationen einzugeben, navigieren wir zu den Abrechnung
 Dies ist nicht zu verwechseln mit ":fa3-money: Abrechnung", einem eigenständigen Eintrag weiter unten in der Seitenleiste.
 
 In den "Abrechnungs-Einstellungen" trägt das oberste Feld auf dem Reiter :btn:Allgemein: die Bezeichnung "Primäre Kontaktperson". 
-Wir werden den Namen einer realen Person aus unserer Organisation eingeben, damit das Pretix-Team weiß, an wen es sich wenden kann, falls es ein Problem mit unserem Konto gibt. 
-Wir werden die E-Mail-Adresse und Telefonnummer dieser Person in den Feldern darunter eingeben. 
+Wir geben den Namen einer realen Person aus unserer Organisation ein, damit das pretix-Team weiß, an wen es sich wenden kann, falls es ein Problem mit unserem Konto gibt. 
+Wir geben die E-Mail-Adresse und Telefonnummer dieser Person in den Feldern darunter ein. 
 Diese Felder sind Pflichtfelder. 
 Die Angabe des Firmennamens allein reicht nicht aus, um unser Konto zu aktivieren.
 
@@ -148,14 +148,15 @@ Wenn wir uns in einem anderen EU-Land als Deutschland befinden und die Umkehrung
 Sollten wir diese USt-ID nicht angeben, ist die pretix GmbH gezwungen, uns den Steuersatz des oben von uns angegebenen Landes in Rechnung zu stellen.
 
 Das pretix-Team bietet seinen Service auf Englisch und Deutsch an. 
-Wir wählen Englisch als unsere bevorzugte Sprache für die Korrespondenz.
+Wir wählen Deutsch als unsere bevorzugte Sprache für die Korrespondenz.
 
-Als "Bevorzugte Zahlungsmethode" wählen wir `Credit card`. 
+Unter "Wie möchten Sie Ihre moantlichen pretix-Gebühren bezahlen" wählen wir `Ich möchte mit Kreditkarte zahlen`. 
 Wir müssen unsere Kreditkartendaten eingeben und das Kontrollkästchen zur Autorisierung von Zahlungen aktivieren. 
 Danach klicken wir auf den Button :btn:Speichern:.
 
-Falls noch erforderliche Angaben fehlen, werden wir auf der Seite darauf hingewiesen. 
-Wenn wir alle erforderlichen Angaben gemacht haben, erscheint oben auf der Seite ein grünes Häkchen mit der Meldung "Ihre Änderungen wurden gespeichert." Das bedeutet, dass wir unser Veranstalterkonto zur Überprüfung beim pretix-Team eingereicht haben. 
+Die Seite weist uns darauf hin, falls noch erforderliche Angaben fehlen.
+Wenn wir alle erforderlichen Angaben gemacht haben, erscheint oben auf der Seite ein grünes Häkchen mit der Meldung "Ihre Änderungen wurden gespeichert". 
+Das bedeutet, dass wir unser Veranstalterkonto zur Überprüfung beim pretix-Team eingereicht haben. 
 Das Team wird das Konto in Kürze aktivieren.
 
 ## Abschluss
