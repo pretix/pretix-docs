@@ -7,8 +7,8 @@ Wir werden konkrete Beispiele für unseren Veranstalter, die Veranstaltung und d
 Ersetzen Sie diese Beispiele gerne durch Ihre eigenen, wenn Sie Ihre Veranstaltung entsprechend Ihren Anforderungen erstellen.
 
 !!! Note
-Dieses Tutorial erklärt die Einrichtung eines Shops für **Einzelveranstaltungen** wie Konferenzen, Conventions, Messen, Konzerte oder Festivals.
-Wenn Sie einen Ticket-Shop für eine Einrichtung mit Dauerbetrieb wie ein öffentliches Schwimmbad, einen Freizeitpark oder ein Museum erstellen möchten, sollten Sie sich stattdessen das Tutorial für den [fortlaufenden Betrieb](../continuous-operation/getting-started.md) ansehen.
+    Dieses Tutorial erklärt die Einrichtung eines Shops für **Einzelveranstaltungen** wie Konferenzen, Conventions, Messen, Konzerte oder Festivals.
+    Wenn Sie einen Ticket-Shop für eine Einrichtung mit Dauerbetrieb wie ein öffentliches Schwimmbad, einen Freizeitpark oder ein Museum erstellen möchten, sollten Sie sich stattdessen das Tutorial für den [fortlaufenden Betrieb](../continuous-operation/getting-started.md) ansehen.
 
 pretix ist quelloffene Software.
 Sie können sie entweder in der Cloud oder auf Ihrem eigenen Server nutzen.
@@ -34,9 +34,9 @@ Wir können nach Herzenslust mit der pretix-Software experimentieren, bevor wir 
 Kosten entstehen erst beim Verkauf von echten Tickets.
 
 !!! Note
-Falls Ihre Firma, Ihre Organisation oder Ihre Institution bereits über ein Veranstalterkonto verfügt, dann müssen Sie kein neues Konto anlegen.
-Sie können stattdessen Ihre Mitveranstaltenden bitten, Ihnen eine Einladung zu senden und Sie zum Team hinzuzufügen.
-Eine Anleitung dazu, wie Sie jemanden in ein Team einladen können, finden Sie in unserem [Guide zum Thema Teams](../../guides/teams.md#inviting-someone-to-your-team).
+    Falls Ihre Firma, Ihre Organisation oder Ihre Institution bereits über ein Veranstalterkonto verfügt, dann müssen Sie kein neues Konto anlegen.
+    Sie können stattdessen Ihre Mitveranstaltenden bitten, Ihnen eine Einladung zu senden und Sie zum Team hinzuzufügen.
+    Eine Anleitung dazu, wie Sie jemanden in ein Team einladen können, finden Sie in unserem [Guide zum Thema Teams](../../guides/teams.md#inviting-someone-to-your-team).
 
 ![pretix.eu, eine Webseite, auf der pretix und dessen wichtigsten Funktionen vorgestellt werden. Auf der rechten Seite befindet sich ein Button mit der Aufschrift "Ticketshop erstellen".](../../assets/screens/account/pretix-eu.de.png "pretix.eu")
 
@@ -57,10 +57,10 @@ Jedes Teammitglied sollte einen eigenen persönlichen Login haben.
 Wenn auch andere Mitglieder unseres Teams Zugriff auf das System haben sollen, können wir sie im weiteren Verlauf [einladen](../../guides/teams.md#inviting-someone-to-your-team).
 
 !!! Warning
-Die Kurzform ist der eindeutige Identifikator Ihrer Firma im pretix-Backend.
-pretix wird sie auch in der Shop-URL verwenden.
-Wählen Sie die Kurzform sorgfältig aus.
-Bestätigen Sie Ihre Eingabe erst dann, wenn Sie mit Ihrer Auswahl zufrieden sind.
+    Die Kurzform ist der eindeutige Identifikator Ihrer Firma im pretix-Backend.
+    pretix wird sie auch in der Shop-URL verwenden.
+    Wählen Sie die Kurzform sorgfältig aus.
+    Bestätigen Sie Ihre Eingabe erst dann, wenn Sie mit Ihrer Auswahl zufrieden sind.
 
     Wenn Sie eine andere Kurzform benutzen wollen, dann müssen Sie ein neues Veranstalterkonto erstellen.
     If you want to use a different short form, then you will have to create a new organizer account.

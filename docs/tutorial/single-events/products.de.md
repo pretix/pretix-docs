@@ -72,10 +72,10 @@ Wir nennen das neue Ticket "Ermäßigtes Ticket" und geben eine englische Übers
 Außerdem ändern wir den "Standardpreis" auf 120,00 € und klicken auf den Button :btn:Speichern:.
 
 !!! Note
-Oben auf der Seite wird nun in einem gelben Feld folgende Warnung angezeigt: "Bitte beachten Sie, dass das Produkt nicht verkauft wird, bevor Sie es zu einem bestehenden oder neuen Kontingent hinzugefügt haben."
-Diese Warnung erscheint immer, wenn Sie ein neues Produkte anlegen.
-Wir können diese Warnung vorerst ignorieren, da wir uns im nächsten Abschnitt dieses Artikels damit befassen, Produkte zu Kontingenten hinzuzufügen.
-Dadurch wird die Warnung verschwinden.
+    Oben auf der Seite wird nun in einem gelben Feld folgende Warnung angezeigt: "Bitte beachten Sie, dass das Produkt nicht verkauft wird, bevor Sie es zu einem bestehenden oder neuen Kontingent hinzugefügt haben."
+    Diese Warnung erscheint immer, wenn Sie ein neues Produkte anlegen.
+    Wir können diese Warnung vorerst ignorieren, da wir uns im nächsten Abschnitt dieses Artikels damit befassen, Produkte zu Kontingenten hinzuzufügen.
+    Dadurch wird die Warnung verschwinden.
 
 Auf der nächsten Seite müssen wir das Feld "Beschreibung" anpassen.
 Dort informieren wir unsere Kund\*innen über die Voraussetzungen, um das ermäßigte Ticket zu erhalten.

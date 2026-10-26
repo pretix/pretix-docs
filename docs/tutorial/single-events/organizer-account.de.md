@@ -50,7 +50,7 @@ Da wir unseren Sitz in Deutschland haben, sind wir gesetzlich dazu verpflichtet,
 Deshalb werden wir die URL zum Impressum unserer Webseite in das Feld "Impressum (URL)" eingeben.
 
 !!! Note
-Auch wenn Sie in einem anderen Land als Deutschland tätig sind, verlangen wir von allen Kund\*innen von pretix Hosted die Angabe einer gültigen Impressums-URL, die auf Informationen darüber verweist, wer für den veröffentlichten Ticket-Shop verantwortlich ist.
+    Auch wenn Sie in einem anderen Land als Deutschland tätig sind, verlangen wir von allen Kund\*innen von pretix Hosted die Angabe einer gültigen Impressums-URL, die auf Informationen darüber verweist, wer für den veröffentlichten Ticket-Shop verantwortlich ist.
 
 Wir geben eine gültige E-Mail-Adresse in das Feld "Kontakt-E-Mail" ein.
 In der öffentlichen Ansicht unseres Veranstalters wird diese E-Mail-Adresse in der Fußzeile unter der Überschrift "Veranstalter kontaktieren" angezeigt.
@@ -122,9 +122,9 @@ In unserer öffentlichen Ansicht können die Nutzer*innen über die Links in der
 Auf dem Reiter :btn:Datenschutz: können wir für jede von uns aktivierte Sprache eine URL angeben, die auf unsere Datenschutzerklärung verweist.
 
 !!! Warnung
-Es liegt in Ihrer Verantwortung, geltendes Recht einzuhalten.
-Wir versuchen mit diesen Vorschlägen für Einstellungen zu helfen.
-Wir können jedoch keine Haftung übernehmen, da wir die genaue Konfiguration Ihrer pretix-Nutzung, die rechtlichen Details in Ihrer spezifischen Jurisdiktion sowie die Vereinbarungen, die Sie mit Dritten wie Zahlungs- oder Trackingdienstleistern getroffen haben, nicht kennen.
+    Es liegt in Ihrer Verantwortung, geltendes Recht einzuhalten.
+    Wir versuchen mit diesen Vorschlägen für Einstellungen zu helfen.
+    Wir können jedoch keine Haftung übernehmen, da wir die genaue Konfiguration Ihrer pretix-Nutzung, die rechtlichen Details in Ihrer spezifischen Jurisdiktion sowie die Vereinbarungen, die Sie mit Dritten wie Zahlungs- oder Trackingdienstleistern getroffen haben, nicht kennen.
 
 ## Aktivierung
 
