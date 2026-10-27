@@ -58,9 +58,8 @@ If you want to manage staff such as guides, instructors, supervisors, etc., crea
 If you want to manage facilities such as specialized rooms, sports courts, theater halls, etc., create a resource type for facilities.
 If you want to manage equipment such as audio guides, film screening equipment, pedal boats, etc., create a resource type for equipment.
 
-Creating these types is a prerequisite for creating individual resources
-The section [Managing individual resources](#managing-individual-resources) covers that.
-
+Creating these types is a prerequisite for creating individual resources.
+The section [Managing individual resources](#managing-individual-resources) covers that later step.
 
 You can use pretix to manage any kind of resource and create a resource type for it.
 You should create exactly one resource type for every type of resource that you want to manage.
@@ -169,17 +168,31 @@ For instance, if you created a resource type named "Guide", navigate to :navpath
 Click the :btn-icon:fa3-plus: Add a Guide: button.
 If your resource has a different name, then the button will have a different label, too.
 
-If the resource you are creating represents a person, enter their name under "Name".
-Under "Locale", select the language you want to use to communicate with the person through pretix.
-Check the box next to "Require confirmation".
+![Page titled 'Add a Guide', displaying input fields for name 'Alison Doe', language 'English', phone number, address, and external identifier. There are radio buttons for booking mode. The option 'Manual confirmation required' is selected.](../assets/screens/resources-scheduling/add-guide.png "Add guide")
 
-![Page titled 'Add a Guide', displaying input fields for name 'Jamie Doe', locale 'English', and a checked box labeled 'Require confirmation'. ](../assets/screens/resources-scheduling/add-guide.png "Add guide")
+If the resource you are creating represents a person, enter their name under "Name".
+Under "Language", select the language you want to use to communicate with the person through pretix.
+You may enter additional details: their phone number, address, and external identifier.
+An external identifier could be a staff number or a string in a resource or staff management system outside of pretix.
+
+Your selection under "Booking mode" depends on the way you and your organization manage resources.
+If you manage resources with pretix and no other method, select `Confirm immediately`.
+With this option active, pretix will consider any booking of this individual resource as valid instantly.
+
+If the availability of your resources depends on factors outside of pretix, select `Manual confirmation required`.
+Relevant factors may include availability of personnel due to vacation or sick leave, or the management of resources via an external software or offline system.
+With this option active, there is an extra step to the booking process.
+Whenever you create a booking, pretix will send an email and a notification to the resource managers.
+The managers can then either confirm or deny the booking.
+
+Once you have made your choices, click the :btn:Save and continue with more settings: button.
 
 If the resource represents an inanimate object or location, enter a unique identifier such as a room number or an inventory number.
 Select the "Language" appropriate for the person or team in charge of the resource.
 Once you are happy with your choices, click the :btn:Save and continue with more settings: button.
 
-![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. The page displays available time slots in green in a calendar view.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
+![Page titled 'Guide: Jamie Doe'. It has the same settings as the previous page, plus options for adding properties to the resource, and setting rules for its availability. The page displays available time slots in green in a calendar view.
+Tuesday has available slots and unavailable slots and is displayed in yellow.](../assets/screens/resources-scheduling/edit-guide.png "Edit guide")
 
 The process of adding managers to the resource is different depending on whether the resource is in "human" mode or in "thing or place" mode.
 
@@ -212,7 +225,7 @@ Under "Availability timetable", define when the resource is available.
 Click the :btn-icon:fa3-plus: Add rule: button.
 This opens a popup window titled "Add a new availability rule".
 
-![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a toggle labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
+![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a pair of radio buttons labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
 
 Assume, for instance, your guide's availability is expected to stay the same July through September 2027.
 They will work Monday through Friday from 9 AM to 5 PM.
@@ -224,7 +237,7 @@ Select a "Start time" of `09:00:00` and an end time of `17:00:00`.
 Click the :btn:Save: button in the popup.
 
 Click the :btn-icon:fa3-plus: Add rule: button again.
-Enter the same "Start" and "End" times as above.
+Enter the same "Start" and "End" dates as above.
 Check "Tuesday".
 Enter a "Start time" of `12:00:00` and an "End time" of `14:00:00`.
 Under "Available", select "Resource is unavailable".
@@ -257,7 +270,7 @@ For general information on creating products, see our guide on [products](produc
 Do **not** add the product to any quotas.
 Open the :btn:Requirements: tab.
 
-![Page titled 'Modify product: Tour ticket' with the 'Requirements' tab open. The 'Default duration (minutes)' is '90'. The 'Default quota size' is '30'. The box 'Allow customers to book before resources are scheduled' is checked. Under 'Requirements', the resource type 'Guide' is selected with an 'Amount' of '1'.](../assets/screens/resources-scheduling/product-requirements.png "Modify product—Requirements")
+![Page titled 'Modify product: Guided tour' with the 'Requirements' tab open. The 'Default duration (minutes)' is '90'. The 'Default quota size' is '30'. The box 'Allow customers to book before resources are scheduled' is checked. Under 'Requirements', the resource type 'Guide' is selected with an 'Amount' of '1'.](../assets/screens/resources-scheduling/product-requirements.png "Modify product—Requirements")
 
 In the "Default duration (minutes)" field, enter the time for which resources will typically be booked.
 For instance, if a tour usually takes 90 minutes, enter `90`.
@@ -365,7 +378,7 @@ This field only displays products with a "Default duration" as defined in the pr
 See [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling) for information on how to add resource requirements for a product.
 Click the :btn:Continue: button.
 
-![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
+![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Date title' in two languages, the metadata attribute 'Promoted', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
 
 Choose a starting time for your date by selecting it under "Available times" or entering it under "Start time".
 pretix will only suggest times for which it has stored information that sufficient resources are available.
@@ -373,7 +386,7 @@ You can still enter any other time manually, even if pretix has no record of ava
 If you selected multiple products on the previous page, use the "Product" drop-down menu to choose a specific product.
 If you selected only a single product, then pretix will carry that selection over to the drop-down menu.
 
-If check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers.
+If you check the box next to "Show publicly", then the setting "Show in lists" for this date will be activated and your shop's calendar and list views will display this date to costumers.
 Uncheck this box if you do not want the date to be visible to all visitors of your online shop.
 
 If you want to create an order for the date right away, check the box next to "Create order".
@@ -384,8 +397,9 @@ This is a simplified form.
 If you want to add further details to the order that pretix does not display on this page (such as invoice information), use the "Orders" menu.
 If you unchecked the box next to "Create order", then pretix will skip this page.
 
-![Page titled 'Quick entry 3/4', displaying options for 'Email address', 'Internal comment', 'Amounts' and product price.](../assets/screens/resources-scheduling/quick-entry3.png "Quick entry 3/4")
+![Page titled 'Quick entry 3/4', displaying options for 'Sales channel', 'Email address', 'Internal comment', 'Amounts' and product price.](../assets/screens/resources-scheduling/quick-entry3.png "Quick entry 3/4")
 
+Select the sales channel for the order.
 Enter the "Amounts" of products to sell through that order and a price for each of the products.
 You may also enter an "Email address" to be associated with the order.
 Then, click the :btn:Continue: button.
