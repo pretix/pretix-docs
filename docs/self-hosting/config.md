@@ -539,9 +539,10 @@ You can configure the maximum file size for uploading various files:
 max_size_image = 12
 ; Max upload size for favicons in MiB, defaults to 1 MiB
 max_size_favicon = 2
-; Max upload size for email attachments of manually sent emails in MiB, defaults to 5 MiB
-; This value is especially relevant for emails, where tickets of an order should be attached.
-; Be aware, that 1 MiB of this limit is reserved for other email components (text, invoice, calendar, pictures)
+; Max upload size for email attachments of manually sent emails in MiB.
+; Defaults to 5 MiB.
+; This value is especially relevant for emails that have tickets attached.
+; 1 MiB of this limit is reserved for other components of the email (text, invoice, calendar, images).
 max_size_email_attachment = 15
 ; Max upload size for email attachments of automatically sent emails in MiB, defaults to 1 MiB
 max_size_email_auto_attachment = 2
