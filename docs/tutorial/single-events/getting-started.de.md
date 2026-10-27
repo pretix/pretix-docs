@@ -82,7 +82,7 @@ Außerdem vermeiden wir so, dass wir dieselben Anpassungen an zwei verschiedenen
 Bis wir beschließen, unsere Veranstaltungen zu veröffentlichen, sind sie für die Öffentlichkeit nicht sichtbar
 pretix GmbH wird uns bis zu diesem Zeitpunkt auch keine Gebühren in Rechnung stellen.
 
-{% include "note-short-form.md" %}
+{% include "note-short-form.de.md" %}
 
 Sowohl die [Datenschutzerklärung](https://pretix.eu/about/de/privacy) als auch die [Nutzungsbedingungen](https://pretix.eu/about/de/terms) sind auf dieser Seite verlinkt.
 Es ist eine Voraussetzung für die Nutzung von pretix, diese Texte sorgfältig zu lesen, ihnen zustimmen und die entsprechenden Kontrollkästchen aktivieren.
