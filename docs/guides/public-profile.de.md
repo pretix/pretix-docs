@@ -1,3 +1,6 @@
+---
+title: Öffentliche Ansicht
+---
 # Öffentliche Ansicht
 
 Dieser Artikel erklärt die öffentliche Ansicht Ihres Veranstalters in pretix und zeigt Ihnen, wie Sie sie in den Veranstaltereinstellungen über die Reiter "Veranstalterseite" und "Shop-Design" anpassen.

@@ -1,3 +1,6 @@
+---
+title: Gutscheine
+---
 # Gutscheine
 
 Gutscheine sind Codes, die im Shop für bestimmte Produkte eingelöst werden können.

@@ -1,3 +1,6 @@
+---
+title: SAML-Authentifizierung vor dem Verkauf
+---
 # SAML-Authentifizierung vor dem Verkauf
 
 Dieser Artikel erläutert, wie Sie mithilfe der "Security Assertion Markup Language" (SAML) eine zuverlässige Identifizierung von Kund\*innen einrichten.

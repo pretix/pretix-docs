@@ -1,3 +1,6 @@
+---
+title: pretixSCAN (Android)
+---
 # pretixSCAN (Android)
 
 Die Android-Version von [pretixSCAN](https://pretix.eu/about/de/scan) ist eine App, die Sie beim Check-in Ihrer Veranstaltungen unterstützt.

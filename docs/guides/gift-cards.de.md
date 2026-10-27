@@ -1,3 +1,6 @@
+---
+title: Wertgutscheine
+---
 # Wertgutscheine
 
 Wertgutscheine sind Produkte, die Sie in Ihren Shops verkaufen können.

@@ -1,3 +1,6 @@
+---
+title: E-Mail-Einstellungen
+---
 # E-Mail-Einstellungen
 
 pretix gibt Ihnen viele Optionen, um Kund\*innen und Teilnehmende per E-Mail zu kontaktieren – auf Veranstalter- und Veranstaltungsebene.

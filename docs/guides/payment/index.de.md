@@ -1,3 +1,6 @@
+---
+title: Zahlung
+---
 # Zahlung
 
 Wenn nicht alle Produkte in Ihrem Shop kostenlos sind, dann brauchen Ihre Kund\*innen eine Möglichkeit, Ihnen Zahlungen zukommen zu lassen.

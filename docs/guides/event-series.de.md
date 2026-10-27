@@ -1,3 +1,6 @@
+---
+title: Veranstaltungsreihen
+---
 # Veranstaltungsreihen
 
 Neue Veranstaltungen können Sie entweder als Einzelveranstaltung oder als Veranstaltungsreihe erstellen.

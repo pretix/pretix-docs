@@ -1,3 +1,6 @@
+---
+title: Rabatte
+---
 # Rabatte
 
 pretix bietet verschiedene Verfahren, mit denen Sie Ihren Kund\*innen Rabatte anbieten können, die an bestimmte Bedingungen geknüpft sind.

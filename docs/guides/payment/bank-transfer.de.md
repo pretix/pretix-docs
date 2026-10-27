@@ -1,4 +1,7 @@
-﻿# Banküberweisung
+﻿---
+title: Banküberweisung
+---
+# Banküberweisung
 
 Banküberweisungen sind eine der zahlreichen Möglichkeiten, in pretix Zahlungen abzuwickeln.
 Zahlungen per Banküberweisung gehen ohne einen zwischengeschalteten Zahlungsdienstleister auf Ihrem Bankkonto ein.
