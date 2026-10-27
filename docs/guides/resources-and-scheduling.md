@@ -378,7 +378,7 @@ This field only displays products with a "Default duration" as defined in the pr
 See [Creating a product for scheduling](resources-and-scheduling.md#creating-a-product-for-scheduling) for information on how to add resource requirements for a product.
 Click the :btn:Continue: button.
 
-![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
+![Page titled 'Quick entry 2/4', displaying a selection of 'Available times', as well as options for 'Start time', 'Product', 'Date title' in two languages, the metadata attribute 'Promoted', 'Show publicly' and 'Create order'.](../assets/screens/resources-scheduling/quick-entry2.png "Quick entry 2/4")
 
 Choose a starting time for your date by selecting it under "Available times" or entering it under "Start time".
 pretix will only suggest times for which it has stored information that sufficient resources are available.
