@@ -1,7 +1,7 @@
 # Konfigurationsdatei
 
 pretixKIOSK liest seine Konfiguration aus einer Konfigurationsdatei aus.
-Es sucht nach dieser Datei mit dem Namen `config.properties` im aktuellen Arbeitsverzeichnis des ausgeführten Prozesses.
+Es sucht nach dieser Datei im aktuellen Arbeitsverzeichnis des Ausführungsprozesses unter dem Namen `config.properties`.
 
 pretixKIOSK geht davon aus, dass diese Datei im Format `.properties` ist, wie in der [Java-Dokumentation](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Properties.html#load(java.io.Reader)) spezifiziert.
 pretixKIOSK startet nicht, wenn die Konfigurationsdatei ungültig ist.
@@ -32,7 +32,7 @@ pretixKIOSK startet nicht, wenn die Konfigurationsdatei ungültig ist.
 | `zvtPassword`                  | Erforderlich | ZVT-Passwort des Bezahlterminals (immer 6 Ziffern, oft "000000")                                                                 |
 | `zvtTraceLogging`              | Optional | Auf `true` setzen, wenn ZVT-Ereignisse umfangreich protokolliert werden sollen (zum Debugging)                                              |
 | `zvtAbortEnabled`              | Optional | Auf `true` setzen, wenn das Bezahlterminal eine externe Unterbrechung des Zahlungsvorgangs zulässt (muss für jeden Terminaltyp getestet werden) |
-| `zvtPrinterCharsPerLine`       | Erforderlich | Die Anzahl Zeichen, die in eine Zeile des Druckers im Bezahlterminal passen.        Auf 0 setzen, falls dieser Wert unbekannt oder kein Drucker vorhanden ist |
+| `zvtPrinterCharsPerLine`       | Erforderlich | Die Anzahl Zeichen, die in eine Zeile des Druckers im Bezahlterminal passen. Auf 0 setzen, falls dieser Wert unbekannt oder kein Drucker vorhanden ist |
 | `zvtEcrReceiptPrinting`        | Optional | Auf `true` setzen, falls die Kartenzahlungsbelege vom Ticketautomaten gedruckt werden sollen, nicht vom Terminal                     |
 | `zvtEcrReceiptPrintingTimeout` | Erforderlich | Die Anzahl Sekunden, die der Automat wartet, bis das Bezahlterminal einen Beleg sendet                                                 |
 | `zvtMerchantReceiptString`     | Erforderlich | Auf eine Zeichenfolge in allen Händlerbelegen setzen, damit diese nicht gedruckt werden                                          |
