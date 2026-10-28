@@ -1,3 +1,6 @@
+---
+title: Steuern
+---
 # Steuern
 
 In den meisten Ländern müssen Sie Steuern auf alle Umsätze abführen, die Sie mit pretix machen.

@@ -1,3 +1,6 @@
+---
+title: Eigene Domain
+---
 # Eigene Domain
 
 Standardmäßig ist ein mit pretix erstellter Shop unter einer URL wie zum Beispiel `https://pretix.eu/tut/tutcon27` abrufbar.

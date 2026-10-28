@@ -1,3 +1,6 @@
+---
+title: Produkte
+---
 # Produkte
 
 Ein Produkt ist alles, was Sie über pretix verkaufen: Tickets, Wertgutscheine, Konferenz-T-Shirts und so weiter.

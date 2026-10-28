@@ -1,3 +1,6 @@
+---
+title: Ticket-Codes
+---
 # Ticket-Codes
 
 Jedes einzelne Produkt, das Sie über pretix verkaufen, hat einen Ticket-Code.

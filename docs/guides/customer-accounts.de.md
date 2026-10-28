@@ -1,3 +1,6 @@
+---
+title: Kund\*innenkonten
+---
 # Kund\*innenkonten
 
 Mit pretix können Ihre Kund\*innen im Shop einkaufen, ohne ein Konto anzulegen.

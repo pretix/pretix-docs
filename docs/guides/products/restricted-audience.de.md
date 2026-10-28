@@ -1,3 +1,6 @@
+---
+title: Eingeschränkte Teilnahmeberechtigung
+---
 # Eingeschränkte Teilnahmeberechtigung
 
 Nicht alle Veranstaltungen dürfen von allen besucht werden.
