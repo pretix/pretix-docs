@@ -1,3 +1,8 @@
+---
+# title:
+description: Configure ticket secret generation in pretix. Learn about random code length, signature schemes, and scanning behavior.
+---
+
 # Ticket secrets 
 
 Every individual product sold via pretix has a ticket secret. 

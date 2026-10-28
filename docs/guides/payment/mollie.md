@@ -1,3 +1,8 @@
+---
+# title:
+description: Learn how to connect Mollie to pretix Hosted or self-hosted editions. Enable payment methods, test it and go live.
+---
+
 # Mollie
 
 Mollie is one of the many options for handling payments within pretix. 

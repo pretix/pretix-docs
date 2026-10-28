@@ -1,3 +1,8 @@
+---
+# title:
+description: Learn how to set up payment providers like PayPal, Stripe, or bank transfer in pretix. Configure payment providers, set deadlines, and troubleshooting.
+---
+
 # Payment
 
 If you are not operating an entirely free shop, your customers need some way of sending you payments.
