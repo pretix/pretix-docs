@@ -1,3 +1,6 @@
+---
+title: Fehlercodes
+---
 # Fehlercodes
 
 Bei einem Ausfall von pretixKIOSK wird ein Fehlerbildschirm angezeigt, der ungefähr so aussieht:

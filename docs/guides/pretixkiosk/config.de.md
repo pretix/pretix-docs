@@ -1,3 +1,6 @@
+---
+title: Konfigurationsdatei
+---
 # Konfigurationsdatei
 
 pretixKIOSK liest seine Konfiguration aus einer Konfigurationsdatei aus.
