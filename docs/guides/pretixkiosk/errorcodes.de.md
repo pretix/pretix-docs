@@ -2,7 +2,7 @@
 
 Bei einem Ausfall von pretixKIOSK wird ein Fehlerbildschirm angezeigt, der ungefähr so aussieht:
 
-![Screenshot der Fehlermeldung "Außer Betrieb" mit zwei weiteren Textzeilen, in denen "PK_PU" und "ID 218" steht.](../../assets/screens/kiosk/error.png "Bildschirm beim Modus Außer Betrieb")
+![Screenshot der Fehlermeldung "Außer Betrieb" mit zwei weiteren Textzeilen, in denen "PK_PU" und "ID 218" steht.](../../assets/screens/kiosk/error.de.png "Bildschirm beim Modus Außer Betrieb")
 
 Die erste Zeile, `PK_PU`, ist ein Fehlercode, den Sie in der folgenden Tabelle finden.
 Die zweite Zeile, `ID 218`, ist die ID des Geräts in Ihrem Veranstalterkonto.
