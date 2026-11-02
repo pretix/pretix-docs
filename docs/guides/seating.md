@@ -31,10 +31,10 @@ If you want to sell tickets based on individual seats for your event, you need t
 
  - [Enabling the plugin](#enabling-the-plugin)
  - Using the seating plan editor to [create a layout](#creating-a-layout) which the editor will then [validate](#validating-the-layout)
- - [Creating an entry for the seating plan](#creating-an-entry-for-a-seating-plan) in your organizer account
+ - [Assigning the plan to your organizer account](#adding-a-seating-plan-to-your-organizer-account) in your organizer account
  - [Creating products for seating](#creating-products-for-seating)
  - [Assigning your seating plan to your event](#assigning-a-seating-plan-to-a-single-event) or a date in your [event series](#assigning-a-seating-plan-to-a-date-in-an-event-series)
- - [Configuring the behavior of the seating plan](#configuring-the-behavior-of-the-seating-plan)
+ - Deciding whether or not you want [customers to select their own seats](#letting-customers-select-their-own-seats)
 
 The following sections will guide you through those steps in detail.
 
@@ -128,8 +128,8 @@ See [Validating the layout](#validating-the-layout) for information on how to ha
 
 ### Validating the layout
 
-The editor will **validate** your layout.
-If the validation succeeds, then the "Validation" symbol in the top bar will be a green checkmark :btn-icon:fa3-check-circle-o::.
+The editor will **validate** your layout by checking for duplicate elements that could stop it from working properly.
+If validation succeeds, then the "Validation" symbol in the top bar will be a green checkmark :btn-icon:fa3-check-circle-o::.
 If validation fails, then the symbol will be a red exclamation mark :btn-icon:fa3-exclamation-circle:: instead.
 If you click the :btn-icon:fa3-save:: "Save" button while validation is failing, then your browser will display a warning popup.
 You can still download the faulty plan by clicking the :btn:OK: button in that warning popup.
@@ -160,18 +160,18 @@ This refreshes seat IDs so that there will be no more duplicates in that row.
 In order to **save** the layout, click the :btn-icon:fa3-save:: "Save plan" button in the top left.
 This opens a dialog allowing you to save the resulting JSON file on your computer.
 
-### Creating an entry for a seating plan
+### Adding a seating plan to your organizer account
 
 Seating plans are handled on the organizer level.
 This allows you to use seating plans for multiple events hosted by the same organizer.
 
-After you have [created a layout](#creating-a-layout) in the form of a JSON file, you create a corresponding entry for a seating plan in your organizer account.
+Once you have [the layout of your seating plan](#creating-a-layout) in the form of a JSON file, you need to create a corresponding entry for the seating plan in your organizer account.
 In order to do so, navigate to :navpath:Your organizer → :i-seat: Seating plans: and click the :btn-icon:fa3-plus: Create a new seating plan: button.
 
 ![Page titled 'Create a new seating plan', displaying a field for entering the name, buttons for downloading or uploading the layout, and one for opening the editor. There is a large field titled 'Layout', which is empty.](../assets/screens/seating/create-new.png "Create a new seating plan")
 
 On the next page, click the :btn-icon:fa3-upload: Upload layout: button.
-Select the JSON file you created and downloaded in the [previous step](#creating-a-layout).
+Select the JSON file of the seating plan you want to use, for example the one you created and downloaded in the [previous step](#creating-a-layout).
 This fills the "Layout" field with the contents of the file.
 
 Enter a name for the seating plan in the "Name" field and click the :btn:Save: button.
@@ -245,7 +245,7 @@ The shop will list products that you do not assign to seating categories below t
 
 Once you are happy with your choices, click the :btn:Save: button.
 
-### Configuring the behavior of the seating plan
+### Letting customers select their own seats
 
 In order to configure the behavior of the seating plan for your singular event or event series, navigate to :navpath:Your event → :fa3-wrench: Settings → Seating plans:.
 If you want your customers to be able to select their own seats, check the box next to "Customers can choose their own seats".
