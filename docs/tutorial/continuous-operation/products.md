@@ -36,7 +36,7 @@ We are not planning to use the cross-selling feature for our museum, so the cros
 The same is true for add-on categories.
 
 Clicking the :btn:Save: button at the bottom of the page takes us back to the product categories page.
-This page now lists two entries: "Tickets" and our newly created category named "Discounted tickets".
+This page now lists two entries: "Full-price tickets" and our newly created category named "Discounted tickets".
 
 ## Creating and editing products
 
