@@ -150,7 +150,7 @@ Unsere Erklärung lautet wie folgt: "Wir verwenden den von Ihnen angegebenen Nam
 
 Unter "Formular-Einstellungen" können wir das Format auswählen, in dem pretix die Teilnehmer nach Namen und Titeln fragt.
 Wir wählen `Frage nach Titel + Vorname + Nachname, Anzeige wie Dr. Max Mustermann` für Namen und `Freie Texteingabe` für Titel.
-Wenn Sie diese Einstellungen ändern, nachdem bereits Bestellungen eingegangen sind, kann dies zu Problemen beim Sortieren oder Ändern von Namen führen.
+Wenn wir diese Einstellungen ändern, nachdem bereits Bestellungen eingegangen sind, kann dies zu Problemen beim Sortieren oder Ändern von Namen führen.
 Daher legen wir unsere Auswahl hier endgültig fest, bevor wir den Ticketshop veröffentlichen.
 
 Um diese Einstellungen zu speichern, klicken wir auf den Button :btn:Speichern:.
