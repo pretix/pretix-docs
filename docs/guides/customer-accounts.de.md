@@ -1,5 +1,5 @@
 ---
-title: Kund\*innenkonten
+title: Kund*innenkonten
 ---
 # Kund\*innenkonten
 
