@@ -1,4 +1,4 @@
-!!! Note
+!!! Note "Hinweis"
 
     Jede Steuerregel, die sie einem Produkt zuweisen, müssen Sie zuerst erstellen.
     Wenn mehrere verschiedene Steuersätze auf Ihre Produkte zutreffen, dann erstellen Sie eine Steuerregel für jeden davon.

@@ -59,7 +59,7 @@ Wir fügen die folgende Beschreibung hinzu: `Standard-Ticket, das Eintritt in da
 Als Nächstes klicken wir den Reiter :btn:Preis: und ändern den "Standardpreis" auf 10,00 €.
 Außerdem wählen wir aus dem Dropdown-Menü "Umsatzsteuer" den entsprechenden Steuersatz von 19 % aus.
 
-{% include "note-tax-rules.md" %}
+{% include "note-tax-rules.de.md" %}
 
 Dann klicken wir auf den Button :btn:Speichern:.
 

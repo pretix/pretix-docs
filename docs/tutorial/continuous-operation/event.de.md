@@ -6,7 +6,7 @@ Hier ist ein kurzer Überblick über die Schritte dieses Abschnitts:
 
 - [eine Veranstaltungsreihe erstellen](#eine-veranstaltung-erstellen)
 - sich auf der Übersicht über den Status der Veranstaltungsreihe [einen Überblick verschaffen](#veranstaltungs-ubersicht)
-- die Erfassung von [Kund\*innen- und Teilnehmerdaten](#kunden--und-teilnehmerdaten) aktivieren
+- die Erfassung von [Kund\*innen- und Teilnehmerdaten](#kunden-und-teilnehmerdaten) aktivieren
 - dem Ticketshop [Bilder hinzufügen](#shop-design)
 
 Das sind alle notwendigen Schritte, um eine Veranstaltungsreihe zu erstellen.

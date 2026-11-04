@@ -1,4 +1,4 @@
-!!! Note
+!!! Note "Hinweis"
 
     Die Kurzform darf nur Buchstaben, Ziffern, Punkte und Bindestriche enthalten.
     __Sie darf keine Leerzeichen enthalten.__
