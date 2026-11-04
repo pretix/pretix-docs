@@ -112,10 +112,10 @@ Das Ticket für die Führung gewährt Ihnen auch Zutritt zum Museum."
 
 Anschließend ändern wir den "Standardpreis" auf 15,00 € und wählen im Dropdown-Menü "Umsatzsteuer" den entsprechenden Steuersatz von 19 % aus.
 Wir lassen die übrigen Optionen auf dieser Seite unverändert.
-Anschließend klicken wir den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
+Anschließend klicken wir auf den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
-Anschließend navigieren wir zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte.
-Dort klicken wir den Button :btn-icon:fa3-copy:: neben dem "Führung"-Ticket.
+Anschließend navigieren wir zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte:.
+Dort klicken wir auf den Button :btn-icon:fa3-copy:: neben dem "Führung"-Ticket.
 Wir nennen dieses Ticket "Führung (ermäßigt)" und fügen eine englische Übersetzung hinzu.
 Außerdem wählen wir die Kategorie "Ermäßigte Tickets" aus und legen den Preis auf 10,00 € fest.
 Dann klicken wir den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
@@ -138,8 +138,9 @@ Die Liste zeigt außerdem die Gesamtanzahl und die Anzahl der noch verfügbaren 
 ![Seite mit dem Titel "Kontingente", die eine Liste der Kontingente anzeigt, darunter das Kontingent für reduzierte Tickets mit einer Anzahl von 50 und das Kontingent für Standard-Tickets mit einer Anzahl von 100.](../../assets/screens/products/quotas.png "\"Kontingente\"")
 
 Zunächst bearbeiten wir ein Kontingent für unsere regulären und unsere ermäßigten Tickets.
-Es ist sinnvoll, beide Ticketarten in einem einzigen Kontingent zusammenzufassen, da wir nicht im Voraus planen können, wie viele der verkauften Tickets ermäßigte Tickets sein werden.
-Wir klicken den Button :btn-icon:fa3-edit:: neben dem Kontingent "Standard-Ticket" in der Liste.
+Wir können nicht im Voraus planen, wie viele der verkauften Tickets ermäßigte Tickets sein werden.
+Daher ist es sinnvoll, beide Ticketarten in einem einzigen Kontingent zusammenzufassen.
+Wir klicken auf den Button :btn-icon:fa3-edit:: neben dem Kontingent "Standard-Ticket" in der Liste.
 Außerdem werden wir dieses Kontingent in `Regulärer und ermäßigter Eintritt` umbenennen, um Verwechslungen zu vermeiden.
 Das Ticket "Regulärer Eintritt" sollte in der Produktliste bereits ausgewählt sein.
 
@@ -152,7 +153,7 @@ Die anderen Einstellungen lassen wir unverändert und klicken den Button :btn:Sp
 Dadurch gelangen wir zu einem detaillierten Überblick über den Status des Kontingents "Standard-Ticket".
 
 Da dieses Kontingent nun sowohl die Standard- als auch die ermäßigten Zutrittstickets umfasst, benötigen wir das Kontingent "Reduziertes Ticket" nicht mehr.
-Wir navigieren zurück zur Seite "Kontingente" und klicken den Button :btn-icon:fa3-trash:: neben dem Kontingent "Reduziertes Ticket".
+Wir navigieren zurück zur Seite "Kontingente" und klicken auf den Button :btn-icon:fa3-trash:: neben dem Kontingent "Reduziertes Ticket".
 
 Unser Produkt "Führung" wird Teil eines Kontingents pro Termin sein.
 Wir werden diese Kontingente später zusammen mit den Terminen festlegen.
@@ -160,4 +161,4 @@ Wir werden diese Kontingente später zusammen mit den Terminen festlegen.
 ## Abschluss
 
 Wir haben alle Tickets und sonstigen Produkte, die wir in unserem Shop verkaufen möchten, angelegt, sie in Kategorien sortiert und zwei von ihnen zu Kontingenten zugeordnet.
-Im nächsten Schritt legen wir Termine fest, an denen unsere Kunden diese Produkte kaufen können.
+Im nächsten Schritt legen wir Termine fest, für die unsere Kunden diese Produkte kaufen können.
