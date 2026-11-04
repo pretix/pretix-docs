@@ -42,8 +42,8 @@ working with the pretix server.
 | Android 10      | Support planned until at least 12/2026.                                                                                                                      |
 | Android 9       | Support planned until at least 12/2026.                                                                                                                      |
 | Android 8       | Support planned until at least 12/2026.<br>Support for Stripe Terminal on some devices dropped.                                                              |
-| Android 7       | Support planned until at least 12/2026.<br>Support for Stripe Terminal dropped.<br>No support for Cryptovision TSE.<br>No support for SumUp.                 |
-| Android 6       | Phase-out (still works, but no longer officially supported).<br>No support for Cryptovision TSE.<br>No support for Stripe Terminal.<br>No support for SumUp. |
+| Android 7       | Support until 12/2026.<br>Support for Stripe Terminal dropped.<br>No support for Cryptovision TSE.<br>No support for SumUp.                                  |
+| Android 6       | Phase-out until 12/2026 (still works, but no longer officially supported).<br>No support for Cryptovision TSE.<br>No support for Stripe Terminal.<br>No support for SumUp. |
 | Android 5       | Support dropped.                                                                                                                                             |
 | Android 4       | Support dropped.                                                                                                                                             |
 
