@@ -128,7 +128,7 @@ Ein Kontingent legt fest, wie viele Einheiten unseres Produkts wir über unseren
 Jedes Produkt muss Teil mindestens eines Kontingents sein, bevor es im Shop verfügbar wird.
 In diesem Abschnitt werden wir Kontingente anlegen und ihnen unsere Produkte zuordnen.
 
-Wir navigieren zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente.
+Wir navigieren zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Kontingente:.
 Auf dieser Seite wird die Liste aller Kontingente für die Veranstaltung angezeigt.
 Derzeit enthält die Liste das Kontingent "Standard-Ticket", das das Ticket "Regulärer Eintritt" als Produkt enthält, sowie das Kontingent "Ermäßigtes Ticket", das kein Ticket enthält.
 Die Liste zeigt außerdem die Gesamtanzahl und die Anzahl der noch verfügbaren Plätze für jedes Kontingent an.
