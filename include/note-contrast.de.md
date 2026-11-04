@@ -1,4 +1,4 @@
-!!! Note
+!!! Note "Hinweis"
 
     Hoher Kontrast ist ein wichtiger Faktor für die Fähigkeit Ihrer Kund\*innen, Ihren Shop benutzen zu können.
     Möglicherweise haben Ihre Kund\*innen ein kleines Endgerät, einen schlechten Bildschirm, starkes Licht in der Umgebung, oder eine Sehbehinderung.
