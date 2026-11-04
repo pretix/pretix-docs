@@ -42,7 +42,7 @@ Standardmäßig sind alle Zahlungsdienstleister mit Ausnahme von Wertgutscheinen
 
 ### Stripe
 
-![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Stripe", die ein Feld mit einer rechtlichen Warnung sowie Buttons zum Verbinden mit Stripe zeigt.](../../assets/screens/payment/stripe.de.png "\"Stripe-Einstellungen\"")
+![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Stripe", die ein Feld mit einer rechtlichen Warnung sowie Buttons zum Verbinden mit Stripe zeigt.](../../assets/screens/payment/stripe.de.png "Stripe-Einstellungen\"")
 
 Zuerst aktivieren wir Stripe, indem wir auf den Button :btn-icon:fa3-gear:Settings: daneben klicken.
 Dadurch gelangen wir auf die Seite mit den Zahlungseinstellungen für Stripe.
@@ -61,7 +61,7 @@ Jetzt können Kund\*innen in unserem Shop per Kreditkarte über Stripe bezahlen.
 
 ### Banküberweisungen
 
-![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Banküberweisung", die Optionen für die Art der Bankverbindung, Bankdaten, Details sowie für die Aktivierung der Zahlungsmethode zeigt.](../../assets/screens/payment/bank-transfer.de.png "\"Einstellungen für Banküberweisungen\"")
+![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Banküberweisung", die Optionen für die Art der Bankverbindung, Bankdaten, Details sowie für die Aktivierung der Zahlungsmethode zeigt.](../../assets/screens/payment/bank-transfer.de.png "Einstellungen für Banküberweisungen\"")
 
 Außerdem aktivieren wir Banküberweisungen, indem wir zu :navpath:Veranstaltung → Einstellungen → Zahlung: navigieren.
 Dort öffnen wir die Einstellungen für Banküberweisungen.

@@ -20,7 +20,7 @@ Falls sich unsere Anforderungen ändern sollten, können wir auch später noch j
 
 ## Zu den Veranstalterkonto-Einstellungen navigieren
 
-![pretix.eu Übersicht, die Ihre nächsten Veranstaltungen, einen Button, um eine neue Veranstaltung zu erstellen, die E-Mail-Adresse des Kontos, das gerade angemeldet ist und eine Seitenleiste mit den folgenden Optionen: Übersicht, Veranstaltungen, Veranstalter, Suche, Benutzereinstellungen, Berichte, Versandliste zeigt](../../assets/screens/account/dashboard.png "\"Übersicht\"")
+![pretix.eu Übersicht, die Ihre nächsten Veranstaltungen, einen Button, um eine neue Veranstaltung zu erstellen, die E-Mail-Adresse des Kontos, das gerade angemeldet ist und eine Seitenleiste mit den folgenden Optionen: Übersicht, Veranstaltungen, Veranstalter, Suche, Benutzereinstellungen, Berichte, Versandliste zeigt](../../assets/screens/account/dashboard.png "Übersicht\"")
 
 Nachdem wir die Kontoerstellung abgeschlossen und uns unter [pretix.eu/control](https://pretix.eu/control/) angemeldet haben, werden wir von pretix mit der Übersicht begrüßt.
 Wir können jederzeit zu dieser Seite zurückkehren, indem wir oben in der Leiste den Button :btn-icon:i-pretix:pretix.eu: klicken.
@@ -41,7 +41,7 @@ Dadurch gelangen wir zur Seite mit den allgemeinen Einstellungen für das Verans
 
 ## Allgemein
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.png "\"Veranstalter-Einstellungen: Allgemein\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.png "Veranstalter-Einstellungen: Allgemein\"")
 
 Die Felder "Name" und "Kurzform" sind bereits ausgefüllt.
 Da die Kurzform der eindeutige Identifikator des Veranstalters ist, können wir sie nicht ändern.
@@ -67,7 +67,7 @@ Indem wir auf den Button :btn:Speichern: klicken, bestätigen wir unsere Änderu
 
 ## Lokalisierung
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Lokalisierung", die die offiziellen Sprachoptionen Englisch, Deutsch und Deutsch (Du) sowie eine Liste der Community-Übersetzungen von Arabisch bis Kroatisch zeigt](../../assets/screens/organizer/localization.png "\"Veranstalter-Einstellungen: Lokalisierung\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Lokalisierung", die die offiziellen Sprachoptionen Englisch, Deutsch und Deutsch (Du) sowie eine Liste der Community-Übersetzungen von Arabisch bis Kroatisch zeigt](../../assets/screens/organizer/localization.png "Veranstalter-Einstellungen: Lokalisierung\"")
 
 Nachdem wir die allgemeinen Einstellungen gespeichert haben, wechseln wir jetzt zum Reiter :btn:"Lokalisierung".
 
@@ -95,7 +95,7 @@ Die Lokalisierungseinstellungen legen fest, welche Anpassungsmöglichkeiten dort
 
 ## Veranstalterseite
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Veranstalterseite", die die folgenden Optionen zeigt: Header-Bild, Volle Höhe des Header-Bildes verwenden, Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde, Text auf der Statseite in mehreren Sprachen. Der Button "Öffentliche Ansicht" in der Kopfzeile ist hervorgehoben.](../../assets/screens/organizer/organizer-page-public-profile.png "\"Veranstalter-Einstellungen: Veranstalterseite\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Veranstalterseite", die die folgenden Optionen zeigt: Header-Bild, Volle Höhe des Header-Bildes verwenden, Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde, Text auf der Statseite in mehreren Sprachen. Der Button "Öffentliche Ansicht" in der Kopfzeile ist hervorgehoben.](../../assets/screens/organizer/organizer-page-public-profile.png "Veranstalter-Einstellungen: Veranstalterseite\"")
 
 Wenn wir oben auf den Reiter :btn:Veranstalterseite: wechseln, können wir unser Logo hinzufügen und die Farben der Benutzeroberfläche unseres Shops anpassen.
 
@@ -117,7 +117,7 @@ In unserer öffentlichen Ansicht können die Nutzer\*innen über die Links in de
 
 ## Datenschutz
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Datenschutz", die Eingabefelder für die URLs zu einer Datenschutzerklärung in verschiedenen Sprachen, ein großes blaues Feld mit rechtlichen Hinweisen und vorausgefüllte Textfelder für den Dialog "Datenschutzeinstellungen" zeigt](../../assets/screens/organizer/privacy.png "\"Veranstalter-Einstellungen: Datenschutz\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Datenschutz", die Eingabefelder für die URLs zu einer Datenschutzerklärung in verschiedenen Sprachen, ein großes blaues Feld mit rechtlichen Hinweisen und vorausgefüllte Textfelder für den Dialog "Datenschutzeinstellungen" zeigt](../../assets/screens/organizer/privacy.png "Veranstalter-Einstellungen: Datenschutz\"")
 
 Auf dem Reiter :btn:Datenschutz: können wir für jede von uns aktivierte Sprache eine URL angeben, die auf unsere Datenschutzerklärung verweist.
 

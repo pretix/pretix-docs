@@ -7,7 +7,7 @@ Dieser Artikel erklärt, wie man Termine zu einer Veranstaltungsreihe hinzufügt
 Wir navigieren zu unserer persönlichen Übersicht, indem wir oben links auf der Website :btn-icon:i-pretix: pretix.eu: klicken.
 Anschließend wählen wir unsere Veranstaltung in der Liste "Ihre nächsten Veranstaltungen" aus und klicken :btn-icon:fa3-calendar: Termine: in der Seitenleiste.
 
-![Seite mit dem Titel "Termine", die Buttons zum Erstellen eines einzelnen oder mehrerer neuer Termine zeigt. ](../../assets/screens/event-series/dates.png "\"Termine\"")
+![Seite mit dem Titel "Termine", die Buttons zum Erstellen eines einzelnen oder mehrerer neuer Termine zeigt. ](../../assets/screens/event-series/dates.png "Termine\"")
 
 In unserer Veranstaltungsreihe gibt es noch keine Termine.
 Deshalb wird auf dieser Seite folgender Text angezeigt: "Sie haben bisher keine Termine für diese Veranstaltungsreihe angelegt."
@@ -37,8 +37,8 @@ Wenn Sie den Anweisungen im [nächsten Abschnitt](#creating-dates-for-special-ev
 
 ## Sondertermine erstellen
 
-Als Nächstes möchten wir wiederkehrende Führungen für unser Museum anbieten. 
-Unsere Führung findet in der ersten Hälfte des Jahres 2027 jeden Montag und Mittwoch um 10 Uhr statt. 
+Als Nächstes möchten wir wiederkehrende Führungen für unser Museum anbieten.
+Unsere Führung findet in der ersten Hälfte des Jahres 2027 jeden Montag und Mittwoch um 10 Uhr statt.
 Dazu legen wir mehrere neue Termine für diese Veranstaltungsreihe an.
 Wir klicken auf den Button :btn-icon:fa3-plus:Mehrere neue Termine erstellen:.
 
