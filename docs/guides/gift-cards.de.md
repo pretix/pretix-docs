@@ -138,7 +138,7 @@ Für Erstattungen erstellte Wertgutscheine werden außerdem unter :navpath:Ihr V
 
 ![Seite mit dem Titel "Neuen Wertgutschein erstellen" mit Eingabefeldern für Code, Wert und Ablaufdatum sowie für besondere Gutscheinbedingungen. Außerdem Auswahlmöglichkeiten für die Währung und die Angabe, ob der Wertgutschein als Test erstellt wird.](../assets/screens/gift-cards/create.de.png)
 
-Möglicherweise möchten Sie einen einzelnen Wertgutschein manuell ausstellen, beispielsweise wenn ein*e Kund*in einen Gutschein in Papierform oder über eine andere Software erworben hat.
+Möglicherweise möchten Sie einen einzelnen Wertgutschein manuell ausstellen, beispielsweise wenn ein\*e Kund\*in einen Gutschein in Papierform oder über eine andere Software erworben hat.
 Navigieren Sie dafür zu: :navpath:Ihr Veranstalter → :fa3-credit-card: Wertgutscheine:.
 Sie gelangen dann auf eine Seite mit dem Titel "Ausgestellte Wertgutscheine", auf der ein Suchdialog, ein Button zum manuellen Ausstellen eines Wertgutscheins sowie eine Liste der bereits ausgestellten Wertgutschein-Codes angezeigt werden.
 

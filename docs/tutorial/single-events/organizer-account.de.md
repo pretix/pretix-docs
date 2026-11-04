@@ -104,7 +104,7 @@ Eine mit Pretix Hosted erstellte Veranstalterseite ist standardmäßig unter htt
 Der Shop, den wir für dieses Tutorial erstellen, befindet sich unter [https://pretix.eu/tut/](https://pretix.eu/tut).
 
 Standardmäßig wird in der Kopfzeile unserer Veranstalterseite der Name des Veranstalters angezeigt.
-Über die Einstellungen der Veranstalterseite können wir den Namen durch ein Header-Bild ersetzen, das unseren Kund*innen zeigt, wer die Veranstaltung ausrichtet (beispielsweise durch unseren Firmennamen, unser Logo oder ein eindeutiges Design).
+Über die Einstellungen der Veranstalterseite können wir den Namen durch ein Header-Bild ersetzen, das unseren Kund\*innen zeigt, wer die Veranstaltung ausrichtet (beispielsweise durch unseren Firmennamen, unser Logo oder ein eindeutiges Design).
 
 Wir fügen das Header-Bild hinzu, indem wir auf den Button :btn:Durchsuchen…: neben der Option "Header-Bild" klicken.
 Dort wählen wir von unserem Computer eine PNG-Datei mit einer Auflösung von 1140 × 120 Pixel aus.

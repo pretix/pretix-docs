@@ -160,12 +160,12 @@ Um diese Einstellungen zu speichern, klicken wir auf den Button :btn:Speichern:.
 ![Screenshot des Reiters "Shop-Design", der Optionen für das Header-Bild und das Social-Media-Bild sowie einen gesperrten Bereich am unteren Rand zeigt.](../../assets/screens/event/shop-design.de.png "\"Veranstaltung Shop-Design\"")
 
 Wenn wir oben auf den Reiter "Shop-Design" wechseln, können wir Bilder zu unserem Ticketshop hinzufügen und dessen Farben anpassen.
-Ein Klick auf den Button :btn-icon:fa3-eye:Shop aufrufen: in der Leiste oben führt uns zu einer Vorschau des Shops aus Sicht der Kund*innen.
+Ein Klick auf den Button :btn-icon:fa3-eye:Shop aufrufen: in der Leiste oben führt uns zu einer Vorschau des Shops aus Sicht der Kund\*innen.
 Eine mit Pretix Hosted erstellter Shop ist standardmäßig unter https://pretix.eu/:placeholder:OrganizerShortForm:/:placeholder:EventShortForm:/ zu finden.
 Der Shop, den wir für dieses Tutorial erstellen, befindet sich unter [https://pretix.eu/tut/tutcon27/](https://pretix.eu/tut/tutcon27/).
 
 Standardmäßig wird in der Kopfzeile unseres Shops der Name der Veranstaltung angezeigt.
-Über die Einstellungen des Shop-Designs können wir den Titel durch ein Header-Bild ersetzen, das unsere Kund*innen über die Veranstaltung informiert (beispielsweise durch den Veranstaltungstitel, das Logo oder ein eindeutiges Design).
+Über die Einstellungen des Shop-Designs können wir den Titel durch ein Header-Bild ersetzen, das unsere Kund\*innen über die Veranstaltung informiert (beispielsweise durch den Veranstaltungstitel, das Logo oder ein eindeutiges Design).
 
 Wir fügen das Header-Bild hinzu, indem wir auf den Button :btn:Durchsuchen…: neben der Option "Header-Bild" klicken.
 Dort wählen wir von unserem Computer eine PNG-Datei mit einer Auflösung von 1140 × 120 Pixel aus.

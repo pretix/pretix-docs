@@ -15,7 +15,7 @@ Sie können sie dafür benutzen:
 
 !!! Note
     Gutscheine sind nicht mit [Wertgutscheinen](gift-cards.md) zu verwechseln.
-    Wertgutscheine dienen im Wesentlichen als zusätzliche Zahlungsmethode für Ihre Kund*innen.
+    Wertgutscheine dienen im Wesentlichen als zusätzliche Zahlungsmethode für Ihre Kund\*innen.
     Sie entsprechen immer einem festen Geldbetrag, der vom Gesamtbetrag der Bestellung abgezogen wird.
     Wertgutscheine können veranstaltungsübergreifend und veranstalterübergreifend verwendet werden.
     Sie haben keinen Einfluss auf die Verfügbarkeit und Sichtbarkeit bestimmter Produkte.
@@ -212,7 +212,7 @@ Erstellen oder bearbeiten Sie dort das betreffende Produkt.
 
 Neben dieser Option befindet sich ein Sichtbarkeits-Umschalter.
 Wenn Sie diesen Umschalter auf "Verstecke das Produkt, wenn es nicht verfügbar ist" (:btn-icon:fa3-eye-slash::) setzen, dann wird das Produkt in Ihrem Shop ausgeblendet.
-Das Produkt wird nur Kund*innen angezeigt, die einen der Gutscheincodes in das Gutscheinfeld eingegeben haben oder die über einen der Gutscheinlinks in den Shop gelangt sind.
+Das Produkt wird nur Kund\*innen angezeigt, die einen der Gutscheincodes in das Gutscheinfeld eingegeben haben oder die über einen der Gutscheinlinks in den Shop gelangt sind.
 
 Wenn Sie die Verfügbarkeit für bestimmte Produktvarianten einschränken möchten, bearbeiten Sie die entsprechende Variante und aktivieren Sie das Kontrollkästchen neben "Nur anzeigen, wenn ein passender Gutschein eingelöst wird".
 Bei Produktvarianten ist es nicht möglich, diese ausschließlich über einen Gutschein verfügbar zu machen, sie aber dennoch in Ihrem Shop anzuzeigen.

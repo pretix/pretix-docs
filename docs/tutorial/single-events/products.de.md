@@ -195,4 +195,4 @@ Es sollten nun keine gelben Felder mehr angezeigt werden, die uns darauf hinweis
 ## Abschluss
 
 Wir haben alle Tickets und sonstigen Produkte, die wir in unserem Shop verkaufen möchten, angelegt, sie in Kategorien sortiert und Kontingenten zugeordnet.
-Nun können wir damit fortfahren, die [Zahlungsmethoden einzurichten](payment.de.md), mit denen unsere Kund*innen diese Produkte erwerben können.
+Nun können wir damit fortfahren, die [Zahlungsmethoden einzurichten](payment.de.md), mit denen unsere Kund\*innen diese Produkte erwerben können.
