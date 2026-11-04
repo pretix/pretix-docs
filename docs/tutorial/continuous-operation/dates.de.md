@@ -7,7 +7,7 @@ Dieser Artikel erklärt, wie man Termine zu einer Veranstaltungsreihe hinzufügt
 Wir navigieren zu unserer persönlichen Übersicht, indem wir oben links auf der Website :btn-icon:i-pretix: pretix.eu: klicken.
 Anschließend wählen wir unsere Veranstaltung in der Liste "Ihre nächsten Veranstaltungen" aus und klicken :btn-icon:fa3-calendar: Termine: in der Seitenleiste.
 
-![Seite mit dem Titel "Termine", die Buttons zum Erstellen eines einzelnen oder mehrerer neuer Termine zeigt. ](../../assets/screens/event-series/dates.png "Termine\"")
+![Seite mit dem Titel "Termine", die Buttons zum Erstellen eines einzelnen oder mehrerer neuer Termine zeigt. ](../../assets/screens/event-series/dates.de.png "Termine")
 
 In unserer Veranstaltungsreihe gibt es noch keine Termine.
 Deshalb wird auf dieser Seite folgender Text angezeigt: "Sie haben bisher keine Termine für diese Veranstaltungsreihe angelegt."
@@ -33,7 +33,7 @@ Dann klicken wir den Button :btn:Speichern:.
     Wenn alle Termine einer Veranstaltungsreihe denselben Titel haben, wird dieser Titel in der Kalenderansicht des Shops nicht angezeigt.
     Die in diesem Abschnitt beschriebene Einrichtung führt daher zu einer Kalenderansicht voller unspezifischer Termineinträge.
     Sobald es mindestens einen Termin mit einem anderen Titel gibt, werden in der Kalenderansicht wieder alle Termintitel angezeigt.
-    Wenn Sie den Anweisungen im [nächsten Abschnitt](#creating-dates-for-special-events) folgen, löst sich dieses Problem von selbst.
+    Wenn Sie den Anweisungen im [nächsten Abschnitt](#sondertermine-erstellen) folgen, löst sich dieses Problem von selbst.
 
 ## Sondertermine erstellen
 
@@ -46,7 +46,7 @@ Im Feld "Regel zur Wiederholung" wählen wir Folgendes aus: "Wiederhole alle `1`
 Anschließend aktivieren wir die Kontrollkästchen neben "Montag" und "Mittwoch".
 Wir aktivieren den Radiobutton neben "Wiederhole bis zum" und wählen als Datum den `30.06.2027`.
 
-![Seite mit dem Titel "Mehrere Termine erstellen", die Optionen zur Regel zur Wiederholung und Uhrzeiten sowie eine Vorschau der Termine, die erstellt werden sollen, zeigt.](../../assets/screens/event-series/create-multiple-example3.png "Beispiel für die Erstellung mehrerer Termine")
+![Seite mit dem Titel "Mehrere Termine erstellen", die Optionen zur Regel zur Wiederholung und Uhrzeiten sowie eine Vorschau der Termine, die erstellt werden sollen, zeigt.](../../assets/screens/event-series/create-multiple-example3.de.png "Beispiel für die Erstellung mehrerer Termine")
 
 Die "Vorschau" rechts auf der Seite ist hilfreich, um zu prüfen, ob unsere Wiederholungsregel die richtigen Termine erfasst.
 Sie zeigt die ersten zehn und die letzten zehn Termine an, die wir erstellen.

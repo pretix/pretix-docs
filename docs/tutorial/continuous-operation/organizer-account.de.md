@@ -7,11 +7,11 @@ Es ist auch möglich, (eingeschränkten) Zugriff auf ein Veranstalterkonto zu er
 In diesem Abschnitt des Tutorials werden wir unser Veranstalterkonto anpassen und die erforderlichen Informationen hinzufügen.
 Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Tutorial durchführen werden:
 
-- auf dem Reiter "Allgemein" [Kontaktinformationen hinzufügen](organizer-account.md#general)
-- auf dem Reiter "Lokalisierung" [Sprach- und Lokalisierungsoptionen auswählen](organizer-account.md#localization)
-- auf dem Reiter "Veranstalterseite" und "Shop-Design" [die Veranstalterseite anpassen](organizer-account.md#organizer-page)
-- auf dem Reiter "Datenschutz" die [Informationen zu Cookies und Datenschutz einrichten](organizer-account.md#privacy)
-- unter "Abrechnungs-Einstellungen" die erforderlichen Angaben machen, um [unser pretix-Konto aktivieren](organizer-account.md#activation) zu können
+- auf dem Reiter "Allgemein" [Kontaktinformationen hinzufügen](#allgemein)
+- auf dem Reiter "Lokalisierung" [Sprach- und Lokalisierungsoptionen auswählen](#lokalisierung)
+- auf dem Reiter "Veranstalterseite" und "Shop-Design" [die Veranstalterseite anpassen](#veranstalterseite)
+- auf dem Reiter "Datenschutz" die [Informationen zu Cookies und Datenschutz einrichten](#datenschutz)
+- unter "Abrechnungs-Einstellungen" die erforderlichen Angaben machen, um [unser pretix-Konto aktivieren](#aktivierung) zu können
 
 Damit sind alle notwendigen Schritte abgedeckt, um unser Veranstalterkonto für die Durchführung von Veranstaltungen mit pretix vorzubereiten.
 Einige dieser Schritte sind optional, ersparen uns aber langfristig etwas Arbeit.
@@ -20,7 +20,7 @@ Falls sich unsere Anforderungen ändern sollten, können wir auch später noch j
 
 ## Zu den Veranstalterkonto-Einstellungen navigieren
 
-![pretix.eu Übersicht, die Ihre nächsten Veranstaltungen, einen Button, um eine neue Veranstaltung zu erstellen, die E-Mail-Adresse des Kontos, das gerade angemeldet ist und eine Seitenleiste mit den folgenden Optionen: Übersicht, Veranstaltungen, Veranstalter, Suche, Benutzereinstellungen, Berichte, Versandliste zeigt](../../assets/screens/account/dashboard.png "Übersicht\"")
+![pretix.eu Übersicht, die Ihre nächsten Veranstaltungen, einen Button, um eine neue Veranstaltung zu erstellen, die E-Mail-Adresse des Kontos, das gerade angemeldet ist und eine Seitenleiste mit den folgenden Optionen: Übersicht, Veranstaltungen, Veranstalter, Suche, Benutzereinstellungen, Berichte, Versandliste zeigt](../../assets/screens/account/dashboard.de.png "Übersicht")
 
 Nachdem wir die Kontoerstellung abgeschlossen und uns unter [pretix.eu/control](https://pretix.eu/control/) angemeldet haben, werden wir von pretix mit der Übersicht begrüßt.
 Wir können jederzeit zu dieser Seite zurückkehren, indem wir oben in der Leiste den Button :btn-icon:i-pretix:pretix.eu: klicken.
@@ -28,20 +28,20 @@ Ein Klick auf den Button :btn:Veranstalter: in der Seitenleiste bringt uns zur S
 
 <br>
 
-![pretix.eu Veranstalterseite, die eine Liste der verfügbaren Veranstalterkonten zeigt. Die Liste enthält derzeit nur den Eintrag "Tutorial Ltd". Dort finden wir einen Filter für die Liste der verfügbaren Veranstalter sowie den Button "Neuen Veranstalter anlegen"](../../assets/screens/organizer/organizers.png)
+![pretix.eu Veranstalterseite, die eine Liste der verfügbaren Veranstalterkonten zeigt. Die Liste enthält derzeit nur den Eintrag "Tutorial Ltd". Dort finden wir einen Filter für die Liste der verfügbaren Veranstalter sowie den Button "Neuen Veranstalter anlegen"](../../assets/screens/organizer/organizers.de.png)
 
 Wenn wir in der Liste auf unser Veranstalterkonto klicken, leitet uns pretix zu einer Seite weiter, auf der alle mit diesem Veranstalter verbundenen Veranstaltungen angezeigt werden.
 
 <br>
 
-![pretix.eu Veranstalterseite, die eine Liste aller Veranstaltungen zeigt, die mit "Tutotial Ltd." verbunden sind Es gibt einen Filter für die Liste der Veranstaltungen sowie den Button "Neue Veranstaltung erstellen"](../../assets/screens/organizer/event-list.png)
+![pretix.eu Veranstalterseite, die eine Liste aller Veranstaltungen zeigt, die mit "Tutotial Ltd." verbunden sind Es gibt einen Filter für die Liste der Veranstaltungen sowie den Button "Neue Veranstaltung erstellen"](../../assets/screens/organizer/event-list.de.png)
 
 Wir klicken nun in der Seitenleiste :btn-icon:fa3-wrench:Einstellungen:.
 Dadurch gelangen wir zur Seite mit den allgemeinen Einstellungen für das Veranstalterkonto.
 
 ## Allgemein
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.png "Veranstalter-Einstellungen: Allgemein\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.de.png "Veranstalter-Einstellungen: Allgemein")
 
 Die Felder "Name" und "Kurzform" sind bereits ausgefüllt.
 Da die Kurzform der eindeutige Identifikator des Veranstalters ist, können wir sie nicht ändern.
@@ -67,7 +67,7 @@ Indem wir auf den Button :btn:Speichern: klicken, bestätigen wir unsere Änderu
 
 ## Lokalisierung
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Lokalisierung", die die offiziellen Sprachoptionen Englisch, Deutsch und Deutsch (Du) sowie eine Liste der Community-Übersetzungen von Arabisch bis Kroatisch zeigt](../../assets/screens/organizer/localization.png "Veranstalter-Einstellungen: Lokalisierung\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Lokalisierung", die die offiziellen Sprachoptionen Englisch, Deutsch und Deutsch (Du) sowie eine Liste der Community-Übersetzungen von Arabisch bis Kroatisch zeigt](../../assets/screens/organizer/localization.de.png "Veranstalter-Einstellungen: Lokalisierung")
 
 Nachdem wir die allgemeinen Einstellungen gespeichert haben, wechseln wir jetzt zum Reiter :btn:"Lokalisierung".
 
@@ -95,7 +95,7 @@ Die Lokalisierungseinstellungen legen fest, welche Anpassungsmöglichkeiten dort
 
 ## Veranstalterseite
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Veranstalterseite", die die folgenden Optionen zeigt: Header-Bild, Volle Höhe des Header-Bildes verwenden, Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde, Text auf der Statseite in mehreren Sprachen. Der Button "Öffentliche Ansicht" in der Kopfzeile ist hervorgehoben.](../../assets/screens/organizer/organizer-page-public-profile.png "Veranstalter-Einstellungen: Veranstalterseite\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Veranstalterseite", die die folgenden Optionen zeigt: Header-Bild, Volle Höhe des Header-Bildes verwenden, Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde, Text auf der Statseite in mehreren Sprachen. Der Button "Öffentliche Ansicht" in der Kopfzeile ist hervorgehoben.](../../assets/screens/organizer/organizer-page-public-profile.de.png "Veranstalter-Einstellungen: Veranstalterseite")
 
 Wenn wir oben auf den Reiter :btn:Veranstalterseite: wechseln, können wir unser Logo hinzufügen und die Farben der Benutzeroberfläche unseres Shops anpassen.
 
@@ -112,12 +112,12 @@ Das Header-Bild ersetzt den Namen der Veranstaltung oben auf der Seite.
 Wir aktivieren das Kontrollkästchen neben "Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde".
 
 In den Feldern "Text auf der Startseite" können wir Text eingeben, der in unserer öffentlichen Ansicht angezeigt werden soll.
-Für jede Sprache, die wir auf dem Reiter :btn:Lokalisierung: aktiviert haben (siehe Abschnitt "[Lokalisierung](#localization)" in diesem Artikel), gibt es ein Feld – Englisch und Deutsch (Du).
+Für jede Sprache, die wir auf dem Reiter :btn:Lokalisierung: aktiviert haben (siehe Abschnitt "[Lokalisierung](#lokalisierung)" in diesem Artikel), gibt es ein Feld – Englisch und Deutsch (Du).
 In unserer öffentlichen Ansicht können die Nutzer\*innen über die Links in der oberen rechten Ecke zwischen diesen Sprachen wechseln.
 
 ## Datenschutz
 
-![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Datenschutz", die Eingabefelder für die URLs zu einer Datenschutzerklärung in verschiedenen Sprachen, ein großes blaues Feld mit rechtlichen Hinweisen und vorausgefüllte Textfelder für den Dialog "Datenschutzeinstellungen" zeigt](../../assets/screens/organizer/privacy.png "Veranstalter-Einstellungen: Datenschutz\"")
+![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Datenschutz", die Eingabefelder für die URLs zu einer Datenschutzerklärung in verschiedenen Sprachen, ein großes blaues Feld mit rechtlichen Hinweisen und vorausgefüllte Textfelder für den Dialog "Datenschutzeinstellungen" zeigt](../../assets/screens/organizer/privacy.de.png "Veranstalter-Einstellungen: Datenschutz")
 
 Auf dem Reiter :btn:Datenschutz: können wir für jede von uns aktivierte Sprache eine URL angeben, die auf unsere Datenschutzerklärung verweist.
 
@@ -160,4 +160,4 @@ Das Team wird das Konto in Kürze aktivieren.
 
 ## Abschluss
 
-Nachdem die grundlegende Einrichtung unseres Kontos abgeschlossen ist und wir auf die Aktivierung warten, können wir jetzt [unsere erste Veranstaltungsreihe erstellen](event.md).
+Nachdem die grundlegende Einrichtung unseres Kontos abgeschlossen ist und wir auf die Aktivierung warten, können wir jetzt [unsere erste Veranstaltungsreihe erstellen](event.de.md).

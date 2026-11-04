@@ -24,7 +24,7 @@ Bei allen Versionen von pretix können wir Zahlungen per Banküberweisung überw
 
 <br>
 
-![Seite mit dem Titel "Zahlungseinstellungen" auf dem Reiter "Zahlungsdienstleister" Es gibt eine Liste von Zahlungsdienstleistern: Banküberweisung, Wertgutschein, PayPal, SEPA-Lastschrift und Stripe.](../../assets/screens/payment/settings.de.png "Zahlungseinstellungen")
+![Seite mit dem Titel "Zahlungseinstellungen" auf dem Reiter "Zahlungsdienstleister". Es gibt eine Liste von Zahlungsdienstleistern: Banküberweisung, Wertgutschein, PayPal, SEPA-Lastschrift und Stripe.](../../assets/screens/payment/settings.de.png "Zahlungseinstellungen")
 
 Um Zahlungsdienstleister einzurichten, navigieren wir zu unserer persönlichen Übersicht, indem wir auf :btn-icon:i-pretix:pretix.eu: in der oberen linken Ecke der Webseite klicken.
 Anschließend wählen wir in der Liste "Ihre nächsten Veranstaltungen" unsere Veranstaltungsreihe aus und öffnen :btn-icon:fa3-wrench: Einstellungen: in der Seitenleiste.
@@ -42,7 +42,7 @@ Standardmäßig sind alle Zahlungsdienstleister mit Ausnahme von Wertgutscheinen
 
 ### Stripe
 
-![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Stripe", die ein Feld mit einer rechtlichen Warnung sowie Buttons zum Verbinden mit Stripe zeigt.](../../assets/screens/payment/stripe.de.png "Stripe-Einstellungen\"")
+![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Stripe", die ein Feld mit einer rechtlichen Warnung sowie Buttons zum Verbinden mit Stripe zeigt.](../../assets/screens/payment/stripe.de.png "Stripe-Einstellungen")
 
 Zuerst aktivieren wir Stripe, indem wir auf den Button :btn-icon:fa3-gear:Settings: daneben klicken.
 Dadurch gelangen wir auf die Seite mit den Zahlungseinstellungen für Stripe.
@@ -61,7 +61,7 @@ Jetzt können Kund\*innen in unserem Shop per Kreditkarte über Stripe bezahlen.
 
 ### Banküberweisungen
 
-![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Banküberweisung", die Optionen für die Art der Bankverbindung, Bankdaten, Details sowie für die Aktivierung der Zahlungsmethode zeigt.](../../assets/screens/payment/bank-transfer.de.png "Einstellungen für Banküberweisungen\"")
+![Seite mit dem Titel "Zahlungseinstellungen – Zahlungsdienstleister: Banküberweisung", die Optionen für die Art der Bankverbindung, Bankdaten, Details sowie für die Aktivierung der Zahlungsmethode zeigt.](../../assets/screens/payment/bank-transfer.de.png "Einstellungen für Banküberweisungen")
 
 Außerdem aktivieren wir Banküberweisungen, indem wir zu :navpath:Veranstaltung → Einstellungen → Zahlung: navigieren.
 Dort öffnen wir die Einstellungen für Banküberweisungen.
@@ -78,7 +78,7 @@ Neben den Optionen "Banküberweisung", "Wertgutschein" und "Stripe" sollte nun j
     Bei pretix Hosted können Sie automatische Bankimporte einrichten.
     Bei pretix Community und pretix Enterprise müssen Sie die pretix-Software über eingehende Zahlungen informieren.
     Dafür können Sie die Zahlungen entweder manuell als abgeschlossen markieren oder regelmäßig digitale Kontoauszüge importieren.
-    Lesen Sie unseren Guide zum Thema "[Eingehende Zahlungen überwachen](../../guides/payment/bank-transfer.md#monitoring-incoming-payments-automatically)", bevor Sie Banküberweisungen als Zahlungsmethode in Ihrem Shop nutzen.
+    Lesen Sie unseren Guide zum Thema "[Eingehende Zahlungen überwachen](../../guides/payment/bank-transfer.de.md#zahlungseingange-automatisch-uberwachen)", bevor Sie Banküberweisungen als Zahlungsmethode in Ihrem Shop nutzen.
 
 Weitere Informationen zur Nutzung von Banküberweisungen finden Sie unter "[Banküberweisungen](../../guides/payment/bank-transfer.de.md)".
 

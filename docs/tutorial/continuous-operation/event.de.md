@@ -4,10 +4,10 @@ Nachdem Sie ein Veranstalterkonto eingerichtet haben, ist der nächste Schritt, 
 Dieser Artikel beschreibt, wie Sie eine Veranstaltungsreihe anlegen und grundlegend einrichten.
 Hier ist ein kurzer Überblick über die Schritte dieses Abschnitts:
 
-- [eine Veranstaltungsreihe erstellen](event.md#event-creation)
-- sich auf der Übersicht über den Status der Veranstaltungsreihe [einen Überblick verschaffen](event.md#event-level-dashboard)
-- die Erfassung von [Kund\*innen- und Teilnehmerdaten](event.md#customer-and-attendee-data) aktivieren
-- dem Ticketshop [Bilder hinzufügen](event.md#shop-design)
+- [eine Veranstaltungsreihe erstellen](#eine-veranstaltung-erstellen)
+- sich auf der Übersicht über den Status der Veranstaltungsreihe [einen Überblick verschaffen](#veranstaltungs-ubersicht)
+- die Erfassung von [Kund\*innen- und Teilnehmerdaten](#kunden--und-teilnehmerdaten) aktivieren
+- dem Ticketshop [Bilder hinzufügen](#shop-design)
 
 Das sind alle notwendigen Schritte, um eine Veranstaltungsreihe zu erstellen.
 Im folgenden Artikel dieses Tutorials fahren wir dann damit fort, unsere Produkte an unsere Bedürfnisse anzupassen.
@@ -21,7 +21,7 @@ Jetzt klicken wir auf den Button :btn-icon:fa3-plus:Neue Veranstaltung erstellen
 
 <br>
 
-![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 1", die Optionen zur Auswahl eines Veranstalterkontos, der Veranstaltungsart sowie der Sprachen zeigt.](../../assets/screens/event-series/create-event-series1.png "Neue Veranstaltung erstellen Schritt 1\"")
+![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 1", die Optionen zur Auswahl eines Veranstalterkontos, der Veranstaltungsart sowie der Sprachen zeigt.](../../assets/screens/event-series/create-event-series1.de.png "Neue Veranstaltung erstellen Schritt 1")
 
 Da eine Veranstaltung in pretix immer mit einem Veranstalterkonto verknüpft ist, müssen wir hier eines wählen.
 Wir wählen den Veranstalter, der diese Veranstaltung ausrichtet.
@@ -47,7 +47,7 @@ Sobald wir mit unserer Auswahl zufrieden sind, klicken wir auf den Button :btn:W
 
 {% include "note-translations.md" %}
 
-![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 2", die Optionen zur Auswahl von Veranstaltungstitel, Kurzform, Datum, Veranstaltungsort und Geo-Koordinaten für die Veranstaltung zeigt. Nicht abgebildet: Veranstaltungswährung, Umsatzsteuersatz, Zeitzone und Start- und Enddatum des Vorverkaufs.](../../assets/screens/event/create-event2.png "Neue Veranstaltung erstellen Schritt 2\"")
+![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 2", die Optionen zur Auswahl von Veranstaltungstitel, Kurzform, Datum, Veranstaltungsort und Geo-Koordinaten für die Veranstaltung zeigt. Nicht abgebildet: Veranstaltungswährung, Umsatzsteuersatz, Zeitzone und Start- und Enddatum des Vorverkaufs.](../../assets/screens/event/create-event2.de.png "Neue Veranstaltung erstellen Schritt 2")
 
 Wir werden nun aufgefordert, einen Titel und eine Kurzform für die Veranstaltungsreihe anzugeben.
 Für dieses Tutorial erstellen wir einen Shop für die Saison 2027.
@@ -89,7 +89,7 @@ Sobald wir mit unserer Auswahl zufrieden sind, klicken wir den Button :btn:Weite
 
 <br>
 
-![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 3", die eine Infobox zeigt, in der der Benutzer aufgefordert wird, alle Einstellungen sorgfältig zu überprüfen. Außerdem gibt es die Option, Einstellungen aus einer zuvor erstellten Veranstaltung zu importieren.](../../assets/screens/event/create-event3.png "Neue Veranstaltung erstellen Schritt 3\"")
+![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 3", die eine Infobox zeigt, in der der Benutzer aufgefordert wird, alle Einstellungen sorgfältig zu überprüfen. Außerdem gibt es die Option, Einstellungen aus einer zuvor erstellten Veranstaltung zu importieren.](../../assets/screens/event/create-event3.de.png "Neue Veranstaltung erstellen Schritt 3")
 
 Anschließend werden wir gefragt, ob wir Informationen aus einer zuvor erstellten Veranstaltung kopieren möchten.
 Diese Option kann uns ab der zweiten Veranstaltung viel Arbeit ersparen.
@@ -97,7 +97,7 @@ Da dies aber die erste Veranstaltung ist, die wir mit diesem Veranstalterkonto o
 
 <br>
 
-![Seite mit dem Titel "Herzlichen Glückwunsch! Sie haben gerade eine Veranstaltung erstellt!", die einen Button zum Erstellen eines ersten Produkts sowie zehn Reiter zum Wechseln zu verschiedenen Einstellungen zeigt.](../../assets/screens/event-series/create-event-series4.png "Neue Veranstaltung erstellen Schritt 4\"")
+![Seite mit dem Titel "Herzlichen Glückwunsch! Sie haben gerade eine Veranstaltung erstellt!", die einen Button zum Erstellen eines ersten Produkts sowie zehn Reiter zum Wechseln zu verschiedenen Einstellungen zeigt.](../../assets/screens/event-series/create-event-series4.de.png "Neue Veranstaltung erstellen Schritt 4")
 
 pretix bringt uns jetzt zur Seite mit den allgemeinen Einstellungen für die Veranstaltungsreihe.
 Im Feld "Kontakt-E-Mail" geben wir eine allgemeine E-Mail-Adresse an, unter der unsere Kund\*innen uns erreichen können.
@@ -117,7 +117,7 @@ Wir können die Veranstaltungs-Übersicht aufrufen, indem wir oben links den But
 Die Veranstaltungs-Übersicht gibt uns einen Überblick über die grundlegenden Informationen und den Status der Veranstaltung.
 Sie ermöglicht uns, interne Kommentare für uns selbst oder unser Team zu hinterlassen, und protokolliert die letzten Änderungen.
 
-![Screenshot der Übersicht für eine Beispielveranstaltung mit dem Titel "Tutorial-Konferenz", der den Veranstaltungstitel, Buttons zum Teilen der Veranstaltung, den Zeitplan, eine Übersicht über Bestellungen, Zahlungen und verbleibende Tickets sowie ein Feld für interne Kommentare zeigt. Nicht abgebildet: Veranstaltungs-Protokolle zu den letzten Änderungen.](../../assets/screens/event-series/event-dashboard.png "Veranstaltungs-Übersicht\"")
+![Screenshot der Übersicht für eine Beispielveranstaltung mit dem Titel "Tutorial-Konferenz", der den Veranstaltungstitel, Buttons zum Teilen der Veranstaltung, den Zeitplan, eine Übersicht über Bestellungen, Zahlungen und verbleibende Tickets sowie ein Feld für interne Kommentare zeigt. Nicht abgebildet: Veranstaltungs-Protokolle zu den letzten Änderungen.](../../assets/screens/event-series/event-dashboard.de.png "Veranstaltungs-Übersicht")
 
 Derzeit wird in der Übersicht wahrscheinlich eine Warnung angezeigt, dass unser Veranstalterkonto noch nicht aktiv ist.
 Wenn wir diese Warnung zum ersten Mal sehen, klicken wir den Link und geben die erforderlichen Informationen in das Formular ein.
@@ -150,7 +150,7 @@ Um diese Einstellungen zu speichern, klicken wir den Button :btn:Speichern:.
 
 ## Shop-Design
 
-![Screenshot des Reiters "Shop-Design", der Optionen für das Header-Bild und das Social-Media-Bild sowie einen gesperrten Bereich am unteren Rand zeigt.](../../assets/screens/event/shop-design.png "Veranstaltung Shop-Design\"")
+![Screenshot des Reiters "Shop-Design", der Optionen für das Header-Bild und das Social-Media-Bild sowie einen gesperrten Bereich am unteren Rand zeigt.](../../assets/screens/event/shop-design.de.png "Veranstaltung Shop-Design")
 
 Wenn wir oben auf den Reiter "Shop-Design" wechseln, können wir Bilder zu unserem Ticketshop hinzufügen und dessen Farben anpassen.
 Ein Klick auf den Button :btn-icon:fa3-eye:Shop aufrufen: in der Leiste oben führt uns zu einer Vorschau des Shops aus Sicht der Kund\*innen.

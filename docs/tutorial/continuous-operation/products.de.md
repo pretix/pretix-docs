@@ -6,17 +6,17 @@ Es ist nicht möglich, Termine festzulegen, ohne vorher die Produkte vorzubereit
 
 In diesem Artikel behandeln wir den Prozess, wie man die folgenden Produkte erstellt und in unserem Shop verfügbar macht:
 
-- ein einfaches [Zutrittsticket](products.md#creating-and-editing-products)
-- ein [Ermäßigtes Ticket](products.md#discount-ticket) für Studierende
-- ein Ticket für unsere [Führung](#guided-tour-tickets) (sowie eine ermäßigte Variante)
+- ein einfaches [Zutrittsticket](#produkte-erstellen-und-bearbeiten)
+- ein [Ermäßigtes Ticket](#ermaigtes-ticket) für Studierende
+- ein Ticket für unsere [Führung](#fuhrungs-tickets) (sowie eine ermäßigte Variante)
 
-Zunächst werden wir [Kategorien anlegen](products.md#creating-and-editing-categories), in die wir unsere Produkte einordnen können.
+Zunächst werden wir [Kategorien anlegen](#kategorien-erstellen-und-bearbeiten), in die wir unsere Produkte einordnen können.
 Anschließend erstellen wir die Produkte selbst.
 Zuletzt werden wir Kontingente mit unbegrenzter Anzahl für unsere Zutrittstickets einrichten.
 
 ## Kategorien erstellen und bearbeiten
 
-![Seite mit dem Titel "Produktkategorien", die eine Liste von Kategorien zeigt, die nur aus dem Eintrag "Tickets" besteht, sowie ein Button mit der Aufschrift "Kategorie erstellen".](../../assets/screens/products/categories.png "Produktkategorien\"")
+![Seite mit dem Titel "Produktkategorien", die eine Liste von Kategorien zeigt, die nur aus dem Eintrag "Tickets" besteht, sowie ein Button mit der Aufschrift "Kategorie erstellen".](../../assets/screens/products/categories.de.png "Produktkategorien")
 
 Kategorien helfen uns dabei, Produkte sowohl im Backend als auch in unserem Shop in sinnvolle Gruppen einzuteilen.
 Außerdem unterscheiden sie zwischen Produkten, die Kunden einzeln erwerben können, und Zusatz- sowie Cross-Selling-Produkten.
@@ -44,7 +44,7 @@ Auf dieser Seite sind nun zwei Einträge aufgeführt: "Vollpreis-Tickets" und un
 
 ## Produkte erstellen und bearbeiten
 
-![Seite mit dem Titel "Produkte", die eine Liste von Produkten zeigt, die aus zwei Einträgen besteht, sowie ein Button mit der Aufschrift "Neues Produkt erstellen".](../../assets/screens/products/products.png "Produkte\"")
+![Seite mit dem Titel "Produkte", die eine Liste von Produkten zeigt, die aus zwei Einträgen besteht, sowie ein Button mit der Aufschrift "Neues Produkt erstellen".](../../assets/screens/products/products.de.png "Produkte")
 
 Nachdem wir die erforderlichen Kategorien für unsere Produkte angelegt haben, können wir jetzt die vorhandenen Produkte entsprechend unseren Anforderungen bearbeiten oder neue Produkte erstellen.
 
@@ -65,7 +65,7 @@ Dann klicken wir auf den Button :btn:Speichern:.
 
 ### Ermäßigtes Ticket
 
-![Seite mit dem Titel "Produkt hinzufügen", die Optionen wie Produktbezeichnung, Produkt-Informationen kopieren, Produkttyp und Personalisierung zeigt.](../../assets/screens/products/create.png "Produkt hinzufügen\"")
+![Seite mit dem Titel "Produkt hinzufügen", die Optionen wie Produktbezeichnung, Produkt-Informationen kopieren, Produkttyp und Personalisierung zeigt.](../../assets/screens/products/create.de.png "Produkt hinzufügen")
 
 Jetzt erstellen wir das ermäßigte Ticket basierend auf dem Ticket "Regulärer Eintritt", das wir im vorherigen Schritt bearbeitet haben.
 Diese Vorgehensweise hat zwei Vorteile: Erstens müssen wir nicht alle Schritte wiederholen, und zweitens riskieren wir nicht, einen Schritt zu vergessen.
@@ -135,7 +135,7 @@ Die Liste zeigt außerdem die Gesamtanzahl und die Anzahl der noch verfügbaren 
 
 ### Kontingente für Tickets
 
-![Seite mit dem Titel "Kontingente", die eine Liste der Kontingente anzeigt, darunter das Kontingent für reduzierte Tickets mit einer Anzahl von 50 und das Kontingent für Standard-Tickets mit einer Anzahl von 100.](../../assets/screens/products/quotas.png "Kontingente\"")
+![Seite mit dem Titel "Kontingente", die eine Liste der Kontingente anzeigt, darunter das Kontingent für reduzierte Tickets mit einer Anzahl von 50 und das Kontingent für Standard-Tickets mit einer Anzahl von 100.](../../assets/screens/products/quotas.de.png "Kontingente")
 
 Zunächst bearbeiten wir ein Kontingent für unsere regulären und unsere ermäßigten Tickets.
 Wir können nicht im Voraus planen, wie viele der verkauften Tickets ermäßigte Tickets sein werden.
@@ -161,4 +161,4 @@ Wir werden diese Kontingente später zusammen mit den Terminen festlegen.
 ## Abschluss
 
 Wir haben alle Tickets und sonstigen Produkte, die wir in unserem Shop verkaufen möchten, angelegt, sie in Kategorien sortiert und zwei von ihnen zu Kontingenten zugeordnet.
-Im nächsten Schritt legen wir Termine fest, für die unsere Kunden diese Produkte kaufen können.
+Im nächsten Schritt legen wir [Termine](dates.de.md) fest, für die unsere Kunden diese Produkte kaufen können.
