@@ -30,10 +30,10 @@ Diese Tickets sind "Regulärer Eintritt" und "Ermäßigter Eintritt".
 Dann klicken wir den Button :btn:Speichern:.
 
 !!! Note
-Wenn alle Termine einer Veranstaltungsreihe denselben Titel haben, wird dieser Titel in der Kalenderansicht des Shops nicht angezeigt.
-Die in diesem Abschnitt beschriebene Einrichtung führt daher zu einer Kalenderansicht voller unspezifischer Termineinträge.
-Sobald es mindestens einen Termin mit einem anderen Titel gibt, werden in der Kalenderansicht wieder alle Termintitel angezeigt.
-Wenn Sie den Anweisungen im [nächsten Abschnitt](#creating-dates-for-special-events) folgen, löst sich dieses Problem von selbst.
+    Wenn alle Termine einer Veranstaltungsreihe denselben Titel haben, wird dieser Titel in der Kalenderansicht des Shops nicht angezeigt.
+    Die in diesem Abschnitt beschriebene Einrichtung führt daher zu einer Kalenderansicht voller unspezifischer Termineinträge.
+    Sobald es mindestens einen Termin mit einem anderen Titel gibt, werden in der Kalenderansicht wieder alle Termintitel angezeigt.
+    Wenn Sie den Anweisungen im [nächsten Abschnitt](#creating-dates-for-special-events) folgen, löst sich dieses Problem von selbst.
 
 ## Sondertermine erstellen
 

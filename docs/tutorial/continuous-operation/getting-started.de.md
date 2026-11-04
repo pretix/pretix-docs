@@ -1,6 +1,6 @@
 # Erste Schritte
 
-Willkommen beim pretix-Tutorial! 
+Willkommen beim pretix-Tutorial!
 In diesem Tutorial durchlaufen wir alle notwendigen Schritte, um unseren ersten Ticketshop mit pretix einzurichten.
 Zur Veranschaulichung erstellen wir einen Museums-Shop.
 Wir wollen Tickets für die regulären Öffnungszeiten des Museum sowie für Führungen verkaufen.
@@ -9,8 +9,8 @@ Wir werden konkrete Beispiele für unseren Veranstalter, die Veranstaltung und d
 Ersetzen Sie diese Beispiele gerne durch Ihre eigenen, wenn Sie Ihre Veranstaltung entsprechend Ihren Anforderungen erstellen.
 
 !!! Note
-Dieses Tutorial zeigt Ihnen, wie Sie einen Ticketshop für eine Einrichtung mit **Dauerbetrieb** einrichten, beispielsweise für ein öffentliches Schwimmbad, einen Freizeitpark oder ein Museum.
-Wenn Sie einen Ticket-Shop für **Einzelveranstaltungen** wie Konferenzen, Conventions oder Festivals erstellen möchten, sehen Sie sich stattdessen das Tutorial für [Einzelveranstaltung](../single-events/getting-started.md) an.
+    Dieses Tutorial zeigt Ihnen, wie Sie einen Ticketshop für eine Einrichtung mit **Dauerbetrieb** einrichten, beispielsweise für ein öffentliches Schwimmbad, einen Freizeitpark oder ein Museum.
+    Wenn Sie einen Ticket-Shop für **Einzelveranstaltungen** wie Konferenzen, Conventions oder Festivals erstellen möchten, sehen Sie sich stattdessen das Tutorial für [Einzelveranstaltung](../single-events/getting-started.md) an.
 
 pretix ist quelloffene Software.
 Sie können sie entweder in der Cloud oder auf Ihrem eigenen Server nutzen.
@@ -37,9 +37,9 @@ Wir können nach Herzenslust mit der pretix-Software experimentieren, bevor wir 
 Kosten entstehen erst beim Verkauf von echten Tickets.
 
 !!! Note
-Falls Ihr Firma, Ihr Organisation oder Ihre Institution bereits über ein Veranstalterkonto verfügt, ist es nicht erforderlich, ein neues Konto anzulegen.
-Sie können stattdessen Ihre Mitveranstalter bitten, Ihnen eine Einladung zu senden und Sie zum Team hinzuzufügen.
-Eine Anleitung dazu, wie Sie jemanden in ein Team einladen können, finden Sie in unserem [Guide zum Thema Teams](../../guides/teams.md#inviting-someone-to-your-team).
+    Falls Ihr Firma, Ihr Organisation oder Ihre Institution bereits über ein Veranstalterkonto verfügt, ist es nicht erforderlich, ein neues Konto anzulegen.
+    Sie können stattdessen Ihre Mitveranstalter bitten, Ihnen eine Einladung zu senden und Sie zum Team hinzuzufügen.
+    Eine Anleitung dazu, wie Sie jemanden in ein Team einladen können, finden Sie in unserem [Guide zum Thema Teams](../../guides/teams.md#inviting-someone-to-your-team).
 
 ![pretix.eu, eine Webseite, auf der pretix und dessen wichtigsten Funktionen vorgestellt werden. Auf der rechten Seite befindet sich eine Schaltfläche mit der Aufschrift "Ticketshop erstellen".](../../assets/screens/account/pretix-eu.png "pretix.eu")
 
@@ -60,7 +60,7 @@ Jedes Teammitglied sollte einen eigenen persönlichen Login haben.
 Wenn auch andere Mitglieder unseres Teams Zugriff auf das System haben sollen, können wir sie im weiteren Verlauf [einladen](../../guides/teams.md#inviting-someone-to-your-team).
 
 !!! Warning
-Die **Kurzform** ist der eindeutige Identifikator Ihrer Firma im pretix-Backend.
+    Die **Kurzform** ist der eindeutige Identifikator Ihrer Firma im pretix-Backend.
     pretix wird sie auch in der Shop-URL verwenden.
     Wählen Sie die Kurzform sorgfältig aus.
     Bestätigen Sie Ihre Eingabe erst dann, wenn Sie mit Ihrer Auswahl zufrieden sind.
