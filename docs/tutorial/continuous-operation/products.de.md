@@ -20,7 +20,8 @@ Zuletzt werden wir Kontingente mit unbegrenzter Anzahl für unsere Zutrittsticke
 
 Kategorien helfen uns dabei, Produkte sowohl im Backend als auch in unserem Shop in sinnvolle Gruppen einzuteilen.
 Außerdem unterscheiden sie zwischen Produkten, die Kunden einzeln erwerben können, und Zusatz- sowie Cross-Selling-Produkten.
-Für unser Museum benötigen wir keine Zusatz- oder Cross-Selling-Produkte, aber wir werden in unserem Shop sowohl Tickets zum Vollpreis als auch ermäßigte Tickets verkaufen.
+Für unser Museum benötigen wir keine Zusatz- oder Cross-Selling-Produkte. 
+Wir werden in unserem Shop aber sowohl Tickets zum Vollpreis als auch ermäßigte Tickets verkaufen.
 Das bedeutet, dass unser nächster Schritt darin besteht, eine Kategorie für diese ermäßigten Tickets anzulegen.
 
 Dazu navigieren wir zu unserer persönlichen Übersicht, indem wir oben links auf der Website :btn-icon:i-pretix: pretix.eu: klicken.
@@ -33,12 +34,13 @@ Wir klicken den Button :btn-icon:fa3-edit:: neben der Kategorie "Ticket" in der 
 Wir ändern die "Bezeichnung" in \`Vollpreis-Tickets\` und klicken den Button :btn:Speichern:.
 
 Wir navigieren zurück zur Seite "Produktkategorien".
-Dort klicken wir den Button :btn-icon:fa3-plus: Kategorie erstellen: und geben der Kategorie einen Namen wie beispielsweise "Ermäßigte Tickets". Unter "Art der Kategorie" wählen wir \`Normale Kategorie\` aus.
+Dort klicken wir den Button :btn-icon:fa3-plus: Kategorie erstellen: und geben der Kategorie einen Namen wie beispielsweise "Ermäßigte Tickets".
+Unter "Art der Kategorie" wählen wir `Normale Kategorie` aus.
 Da wir nicht vorhaben, für unser Museum Cross-Selling zu nutzen, sind die Cross-Selling-Kategorien für uns nicht relevant.
 Das Gleiche gilt für Zusatzkategorien.
 
 Ein Klick auf den Button :btn:Speichern: am Ende der Seite bringt uns zurück zur Seite mit den Produktkategorien.
-Auf dieser Seite sind nun zwei Einträge aufgeführt: "Tickets" und unsere neu erstellte Kategorie mit dem Namen "Ermäßigte Tickets".
+Auf dieser Seite sind nun zwei Einträge aufgeführt: "Vollpreis-Tickets" und unsere neu erstellte Kategorie mit dem Namen "Ermäßigte Tickets".
 
 ## Produkte erstellen und bearbeiten
 
@@ -59,7 +61,7 @@ Außerdem wählen wir aus dem Dropdown-Menü "Umsatzsteuer" den entsprechenden S
 
 {% include "note-tax-rules.md" %}
 
-Dann klicken wir den Button :btn:Speichern:.
+Dann klicken wir auf den Button :btn:Speichern:.
 
 ### Ermäßigtes Ticket
 
@@ -69,21 +71,23 @@ Jetzt erstellen wir das ermäßigte Ticket basierend auf dem Ticket "Regulärer 
 Diese Vorgehensweise hat zwei Vorteile: Erstens müssen wir nicht alle Schritte wiederholen, und zweitens riskieren wir nicht, einen Schritt zu vergessen.
 Das ist besonders nützlich, wenn Ihre Produkteinstellungen komplexer als in diesem Tutorial sind.
 
-"Reduziertes Ticket" benötigen wir nicht mehr. Wir navigieren zur Seite "Produkte".
-Dort klicken wir neben dem reduzierten Ticket den roten Button :btn-icon:fa3-trash:: und bestätigen, dass wir es löschen möchten.
+Das Produkt "Reduziertes Ticket" benötigen wir nicht mehr.
+Wir navigieren zur Seite "Produkte".
+Dort klicken wir neben dem reduzierten Ticket auf den roten Button :btn-icon:fa3-trash:: und bestätigen, dass wir es löschen möchten.
 
-Zurück im Produkt-Überblick klicken wir den Button :btn-icon:fa3-copy:: neben dem Ticket "Regulärer Eintritt", um es zu duplizieren.
+Zurück auf der Produkt-Übersicht klicken wir auf den Button :btn-icon:fa3-copy:: neben dem Ticket "Regulärer Eintritt", um es zu klonen.
 Wir nennen das neue Ticket "Ermäßigter Eintritt" und geben eine Übersetzung ein.
 Außerdem ändern wir den "Standardpreis" auf 8,00 € und klicken auf den Button :btn:Speichern:.
 
 !!! Note
 Oben auf der Seite wird nun in einem gelben Feld folgende Warnung angezeigt: "Bitte beachten Sie, dass das Produkt nicht verkauft wird, bevor Sie es zu einem bestehenden oder neuen Kontingent hinzugefügt haben."
 Diese Warnung erscheint immer, wenn Sie ein neues Produkt anlegen.
-Da wir uns im nächsten Abschnitt dieses Artikels damit befassen, Produkte zu Kontingenten hinzuzufügen, können wir diese Warnung vorerst ignorieren. Dadurch verschwindet die Warnung.
+Wir können diese Warnung vorerst ignorieren, da wir uns im nächsten Abschnitt dieses Artikels damit befassen, Produkte zu Kontingenten hinzuzufügen.
+Dadurch wird die Warnung verschwinden.
 
 Auf der nächsten Seite müssen wir das Feld "Beschreibung" anpassen.
 Dort informieren wir unsere Kund\*innen über die Voraussetzungen, um das ermäßigte Ticket zu erhalten.
-Unsere Beschreibung lautet: "Dieses Ticket ist nur gültig, wenn Sie beim Check-in einen Studentenausweis vorlegen."
+Unsere Beschreibung lautet: "Dieses Ticket ist nur gültig, wenn Sie beim Check-in einen Studierendenausweis vorlegen."
 
 Anschließend wechseln wir zum Reiter :btn:Preis:.
 Wir ändern den "Standardpreis" auf 8,00 € und den ursprünglichen Preis auf den Preis des Tickets "Regulärer Eintritt", also 10,00 €.
@@ -96,7 +100,7 @@ Dann klicken wir den Button :btn:Speichern:.
 
 ### Führungs-Tickets
 
-Wir werden ein weiteres Ticket für unsere Führung erstellen.
+Wir erstellen nun ein weiteres Ticket für unsere Führung.
 Dazu navigieren wir zur Seite "Produkte" und klicken auf den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
 Wir nennen unser neues Ticket "Führung" und geben eine englische Übersetzung an.
 Unter "Kategorie" wählen wir `Vollpreis-Tickets` aus.

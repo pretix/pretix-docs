@@ -1,7 +1,8 @@
 # Zahlung
 
-Wir möchten in unserem Shop nicht nur Tickets anbieten, sondern wir möchten auch dafür bezahlt werden.
-Darum kümmern wir uns in diesem Teil des Tutorials. Wir werden die folgenden Schritte durchführen:
+Wir möchten in unserem Shop nicht nur Tickets anbieten, sondern auch dafür bezahlt werden.
+Darum kümmern wir uns in diesem Teil des Tutorials.
+Wir werden die folgenden Schritte durchführen:
 
 - die Zahlung per Kreditkarte über [Stripe](payment.md#stripe) aktivieren
 - die Zahlung per [Banküberweisung](payment.md#bank-transfers) aktivieren

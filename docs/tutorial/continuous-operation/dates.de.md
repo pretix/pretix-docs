@@ -1,7 +1,7 @@
 # Termine
 
 Eine Veranstaltungsreihe enthält Termine.
-Termine sind immer Teil einer übergreifenden Veranstaltungsreihe, aber jeder Termin kann einen eigenen Veranstaltungsbeginn und ein Veranstaltungsende, einen eigenen Namen, eine eigene Beschreibung, eigene Produkte (und damit Preise) usw. haben.
+Termine sind immer Teil einer übergreifenden Veranstaltungsreihe, aber jeder Termin kann einen eigenen Beginn und ein Ende, einen eigenen Namen, eine eigene Beschreibung, eigene Produkte (und damit Preise) usw. haben.
 Dieser Artikel erklärt, wie man Termine zu einer Veranstaltungsreihe hinzufügt.
 
 Wir navigieren zu unserer persönlichen Übersicht, indem wir oben links auf der Website :btn-icon:i-pretix: pretix.eu: klicken.
@@ -16,7 +16,7 @@ Außerdem werden zwei Buttons angezeigt: einen zum Erstellen eines einzelnen neu
 ## Einen Termin für die regulären Öffnungszeiten erstellen
 
 Als Erstes legen wir einen Termin fest, der unsere regulären Öffnungszeiten für die Saison 2027 widerspiegelt.
-Dazu klicken wir den Button :btn-icon:fa3-plus:Neuen Termin erstellen:.
+Dazu klicken wir auf den Button :btn-icon:fa3-plus:Neuen Termin erstellen:.
 
 Wir geben im Feld "Veranstaltungstitel" `Regulärer Eintritt` ein.
 Unter "Veranstaltungsbeginn" geben wir `01.01.2027` und `08:00:00` ein.
@@ -39,8 +39,8 @@ Wenn Sie den Anweisungen im [nächsten Abschnitt](#creating-dates-for-special-ev
 
 Als Nächstes möchten wir wiederkehrende Führungen für unser Museum anbieten. 
 Unsere Führung findet in der ersten Hälfte des Jahres 2027 jeden Montag und Mittwoch um 10 Uhr statt. 
-Dazu werden wir mehrere neue Termine für diese Veranstaltungsreihe anlegen.
-Jetzt klicken wir den Button :btn-icon:fa3-plus:Mehrere neue Termine erstellen:.
+Dazu legen wir mehrere neue Termine für diese Veranstaltungsreihe an.
+Wir klicken auf den Button :btn-icon:fa3-plus:Mehrere neue Termine erstellen:.
 
 Im Feld "Regel zur Wiederholung" wählen wir Folgendes aus: "Wiederhole alle `1` `Woche(n)` mit Beginn am `01.01.2027`."
 Anschließend aktivieren wir die Kontrollkästchen neben "Montag" und "Mittwoch".
@@ -48,8 +48,8 @@ Wir aktivieren den Radiobutton neben "Wiederhole bis zum" und wählen als Datum 
 
 ![Seite mit dem Titel "Mehrere Termine erstellen", die Optionen zur Regel zur Wiederholung und Uhrzeiten sowie eine Vorschau der Termine, die erstellt werden sollen, zeigt.](../../assets/screens/event-series/create-multiple-example3.png "Beispiel für die Erstellung mehrerer Termine")
 
-Die "Vorschau" rechts auf der Seite hilft Ihnen, zu prüfen, ob unsere Wiederholungsregel die richtigen Termine erfasst.
-Dort werden die ersten zehn und die letzten zehn Termine angezeigt, die wir erstellen.
+Die "Vorschau" rechts auf der Seite ist hilfreich, um zu prüfen, ob unsere Wiederholungsregel die richtigen Termine erfasst.
+Sie zeigt die ersten zehn und die letzten zehn Termine an, die wir erstellen.
 
 Unter "Uhrzeiten" klicken wir den Button :btn-icon:fa3-plus: Einzelnes Zeitfenster hinzufügen:.
 Wir wählen als Veranstaltungsbeginn `10:00:00`, als Veranstaltungsende `12:00:00` und als Einlass `09:30:00`.

@@ -6,25 +6,25 @@ Hier ist ein kurzer Überblick über die Schritte dieses Abschnitts:
 
 - [eine Veranstaltungsreihe erstellen](event.md#event-creation)
 - sich auf der Übersicht über den Status der Veranstaltungsreihe [einen Überblick verschaffen](event.md#event-level-dashboard)
-- die Erfassung von [Kunden- und Teilnehmerdaten](event.md#customer-and-attendee-data) aktivieren
+- die Erfassung von [Kund\*innen- und Teilnehmerdaten](event.md#customer-and-attendee-data) aktivieren
 - dem Ticketshop [Bilder hinzufügen](event.md#shop-design)
 
 Das sind alle notwendigen Schritte, um eine Veranstaltungsreihe zu erstellen.
-Im nächsten Artikel dieses Tutorials fahren wir dann damit fort, unsere Produkte an unsere Bedürfnisse anzupassen.
+Im folgenden Artikel dieses Tutorials fahren wir dann damit fort, unsere Produkte an unsere Bedürfnisse anzupassen.
 
 ## Eine Veranstaltung erstellen
 
 Um eine Veranstaltungsreihe zu erstellen, müssen wir uns zuerst mit unserem [pretix-Konto](https://pretix.eu/control/) anmelden.
-Anschließend klicken wir den Button :btn:pretix.eu: in der oberen linken Ecke der Webseite und gelangen so zur Übersicht. 
+Anschließend klicken wir auf den Button :btn:pretix.eu: in der oberen linken Ecke der Webseite und gelangen so zur Übersicht. 
 Dort erhalten wir einen Überblick über unsere nächsten Veranstaltungen.
-Jetzt klicken wir den Button :btn-icon:fa3-plus:Neue Veranstaltung erstellen:.
+Jetzt klicken wir auf den Button :btn-icon:fa3-plus:Neue Veranstaltung erstellen:.
 
 <br>
 
 ![Seite mit dem Titel "Neue Veranstaltung erstellen – Schritt 1", die Optionen zur Auswahl eines Veranstalterkontos, der Veranstaltungsart sowie der Sprachen zeigt.](../../assets/screens/event-series/create-event-series1.png "\"Neue Veranstaltung erstellen Schritt 1\"")
 
-Da eine Veranstaltung in pretix immer mit einem Veranstalterkonto verknüpft ist, müssen wir hier eines auswählen.
-Wir wählen den Veranstalter aus, der diese Veranstaltung ausrichtet.
+Da eine Veranstaltung in pretix immer mit einem Veranstalterkonto verknüpft ist, müssen wir hier eines wählen.
+Wir wählen den Veranstalter, der diese Veranstaltung ausrichtet.
 In diesem Fall ist das der, den wir im vorherigen Schritt dieses Tutorials eingerichtet haben.
 Diese Auswahl können wir nicht mehr ändern, sobald wir die Veranstaltung erstellt haben. Daher müssen wir sicherstellen, dass wir hier das richtige Veranstalterkonto auswählen.
 
@@ -32,17 +32,18 @@ Wenn unser Konto nur auf ein einziges Veranstalterkonto Zugriff hat, wählt pret
 
 Als Nächstes müssen wir die Veranstaltungsart auswählen.
 Es gibt zwei Optionen: "Einzelveranstaltung oder Shop, der keine Veranstaltung ist" und "Veranstaltungsreihe oder Zeitslotbuchung".
-Für dieses Tutorial möchten wir einen Museumsshop erstellen, der mehrere Tage in der Woche über eine ganze Saison hinweg geöffnet ist.
+Für dieses Tutorial möchten wir einen Shop für ein Museum erstellen, das über eine ganze Saison hinweg mehrere Tage in der Woche geöffnet ist.
 Daher wählen wir die Option "Veranstaltungsreihe oder Zeitslotbuchung".
 
-Wir legen fest, welche Sprachen für die Veranstaltungsreihe verwendet werden sollen.
+Wir legen fest, welche Sprachen wir für die Veranstaltung verwenden wollen. 
 Standardmäßig sollten die Sprachen aktiv sein, die wir bei der Einrichtung des Veranstalterkontos ausgewählt haben.
 Wir aktivieren oder deaktivieren die Sprachen nach Bedarf.
 
-Es ist zwar möglich, Sprachen später hinzuzufügen oder zu entfernen, aber wir finalisieren unsere Entscheidung jetzt schon.
+Es ist zwar möglich, Sprachen später hinzuzufügen oder zu entfernen.
+Wir werden uns aber dennoch bereits jetzt festlegen. 
 So behalten wir den Überblick darüber, welche Übersetzungen wir noch hinzufügen müssen, beispielsweise für die Beschreibung unserer Veranstaltung.
 
-Sobald wir mit unserer Auswahl zufrieden sind, klicken wir den Button :btn:Weiter:.
+Sobald wir mit unserer Auswahl zufrieden sind, klicken wir auf den Button :btn:Weiter:.
 
 {% include "note-translations.md" %}
 
@@ -77,14 +78,14 @@ Wir müssen eine Währung für unsere Veranstaltungsreihe auswählen. Wir klicke
 
 Auf dieser Seite können wir außerdem einen Umsatzsteuersatz für unsere Veranstaltungsreihe festlegen.
 Es ist möglich, die Steuer-Regeln zu ändern, nachdem wir die Veranstaltungsreihe bereits angelegt haben.
-Unser Museum befindet sich in Deutschland, und für alle unsere Produkte gilt ein einheitlicher Prozentsatz.
+Unser Museum befindet sich in Deutschland und für alle unsere Produkte gilt ein einheitlicher Prozentsatz.
 Daher fügen wir hier eine Steuer-Regel von 19 % hinzu.
 
-{% include "note-tax-rules.md" %}
+{% include "note-tax-rules.de.md" %}
 
 Sobald wir mit unserer Auswahl zufrieden sind, klicken wir den Button :btn:Weiter:.
 
-{% include "warning-tax-rules.md" %}
+{% include "warning-tax.de.md" %}
 
 <br>
 
@@ -106,7 +107,8 @@ Diese beiden Angaben sind zwingend erforderlich, damit unser Ticket-Shop veröff
 
 Sobald wir unten auf der Seite :btn:Speichern: klicken, leitet uns pretix zu einem Überblick über die Veranstaltung weiter.
 Dieser Überblick enthält den Veranstaltungstitel und die Zeitpläne für den Ticket- und den Vorverkauf.
-Außerdem können wir den Status unseres Ticketshops sehen. Der Ticketshop sollte sich zu diesem Zeitpunkt im Testmodus befinden.
+Außerdem können wir den Status unseres Ticketshops sehen.
+Der Ticketshop sollte sich zu diesem Zeitpunkt im Testmodus befinden.
 
 ## Veranstaltungs-Übersicht
 
@@ -141,7 +143,7 @@ Unsere Erklärung lautet wie folgt: "Wir verwenden Ihren Namen, um auf Wunsch ei
 
 Unter "Formular-Einstellungen" können wir das Format auswählen, in dem pretix die Teilnehmer nach Namen und Titeln fragt.
 Wir wählen `Frage nach Titel + Vorname + Nachname, anzeigen als Dr. Max Mustermann` für Namen und `Freie Texteingabe` für Titel.
-Wenn Sie diese Einstellungen ändern, nachdem bereits Bestellungen eingegangen sind, kann dies zu Problemen beim Sortieren oder Ändern von Namen führen.
+Wenn wir diese Einstellungen ändern, nachdem bereits Bestellungen eingegangen sind, kann dies zu Problemen beim Sortieren oder Ändern von Namen führen.
 Daher legen wir unsere Auswahl hier endgültig fest, bevor wir den Ticketshop veröffentlichen.
 
 Um diese Einstellungen zu speichern, klicken wir den Button :btn:Speichern:.

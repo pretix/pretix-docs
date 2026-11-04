@@ -1,8 +1,8 @@
 # Veranstalterkonto
 
-Ein Veranstalterkonto steht für eine Entität, die Veranstaltungen durchführt, beispielsweise eine Firma, eine Institution oder eine Person.
+Ein Veranstalterkonto steht für eine Körperschaft, die Veranstaltungen durchführt, beispielsweise eine Firma, eine Institution oder eine Person.
 Im vorherigen Schritt haben wir ein Veranstalterkonto und unser persönliches Konto angelegt.
-Es ist auch möglich, (teilweisen) Zugriff auf ein Veranstalterkonto zu erhalten, indem uns ein Team-Mitglied einlädt und wir [ihre Einladung annehmen](../../guides/teams.md#accepting-an-invitation-to-a-team).
+Es ist auch möglich, (eingeschränkten) Zugriff auf ein Veranstalterkonto zu erhalten, indem wir uns von einem Team-Mitglied einladen lassen und wir [seine Einladung annehmen](../../guides/teams.md#accepting-an-invitation-to-a-team).
 
 In diesem Abschnitt des Tutorials werden wir unser Veranstalterkonto anpassen und die erforderlichen Informationen hinzufügen.
 Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Tutorial durchführen werden:
@@ -23,7 +23,8 @@ Falls sich unsere Anforderungen ändern sollten, können wir auch später noch j
 ![pretix.eu Übersicht, die Ihre nächsten Veranstaltungen, einen Button, um eine neue Veranstaltung zu erstellen, die E-Mail-Adresse des Kontos, das gerade angemeldet ist und eine Seitenleiste mit den folgenden Optionen: Übersicht, Veranstaltungen, Veranstalter, Suche, Benutzereinstellungen, Berichte, Versandliste zeigt](../../assets/screens/account/dashboard.png "\"Übersicht\"")
 
 Nachdem wir die Kontoerstellung abgeschlossen und uns unter [pretix.eu/control](https://pretix.eu/control/) angemeldet haben, werden wir von pretix mit der Übersicht begrüßt.
-Wir können jederzeit zu dieser Seite zurückkehren, indem wir oben in der Leiste den Button :btn-icon:i-pretix:pretix.eu: klicken. Ein Klick auf den Button :btn:Veranstalter: in der Seitenleiste bringt uns zur Seite "Veranstalter".
+Wir können jederzeit zu dieser Seite zurückkehren, indem wir oben in der Leiste den Button :btn-icon:i-pretix:pretix.eu: klicken.
+Ein Klick auf den Button :btn:Veranstalter: in der Seitenleiste bringt uns zur Seite "Veranstalter".
 
 <br>
 
@@ -42,7 +43,8 @@ Dadurch gelangen wir zur Seite mit den allgemeinen Einstellungen für das Verans
 
 ![Seite mit dem Titel "Veranstalter-Einstellungen" mit dem Reiter "Allgemein", die die folgenden Optionen zeigt: Name, Kurzform, Impressum (URL), Kontakt-E-Mail, Info-Text. Nicht abgebildet: Option "Erlaube das Erstellen neuer Teams während der Event-Erstellung", Button "Speichern"](../../assets/screens/organizer/general-settings.png "\"Veranstalter-Einstellungen: Allgemein\"")
 
-Die Felder "Name" und "Kurzform" sind bereits ausgefüllt. Weil die Kurzform der eindeutige Identifikator des Veranstalters ist, kann er nicht verändert werden.
+Die Felder "Name" und "Kurzform" sind bereits ausgefüllt.
+Da die Kurzform der eindeutige Identifikator des Veranstalters ist, können wir sie nicht ändern.
 
 Da wir unseren Sitz in Deutschland haben, sind wir gesetzlich dazu verpflichtet, auf allen unseren Webseiten bestimmte rechtliche Hinweise anzugeben.
 Deshalb werden wir die URL zum Impressum unserer Webseite in das Feld "Impressum (URL)" eingeben.
@@ -61,7 +63,7 @@ pretix ist ein leistungsstarkes Tool, das viele detaillierte Anpassungsmöglichk
 Dieses Tutorial behandelt alle notwendigen Schritte, um unseren Shop zu erstellen.
 Wird eine Einstellung in diesem Tutorial nicht erwähnt, ist es nicht erforderlich, diese Einstellung zu ändern.
 
-Durch einen Klick auf den Button :btn:Speichern: werden unsere Änderungen bestätigt.
+Indem wir auf den Button :btn:Speichern: klicken, bestätigen wir unsere Änderungen.
 
 ## Lokalisierung
 
@@ -83,12 +85,12 @@ Für unsere Beispielmuseum werden wir "Englisch" und "Deutsch" aktivieren.
 
 {% include "note-translations.md" %}
 
-Wir wählen \`Deutschland\` aus dem Dropdown-Menü "Region" am unteren Rand der Seite aus.
+In dem Dropdown-Menü "Region" am unteren Rand der Seite wählen wir `Deutschland`.
 pretix verwendet diese Auswahl, um die Standardformate für Datumsangaben, Uhrzeiten, Adressen und Telefonnummern festzulegen.
-Wir wählen \`Europa/Berlin\` als "Standardzeitzone" aus dem gleichnamigen Dropdown-Menü aus.
+Wir wählen `Europe/Berlin` als "Standardzeitzone" aus dem gleichnamigen Dropdown-Menü aus.
 
 Wir klicken den Button :btn:Speichern: um unsere Lokalisierungseinstellungen anzuwenden.
-Es ist sinnvoll, dies zu tun, bevor Sie Einstellungen auf den anderen Reitern ändern.
+Es ist sinnvoll, dies zu tun, bevor wir die Einstellungen auf den anderen Reitern ändern.
 Die Lokalisierungseinstellungen legen fest, welche Anpassungsmöglichkeiten dort verfügbar sind.
 
 ## Veranstalterseite
@@ -106,7 +108,8 @@ Standardmäßig wird in der Kopfzeile unserer Veranstalterseite der Name des Ver
 
 Wir fügen das Header-Bild hinzu, indem wir den Button :btn:Durchsuchen…: neben der Option "Header-Bild" klicken.
 Dort wählen wir von unserem Computer eine PNG-Datei mit einer Auflösung von 1140 × 120 Pixel aus.
-Das Header-Bild ersetzt den Namen der Veranstaltung oben auf der Seite. Wir aktivieren das Kontrollkästchen neben "Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde".
+Das Header-Bild ersetzt den Namen der Veranstaltung oben auf der Seite.
+Wir aktivieren das Kontrollkästchen neben "Benutze das Header-Bild auch für Veranstaltungen, für die kein eigenes Header-Bild hochgeladen wurde".
 
 In den Feldern "Text auf der Startseite" können wir Text eingeben, der in unserer öffentlichen Ansicht angezeigt werden soll.
 Für jede Sprache, die wir auf dem Reiter :btn:Lokalisierung: aktiviert haben (siehe Abschnitt "[Lokalisierung](#localization)" in diesem Artikel), gibt es ein Feld – Englisch und Deutsch (Du).
@@ -144,13 +147,13 @@ Wenn wir uns in einem anderen EU-Land als Deutschland befinden und die Umkehrung
 Sollten wir diese USt-ID nicht angeben, ist die pretix GmbH gezwungen, uns den Steuersatz des oben von uns angegebenen Landes in Rechnung zu stellen.
 
 Das pretix-Team bietet seinen Service auf Englisch und Deutsch an.
-Wir wählen Englisch als unsere bevorzugte Sprache für die Korrespondenz.
+Wir wählen Deutsch als unsere bevorzugte Sprache für die Korrespondenz.
 
 Als "Bevorzugte Zahlungsmethode" wählen wir \`Kreditkarte\`.
 Wir müssen unsere Kreditkartendaten eingeben und das Kontrollkästchen zur Autorisierung von Zahlungen aktivieren.
 Danach klicken wir den Button :btn:Speichern:.
 
-Falls noch erforderliche Angaben fehlen, werden wir auf der Seite darauf hingewiesen.
+Die Seite weist uns darauf hin, falls noch erforderliche Angaben fehlen.
 Wenn wir alle erforderlichen Angaben gemacht haben, erscheint oben auf der Seite ein grünes Häkchen mit der Meldung "Ihre Änderungen wurden gespeichert."
 Das bedeutet, dass wir unser Veranstalterkonto zur Überprüfung beim pretix-Team eingereicht haben.
 Das Team wird das Konto in Kürze aktivieren.
