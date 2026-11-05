@@ -24,7 +24,7 @@ Hier bieten wir Ihnen zwei verschiedene Tutorials an:
     - Messen
     - Festivals
 
-    veranstalten möchten, lesen Sie sie das Tutorial für
+    veranstalten möchten, lesen Sie das Tutorial für
 
     :fa3-arrow-right: [Einzelveranstaltungen](single-events/getting-started.de.md)
 
@@ -38,7 +38,7 @@ Hier bieten wir Ihnen zwei verschiedene Tutorials an:
     - einen Freizeitpark
     - ein Museum
 
-    lesen Sie sie das Tutorial für
+    lesen Sie das Tutorial für
 
     :fa3-arrow-right: [Dauerbetrieb](continuous-operation/getting-started.de.md)
 
