@@ -134,21 +134,25 @@ For example:
 
 We do not recommend using headlines of the first level, as pretix will already set the name of your event as a level-1 headline of the page and HTML pages should have only one headline on the first level.
 
-You can also use
+You can use either Markdown
 
 ``` markdown
 *****
 ```
-
-to create a horizontal line, like the following:
+Or HTML:
 
 ```{=html}
 <hr>
 ```
+
+To add a horizontal line such as the following:
+
+*****
+
 ## Using HTML
 
 You can also directly embed HTML code, if you want, although we recommend using Markdown, as it enables e.g. people using text-based email clients to get a better plain text representation of your text.
-Note however, that for security reasons you can only use the following HTML elements:
+For security reasons, you can only use the following HTML elements:
 
     a, abbr, acronym, b, br, code, div, em, h1, h2,
     h3, h4, h5, h6, hr, i, li, ol, p, pre, s, span, strong,
