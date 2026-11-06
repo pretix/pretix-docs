@@ -1,7 +1,7 @@
 # Ressourcen und Disposition
 
 Falls die Termine für Ihre Veranstaltungen von der Verfügbarkeit von Personal, Räumen, Technik oder sonstigen Ressourcen abhängen, sollten Sie die Erweiterung "Ressourcen und Disposition" verwenden.
-Mit dieser Erweiterung können Sie diese Ressourcen verwalten und die Termine Ihrer [Veranstaltungsreihe](event-series.de.md) entsprechend festlegen.
+Mit dieser Erweiterung können Sie Ihre Ressourcen verwalten und die Termine Ihrer [Veranstaltungsreihe](event-series.de.md) entsprechend festlegen.
 Dieser Artikel erklärt, wie Sie dazu vorgehen.
 
 ## Voraussetzungen
@@ -13,7 +13,7 @@ Diese Erweiterung enthält keine Funktionen, die sich für Einzelveranstaltungen
 
 Die Arbeit mit dieser Erweiterung besteht aus folgenden Schritten:
 
- 1. Die [Erweiterung aktivieren](#die-erweiterung-aktivieren), auf der Ebene von Veranstalter und Veranstaltungsreihe
+ 1. Die [Erweiterung aktivieren](#die-erweiterung-aktivieren), sowohl auf Ebene des Veranstalters, als auch auf der der Veranstaltungsreihe.
  2. [Ressourcentypen erstellen](#ressourcentypen-erstellen), etwa einen Typ für alle Guides oder einen für alle Räume
  3. Für Ressourcentypen [Eigenschaften verwalten](#eigenschaften-verwalten)
  4. [Konkrete Ressourcen erstellen](#konkrete-ressourcen-erstellen), beispielsweise konkrete Personen als Guides oder bestimmte Räume
@@ -22,7 +22,7 @@ Die Arbeit mit dieser Erweiterung besteht aus folgenden Schritten:
  7. [Ressourcen zu Terminen zuweisen](#ressourcen-zu-terminen-zuweisen), beispielsweise einen Guide zu einer Führung
  8. Alternativ Termine mit der Funktion [Schnellerfassung](#schnellerfassung) planen
 
-Die folgenden Abschnitte erklären alle Schritte ausführlich.
+Die folgenden Abschnitte erklären diese Schritte ausführlich.
 Außerdem erklärt dieser Artikel, wie Sie eine [Terminplanung bestätigen oder ablehnen](#disposition-bestatigen-oder-ablehnen), je nach Verfügbarkeit der benötigten Ressourcen zum geplanten Termin.
 Diese Information ist nützlich für diejenigen, die diese Ressource verwalten.
 
@@ -67,7 +67,7 @@ Für jede Art von Ressource, die Sie verwalten möchten, sollten Sie genau einen
 !!! Note
     Wir empfehlen, **so wenig Ressourcentypen wie möglich** zu erstellen.
     Wenn Sie beispielsweise Tour-Guides und Workshop-Lehrkräfte beschäftigen, sollten Sie nur einen einzigen Ressourcentyp anlegen, nämlich "Personal".
-    Darüber können Sie Personen verwalten, die sowohl als Tour-Guides als auch als Workshop-Lehrkräfte arbeiten.
+    Damit können Sie Personen verwalten, die sowohl als Tour-Guides als auch als Workshop-Lehrkräfte arbeiten.
 
     pretix überprüft nur innerhalb eines Ressourcentyps, ob es bei der Verfügbarkeit Konflikte gibt.
     Fügen Sie in pretix ein und dieselbe reale Ressource **nie** mehreren Ressourcentypen hinzu.
@@ -113,10 +113,10 @@ Klicken Sie den Button :btn:Speichern:.
 ### Eigenschaften verwalten
 
 Ressourcen sind in der Regel nicht austauschbar.
-Eine oder mehrere Eigenschaften, die für Buchungen relevant sind, können sich bei verschiedenen Ressourcen unterscheiden.
+Eine oder mehrere Eigenschaften, die für Buchungen relevant sind, können sich von Ressource zu Ressource unterscheiden.
 Beispielsweise sprechen die Guides eines Museums unterschiedliche Sprachen, kennen sich mit unterschiedlichen Ausstellungen aus oder können gut mit unterschiedlichen Zielgruppen umgehen.
-Konferenzräume bieten nicht immer ausreichend Platz oder die benötigten Sitzplätze oder sie verfügen über eine unterschiedliche technische Ausstattung.
-Mit pretix können Sie diese Eigenschaften beim Planen von Terminen berücksichtigen.
+Konferenzräume bieten nicht immer ausreichend Platz, die nötige Bestuhlung oder die gewünschte technische Ausstattung.
+Sie können pretix benutzen, um für das Planen von Terminen den Überblick über diese Eigenschaften zu behalten.
 
 Um die Eigenschaften eines Ressourcentyps zu bearbeiten, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-briefcase: Ressourcen → Typen:.
 Klicken Sie den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Ressourcentyp in der Liste.
@@ -135,7 +135,7 @@ Klicken Sie erneut denselben Button und geben Sie in das neue Feld `Toki Pona` e
 Ihr Ressourcentyp "Guide" hat jetzt die Eigenschaft "Sprachen" mit den möglichen Werten `Deutsch`, `Englisch` und `Toki Pona`.
 
 Diese Werte für eine Eigenschaft schließen sich nicht gegenseitig aus.
-Ein Guide kann eine beliebige Kombination aus diesen drei Sprachen beherrschen.
+Ein Guide kann eine beliebige Kombination dieser drei Sprachen beherrschen.
 
 ![Ein Ausschnitt der Seite 'Neuen Ressourcentyp erstellen' zeigt die Eigenschaften 'Languages' mit den Optionen English, German, Basque und Toki Pona; die Eigenschaft 'Audiences' mit den Optionen Adults, Teenagers und Children; sowie 'Knowledge' mit den Optionen Greece, Egypt und Sumer.](../assets/screens/resources-scheduling/properties-guides.de.png "Ressourcentyp Guide")
 
@@ -174,14 +174,14 @@ Wenn Ihr Ressourcentyp einen anderen Namen hat, heißt auch der Button anders.
 Wenn die Ressource, die Sie anlegen, ein Mensch ist, geben Sie dessen Namen bei "Name" ein.
 Wählen Sie unter "Sprache" die Sprache, in der Sie bei pretix mit dieser Person kommunizieren möchten.
 Sie können auch weitere Details eingeben: eine Telefonnummer, Adresse und externe Referenz dieser Person.
-Eine externe Referenz könnte die Personalnummer sein oder eine Zeichenfolge in einem System zum Ressourcen- oder Personalmanagement außerhalb von pretix.
+Eine externe Referenz könnte die Personalnummer sein oder ein Identifikator in einem System zum Ressourcen- oder Personalmanagement außerhalb von pretix.
 
 Welche Wahl Sie bei "Buchungsmodus" treffen, hängt davon ab, wie Sie und Ihr Unternehmen Ressourcen verwalten.
 Wenn Sie Ressourcen ausschließlich mit pretix verwalten, wählen Sie `Sofort bestätigen`.
 Wenn diese Option aktiv ist, betrachtet pretix jede Buchung dieser Ressource als sofort gültig.
 
 Wenn die Verfügbarkeit Ihrer Ressourcen von Faktoren außerhalb von pretix abhängt, wählen Sie `Manuelle Bestätigung notwendig`.
-Denkbare Faktoren sind eine eingeschränkte Personalverfügbarkeit aufgrund von Urlaub oder Krankheit oder die Ressourcenverwaltung durch eine externe Software oder ein nicht digitales System.
+Denkbare Faktoren sind eine eingeschränkte Personalverfügbarkeit aufgrund von Urlaub oder Krankheit oder die Ressourcenverwaltung durch eine externe Software oder ein analoges System.
 Wenn diese Option aktiv ist, erhält der Buchungsvorgang einen zusätzlichen Schritt.
 Immer wenn Sie eine Buchung erstellen, sendet pretix eine E-Mail und eine Benachrichtigung an die Stelle, die die Ressource verwaltet.
 Diese kann die Buchung dann entweder bestätigen oder ablehnen.
@@ -192,8 +192,7 @@ Wenn es sich bei der Ressource um eine Sache oder einen Ort handelt, vergeben Si
 Wählen Sie die "Sprache", die zu der Person oder dem Team passt, die für die Ressource zuständig sind.
 Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
-![Seite mit dem Titel 'Guide: Alex Mustermensch'. Die Seite enthält dieselben Einstellungen wie die vorherige Seite, zusätzlich aber Optionen, um für diese Ressource Eigenschaften anzugeben und Regeln für ihre Verfügbarkeit zu definieren. Die verfügbaren Zeitfenster sind in der Kalenderansicht grün dargestellt.
-Der Dienstag hat verfügbare und nicht verfügbare Zeitfenster und ist gelb dargestellt.](../assets/screens/resources-scheduling/edit-guide.de.png "Guide bearbeiten")
+![Seite mit dem Titel 'Guide: Alex Mustermensch'. Die Seite enthält dieselben Einstellungen wie die vorherige Seite, zusätzlich aber Optionen, um für diese Ressource Eigenschaften anzugeben und Regeln für ihre Verfügbarkeit zu definieren. Die verfügbaren Zeitfenster sind in der Kalenderansicht grün dargestellt. Der Dienstag hat verfügbare und nicht verfügbare Zeitfenster und ist gelb dargestellt.](../assets/screens/resources-scheduling/edit-guide.de.png "Guide bearbeiten")
 
 Die Vorgehensweise, um eine Stelle für die Ressourcenverwaltung anzugeben, unterscheidet sich abhängig davon, ob die Ressource im Modus "Mensch" oder "Ort oder Sache" ist.
 
@@ -224,7 +223,7 @@ Der nächste Artikel erklärt, wie Sie diese nutzen.
 
 Definieren Sie unter "Verfügbarkeitsplan", wann die Ressource verfügbar ist.
 Klicken Sie den Button :btn-icon:fa3-plus: Neue Regel hinzufügen:.
-Dadurch wird ein Popup-Fenster aufgerufen, in dem Sie eine Verfügbarkeitsregel neu hinzufügen oder bearbeiten können.
+Das öffnet ein Popup, in dem Sie eine Verfügbarkeitsregel neu hinzufügen oder bearbeiten können.
 
 ![Vor der Seite liegt ein Popup-Fenster mit dem Titel 'Verfügbarkeitsregel bearbeiten'. Unter 'Zeitplan' gibt es Eingabefelder für Start, Ende, Wochentage und Zeitzone. Unter 'Zeitraum' gibt es Eingabefelder für Start- und Endzeit sowie unter 'Verfügbar' zwei Radiobuttons für die Optionen 'Ressource ist verfügbar' und 'Ressource ist nicht verfügbar'.](../assets/screens/resources-scheduling/availability.de.png "Verfügbarkeitsregel bearbeiten")
 
@@ -249,15 +248,15 @@ Die Kalenderansicht zeigt unter "Resultierende Verfügbarkeit" jetzt die Zeiten 
 #### Ressourcen löschen und reaktivieren
 
 Wenn Sie eine Ressource löschen möchten, navigieren Sie zu dem Untermenü für den betreffenden Ressourcentyp.
-Klicken Sie den Button :btn-icon:fa3-trash:: neben der Ressource, die Sie löschen möchten.
-Alternativ können Sie auch den Namen der Ressource klicken und anschließend in der rechten oberen Ecke den Button :btn-icon:fa3-trash::.
+Klicken Sie auf den Button :btn-icon:fa3-trash:: neben der Ressource, die Sie löschen möchten.
+Alternativ können Sie auch auf den Namen der Ressource klicken und anschließend in der rechten oberen Ecke auf den Button :btn-icon:fa3-trash::.
 Über beide Buttons gelangen Sie zu einer Seite, die Sie auffordert, das Löschen zu bestätigen.
 
 Falls Sie diese Ressource noch nie für Veranstaltungen eingeplant haben, löscht pretix die Ressource komplett.
 Falls Sie diese Ressource bereits für Veranstaltungen eingeplant haben, behält pretix einen Datensatz für diese Ressource.
 Sie können diesen Datensatz anzeigen, indem Sie zu dem Untermenü für den betreffenden Ressourcentyp navigieren.
 Wählen Sie bei "Status der Ressource" die Option `Gelöschte Ressourcen` oder `Alle Ressourcen` und klicken Sie den Button :btn-icon:fa3-filter: Filter:.
-Die Seite zeigt gelöschte Ressourcen anschließend mit durchgestrichenem Namen an.
+Die Seite zeigt gelöschte Ressourcen mit durchgestrichenem Namen an.
 
 Wenn Sie eine Ressource wieder aktivieren möchten, klicken Sie ihren Namen.
 Klicken Sie auf der Seite für diese konkrete Ressource den Button :btn-icon:fa3-rotate-right: Löschen rückgängig machen:.
@@ -285,7 +284,7 @@ Wenn Sie dieses Kontrollkästchen markieren, zeigt der Shop alle Termine an, zu 
 
 !!! Note
     Wenn Sie die Einstellung "Erlaube Kunden zu buchen, bevor Ressourcen eingeteilt sind" aktivieren, können Situationen auftreten, in denen Sie Tickets für einen Termin verkauft haben, aber an diesem Termin keine Ressource verfügbar ist.
-    In diesem Fall müssen Sie die Buchungen genauer im Auge behalten.
+    Bei diesem Anwendungsfall müssen Sie die Buchungen also genauer im Auge behalten.
 
 Wenn Sie Ressourcen zu Terminen zuweisen möchten, bevor Sie Tickets dafür verkaufen, lassen Sie diese Option unmarkiert.
 Dann müssen Sie dem Termin zuerst alle erforderlichen Ressourcen zuweisen.
@@ -356,13 +355,13 @@ Falls keines dieser Probleme vorliegt, hat der Eintrag keines dieser Tags.
 Wählen Sie einen Eintrag ohne solche Problem-Tags.
 
 Klicken Sie den Button :btn:Speichern:.
-Dadurch wird von der Kontakt-E-Mail-Adresse der Veranstaltung eine E-Mail an die für diese Ressource zuständige Verwaltung geschickt.
+Dadurch schickt die Kontakt-E-Mail-Adresse der Veranstaltung eine E-Mail an die für diese Ressource zuständige Verwaltung.
 
 ### Schnellerfassung
 
-Über die Schnellerfassung können Sie feststellen, ob die für ein Produkt erforderlichen Ressourcen an einem bestimmten Termin verfügbar sind.
-Das ist praktisch, wenn Sie einen Termin, zum Beispiel für eine Führung, mit einer Gruppe von Kund\*innen vereinbaren.
-Ebenso, wenn Sie Termine darauf abstimmen wollen, wann die erforderlichen Ressourcen verfügbar sind.
+Über die Schnellerfassung können Sie feststellen, zu welchen Zeiten die für ein Produkt erforderlichen Ressourcen an einem bestimmten Termin verfügbar sind.
+Das ist praktisch, wenn Sie einen Termin mit einer Gruppe von Kund\*innen vereinbaren, zum Beispiel für eine Führung.
+Es ist auch nützlich, wenn Sie Termine darauf abstimmen wollen, wann die erforderlichen Ressourcen verfügbar sind.
 
 !!! Note
     Die Schnellerfassung ist nützlich, wenn Sie Termine mit Gruppen oder Einzelpersonen vereinbaren.
@@ -373,15 +372,15 @@ Ebenso, wenn Sie Termine darauf abstimmen wollen, wann die erforderlichen Ressou
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Disposition → Schnellerfassung:.
 Geben Sie bei "Datum" den Termin ein, für den Sie die Verfügbarkeit feststellen möchten.
-Wählen Sie bei "Produkte" die Option "Alle" oder wenigstens ein Produkt.
+Wählen Sie bei "Produkte" die Option "Alle" oder mindestens ein Produkt.
 
 Dieses Feld zeigt nur Produkte an, für die in den Produkteinstellungen auf dem Reiter "Ressourcenbedarf" eine "Standarddauer" definiert ist.
 Weitere Informationen darüber, wie Sie den Ressourcenbedarf für ein Produkt festlegen, finden Sie unter [Ein Produkt für die Disposition erstellen](#ein-produkt-fur-die-disposition-erstellen).
-Klicken Sie den Button :btn:Fortfahren:.
+Klicken Sie auf den Button :btn:Fortfahren:.
 
 ![Die Seite 'Schnellerfassung 2/4' zeigt einige 'Verfügbare Uhrzeiten' sowie Optionen für 'Start', 'Produkt', 'Termin-Titel' in zwei Sprachen, das Metadaten-Attribut 'Promoted', ferner 'Öffentlich anzeigen' und 'Bestellung anlegen'.](../assets/screens/resources-scheduling/quick-entry2.de.png "Schnellerfassung 2/4")
 
-Wählen Sie für die Startzeit des Termins, indem Sie sie unter "Verfügbare Uhrzeiten" wählen oder unter "Start" eingeben.
+Wählen Sie die Startzeit des Termins unter "Verfügbare Uhrzeiten" oder unter geben Sie sie unter "Start" ein.
 pretix schlägt nur Uhrzeiten vor, für die nach den im System hinterlegten Informationen genügend Ressourcen verfügbar sind.
 Sie können trotzdem beliebige andere Zeiten von Hand eingeben, auch wenn pretix keine Informationen über zu diesem Zeitpunkt verfügbare Ressourcen hat.
 Wenn Sie auf der vorigen Seite mehrere Produkte gewählt haben, wählen Sie nun im Dropdown-Menü "Produkt" eines dieser Produkte.
@@ -396,7 +395,7 @@ Klicken Sie den Button :btn:Fortfahren:.
 Wenn Sie das Kontrollkästchen "Bestellung anlegen" markiert haben, können Sie auf der nächsten Seite Details zu dieser Bestellung eingeben.
 Dies ist ein vereinfachtes Formular.
 Wenn Sie zu dieser Bestellung weitere Angaben eingeben möchten, die pretix nicht auf dieser Seite anzeigt (z. B. Rechnungsdaten), verwenden Sie das Menü "Bestellungen".
-Wenn Sie das Kontrollkästchen "Bestellung anlegen" nicht markiert haben, überspringt pretix diese Seite.
+Wenn Sie das Kontrollkästchen "Bestellung anlegen" nicht markiert haben, überspringt pretix diesen Schritt der Schnellerfassung.
 
 ![Die Seite 'Schnellerfassung 3/4' zeigt die Optionen 'Verkaufskanal', 'E-Mail-Adresse', 'Interner Kommentar', 'Mengen' und den Produktpreis an.](../assets/screens/resources-scheduling/quick-entry3.de.png "Schnellerfassung 3/4")
 
@@ -416,14 +415,14 @@ Neben jedem Eintrag werden Tags angezeigt, die Ihnen helfen, eine geeignete Ress
 Falls keines dieser Probleme vorliegt, hat der Eintrag keines dieser Tags.
 Wählen Sie einen Eintrag ohne solche Problem-Tags.
 
-Klicken Sie dann den Button :btn:Speichern:.
+Klicken Sie dann auf den Button :btn:Speichern:.
 Wenn Sie eine Bestellung angelegt haben, gelangen Sie zur Seite für diese Bestellung.
 Wenn Sie keine Bestellung angelegt haben, gelangen Sie zur Übersicht für die Disposition.
 
 ### Disposition bestätigen oder ablehnen
 
 Wenn jemand in pretix einem Termin eine Ressource zuweist, sendet der Server eine E-Mail an die Personen, die diese Ressource verwalten.
-Im Anhang der E-Mail befindet sich eine ics-Datei, mit der sie den Termin in ihren Kalender übernehmen können.
+Im Anhang der E-Mail befindet sich eine .ics-Datei, mit der sie den Termin in ihren Kalender übernehmen können.
 
 ![E-Mail von pretix mit dem Standardinhalt, wie er in den Einstellungen für den Ressourcentyp definiert wurde: Informationen zum Termin und Links zum Bestätigen oder Ablehnen der Planung.](../assets/screens/resources-scheduling/confirm-scheduling.de.png "E-Mail mit Bitte um Rückmeldung")
 
@@ -450,10 +449,10 @@ Die Anforderung für den Termin bleibt offen.
 Für die erste Möglichkeit finden Sie Informationen unter [Ressourcen zu Terminen zuweisen](#ressourcen-zu-terminen-zuweisen).
 
 Für die zweite Möglichkeit navigieren Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-ticket:Produkte:.
-Bearbeiten Sie das Produkt, das den Zutritt zu den Terminen gewährt, die der Shop nicht anzeigt.
+Bearbeiten Sie das Produkt, das Zutritt zu den Terminen gewährt, die der Shop nicht anzeigt.
 Wechseln Sie zum Reiter :btn:Ressourcenbedarf:.
 Markieren Sie das Kontrollkästchen "Erlaube Kunden zu buchen, bevor Ressourcen eingeteilt sind".
 Wenn Sie dieses Kontrollkästchen markieren, zeigt der Shop alle Termine an, zu denen dieses Produkt Zutritt gibt, auch wenn Sie dafür noch keine Ressource eingeteilt haben.
 
-Klicken Sie den Button :btn:Speichern:.
+Klicken Sie auf den Button :btn:Speichern:.
 Wiederholen Sie diese Schritte für jedes Produkt, das den Zutritt zu einem Termin gewährt, der nicht im Kalender angezeigt wird.
