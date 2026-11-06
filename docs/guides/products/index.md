@@ -1,3 +1,8 @@
+---
+# title:
+description: Learn how to create and edit products, categories, and quotas in pretix. Advanced use cases like season tickets, and troubleshooting visibility issues.
+---
+
 # Products
 
 A product is anything sold via pretix: tickets, gift cards, conference t-shirts, and so on.
