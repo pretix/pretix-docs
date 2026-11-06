@@ -1,3 +1,6 @@
+---
+title: Ressourcen und Disposition
+---
 # Ressourcen und Disposition
 
 Falls die Termine für Ihre Veranstaltungen von der Verfügbarkeit von Personal, Räumen, Technik oder sonstigen Ressourcen abhängen, sollten Sie die Erweiterung "Ressourcen und Disposition" verwenden.
@@ -16,7 +19,7 @@ Die Arbeit mit dieser Erweiterung besteht aus folgenden Schritten:
  1. Die [Erweiterung aktivieren](#die-erweiterung-aktivieren), sowohl auf Ebene des Veranstalters, als auch auf der der Veranstaltungsreihe.
  2. [Ressourcentypen erstellen](#ressourcentypen-erstellen), etwa einen Typ für alle Guides oder einen für alle Räume
  3. Für Ressourcentypen [Eigenschaften verwalten](#eigenschaften-verwalten)
- 4. [Konkrete Ressourcen erstellen](#konkrete-ressourcen-erstellen), beispielsweise konkrete Personen als Guides oder bestimmte Räume
+ 4. [Konkrete Ressourcen erstellen](#konkrete-ressourcen-verwalten), beispielsweise konkrete Personen als Guides oder bestimmte Räume
  5. [Ein Produkt für die Disposition erstellen](#ein-produkt-fur-die-disposition-erstellen), etwa ein Ticket für eine Führung
  6. [Termine für die Disposition anlegen](#termine-fur-die-disposition-anlegen), etwa geführte Touren
  7. [Ressourcen zu Terminen zuweisen](#ressourcen-zu-terminen-zuweisen), beispielsweise einen Guide zu einer Führung
@@ -31,17 +34,17 @@ Diese Information ist nützlich für diejenigen, die diese Ressource verwalten.
 ![Die Seite mit Erweiterungen zeigt eine Liste von Erweiterungen, darunter 'Ressourcen und Disposition' mit dem Hinweis 'Teile dieser Erweiterung können für Veranstaltungen individuell aktiviert oder deaktiviert werden' und dem violetten Button 'Aktivieren'.](../assets/screens/resources-scheduling/organizer-plugin.de.png "Veranstalter-Erweiterung für Ressourcen und Disposition")
 
 Um die Erweiterung für Ihren Veranstalter zu nutzen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Erweiterungen:.
-Suchen Sie in der Liste nach der Erweiterung "Ressourcen und Disposition" und klicken Sie den Button :btn:Aktivieren:.
+Suchen Sie in der Liste nach der Erweiterung "Ressourcen und Disposition" und Klicken Sie auf den Button :btn:Aktivieren:.
 Falls die Erweiterung "Ressourcen und Disposition" bereits aktiv ist, sehen Sie daneben das grüne Tag ":fa3-check: Aktiv".
 Klicken Sie in diesem Fall den Button :btn:Veranstaltungen verwalten:.
 
 ![Die Seite 'Veranstaltungen mit Ressourcen und Disposition' zeigt ein grünes Mitteilungsfeld mit dem Text 'Die Erweiterung Ressourcen und Disposition ist nun aktiv' sowie eine Liste von Veranstaltungen, für die die Erweiterung aktiviert oder deaktiviert werden kann.](../assets/screens/resources-scheduling/plugin-events.de.png "Veranstaltungen mit Ressourcen und Disposition")
 
 Über beide Buttons gelangen Sie zu einer Seite mit den Veranstaltungen dieses Veranstalters.
-Markieren Sie jede Veranstaltungsreihe, für die Sie die Erweiterung verwenden möchten, und klicken Sie den Button :btn:Speichern:.
+Markieren Sie jede Veranstaltungsreihe, für die Sie die Erweiterung verwenden möchten, und Klicken Sie auf den Button :btn:Speichern:.
 
 Alternativ können Sie die Erweiterung auch für eine einzelne Veranstaltungsreihe aktivieren, indem Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-wrench: Einstellungen → Erweiterungen: navigieren.
-Suchen Sie in der Liste nach der Erweiterung "Ressourcen und Disposition" und klicken Sie den Button :btn:Aktivieren:.
+Suchen Sie in der Liste nach der Erweiterung "Ressourcen und Disposition" und Klicken Sie auf den Button :btn:Aktivieren:.
 Falls die Erweiterung bereits aktiv ist, sehen Sie daneben das grüne Tag ":fa3-check: Aktiv".
 
 ### Ressourcentypen erstellen
@@ -108,7 +111,7 @@ Die Person, die die Ressourcen verwaltet, benötigt diese Links zum Bestätigen 
 Wir empfehlen, auch die anderen Platzhalter im E-Mail-Text zu verwenden, weil sie wichtige Informationen liefern.
 Die verfügbaren Platzhalter finden Sie auf dieser Seite unterhalb der Felder für Betreff und E-Mail.
 
-Klicken Sie den Button :btn:Speichern:.
+Klicken Sie auf den Button :btn:Speichern:.
 
 ### Eigenschaften verwalten
 
@@ -126,11 +129,15 @@ Alternativ können Sie die Eigenschaften schon beim Erstellen eines neuen Ressou
 Angenommen, Sie erstellen einen Eigenschaftentyp für Guides im Museum.
 Die Guides beherrschen unterschiedliche Sprachen und kennen sich mit unterschiedlichen Ausstellungen aus.
 
-In diesem Fall klicken Sie den Button :btn-icon:fa3-plus: Eigenschaft hinzufügen:.
+!!! Note
+    Aus organisatorischen Gründen verwenden die Beispiele in den Screenshots englischsprachige Bezeichnungen.
+    Anders als die meisten benutzerdefinierten Texte in pretix sind Ressourcen-Eigenschaften und deren Werte immer einsprachig.
+    Das gilt unabhängig von Ihren Einstellungen bei der Lokalisierung.
+
+In diesem Fall Klicken Sie auf den Button :btn-icon:fa3-plus: Eigenschaft hinzufügen:.
 Geben Sie bei "Name" `Sprachen` ein.
-(Das Beispiel in den Screenshots verwendet aus organisatorischen Gründen englische Bezeichnungen.)
 Geben Sie als "Wert" `Deutsch` ein.
-Klicken Sie den Button the :btn-icon:fa3-plus: Neuen Wert hinzufügen: und geben Sie in das neue Feld `Englisch` ein.
+Klicken Sie auf den Button the :btn-icon:fa3-plus: Neuen Wert hinzufügen: und geben Sie in das neue Feld `Englisch` ein.
 Klicken Sie erneut denselben Button und geben Sie in das neue Feld `Toki Pona` ein.
 Ihr Ressourcentyp "Guide" hat jetzt die Eigenschaft "Sprachen" mit den möglichen Werten `Deutsch`, `Englisch` und `Toki Pona`.
 
@@ -139,14 +146,14 @@ Ein Guide kann eine beliebige Kombination dieser drei Sprachen beherrschen.
 
 ![Ein Ausschnitt der Seite 'Neuen Ressourcentyp erstellen' zeigt die Eigenschaften 'Languages' mit den Optionen English, German, Basque und Toki Pona; die Eigenschaft 'Audiences' mit den Optionen Adults, Teenagers und Children; sowie 'Knowledge' mit den Optionen Greece, Egypt und Sumer.](../assets/screens/resources-scheduling/properties-guides.de.png "Ressourcentyp Guide")
 
-Klicken Sie den Button :btn-icon:fa3-plus: Eigenschaft hinzufügen:.
+Klicken Sie auf den Button :btn-icon:fa3-plus: Eigenschaft hinzufügen:.
 Geben Sie bei "Name" `Kenntnisse` ein.
 Geben Sie als "Wert" `Griechenland` ein.
-Klicken Sie den Button :btn-icon:fa3-plus: Neuen Wert hinzufügen: und geben Sie in das neue Feld `Ägypten` ein.
+Klicken Sie auf den Button :btn-icon:fa3-plus: Neuen Wert hinzufügen: und geben Sie in das neue Feld `Ägypten` ein.
 Klicken Sie denselben Button erneut und geben Sie in das neue Feld `Sumer` ein.
 Ihr Ressourcentyp "Guide" verfügt jetzt über die Eigenschaft "Kenntnisse", die die Werte `Griechenland`, `Ägypten` oder `Sumer` annehmen kann.
 
-Wenn Sie alles wie gewünscht eingegeben haben, klicken Sie den Button :btn:Speichern:.
+Wenn Sie alles wie gewünscht eingegeben haben, Klicken Sie auf den Button :btn:Speichern:.
 
 Um eine Eigenschaft zu entfernen, klicken Sie neben der Eigenschaft auf den Button :btn-icon:fa3-minus-circle: Entfernen:.
 Daraufhin wird ein Feld mit den Ressourcen angezeigt, die von dieser Änderung betroffen wären.
@@ -166,7 +173,7 @@ Für jeden Ressourcentyp, den Sie im vorigen Schritt erstellt haben, gibt es unt
 Navigieren Sie zu dem Untermenü für den Ressourcentyp, den Sie im vorigen Schritt erstellt haben.
 Ein Beispiel: Wenn Sie einen Ressourcentyp namens "Guide" erstellt haben, navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-briefcase: Ressourcen → Guide:.
 
-Klicken Sie den Button :btn-icon:fa3-plus: Guide hinzufügen:.
+Klicken Sie auf den Button :btn-icon:fa3-plus: Guide hinzufügen:.
 Wenn Ihr Ressourcentyp einen anderen Namen hat, heißt auch der Button anders.
 
 ![Die Seite 'Guide hinzufügen' zeigt die ausgefüllten Eingabefelder für 'Alex Mustermensch', Sprache 'Deutsch', Telefonnummer, Adresse und externe Referenz. Für den Buchungsmodus gibt es Radiobuttons. Die Option 'Manuelle Bestätigung notwendig' ist gewählt.](../assets/screens/resources-scheduling/add-guide.de.png "Guide hinzufügen")
@@ -186,11 +193,11 @@ Wenn diese Option aktiv ist, erhält der Buchungsvorgang einen zusätzlichen Sch
 Immer wenn Sie eine Buchung erstellen, sendet pretix eine E-Mail und eine Benachrichtigung an die Stelle, die die Ressource verwaltet.
 Diese kann die Buchung dann entweder bestätigen oder ablehnen.
 
-Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
+Wenn Sie alle Optionen nach Bedarf gewählt haben, Klicken Sie auf den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
 Wenn es sich bei der Ressource um eine Sache oder einen Ort handelt, vergeben Sie dafür einen eindeutigen Identifikator, etwa eine Raumnummer oder eine Inventarnummer.
 Wählen Sie die "Sprache", die zu der Person oder dem Team passt, die für die Ressource zuständig sind.
-Wenn Sie alle Optionen nach Bedarf gewählt haben, klicken Sie den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
+Wenn Sie alle Optionen nach Bedarf gewählt haben, Klicken Sie auf den Button :btn:Speichern und mit mehr Einstellungen fortfahren:.
 
 ![Seite mit dem Titel 'Guide: Alex Mustermensch'. Die Seite enthält dieselben Einstellungen wie die vorherige Seite, zusätzlich aber Optionen, um für diese Ressource Eigenschaften anzugeben und Regeln für ihre Verfügbarkeit zu definieren. Die verfügbaren Zeitfenster sind in der Kalenderansicht grün dargestellt. Der Dienstag hat verfügbare und nicht verfügbare Zeitfenster und ist gelb dargestellt.](../assets/screens/resources-scheduling/edit-guide.de.png "Guide bearbeiten")
 
@@ -206,7 +213,7 @@ Wenn die Ressource ein **Ort** oder eine **Sache** ist, sehen Sie oben auf der S
 Klicken Sie diesen Button.
 Damit gelangen Sie zu einer Seite mit allen Manager\*innen für diese Ressource.
 Geben Sie die E-Mail-Adresse des pretix-Benutzerkontos einer der Personen ein, die diese Ressource verwalten.
-Klicken Sie den Button :btn-icon:fa3-plus: Hinzufügen:.
+Klicken Sie auf den Button :btn-icon:fa3-plus: Hinzufügen:.
 
 Wiederholen Sie diesen Schritt für jede Person, die die Ressource verwaltet.
 Gehen Sie in Ihrem Browser einen Schritt zurück oder navigieren Sie zu :navpath:Ihr Veranstalter → :fa3-briefcase: Ressourcen:.
@@ -215,14 +222,14 @@ Klicken Sie den Ressourcentyp und dann die Ressource.
 Weisen Sie unter "Eigenschaften" der Ressource Eigenschaften zu.
 Ein Beispiel: Wenn Sie einen Guide hinzufügen und diese Person Deutsch und Toki Pona spricht, klicken Sie das Feld "Sprachen" und wählen Sie `Deutsch` und `Toki Pona`.
 
-Wenn Sie die Ressource wie gewünscht konfiguriert haben, klicken Sie den Button :btn:Speichern:.
+Wenn Sie die Ressource wie gewünscht konfiguriert haben, Klicken Sie auf den Button :btn:Speichern:.
 Der Button :btn:Speichern: hat keinen Einfluss auf die Verfügbarkeitseinstellungen in der rechten Seitenhälfte.
 Der nächste Artikel erklärt, wie Sie diese nutzen.
 
 #### Verfügbarkeit einer Ressource festlegen
 
 Definieren Sie unter "Verfügbarkeitsplan", wann die Ressource verfügbar ist.
-Klicken Sie den Button :btn-icon:fa3-plus: Neue Regel hinzufügen:.
+Klicken Sie auf den Button :btn-icon:fa3-plus: Neue Regel hinzufügen:.
 Das öffnet ein Popup, in dem Sie eine Verfügbarkeitsregel neu hinzufügen oder bearbeiten können.
 
 ![Vor der Seite liegt ein Popup-Fenster mit dem Titel 'Verfügbarkeitsregel bearbeiten'. Unter 'Zeitplan' gibt es Eingabefelder für Start, Ende, Wochentage und Zeitzone. Unter 'Zeitraum' gibt es Eingabefelder für Start- und Endzeit sowie unter 'Verfügbar' zwei Radiobuttons für die Optionen 'Ressource ist verfügbar' und 'Ressource ist nicht verfügbar'.](../assets/screens/resources-scheduling/availability.de.png "Verfügbarkeitsregel bearbeiten")
@@ -255,7 +262,7 @@ Alternativ können Sie auch auf den Namen der Ressource klicken und anschließen
 Falls Sie diese Ressource noch nie für Veranstaltungen eingeplant haben, löscht pretix die Ressource komplett.
 Falls Sie diese Ressource bereits für Veranstaltungen eingeplant haben, behält pretix einen Datensatz für diese Ressource.
 Sie können diesen Datensatz anzeigen, indem Sie zu dem Untermenü für den betreffenden Ressourcentyp navigieren.
-Wählen Sie bei "Status der Ressource" die Option `Gelöschte Ressourcen` oder `Alle Ressourcen` und klicken Sie den Button :btn-icon:fa3-filter: Filter:.
+Wählen Sie bei "Status der Ressource" die Option `Gelöschte Ressourcen` oder `Alle Ressourcen` und Klicken Sie auf den Button :btn-icon:fa3-filter: Filter:.
 Die Seite zeigt gelöschte Ressourcen mit durchgestrichenem Namen an.
 
 Wenn Sie eine Ressource wieder aktivieren möchten, klicken Sie ihren Namen.
@@ -266,7 +273,7 @@ Nun können Sie diese Ressource wieder für Termine einplanen.
 ### Ein Produkt für die Disposition erstellen
 
 Navigieren Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-ticket: Produkte: und erstellen oder bearbeiten Sie ein Produkt.
-Allgemeine Informationen zum Anlegen von Produkten finden Sie in unserem Artikel über [Produkte](products/index.md).
+Allgemeine Informationen zum Anlegen von Produkten finden Sie in unserem Artikel über [Produkte](products/index.de.md).
 Fügen Sie das Produkt **keinem** Kontingent hinzu.
 Wechseln Sie zum Reiter :btn:Ressourcenbedarf:.
 
@@ -290,7 +297,7 @@ Wenn Sie Ressourcen zu Terminen zuweisen möchten, bevor Sie Tickets dafür verk
 Dann müssen Sie dem Termin zuerst alle erforderlichen Ressourcen zuweisen.
 Erst danach steht der Termin in Ihrem Shop für Buchungen zur Verfügung.
 
-Klicken Sie den Button :btn-icon:fa3-plus: Neue Anforderung hinzufügen:.
+Klicken Sie auf den Button :btn-icon:fa3-plus: Neue Anforderung hinzufügen:.
 Wählen Sie den für diesen Termin benötigten "Ressourcentyp".
 Geben Sie unter "Menge" die Anzahl der von diesem Typ benötigten Ressourcen an, in der Regel `1`.
 Wenn mehr Personal, Räume oder Anlagen erforderlich sind, geben Sie die benötigte Anzahl ein.
@@ -304,7 +311,7 @@ Markieren Sie unter "Eigenschaften" alle Werte, die für diesen Termin erforderl
 Beispiel: Sie bieten für englischsprachige Kinder eine Führung durch die Ausstellung über das Alte Ägypten an.
 Dafür wählen Sie als "Ressourcentyp" `Guide` und wählen bei "Eigenschaften" `Kinder`, `Ägypten` und `Englisch`.
 
-Klicken Sie den Button :btn:Speichern:.
+Klicken Sie auf den Button :btn:Speichern:.
 
 ### Termine für die Disposition anlegen
 
@@ -312,9 +319,9 @@ Klicken Sie den Button :btn:Speichern:.
     Es ist sinnvoll, für die Disposition Termine anzulegen, wenn Sie für die Öffentlichkeit wiederkehrende Termine anbieten.
     Wenn Sie jedoch Termine mit Gruppen oder Einzelpersonen vereinbaren, ist es eventuell bequemer, die Funktion [Schnellerfassung](#schnellerfassung) zu nutzen.
 
-Navigieren Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-calendar:Termine: und klicken Sie den Button :btn-icon:fa3-plus: Mehrere neue Termine erstellen:.
+Navigieren Sie zu :navpath:Ihre Veranstaltungsreihe → :fa3-calendar:Termine: und Klicken Sie auf den Button :btn-icon:fa3-plus: Mehrere neue Termine erstellen:.
 Richten Sie die Termine entsprechend Ihren Anforderungen ein.
-Allgemeine Informationen zum Anlegen von Terminen finden Sie unter [Termine in der Veranstaltungsreihe erstellen und bearbeiten](event-series.md#termine-in-der-veranstaltungsreihe-erstellen-und-bearbeiten).
+Allgemeine Informationen zum Anlegen von Terminen finden Sie unter [Termine in der Veranstaltungsreihe erstellen und bearbeiten](event-series.de.md#termine-in-der-veranstaltungsreihe-erstellen-und-bearbeiten).
 
 Wählen Sie unter "Kontingente" im Feld "Produkte" das im [vorigen Schritt](#ein-produkt-fur-die-disposition-erstellen) erstellte Produkt.
 
@@ -354,7 +361,7 @@ Neben jedem Eintrag werden Tags angezeigt, die Ihnen helfen, eine geeignete Ress
 Falls keines dieser Probleme vorliegt, hat der Eintrag keines dieser Tags.
 Wählen Sie einen Eintrag ohne solche Problem-Tags.
 
-Klicken Sie den Button :btn:Speichern:.
+Klicken Sie auf den Button :btn:Speichern:.
 Dadurch schickt die Kontakt-E-Mail-Adresse der Veranstaltung eine E-Mail an die für diese Ressource zuständige Verwaltung.
 
 ### Schnellerfassung
@@ -390,7 +397,7 @@ Wenn Sie das Kontrollkästchen bei "Öffentlich anzeigen" markieren, wird für d
 Entfernen Sie die Markierung aus diesem Kontrollkästchen, wenn dieser Termin nicht allen Besucher\*innen Ihres Shops angezeigt werden soll.
 
 Wenn Sie direkt eine Bestellung für den Termin anlegen möchten, markieren Sie das Kontrollkästchen "Bestellung anlegen".
-Klicken Sie den Button :btn:Fortfahren:.
+Klicken Sie auf den Button :btn:Fortfahren:.
 
 Wenn Sie das Kontrollkästchen "Bestellung anlegen" markiert haben, können Sie auf der nächsten Seite Details zu dieser Bestellung eingeben.
 Dies ist ein vereinfachtes Formular.
