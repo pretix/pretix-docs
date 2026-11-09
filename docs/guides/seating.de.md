@@ -3,7 +3,7 @@
 <!-- md:hosted -->
 <!-- md:enterprise -->
 
-Dieser Artikel erklärt, wie Sie mit der pretix-Funktion für Sitzpläne arbeiten.
+Dieser Artikel erklärt, wie Sie die pretix-Funktion für Sitzpläne benutzen.
 Mit dieser Funktion können Sie Sitzpläne erstellen, um Tickets für einzelne Sitzplätze verkaufen zu können.
 Das ist praktisch, wenn Ihre Veranstaltung beispielsweise in einem Theater, einem Stadion oder einem Speisesaal stattfindet.
 Kund\*innen können sich in Ihrem Shop den Sitzplan ansehen und sich ihren Wunsch-Sitzplatz aussuchen.
@@ -14,7 +14,7 @@ Die klare Aufteilung dieser unterschiedlichen Bereiche in Zonen auf dem Sitzplan
 
 Sie können Zone, Sitzreihe und Sitzplatz-Nummer auf dem Ticket angeben und so dafür sorgen, dass Ihre Kund\*innen ihren Sitzplatz leichter finden.
 
-Die Sitzplan-Funktion ist aber nicht nur für Sitzplätze praktisch.
+Die Sitzplan-Funktion ist aber nicht nur für Sitzplätze von Nutzen.
 Sie können darüber auch beispielsweise Tische in Lesesälen reservieren oder Stellplätze auf dem Parkplatz buchen.
 Sitzpläne lassen sich für jeden Raum mit festem Layout und einer begrenzten Anzahl nutzbarer Plätze erstellen.
 
@@ -23,7 +23,8 @@ Bei pretix Community ist sie nicht verfügbar.
 
 ## Voraussetzungen
 
-Viele Aspekte von Sitzplänen werden auf Veranstaltungsebene festgelegt, Sie müssen also zuerst eine Veranstaltung anlegen.
+Viele Aspekte von Sitzplänen werden auf Veranstaltungsebene festgelegt.
+Sie müssen also zuerst eine Veranstaltung anlegen.
 
 ## Allgemeine Verwendung
 
@@ -34,7 +35,7 @@ Wenn Sie für Ihre Veranstaltung Tickets für einzelne Sitzplätze verkaufen mö
  - [Den Plan Ihrem Veranstalterkonto zuweisen](#einen-sitzplan-ihrem-veranstalterkonto-zuweisen)
  - [Produkte für den Sitzplan erstellen](#produkte-fur-den-sitzplan-erstellen)
  - [Den Sitzplan Ihrer Veranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) oder einem Termin in Ihrer [Veranstaltungsreihe](#einen-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen)
- - Entscheiden, ob [Kund\*innen ihre Sitzplätze selbst wählen können](#kundinnen-konnen-ihre-sitzplatze-selbst-wahlen)
+ - Entscheiden, ob [Kund\*innen ihre Sitzplätze selbst wählen können](#kundinnen-ihre-sitzplatze-selbst-wahlen-lassen)
 
 Die folgenden Abschnitte erklären alle Schritte ausführlich.
 
@@ -48,11 +49,11 @@ Klicken Sie den Button :btn:Aktivieren: daneben.
 ![Seite mit Einstellungen für Erweiterungen. Der Reiter 'Funktionen' zeigt die Erweiterungen für Digitale Inhalte, E-Mails verschicken, Seiten und Sitzpläne.](../assets/screens/seating/plugins-seating.de.png "Verfügbare Erweiterungen")
 
 Markieren Sie in der Liste "Veranstaltungen mit aktiver Erweiterung" die Veranstaltungen, für die Sie Sitzpläne verwenden möchten.
-Nun haben Sie die Erweiterung "Sitzpläne" aktiviert und dadurch sind alle Einstellungen rund um Sitzpläne für Ihren Veranstalter verfügbar.
+Da Sie die Erweiterung "Sitzpläne" aktiviert haben, sind nun alle Einstellungen rund um Sitzpläne für Ihren Veranstalter verfügbar.
 
 ### Ein Layout erstellen
 
-Das Herzstück jedes Sitzplans ist die JSON-Datei mit der Layout-Definition.
+Der Hauptbestandteil eines Sitzplans ist die JSON-Datei, die das Layout definiert.
 Um ein neues Layout zu erstellen, öffnen Sie den Editor unter [https://seats.pretix.eu/](https://seats.pretix.eu/).
 Sie können diesen Editor auch nutzen, wenn sie nicht bei Ihrem pretix-Konto angemeldet sind.
 
@@ -68,11 +69,11 @@ Der Layout-Editor speichert das hochgeladene Bild nicht als Teil Ihres Layouts.
 Das Bild dient Ihnen lediglich als Vorlage zum Platzieren von Sitzplätzen und anderen Objekten im Layout.
 
 Wenn Sie ein Bild hochgeladen haben, ist es sinnvoll, **Breite** ("Width") und **Höhe** ("Height") des Layouts an die Bildabmessungen anzupassen.
-Anderenfalls können Sie auch zuerst Sitzplätze und weitere Objekte erstellen und dann Breite und Höhe des Layouts so anpassen, dass alle Elemente bequem Platz haben.
+Wenn Sie kein Bild hochgeladen haben, dann können Sie auch zuerst Sitzplätze und weitere Objekte erstellen und dann Breite und Höhe des Layouts so anpassen, dass alle Elemente bequem Platz haben.
 
-Wenn Ihr Veranstaltungsort mehr als das Parkett oder einen Sitzblock hat, sollten Sie für das Layout die entsprechende Anzahl **Zonen** anlegen.
+Wenn Ihr Veranstaltungsort mehr als eine Ebene oder mehr als einen Sitzblock hat, sollten Sie für das Layout die entsprechende Anzahl **Zonen** anlegen.
 Falls bei Ihrem Veranstaltungsort die Nummern von Sitzplätzen und Sitzreihen mehrmals vorkommen und das Layout alle Nummern korrekt abbilden soll, müssen Sie die betreffenden Sitzplätze in unterschiedlichen Zonen anordnen.
-Um eine neue Zone zu erstellen, klicken Sie in der Seitenleiste den Button :btn-icon:fa3-plus:: neben "Zones" (Zonen) und geben Sie einen Namen ein.
+Um eine neue Zone zu erstellen, klicken Sie in der Seitenleiste den Button :btn-icon:fa3-plus:: neben "Zones" (Zonen) und geben einen Namen ein.
 
 pretix ordnet den Sitzplätzen Produkte anhand der **Sitzplatzkategorie** zu.
 Sie benötigen für jedes Produkt, das Sie verkaufen möchten, eine Sitzplatzkategorie.
@@ -85,7 +86,7 @@ Um Name und Farbe zu ändern, klicken Sie den Button :btn-icon:fa3-pencil::.
 
 !!! Note
     Wenn Sie mit einem Mac-Computer arbeiten, können Sie statt der `Strg`-Taste die Taste `⌘`, auch als `Befehlstaste` oder `Cmd` bekannt, verwenden.
-    Die `Ctrl`-Taste funktioniert ebenfalls.
+    Die `Strg`-Taste funktioniert ebenfalls.
 
 Um das Layout durch **Zoomen** zu vergrößern bzw. zu verkleinern, halten Sie die `Strg`-Taste gedrückt und drehen Sie das Mausrad.
 Alternativ dazu können Sie auch die Buttons :btn-icon:fa3-search-minus:: und :btn-icon:fa3-search-plus:: in der Leiste am oberen Bildschirmrand verwenden.
@@ -102,9 +103,9 @@ Sie können einen einzelnen Sitzplatz auch wählen, indem Sie den Button :btn-ic
     Mehr dazu erfahren Sie unter [Sitzplatz-Wahl durch Kund\*innen optimieren](#sitzplatz-wahl-durch-kundinnen-optimieren).
 
 !!! Note
-    Der Radius der Sitzplätze in Ihrem Plan sollte im Idealfall um den Standardwert 10 liegen.
-    Deutlich kleinere Sitzplätze sind möglicherweise schwer wählbar,
-    bei deutlich größeren Sitzplätzen können die Beschriftungen schlecht lesbar sein.
+    Der Radius der Sitzplätze in Ihrem Plan sollte nah an dem Standardwert 10 liegen.
+    Deutlich kleinere Sitzplätze sind möglicherweise schwer wählbar.
+    Bei deutlich größeren Sitzplätzen können die Beschriftungen schlecht lesbar sein.
 
 Wenn Sie mehrere Elemente wählen möchten, halten Sie die `Umschalttaste` gedrückt und klicken Sie die gewünschten Elemente.
 Alternativ dazu können Sie auch die linke Maustaste gedrückt halten und Maus über die gewünschten Elemente ziehen, sodass sie von einem Auswahlrechteck umschlossen sind.
@@ -123,7 +124,8 @@ Drücken Sie alternativ dazu die Tastenkombination `Strg`+`V`.
 
 Um das Layout zu **speichern**, klicken Sie oben links den Button :btn-icon:fa3-save:: "Save plan" (Sitzplan speichern).
 Daraufhin wird ein Dialogfeld aufgerufen, in dem Sie angeben können, wo auf Ihrem Computer die JSON-Datei gespeichert wird.
-Falls Ihr Plan Validierungsfehler enthält, wird die Datei beim Klick nicht gespeichert, stattdessen erhalten Sie eine Fehlermeldung.
+Falls Ihr Plan Validierungsfehler enthält, wird die Datei beim Klick nicht gespeichert.
+Stattdessen erhalten Sie eine Fehlermeldung.
 Informationen zur Fehlerbehebung finden Sie unter [Das Layout validieren](#das-layout-validieren).
 
 ### Das Layout validieren
@@ -155,7 +157,7 @@ Damit werden die Sitzplatz-IDs neu vergeben, sodass es in dieser Sitzreihe keine
 
 !!! Note
     Das Aktivieren bzw. Deaktivieren des Umschalters "Reversed" (Umgekehrt) für eine Sitzreihe ersetzt alle Sitzplatz-IDs in dieser Sitzreihe mit einer Zeichenfolge aus Zone, Sitzreihen-Nummer und Sitzplatz-Nummer mit Bindestrichen.
-    Das betrifft auch alle selbst vergebenen Sitzplatz-IDs, die Sie manuell festgelegt haben.
+    Das betrifft auch alle benutzerdefinierten Sitzplatz-IDs, also jene, die Sie manuell festgelegt haben.
 
 Um das Layout zu **speichern**, klicken Sie oben links den Button :btn-icon:fa3-save:: "Save plan" (Sitzplan speichern). 
 Daraufhin wird ein Dialogfeld aufgerufen, über das Sie die JSON-Datei auf Ihrem Computer speichern.
@@ -177,11 +179,11 @@ Der Inhalt der Datei ist nun im Feld "Layout" zu sehen.
 Geben Sie in das Feld "Name" einen Namen für den Sitzplan ein und klicken Sie den Button :btn:Speichern:.
 Sie gelangen zur Seite "Sitzpläne", die einen Button zum Erstellen eines weiteren neuen Sitzplans enthält sowie eine Liste von Plänen, in der auch Ihr Plan aufgeführt ist.
 
-!Die Seite 'Sitzpläne' zeigt den Button 'Neuen Sitzplan erstellen', eine Liste mit einem einzigen Eintrag namens 'Arena' sowie ein grünes Mitteilungsfeld mit dem Text 'Der Sitzplan wurde erstellt und kann nun verwendet werden.](../assets/screens/seating/seating-plans-created.de.png "Neuen Sitzplan erstellen")
+![Die Seite 'Sitzpläne' zeigt den Button 'Neuen Sitzplan erstellen', eine Liste mit einem einzigen Eintrag namens 'Arena' sowie ein grünes Mitteilungsfeld mit dem Text 'Der Sitzplan wurde erstellt und kann nun verwendet werden.](../assets/screens/seating/seating-plans-created.de.png "Neuen Sitzplan erstellen")
 
 ### Produkte für den Sitzplan erstellen
 
-Wenn Sie Produkte über einen Sitzplan verkaufen möchten, hat das Auswirkungen auf die Konfiguration der Produkte in Ihrem Shop.
+Wenn Sie Produkte über einen Sitzplan verkaufen möchten, dann entstehen dadurch besondere Anforderungen an die Konfiguration der Produkte in Ihrem Shop.
 Allgemeine Informationen zum Anlegen von Produkten finden Sie in unserem Artikel über [Produkte](products/index.md).
 
 Sie können einer Sitzplatzkategorie nur ein einziges Produkt zuweisen.
@@ -207,16 +209,16 @@ Ebenso, wenn Sie auch Produkte ohne Zutrittsberechtigung anbieten, beispielsweis
 ### Den Sitzplan einer Einzelveranstaltung zuweisen
 
 Um einer Veranstaltung einen Sitzplan zuzuweisen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
-Klicken Sie das Feld "Sitzplan".
+Klicken Sie auf das Feld "Sitzplan".
 Wählen Sie einen Sitzplan aus der Liste.
 
-![Die Seite 'Sitzplan-Einstellungen' mit dem Untertitel 'Sitzplanauswahl'. Im Dropdown-Menü 'Sitzplan' ist der Eintrag 'Arena' gewählt. Die Kategorien 'Floor front', 'Floor back', 'Wheelchair' und 'Box seats' sind den entsprechenden Produkten zugeordnet.](../assets/screens/seating/seating-plan-selection.de.png "Sitzplanauswahl")
+![Die Seite 'Sitzplan-Einstellungen' mit dem Untertitel 'Sitzplanauswahl'. Im Dropdown-Menü 'Sitzplan' ist der Eintrag 'Arena' gewählt. Die Kategorien 'Parkett vorn', 'Parkett hinten', 'Rollstuhl' und 'Logenplatz' sind den entsprechenden Produkten zugeordnet.](../assets/screens/seating/seating-plan-selection.de.png "Sitzplanauswahl")
 
 Weisen Sie den Sitzplatzkategorien Produkte zu.
 Alle Produkte, die Sie Sitzplatzkategorien zuweisen, sind über den Sitzplan verfügbar, der oben auf der Shop-Seite angezeigt wird.
 Sie werden nicht in der Liste darunter aufgeführt.
 Ihre Kund\*innen können diese Produkte nur über den Sitzplan wählen.
-Der Shop führt alle Produkte, die Sie keiner Sitzplatzkategorie zugewiesen haben, unter dem Sitzplan auf.
+Der Shop führt alle Produkte, die Sie keiner Sitzplatzkategorie zugewiesen haben, unterhalbs des Sitzplans auf.
 
 Wenn Sie alles wie gewünscht eingegeben haben, klicken Sie den Button :btn:Speichern:.
 
@@ -225,11 +227,11 @@ Wenn Sie alles wie gewünscht eingegeben haben, klicken Sie den Button :btn:Spei
 Wenn Sie Sitzpläne für eine [Veranstaltungsreihe](event-series.md) verwenden, müssen Sie nicht denselben Sitzplan für die gesamte Veranstaltungsreihe nutzen.
 Sie können jedem Termin einen eigenen Sitzplan zuweisen.
 Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine:.
-Legen Sie die Termine, denen Sie einen Sitzplan zuweisen möchten, an bzw. bearbeiten Sie sie.
+Erstellen oder bearbeiten Sie die Termine, denen Sie einen Sitzplan zuweisen möchten.
 
 ![Die Seite 'Termin' mit dem Bereich 'Zusätzliche Einstellungen' im unteren Seitenbereich. Als Sitzplan ist 'Arena' gewählt. Die Kategorien 'Floor front', 'Floor back', 'Wheelchair' und 'Box seats' sind den entsprechenden Produkten zugeordnet.](../assets/screens/seating/date.de.png "Sitzplanauswahl")
 
-Blättern Sie nach unten bis zum Bereich "Zusätzliche Einstellungen".
+Scrollen Sie nach unten bis zum Bereich "Zusätzliche Einstellungen".
 Klicken Sie das Feld "Sitzplan".
 Wählen Sie einen Sitzplan aus der Liste.
 
@@ -241,13 +243,13 @@ Anschließend wählen sie die gewünschten Produkte in Sitzplan und Liste.
 Alle Produkte, die Sie Sitzplatzkategorien zuweisen, sind über den Sitzplan verfügbar, der oben auf der Shop-Seite angezeigt wird.
 Sie werden nicht in der Liste darunter aufgeführt.
 Ihre Kund\*innen können diese Produkte nur über den Sitzplan wählen.
-Der Shop führt alle Produkte, die Sie keiner Sitzplatzkategorie zugewiesen haben, unter dem Sitzplan auf.
+Der Shop führt alle Produkte, die Sie keiner Sitzplatzkategorie zugewiesen haben, unterhalb des Sitzplans auf.
 
 Wenn Sie alles wie gewünscht eingegeben haben, klicken Sie den Button :btn:Speichern:.
 
-### Kund\*innen können ihre Sitzplätze selbst wählen
+### Kund\*innen ihre Sitzplätze selbst wählen lassen
 
-Um das Verhalten des Sitzplans für eine einzelne Veranstaltung bzw. Veranstaltungsreihe zu konfigurieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.   
+Um das Verhalten des Sitzplans für eine einzelne Veranstaltung bzw. Veranstaltungsreihe zu konfigurieren, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Wenn Sie möchten, dass Ihre Kund\*innen Sitzplätze selbst wählen dürfen, markieren Sie das Kontrollkästchen bei "Kunden können ihre Sitzplätze selbst auswählen".
 
 Wenn Sie Ihren Kund\*innen die Sitzplätze zuweisen möchten, lassen Sie das Kontrollkästchen bei "Kunden können ihre Sitzplätze selbst auswählen" leer.
@@ -257,7 +259,7 @@ Anderenfalls kann pretix die Angaben zum Sitzplatz nicht auf das Ticket schreibe
 
 Klicken Sie den Button :btn:Speichern:.
 
-## Weitergehende Einsatzmöglichkeiten
+## Fortgeschrittene Nutzung
 
 Die folgenden Abschnitte beschreiben Einsatzmöglichkeiten, die über die grundlegende Konfiguration von Sitzplänen hinausgehen:
 
@@ -278,8 +280,8 @@ Sie haben aber zwei Möglichkeiten, um den Plan dennoch zu ändern.
  2. Sie migrieren den vorhandenen Sitzplan zu einem neuen Plan.
 
 Die **erste Methode** funktioniert nur, wenn der Sitzplan nur einer einzigen Veranstaltung bzw. einem einzigen Termin zugewiesen wurde und Sie bisher noch keine Produkte für Sitzplätze in diesem Sitzplan verkauft haben.
-Um die Zuweisung des Sitzplans zu einer einzelnen Veranstaltung aufzuheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.   
-Für einen Termin in einer Veranstaltungsreihe navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine: und wählen Sie den betreffenden Termin.
+Um die Zuweisung des Sitzplans zu einer einzelnen Veranstaltung aufzuheben, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
+Für einen Termin in einer Veranstaltungsreihe navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine: und wählen den betreffenden Termin.
 Ab hier ist die Vorgehensweise dieselbe.
 
 Löschen Sie das gewählte Element aus dem Feld "Sitzplan" und speichern Sie Ihre Änderungen.
@@ -324,7 +326,7 @@ Sie gelangen zur Seite "Blockierte Sitzplätze".
 
 !!! Note
     Wenn Sie mit einem Mac-Computer arbeiten, können Sie statt der `Strg`-Taste die Taste `⌘`, auch als `Befehlstaste` oder `Cmd` bekannt, verwenden.
-    Die `Ctrl`-Taste funktioniert ebenfalls.
+    Die `Strg`-Taste funktioniert ebenfalls.
 
 Klicken Sie im Sitzplan die Sitzplätze, die Sie für den Verkauf sperren möchten.
 Um mehrere Sitzplätze zu wählen, halten Sie die `Strg`-Taste und die linke Maustaste gedrückt und ziehen Sie ein Rechteck um die betreffenden Sitzplätze.
@@ -341,15 +343,15 @@ Wenn einige Sitzplätze ausschließlich einer bestimmten Personengruppe vorbehal
  Generell sollten Sie diese Vorgehensweise wählen, weil sie flexibler ist.
  2. Sie sperren Sitzplätze und gestatten es nur einem bestimmten Verkaufskanal, diese Sperre zu umgehen.
  Diese Vorgehensweise bietet sich an, wenn Sie die Möglichkeit behalten möchten, gesperrte Sitzplätze manuell zu verkaufen.
- Ebenso, wenn Sie diese Entscheidung dem Team überlassen möchten, das einen bestimmten Verkaufskanal betreut, beispielsweise der Abendkasse oder einer Vorverkaufsstelle.
+ Sie bietet sich auch dann an, wenn Sie diese Entscheidung dem Team überlassen möchten, das einen bestimmten Verkaufskanal betreut, beispielsweise der Abendkasse oder einer Vorverkaufsstelle.
 
-Erstellen Sie bei der **ersten Methode** eine Sitzplatzkategorie.
+Für die **erste Methode** erstellen Sie zunächst eine Sitzplatzkategorie.
 Weisen Sie dieser die Sitzplätze zu, die Sie für den eingeschränkten Personenkreis reservieren möchten.
-Erstellen Sie ein Produkt, das Sie wie unter [Produkte/Eingeschränkte Teilnahmeberechtigung](products/restricted-audience.md) beschrieben auf diesen eingeschränkten Personenkreis zuschneiden.
+Erstellen Sie ein Produkt, das Sie wie unter [Produkte/Eingeschränkte Teilnahmeberechtigung](products/restricted-audience.md) beschrieben nur für den eingeschränkten Personenkreis zugänglich machen.
 
-Weisen Sie dieses Produkt der Sitzplatzkategorie zu, wie unter [Den Sitzplan einer Einzelveranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) bzw. [Den Sitzplan einem Termin in einer Veranstaltungsreihe zuweisen](#einen-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen) beschrieben.
+Weisen Sie dieses Produkt der Sitzplatzkategorie zu, wie beschrieben unter [Den Sitzplan einer Einzelveranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) bzw. [Den Sitzplan einem Termin in einer Veranstaltungsreihe zuweisen](#einen-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen).
 
-Sperren Sie bei der **zweiten Methode** die Sitzplätze, für die Sie die Verfügbarkeit einschränken möchten, wie unter [Sitzplätze sperren](#sitzplatze-sperren) beschrieben.
+Für die **zweite Methode** sperren Sie die Sitzplätze, für die Sie die Verfügbarkeit einschränken möchten, wie unter [Sitzplätze sperren](#sitzplatze-sperren) beschrieben.
 Navigieren Sie dann zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
 Wählen Sie bei "Erlaube den Verkauf gesperrter Plätze über diese Kanäle" den Verkaufskanal, über den diese gesperrten Sitzplätze weiterhin erhältlich sein sollen.
 
@@ -375,9 +377,9 @@ Welche Option Sie wählen müssen, hängt von der Sitzplatz-Nummer ab und davon,
  - Wenn der Sitzplatz die höchste Nummer der Sitzreihe hat und die Reihenfolge umgekehrt ist, wählen Sie `>`.
 
 Wenn Sie möchten, dass Kund\*innen zuerst die Sitzplätze in der Mitte der Sitzreihe buchen, wählen Sie den Sitzplatz in der Reihenmitte.
-Klicken Sie das Dropdown-Menü "Optimizer hint" (Optimierungshinweis) und wählen Sie `<>`.
+Öffnen Sie das Dropdown-Menü "Optimizer hint" (Optimierungshinweis) und wählen Sie `<>`.
 
-Speichern Sie den Sitzplan und weisen Sie ihn wie [oben](#den-sitzplan-einer-einzelveranstaltung-zuweisen) beschrieben Ihrer Veranstaltung zu.
+Speichern Sie den Sitzplan und [weisen Sie ihn Ihrer Veranstaltung zu](#den-sitzplan-einer-einzelveranstaltung-zuweisen).
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
 Markieren Sie unter "Auswahl-Beschränkungen" das Kontrollkästchen bei "Verbiete die Buchung von Sitzen wenn es in der selben Reihe eine bessere Platzwahl gibt".
 Klicken Sie den Button :btn:Speichern:.
@@ -391,7 +393,7 @@ Diese Funktion arbeitet mit dem Abstand vom Mittelpunkt eines Sitzplatzes zum Mi
 Sie verwendet nicht den tatsächlichen Abstand zwischen den Sitzplätzen an Ihrem Veranstaltungsort.
 Ein Mindestabstand in Ihrem pretix-Sitzplan garantiert nicht, dass Sie alle behördlichen Vorschriften einhalten.
 
-Unsere Empfehlung ist, den Abstand zwischen den Sitzplätzen an Ihrem Veranstaltungsort vor Ort auszumessen.
+Wir empfehlen Ihnen, den Abstand zwischen den Sitzplätzen an Ihrem Veranstaltungsort vor Ort auszumessen.
 Anschließend [bearbeiten Sie das Layout](#ein-layout-erstellen) so, dass der Abstand zwischen den Sitzplätzen im Sitzplan dem Abstand zwischen den Sitzplätzen am Veranstaltungsort entspricht.
 Anders ausgedrückt: Ihr Sitzplan muss maßstabsgerecht sein.
 
@@ -406,7 +408,7 @@ Ein Rasterquadrat entspricht dem Abstand `10` im Maßstab des Layouts.
 
 Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
 Geben Sie in das Feld "Mindestabstand zwischen verschiedenen Buchungen" eine Zahl ein, die größer ist als der Abstand eines Sitzplatzes zum benachbarten Sitzplatz und kleiner als der Abstand zum übernächsten Sitzplatz.
-Beispiel: Wenn die Sitzplätze in Ihrem Layout den Abstand `25` haben, können Sie hier `30` eingeben.
+Wenn die Sitzplätze in Ihrem Layout zum Beispiel den Abstand `25` haben, können Sie hier `30` eingeben.
 
 Wenn mehr als ein Sitzplatz zwischen unterschiedlichen Buchungen frei bleiben soll, geben Sie eine größere Zahl ein.
 Wenn Sie einen genauen Abstand festlegen möchten, hängt der benötigte Wert von den tatsächlichen Abständen am Veranstaltungsort und dem Maßstab des Layouts ab.
