@@ -12,25 +12,25 @@ Dieser Artikel erläutert die Vorteile der Zwei-Faktor-Authentifizierung und erk
 
 ## Hintergrund
 
-Je nachdem, wie Sie pretix nutzen und welche Berechtigungen Sie eingestellt haben, bietet Ihr Konto unter Umständen Zugriff auf viele sensible Informationen.
+Je nachdem, wie Sie pretix nutzen und welche Berechtigungen Sie eingestellt haben, kann Ihr Konto Zugriff auf viele sensible Informationen bieten.
 Dabei kann es sich beispielsweise um Geschäftsgeheimnisse, Zahlungsverläufe und Daten von Kund\*innen handeln.
 
 Ein starkes Passwort bietet bereits eine gute Basissicherheit.
-Aber mittels Schadsoftware, Social-Engineering und anderen Methoden können Angreifer\*innen Passwörter auch knacken.
+Aber mittels Schadsoftware, [Social Engineering](https://de.wikipedia.org/wiki/Social_Engineering_(Sicherheit)) und anderen Methoden können Angreifer\*innen Passwörter auch knacken.
 
-Wenn zur Authentifizierung noch ein zweiter Faktor erforderlich ist, kann das einen Angriff deutlich erschweren.
+Ein zweiter Authentifizierungsfaktor erschwert einen solchen Angriff deutlich.
 Angreifer\*innen müssten sich dann Zugriff sowohl auf das 2FA-Gerät als auch auf Ihre Anmeldedaten verschaffen.
 Wenn Sie feststellen, dass einer der beiden Sicherheitsfaktoren kompromittiert wurde, haben Sie möglicherweise noch genügend Zeit, diesen zu ändern, bevor die Angreifer\*innen auch den zweiten Schutzfaktor aushebeln.
 
-Sie sollten in Ihrem Unternehmen eine Richtlinie zum 2FA-Einsatz einführen.
-Diese Richtlinie sollte alle Hardware-Tokens und Anwendungen für die 2FA aufführen.
+Sie sollten in Ihrem Unternehmen eine Richtlinie zum Einsatz von 2FA einführen.
+Diese Richtlinie sollte eine Liste aller genehmigten Hardware-Tokens und Anwendungen für 2FA enthalten.
 Sie sollte auch ein Protokoll zum Aufbewahren von Notfall-Tokens enthalten.
 Sie sollten diese Richtlinie dokumentieren und die gesamte Belegschaft darüber informieren.
 
-Erarbeiten Sie eine solche Richtlinie neu oder prüfen Sie Ihre bestehende Richtlinie für die oben genannten Punkte.
-Dies ist Voraussetzung, um 2FA mit pretix nutzen zu können.
+Erarbeiten Sie eine solche Richtlinie neu oder prüfen Sie, ob Ihre bestehende Richtlinie die oben genannten Punkte erfüllt.
+Dies ist Voraussetzung für die Nutzung von 2FA mit pretix.
 
-Wir empfehlen, 2FA für alle Benutzerkonten in Ihrem Unternehmen einzurichten.
+Wir empfehlen, 2FA für alle pretix-Benutzerkonten in Ihrem Unternehmen einzurichten.
 Die internationale Norm ISO 27001 für die Informationssicherheit erfordert eine sichere Authentifizierung und empfiehlt dafür 2FA.
 Wenn Sie festlegen möchten, dass Ihre Kolleg\*innen für ihre pretix-Konten 2FA nutzen müssen, lesen Sie den Artikel über [Teams](teams.md#requiring-two-factor-authentication-2fa).
 Sobald alle Teammitglieder dies eingerichtet haben, ist ein erfolgreicher Hacking-Angriff sehr unwahrscheinlich.
@@ -92,11 +92,11 @@ In dem Fall können Sie das bereits vorhandene Gerät für die 2FA nutzen.
 Wenn Sie unterschiedliche Anwendungen zum Speichern von Passwörtern und zum Generieren des TOTP verwenden, bietet das TOTP-Verfahren gute Sicherheit.
 Wie jede Software auf einem mit dem Internet verbundenen Gerät ist jedoch auch eine TOTP-App anfällig für Schadsoftware.
 
-Ein Hardware-Token ist viel billiger als ein Smartphone.
+Ein Hardware-Token ist deutlich günstiger als ein Smartphone.
 Wenn Sie für die Zwei-Faktor-Authentifizierung ein neues Gerät kaufen müssen, kann dies vorteilhaft sein.
 Ein weiterer Vorteil ist, dass Hardware-Tokens weniger anfällig für Hacking-Angriffe sind.
 
-Wenn Sie Ihren Hardware-Token gerade nicht aktiv verwenden, müssen Sie ihn vom Computers abziehen und an einem sicheren Ort aufbewahren oder bei sich tragen.
+Wann immer Sie Ihren Hardware-Token gerade nicht aktiv verwenden, müssen Sie ihn vom Computer abziehen und an einem sicheren Ort aufbewahren oder bei sich tragen.
 Behandeln Sie ihn mit der gleichen Umsicht wie Ihren Schlüsselbund.
 Nachteilig an Hardware-Tokens ist, dass sie meist kleiner als ein Smartphone und nur zur Authentifizierung nutzbar sind.
 Dadurch gehen sie leichter verloren.
@@ -111,23 +111,24 @@ Klicken Sie dann den Button :btn:Fortfahren:.
 Öffnen Sie Ihre TOTP-App.
 Erstellen Sie einen neuen Eintrag für das TOTP-Geheimnis.
 Scannen Sie den QR-Code, der im pretix-Backend angezeigt wird.
-Klicken Sie alternativ die Option :btn:Sie können den Barcode nicht scannen?: und geben Sie den bei `3` angezeigten Code ein.
+Klicken Sie alternativ die Option :btn:Sie können den Barcode nicht scannen?: und geben Sie den unter Punkt `3` angezeigten Code ein.
 
 !!! Note
     Speichern Sie Ihr Passwort und Ihr TOTP-Geheimnis **nicht** im selben Passwort-Manager.
-    Wenn es möglich ist, mit demselben Hauptpasswort auf beide Faktoren zuzugreifen, bietet der zweite Faktor praktisch kein Mehr an Sicherheit gegenüber der Ein-Faktor-Authentifizierung.
+    Wenn es möglich ist, mit demselben Hauptpasswort auf beide Faktoren zuzugreifen, dann bietet der zweite Faktor kaum bessere Sicherheit als die Ein-Faktor-Authentifizierung.
 
-    Verwalten Sie beispielsweise das TOTP-Geheimnis **nicht** mit demselben Eintrag im Passwort-Manager wie die Anmeldedaten für Ihr pretix-Benutzerkonto.
+    Verwalten Sie das TOTP-Geheimnis **nicht** mit demselben Eintrag im Passwort-Manager wie die Anmeldedaten für Ihr pretix-Benutzerkonto.
     Verwenden Sie unterschiedliche Apps für die TOTP-Generierung und das Speichern des Passworts, oder wenigstens unterschiedliche Datenbanken.
 
 Speichern Sie den Eintrag in Ihrer TOTP-App.
 Sie sollte jetzt einen sechsstelligen Code anzeigen, der sich alle 30 Sekunden ändert.
-Dieser Code ist das zeitbasierte Einmalpasswort.
+Dieser Code ist das zeitbasierte Einmalpasswort (TOTP).
 Geben Sie es im pretix-Backend in das Feld "Geben Sie den angezeigten Code hier ein" ein.
 Klicken Sie dann den Button :btn:Fortfahren:.
 
 Sie gelangen zurück zur Seite "Zwei-Faktor-Authentifizierung".
-Hier steht nun, dass 2FA aktiviert ist, und unter "Registrierte Geräte" ist das Gerät mit der TOTP-App aufgeführt.
+Hier steht nun, dass 2FA aktiviert ist.
+Unter "Registrierte Geräte" ist das Gerät mit der TOTP-App aufgeführt.
 
 Ab jetzt brauchen Sie sowohl Ihr Passwort als auch das zeitbasierte Einmalpasswort aus der TOTP-App, um sich bei Ihrem pretix-Benutzerkonto anzumelden.
 
@@ -141,7 +142,7 @@ Klicken Sie dann den Button :btn:Fortfahren:.
 
 Eine neue Seite wird geöffnet und der Browser fordert Sie auf, Ihren Hardware-Token zu aktivieren.
 Aktivieren Sie ihn.
-Beispiel: Wenn Sie einen YubiKey verwenden, drücken Sie die blinkende Sensortaste.
+Wenn Sie zum Beispiel einen YubiKey verwenden, dann berühren Sie die blinkende Sensortaste.
 
 Sie gelangen zurück zur Seite "Zwei-Faktor-Authentifizierung".
 Hier steht nun, dass 2FA aktiviert ist, und unter "Registrierte Geräte" ist der Hardware-Token aufgeführt.
@@ -152,7 +153,7 @@ Ab jetzt brauchen Sie sowohl Ihr Passwort als auch den Hardware-Token, um sich b
 
 ### Sie haben keinen Zugriff mehr auf das 2FA-Gerät
 
-Wenn Sie keinen Zugriff mehr auf das 2FA-Gerät haben, weil es kaputt ist, gestohlen wurde oder verloren gegangen ist, gehen Sie folgendermaßen vor:
+Wenn Sie keinen Zugriff mehr auf das 2FA-Gerät haben, weil es defekt ist, gestohlen wurde oder verloren gegangen ist, gehen Sie folgendermaßen vor:
 
  - Melden Sie sich mithilfe eines Ihrer Notfall-Tokens an.
  - Entfernen Sie das 2FA-Gerät aus Ihrem Benutzerkonto.
@@ -170,7 +171,7 @@ Löschen Sie ihn aus der Liste oder streichen Sie ihn durch, wenn Sie ihn verwen
 Klicken Sie oben rechts den Button :btn-icon:fa3-user:[Ihr Name]:.
 Damit gelangen Sie zu den Einstellungen für Ihr Benutzerkonto.
 Klicken Sie :btn:Zwei-Faktor-Einstellungen ändern:.
-Suchen Sie in der Liste nach dem verlorenen Gerät und klicken Sie den Button :btn:Entfernen: daneben.
+Suchen Sie in der Liste nach dem verlorenen Gerät und klicken Sie daneben auf den Button :btn:Entfernen:.
 Wenn dies das einzige verbundene 2FA-Gerät war, wird damit die Zwei-Faktor-Authentifizierung für Ihr Konto deaktiviert.
 
 Beschaffen Sie einen Ersatz für das ausgefallene 2FA-Gerät.
