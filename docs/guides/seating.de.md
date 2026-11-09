@@ -1,3 +1,6 @@
+---
+title: Sitzpläne
+---
 # Sitzpläne
 
 <!-- md:hosted -->
@@ -34,7 +37,7 @@ Wenn Sie für Ihre Veranstaltung Tickets für einzelne Sitzplätze verkaufen mö
  - Mit dem Sitzplan-Editor ein [Layout erstellen](#ein-layout-erstellen), das der Editor anschließend [validiert](#das-layout-validieren)
  - [Den Plan Ihrem Veranstalterkonto zuweisen](#einen-sitzplan-ihrem-veranstalterkonto-zuweisen)
  - [Produkte für den Sitzplan erstellen](#produkte-fur-den-sitzplan-erstellen)
- - [Den Sitzplan Ihrer Veranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) oder einem Termin in Ihrer [Veranstaltungsreihe](#einen-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen)
+ - [Den Sitzplan Ihrer Veranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) oder einem Termin in Ihrer [Veranstaltungsreihe](#den-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen)
  - Entscheiden, ob [Kund\*innen ihre Sitzplätze selbst wählen können](#kundinnen-ihre-sitzplatze-selbst-wahlen-lassen)
 
 Die folgenden Abschnitte erklären alle Schritte ausführlich.
@@ -159,7 +162,7 @@ Damit werden die Sitzplatz-IDs neu vergeben, sodass es in dieser Sitzreihe keine
     Das Aktivieren bzw. Deaktivieren des Umschalters "Reversed" (Umgekehrt) für eine Sitzreihe ersetzt alle Sitzplatz-IDs in dieser Sitzreihe mit einer Zeichenfolge aus Zone, Sitzreihen-Nummer und Sitzplatz-Nummer mit Bindestrichen.
     Das betrifft auch alle benutzerdefinierten Sitzplatz-IDs, also jene, die Sie manuell festgelegt haben.
 
-Um das Layout zu **speichern**, klicken Sie oben links den Button :btn-icon:fa3-save:: "Save plan" (Sitzplan speichern). 
+Um das Layout zu **speichern**, klicken Sie oben links den Button :btn-icon:fa3-save:: "Save plan" (Sitzplan speichern).
 Daraufhin wird ein Dialogfeld aufgerufen, über das Sie die JSON-Datei auf Ihrem Computer speichern.
 
 ### Einen Sitzplan Ihrem Veranstalterkonto zuweisen
@@ -172,7 +175,7 @@ Dazu navigieren Sie zu :navpath:Ihr Veranstalter → :i-seat: Sitzpläne: und kl
 
 ![Die Seite 'Neuen Sitzplan erstellen' zeigt ein Feld für den Namen, Buttons zum Herunter- und Hochladen eines Layouts sowie einen Button zum Aufrufen des Editors. Auf der Seite ist auch ein großes Feld namens 'Layout', das leer ist.](../assets/screens/seating/create-new.de.png "Neuen Sitzplan erstellen")
 
-Klicken Sie auf der nächsten Seite den Button :btn-icon:fa3-upload: Layout hochladen:. 
+Klicken Sie auf der nächsten Seite den Button :btn-icon:fa3-upload: Layout hochladen:.
 Wählen Sie die JSON-Datei mit dem Sitzplan, den Sie verwenden möchten, beispielsweise den Plan, den Sie im [vorigen Schritt](#ein-layout-erstellen) erstellt und heruntergeladen haben.
 Der Inhalt der Datei ist nun im Feld "Layout" zu sehen.
 
@@ -208,7 +211,7 @@ Ebenso, wenn Sie auch Produkte ohne Zutrittsberechtigung anbieten, beispielsweis
 
 ### Den Sitzplan einer Einzelveranstaltung zuweisen
 
-Um einer Veranstaltung einen Sitzplan zuzuweisen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
+Um einer Veranstaltung einen Sitzplan zuzuweisen, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Klicken Sie auf das Feld "Sitzplan".
 Wählen Sie einen Sitzplan aus der Liste.
 
@@ -315,7 +318,7 @@ Wenn der neue Sitzplan beide Voraussetzungen erfüllt, wird die Migration durchg
 ### Sitzplätze sperren
 
 Sie können den Verkauf von Produkten für bestimmte Sitzplätze sperren.
-Um dies für eine einzelne Veranstaltung zu tun, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.   
+Um dies für eine einzelne Veranstaltung zu tun, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Für einen Termin in einer Veranstaltungsreihe navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-calendar: Termine: und wählen Sie den betreffenden Termin.
 Ab hier ist die Vorgehensweise dieselbe.
 
@@ -349,10 +352,10 @@ Für die **erste Methode** erstellen Sie zunächst eine Sitzplatzkategorie.
 Weisen Sie dieser die Sitzplätze zu, die Sie für den eingeschränkten Personenkreis reservieren möchten.
 Erstellen Sie ein Produkt, das Sie wie unter [Produkte/Eingeschränkte Teilnahmeberechtigung](products/restricted-audience.md) beschrieben nur für den eingeschränkten Personenkreis zugänglich machen.
 
-Weisen Sie dieses Produkt der Sitzplatzkategorie zu, wie beschrieben unter [Den Sitzplan einer Einzelveranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) bzw. [Den Sitzplan einem Termin in einer Veranstaltungsreihe zuweisen](#einen-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen).
+Weisen Sie dieses Produkt der Sitzplatzkategorie zu, wie beschrieben unter [Den Sitzplan einer Einzelveranstaltung zuweisen](#den-sitzplan-einer-einzelveranstaltung-zuweisen) bzw. [Den Sitzplan einem Termin in einer Veranstaltungsreihe zuweisen](#den-sitzplan-einem-termin-in-einer-veranstaltungsreihe-zuweisen).
 
 Für die **zweite Methode** sperren Sie die Sitzplätze, für die Sie die Verfügbarkeit einschränken möchten, wie unter [Sitzplätze sperren](#sitzplatze-sperren) beschrieben.
-Navigieren Sie dann zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
+Navigieren Sie dann zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Wählen Sie bei "Erlaube den Verkauf gesperrter Plätze über diese Kanäle" den Verkaufskanal, über den diese gesperrten Sitzplätze weiterhin erhältlich sein sollen.
 
 ### Sitzplatz-Wahl durch Kund\*innen optimieren
@@ -361,7 +364,7 @@ Wenn Kund\*innen bei ihrer Bestellung völlig frei in der Wahl der Sitzplätze s
 So kann es sein, dass einzelne Sitzplätze frei bleiben, die dann nur noch schwer verkäuflich sind.
 In diesem Abschnitt erfahren Sie, wie Sie verhindern, dass Buchungen einzelne Sitzplätze leer lassen, und wie Sie dafür sorgen, dass der Verkauf bei einem bestimmten Sitzplatz in einer Sitzreihe beginnt.
 
-Wenn Sie **verhindern** möchten, dass **einzelne Sitzplätze leer bleiben**, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
+Wenn Sie **verhindern** möchten, dass **einzelne Sitzplätze leer bleiben**, navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Markieren Sie unter "Auswahl-Beschränkungen" das Kontrollkästchen bei "Freilassen einzelner Plätze verbieten".
 Klicken Sie den Button :btn:Speichern:.
 
@@ -380,7 +383,7 @@ Wenn Sie möchten, dass Kund\*innen zuerst die Sitzplätze in der Mitte der Sitz
 Öffnen Sie das Dropdown-Menü "Optimizer hint" (Optimierungshinweis) und wählen Sie `<>`.
 
 Speichern Sie den Sitzplan und [weisen Sie ihn Ihrer Veranstaltung zu](#den-sitzplan-einer-einzelveranstaltung-zuweisen).
-Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Markieren Sie unter "Auswahl-Beschränkungen" das Kontrollkästchen bei "Verbiete die Buchung von Sitzen wenn es in der selben Reihe eine bessere Platzwahl gibt".
 Klicken Sie den Button :btn:Speichern:.
 
@@ -406,7 +409,7 @@ Sie können sich auch am Hintergrundraster orientieren.
 Falls das Raster nicht angezeigt wird, klicken Sie in der oberen Leiste des Fensters den Button :btn-icon:fa3-table:: "Toggle grid" (Raster ein-/ausblenden).
 Ein Rasterquadrat entspricht dem Abstand `10` im Maßstab des Layouts.
 
-Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:. 
+Navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-wrench: Einstellungen → Sitzpläne:.
 Geben Sie in das Feld "Mindestabstand zwischen verschiedenen Buchungen" eine Zahl ein, die größer ist als der Abstand eines Sitzplatzes zum benachbarten Sitzplatz und kleiner als der Abstand zum übernächsten Sitzplatz.
 Wenn die Sitzplätze in Ihrem Layout zum Beispiel den Abstand `25` haben, können Sie hier `30` eingeben.
 
