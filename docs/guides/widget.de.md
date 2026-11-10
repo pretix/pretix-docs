@@ -81,7 +81,7 @@ Navigieren Sie zu :navpath:Ihre Veranstaltung → Einstellungen → Widget:, kli
 
 !!! Hinweis
     Wenn Sie das Widget für mehrere Veranstaltungen verwenden möchten, ist es nicht notwendig, mehrere Widgets einzubinden.
-    Lesen Sie dazu [Das Widget für mehrere Veranstaltungen nutzen](#das-widget-für-mehrere-veranstaltungen-nutzen).
+    Lesen Sie dazu [Das Widget für mehrere Veranstaltungen nutzen](#das-widget-fur-mehrere-veranstaltungen-nutzen).
 
 Wenn Sie mehrere Widgets für verschiedene Veranstaltungen auf Ihrer Website einbinden möchten, fügen Sie den ersten Code-Abschnitt nur **einmal** ein.
 Generieren Sie den zweiten Code-Abschnitt für jede Veranstaltung neu und fügen Sie die jeweiligen Abschnitte in den HTML-Code Ihrer Website ein.

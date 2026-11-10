@@ -11,7 +11,7 @@ Dieser Artikel erläutert, wie Sie Ihre gewünschte Lösung für den E-Mail-Verk
 ## Voraussetzungen
 
 Ihr Konto muss aktiviert sein, damit Sie pretix zum Versand von E-Mails nutzen können.
-Weitere Informationen finden Sie im Tutorial-Abschnitt zur [Aktivierung des Kontos](../tutorial/single-events/organizer-account.md#activation).
+Weitere Informationen finden Sie im Tutorial-Abschnitt zur [Aktivierung des Kontos](../tutorial/single-events/organizer-account.de.md#aktivierung).
 
 ## Anleitung
 

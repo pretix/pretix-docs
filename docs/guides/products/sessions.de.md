@@ -7,9 +7,9 @@ pretix bietet Ihnen dazu zwei Optionen.
 Sie können entweder Zusatzprodukte mit festen Zeitfenstern verwenden oder eine Erweiterung mit speziellen Funktionen für variable Zeitfenster.
 Dieser Artikel erläutert beide Optionen.
 
-Wenn für einige der Sitzungen abweichende Preise gelten oder an jeder Sitzung nur eine begrenzte Anzahl Personen teilnehmen kann, sollten Sie mit [Zusatzprodukten](#optiona-zusatzprodukte-mit-festen-zeitfenstern) arbeiten.
+Wenn für einige der Sitzungen abweichende Preise gelten oder an jeder Sitzung nur eine begrenzte Anzahl Personen teilnehmen kann, sollten Sie mit [Zusatzprodukten](#option-a-zusatzprodukte-mit-festen-zeitfenstern) arbeiten.
 
-Wenn Sie abweichende Preise haben sowie Sitzungen mit unterschiedlichen Anfangs- und Endzeiten, die einander überlappen und sich deshalb nicht ohne Weiteres in Zeitfenster einteilen lassen, sollten Sie mit [Agenda-Beschränkungen](#optionb-zusatzprodukte-mit-variablen-zeitfenstern) arbeiten.
+Wenn Sie abweichende Preise haben sowie Sitzungen mit unterschiedlichen Anfangs- und Endzeiten, die einander überlappen und sich deshalb nicht ohne Weiteres in Zeitfenster einteilen lassen, sollten Sie mit [Agenda-Beschränkungen](#option-b-zusatzprodukte-mit-variablen-zeitfenstern) arbeiten.
 
 Wenn das, was Sie planen, keine Sitzungen als Teil einer größeren Hauptveranstaltung sind, sondern eine Reihe von Veranstaltungen, die man einzeln besuchen kann, lesen Sie stattdessen unseren Artikel über [Veranstaltungsreihen](../event-series.md).
 
