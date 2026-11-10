@@ -73,7 +73,7 @@ Im folgenden Beispiel lassen sich die Agenda-Beschränkungen einsetzen:
 | 16:00–18:00 | Workshop 2 (zweite Hälfte)| Diskussion 4             |
 
 In diesem Beispiel sind die Workshops 1 und 2 doppelt so lang wie die Diskussionen.
-Daher ist es nicht sinnvoll, dieses Programm mit Zusatzprodukten umzusetzen, wie für [Option A](#optiona-zusatzprodukte-mit-festen-zeitfenstern) beschrieben.
+Daher ist es nicht sinnvoll, dieses Programm mit Zusatzprodukten umzusetzen, wie für [Option A](#option-a-zusatzprodukte-mit-festen-zeitfenstern) beschrieben.
 Das könnte nämlich folgende unerwünschte Konsequenzen haben:
 Entweder müssten Kund\*innen beide Hälften der Workshops einzeln buchen oder es wäre für sie möglich, Kombinationen von überlappenden Sitzungen buchen, an denen sie nicht teilnehmen können.
 Solche komplexeren Zeitpläne können Sie mit der Funktion Agenda-Beschränkungen umsetzen.

@@ -345,7 +345,7 @@ Wenn Sie Kund\*innen, die über das Widget bestellen, Rabatte gewähren möchten
 Einen Gutschein vorauswählen bedeutet, dass sich das Widget so verhält, als hätte der\*die Kund\*in den Gutscheincode eingegeben.
 Dieser Abschnitt erläutert, wie Sie im Widget-Code einen Gutschein anhand des Attributs `voucher` vorauswählen, um exklusiv über das Widget einen Rabatt anzubieten.
 
-Erstellen Sie einen Gutschein, wie im Artikel über Gutscheine unter [Begrenzte Rabatte anbieten](vouchers.md#offering-a-limited-discount) beschrieben.
+Erstellen Sie einen Gutschein, wie im Artikel über Gutscheine unter [Begrenzte Rabatte anbieten](vouchers.de.md#einen-limitierten-rabatt-anbieten) beschrieben.
 Geben Sie den Gutscheincode **nicht** öffentlich und **nicht** Kund\*innen direkt bekannt.
 Übergeben Sie den Gutscheincode (beispielsweise `ABCDE123456`) stattdessen dem Attribut `voucher`:
 
