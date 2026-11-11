@@ -6,7 +6,7 @@ This guide describes the installation of a small-scale installation of pretix fr
 
     Even though we try to make it straightforward to run pretix, it still requires some Linux experience to get it right. If you're not feeling comfortable managing a Linux server, check out our hosting and service offers at [pretix.eu](https://pretix.eu/).
 
-We tested this guide on the Linux distribution **Debian 12** but it should work very similar on other modern distributions, especially on all systemd-based ones.
+We tested this guide on the Linux distribution **Debian 13** but it should work very similar on other modern distributions, especially on all systemd-based ones.
 
 ## Requirements
 
@@ -55,10 +55,10 @@ For PostgreSQL database creation, we would do:
 To build and run pretix, you will need the following debian packages:
 
 ``` console
-# apt-get install git build-essential python3-dev python3-venv python3 \
-                  python3-pip libxml2-dev libxslt1-dev libffi-dev \
-                  zlib1g-dev libssl-dev gettext libpq-dev libjpeg-dev \
-                  libopenjp2-7-dev
+# apt install git build-essential python3-dev python3-venv python3 \
+              python3-pip libxml2-dev libxslt1-dev libffi-dev \
+              zlib1g-dev libssl-dev gettext libpq-dev libjpeg-dev \
+              libopenjp2-7-dev
 ```
 
 ## Config file
