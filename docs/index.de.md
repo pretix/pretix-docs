@@ -76,7 +76,7 @@ Willkommen in unserer neuen Dokumentation!
 
     ---
 
-    Wir sind open source!
+    Wir sind Open Source!
     Auf GitHub finden Sie den Quellcode sowohl für pretix und viele Erweiterungen, als auch für diese Dokumentation.
 
     :fa3-arrow-right: [GitHub](https://github.com/pretix)
