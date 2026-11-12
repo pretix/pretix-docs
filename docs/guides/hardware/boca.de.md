@@ -27,7 +27,7 @@ Als Material benötigen Sie kompatibles bedruckbares Thermopapier, z.B. in Form 
 Mit dem Boca Lemur oder Lemur-C können Sie entweder Tickets oder Butterfly-Badges bedrucken.
 Um einen dieser Drucker in Betrieb zu nehmen, sind folgende Schritte notwendig:
 
- - [Versorgen Sie Ihren Drucker](#drucker-anschließen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
+ - [Versorgen Sie Ihren Drucker](#drucker-anschlieen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
  - [Testen Sie die Konfiguration](#konfiguration-testen)
  - Falls die Hardware nicht vorkonfiguriert wurde, [drucken Sie eine Konfigurationsseite](#konfigurationsseite-drucken)
  - [Verbinden Sie den Drucker](#drucker-mit-scan-smartphone-oder-kasse-verbinden) über unsere App pretixPRINT mit der Kasse oder den Scannern.
@@ -159,7 +159,7 @@ Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick 
 
 ### Drucker druckt nicht
 
-**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](boca.de.md#Konfigurationsseite-drucken).
+**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](boca.de.md#konfigurationsseite-drucken).
 
 **Lösung:** Stellen Sie sicher, dass:
 

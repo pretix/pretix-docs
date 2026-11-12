@@ -2,7 +2,7 @@
 
 You do not have to manage your events all by yourself.
 pretix allows you to invite colleagues, organize them into multiple teams, and grant or revoke their access settings and events.
-This article tells you how to use the "Teams" settings page, [create teams](teams.md#creating-a-new-team), [send out team invitations](teams.md#inviting-someone-to-your-team), [accept an such an invitation](teams.md#accepting-an-invitation-to-a-team), and [enable two-factor authentication](teams.md#two-factor-authentication-2fa).
+This article tells you how to use the "Teams" settings page, [create teams](teams.md#creating-a-new-team), [send out team invitations](teams.md#inviting-someone-to-your-team), [accept an such an invitation](teams.md#accepting-an-invitation-to-a-team), and [requiring two-factor authentication](teams.md#requiring-two-factor-authentication-2fa).
 
 ## Prerequisites
 
@@ -49,8 +49,8 @@ Clicking the :btn:Save: button creates the team and takes you to an overview of 
 
 !!! Note
     If a user does not have permission for one area of the system, they can still view some of the data of that area if it connects to other areas.
-    For example, a user with access to orders can see the gift card created or used in a specific order. 
-    This is still true if that user does not have permission for gift cards. 
+    For example, a user with access to orders can see the gift card created or used in a specific order.
+    This is still true if that user does not have permission for gift cards.
 ### Inviting someone to your team
 
 ![Page titled 'Team: Staff', listing three members, one of them has a mail icon next to their email address.](../assets/screens/teams/team-invite.png "Team: Staff screenshot")
@@ -59,7 +59,7 @@ Navigate to :navpath:Your organizer → :fa3-users: Teams: and select the team f
 You can invite someone to your team by entering their email address into the field at the bottom of the list of team members and clicking the :btn-icon:fa3-plus: Add: button.
 If the person you added already has a pretix account using that same email address, they will be granted access to this organizer account instantly.
 They will not be notified by the system, so you should let them know that they have been granted access.
-The person will appear in the list with either a gray or a green :fa3-shield: symbol next to them, indicating whether or not they have enabled [two-factor authentication](teams.md#two-factor-authentication-2fa).
+The person will appear in the list with either a gray or a green :fa3-shield: symbol next to them, indicating whether or not they have enabled [two-factor authentication](teams.md#requiring-two-factor-authentication-2fa).
 
 If the person you added does not yet have a pretix account, they will receive an email invitation to create one.
 They will appear in the list with a :fa3-envelope-o: symbol for their status as "invited, pending response" and a :btn-icon:fa3-rotate-right:: button for resending the invitation email.
