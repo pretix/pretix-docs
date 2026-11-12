@@ -1,3 +1,8 @@
+---
+# title:
+description: Create single or multiple vouchers in pretix. Offer price discounts, special products and reserve tickets. Send vouchers via email, and import CSV files.
+---
+
 # Vouchers
 
 Vouchers are codes which can be redeemed for certain products in your shop.
