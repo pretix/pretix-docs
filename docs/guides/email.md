@@ -128,6 +128,10 @@ Depending on the payment method, this can be right after the "Placed order" emai
 The settings for emails described above are all tied to certain actions in the pretix backend.
 However, you can also send out emails at a time of your choosing.
 
+!!! Note
+    Your account needs to be activated before you can use pretix to send out emails.
+    See the tutorial's section on [account activation](../tutorial/single-events/organizer-account.md#activation) for further information.
+
 If you want to send out an email right away, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Send email:.
 If your email is related to waiting lists, select :btn:Waiting list:.
 If your email is relevant for exhibitors, select :btn:Exhibitors:.
