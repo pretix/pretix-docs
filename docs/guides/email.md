@@ -139,3 +139,33 @@ This page displays a list of all scheduled email rules.
 You can add a new one by clicking the :btn:Create a new rule: button.
 Specify your email contents, recipients, and the date and time at which the email shall be sent.
 The date and time can be absolute or relative to the event start or end.
+
+### Monitoring outgoing emails
+
+Navigate to :navpath:Your organizer → :fa3-paper-plane: Outgoing emails:.
+This page lists all emails sent by your organizer account over the last 14 days.
+Emails can have one of the following statuses:
+
+ - `queued`
+ - `being sent`
+ - `awaiting retry`
+ - `withheld`
+ - `failed`
+ - `aborted`
+ - `sent`
+ - `bounced`
+
+The statuses `withheld` and `bounced` are for plugin use.
+
+You can abort emails that have one of these statuses: `queued`, `withheld`, or `awaiting retry`.
+In order to do so, check the boxes next to each email in the list that you want to abort.
+Then, click the :btn-icon:fa3-ban: Abort (if queued, awaiting retry or withheld) (#): button.
+A green infobox will appear at the top of the page, stating that "# emails were aborted and will not be sent".
+The UI allows you to mark emails with other statuses and abort them, but the action will have no effect on them.
+
+You can retry emails that have one of these statuses: `failed` or `withheld`.
+In order to do so, check the boxes next to each email in the list that you want to retry.
+Then, click the :btn-icon:fa3-rotate-right: Retry (if failed or withheld) (#): button.
+A green infobox will appear at the top of the page, stating that " A retry of # emails was scheduled".
+The UI allows you to mark emails with other statuses and retry them, but the action will have no effect on them.
+
