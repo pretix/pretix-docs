@@ -5,6 +5,13 @@ You can use either the system-provided email server or your organization's own.
 pretix comes with many pre-configured email messages that you can customize to your needs.
 This article tells you how to set up your desired email server solution within pretix and how to customize email content.
 
+!!! Note
+    The pretix email server has a limit on how many emails you can send out with an account that has not been activated yet.
+    We recommend [activating your account](../tutorial/single-events/organizer-account.md#activation) before sending out any emails.
+    pretix will **withhold** any emails you attempt to send out after reaching the limit.
+    You can retry sending those withheld emails after activating your account.
+    For more information, see [Managing outgoing emails](#managing-outgoing-emails)
+
 ## Prerequisites
 
 Your account needs to be activated before you can use pretix to send out emails.
@@ -140,7 +147,7 @@ You can add a new one by clicking the :btn:Create a new rule: button.
 Specify your email contents, recipients, and the date and time at which the email shall be sent.
 The date and time can be absolute or relative to the event start or end.
 
-### Monitoring outgoing emails
+### Managing outgoing emails
 
 Navigate to :navpath:Your organizer → :fa3-paper-plane: Outgoing emails:.
 This page lists all emails sent by your organizer account over the last 14 days.
