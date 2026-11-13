@@ -5,6 +5,13 @@ You can use either the system-provided email server or your organization's own.
 pretix comes with many pre-configured email messages that you can customize to your needs.
 This article tells you how to set up your desired email server solution within pretix and how to customize email content.
 
+!!! Note
+    The pretix email server has a limit on how many emails you can send out with an account that has not been activated yet.
+    We recommend [activating your account](../tutorial/single-events/organizer-account.md#activation) before sending out any emails.
+    pretix will **withhold** any emails you attempt to send out after reaching the limit.
+    You can retry sending those withheld emails after activating your account.
+    For more information, see [Managing outgoing emails](#managing-outgoing-emails)
+
 ## Prerequisites
 
 Your account needs to be activated before you can use pretix to send out emails.
@@ -121,6 +128,10 @@ Depending on the payment method, this can be right after the "Placed order" emai
 The settings for emails described above are all tied to certain actions in the pretix backend.
 However, you can also send out emails at a time of your choosing.
 
+!!! Note
+    Your account needs to be activated before you can use pretix to send out emails.
+    See the tutorial's section on [account activation](../tutorial/single-events/organizer-account.md#activation) for further information.
+
 If you want to send out an email right away, navigate to :navpath:Your event → :fa3-envelope: Send out emails → Send email:.
 If your email is related to waiting lists, select :btn:Waiting list:.
 If your email is relevant for exhibitors, select :btn:Exhibitors:.
@@ -139,3 +150,33 @@ This page displays a list of all scheduled email rules.
 You can add a new one by clicking the :btn:Create a new rule: button.
 Specify your email contents, recipients, and the date and time at which the email shall be sent.
 The date and time can be absolute or relative to the event start or end.
+
+### Managing outgoing emails
+
+Navigate to :navpath:Your organizer → :fa3-paper-plane: Outgoing emails:.
+This page lists all emails sent by your organizer account over the last 14 days.
+Emails can have one of the following statuses:
+
+ - `queued`
+ - `being sent`
+ - `awaiting retry`
+ - `withheld`
+ - `failed`
+ - `aborted`
+ - `sent`
+ - `bounced`
+
+The statuses `withheld` and `bounced` are for plugin use.
+
+You can abort emails that have one of these statuses: `queued`, `withheld`, or `awaiting retry`.
+In order to do so, check the boxes next to each email in the list that you want to abort.
+Then, click the :btn-icon:fa3-ban: Abort (if queued, awaiting retry or withheld) (#): button.
+A green infobox will appear at the top of the page, stating that "# emails were aborted and will not be sent".
+The UI allows you to mark emails with other statuses and abort them, but the action will have no effect on them.
+
+You can retry emails that have one of these statuses: `failed` or `withheld`.
+In order to do so, check the boxes next to each email in the list that you want to retry.
+Then, click the :btn-icon:fa3-rotate-right: Retry (if failed or withheld) (#): button.
+A green infobox will appear at the top of the page, stating that " A retry of # emails was scheduled".
+The UI allows you to mark emails with other statuses and retry them, but the action will have no effect on them.
+
