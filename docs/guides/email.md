@@ -166,15 +166,28 @@ Emails can have one of the following statuses:
  - `sent`
  - `bounced`
 
-The statuses `withheld` and `bounced` are for plugin use.
+If an email exceeds the limit of an organizer account that has not been activated yet, then it gains the status `withheld`.
+If pretix identifies it as an attempt at spam, then it also gains the status `withheld`.
 
-You can abort emails that have one of these statuses: `queued`, `withheld`, or `awaiting retry`.
+<!--md:hosted-->
+
+If you are using pretix Hosted and the system-provided email server, then the plugin `pretix-bounces` is active.
+This plugin logs emails that are sent back from the recipient with an error message attached.
+These emails show up in the list of outgoing emails with the status `bounced`.
+
+<!--md:enterprise-->
+
+<!--md:community-->
+
+If you are using a self-hosted version of pretix, you can install and configure the plugin [pretix-bounces](https://marketplace.pretix.eu/products/bounces/) to achieve the same behavior as described above.
+
+You can **abort** emails that have one of these statuses: `queued`, `withheld`, or `awaiting retry`.
 In order to do so, check the boxes next to each email in the list that you want to abort.
 Then, click the :btn-icon:fa3-ban: Abort (if queued, awaiting retry or withheld) (#): button.
 A green infobox will appear at the top of the page, stating that "# emails were aborted and will not be sent".
 The UI allows you to mark emails with other statuses and abort them, but the action will have no effect on them.
 
-You can retry emails that have one of these statuses: `failed` or `withheld`.
+You can **retry** emails that have one of these statuses: `failed` or `withheld`.
 In order to do so, check the boxes next to each email in the list that you want to retry.
 Then, click the :btn-icon:fa3-rotate-right: Retry (if failed or withheld) (#): button.
 A green infobox will appear at the top of the page, stating that " A retry of # emails was scheduled".
