@@ -176,7 +176,6 @@ This plugin logs emails that are sent back from the recipient with an error mess
 These emails show up in the list of outgoing emails with the status `bounced`.
 
 <!--md:enterprise-->
-
 <!--md:community-->
 
 If you are using a self-hosted version of pretix, you can install and configure the plugin [pretix-bounces](https://marketplace.pretix.eu/products/bounces/) to achieve the same behavior as described above.
