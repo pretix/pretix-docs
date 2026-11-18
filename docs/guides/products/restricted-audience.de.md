@@ -11,7 +11,7 @@ Dieser Artikel erläutert Ihnen alle Optionen.
 ## Option A: Verpflichtende Gutscheincodes
 
 Mit Gutscheinen sorgen Sie dafür, dass ein Produkt (oder mehrere Produkte) nur für einen ausgewählten Kreis geladener Gäste verfügbar ist.
-Eine ausführliche Anleitung finden Sie unter [Gutscheine: Verfügbarkeit exklusiver Produkte](../vouchers.md#exclusive-product-availability).
+Eine ausführliche Anleitung finden Sie unter [Gutscheine: Verfügbarkeit exklusiver Produkte](../vouchers.de.md#exklusive-produktverfugbarkeit).
 
 ## Option B: Freigabe von Bestellungen
 

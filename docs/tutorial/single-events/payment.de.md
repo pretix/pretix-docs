@@ -77,7 +77,7 @@ Neben den Optionen "Banküberweisung", "Wertgutschein" und "Stripe" sollte nun j
     Bei pretix Hosted können Sie automatische Bankimporte einrichten.
     Bei pretix Community und pretix Enterprise müssen Sie die pretix-Software über eingehende Zahlungen informieren.
     Dafür können Sie die Zahlungen entweder manuell als abgeschlossen markieren oder regelmäßig digitale Kontoauszüge importieren.
-    Lesen Sie unseren Guide zum Thema "[Eingehende Zahlungen überwachen](../../guides/payment/bank-transfer.md#monitoring-incoming-payments-automatically)", bevor Sie Banküberweisungen als Zahlungsmethode in Ihrem Shop nutzen.
+    Lesen Sie unseren Guide zum Thema "[Eingehende Zahlungen überwachen](../../guides/payment/bank-transfer.de.md#zahlungseingange-automatisch-uberwachen)", bevor Sie Banküberweisungen als Zahlungsmethode in Ihrem Shop nutzen.
 
 Weitere Informationen zur Nutzung von Banküberweisungen finden Sie unter "[Banküberweisungen](../../guides/payment/bank-transfer.de.md)".
 

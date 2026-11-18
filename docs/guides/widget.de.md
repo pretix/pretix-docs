@@ -81,7 +81,7 @@ Navigieren Sie zu :navpath:Ihre Veranstaltung → Einstellungen → Widget:, kli
 
 !!! Hinweis
     Wenn Sie das Widget für mehrere Veranstaltungen verwenden möchten, ist es nicht notwendig, mehrere Widgets einzubinden.
-    Lesen Sie dazu [Das Widget für mehrere Veranstaltungen nutzen](#das-widget-für-mehrere-veranstaltungen-nutzen).
+    Lesen Sie dazu [Das Widget für mehrere Veranstaltungen nutzen](#das-widget-fur-mehrere-veranstaltungen-nutzen).
 
 Wenn Sie mehrere Widgets für verschiedene Veranstaltungen auf Ihrer Website einbinden möchten, fügen Sie den ersten Code-Abschnitt nur **einmal** ein.
 Generieren Sie den zweiten Code-Abschnitt für jede Veranstaltung neu und fügen Sie die jeweiligen Abschnitte in den HTML-Code Ihrer Website ein.
@@ -345,7 +345,7 @@ Wenn Sie Kund\*innen, die über das Widget bestellen, Rabatte gewähren möchten
 Einen Gutschein vorauswählen bedeutet, dass sich das Widget so verhält, als hätte der\*die Kund\*in den Gutscheincode eingegeben.
 Dieser Abschnitt erläutert, wie Sie im Widget-Code einen Gutschein anhand des Attributs `voucher` vorauswählen, um exklusiv über das Widget einen Rabatt anzubieten.
 
-Erstellen Sie einen Gutschein, wie im Artikel über Gutscheine unter [Begrenzte Rabatte anbieten](vouchers.md#offering-a-limited-discount) beschrieben.
+Erstellen Sie einen Gutschein, wie im Artikel über Gutscheine unter [Begrenzte Rabatte anbieten](vouchers.de.md#einen-limitierten-rabatt-anbieten) beschrieben.
 Geben Sie den Gutscheincode **nicht** öffentlich und **nicht** Kund\*innen direkt bekannt.
 Übergeben Sie den Gutscheincode (beispielsweise `ABCDE123456`) stattdessen dem Attribut `voucher`:
 

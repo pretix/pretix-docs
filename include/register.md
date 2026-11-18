@@ -154,7 +154,7 @@ Diese Seite zeigt Ihnen alle Daten an, die für die Anmeldung über einen Dritta
 
 Falls die Seite hinter dem Button :btn-icon:fa3-clock-o: Export planen: nur einen Warnhinweis anzeigt, dann bedeutet dies, das Ihr pretix-Account noch nicht aktiviert wurde.
 Klicken Sie den Button :btn:Zu den Account-Einstellungen: und vervollständigen Sie Ihre Kontaktinformationen.
-Lesen Sie den Tutorial-Abschnitt zur [Aktivierung des Veranstalterkontos](../../tutorial/single-events/organizer-account.md#activation) für mehr Informationen.
+Lesen Sie den Tutorial-Abschnitt zur [Aktivierung des Veranstalterkontos](../../tutorial/single-events/organizer-account.md#aktivierung) für mehr Informationen.
 
 ## Weitere Informationen
 

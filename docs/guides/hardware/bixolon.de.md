@@ -22,7 +22,7 @@ Falls Sie die Netzwerkkonfiguration des Druckers ändern, benötigen Sie für da
 Mit dem Bixolon XD5-40d können Sie Badges in Form von Klebeetiketten drucken.
 Um einen dieser Drucker in Betrieb zu nehmen, sind folgende Schritte notwendig:
 
- - [Versorgen Sie Ihren Drucker](#drucker-anschließen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
+ - [Versorgen Sie Ihren Drucker](#drucker-anschlieen) mit Strom, einer Netzwerkverbindung und bedruckbarem Material
  - [Testen Sie die Konfiguration](#konfiguration-testen)
  - Falls die Hardware nicht vorkonfiguriert wurde, [drucken Sie eine Konfigurationsseite](#konfigurationsseite-drucken)
  - [Verbinden Sie den Drucker](#drucker-mit-scan-smartphone-oder-kasse-verbinden) über unsere App pretixPRINT mit der Kasse oder den Scannern.
@@ -80,7 +80,7 @@ Schalten Sie das Gerät ein, indem Sie den Schalter neben der "POWER"-Buchse uml
     Das gilt auch, falls Sie Hardware von uns gekauft haben und vor dem Versand eine entsprechende Konfiguration in Auftrag gegeben haben.
 
     In diesen Fällen müssen Sie die Konfiguration nur testen.
-    Sie können die beiden Unterabschnitte [Konfigurationsseite drucken](bixolon.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden) überspringen.
+    Sie können die beiden Unterabschnitte [Konfigurationsseite drucken](#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](#drucker-mit-scan-smartphone-oder-kasse-verbinden) überspringen.
 
 Um die Konfiguration zu testen, starten Sie das Android-Gerät (Kasse oder Scan-Smartphone), von dem Sie den Drucker ansteuern wollen.
 Überprüfen Sie, ob das Gerät mit einem WLAN verbunden ist, dessen Name mit `pretix_onsite` beginnt.
@@ -93,8 +93,8 @@ Tippen Sie neben der Anzeige des Druckers in pretixPRINT das Drei-Punkte-Menü :
 Beobachten Sie, ob der Drucker wie erwartet eine Testseite produziert.
 Falls Sie mehrere Drucker für je Badge-, Ticket- oder Belegdruck von dem Android-Gerät aus ansteuern wollen, führen Sie den Schritt einmal für jeden der Drucker durch.
 
-Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](bixolon.de.md#problemlosung).
-Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](bixolon.de.md#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](bixolon.de.md#drucker-mit-scan-smartphone-oder-kasse-verbinden).
+Falls der Drucker keine Testseite produziert oder es dabei zu Problemen kommt, lesen Sie den Abschnitt [Problemlösung](#problemlosung).
+Um die gesamte Konfiguration selbst vorzunehmen, lesen Sie die beiden Unterabschnitte [Konfigurationsseite drucken](#konfigurationsseite-drucken) und [Drucker mit Scan-Smartphone oder Kasse verbinden](#drucker-mit-scan-smartphone-oder-kasse-verbinden).
 
 ### Konfigurationsseite drucken
 
@@ -160,13 +160,13 @@ Die pretixPRINT-Testseite könnte beim Bixolon XD5-40d z.B. so aussehen:
 
 !["Ein weißes Klebeetikett mit Mustern, pretix-Logos und der Papiergröße: 8 x 3,25 Zoll"](../../assets/screens/hardware-setup/bixolon-pretixprint.jpg "pretixPRINT-Testseite aus Bixolon-Drucker")
 
-Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](bixolon.de.md#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](bixolon.de.md#problemlosung).
+Falls bei der pretixPRINT-Testseite Probleme auftauchen, werfen Sie einen Blick auf [den entsprechenden Abschnitt](#drucker-druckt-pretixprint-testseite-nicht) unter [Problemlösung](#problemlosung).
 
 ## Problemlösung
 
 ### Drucker druckt nicht
 
-**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](bixolon.de.md#Konfigurationsseite-drucken).
+**Problem:** Sie können den Drucker nicht dazu bringen, zu drucken – nicht einmal seine eigene Konfigurationsseite wie beschrieben unter [Konfigurationsseite drucken](#konfigurationsseite-drucken).
 
 **Lösung:** Stellen Sie sicher, dass:
 

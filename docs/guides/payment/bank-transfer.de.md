@@ -117,7 +117,7 @@ Wenn der automatische Import aktiv ist, sollten Sie gelegentlich nachsehen, ob e
 Die häufigste Ursache für unzugeordnete Überweisungen sind falsch geschriebene oder fehlende Bestellnummern im Verwendungszweck.
 Falls das Bankkonto auch für Transaktionen genutzt wird, die nichts mit Verkäufen über pretix zu tun haben, entstehen auch dadurch unzugeordnete Überweisungen.
 pretix gibt Ihnen die Möglichkeit, diese Transaktionen manuell zu verarbeiten.
-Der folgende Abschnitt erklärt, wie Sie [unzugeordnete Überweisungen manuell verarbeiten](#unzugeordnete-überweisungen-manuell-bearbeiten).
+Der folgende Abschnitt erklärt, wie Sie [unzugeordnete Überweisungen manuell verarbeiten](#unzugeordnete-uberweisungen-manuell-bearbeiten).
 
 #### Option B: Bankdaten importieren
 
@@ -165,13 +165,13 @@ Die häufigste Ursache dafür sind falsch geschriebene oder fehlende Bestellnumm
 Falls das Bankkonto auch für Transaktionen genutzt wird, die nichts mit Verkäufen über pretix zu tun haben, entstehen auch dadurch ungeklärte Transaktionen.
 In dieser Ansicht können Sie eingreifen und Fehler manuell korrigieren.
 
-Eine ausführlichere Anleitung, wie Sie [ungeklärte Transaktionen manuell verarbeiten](bank-transfer.md#handling-unresolved-transactions), finden Sie im Abschnitt weiter unten.
+Eine ausführlichere Anleitung, wie Sie [ungeklärte Transaktionen manuell verarbeiten](#unzugeordnete-uberweisungen-manuell-bearbeiten), finden Sie im Abschnitt weiter unten.
 
 ### Transaktionen manuell freigeben
 
 ![Eine Seite mit dem Titel 'Bestellungen' zeigt eine Liste mit einer Bestellung. Deren Status ist 'ausstehend', 0,00 € von 250,00 € bezahlt.](../../assets/screens/payment/orders.de.png "Bestellungen" )
 
-Ergänzend zur [automatischen Option A](#option-a-transaktionen-mitgocardless-automatisch-importieren) und zur [halbautomatischen Option B](bank-transfer.md#option-b-bankdaten-importieren), die beide oben beschrieben sind, haben Sie in pretix auch die Möglichkeit, Transaktionen manuell freizugeben.
+Ergänzend zur [automatischen Option A](#option-a-transaktionen-mit-gocardless-automatisch-importieren) und zur [halbautomatischen Option B](bank-transfer.md#option-b-bankdaten-importieren), die beide oben beschrieben sind, haben Sie in pretix auch die Möglichkeit, Transaktionen manuell freizugeben.
 Dazu navigieren Sie zu :navpath:Ihre Veranstaltung → :fa3-shopping-cart: Bestellungen:.
 Diese Seite zeigt alle Bestellungen an, die Kund\*innen in Ihrem Shop getätigt haben.
 Wenn ein\*e Kund\*in eine Bestellung getätigt hat und Sie die Zahlung dafür noch nicht erhalten haben, zeigt die Seite diese Bestellung mit dem gelben Status-Tag ":fa3-money: Ausstehend" an.

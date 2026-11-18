@@ -143,7 +143,7 @@ Navigieren Sie dafür zu: :navpath:Ihr Veranstalter → :fa3-credit-card: Wertgu
 Sie gelangen dann auf eine Seite mit dem Titel "Ausgestellte Wertgutscheine", auf der ein Suchdialog, ein Button zum manuellen Ausstellen eines Wertgutscheins sowie eine Liste der bereits ausgestellten Wertgutschein-Codes angezeigt werden.
 
 !!! Hinweis
-    Sie können einen einmal erstellten Gutschein nicht löschen (nur entwerten – siehe hierzu [Das Guthaben eines Wertgutscheins manuell ändern](#das-guthaben-eines-wertgutscheins-manuell-ändern)
+    Sie können einen einmal erstellten Gutschein nicht löschen (nur entwerten – siehe hierzu [Das Guthaben eines Wertgutscheins manuell ändern](#das-guthaben-eines-wertgutscheins-manuell-andern)
     Wenn Sie diese Funktion lediglich vorab testen möchten, aktivieren Sie das Kontrollkästchen neben "Testgutschein".
     Dies bedeutet, dass der Wertgutschein nur gültig ist, solange sich Ihr Shop im Testmodus befindet.
 
@@ -170,7 +170,7 @@ Der Wertgutschein wird erstellt, sobald Sie auf :btn:Speichern: klicken.
 Ein einmal erstellter Wertgutschein kann nicht gelöscht werden.
 Sie können lediglich die folgenden Eigenschaften bearbeiten: Ablaufdatum und -zeit, Inhaber sowie besondere Gutscheinbedingungen.
 Navigieren Sie dafür zu :navpath:Ihr Veranstalter → :fa3-credit-card: Wertgutscheine:, klicken Sie auf den Wertgutschein und anschließend auf den Button :btn-icon:fa3-edit: Bearbeiten:.
-Wie Sie den Wert eines Wertgutscheins durch manuelle Transaktionen ändern, lesen Sie im Abschnitt [Das Guthaben eines Wertgutscheins manuell ändern](#das-guthaben-eines-wertgutscheins-manuell-ändern).
+Wie Sie den Wert eines Wertgutscheins durch manuelle Transaktionen ändern, lesen Sie im Abschnitt [Das Guthaben eines Wertgutscheins manuell ändern](#das-guthaben-eines-wertgutscheins-manuell-andern).
 
 ## Fortgeschrittene Nutzung
 

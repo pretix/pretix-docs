@@ -62,7 +62,7 @@ Dazu klicken Sie auf ihren Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:
 Wenn Sie Produkte erstellen oder bearbeiten möchten, navigieren Sie zu :navpath:Veranstaltung → :fa3-ticket: Produkte → Produkte:.
 Die angezeigte Seite zeigt eine Liste aller Produkte zu dieser Veranstaltung.
 Klicken Sie den Button :btn-icon:fa3-plus: Neues Produkt erstellen:.
-Wählen Sie einen Namen, eine Beschreibung, einen Standardpreis und den [Umsatzsteuer](../taxes.md)-Satz und klicken Sie den Button :btn:Speichern:.
+Wählen Sie einen Namen, eine Beschreibung, einen Standardpreis und den [Umsatzsteuer](../taxes.de.md)-Satz und klicken Sie den Button :btn:Speichern:.
 
 Sie können auch ein vorhandenes Produkt bearbeiten, indem Sie seinen Namen oder den Bearbeitungsbutton :btn-icon:fa3-edit:: neben dem Listeneintrag klicken.
 
@@ -269,7 +269,7 @@ Sie können mehr als einen Typ Dauerkarten anbieten.
 Zum Beispiel können Sie [unterschiedliche Preisniveaus](discounts.de.md#unterschiedliche-preisniveaus) anbieten.
 
 Um es für Kund\*innen attraktiver zu machen, auch später in der Saison noch eine Dauerkarte zu kaufen, können Sie den Preis senken.
-Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.de.md#zeitabhängige-fruhbuchertickets-für-einzelveranstaltungen), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
+Wenn Sie den Preis für einen Dauerkarte mit fortschreitender Saison reduzieren möchten, können Sie umgekehrt vorgehen wie bei [zeitabhängigen Frühbuchertickets](discounts.de.md#zeitabhangige-fruhbuchertickets-fur-einzelveranstaltungen), nur dass die Dauerkarte jetzt jeden Monat durch eine preisgünstigere Version ersetzt wird.
 Falls zwischen den einzelnen Veranstaltungen in einer Saison längere Pausen liegen, haben Sie folgende Alternative: Sie bieten die Dauerkarte zunächst zu einem höheren Preis an und senken den Preis zwischen den Veranstaltungen manuell.
 
 Bei dieser Vorgehensweise müssen Sie darauf vorbereitet sein, Teilnehmer\*innen bei zwei Veranstaltungen gleichzeitig einzuchecken.
@@ -342,8 +342,8 @@ Sie sorgen auch dafür, dass Inhaber\*innen von Dauerkarten bei jedem Termin ein
 
 ### Gemischte Steuersätze
 
-Abschnitte im Artikel über [Steuern](../taxes.md) erläutern, wie Sie anhand von Produktpaketen Produkte mit gemischten Steuersätzen erstellen.
-Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](../taxes.md#mixed-taxation-tax-included-in-price) ist oder die [Steuer auf den Preis aufgeschlagen](../taxes.md#mixed-taxation-tax-added-on-top-of-price) wird.
+Abschnitte im Artikel über [Steuern](../taxes.de.md) erläutern, wie Sie anhand von Produktpaketen Produkte mit gemischten Steuersätzen erstellen.
+Die genaue Vorgehensweise hängt davon ab, ob die [Steuer im Preis enthalten](../taxes.de.md#gemischte-steuersatze-preis-enthalt-umsatzsteuer) ist oder die [Steuer auf den Preis aufgeschlagen](../taxes.de.md#gemischte-steuersatze-preis-wird-ohne-umsatzsteuer-angezeigt) wird.
 
 ## Fehlerbehebung
 

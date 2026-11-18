@@ -6,7 +6,7 @@ Hier ist ein kurzer Überblick über die Schritte, die wir in diesem Abschnitt d
 
 - [eine Veranstaltung erstellen](#eine-veranstaltung-erstellen)
 - uns auf der Übersicht über den Status der Veranstaltung [einen Überblick verschaffen](#veranstaltungs-ubersicht)
-- die Erfassung von [Daten zu Kund\*innen- und Teilnehmer\*innen](#kunden--und-teilnehmerdaten) aktivieren
+- die Erfassung von [Daten zu Kund\*innen- und Teilnehmer\*innen](#kunden-und-teilnehmerdaten) aktivieren
 - dem Ticketshop [Bilder hinzufügen](#shop-design)
 
 Das deckt alle notwendigen Schritte zur Erstellung einer Veranstaltung ab.
