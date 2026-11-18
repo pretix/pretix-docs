@@ -6,7 +6,7 @@ pretix comes with many pre-configured email messages that you can customize to y
 This article tells you how to set up your desired email server solution within pretix and how to customize email content.
 
 !!! Note
-    The pretix email server has a limit on how many emails you can send out with an account that has not been activated yet.
+    If your account has not been activated yet, then there is a limit on how many emails you can send out.
     We recommend [activating your account](../tutorial/single-events/organizer-account.md#activation) before sending out any emails.
     pretix will **withhold** any emails you attempt to send out after reaching the limit.
     You can retry sending those withheld emails after activating your account.
@@ -19,7 +19,15 @@ See the tutorial's section on [account activation](../tutorial/single-events/org
 
 ## How to
 
-### General email settings
+The following sections explain how to:
+
+ - [choose a sending method](#choosing-a-sending-method)
+ - set up a [custom sender address](#using-system-email-server-with-a-custom-sender-address)
+ - [customize email content](#customizing-email-content)
+ - [send out emails manually](#manually-sending-out-emails)
+ - [manage outgoing emails](#managing-outgoing-emails)
+
+### Choosing a sending method
 
 By default, the general email settings are handled on the organizer level.
 Navigate to :navpath:Your organizer → :fa3-wrench: Settings → E-Mail:.
