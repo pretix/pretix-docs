@@ -1,3 +1,8 @@
+---
+# title:
+description: Configure general email settings, and set up custom sender addresses in pretix. Customize email templates and send manual or scheduled emails.
+---
+
 # Email settings
 
 pretix offers you many options for contacting your customers and attendees via email—both on the organizer level and on the event level.

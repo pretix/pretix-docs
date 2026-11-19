@@ -1,3 +1,8 @@
+---
+# title:
+description: Learn how to install pretixSCAN on Android, connect devices to pretix, scan tickets online and offline, enable badge printing, and troubleshooting.
+---
+
 # pretixSCAN (Android)
 
 The Android version of [pretixSCAN](https://pretix.eu/about/en/scan) is an application that helps you handle the check-in at your events.
