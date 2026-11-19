@@ -347,21 +347,23 @@ It should list all dates you created in the previous step.
 
 Click one of the dates.
 Under "Additional settings", you can find the "Schedule" settings.
-There is a field for every resource type that is required by one of the products assigned to this date.
-The text below that field lists the required properties of the resource.
-Click the field and select the individual resource you want to assign.
+There is an entry for every resource type that is required by one of the products assigned to this date.
+The entry lists the required properties of the resource.
+Click the :btn-icon:fa3-edit: Select: button next to the entry.
+This opens a popup giving you detailed information on available and unavailable resources.
 
-![Date settings page, scrolled to the bottom. The section 'Additional settings' has the subheading 'Schedule' with a dropdown menu for 'Guide'. The dropdown is opened, showing the result 'Jamie Doe' with properties 'English, Toki Pona, Adults, Teenagers, Children, Egypt, Sumer · requires confirmation](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
+![Date settings page, scrolled to the bottom, displaying a popup titled 'Choose resource', listing complex information on resources, their availabilities, conflicting bookings, and properties.](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
 
 Assume, for instance, your date requires a resource of the type "Guide".
 The required properties are "Children", "Egypt", and "English".
-Click the field.
+Click the :btn-icon:fa3-edit: Select: button.
 
-A drop-down menu opens, listing all resources of the type "Guide".
+A drop-down menu opens, listing available resources at the top, unavailable resource below that, and missing properties at the bottom.
 The menu helps you select an appropriate resource by displaying tags next to each entry:
 `conflicting booking`, `availability unknown`, `unavailable`, or `does not match requirements`.
-If an entry does not have any of those issues, then it will have none of those tags.
-Select an entry with no issue tags next to it.
+The menu also displays timelines encoding availabilities and issues.
+Select one of the entries under "Available resources".
+If no resources are available, then you may have to change the planned date or find another solution.
 
 Click the :btn:Save: button.
 As soon as you do this, your event's contact mail address will send an email to the resource's managers.
