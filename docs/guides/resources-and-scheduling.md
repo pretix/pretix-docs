@@ -222,28 +222,37 @@ The next section explains how to use them.
 #### Setting availability for a resource
 
 Under "Availability timetable", define when the resource is available.
-Click the :btn-icon:fa3-plus: Add rule: button.
-This opens a popup window titled "Add a new availability rule".
+Click the :btn-icon:fa3-plus: Add availability: button.
+This opens a popup window titled "Add availability".
 
-![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a pair of radio buttons labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
+![Page with a popup open titled 'Add availability'. There are settings for 'Status (Available vs. Unavailable), date, time, repeating on the same days every week, until a certain date, and for timezone.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
 
-Assume, for instance, your guide's availability is expected to stay the same July through September 2027.
+Assume, for instance, your guide's availability is expected to stay the same January through September 2027.
 They will work Monday through Friday from 9 AM to 5 PM.
 They will not be available on Tuesday from 12 AM to 2 PM because of a weekly team meeting.
 
-In that case, you enter a "Start" date of `2027-07-01` and an "End" of `2027-09-30`.
-Select all days from Monday through Friday.
-Select a "Start time" of `09:00:00` and an end time of `17:00:00`.
+In that case, select :btn-icon:fa3-check: Available: at the top.
+Enter the "Date" `2027-07-01`.
+Under "Time", enter ``09:00:00` to `17:00:00`.
+Check the box next to "Repeat every week".
+Under "Repeat on", select all days from Monday through Friday.
+Enter the "Until" date `2027-09-30`.
 Click the :btn:Save: button in the popup.
 
-Click the :btn-icon:fa3-plus: Add rule: button again.
-Enter the same "Start" and "End" dates as above.
-Check "Tuesday".
-Enter a "Start time" of `12:00:00` and an "End time" of `14:00:00`.
-Under "Available", select "Resource is unavailable".
+In order to add a time during which the resource is unavailable, click the :btn-icon:fa3-plus:Add availability: button again.
+At the top of the popup, select :btn-icon:fa3-ban: Unavailable:.
+Enter the "Date" `2027-07-01`.
+Under "Time", enter ``12:00:00` to `14:00:00`.
+Check the box next to "Repeat every week".
+Under "Repeat on", select Tuesday.
+Enter the "Until" date `2027-09-30`.
 Click the :btn:Save: button in the popup.
 
 The calendar view under "Resulting availability" will now display the available times for this resource.
+
+You can also define unique dates and times during which the resource is available or unavailable.
+In order to do so, add an availability and leave the box next to "Repeat every week" unchecked.
+In that case, the popup will only display the options that apply to a single date and time, not a repeating pattern.
 
 #### Deleting and reactivating resources
 
