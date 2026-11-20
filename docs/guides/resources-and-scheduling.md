@@ -432,7 +432,13 @@ Then, click the :btn:Save: button.
 If you created an order, then you will land on the page for that order.
 If you did not create an order, then you will land on the scheduling dashboard.
 
-### Confirming or denying a scheduling
+### Managing your own bookings via the pretix backend
+
+If a resource manager has a pretix user account, then they can manage their upcoming bookings from the pretix backend.
+In order to do so, log into your pretix account and navigate to :navpath:Your user → :fa3-briefcase: Resources → Resources:.
+
+
+### Confirming or denying a booking via email
 
 Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's managers.
 This email also includes a calendar invitation.
