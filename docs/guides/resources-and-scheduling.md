@@ -415,16 +415,18 @@ Enter the "Amounts" of products to sell through that order and a price for each 
 You may also enter an "Email address" to be associated with the order.
 Then, click the :btn:Continue: button.
 
-![Page titled 'Quick entry 4/4', displaying the option for assigning a resource labeled 'Guide' and listing 'Requirements: Children, Egypt, English.](../assets/screens/resources-scheduling/quick-entry4.png "Quick entry 4/4")
+![Page titled 'Quick entry 4/4', displaying a popup titled 'Choose resource', listing complex information on resources, their availabilities, conflicting bookings, and properties.](../assets/screens/resources-scheduling/quick-entry4.png "Quick entry 4/4")
 
 On the last step of the quick entry, select the resources necessary for the date.
-The required properties are listed below the field.
-Click it.
-This opens a drop-down menu, listing all resources of the type "Guide".
+The required properties are listed next to the property.
+Click the :btn-icon:fa3-edit: Select: button.
+
+A drop-down menu opens, listing available resources at the top, unavailable resource below that, and missing properties at the bottom.
 The menu helps you select an appropriate resource by displaying tags next to each entry:
 `conflicting booking`, `availability unknown`, `unavailable`, or `does not match requirements`.
-If an entry does not have any of those issues, then it will have none of those tags.
-Select an entry with no issue tags next to it.
+The menu also displays timelines encoding availabilities and issues.
+Select one of the entries under "Available resources".
+If no resources are available, then you may have to choose a different date and time or find another solution.
 
 Then, click the :btn:Save: button.
 If you created an order, then you will land on the page for that order.
