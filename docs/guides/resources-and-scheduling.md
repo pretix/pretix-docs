@@ -435,8 +435,17 @@ If you did not create an order, then you will land on the scheduling dashboard.
 ### Managing your own bookings via the pretix backend
 
 If a resource manager has a pretix user account, then they can manage their upcoming bookings from the pretix backend.
-In order to do so, log into your pretix account and navigate to :navpath:Your user → :fa3-briefcase: Resources → Resources:.
+In order to do so, log into your pretix account and navigate to :rootnavpath::fa3-briefcase: Resources → Resources:.
+This page lists all resources to which you are assigned as a manager.
 
+![Page titled 'Bookings', displaying options for filtering by organizer and resource type, and listing the resources 'Morgan Doe' (a Guide) and 'Auditorium Maximum' (a Conference room)](../assets/screens/resources-scheduling/your-resources.png "Your Resources")
+
+You can use the buttons next to each entry in the list to view and edit bookings and availabilities for each resource.
+In order to get an overview of all bookings for all resources managed by you, navigate to :rootnavpath::fa3-briefcase: Resources → Bookings:.
+If you want to confirm a booking, click the green :btn-icon:fa3-check:: button next to it.
+If you want to cancel it, click the red :btn-icon:fa3-times:: button instead.
+
+![Page titled 'Your resources', displaying options for filtering by past or future, status, and resource, and listing bookings for a 'Guided tour' date and a 'Lecture' date.](../assets/screens/resources-scheduling/bookings.png "Bookings")
 
 ### Confirming or denying a booking via email
 
