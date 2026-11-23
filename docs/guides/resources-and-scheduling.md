@@ -23,7 +23,7 @@ Using resources and scheduling involves the following steps:
  9. Alternatively, using the [Quick entry](resources-and-scheduling.md#quick-entry) feature for planning dates
 
 The following sections will guide you through those steps in detail.
-In addition, this article explains how to [confirm or deny a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on the resource's availability at the scheduled time.
+In addition, this article explains how to confirm or deny a scheduling [via the pretix backend](#managing-your-own-bookings-via-the-pretix-backend) or [via email](#confirming-or-denying-a-booking-via-email).
 This information is useful for the person or team managing the resource.
 
 ### Enabling the plugin
@@ -434,6 +434,11 @@ If you did not create an order, then you will land on the scheduling dashboard.
 
 ### Managing your own bookings via the pretix backend
 
+!!! Note
+    Your resource managers are not required to have a pretix user account.
+    They can also confirm or deny bookings via email.
+    For more information, see the [next section](#confirming-or-denying-a-booking-via-email).
+
 If a resource manager has a pretix user account, then they can manage their upcoming bookings from the pretix backend.
 In order to do so, log into your pretix account and navigate to :rootnavpath::fa3-briefcase: Resources → Resources:.
 This page lists all resources to which you are assigned as a manager.
@@ -448,6 +453,10 @@ If you want to cancel it, click the red :btn-icon:fa3-times:: button instead.
 ![Page titled 'Your resources', displaying options for filtering by past or future, status, and resource, and listing bookings for a 'Guided tour' date and a 'Lecture' date.](../assets/screens/resources-scheduling/bookings.png "Bookings")
 
 ### Confirming or denying a booking via email
+
+!!! Note
+    If your resource managers have a pretix user account, then they can manage their own bookings more comfortably via the pretix backend.
+    For more information, see the [previous section](#managing-your-own-bookings-via-the-pretix-backend).
 
 Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's managers.
 This email also includes a calendar invitation.
