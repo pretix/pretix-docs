@@ -1,6 +1,6 @@
 # Datenschutz
 
-Dieser Abschnitt enthält Informationen darüber, wie pretix Sie bei der Einhaltung der Datenschutzgesetze unterstützt.
+Dieser Abschnitt enthält Informationen darüber, wie pretix Sie bei der Einhaltung von Datenschutzgesetzen unterstützt.
 
 Weitere Informationen, darunter unsere eigene Datenschutzrichtlinie, finden Sie auf [unserer Website](https://pretix.eu/about/de/privacy).
 
