@@ -87,7 +87,7 @@ Zusätzlich werden bei Verwendung des Widgets auch alle Cookies gesetzt, die im 
 <td><code>pretix_widget_&lt;ticketshop_url&gt;</code></td>
 <td>Warenkorb-ID</td>
 <td>30 Tage</td>
-<td>Das Cookie ermöglicht es Benutzer\*innen, den Kauf nach einer Unterbrechung (z. B. einem Absturz des Browsers) fortzusetzen, ohne die reservierten Tickets zu verlieren.<br>
+<td>Das Cookie ermöglicht es Benutzer*innen, den Kauf nach einer Unterbrechung (z. B. einem Absturz des Browsers) fortzusetzen, ohne die reservierten Tickets zu verlieren.<br>
 Wir bewerten dieses Cookie als technisch notwendig, um die gewünschte Funktion bereitzustellen, sodass dafür keine Einwilligung erforderlich ist.
 </tr>
 </tbody>
