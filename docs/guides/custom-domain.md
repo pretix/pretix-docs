@@ -1,3 +1,8 @@
+---
+# title:
+description: Use your own domain or subdomain for pretix ticket shops. Configure organizer main domains, event-specific domains, and alternative domain routing.
+---
+
 # Custom domain
 
 By default, you can access a shop built with pretix at a URL such as `https://pretix.eu/tut/tutcon27`.

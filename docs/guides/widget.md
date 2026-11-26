@@ -1,3 +1,7 @@
+---
+# title:
+description: Embed the pretix ticket shop into your website using a widget or button. Learn about basic setup, preselected vouchers, tracking, and security.
+---
 # Widget
 
 You can include your ticket shop on your website by embedding the pretix widget.
