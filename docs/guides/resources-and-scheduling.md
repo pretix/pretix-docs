@@ -23,7 +23,7 @@ Using resources and scheduling involves the following steps:
  9. Alternatively, using the [Quick entry](resources-and-scheduling.md#quick-entry) feature for planning dates
 
 The following sections will guide you through those steps in detail.
-In addition, this article explains how to [confirm or deny a scheduling](resources-and-scheduling.md#confirming-or-denying-a-scheduling) depending on the resource's availability at the scheduled time.
+In addition, this article explains how to confirm or deny a scheduling [via the pretix backend](#managing-your-own-bookings-via-the-pretix-backend) or [via email](#confirming-or-denying-a-booking-via-email).
 This information is useful for the person or team managing the resource.
 
 ### Enabling the plugin
@@ -222,28 +222,37 @@ The next section explains how to use them.
 #### Setting availability for a resource
 
 Under "Availability timetable", define when the resource is available.
-Click the :btn-icon:fa3-plus: Add rule: button.
-This opens a popup window titled "Add a new availability rule".
+Click the :btn-icon:fa3-plus: Add availability: button.
+This opens a popup window titled "Add availability".
 
-![Page with a popup open titled 'Add a new availability rule'. Under 'Schedule', there are inputs for start, end, weekdays, and timezone. Under 'Timeframe', there are inputs for start time and end time as well as a pair of radio buttons labeled 'Available' with the options 'Resource is available' and 'Resource is unavailable'.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
+![Page with a popup open titled 'Add availability'. There are settings for 'Status (Available vs. Unavailable), date, time, repeating on the same days every week, until a certain date, and for timezone.](../assets/screens/resources-scheduling/availability.png "Add a new availability rule")
 
-Assume, for instance, your guide's availability is expected to stay the same July through September 2027.
+Assume, for instance, your guide's availability is expected to stay the same January through September 2027.
 They will work Monday through Friday from 9 AM to 5 PM.
 They will not be available on Tuesday from 12 AM to 2 PM because of a weekly team meeting.
 
-In that case, you enter a "Start" date of `2027-07-01` and an "End" of `2027-09-30`.
-Select all days from Monday through Friday.
-Select a "Start time" of `09:00:00` and an end time of `17:00:00`.
+In that case, select :btn-icon:fa3-check: Available: at the top.
+Enter the "Date" `2027-07-01`.
+Under "Time", enter ``09:00:00` to `17:00:00`.
+Check the box next to "Repeat every week".
+Under "Repeat on", select all days from Monday through Friday.
+Enter the "Until" date `2027-09-30`.
 Click the :btn:Save: button in the popup.
 
-Click the :btn-icon:fa3-plus: Add rule: button again.
-Enter the same "Start" and "End" dates as above.
-Check "Tuesday".
-Enter a "Start time" of `12:00:00` and an "End time" of `14:00:00`.
-Under "Available", select "Resource is unavailable".
+In order to add a time during which the resource is unavailable, click the :btn-icon:fa3-plus:Add availability: button again.
+At the top of the popup, select :btn-icon:fa3-ban: Unavailable:.
+Enter the "Date" `2027-07-01`.
+Under "Time", enter ``12:00:00` to `14:00:00`.
+Check the box next to "Repeat every week".
+Under "Repeat on", select Tuesday.
+Enter the "Until" date `2027-09-30`.
 Click the :btn:Save: button in the popup.
 
 The calendar view under "Resulting availability" will now display the available times for this resource.
+
+You can also define unique dates and times during which the resource is available or unavailable.
+In order to do so, add an availability and leave the box next to "Repeat every week" unchecked.
+In that case, the popup will only display the options that apply to a single date and time, not a repeating pattern.
 
 #### Deleting and reactivating resources
 
@@ -338,21 +347,23 @@ It should list all dates you created in the previous step.
 
 Click one of the dates.
 Under "Additional settings", you can find the "Schedule" settings.
-There is a field for every resource type that is required by one of the products assigned to this date.
-The text below that field lists the required properties of the resource.
-Click the field and select the individual resource you want to assign.
+There is an entry for every resource type that is required by one of the products assigned to this date.
+The entry lists the required properties of the resource.
+Click the :btn-icon:fa3-edit: Select: button next to the entry.
+This opens a popup giving you detailed information on available and unavailable resources.
 
-![Date settings page, scrolled to the bottom. The section 'Additional settings' has the subheading 'Schedule' with a dropdown menu for 'Guide'. The dropdown is opened, showing the result 'Jamie Doe' with properties 'English, Toki Pona, Adults, Teenagers, Children, Egypt, Sumer · requires confirmation](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
+![Date settings page, scrolled to the bottom, displaying a popup titled 'Choose resource', listing complex information on resources, their availabilities, conflicting bookings, and properties.](../assets/screens/resources-scheduling/assign-resource.png "Assigning a resource")
 
 Assume, for instance, your date requires a resource of the type "Guide".
 The required properties are "Children", "Egypt", and "English".
-Click the field.
+Click the :btn-icon:fa3-edit: Select: button.
 
-A drop-down menu opens, listing all resources of the type "Guide".
+A drop-down menu opens, listing available resources at the top, unavailable resource below that, and missing properties at the bottom.
 The menu helps you select an appropriate resource by displaying tags next to each entry:
 `conflicting booking`, `availability unknown`, `unavailable`, or `does not match requirements`.
-If an entry does not have any of those issues, then it will have none of those tags.
-Select an entry with no issue tags next to it.
+The menu also displays timelines encoding availabilities and issues.
+Select one of the entries under "Available resources".
+If no resources are available, then you may have to change the planned date or find another solution.
 
 Click the :btn:Save: button.
 As soon as you do this, your event's contact mail address will send an email to the resource's managers.
@@ -404,22 +415,48 @@ Enter the "Amounts" of products to sell through that order and a price for each 
 You may also enter an "Email address" to be associated with the order.
 Then, click the :btn:Continue: button.
 
-![Page titled 'Quick entry 4/4', displaying the option for assigning a resource labeled 'Guide' and listing 'Requirements: Children, Egypt, English.](../assets/screens/resources-scheduling/quick-entry4.png "Quick entry 4/4")
+![Page titled 'Quick entry 4/4', displaying a popup titled 'Choose resource', listing complex information on resources, their availabilities, conflicting bookings, and properties.](../assets/screens/resources-scheduling/quick-entry4.png "Quick entry 4/4")
 
 On the last step of the quick entry, select the resources necessary for the date.
-The required properties are listed below the field.
-Click it.
-This opens a drop-down menu, listing all resources of the type "Guide".
+The required properties are listed next to the property.
+Click the :btn-icon:fa3-edit: Select: button.
+
+A drop-down menu opens, listing available resources at the top, unavailable resource below that, and missing properties at the bottom.
 The menu helps you select an appropriate resource by displaying tags next to each entry:
 `conflicting booking`, `availability unknown`, `unavailable`, or `does not match requirements`.
-If an entry does not have any of those issues, then it will have none of those tags.
-Select an entry with no issue tags next to it.
+The menu also displays timelines encoding availabilities and issues.
+Select one of the entries under "Available resources".
+If no resources are available, then you may have to choose a different date and time or find another solution.
 
 Then, click the :btn:Save: button.
 If you created an order, then you will land on the page for that order.
 If you did not create an order, then you will land on the scheduling dashboard.
 
-### Confirming or denying a scheduling
+### Managing your own bookings via the pretix backend
+
+!!! Note
+    Your resource managers are not required to have a pretix user account.
+    They can also confirm or deny bookings via email.
+    For more information, see the [next section](#confirming-or-denying-a-booking-via-email).
+
+If a resource manager has a pretix user account, then they can manage their upcoming bookings from the pretix backend.
+In order to do so, log into your pretix account and navigate to :rootnavpath::fa3-briefcase: Resources → Resources:.
+This page lists all resources to which you are assigned as a manager.
+
+![Page titled 'Bookings', displaying options for filtering by organizer and resource type, and listing the resources 'Morgan Doe' (a Guide) and 'Auditorium Maximum' (a Conference room)](../assets/screens/resources-scheduling/your-resources.png "Your Resources")
+
+You can use the buttons next to each entry in the list to view and edit bookings and availabilities for each resource.
+In order to get an overview of all bookings for all resources managed by you, navigate to :rootnavpath::fa3-briefcase: Resources → Bookings:.
+If you want to confirm a booking, click the green :btn-icon:fa3-check:: button next to it.
+If you want to cancel it, click the red :btn-icon:fa3-times:: button instead.
+
+![Page titled 'Your resources', displaying options for filtering by past or future, status, and resource, and listing bookings for a 'Guided tour' date and a 'Lecture' date.](../assets/screens/resources-scheduling/bookings.png "Bookings")
+
+### Confirming or denying a booking via email
+
+!!! Note
+    If your resource managers have a pretix user account, then they can manage their own bookings more comfortably via the pretix backend.
+    For more information, see the [previous section](#managing-your-own-bookings-via-the-pretix-backend).
 
 Whenever a user assigns a resource to a date in pretix, the server sends an email to that resource's managers.
 This email also includes a calendar invitation.
