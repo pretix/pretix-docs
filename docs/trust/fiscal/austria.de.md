@@ -1,11 +1,11 @@
 # Österreich
 
-{% include "warning-tax-law.md" %}
+{% include "warning-tax.de.md" %}
 
 ## Umsatzsteuer (USt)
 
 Beim Verkauf von Waren und Dienstleistungen in Österreich kann Umsatzsteuer (USt) anfallen.
-Sie können in pretix alle österreichischen USt-Sätze mittels [Steuer-Regeln](../../guides/taxes.md) konfigurieren, auch für komplexere Sachverhalte (z. B. Reverse Charge bei EU-Geschäften).
+Sie können in pretix alle österreichischen USt-Sätze mittels [Steuer-Regeln](../../guides/taxes.de.md) konfigurieren, auch für komplexere Sachverhalte (z. B. Reverse Charge bei EU-Geschäften).
 
 ## Rechnungsstellung
 
@@ -23,7 +23,7 @@ Wir empfehlen, in Österreich mit fortlaufenden Rechnungsnummern zu arbeiten.
 
 ### E-Rechnungen
 
-In Österreich gibt es für Geschäfte zwischen Unternehmen (B2B) oder zwischen Unternehmen und Verbraucher\*innen (B2C) derzeit keine Pflicht zu elektronischen Rechnungen in einem strukturierten Format.
+In Österreich gibt es für Geschäfte zwischen Unternehmen (B2B) oder zwischen Unternehmen und Verbraucher\*innen (B2C) derzeit keine Pflicht, elektronische Rechnungen in einem strukturierten Format auszustellen.
 Nur für Geschäfte zwischen Unternehmen und Bundesbehörden (B2G) sind E-Rechnungen in Österreich Pflicht.
 pretix unterstützt dies derzeit nicht. 
 
@@ -33,7 +33,7 @@ Weitere Informationen finden Sie (in englischer Sprache) auf der Website der Eur
 
 Sie können pretixPOS im Einklang mit österreichischen Gesetzen zu Kassensystemen ([§ 131b BAO](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&FassungVom=2025-01-27&Artikel=&Paragraf=131b&Anlage=&Uebergangsrecht=), [RKSV](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009390)) nutzen.
 
-In Österreich sind alle Unternehmen mit einem jährlichen Gesamtumsatz ab 15,000 € und einem Barumsatz ab 7.500 € zur Verwendung eines Kassensystems verpflichtet.
+In Österreich sind alle Unternehmen mit einem jährlichen Gesamtumsatz ab 15 000 € und einem Barumsatz ab 7 500 € zur Verwendung eines Kassensystems verpflichtet.
 Mit den folgenden Maßnahmen stellen Sie sicher, dass Ihr Kassensystem den Regeln entspricht: 
 
 - Verwenden Sie eine Signaturerstellungseinheit, die sicherstellt, dass jede Veränderung der erfassten Daten bemerkt wird.

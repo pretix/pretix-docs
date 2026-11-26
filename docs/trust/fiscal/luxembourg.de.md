@@ -1,11 +1,11 @@
 # Luxemburg
 
-{% include "warning-tax-law.md" %}
+{% include "warning-tax.de.md" %}
 
 ## Umsatzsteuer (USt)
 
 Beim Verkauf von Waren und Dienstleistungen in Luxemburg kann Umsatzsteuer ("taxe sur la valeur ajoutée", "TVA") anfallen.
-Sie können in pretix alle luxemburgischen USt-Sätze mittels [Steuer-Regeln](../../guides/taxes.md) konfigurieren, auch für komplexere Sachverhalte (z. B. Reverse Charge bei EU-Geschäften).
+Sie können in pretix alle luxemburgischen USt-Sätze mittels [Steuer-Regeln](../../guides/taxes.de.md) konfigurieren, auch für komplexere Sachverhalte (z. B. Reverse Charge bei EU-Geschäften).
 
 ## Rechnungsstellung
 
@@ -21,4 +21,4 @@ Weitere Informationen finden Sie (in englischer Sprache) auf der Website der Eur
 ## pretixPOS
 
 Uns sind keine besonderen Anforderungen an Kassensysteme in Luxemburg bekannt.
-Wir meinen daher, dass pretixPOS generell in Luxemburg verwendet werden kann.
+Wir gehen daher davon aus, dass pretixPOS generell in Luxemburg verwendet werden kann.

@@ -1,6 +1,6 @@
 # Deutschland
 
-{% include "warning-tax-law.md" %}
+{% include "warning-tax.de.md" %}
 
 ## Umsatzsteuer (USt)
 
@@ -65,7 +65,7 @@ pretix löscht zwar keine alten Rechnungen, garantiert aber nicht die erforderli
 Wir empfehlen daher nachdrücklich, alle erstellten Rechnungen regelmäßig zu exportieren und in einem Archivierungssystem aufzubewahren.
 
 Sie müssen auch weitere Unterlagen, die für die Nachvollziehbarkeit Ihrer Buchhaltung erforderlich sind, archivieren (siehe z. B. [1.3, 5.2 GoBD](https://ao.bundesfinanzministerium.de/ao/2023/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-64/inhalt.html)).
-Dazu gehören wenigstens Bestellungsdaten, Zahlungsdaten und Ihre Verfahrensdokumentation.
+Dazu gehören mindestens Bestellungsdaten, Zahlungsdaten und Ihre Verfahrensdokumentation.
 Wir empfehlen, diese Daten zum bequemen Exportieren und Verarbeiten in pretix zu belassen, aber auch regelmäßig eine Offline-Kopie zu exportieren (siehe auch [9.4 GoBD](https://ao.bundesfinanzministerium.de/ao/2023/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-64/inhalt.html)).
 
 ## pretixPOS
