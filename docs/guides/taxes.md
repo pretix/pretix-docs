@@ -275,7 +275,7 @@ Then, switch to the :btn:Price: tab and enter the sum of those amounts in the "D
 
 ### Selecting the tax computation algorithm
 
-pretix offers three different algorithms for calculating taxes.
+pretix offers six different options for calculating taxes.
 Your choice of algorithm depends on several factors:
 
  - whether you are using e-invoicing compliant with EN 16931
@@ -301,16 +301,40 @@ This algorithm is our implementation of [EN 16931](https://ec.europa.eu/digital-
 We recommend using this option if you are using e-invoicing and most of your customers are businesses.
 The disadvantage of this method is that customers may encounter unexpected changes in the gross total price of an order while they are using your shop.
 
-The third option is **"Compute taxes based on net total with stable gross prices"**.
-Use this option if you want pretix to calculate taxes by making minimal changes to net prices of individual positions in order to arrive at the expected gross total.
+The third option is **"Compute taxes based on gross total"**.
+Use this option if you want pretix to compute taxes using the gross total of an order.
+The advantage is that customers do not encounter unexpected changes to the gross total price of an order while they are using your shop.
+The disadvantage of this method is that it can introduce miniscule variations in the net prices paid on individual order positions.
+Thus, you may end up selling the same product at different net prices.
 
-This algorithm is also compatible with EN 16931.
-We recommend using this option if you are using e-invoicing and most of your customers are private individuals.
+The fourth option is **"For business customers, compute taxes based on net total. For individuals, compute taxes based on gross total"**.
+This is a combination of the second and third option.
+Use it if you want to issue invoices compliant with EN 16931 to business customers while also avoiding unexpected pricing behavior for individual customers.
+If you select this option, invoices for individual customers will not comply with EN 16931.
+Business customers may encounter unexpected changes in the gross total price of an order while they are using your shop.
+If a customer changes their invoice data from business to individual or vice versa, then the gross total of the order may change.
+
+!!! Note
+    We **do not recommend** using options five or six.
+    pretix offers these algorithms for backwards compatibility.
+    We are not aware of any tax situations in which it would make sense to choose option five or six over the others.
+
+The fifth option is **"Compute taxes based on net total with stable gross prices"**.
+We **do not recommend** using this option.
+If you select it, then pretix will calculate taxes by making minimal changes to net prices of individual positions in order to arrive at the expected gross total.
+
+This algorithm is compatible with EN 16931.
+Using this option can make sense if you are using e-invoicing and most of your customers are private individuals.
 The advantage is that customers do not encounter unexpected changes to the gross total price of an order while they are using your shop.
 
 The disadvantage of this method is that it can introduce miniscule variations in the net prices paid on individual order positions.
 Thus, you may end up selling the same product at different net prices.
 The gross prices and tax rates will always remain the same.
+
+The sixth option is **"For business customers, compute taxes based on net total. For individuals, use line-based rounding"**.
+We **do not recommend** using this option.
+It is a combination of the first and second option.
+If a customer changes their invoice data from business to individual or vice versa, then the gross total of the order may change.
 
 If you use an external system for tax reporting, you should select the method that matches the one used by that external system.
 This prevents inconsistencies in rounding between pretix and the external system.
