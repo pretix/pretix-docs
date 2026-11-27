@@ -1,3 +1,6 @@
+---
+title: Sitzungen
+---
 # Sitzungen
 
 Manche Veranstaltungen bestehen aus mehreren kleineren Veranstaltungen ("Sitzungen") mit eingeschränkter Kapazität, und Teilnehmer\*innen können auswählen, an welchen dieser Sitzungen sie teilnehmen möchten.
